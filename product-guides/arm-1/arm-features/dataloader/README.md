@@ -1,4 +1,4 @@
-# Dataloader (Import Your Data)
+# DataLoader (Import Your Data)
 
 ### Single DataLoader: Overview <a href="#single-dataloader-overview" id="single-dataloader-overview"></a>
 
@@ -25,11 +25,11 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 
 #### Features of DataLoader Pro <a href="#features-of-dataloader-pro" id="features-of-dataloader-pro"></a>
 
-* Cloud-based dataloader with scheduling capabilities
+* Cloud-based DataLoader with scheduling capabilities
 * Supports circular references
 * Objects are extracted from the source sandbox and transferred to the destination in one step.
 * Data integrity check: Checks for data integrity between the source and the destination.
-* Error reporting: Detailed reporting of any failure during dataloading operations.
+* Error reporting: Detailed reporting of any failure during data-loading operations.
 * History of data-loading operations: The results are retained for future reference.
 * Supports owner ID transfer
 * Supports user lookup transfer
@@ -40,7 +40,7 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 
 [Salesforce Dataloader](https://www.autorabit.com/blog/addressing-the-salesforce-data-loader-log4j-issue-with-autorabit/) vs. ARM DataLoader vs. ARM DataLoader Pro
 
-| **Category**                    | **SFDC Dataloader**                                            | **AR DataLoader**                                                                       | **AR DataLoader Pro**                                                                                                                                                          |
+| Category                        | SFDC Dataloader                                                | ARM DataLoader                                                                          | ARM DataLoader Pro                                                                                                                                                             |
 | ------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Ease of use                     | Wizard interface                                               | Simple, easy steps to create a DataLoader job                                           | Simple, easy steps to create a DataLoader Pro job                                                                                                                              |
 | Data/records Supported          | Supports up to 5 million records                               | Supports unlimited data                                                                 | Supports unlimited data                                                                                                                                                        |

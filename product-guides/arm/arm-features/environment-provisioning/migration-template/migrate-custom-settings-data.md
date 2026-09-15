@@ -17,7 +17,7 @@ To migrate custom setting data from one Salesforce Org to another, follow the st
 5. The next screen will fetch the fields available in the selected objects. The non-customizable objects will remain un-highlighted and you won’t be able to select that object.
 6. Click on the **Show Fields** to display the list of fields available in the object.
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+![](<../../../../../.gitbook/assets/unknown (40).webp>)
 
 7. Select the desired fields and then click on the **Get Records** button.
 

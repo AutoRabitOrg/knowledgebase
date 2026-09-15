@@ -6,7 +6,7 @@
 
 ## AutoRABIT Vault Release Notes 26.2.6 <a href="#autorabit-vault-release-notes-26.2.6" id="autorabit-vault-release-notes-26.2.6"></a>
 
-**Release Date: 13 Sep 2026**
+**Release Date: 16 Sep 2026**
 
 #### **Clone Masking Rules Across Objects**
 

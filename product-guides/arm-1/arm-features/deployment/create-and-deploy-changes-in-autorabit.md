@@ -60,7 +60,7 @@ This section lets you control how the profile settings and permissions are passe
 
 #### Selection of Metadata <a href="#id-4-selection-of-metadata" id="id-4-selection-of-metadata"></a>
 
-Once you're done with the initial setup for your deployment, click on **`Retrieve Metadata`**. You'll be directed to the metadata selection screen, which allows you to select the metadata components for deployment. You can also use the search filter to find particular metadata types quickly.<br>
+Once you're done with the initial setup for your deployment, click on **`Next`**. You'll be directed to the metadata selection screen, which allows you to select the metadata components for deployment. You can also use the search filter to find particular metadata types quickly.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2174).png" alt=""><figcaption></figcaption></figure>
 

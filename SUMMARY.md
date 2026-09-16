@@ -223,7 +223,7 @@
       * [Apex Unit Tests](product-guides/arm/arm-features/deployment/apex-unit-tests.md)
       * [Connecting and Syncing Salesforce Orgs](product-guides/arm/arm-features/deployment/connecting-and-syncing-salesforce-orgs.md)
       * [Creating and Deploying Changes](product-guides/arm/arm-features/deployment/create-and-deploy-changes-in-autorabit.md)
-      * [Deploying Profile and Permission Sets](product-guides/arm/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
+      * [Profile Compare](product-guides/arm/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
       * [Deployment Rollback](product-guides/arm/arm-features/deployment/deployment-rollback.md)
       * [Destructive Changes](product-guides/arm/arm-features/deployment/destructive-changes.md)
     * [Environment Provisioning](product-guides/arm/arm-features/environment-provisioning/README.md)

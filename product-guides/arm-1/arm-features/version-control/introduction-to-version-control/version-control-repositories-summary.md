@@ -4,7 +4,7 @@
 **Important Note**: This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users.
 {% endhint %}
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
 The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`Repositories`** page.
 
@@ -32,7 +32,7 @@ Create a pull request to propose and collaborate on changes to a repository. Thi
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.55.16 PM.png" alt=""><figcaption></figcaption></figure>
 
-#### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
+### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
 
 Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.<br>
 
@@ -40,36 +40,36 @@ Create a pull request to propose and collaborate on changes to a repository. The
 
 Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../../../../arm/arm-features/version-control/external-pull-request/).
 
-#### Branches/Tags <a href="#branchestags" id="branchestags"></a>
+### Branches/Tags <a href="#branchestags" id="branchestags"></a>
 
 The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](/broken/pages/Rx3Lff7EWqWNQnf3nABV).
 
 **Additional details under Branch**
 
-**A. Create a Branch**
+#### **A. Create a Branch**
 
 Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md))\
 <br>
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
 
-**B. Register a Branch**
+#### **B. Register a Branch**
 
-Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under Branches Tab.<br>
+Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under the Branches tab, select the branch, and specify the Last Commit Date. The Last Commit Date is a mandatory field, used to determine the point from which commits should be tracked and synchronized for the registered branch.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1969).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**C. Unregister a Branch**
+#### **C. Unregister a Branch**
 
-Select a branch or branches to unregister them from your version control system. Upon confirmation, the branch(es) gets permanently deleted from your version control system. The entire data will get erased.<br>
+Select one or more branches to unregister them from AutoRABIT. Upon confirmation, the selected branch(es) will be removed from AutoRABIT. This action does not delete the branch or its data from the underlying version control repository. The branch will continue to exist in the version control system and can be registered again if required.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1970).png" alt="" width="375"><figcaption></figcaption></figure>
 
-**D. Sync Branches**
+#### **D. Sync Branches**
 
 The **`Sync Branches`** option will allow you to view the branches that are no longer available in your version control repositories but present in ARM; therefore, you can delete them from the ARM application.
 
-**E. Branch Details:**
+#### **E. Branch Details:**
 
 For each branch, view the following details:
 
@@ -99,7 +99,7 @@ For each branch, view the following details:
 6. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
 7. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.
 
-### FAQ
+## FAQ
 
 ### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
 

@@ -14,7 +14,7 @@ If you want to make sure every merge is approved by one or more people, you can 
 To configure the merge approvals:
 
 1. Login to ARM with the admin credentials.
-2. Navigate to **Admin > My Account** and expand the **Merge Settings**
+2. Navigate to **Settings > My Account** and expand the **Merge Settings**
 3. Tick the **Enable criteria based Review Process** checkbox.
 4. Select the **Enable Merge Approver** checkbox.
 5. Set the minimum number of required approvals under the **Approval Level** box. _**Minimum Approval Level can be 1.**_

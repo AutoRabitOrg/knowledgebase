@@ -24,21 +24,22 @@ To do so,
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.28.02.png" alt=""><figcaption></figcaption></figure>
 
-1. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
+3. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-1. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
-   * ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
-   * ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
+4. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+
+* ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
+* ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.38.26 1.png" alt="" width="363"><figcaption></figcaption></figure>
 
-1. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Show Path** displays the parent-child relationships of the conflicted/merged files.
+5. The **File Path view** displays a dynamic, hierarchical list of conflicted/merged items. The **Show Path** displays the parent-child relationships of the conflicted/merged files.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.40.06.png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
+6. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
 
 <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="362"><figcaption></figcaption></figure>
 
@@ -73,12 +74,12 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.44.37.png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. Or, click on a conflicted file to see its related conflict blocks. This tab will display the number of insertions and deletions to each metadata file. The lines highlighted in **GREEN** color indicate those are updated (added/modified) in the source branch and for **RED** color indicates those are updated (added/modified) in the destination branch. The highlighted lines are the modified lines.
+4. Or, click on a conflicted file to see its related conflict blocks. This tab will display the number of insertions and deletions to each metadata file. The lines highlighted in **GREEN** color indicate those are updated (added/modified) in the source branch and for **RED** color indicates those are updated (added/modified) in the destination branch. The highlighted lines are the modified lines.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 18.11.57.png" alt=""><figcaption></figcaption></figure>
 
-1. Navigate to other conflict blocks for the current conflict file by using the **Prev Conflict** or **Next Conflict** icon.
-2. Now, select the criteria by which you want to resolve the merge conflicts:
+5. Navigate to other conflict blocks for the current conflict file by using the **Prev Conflict** or **Next Conflict** icon.
+6. Now, select the criteria by which you want to resolve the merge conflicts:
    * **Dest. file**: This option retains the revisions located in the Destination Branch.
    * **Src. file**: This option retains the revisions located in the Source Branch.
    * **Block**: Select this option to resolve using either Source or Destination block. Here, two options will be auto-populated and you need to select either of the options mentioned below:
@@ -89,22 +90,24 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 <figure><img src="../../../../../.gitbook/assets/image (2279).png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. **Troubleshooting:** Do I have a provision to edit the inline code if the above merge criteria fail to resolve the merge conflicts?
-   * In rare circumstances, your merge conflict may not be resolved by the merge criteria that ARM offers. Additionally, inline editing of the code is not supported by ARM. In such a case, we advise initiating the merge operation while keeping the checkbox for **Review Artifacts** enabled on the **EZ-Merge** screen.
-   * Choose any of the merging criteria that ARM offers on the **Resolve Conflicts** screen. You will next be redirected to the **Review Artifacts** tab, where you can see a list of the changed files staged for commit. Here, you have the ability to preview the changes, review them, or edit the files before pushing them into your version control.
-   * When starting a merge process in ARM, we recommend always enabling the **Review Artifacts** checkbox. It not only offers a workaround for manual code editing, but it also allows you to compare the code from the source branch and the destination branch before merging them.
-2. Click on **Next Conflict** and repeat the steps until all the conflicts are resolved. The data for each conflict gets auto-saved once the user proceeds to either the **Prev** or **Next** conflict.
-3. **Scenarios when the conflict blocks may not be saved:** The user is working on a conflict block and chooses the appropriate option to resolve it, but before clicking on either **Prev** or **Next Conflict** to autosave the data, the user selects another option, let's say the option to show 100/200/300/400/500 lines before and after the conflict. In such a case, the conflict block data will be automatically erased and the user will need to resolve such conflict block once again.
-4. Click on the **Resolve conflict** option to resolve the conflicted file.
+7. **Troubleshooting:** Do I have a provision to edit the inline code if the above merge criteria fail to resolve the merge conflicts?
+
+* In rare circumstances, your merge conflict may not be resolved by the merge criteria that ARM offers. Additionally, inline editing of the code is not supported by ARM. In such a case, we advise initiating the merge operation while keeping the checkbox for **Review Artifacts** enabled on the **EZ-Merge** screen.
+* Choose any of the merging criteria that ARM offers on the **Resolve Conflicts** screen. You will next be redirected to the **Review Artifacts** tab, where you can see a list of the changed files staged for commit. Here, you have the ability to preview the changes, review them, or edit the files before pushing them into your version control.
+* When starting a merge process in ARM, we recommend always enabling the **Review Artifacts** checkbox. It not only offers a workaround for manual code editing, but it also allows you to compare the code from the source branch and the destination branch before merging them.
+
+8. Click on **Next Conflict** and repeat the steps until all the conflicts are resolved. The data for each conflict gets auto-saved once the user proceeds to either the **Prev** or **Next** conflict.
+9. **Scenarios when the conflict blocks may not be saved:** The user is working on a conflict block and chooses the appropriate option to resolve it, but before clicking on either **Prev** or **Next Conflict** to autosave the data, the user selects another option, let's say the option to show 100/200/300/400/500 lines before and after the conflict. In such a case, the conflict block data will be automatically erased and the user will need to resolve such conflict block once again.
+10. Click on the **Resolve conflict** option to resolve the conflicted file.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 18.15.56.png" alt=""><figcaption></figcaption></figure>
 
-1. Repeat the steps for all other conflicted files in order to resolve them before you proceed to commit.
-2. You can find the conflicted files moved to the **Merged Files** section. Here **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch and **M** denotes **Modified Files**.
+11. Repeat the steps for all other conflicted files in order to resolve them before you proceed to commit.
+12. You can find the conflicted files moved to the **Merged Files** section. Here **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch and **M** denotes **Modified Files**.
 
 <figure><img src="../../../../../.gitbook/assets/image (2280).png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. You will be directed to the next tab, **Profile Duplicates**.
+13. You will be directed to the next tab, **Profile Duplicates**.
 
 ### Profile Duplicates <a href="#profile-duplicates" id="profile-duplicates"></a>
 

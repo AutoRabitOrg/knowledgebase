@@ -20,33 +20,33 @@ The merge process is generally performed when a feature is ready for user testin
 
 <mark style="color:blue;">**Important Note**</mark>**:** The merge process in ARM remains valid for **seven days**. Make sure you resolve the merge conflicts (if any) for your merge label and commit the changes to another branch within **seven days** or the merge expires. All merge-related reports such as Static Code Analysis reports, Deployment Validation reports, or Difference reports generated also expire after **seven days**.
 
-1. Hover your mouse over the [**`Version Control`**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) module and select **`Commits.`**
-2. Click on the **`New EZ-Merge`** button.
+1. Click **Create** in the top-right corner and select **EZ-Merge**.
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-* The **`New EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
+* The **`EZ-Merge`** screen is best viewed when the zoom setting is set to 80% on your Chrome/Firefox browser.
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="502"><figcaption><p>EZ-Merge</p></figcaption></figure>
 
-1. You can also reach the **`New Merge`** screen directly by selecting **`Create New > New EZ-Merge`** from the top navigation bar.
-2. In the **`New EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
-3. Select your **`source (base) branch`** and the **`target (destination) branch`**.
+2. You can also reach the **`New Merge`** screen directly by selecting **`Create New > EZ-Merge`** from the top navigation bar.
+3. In the **`EZ-Merge`** screen, select the **`version control repository`** from where the metadata components will be fetched.
+4. Select your **`source (base) branch`** and the **`target (destination) branch`**.
 
 <figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-1. Select the **`Merge Type`** from the dropdown:
-   * `Entire Branch`&#x20;
-   * `Single Revision`
-   * `Commit Label`
-   * `Release Label`
-   * `ALM Label`
+5. Select the **`Merge Type`** from the dropdown:
+
+* `Entire Branch`&#x20;
+* `Single Revision`
+* `Commit Label`
+* `Release Label`
+* `ALM Label`
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Merge Type <a href="#merge-type" id="merge-type"></a>
 
-**A. Entire Branch**
+#### **A. Entire Branch**
 
 This option will merge the entire change from one branch to another branch.&#x20;
 
@@ -56,7 +56,7 @@ This option will merge the entire change from one branch to another branch.&#x20
 
 <figure><img src="../../../../../.gitbook/assets/image (2771).png" alt=""><figcaption></figcaption></figure>
 
-**B. Single Revision**
+#### **B. Single Revision**
 
 Merge a Single Revision from the Commits that you have performed. You can either enter the revision number (in case you remember it) or use the **`Search`** (![](<../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) button next to the **`Single Revision`** field to pull a list of revisions from which you can choose the revision to use in the deployment.
 
@@ -72,7 +72,7 @@ You can also use the **`'Get All Revisions'`** button to get all the revisions a
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-**C. Commit Label**
+#### **C. Commit Label**
 
 Select the commit labels created while committing to the Version Control System. The commit labels created during the EZ-Commit or Merge process will be fetched in the **`Commit Label`** field.
 
@@ -80,13 +80,13 @@ For example, **DXTES-19\_EZ-Commit:** here, **DXTES-19** indicates the _commit l
 
 <figure><img src="../../../../../.gitbook/assets/image (2773).png" alt=""><figcaption></figcaption></figure>
 
-Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
+Click on the **`View Revisions`** link for the list of revisions associated with the commit label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter in the top-right corner of the dialog box.
 
 <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2107).png" alt=""><figcaption></figcaption></figure>
 
-**D. Release Label**
+#### **D. Release Label**
 
 You can select the release labels created using the committed revisions and the labels.
 
@@ -96,13 +96,13 @@ You can select the release labels created using the committed revisions and the 
 
 1. The **`Release Labels`** field populates with all the available release labels in that repository/branch. If no release label is created for the above repository/ branch, an error notification states, **`"No Release Labels found."`**
 2. Select your **Release Label.**&#x20;
-3. Click on the **`View Revisions`** link to view the list of revisions for the release label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter on the top right corner of the dialog box.
+3. Click on the **`View Revisions`** link to view the list of revisions for the release label. A new dialog box appears with the revisions, date/time stamp, comments, and author details. There is a provision to search for specific revisions using the **`Revision Search`** filter in the top-right corner of the dialog box.
 
 <figure><img src="../../../../../.gitbook/assets/image (2109).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/image (2110).png" alt=""><figcaption></figcaption></figure>
 
-**E. ALM Label**
+#### **E. ALM Label**
 
 This allows you to choose and promote the ALM user stories to a higher or lower branch.
 
@@ -112,7 +112,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 <figure><img src="../../../../../.gitbook/assets/image (2775).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note**: You will not have the option to enter the work item details manually, you need to select the work item from the list fetched.
+**Note**: You will not have the option to enter the work item details manually; you need to select the work item from the list fetched.
 {% endhint %}
 
 3. Select one of the work items from the list fetched, and click **OK**.
@@ -196,7 +196,7 @@ This allows you to choose and promote the ALM user stories to a higher or lower 
 
 <figure><img src="../../../../../.gitbook/assets/image (2114).png" alt=""><figcaption></figcaption></figure>
 
-1. **Perform a New EZ-Merge**:
+1. **Perform an EZ-Merge**:
    * Execute a new EZ-Merge from a higher to a lower branch (e.g., INT to DEV).
 2. **Automatic Skipping of Prevalidation Criteria**:
    * The pre-validation criteria will be automatically skipped during the back-merge process.
@@ -338,9 +338,9 @@ For merge labels that are either in progress or have some conflicts, in such a s
 
 Below are the reasons why ARM rejects your merge request:
 
-* It will be auto rejected if the proper **merge criteria** are not enabled. The merge criteria must be enabled before you are performing the jobs.
-  * Navigate to **Admin > My Account > Merge Setting** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/manage-users-account-settings#id-9-merge-settings) for a more detailed explanation.
-* **Workspaces** is wrongly configured
+* It will be auto-rejected if the proper **merge criteria** are not enabled. The merge criteria must be enabled before you perform the jobs.
+  * Navigate to **Admin > My Account > Merge Settings** to select the proper merge criteria. Click [Here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/manage-users-account-settings#id-9-merge-settings) for a more detailed explanation.
+* **Workspaces** is wrongly configured:
   * Search for the workspace id which has the name of the source & target branch and reset that workspace. Once the workspace reset is complete, trigger a new merge.
 * Failed to meet the actual code coverage criteria
   * Please update the merge criteria as needed by disabling code coverage under **Admin > My Account > Merge Settings**.

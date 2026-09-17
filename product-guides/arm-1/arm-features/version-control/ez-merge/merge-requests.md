@@ -16,7 +16,7 @@ As a Salesforce developer, you can collaborate on proposed changes to source cod
 
 ## How to create a merge request  <a href="#how-to-create-a-merge-request" id="how-to-create-a-merge-request"></a>
 
-To initiate a new merge request, go to the [**Version Control**](https://www.autorabit.com/8-benefits-of-version-control-in-salesforce-development/) module and click on the **New Merge Requests** call-to-action button.
+To initiate a new merge request, click the Create button in the top-right corner and select **Merge Request** from the available options.
 
 The **Merge Request History** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 

@@ -22,8 +22,10 @@ The **Deployment** screen is best viewed when the zoom setting is set to **80%**
 
 #### Types of Destructive Changes <a href="#types-of-destructive-changes" id="types-of-destructive-changes"></a>
 
-1. **`Post Destructive Changes:`** The post Destructive Changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
-2. **`Pre Destructive Changes:`** Pre Destructive Changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
+1. **`Post Destructive Changes:`** Deletes unwanted metadata components from the destination org after a successful deployment.
+2. **`Pre Destructive Changes:`** Deletes unwanted metadata components from the destination org before the deployment begins.
+
+**Example:** If an old custom field needs to be removed and a new field is being deployed as a replacement, you may use **Pre-Destructive Changes** to remove the old field before deploying the new metadata.If certain components should only be removed after ensuring the new deployment is successful, you can use **Post-Destructive Changes**, so the deletion occurs only after successful completion of the deployment.
 
 ### Deploying Destructive Changes <a href="#deploying-destructive-changes" id="deploying-destructive-changes"></a>
 

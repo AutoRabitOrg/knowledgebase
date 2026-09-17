@@ -38,24 +38,24 @@ Create a pull request to propose and collaborate on changes to a repository. The
 
 <figure><img src="../../../../../.gitbook/assets/image (1968).png" alt=""><figcaption></figcaption></figure>
 
-Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../../../../arm/arm-features/version-control/external-pull-request/).
+Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request/).
 
 ### Branches/Tags <a href="#branchestags" id="branchestags"></a>
 
-The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](/broken/pages/Rx3Lff7EWqWNQnf3nABV).
+The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](../../../registration/version-control-repository/git-integration/git-tag.md).
 
 **Additional details under Branch**
 
 #### **A. Create a Branch**
 
-Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md))\
+Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../registration/branching-baseline.md))\
 <br>
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
 
 #### **B. Register a Branch**
 
-Register an existing branch to the current repository. ([LEARN MORE](../../../../arm/arm-features/version-control/)). Click on Register under the Branches tab, select the branch, and specify the Last Commit Date. The Last Commit Date is a mandatory field, used to determine the point from which commits should be tracked and synchronized for the registered branch.<br>
+Register an existing branch to the current repository. ([LEARN MORE](version-control-repositories-summary.md)). Click on Register under the Branches tab, select the branch, and specify the Last Commit Date. The Last Commit Date is a mandatory field, used to determine the point from which commits should be tracked and synchronized for the registered branch.<br>
 
 <figure><img src="../../../../../.gitbook/assets/image (1969).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -90,7 +90,7 @@ For each branch, view the following details:
     *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.<br>
 
         <figure><img src="../../../../../.gitbook/assets/image (1971).png" alt="" width="563"><figcaption></figcaption></figure>
-3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../../arm/arm-administration/alm-management.md). If you try to sync external commits to a branch that has not been mapped, you will see a notification popup. You must map the required branch under **`Settings > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external smart commits. For more information on mapping a branch, refer [HERE](../../../../arm/arm-administration/alm-management.md).
+3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../getting-started-1/registration/alm-management/). If you try to sync external commits to a branch that has not been mapped, you will see a notification pop-up. You must map the required branch under **`Settings > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external Smart Commits. For more information on mapping a branch, refer [HERE](../../deployment/connecting-and-syncing-salesforce-orgs.md).
 
 <figure><img src="../../../../../.gitbook/assets/image (1039).png" alt=""><figcaption></figcaption></figure>
 

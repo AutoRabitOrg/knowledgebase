@@ -13,7 +13,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
     <br>
 
     <figure><img src="../../../../../.gitbook/assets/image (1972).png" alt="" width="206"><figcaption></figcaption></figure>
-3. On the next screen, select the source [**`Salesforce Org`**](https://knowledgebase.autorabit.com/docs/salesforce-org) from which the changes will be retrieved.
+3. On the next screen, select the source **`Salesforce Org`** from which the changes will be retrieved.
 4. Select the user registered for the above Salesforce org.
 5.  Select the version control **`Repository`** and the **`Branch`** where the changes will be committed. For Version Control as GIT type, the user can create a new branch from the EZ-Commit user interface.\
     <br>

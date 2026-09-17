@@ -17,7 +17,7 @@ AutoRABIT has introduced a section called ALM labels under the **Change Labels**
 <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. It's always a good idea to break data into multiple pages when dealing with multiple templates records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
-5. Under **Associated Commits**, view revisions configured with the selected ALM. The same revision number can be found in the [Commits](../../../../arm/arm-features/version-control/ez-commits/commits-summary.md) screen for configured ALM label. You will also be able to view the list of _committed members_ along with the _prevalidation result_. The same goes for the [**Deployment History**](../../../../arm/arm-features/ncino/feature-deployment/deployment-using-version-control.md) section as well.
+5. Under **Associated Commits**, view revisions configured with the selected ALM. The same revision number can be found in the [Commits](../ez-commits/) screen for configured ALM label. You will also be able to view the list of _committed members_ along with the _prevalidation result_. The same goes for the [**Deployment History**](../../deployment/monitor-deployments.md) section as well.
 
 <figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -63,12 +63,12 @@ To do so,
 The Merge inline editor helps users to resolve more complex merging conflicts directly from the ARM merge interface.
 
 {% hint style="info" %}
-**Important Note:** Files over **10 MB** may not be resolved using Merge Inline Editor, therefore, in such a scenario, download the conflicted files on your local machine, resolve, and upload them again.
+**Important Note:** Files over **10 MB** may not be resolved using the Merge Inline Editor; therefore, in such a scenario, download the conflicted files to your local machine, resolve them, and upload them again.
 {% endhint %}
 
-1. Go to the **Commits** screen and search for your merge label that has conflict. Click on the **Resolve Conflict** icon.
+1. Go to the **Commits** screen and search for your merge label that has a conflict. Click on the **Resolve Conflict** icon.
 2. The list of conflicted files or merged files will display on the next screen.&#x20;
-3. There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below and choose either of the criteria to resolve the files.
+3. There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below, and choose either of the criteria to resolve the files.
    * **Use Source:** This option retains the revisions located in the source branch
    * **Use Destination:** This option retains the revisions located in the destination branch
 
@@ -80,13 +80,12 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 5. Navigate to other conflict blocks for the current conflict file by using the **Prev Conflict** or **Next Conflict** icon.
 6. Now, select the criteria by which you want to resolve the merge conflicts:
-   * **Dest. file**: This option retains the revisions located in the Destination Branch.
-   * **Src. file**: This option retains the revisions located in the Source Branch.
-   * **Block**: Select this option to resolve using either Source or Destination block. Here, two options will be auto-populated and you need to select either of the options mentioned below:
-     1. **Destination**: The changes in the destination block will be used in the resulting merged file.&#x20;
-     2. **Source**: The changes in the source block will be used in the resulting merged file.
-   * **Block from ‘Dest.’ before ‘Src.’**: This allows you to use both the blocks; first changes in the **destination** block and later **source** block. The changes are used in the resulting **Merged** file.
-   * **Block from ‘Src.’ before ‘Dest.’**: This allows you to use both the blocks; first changes in the **source** block and later **destination** block. The changes are used in the resulting **Merged** file.
+   * **Accept Source**
+   * **Accept Target**
+   * **Source then Target**
+   * **Target then Source**
+   * **Entire Source**
+   * **Entire Target**
 
 <figure><img src="../../../../../.gitbook/assets/image (2279).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -97,13 +96,13 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 * When starting a merge process in ARM, we recommend always enabling the **Review Artifacts** checkbox. It not only offers a workaround for manual code editing, but it also allows you to compare the code from the source branch and the destination branch before merging them.
 
 8. Click on **Next Conflict** and repeat the steps until all the conflicts are resolved. The data for each conflict gets auto-saved once the user proceeds to either the **Prev** or **Next** conflict.
-9. **Scenarios when the conflict blocks may not be saved:** The user is working on a conflict block and chooses the appropriate option to resolve it, but before clicking on either **Prev** or **Next Conflict** to autosave the data, the user selects another option, let's say the option to show 100/200/300/400/500 lines before and after the conflict. In such a case, the conflict block data will be automatically erased and the user will need to resolve such conflict block once again.
+9. **Scenarios when the conflict blocks may not be saved:** The user is working on a conflict block and chooses the appropriate option to resolve it, but before clicking on either **Prev** or **Next Conflict** to autosave the data, the user selects another option, let's say the option to show 100/200/300/400/500 lines before and after the conflict. In such a case, the conflict block data will be automatically erased, and the user will need to resolve such conflict block once again.
 10. Click on the **Resolve conflict** option to resolve the conflicted file.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 18.15.56.png" alt=""><figcaption></figcaption></figure>
 
 11. Repeat the steps for all other conflicted files in order to resolve them before you proceed to commit.
-12. You can find the conflicted files moved to the **Merged Files** section. Here **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch and **M** denotes **Modified Files**.
+12. You can find the conflicted files moved to the **Merged Files** section. Here, **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch, and **M** denotes **Modified Files**.
 
 <figure><img src="../../../../../.gitbook/assets/image (2280).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -111,7 +110,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 ### Profile Duplicates <a href="#profile-duplicates" id="profile-duplicates"></a>
 
-This tab will list all duplicate entries for your profile/permission sets and you want to resolve them before resolving the conflict. For multiple entries, you have a provision to delete the entry that you no longer require (using the **X** icon) or to keep all entries as they are by default.
+This tab will list all duplicate entries for your profile/permission sets, and you want to resolve them before resolving the conflict. For multiple entries, you have the option to delete the entry that you no longer require (using the **X** icon) or to keep all entries as they are by default.
 
 <figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -133,7 +132,7 @@ This tab will list all duplicate entries for your profile/permission sets and yo
 
 The **Review Artifacts** tab will appear in the merge conflict screen only if you enabled the **Review Artifacts** checkbox while creating the merge operation.
 
-Under the **Review Artifacts** tab, you can see a list of the conflict resolved files staged for commit. This gives you the ability to preview the changes, review them or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon) where you can compare the code from the source to the target branch before you merge them.
+Under the **Review Artifacts** tab, you can see a list of the conflict-resolved files staged for commit. This gives you the ability to preview the changes, review them, or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon) where you can compare the code from the source to the target branch before you merge them.
 
 <figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

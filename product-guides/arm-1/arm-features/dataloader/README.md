@@ -13,11 +13,11 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 
 #### Features of Single DataLoader <a href="#features-of-single-dataloader" id="features-of-single-dataloader"></a>
 
-1. [Extracting Data from Salesforce](../../../arm/arm-features/dataloader/single-dataloader/extract-salesforce-data.md)
-2. [Importing Data into Salesforce](https://knowledgebase.autorabit.com/~/revisions/VeHZ8mcI6dMtGtRmikDE/product-guides/arm-1/arm-features/dataloader/single-dataloader/insert-salesforce-data)
-3. [Deleting Data from Salesforce](https://knowledgebase.autorabit.com/~/revisions/XiCA2Suw9gTFDLOmAdbe/product-guides/arm-1/arm-features/dataloader/single-dataloader/delete-salesforce-data)
-4. [Updating Data in Salesforce](https://knowledgebase.autorabit.com/~/revisions/YKJ8rU4FZ2SDTfP7KP8c/product-guides/arm-1/arm-features/dataloader/single-dataloader/update-salesforce-data)
-5. [Upserting Data into Salesforce](https://knowledgebase.autorabit.com/~/revisions/YKJ8rU4FZ2SDTfP7KP8c/product-guides/arm-1/arm-features/dataloader/single-dataloader/upsert-salesforce-data)
+1. [Extracting Data from Salesforce](single-dataloader/extract-salesforce-data.md)
+2. [Inserting Data into Salesforce](single-dataloader/insert-salesforce-data.md)
+3. [Deleting Data from Salesforce](single-dataloader/delete-salesforce-data.md)
+4. [Updating Data in Salesforce](single-dataloader/update-salesforce-data.md)
+5. [Upserting Data into Salesforce](single-dataloader/upsert-salesforce-data.md)
 
 ### DataLoader Pro: Overview <a href="#dataloader-pro-overview" id="dataloader-pro-overview"></a>
 
@@ -47,7 +47,7 @@ ARM **DataLoader** allows you to configure your data loading operations in conve
 | Field mapping                   | Drag-and-drop field mapping                                    | Auto field mapping                                                                      | Auto field mapping                                                                                                                                                             |
 | Schedule                        | Does not support scheduling                                    | Supports scheduling                                                                     | Supports scheduling                                                                                                                                                            |
 | Pre/post-migration operations   | No built-in mechanism                                          | Built-in handling mechanism for validation and workflow rules while migrating data      | Built-in handling mechanism for validation and workflow rules while migrating data                                                                                             |
-| Dataloader operations supported | Supports export, insert, update, upsert, and delete operations | Supports export, insert, update, upsert, and delete operations                          | Automatically and dynamically supports insert, update, and upsert operations, based on destination org data, for multiple objects, while preserving parent/child relationships |
+| DataLoader operations supported | Supports export, insert, update, upsert, and delete operations | Supports export, insert, update, upsert, and delete operations                          | Automatically and dynamically supports insert, update, and upsert operations, based on destination org data, for multiple objects, while preserving parent/child relationships |
 | Multi-object migration support  | Does not support multi-object migration                        | Does not support multi-object migration                                                 | Supports multiple object data migration                                                                                                                                        |
 | Ease of admin                   | Supports results download                                      | User-friendly results data, downloadable in CSV format                                  | User-friendly Object and results data, downloadable in CSV format                                                                                                              |
 | Grouping of jobs                | Does not support job grouping                                  | The user can group sets of DataLoader jobs                                              | The user can group sets of DataLoader jobs                                                                                                                                     |

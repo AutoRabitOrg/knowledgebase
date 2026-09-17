@@ -742,8 +742,6 @@
         * [Upserting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/upsert-salesforce-data.md)
         * [Using DataLoader with Lookups](product-guides/arm-1/arm-features/dataloader/single-dataloader/using-data-loader-with-lookups.md)
       * [Import Using DataLoader Pro](product-guides/arm-1/arm-features/dataloader/dataloader-pro.md)
-      * [Copy of Import Using DataLoader Pro](product-guides/arm-1/arm-features/dataloader/dataloader-pro-1.md)
-      * [Copy of Copy of Import Using DataLoader Pro](product-guides/arm-1/arm-features/dataloader/dataloader-pro-2.md)
       * [Configuring DataLoader](product-guides/arm-1/arm-features/dataloader/dataloader-configuration.md)
       * [Setting Up a Test Environment](product-guides/arm-1/arm-features/dataloader/test-environment-setup.md)
       * [Preparing the CSV file for ARM DataLoader](product-guides/arm-1/arm-features/dataloader/preparing-the-csv-file-for-arm-dataloader.md)

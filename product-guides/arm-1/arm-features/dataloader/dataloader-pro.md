@@ -370,7 +370,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/43 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 44. Open Job Results
 
-    * Go to **Dataloader Pro**.
+    * Go to **DataLoader Pro**.
     * For your job (e.g., _Brands Migration \* Masking_), click the **⋮** menu under **Actions** and choose **Job Results**.
 
     <figure><img src="../../../../.gitbook/assets/44 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -483,20 +483,20 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/60 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 62. **Open Edit**
 
-    * From **Dataloader Pro**, find your job.
+    * From **DataLoader Pro**, find your job.
     * In **Actions**, click the **⋮** menu and choose **Edit**.
 
     <figure><img src="../../../../.gitbook/assets/61 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 63. **Edit Job – Login & Select Object**
 
-    * On **Edit Dataloader Job**, choose **Source Org** and **Destination Org**.
+    * On **Edit DataLoader Job**, choose **Source Org** and **Destination Org**.
     * Click **Login and fetch objects** to load metadata.
     * Click **Next** to continue through the setup steps as needed.
 
     <figure><img src="../../../../.gitbook/assets/62 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 64. **Open Schedule**
 
-    * From **Dataloader Pro**, open the **⋮** menu for the job.
+    * From **DataLoader Pro**, open the **⋮** menu for the job.
     * Select **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/63 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -509,19 +509,19 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 66. **Delete a Job**
 
-    * From **Dataloader Pro**, open the job’s **⋮** menu.
+    * From **DataLoader Pro**, open the job’s **⋮** menu.
     * Click **Delete**.
 
     <figure><img src="../../../../.gitbook/assets/65 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 67. **Confirm Deletion**
 
     * Review the job name in the confirmation dialog.
-    * Click **Delete** to remove, or **Cancel** to keep the job.
+    * Click **Delete** to remove or **Cancel** to keep the job.
 
     <figure><img src="../../../../.gitbook/assets/66 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 68. **Clone a Job**
 
-    * From **Dataloader Pro**, open the job’s **⋮** menu.
+    * From **DataLoader Pro**, open the job’s **⋮** menu.
     * Click **Clone**.
 
     <figure><img src="../../../../.gitbook/assets/67 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -533,12 +533,12 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/68 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 70. **Verify Cloned Job**
 
-    * Back on **Dataloader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
+    * Back on **DataLoader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
     <figure><img src="../../../../.gitbook/assets/69 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 71. Run Job
 
-    * From Dataloader Pro, locate your job.
+    * From DataLoader Pro, locate your job.
     * In **Actions**, click the **▶ Run** icon.
 
     <figure><img src="../../../../.gitbook/assets/70 - DL PRO.png" alt=""><figcaption></figcaption></figure>
@@ -566,7 +566,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/73 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 76. Open Job Log
 
-    * From Dataloader Pro, open the job’s **⋮** menu.
+    * From DataLoader Pro, open the job’s **⋮** menu.
     * Select **Log**.
 
     <figure><img src="../../../../.gitbook/assets/74 - DL PRO.png" alt=""><figcaption></figcaption></figure>

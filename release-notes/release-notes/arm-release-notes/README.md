@@ -70,6 +70,8 @@ Fixed an issue where the email notification field was missing while configuring 
 
 With this fix, the email notification section is restored, and the email field is displayed as mandatory, consistent with the Old UI.
 
+***
+
 ## ARM **Release Notes 26.3.11**
 
 **Release Date: 13 Sep 2026**

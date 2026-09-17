@@ -7,7 +7,9 @@ A Commit Label helps to label a commit. For example, changes related to a user s
 ### Creating a Commit Label <a href="#creating-a-commit-label" id="creating-a-commit-label"></a>
 
 1. Log in to your AutoRABIT account.
-2. Hover your mouse over the [**Version Control**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) module and click on the **Change Labels > Commit Labels** or go directly to the **Change Labels** tab and select **Commit Labels** from the dropdown.The **Commit Labels** screen is best viewed when the zoom setting is set to **75%** on your Chrome/Firefox browser.
+2. Navigate to the left navigation pane, select Version Control, and click **Manage Labels** from the dropdown. Then, select **Commit Labels** from the top navigation bar. \
+   \
+   The **Commit Labels** screen is best viewed when the zoom setting is set to **75%** on your Chrome/Firefox browser.
 
 <figure><img src="../../../../../.gitbook/assets/image (90) (1) (1).png" alt="" width="225"><figcaption></figcaption></figure>
 

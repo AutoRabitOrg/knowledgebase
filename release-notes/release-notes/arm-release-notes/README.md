@@ -2,6 +2,74 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.12**
+
+**Release Date: 20 Sep 2026**
+
+#### Org Sync Performance and Stability Improvements <a href="#org-sync-performance-and-stability-improvements" id="org-sync-performance-and-stability-improvements"></a>
+
+Improved Org Sync performance and stability for large Salesforce organizations by introducing a dedicated, bounded thread pool and optimizing diff generation.
+
+Org Sync now runs a maximum of two jobs concurrently by default, while additional jobs remain queued until capacity becomes available. The concurrency limit can be configured using `rabit.orgsync.max-concurrent-syncs`. This prevents Org Sync operations from competing with deployments, audit sync, SCA reports, and other scheduled processes.
+
+The diff-generation process now writes each metadata type to disk immediately after comparison instead of retaining the entire organization’s diff in memory. These improvements reduce peak JVM memory consumption, CPU utilization, and garbage-collection overhead while preventing out-of-memory conditions when multiple Org Sync jobs run simultaneously.
+
+The existing deployment comparison workflow remains unchanged.
+
+#### Salesforce API 67 Settings Metadata Support  <a href="#salesforce-api-67-settings-metadata-support-phase-2" id="salesforce-api-67-settings-metadata-support-phase-2"></a>
+
+Added support for nine new Settings metadata members introduced with Salesforce API version 67:
+
+* EmailAuthorizationSettings
+* EnterpriseApiSettings
+* EvidenceMgmtSettings
+* IndustriesInsuranceSettings
+* LaborCostOptimCrewMgmtSettings
+* QualityManagementSettings
+* ServiceIssueManagementSettings
+* ServiceItsmChangeManagementSettings
+* ThunderbirdVoiceSettings
+
+These singleton members are now supported across the metadata lifecycle, including retrieval, EZ-Commit change detection, constructive and destructive change processing, and deployment to Salesforce organizations.
+
+#### Installation Key Handling Fix in CI Jobs <a href="#installation-key-handling-fix-in-ci-jobs" id="installation-key-handling-fix-in-ci-jobs"></a>
+
+Fixed an issue where a masked installation key could be incorrectly processed while saving or updating a CI Job, resulting in an **Invalid InstallationKey for SubscriberPackageVersion** error during package installation.
+
+With this fix, ARM validates the complete masked value instead of performing a partial match. The Installation Key field also correctly clears and restores its masked value during focus and blur actions in both the Old and New UIs. This fix applies to CI Job types 9 and 10.
+
+#### Installed Package Validation Fix in EZ-Commit and EZ-Merge <a href="#installed-package-validation-fix-in-ez-commit-and-ez-merge" id="installed-package-validation-fix-in-ez-commit-and-ez-merge"></a>
+
+Fixed an issue where configurations containing only **InstalledPackage** metadata failed during validation with a **Missing Active RSS Component** error, even though the same configuration could be deployed successfully.
+
+With this fix, the Missing Active RSS validation is handled correctly for InstalledPackage metadata during validation deployments. The fix applies to EZ-Commit and EZ-Merge workflows for both DX and non-DX repositories, with and without validation deployment enabled.
+
+#### CI Job Queue Processing Fix <a href="#ci-job-queue-processing-fix" id="ci-job-queue-processing-fix"></a>
+
+Fixed an issue where validation and deployment CI Jobs remained in the **Pending** state with a message indicating that another deployment to the same destination was in progress, even when no active job was running.
+
+With this fix, ARM verifies whether the claimed job is still active instead of relying only on the existence of a queue record. Stale claims are automatically cleared when eligible, allowing queued CI Jobs to proceed without manual database intervention.
+
+This fix applies to manually triggered and webhook-triggered CI Jobs across different job types.
+
+#### Dotfile Details Logout Fix in Commit History <a href="#dotfile-details-logout-fix-in-commit-history" id="dotfile-details-logout-fix-in-commit-history"></a>
+
+Fixed an issue where expanding `.gitignore` or other dotfiles in the **Commit History → File Changes** tab could unexpectedly redirect users to the login page.
+
+With this fix, the comments API sends each request with a unique timestamp to prevent previously cached **403 Forbidden** responses from being reused. Users can now view dotfile details without being logged out.
+
+#### Duplicate Repository Name Validation <a href="#duplicate-repository-name-validation" id="duplicate-repository-name-validation"></a>
+
+Fixed an issue where different users could register repositories with the same repository name by providing different repository URLs.
+
+With this fix, ARM validates repository names across all users during registration. If the repository name is already in use, the registration is prevented and an appropriate validation message is displayed.
+
+#### Org Sync Schedule Email Field Fix – New UI <a href="#org-sync-schedule-email-field-fix-new-ui" id="org-sync-schedule-email-field-fix-new-ui"></a>
+
+Fixed an issue where the email notification field was missing while configuring an Org Sync schedule in the New UI.
+
+With this fix, the email notification section is restored, and the email field is displayed as mandatory, consistent with the Old UI.
+
 ## ARM **Release Notes 26.3.11**
 
 **Release Date: 13 Sep 2026**

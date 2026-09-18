@@ -1,6 +1,8 @@
 # Deployment via Template using Salesforce Org
 
-**Deployment via Template Using Salesforce Org** allows users to deploy nCino data from a source Salesforce org to a destination environment based on a selected Standard or Community Feature Migration Template. The object configuration defined in the selected template, such as filters, applied mappings, and other configurations, is used to identify and retrieve the required data from the source org.\
+**Deployment via Template Using Salesforce Org** allows users to deploy nCino data from a source Salesforce org to a destination environment based on a selected Standard or Community Feature Migration Template. The object configuration defined in the selected template, such as filters, applied mappings, and other configurations, is used to identify and retrieve the required data from the source org.
+
+\
 The retrieved data is then deployed to the destination environment based on the template configuration.
 
 \

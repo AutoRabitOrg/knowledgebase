@@ -468,7 +468,7 @@ Salesforce Connect OData 4.0 license subscription.
 
 1. Salesforce OData 4.0 adapter has a limitation on the number of callouts per hour. This will be addressed with the support for the Salesforce OData 4.01 adapter in subsequent versions of the capability.
 2. All the limitations of Salesforce external objects are applicable as mentioned in this article: [Help and Training Community](https://help.salesforce.com/s/articleView?language=en_US\&id=sf.platform_connect_general_limits.htm\&type=5)
-3. The solution only supports customers configured with AWS S3 as a storage option in Vault.
+3. The solution only supports customers configured with AWS S3 as a storage option in AutoRABITVault.
 4. There is a max limit of 5GB of archived data per customer supported for connecting to Salesforce external data source as part of the beta program. This can be extended to a higher limit by raising a request with [support@autorabit.com](mailto:support@autorabit.com).
 5. Fields of type XmlObjectWrapper are not supported.
 6.  Fields of the object that have soapType as double, values will be truncated according to the precision and scale, as defined in the metadata of the object’s field.

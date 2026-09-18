@@ -4,6 +4,141 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.21
+
+**Release Date: 20 September 2026**
+
+### Summary
+
+CodeScan 26.0.21 is comprised of the following components:
+
+* 0 New Features
+* 3 Application Enhancements
+* 0 New Rules
+* 1 Rule Enhancement
+* 0 Rule Deprecations
+* 1 Fix
+
+Component details are listed in their corresponding sections within this document.
+
+### Application Enhancements
+
+#### Rule Version Rollback Support
+
+Added a new `usePreviousVersion` boolean parameter to rules, allowing customers to continue using the previous version of a rule when a rule enhancement is released, while new customers and customers who do not opt in automatically receive the latest rule behavior.
+
+**Behavior**
+
+* A new rule parameter `usePreviousVersion` (default: `false`) is available on enhanced rules.
+* When `usePreviousVersion = false`, the rule executes the current/latest version.
+* When `usePreviousVersion = true`, the rule executes the previous version.
+* Only two versions of a rule are maintained at any time: Current and Previous.
+* When a rule receives a new enhancement:
+  * The new implementation becomes the Current Version.
+  * The existing Current Version becomes the Previous Version.
+  * `usePreviousVersion` is automatically reset to `false` for all customers, so everyone receives the new Current Version by default.
+  * Customers who wish to use the Previous Version must explicitly set `usePreviousVersion = true`.
+
+**Example**
+
+* Release 1: V2 = Current, V1 = Previous. Customer sets `usePreviousVersion = true` → gets V1.
+* Release 2: V3 = Current, V2 = Previous. Parameter is reset to `false` → customer gets V3. Customer can opt into V2 by setting `usePreviousVersion = true`.
+
+**Outcome**
+
+* Provides customers with a controlled migration path when rule behavior changes.
+* Ensures new enhancements are adopted by default while preserving an opt-out mechanism.
+* Reduces disruption when rule logic evolves across releases.
+
+#### AI Credit Usage Tracking for Accurate Billing
+
+Enhanced AI credit tracking to persist the exact credit cost at the time of each AI feature execution, ensuring accurate historical billing even when credit pricing changes.
+
+**Behavior**
+
+* A new `credits_used` column is added to the `ai_call_log` table, recording the number of credits consumed for each AI invocation at execution time.
+* Credit values are captured at execution time and are not derived dynamically from the current admin configuration.
+* Changes to feature credit costs in Admin Settings apply only to future executions; existing records remain unchanged.
+* The AI Billing page now calculates total and per-user credit consumption using the persisted `credits_used` values rather than current feature pricing.
+
+**Outcome**
+
+* Ensures billing accuracy when AI feature credit costs are adjusted over time.
+* Preserves historical billing integrity for audit and reconciliation.
+* Provides transparent, per-invocation credit tracking.
+
+#### Salesforce Metadata File-Suffix Coverage Gaps
+
+Expanded the SFMeta language registration to include previously missing Salesforce metadata file types that existing rules already parse, closing coverage gaps between file discovery and rule execution.
+
+**Behavior**
+
+* Added missing suffixes for Custom Metadata Types, PermissionSetGroup, Layout, and CustomLabels to the SFMeta language registration. Previously, only 10 file suffixes were registered (`.settings`, `.object`, `.profile`, `.flow`, `.workflow`, `.permissionset`, `.profileSessionSetting`, `.sharingRules`, `.profilePasswordPolicy`, `.network`), even though individual rules (e.g., `PageLayoutNamingRule`, `RequireDescriptionComponentRule`) already parse these file types' XML content.
+* Documented the LWC-via-ESLint pipeline (`@lwc/eslint-plugin-lwc`, `eslint-plugin-sfdx`, `@salesforce/core`) as an intentional secondary pipeline and confirmed its dependency versions are included in the version-unification cadence.
+
+**Outcome**
+
+* Ensures consistent file discovery for all Salesforce metadata types that rules already support.
+* Eliminates scenarios where rules could silently miss files due to unregistered suffixes.
+* Clarifies the LWC analysis architecture for maintenance and update purposes.
+
+### Rule Enhancements
+
+#### Enhanced FLS Query Detection for Dynamic and Static Patterns
+
+Enhanced the FLS (Field-Level Security) query detection rules to resolve dynamic and static SOQL query strings passed to `Database.getQueryLocator()`, improving detection of missing security enforcement clauses.
+
+**Resolution Algorithm — Query String**
+
+When the rule encounters `Database.getQueryLocator(q)`, it now:
+
+1. Finds the last assignment of the query variable before the call site.
+2. Inspects the right-hand side right-to-left (most recently appended fragment first) and evaluates each fragment:
+   * String literal containing `WITH USER_MODE` or `WITH SECURITY_ENFORCED` → no violation.
+   * String literal containing `WITH SYSTEM_MODE` → violation.
+   * Variable reference → recursively traces to its assignment.
+   * Method call → inspects the method's return statement(s) for the clause.
+   * Method parameter → traces all callers of the enclosing method and resolves the argument at each call site.
+3. If a fragment contains `FROM` or `WHERE` and no clause has been found → emits a violation.
+4. If recursion depth exceeds 5 without resolving → assumes no violation (conservative behavior to prevent infinite recursion on circular references).
+
+**Resolution Algorithm — AccessLevel Parameter**
+
+For the two-argument form `Database.getQueryLocator(q, mode)`:
+
+| Pattern                                    | Outcome                                            |
+| ------------------------------------------ | -------------------------------------------------- |
+| `AccessLevel.USER_MODE` (direct literal)   | Compliant                                          |
+| `AccessLevel.SYSTEM_MODE` (direct literal) | Violation                                          |
+| Local variable                             | Traces to its last assignment before the call site |
+| Method parameter                           | Finds all callers and resolves the argument        |
+| Method call (e.g. `getMode()`)             | Inspects the method's return statement(s)          |
+| Chain > 5 hops                             | No Violation (depth limit)                         |
+
+**Outcome**
+
+* Significantly improves detection accuracy for dynamically constructed SOQL queries.
+* Catches hidden `SYSTEM_MODE` usage across variable assignments, method returns, and call chains.
+* Reduces false negatives for FLS enforcement violations.
+
+### Fixes
+
+#### AI Code Assistant Indicator Restricted to Supported Integrations
+
+Fixed an issue where the "AI Fix Available" indicator was displayed for issues across all integration types, including Salesforce, Bitbucket, and Webhook repositories. AI Code Fix currently supports only GitHub and GitLab integrations.
+
+**Behavior**
+
+* The "AI Fix Available" indicator is now displayed only for projects connected through GitHub or GitLab.
+* The indicator is hidden for unsupported integrations (Salesforce, Bitbucket, Webhook).
+
+**Outcome**
+
+* Prevents user confusion about AI Code Fix availability for unsupported repository types.
+* Ensures the UI accurately reflects feature compatibility per integration.
+
+***
+
 ## CodeScan Release Notes 26.0.20
 
 **Release Date: 6 September 2026**

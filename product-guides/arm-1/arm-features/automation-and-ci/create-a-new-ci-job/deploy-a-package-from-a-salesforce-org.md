@@ -10,7 +10,10 @@ Click [here](../../../../arm/troubleshoot/known-issues-limitations/salesforce-kn
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Backup your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a **Start Date**. This job can be further customized to run functional test cases from version control.
+Create a deployment package from metadata changes made in a Salesforce org after a specified start date and deploy those changes in another Salesforce org. This job helps teams automate the promotion of recently developed changes without manually selecting individual components. The job can also be configured to execute functional test cases as part of the deployment process.
+
+Example:\
+A development team completes a set of enhancements in a sandbox environment over several days. By specifying a start date, ARM automatically identifies the metadata changes made during that period, builds a deployment package, and deploys it in a QA environment. This streamlines the release process, reduces manual effort, and helps ensure that only the intended changes are migrated.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 
@@ -28,7 +31,7 @@ Backup your Salesforce metadata to version control and trigger a deployment to a
 3. (Optional) Choose a **Group** to organize the job, or click **`+`** to create a new group.
 4. The configuration page is divided into sections explained below.
 
-#### Build <a href="#build" id="build"></a>
+### Build <a href="#build" id="build"></a>
 
 Under **Build**, provide:
 
@@ -77,7 +80,7 @@ _For more information on running **Static Code Analysis in CI Jobs**, see_ [_thi
 **Important Note:** To set exclusions globally, open **My Account > My Salesforce Settings**, choose **Exclude metadata types**, and select the types to skip. These settings apply to all future CI jobs.
 {% endhint %}
 
-#### Deploy <a href="#deploy" id="deploy"></a>
+### Deploy <a href="#deploy" id="deploy"></a>
 
 Deploy or validate the package in a destination org:
 
@@ -103,7 +106,7 @@ Deploy or validate the package in a destination org:
 * Ensure tests have run at least once before using **Run Tests Based on Changes**.
 {% endhint %}
 
-**Additional Deployment Options**
+### **Additional Deployment Options**
 
 <figure><img src="../../../../../.gitbook/assets/image (2200).png" alt=""><figcaption></figcaption></figure>
 
@@ -132,13 +135,13 @@ _You can sequence multiple post-deployment actions:_
 
 <figure><img src="../../../../../.gitbook/assets/image (2203).png" alt=""><figcaption></figcaption></figure>
 
-#### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
+### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 
 Analyze metadata dependencies to avoid breaking changes:
 
 <figure><img src="../../../../../.gitbook/assets/image (2204).png" alt=""><figcaption></figcaption></figure>
 
-#### Tests <a href="#tests" id="tests"></a>
+### Tests <a href="#tests" id="tests"></a>
 
 Run functional tests before deployment:
 
@@ -156,23 +159,23 @@ Run functional tests before deployment:
 
 <figure><img src="../../../../../.gitbook/assets/image (2208).png" alt=""><figcaption></figcaption></figure>
 
-#### Callout URL <a href="#callout-url" id="callout-url"></a>
+### Callout URL <a href="#callout-url" id="callout-url"></a>
 
 Configure HTTP callouts to external services. See the [Callout URL guide](../../../../arm/arm-features/automation-and-ci/configure-callout-url.md).
 
-#### Notifications <a href="#notifications" id="notifications"></a>
+### Notifications <a href="#notifications" id="notifications"></a>
 
 Send success or failure emails to selected recipients.
 
 <figure><img src="../../../../../.gitbook/assets/image (2209).png" alt=""><figcaption></figcaption></figure>
 
-#### Schedule <a href="#schedule" id="schedule"></a>
+### Schedule <a href="#schedule" id="schedule"></a>
 
 * **Daily** – Run every day at the chosen time or interval.
 * **Weekly** – Run on selected day(s) and time.
 * **No Schedule** – Save the job and trigger it manually.
 
-#### Save
+### Save
 
 Click **Save** to store the CI job settings.
 

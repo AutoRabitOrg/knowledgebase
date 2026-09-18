@@ -2,13 +2,10 @@
 
 **Deployment via Template Using Salesforce Org** allows users to deploy nCino data from a source Salesforce org to a destination environment based on a selected Standard or Community Feature Migration Template. The object configuration defined in the selected template, such as filters, applied mappings, and other configurations, is used to identify and retrieve the required data from the source org.
 
-\
 The retrieved data is then deployed to the destination environment based on the template configuration.
 
-\
 **Example:** A team has created and configured loan-related records in a development org. They can select an existing Feature Migration Template containing the required object configurations, filters, and mappings. AutoRABIT uses these configurations to retrieve the relevant data from the source org and deploy it to the QA or UAT environment.
 
-\
 **This option is useful in the following scenarios:**
 
 * You need to deploy nCino data between Salesforce environments using a predefined template.

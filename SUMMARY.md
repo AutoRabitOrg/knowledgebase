@@ -395,7 +395,7 @@
       * [Feature Migration](product-guides/arm/arm-features/ncino/feature-migration/README.md)
         * [Create a Feature Migration Template](product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template.md)
         * [Create a Feature Migration Template with Predefined nCino Objects](product-guides/arm/arm-features/ncino/feature-migration/create-a-feature-migration-template-with-predefined-ncino-objects.md)
-        * [Feature Migration Summary Page](product-guides/arm/arm-features/ncino/feature-migration/feature-migration-summary-page.md)
+        * [Feature Management Summary Page](product-guides/arm/arm-features/ncino/feature-migration/feature-migration-summary-page.md)
       * [Feature Deployment](product-guides/arm/arm-features/ncino/feature-deployment/README.md)
         * [Deployment Using Feature Migration Template](product-guides/arm/arm-features/ncino/feature-deployment/deployment-using-feature-migration-template.md)
         * [Deployment via Template using Salesforce Org](product-guides/arm/arm-features/ncino/feature-deployment/deployment-via-template-using-salesforce-org.md)

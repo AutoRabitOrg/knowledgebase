@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.3.12 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
+## nCino - Release 26.3.12 <a href="#ncino-release-26.3.12" id="ncino-release-26.3.12"></a>
 
 **Release Date: 20 Sep 2026**
 
@@ -29,6 +29,8 @@ Jobs interrupted by an instance restart no longer remain indefinitely in an **In
 #### Automatic Recovery of Queued CI Job Commits <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
 
 Resolved an issue where a scheduled nCino CI Job commit interrupted by a service restart remained in progress and blocked later commits to the same branch. Interrupted commits are now marked as **Aborted**. Subsequent commits can leave the queue and continue normally.
+
+***
 
 ## nCino - Release 26.3.11 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
 

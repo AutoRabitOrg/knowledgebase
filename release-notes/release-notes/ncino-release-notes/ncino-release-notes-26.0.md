@@ -6,10 +6,6 @@
 
 **Release Date: 20 Sep 2026**
 
-#### Reliable Loading for Test Environment Jobs <a href="#id-1.-reliable-loading-for-test-environment-jobs" id="id-1.-reliable-loading-for-test-environment-jobs"></a>
-
-Resolved an issue where editing a Test Environment job repeatedly requested Salesforce organization and object data, leaving the page stuck in a loading state. Job initialization now runs only once and prevents duplicate requests. Users can open and edit Test Environment jobs normally.
-
 #### Successful Dataset Comparison with Version Control <a href="#id-2.-successful-dataset-comparison-with-version-control" id="id-2.-successful-dataset-comparison-with-version-control"></a>
 
 Resolved an issue where dataset comparisons failed because empty or invalid request parameters were sent when Version Control was selected as the destination. Request handling now excludes Salesforce organization fields that do not apply to Version Control. Comparisons with both Version Control and Salesforce organizations now complete successfully.
@@ -29,6 +25,10 @@ Resolved intermittent blank screens and delayed content loading in the existing 
 #### Correct Job Statuses Following Instance Restarts <a href="#id-6.-correct-job-statuses-following-instance-restarts" id="id-6.-correct-job-statuses-following-instance-restarts"></a>
 
 Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers nCino Jobs, and Feature Management activities.
+
+#### Automatic Recovery of Queued CI Job Commits <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
+
+Resolved an issue where a scheduled nCino CI Job commit interrupted by a service restart remained in progress and blocked later commits to the same branch. Interrupted commits are now marked as **Aborted**. Subsequent commits can leave the queue and continue normally.
 
 ## nCino - Release 26.3.11 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
 

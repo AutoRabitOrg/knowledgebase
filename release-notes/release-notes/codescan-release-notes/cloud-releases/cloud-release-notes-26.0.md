@@ -42,7 +42,9 @@ Added a new `usePreviousVersion` boolean parameter to rules, allowing customers 
 **Example**
 
 * Release 1: V2 = Current, V1 = Previous. Customer sets `usePreviousVersion = true` → gets V1.
-* Release 2: V3 = Current, V2 = Previous. Parameter is reset to `false` → customer gets V3. Customer can opt into V2 by setting `usePreviousVersion = true`.
+* Release 2: V3 = Current, V2 = Previous. Parameter is reset to `false` → customer gets V3. Customer can opt into V2 by setting `usePreviousVersion = true:`
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-09-18 102121.png" alt=""><figcaption></figcaption></figure>
 
 **Outcome**
 

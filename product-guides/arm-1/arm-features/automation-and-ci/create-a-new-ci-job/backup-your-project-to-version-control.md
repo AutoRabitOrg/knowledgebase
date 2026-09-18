@@ -1,4 +1,4 @@
-# Backup your project to Version Control
+# Backing up your project to Version Control
 
 {% hint style="info" %}
 The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox browsers.
@@ -6,7 +6,10 @@ The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox brows
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Use ARM to back up changes from your Salesforce org to your [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) system. You can also map commits to specific Salesforce users.
+Use ARM to automatically back up changes from your Salesforce org to your version control system, ensuring that metadata changes are securely stored and tracked over time. This feature is particularly useful for teams that want to maintain an audit trail of changes, recover previous versions when needed, and ensure that updates made directly in Salesforce are not lost.
+
+Example:\
+A Salesforce administrator makes configuration changes directly in a sandbox or production org. By running a backup job, those changes are committed to the version control repository, allowing the team to track who made the changes, review the history, and restore previous versions if required. Commit-to-user mapping further helps identify the Salesforce user responsible for each change.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

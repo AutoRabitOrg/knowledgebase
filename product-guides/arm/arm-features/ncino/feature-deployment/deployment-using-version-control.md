@@ -21,7 +21,7 @@
 
 <figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-3. On the next screen, give the process a **name** and a brief **description**.
+3. Upon clicking on the "Create Feature Deployment" or selecting the "Feature Deployment," the Source Type screen will appear — choose the Deploy from Version Control option to proceed with deploying the Feature Migration Template and its associated data from Version Control to the destination environment..
 4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
 5. Select your **version control** type.
 6. Select your **repository** and **branch**.

@@ -1,6 +1,17 @@
 # Deployment Using Version Control
 
-This section is all about deploying the nCino data using [Version Control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)
+**Deployment Using Version Control** allows users to deploy nCino data using a Feature Migration Template that is stored in Version Control. The selected template and its associated data are retrieved from the configured Version Control repository and deployed to the destination Salesforce org.
+
+**Example:** A team stores a Feature Migration Template and its associated nCino data in Version Control. When the changes are ready for promotion, the team can retrieve the template and data from the repository and deploy them to a QA, UAT, or another destination environment.
+
+**This option is useful in the following scenarios:**
+
+* You need to deploy nCino data using a Feature Migration Template stored in Version Control.
+* You want to retrieve the template and associated data from a repository rather than directly from a Salesforce org.
+* You want to maintain version history and track changes to Feature Migration Templates and their associated data.
+* You need to promote version-controlled nCino configurations across different environments.
+
+
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 

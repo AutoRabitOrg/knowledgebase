@@ -20,22 +20,14 @@ Community templates, just like the Standard ones, are designed to be long-lastin
 
 ## Procedure <a href="#procedure" id="procedure"></a>
 
-1. Hover your mouse over the **`nCino`** module and click on the option: **`Feature Management`.**
+1. Hover your mouse over the nCino module and click Feature Management.
+2. Click the Create Feature button.
+3. On the next screen, click Create New to create a new template and include the required objects.
+4. You will be taken to the record-based configuration section, where you will find the following tabs to complete the template:&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1314).png" alt="" width="239"><figcaption><p>Feature Management</p></figcaption></figure>
-
-2. Click on **`New Feature Migration Template`** button.
-
-<figure><img src="../../../../../.gitbook/assets/image (1315).png" alt=""><figcaption><p>New Feature Migration Template</p></figcaption></figure>
-
-3. Choose one of the features from the list. _**For example,**_ select the **`Spreads Schedule Template`** tile to include the **Spreads Schedules** feature predefined objects in a template.
-
-<figure><img src="../../../../../.gitbook/assets/image (1316).png" alt=""><figcaption><p>Create New Feature Migration</p></figcaption></figure>
-
-4. You'll be directed to the **`Record Based Configuration`** section, where you will find _three tabs_ that you'll need to fill out to proceed:
-   * _Metadata Configuration_
-   * _Record Configuration_
-   * _Preview and Save_
+* Metadata Configuration
+* &#x20;Record Configuration&#x20;
+* Preview and Save
 
 ### Metadata Configuration <a href="#metadata-configuration" id="metadata-configuration"></a>
 

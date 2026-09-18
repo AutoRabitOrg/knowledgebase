@@ -1,6 +1,17 @@
 # Deployment Using Feature Migration Template
 
-This article will walk you through deploying nCino data using the Feature Migration template. If you're referring to this article for the first time, please navigate to [Feature Migration Template](../feature-migration/create-a-feature-migration-template.md), which deals with the step-by-step procedure of creating a fresh migration template in AutoRABIT.&#x20;
+**Deployment Using Feature Migration Template** allows users to deploy nCino data included in a selected Feature Migration Template to a destination Salesforce org or a selected version control repository. The template can be either a Standard or Community template, and the data configured as part of the selected template is picked up for deployment.
+
+**Example:** A team has created a Feature Migration Template containing specific nCino objects and records. They can select the template and deploy the associated data to a QA or UAT org, or commit it to a version control repository for further use.
+
+**This option is useful in the following scenarios:**
+
+* You need to deploy data that is already configured in a Standard or Community Feature Migration Template.
+* You want to promote the same set of nCino data across different Salesforce environments.
+* You need to deploy the template data to a Salesforce org or selected version control repository.
+* You want to reuse an existing Feature Migration Template for consistent deployments.
+
+
 
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 

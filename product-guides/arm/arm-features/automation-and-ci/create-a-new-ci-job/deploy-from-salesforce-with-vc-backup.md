@@ -10,7 +10,9 @@ description: How to Deploy from Salesforce with Version Control Backup
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Backup your Salesforce metadata to version control and trigger a deployment to a Salesforce org based on a '**Start Date**'. This job can be further customized to run functional test cases from [version control](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/).
+Use this job to identify metadata changes made in a Salesforce org after a specified start date, back up those changes to version control, and deploy them to a target Salesforce org. This ensures that all deployed changes are securely stored in version control, providing traceability, auditability, and recovery capabilities while automating the deployment process. The job can also be configured to execute functional test cases from the ARM TAF library or from version control as part of the release workflow.
+
+**Example:** A development team completes a set of changes in a sandbox environment and needs to promote them to a QA org. By specifying a start date, ARM automatically identifies the relevant metadata changes, commits them to version control for tracking and audit purposes, and deploys them to the target org. This helps maintain a reliable source of truth in version control while reducing manual effort during deployments.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

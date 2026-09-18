@@ -4,6 +4,135 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive Guard updates!" %}
 
+## AutoRABIT Guard 26.2.5 Release Notes
+
+Release Date: 23 September 2026
+
+### New features
+
+#### Notification Centre
+
+Guard now provides a central location for reviewing notifications from Drift Policies, Authorization Policies, Change Monitoring Policies, and Transaction Security Policies.
+
+A notification bell available throughout Guard indicates when there are unseen notifications. Users can review their personal Inbox and Archive, search notifications, filter by policy type, time, and Salesforce org, and open the associated policy. Administrators can also switch between their own notifications and all notifications in the tenant.
+
+Notifications can be archived individually or in bulk. They are automatically archived 30 days after creation and permanently deleted after 90 days.
+
+#### Notification groups and in-app policy notifications
+
+Administrators can create reusable notification groups containing Guard users from the same tenant. Groups can be selected alongside individual users when configuring policy recipients, making it easier to notify the right teams consistently.
+
+A default domain can also be assigned to a notification group, automatically adding the group to new policies created in that domain.
+
+Email delivery is now optional for Authorization Policies and Change Monitoring Policies. Policies remain active and continue to generate notifications in Guard when email delivery is disabled or no email recipients are configured.
+
+#### Transaction Security Policies
+
+_Please speak to us about enabling this feature._
+
+Guard now supports deploying Salesforce Transaction Security Policies from predefined templates to one or more eligible Salesforce orgs.
+
+Administrators can review each template and its Apex code, configure the available enforcement action, and review deployment results and triggered events for each org.
+
+The available templates include:
+
+* Detect Large PII Exports
+* Impossible Travel
+* Unapproved App Access
+* Legacy Device/OS Restriction
+
+Availability depends on the Salesforce licenses and permissions configured for the connected org.
+
+### Enhancements
+
+#### Global search
+
+A new search bar in the Guard header makes it easier to find pages and records across the platform. Users can open search from anywhere in Guard or use the Ctrl + K keyboard shortcut.
+
+Search results include navigation pages, Drift Policies, Transaction Security Policies, Authorization Policies, Change Monitoring Policies, API Security apps, and Salesforce orgs. Search also recognises common abbreviations and minor typing errors.
+
+#### Authorization Policies: Grouped conditions and exclusion operators
+
+Criteria-based Authorization Policies now support condition groups, allowing conditions within a group to be combined using AND and multiple groups to be combined using OR. This provides greater flexibility when defining precise access requirements within a single policy.
+
+A new Not In operator allows selected profiles, roles, and other criterion values to be excluded. Existing policies retain their current evaluation logic and do not need to be rebuilt.
+
+These controls are also available when creating draft policies through Permission Explorer.
+
+#### Authorization Policies: License type criteria
+
+Salesforce License Type can now be used alongside Profile, Role, Company Name, and Email Domain when defining criteria-based Authorization Policies.
+
+License Type is also available in Permission Explorer filters, maintaining consistency between permission investigation and policy creation.
+
+#### Risk Assessment: History
+
+Risk Assessment history now highlights meaningful changes in risk settings or overall results instead of repeating unchanged assessments. This makes it easier to identify how an org's risk posture has changed over time.
+
+#### User Activity Monitoring: Historical activity
+
+The Historical Activity Overview now records an entry only when total, active, frozen, or locked user counts change. Repeated entries with no changes are removed, making meaningful activity easier to identify.
+
+Charts now remain independent of table filters and clearly indicate that they represent the complete Salesforce org view.
+
+#### Risk Assessment: Certificate expiry and usage visibility
+
+Guard now identifies certificates that have expired or will expire within 90 days. Certificate names and expiry dates are displayed with links to the corresponding Salesforce records.
+
+Usage details also show related Named Credentials, SAML SSO configurations, and package ownership information where available, helping administrators understand the potential impact of certificate renewal or replacement.
+
+#### Permission Explorer: Performance and history improvements
+
+Permission Explorer now uses paginated results and improved permission resolution to provide faster, more responsive queries for larger Salesforce orgs and broad permission selections.
+
+Permission History presents each audit event once instead of repeating it for every granting source. History can also be reviewed even when users no longer hold the selected permissions.
+
+#### Exports: Authenticated downloads
+
+Export downloads now use the user's authenticated Guard session instead of password-protected ZIP files.
+
+Export emails no longer contain passwords. Download links use short-lived secure tokens and verify the tenant and user requesting the export.
+
+#### Org Executive Reports: Generation without AI credits
+
+Org Executive Reports now use available assessment data and a standard report template without consuming AI credits or requiring AI functionality to be enabled.
+
+This makes report generation available across more environments while maintaining a consistent executive summary format.
+
+#### Salesforce orgs: Search by name
+
+The Salesforce Orgs page now supports case-insensitive name search, making it easier to locate a connected org.
+
+#### Change Monitoring Policies: Updated naming
+
+Real-time Change Notifications has been renamed Change Monitoring Policies across Guard navigation, page titles, and related content.
+
+The new name distinguishes policy configuration from the notifications generated when a policy is triggered.
+
+### Bug fixes
+
+#### Drift Policies: Editing policies with deactivated recipients
+
+Drift Policies can now be updated when a previous notification recipient has been deactivated. Policy settings remain editable so administrators can remove or replace inactive recipients as needed.
+
+#### Public File Exposure: Accurate expiration status
+
+Public File Exposure now reflects whether Salesforce actively enforces expiration for a public link. Links that have an expiration date but are not configured to expire are correctly identified as non-expiring.
+
+#### User search: Full names and usernames
+
+User search in User Security Overview and the Authorization Policy Allowed Users selector now matches both full names and Salesforce usernames.
+
+#### Change Monitoring Policies: Links and event tracking
+
+Authorization Policy links opened from Change Monitoring now direct users to the correct policy.
+
+Change Monitoring Policies also continue tracking the relevant metadata when a monitored permission set is renamed, and profile deletion events can now trigger matching policies.
+
+#### Permission Explorer: Reliable large exports
+
+Large Permission Explorer exports now complete reliably and provide the full expected output.
+
 ## AutoRABIT Guard 26.2.4 Release Notes
 
 **Release Date: 19 August 2026**

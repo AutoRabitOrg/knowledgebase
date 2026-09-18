@@ -12,26 +12,26 @@ AutoRABIT is designed around the industry’s only CI/CD (Continuous Integration
 
 nCino chose AutoRABIT as its DevSecOps partner because of our ability to support the unique needs of financial institutions working on Salesforce. AutoRABIT helps nCino deliver secure, compliant, and high-quality solutions at scale by automating key parts of the development lifecycle—from version control and CI/CD to code quality and data backup. What makes this partnership stand out is AutoRABIT’s strong grasp of Salesforce metadata—especially the custom components used by nCino—and our shared focus on meeting the ever-changing needs of the financial services world. We're helping banks and credit unions move faster, stay compliant, and reduce risk along the way.
 
-### Understanding Record-Based Configuration (RBC)&#x20;
+### Understanding Record-Based Configuration (RBC)
 
-With RBC, nCino gives admins the flexibility to shape how the platform behaves depending on the kind of record in use — whether it's a specific loan type, region, or product line. The best part? It doesn’t require any coding. This approach makes it easier for financial institutions to handle complex processes, ensuring users only interact with the fields, workflows, and rules that actually apply to the record they're working on.&#x20;
+With RBC, nCino gives admins the flexibility to shape how the platform behaves depending on the kind of record in use — whether it's a specific loan type, region, or product line. The best part? It doesn’t require any coding. This approach makes it easier for financial institutions to handle complex processes, ensuring users only interact with the fields, workflows, and rules that actually apply to the record they're working on.
 
-### Why RBC Makes a Difference &#x20;
+### Why RBC Makes a Difference
 
 1. Keeps things simple for users by showing only the information that pertains to the type of record they’re working with.
 2. Reduces mistakes by applying the right validations and making the right fields required based on the record type.
-3. Speeds up processes by using workflows built specifically for each loan or product category.&#x20;
-4. Makes it easy to adjust as business needs evolve—no code needed, just a few clicks.&#x20;
+3. Speeds up processes by using workflows built specifically for each loan or product category.
+4. Makes it easy to adjust as business needs evolve—no code needed, just a few clicks.
 
-### Key Benefits: User-Specific Relevance &#x20;
+### Key Benefits: User-Specific Relevance
 
-1. Keeps the interface clean: Shows users only what’s relevant to their task—nothing more, nothing less.&#x20;
-2. Easy to manage: Admins can quickly make updates using clicks instead of code.&#x20;
-3. Built to scale: Whether you're dealing with different products, regions, or business lines, RBC can handle it all smoothly.&#x20;
+1. Keeps the interface clean: Shows users only what’s relevant to their task—nothing more, nothing less.
+2. Easy to manage: Admins can quickly make updates using clicks instead of code.
+3. Built to scale: Whether you're dealing with different products, regions, or business lines, RBC can handle it all smoothly.
 
-### Best Practices&#x20;
+### Best Practices
 
-1. Set up by record type or business line, so it’s easier to manage and understand.&#x20;
+1. Set up by record type or business line, so it’s easier to manage and understand.
 2. Take full advantage of RBC by combining it with tools like conditional visibility, validation rules, and flows to make your configurations even smarter.
 3. Maintain good documentation for each configuration to help with transparency, governance, and staying audit-ready.
 
@@ -39,7 +39,7 @@ With RBC, nCino gives admins the flexibility to shape how the platform behaves d
 
 Before you start working with the nCino features in AutoRABIT, you need to configure certain things in AutoRABIT to proceed:
 
-1. Register the **nCino configured** [**Salesforce Org**](https://knowledgebase.autorabit.com/docs/salesforce-org) in ARM.
+1. Register the **nCino-configured** **Salesforce Org** in ARM.
 2. The Super Admin should categorize the account type as the appropriate subscription to create either a **Standard** or **Community Template**.
 3. Users are allowed to access the **Feature Migration** section. The Admin can assign the required permissions to users by visiting the **Admin > Roles** tab and creating a role with the permissions below enabled.
 4. You should only be able to edit/modify your existing CI job if the special permissions for CI Job List are assigned to you. For example, to edit or delete your existing job, you need **Edit** and **Delete** permissions.
@@ -71,7 +71,7 @@ Simply log in to the AutoRABIT account using the Super Admin credentials and go 
 <figure><img src="../../../../.gitbook/assets/image (1291).png" alt="" width="390"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note**: To quickly identify nCino-registered Version Control Repositories among all other repositories, the nCino logo is marked in front of the Repository name.&#x20;
+**Important Note**: To quickly identify nCino-registered Version Control Repositories among all other repositories, the nCino logo is marked in front of the Repository name.
 {% endhint %}
 
 ### Registering nCino-Configured Salesforce Org <a href="#registering-ncino-configured-salesforce-org" id="registering-ncino-configured-salesforce-org"></a>

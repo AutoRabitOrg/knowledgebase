@@ -6,10 +6,7 @@ The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox.
 
 ### Overview <a href="#overview" id="overview"></a>
 
-Create a package from a Salesforce org by collecting metadata changes made after a specified start date and deploy or validate that package in another Salesforce org. This feature is useful when teams need to migrate recently developed changes without manually selecting individual components. The job can also be configured to execute functional test cases stored in version control as part of the deployment process.
-
-Example:\
-A development team completes a set of enhancements in a sandbox over a two-week period. By specifying a start date, ARM automatically identifies the metadata changes made during that timeframe, builds a deployment package, and deploys or validates it in a QA environment. This helps streamline releases, reduce manual effort, and ensure that only the intended changes are promoted.
+Create a package from a Salesforce org based on a **Start date** and deploy or validate that package in a different Salesforce org. You can also configure the job to run functional test cases stored in version control.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
 

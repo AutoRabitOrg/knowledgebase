@@ -1,6 +1,6 @@
 # API Only System Admin Configuration and Client Credentials
 
-## ARVault Salesforce Client Credentials Setup with System Administrator Service Account
+## AutoRABIT Vault Salesforce Client Credentials Setup with System Administrator Service Account
 
 This guide explains how to configure ARVault for Salesforce OAuth 2.0 Client Credentials flow using a dedicated Salesforce service account with the System Administrator profile. It also includes verification steps using Postman and curl.
 

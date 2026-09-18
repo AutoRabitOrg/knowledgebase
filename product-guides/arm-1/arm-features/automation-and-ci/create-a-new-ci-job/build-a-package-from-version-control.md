@@ -6,7 +6,10 @@ The **CI Jobs** screen is best viewed when the zoom is set to **80%** on your Ch
 
 ## Overview <a href="#overview" id="overview"></a>
 
-Convert and package your version control files to [Salesforce Metadata](https://www.autorabit.com/blog/how-salesforce-metadata-affects-compliance/) components based on a **Start Revision.** You can also configure an ALM project and sprint to include only revisions tied to a user story and its status.
+Build a deployment package directly from version control by converting repository files into Salesforce metadata components based on a specified start revision. This feature helps teams create deployment-ready packages containing only the changes committed after a particular revision, reducing manual effort and improving release accuracy. Additionally, ALM integration allows teams to include only revisions associated with specific user stories, sprints, or statuses.
+
+Example:\
+A development team completes several user stories during a sprint and commits the changes to version control. By specifying a start revision or selecting an ALM project and sprint, ARM can automatically generate a deployment package containing only the relevant changes for that release. This helps ensure that only approved and tracked work items are included in the deployment while maintaining traceability throughout the release process.
 
 ## Procedure <a href="#procedure" id="procedure"></a>
 

@@ -6,7 +6,65 @@
 
 **Release Date: 20 Sep 2026**
 
-#### &#x20;<a href="#org-sync-performance-and-stability-improvements" id="org-sync-performance-and-stability-improvements"></a>
+#### Org Sync Performance and Stability Improvements
+
+Improved **Org Sync performance and application stability** by allowing a maximum of **two Org Sync jobs to run at the same time**.
+
+Any additional manual or scheduled Org Sync requests are automatically queued and will start once an active job is completed. The queued status is displayed in the **ARM UI** for better visibility.
+
+#### Salesforce API 67 Settings Metadata Support
+
+Added ARM support for the following **Settings metadata types introduced in Salesforce API version 67**:
+
+* EmailAuthorizationSettings
+* EnterpriseApiSettings
+* EvidenceMgmtSettings
+* IndustriesInsuranceSettings
+* LaborCostOptimCrewMgmtSettings
+* QualityManagementSettings
+* ServiceIssueManagementSettings
+* ServiceItsmChangeManagementSettings
+* ThunderbirdVoiceSettings
+
+These metadata types are now supported across applicable ARM workflows, including **retrieval, EZ-Commit change detection, constructive and destructive changes, and deployment**.
+
+#### Installation Key Handling Fix in CI Jobs
+
+Fixed an issue where the Installation Key could be incorrectly processed while saving or updating package installation CI Jobs, resulting in an **Invalid InstallationKey for SubscriberPackageVersion** error.
+
+With this fix, the Installation Key is processed correctly when users enter or update the value, preventing the masked value from interfering with the newly entered key. This fix applies to **CI Job types 9 and 10** in both the **Old and New UIs**.
+
+#### Installed Package Validation Fix in EZ-Commit and EZ-Merge
+
+Fixed an issue where configurations containing only **InstalledPackage** metadata could fail during validation with a **Missing Active RSS Component** error, even though the same configuration could be deployed successfully.
+
+With this fix, InstalledPackage metadata is handled correctly during validation deployments. The fix applies to **EZ-Commit and EZ-Merge** workflows for both **DX and non-DX repositories**.
+
+#### CI Job Queue Processing Fix
+
+Fixed an issue where validation and deployment CI Jobs could remain in the **Pending** state with a message indicating that another deployment to the same destination was in progress, even when no active job was running.
+
+With this fix, ARM correctly identifies and clears inactive queue entries, allowing eligible CI Jobs to proceed automatically without manual intervention.
+
+The fix applies to both **manually triggered and webhook-triggered CI Jobs**.
+
+#### Dotfile Details Logout Fix in Commit History
+
+Fixed an issue where expanding `.gitignore` or other dotfiles under **Commit History → File Changes** could unexpectedly redirect users to the login page.
+
+With this fix, dotfile details are loaded correctly, allowing users to view the file changes without being unexpectedly logged out.
+
+#### Duplicate Repository Name Validation
+
+Fixed an issue where different users could register repositories using the same repository name with different repository URLs.
+
+With this fix, ARM validates repository names across registered repositories. If the repository name is already in use, registration is prevented and an appropriate validation message is displayed.
+
+#### Org Sync Schedule Email Field Fix – New UI
+
+Fixed an issue where the **Email Notification** field was missing when configuring an Org Sync schedule in the **New UI**.
+
+With this fix, the Email Notification field is restored and displayed as **mandatory**, consistent with the Old UI.
 
 ***
 

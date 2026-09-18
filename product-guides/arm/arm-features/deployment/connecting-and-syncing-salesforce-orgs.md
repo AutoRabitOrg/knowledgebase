@@ -2,6 +2,8 @@
 
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
+> **Note:** To improve application performance and stability, ARM allows a maximum of **two Org Sync jobs to run concurrently**. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.
+
 ### About Salesforce org synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
 
 Salesforce Org Synchronisation allows teams to compare and align metadata between a source Salesforce org and a target Salesforce org to maintain consistency across environments. It identifies metadata differences and enables users to reconcile them efficiently.

@@ -1344,6 +1344,7 @@
     * [Refreshing a Salesforce Sandbox](product-guides/guard/getting-started-with-guard/refreshing-a-salesforce-sandbox.md)
     * [Data Retention](product-guides/guard/getting-started-with-guard/data-retention.md)
   * [Features](product-guides/guard/features/README.md)
+    * [Notification Center](product-guides/guard/features/notification-center.md)
     * [Governance](product-guides/guard/features/governance/README.md)
       * [Data Classification](product-guides/guard/data-classification.md)
     * [Risk](product-guides/guard/features/risk/README.md)

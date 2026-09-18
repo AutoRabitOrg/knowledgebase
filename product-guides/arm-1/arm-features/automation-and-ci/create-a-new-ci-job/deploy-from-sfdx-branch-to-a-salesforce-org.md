@@ -147,7 +147,7 @@ This section is about deploying or validating the above package onto a different
 5. If the test classes do not exist in the package, the test level is configured based on the Run Local Tests.
 {% endhint %}
 
-#### Additional Deploy options <a href="#additional-deploy-options" id="additional-deploy-options"></a>
+### Additional Deploy Options <a href="#additional-deploy-options" id="additional-deploy-options"></a>
 
 <figure><img src="../../../../../.gitbook/assets/image (2241).png" alt=""><figcaption></figcaption></figure>
 
@@ -212,11 +212,16 @@ However, **XYZ** would like to run the above activities in the following sequenc
    * Environment Provisioning will run in parallel to the DataLoader Job.&#x20;
 {% endhint %}
 
-#### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
+### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 
-This section allows users to query dependency relationships between the metadata components in a Salesforce org to view and manage dependent metadata components so that your commits do not break any existing functionalities in your org. Dependency Analyzer offers a dependency check, which allows users to see what they are missing due to Salesforce specificity.
+Dependency Analyzer helps identify relationships between Salesforce metadata components, enabling users to detect missing dependencies and prevent deployments from impacting existing functionality.
 
-To analyze failed components in case of a failed deployment, select the **Source Org for analysis** from the dropdown. Users can view the results of this analysis in the **Dependency Analyzer** tab of the **Deployment Report**, or download it in manifest (.json) or .xls format.
+To use this feature, configure a Source Org for dependency analysis as part of the CI job setup.\
+If a validation or deployment CI job fails, users can manually run the Dependency Analyzer from the Deployment Report to identify missing or related metadata components that may have caused the failure. Based on the analysis results, users can include the required dependent components in the deployment package and rerun the job.
+
+The analysis results can be viewed in the Dependency Analyzer tab of the Deployment Report and downloaded in Manifest (.json) or XLS format.
+
+Example: A developer configures a validation CI job with a Source Org for dependency analysis. If the validation fails due to missing dependencies, the developer can run the Dependency Analyzer from the Deployment Report, identify the missing components, update the deployment package, and rerun the validation successfully. This helps resolve dependency-related deployment failures efficiently.
 
 #### Tests <a href="#tests" id="tests"></a>
 

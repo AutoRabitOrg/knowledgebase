@@ -6,23 +6,17 @@ This details the step-by-step process to create a standard/community nCino migra
 
 ### Step-By-Step Guide <a href="#procedure" id="procedure"></a>
 
-1. The **“New Feature Migration”** template can be created through either of the highlighted options
-   * Feature
-   * Feature Management
-2. Click on the “Feature” option under the "Create” drop-down to initiate a new feature migration template creation
-
-<figure><img src="../../../../../.gitbook/assets/image (1639).png" alt=""><figcaption></figcaption></figure>
-
-3. Click on the “Feature Management” section under the “NCINO” section to navigate to it.
-4. Click on the “Create feature” button on the “Feature Management” screen
+1. Hover your mouse over the nCino module and click Feature Management.
+2. Click the Create Feature button.
 
 <figure><img src="../../../../../.gitbook/assets/image (1638).png" alt=""><figcaption></figcaption></figure>
 
-5. Once the selection is made, the creation of the “Feature Migration Template” will be initiated by landing on the Feature page.
-6. You'll be taken to the record-based configuration section, where you will find three tabs that need completed to proceed:
-   * Metadata Configuration
-   * Record Configuration and
-   * Preview and Save
+3. On the next screen, click Create New to create a new template and include the required objects.
+4. You will be taken to the record-based configuration section, where you will find the following tabs to complete the template:&#x20;
+
+* Metadata Configuration&#x20;
+* Record Configuration
+* &#x20;Preview and Save
 
 #### Metadata Configuration <a href="#metadata-configuration" id="metadata-configuration"></a>
 

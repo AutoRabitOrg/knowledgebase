@@ -6,11 +6,11 @@
 
 ## AutoRABIT Guard 26.2.5 Release Notes
 
-Release Date: 23 September 2026
+**Release Date: 23 September 2026**
 
-### New features
+### New Features
 
-#### Notification Centre
+#### Notification Center
 
 Guard now provides a central location for reviewing notifications from Drift Policies, Authorization Policies, Change Monitoring Policies, and Transaction Security Policies.
 
@@ -45,11 +45,11 @@ Availability depends on the Salesforce licenses and permissions configured for t
 
 ### Enhancements
 
-#### Global search
+#### Global Search
 
 A new search bar in the Guard header makes it easier to find pages and records across the platform. Users can open search from anywhere in Guard or use the Ctrl + K keyboard shortcut.
 
-Search results include navigation pages, Drift Policies, Transaction Security Policies, Authorization Policies, Change Monitoring Policies, API Security apps, and Salesforce orgs. Search also recognises common abbreviations and minor typing errors.
+Search results include navigation pages, Drift Policies, Transaction Security Policies, Authorization Policies, Change Monitoring Policies, API Security apps, and Salesforce orgs. Search also recognizes common abbreviations and minor typing errors.
 
 #### Authorization Policies: Grouped conditions and exclusion operators
 
@@ -109,7 +109,7 @@ Real-time Change Notifications has been renamed Change Monitoring Policies acros
 
 The new name distinguishes policy configuration from the notifications generated when a policy is triggered.
 
-### Bug fixes
+### Bug Fixes
 
 #### Drift Policies: Editing policies with deactivated recipients
 
@@ -132,6 +132,8 @@ Change Monitoring Policies also continue tracking the relevant metadata when a m
 #### Permission Explorer: Reliable large exports
 
 Large Permission Explorer exports now complete reliably and provide the full expected output.
+
+***
 
 ## AutoRABIT Guard 26.2.4 Release Notes
 

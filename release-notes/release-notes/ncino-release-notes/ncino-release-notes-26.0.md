@@ -2,6 +2,38 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.3.12 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
+
+**Release Date: 20 Sep 2026**
+
+#### Reliable Loading for Test Environment Jobs <a href="#id-1.-reliable-loading-for-test-environment-jobs" id="id-1.-reliable-loading-for-test-environment-jobs"></a>
+
+Resolved an issue where editing a Test Environment job repeatedly requested Salesforce organization and object data, leaving the page stuck in a loading state. Job initialization now runs only once and prevents duplicate requests. Users can open and edit Test Environment jobs normally.
+
+#### Successful Dataset Comparison with Version Control <a href="#id-2.-successful-dataset-comparison-with-version-control" id="id-2.-successful-dataset-comparison-with-version-control"></a>
+
+Resolved an issue where dataset comparisons failed because empty or invalid request parameters were sent when Version Control was selected as the destination. Request handling now excludes Salesforce organization fields that do not apply to Version Control. Comparisons with both Version Control and Salesforce organizations now complete successfully.
+
+#### Correct Record Type Assignment for Document Rule Deployments <a href="#id-3.-correct-record-type-assignment-for-document-rule-deployments" id="id-3.-correct-record-type-assignment-for-document-rule-deployments"></a>
+
+Resolved an issue where the Record Type ID was not populated for Document Rule records during nCino data deployments. Bulk deployment requests now include the Record Type ID and correctly respect the destination organization’s record-type configuration. The correction applies to deployments and CI Jobs.
+
+#### Automatic Timeout Status for Stalled Jobs <a href="#id-4.-automatic-timeout-status-for-stalled-jobs" id="id-4.-automatic-timeout-status-for-stalled-jobs"></a>
+
+Jobs that remain in progress for more than 24 hours are now automatically marked as **Timeout** when the status scheduler runs. This prevents outdated job statuses from remaining active indefinitely. The update applies across nCino CI Jobs, and Feature Management operations.
+
+#### Consistent Loading Across nCino Screens <a href="#id-5.-consistent-loading-across-ncino-screens" id="id-5.-consistent-loading-across-ncino-screens"></a>
+
+Resolved intermittent blank screens and delayed content loading in the existing nCino interface. Commit History now loads consistently without requiring a manual refresh. Feature Management, Deployment History, and CI Job screens also display an appropriate loading message while data is being retrieved.
+
+#### Correct Job Statuses Following Instance Restarts <a href="#id-6.-correct-job-statuses-following-instance-restarts" id="id-6.-correct-job-statuses-following-instance-restarts"></a>
+
+Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers nCino Jobs, and Feature Management activities.
+
+#### Automatic Recovery of Queued CI Job Commits <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
+
+Resolved an issue where a scheduled nCino CI Job commit interrupted by a service restart remained in progress and blocked later commits to the same branch. Interrupted commits are now marked as **Aborted**. Subsequent commits can leave the queue and continue normally.
+
 ## nCino - Release 26.3.11 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
 
 **Release Date: 13 Sep 2026**

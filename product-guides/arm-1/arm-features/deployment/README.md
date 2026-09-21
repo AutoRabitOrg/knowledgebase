@@ -88,7 +88,7 @@ As part of a deployment, all Apex tests are run in production. If the production
 
 A validation enables you to view the success or failure messages that you would receive with an actual deployment.
 
-**Performing a Quick Deployment**
+#### **Performing a Quick Deployment**
 
 In the Deployment Status page, deploy a recent validation by clicking **Quick Deploy**. This button appears only for qualifying validations. On the next screen, you need to:
 

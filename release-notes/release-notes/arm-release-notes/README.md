@@ -70,21 +70,21 @@ With this fix, the Email Notification field is restored and displayed as **manda
 
 ## DataLoader + DataLoader Pro Release Notes **26.3.12**
 
-**Release Date:** **20Sep 2026**
+**Release Date:** **20 Sep 2026**
 
 #### Reliable Loading for Test Environment Jobs <a href="#id-4.-automatic-timeout-status-for-stalled-jobs" id="id-4.-automatic-timeout-status-for-stalled-jobs"></a>
 
 Resolved an issue where editing a Test Environment job repeatedly requested Salesforce organization and object data, leaving the page stuck in a loading state. Job initialization now runs only once and prevents duplicate requests. Users can open and edit Test Environment jobs normally. Automatic Timeout Status for Stalled Jobs
 
-Jobs that remain in progress for more than 24 hours are now automatically marked as **Timeout** when the status scheduler runs. This prevents outdated job statuses from remaining active indefinitely. The update applies across Data Loader Jobs, and Feature Management operations.
+Jobs that remain in progress for more than 24 hours are now automatically marked as **Timeout** when the status scheduler runs. This prevents outdated job statuses from remaining active indefinitely. The update applies across DataLoader Jobs, and Feature Management operations.
 
 #### Correct Job Statuses Following Instance Restarts <a href="#id-6.-correct-job-statuses-following-instance-restarts" id="id-6.-correct-job-statuses-following-instance-restarts"></a>
 
-Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers Data Loader Jobs, and Feature Management activities.
+Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers DataLoader Jobs, and Feature Management activities.
 
-#### Automatic Recovery of Stalled nCino and Data Loader Jobs <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
+#### Automatic Recovery of Stalled nCino and DataLoader Jobs <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
 
-Data Loader jobs could remain in an **In Progress** state when processing was interrupted or the status was not updated for more than 24 hours. Status-handling logic was corrected to move these stalled jobs to the appropriate terminal status. This prevents inactive jobs from appearing to run indefinitely and ensures that subsequent Data Loader processing can continue normally.
+DataLoader jobs could remain in an **In Progress** state when processing was interrupted or the status was not updated for more than 24 hours. Status-handling logic was corrected to move these stalled jobs to the appropriate terminal status. This prevents inactive jobs from appearing to run indefinitely and ensures that subsequent DataLoader processing can continue normally.
 
 ***
 

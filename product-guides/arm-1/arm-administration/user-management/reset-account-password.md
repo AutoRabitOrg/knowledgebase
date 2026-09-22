@@ -108,4 +108,4 @@ If you requested a new password but didn't receive your password reset email, th
 
 ### How often do I have to change my password for the ARM application? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
-ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](../../../arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+ARM has a 90-day rotational policy that requires you to change your password every 90 days. Follow the instructions [here](reset-account-password.md) to reset your ARM password.

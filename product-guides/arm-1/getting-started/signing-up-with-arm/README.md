@@ -58,7 +58,7 @@ Users can have multiple tabs of ARM pages open within the same web browser (e.g.
 If you're having trouble logging into your AutoRABIT account, here are some common causes and solutions.
 
 1. **The account is not created**: Please check with your admin to create a new account.
-2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password by following the instructions [here](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/user-management/reset-account-password).
+2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password by following the instructions [here](../../arm-administration/user-management/reset-account-password.md).
 3. **Check if your account subscription has expired or your account is disabled**: You'll see a message saying your account is disabled when you try to log in.
 4. If you get the following error **“getAttribute: Session already invalidated"**, try clearing your browser cache.
 5. **Restriction of your IP address**: Verify with your network team internally whether there are any issues or restrictions for your IP address from the network side.
@@ -77,7 +77,7 @@ ARM requires you to change your password every 90 days.&#x20;
 
 ### How do I reset my password?&#x20;
 
-Follow the instructions [here](../../../arm/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 
 

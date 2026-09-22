@@ -1,4 +1,4 @@
-# Deploying OmniStudio Components
+# Deploying Components
 
 ### Overview <a href="#overview" id="overview"></a>
 
@@ -49,7 +49,7 @@ Before you proceed with the deployment, it is mandatory to configure your OmniSt
 12. **Static Code Analysis (SCA)**: Choose the SCA tool to detect bugs, code smells, and security vulnerabilities before the deployment begins. SCA-Supported Metadata Types:
     * For **ApexPMD, Checkmarx, Salesforce Scanner,** and **SonarQube**: _Apex Classes, Apex Triggers, Apex Pages, AuraDefinitionBundle, LightningComponentBundle._
     * For **CodeScan**: _ApexClasses, ApexPages, ApexTriggers, AuraDefinitionBundle, CustomObjects, Flow, LightningComponentBundle, PermissionSets, Profiles, Settings, SharingRules, Workflows._
-13. You can stop the deployment if the SCA doesn't meet the global criteria. Go to **My Account >** [**Validation Criteria- Static Code Analysis**](../../../arm/arm-administration/user-management/manage-users-account-settings.md) to set the global configuration for your SCA tool.
+13. You can stop the deployment if the SCA doesn't meet the global criteria. Go to **My Account >** [**Validation Criteria- Static Code Analysis**](../../getting-started-1/arm-administration/manage-users-account-settings/#id-7-validation-criteria-static-code-analysis) to set the global configuration for your SCA tool.
 14. Also, you can select the recipients for the alert under the **"SCA Mail Notifications"** field. Multiple recipients can be added here.
 
 <figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="476"><figcaption></figcaption></figure>
@@ -72,17 +72,17 @@ Before you proceed with the deployment, it is mandatory to configure your OmniSt
 
 <figure><img src="../../../../.gitbook/assets/image (57) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-2. Select the **Deploy from the Version Control** tile.
+2. Select **Deploy from the Version Control** tile.
 
 <figure><img src="../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Give the job a descriptive name in the **CI Job Name** field.
 4. In the **Build** section, select your version control repository and branch.
 5. Select the **OmniStudio Build** checkbox.
-6.  Enter the data packs folder path from where the components will be retrieved for the deployment.
+6.  Enter the data packs folder path from which the components will be retrieved for the deployment.
 
     * **Pack Update:** This option will refresh the data packs settings to the version included in the project in the destination org. However, this is recommended only if you are on the latest major version of the OmniStudio managed package.
     * **Pack Retry**: Continues a Job, retrying all errors to redeploy once again.
 
     <figure><img src="../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. Fill in the remaining fields as per your requirements and click on **Save**.
+7. Fill in the remaining fields per your requirements, and click on **Save**.

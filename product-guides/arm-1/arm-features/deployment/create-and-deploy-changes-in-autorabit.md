@@ -34,6 +34,7 @@ The deployment process allows you to quickly and safely transfer new development
 
     After selecting the required metadata components and clicking **Next**, the **Compare** page is displayed. This page shows the differences between the source and destination organizations before deployment.
 
+    \
     Users can:
 
     * Review metadata differences.

@@ -69,7 +69,7 @@ This section is about creating the teams and assigning members to those teams. T
    * **`Subs. Consumed:`** Number of licenses consumed
    * **`Subs. Available:`** Number of licenses pending
 10. Additional options:
-    * **`Add New Resource:`** Click on the![](<../../../.gitbook/assets/image (714).png>)symbol to add new resources to the team. The team administrator can create users with their login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](../../arm/arm-administration/user-management/delegate-approvals-to-another-user.md) section.
+    * **`Add New Resource:`** Click on the![](<../../../.gitbook/assets/image (714).png>)symbol to add new resources to the team. The team administrator can create users with their login. However, if you need to add resources from the existing login, follow the steps mentioned in the Delegate [Users](user-management/delegate-approvals-to-another-user.md) section.
     * **`Edit Team:`** Click on the![](<../../../.gitbook/assets/image (715).png>)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.
     * **`Delete a Team:`** Click on the![](<../../../.gitbook/assets/image (716).png>)icon to delete the team. This process cannot be undone.
 

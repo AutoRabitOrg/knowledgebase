@@ -10,7 +10,7 @@ ARM can take a snapshot of your orgs' metadata and copy or deploy it to another 
 
 ### How can I roll back my deployment? <a href="#how-can-i-roll-back-my-deployment" id="how-can-i-roll-back-my-deployment"></a>
 
-Before rolling back your deployment, ensure the rollback feature is turned on for your deployment. This implies that the **`Take Backup`** checkbox is selected on the **`Deployment Settings`** screen when a deployment is run. The deployment will not be able to be rolled back if the checkbox is not enabled.
+Before rolling back your deployment, ensure the rollback feature is turned on for your deployment. This implies that the **`Take Backup`** checkbox is selected on the **`Deployment Settings`** screen when a deployment is run. The deployment cannot be rolled back if the checkbox is not enabled.
 
 <figure><img src="../../../../.gitbook/assets/image (1668).png" alt=""><figcaption><p>Deployment Settings</p></figcaption></figure>
 
@@ -42,7 +42,7 @@ Next,
 **Point to Remember:** You must add the version number before continuing with destructive changes for active flow metadata. See the [FlowDefinition guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_flowdefinition.htm) for more detail.
 {% endhint %}
 
-6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Apex Unit Tests](https://knowledgebase.autorabit.com/~/revisions/VLU9yPmP4DSTi9m5DU71/product-guides/arm-1/arm-features/deployment/apex-unit-tests).
+6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Run Apex Tests Before Deployment](apex-unit-tests.md).
 
 <figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,7 +54,7 @@ Next,
 
 <figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Deployment History](https://knowledgebase.autorabit.com/~/revisions/VLU9yPmP4DSTi9m5DU71/product-guides/arm-1/arm-features/deployment/monitor-deployments) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
+10. After successfully rolling back your changes, your deployment will be stored in the [Track Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
 
 ### Selective Rollback
 

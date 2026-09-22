@@ -2,13 +2,13 @@
 
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
-> **Note:** To improve application performance and stability, ARM allows a maximum of **two Org Sync jobs to run concurrently**. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.
+> <mark style="color:$primary;">**Note:**</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">To improve application performance and stability, ARM allows a maximum of</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">**two Org Sync jobs to run concurrently**</mark><mark style="color:$primary;">. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.</mark>
 
 ### About Salesforce Org Synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
 
-Salesforce Org Synchronisation allows teams to compare and align metadata between a source and a target Salesforce org to maintain consistency across environments. It identifies metadata differences and enables users to reconcile them efficiently.
+Salesforce Org synchronization allows teams to compare and align metadata between a source and a target Salesforce org to maintain consistency across environments. It identifies metadata differences and enables users to reconcile them efficiently.
 
-**Example:** If a hotfix is implemented directly in Production after a deployment, discrepancies may arise between Production and Sandbox. Org Synchronisation helps detect these differences and allows teams to update the source org accordingly, ensuring both environments remain aligned.
+**Example:** If a hotfix is implemented directly in Production after a deployment, discrepancies may arise between Production and Sandbox. Org Synchronization helps detect these differences and allows teams to update the source org accordingly, ensuring both environments remain aligned.
 
 **This option is useful when:**
 
@@ -20,7 +20,7 @@ Salesforce Org Synchronisation allows teams to compare and align metadata betwee
 
 ### How can I connect and sync metadata between two Salesforce orgs? <a href="#how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs" id="how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs"></a>
 
-To perform org synchronization, follow the below steps:
+To perform org synchronization, follow these steps:
 
 1. Log in to your ARM account.
 2. Click on the **`Deployment`** tile on the left side of the screen.
@@ -41,7 +41,7 @@ To perform org synchronization, follow the below steps:
 
     <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 6. On the next screen, you can:
-   * View the metadata list included in both source and target org.
+   * View the metadata list included in both source and target orgs.
    * Add or delete metadata components to/from the target org.
    * View the metadata member's difference report (if any).
 
@@ -49,34 +49,34 @@ To perform org synchronization, follow the below steps:
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-19 at 7.24.44 AM.png" alt=""><figcaption></figcaption></figure>
 
-1. Once done with your selection, click on **`Synchronize Orgs`**.
-2. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
-3. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
+7. Once done with your selection, click on **`Synchronize Orgs`**.
+8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or fail. This is optional.
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 
 10. Click on **`Deploy`**.
-11. You'll be taken to the [Track Deployment History](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/monitor-deployments) page, where the current synchronization progress can be seen.
+11. You'll be taken to the [Track Deployment History](monitor-deployments.md) page, where the current synchronization progress can be seen.
 
-#### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
+### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
 
 Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page. Additional options are available, such as View Info, Schedule, Delete, Download PDF Report, and Download CSV Report, by clicking the three dot (...) menu corresponding to a particular job on the Org Synchronization Summary Page.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1.  **`Info:`** Click the![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the detailed synchronization report.\
+1.  **`Info:`** Click the ![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>) icon to view the detailed synchronization report.\
     <br>
 
     <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-2. **`Delete:`** Click on the![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
-3. **`Schedule:`** Click the![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>)icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
-4. **`Run:`** Click the![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>)icon to rerun the org synchronization process.
+2. **`Delete:`** Click on the ![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>) icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
+3. **`Schedule:`** Click the ![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>) icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
+4. **`Run:`** Click the ![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>) icon to rerun the org synchronization process.
 5. **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
-   *   **Log Report:** Click on the![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>)icon under the **`Status`** column to view the log report for the sync process.<br>
+   *   **Log Report:** Click on the ![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>) icon under the **`Status`** column to view the log report for the sync process.<br>
 
        <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-20 at 12.00.15 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 6. **`Report:`**&#x54;here are two options in this column.
-   * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>)icon to view the metadata components difference report between the source and the target org.
-   * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>)icon to download the Diff report in your local system (in PDF or CSV format).
+   * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>) icon to view the metadata components difference report between the source and the target org.
+   * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>) icon to download the Diff report in your local system (in PDF or CSV format).
 
 <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>

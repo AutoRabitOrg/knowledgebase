@@ -163,7 +163,7 @@ Salesforce adds metadata types in each seasonal release, and some arrive with a 
 
 #### Connecting the Org <a href="#kreoib3n9dt7" id="kreoib3n9dt7"></a>
 
-Register each org with OAuth or OAuth through an External Client App. Go to Admin > SF Org Mgmt. For the full registration steps, see[ ](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org)[Registering Your Salesforce Org](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org) and[ ](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca)[Register Salesforce Org using OAuth via External Client App (ECA)](https://knowledgebase.autorabit.com/product-guides/arm/registration/salesforce-org/register-salesforce-org-using-oauth-via-external-client-app-eca).
+Register each org with OAuth or OAuth through an External Client App. Go to Admin > SF Org Mgmt. For the full registration steps, see [ARM: Salesforce ECA Connection Setup Steps](../../getting-started-1/registration/salesforce-org/arm-salesforce-eca-local-connection-setup-steps.md) and [Salesforce Authentication Using OAuth](../../registration/salesforce-org/salesforce-authentication-using-oauth.md).
 
 Both methods open the Salesforce login page so the integration user can approve access. The integration user must therefore be able to sign in to Salesforce. Leave API Only User off.
 

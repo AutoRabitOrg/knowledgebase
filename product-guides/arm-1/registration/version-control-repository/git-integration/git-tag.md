@@ -83,4 +83,4 @@ AutoRABIT will create the GIT tag while CI Job is triggered and is successfully 
 5.  Once you are done with the selection, click on **Deploy**.<br>
 
     ![Deploy](<../../../../../.gitbook/assets/unknown (21).webp>)
-6. The remaining steps are similar to other deployments methods, do refer to the article: [Create and Deploy Changes](../../../../arm/arm-features/deployment/create-and-deploy-changes-in-autorabit.md)
+6. The remaining steps are similar to other deployments methods, do refer to the article: [Create and Deploy](../../../arm-features/deployment/create-and-deploy-changes-in-autorabit.md) Changes

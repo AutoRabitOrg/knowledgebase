@@ -677,6 +677,7 @@
         * [Version Control Branch Workflow](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/version-control-branch-workflow.md)
         * [Version Control Repositories Summary](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)
         * [OAuth Support for GitHub](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/oauth-support-for-github.md)
+        * [Configure GitLab OAuth for Repository Registration in ARM](product-guides/arm-1/arm-features/version-control/introduction-to-version-control/configure-gitlab-oauth-for-repository-registration-in-arm.md)
       * [Version Control Repository](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/registration/version-control-repository)
       * [EZ-Commits](product-guides/arm-1/arm-features/version-control/ez-commits/README.md)
         * [How to Commit](product-guides/arm-1/arm-features/version-control/ez-commits/how-do-i-commit.md)

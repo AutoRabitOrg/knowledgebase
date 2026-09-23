@@ -2,6 +2,16 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.12.1**
+
+**Release Date: 23 Sep 2026**
+
+#### GitLab OAuth Support for Repository Registration <a href="#gitlab-oauth-support-for-repository-registration" id="gitlab-oauth-support-for-repository-registration"></a>
+
+Added **OAuth authentication support for GitLab repositories**, providing a secure alternative to Personal Access Token (PAT) and SSH authentication.
+
+Users can now authorize ARM through GitLab OAuth and register GitLab repositories using the generated **Client ID and Client Secret**. ARM also supports re-authorization when OAuth access needs to be renewed or updated.
+
 ## ARM **Release Notes 26.3.12**
 
 **Release Date: 20 Sep 2026**

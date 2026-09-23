@@ -1,4 +1,4 @@
-# Connecting Your ALM
+# ALM
 
 {% hint style="warning" %}
 **Important Note:** The actions described here are available **only to Org Administrators**. General ARM users cannot access ALM Management.
@@ -32,7 +32,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
     * **ALM Name** – friendly label.
     * **ALM Type** – choose the platform.
     * **ALM URL** – base server URL.
-    * **Credentials** – select stored credentials (see [Credential Manager](../../../../arm/troubleshoot/how-tos/create-users-credentials.md)).
+    * **Credentials** – select stored credentials (see [Credential Manager](../../../troubleshoot/how-tos/create-users-credentials.md)).
 
     **Jira**\
     \

@@ -54,10 +54,18 @@ Log in to GitLab and navigate to:
 2. Enter an application **Name**.
 3. Paste the ARM **Callback URL** into the **Redirect URI** field.
 4. Keep **Confidential** enabled.
-5. Select the required OAuth scopes for API, user, and repository access.
+5. Under **Scopes**, select the following **mandatory scopes**:
+   * **api** – Provides API access required for GitLab integration.
+   * **read\_user** – Allows ARM to retrieve the authorized user's information.
+   * **read\_repository** – Provides read access to the GitLab repository.
+   * **write\_repository** – Provides write access to the GitLab repository.
 6. Click **Save application**.
 
-GitLab creates the OAuth application and displays the **Application ID** and **Secret**.
+Use this updated note:
+
+> **Note:** The **api, read\_user, read\_repository, and write\_repository** scopes are mandatory for the GitLab OAuth integration with ARM. Any additional scopes can be selected based on the **customer’s specific requirements and organizational security policies**.
+
+After the application is created, copy the **Application ID** and **Secret** and use them as the **Client ID** and **Client Secret** when registering the repository in ARM.
 
 > Copy and securely store the Application ID and Secret. The secret may only be available when the application is created.
 

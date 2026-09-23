@@ -1355,6 +1355,7 @@
       * [Permissions Explorer](product-guides/guard/permissions-explorer.md)
       * [Public File Exposure](product-guides/guard/features/risk/public-file-exposure.md)
       * [Risk Assessment](product-guides/guard/risk-assessment.md)
+      * [Transaction Security Policies](product-guides/guard/features/risk/transaction-security-policies.md)
       * [User Security Overview](product-guides/guard/features/risk/user-security-overview.md)
     * [Compliance](product-guides/guard/features/compliance/README.md)
       * [Authorization Policies](product-guides/guard/policies.md)

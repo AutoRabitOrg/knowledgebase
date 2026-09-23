@@ -13,7 +13,7 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 <figure><img src="../../../../../../.gitbook/assets/image (2441).png" alt="" width="267"><figcaption></figcaption></figure>
 
-1. Select your **`Salesforce Org`** from the list and go to the **`Salesforce Org - Configure Default Apex Test Class`** section. While deploying through ARM, this works in sync with the **Run Test** based on the **Changes Test** level option. If ARM cannot find dependent test classes, these default classes will run as Specified Tests.
+3. Select your **`Salesforce Org`** from the list and go to the **`Salesforce Org - Configure Default Apex Test Class`** section. While deploying through ARM, this works in sync with the **Run Test** based on the **Changes Test** level option. If ARM cannot find dependent test classes, these default classes will run as Specified Tests.
 
 <figure><img src="../../../../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
 
@@ -54,11 +54,11 @@ To configure the default **Apex Test Class** for your Salesforce org, follow the
 
 &#x20;    **`c. Add Manually:`**&#x4D;anually configure your default Apex Test class.
 
-5. On the next auto-populated screen, enter the **`Apex Test Class`** name and **`Apex Class/Trigger`** name in the respective fields. Mark the Apex class as default, and select the **`Default`** checkbox for such a test class.
-6.  Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.<br>
+4. On the next auto-populated screen, enter the **`Apex Test Class`** name and **`Apex Class/Trigger`** name in the respective fields. Mark the Apex class as default, and select the **`Default`** checkbox for such a test class.
+5.  Click the **`Add`** button at the top right corner to add another Apex Class name, or click the **`Clone`** icon to copy the details of the previous Apex Class.<br>
 
     ![Click Add or Clone](<../../../../../../.gitbook/assets/unknown (26).webp>)
-7. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../../../../arm/registration/salesforce-org/salesforce-org-management.md) page.
+6. Click **`OK`**. You can find the manually added Apex class on the previous screen, i.e., the [**`Salesforce Org Management`**](../../../../registration/salesforce-org/) page.
 
 ### Manage Apex Class <a href="#manage-apex-class" id="manage-apex-class"></a>
 

@@ -12,6 +12,8 @@ Added **OAuth authentication support for GitLab repositories**, providing a secu
 
 Users can now authorize ARM through GitLab OAuth and register GitLab repositories using the generated **Client ID and Client Secret**. ARM also supports re-authorization when OAuth access needs to be renewed or updated.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/introduction-to-version-control/configure-gitlab-oauth-for-repository-registration-in-arm" %}
+
 ## ARM **Release Notes 26.3.12**
 
 **Release Date: 20 Sep 2026**

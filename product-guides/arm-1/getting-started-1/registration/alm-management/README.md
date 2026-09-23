@@ -102,7 +102,7 @@ git commit -m "\[PROJECT-123] add README"
 
 <figure><img src="../../../../../.gitbook/assets/image (746).png" alt="Smart Commits pattern settings" width="488"><figcaption></figcaption></figure>
 
-* **Enable auto update on webhook** – reveals a webhook URL you can add to your VCS so external commits update the ALM automatically. See setup guides [here](../../../../arm/arm-features/automation-and-ci/webhooks/).
+* **Enable auto update on webhook** – reveals a webhook URL you can add to your VCS so external commits update the ALM automatically. See setup guides [here](../../../arm-features/webhooks/).
 * Optionally **sync external smart commits** made outside AutoRABIT.
 
 ***

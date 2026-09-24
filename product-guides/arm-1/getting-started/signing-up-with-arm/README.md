@@ -20,11 +20,9 @@ The ARM login screen allows you to log in to your instance.
 1. Go to your web browser to your instance's URL (for example, _https://instance.autorabit.com_).&#x20;
 2. The ARM login screen appears.&#x20;
 3. Enter your login credentials (username and password), and then click on **`Login.`**
-4.  Contact your org administrator if you do not know your instance's URL or login credentials.<br>
+4.  Contact your org administrator if you do not know your instance's URL or login credentials.
 
-    ![](<../../../../.gitbook/assets/unknown (36).webp>)
-
-    <br>
+    <figure><img src="../../../../.gitbook/assets/image (2873).png" alt=""><figcaption></figcaption></figure>
 
 ## Password Requirements
 

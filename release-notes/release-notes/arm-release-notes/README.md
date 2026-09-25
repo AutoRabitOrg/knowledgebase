@@ -2,6 +2,68 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.3.13**
+
+**Release Date: 27 Sep 2026**
+
+#### Salesforce Standard Authentication Retirement Notifications <a href="#salesforce-standard-authentication-retirement-notifications" id="salesforce-standard-authentication-retirement-notifications"></a>
+
+Added notifications to help customers prepare for Salesforce’s retirement of username-and-password-based **Standard authentication**.
+
+Warnings are displayed for Salesforce orgs using Standard authentication in the following areas:
+
+* Salesforce Org registration and configuration
+* Environment Provisioning template execution
+* CI Job, Deployment, and Environment Provisioning email notifications
+
+The warning is not displayed for orgs using OAuth or OAuth via ECA. Customers can migrate existing Standard-authenticated orgs to **OAuth via ECA**, including orgs whose Standard connection has already stopped working, without affecting their existing mappings, CI Jobs, schedules, or permissions.
+
+#### Salesforce API Version 68.0 Support – Phase 1 <a href="#salesforce-api-version-68.0-support-phase-1" id="salesforce-api-version-68.0-support-phase-1"></a>
+
+Added ARM compatibility with Salesforce API version 68.0 across metadata retrieval, deployment, validation-only deployments, Org Compare, and EZ-Commit workflows. ARM continues to support Salesforce organizations running earlier API versions.
+
+As part of Phase 1, added support for the following Agentforce metadata types:
+
+* AiAgentDefinition
+* AiAgentDefinitionVersion
+* AiSurface
+* AiResponseFormat
+* AiTestingDefinition
+* AgentPlatformSettings
+* AgentforceForDevelopersSettings
+* AgentforcePlatformTracingSettings
+* BotEmailDefinition
+
+These metadata types are supported across retrieval, commit, change detection, deployment, merge, and filtering workflows. Support for the remaining metadata types introduced with API version 68.0 is planned for the next release.
+
+#### Cascading Selection for Custom Setting Data – Environment Provisioning <a href="#cascading-selection-for-custom-setting-data-environment-provisioning" id="cascading-selection-for-custom-setting-data-environment-provisioning"></a>
+
+Enhanced Custom Setting selection while creating Environment Provisioning migration templates.
+
+Selecting a Custom Setting now automatically selects all eligible fields. After retrieving records, selecting all records automatically selects every eligible field within those records. Selecting an individual record also selects its eligible fields.
+
+Users can still refine the migration by deselecting individual records or fields. Existing behavior for mandatory, system, and non-editable fields remains unchanged. This enhancement applies to List and Hierarchy Custom Settings where applicable.
+
+#### Target Branch Credentials for Pull Request Creation in EZ-Merge <a href="#target-branch-credentials-for-pull-request-creation-in-ez-merge" id="target-branch-credentials-for-pull-request-creation-in-ez-merge"></a>
+
+Fixed an issue where the **Create Pull Request on Merged Changes** option used the credentials of the user who registered the repository instead of the credentials configured for the target branch.
+
+With this fix, ARM uses the target branch credentials when creating the pull request. The help link for this option has also been updated to direct users to the relevant Knowledge Base article.
+
+#### Merge Conflict Handling Improvements <a href="#merge-conflict-handling-improvements" id="merge-conflict-handling-improvements"></a>
+
+Fixed an issue where attempting to download large conflicted Profile files could fail and invalidate the user session.
+
+With this fix, the **Download Files** option is not displayed in Merge Request history when conflicts are present, preventing failed downloads and unexpected logout. An additional issue with the **Revert** action after selecting the source or destination version during conflict resolution has also been resolved.
+
+#### SCA Run Options Fix in CI Jobs – New UI <a href="#sca-run-options-fix-in-ci-jobs-new-ui" id="sca-run-options-fix-in-ci-jobs-new-ui"></a>
+
+Fixed an issue where the selected **Run on** option under **Run SCA Analysis** was not retained when reopening a CI Job in Edit mode.
+
+Also fixed an issue where the applicable SCA run options and **Mark Build As Unstable If It Doesn’t Meet Below Criteria** setting were not displayed when SonarQube was selected.
+
+With this fix, saved SCA options are displayed correctly, and the applicable SonarQube configuration options are available in the New UI.
+
 ## ARM **Release Notes 26.3.12.1**
 
 **Release Date: 23 Sep 2026**

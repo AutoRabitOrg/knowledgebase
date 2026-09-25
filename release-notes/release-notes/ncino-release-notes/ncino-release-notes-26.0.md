@@ -4,6 +4,8 @@
 
 ## nCino - 26.3.13 Release
 
+**Release Date:** **27 Sep 2026**
+
 ### Automatic Field Mapping for First-Time Subset Deployments
 
 When deploying a subset of a newly created dataset, source-to-destination field mappings—including the External ID mapping—were not automatically populated if no previous deployment existed. Mapping initialization now retrieves the required information from the source data and destination organization. First-time subset deployments now populate the mappings automatically and complete successfully in both the existing and new interfaces.

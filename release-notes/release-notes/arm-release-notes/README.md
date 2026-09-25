@@ -64,6 +64,22 @@ Also fixed an issue where the applicable SCA run options and **Mark Build As Uns
 
 With this fix, saved SCA options are displayed correctly, and the applicable SonarQube configuration options are available in the New UI.
 
+***
+
+## DataLoader + DataLoader Pro Release Notes **26.3.13**
+
+**Release Date:** **27 Sep 2026**
+
+### Accurate Save Messaging for Data Loader Pro Jobs
+
+When **Skip mappings** was selected while saving a Data Loader Pro job, the application could display an incorrect message. Save-message handling was corrected to accurately reflect the selected mapping behavior. The correction applies to new and existing jobs with single or multiple objects in both the existing and new interfaces.
+
+### Preserved Query Changes in Cloned Data Loader Extract Jobs
+
+Changes made to a SOQL query while cloning a Data Loader Basic Extract Job were not retained, causing the cloned job to use the original query. Query-modification handling was corrected so the edited query is saved with the cloned job. The cloned job now executes using the updated query criteria in both the existing and new interfaces.
+
+***
+
 ## ARM **Release Notes 26.3.12.1**
 
 **Release Date: 23 Sep 2026**

@@ -39,7 +39,7 @@ SonarQube is an automated code review tool that helps detect bugs, security vuln
    * **Password**: Paste the token from Step 1
 4. Click **Save**.
 
-![Credential Setup](<../../../.gitbook/assets/image (873).png>)
+<figure><img src="../../../.gitbook/assets/image (2878).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -54,7 +54,7 @@ SonarQube is an automated code review tool that helps detect bugs, security vuln
    * **Select Credential**
 4. Click **Test Connection**, then **Save**.
 
-![Plugin Setup](<../../../.gitbook/assets/image (875).png>)
+<figure><img src="../../../.gitbook/assets/image (2879).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -66,7 +66,7 @@ SonarQube is an automated code review tool that helps detect bugs, security vuln
    * Set the **Quality Gate** status (default: ERROR)
    * Click **Save**
 
-![Validation Setup](<../../../.gitbook/assets/image (876).png>)
+<figure><img src="../../../.gitbook/assets/image (2880).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -80,7 +80,7 @@ SonarQube is an automated code review tool that helps detect bugs, security vuln
      * **Auto reject commit process if criteria are not met**
 2. Click **Save**
 
-![Commit Validation](<../../../.gitbook/assets/image (877).png>)
+<figure><img src="../../../.gitbook/assets/image (2881).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

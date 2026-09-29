@@ -336,6 +336,80 @@ Review the listed AutoRABIT permission sets and assign the correct permissions t
 
 <figure><img src="../../../.gitbook/assets/image (2850).png" alt=""><figcaption></figcaption></figure>
 
+## CodeScan AuthHub Permission Set
+
+_Configuring the AutoRABIT CodeScan Permission Set in Salesforce_
+
+### Overview
+
+This guide walks through the steps required to configure the AutoRABIT CodeScan permission set in Salesforce.Follow each step in order to set up the AutoRABIT CodeScan integration user correctly.
+
+The AutoRABIT CodeScan integration user requires View All Data, Modify All Data, and Customize Application to be enabled.
+
+Step 1: Open Licensing & Permissions
+
+In Salesforce, open the AutoRABIT Connector app and click Licensing & Permissions.
+
+<figure><img src="../../../.gitbook/assets/image (2884).png" alt=""><figcaption></figcaption></figure>
+
+Step 2: Open Permission Sets
+
+Click Permission Sets.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.28.49 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 3: Select the AutoRABIT CodeScan Permission Set
+
+Click AutoRABIT CodeScan to open the permission set.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.31.04 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 4: Open App Permissions
+
+Click App Permissions. This section controls permissions to perform app-specific actions, such as “Manage Call Centers.”
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.32.14 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 5: Enable editing
+
+Click Edit to make the permission list editable.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.33.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 6: Enable Customize Application
+
+Search for Customize Application and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.34.33 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 7: Enable View All Data
+
+Search for View All Data and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.36.38 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 8: Enable Modify All Data
+
+Search for Modify All Data and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.38.24 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 9: Save the permission set
+
+After selecting all the required checkboxes, click Save at the top of the page.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.40.39 PM.png" alt=""><figcaption></figcaption></figure>
+
+Step 10: Confirm the save
+
+In the Save Changes confirmation dialog box, click Save again to apply the changes.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.42.07 PM.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you do not want to grant all View All Data and Modify All Data permissions at once, you can go back to Step 4 and, instead of App Permissions, open Object Settings. From there, grant the required permissions object by object, based on your specific needs.
+{% endhint %}
+
 ## Complete Salesforce Org Registration in the AutoRABIT Product
 
 1\. Refresh the product-side org list

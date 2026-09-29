@@ -368,7 +368,7 @@ Step 4: Open App Permissions
 
 Click App Permissions. This section controls permissions to perform app-specific actions, such as “Manage Call Centers.”
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.32.14 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2885).png" alt=""><figcaption></figcaption></figure>
 
 Step 5: Enable editing
 

@@ -346,6 +346,10 @@ This guide walks through the steps required to configure the AutoRABIT CodeScan 
 
 The AutoRABIT CodeScan integration user requires View All Data, Modify All Data, and Customize Application to be enabled.
 
+{% hint style="info" %}
+We recommend performing the setup with a **Standard User** and assigning the required permission sets listed below. Admin users generally have these permissions by default, so this helps ensure that non-admin users have the access needed to use the integration successfully.
+{% endhint %}
+
 Step 1: Open Licensing & Permissions
 
 In Salesforce, open the AutoRABIT Connector app and click Licensing & Permissions.

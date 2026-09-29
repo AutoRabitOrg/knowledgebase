@@ -354,19 +354,15 @@ In Salesforce, open the AutoRABIT Connector app and click Licensing & Permission
 
 Step 2: Open Permission Sets
 
-Click Permission Sets.
-
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.28.49 PM.png" alt=""><figcaption></figcaption></figure>
 
 Step 3: Select the AutoRABIT CodeScan Permission Set
 
-Click AutoRABIT CodeScan to open the permission set.
-
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.31.04 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 4: Open App Permissions
+Step 4: Open System Permissions
 
-Click App Permissions. This section controls permissions to perform app-specific actions, such as “Manage Call Centers.”
+Select **System Permissions** to access the permissions that apply across apps, such as “Modify All Data.”
 
 <figure><img src="../../../.gitbook/assets/image (2885).png" alt=""><figcaption></figcaption></figure>
 

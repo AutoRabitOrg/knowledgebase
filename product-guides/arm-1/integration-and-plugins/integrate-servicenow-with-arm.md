@@ -3,22 +3,27 @@
 ## Step 1: Store Your ServiceNow Credentials in ARM
 
 1. Log in to your ARM account.
-2.  Navigate to the **Admin** module and click the **Credentials** tab.<br>
+2. Navigate to the **Admin** module and click the **Credentials** tab.
 
-    <figure><img src="../../../.gitbook/assets/image (2514).png" alt=""><figcaption></figcaption></figure>
-3.  Click **Create Credential** from the right navigation.\
-    <br>
+\
+&#x20;<img src="../../../.gitbook/assets/image (2887).png" alt="" data-size="original">
 
-    <figure><img src="../../../.gitbook/assets/image (2515).png" alt=""><figcaption></figcaption></figure>
+
+
+3. Click **Create Credential** from the right navigation.
+
+<figure><img src="../../../.gitbook/assets/image (2515).png" alt=""><figcaption></figcaption></figure>
+
 4. In the popup:
-   * Enter a **Credential Name**
-   * Set **Credential Type** to _User name with Password_
-   * Input your **ServiceNow username** and **password**
-   * Ensure you're using your **username**, not your login email
-5.  Click **Save**\
-    <br>
 
-    <figure><img src="../../../.gitbook/assets/image (2516).png" alt=""><figcaption></figcaption></figure>
+* Enter a **Credential Name**
+* Set **Credential Type** to _User name with Password_
+* Input your **ServiceNow username** and **password**
+* Ensure you're using your **username**, not your login email
+
+5. Click **Save**
+
+<figure><img src="../../../.gitbook/assets/image (2516).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -51,15 +56,15 @@
 
 ### EZ-Commit Integration
 
-1.  In the **EZ-Commit** screen under **Post Commit**:
+1. In the **EZ-Commit** screen under **Post Commit**:
+   * Check **Update ALM Workitem Status**
+   * Select:
+     * **ALM Type:** SERVICENOW
+     * **ALM Label, Project, Sprint,** and **Work Item**
+     * **Status** to be updated
 
-    * Check **Update ALM Workitem Status**
-    * Select:
-      * **ALM Type:** SERVICENOW
-      * **ALM Label, Project, Sprint,** and **Work Item**
-      * **Status** to be updated
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 3.27.36 PM.png" alt=""><figcaption></figcaption></figure>
 
-    ![EZ Commit Config](<../../../.gitbook/assets/image (905).png>)
 2. Upon commit, work item status will be reflected in ServiceNow.
 
 ***
@@ -77,24 +82,27 @@
 
     * Check **Map ALM Project (Ex: ServiceNow)**
 
-    ![CI Job Build](<../../../.gitbook/assets/image (906).png>)
-2.  Go to **ALM** section:
+    <figure><img src="../../../.gitbook/assets/image (2889).png" alt=""><figcaption></figcaption></figure>
+2. Go to **ALM** section:
 
-    * Set:
-      * **ALM Type:** SERVICENOW
-      * **Label** and **Projects**
+* Set:
+  * **ALM Type:** SERVICENOW
+  * **Label** and **Projects**
 
-    ![ALM Projects](<../../../.gitbook/assets/image (907).png>)
-3.  Choose:
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 3.30.10 PM.png" alt=""><figcaption></figcaption></figure>
 
-    * One or all **Active Sprints**
+3. Choose:
 
-    ![Sprint Selection](<../../../.gitbook/assets/image (908).png>)
-4.  Select:
+* One or all **Active Sprints**
 
-    * **Work Item Type** (or all)
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 3.32.57 PM.png" alt=""><figcaption></figcaption></figure>
 
-    ![Work Item Type](<../../../.gitbook/assets/image (909).png>)
-5.  Update the **Status** for selected work item types
+4. Select:
 
-    ![Status Update](<../../../.gitbook/assets/image (910).png>)
+* **Work Item Type** (or all)
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 3.34.59 PM.png" alt=""><figcaption></figcaption></figure>
+
+5. Update the **Status** for selected work item types
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-30 at 3.36.20 PM.png" alt=""><figcaption></figcaption></figure>

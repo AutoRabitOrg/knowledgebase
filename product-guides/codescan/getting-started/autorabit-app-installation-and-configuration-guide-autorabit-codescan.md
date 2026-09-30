@@ -398,7 +398,7 @@ Step 9: Save the permission set
 
 After selecting all the required checkboxes, click Save at the top of the page.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 8.46.16 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2886).png" alt=""><figcaption></figcaption></figure>
 
 Step 10: Confirm the save
 

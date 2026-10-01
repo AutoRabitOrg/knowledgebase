@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.4.1  <a href="#ncino-release-26.3.13" id="ncino-release-26.3.13"></a>
+
+**Release Date:** **04 October 2026**
+
+#### Accurate Record Downloads for Selective Commits <a href="#ncino-release-26.3.13" id="ncino-release-26.3.13"></a>
+
+Downloaded files from the **Feature Details** window could contain every record from the source object instead of only the records retrieved for a Selective Commit. Download processing was corrected to export only the applicable retrieved records. The number of records in the downloaded file now matches the **Retrieved count** displayed in the application. The correction applies to both the existing and new interfaces.
+
+#### Approver Selection for Deferred Deployments and Commits
+
+Users can now select approvers when deploying or committing a previously retrieved Feature Deployment dataset. This supports workflows where a dataset is retrieved and reviewed before its destination and approval details are confirmed. Approvers are populated based on the destination configuration, followed by the job configuration and the previous applicable iteration. The deployment or commit is then submitted through the configured approval workflow before execution.
+
 ## nCino - Release 26.3.13  <a href="#ncino-release-26.3.13" id="ncino-release-26.3.13"></a>
 
 **Release Date:** **27 September 2026**

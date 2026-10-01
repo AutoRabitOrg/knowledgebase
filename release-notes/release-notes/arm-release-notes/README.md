@@ -2,6 +2,45 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## **Release Notes 26.4.1**
+
+**Release Date: 4th October 2026**
+
+#### CI Job Build History Reporting Fix <a href="#ci-job-build-history-reporting-fix" id="ci-job-build-history-reporting-fix"></a>
+
+Fixed an issue where **CI Job Reports** displayed only the most recent build instead of including all builds executed during the selected reporting period. The reporting logic has been updated to correctly aggregate CI Job build data week by week, ensuring **Reports → Analytics → Weekly Reports → CI Job Reports** accurately reflects the complete build history for the selected CI Job.
+
+#### Profile and Permission Set Refactoring UI Update <a href="#profile-and-permission-set-refactoring-ui-update" id="profile-and-permission-set-refactoring-ui-update"></a>
+
+Updated the **Deployment** UI to clearly display the applicable refactoring options based on the selected Salesforce API version. For API versions **below 40**, both **Profile** and **Permission Set Refactoring** options are available. For API version **40 and later**, only the **Profile Refactoring** option is displayed, as Permission Set refactoring is not supported for these API versions.
+
+This update prevents confusion and ensures the available refactoring options accurately reflect the supported Salesforce API behavior.
+
+#### Salesforce API 68.0 Metadata Support – Phase 2 <a href="#salesforce-api-68.0-metadata-support-phase-2" id="salesforce-api-68.0-metadata-support-phase-2"></a>
+
+Expanded ARM support for **Salesforce API version 68.0** with additional metadata types. These metadata types are now supported across applicable ARM workflows, including **metadata retrieval, EZ-Commit, file differences, deployments, EZ-Merge, and metadata filtering**.
+
+The following metadata types are included in Phase 2:
+
+* HelpSettings
+* IndustriesMaczPricingSettings
+* IndustriesMfgAdvnOrderSettings
+* IndustriesRepossessionSettings
+* InvMgmtForUnusableQtySettings
+* MCETransformationsSettings
+* TransactableMarketplacePrivateOfferSettings
+* UiWidgetSettings
+* CnfgItmTypAttrSrcRcnRule
+* CnfgItmTypSrcRcnRule
+* CnfgMgmtDataBndl
+* CnfgMgmtItemFieldMap
+* CnfgMgmtItemValueMap
+* CnfgMgmtRcnRuleSugg
+* CnfgMgmtSvcMapLyot
+* ContentWorkspacePermission
+* CnfgItemTypeIdentFieldMap
+* CnfgItemTypeIdentRule
+
 ## ARM **Release Notes 26.3.13**
 
 **Release Date: 27 September 2026**

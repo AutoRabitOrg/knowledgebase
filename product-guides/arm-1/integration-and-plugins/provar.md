@@ -80,12 +80,12 @@ Now, you're done with the integration of Provar as a plugin with AutoRABIT, let'
 4. Go to the **Test** section. In this section, you need to select **Provar** to run the functional test cases to test the functionality of the code being deployed to production.
 5. Select **Fetch Test Cases From** as **Provar**.
 6. Select your **Version Control Repository** and its mapped **Branch**.
-7.  Now, you need to add the **Test Cases Root path** and **Test Cases Execution path**.
+7. Now, you need to add the **Test Cases Root path** and **Test Cases Execution path**.
+   * **Test Cases Root path**: Enter the test case root path till the **.testproject** file
+   * **Test Cases Execution Path**: Enter the test cases execution path here. For example- tests/sample. If not specified, all the test cases from the **'tests'** folder will get executed.
 
-    * **Test Cases Root path**: Enter the test case root path till the **.testproject** file
-    * **Test Cases Execution Path**: Enter the test cases execution path here. For example- tests/sample. If not specified, all the test cases from the **'tests'** folder will get executed.
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-01 at 5.22.44 PM.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="556"><figcaption></figcaption></figure>
 8. Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the **browser** in which you would like to run the test cases.
 9. Fill in other section details as required and click on **Save**.
 10. So, once the configured CI job is run and the build is triggered, Provar will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done along with other details such as the number of components that successfully got reviewed, the number of components failed to review, components that are about to get reviewed or are in the queue.

@@ -12,26 +12,27 @@ The first step in integrating Provar is adding the same configurations in AutoRA
 2. Click on the Admin module go to the **My Account** tab from the AutoRABIT home page.
 3. Under the **Plugins** section, select the **Provar** checkbox.
 
-<figure><img src="../../../.gitbook/assets/image (80) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-01 at 5.13.15 PM.png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in Provar info in the next popup screen:
-   * **Name**: Enter a name of your choice (max. of 126 characters). The name should not include any special characters except **"-"**.
-   * **Web Browser Configuration**: Choose the Web Browser Configuration as **Desktop Full Screen**.&#x20;
-   * **Web Browser Provider Name**: Choose **Desktop** as Web Browser Provider Name.
-   * **Web Browser Device Name**: Choose the Web Browser Device Name as **Desktop Full Screen**.
-   * **Exclude Callable Test Cases:** To exclude callable test cases from execution, select this checkbox.
-   *   **LicenseFile**: Browse the provar license’s properties file from your local system and upload it here. This license file will be used by all users activated for their clients. You can even download the recently uploaded license file if needed.\
-       The license properties file should contain the information in the same order as shown below:
 
-       * **#Thu Jul 05 15:52:26 IST 2018**
-       * **licenseStatus=Activated**
-       * **licenseType=FixedSeat**
-       * **licenseKey=XXXXX-XXXXX-XXXXXX-XXXXX-XXXXX**
-       * **lastOnlineAvailabilityCheckUtc=153078614616**
+* **Name**: Enter a name of your choice (max. of 126 characters). The name should not include any special characters except **"-"**.
+* **Web Browser Configuration**: Choose the Web Browser Configuration as **Desktop Full Screen**.
+* **Web Browser Provider Name**: Choose **Desktop** as Web Browser Provider Name.
+* **Web Browser Device Name**: Choose the Web Browser Device Name as **Desktop Full Screen**.
+* **Exclude Callable Test Cases:** To exclude callable test cases from execution, select this checkbox.
+* **LicenseFile**: Browse the provar license’s properties file from your local system and upload it here. This license file will be used by all users activated for their clients. You can even download the recently uploaded license file if needed.\
+  The license properties file should contain the information in the same order as shown below:
+  * **#Thu Jul 05 15:52:26 IST 2018**
+  * **licenseStatus=Activated**
+  * **licenseType=FixedSeat**
+  * **licenseKey=XXXXX-XXXXX-XXXXXX-XXXXX-XXXXX**
+  * **lastOnlineAvailabilityCheckUtc=153078614616**
 
-       <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (17).png" alt=""><figcaption></figcaption></figure>
-5. Click on **OK** once you're done filling in the Provar information.
-6. Ensure the above configurations are saved in AutoRABIT by clicking on the **Save** button. It is an important step, otherwise, all modifications will be lost and you will have to configure Provar from the beginning.
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-01 at 5.15.59 PM.png" alt=""><figcaption></figcaption></figure>
+
+1. Click on **OK** once you're done filling in the Provar information.
+2. Ensure the above configurations are saved in AutoRABIT by clicking on the **Save** button. It is an important step, otherwise, all modifications will be lost and you will have to configure Provar from the beginning.
 
 ### Integration steps with AutoRABIT( for version older than 2.2.0)
 

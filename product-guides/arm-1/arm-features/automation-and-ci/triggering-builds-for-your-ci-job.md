@@ -113,3 +113,31 @@ CI Jobs without ALM integration show the following build input screen:
 **Webhook Configuration Screenshot:**
 
 <figure><img src="../../../../.gitbook/assets/image (1151).png" alt="Webhook settings for GitHub repository integration"><figcaption></figcaption></figure>
+
+
+
+## FAQs
+
+### Is there a way to prepare/validate a deployment ahead of time and schedule ARM to execute it later?&#x20;
+
+#### Option 1: Scheduled CI job
+
+ARM can schedule a CI job to deploy to Production during your approved maintenance window. For example, the job runs automatically at 11:00 p.m. on Saturday, so the Release Manager does not need to log in.\
+\
+There are two things to be aware of. This is a fresh deployment execution, so any configured Apex tests run again during the off-hours window. The job also builds from the branch at the moment it fires, so it deploys whatever is on the branch at 11:00 p.m. rather than what was reviewed earlier in the day.
+
+#### Option 2: Quick Deploy through the API
+
+If the requirement is to validate during business hours and then reuse that same Salesforce validation later, ARM has a Quick Deploy API for CI jobs.\
+\
+The API is `POST /cijobs/v1/triggerquickdeploy/{jobname}/{buildnumber}`. It uses Salesforce `deployRecentValidation`, so the tests do not run again. Your existing scheduler, such as Control-M or another cron-based scheduler, can call it during the approved window. The call needs the `token` header, a `Content-Type: application/json` header, and an empty JSON body.\
+\
+There are two limitations. The Salesforce validation must be less than 10 days old, and that limit is fixed rather than configurable. Quick Deploy also exists in the Deployment module, but it runs from the ARM screen only and is not on the API today, so an external scheduler cannot trigger it. Only CI job Quick Deploy is available over the API.
+
+#### The approval flow
+
+ARM already has a deployment approval flow if the main requirement is to hold a deployment until an approver authorizes it. That still needs a person to release it, so it does not give you automated execution at a set time.
+
+#### On the roadmap
+
+We have this use case captured under a planned future deployment. The goal is to let a team prepare and approve a deployment during business hours, pick a future maintenance window, and have ARM run it automatically at that time.

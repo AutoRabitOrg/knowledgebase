@@ -2,7 +2,7 @@
 description: >-
   Most Recent Runs provides a quick snapshot of the latest execution for each
   release pipeline. It shows the most recent artifact used, the trigger time,
-  and the current status of each stage, allowing u
+  and the current status of each stage.
 ---
 
 # Most recent runs

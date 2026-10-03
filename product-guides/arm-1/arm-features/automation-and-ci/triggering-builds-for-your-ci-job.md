@@ -137,7 +137,3 @@ There are two limitations. The Salesforce validation must be less than 10 days o
 #### The approval flow
 
 ARM already has a deployment approval flow if the main requirement is to hold a deployment until an approver authorizes it. That still needs a person to release it, so it does not give you automated execution at a set time.
-
-#### On the roadmap
-
-We have this use case captured under a planned future deployment. The goal is to let a team prepare and approve a deployment during business hours, pick a future maintenance window, and have ARM run it automatically at that time.

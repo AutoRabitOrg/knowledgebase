@@ -720,7 +720,7 @@
       * [Show CI Build Results in GitHub](product-guides/arm-1/arm-features/automation-and-ci/enabling-github-checks.md)
       * [Automatically Merge Code When CI Builds Pass](product-guides/arm-1/arm-features/automation-and-ci/automate-merge-when-ci-builds-pass.md)
       * [Start a CI Build Automatically or Manually](product-guides/arm-1/arm-features/automation-and-ci/triggering-builds-for-your-ci-job.md)
-      * [Send CI Build Results to Another Tool](product-guides/arm-1/arm-features/automation-and-ci/configure-callout-url.md)
+      * [HTTP Callout Configuration](product-guides/arm-1/arm-features/automation-and-ci/configure-callout-url.md)
       * [Speed Up CI Builds with Parallel Processing](product-guides/arm-1/arm-features/automation-and-ci/parallel-processor.md)
     * [Deployment](product-guides/arm-1/arm-features/deployment/README.md)
       * [Create & Deploy Changes](product-guides/arm-1/arm-features/deployment/create-and-deploy-changes-in-autorabit.md)

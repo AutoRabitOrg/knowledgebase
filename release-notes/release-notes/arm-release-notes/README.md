@@ -70,13 +70,13 @@ With this fix, saved SCA options are displayed correctly, and the applicable Son
 
 **Release Date:** **27 September 2026**
 
-#### Accurate Save Messaging for Data Loader Pro Jobs
+#### Accurate Save Messaging for DataLoader Pro Jobs
 
-When **Skip mappings** was selected while saving a Data Loader Pro job, the application could display an incorrect message. Save-message handling was corrected to accurately reflect the selected mapping behavior. The correction applies to new and existing jobs with single or multiple objects in both the existing and new interfaces.
+When **Skip mappings** was selected while saving a DataLoader Pro job, the application could display an incorrect message. Save-message handling was corrected to accurately reflect the selected mapping behavior. The correction applies to new and existing jobs with single or multiple objects in both the existing and new interfaces.
 
-#### Preserved Query Changes in Cloned Data Loader Extract Jobs
+#### Preserved Query Changes in Cloned DataLoader Extract Jobs
 
-Changes made to a SOQL query while cloning a Data Loader Basic Extract Job were not retained, causing the cloned job to use the original query. Query-modification handling was corrected so the edited query is saved with the cloned job. The cloned job now executes using the updated query criteria in both the existing and new interfaces.
+Changes made to a SOQL query while cloning a DataLoader Basic Extract Job were not retained, causing the cloned job to use the original query. Query-modification handling was corrected so the edited query is saved with the cloned job. The cloned job now executes using the updated query criteria in both the existing and new interfaces.
 
 ***
 

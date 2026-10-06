@@ -4,7 +4,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" %}
 
-## AutoRABIT Guard 26.2.5.6 Release Notes
+## AutoRABIT Guard 26.2.6 Release Notes
 
 **Release Date: 7 October 2026**
 

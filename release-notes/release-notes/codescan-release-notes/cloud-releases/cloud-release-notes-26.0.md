@@ -4,6 +4,224 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.22
+
+**Release Date:** 7 October 2026
+
+### Summary
+
+CodeScan 26.0.22 is comprised of the following components:
+
+* 1 New Features
+* 4 Application Enhancements
+* 0 New Rules
+* 5 Rule Enhancements
+* 0 Rule Deprecations
+* 7 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+### New Features
+
+#### **Salesforce Static Resource Scanning**
+
+Introduced the ability to extract and analyze the contents of Salesforce Static Resource files. Supported file types within archives (JS, CSS, HTML, JSON, etc.) are routed to their existing language analyzers, with findings reported against the original resource name and internal file path.
+
+**Behavior**
+
+* Supported archive formats (ZIP/JAR) are detected, extracted, and their contents analyzed using existing language analyzers.
+* Findings preserve the original resource/archive name and internal file path.
+* The capability extends beyond Salesforce-specific `.resource` files to other supported archive formats discovered through CodeScan integrations.
+* Temporary extracted content is cleaned up after analysis.
+
+**Configuration Controls**
+
+* A new instance-level feature flag (`Enable Static Resource Scanning`) controls availability of the feature.
+* A new project-level switch (`Scan Static Resources`) allows individual projects to enable or disable archive scanning.
+* The feature must be enabled at both levels to take effect.
+* Existing analysis behavior remains unchanged when the feature is disabled.
+
+**Outcome**
+
+* Enables visibility into vulnerabilities and code quality issues hidden inside archive resources.
+* Provides granular control at both instance and project levels.
+* No impact to existing analysis when the feature is not enabled.
+
+***
+
+### Application Enhancements
+
+#### **Rebranded to AutoRABIT CodeScan**
+
+Updated branding throughout the product from "CodeScan" to "AutoRABIT CodeScan."
+
+**Behavior**
+
+* Login page updated with new AutoRABIT CodeScan branding.
+* Application UI logo updated across all pages.
+* Logo and product name updated in PDF reports, emails, and other generated assets.
+* Auth0 callback error page logo corrected (was previously truncated).
+
+**Outcome**
+
+* Consistent AutoRABIT CodeScan branding across all customer-facing surfaces.
+
+***
+
+#### **Quality Profiles Page Displays Actual Profile Name**
+
+Updated the project-level Quality Profiles page to show the actual profile name instead of the generic "Instance default" label.
+
+**Behavior**
+
+* The "Current Quality Profile" column now displays the real profile name for every language (e.g., "CodeScan Core (Instance default)").
+* A visual indicator (badge/tag) still shows when the profile is the instance default, so the distinction is preserved.
+* No change for languages that already have a specific (non-default) profile assigned.
+
+**Outcome**
+
+* Eliminates the need to navigate to Administration > Quality Profiles to identify which profile is applied.
+* Improves usability of the project settings page.
+
+***
+
+#### **AI Code Assistant Hidden from Assignee Dropdown for Unlicensed Users**
+
+Updated the assignee dropdown to display the AI Code Assistant option only for organizations with an active AI Code Assistant license.
+
+Outcome
+
+* Prevents confusion for users whose organization does not have an AI Code Assistant license.
+* Ensures the UI accurately reflects available functionality per subscription.
+
+***
+
+#### **Migrated from Deprecated SOAP Login to OAuth**
+
+Migrated the on-prem SonarQube plugin's Salesforce authentication from the deprecated SOAP `login()` call (pinned at API v41.0) to an OAuth JWT Bearer flow, ahead of Salesforce's announced full retirement of SOAP `login()` by mid-2027.
+
+**Behavior**
+
+* The connected-unit-test runner and metadata retrieval now authenticate using OAuth JWT Bearer instead of SOAP username/password `login()`.
+* All CodeScan OAuth flows have been cross-checked for reliance on the retiring username-password (ROPC) grant.
+
+**Outcome**
+
+* Future-proofs on-prem customer deployments against the Salesforce SOAP login retirement (Winter 27 Release).
+* Aligns authentication with Salesforce's recommended OAuth patterns.
+
+***
+
+### Rule Enhancements
+
+#### **Added `usePreviousVersion` Support for `sf:FieldLevelSecurity`**
+
+Applied the `usePreviousVersion` parameter to the `sf:FieldLevelSecurity` rule following the versioning framework introduced in 26.0.21.&#x20;
+
+Customers can set `usePreviousVersion = true` to continue using the prior version of the FLS rule behavior while transitioning to the latest enhancements.
+
+***
+
+#### **Updated Class Sharing Rules for Salesforce API 67+**
+
+Updated `sf:OuterClassExplicitSharing`, `sf:DMLWithoutSharingEnabled`, and `sf:ClassExplicitSharing` to account for the default `with sharing` behavior introduced in Salesforce API 67.
+
+**Behavior**
+
+* The rules now recognize that Salesforce enforces `with sharing` by default starting at API 67.
+* Classes targeting API 67+ are no longer incorrectly flagged for missing explicit sharing declarations.
+
+**Outcome**
+
+* Eliminates false violations for customers on API 67+.
+* Aligns rule behavior with current Salesforce platform defaults.
+
+***
+
+#### **Updated Field-Level Security Rule for Salesforce API 67+**
+
+Updated the `sf:FieldLevelSecurity` rule to align with API 67+ changes to field-level security enforcement behavior.
+
+**Outcome**
+
+* Ensures FLS rule accuracy for customers targeting Salesforce API 67 and above.
+
+***
+
+#### **Extended `sf:TrackSuppressWarnings` to Detect NOPMD Comments**
+
+Extended the `sf:TrackSuppressWarnings` rule to also detect `NOPMD` comment annotations, which serve a similar suppression purpose to `@SuppressWarnings`.
+
+**Outcome**
+
+* Ensures all code-analysis suppression mechanisms are tracked consistently.
+
+***
+
+#### **Updated API-Version Rule-Floor Defaults**
+
+Bumped the default minimum API version thresholds for `OldApiVersionRule`, `OldFlowApiRule`, and `OldLWCApiRule` to reflect current Salesforce release levels.
+
+**Outcome**
+
+* Customers using default rule configurations are alerted to outdated API versions in line with current Salesforce recommendations.
+
+***
+
+### Fixes
+
+#### **Analysis Failure on Large Salesforce Profiles During PR Scans**
+
+Fixed an issue where CodeScan analysis failed when processing very large Salesforce Profile metadata files during pull request scans. SARIF file size generation has been increased to handle high-volume profile data.
+
+Customers with large Profile metadata files will no longer experience analysis failures.
+
+***
+
+#### **Field-Level Security Rule Not Raised for Switch Cases and Enum Fields**
+
+Fixed an issue where the `sf:FieldLevelSecurity` rule was not raised correctly when secured fields were accessed inside `switch` statement conditions or through enum values.
+
+Outcome: FLS violations in `switch`/`enum` patterns are now detected consistently.
+
+***
+
+#### **`sfmeta:ExternalCredentialPlainTextValue` False Positive on Dynamic Merge Fields**
+
+Fixed a false violation where the rule incorrectly flagged dynamic merge field references as plain-text credential values.
+
+***
+
+#### **CVSS Score Breakdown Missing in Rules Module**
+
+Fixed an issue where the CVSS Score Breakdown button was missing from vulnerability rules in the CodeScan GUI portal.
+
+***
+
+#### **`sf:AuraControllerNaming` False Positives for DTO Classes**
+
+Fixed false positives where non-controller Apex classes with `@AuraEnabled` properties (used as Data Transfer Objects) were incorrectly flagged. The rule now triggers only on classes with `@AuraEnabled` methods, not just any class containing `@AuraEnabled`.
+
+DTO classes are no longer incorrectly reported as Aura controllers.
+
+***
+
+#### **`sf:CommentRequired` Misfired When Annotation Precedes Method Comment**
+
+Fixed a false positive where the rule did not recognize method comments when an annotation declaration appeared between the comment and the method signature.
+
+Methods with annotations before their comment blocks are now recognized correctly.
+
+***
+
+#### **JavaScript Parser for ES Module Syntax**
+
+Fixed an issue where JavaScript files using ES module `export {}` syntax were incorrectly parsed as CommonJS scripts (`sourceType: "script"`), causing parser errors (`cs-js:exception`).
+
+JavaScript files using standard ES module export syntax are now analyzed without errors.
+
+***
+
 ## CodeScan Release Notes 26.0.21
 
 **Release Date: 20 September 2026**

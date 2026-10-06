@@ -1,5 +1,6 @@
 ---
 hidden: true
+noIndex: true
 ---
 
 # DataLoader + DataLoader Pro Release Notes

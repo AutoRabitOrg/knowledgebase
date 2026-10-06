@@ -6,7 +6,7 @@
 
 ## CodeScan Release Notes 26.0.22
 
-**Release Date:** 7 October 2026
+**Release Date: 7 October 2026**
 
 ### Summary
 
@@ -51,8 +51,6 @@ Please note that files within static resource archives that exceed 500 KB in siz
 * Provides granular control at both instance and project levels.
 * No impact to existing analysis when the feature is not enabled.
 
-***
-
 ### Application Enhancements
 
 #### **Rebranded to AutoRABIT CodeScan**
@@ -70,8 +68,6 @@ Updated branding throughout the product from "CodeScan" to "AutoRABIT CodeScan."
 
 * Consistent AutoRABIT CodeScan branding across all customer-facing surfaces.
 
-***
-
 #### **Quality Profiles Page Displays Actual Profile Name**
 
 Updated the project-level Quality Profiles page to show the actual profile name instead of the generic "Instance default" label.
@@ -87,8 +83,6 @@ Updated the project-level Quality Profiles page to show the actual profile name 
 * Eliminates the need to navigate to Administration > Quality Profiles to identify which profile is applied.
 * Improves usability of the project settings page.
 
-***
-
 #### **AI Code Assistant Hidden from Assignee Dropdown for Unlicensed Users**
 
 Updated the assignee dropdown to display the AI Code Assistant option only for organizations with an active AI Code Assistant license.
@@ -97,8 +91,6 @@ Outcome
 
 * Prevents confusion for users whose organization does not have an AI Code Assistant license.
 * Ensures the UI accurately reflects available functionality per subscription.
-
-***
 
 #### **Migrated from Deprecated SOAP Login to OAuth**
 
@@ -114,8 +106,6 @@ Migrated the on-prem SonarQube plugin's Salesforce authentication from the depre
 * Future-proofs on-prem customer deployments against the Salesforce SOAP login retirement (Winter 27 Release).
 * Aligns authentication with Salesforce's recommended OAuth patterns.
 
-***
-
 ### Rule Enhancements
 
 #### **Added `usePreviousVersion` Support for `sf:FieldLevelSecurity`**
@@ -123,8 +113,6 @@ Migrated the on-prem SonarQube plugin's Salesforce authentication from the depre
 Applied the `usePreviousVersion` parameter to the `sf:FieldLevelSecurity` rule following the versioning framework introduced in 26.0.21.&#x20;
 
 Customers can set `usePreviousVersion = true` to continue using the prior version of the FLS rule behavior while transitioning to the latest enhancements.
-
-***
 
 #### **Updated Class Sharing Rules for Salesforce API 67+**
 
@@ -140,8 +128,6 @@ Updated `sf:OuterClassExplicitSharing`, `sf:DMLWithoutSharingEnabled`, and `sf:C
 * Eliminates false violations for customers on API 67+.
 * Aligns rule behavior with current Salesforce platform defaults.
 
-***
-
 #### **Updated Field-Level Security Rule for Salesforce API 67+**
 
 Updated the `sf:FieldLevelSecurity` rule to align with API 67+ changes to field-level security enforcement behavior.
@@ -149,8 +135,6 @@ Updated the `sf:FieldLevelSecurity` rule to align with API 67+ changes to field-
 **Outcome**
 
 * Ensures FLS rule accuracy for customers targeting Salesforce API 67 and above.
-
-***
 
 #### **Extended `sf:TrackSuppressWarnings` to Detect NOPMD Comments**
 
@@ -160,8 +144,6 @@ Extended the `sf:TrackSuppressWarnings` rule to also detect `NOPMD` comment anno
 
 * Ensures all code-analysis suppression mechanisms are tracked consistently.
 
-***
-
 #### **Updated API-Version Rule-Floor Defaults**
 
 Bumped the default minimum API version thresholds for `OldApiVersionRule`, `OldFlowApiRule`, and `OldLWCApiRule` to reflect current Salesforce release levels.
@@ -169,8 +151,6 @@ Bumped the default minimum API version thresholds for `OldApiVersionRule`, `OldF
 **Outcome**
 
 * Customers using default rule configurations are alerted to outdated API versions in line with current Salesforce recommendations.
-
-***
 
 ### Fixes
 
@@ -180,27 +160,19 @@ Fixed an issue where CodeScan analysis failed when processing very large Salesfo
 
 Customers with large Profile metadata files will no longer experience analysis failures.
 
-***
-
 #### **Field-Level Security Rule Not Raised for Switch Cases and Enum Fields**
 
 Fixed an issue where the `sf:FieldLevelSecurity` rule was not raised correctly when secured fields were accessed inside `switch` statement conditions or through enum values.
 
 Outcome: FLS violations in `switch`/`enum` patterns are now detected consistently.
 
-***
-
 #### **`sfmeta:ExternalCredentialPlainTextValue` False Positive on Dynamic Merge Fields**
 
 Fixed a false violation where the rule incorrectly flagged dynamic merge field references as plain-text credential values.
 
-***
-
 #### **CVSS Score Breakdown Missing in Rules Module**
 
 Fixed an issue where the CVSS Score Breakdown button was missing from vulnerability rules in the CodeScan GUI portal.
-
-***
 
 #### **`sf:AuraControllerNaming` False Positives for DTO Classes**
 
@@ -208,15 +180,11 @@ Fixed false positives where non-controller Apex classes with `@AuraEnabled` prop
 
 DTO classes are no longer incorrectly reported as Aura controllers.
 
-***
-
 #### **`sf:CommentRequired` Misfired When Annotation Precedes Method Comment**
 
 Fixed a false positive where the rule did not recognize method comments when an annotation declaration appeared between the comment and the method signature.
 
 Methods with annotations before their comment blocks are now recognized correctly.
-
-***
 
 #### **JavaScript Parser for ES Module Syntax**
 

@@ -1,8 +1,58 @@
 # AutoRABIT Guard Release Notes 26.2
 
-<figure><img src="../../../.gitbook/assets/Guard_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FSSQvOlHe13oENd22IFiw%2FGuard_Banner_1920x1080.png?alt=media&#x26;token=9a888e42-6caa-4885-a246-c5308e4971c8" alt=""><figcaption></figcaption></figure>
 
-{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive Guard updates!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" %}
+
+## AutoRABIT Guard 26.2.5.6 Release Notes
+
+**Release Date: 7 October 2026**
+
+### Enhancements
+
+#### Salesforce token heartbeat and reconnect state
+
+Guard now keeps eligible Salesforce connected app and external client app refresh tokens active with a scheduled heartbeat. This helps prevent inactive connected orgs from unexpectedly requiring reauthorization after Salesforce enforces the Winter '27 refresh-token idle timeout.
+
+If a Salesforce refresh token has expired or been revoked, Guard now shows a clearer reconnect state so administrators know the org must be reauthorized.
+
+#### Salesforce API compatibility updates
+
+Guard now avoids retired or deprecated Salesforce API version pins in affected Salesforce integration paths. This improves compatibility with upcoming Salesforce API retirement timelines and keeps validation rule enrichment and SOAP-based exposure checks aligned with supported API versions.
+
+#### Salesforce integration-user permission guidance
+
+Guard documentation and related guidance now include the Salesforce permissions required for upcoming Salesforce release updates, including View All Profiles and View Setup Audit Trail.
+
+### Bug Fixes
+
+#### Automated Data Classification: Manual run control
+
+Automated Data Classification now runs only after an explicit user action. Connecting or reconnecting a Salesforce org no longer starts classification automatically, helping prevent AI credits from being used without user intent.
+
+Guard also shows clearer empty states before a first manual classification run and no longer presents unanalyzed orgs as having zero regulated fields.
+
+#### Automated Data Classification: Support-user access
+
+Support users can no longer trigger Data Classification through MCP tools. This keeps classification runs aligned with tenant-user permissions and prevents support sessions from consuming customer AI credits.
+
+#### Drift Policies: Large-org evaluation stability
+
+Drift Policy evaluation for User Activity Monitoring now processes only changed users instead of loading the full user population for each evaluation. This prevents History Persist jobs from hanging or running out of memory in large Salesforce orgs.
+
+#### Org Executive Reports: Export reliability
+
+Org Executive Report PDF exports now complete successfully instead of failing during report generation.
+
+#### Single Sign-On: User attributes
+
+Users signing in with SSO now retain the expected account attributes after login. This prevents missing user details, tenant assignment issues and related GraphQL errors.
+
+#### Risk Assessment: Auto-resolve with Salesforce MFA
+
+Risk Assessment auto-resolve now works for Salesforce orgs where multi-factor authentication is required for direct UI logins.
+
+***
 
 ## AutoRABIT Guard 26.2.5 Release Notes
 
@@ -197,7 +247,7 @@ The organization selector is now locked while Permission History results are bei
 
 ***
 
-## AutoRABIT Guard Release Notes 26.2.3&#x20;
+## AutoRABIT Guard Release Notes 26.2.3
 
 **Release Date: 5 August 2026**
 

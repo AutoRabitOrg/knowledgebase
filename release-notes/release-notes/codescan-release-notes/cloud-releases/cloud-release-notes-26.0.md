@@ -34,6 +34,10 @@ Introduced the ability to extract and analyze the contents of Salesforce Static 
 * The capability extends beyond Salesforce-specific `.resource` files to other supported archive formats discovered through CodeScan integrations.
 * Temporary extracted content is cleaned up after analysis.
 
+{% hint style="info" %}
+Please note that files within static resource archives that exceed 500 KB in size are automatically skipped during analysis to ensure performance and stability.
+{% endhint %}
+
 **Configuration Controls**
 
 * A new instance-level feature flag (`Enable Static Resource Scanning`) controls availability of the feature.

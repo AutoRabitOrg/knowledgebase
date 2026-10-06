@@ -6,43 +6,45 @@
 
 ## AutoRABIT Vault Release Notes 26.2.6
 
-**Release Date: 07 Oct 2026**
+**Release Date: 7 October 2026**
 
-### Improved Object Selection Table Alignment <a href="#id-1.-improved-object-selection-table-alignment" id="id-1.-improved-object-selection-table-alignment"></a>
+#### Improved Object Selection Table Alignment <a href="#id-1.-improved-object-selection-table-alignment" id="id-1.-improved-object-selection-table-alignment"></a>
 
 Corrected the alignment of table headers, values, and action icons on the object selection screen. The Filters and Hierarchy icons now appear consistently beneath their corresponding headers, improving readability and navigation.
 
-### Enhanced Security Controls Across AutoRABIT Vault Workflows <a href="#id-2.-enhanced-security-controls-across-autorabit-vault-workflows" id="id-2.-enhanced-security-controls-across-autorabit-vault-workflows"></a>
+#### Enhanced Security Controls Across AutoRABIT Vault Workflows <a href="#id-2.-enhanced-security-controls-across-autorabit-vault-workflows" id="id-2.-enhanced-security-controls-across-autorabit-vault-workflows"></a>
 
 Strengthened security controls across AutoRABIT Vault administrative and data-processing workflows.
 
-### Complete Profile Metadata in Full Backups <a href="#id-3.-complete-profile-metadata-in-full-backups" id="id-3.-complete-profile-metadata-in-full-backups"></a>
+#### Complete Profile Metadata in Full Backups <a href="#id-3.-complete-profile-metadata-in-full-backups" id="id-3.-complete-profile-metadata-in-full-backups"></a>
 
 Resolved an issue that produced empty Profile metadata files in downloaded Full Metadata Backup packages. AutoRABIT Vault now captures and includes complete Profile metadata, ensuring that backup packages contain the information required for inspection and recovery.
 
-### Authenticated Access for Email Download Links <a href="#id-4.-authenticated-access-for-email-download-links" id="id-4.-authenticated-access-for-email-download-links"></a>
+#### Authenticated Access for Email Download Links <a href="#id-4.-authenticated-access-for-email-download-links" id="id-4.-authenticated-access-for-email-download-links"></a>
 
 Added active-session validation to download links delivered through AutoRABIT Vault email notifications. Signed-out recipients are directed to the login page and returned to the download after authentication. This protection covers Backup and Archive downloads, Archival Report ZIP files, Salesforce files, and Compare exports.
 
-### Search and Compare with Proxy Setup <a href="#id-5.-search-and-compare-with-proxy-setup" id="id-5.-search-and-compare-with-proxy-setup"></a>
+#### Search and Compare with Proxy Setup <a href="#id-5.-search-and-compare-with-proxy-setup" id="id-5.-search-and-compare-with-proxy-setup"></a>
 
 Confirmed that Search and Compare works in proxy-enabled environments when the required proxy and network permissions are configured. AutoRABIT Vault routes these operations through the configured proxy as designed. Administrators should ensure that the necessary permissions are available.
 
-### Reliable Restoration of Experience Cloud Metadata <a href="#id-6.-reliable-restoration-of-experience-cloud-metadata" id="id-6.-reliable-restoration-of-experience-cloud-metadata"></a>
+#### Reliable Restoration of Experience Cloud Metadata <a href="#id-6.-reliable-restoration-of-experience-cloud-metadata" id="id-6.-reliable-restoration-of-experience-cloud-metadata"></a>
 
 Resolved an issue that could cause Experience Cloud metadata restoration to fail when components listed in the deployment manifest were missing from the generated package. AutoRABIT Vault now includes the required ExperienceBundle and DigitalExperience components consistently when preparing Restore packages.
 
-### Archival Reports for Azure and Google Cloud Storage <a href="#id-7.-archival-reports-for-azure-and-google-cloud-storage" id="id-7.-archival-reports-for-azure-and-google-cloud-storage"></a>
+#### Archival Reports for Azure and Google Cloud Storage <a href="#id-7.-archival-reports-for-azure-and-google-cloud-storage" id="id-7.-archival-reports-for-azure-and-google-cloud-storage"></a>
 
 Resolved an issue that prevented archival reports from being generated or downloaded when Azure Blob Storage or Google Cloud Storage was configured. AutoRABIT Vault now generates accessible reports for completed Archive jobs using either supported storage provider.
 
-### Bulk Clone Masking Rules Across Salesforce Orgs <a href="#id-8.-bulk-clone-masking-rules-across-salesforce-orgs" id="id-8.-bulk-clone-masking-rules-across-salesforce-orgs"></a>
+#### Bulk Clone Masking Rules Across Salesforce Orgs <a href="#id-8.-bulk-clone-masking-rules-across-salesforce-orgs" id="id-8.-bulk-clone-masking-rules-across-salesforce-orgs"></a>
 
 Added the ability to clone multiple masking rules from one Salesforce org to multiple target orgs in a single operation. AutoRABIT Vault validates compatibility and records the outcome for each selected org, simplifying the rollout of consistent masking configurations across environments.
 
-### Clone Masking Rules Across Compatible Objects <a href="#id-9.-clone-masking-rules-across-compatible-objects" id="id-9.-clone-masking-rules-across-compatible-objects"></a>
+#### Clone Masking Rules Across Compatible Objects <a href="#id-9.-clone-masking-rules-across-compatible-objects" id="id-9.-clone-masking-rules-across-compatible-objects"></a>
 
 Added the ability to clone an existing masking rule to compatible fields across multiple Salesforce objects. Users can select a source rule and apply it to fields with the same data type on up to five target objects. AutoRABIT Vault also identifies fields that already have masking rules, helping prevent duplicate configurations.
+
+***
 
 ## AutoRABIT Vault Release Notes 26.2.5 <a href="#autorabit-vault-release-notes-26.2.5" id="autorabit-vault-release-notes-26.2.5"></a>
 

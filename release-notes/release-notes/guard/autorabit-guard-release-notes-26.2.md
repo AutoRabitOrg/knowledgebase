@@ -32,21 +32,13 @@ Automated Data Classification now runs only after an explicit user action. Conne
 
 Guard also shows clearer empty states before a first manual classification run and no longer presents unanalyzed orgs as having zero regulated fields.
 
-#### Automated Data Classification: Support-user access
+#### User Activity Monitoring: Large-org evaluation stability
 
-Support users can no longer trigger Data Classification through MCP tools. This keeps classification runs aligned with tenant-user permissions and prevents support sessions from consuming customer AI credits.
-
-#### Drift Policies: Large-org evaluation stability
-
-Drift Policy evaluation for User Activity Monitoring now processes only changed users instead of loading the full user population for each evaluation. This prevents History Persist jobs from hanging or running out of memory in large Salesforce orgs.
+Drift Policy evaluation for User Activity Monitoring now processes only changed users instead of loading the full user population for each evaluation. This prevents jobs from hanging or running out of memory in large Salesforce orgs.
 
 #### Org Executive Reports: Export reliability
 
 Org Executive Report PDF exports now complete successfully instead of failing during report generation.
-
-#### Single Sign-On: User attributes
-
-Users signing in with SSO now retain the expected account attributes after login. This prevents missing user details, tenant assignment issues and related GraphQL errors.
 
 #### Risk Assessment: Auto-resolve with Salesforce MFA
 

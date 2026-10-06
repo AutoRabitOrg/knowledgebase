@@ -1220,7 +1220,7 @@
       * [java.lang.OutOfMemoryError: GC overhead limit exceeded](product-guides/codescan/codescan-faqs/codescan-self-hosted-issues/java.lang.outofmemoryerror-gc-overhead-limit-exceeded.md)
       * [Setting the System Environment Variable](product-guides/codescan/codescan-faqs/codescan-self-hosted-issues/setting-the-system-environment-variable.md)
       * [Setting Up CodeScan for Use with a Proxy](product-guides/codescan/codescan-faqs/codescan-self-hosted-issues/setting-up-codescan-for-use-with-a-proxy.md)
-* [CodeScan Next](product-guides/codescan-next.md)
+* [CodeScan 2.0](product-guides/codescan-2.0.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)
   * [AutoRABIT Vault Freemium](product-guides/vault/autorabit-vault-freemium/README.md)
     * [User Registration](product-guides/vault/autorabit-vault-freemium/user-registration.md)

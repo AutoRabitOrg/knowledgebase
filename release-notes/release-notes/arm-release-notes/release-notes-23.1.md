@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Release Notes 23
 
 ## ARM Release Notes 23.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>

@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Release Notes 21
 
 ## ARM Release Notes **21.6**

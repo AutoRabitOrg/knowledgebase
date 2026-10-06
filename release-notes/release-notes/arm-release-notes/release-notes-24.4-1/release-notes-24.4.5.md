@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Release Notes 24
 
 ## ARM Release Notes 24.4.5

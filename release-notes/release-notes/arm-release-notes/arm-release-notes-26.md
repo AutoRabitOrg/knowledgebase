@@ -2,6 +2,8 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive updated release notes!" %}
+
 ## ARM **Release Notes 26.4.2**
 
 **Release Date: 11 October 2026**

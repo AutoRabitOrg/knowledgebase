@@ -92,12 +92,10 @@ Example:\
 
 ## For Enterprise Customers
 
-Use the following endpoints:&#x20;
+Use the following endpoints:
 
-/api/webhook/v2/\<OrgName>/enterprise/trigger-scm-push-request&#x20;
+/api/webhook/v2/\<OrgName>/enterprise/trigger-scm-push-request\
+**Example**: [https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request)
 
-Example:https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request
-
-/api/webhook/v2/\<OrgName>/enterprise/sync-alm-commits
-
-Example: [https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits](https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits)
+/api/webhook/v2/\<OrgName>/enterprise/sync-alm-commits\
+**Example**: [https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits](https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits)

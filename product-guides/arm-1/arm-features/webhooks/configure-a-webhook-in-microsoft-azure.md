@@ -1,4 +1,4 @@
-# Configure a Webhook in Microsoft Azure
+# Microsoft Azure
 
 {% hint style="info" %}
 After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
@@ -92,4 +92,10 @@ Example:\
 
 ## For Enterprise Customers
 
-Use the following endpoints: /api/webhook/v2//enterprise/trigger-scm-push-request /api/webhook/v2//enterprise/sync-alm-commits
+Use the following endpoints:
+
+/api/webhook/v2/\<OrgName>/enterprise/trigger-scm-push-request\
+**Example**: [https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/trigger-scm-push-request)
+
+/api/webhook/v2/\<OrgName>/enterprise/sync-alm-commits\
+**Example**: [https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits](https://login.autorabit.com/api/webhook/v2/autorabit.com/enterprise/sync-alm-commits)

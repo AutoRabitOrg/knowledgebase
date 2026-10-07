@@ -2,6 +2,62 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
+## ARM **Release Notes 26.4.2**
+
+**Release Date: 11th October 2026**
+
+#### EZ-Commit Auto Draft Deleted Components Fix <a href="#ez-commit-auto-draft-deleted-components-fix" id="ez-commit-auto-draft-deleted-components-fix"></a>
+
+Fixed an issue where components already deleted and committed through **Select Manually** continued to appear under the **Deleted** tab in EZ-Commit Auto Draft. In some cases, attempting to commit these components again resulted in a **“No Modifications”** message.
+
+The Auto Draft processing logic has been corrected to remove empty files after deletions are committed, ensuring previously committed deletions no longer appear as pending changes.
+
+#### Target Branch HEAD Revision Validation for EZ-Merge Approvals <a href="#target-branch-head-revision-validation-for-ez-merge-approvals" id="target-branch-head-revision-validation-for-ez-merge-approvals"></a>
+
+Added a new **Validate Target Branch Head Revision before Approval** setting under **Settings → My Account → Merge Settings** to help prevent approvals when the target branch has changed after a Merge or Quick Merge was created.
+
+When enabled, ARM compares the current target branch HEAD revision with the revision captured when the merge was created. If new commits are detected while the merge is in **Approval Pending**, ARM displays a warning to the approver before proceeding:
+
+> **The target branch head revision has changed since this merge was created.**
+
+The validation applies to **Merge and Quick Merge** workflows, including **multi-level approvals** and scenarios where **Auto Commit on Approval** is enabled. When the setting is disabled, the existing approval behavior remains unchanged.
+
+#### EZ-Merge Re-Push for Failed Git Pushes <a href="#ez-merge-re-push-for-failed-git-pushes" id="ez-merge-re-push-for-failed-git-pushes"></a>
+
+Fixed an issue where the **Re-Push** option was not available after an EZ-Merge push failed due to repository restrictions such as branch protection or target branch changes.
+
+The **DISABLE\_MERGE\_REPUSH** feature flag now correctly controls this behavior. When the flag is **disabled (false)**, ARM retains the merge in a state that allows users to retry the push after resolving the repository issue. When the flag is **enabled (true)**, the merge is marked as failed and the Re-Push option is not available.
+
+The fix applies to both the **New UI and Old UI** and ensures Post Merge Updates are performed only after the changes are successfully pushed to the remote repository.
+
+#### Environment Provisioning Template Log Display Fix (New UI) <a href="#environment-provisioning-template-log-display-fix-new-ui" id="environment-provisioning-template-log-display-fix-new-ui"></a>
+
+Fixed an issue in the New UI where logs were not displayed for certain **Unsupported Metadata (TAF)** Environment Provisioning template steps, even though the logs were generated successfully.
+
+The log retrieval logic has been updated to use the template step’s actual file path instead of deriving the log filename from the step label. This ensures logs are correctly retrieved and displayed for affected TAF templates, including **Edit Queue**, **AnalyticSettings**, **Create Organization-Wide Email Footers**, and **Social Accounts Contacts And Lead Settings**.
+
+This issue was limited to the **New UI** and did not affect template execution, Info, Re-run, or the Old UI.
+
+#### Azure DevOps Pull Request CI Trigger Fix <a href="#azure-devops-pull-request-ci-trigger-fix" id="azure-devops-pull-request-ci-trigger-fix"></a>
+
+Fixed an issue where **CI Jobs configured for Azure DevOps Pull Request triggers** were not starting automatically, while commit-based triggers continued to work as expected.
+
+The Azure webhook URL matching logic has been updated to support both **DefaultCollection** URL formats used by Azure DevOps, ensuring Pull Request webhook events are correctly recognized and processed. This improves CI Job triggering for Azure DevOps repositories without affecting existing commit-based webhook behavior.
+
+#### Vlocity Commit and Release Label Selection Fix (New UI) <a href="#vlocity-commit-and-release-label-selection-fix-new-ui" id="vlocity-commit-and-release-label-selection-fix-new-ui"></a>
+
+Fixed an issue in the New UI where **Commit Labels** and **Release Labels** were not available for selection during **Vlocity EZ-Commit** under the Post Commit options.
+
+The EZ-Commit request logic has been corrected to send the selected component type, ensuring ARM retrieves the appropriate labels for both **Vlocity** and **Metadata** commits. Additional fixes were made to preserve the Vlocity label type when creating or editing Release Labels and to refresh the available label list when switching component types.
+
+This update ensures users can correctly select applicable **Commit Labels** and **Release Labels** during Vlocity EZ-Commit workflows without affecting existing Metadata label behavior.
+
+#### Environment Provisioning Navigation Error Fix (New UI) <a href="#environment-provisioning-navigation-error-fix-new-ui" id="environment-provisioning-navigation-error-fix-new-ui"></a>
+
+Fixed an issue in the New UI where navigating between **Environment Provisioning** template options displayed an unexpected **“No static resource api/deployment/posttemplateexists”** error.
+
+The template name validation logic has been corrected to prevent unnecessary API requests when the template name is empty or when switching between template types. Users can now navigate between **Migration** and **Unsupported Metadata** template workflows without encountering the unexpected error.
+
 ## ARM **Release Notes 26.4.1**
 
 **Release Date: 7th October 2026**

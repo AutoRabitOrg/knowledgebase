@@ -35,18 +35,21 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 <figure><img src="../../../../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
 
-2. Go to **Settings > Integrations**.
-
-<figure><img src="../../../../.gitbook/assets/image (977).png" alt=""><figcaption></figcaption></figure>
-
+2. Go to **Settings > Webhooks**.\
+   ![](<../../../../.gitbook/assets/image (2890).png>)
 3. In the **URL** field, enter the webhook endpoint:
 
 For example:\
-https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request
+https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request<br>
 
-<figure><img src="../../../../.gitbook/assets/image (978).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2891).png" alt=""><figcaption></figcaption></figure>
 
-4. Complete the configuration and click **Add Webhook**.
+4. Add the API Token created as the Secret.&#x20;
+5. Select the required triggers:
+   1. Push Events
+   2. Merge Request Events
+   3. Any additional trigger events as required.
+6. Click **Save Changes**.
 
 ## Smart Commits
 

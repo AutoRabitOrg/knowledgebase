@@ -4,16 +4,19 @@
 
 #### What this enables
 
-AutoRABIT Guard can now be operated directly from your AI coding assistant of choice, so you can skip the browser altogether. The Guard **MCP** (Model Context Protocol server) and **Skill** give tools like Claude Code and Codex a direct connection to the Guard platform, so your team can do things like:
+AutoRABIT Guard can be used directly from supported AI assistants. The Guard **MCP** (Model Context Protocol server) gives those assistants secure access to Guard tools, while the **Skill** gives the assistant Guard-specific guidance so you can ask questions naturally.
+
+With the Guard MCP and Skill, your team can:
 
 * Ask questions in plain English and get back live security data from your Salesforce orgs
-* Run classification analyses, risk assessments and permission audits from a terminal
-* Export or script Guard data for reporting and reviews without leaving your terminal
+* Run classification analyses, risk assessments and permission audits from a terminal or AI assistant
+* Export or script Guard data for reporting and reviews without leaving your workflow
 
 #### How we keep your credentials safe
 
-* **No credentials leave your machine.** Authentication is handled automatically via OAuth when you connect, using the same identity provider your team already uses. No tokens are stored in config files or passed manually.
-* **Permissions are your Guard permissions.** The AI assistant can only do what your logged-in user is allowed to do in Guard. No privilege escalation is possible.
+* **OAuth keeps passwords out of configuration files.** When you connect the MCP server in an AI assistant, authentication is handled through the browser using the same identity provider your team already uses.
+* **Local auth material still needs to be protected.** The Guard Skill and command-line flows may cache authentication details locally under `~/.guard/configuration`, and API key mode relies on environment variables or command flags. Treat these as sensitive secrets.
+* **Permissions follow the authentication method.** OAuth uses your Guard user permissions. API keys use tenant-bound standard access for the key, so they should be scoped and stored carefully.
 
 ## Compatible tools
 
@@ -30,6 +33,19 @@ Guard's MCP works with any AI coding assistant that supports MCP over HTTPS and 
 
 Any tool not listed here that supports MCP over a custom HTTPS endpoint may also work.
 
+## Decision guide
+
+Use this guide when you are not sure which Guard interface fits the job.
+
+| What you want to do                                             | Use                                    | Why                                                                                          |
+| --------------------------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Review dashboards, filter tables or make admin changes          | Guard web UI                           | Best for visual review, setup tasks and actions that need careful confirmation               |
+| Ask live questions about Guard data from an assistant           | Guard MCP                              | Best for natural-language questions, quick lookups and guided investigation                  |
+| Help an AI assistant understand Guard terminology and workflows | Guard Skill + Guard MCP                | The Skill gives context; the MCP provides live data and tools                                |
+| Run scripted checks in CI or another headless environment       | Guard API key mode                     | Works without browser-based OAuth                                                            |
+| Build a custom automation around Guard data                     | Direct MCP integration                 | Lets your code discover typed Guard tools and call them through the MCP protocol             |
+| Prepare audit notes or review evidence                          | Guard MCP, then Guard web UI if needed | The assistant can summarise findings; the UI is better for final evidence review and exports |
+
 ***
 
 ## Quickstart
@@ -42,32 +58,32 @@ Follow the path for the tool you are using.
 
 1. Go to **Customize → Connectors** and select **Add custom connector**.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-28 143405.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2Fulqpz5nUTFp3Pd4oW6e4%2FScreenshot%202026-04-28%20143405.png?alt=media&#x26;token=0085f6fa-eadd-49d3-817a-60dfb76fe934" alt="" width="563"><figcaption></figcaption></figure>
 
-2. Enter a name (e.g. guard) and _your instance_ URL: https://your-instance.autorabit.com/api/mcp (**replace "your-instance"**)
+2. Enter a name, for example `guard`, and your instance URL: `https://your-instance.autorabit.com/api/mcp` (**replace `your-instance`**).
 3. Click **Add**.
 
 **Step 2: Connect and authenticate**
 
-The connector will appear in your list. Click **Connect** and complete the OAuth login. Authentication is handled automatically in the browser.
+The connector will appear in your list. Click **Connect** and complete the OAuth login in the browser.
 
 **Step 3: Add the Skill file - Desktop app only**
 
 1. In Guard, go to **Help → AI Integration** and download the Skill package.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-29 111441.png" alt="" width="382"><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FVWaRfrvgkRaXagvE6bJY%2FScreenshot%202026-04-29%20111441.png?alt=media&#x26;token=04f89aff-51d9-4111-aa1e-e25d32670e0c" alt="" width="382"><figcaption></figcaption></figure>
 
-2. In Claude Code go to **Customise** → **Skills**. Click + → Create skill → Upload a skill. Select the downloaded guard-skill folder.
+2. In Claude Code, go to **Customise** → **Skills**. Click **+** → **Create skill** → **Upload a skill**. Select the downloaded `guard-skill` folder.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-28 143709.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FX27PO38zGspKGjkkQuX9%2FScreenshot%202026-04-28%20143709.png?alt=media&#x26;token=8bcf93b0-0d9e-47f2-bef3-11c6ce3d2044" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-04-28 143733.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FLGQDPOTIYDwQrqrlix8C%2FScreenshot%202026-04-28%20143733.png?alt=media&#x26;token=a1703672-c60f-4578-b202-be92e394fba5" alt="" width="563"><figcaption></figcaption></figure>
 
 **Step 4: Verify**
 
 Ask: _"List all the Salesforce orgs connected to Guard"_
 
-If you see org names and IDs returned, everything is working. You may need to explicitly ask Claude to use Guard in your prompt, for example: _"use the guard connector to list my orgs"_. Cross-check one org ID against the Guard web UI to confirm.
+If you see org names and IDs returned, everything is working. You may need to explicitly ask Claude to use Guard in your prompt, for example: _"use the Guard connector to list my orgs"_. Cross-check one org ID against the Guard web UI to confirm.
 
 ***
 
@@ -75,9 +91,9 @@ If you see org names and IDs returned, everything is working. You may need to ex
 
 **Step 1: Add the MCP server**
 
-Open \~/.codex/config.toml (create it if it does not exist) and add:
+Open `~/.codex/config.toml` (create it if it does not exist) and add:
 
-```
+```toml
 [mcp_servers.guard]
 url = "https://your-instance.autorabit.com/api/mcp"
 enabled = true
@@ -87,25 +103,25 @@ enabled = true
 
 Run the following in your terminal:
 
-```
+```bash
 codex mcp login guard
 ```
 
-This opens a browser and completes the OAuth login. Your session is stored automatically.
+This opens a browser and completes the OAuth login. Your session is stored automatically by Codex.
 
 **Step 3: Add the Skill**
 
 1. In Guard, go to **Help → AI Integration** and download the Skill package.
-2. Move the downloaded guard-skill folder somewhere permanent on your machine, for example \~/tools/guard-skill.
-3. Add the Skill to the same \~/.codex/config.toml file:
+2. Move the downloaded `guard-skill` folder somewhere permanent on your machine, for example `~/tools/guard-skill`.
+3. Add the Skill to the same `~/.codex/config.toml` file:
 
-```
+```toml
 [[skills.config]]
 path = "/Users/your-name/tools/guard-skill"
 enabled = true
 ```
 
-Replace /Users/your-name/tools/guard-skill with wherever you saved the folder.
+Replace `/Users/your-name/tools/guard-skill` with wherever you saved the folder.
 
 4. Restart Codex.
 
@@ -121,9 +137,9 @@ If you see org names and IDs returned, everything is working. Cross-check one or
 
 **Step 1: Add the MCP server**
 
-In the root of your project, create or edit .cursor/mcp.json (or \~/.cursor/mcp.json to apply across all projects):
+In the root of your project, create or edit `.cursor/mcp.json` (or `~/.cursor/mcp.json` to apply across all projects):
 
-```
+```json
 {
   "mcpServers": {
     "guard": {
@@ -139,7 +155,7 @@ Reload Cursor (Cmd+Shift+P → **Developer: Reload Window**). If Cursor prompts 
 
 **Step 3: Confirm the connection**
 
-Go to **Settings** (Cmd+Shift+J) → **Features** → **Model Context Protocol** and check that guard shows as healthy. If you see an error, open **Output** (Cmd+Shift+U) and select **MCP Logs** from the dropdown for details.
+Go to **Settings** (Cmd+Shift+J) → **Features** → **Model Context Protocol** and check that `guard` shows as healthy. If you see an error, open **Output** (Cmd+Shift+U) and select **MCP Logs** from the dropdown for details.
 
 **Step 4: Verify**
 
@@ -153,121 +169,115 @@ If you see org names and IDs returned, everything is working. Cross-check one or
 
 #### How authentication works
 
-When you connect the Guard MCP, you are taken through an OAuth login flow. This is fully automatic. Guard authenticates you using the same credentials you use to log in to Guard normally, and your session is maintained by the connector.
+When you connect the Guard MCP, you are taken through an OAuth login flow. Guard authenticates you using the same credentials you use to log in to Guard normally, and your session is maintained by the MCP client.
 
-**You do not need to run any commands, enter tokens manually, or manage config files for normal use.**
+You do not need to enter tokens manually for normal interactive use.
+
+#### Skill and command-line authentication
+
+The Guard Skill is separate from the MCP connection. If your assistant uses the Skill for local Guard commands, it may ask you to sign in separately or provide an API key. Local Skill authentication is cached under `~/.guard/configuration`.
 
 #### Authentication for CI and scripted use
 
-If you are running Guard commands in a CI pipeline or another automated context where a browser login is not possible, use the GUARD\_API\_TOKEN environment variable:
+If you are running Guard from a CI pipeline or another automated context where a browser login is not possible, use a Guard API key.
 
-```
-export GUARD_API_TOKEN=your-token-here
+```bash
+export GUARD_API_KEY=your-api-key-here
 ```
 
-When this is set and non-empty, Guard skips the OAuth flow entirely and uses the token directly. Store this as a secured secret in your CI platform. Never commit it to source control.
+The API key is sent to Guard as an `X-API-Key` header. Store it as a secured secret in your CI platform and never commit it to source control.
 
 Other supported overrides for advanced use:
 
-| Method                                      | When to use                                              |
-| ------------------------------------------- | -------------------------------------------------------- |
-| GUARD\_API\_TOKEN environment variable      | CI pipelines, shared environments                        |
-| GUARD\_GRAPHQL\_BEARER environment variable | When you already have a bearer token from another source |
-| --bearer flag                               | One-off overrides on a single command                    |
+| Method                               | When to use                                                             |
+| ------------------------------------ | ----------------------------------------------------------------------- |
+| OAuth login                          | Normal interactive use in Claude, Cursor or Codex                       |
+| `GUARD_API_KEY` environment variable | CI pipelines and shared automation environments                         |
+| `--api-key` flag                     | One-off command-line use where an environment variable is not practical |
 
 #### Common failure modes
 
-| Error                                         | What it means                                             | Fix                                              |
-| --------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------ |
-| Connector shows "Disconnected" or "Reconnect" | Your OAuth session has expired                            | Click Connect again in Settings > Connectors     |
-| GUARD\_API\_TOKEN set but getting 401         | Token is expired or has insufficient permissions          | Rotate the token in Guard and update your secret |
-| Method not found or Unknown tool              | The connector is connected but something is misconfigured | Remove and re-add the connector                  |
+| Error                                         | What it means                                                                   | Fix                                                             |
+| --------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Connector shows "Disconnected" or "Reconnect" | Your OAuth session has expired                                                  | Click **Connect** again in the tool's MCP settings              |
+| `GUARD_API_KEY` is set but you get a 401      | The key is expired, invalid or does not have access to the tenant               | Rotate the key in Guard and update your secret                  |
+| Guard tools do not appear                     | The MCP connection is not healthy or the client has not refreshed its tool list | Reconnect the MCP server, reload the client and check MCP logs  |
+| Skill commands fail but MCP tools work        | The Skill has a separate local authentication state                             | Sign in through the Skill flow again or provide `GUARD_API_KEY` |
 
-## JSON Output Contract
+## MCP tool contract
 
-You only need to understand this section if you're building tooling around the MCP server directly. Your AI assistant will handle all of this for you in normal use.
+You only need this section if you are building tooling around the MCP server directly. AI assistants handle this discovery and tool calling for you in normal use.
 
-#### The runCmd tool
+The Guard MCP server exposes typed Guard tools. It does not expose a single generic command tool. MCP clients should discover the available tools through the MCP protocol, inspect each tool's description and input schema, then call the specific tool they need.
 
-The MCP server exposes a single tool:
+Typical tool categories include:
 
-```
-{
-  "name": "runCmd",
-  "inputSchema": {
-    "type": "object",
-    "properties": {
-      "command": {
-        "type": "string",
-        "description": "Guard CLI arguments after the binary name, e.g. 'get orgs'"
-      }
-    },
-    "required": ["command"]
-  }
-}
-```
+* Organisation and Salesforce org lookup
+* Risk, classification and permission review
+* Policy, monitoring and compliance data
+* Export or reporting actions where supported
 
-#### Successful response
-
-```
-{
-  "jsonrpc": "2.0",
-  "id": 1,
-  "result": {
-    "content": [
-      {
-        "type": "text",
-        "text": "...Guard CLI output here..."
-      }
-    ],
-    "isError": false
-  }
-}
-```
-
-#### Error response (Guard command failed)
-
-When the Guard CLI itself returns a non-zero exit code, isError is set to true but the response is still a valid MCP result (not a JSON-RPC error):
-
-```
-{
-  "jsonrpc": "2.0",
-  "id": 1,
-  "result": {
-    "content": [
-      {
-        "type": "text",
-        "text": "Authentication is required to access Guard"
-      }
-    ],
-    "isError": true
-  }
-}
-```
-
-#### Protocol error (malformed request)
-
-If the request itself is invalid (wrong method name, missing parameters, unparseable JSON), you'll receive a JSON-RPC error instead:
-
-```
-{
-  "jsonrpc": "2.0",
-  "id": null,
-  "error": {
-    "code": -32602,
-    "message": "Parameter 'command' is required and must not be empty."
-  }
-}
-```
+Tool responses are returned through the MCP protocol. Read tools return the requested Guard data directly. Some actions may return a confirmation while Guard continues work asynchronously in the background. For any tool that changes data or starts a job, review the action in the assistant before approving it.
 
 #### Retry behaviour
 
-The MCP server does not retry automatically. If a command fails with isError: true:
+The MCP server does not retry automatically. If a tool call fails:
 
-1. Check the text field for a human-readable error message.
-2. For authentication errors, reconnect the connector in Settings > Connectors, then retry.
-3. For transient network errors, a simple retry of the same runCmd call is safe. Guard read commands (get) are idempotent.
-4. For write commands (run, admin), check the Guard UI before retrying to avoid duplicate operations.
+1. Check the error text returned by the assistant or MCP client.
+2. For authentication errors, reconnect the MCP server or refresh the Skill login, depending on which flow failed.
+3. For transient network errors, retry read-only calls after confirming the Guard instance is reachable.
+4. For write or job-starting tools, check Guard before retrying so you do not start the same action twice.
+
+## Real prompt examples
+
+Use these examples to confirm the connection and learn the kinds of questions Guard can answer.
+
+| Prompt                                                           | Output                                                                                             |
+| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| "List all Salesforce orgs connected to Guard."                   | Org names, org IDs, environment type and connection status.                                        |
+| "Show the latest risk assessment for my production org."         | Overall risk status, highest-risk settings, last assessment time and suggested next review steps.  |
+| "Which users have risky permissions in the EU production org?"   | Users, permission names, why each permission matters and where to review them in Guard.            |
+| "Show public file exposure findings for this org."               | Exposed files, severity, owner or context where available and recommended remediation.             |
+| "Summarise API security risks for this org."                     | API risk areas, affected users or connected apps where available and recommended follow-up checks. |
+| "Prepare a 30-day audit summary for user activity monitoring."   | Key user activity events, unusual patterns, review notes and evidence to collect from Guard.       |
+| "Compare the current risk posture with the previous assessment." | Important changes, newly introduced risks, resolved risks and items that still need review.        |
+
+## Real workflows
+
+#### 1. Security review
+
+Use this when you want a quick read on an org's current security posture.
+
+1. Ask Guard to list connected Salesforce orgs.
+2. Choose the production or sandbox org you want to review.
+3. Ask for the latest risk assessment and top risk categories.
+4. Ask follow-up questions about the highest-risk users, settings or exposed data.
+5. Use the Guard web UI for final review, exports or remediation actions.
+
+Example prompt:
+
+> List my connected Salesforce orgs, then help me review the highest risks for the production org.
+
+Output:
+
+A short security review with the selected org, current risk posture, top issues, recommended follow-up and any items that need manual review in Guard.
+
+#### 2. Compliance check
+
+Use this when you need evidence for an internal review or recurring audit.
+
+1. Ask Guard for recent user activity, change monitoring and compliance policy signals.
+2. Ask the assistant to summarise unusual activity, high-impact changes and unresolved policy deviations.
+3. Ask for a review checklist that separates evidence already available in Guard from items that need manual confirmation.
+4. Use the Guard web UI to validate the evidence and export anything required for the audit file.
+
+Example prompt:
+
+> Prepare a compliance review summary for the last 30 days using user activity monitoring, change monitoring and authorization policy data.
+
+Output:
+
+A review summary with notable events, policy deviations, suggested evidence, open questions and a checklist for the compliance owner.
 
 ## Troubleshooting Runbooks
 
@@ -275,18 +285,19 @@ The MCP server does not retry automatically. If a command fails with isError: tr
 
 1. Confirm the Guard MCP is connected in your tool's settings.
 2. For Claude Code and Claude web: go to **Settings > Connectors** and check the Guard connector shows as connected. If disconnected, click **Connect**.
-3. For Codex: run codex mcp login guard to re-authenticate.
-4. For Cursor: check **Settings → Features → Model Context Protocol** and confirm guard is green. Check **Output → MCP Logs** for errors.
-5. For Claude Code and Codex, also check that the Skill is loaded.
+3. For Codex: run `codex mcp login guard` to re-authenticate.
+4. For Cursor: check **Settings → Features → Model Context Protocol** and confirm `guard` is green. Check **Output → MCP Logs** for errors.
+5. For Claude Code and Codex, also check that the Skill is loaded if you expect Skill-specific behaviour.
 
 ***
 
 #### "Authentication is required to access Guard"
 
-Your session has expired. Re-authenticate using the same method you used to set up:
+Your session has expired or the configured API key is not valid. Re-authenticate using the same method you used to set up:
 
-* **Claude / Cursor**: go to Settings > Connectors, find Guard, and click **Connect**.
-* **Codex**: run codex mcp login guard.
+* **Claude / Cursor**: go to the MCP settings, find Guard and click **Connect**.
+* **Codex**: run `codex mcp login guard`.
+* **API key mode**: rotate the key in Guard and update `GUARD_API_KEY` or the `--api-key` value.
 
 ***
 
@@ -298,16 +309,25 @@ Your session has expired. Re-authenticate using the same method you used to set 
 
 ***
 
-#### "Unknown tool: runCmd" in logs
+#### Guard tools are missing or look outdated
 
-This usually means the Guard Skill file is not loaded. Check that the Skill is present in your assistant's Skills section (Claude) or that \[\[skills.config]] points to the correct path (Codex), then restart your assistant.
+1. Reload the AI client so it refreshes the MCP tool list.
+2. Confirm the MCP server URL is `https://your-instance.autorabit.com/api/mcp`.
+3. Check the client MCP logs for connection or authentication errors.
+4. Reconnect the Guard MCP server if the session has expired.
+
+***
+
+#### Skill commands fail but MCP tools work
+
+The Skill has its own local authentication state. Sign in again through the Skill flow or provide `GUARD_API_KEY`. If you recently moved the Skill folder, update the Skill path in your assistant configuration and restart the assistant.
 
 ***
 
 #### CI pipeline: 401 Unauthorized
 
-1. Confirm GUARD\_API\_TOKEN is set: echo $GUARD\_API\_TOKEN | cut -c1-4 (prints the first four characters without exposing the full token).
-2. Check the token has not expired. Rotate it in Guard and update your pipeline secret if needed.
+1. Confirm `GUARD_API_KEY` is set: `echo $GUARD_API_KEY | cut -c1-4` prints the first four characters without exposing the full key.
+2. Check the key has not expired and has access to the tenant you are querying.
 3. Verify the instance URL is correct and does not have a trailing slash.
 
 ***
@@ -319,4 +339,4 @@ Contact the AutoRABIT support team with:
 * The Guard instance URL you are connecting to
 * The AI assistant you are using
 * A description of the error or unexpected behaviour
-* Any error text shown in the connector or assistant logs
+* Any error text shown in the connector, assistant or MCP logs

@@ -1,4 +1,4 @@
-# Configure a Webhook in GitLab
+# GitLab
 
 {% hint style="info" %}
 After the 25.3.9 release, the structure of the webhook payload URL was updated. Customers need to update the webhook URL in the repository settings of their remote repo. Some customers are still using the old webhook URL containing **autorabitrest**, which should now be replaced with api.
@@ -42,7 +42,7 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 3. In the **URL** field, enter the webhook endpoint:
 
 For example:\
-[https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request](https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request)
+https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request
 
 <figure><img src="../../../../.gitbook/assets/image (978).png" alt=""><figcaption></figcaption></figure>
 

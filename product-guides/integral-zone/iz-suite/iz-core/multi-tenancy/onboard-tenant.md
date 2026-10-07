@@ -37,27 +37,31 @@ Provisioning takes a few seconds. If the slug is already in use, or the license 
 
 A **`Tenant provisioned`** panel is displayed. Share its contents with the tenant administrator:
 
-| Item              | Description                                                                                                                                                                 |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`LOGIN URL`**   | The tenant's sign-in URL, `https://<slug>.<your IZ Suite domain>`.                                                                                                          |
-| **`ADMIN EMAIL`** | The administrator's email address.                                                                                                                                          |
-| **`LOGIN CODE`**  | A **one-time** code used with **`Signin with IZ Token`** on the tenant's login page. It is shown only once and cannot be retrieved later. Copy it before closing the panel. |
+| Item              | Description                                                        |
+| ----------------- | ------------------------------------------------------------------ |
+| **`LOGIN URL`**   | The tenant's sign-in URL, `https://<slug>.<your IZ Suite domain>`. |
+| **`ADMIN EMAIL`** | The administrator's email address.                                 |
 
 The panel also reports how many rows and tables were seeded into the new tenant.
 
 
 
-Store the login code securely. If it is lost before the administrator's first sign-in, the tenant has to be deleted and onboarded again. After the first sign-in, generate an emergency administrator token under **`Organization`** → **`Tokens`** so that the tenant never depends on a single credential.
+Share the temporary admin password with the administrator through a separate, secure channel. It is not shown again. The administrator signs in with the **`IZ User`** option using the admin email and this password, and must change it at the first sign-in. If it is lost, the administrator can use **`Forgot password?`** on the sign-in form, provided email is configured for the tenant.
 
 
+
+{% hint style="info" %}
+Up to 26.3.x the panel showed a one-time **`LOGIN CODE`** for **`Signin with IZ Token`**. From 26.4.1 the IZ Token sign-in is replaced by IZ User Auth (email and password).
+{% endhint %}
 
 ### First Steps for the Tenant Administrator <a href="#first-steps-for-the-tenant-administrator" id="first-steps-for-the-tenant-administrator"></a>
 
-1. Open the **`LOGIN URL`**, click **`Signin with IZ Token`** and enter the **`LOGIN CODE`**.
-2. Navigate to **`Global Settings`** → **`Settings`** and configure single sign-on (**`Anypoint Auth`**, **`Google Auth`** or **`Azure Auth`**) using redirect URIs on the tenant hostname.
-3. Generate an emergency administrator token under **`Organization`** → **`Tokens`** and store it safely, then disable **`IZ Token Auth`** if your policy requires it.
-4. Invite users or enable automatic user creation.
-5. Configure agents, Connected Apps and schedules based on the requirement.
+1.
+   1. Open the **`Login URL`**, click **`IZ User`**, sign in with the admin email and the temporary password, and set a new password.
+   2. Navigate to **`Global Settings`** → **`Settings`** and configure single sign-on (**`Anypoint Auth`**, **`Google Auth`** or **`Azure Auth`**) using redirect URIs on the tenant hostname.
+   3. Optionally review the password, lockout and MFA policy in **`Login Settings`**, and disable **`IZ User Auth`** if your policy requires single sign-on only. Licence administrators can still use the administrator sign-in URL; see [Sign-in and MFA](../sign-in-and-mfa.md).
+   4. Invite users or enable automatic user creation.
+   5. Configure agents, Connected Apps and schedules based on the requirement.
 
 
 

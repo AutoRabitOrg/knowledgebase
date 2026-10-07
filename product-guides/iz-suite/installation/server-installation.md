@@ -8,6 +8,7 @@ Before installing, make sure you have:
 * Purchased a valid license.
 * Installed Docker
 * Installed PostgreSQL database and have the connection details handy. Supports v12 and higher
+* From 26.4.1, generated a secrets encryption key, for example with `openssl rand -hex 32`, and stored it in your secret store. See **`SECRETS_ENCRYPTION_KEY`** below
 {% endhint %}
 
 ### Container Modes
@@ -23,27 +24,22 @@ The IZ Suite server image starts different components depending on the **`FALCON
 
 #### Environment Variables <a href="#environment-variables" id="environment-variables"></a>
 
-| Variable                               | Required | Description                                                                                                                                                                                                    |
-| -------------------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`DATABASE_URL`**                     | Yes      | PostgreSQL connection string, for example `postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DB_NAME>`. Append `?sslmode=require` to connect over TLS.                                                           |
-| **`FALCON_MODE`**                      | No       | Container mode as described above. Default `all`.                                                                                                                                                              |
-| **`AGENT_WRAPPER_SECRET`**             | No       | Shared secret that cloud agents present when they register themselves without a pre-created agent id. Required when running auto-registering (scaled) agents. See [Agent Installation](agent-installation.md). |
-| **`FALCON_SERVER_KEEP_ALIVE_SECONDS`** | No       | Seconds after which a server node that stopped sending heartbeats is considered down and a new master is elected. Default `25`. Relevant for cluster installations.                                            |
-| **`LOG_LEVEL`**                        | No       | `error`, `warn`, `info` or `debug`. Default `info`.                                                                                                                                                            |
+| Variable                               | Required | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| -------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`DATABASE_URL`**                     | Yes      | PostgreSQL connection string, for example `postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DB_NAME>`. Append `?sslmode=require` to connect over TLS.                                                                                                                                                                                                                                                                                                                                                               |
+| **`FALCON_MODE`**                      | No       | Container mode as described above. Default `all`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **`SECRETS_ENCRYPTION_KEY`**           | Yes      | From 26.4.1. A 32-byte key written as 64 hexadecimal characters, for example generated with `openssl rand -hex 32`. Cloud credentials, secure settings, agent secrets and MFA secrets are encrypted with it. The server refuses to start without a valid key. Use the same value on every server container that shares the database, including `worker` containers. **Never change it** on an existing installation: stored credentials cannot be decrypted under a different key and would have to be re-entered. |
+| **`AGENT_WRAPPER_SECRET`**             | No       | Shared secret that cloud agents present when they register themselves without a pre-created agent id. Required when running auto-registering (scaled) agents. See [Agent Installation](agent-installation.md).                                                                                                                                                                                                                                                                                                     |
+| **`FALCON_SERVER_KEEP_ALIVE_SECONDS`** | No       | Seconds after which a server node that stopped sending heartbeats is considered down and a new master is elected. Default `25`. Relevant for cluster installations.                                                                                                                                                                                                                                                                                                                                                |
+| **`LOG_LEVEL`**                        | No       | `error`, `warn`, `info` or `debug`. Default `info`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
-Variables for multi-tenant platforms (only relevant when the **`Multi Tenant`** license module is enabled):
 
-| Variable                                    | Description                                                                                                                                                           |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`NEW_TENANT_ADMIN_DEFAULT_ROLE_EXT_IDS`** | Comma-separated ids of the roles granted to the administrator of a newly onboarded tenant.                                                                            |
-| **`NEW_TENANT_GLOBAL_SETTING_MASK_KEYS`**   | Comma-separated names of the sign-in settings whose credentials are cleared when a tenant is onboarded. Default `Azure Auth,Anypoint Auth,Google Auth,IZ Token Auth`. |
-| **`TENANT_CLONE_CONCURRENCY`**              | Number of tables copied in parallel while onboarding a tenant. Default `10`.                                                                                          |
 
 ### Starting IZ Server - Using Docker
 
 1. Run the following command
 2. Replace **`FALCON_SERVER_VERSION`** with the latest version of the software. Latest version can be here. For example, if the latest version is v1.2.1, replace **`FALCON_SERVER_VERSION`** with **`1.2.1`**
-3. Replace **`USERNAME`**,**`PASSWORD`**,**`HOST`**,**`PORT`**,**`DB_NAME`** with appropriate Database credentials and DB name SHELL> docker run -e DATABASE\_URL=postgres://:@:/\<DB\_NAME> -p80:80 public.ecr.aws/h0h7r7j4/falcon-suite:\<FALCON\_SERVER\_VERSION>
+3. Replace **`USERNAME`**,**`PASSWORD`**,**`HOST`**,**`PORT`**,**`DB_NAME`** with appropriate Database credentials and DB name SHELL> docker run -e DATABASE\_URL=postgres://:@:/\<DB\_NAME> -p80:80 public.ecr.aws/h0h7r7j4/iz-suite-server:\<ZSUITE\_SERVER\_VERSION>
 4. If there is any other process running on port 80, change the -p80:80 mapping. For example - to map to port 9000 change the -p80:80 to -p9000:80
 5. Once the container is up and running navigate to **`SERVER_IP`** in the browser. For example - http://localhost
 
@@ -56,7 +52,7 @@ version: '3.8'
 services:
 
   iz-server:
-    image: public.ecr.aws/h0h7r7j4/falcon-suite:<FALCON_SERVER_VERSION>
+    image: public.ecr.aws/h0h7r7j4/iz-suite-server:<IZSUITE_SERVER_VERSION>
     ports:
       - '80:80'
       - '443:443'
@@ -150,7 +146,7 @@ services:
 3. Make sure valid SSL certificates are copied to **`conf`** directory -
    1. **`tls.crt`** - CA signed certificated
    2. **`tls.key`** - Key used to generate the certificate
-4. Replace the value of **`FALCON_SERVER_VERSION`** with a valid server version
+4. Replace the value of **`IZSUITE_SERVER_VERSION`** with a valid server version
 5. Replace **`USERNAME`**,**`PASSWORD`**,**`HOST`**,**`PORT`**,**`DB_NAME`** with appropriate Database credentials and DB name
 6. Run the below command to start the server SHELL> docker run -e DATABASE\_URL=postgres://:@:/\<DB\_NAME> -v $(pwd)/conf/server\_ssl:/etc/nginx/sites-enabled/default -v $(pwd)/conf/tls.crt:/var/falcon/ssl/tls.crt -v $(pwd)/conf/tls.key:/var/falcon/ssl/tls.key -p80:80 public.ecr.aws/h0h7r7j4/falcon-suite:\<FALCON\_SERVER\_VERSION>
 7.  (Optional) Below is an example of running the same command using docker compose -
@@ -162,7 +158,7 @@ services:
     services:
 
       iz-server:
-        image: public.ecr.aws/h0h7r7j4/falcon-suite:<FALCON_SERVER_VERSION>
+        image: public.ecr.aws/h0h7r7j4/iz-suite-agent:<IZSUITE_SERVER_VERSION>
         volumes:
           - ./conf/server_ssl:/etc/nginx/sites-enabled/default
           - ./conf/tls.crt:/var/falcon/ssl/tls.crt

@@ -12,6 +12,14 @@ These settings provide flexibility by ensuring more accurate classification and 
 2. Search for **`Language Identifier Settings`** and click on edit.
 3. Settings can be configured / updated for each of the supported languages.
 
+
+
+#### Detection Scripts <a href="#detection-scripts" id="detection-scripts"></a>
+
+The setting holds one entry per language. The entry's key is the language id (for example **`mule`**, **`python`**, **`java`**, **`pyspark`**, **`cfn`**) and its value is a Groovy script that inspects the project folder and decides whether the project is that language and which files to scan. The same scripts are used by repository scans, IZ Eye, the IZ Scan CLI and the VS Code Extension.
+
+A project is analysed by every language whose script matches it, so one repository can produce results for more than one language, for example Python and PySpark.
+
 ### See Also
 
 * [Configure IZ Scan Plugin](anypoint-studio/configuration/iz-suite-configuration.md)

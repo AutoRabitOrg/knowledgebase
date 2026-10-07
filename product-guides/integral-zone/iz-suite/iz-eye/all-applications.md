@@ -5,7 +5,9 @@
 
 
 
-**`All Applications`** is a single grid over every scanned application of a module, regardless of application type. In IZ Eye it combines Mule applications, Exchange APIs, API Manager instances, Azure Logic Apps, Azure API Management, Azure Function Apps and Salesforce Apex in one list; in IZ Scan it combines all scanned repositories and projects. Use it to find an application without knowing its type, to compare quality gate results across types, or to export a consolidated list.
+**`All Applications`** is a single grid over every scanned application of a module, regardless of application type. In IZ Eye it combines Mule applications, Exchange APIs, API Manager instances, Azure Logic Apps, Azure API Management, Azure Function Apps, Salesforce Apex and the AWS services (Lambda, CloudFormation, Step Functions, API Gateway, ECS, RDS, Load Balancer, Secrets Manager, CloudFront, DynamoDB, SQS, SNS, EventBridge, CodePipeline, CodeBuild and CodeDeploy) in one list; in IZ Scan it combines all scanned repositories and projects. Use it to find an application without knowing its type, to compare quality gate results across types, or to export a consolidated list.
+
+
 
 1. Navigate to **`IZ Eye`** → **`All Applications`** .
 2. Each row is one application version (IZ Eye) :

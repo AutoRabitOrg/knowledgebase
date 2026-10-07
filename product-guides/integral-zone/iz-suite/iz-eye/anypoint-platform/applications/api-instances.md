@@ -13,7 +13,7 @@
 
 ### To view all the API Instances
 
-1.  Navigate to **`IZ Eye`** -> **`API Instances`** <br>
+1.  Navigate to **`IZ Eye`** -> **`Anypoint Platform`**-> **`API Instances`** <br>
 
     <figure><img src="../../../../../../.gitbook/assets/api_instances.png" alt=""><figcaption></figcaption></figure>
 2.  Click on the **`Plus`** icon to view all the versions of the API Instances <br>

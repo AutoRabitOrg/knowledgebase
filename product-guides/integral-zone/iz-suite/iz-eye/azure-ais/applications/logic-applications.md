@@ -8,7 +8,7 @@
 
 ### To view all the Consumption and Standard apps
 
-1. Navigate to **`IZ Eye`** -> **`Azure Logic Apps`**. Overview includes -&#x20;
+1. Navigate to **`IZ Eye`** -> **`Azure`**-> **`Azure Logic Apps`**. Overview includes -&#x20;
    1. **`Name`** - Name of the Logic App
    2. **`Organization`** - Subscription to which the app belongs to
    3. **`Environment`** - Resource Group to which the app belongs to

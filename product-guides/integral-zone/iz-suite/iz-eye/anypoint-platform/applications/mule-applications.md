@@ -14,7 +14,7 @@
 
 ### To view all the applications
 
-1.  Navigate to **`IZ Eye`** -> **`Mule Projects`** <br>
+1.  Navigate to **`IZ Eye`** -> **`Anypoint Platform`**-> **`Mule Projects`** <br>
 
     <figure><img src="/broken/files/XrzV4tF26mXErT30BSFo" alt=""><figcaption></figcaption></figure>
 2. The **`Status`** column indicates whether the application is running in Anypoint Platform **`Runtime Manager`**

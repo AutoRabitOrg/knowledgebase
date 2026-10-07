@@ -21,6 +21,21 @@ Invite user to the organization:
 
 5. Click on **`Submit`** to invite the user
 
+
+
+#### Invitation Email <a href="#invitation-email" id="invitation-email"></a>
+
+\
+From 26.4.1, when **`IZ User Auth`** is enabled and **`Email Settings`** are configured, the invited user receives an email with a **`Set your password`** link:
+
+* The link is valid for **7 days** and can be used **once**.
+* After setting a password, the user signs in with **`IZ User`** on the login page.
+* If the link has expired, the user can request a new one with **`Forgot password?`** on the sign-in form, or an administrator can use **`Set Temporary Password`** under **`Users`**.
+
+If email is not configured, the invitation is still created but no email is sent. Use **`Set Temporary Password`** to give the user a first password. See [Sign-in and MFA](../sign-in-and-mfa.md).
+
+<br>
+
 ### See Also
 
 * [Organizations](organizations.md)

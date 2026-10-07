@@ -31,6 +31,7 @@
 
 * **`Name / Version`** (IZ Eye) or **`Name / Branch / PR`** (IZ Scan) - Inline search on application name, version, branch or pull request.
 * **`Organizations`** and, for IZ Eye, **`Environments`**
+* **`Source`** (IZ Scan) - Where the application is scanned from, for example GitHub, BitBucket, Anypoint Design Center or Local. Available from IZ Suite **26.4.1**.
 * **`App Type`**
 * **`Quality Gate Status`** - Passed, Failed or Free
 * **`Severity`** and **`Category`** - Show applications that have issues of the selected rule severity or category

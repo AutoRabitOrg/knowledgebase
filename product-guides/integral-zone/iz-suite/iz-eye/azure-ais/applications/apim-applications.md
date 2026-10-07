@@ -23,9 +23,11 @@ Scopes without a policy are skipped. Issues are reported with the file path show
 
 ### To view all the APIs
 
-1.  Navigate to **`IZ Eye`** -> **`Azure API Management`**. Overview includes
+1. Navigate to **`IZ Eye`** -> **`Azure`**-> **`Azure API Management`**. Overview includes
 
-    <figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_1.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../../../../.gitbook/assets/azure_ais_apim_apps_1.png" alt=""><figcaption></figcaption></figure>
 
 a. **`Name`** - Name of the API prefixed with Resource Group name
 

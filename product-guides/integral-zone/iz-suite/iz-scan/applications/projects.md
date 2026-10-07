@@ -8,7 +8,7 @@
 
 To view all the Applications -
 
-1. Navigate to **`IZ Scan`** -> choose either **`Mule Projects`** or **`APIs`**. The main row includes -
+1. Navigate to **`IZ Scan`** and choose an application type from its platform submenu, for example **`Anypoint Platform`** -> **`Mule Projects`** or **`APIs`**, or **`Others`** -> **`Java Apps`**. See [Languages](../languages.md) for every application type. The main row includes -
    1. **`Application Name`** - Name of the application
    2.  **`Updated`** - The last date and time the application was scanned\
        &#x20;

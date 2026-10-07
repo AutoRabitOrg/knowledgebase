@@ -19,9 +19,17 @@ Cloud hosted agents can be used when you do not want -
 4. Once the credentials are configured, navigate to **`Global Settings`** -> **`Agents`** , and make sure the agent status is **RUNNING**
 5. Re-log in, and start configuring the schedules
 
+
+
+{% hint style="info" %}
+AWS job types (from 26.4.1) need no credentials under **`Job Types`**. Each AWS account's access key is entered on its AWS organization; see [Organizations](../../../organization/)
+{% endhint %}
+
 ### Scaling Cloud Hosted Agents <a href="#scaling-cloud-hosted-agents" id="scaling-cloud-hosted-agents"></a>
 
-Cloud agents that are started by a container platform can register themselves instead of being created in advance. Set **`AGENT_WRAPPER_SECRET`** on the IZ Server and start each agent with `--agentWrapperSecret` and an optional `--deploymentInstanceId`. Each new instance either reuses a stopped agent or is created as a new cloud-hosted agent with **`Default Workers Count`** workers.&#x20;
+Cloud agents that are started by a container platform can register themselves instead of being created in advance. Set **`AGENT_WRAPPER_SECRET`** on the IZ Server and start each agent with `--agentWrapperSecret` and an optional `--deploymentInstanceId`. Each new instance either reuses a stopped agent or is created as a new cloud-hosted agent with **`Default Workers Count`** workers.
+
+From 26.4.1 the agent image no longer contains a built-in bootstrap secret. **`AGENT_WRAPPER_SECRET`** must be set on the server, and every auto-registering agent must be started with the same value, for example `FALCON_AGENT_OPTS=--serviceUrl "https://<HOST>" --agentWrapperSecret "<AGENT_WRAPPER_SECRET>"`. A wrong or missing value is refused with **Invalid agent token / secret**. Agents started with their own agent id and secret from **`Download Agent`** do not use it.
 
 ### See Also
 

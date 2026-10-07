@@ -26,6 +26,13 @@
 | **`Exchange APIs`**                                 | **`API Manager Apps`** .2+                                                 | **`_ORG_ IZ Scan Viewers`** .2+  |
 | View access to IZ Scan for a specific organization  | **`Mule Projects`**                                                        | **`API Projects`**               |
 
+#### Permissions Added in 26.4.1 <a href="#permissions-added-in-26-4-1" id="permissions-added-in-26-4-1"></a>
+
+* **AWS:** two permission categories, **`Falcon Eye AWS`** and **`Falcon Scan AWS`**, hold the permissions of each AWS service for IZ Eye (inventory) and IZ Scan (configuration scanning). A service's permissions are available only when the service is enabled on the tenant's licence. The administrator who onboards an AWS organization receives the AWS permissions on it automatically.
+* **Java:** Java scan permissions are granted automatically on server start: every role that holds Python scan permissions on an organization receives the matching Java permissions there. Users see **`Java Apps`** after signing in again.
+* **Languages added later:** when a new language or platform is added through seed data after the tenant was onboarded, every role of the tenant receives the new language's permissions wherever it holds the permissions of the related existing language (for example Java follows Python), on every organization of the tenant. Existing roles therefore see the new language's applications without manual changes.
+* **Security tokens:** **`Generate Security Token`** allows a user to generate their own security tokens, and **`Generate Security Token For Another User`** allows generating tokens for other users and the **`Set Temporary Password`** and **`Reset MFA`** actions under **`Users`**.
+
 ### Roles
 
 To view all roles in the system -

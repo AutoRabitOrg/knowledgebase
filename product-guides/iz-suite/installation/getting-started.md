@@ -9,15 +9,26 @@ In a multi-tenant installation, each tenant follows these steps on its own login
 ### Apply License
 
 1. The first time the instance is launched, a license needs to be applied.
-2. Access the application from your browser and click on **`Get Started`**.
+2. Access the application from your browser and click on **`Get Started`**, then on **`Apply License Key`**.
+   1. On **`Setup Application`** enter:
+      1. **`License key`** - provided by Integral Zone as part of the onboarding process
+      2. **`Base URL`** - the URL of this instance as users reach it in the browser, for example `https://company-iz.integralzone.com`. It is used in the links of emails sent by IZ Suite
+      3. **`Admin email`**, **`Admin password`** and **`Confirm password`** - the credentials of the first administrator. The password must be at least 12 characters and include a number and a special character
+   2. Click on **`Apply License`**&#x20;
 3. Upon your first login, you will be prompted to apply the license. The License Key and Email will be provided by Integral Zone as part of the onboarding process.
 4. Enter the License Key and Email, then click Apply.
 
 ### Initial Login
 
 1. Access the application from your browser and click on **`Get Started`**
-2. Click on `Sign-in with IZ Token`
-3. Use the initial **`Access/Security Token`** provided by Integral Zone as part of on boarding process
+2. Click on **`IZ User`**
+3. Sign in with the admin email and password entered when the license was applied. See [Sign-in and MFA](../../integral-zone/iz-suite/iz-core/sign-in-and-mfa.md)
+
+
+
+{% hint style="info" %}
+Up to 26.3.x the first sign-in used **`Sign-in with IZ Token`** and an access token provided by Integral Zone. From 26.4.1 the IZ Token sign-in is replaced by **IZ User Auth** (email and password).&#x20;
+{% endhint %}
 
 ### Setup Single Sign-on
 
@@ -72,18 +83,14 @@ Disable Sign-in with IZ Token
 1. Search for **`IZ Token Auth`**
    1. Update the value of **`isEnabled`** to **`false`**
 
-### Generate Admin Token
+### Administrator Sign-in
 
-The admin token generated using the steps below will be useful for signing in to the application if all other sign-in options become unavailable.
+If all other sign-in options become unavailable, a licence administrator, such as the admin entered when the license was applied, can still sign in with their email and password, even while **`IZ User`** sign-in is disabled:
 
-1. Sign-in to IZ Suite application
-2. Navigate to **`Organizations`** -> **`Tokens`**
-3. Click on **`Generate Token`**
-   1. **`Token Name`** - Name of the token
-   2. **`Expiry`** - Can be left blank
-   3. **`Roles`**- IZ Core Admin
-4. Click on **`Ok`** and save the generated token, which can be used when none of the other sign-in options are available.
-5. Use the following URL to enter the admin token: https://\<HOST>/iz/oauth?response\_type=code\&redirect\_uri=/auth/iz/callback\&admin=true
+1. Use the following URL: https://\<HOST>/iz/oauth?response\_type=code\&redirect\_uri=/auth/iz/callback\&admin=true
+2. Enter the administrator's email and password. Use **`Forgot password?`** on the same page if the password is not known.
+
+From 26.4.1 security tokens generated under **`Organization`** -> **`Tokens`** can no longer be used to sign in to the web application; they are used by the IZ Scan CLI, IDE plug-ins and MCP clients. See [Sign-in and MFA](../../integral-zone/iz-suite/iz-core/sign-in-and-mfa.md).
 
 ### Configure CICD Pipeline
 

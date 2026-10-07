@@ -4,6 +4,20 @@
 
 **`IZ Eye`** continuously monitors configured environments and reports whether the deployed applications are identical. This helps organizations see whether the code in promoted environments is consistent and the DevSecOps process is working as expected.
 
+
+
+#### Supported Platforms <a href="#supported-platforms" id="supported-platforms"></a>
+
+\
+IZ Eye discovers and scans deployed applications on the following platforms. Each application type is listed in the IZ Eye menu under its platform, and only the types granted on your licence are shown.
+
+| Platform              | Application types                                                                                                                                                                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Anypoint Platform** | Mule Projects, APIs, API Instances                                                                                                                                                                                                              |
+| **Azure**             | Azure Logic Apps, Azure API Management, Azure Function Apps                                                                                                                                                                                     |
+| **AWS**               | AWS Lambda, AWS CloudFormation, AWS Step Functions, AWS API Gateway, AWS ECS, AWS RDS, AWS Load Balancer, AWS Secrets Manager, AWS CloudFront, AWS DynamoDB, AWS SQS, AWS SNS, AWS EventBridge, AWS CodePipeline, AWS CodeBuild, AWS CodeDeploy |
+| **Others**            | Salesforce Apex, Kubernetes                                                                                                                                                                                                                     |
+
 ### Continuous Runtime Monitoring
 
 <figure><img src="../../../.gitbook/assets/about.png" alt=""><figcaption></figcaption></figure>

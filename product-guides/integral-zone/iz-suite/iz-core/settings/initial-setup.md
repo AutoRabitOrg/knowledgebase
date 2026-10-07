@@ -7,10 +7,8 @@
 * A tenant onboarded by a platform administrator uses the one-time **`LOGIN CODE`** shown when the tenant was created instead. See [Onboard Tenant](../multi-tenancy/onboard-tenant.md)
 {% endhint %}
 
-1. Navigate to the UI and click on **`Signin with IZ Token`**
-2. Enter the token provided by Support Team and click on **`Login`**&#x20;
-
-<figure><img src="../../../../../.gitbook/assets/iz-initial-setup.png" alt=""><figcaption></figcaption></figure>
+1. Navigate to the UI and click on **`Signin with IZ User`**
+2. Enter the credentials provided by Support Team and click on **`Login`**&#x20;
 
 ### Enable Anypoint SSO:
 
@@ -43,10 +41,10 @@
 7. Logout and Login using **`Signin with CloudHub`**
 8. Enter the License key shared by the Integral Zone support team
 
-### Disable IZ Token Login:
+### Disable IZ User Login:
 
 1. Navigate to **`Global Settings`** -> **`Settings`**
-2. Search for Auth and edit the **`IZ Token Auth`** settings&#x20;
+2. Search for Auth and edit the **`IZ User Auth`** settings&#x20;
 
 <figure><img src="../../../../../.gitbook/assets/disable-iz-token.png" alt=""><figcaption></figcaption></figure>
 

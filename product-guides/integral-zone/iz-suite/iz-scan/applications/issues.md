@@ -1,7 +1,5 @@
 # Issues
 
-
-
 {% hint style="warning" %}
 * Application issues display the file name and line number of the raised issue
 * Application source code will not be stored / displayed
@@ -19,7 +17,8 @@ To view all detailed report of the issues -
    2. Line number of the violation in the file
    3. Rule severity. E.g.: MAJOR, CRITICAL, etc.
    4. Rule category. E.g.: CODE SMELL, BUG, etc.
-4.  To get details/description of the rule being violated, click on **`SEE RULE`**\
+4. Use the **`Search Rule / Issue / Id`** box to filter issues by rule name, issue description, issue id or file / component name
+5.  To get details/description of the rule being violated, click on **`SEE RULE`**\
     &#x20;
 
     <figure><img src="../../../../../.gitbook/assets/see-rule.png" alt=""><figcaption></figcaption></figure>

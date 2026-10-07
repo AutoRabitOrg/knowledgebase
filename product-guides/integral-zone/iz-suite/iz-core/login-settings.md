@@ -20,6 +20,12 @@
 | **`Session Timeout Seconds`** | `3600`  | Lifetime of a signed-in session in seconds. After this period the user must sign in again. Must be a positive whole number; invalid values fall back to one hour.                                                                                                      |
 | **`Max Cache Entries`**       | `500`   | Reserved for future use.                                                                                                                                                                                                                                               |
 
+| **`IZ User Auth Password Max Age`** | `90`    | Maximum age of an IZ User Auth password in days. A user whose password is older is asked to set a new one at the next sign-in. Replaces **`IZ Auth Token Max Age`**; an existing value is kept during the upgrade. |
+| ----------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`Max Failed Login Attempts`**     | `5`     | Number of consecutive wrong passwords or multi-factor codes after which the account is locked.                                                                                                                     |
+| **`Account Lockout Minutes`**       | `15`    | How long a locked account stays locked.                                                                                                                                                                            |
+| **`MFA Enabled`**                   | `false` | When `true`, users signing in with **`IZ User`** must enter a code from an authenticator app. Users without an authenticator enrol one at their next sign-in.                                                      |
+
 
 
 ### Automatic User Creation <a href="#automatic-user-creation" id="automatic-user-creation"></a>

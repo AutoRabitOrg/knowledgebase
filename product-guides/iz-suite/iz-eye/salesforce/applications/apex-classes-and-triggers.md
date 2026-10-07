@@ -9,7 +9,7 @@
 
 ### To view all the applications
 
-1. Navigate to **`IZ Eye`** -> **`Salesforce Apex`**. Overview includes -
+1. Navigate to **`IZ Eye`** -> **`Salesforce`**-> **`Apex`**. Overview includes -
 
 <figure><img src="../../../../../.gitbook/assets/sf_applications (1).png" alt=""><figcaption></figcaption></figure>
 

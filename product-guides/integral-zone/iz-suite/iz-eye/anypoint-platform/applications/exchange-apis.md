@@ -14,7 +14,7 @@
 
 ### To view all the APIs
 
-1.  Navigate to **`IZ Eye`** -> **`APIs`** <br>
+1.  Navigate to **`IZ Eye`** -> **`Anypoint Platform`**-> **`APIs`** <br>
 
     <figure><img src="../../../../../../.gitbook/assets/apis.png" alt=""><figcaption></figcaption></figure>
 2.  Click on the **`Plus`** icon to view all the versions of the API<br>

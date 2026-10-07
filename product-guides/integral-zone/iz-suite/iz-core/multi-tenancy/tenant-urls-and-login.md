@@ -32,7 +32,7 @@ The login URL for a tenant is `https://<slug>.<your IZ Suite domain>/login`. It 
 
 #### Sign-in Options Shown <a href="#sign-in-options-shown" id="sign-in-options-shown"></a>
 
-The login page lists the sign-in options that are **enabled for that tenant** in its **`Global Settings`** → **`Settings`** (**`IZ Token Auth`**, **`Anypoint Auth`**, **`Google Auth`**, **`Azure Auth`**). A newly onboarded tenant has only **`Signin with IZ Token`** enabled; the tenant administrator enables single sign-on afterwards.
+The login page lists the sign-in options that are **enabled for that tenant** in its **`Global Settings`** → **`Settings`** (**`IZ User Auth`**, **`Anypoint Auth`**, **`Google Auth`**, **`Azure Auth`**). A newly onboarded tenant has only **`Signin with IZ User`** enabled; the tenant administrator enables single sign-on afterwards.
 
 
 

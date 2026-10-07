@@ -1,10 +1,10 @@
-# Release Notes 26
+# ARM Release Notes 26
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
 ## ARM **Release Notes 26.4.2**
 
-**Release Date: 11th October 2026**
+**Release Date: 11 October 2026**
 
 #### EZ-Commit Auto Draft Deleted Components Fix <a href="#ez-commit-auto-draft-deleted-components-fix" id="ez-commit-auto-draft-deleted-components-fix"></a>
 
@@ -58,9 +58,11 @@ Fixed an issue in the New UI where navigating between **Environment Provisioning
 
 The template name validation logic has been corrected to prevent unnecessary API requests when the template name is empty or when switching between template types. Users can now navigate between **Migration** and **Unsupported Metadata** template workflows without encountering the unexpected error.
 
+***
+
 ## ARM **Release Notes 26.4.1**
 
-**Release Date: 7th October 2026**
+**Release Date: 7 October 2026**
 
 #### CI Job Build History Reporting Fix <a href="#ci-job-build-history-reporting-fix" id="ci-job-build-history-reporting-fix"></a>
 
@@ -96,6 +98,8 @@ The following metadata types are included in Phase 2:
 * ContentWorkspacePermission
 * CnfgItemTypeIdentFieldMap
 * CnfgItemTypeIdentRule
+
+***
 
 ## ARM **Release Notes 26.3.13**
 

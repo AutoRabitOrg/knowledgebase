@@ -26,6 +26,8 @@ Resolved an issue where the **Post Deployment Result** option appeared for rollb
 
 Improved File Diff handling in nCino Commit History to prevent the interface from becoming unresponsive when processing large files. Files containing up to 3,000 lines continue to display an inline diff, while larger files provide a message directing users to download the diff. Change Logs also display the complete feature list when a commit contains multiple templates.
 
+***
+
 ## nCino - Release 26.4.1  <a href="#ncino-release-26.4.1" id="ncino-release-26.4.1"></a>
 
 **Release Date:** **04 October 2026**

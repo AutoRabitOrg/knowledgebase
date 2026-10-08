@@ -268,11 +268,11 @@ unable to find valid certification path to requested target.
 
 **Command:**
 
-> keytool -import **-alias** _{alias-name for the certificate}_ **-keystore** _“{path for the cacerts file}”_ **-file** _{path where we have save the certificate}_
+> keytool -import **-alias** _{alias-name for the certificate}_ **-keystore** _“{path for the cacerts file}”_ **-file** _“{path where we have save the certificate}“_
 
 **Example:**
 
-> keytool -import **-alias** _codescan-certificate_ **-keystore** _"C:\Program Files\Java\jdk-11.0.9\lib\security\cacerts"_ **-file** _c:/tmp/codescan-certificate.crt_
+> keytool -import **-alias** _codescan-certificate_ **-keystore** _"C:\Program Files\Java\jdk-11.0.9\lib\security\cacerts"_ **-file** _“c:/tmp/codescan-certificate.crt“_
 
 When adding the certificate, password is required. The password is **`changeit`.**
 

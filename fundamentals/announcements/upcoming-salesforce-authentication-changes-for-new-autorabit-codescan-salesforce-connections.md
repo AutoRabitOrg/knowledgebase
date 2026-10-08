@@ -75,6 +75,18 @@ We do not anticipate disruption to normal operations as part of this new process
 
 Please contact your Customer Success Manager or AutoRABIT Support team.&#x20;
 
+### Do I need to take action?
+
+No action is required unless you're creating a new Salesforce connection or refreshing a sandbox after the applicable product rollout date.
+
+### What if I use multiple AutoRABIT products?&#x20;
+
+Different products may temporarily use different authentication methods. Follow the connection instructions for each product.&#x20;
+
+### Do I need to migrate existing connections?&#x20;
+
+Not during this initial phase. Additional migration guidance will be provided separately.&#x20;
+
 ## Need Help?&#x20;
 
 We're committed to making this transition as smooth as possible. If you have questions about how these changes may affect your organization, please contact your Customer Success Manager.&#x20;

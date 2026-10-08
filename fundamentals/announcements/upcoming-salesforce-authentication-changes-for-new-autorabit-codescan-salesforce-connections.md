@@ -6,13 +6,13 @@ We're making updates to how AutoRABIT products connect to Salesforce.&#x20;
 
 These changes are part of our ongoing efforts to improve reliability, simplify account management, and create a more consistent experience across AutoRABIT products as a Salesforce partner on AgentExchange.&#x20;
 
-Existing AutoRABIT CodeScan connections will continue to operate normally. This initial rollout only impacts new Salesforce org connections or refreshed sandboxes created after **October 20th, 2026**.
+Existing AutoRABIT CodeScan connections will continue to operate normally. This initial rollout only impacts new Salesforce org connections or refreshed sandboxes created after **October 20, 2026**.
 
 ## Why am I receiving this notice?&#x20;
 
 AutoRABIT is updating Salesforce connectivity requirements as part of our Salesforce AgentExchange partnership and Salesforce's evolving authentication standards. We're providing advance notice of an upcoming authentication change for new Salesforce org connections or refreshed sandboxes created within AutoRABIT CodeScan.&#x20;
 
-## What is Changing&#x20;
+## What Is Changing?&#x20;
 
 Beginning **October 20th, 2026**, new Salesforce org connections and refreshed sandboxes created in AutoRABIT CodeScan will be established through AutoRABIT's centralized Salesforce authentication service. AutoRABIT's centralized Salesforce authentication service (referred to internally as Auth Hub) provides a consistent and secure way to manage Salesforce connections across AutoRABIT products. Existing connections are not changing as part of this phase. \
 &#x20;\
@@ -31,13 +31,13 @@ As a Salesforce partner on AgentExchange, AutoRABIT is standardizing Salesforce 
 For most customers:&#x20;
 
 * Your existing Salesforce org connections will continue to work normally.&#x20;
-* New Salesforce org connections and refreshed sandboxes created after **October 20th, 2026** will use AutoRABIT's centralized Salesforce authentication service&#x20;
+* New Salesforce org connections and refreshed sandboxes created after **October 20, 2026** will use AutoRABIT's centralized Salesforce authentication service&#x20;
 * Your project history and settings will be retained.&#x20;
 * AutoRABIT will provide guidance if any action is needed from your team.&#x20;
 
 ## What Happens When I Create a New Salesforce Org Connection?&#x20;
 
-Beginning **October 20th, 2026**, customers creating a new Salesforce org connection or refreshing a sandbox in AutoRABIT CodeScan will follow an updated authentication process.&#x20;
+Beginning **October 20, 2026**, customers creating a new Salesforce org connection or refreshing a sandbox in AutoRABIT CodeScan will follow an updated authentication process.&#x20;
 
 In most cases, administrators will be guided through the setup experience within the product. Depending on your Salesforce configuration, additional Salesforce authentication and authorization steps may be required during setup. &#x20;
 
@@ -49,13 +49,21 @@ For detailed setup instructions, see [AutoRABIT App Installation and Configurati
 
 If you are not creating a new Salesforce org connection or refreshing existing sandboxes, no action is required.&#x20;
 
-If you create a new Salesforce org connection or refresh sandboxes after **October 20th, 2026**, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/autorabit-app-installation-and-configuration-guide-autorabit-codescan).
+If you create a new Salesforce org connection or refresh sandboxes after **October 20, 2026**, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan](https://knowledgebase.autorabit.com/product-guides/codescan/getting-started/autorabit-app-installation-and-configuration-guide-autorabit-codescan).
 
 Your Customer Success Manager will also be available to help answer questions and guide you through the process.&#x20;
 
 ## When Will This Happen?&#x20;
 
-Customer communications begin immediately. Beginning **October 20th, 2026**, all new Salesforce org connections and refreshed sandboxes in AutoRABIT CodeScan will use AutoRABIT's centralized Salesforce authentication service.&#x20;
+Customer communications begin immediately. Beginning **October 20, 2026**, all new Salesforce org connections and refreshed sandboxes in AutoRABIT CodeScan will use AutoRABIT's centralized Salesforce authentication service.&#x20;
+
+## Authentication Across Multiple AutoRABIT Products&#x20;
+
+AutoRABIT is introducing updated Salesforce authentication in phases across Guard, CodeScan, AutoRABIT Vault, and ARM.&#x20;
+
+During this transition, products that have received the update will use AutoRABIT's centralized Salesforce authentication service for new connections and refreshed sandboxes. Products awaiting their rollout will continue using their existing connection methods.&#x20;
+
+Existing connections will continue operating normally. Migration of existing connections will be addressed separately.
 
 ## Frequently Asked Questions&#x20;
 

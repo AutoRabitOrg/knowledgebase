@@ -6,7 +6,7 @@ We're making updates to how AutoRABIT products connect to Salesforce.&#x20;
 
 These changes are part of our ongoing efforts to improve reliability, simplify account management, and create a more consistent experience across AutoRABIT products as a Salesforce partner on AgentExchange.&#x20;
 
-Existing Guard connections will continue to operate normally. This initial rollout only impacts new Salesforce org connections or refreshed sandboxes created after **October 16th, 2026**.
+Existing Guard connections will continue to operate normally. This initial rollout only impacts new Salesforce org connections or refreshed sandboxes created after **October 16, 2026**.
 
 ## Why am I receiving this notice?&#x20;
 
@@ -49,13 +49,13 @@ For detailed setup instructions, see [AutoRABIT App Installation and Configurati
 
 If you are not creating a new Salesforce org connection or refreshing existing sandboxes, no action is required.&#x20;
 
-If you create a new Salesforce org connection or refresh sandboxes after October 16, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/autorabit-app-installation-and-configuration-guide).
+If you create a new Salesforce org connection or refresh sandboxes after **October 16, 2026**, you will follow the updated Salesforce authentication setup process. Detailed instructions are available here:  [AutoRABIT App Installation and Configuration Guide](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/autorabit-app-installation-and-configuration-guide).
 
 Your Customer Success Manager will also be available to help answer questions and guide you through the process.&#x20;
 
 ## When Will This Happen?&#x20;
 
-Customer communications begin immediately. Beginning October 16, all new Salesforce org connections and refreshed sandboxes in AutoRABIT Guard will use AutoRABIT's centralized Salesforce authentication service.&#x20;
+Customer communications begin immediately. Beginning **October 16, 2026**, all new Salesforce org connections and refreshed sandboxes in AutoRABIT Guard will use AutoRABIT's centralized Salesforce authentication service.&#x20;
 
 ## Authentication Across Multiple AutoRABIT Products&#x20;
 

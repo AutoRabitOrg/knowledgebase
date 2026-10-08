@@ -59,6 +59,18 @@ Customer communications begin immediately. Beginning October 16, all new Salesfo
 
 ## Frequently Asked Questions&#x20;
 
+### Do I need to take action?
+
+No action is required unless you're creating a new Salesforce connection or refreshing a sandbox after the applicable product rollout date.
+
+### What if I use multiple AutoRABIT products?&#x20;
+
+Different products may temporarily use different authentication methods. Follow the connection instructions for each product.&#x20;
+
+### Do I need to migrate existing connections?&#x20;
+
+Not during this initial phase. Additional migration guidance will be provided separately.&#x20;
+
 ### Will my existing AutoRABIT setup change?&#x20;
 
 No. Your existing configurations, settings, and historical information will remain intact.&#x20;

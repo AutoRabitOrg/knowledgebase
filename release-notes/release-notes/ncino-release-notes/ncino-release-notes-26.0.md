@@ -2,6 +2,30 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.4.2 <a href="#ncino-release-26.4.1" id="ncino-release-26.4.1"></a>
+
+**Release Date:** **11 October 2026**
+
+#### Correct Backup Snapshot Availability for Rejected Deployments <a href="#id-1.-correct-backup-snapshot-availability-for-rejected-deployments" id="id-1.-correct-backup-snapshot-availability-for-rejected-deployments"></a>
+
+Resolved an issue in the existing interface where selecting **Download Backup Snapshot** for a rejected nCino deployment resulted in an error. The option is now hidden for rejected deployments when no backup snapshot is available, preventing unsuccessful download attempts.
+
+#### Improved nCino Processing Stability <a href="#id-2.-improved-ncino-processing-stability" id="id-2.-improved-ncino-processing-stability"></a>
+
+Improved the stability and resource handling of nCino deployments and CI Jobs. The changes address potential processing loops and unexpected errors, helping ensure reliable job execution across supported nCino workflows.
+
+#### Reliable CI Job Action Changes <a href="#id-3.-reliable-ci-job-action-changes" id="id-3.-reliable-ci-job-action-changes"></a>
+
+Resolved an issue where changing an nCino CI Job action from **Commit Only** to **Deploy Only** could display an **Unable to retrieve source columns** error. Required feature configurations, External ID mappings, and sorting fields are now loaded correctly when the CI Job is edited.
+
+#### Accurate Post-Deployment Results for Rollback Iterations <a href="#id-4.-accurate-post-deployment-results-for-rollback-iterations" id="id-4.-accurate-post-deployment-results-for-rollback-iterations"></a>
+
+Resolved an issue where the **Post Deployment Result** option appeared for rollback iterations that did not execute any post-deployment activities. The option is now displayed only when relevant post-deployment processing occurred, preventing empty **No Data Found** results.
+
+#### Responsive File Diff Handling for Large nCino Commits <a href="#id-5.-responsive-file-diff-handling-for-large-ncino-commits" id="id-5.-responsive-file-diff-handling-for-large-ncino-commits"></a>
+
+Improved File Diff handling in nCino Commit History to prevent the interface from becoming unresponsive when processing large files. Files containing up to 3,000 lines continue to display an inline diff, while larger files provide a message directing users to download the diff. Change Logs also display the complete feature list when a commit contains multiple templates.
+
 ## nCino - Release 26.4.1  <a href="#ncino-release-26.4.1" id="ncino-release-26.4.1"></a>
 
 **Release Date:** **04 October 2026**

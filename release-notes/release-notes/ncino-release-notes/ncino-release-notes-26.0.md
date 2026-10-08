@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.4.2 <a href="#ncino-release-26.4.1" id="ncino-release-26.4.1"></a>
+## nCino - Release 26.4.2 <a href="#ncino-release-26.4.2" id="ncino-release-26.4.2"></a>
 
 **Release Date:** **11 October 2026**
 

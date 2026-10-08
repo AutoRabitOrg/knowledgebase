@@ -130,4 +130,7 @@ IZ Suite is released and certified as one set. The server and agent images are b
 
 ## Other Improvements <a href="#other-improvements" id="other-improvements"></a>
 
-Minor performance enhancements, bug fixes, and security improvements are included throughout the release.
+* **MCP pagination:** Added pagination support to MCP tools, making it easier to navigate large result sets.
+* **View all issues:** Added a new screen to browse issues across all applications in one place.
+* Minor performance enhancements, bug fixes, and security improvements are included throughout the release.
+

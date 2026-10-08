@@ -14,7 +14,7 @@ Fixed an issue where components already deleted and committed through **Select M
 
 The Auto Draft processing logic has been corrected to remove empty files after deletions are committed, ensuring previously committed deletions no longer appear as pending changes.
 
-#### Target Branch HEAD Revision Validation for EZ-Merge Approvals <a href="#target-branch-head-revision-validation-for-ez-merge-approvals" id="target-branch-head-revision-validation-for-ez-merge-approvals"></a>
+#### Target Branch HEAD Revision Validation for EZ-Merge Approvals(Only New UI) <a href="#target-branch-head-revision-validation-for-ez-merge-approvals" id="target-branch-head-revision-validation-for-ez-merge-approvals"></a>
 
 Added a new **Validate Target Branch Head Revision before Approval** setting under **Settings → My Account → Merge Settings** to help prevent approvals when the target branch has changed after a Merge or Quick Merge was created.
 

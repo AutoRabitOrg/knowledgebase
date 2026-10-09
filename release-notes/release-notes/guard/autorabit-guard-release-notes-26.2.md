@@ -6,7 +6,7 @@
 
 ## AutoRABIT Guard 26.2.6 Release Notes
 
-Release Date: 14 October 2026
+**Release Date: 14 October 2026**
 
 ### Enhancements
 
@@ -54,7 +54,7 @@ Where drift is detected, users can open the trigger details directly. The policy
 
 The policy remains saved when an evaluation cannot run.
 
-In addition, count-based metric labels use clearer wording, such as “Locked users count”.
+In addition, count-based metric labels use clearer wording, such as “Locked users count.”
 
 #### Change Monitoring Policies: Renamed Metadata Notifications
 
@@ -80,7 +80,7 @@ Updates that only change notification recipients are also processed more efficie
 
 Notification group member selection now shows usernames and email addresses, making users with the same email address easier to distinguish.
 
-### Bug fixes
+### Bug Fixes
 
 #### Digital Experience Assessment: Site Discovery
 

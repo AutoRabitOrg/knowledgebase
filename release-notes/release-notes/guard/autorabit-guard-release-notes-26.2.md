@@ -6,6 +6,124 @@
 
 ## AutoRABIT Guard 26.2.6 Release Notes
 
+Release Date: 14 October 2026
+
+### Enhancements
+
+#### Risk Assessment: Stored Assessments and Background Refresh
+
+Risk Assessment now opens with the latest completed assessment, including certificate information, without starting a new Salesforce check. Assessment timestamps make the age of the displayed results clear.
+
+Assessments run daily and after an org is connected. Tenant Managers and Guard Admins can select Refresh to run an assessment in the background. Auto-Resolve also starts a new assessment, and the page updates when the run finishes. If a refresh fails, the latest successful results remain available with a failure status.
+
+#### API Security: Scheduled Assessments and Manual Refresh
+
+API Security now displays the latest completed assessment when opened. Assessments run daily and after an org is connected, while Tenant Managers and Guard Admins can manually refresh assessments across orgs.
+
+Refresh progress and completion information are visible in Guard. Failed refreshes identify the affected orgs and preserve their latest successful results. History highlights changes such as apps being added, removed or reclassified.
+
+#### API Security: App Classification and Authorization Details
+
+API Security now assesses both Connected Apps and External Client Apps using their approval policies. External Client Apps are classified according to whether access is administrator-approved or users can self-authorize.
+
+Active-user counts represent distinct people. The Authorizations view loads results page by page, prioritizes the most-used authorizations and groups matching authorizations for the same user. After an app block is confirmed, Guard starts a new assessment to update the displayed results.
+
+#### Digital Experience Assessment: Expanded Record Counts
+
+Digital Experience Assessment now counts exposed records beyond the previous 2,000-record limit for supported LWR object scans.
+
+Counts below 4,000 are shown exactly. When the scan reaches the Salesforce retrieval limit, Guard displays “4,000+” to make clear that the result is a minimum count rather than a complete total.
+
+#### Permission Explorer: User Attributes in Results and Exports
+
+Permission Explorer results and exports now include user profile, role and last login date alongside the existing user details and permission source information.
+
+This helps reviewers identify who holds a permission without looking up each user separately. Users who have never logged in have an empty last-login value.
+
+#### Drift Policies: Immediate Evaluation Results
+
+After creating a Drift Policy with immediate evaluation enabled, Guard now shows the outcome of that evaluation. Users can see whether drift was detected, no matching change was found, or there was insufficient snapshot history for particular orgs or data sources.
+
+Where drift is detected, users can open the trigger details directly. The policy list defaults to the most recently created policies and reflects updated trigger information. Count-based metric labels also use consistent wording, such as “Locked users count”.
+
+#### Change Monitoring Policies: Renamed Metadata Notifications
+
+Guard now notifies policy recipients when a monitored metadata object is renamed in Salesforce and the policy may need to be updated.
+
+The Notification Centre entry identifies the affected policy and renamed object, with a link to review the policy. Email notifications follow the existing delivery settings and include the old and new object names.
+
+Users can review and update the policy's selected metadata where needed; Guard does not automatically retarget it.
+
+#### Salesforce Orgs: Custom Domain Connection Guidance
+
+The welcome page and Add Org dialog now provide a consistent custom-domain connection flow, including org name and org type fields.
+
+Guidance directs users to copy the exact login URL from Salesforce Setup > My Domain. Invalid URLs show inline validation while keeping the form open, so users can correct the address and retry.
+
+#### Transaction Security Policies: Faster Policy Management
+
+Transaction Security Policy lists now load from stored policy information while Salesforce deployment checks run in the background, improving navigation between the list and policy details.
+
+Updates that only change notification recipients are also processed more efficiently.
+
+### Bug fixes
+
+#### Digital Experience Assessment: Site Discovery
+
+Digital Experience Assessment now discovers additional active Experience Cloud sites that are visible to the connected Salesforce user but are omitted from the site membership-based listing. This makes those sites available for selection and scanning.
+
+Scan requests also use shorter connection and read timeouts so an unresponsive site does not hold a scan for an extended period.
+
+#### Transaction Security Policies: Deployment and Activation
+
+Transaction Security Policies now handle activation, deactivation and org reconnection more reliably. Orphaned policies can be redeployed after an org is removed and added again.
+
+Activation results also reflect deployment errors accurately, helping administrators identify when a missing Salesforce policy needs to be redeployed.
+
+#### Transaction Security Policies: Notifications and Event Details
+
+Transaction Security Policy setup preselects the current user's email as a notification recipient. Policy emails show the configured policy name, and policy details display creator information.
+
+Triggered events can be sorted by Salesforce org after the policy's org selection is edited.
+
+#### Policy Creation: Preserve Unsaved Changes
+
+Selecting Stay in a policy-creation confirmation dialog now preserves the open form and its unsaved changes.
+
+The confirmation also covers Drift Policy and Transaction Security Policy creation, alongside Authorization Policy creation and the policy wizard opened from Permission Explorer.
+
+#### Notification Groups: Clearer Member and Domain Selection
+
+Notification group member selection now shows usernames and email addresses, making users with the same email address easier to distinguish.
+
+Transaction Security Policies appear in the default policy-domain selector only when the feature is enabled.
+
+#### Permission and User Selectors: Search and Large Lists
+
+Email-domain selection now uses virtual scrolling to handle large lists more efficiently.
+
+Authorization Policy user search remains available when a query returns no matches, allowing users to adjust the search without restarting policy creation.
+
+#### Salesforce Orgs: Connection and Management Reliability
+
+Guard handles Salesforce access and refresh-token failures more consistently. Org management remains available when Salesforce data cannot be retrieved, allowing administrators to edit or remove the affected connection.
+
+API Security also retrieves assessment status reliably for newly added orgs.
+
+#### Risk Assessment: Certificate Labels and MFA Guidance
+
+Self-signed certificates now show “Self-signed” in the Issuer column.
+
+Manual MFA remediation instructions now provide clearer Salesforce navigation and identify the setting administrators need to review.
+
+#### Guard MCP: Role Enforcement and Response Handling
+
+Guard MCP tools now apply the same role requirements as the corresponding Guard operations. Response handling and tool validation have also been improved for more consistent interaction with MCP clients.
+
+***
+
+## AutoRABIT Guard 26.2.5.6 Release Notes
+
 **Release Date: 7 October 2026**
 
 ### Enhancements

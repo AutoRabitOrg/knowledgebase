@@ -76,6 +76,10 @@ Transaction Security Policy lists now load from stored policy information while 
 
 Updates that only change notification recipients are also processed more efficiently.
 
+#### Notification Groups: Clearer Member Selection
+
+Notification group member selection now shows usernames and email addresses, making users with the same email address easier to distinguish.
+
 ### Bug fixes
 
 #### Digital Experience Assessment: Site Discovery
@@ -102,12 +106,6 @@ Selecting Stay in a policy-creation confirmation dialog now preserves the open f
 
 The confirmation covers Drift, Transaction Security and Authorization Policy creation and the policy wizard opened from Permission Explorer.
 
-#### Notification Groups: Clearer Member and Domain Selection
-
-Notification group member selection now shows usernames and email addresses, making users with the same email address easier to distinguish.
-
-Transaction Security Policies appear in the default policy-domain selector only when the feature is enabled.
-
 #### Permission and User Selectors: Search and Large Lists
 
 Email-domain selection now uses virtual scrolling to handle large lists more efficiently.
@@ -126,9 +124,9 @@ Self-signed certificates now show “Self-signed” in the Issuer column.
 
 Manual MFA remediation instructions now provide clearer Salesforce navigation and identify the setting administrators need to review.
 
-#### Guard MCP: Role Enforcement and Response Handling
+#### Guard MCP: Response Handling
 
-Guard MCP tools now apply the same role requirements as the corresponding Guard operations. Response handling and tool validation have also been improved for more consistent interaction with MCP clients.
+Response handling and tool validation have been improved for more consistent interaction with MCP clients.
 
 ***
 

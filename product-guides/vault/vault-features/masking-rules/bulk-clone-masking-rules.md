@@ -1,6 +1,4 @@
-# Bulk\_Clone\_Masking\_Rules\_ORGs\_User\_Guide
-
-## Clone Masking Rules to Salesforce Orgs
+# Bulk Clone Masking Rules
 
 ### Bulk Clone Rules User Guide
 

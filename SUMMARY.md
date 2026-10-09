@@ -1306,6 +1306,7 @@
     * [Masking Rules](product-guides/vault/vault-features/masking-rules/README.md)
       * [Find\_Replace - Masking\_Rules](product-guides/vault/vault-features/masking-rules/find_replace-masking_rules.md)
       * [Synthetic\_Data\_Generator - Masking\_Rules](product-guides/vault/vault-features/masking-rules/synthetic_data_generator-masking_rules.md)
+      * [Bulk\_Clone\_Masking\_Rules\_ORGs\_User\_Guide](product-guides/vault/vault-features/masking-rules/bulk_clone_masking_rules_orgs_user_guide.md)
     * [Reporting](product-guides/vault/vault-features/reporting/README.md)
       * [Archive Reports](product-guides/vault/vault-features/reporting/archive-reports.md)
       * [Stale Jobs](product-guides/vault/vault-features/reporting/stale-jobs.md)

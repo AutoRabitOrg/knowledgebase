@@ -7,8 +7,8 @@ Before scanning applications using IZ Scan, make sure you have:
 
 * Purchased a valid license for IZ Scan.
 * Downloaded and installed **`IZ Scan CLI`** plugin. Download the latest version of **`IZ Scan CLI`** from [latest](../../releases/iz-scan-cli/latest.md)
-* Downloaded and installed JDK 11
 * Follow the instructions on [Generating Security Token](generate-security-token.md) to generate a security token
+* The CLI downloaded prior to 26.3.1 will be in format falcon-scan-cli-\<version>.zip . Rest of the parameters will remain the same
 {% endhint %}
 
 ### CI/CD Integration

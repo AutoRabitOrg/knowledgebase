@@ -18,9 +18,9 @@ Before scanning applications using IZ Scan, make sure you have:
 ```xml
 <repositories>
     <repository>
-        <id>iz-maven-repo&lt;/id>
-        <name>IZ Maven Repo&lt;/name>
-        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
+        <id>iz-maven-repo</id>
+        <name>IZ Maven Repo</name>
+        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases</url>
     </repository>
 </repositories>
 ```
@@ -28,8 +28,8 @@ Before scanning applications using IZ Scan, make sure you have:
 ```xml
 <pluginRepositories>
     <pluginRepository>
-        <id>iz-maven-plugin-repo&lt;/id>
-        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases&lt;/url>
+        <id>iz-maven-plugin-repo</id>
+        <url>https://iz-public-m2.s3.eu-west-2.amazonaws.com/releases</url>
     </pluginRepository>
 </pluginRepositories>
 ```
@@ -37,21 +37,26 @@ Before scanning applications using IZ Scan, make sure you have:
 ### CI/CD Integration
 
 1. Go to the project root directory from the command line/terminal
-2. Run **`mvn com.integralzone.iz:iz-scan-cli:scan`** command with the following options
-   1. -DserviceHost=xxx\
-      _&#x49;Z Scan service URL_
-   2. -DauthToken=xxx\
-      _&#x53;ecurity token generated from the server_
-   3. -DapplicationKey=x.x\
-      _&#x55;nique ID of the application / project being scanned_
-   4. -DapplicationName=.\
-      _&#x4E;ame of the application being scanned_
-   5. -Dsource=xxx\
-      _&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
-   6. -DscmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
-   7. -DpullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
-   8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id. NOTE: In a multi tenancy environment, this parameter is mandatory._&#x20;
-   9. -DsarifReport=xxx + \_Optional. Used to generate issues in SARIF format. The output report file path must be specified using this parameter.
+2. Run **`mvn`**` ``com.integralzone.izsuite:iz-scan-cli`**`:scan`** command with the following options
+
+{% hint style="warning" %}
+The maven command prior to version 26.3.1 will be `mvn com.integralzone.falcon:falcon-scan-cli:scan` . Rest of the parameters will remain the same.
+{% endhint %}
+
+1. -DserviceHost=xxx\
+   _&#x49;Z Scan service URL_
+2. -DauthToken=xxx\
+   _&#x53;ecurity token generated from the server_
+3. -DapplicationKey=x.x\
+   _&#x55;nique ID of the application / project being scanned_
+4. -DapplicationName=.\
+   _&#x4E;ame of the application being scanned_
+5. -Dsource=xxx\
+   _&#x4F;ptional. Location of the project source directory. If ignored, the current directory will be used as the project source directory_
+6. -DscmBranchName=xxx + _Optional. SCM branch for which code is being analyzed. If ignored, the default value will be **`master`**_
+7. -DpullRequestId=xxx + \_Optional.SCM Pull request name for which code is being analyzed
+8. -Dorganization=xxx + _Optional. Organization under which the project should be categorized. If ignored, the default organization will be used. Value can be any of Organization Name / Id / Ext Id. NOTE: In a multi tenancy environment, this parameter is mandatory._&#x20;
+9. -DsarifReport=xxx + \_Optional. Used to generate issues in SARIF format. The output report file path must be specified using this parameter.
 
 Please refer to the section [below](using-maven.md) for instructions on how to retrieve the organization ID.
 

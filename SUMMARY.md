@@ -20,6 +20,8 @@
 * [Announcements](fundamentals/announcements/README.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT Guard Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-migrating-to-authhub.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT CodeScan Salesforce Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-codescan-salesforce-connections.md)
+  * [Upcoming Salesforce Authentication Changes for New AutoRABIT ARM Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-arm-connections.md)
+  * [Upcoming Salesforce Authentication Changes for New AutoRABIT Vault Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-vault-connections.md)
   * [Status of AutoRABIT in the Middle East](fundamentals/announcements/page-3.md)
   * [Upgrading the Node Runtime for Azure DevOps](fundamentals/announcements/upgrading-the-node-runtime-for-azure-devops.md)
   * [Deprecation of Node 20 on GitHub Actions Runners](fundamentals/announcements/deprecation-of-node-20-on-github-actions-runners.md)

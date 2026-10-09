@@ -14,11 +14,17 @@ Release Date: 14 October 2026
 
 Risk Assessment now opens with the latest completed assessment, including certificate information, without starting a new Salesforce check. Assessment timestamps make the age of the displayed results clear.
 
-Assessments run daily and after an org is connected. Tenant Managers and Guard Admins can select Refresh to run an assessment in the background. Auto-Resolve also starts a new assessment, and the page updates when the run finishes. If a refresh fails, the latest successful results remain available with a failure status.
+Automatic assessments now run:
+
+* Daily
+* After an org is connected
+* After Auto-Resolve
+
+Tenant Managers and Guard Admins can select Refresh to run an assessment manually at any time. If a refresh fails, the latest successful results remain available with a failure status.
 
 #### API Security: Scheduled Assessments and Manual Refresh
 
-API Security now displays the latest completed assessment when opened. Assessments run daily and after an org is connected, while Tenant Managers and Guard Admins can manually refresh assessments across orgs.
+Similar to Risk Assessment, API Security assessments run daily and after an org is connected. Tenant Managers and Guard Admins can manually refresh assessments across orgs at any time.
 
 Refresh progress and completion information are visible in Guard. Failed refreshes identify the affected orgs and preserve their latest successful results. History highlights changes such as apps being added, removed or reclassified.
 
@@ -42,9 +48,13 @@ This helps reviewers identify who holds a permission without looking up each use
 
 #### Drift Policies: Immediate Evaluation Results
 
-After creating a Drift Policy with immediate evaluation enabled, Guard now shows the outcome of that evaluation. Users can see whether drift was detected, no matching change was found, or there was insufficient snapshot history for particular orgs or data sources.
+After creating a Drift Policy with immediate evaluation enabled, Guard now shows the outcome of that evaluation. Users can see whether drift was detected, no matching change was found, or if there was insufficient snapshot history for particular orgs or data sources.
 
-Where drift is detected, users can open the trigger details directly. The policy list defaults to the most recently created policies and reflects updated trigger information. Count-based metric labels also use consistent wording, such as “Locked users count”.
+Where drift is detected, users can open the trigger details directly. The policy list defaults to the most recently created policies and reflects updated trigger information.
+
+The policy remains saved when an evaluation cannot run.
+
+In addition, count-based metric labels use clearer wording, such as “Locked users count”.
 
 #### Change Monitoring Policies: Renamed Metadata Notifications
 
@@ -90,7 +100,7 @@ Triggered events can be sorted by Salesforce org after the policy's org selectio
 
 Selecting Stay in a policy-creation confirmation dialog now preserves the open form and its unsaved changes.
 
-The confirmation also covers Drift Policy and Transaction Security Policy creation, alongside Authorization Policy creation and the policy wizard opened from Permission Explorer.
+The confirmation covers Drift, Transaction Security and Authorization Policy creation and the policy wizard opened from Permission Explorer.
 
 #### Notification Groups: Clearer Member and Domain Selection
 

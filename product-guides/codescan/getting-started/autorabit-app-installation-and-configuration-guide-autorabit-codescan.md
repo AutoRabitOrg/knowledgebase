@@ -12,15 +12,11 @@ This guide is intended for the Salesforce administrator responsible for installi
 
 Before you begin, confirm which Salesforce org you are configuring and which Salesforce account will be used as the AutoRABIT integration user. Completing these checks first helps prevent installing the package in the wrong environment or authorizing the connector with the wrong account.
 
-·   Choose the installation target: Production/Developer Org or Sandbox.
-
-·   Use a Salesforce account with sufficient access to install the package and update Setup settings.
-
-·   Identify the Salesforce user that will act as the AutoRABIT integration user.
-
-·   Before inbound authorization, make sure the integration user has the AutoRABIT Setup User permission set.
-
-·   Confirm that your organization has active licenses for the AutoRABIT products you plan to connect.
+* Choose the installation target: Production/Developer Org or Sandbox.
+* Use a Salesforce account with sufficient access to install the package and update Setup settings.
+* Identify the Salesforce user that will act as the AutoRABIT integration user.
+* Before inbound authorization, make sure the integration user has the AutoRABIT Setup User permission set.
+* Confirm that your organization has active licenses for the AutoRABIT products you plan to connect.
 
 {% hint style="info" %}
 **Environment choice**
@@ -38,7 +34,7 @@ Open the Salesforce marketplace in a browser. Sign in if prompted.
 
 2\. Search for AutoRABIT
 
-Use the marketplace search field and search for “AutoRABIT”.
+Use the marketplace search field and search for “AutoRABIT.”
 
 <figure><img src="../../../.gitbook/assets/image (2810).png" alt=""><figcaption></figcaption></figure>
 
@@ -76,7 +72,7 @@ Choose the Production/Developer organization where you want the package installe
 
 5\. Accept the marketplace terms and confirm installation
 
-Review the installation details, accept the Salesforce AppExchange terms and conditions, and select “Confirm and Install”. Salesforce then redirects you to the package installation page in the selected org.
+Review the installation details, accept the Salesforce AppExchange terms and conditions, and select “Confirm and Install." Salesforce then redirects you to the package installation page in the selected org.
 
 <figure><img src="../../../.gitbook/assets/image (2816).png" alt=""><figcaption></figcaption></figure>
 
@@ -84,31 +80,31 @@ Review the installation details, accept the Salesforce AppExchange terms and con
 
 1\. Select Try It
 
-For a Sandbox installation, use the “Try It” option on the AutoRABIT listing instead of “Get It Now”.
+For a Sandbox installation, use the “Try It” option on the AutoRABIT listing instead of “Get It Now.”
 
 <figure><img src="../../../.gitbook/assets/image (2817).png" alt=""><figcaption></figcaption></figure>
 
 2\. Continue to installation
 
-On the trial setup page, confirm the information shown and select “Continue to Installation”.
+On the trial setup page, confirm the information shown and select “Continue to Installation.”
 
 <figure><img src="../../../.gitbook/assets/image (2818).png" alt=""><figcaption></figcaption></figure>
 
 3\. Log in and install
 
-Select “Log In & Install”, then authenticate to the Sandbox in which the package will be installed.
+Select “Log In & Install,” then authenticate to the Sandbox in which the package will be installed.
 
 <figure><img src="../../../.gitbook/assets/image (2819).png" alt=""><figcaption></figcaption></figure>
 
 4\. Install for Admins Only
 
-When the Salesforce package installation screen opens, select “Install for Admins Only”, then click “Install”. This is the installation scope shown in the source procedure.
+When the Salesforce package installation screen opens, select “Install for Admins Only,” then click “Install.” This is the installation scope shown in the source procedure.
 
 <figure><img src="../../../.gitbook/assets/image (2820).png" alt=""><figcaption></figcaption></figure>
 
 5\. Approve required third-party access
 
-Salesforce may request approval for access to login.salesforce.com and test.salesforce.com. Select the option to grant access to these third-party sites, then click “Continue”.
+Salesforce may request approval for access to login.salesforce.com and test.salesforce.com. Select the option to grant access to these third-party sites, then click “Continue.”
 
 <figure><img src="../../../.gitbook/assets/image (2821).png" alt=""><figcaption></figcaption></figure>
 
@@ -138,7 +134,7 @@ After the package is installed, configure the Salesforce OAuth settings required
 
 1\. Open OAuth and OpenID Connect Settings
 
-In Salesforce Setup, search for and open “OAuth and OpenID Connect Settings”.
+In Salesforce Setup, search for and open “OAuth and OpenID Connect Settings.”
 
 <figure><img src="../../../.gitbook/assets/image (2824).png" alt=""><figcaption></figcaption></figure>
 
@@ -146,9 +142,8 @@ In Salesforce Setup, search for and open “OAuth and OpenID Connect Settings”
 
 Verify that both of the following settings are enabled. If either is disabled, enable it:
 
-·   Allow Authorization Code and Credentials Flows
-
-·   Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows
+* Allow Authorization Code and Credentials Flows
+* Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows
 
 <figure><img src="../../../.gitbook/assets/image (2825).png" alt=""><figcaption></figcaption></figure>
 
@@ -160,31 +155,31 @@ When Salesforce displays a warning about changing the setting, review it and cli
 
 4\. Open External Client App Manager
 
-From Setup, open “External Client App Manager”.
+From Setup, open “External Client App Manager.”
 
 <figure><img src="../../../.gitbook/assets/image (2827).png" alt=""><figcaption></figcaption></figure>
 
 5\. Select AutoRABIT Connector
 
-In External Client App Manager, select only the entry named “AutoRABIT Connector”. Do not select “AutoRABIT Connector (Dev)”. The (Dev) External Client App is reserved for AutoRABIT debugging and troubleshooting and is not part of the standard customer configuration.
+In External Client App Manager, select only the entry named “AutoRABIT Connector.” Do not select “AutoRABIT Connector (Dev).” The (Dev) External Client App is reserved for AutoRABIT debugging and troubleshooting and is not part of the standard customer configuration.
 
 <figure><img src="../../../.gitbook/assets/image (2828).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Connector selection**
 
-Choose AutoRABIT Connector without “(Dev)”. AutoRABIT Connector (Dev) is for debugging purposes only and should not be configured by customer administrators during a normal installation.
+Choose AutoRABIT Connector without “(Dev).” AutoRABIT Connector (Dev) is for debugging purposes only and should not be configured by customer administrators during a normal installation.
 {% endhint %}
 
 6\. Edit Policies
 
-On the AutoRABIT Connector page, open the Policies tab and click “Edit”.
+On the AutoRABIT Connector page, open the Policies tab and click “Edit.”
 
 <figure><img src="../../../.gitbook/assets/image (2829).png" alt=""><figcaption></figcaption></figure>
 
 7\. Expand OAuth Policies and enable guest-user credential flow
 
-Expand “OAuth Policies”, enable “Enable Code and Credentials Flow for Guest Users”, and then save the changes.
+Expand “OAuth Policies” enable “Enable Code and Credentials Flow for Guest Users,” and then save the changes.
 
 <figure><img src="../../../.gitbook/assets/image (2830).png" alt=""><figcaption></figcaption></figure>
 
@@ -194,7 +189,7 @@ Expand “OAuth Policies”, enable “Enable Code and Credentials Flow for Gues
 
 1\. Launch AutoRABIT Connector
 
-Open the Salesforce App Launcher, search for “AutoRABIT Connector”, and launch the app.
+Open the Salesforce App Launcher, search for “AutoRABIT Connector,” and launch the app.
 
 <figure><img src="../../../.gitbook/assets/image (2832).png" alt=""><figcaption></figcaption></figure>
 
@@ -206,7 +201,7 @@ From the AutoRABIT Connector home page, click the “Configuration” card.
 
 3\. Authorize the inbound connection
 
-The System Connections page contains two authorization areas. Start with Inbound Connection and click “Authorize”. The Salesforce account that completes this authorization becomes the integration user AutoRABIT uses for this connection. Use a dedicated integration account when that is your standard practice.
+The System Connections page contains two authorization areas. Start with Inbound Connection and click “Authorize.” The Salesforce account that completes this authorization becomes the integration user AutoRABIT uses for this connection. Use a dedicated integration account when that is your standard practice.
 
 <figure><img src="../../../.gitbook/assets/image (2834).png" alt=""><figcaption></figcaption></figure>
 
@@ -218,7 +213,7 @@ If you are currently signed in as a different Salesforce user than the intended 
 
 4\. Allow access
 
-Review the Salesforce authorization request carefully. Confirm the displayed Salesforce account is the integration user you intend to use, then click “Allow”.
+Review the Salesforce authorization request carefully. Confirm the displayed Salesforce account is the integration user you intend to use, then click “Allow.”
 
 <figure><img src="../../../.gitbook/assets/image (2835).png" alt="" width="267"><figcaption></figcaption></figure>
 
@@ -240,7 +235,7 @@ Open the AutoRABIT product your organization is licensed to use and sign in with
 Client Secret values are sensitive. Copy them only into the intended connector field and avoid placing them in tickets, chat messages, or documentation.
 {% endhint %}
 
-## CodeScan - first-time configuration
+## CodeScan - First-Time Configuration
 
 1\. Click on Add Project and select Salesforce:
 
@@ -256,11 +251,9 @@ CodeScan displays the information needed to authorize the org with AutoRABIT Con
 
 Return to AutoRABIT Connector in Salesforce and populate the Outbound Connection fields as follows:
 
-·   Subdomain: copy the subdomain shown by the AutoRABIT product.
-
-·   Client ID: copy the Client ID shown by the product.
-
-·   Client Secret: copy the Client Secret shown by the product.
+* Subdomain: Copy the subdomain shown by the AutoRABIT product.
+* Client ID: Copy the Client ID shown by the product.
+* Client Secret: Copy the Client Secret shown by the product.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120702.png" alt=""><figcaption></figcaption></figure>
 
@@ -268,9 +261,9 @@ Return to AutoRABIT Connector in Salesforce and populate the Outbound Connection
 
 4\. Authorize the outbound connection
 
-After all three values are entered, click “Authorize”. Confirm that the outbound connection changes to an authorized state before moving on.
+After all three values are entered, click “Authorize.” Confirm that the outbound connection changes to an authorized state before moving on.
 
-## CodeScan - adding another org later
+## CodeScan - Adding Another Org Later
 
 1\. Click on Add Project and select Salesforce:
 
@@ -326,7 +319,7 @@ If your organization does not have an active license for a product, the product 
 
 4\. Open Licensing & Permissions
 
-Return to the AutoRABIT Connector home page and click “Licensing & Permissions”.
+Return to the AutoRABIT Connector home page and click “Licensing & Permissions."
 
 <figure><img src="../../../.gitbook/assets/image (2849).png" alt=""><figcaption></figcaption></figure>
 
@@ -342,7 +335,7 @@ _Configuring the AutoRABIT CodeScan Permission Set in Salesforce_
 
 ### Overview
 
-This guide walks through the steps required to configure the AutoRABIT CodeScan permission set in Salesforce.Follow each step in order to set up the AutoRABIT CodeScan integration user correctly.
+This guide walks through the steps required to configure the AutoRABIT CodeScan permission set in Salesforce. Follow each step in order to set up the AutoRABIT CodeScan integration user correctly.
 
 The AutoRABIT CodeScan integration user requires View All Data, Modify All Data, and Customize Application to be enabled.
 
@@ -426,7 +419,7 @@ The newly registered Salesforce org should appear in the selection list. Choose 
 
 3\. Add the org
 
-With the correct org selected, click “Add Org”.
+With the correct org selected, click “Add Org.”
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120736.png" alt=""><figcaption></figcaption></figure>
 

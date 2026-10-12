@@ -1305,7 +1305,7 @@
       * [Retry Failed Records](product-guides/vault/vault-features/replicate/retry-failed-records.md)
     * [Masking Rules](product-guides/vault/vault-features/masking-rules/README.md)
       * [Find\_Replace - Masking\_Rules](product-guides/vault/vault-features/masking-rules/find_replace-masking_rules.md)
-      * [Synthetic\_Data\_Generator - Masking\_Rules](product-guides/vault/vault-features/masking-rules/synthetic_data_generator-masking_rules.md)
+      * [Synthetic Data Generator](product-guides/vault/vault-features/masking-rules/synthetic-data-generator.md)
       * [Bulk Clone Masking Rules](product-guides/vault/vault-features/masking-rules/bulk-clone-masking-rules.md)
     * [Reporting](product-guides/vault/vault-features/reporting/README.md)
       * [Archive Reports](product-guides/vault/vault-features/reporting/archive-reports.md)

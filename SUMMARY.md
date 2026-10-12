@@ -1307,6 +1307,7 @@
       * [Find & Replace](product-guides/vault/vault-features/masking-rules/find-and-replace.md)
       * [Synthetic Data Generator](product-guides/vault/vault-features/masking-rules/synthetic_data_generator-masking_rules.md)
       * [Bulk Clone Masking Rules](product-guides/vault/vault-features/masking-rules/bulk-clone-masking-rules.md)
+      * [Clone Masking Rules to Objects User Guide](product-guides/vault/vault-features/masking-rules/clone-masking-rules-to-objects-user-guide.md)
     * [Reporting](product-guides/vault/vault-features/reporting/README.md)
       * [Archive Reports](product-guides/vault/vault-features/reporting/archive-reports.md)
       * [Stale Jobs](product-guides/vault/vault-features/reporting/stale-jobs.md)

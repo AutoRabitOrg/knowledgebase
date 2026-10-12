@@ -1,4 +1,4 @@
-# Synthetic\_Data\_Generator - Masking\_Rules
+# Synthetic Data Generator
 
 The Masking Rules module centralizes the creation and management of masking rules for a selected Salesforce org. A masking rule defines the object, field type, masking style, selected fields, and replacement behavior used to protect sensitive values.
 

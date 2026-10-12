@@ -67,14 +67,14 @@ Agree the exact attribute name and value with Support before go-live. The value 
 3. Make sure Guard admins are in the admin group or have the custom attribute that releases `TENANT-MANAGER`.
 4. Everyone else receives standard Guard user access after Support finishes Keycloak mapping.
 
-### Step 5: Download IdP metadata and send it to Support
+### Step 5: Download IdP metadata and send it to us
 
 1. Open the app → Sign On.
 2. In SAML Signing Certificates, open Actions for the active certificate.
 3. Choose View IdP metadata.
 4. Save the page as an `.xml` file (in Firefox choose All files if needed).
 
-Reply on the Support ticket with:
+Reply to us with:
 
 * The IdP metadata XML file
 * The attribute statement names you configured (`firstName`, `lastName`, `email`, `username`, `role` or equivalent)
@@ -82,7 +82,7 @@ Reply on the Support ticket with:
 * Confirmation that Application username / username attribute matches existing Guard logins (usually email)
 * Your preferred button label on the Guard login page (for example `Contoso SSO`)
 
-Support completes the Keycloak side and confirms when you can test.
+We will complete the Keycloak side and confirm when you can proceed with testing.
 
 ### Step 6: Test
 

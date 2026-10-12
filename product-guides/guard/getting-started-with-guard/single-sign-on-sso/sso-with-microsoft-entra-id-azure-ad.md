@@ -73,16 +73,16 @@ Also confirm the SAML token includes the role claim:
 3. For Guard admins, assign them the TENANT-MANAGER app role.
 4. Everyone else can be assigned without that role. They receive standard Guard user access after Support finishes Keycloak mapping.
 
-### Step 6: Download federation metadata and send it to Support
+### Step 6: Download federation metadata and send it to us
 
 1. In Single sign-on → SAML, under SAML Certificates, download Federation Metadata XML.
-2. Reply on the Support ticket with:
+2. Reply to us with:
    * The Federation Metadata XML file
    * Confirmation of which users or groups are Guard admins (`TENANT-MANAGER`)
    * Confirmation that the username claim matches existing Guard logins (usually email)
    * Your preferred button label on the Guard login page (for example `Contoso SSO`)
 
-Support completes the Keycloak side and confirms when you can test.
+We will then complete the Keycloak side and confirm when you can proceed with testing.
 
 ### Step 7: Test
 

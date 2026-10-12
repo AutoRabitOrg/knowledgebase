@@ -9,8 +9,7 @@ Guard SSO is configured by AutoRABIT Support in Keycloak. You create the Okta SA
 You need:
 
 * Okta administrator access
-* A Support ticket open for Guard SSO enablement
-* The two values Support sends you:
+* From us:
   * Single sign-on URL (Reply URL / ACS URL)
   * Audience URI (SP Entity ID)
 
@@ -95,25 +94,22 @@ Support completes the Keycloak side and confirms when you can test.
    * An admin still has admin access after SSO
    * Existing Guard users are matched to their previous accounts
 
-Only after testing should you ask Support to enable Only SSO Authentication for the tenant.
-
 ### Optional: assertion encryption
 
 Some organisations require encrypted SAML assertions. If you need this:
 
-1. Tell Support when you raise the ticket.
-2. Support provides an encryption certificate.
-3. In Okta, edit the SAML app → Show advanced settings → set assertion encryption to encrypted and upload the certificate.
-4. Re-test login after Support confirms Keycloak is ready for encrypted assertions.
+1. Ask us for an encryption certificate.
+2. In Okta, edit the SAML app → Show advanced settings → set assertion encryption to encrypted and upload the certificate.
+3. Re-test login after we confirm Keycloak is ready for encrypted assertions.
 
 ### Troubleshooting
 
-| Symptom                                                  | What to check                                                                                                             |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| User reaches Guard as the wrong person / opaque username | Application username or `username` attribute does not match Guard login. Prefer email.                                    |
-| Admin loses admin rights after next SSO login            | `TENANT-MANAGER` is not present in the SAML assertion, or the attribute name does not match what Support mapped.          |
-| First or last name blank in Guard                        | `firstName` / `lastName` attribute statements missing or named differently than Support expects.                          |
-| Login fails after URL change                             | Single sign-on URL / Audience URI in Okta no longer match Support’s Keycloak values. Raise a ticket before changing them. |
+| Symptom                                                  | What to check                                                                                               |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| User reaches Guard as the wrong person / opaque username | Application username or `username` attribute does not match Guard login. Prefer email.                      |
+| Admin loses admin rights after next SSO login            | `TENANT-MANAGER` is not present in the SAML assertion, or the attribute name does not match what we mapped. |
+| First or last name blank in Guard                        | `firstName` / `lastName` attribute statements missing or named differently than we expected.                |
+| Login fails after URL change                             | Single sign-on URL / Audience URI in Okta no longer match our Keycloak values. Ask us before changing them. |
 
 ***
 

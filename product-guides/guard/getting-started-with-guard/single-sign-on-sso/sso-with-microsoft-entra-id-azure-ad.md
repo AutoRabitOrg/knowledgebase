@@ -8,9 +8,8 @@ Guard SSO is configured by AutoRABIT Support in Keycloak. You set up the Entra a
 
 You need:
 
-* Administrator access to Microsoft Entra ID
-* Submit a Support ticket with us by emailing support@autorabit.com&#x20;
-* Support will send you:
+* Administrator access to Microsoft Entra ID:
+* From us:
   * Reply URL (also called Redirect URI or ACS URL)
   * Identifier (Service Provider Entity ID)
 
@@ -95,14 +94,13 @@ Support completes the Keycloak side and confirms when you can test.
    * An admin still has admin access after SSO
    * Existing Guard users are matched to their previous accounts (no unexpected duplicates)
 
-Only after testing should you ask Support to enable Only SSO Authentication for the tenant.
-
 ### Troubleshooting
 
-| Problem                                                  | What to check                                                                                                       |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| User reaches Guard as the wrong person / opaque username | Username claim does not match Guard login. Align Name/email claim with Support.                                     |
-| Admin loses admin rights after next SSO login            | `TENANT-MANAGER` app role missing in Entra, or role claim not released.                                             |
-| Login fails after Redirect URI change                    | Reply URL / Identifier in Entra no longer match the values Support configured. Raise a ticket before changing them. |
+| Problem                                                  | What to check                                                                                          |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| User reaches Guard as the wrong person / opaque username | Username claim does not match Guard login. Align Name/email claim with us.                             |
+| Admin loses admin rights after next SSO login            | `TENANT-MANAGER` app role missing in Entra, or role claim not released.                                |
+| Login fails after Redirect URI change                    | Reply URL / Identifier in Entra no longer match the values we configured. Ask us before changing them. |
 
 <br>
+

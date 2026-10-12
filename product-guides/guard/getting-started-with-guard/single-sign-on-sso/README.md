@@ -13,7 +13,7 @@ Single Sign-On (SSO) allows your organization to streamline and secure access to
 
 Currently, Guard manages SSO through Keycloak. To set up SSO for your tenant:
 
-1. Submit a Support ticket requesting SSO enablement support.
+1. Speak to us about getting support for enabling SSO.&#x20;
 2. Our team will help configure the integration with your IdP (e.g., Microsoft Entra ID).
 3. Once configured, users assigned to the proper IdP groups will automatically be granted access to Guard (recommended default is Standard User privileges). Admins retain their permissions as defined in Guard.
 

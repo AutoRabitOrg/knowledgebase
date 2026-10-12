@@ -10,7 +10,7 @@ Use Drift Policies to track changes across:
 * **Risk Assessment**, such as newly introduced manual or auto-resolvable risks.
 * **User Activity Monitoring**, such as spikes in password changes, inactive users, or unfrozen accounts.
 
-<figure><img src="../../../../.gitbook/assets/image (2535).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2Fd3wZRI8g2Pns6LAPOJ1S%2Fimage.png?alt=media&#x26;token=6b0339c8-94ba-4578-87b3-771965a56cd7" alt=""><figcaption></figcaption></figure>
 
 ### Key capabilities
 
@@ -29,6 +29,12 @@ Available templates include:
 #### Create custom drift policies
 
 Custom policies let you choose exactly which historical data points to monitor. You can create conditions across API Security, Risk Assessment, and User Activity Monitoring, then decide whether the policy should trigger on any change, an increase, a decrease, or a percentage-based change.
+
+#### See immediate evaluation results
+
+When immediate evaluation is enabled for a new policy, Guard evaluates the policy after it is saved and shows the result. The result tells you whether drift was detected, no matching change was found or there was not enough snapshot history for selected orgs or data sources.
+
+If drift is detected, you can open the trigger details directly from the result. If evaluation cannot run for some orgs or data sources, the policy is still saved.
 
 #### Monitor multiple orgs
 
@@ -50,9 +56,10 @@ You can enable, disable, edit, and delete Drift Policies as your monitoring need
 4. Choose whether to create the policy **From template** or **Custom**.
 5. Select the Salesforce orgs the policy should monitor.
 6. Configure the policy conditions and notification settings.
-7. Save the policy.
+7. Choose whether to evaluate the policy immediately after saving.
+8. Save the policy.
 
-When a policy is created, Guard evaluates it during the next daily drift evaluation run after the relevant daily snapshots are available.
+If immediate evaluation is enabled, Guard checks the policy after it is saved and opens a result dialog when the evaluation completes. Otherwise, the policy is evaluated during the next daily drift evaluation run after the relevant daily snapshots are available.
 
 ### Create a drift policy from a template
 
@@ -65,7 +72,8 @@ Use templates when you want to monitor a common drift scenario quickly.
 5. Enter a policy name.
 6. Select one or more Salesforce orgs.
 7. Configure notification settings.
-8. Save the policy.
+8. Choose whether to evaluate the policy immediately after saving.
+9. Save the policy.
 
 Guard adds the policy to the Drift Policies list with its name, selected orgs, and enabled status.
 
@@ -87,13 +95,16 @@ Use a custom policy when you want more control over what Guard monitors.
    * **% decrease**
 8. Choose whether multiple conditions should use **AND** or **OR** logic.
 9. Configure notification settings.
-10. Save the policy.
+10. Choose whether to evaluate the policy immediately after saving.
+11. Save the policy.
 
 For percentage-based conditions, enter the threshold percentage that must be exceeded before the policy triggers. For example, a condition such as “password changes increase by more than 25%” only triggers when the change between the two most recent snapshots exceeds that threshold.
 
 ### Manage Drift Policies
 
 The Drift Policies page shows the policies configured in Guard. From this page, you can review policy statuses and take action when needed.
+
+By default, the newest policies appear first. You can change the sort order from the column headers.
 
 The list includes key policy details such as:
 
@@ -125,15 +136,22 @@ You can take action by:
 
 Deleting a policy requires confirmation before the policy is removed.
 
-<figure><img src="../../../../.gitbook/assets/image (2537).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FCfLKx8G3U7yyDZtCFW8P%2Fimage.png?alt=media&#x26;token=d0ce922a-b16d-4519-978a-7b54c1f97ad0" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2538).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FQeZXOLlsApSmemDcD8Xw%2Fimage.png?alt=media&#x26;token=9d2b30a1-d7ff-43b9-9ada-06694cdeba03" alt=""><figcaption></figcaption></figure>
 
 ### How Drift Policies are evaluated
 
 Guard evaluates Drift Policies using the same historical data used by Risk Assessment, User Activity Monitoring, and API Security.
 
-Policies are evaluated once per day after daily snapshots are available. When a new policy is created, its first evaluation happens during the next daily run, not immediately upon saving.
+Policies are evaluated once per day after daily snapshots are available. A new policy can also be evaluated immediately after saving when immediate evaluation is enabled.
+
+Immediate evaluation compares the latest available snapshots. The result can show:
+
+* Drift detected
+* No drift detected
+* Evaluation could not run because there is not enough snapshot history
+* A mixed result where some orgs or data sources could be checked and others could not
 
 If historical data is missing for any selected org or source, Guard displays a Data Unavailable status. This can happen if a source has never run, is not licensed, or has a gap in snapshot history.
 
@@ -147,13 +165,15 @@ When email notifications are enabled:
 * Multiple recipients can be added.
 * Notifications include key context such as the policy name, org identifier, source area, and relevant links back to Guard where available.
 
-<figure><img src="../../../../.gitbook/assets/image (2539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1912836914-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9vAxMuDrkUkB4OXlH9CL%2Fuploads%2FldRg3gnhFktLLTcZTswT%2Fimage.png?alt=media&#x26;token=b20fe9a7-aa52-4b21-9266-06fe6a789b6a" alt=""><figcaption></figcaption></figure>
 
 ### Troubleshooting
 
-#### The policy does not trigger immediately after creation
+#### The policy does not show an immediate result after creation
 
-New Drift Policies are evaluated during the next daily run after snapshots are available. They do not run immediately when saved.
+Confirm that immediate evaluation was enabled before saving the policy. If it was not enabled, Guard evaluates the policy during the next daily run after snapshots are available.
+
+If immediate evaluation was enabled but some orgs or data sources could not be checked, review the result dialog. Guard may need at least two snapshots before it can compare changes.
 
 #### A policy shows No data
 

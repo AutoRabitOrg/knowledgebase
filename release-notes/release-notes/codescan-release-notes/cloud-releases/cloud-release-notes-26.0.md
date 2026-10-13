@@ -6,13 +6,13 @@
 
 ## CodeScan Release Notes 26.0.22
 
-**Release Date: 7 October 2026**
+**Release Date: 14 October 2026**
 
 ### Summary
 
 CodeScan 26.0.22 is comprised of the following components:
 
-* 1 New Features
+* 1 New Feature
 * 4 Application Enhancements
 * 0 New Rules
 * 5 Rule Enhancements

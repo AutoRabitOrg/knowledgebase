@@ -30,7 +30,8 @@
   * [Salesforce OAuth External Client App (ECA) Transition](fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition.md)
   * [Salesforce Summer ’27 Update: Retirement of SOAP API login() Authentication](fundamentals/announcements/salesforce-summer-27-update-retirement-of-soap-api-login-authentication.md)
   * [Bitbucket App Password Deprecation – Action Required Before June 9, 2026](fundamentals/announcements/bitbucket-app-password-deprecation-action-required-before-june-9-2026.md)
-  * [Upcoming Rule Deactivations: 5 Rules Retiring on the 15th of November 2026](fundamentals/announcements/upcoming-rule-deactivations-5-rules-retiring-on-the-15th-of-november-2026.md)
+  * [Upcoming Rule Deactivations: 5 Rules Retiring on the 15th of November 2026](fundamentals/announcements/codescan-rules-deactivation.md)
+  * [Upcoming Rule Deactivations: 4 Rules Retiring on the 27th of December 2026](fundamentals/announcements/upcoming-rule-deactivations-4-rules-retiring-on-the-27th-of-december-2026.md)
   * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
   * [Azure DevOps Global Personal Access Token Retirement on December 1, 2026](fundamentals/announcements/azure-devops-global-personal-access-token-retirement-on-december-1-2026.md)
 

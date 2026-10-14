@@ -47,6 +47,7 @@
     * [ARM Release Notes 21](release-notes/release-notes/arm-release-notes/release-notes-21.6.md)
   * [DataLoader + DataLoader Pro Release Notes](release-notes/release-notes/arm-release-notes-26.md)
   * [CodeScan Release Notes](release-notes/release-notes/codescan-release-notes/README.md)
+    * [AI Code Assistant: User Guide](release-notes/release-notes/codescan-release-notes/ai-code-assistant-user-guide.md)
     * [Cloud Releases](release-notes/release-notes/codescan-release-notes/cloud-releases/README.md)
       * [Cloud Release Notes 26.0](release-notes/release-notes/codescan-release-notes/cloud-releases/cloud-release-notes-26.0.md)
       * [Cloud Release Notes 25.1](release-notes/release-notes/codescan-release-notes/cloud-releases/release-notes-25.1.md)

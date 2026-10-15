@@ -91,25 +91,26 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 
 ### Assigning Issues to the AI Code Assistant
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.47.12 AM.png" alt=""><figcaption></figcaption></figure>
+
 #### Single Assignment
 
 1. Open any issue that displays the "AI Fix Available" indicator.
 2. Click the Assign dropdown.
-3. Select AI Code Assistant from the list.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.24.17 AM.png" alt=""><figcaption></figcaption></figure>
 
+3. Select AI Code Assistant from the list.
 4. The AI agent begins generating a fix. The issue status updates to reflect progress.
 
 #### Bulk Assignment
+
+<figure><img src="../../../.gitbook/assets/image (2971).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the issues you want to assign
 2. Click Bulk Change.
 3. In the Change Issues dialog, open the Assign dropdown.
 4. Select AI Code Assistant.
-
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
 5. Click Apply to assign the selected issues.
 
 {% hint style="info" %}
@@ -117,6 +118,8 @@ You can assign a maximum of 10 issues per bulk action. If you select more than 1
 {% endhint %}
 
 ### Reviewing AI Fixes
+
+<figure><img src="../../../.gitbook/assets/image (2972).png" alt=""><figcaption></figcaption></figure>
 
 Once the AI agent generates a fix, a new "Fixed by AI" tab appears in the issue detail view.
 
@@ -148,6 +151,8 @@ After assignment, an issue progresses through these states:
 
 ### Creating Pull Requests
 
+<figure><img src="../../../.gitbook/assets/image (2973).png" alt=""><figcaption></figcaption></figure>
+
 The AI Code Assistant supports two modes for Pull Request creation, configurable in Project Settings.
 
 #### Manual Mode (default)
@@ -159,7 +164,9 @@ The AI Code Assistant supports two modes for Pull Request creation, configurable
 5. Related repository information
 6. Click Apply to create the Pull Request.
 
-The PR is created from the branch where the issue was found, using a dedicated AI fix branch. This ensures the fix targets the correct codebase context.<br>
+<figure><img src="../../../.gitbook/assets/image (2974).png" alt=""><figcaption></figcaption></figure>
+
+The PR is created from the branch where the issue was found, using a dedicated AI fix branch. This ensures the fix targets the correct codebase context.
 
 #### Automation Mode
 

@@ -55,7 +55,7 @@ Not every issue is eligible for AI-assisted fixing. The AI Code Assistant operat
 
 #### Currently Supported Rules
 
-The initial inclusion list covers 13 Apex rules:
+The initial inclusion list covers 10 Apex rules:
 
 | Rule                                     | Rule key                      |
 | ---------------------------------------- | ----------------------------- |

@@ -4,6 +4,92 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive updated release notes!" %}
 
+## ARM **Release Notes 26.4.3**
+
+**Release Date: 18 October 2026**
+
+### New Enhancements
+
+#### Multiple AccelQ Test Jobs Support in CI Jobs (New UI)
+
+Enhanced the AccelQ integration in the **New UI** to support configuring up to **5 AccelQ test jobs within a single CI Job**. Users can select multiple test suites from the same AccelQ project or configure test jobs from up to 5 different AccelQ projects.
+
+After a single deployment, ARM triggers the configured test jobs **one by one**. Depending on the agent configuration and availability in AccelQ, these jobs may execute **in parallel or sequentially**. Each test job supports its own run parameters.
+
+The CI Job Build History displays consolidated results, including overall test status, test case counts, and individual test job outcomes.
+
+This enhancement eliminates the need to create separate CI Jobs for each AccelQ test suite while maintaining backward compatibility with existing single-test-job configurations.
+
+#### Multiple Rollbacks and Revision-Based Metadata Selection (New UI)
+
+Enhanced the Rollback functionality in the **New UI** to support multiple rollbacks from the same CI Job or Deployment execution.
+
+Introduced two tabs: **All Metadata** and **Revision Based Changes**, allowing users to select metadata from the complete deployment package or by individual revisions. Both tabs follow the same existing metadata rollback process.
+
+ARM prevents duplicate selections, tracks each rollback independently, and allows failed components to be retried.
+
+**Note:** Available only for supported Version Control-based CI Jobs and Deployments in the New UI.
+
+#### API Support for CI Job Deployment and Static Code Analysis Reports
+
+Introduced new REST API endpoints to retrieve **CI Job deployment validation results and Static Code Analysis (SCA) reports** using an ARM API token.
+
+Users can retrieve detailed validation failures, including failed components, error messages, and line numbers, along with SCA results from **CodeScan, Apex PMD, and Checkmarx**.
+
+This enhancement enables automated CI/CD workflows to identify deployment failures and review code quality results without accessing the ARM UI.
+
+***
+
+### Bug Fixes
+
+#### Fixed Dev Hub Registration Inconsistency During Salesforce Org Deletion
+
+Resolved an issue where deleting a Salesforce Org from **SF Org Management** could leave its associated Dev Hub registration in **Hub Management**, resulting in CI Job failures during SFDX package version creation.
+
+ARM now ensures that deleting a Salesforce Org also removes its associated Dev Hub registration, preventing orphaned Dev Hub configurations and maintaining consistency between **SF Org Management** and **Hub Management**.
+
+#### Improved EZ-Merge Handling for No-Modification Scenarios
+
+Resolved an issue where EZ-Merge could be automatically rejected during pre-validation when all merge conflicts were resolved by retaining the destination branch's changes, leaving no modifications to deploy.
+
+ARM now correctly identifies these scenarios, marks the merge as **“Merged - No Modifications,”** and skips unnecessary pre-validation, review, commit, and push operations.
+
+Additionally, when a target Salesforce Org has no metadata changes to validate, ARM handles the empty deployment package without failing the merge and displays an appropriate message. This fix also improves merge status visibility in both the **Old UI and New UI**.
+
+#### Fixed User Permission Exclusion During Permission Set Deployment
+
+Resolved an issue where the **UseAnyApiAuth** user permission was incorrectly excluded from the deployment package when **Ignore Missing Visibility Settings** was enabled.
+
+ARM now retains this permission during package preparation, ensuring it is correctly deployed to the target Salesforce org through **CI Jobs and Deployments**.
+
+#### Fixed Incremental Build Revision Tracking in CI Jobs
+
+Resolved an issue where editing and saving a CI Job without configuration changes could reset the **Incremental Build** revision tracking, causing previously processed changes to be picked up again.
+
+ARM now preserves the last processed revision when no relevant configuration changes are made, ensuring subsequent builds process only new changes. This fix applies to CI Jobs **with or without a configured baseline** in both the Old UI and New UI.
+
+#### Improved Repository Name Handling for Special Characters
+
+Addressed an issue where repository names containing special characters could cause an **“Undefined” error** under **Admin > VC Repos**.
+
+Introduced a utility to safely rename affected repositories and update their associated references across the database and file system, ensuring consistency throughout ARM.
+
+#### Fixed Missing CustomFields in Revision-Based Rollback
+
+Resolved an issue where **CustomFields** metadata components were missing under **Destructive Changes** in the **Revision Based Changes** tab of the Rollback window.
+
+ARM now correctly displays CustomFields and their associated metadata members, allowing users to select them for rollback in both **CI Jobs and Deployments**.
+
+***
+
+### Platform Upgrade
+
+#### Apache Tomcat Upgrade to Version 11.0.26
+
+Upgraded **Apache Tomcat to version 11.0.26** as part of ARM **26.4.3 and later releases** for **SaaS, Dedicated, and On-Premise environments**.
+
+This upgrade incorporates the latest Tomcat security updates, stability improvements, and performance enhancements.
+
 ## ARM **Release Notes 26.4.2**
 
 **Release Date: 11 October 2026**

@@ -52,7 +52,7 @@ In AutoRABIT Vault, select **Setup** from the navigation menu. On the **Salesfor
 
 In the **Source Org Integration** window, select **Client Credentials Flow**. Select **Next** to continue.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select Client Credentials Flow as the authentication method._
 {% endstep %}

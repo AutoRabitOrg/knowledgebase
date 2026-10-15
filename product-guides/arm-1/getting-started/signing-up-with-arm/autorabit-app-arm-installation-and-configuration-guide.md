@@ -32,7 +32,7 @@ ENVIRONMENT CHOICE: The AppExchange flow is different for Production/Developer o
 
 Open the Salesforce marketplace in a browser. Sign in if prompted.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p><em>Figure 1. Salesforce AppExchange / AgentExchange landing page</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><em>Figure 1. Salesforce AppExchange / AgentExchange landing page</em></p></figcaption></figure>
 
 #### 2. Search for AutoRABIT
 
@@ -40,7 +40,7 @@ Use the marketplace search field and search for “AutoRABIT.”
 
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p align="center"><em>Figure 2. Searching the marketplace for AutoRABIT.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p align="center"><em>Figure 2. Searching the marketplace for AutoRABIT.</em></p></figcaption></figure>
 
 #### 3.  Open the AutoRABIT listing
 

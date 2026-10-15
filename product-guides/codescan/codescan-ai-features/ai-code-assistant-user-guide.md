@@ -57,21 +57,18 @@ Not every issue is eligible for AI-assisted fixing. The AI Code Assistant operat
 
 The initial inclusion list covers 13 Apex rules:
 
-| Rule                                                | Rule key                      |
-| --------------------------------------------------- | ----------------------------- |
-| Local Variable Could Be Final                       | sf:LocalVariableCouldBeFinal  |
-| Comment is Required                                 | sf:CommentRequired            |
-| Left Braces Spacing Should Be Consistent            | sf:LeftBracesSpacingPositions |
-| Variable Naming Conventions                         | sf:VariableNamingConventions  |
-| Long Variable Name                                  | sf:LongVariable               |
-| Unused Local Variable                               | sf:UnusedLocalVariable        |
-| Source Files Should Have Sufficient Comment Density | sf:InsufficientCommentDensity |
-| Potentially Unused Variable                         | sf:DUDataflowAnomalyAnalysis  |
-| Unused Private Field                                | sf:UnusedPrivateField         |
-| Avoid Duplicate Literals                            | sf:AvoidDuplicateLiterals     |
-| Comment All Hardcoded Values                        | sf:CommentHardcodedValues     |
-| Short Variable Name                                 | sf:ShortVariable              |
-| Law of Demeter                                      | sf:LawOfDemeter               |
+| Rule                                     | Rule key                      |
+| ---------------------------------------- | ----------------------------- |
+| Local Variable Could Be Final            | sf:LocalVariableCouldBeFinal  |
+| Comment is Required                      | sf:CommentRequired            |
+| Left Braces Spacing Should Be Consistent | sf:LeftBracesSpacingPositions |
+| Variable Naming Conventions              | sf:VariableNamingConventions  |
+| Long Variable Name                       | sf:LongVariable               |
+| Unused Local Variable                    | sf:UnusedLocalVariable        |
+| Unused Private Field                     | sf:UnusedPrivateField         |
+| Avoid Duplicate Literals                 | sf:AvoidDuplicateLiterals     |
+| Comment All Hardcoded Values             | sf:CommentHardcodedValues     |
+| Short Variable Name                      | sf:ShortVariable              |
 
 Issues flagged by rules outside this list will not show the "AI Fix Available" indicator and cannot be assigned to the AI agent.
 
@@ -89,7 +86,7 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 
 ### Assigning Issues to the AI Code Assistant
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.47.12 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Single Assignment
 
@@ -269,7 +266,7 @@ Hover over the icon to see the exact credit count (e.g., 750 / 1,000).
 
 Administrators can access the **AI Users & Billing** page under **Administration** to monitor AI credit consumption and manage license assignments.
 
-The page provides the following information:
+The AI Users & Billing page provides administrators with the following details:
 
 * **Monthly AI Credits Available:** Displays the available monthly AI credits and the reset date.
 * **User Search:** Allows administrators to search for users by name or email.

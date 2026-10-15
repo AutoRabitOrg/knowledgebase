@@ -1,8 +1,9 @@
 ---
 description: How to Set Up AutoRABIT Guard with Salesforce
+hidden: true
 ---
 
-# How to Set Up Guard
+# Connecting a Salesforce Org to Guard using Connected Apps flow
 
 Getting started with AutoRABIT Guard takes just a few minutes. There’s no need to connect GitHub or any other infrastructure—we only require a connection to your Salesforce org.&#x20;
 

@@ -1,7 +1,9 @@
 # Connecting a Salesforce Org to Guard using local ECA flow
 
 {% hint style="info" %}
-Salesforce has introduced External Client Apps as the new standard for org connections. Learn more [here](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition).
+Starting October 16th 2026, all new Salesforce org registrations will go through AuthHub. Existing connections are not affected by this change.&#x20;
+
+For details, timelines, and what to expect, see [Upcoming Salesforce authentication changes for new AutoRABIT Guard connections](https://knowledgebase.autorabit.com/fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-guard-connections)
 {% endhint %}
 
 Before registering your org in Guard, please complete the following configuration in Salesforce.

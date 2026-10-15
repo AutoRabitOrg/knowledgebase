@@ -1,7 +1,5 @@
 # AutoRABIT App Installation and Configuration Guide
 
-
-
 {% hint style="info" %}
 This guide is intended for the Salesforce administrator responsible for installing and configuring AutoRABIT in your organization. It walks you through package installation, required Salesforce OAuth settings, AutoRABIT Connector authorization, product enablement, permission assignment, and final Salesforce org registration in your licensed AutoRABIT products.&#x20;
 {% endhint %}
@@ -155,13 +153,19 @@ When Salesforce displays a warning about changing the setting, review it and cli
 
 <figure><img src="../../../.gitbook/assets/image (2826).png" alt=""><figcaption></figcaption></figure>
 
-4\. Open External Client App Manager.
+4\. Confirm Session Settings
+
+In Setup, search for and open “Session Settings”. Under “Session Settings”, make sure “Lock sessions to the IP address from which they originated” is disabled in the org.
+
+<figure><img src="../../../.gitbook/assets/image (2980).png" alt=""><figcaption></figcaption></figure>
+
+5\. Open External Client App Manager.
 
 From Setup, open “External Client App Manager.”
 
 <figure><img src="../../../.gitbook/assets/image (2827).png" alt=""><figcaption></figcaption></figure>
 
-5\. Select AutoRABIT Connector.
+6\. Select AutoRABIT Connector.
 
 In External Client App Manager, select only the entry named “AutoRABIT Connector.” Do not select “AutoRABIT Connector (Dev).” The (Dev) External Client App is reserved for AutoRABIT debugging and troubleshooting and is not part of the standard customer configuration.
 
@@ -173,13 +177,13 @@ In External Client App Manager, select only the entry named “AutoRABIT Connect
 Choose AutoRABIT Connector without “(Dev).” AutoRABIT Connector (Dev) is for debugging purposes only and should not be configured by customer administrators during a normal installation.
 {% endhint %}
 
-6\. Edit Policies.
+7\. Edit Policies.
 
 On the AutoRABIT Connector page, open the Policies tab and click “Edit.”
 
 <figure><img src="../../../.gitbook/assets/image (2829).png" alt=""><figcaption></figcaption></figure>
 
-7\. Expand OAuth Policies and enable guest-user credential flow.
+8\. Expand OAuth Policies and enable guest-user credential flow.
 
 Expand “OAuth Policies,” enable “Enable Code and Credentials Flow for Guest Users,” and then save the changes.
 
@@ -211,6 +215,16 @@ The System Connections page contains two authorization areas. Start with Inbound
 &#x20;**Integration User requirement**
 
 If you are currently signed in as a different Salesforce user than the intended integration user, use the “Not you?” option on the Salesforce authorization screen and sign in as the correct user. The account completing this authorization must have the “AutoRABIT Setup User” permission set assigned before you continue.
+{% endhint %}
+
+{% hint style="info" %}
+**Non-Administrator Profile Requirement**
+
+If the Salesforce user connecting the org to the AutoRABIT product is not a System Administrator, their profile must also include the following permissions:&#x20;
+
+* **API Enabled**
+* **Modify Metadata Through Metadata API Functions**
+* **Customize Application**
 {% endhint %}
 
 4\. Allow access.
@@ -336,6 +350,80 @@ Return to the AutoRABIT Connector home page and click “Licensing & Permissions
 Review the listed AutoRABIT permission sets and assign the correct permissions to the authorized/integration user based on the products that will be used.
 
 <figure><img src="../../../.gitbook/assets/image (2850).png" alt=""><figcaption></figcaption></figure>
+
+## AutoRABIT Guard Permission Set
+
+This section walks through configuring the AutoRABIT Guard permission set in Salesforce. Follow each step in order to grant the AutoRABIT Guard integration user the access it needs.
+
+1\. Open Licensing & Permissions
+
+In Salesforce, open the AutoRABIT Connector app and click Licensing & Permissions
+
+<figure><img src="../../../.gitbook/assets/image (2981).png" alt=""><figcaption></figcaption></figure>
+
+2\. Open Permission Sets
+
+Click Permission Sets.
+
+<figure><img src="../../../.gitbook/assets/image (2982).png" alt=""><figcaption></figcaption></figure>
+
+3\. Select the AutoRABIT Guard Permission Set
+
+Click AutoRABIT Guard to open the permission set.
+
+<figure><img src="../../../.gitbook/assets/image (2983).png" alt=""><figcaption></figcaption></figure>
+
+4\. Open System Permissions
+
+Click System Permissions. This section controls permissions to perform actions that apply across apps, such as “Modify All Data.”
+
+<figure><img src="../../../.gitbook/assets/image (2984).png" alt=""><figcaption></figcaption></figure>
+
+5\. Enable editing
+
+Click Edit to make the permission list editable.
+
+<figure><img src="../../../.gitbook/assets/image (2985).png" alt=""><figcaption></figcaption></figure>
+
+6\. Enable Customize Application
+
+Search for Customize Application and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/image (2986).png" alt=""><figcaption></figcaption></figure>
+
+7\. Enable View All Data
+
+Search for View All Data and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/image (2987).png" alt=""><figcaption></figcaption></figure>
+
+8\. Enable Modify All Data
+
+Search for Modify All Data and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/image (2988).png" alt=""><figcaption></figcaption></figure>
+
+9\. Enable Manage Users
+
+Search for Manage Users and select its checkbox if it is not already selected.
+
+<figure><img src="../../../.gitbook/assets/image (2989).png" alt=""><figcaption></figcaption></figure>
+
+10\. Save the permission set
+
+After selecting all the required checkboxes, click Save at the top of the page.
+
+11\. Confirm the save
+
+In the Save Changes confirmation dialog box, click Save again to apply the changes.
+
+<figure><img src="../../../.gitbook/assets/image (2990).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Alternative Object-by-Object permissions**
+
+If you do not want to grant all View All Data and Modify All Data permissions at once, you can go back to step 4 and, instead of System Permissions, open Object Settings. From there, grant the required permissions object by object, based on your specific needs.
+{% endhint %}
 
 ## Complete Salesforce Org Registration in the AutoRABIT Product
 

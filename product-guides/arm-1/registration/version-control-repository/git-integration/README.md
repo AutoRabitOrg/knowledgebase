@@ -20,7 +20,7 @@ Before registering Git with ARM, there are some prerequisites.
 
 1.  Ensure you enable the **`Git`** plugin under **`Plugins`** in the **`My Account`** section to use Git for version control.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt="" width="289"><figcaption></figcaption></figure>
 2. You must have permission in ARM to register a repository.
 3. You must have credentials for the repository you want to access.
 4. You must store these Git credentials in ARM.

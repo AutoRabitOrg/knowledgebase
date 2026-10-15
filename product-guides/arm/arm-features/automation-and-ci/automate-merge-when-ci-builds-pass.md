@@ -49,7 +49,7 @@ A new checkbox called **`Merge built revisions only`** is newly added under the 
 | Resolve Type            | Choose merge method, i.e., **dry run** (shows how the merge will execute without making any changes) or **merge** (commits the changes). |
 | Create GIT Tag          | Create a GIT tag.                                                                                                                        |
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**

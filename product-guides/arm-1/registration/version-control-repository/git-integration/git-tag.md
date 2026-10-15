@@ -13,7 +13,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
 3.  Select your [Version Control ](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)Repository under **Repository List.**\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Go to the **Tags** tab and click on the **Create** button.\
     <br>
 
@@ -28,7 +28,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
 **Get Latest HEAD** points out the last commit in the current checkout branch.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7.  Give a name for the tag and any additional info in the **Message** section. Click **Create**.\
     <br>

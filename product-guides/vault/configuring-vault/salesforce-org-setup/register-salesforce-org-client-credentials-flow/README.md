@@ -44,7 +44,7 @@ Confirm that the following access and information are available before starting 
 
 In AutoRABIT Vault, select **Setup** from the navigation menu. On the **Salesforce Orgs List** page, select **REGISTER NEW ORG**.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Start a new Salesforce org registration._
 
@@ -52,7 +52,7 @@ In AutoRABIT Vault, select **Setup** from the navigation menu. On the **Salesfor
 
 In the **Source Org Integration** window, select **Client Credentials Flow**. Select **Next** to continue.
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select Client Credentials Flow as the authentication method._
 {% endstep %}
@@ -64,7 +64,7 @@ In the **Source Org Integration** window, select **Client Credentials Flow**. Se
 
 For **Environment Type**, select **Salesforce**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select Salesforce as the environment type._
 
@@ -72,7 +72,7 @@ For **Environment Type**, select **Salesforce**.
 
 From **Salesforce API Version**, select the API version required for the connection.
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select the Salesforce API version._
 
@@ -80,7 +80,7 @@ From **Salesforce API Version**, select the API version required for the connect
 
 Enter a meaningful name in **Org Title** and the integration user in **User Name**. Select **Production** or **Sandbox**, enter the Salesforce host in **My Domain URL**, and then select **Continue**.
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Enter the Salesforce org and environment details._
 
@@ -98,7 +98,7 @@ AutoRABIT Vault displays the Salesforce configuration requirements for the Exter
 
 Review the initial Salesforce Admin Setup instructions displayed in AutoRABIT Vault.
 
-<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Review the External Client App setup requirements._
 
@@ -106,7 +106,7 @@ Review the initial Salesforce Admin Setup instructions displayed in AutoRABIT Va
 
 In Salesforce, create or update the External Client App using the OAuth flow, scopes, policies, Run As user, and IP relaxation settings specified in AutoRABIT Vault.
 
-<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Review the OAuth scopes and policy requirements._
 
@@ -114,7 +114,7 @@ In Salesforce, create or update the External Client App using the OAuth flow, sc
 
 Select **Copy** beside the callback URL and add the copied value to the External Client App. Add every OAuth scope listed by AutoRABIT Vault.
 
-<figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Copy the callback URL and confirm the required OAuth scopes._
 
@@ -126,7 +126,7 @@ Select **Copy** beside the callback URL and add the copied value to the External
 
 If the Salesforce configuration cannot be completed or validated, expand **Common Issues & Troubleshooting** and review the applicable guidance.
 
-<figure><img src="../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Review common configuration issues and corrective guidance._
 
@@ -134,7 +134,7 @@ If the Salesforce configuration cannot be completed or validated, expand **Commo
 
 After completing the configuration in Salesforce, select **I’ve completed the setup**.
 
-<figure><img src="../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Confirm that the Salesforce configuration is complete._
 {% endstep %}
@@ -148,7 +148,7 @@ Retrieve the Consumer Key and Consumer Secret from the configured External Clien
 
 Enter the Salesforce Consumer Key in **Client ID** and the Consumer Secret in **Client Secret**.
 
-<figure><img src="../../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Enter the Client ID and Client Secret._
 
@@ -156,7 +156,7 @@ Enter the Salesforce Consumer Key in **Client ID** and the Consumer Secret in **
 
 Review the entered values and select **Continue**.
 
-<figure><img src="../../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Continue to the credential review step._
 {% endstep %}
@@ -168,7 +168,7 @@ Review the entered values and select **Continue**.
 
 On **Review & Verify**, confirm the environment details, username, My Domain URL, API version, and Consumer Key.
 
-<figure><img src="../../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Review the Salesforce environment and credential details._
 
@@ -180,7 +180,7 @@ On **Review & Verify**, confirm the environment details, username, My Domain URL
 
 Select **Verify & Save**.
 
-<figure><img src="../../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Start credential verification and save the org._
 
@@ -188,7 +188,7 @@ Select **Verify & Save**.
 
 AutoRABIT Vault validates the supplied configuration. Do not close the registration window while verification is in progress.
 
-<figure><img src="../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Credential verification in progress._
 {% endstep %}

@@ -20,7 +20,7 @@ The retrieved data is then deployed to the destination environment based on the 
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description**.
 4. In the **SOURCE** section, select **Deployment From** as **Template using Salesforce Org**.
@@ -29,12 +29,12 @@ The retrieved data is then deployed to the destination environment based on the 
 7. Select your **Source Salesforce Org**.
 8. The object configuration section will render the selected objects and apply filters and mappings based on your template selection.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Choose your **Destination Environment**. It can be your target salesforce org or commit to your version control branch.
 10. To deploy into a salesforce org, select the **Deploy To** checkbox and choose your **Destination Org**. To commit to a branch, select the **Commit To** box, enter your **Repository/Branch** details, and **comment** (if any).
 
-<figure><img src="../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: For commits, the features will get committed to the default location in your version control branch. By default, the location is set to the dataset.
@@ -46,7 +46,7 @@ The retrieved data is then deployed to the destination environment based on the 
     * Sorting (only if the 'Commit to' checkbox is selected)
     * Applied Filters
 
-    <figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mappings <a href="#applied-mappings" id="applied-mappings"></a>
 

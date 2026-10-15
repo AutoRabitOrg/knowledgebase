@@ -1,4 +1,4 @@
-# SSO For ADFS
+# ADFS
 
 ### Setting up Single Sign-On using Active Directory with ADFS and SAML 2.0 <a href="#setting-up-single-signon-using-active-directory-with-adfs-and-saml-20" id="setting-up-single-signon-using-active-directory-with-adfs-and-saml-20"></a>
 
@@ -69,15 +69,15 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
     * From the LDAP Attribute column, select **E-Mail Addresses**.
     * From the Outgoing Claim Type, select **E-Mail Address**.
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="378"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="378"><figcaption></figcaption></figure>
 5. Click **OK** to save the new rule.
 6. Create another new rule by clicking **Add Rule**.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="386"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="386"><figcaption></figcaption></figure>
 
 7. Select: **Transform an Incoming Claim as the template**.
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="437"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="437"><figcaption></figcaption></figure>
 
 8.  On the next screen:
 
@@ -86,7 +86,7 @@ Once the Relying Party Trust exists, you can create the claim rules and update t
     * For Outgoing Name ID Format, select **Email**.
     * Leave the rule to the default of **Pass through all claim values**.
 
-    <figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="377"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="377"><figcaption></figcaption></figure>
 9. Finally, click **OK** to create the claim rule, and then **OK** again to finish creating rules.
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>

@@ -6,7 +6,7 @@ The following articles describe using **Single DataLoader** to extract data from
 2. Hover your mouse over the [**`DataLoader`**](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) module and select **`DataLoader`**.The **DataLoader** screen is best viewed when the zoom setting is **75%** on your Chrome/Firefox browser.
 3. Click **`Extract`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Choose your [**`Salesforce org`**](/broken/pages/9pLgfInGvztETx4cXCc2) and your org **`Environment`** (_Production_ or _Development_ edition, _Sandbox_, or _Pre-Release_).
 5. The corresponding **`URL`** and your **`Username`** are automatically generated based on the above selection.

@@ -47,14 +47,14 @@ To perform org synchronization, follow the below steps:
     * add or delete metadata components to/from the target org
     * view the metadata member's difference report (if any)
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or get failed. This is optional.
 9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each apex test level, refer to the article: [Apex Unit Tests](apex-unit-tests.md)
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
 
 10. Click on **`Deploy`**.
 11. You'll be navigated to the [**`Deployment History`**](monitor-deployments.md) page, where the current synchronization progress can be seen.
@@ -63,7 +63,7 @@ To perform org synchronization, follow the below steps:
 
 Synchronization summary information such as label name, source org, destination org, and so on.. can be seen on the **`Org Synchronization History`** page.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Note:** In the ARMOR (new UI), options such as **View Info, Schedule, Delete, Download PDF Report, and Download CSV Report** are available from the **three-dot (...) menu** corresponding to each synchronization job on the **Org Synchronisation Summary** page. Select the required job and click the three-dot menu to access these actions.
 

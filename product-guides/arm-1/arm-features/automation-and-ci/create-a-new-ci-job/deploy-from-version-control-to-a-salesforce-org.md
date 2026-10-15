@@ -184,7 +184,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 * **Run Environment Provisioning Template:** Run Environment Provisioning templates that are stored in ARM to automate manual post-deployment tasks.
 * **Run DataLoader Process or Group:** Trigger the DataLoader process once the build is successful.
 * **Run Merge Process:** This allows you to perform the merge operation upon successful deployment. To do so, you need to select the source and the destination Version Control branches, and other options that are necessary to perform the Merge operation. You can perform a merge from one source branch to multiple destination branches. (Refer to the [Merge](../../../../arm/arm-features/version-control/ez-merge/) section to know more about the fields and their uses.)
-  * **Add**: Click on the![](<../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to add up to **5** destination branches.
+  * **Add**: Click on the![](<../../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to add up to **5** destination branches.
   * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon to delete a destination branch row.
 
 <figure><img src="../../../../../.gitbook/assets/image (2224).png" alt=""><figcaption></figcaption></figure>

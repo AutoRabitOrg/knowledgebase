@@ -615,6 +615,7 @@
     * [Signing Up With ARM](product-guides/arm-1/getting-started/signing-up-with-arm/README.md)
       * [Supported Browsers](product-guides/arm-1/getting-started/signing-up-with-arm/browser-support.md)
       * [User Profiles](product-guides/arm-1/getting-started/signing-up-with-arm/user-profile.md)
+      * [AutoRABIT App - ARM Installation and Configuration Guide](product-guides/arm-1/getting-started/signing-up-with-arm/autorabit-app-arm-installation-and-configuration-guide.md)
     * [Understanding ARM](product-guides/arm-1/getting-started/understanding-arm/README.md)
       * [What is ARM?](product-guides/arm-1/getting-started/understanding-arm/what-is-arm.md)
       * [What can I do with ARM?](product-guides/arm-1/getting-started/understanding-arm/what-can-i-do-with-arm.md)

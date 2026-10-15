@@ -187,7 +187,7 @@ This section summarizes the Version control limits that ARM users should conside
 8. For those PMD/lint report which was generated before **ARM 19.2.1** release, those source content file will not be seen in the static analysis report.
 9. For the **Dry Run** merge operation, if a user submits an already merged revision, then the **'Empty Commit Exception'** message gets displayed. See the image below.
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 10. Users with the **Merge Review Overridable** role also can approve the commit although he does not qualify to do so. In such a scenario, a notification alert mail gets triggered to the email id(s) as configured in **My Account > Merge Settings** page.
 11. While resolving merge conflict files via Inline Editor, a situation may arise where the files that you are trying to resolve are improperly resolved. This can lead to the malformation of the conflicted files. To resolve those, you need to download the file locally, work on the conflicted files using your merge tool and make necessary changes to it. Then upload the same.
@@ -199,7 +199,7 @@ This section summarizes the Version control limits that ARM users should conside
 
 When trying to get the list of commits labels committed from the merge process for your SFDX repository and choosing your package directory, the commit labels result may differ from the actual one. No outcome can be found in some situations. It is therefore recommended to search for commit labels keeping the **Package Directory** as **ALL** until the root cause of the problem is identified.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

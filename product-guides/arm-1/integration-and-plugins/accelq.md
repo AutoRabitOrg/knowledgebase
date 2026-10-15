@@ -48,14 +48,14 @@ This is an initial step where the user's AccelQ credential such as username and 
 
     * **Select Credential:** Select the user's credential registered as mentioned in Step 1.
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4. Once you're done filling the AccelQ fields, click on **Save** to complete the integration process.&#x20;
 
 ### Adding AccelQ configuration in CI Job
 
 1. Go to the **New CI Job** screen.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Select any one of the below criteria for your CI job:
 
@@ -66,12 +66,12 @@ This is an initial step where the user's AccelQ credential such as username and 
     * Run Test Automation Scripts
     * Install an Unlocked Package from a Version Control Branch
 
-    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. Give the job a descriptive name in the **CI Job Name** field.
 4. Go to the **Test** section. Here you will need to select _AccelQ_ to run the functional test cases to test the functionality of the code being deployed to production.
 5. Select **Fetch Test Cases From** as **AccelQ**.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 6.  Enter your **Project Name** and the **Test Job Name.**
 

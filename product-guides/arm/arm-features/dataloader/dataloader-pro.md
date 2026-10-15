@@ -113,7 +113,7 @@ Map the object fields between the source and destination sandboxes.
 
 Using the **`Automap`** feature, you can map the fields automatically based on fetched object fields with destination fields. To set up manual mappings, automapping needs to be disabled. Click on **`Clear Mappings`** to remove the automapping and set up the desired manual mappings.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption><p>Edit Mappings - Auto-Map</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1) (1) (1).png" alt=""><figcaption><p>Edit Mappings - Auto-Map</p></figcaption></figure>
 
 ### **Field Extraction**
 

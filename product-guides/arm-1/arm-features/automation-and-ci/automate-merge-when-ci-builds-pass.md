@@ -1,4 +1,4 @@
-# Automate Merge When CI Builds Pass
+# Auto merge on CI success
 
 ### Overview
 
@@ -35,7 +35,7 @@ A new checkbox called **`Merge built revisions only`** is added under the **`Dep
 
 <table><thead><tr><th width="229">Option</th><th>Description</th></tr></thead><tbody><tr><td>To Branch</td><td>The destination branch the sources will be merged to.</td></tr><tr><td>Merge Conflict Strategy</td><td>Specify the way to resolve the merge conflict if it occurs.</td></tr><tr><td>Resolve Type</td><td>Choose merge method, i.e., <strong>dry run</strong> (shows how the merge will execute without making any changes) or <strong>merge</strong> (commits the changes).</td></tr><tr><td>Create GIT Tag</td><td>Create a GIT tag.</td></tr></tbody></table>
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Point to Note:**

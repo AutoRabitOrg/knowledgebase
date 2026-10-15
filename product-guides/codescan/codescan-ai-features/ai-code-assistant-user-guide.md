@@ -166,7 +166,19 @@ The AI Code Assistant supports two modes for Pull Request creation, configurable
 
 <figure><img src="../../../.gitbook/assets/image (2974).png" alt=""><figcaption></figcaption></figure>
 
+#### Creating Pull Requests in Bulk.
+
+<figure><img src="../../../.gitbook/assets/image (2975).png" alt=""><figcaption></figcaption></figure>
+
 The PR is created from the branch where the issue was found, using a dedicated AI fix branch. This ensures the fix targets the correct codebase context.
+
+#### Tracking AI Code Assistant Status
+
+<figure><img src="../../../.gitbook/assets/image (2976).png" alt=""><figcaption></figcaption></figure>
+
+#### AI Users & Billing
+
+<figure><img src="../../../.gitbook/assets/image (2977).png" alt=""><figcaption></figcaption></figure>
 
 #### Automation Mode
 

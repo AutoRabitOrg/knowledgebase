@@ -308,17 +308,11 @@ Q: Is my code sent to a third-party AI provider? The AI Code Assistant uses AI m
 
 * Ensure your project integration (GitHub/GitLab) is properly authorized and the OAuth token has not expired. Re-authorize the integration if necessary.
 * For GitHub App users, confirm that Pull Request creation and content write permissions have been granted.
-* Verify that your repository user account has write access to the target repository.<br>
+* Verify that your repository user account has write access to the target repository.
 
-<br>
+***
 
-AI credit indicator shows unexpected values
-
-<br>
+#### AI credit indicator shows unexpected values
 
 * Credit balances are synced with your Chargebee subscription. If you believe the count is incorrect, contact your AutoRABIT Customer Success representative.
-* Credits reset on a monthly cycle aligned with your subscription period.<br>
-
-<br>
-
-<br>
+* Credits reset on a monthly cycle aligned with your subscription period.

@@ -25,6 +25,10 @@ AutoRABIT API endpoints are listed below.
 >
 > [/api/cijobs/v1/clone](https://documenter.getpostman.com/view/46841090/2sBY4SMygj)
 >
+> [/api/cijobs/v1/deploymentreport](https://documenter.getpostman.com/view/46841090/2sBYHRWMjU?utm_source=postman-web-app#a0188ce5-9093-4128-bf4c-5d218e338b52)
+>
+> [/api/cijobs/v1/scareport](https://documenter.getpostman.com/view/46841090/2sBYHRWMjU?utm_source=postman-web-app#a0188ce5-9093-4128-bf4c-5d218e338b52)
+>
 >
 
 ## Deployment APIs

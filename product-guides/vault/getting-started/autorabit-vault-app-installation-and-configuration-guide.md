@@ -106,3 +106,16 @@ When the Salesforce package installation screen opens, select “Install for Adm
 #### 5.  Approve required third-party access
 
 Salesforce may request approval for access to login.salesforce.com and test.salesforce.com. Select the option to grant access to these third-party sites, then click “Continue.”
+
+<figure><img src="../../../.gitbook/assets/image (3005).png" alt=""><figcaption><p><em>Figure 13. Approve Third-Party Access prompt.</em></p></figcaption></figure>
+
+{% hint style="info" %}
+**WHY THIS IS REQUIRED** The package requires these Salesforce endpoints so the AutoRABIT applications can complete the authentication and connectivity flow shown in this procedure.
+{% endhint %}
+
+#### 6.  Wait for package installation to complete
+
+Do not begin post-install configuration until Salesforce confirms the package has finished installing.
+
+<figure><img src="../../../.gitbook/assets/image (3006).png" alt=""><figcaption><p>Figure 14. Salesforce package installation in progress.</p></figcaption></figure>
+

@@ -57,8 +57,6 @@ Not every issue is eligible for AI-assisted fixing. The AI Code Assistant operat
 
 The initial inclusion list covers 13 Apex rules:
 
-<button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search…</button>
-
 | Rule                                                | Rule key                      |
 | --------------------------------------------------- | ----------------------------- |
 | Local Variable Could Be Final                       | sf:LocalVariableCouldBeFinal  |
@@ -168,15 +166,49 @@ The AI Code Assistant supports two modes for Pull Request creation, configurable
 
 #### Creating Pull Requests in Bulk.
 
+To create pull requests for multiple AI-generated fixes:
+
+1. Navigate to the **Issues** tab.
+2. Select the issues using the checkboxes.
+3. Click **Bulk Change**.
+4. In the **Change Issues** window, select **Create Bulk PR for AI Code Generated Issues**.
+5. Click **Apply**.
+
+The pull requests are created from the branches where the issues were found, using dedicated AI fix branches.
+
 <figure><img src="../../../.gitbook/assets/image (2975).png" alt=""><figcaption></figcaption></figure>
 
 The PR is created from the branch where the issue was found, using a dedicated AI fix branch. This ensures the fix targets the correct codebase context.
 
 #### Tracking AI Code Assistant Status
 
+You can track the progress of AI-generated fixes from the **Issues** tab.
+
+Under **Filters**, expand **AI Code Assistant** to view issues by their current status:
+
+* **AI Fix Available:** Issues eligible for AI-assisted fixes.
+* **AI Fix In Progress:** Issues currently being processed.
+* **AI Fix Generated:** Issues for which an AI-generated fix is available.
+* **Pull Request Created:** Issues for which a pull request has been created.
+* **AI Fix Failed:** Issues where AI fix generation was unsuccessful.
+
+Select a status to filter and view the corresponding issues.
+
 <figure><img src="../../../.gitbook/assets/image (2976).png" alt=""><figcaption></figcaption></figure>
 
 #### AI Users & Billing
+
+The **AI Users & Billing** page allows administrators to monitor AI credit consumption and view license assignments.
+
+To access this page:
+
+1. Navigate to **Administration**.
+2. Open **AI Users & Billing**.
+3. Review the available monthly AI credits.
+4. Use the search field to find users by name or email.
+5. Review each user's credit consumption and assigned licenses.
+
+The page displays information such as **Balance Used**, **Credits Used**, and **Licences**.
 
 <figure><img src="../../../.gitbook/assets/image (2977).png" alt=""><figcaption></figcaption></figure>
 

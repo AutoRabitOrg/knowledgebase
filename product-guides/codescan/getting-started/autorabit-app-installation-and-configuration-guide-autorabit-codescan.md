@@ -153,13 +153,19 @@ When Salesforce displays a warning about changing the setting, review it and cli
 
 <figure><img src="../../../.gitbook/assets/image (2826).png" alt=""><figcaption></figcaption></figure>
 
-4\. Open External Client App Manager
+4\. Confirm Session Settings
+
+In Setup, search for and open “Session Settings”. Under “Session Settings”, make sure “Lock sessions to the IP address from which they originated” is disabled in the org.
+
+<figure><img src="../../../.gitbook/assets/image (2991).png" alt=""><figcaption></figcaption></figure>
+
+5\. Open External Client App Manager
 
 From Setup, open “External Client App Manager.”
 
 <figure><img src="../../../.gitbook/assets/image (2827).png" alt=""><figcaption></figcaption></figure>
 
-5\. Select AutoRABIT Connector
+6\. Select AutoRABIT Connector
 
 In External Client App Manager, select only the entry named “AutoRABIT Connector.” Do not select “AutoRABIT Connector (Dev).” The (Dev) External Client App is reserved for AutoRABIT debugging and troubleshooting and is not part of the standard customer configuration.
 
@@ -171,13 +177,13 @@ In External Client App Manager, select only the entry named “AutoRABIT Connect
 Choose AutoRABIT Connector without “(Dev).” AutoRABIT Connector (Dev) is for debugging purposes only and should not be configured by customer administrators during a normal installation.
 {% endhint %}
 
-6\. Edit Policies
+7\. Edit Policies
 
 On the AutoRABIT Connector page, open the Policies tab and click “Edit.”
 
 <figure><img src="../../../.gitbook/assets/image (2829).png" alt=""><figcaption></figcaption></figure>
 
-7\. Expand OAuth Policies and enable guest-user credential flow
+8\. Expand OAuth Policies and enable guest-user credential flow
 
 Expand “OAuth Policies” enable “Enable Code and Credentials Flow for Guest Users,” and then save the changes.
 
@@ -209,6 +215,16 @@ The System Connections page contains two authorization areas. Start with Inbound
 &#x20;**Integration User requirement**
 
 If you are currently signed in as a different Salesforce user than the intended integration user, use the “Not you?” option on the Salesforce authorization screen and sign in as the correct user. The account completing this authorization must have the “AutoRABIT Setup User” permission set assigned before you continue.
+{% endhint %}
+
+{% hint style="info" %}
+**Non-Administrator Profile requirement**
+
+If the Salesforce user connecting the org to the AutoRABIT product is not a System Administrator, their profile must also include the following permissions:&#x20;
+
+* **API Enabled**
+* **Modify Metadata Through Metadata API Functions**
+* **Customize Application**
 {% endhint %}
 
 4\. Allow access
@@ -246,6 +262,8 @@ Client Secret values are sensitive. Copy them only into the intended connector f
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120650.png" alt=""><figcaption></figcaption></figure>
 
 CodeScan displays the information needed to authorize the org with AutoRABIT Connector.
+
+<figure><img src="../../../.gitbook/assets/image (2992).png" alt=""><figcaption></figcaption></figure>
 
 3\. Copy the three connector values into Salesforce
 
@@ -331,76 +349,78 @@ Review the listed AutoRABIT permission sets and assign the correct permissions t
 
 ## CodeScan AuthHub Permission Set
 
-_Configuring the AutoRABIT CodeScan Permission Set in Salesforce_
-
-### Overview
-
-This guide walks through the steps required to configure the AutoRABIT CodeScan permission set in Salesforce. Follow each step in order to set up the AutoRABIT CodeScan integration user correctly.
-
-The AutoRABIT CodeScan integration user requires View All Data, Modify All Data, and Customize Application to be enabled.
+This section walks through configuring the AutoRABIT CodeScan permission set in Salesforce. Follow each step in order to grant the AutoRABIT CodeScan integration user the access it needs.
 
 {% hint style="info" %}
 We recommend performing the setup with a **Standard User** and assigning the required permission sets listed below. Admin users generally have these permissions by default, so this helps ensure that non-admin users have the access needed to use the integration successfully.
 {% endhint %}
 
-Step 1: Open Licensing & Permissions
+1\. Open Licensing & Permissions
 
 In Salesforce, open the AutoRABIT Connector app and click Licensing & Permissions.
 
 <figure><img src="../../../.gitbook/assets/image (2884).png" alt=""><figcaption></figcaption></figure>
 
-Step 2: Open Permission Sets
+2\. Open Permission Sets
+
+Click Permission Sets.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.28.49 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 3: Select the AutoRABIT CodeScan Permission Set
+3\. Select the AutoRABIT CodeScan Permission Set
+
+Click AutoRABIT CodeScan to open the permission set.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.31.04 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 4: Open System Permissions
+4\. Open System Permissions
 
-Select **System Permissions** to access the permissions that apply across apps, such as “Modify All Data.”
+Click System Permissions. This section controls permissions to perform actions that apply across apps, such as “Modify All Data.”
 
 <figure><img src="../../../.gitbook/assets/image (2885).png" alt=""><figcaption></figcaption></figure>
 
-Step 5: Enable editing
+5\. Enable editing
 
 Click Edit to make the permission list editable.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.33.23 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 6: Enable Customize Application
+6\. Enable Customize Application
 
 Search for Customize Application and select its checkbox if it is not already selected.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.34.33 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 7: Enable View All Data
+7\. Enable View All Data
 
 Search for View All Data and select its checkbox if it is not already selected.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.36.38 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 8: Enable Modify All Data
+8\. Enable Modify All Data
 
 Search for Modify All Data and select its checkbox if it is not already selected.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.38.24 PM.png" alt=""><figcaption></figcaption></figure>
 
-Step 9: Save the permission set
+9\. Save the permission set
 
 After selecting all the required checkboxes, click Save at the top of the page.
 
 <figure><img src="../../../.gitbook/assets/image (2886).png" alt=""><figcaption></figcaption></figure>
 
-Step 10: Confirm the save
+10\. Confirm the save
 
 In the Save Changes confirmation dialog box, click Save again to apply the changes.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-09-29 at 5.42.07 PM.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If you do not want to grant all View All Data and Modify All Data permissions at once, you can go back to Step 4 and, instead of App Permissions, open Object Settings. From there, grant the required permissions object by object, based on your specific needs.
+If you do not want to grant all View All Data and Modify All Data permissions at once, you can go back to step 4 and, instead of System Permissions, open Object Settings. From there, grant the required permissions object by object, based on your specific needs.
+{% endhint %}
+
+{% hint style="info" %}
+Unlike AutoRABIT ARM and AutoRABIT Guard, the AutoRABIT CodeScan permission set does not require the Manage Users permission. CodeScan's integration user only needs View All Data, Modify All Data, and Customize Application.
 {% endhint %}
 
 ## Complete Salesforce Org Registration in the AutoRABIT Product

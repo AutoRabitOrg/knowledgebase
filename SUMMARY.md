@@ -1248,6 +1248,7 @@
     * [Replicate](product-guides/vault/autorabit-vault-freemium/replicate.md)
   * [AutoRABIT Vault™ Overview](product-guides/vault/vault-tm-overview.md)
   * [Getting Started with AutoRABIT Vault](product-guides/vault/getting-started/README.md)
+    * [AutoRABIT Vault App Installation and Configuration Guide](product-guides/vault/getting-started/autorabit-vault-app-installation-and-configuration-guide.md)
     * [Registering for an Account](product-guides/vault/getting-started/registering-for-an-account.md)
     * [Signing In](product-guides/vault/getting-started/sign-in.md)
     * [Resetting your Password](product-guides/vault/getting-started/reset-your-password.md)

@@ -34,7 +34,7 @@ To enable:
 
 3. Turn on Enable AutoRABIT CodeScan AI Code Assistant.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.08.15 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2978).png" alt=""><figcaption></figcaption></figure>
 
 When  enabled:
 
@@ -196,22 +196,6 @@ Select a status to filter and view the corresponding issues.
 
 <figure><img src="../../../.gitbook/assets/image (2976).png" alt=""><figcaption></figcaption></figure>
 
-#### AI Users & Billing
-
-The **AI Users & Billing** page allows administrators to monitor AI credit consumption and view license assignments.
-
-To access this page:
-
-1. Navigate to **Administration**.
-2. Open **AI Users & Billing**.
-3. Review the available monthly AI credits.
-4. Use the search field to find users by name or email.
-5. Review each user's credit consumption and assigned licenses.
-
-The page displays information such as **Balance Used**, **Credits Used**, and **Licences**.
-
-<figure><img src="../../../.gitbook/assets/image (2977).png" alt=""><figcaption></figcaption></figure>
-
 #### Automation Mode
 
 When automation mode is enabled in Project Settings:
@@ -281,18 +265,27 @@ The icon changes color based on consumption thresholds:
 
 Hover over the icon to see the exact credit count (e.g., 750 / 1,000).
 
-#### AI Billing Administration Page
+### AI Billing Administration Page
 
-Administrators can access a dedicated management page at Administration → AI Billing, which provides:
+Administrators can access the **AI Users & Billing** page under **Administration** to monitor AI credit consumption and manage license assignments.
 
-* Summary bar:
-  * Users licensed for AI (count / total)<a class="button secondary"></a>
-  * Organization AI credit usage with progress indicator
-  * Monthly AI credits available, with a link to the detailed usage report
-* User table:
-  * Searchable by name or email
-  * Shows each user's balance used with a color-coded progress bar
-  * Sorted by balance used (descending) by default
+The page provides the following information:
+
+* **Monthly AI Credits Available:** Displays the available monthly AI credits and the reset date.
+* **User Search:** Allows administrators to search for users by name or email.
+* **Balance Used:** Shows each user's credit consumption as a percentage with a progress indicator.
+* **Credits Used:** Displays the number of AI credits consumed by each user.
+* **Licenses:** Shows the AI licenses assigned to each user.<br>
+
+<figure><img src="../../../.gitbook/assets/image (2977).png" alt=""><figcaption></figcaption></figure>
+
+**Accessing AI Users & Billing**
+
+1. Navigate to **Administration**.
+2. Open **AI Users & Billing**.
+3. Review the available monthly AI credits.
+4. Use the search field to find users by name or email.
+5. Review each user's credit consumption and assigned licenses.
 
 {% hint style="info" %}
 Organizations without licensed AI features will not see the AI Billing menu entry. If the URL is accessed directly, a message is displayed directing users to their AutoRABIT Customer Success representative.

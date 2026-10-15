@@ -17,7 +17,7 @@ Once enabled for a project, you can:
 * Track every AI fix through its lifecycle with dedicated filters and status labels
 * Monitor AI credit consumption through a real-time usage indicator and an administration dashboard<br>
 
-The AI operates on a curated set of high-confidence Apex rules and uses rule-specific context to produce accurate, focused fixes. All fix activity — who assigned, who approved, what changed — is captured for full auditability.<br>
+The AI operates on a curated set of high-confidence Apex rules and uses rule-specific context to produce accurate, focused fixes. All fix activity — who assigned, who approved, what changed — is captured for full auditability.
 
 #### Enabling the AI Code Assistant
 
@@ -47,7 +47,7 @@ When disabled:
 * New assignments (single or bulk) to the AI Code Assistant are blocked.
 * The AI Code Fixer is removed from the Assign dropdown.
 * The "AI Fix Available" indicator is hidden from issues.
-* Previously generated AI fixes remain visible in the "Fixed by AI" tab for historical and review purposes — you can still view past AI-generated patches, but cannot initiate new ones.<br>
+* Previously generated AI fixes remain visible in the "Fixed by AI" tab for historical and review purposes — you can still view past AI-generated patches, but cannot initiate new ones.
 
 ### AI Fix Eligibility
 
@@ -164,7 +164,7 @@ The AI Code Assistant supports two modes for Pull Request creation, configurable
 
 <figure><img src="../../../.gitbook/assets/image (2974).png" alt=""><figcaption></figcaption></figure>
 
-#### Creating Pull Requests in Bulk.
+#### Creating Pull Requests in Bulk
 
 To create pull requests for multiple AI-generated fixes:
 
@@ -263,7 +263,7 @@ When a filter is applied, the corresponding status label is shown on each issue 
 This filter is only visible when the AI Code Assistant is enabled for the project. If the feature is turned off, the filter is hidden to avoid clutter.
 {% endhint %}
 
-### AI Credits & Usage Monitoring<br>
+### AI Credits & Usage Monitoring
 
 AI Code Assistant usage is tracked through a credit-based system integrated with your CodeScan subscription.
 
@@ -279,7 +279,7 @@ The icon changes color based on consumption thresholds:
 | 25% or less remaining   | Amber  | Low — consider monitoring usage     |
 | 10% or less remaining   | Red    | Critical — credits nearly exhausted |
 
-Hover over the icon to see the exact credit count (e.g., 750 / 1,000).<br>
+Hover over the icon to see the exact credit count (e.g., 750 / 1,000).
 
 #### AI Billing Administration Page
 
@@ -308,8 +308,6 @@ _"Daily AI CodeFix limit has been reached. Please try again tomorrow."_
 
 The AI Code Assistant is designed with governance in mind:
 
-<button type="button" class="button primary" data-action="search" data-icon="magnifying-glass">Search…</button>
-
 | Control                 | Detail                                                                          |
 | ----------------------- | ------------------------------------------------------------------------------- |
 | Project-level toggle    | Enable or disable AI capabilities per project                                   |
@@ -320,8 +318,6 @@ The AI Code Assistant is designed with governance in mind:
 | Approval tracking       | The user who approved and created the PR is recorded                            |
 | Fix traceability        | Each fix has a unique UI ID carried through to the Pull Request                 |
 | Permission-based access | Only users with appropriate project permissions can assign issues or create PRs |
-
-
 
 ### FAQ
 

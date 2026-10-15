@@ -38,6 +38,8 @@ Users can retrieve detailed validation failures, including failed components, er
 
 This enhancement enables automated CI/CD workflows to identify deployment failures and review code quality results without accessing the ARM UI.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+
 ***
 
 ### Bug Fixes

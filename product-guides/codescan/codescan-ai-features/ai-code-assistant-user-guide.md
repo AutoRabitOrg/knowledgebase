@@ -19,28 +19,32 @@ Once enabled for a project, you can:
 
 The AI operates on a curated set of high-confidence Apex rules and uses rule-specific context to produce accurate, focused fixes. All fix activity — who assigned, who approved, what changed — is captured for full auditability.<br>
 
-### Demo
-
-[AI Code Assistant Demo](https://www.loom.com/share/6d9af73294f54756854243ec7c4118d5)
-
 #### Enabling the AI Code Assistant
 
 The AI Code Assistant is controlled at the project level.
 
 To enable:
 
-1. Navigate to Project Settings → General Settings → CodeScan AI.
-2. Toggle "Enable AI CodeScan Assistant" to ON.
+&#x20;1\.  Navigate to Project Settings → AutoRABIT CodeScan AI.
+
+2. Under AI Automation Mode, select Automatic or Manual.&#x20;
+
+* Automatic: AI handles the code-fix process after an issue is assigned.
+* Manual: Users review and approve AI-suggested fixes.
+
+3. Turn on Enable AutoRABIT CodeScan AI Code Assistant.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.08.15 AM.png" alt=""><figcaption></figcaption></figure>
 
 When  enabled:
 
-* The AI Code Fixer agent appears in the issue Assign dropdown.
+* The AI Code Assistant agent appears in the issue Assign dropdown.
 * Eligible issues display an "AI Fix Available" indicator.
 * The "AI Code Assistant" filter becomes available in the issue filters panel.
 
 When disabled:
 
-* New assignments (single or bulk) to the AI Code Fixer are blocked.
+* New assignments (single or bulk) to the AI Code Assistant are blocked.
 * The AI Code Fixer is removed from the Assign dropdown.
 * The "AI Fix Available" indicator is hidden from issues.
 * Previously generated AI fixes remain visible in the "Fixed by AI" tab for historical and review purposes — you can still view past AI-generated patches, but cannot initiate new ones.<br>
@@ -91,14 +95,22 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 
 1. Open any issue that displays the "AI Fix Available" indicator.
 2. Click the Assign dropdown.
-3. Select AI Code Fixer from the list.
+3. Select AI Code Assistant from the list.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.24.17 AM.png" alt=""><figcaption></figcaption></figure>
+
 4. The AI agent begins generating a fix. The issue status updates to reflect progress.
 
 #### Bulk Assignment
 
-1. From the issues list, select multiple issues that display "AI Fix Available".
-2. Open the Bulk Change action.
-3. Assign the selected issues to AI Code Fixer.
+1. Select the issues you want to assign
+2. Click Bulk Change.
+3. In the Change Issues dialog, open the Assign dropdown.
+4. Select AI Code Assistant.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+5. Click Apply to assign the selected issues.
 
 {% hint style="info" %}
 You can assign a maximum of 10 issues per bulk action. If you select more than 10, a validation message will be displayed. This limit is enforced to maintain processing stability and control AI consumption.
@@ -282,7 +294,7 @@ Q: Is my code sent to a third-party AI provider? The AI Code Assistant uses AI m
 
 ### Troubleshooting runbooks
 
-#### AI Code Fixer does not appear in the Assign dropdown
+#### AI Code Assistant does not appear in the Assign dropdown
 
 * Confirm the AI Code Assistant is enabled: Project Settings → General Settings → CodeScan AI → Enable AI CodeScan Assistant must be toggled ON.
 * Confirm you have the necessary project permissions.

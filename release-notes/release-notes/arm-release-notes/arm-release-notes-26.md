@@ -64,17 +64,13 @@ Resolved an issue where editing and saving a CI Job without configuration change
 
 ARM now preserves the last processed revision when no relevant configuration changes are made, ensuring subsequent builds process only new changes. This fix applies to CI Jobs **with or without a configured baseline** in both the Old UI and New UI.
 
-#### Improved Repository Name Handling for Special Characters
+#### Improved EZ-Merge Performance and Workspace Processing
 
-Addressed an issue where repository names containing special characters could cause an **“Undefined” error** under **Admin > VC Repos**.
+Enhanced EZ-Merge performance by optimizing workspace operations and reducing unnecessary file processing, particularly for large repositories.
 
-Introduced a utility to safely rename affected repositories and update their associated references across the database and file system, ensuring consistency throughout ARM.
+The improvements include limiting concurrent EZ-Merge executions, introducing repository-level workspace locking to prevent operations from blocking other repositories, and processing only the required files instead of the entire repository.
 
-#### Fixed Missing CustomFields in Revision-Based Rollback
-
-Resolved an issue where **CustomFields** metadata components were missing under **Destructive Changes** in the **Revision Based Changes** tab of the Rollback window.
-
-ARM now correctly displays CustomFields and their associated metadata members, allowing users to select them for rollback in both **CI Jobs and Deployments**.
+These changes help reduce merge execution times, improve system stability, and minimize performance impacts on other users sharing the same instance.
 
 #### Apache Tomcat Upgrade to Version 11.0.26
 

@@ -93,7 +93,7 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 1. Open any issue that displays the "AI Fix Available" indicator.
 2. Click the Assign dropdown.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-15 at 11.24.17 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2979).png" alt=""><figcaption></figcaption></figure>
 
 3. Select AI Code Assistant from the list.
 4. The AI agent begins generating a fix. The issue status updates to reflect progress.

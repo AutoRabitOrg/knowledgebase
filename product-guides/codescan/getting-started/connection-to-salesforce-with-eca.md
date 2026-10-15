@@ -1,6 +1,12 @@
 # Connecting a Salesforce Org to CodeScan using local ECA flow
 
 {% hint style="info" %}
+Starting October 20th 2026, all new Salesforce org registrations will go through AuthHub. Existing connections are not affected by this change.&#x20;
+
+For details, timelines, and what to expect, see [Upcoming Salesforce authentication changes for new AutoRABIT CodeScan connections](https://knowledgebase.autorabit.com/fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-codescan-salesforce-connections)
+{% endhint %}
+
+{% hint style="info" %}
 As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.
 
 Key points:

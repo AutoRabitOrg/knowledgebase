@@ -86,31 +86,31 @@ Review the installation details, accept the Salesforce AppExchange terms and con
 
 For a Sandbox installation, use the “Try It” option on the AutoRABIT listing instead of “Get It Now.”
 
-<figure><img src="/broken/files/ncLKaLUDo0vNFBj1Mpy4" alt=""><figcaption><p>Figure 9. “Try It” option for the Sandbox installation path.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2963).png" alt=""><figcaption><p>Figure 9. “Try It” option for the Sandbox installation path.</p></figcaption></figure>
 
 #### 2.  Continue to installation
 
 On the trial setup page, confirm the information shown and select “Continue to Installation.”
 
-<figure><img src="/broken/files/bDLtGxxrdwiDzN5YagDT" alt=""><figcaption><p>Figure 10. Sandbox trial setup and “Continue to Installation.”</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2964).png" alt=""><figcaption><p>Figure 10. Sandbox trial setup and “Continue to Installation.”</p></figcaption></figure>
 
-3\.  Log in and install
+#### 3.  Log in and install
 
 Select “Log In & Install,” then authenticate to the Sandbox in which the package will be installed.
 
-<figure><img src="/broken/files/wR5HJ6u8WTX8yykPmBwB" alt=""><figcaption><p><em>Figure 11. “Log In &#x26; Install” for the Sandbox installation.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2965).png" alt=""><figcaption><p>Figure 11. “Log In &#x26; Install” for the Sandbox installation.</p></figcaption></figure>
 
 #### 4.  Install for Admins Only
 
 When the Salesforce package installation screen opens, select “Install for Admins Only,” then click “Install.” This is the installation scope shown in the source procedure.
 
-<figure><img src="/broken/files/zre78bBoV4TFnK27v1va" alt=""><figcaption><p>Figure 12. Package installation scope set to “Install for Admins Only.”</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2966).png" alt=""><figcaption><p>Figure 12. Package installation scope set to “Install for Admins Only.”</p></figcaption></figure>
 
-5\.  Approve required third-party access
+#### 5.  Approve required third-party access
 
-Salesforce may request approval for access to login.salesforce.com and test.salesforce.com. Select the option to grant access to these third-party sites, then click “Continue.”<br>
+Salesforce may request approval for access to login.salesforce.com and test.salesforce.com. Select the option to grant access to these third-party sites, then click “Continue.”
 
-<figure><img src="/broken/files/b5nkMaXWh8rTOYxGGPq1" alt=""><figcaption><p><em>Figure 13. Approve Third-Party Access prompt.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2967).png" alt=""><figcaption><p>Figure 13. Approve Third-Party Access prompt.</p></figcaption></figure>
 
 {% hint style="info" %}
 **WHY THIS IS REQUIRED** The package requires these Salesforce endpoints so the AutoRABIT applications can complete the authentication and connectivity flow shown in this procedure.
@@ -120,9 +120,9 @@ Salesforce may request approval for access to login.salesforce.com and test.sale
 
 Do not begin post-install configuration until Salesforce confirms the package has finished installing.
 
-<figure><img src="/broken/files/anYje6EkhggN0X8CCVEx" alt=""><figcaption><p>Figure 14. Salesforce package installation in progress.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2968).png" alt=""><figcaption><p>Figure 14. Salesforce package installation in progress.</p></figcaption></figure>
 
-<figure><img src="/broken/files/Kq8wVybeRE1HT1fF1IPg" alt=""><figcaption><p>Figure 15. Salesforce may send an email if the package installation takes longer than expected.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2969).png" alt=""><figcaption><p>Figure 15. Salesforce may send an email if the package installation takes longer than expected.</p></figcaption></figure>
 
 {% hint style="warning" %}
 **LONG-RUNNING INSTALLATION** If Salesforce reports that the package is taking a long time to install, wait for either the completion screen or the Salesforce completion email before continuing.

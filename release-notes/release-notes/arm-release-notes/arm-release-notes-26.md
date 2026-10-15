@@ -8,8 +8,6 @@
 
 **Release Date: 18 October 2026**
 
-### New Enhancements
-
 #### Multiple AccelQ Test Jobs Support in CI Jobs (New UI)
 
 Enhanced the AccelQ integration in the **New UI** to support configuring up to **5 AccelQ test jobs within a single CI Job**. Users can select multiple test suites from the same AccelQ project or configure test jobs from up to 5 different AccelQ projects.
@@ -39,10 +37,6 @@ Users can retrieve detailed validation failures, including failed components, er
 This enhancement enables automated CI/CD workflows to identify deployment failures and review code quality results without accessing the ARM UI.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
-
-***
-
-### Bug Fixes
 
 #### Fixed Dev Hub Registration Inconsistency During Salesforce Org Deletion
 
@@ -81,10 +75,6 @@ Introduced a utility to safely rename affected repositories and update their ass
 Resolved an issue where **CustomFields** metadata components were missing under **Destructive Changes** in the **Revision Based Changes** tab of the Rollback window.
 
 ARM now correctly displays CustomFields and their associated metadata members, allowing users to select them for rollback in both **CI Jobs and Deployments**.
-
-***
-
-### Platform Upgrade
 
 #### Apache Tomcat Upgrade to Version 11.0.26
 

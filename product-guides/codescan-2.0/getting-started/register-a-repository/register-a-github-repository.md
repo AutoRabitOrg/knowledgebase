@@ -6,6 +6,12 @@ description: >-
 
 # Register a GitHub Repository
 
+This article takes you through registering a GitHub repository in three parts:
+
+1. Create a GitHub access token.
+2. Add the project in CodeScan.
+3. Turn on automatic pull-request scans with a webhook (optional, recommended).
+
 ### Before You Start
 
 You need:
@@ -13,11 +19,11 @@ You need:
 * The <mark style="background-color:yellow;">**Tenant manager**</mark> or <mark style="background-color:yellow;">**ACA admin**</mark> role in CodeScan. See Users, Roles and Permissions.
 * **Admin access** to the repository in GitHub. GitHub requires it to create webhooks.
 * The repository's web address, for example `https://github.com/your-org/your-repo`.
-* Webhook payload URL:
+*   Webhook payload URL:
 
-```
-https://<your-codescan-url>/api/sca/webhooks/github/<tenant-id>
-```
+    ```
+    https://<your-codescan-url>/api/sca/webhooks/github/<tenant-id>
+    ```
 
 ### Part 1: Create a GitHub Access Token
 
@@ -29,14 +35,12 @@ CodeScan uses the token to read the repository, report the quality gate result o
 2. Give the token a name, such as _CodeScan_, and choose an expiry date.
 3. Under **`Resource owner`**, choose the organisation that owns the repository.
 4. Under **`Repository access`**, choose **`Only select repositories`** and select the repository.
-5. Under **`Permissions`**, set:
+5.  Under **`Permissions`**, set:
 
-| Permission            | Access                                                                                                                                                                             |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Contents`**        | Read and write                                                                                                                                                                     |
-| **`Pull requests`**   | Read and write                                                                                                                                                                     |
-| **`Commit statuses`** | <mark style="color:red;">**\[TO CONFIRM: whether Read and write is needed for the quality gate status. The PR Review article omits it; the Copado setup page includes it]**</mark> |
-
+    | Permission          | Access         |
+    | ------------------- | -------------- |
+    | **`Contents`**      | Read and write |
+    | **`Pull requests`** | Read and write |
 6. Select **`Generate token`** and copy it. GitHub shows it only once.
 
 #### Classic Token
@@ -46,7 +50,7 @@ For a private repository, a classic token needs the **`repo`** scope.
 For GitHub's own instructions, see [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 {% hint style="info" %}
-**Note:** Create the token from an account your team controls, such as a service account, rather than a personal account. That way, access doesn't stop when one person leaves. Note the token's expiry date: when it expires, you'll need to [replace it](https://claude.ai/chat/register-a-repository.md#replacing-a-token).
+**Note:** Create the token from an account your team controls, such as a service account, rather than a personal account. That way, access doesn't stop when one person leaves. Note the token's expiry date: when it expires, you'll need to replace it.
 {% endhint %}
 
 ### Part 2: Add the Project in CodeScan
@@ -69,44 +73,9 @@ For GitHub's own instructions, see [Managing your personal access tokens](https:
 **Important Note:** CodeScan matches repositories by URL exactly. A URL that differs in upper and lower case, or ends in `.git`, is treated as a different repository, with its own settings and accepted findings.
 {% endhint %}
 
-#### Scanning
-
-| Field                                | What to enter                                                                                                                                                                                        |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Default Comparison Base Branch`** | When a scan arrives without an explicit base branch, comparison branches fall back to this one. **Only branches with a completed full scan are listed.** Add later after the full scan is completed. |
-| **`CLI Timeout`**                    | The longest a CodeScan CLI scan of this project can run, in minutes. A scan that runs longer is stopped. Default: 30.                                                                                |
-
-#### Quality Gate
-
-| Field                               | What to choose                                                                                                                                                |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Severities that fail the gate`** | Which severities fail a build or a pull request: **`Blocker`**, **`Critical`** or **`Major`**. Default: Blocker only. We suggest keeping the default for now. |
-
-#### AI Review
-
-AI features use AI credits. The scan itself never does.
-
-| Field                                  | What it does                                                                                                                                                                       | Default              |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| **`AI finding review`**                | Turns all AI features on or off for this project. The AI reviewer flags likely false positives and writes suggested fixes.                                                         | On                   |
-| **`AI pull request review`**           | Reviews pull requests with AI. With a webhook set up, pull requests are reviewed automatically when they are opened or updated, and review comments count toward the quality gate. | Off                  |
-| **`AI test quality review`**           | Reviews test classes for weak assertions and missing coverage.                                                                                                                     | Off                  |
-| **`Severities included in AI review`** | Which severities the AI reviews. Other severities are still reported, without AI review.                                                                                           | Blocker and Critical |
-
-#### Insights
-
-| Field                                | What it does                                                                                                                                                                        | Default |
-| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| **`Test coverage estimate (no AI)`** | On every full scan, estimates how much production code your tests can reach, and charts it on the Analysis Dashboard. A static estimate, not measured coverage. Uses no AI credits. | On      |
-
-#### Authenticate Repository
-
-| Field                        | What to enter                                                                |
-| ---------------------------- | ---------------------------------------------------------------------------- |
-| **`Access Token`**           | The token from Part 1.                                                       |
-| **`Webhook key (Optional)`** | Needed only for automatic pull-request scans. You can enter it now or later. |
-
-Select the eye icon next to a field to check what you pasted.
+{% hint style="success" %}
+[**Review Project Configuration options here**](./)
+{% endhint %}
 
 ### Part 3: Turn On Automatic Pull-Request Scans
 
@@ -124,7 +93,7 @@ openssl rand -hex 32
 
 Store it somewhere safe, such as your password manager.
 
-If you didn't enter the key in Part 2, add it to the project now: in **`Repositories`**, select the project and choose **`Re-Authenticate`**, then paste the **`Access Token`** and the **`Webhook key`** together.&#x20;
+If you didn't enter the key in Part 2, add it to the project now: in **`Repositories`**, select the project and choose **`Re-Authenticate`**, then paste the **`Access Token`** and the **`Webhook key`** together.
 
 #### Step 2: Find Your Tenant ID
 
@@ -141,9 +110,13 @@ Your webhook URL has this form:
 https://<your-codescan-url>/api/sca/webhooks/github/<tenant-id>
 ```
 
-Replace `<your-codescan-url>` with the address you use to open CodeScan, and `<tenant-id>` with your **`Tenant ID`**, exactly as shown.
+Replace `<your-codescan-url>` with the address you use to open CodeScan, and `<tenant-id>` with your **`Tenant ID`** in **lowercase**.
 
-For example: `https://<your-codescan-url>/api/sca/webhooks/github/ABC123`
+{% hint style="warning" %}
+**Important Note:** The tenant ID in the webhook URL must be lowercase, even though CodeScan shows it in capitals. For example, if your **`Tenant ID`** is `ABC123`, use `abc123` in the URL.
+{% endhint %}
+
+For example: `https://<your-codescan-url>/api/sca/webhooks/github/abc123`
 
 #### Step 4: Add the Webhook in GitHub
 
@@ -176,23 +149,23 @@ Each new commit on the pull request starts a fresh review. If GitHub delivers th
 
 #### Optional: AI Review Comments
 
-To have the AI write review comments on each pull request, turn on **`AI pull request review`** for the project. Comments count toward the quality gate. See [AI Pull-Request Review](https://claude.ai/pull-request-review/ai-pull-request-review.md).
+To have the AI write review comments on each pull request, turn on **`AI pull request review`** for the project. Comments count toward the quality gate. See AI Pull-Request Review.
 
 ### Troubleshooting
 
-| Problem                                       | What to do                                                                                                                                                                    |
-| --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Status`** is not **`Authenticated`**       | The token is wrong, expired, or lacks the permissions in Part 1. Create a new token and [re-authenticate](https://claude.ai/chat/register-a-repository.md#replacing-a-token). |
-| GitHub shows `401` in **`Recent Deliveries`** | The webhook secret and the **`Webhook key`** don't match. Enter the same value in both.                                                                                       |
-| No scan appears after opening a pull request  | Check that the **`Payload URL`** ends in `/github/<tenant-id>` with your tenant ID, that only **`Pull requests`** is selected, and that the webhook is **`Active`**.          |
-| Results on developers' computers don't match  | Their git remote doesn't match the **`Repository URL`** exactly. Check case, and remove any `.git` ending.                                                                    |
+| Problem                                       | What to do                                                                                                                                                           |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`Status`** is not **`Authenticated`**       | The token is wrong, expired, or lacks the permissions in Part 1. Create a new token and re-authenticate.                                                             |
+| GitHub shows `401` in **`Recent Deliveries`** | The webhook secret and the **`Webhook key`** don't match. Enter the same value in both.                                                                              |
+| No scan appears after opening a pull request  | Check that the **`Payload URL`** ends in `/github/<tenant-id>` with your tenant ID, that only **`Pull requests`** is selected, and that the webhook is **`Active`**. |
+| Results on developers' computers don't match  | Their git remote doesn't match the **`Repository URL`** exactly. Check case, and remove any `.git` ending.                                                           |
 
 ### Next Step
 
-[Set Up Your Project](https://claude.ai/chat/set-up-your-project.md)
+Set Up Your Project
 
 ### Related Articles
 
-* [Register a Repository](https://claude.ai/chat/register-a-repository.md)
-* [Block Merges With a Required Status Check](https://claude.ai/quality-gate/block-merges.md)
-* [Pull-Request Review Overview](https://claude.ai/pull-request-review/overview.md)
+* Register a Repository
+* Block Merges With a Required Status Check
+* Pull-Request Review Overview

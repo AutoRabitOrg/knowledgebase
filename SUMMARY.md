@@ -1238,6 +1238,7 @@
     * [Sign Up and Sign In](product-guides/codescan-2.0/getting-started/sign-up-and-sign-in.md)
     * [Register a Repository](product-guides/codescan-2.0/getting-started/register-a-repository/README.md)
       * [Register a GitHub Repository](product-guides/codescan-2.0/getting-started/register-a-repository/register-a-github-repository.md)
+      * [Register a Bitbucket Repository](product-guides/codescan-2.0/getting-started/register-a-repository/register-a-bitbucket-repository.md)
     * [Users, Roles & Permissions](product-guides/codescan-2.0/getting-started/users-roles-and-permissions.md)
     * [Create and Manage API Keys](product-guides/codescan-2.0/getting-started/create-and-manage-api-keys.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)

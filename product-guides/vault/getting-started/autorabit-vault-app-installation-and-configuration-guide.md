@@ -1,11 +1,15 @@
----
-hidden: true
-noIndex: true
----
+# AutoRABIT Vault - App Installation and Configuration Guide
 
-# AutoRABIT Vault App Installation and Configuration Guide
+Salesforce UI Compatibility Notice
 
+
+The AutoRABIT package is a Second-Generation Managed Package (2GP) designed for Salesforce administrators to perform a one-time setup operation. It is supported exclusively in Salesforce Lightning Experience and is not compatible with Salesforce Classic.
+
+Please ensure that your Salesforce org is using Lightning Experience before proceeding with the AutoRABIT package installation and configuration. Customers using Salesforce Classic must switch to Lightning Experience to complete the setup, as supporting Salesforce Classic is not technically feasible for this 2GP package.
+
+{% hint style="info" %}
 **PURPOSE:** This guide walks administrators through installing the AutoRABIT Salesforce package, configuring the Salesforce OAuth settings required by the connector, authorizing inbound and outbound connections, enabling licensed products, assigning the AutoRABIT Vault permission set, and completing product-side Salesforce org registration for AutoRABIT Vault.
+{% endhint %}
 
 ### Process at a Glance
 
@@ -152,9 +156,12 @@ When Salesforce displays a warning about changing the setting, review it and cli
 
 #### 4.  Confirm Session Settings
 
-In Setup, search for and open “Session Settings.” Under “Session Settings,” make sure “Lock sessions to the IP address from which they originated” is disabled in the org.
+In Setup, search for and open “Session Settings.” Under “Session Settings,” make sure both of the following are disabled in the org:
 
-<figure><img src="../../../.gitbook/assets/image (3011).png" alt=""><figcaption><p><em>Figure 19. Session Settings: “Lock sessions to the IP address from which they originated” disabled.</em></p></figcaption></figure>
+* Lock sessions to the IP address from which they originated
+* Lock sessions to the domain in which they were first used
+
+<figure><img src="../../../.gitbook/assets/image (3046).png" alt=""><figcaption></figcaption></figure>
 
 #### 5.  Open External Client App Manager
 

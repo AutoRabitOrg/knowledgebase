@@ -1,3 +1,8 @@
+---
+hidden: true
+noIndex: true
+---
+
 # CodeScan 2.0
 
 ### Market Overview

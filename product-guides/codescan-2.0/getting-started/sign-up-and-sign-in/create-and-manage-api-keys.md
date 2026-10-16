@@ -23,7 +23,7 @@ An API key lets the CodeScan CLI, the VS Code extension and your CI pipelines co
 
 CodeScan API keys start with `codescan_`.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-16 at 10.14.30.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-10-16 at 10.14.30.png" alt="" width="375"><figcaption></figcaption></figure>
 
 To check which credential is in use and whether CodeScan accepts it, run:
 

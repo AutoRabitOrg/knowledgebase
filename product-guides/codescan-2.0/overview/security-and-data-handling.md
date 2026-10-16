@@ -73,4 +73,4 @@ This check contacts third-party services, so it is off unless you pass `--verify
 
 * [What Is CodeScan](../)
 * [How a Scan Works](how-a-scan-works.md)
-* [Users, Roles and Permissions](../getting-started/users-roles-and-permissions.md)
+* [Users, Roles and Permissions](../getting-started/sign-up-and-sign-in/users-roles-and-permissions.md)

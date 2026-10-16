@@ -85,7 +85,7 @@ Replace `<your-codescan-url>` with the address you use to open CodeScan, and `<t
 
 1. In GitLab, open the project, then **`Settings`** → **`Webhooks`**, and add a new webhook.&#x20;
 2. **URL:** your webhook URL from step 3, ending in `/gitlab/<tenant-id>`.
-3. **Signing token:** generate a signing token in GitLab, paste this value in CodeScan.
+3. **Secret token:** create a unique random **`secret token`** in GitLab, paste this value in CodeScan.
 4. **Trigger:** select **Merge request events** only.
 5. Leave SSL verification on, and save.
 

@@ -31,10 +31,6 @@ This article explains how to create a CodeScan account and sign in to the web ap
 1. Go to your CodeScan URL, `https://<your-codescan-url>`.
 2. Enter your CodeScan username and password. <mark style="color:red;">**\[TO CONFIRM: exact field labels and button name]**</mark>
 
-After you sign in, CodeScan opens on your project cards. Each card shows the last scan, open issues, and counts for Security, Structure and Code Analysis.
-
-<mark style="color:red;">**\[SCREENSHOT: project cards after sign-in]**</mark>
-
 ### Inviting Users
 
 <mark style="color:red;">**\[TO CONFIRM: how an administrator adds users and assigns roles]**</mark>

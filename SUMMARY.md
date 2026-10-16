@@ -1244,6 +1244,7 @@
       * [Create a GitLab Repository](product-guides/codescan-2.0/getting-started/register-a-repository/create-a-gitlab-repository.md)
     * [Set Up Your Project](product-guides/codescan-2.0/getting-started/set-up-your-project.md)
     * [Start a Scan](product-guides/codescan-2.0/getting-started/start-a-scan.md)
+    * [Connect the CLI](product-guides/codescan-2.0/getting-started/connect-the-cli.md)
   * [Integrations](product-guides/codescan-2.0/integrations/README.md)
     * [VS Code Connection](product-guides/codescan-2.0/integrations/vs-code-connection.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)

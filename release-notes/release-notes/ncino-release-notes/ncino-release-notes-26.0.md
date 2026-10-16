@@ -2,29 +2,31 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.4.3 <a href="#ncino-release-26.4.2" id="ncino-release-26.4.2"></a>
+## nCino - Release 26.4.3 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
 
 **Release Date:** **18 October 2026**
 
-### Reliable Migration of Same-Named Attachments <a href="#id-1.-reliable-migration-of-same-named-attachments" id="id-1.-reliable-migration-of-same-named-attachments"></a>
+#### Reliable Migration of Same-Named Attachments <a href="#id-1.-reliable-migration-of-same-named-attachments" id="id-1.-reliable-migration-of-same-named-attachments"></a>
 
-Resolved an issue where attachments could be overwritten when multiple records contained attachments with the same name. Attachments are now distinguished and migrated correctly across nCino Deployments, nCino CI Jobs, and Data Loader Pro, including rollback operations.
+Resolved an issue where attachments could be overwritten when multiple records contained attachments with the same name. Attachments are now distinguished and migrated correctly across nCino Deployments, nCino CI Jobs, and DataLoader Pro, including rollback operations.
 
-### Correct Notification for nCino Rollbacks <a href="#id-2.-correct-notification-for-ncino-rollbacks" id="id-2.-correct-notification-for-ncino-rollbacks"></a>
+#### Correct Notification for nCino Rollbacks <a href="#id-2.-correct-notification-for-ncino-rollbacks" id="id-2.-correct-notification-for-ncino-rollbacks"></a>
 
 Resolved an issue where an incorrect notification appeared after initiating a rollback from an nCino deployment. The application now displays the appropriate confirmation message: **Rollback initiated successfully**.
 
-### Preserve Version-Control Files During Rollback <a href="#id-3.-preserve-version-control-files-during-rollback" id="id-3.-preserve-version-control-files-during-rollback"></a>
+#### Preserve Version-Control Files During Rollback <a href="#id-3.-preserve-version-control-files-during-rollback" id="id-3.-preserve-version-control-files-during-rollback"></a>
 
 Resolved an issue where certain files could be deleted from version control when a rollback was performed for an nCino CI Job with commit enabled. Rollback processing now preserves the required files and generates a valid rollback commit for subsequent deployments.
 
-### Reliable Rollback for Deploy-from-Version-Control CI Jobs <a href="#id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs" id="id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs"></a>
+#### Reliable Rollback for Deploy-from-Version-Control CI Jobs <a href="#id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs" id="id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs"></a>
 
 Resolved an issue where rollback could fail during the Commit stage for nCino CI Jobs created using **Deploy from Version Control**. Rollback commit processing now handles missing feature-history information correctly, allowing selective rollback operations to complete successfully.
 
-### Correct External Field Mappings During Redeployment <a href="#id-5.-correct-external-field-mappings-during-redeployment" id="id-5.-correct-external-field-mappings-during-redeployment"></a>
+#### Correct External Field Mappings During Redeployment <a href="#id-5.-correct-external-field-mappings-during-redeployment" id="id-5.-correct-external-field-mappings-during-redeployment"></a>
 
 Resolved an issue where External Field Mapping values were not displayed during nCino feature redeployment, resulting in a **Partially Completed** status. External ID mappings are now loaded according to the selected destination org, allowing redeployments to complete without null partition-value errors.
+
+***
 
 ## nCino - Release 26.4.2 <a href="#ncino-release-26.4.2" id="ncino-release-26.4.2"></a>
 

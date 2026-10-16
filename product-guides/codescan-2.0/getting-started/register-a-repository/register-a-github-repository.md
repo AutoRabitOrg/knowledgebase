@@ -57,9 +57,11 @@ For GitHub's own instructions, see [Managing your personal access tokens](https:
 
 1. In the CodeScan sidebar, select **`Repositories`**. The **Project Properties** page lists your registered projects.
 2. Select **`Add Project`**.
-3. Fill in the **Add Project** window, section by section, as described below.
+3. Fill in the **Add Project** window, section by section, as described:
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2026-10-16 at 11.28.30.png" alt="" width="563"><figcaption></figcaption></figure>
+{% hint style="success" %}
+[**Review Project Configuration options here**](./)
+{% endhint %}
 
 #### Project
 
@@ -71,10 +73,6 @@ For GitHub's own instructions, see [Managing your personal access tokens](https:
 
 {% hint style="warning" %}
 **Important Note:** CodeScan matches repositories by URL exactly. A URL that differs in upper and lower case, or ends in `.git`, is treated as a different repository, with its own settings and accepted findings.
-{% endhint %}
-
-{% hint style="success" %}
-[**Review Project Configuration options here**](./)
 {% endhint %}
 
 ### Part 3: Turn On Automatic Pull-Request Scans

@@ -1,6 +1,8 @@
-# suggested fixes and patches
+---
+description: Review and apply the exact code changes the AI writes for findings.
+---
 
-**Who this is for:** developers | **Uses AI credits:** yes, as part of AI finding review | **Availability:** <mark style="color:red;">**\[TO CONFIRM]**</mark>
+# Suggested Fixes and Patches
 
 When AI finding review is on, the AI reviewer writes a suggested fix for findings it keeps. A suggested fix is an exact code change your developer reviews and applies. It is never applied without a person choosing to.
 

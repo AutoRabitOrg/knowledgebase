@@ -4,7 +4,7 @@ description: >-
   pull-request scans with a webhook.
 ---
 
-# Create a GitLab Repository
+# Register a GitLab Repository
 
 This article takes you through registering a GitLab repository in three parts:
 

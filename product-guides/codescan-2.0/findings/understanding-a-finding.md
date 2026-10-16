@@ -1,6 +1,8 @@
-# understanding a finding
+---
+description: What each part of a finding tells you, and how to treat each severity.
+---
 
-**Who this is for:** everyone | **Uses AI credits:** no | **Availability:** <mark style="color:red;">**\[TO CONFIRM]**</mark>
+# Understanding a Finding
 
 A finding is one problem the scan reported. This article explains what each part of a finding tells you and how to treat each severity.
 
@@ -37,8 +39,6 @@ Select a finding to open its details. Depending on the finding, you see:
 | Duplicate locations  | For copy-paste findings: every place the same code appears.                                                                                                                                 |
 | Suggested fix        | A remediation explanation (**How to fix it**), and, when the AI wrote one, an exact code change. See [Suggested Fixes and Patches](/broken/pages/de955a8bba000807df59b20c80febbff6a601f52). |
 | AI reason            | For a likely false positive: why the AI reviewer doubts it. For a security finding, this points to the line that defends against it.                                                        |
-
-<mark style="color:red;">**\[SCREENSHOT: finding details with data-flow steps]**</mark>
 
 ## Findings You Don't Need to Act On Yet
 

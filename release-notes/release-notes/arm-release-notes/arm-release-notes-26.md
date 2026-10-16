@@ -8,6 +8,12 @@
 
 **Release Date: 18 October 2026**
 
+#### Fixed Workspace Synchronization Errors in EZ-Commit and EZ-Merge
+
+Resolved an issue where **EZ-Commit and EZ-Merge** operations could fail with the error **“Remote and Local Workspaces are not in sync”** during file comparison and checkout operations.
+
+Improved Git response handling to ensure proper workspace synchronization, preventing unexpected failures in **EZ-Commit, EZ-Merge, and branch registration**.
+
 #### Multiple AccelQ Test Jobs Support in CI Jobs (New UI)
 
 Enhanced the AccelQ integration in the **New UI** to support configuring up to **5 AccelQ test jobs within a single CI Job**. Users can select multiple test suites from the same AccelQ project or configure test jobs from up to 5 different AccelQ projects.

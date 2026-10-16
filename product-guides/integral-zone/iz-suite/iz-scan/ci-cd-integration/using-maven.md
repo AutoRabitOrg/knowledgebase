@@ -63,7 +63,7 @@ Please refer to the section [below](using-maven.md) for instructions on how to r
 1. A complete example may look like&#x20;
 
 ```
-PROJECT_ROOT_DIR> mvn com.integralzone.iz:iz-scan-cli:scan 
+PROJECT_ROOT_DIR> mvn com.integralzone.izsuite:iz-scan-cli:scan 
 -DserviceHost=${FALCON_HOST} 
 -DauthToken=${FALCON_TOKEN} 
 -DapplicationKey=orders-sapi 

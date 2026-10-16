@@ -1254,6 +1254,7 @@
     * [Blast Radius for Pull Requests](product-guides/codescan-2.0/findings/blast-radius-for-pull-requests.md)
     * [Create a PR Fix](product-guides/codescan-2.0/findings/create-a-pr-fix.md)
     * [Suggested Fixes and Patches](product-guides/codescan-2.0/findings/suggested-fixes-and-patches.md)
+    * [AI Pull Request Review](product-guides/codescan-2.0/findings/ai-pull-request-review.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)
   * [AutoRABIT Vault Freemium](product-guides/vault/autorabit-vault-freemium/README.md)
     * [User Registration](product-guides/vault/autorabit-vault-freemium/user-registration.md)

@@ -22,7 +22,7 @@ After a single deployment, ARM triggers the configured test jobs **one by one**.
 
 The CI Job Build History displays consolidated results, including overall test status, test case counts, and individual test job outcomes.
 
-This enhancement eliminates the need to create separate CI Jobs for each AccelQ test suite while maintaining backward compatibility with existing single-test-job configurations.
+This enhancement eliminates the need to create separate CI Jobs for each AccelQ test suite while maintaining backward compatibility with existing single-test job configurations.
 
 #### Multiple Rollbacks and Revision-Based Metadata Selection (New UI)
 
@@ -56,7 +56,7 @@ Resolved an issue where EZ-Merge could be automatically rejected during pre-vali
 
 ARM now correctly identifies these scenarios, marks the merge as **“Merged - No Modifications,”** and skips unnecessary pre-validation, review, commit, and push operations.
 
-Additionally, when a target Salesforce Org has no metadata changes to validate, ARM handles the empty deployment package without failing the merge and displays an appropriate message. This fix also improves merge status visibility in both the **Old UI and New UI**.
+Additionally, when a target Salesforce Org has no metadata changes to validate, ARM handles the empty deployment package without failing the merge and displays an appropriate message. This fix also improves merge status visibility in both the **Classic UI and New UI**.
 
 #### Fixed User Permission Exclusion During Permission Set Deployment
 
@@ -80,9 +80,11 @@ These changes help reduce merge execution times, improve system stability, and m
 
 #### Apache Tomcat Upgrade to Version 11.0.26
 
-Upgraded **Apache Tomcat to version 11.0.26** as part of ARM **26.4.3 and later releases** for **SaaS, Dedicated, and On-Premise environments**.
+Upgraded **Apache Tomcat to version 11.0.26** as part of ARM **26.4.3 and later releases** for **SaaS, Dedicated, and On-Premises environments**.
 
 This upgrade incorporates the latest Tomcat security updates, stability improvements, and performance enhancements.
+
+***
 
 ## ARM **Release Notes 26.4.2**
 

@@ -119,3 +119,80 @@ Do not begin post-install configuration until Salesforce confirms the package ha
 
 <figure><img src="../../../.gitbook/assets/image (3006).png" alt=""><figcaption><p>Figure 14. Salesforce package installation in progress.</p></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/image (3007).png" alt=""><figcaption><p><em>Figure 15. Salesforce may send an email if the package installation takes longer than expected.</em></p></figcaption></figure>
+
+{% hint style="warning" %}
+LONG-RUNNING INSTALLATION If Salesforce reports that the package is taking a long time to install, wait for either the completion screen or the Salesforce completion email before continuing.
+{% endhint %}
+
+## 5. Configure Salesforce OAuth and External Client App Settings
+
+After the package is installed, configure the Salesforce OAuth settings required by the AutoRABIT Connector.
+
+#### 1.  Open OAuth and OpenID Connect Settings
+
+In Salesforce Setup, search for and open “OAuth and OpenID Connect Settings.”
+
+<figure><img src="../../../.gitbook/assets/image (3008).png" alt=""><figcaption><p><em>Figure 16. Salesforce Setup navigation to OAuth and OpenID Connect Settings.</em></p></figcaption></figure>
+
+#### 2.  Enable the required OAuth settings
+
+Verify that both of the following settings are enabled. If either is disabled, enable it:
+
+* Allow Authorization Code and Credentials Flows
+* Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows
+
+<figure><img src="../../../.gitbook/assets/image (3009).png" alt=""><figcaption><p align="center"><em>Figure 17. Required OAuth settings in Salesforce Setup.</em></p></figcaption></figure>
+
+#### 3.  Confirm the Salesforce warning
+
+When Salesforce displays a warning about changing the setting, review it and click “OK” to continue.
+
+<figure><img src="../../../.gitbook/assets/image (3010).png" alt=""><figcaption><p><em>Figure 18. Salesforce confirmation dialog when changing OAuth settings.</em></p></figcaption></figure>
+
+#### 4.  Confirm Session Settings
+
+In Setup, search for and open “Session Settings.” Under “Session Settings,” make sure “Lock sessions to the IP address from which they originated” is disabled in the org.
+
+<figure><img src="../../../.gitbook/assets/image (3011).png" alt=""><figcaption><p><em>Figure 19. Session Settings: “Lock sessions to the IP address from which they originated” disabled.</em></p></figcaption></figure>
+
+#### 5.  Open External Client App Manager
+
+From Setup, open “External Client App Manager.”
+
+<figure><img src="../../../.gitbook/assets/image (3013).png" alt=""><figcaption><p><em>Figure 20. External Client App Manager in Salesforce Setup.</em></p></figcaption></figure>
+
+#### 6.  Open AutoRABIT Connector
+
+Select only the external client app named “AutoRABIT Connector.” Do not select “AutoRABIT Connector (Dev).” The (Dev) External Client App (ECA) is reserved for debugging and troubleshooting purposes and must not be used for the standard AutoRABIT installation and configuration process.
+
+<figure><img src="../../../.gitbook/assets/image (3014).png" alt=""><figcaption><p><em>Figure 21. Select the standard “AutoRABIT Connector” entry. Do not use “AutoRABIT Connector (Dev).”</em></p></figcaption></figure>
+
+#### 7.  Edit Policies
+
+On the AutoRABIT Connector page, open the Policies tab and click “Edit.”
+
+<figure><img src="../../../.gitbook/assets/image (3015).png" alt=""><figcaption><p><em>Figure 22. Edit action on the AutoRABIT Connector Policies page.</em></p></figcaption></figure>
+
+#### 8.  Expand OAuth Policies and enable guest-user credential flow
+
+Expand “OAuth Policies,” enable “Enable Code and Credentials Flow for Guest Users,” and then save the changes.
+
+<figure><img src="../../../.gitbook/assets/image (3016).png" alt=""><figcaption><p align="center"><em>Figure 23. OAuth Policies section before enabling the option.</em></p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (3017).png" alt=""><figcaption><p><em>Figure 24. “Enable Code and Credentials Flow for Guest Users” enabled</em></p></figcaption></figure>
+
+## 6. Open the AutoRABIT Connector and Authorize the Inbound Connection
+
+#### 1.  Launch AutoRABIT Connector
+
+Open the Salesforce App Launcher, search for “AutoRABIT Connector,” and launch the app.
+
+<figure><img src="../../../.gitbook/assets/image (3018).png" alt=""><figcaption><p><em>Figure 25. AutoRABIT Connector in the Salesforce App Launcher.</em></p></figcaption></figure>
+
+#### 2.  Open Configuration
+
+From the AutoRABIT Connector home page, click the “Configuration” card.
+
+
+

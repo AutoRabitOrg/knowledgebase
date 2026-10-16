@@ -22,6 +22,8 @@ Some rules are marked **Dynamic**: they set the severity of each finding individ
 
 Findings are grouped by category, including security, code quality, performance, structure, exceptions, tests, strings, naming and style. On the scan page they roll up into **Security**, **Structure** and **Code Analysis**.
 
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-16 at 16.47.45.png" alt=""><figcaption></figcaption></figure>
+
 ## The Finding Details
 
 Select a finding to open its details. Depending on the finding, you see:

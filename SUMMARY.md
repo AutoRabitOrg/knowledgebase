@@ -1243,6 +1243,7 @@
       * [Register a Bitbucket Repository](product-guides/codescan-2.0/getting-started/register-a-repository/register-a-bitbucket-repository.md)
       * [Create a GitLab Repository](product-guides/codescan-2.0/getting-started/register-a-repository/create-a-gitlab-repository.md)
     * [Set Up Your Project](product-guides/codescan-2.0/getting-started/set-up-your-project.md)
+    * [Start a Scan](product-guides/codescan-2.0/getting-started/start-a-scan.md)
   * [Integrations](product-guides/codescan-2.0/integrations/README.md)
     * [VS Code Connection](product-guides/codescan-2.0/integrations/vs-code-connection.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)

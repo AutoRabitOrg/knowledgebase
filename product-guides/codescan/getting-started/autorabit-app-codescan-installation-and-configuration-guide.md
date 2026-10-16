@@ -1,4 +1,4 @@
-# AutoRABIT App Installation and Configuration Guide: AutoRABIT CodeScan
+# AutoRABIT App - CodeScan Installation and Configuration Guide
 
 {% hint style="info" %}
 This guide is intended for the Salesforce administrator responsible for installing and configuring AutoRABIT in your organization. It walks you through package installation, required Salesforce OAuth settings, AutoRABIT Connector authorization, product enablement, permission assignment, and final Salesforce org registration in your licensed AutoRABIT products.&#x20;
@@ -10,7 +10,7 @@ AutoRABIT Connector configuration is in Salesforce Lightning Experience only and
 
 ## Process at a Glance
 
-<table data-header-hidden><thead><tr><th valign="top"></th><th valign="top"></th><th valign="top"></th><th valign="top"></th></tr></thead><tbody><tr><td valign="top">Step 1:  Install</td><td valign="top">Step 2:  Configure Salesforce</td><td valign="top">Step 3:  Authorize Connector</td><td valign="top">Step 4:  Register Org</td></tr><tr><td valign="top">AppExchange / AgentExchange</td><td valign="top">OAuth &#x26; External Client App</td><td valign="top">Inbound + outbound</td><td valign="top">Product visibility + permissions</td></tr></tbody></table>
+<table><thead><tr><th valign="top">Step 1: Install</th><th valign="top">Step 2: Configure Salesforce</th><th valign="top">Step 3: Authorize Connector</th><th valign="top">Step 4: Register Org</th></tr></thead><tbody><tr><td valign="top">AppExchange / AgentExchange</td><td valign="top">OAuth &#x26; External Client App</td><td valign="top">Inbound + outbound</td><td valign="top">Product visibility + permissions</td></tr></tbody></table>
 
 ## Before You Begin
 

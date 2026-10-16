@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # Upcoming Salesforce Authentication Changes for New AutoRABIT ARM Connections
 
 ## Overview&#x20;

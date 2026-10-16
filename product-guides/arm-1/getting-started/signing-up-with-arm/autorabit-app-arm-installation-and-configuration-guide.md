@@ -1,8 +1,3 @@
----
-hidden: true
-noIndex: true
----
-
 # AutoRABIT App - ARM Installation and Configuration Guide
 
 PURPOSE: This guide walks administrators through installing the AutoRABIT Salesforce package,\

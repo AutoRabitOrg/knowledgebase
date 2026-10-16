@@ -1,6 +1,10 @@
-# blast radius
+---
+description: >-
+  See what else a change affects, which tests to rerun, and how risky the change
+  is.
+---
 
-**Who this is for:** everyone | **Uses AI credits:** no | **Availability:** <mark style="color:red;">**\[TO CONFIRM]**</mark>
+# Blast Radius for Pull Requests
 
 When CodeScan scans a change, such as a pull request or your uncommitted edits, it also works out what else that change affects. This is the blast radius. It helps reviewers see beyond the lines in the diff, and tells you which tests to rerun.
 
@@ -9,6 +13,12 @@ The blast radius is worked out by the deterministic engine. No AI is involved an
 {% hint style="info" %}
 **Note:** A full scan has no change to measure, so it has no **`Blast Radius`** tab. Security findings on a full scan still show an **Impact** section with entry points, callers and test coverage.
 {% endhint %}
+
+## Navigation:
+
+Select a Pull Request scan to review, see **`Blast Radius`**:
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-16 at 15.50.17.png" alt=""><figcaption></figcaption></figure>
 
 ## How It Is Worked Out
 
@@ -69,7 +79,7 @@ On the **`Blast Radius`** tab of the scan page:
 
 The CLI prints a one-line blast-radius summary, and the full detail is in the `blastRadius` field of `--json` output.
 
-<mark style="color:red;">**\[SCREENSHOT: Blast Radius tab]**</mark>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-10-16 at 15.43.26.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Using It in a Review
 

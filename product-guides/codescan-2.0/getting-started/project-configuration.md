@@ -2,13 +2,13 @@
 description: The project settings to choose before your first scan, and why.
 ---
 
-# Set Up Your Project
+# Project Configuration
 
 A few settings change what your first scan shows. Set them now, so the first results your team sees are accurate and readable.&#x20;
 
 Open **`Repositories`**, select the repository you registered, and edit it.
 
-### 1. Tell CodeScan Where Your Tests Are
+### 1. Exclusions and Test Folders
 
 Add your test paths under **Repositories** ⇒ **Select a repository** ⇒ **`Exclusions`** ⇒ **`Tests Folders`**, for example `/test/` or `**/*.spec.ts`. Tests are then kept out of the rule scan, and CodeScan can show which tests a change affects.
 

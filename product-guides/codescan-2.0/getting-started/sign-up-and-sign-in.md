@@ -6,8 +6,6 @@ description: >-
 
 # Sign Up and Sign In
 
-**Step 2 of Getting Started.**
-
 This article explains how to create a CodeScan account and sign in to the web app, the CodeScan CLI and the VS Code extension.
 
 {% hint style="danger" %}

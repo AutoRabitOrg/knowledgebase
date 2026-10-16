@@ -1234,6 +1234,8 @@
     * [Security and Data Handling](product-guides/codescan-2.0/overview/security-and-data-handling.md)
     * [Supported Languages and File Types](product-guides/codescan-2.0/overview/supported-languages-and-file-types.md)
   * [Getting Started](product-guides/codescan-2.0/getting-started/README.md)
+    * [System Requirements](product-guides/codescan-2.0/getting-started/system-requirements.md)
+    * [Sign Up and Sign In](product-guides/codescan-2.0/getting-started/sign-up-and-sign-in.md)
     * [Users, Roles & Permissions](product-guides/codescan-2.0/getting-started/users-roles-and-permissions.md)
     * [Create and Manage API Keys](product-guides/codescan-2.0/getting-started/create-and-manage-api-keys.md)
   * [Registering a Repository](product-guides/codescan-2.0/registering-a-repository.md)

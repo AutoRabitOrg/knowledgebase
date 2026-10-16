@@ -1,6 +1,8 @@
-# test quality and coverage
+---
+description: Score how good your tests are, and see estimated and measured code coverage.
+---
 
-**Who this is for:** developers and team leads | **Uses AI credits:** test-quality review: yes. Coverage: no | **Availability:** <mark style="color:red;">**\[TO CONFIRM]**</mark>
+# Test Quality and Coverage
 
 Coverage percentages are easy to game. A test that calls a method and asserts nothing still counts as coverage. CodeScan gives you three separate views of your tests, so you can see both whether code is tested and whether the tests would catch a bug. CodeScan never runs your tests: it reads them.
 
@@ -67,11 +69,13 @@ A problem with a coverage report never fails the scan.
 
 ### The Coverage Tab
 
-The **Coverage** tab shows the headline percentage, covered and executable lines, the report formats, the matching scan, and a file tree. Estimated files are labelled, for example **Imported by tests**, **Called by tests** or **Unreached**. You can filter by language or show uncovered files only. <mark style="color:red;">**\[TO CONFIRM: where the Coverage tab is in the app]**</mark>
+The **Coverage** tab shows the headline percentage, covered and executable lines, the report formats, the matching scan, and a file tree. Estimated files are labelled, for example **Imported by tests**, **Called by tests** or **Unreached**. You can filter by language or show uncovered files only.&#x20;
+
+**`Analysis Findings`** ⇒ **`Project`** ⇒ **`Coverage`**
 
 ## Using the Three Views Together
 
-* Take the changed files from the [Blast Radius](/broken/pages/1833d2f77ea5457ab4b6f37f7fa173dc9ccaf498) tab and look them up on the Coverage tab. A changed file with no coverage is new behaviour with no test: the highest priority.
+* Take the changed files from the [Blast Radius](../findings/blast-radius-for-pull-requests.md) tab and look them up on the Coverage tab. A changed file with no coverage is new behaviour with no test: the highest priority.
 * A finding whose **Impact** says _No test reaches this code_ needs a test with the fix.
 * A file with good coverage but a low test-quality score has hollow coverage.
 

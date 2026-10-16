@@ -2,7 +2,7 @@
 description: What each part of a finding tells you, and how to treat each severity.
 ---
 
-# Understanding a Finding
+# Understanding Findings
 
 A finding is one problem the scan reported. This article explains what each part of a finding tells you and how to treat each severity.
 

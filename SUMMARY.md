@@ -1266,6 +1266,7 @@
   * [Supply Chain](product-guides/codescan-2.0/supply-chain/README.md)
     * [Software Bill of Materials](product-guides/codescan-2.0/supply-chain/software-bill-of-materials.md)
     * [Dependency and Container Analysis](product-guides/codescan-2.0/supply-chain/dependency-and-container-analysis.md)
+  * [Quality Gate](product-guides/codescan-2.0/quality-gate.md)
 * [AutoRABIT Vault](product-guides/vault/README.md)
   * [AutoRABIT Vault Freemium](product-guides/vault/autorabit-vault-freemium/README.md)
     * [User Registration](product-guides/vault/autorabit-vault-freemium/user-registration.md)

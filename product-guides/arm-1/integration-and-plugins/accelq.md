@@ -1,129 +1,263 @@
-# AccelQ
+# AccelQ Integration with AutoRABIT ARM.
 
-### AccelQ: Overview
+### Overview
 
-With every release, AutoRABIT is looking to improve its application quality, achieve in-sprint automation to align with continuous delivery.&#x20;
+AutoRABIT ARM integrates with **AccelQ**, a continuous test automation platform, to help teams automate functional testing as part of their Continuous Integration (CI) and deployment workflows.
 
-AccelQ's Quality Driven Development (QDD) implements an innovative Agile Quality Life Cycle approach, integrating the usual test silos into an end-to-end automated process. AccelQ is built on a cognitive core engine bringing the power of predictive analytics in scenario design, autonomics in test automation, and adaptive change management in traceability.
+With this integration, users can configure AccelQ test jobs in ARM and execute automated functional tests as part of their CI Job execution.
 
-### Integrating AccelQ as a Plugin into AutoRABIT
+#### What's New?
 
-To integrate AccelQ as a plugin with AutoRABIT, it does require some steps in AutoRABIT to get it configured. The below section will help you out to get AccelQ configured in AutoRABIT in easy steps.
+The AccelQ integration has been enhanced in the **ARM New UI** to support configuring and executing **up to 5 AccelQ test jobs within a single CI Job**.
 
-{% hint style="info" %}
-**Important Note:** AccelQ status polds only for 10 minutes.
-{% endhint %}
+Previously, users could configure only one AccelQ project and one test job per CI Job. To execute multiple test suites, they had to create separate CI Jobs, resulting in repeated configurations and deployments.
 
-#### Step 1: Store your user's AccelQ credential in AutoRABIT
+With this enhancement, users can:
 
-This is an initial step where the user's AccelQ credential such as username and password is stored in AutoRABIT.
+* Configure up to **5 AccelQ test jobs** within a single CI Job.
+* Select multiple test jobs from the same AccelQ project.
+* Configure test jobs from different AccelQ projects.
+* Use a combination of test jobs from the same or different projects.
+* Define individual run parameters for each test job.
+* Execute all configured test jobs following a single deployment.
+* View consolidated test results, including individual test job outcomes, from CI Job History.
 
-1. Log in to your AutoRABIT account.
-2. Go to the **Credentials** tab.
-3. Click on **Create Credential** button from the right navigation bar.
+**Important:** Multiple AccelQ test job configuration is available only in the **ARM New UI** and is supported for CI Jobs. Existing AccelQ configurations in Deployment workflows remain unchanged.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
-4. On the next pop-up screen, give a **credential name**.
-5. Choose the **Credential Type** as **"User name with Password."**
-6. Enter your username and **AccelQ API token** in the **Password** field.
-7. Please double-check that you use your AccelQ username instead of the email address that you use to log in to AccelQ.
-8. Click **Save**.
+### Prerequisites
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="416"><figcaption></figcaption></figure>
+Before configuring AccelQ in ARM, ensure that:
 
-#### Step 2: Integrate AccelQ with AutoRABIT
+1. You have an active AccelQ account with access to the required projects and test jobs.
+2. You have a valid AccelQ API token.
+3. You have the AccelQ Host URL and Tenant Code.
+4. You have the necessary permissions to manage credentials, configure plugins, and create or edit CI Jobs in ARM.
 
-1. Go to the **My Account** page.
-2. In the **Plugins** section, select **AccelQ** under **Test Types**.
+### Step 1: Create AccelQ Credentials in ARM
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+To integrate AccelQ with ARM, you must first register your AccelQ credentials.
 
-3.  Fill in the below details to integrate AccelQ:
+1. Log in to **AutoRABIT ARM**.
+2. Navigate to **Settings > Credentials**.
+3. Click **Create Credential**.
+4. Enter the following information:
 
-    * **URL:** Enter the AccelQ registered endpoint URL. For example, poc.accelq.io
-    * **Tenant Code:** Enter the Tenant code received from AccelQ. If you're not aware of this, you can retrieve your Tenant code from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ.
+| Field          | Description                                                          |
+| -------------- | -------------------------------------------------------------------- |
+| Name           | Enter a descriptive name for the AccelQ credential.                  |
+| Type           | Select **Username With Password**.                                   |
+| Scope          | Select **PRIVATE** or **GLOBAL**, depending on your requirements.    |
+| Username       | Enter your AccelQ username.                                          |
+| Email          | Optional field. Required for certain Bitbucket Cloud API operations. |
+| Token/Password | Enter your AccelQ API token.                                         |
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+5. Click **Save** to register the credential.
 
-    * **Select Credential:** Select the user's credential registered as mentioned in Step 1.
+**Note:** Use your AccelQ username rather than the email address used to log in to AccelQ, unless they are the same.
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4. Once you're done filling the AccelQ fields, click on **Save** to complete the integration process.&#x20;
+<figure><img src="../../../.gitbook/assets/531227AC-7D30-4041-9AA0-EAA25B3B2E8B_1_105_c.jpeg" alt="" width="360"><figcaption></figcaption></figure>
 
-### Adding AccelQ configuration in CI Job
+### Step 2: Configure AccelQ as a Plugin
 
-1. Go to the **New CI Job** screen.
+After creating the credential, configure AccelQ in ARM.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **Settings > My Account**.
+2. Locate the **Plugins** section.
+3. Under **Test Types**, select **AccelQ**.
+4. Click the **Edit (pencil)** icon next to AccelQ.
+5. In the **Configure: AccelQ** window, provide the following information:
 
-2.  Select any one of the below criteria for your CI job:
+| Field       | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| Host URL    | Enter your AccelQ instance URL. Example: `https://poc.accelq.io` |
+| Tenant Code | Enter the Tenant Code associated with your AccelQ account.       |
+| Credentials | Select the AccelQ credential created in Step 1.                  |
 
-    * Deploy from Salesforce Org
-    * Deploy from Version Control
-    * Deploy from Salesforce Org with a Version Control backup
-    * Deploy SFDX source from Version Control
-    * Run Test Automation Scripts
-    * Install an Unlocked Package from a Version Control Branch
+6. Save the AccelQ configuration and any pending changes on the My Account page.
 
-    <figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3. Give the job a descriptive name in the **CI Job Name** field.
-4. Go to the **Test** section. Here you will need to select _AccelQ_ to run the functional test cases to test the functionality of the code being deployed to production.
-5. Select **Fetch Test Cases From** as **AccelQ**.
+**Note:** The Tenant Code can be retrieved from the **AUTH PROPERTIES** section of your AccelQ user profile.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/668B08CC-CD0E-4F49-A13C-3D844BA5DA9C.png" alt=""><figcaption></figcaption></figure>
 
-6.  Enter your **Project Name** and the **Test Job Name.**
+<figure><img src="../../../.gitbook/assets/7FC7C403-2A7D-4EE1-BA89-0CB5947B7520.png" alt=""><figcaption></figcaption></figure>
 
-    * You can find your project name from the **"AUTH PROPERTIES"** section in the User's Profile card on AccelQ. Similarly, the test job name will be available in the Job section on AccelQ.
+***
 
-    <figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### Step 3: Configure Multiple AccelQ Test Jobs in a CI Job
 
-    <figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Once the AccelQ plugin is configured, you can add multiple AccelQ test jobs to a single CI Job.
 
-    <figure><img src="../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-7. Set the **parameter(s)** for your AccelQ test cases as shown below.
+#### Create or Edit a CI Job
 
-<figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+1. Navigate to **CI Jobs > CI Job List**.
+2. Create a new CI Job or edit an existing CI Job.
+3. Select the required CI Job type and configure the Build and Deployment settings, as applicable.
+4. Navigate to the **Tests** step in the CI Job configuration wizard.
+5. Under **Fetch test cases from**, select **AccelQ**.
 
-8. Click **Save**.
-9. So, once the configured CI Job is run and the build is triggered, AccelQ will review the code changes and functional review information can be found in the **CI Job Result** under the **Functional Tests** section. Here, you can find the status of the functional test done, along with other details, such as the number of components that successfully got reviewed, the number of components failed to review, and components that are about to get reviewed or are in the queue.
+<figure><img src="../../../.gitbook/assets/22AEB94D-5641-4260-AB3C-3A9FC09BB439.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+#### Add AccelQ Test Jobs
 
-10. To view the detailed success or failure report, click on the link available under Functional Tests.
+Once AccelQ is selected, the Tests section displays **Test Job 1**.
 
-    * **Success Report:**
+1. Under **Test Job 1**, select the required **Project name**.
+2. Select the corresponding **Test job name**.
+3. If required, expand **Run with parameters** and provide the parameter names and values.
+4. Click **+ Add Test Job** to configure an additional test job.
+5. For each additional test job, select the required project and test job.
+6. Repeat the process to configure up to **5 AccelQ test jobs**.
 
-    <figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3049).png" alt=""><figcaption></figcaption></figure>
 
-    * **Failure Report:**
+You can configure test jobs using any of the following combinations:
 
-    <figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-11. Click on **Error Details** for each test case being reviewed to view the error report.
+| Configuration                      | Example                                                                              |
+| ---------------------------------- | ------------------------------------------------------------------------------------ |
+| Single project, multiple test jobs | Project A – Test Job 1, 2, 3, 4, and 5                                               |
+| Multiple projects                  | Project A – Test Job 1, Project B – Test Job 2, Project C – Test Job 3               |
+| Mixed configuration                | Project A – Test Jobs 1 and 2, Project B – Test Jobs 3 and 4, Project C – Test Job 5 |
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="454"><figcaption></figcaption></figure>
+#### Configure Run Parameters
 
-### Adding AccelQ configuration in the 'Deployment Setting' screen
+Each AccelQ test job supports its own run parameters.
 
-1. In the **Deployment Setting** screen, while performing a new deployment, you need to select **AccelQ** to fetch the test cases.
+1. Expand **Run with parameters** under the required test job.
+2. Enter the **Parameter** name.
+3. Enter the corresponding **Value**.
+4. Use the **+** icon to add additional parameters.
+5. Use the delete icon to remove a parameter.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+Run parameters are maintained independently for each test job. Changing the project selection for one test job clears its associated parameters without affecting the other configured test jobs.
 
-2.  Enter your **Project Name** and the **Test Job Name**.
+#### Remove a Test Job
 
-    <figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="419"><figcaption></figcaption></figure>
+To remove a configured test job, click the **Delete** icon displayed on the corresponding test job card.
 
-    * You can find your project name from the **"Auth Properties"** section in the User's Profile card on AccelQ.
+#### Run Tests Even When Deployment Fails
 
-    <figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The Tests section also provides the **Run Tests even when the Deployment fails** checkbox.
 
-    * Similarly, the test job name will be available in the Job section on AccelQ.
+When enabled, ARM attempts to execute the configured AccelQ test jobs even if the deployment fails.
 
-    <figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3. Click **Save**.
-4. When the deployment is executed, you can find the AccelQ test cases report in the **Deployment History** screen. Click on the **Test Results** button for the detailed AccelQ report.
+This setting applies to all AccelQ test jobs configured within the CI Job.
 
-<figure><img src="../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+After completing the configuration, proceed through the remaining CI Job wizard steps and save the CI Job.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Important:** A maximum of 5 AccelQ test jobs can be configured within a single CI Job.
+
+***
+
+### Step 4: Execute the CI Job
+
+After saving the CI Job, you can trigger its execution manually or through the configured CI Job trigger.
+
+During execution:
+
+1. ARM performs the configured build and deployment operations.
+2. Following the deployment, ARM triggers the configured AccelQ test jobs.
+3. AccelQ executes the test jobs using its available agents.
+4. ARM collects the execution results for each configured test job.
+5. The Functional Tests stage is marked as completed only after all configured test jobs have finished.
+
+**Note:** All configured AccelQ test jobs are triggered as part of the same CI build after a single deployment. Actual execution may be parallel or sequential, depending on agent availability and configuration in AccelQ.
+
+***
+
+### Step 5: View AccelQ Test Results
+
+ARM provides consolidated AccelQ test results in CI Job History, allowing users to review the overall test execution status and individual test job results.
+
+#### Access the Results
+
+1. Navigate to **CI Jobs > CI Job History**.
+2. Select the required CI Job.
+3. Locate the build for which you want to review the results.
+4. Under the **Functional Tests** section, click the test results/details icon.
+5. The **AccelQ Test Results** panel opens with the consolidated results.
+
+<figure><img src="../../../.gitbook/assets/image (3050).png" alt=""><figcaption></figcaption></figure>
+
+#### Understanding the Consolidated Results
+
+The AccelQ Test Results panel displays:
+
+| Field             | Description                                                                                   |
+| ----------------- | --------------------------------------------------------------------------------------------- |
+| Overall Status    | Displays the consolidated test execution status, such as Passed or Failed.                    |
+| Test Jobs Passed  | Displays the number of successfully completed test jobs out of the total configured jobs.     |
+| Cases Passed      | Displays the total number of passed test cases out of the total executed/reported test cases. |
+| Project           | Displays the AccelQ project associated with each test job.                                    |
+| Test Job          | Displays the configured AccelQ test job name.                                                 |
+| Result            | Displays the individual test job execution status.                                            |
+| Cases             | Displays the passed and total test case counts for each test job.                             |
+| Test Cases – View | Opens the detailed test case results.                                                         |
+| AccelQ – View     | Opens the corresponding test job results in AccelQ.                                           |
+
+#### Example
+
+Consider a CI Job configured with two AccelQ test jobs:
+
+| Project                    | Test Job                      | Result | Cases |
+| -------------------------- | ----------------------------- | ------ | ----- |
+| AutoRabit PreSales Project | Login to application (448409) | Passed | 1/1   |
+| AutoRabit PreSales Project | Login to application (483174) | Passed | 1/1   |
+
+The consolidated results display:
+
+* **Overall Status:** Passed
+* **Test Jobs Passed:** 2 of 2
+* **Cases Passed:** 2 of 2
+
+Users can select **View** to examine individual test case results or open the corresponding test execution in AccelQ.
+
+#### Understanding Test Statuses
+
+The overall test status is determined by the results of all configured AccelQ test jobs.
+
+| Scenario                      | Overall Result                                       |
+| ----------------------------- | ---------------------------------------------------- |
+| All configured test jobs pass | Passed                                               |
+| One or more test jobs fail    | Failed                                               |
+| A test job is aborted         | Failed                                               |
+| A test job cannot be started  | Failed; the affected test job is reported as Not Run |
+
+**Important:** The overall AccelQ test status is marked as Passed only when every configured test job passes. A failure in any individual test job causes the consolidated test status to be marked as Failed.
+
+***
+
+### Step 6: View Detailed Results in AccelQ
+
+For additional information about an individual test execution:
+
+1. Open the **AccelQ Test Results** panel from CI Job History.
+2. Locate the required test job.
+3. Click **View** under the **AccelQ** column to open the corresponding test execution in AccelQ.
+4. Review the available execution details, including test case outcomes and failure information.
+
+Alternatively, click **Open in AccelQ** from the consolidated results panel to access AccelQ.
+
+***
+
+### Existing CI Jobs and Backward Compatibility
+
+The enhanced AccelQ integration maintains compatibility with existing CI Jobs.
+
+* Existing CI Jobs configured with a single AccelQ test job continue to execute without requiring any configuration changes.
+* When an existing CI Job is opened for editing in the New UI, its AccelQ configuration is displayed as **Test Job 1**.
+* Users can add additional AccelQ test jobs and save the updated configuration.
+* Existing CI Job History and functional test reporting continue to be supported.
+
+#### Classic UI Support
+
+<figure><img src="../../../.gitbook/assets/image (3052).png" alt=""><figcaption></figcaption></figure>
+
+**New AccelQ CI Job configurations are supported only in the ARM New UI.**
+
+The Classic UI does not support creating new AccelQ CI Job configurations. Users must switch to the New UI to configure AccelQ test jobs.
+
+Existing CI Jobs with AccelQ configurations remain available and continue to execute.
+
+This enhancement does not change the existing AccelQ configuration or behavior in Deployment workflows.

@@ -4,81 +4,209 @@
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 {% endhint %}
 
-### About Deployment Rollback <a href="#about-deployment-rollback" id="about-deployment-rollback"></a>
+### Overview
 
-ARM can take a snapshot of your orgs' metadata and copy or deploy it to another org. This will allow you to deploy/rollback changes in a few clicks. The ability to compare two different snapshots (from other orgs) and see the details of what changed can help you track down the cause of problems when they arise.
+AutoRABIT ARM has enhanced the Rollback functionality in the **New UI** to support multiple rollback operations from the same Deployment execution.
 
-### How can I roll back my deployment? <a href="#how-can-i-roll-back-my-deployment" id="how-can-i-roll-back-my-deployment"></a>
+Previously, users could initiate a rollback only once for a deployment. After the rollback was initiated, the Rollback option was no longer available, even if additional metadata remained in the original deployment package.
 
-Before rolling back your deployment, ensure the rollback feature is turned on for your deployment. This implies that the **`Take Backup`** checkbox is selected on the **`Deployment Settings`** screen when a deployment is run. The deployment cannot be rolled back if the checkbox is not enabled.
+With this enhancement, users can selectively roll back metadata from the complete deployment package or from individual revisions and perform additional rollbacks whenever required.
 
-<figure><img src="../../../../.gitbook/assets/image (1668).png" alt=""><figcaption><p>Deployment Settings</p></figcaption></figure>
+#### Key Enhancements
 
-Next,
+* **Multiple Rollbacks:** Perform multiple rollback operations against the same deployment execution.
+* **Revision-Based Selection:** Identify and select metadata associated with specific revisions.
+* **Flexible Rollback Options:** Select metadata using the All Metadata or Revision Based Changes tabs.
+* **Duplicate Selection Prevention:** Prevent the same metadata from being selected multiple times.
+* **Rollback Tracking:** Exclude successfully rolled-back metadata from subsequent rollback selections.
+* **Retry Failed Rollbacks:** Retry metadata components that were not successfully rolled back.
 
-1. Go to the **`Deployment History`** screen and choose the deployment label from the list for which you would like to trigger the rollback.
-2.  Click **`Rollback`**.<br>
+**Availability:** ARM New UI – Deployments.
 
-    <figure><img src="../../../../.gitbook/assets/image (1669).png" alt=""><figcaption><p>Rollback Screen</p></figcaption></figure>
-3. Find the metadata components that will be rolled back (under the **`Constructive Changes`** section).
+***
 
-<figure><img src="../../../../.gitbook/assets/image (60) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 1. Accessing Rollback from Deployment History
 
-{% hint style="info" %}
-**Note:** In previous releases, ARM didn't have the option to exclude the members while doing the rollback. However, in the recent release, you will now have the ability to exclude/deselect the metadata members from the **`Constructive Changes`** section.
-{% endhint %}
+To initiate a rollback:
 
-4. In the "**`Choose your Pre/Post-Destructive Changes`**" screen, you’ll see the list of metadata components present in your target org but not in your source org. Select the checkbox next to a component you want to delete, which is deleted when you deploy. The excluded components' details are logged and can be found in **Rollback Iteration Log**.
-5.  You can choose the destructive changes method to delete your components from your target org to sync up the orgs.
+1. Log in to AutoRABIT ARM.
+2. Navigate to **Deployment > Deployment History**.
+3. Locate the deployment execution you want to roll back.
+4. Click the **Rollback** option associated with the deployment.
+5. The Rollback screen opens, displaying the available metadata selection options.
 
-    * **`Post-Destructive Changes:`** The post-destructive changes feature will delete the unwanted fields or metadata components from your destination Salesforce org when the deployment is successful.
-    * **`Pre-Destructive Changes:`** Pre-destructive changes will delete unwanted fields or metadata components from your destination Salesforce org before the deployments begin.
+**Note:** The Rollback option remains available as long as eligible metadata from the original deployment has not been successfully rolled back.
 
-    <figure><img src="../../../../.gitbook/assets/image (61) (1) (1).png" alt=""><figcaption></figcaption></figure>
+***
 
-    <figure><img src="../../../../.gitbook/assets/image (62) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 2. Selecting Metadata for Rollback
 
-{% hint style="info" %}
-**Point to Remember:** You must add the version number before continuing with destructive changes for active flow metadata. See the [FlowDefinition guide](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_flowdefinition.htm) for more detail.
-{% endhint %}
+The Rollback screen provides two tabs:
 
-6. Select the **`Apex Test level`** to validate your deployment. For detailed information on each test level, refer to the article: [Run Apex Tests Before Deployment](apex-unit-tests.md).
+#### All Metadata
 
-<figure><img src="../../../../.gitbook/assets/image (63) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The **All Metadata** tab displays the complete metadata available from the prepared rollback package.
 
-7. Next, you will find two more deployment options to choose from:
-   * **Deploy purge on delete**: Salesforce uses a recycle bin metaphor for data that users delete. Instead of removing the data, Salesforce flags it as deleted and makes it visible through the recycle bin. ARM has a provision to identify the components that users want to delete and permanently delete them from their Salesforce environment instead of keeping the deleted components in recycle bin. Once purged, they cannot be recovered.
-   * **Ignore warnings:** This option will allow the rollback to continue even if warnings can cause the deployment to fail.
-8. Add information about the current rollback deployment process in the **`Deployment Notes`** box.
-9. Type **`Rollback`** in the field provided and click on **`Yes`**.
+It provides a consolidated view of the metadata available for rollback, regardless of the revision that contributed the changes.
 
-<figure><img src="../../../../.gitbook/assets/image (64) (1) (1).png" alt=""><figcaption></figcaption></figure>
+The existing rollback structure is retained, including:
 
-10. After successfully rolling back your changes, your deployment will be stored in the [Track Deployment History](monitor-deployments.md) section, tagged as a rollback. You can view the usual deployment report from here, download the package, and even re-deploy the rollback if you wish!<br>
+* API Supported metadata
+* Constructive changes
+* Destructive changes
+* API Unsupported metadata
+* Pre/Post destructive change options, where applicable
 
-### Selective Rollback
+**Steps:**
 
-Selective rollback allows you to revert only specific components from a deployment instead of rolling back the entire set of changes. This is especially useful when only a few components are causing issues and the rest of the deployment is stable.
+1. Open the Rollback screen from Deployment History.
+2. Select the **All Metadata** tab.
+3. Review the available metadata components.
+4. Select the components you want to roll back.
+5. Proceed with the rollback operation.
 
-In AutoRABIT, selective rollback can be performed using the following steps:
+This option is useful when you want to roll back selected metadata from the overall deployment package without reviewing individual revisions.
 
-1. Navigate to the deployment history.
-2. Choose the specific deployment you want to roll back. For example, a deployment was made with the following components:
+#### Revision Based Changes
 
-* **Apex Class:** A1V
-* **Apex Class:** AccountAnalyzer
-*   **Custom Object:** AA\_Parts\_\_c<br>
+The **Revision Based Changes** tab provides a revision-level view of metadata that contributed to the deployed package.
 
-    <figure><img src="../../../../.gitbook/assets/image (1670).png" alt=""><figcaption><p>Rollback Selection</p></figcaption></figure>
+Users can review individual revisions and select the metadata components associated with them.
 
-<figure><img src="../../../../.gitbook/assets/image (1665).png" alt=""><figcaption><p>Component Selection Screen</p></figcaption></figure>
+Each applicable revision displays information such as:
 
-3. Select only the components you want to revert (instead of choosing the entire deployment). Instead of rolling back all three components, only A1V was selected for rollback.
+| Field                | Description                                                              |
+| -------------------- | ------------------------------------------------------------------------ |
+| Revision Number      | Identifies the revision that contributed metadata changes.               |
+| Number of Components | Displays the number of metadata components associated with the revision. |
+| Metadata Type        | Displays the Salesforce metadata type.                                   |
+| Metadata Name        | Displays the metadata component name.                                    |
+| Constructive Changes | Identifies added or modified metadata.                                   |
+| Destructive Changes  | Identifies deleted metadata.                                             |
+| Pre/Post Options     | Displays applicable destructive change options.                          |
 
-<figure><img src="../../../../.gitbook/assets/image (1666).png" alt=""><figcaption><p>Selective Rollback Components</p></figcaption></figure>
+**Steps:**
 
-4. Confirm the rollback to apply changes.
-5. The selective rollback was successfully completed.
+1. Open the Rollback screen.
+2. Select **Revision Based Changes**.
+3. Review the revisions associated with the deployment.
+4. Select the required revision.
+5. Review the metadata components associated with that revision.
+6. Select the components you want to roll back.
+7. If required, select additional metadata from other revisions.
+8. Proceed with the rollback operation.
 
-<figure><img src="../../../../.gitbook/assets/image (1667).png" alt=""><figcaption><p>Successful Selective Rollback</p></figcaption></figure>
+**Note:** Users can select metadata from multiple revisions and include it in a single rollback operation.
+
+***
+
+### 3. Performing Multiple Rollbacks
+
+ARM allows users to perform multiple rollback operations against the same original deployment execution.
+
+After a partial rollback, the Rollback option remains available for metadata that has not yet been successfully rolled back.
+
+#### Example
+
+Consider a deployment containing 10 eligible metadata components.
+
+| Rollback Operation  | Components Rolled Back | Remaining Components |
+| ------------------- | ---------------------- | -------------------- |
+| Original Deployment | 0                      | 10                   |
+| First Rollback      | 4                      | 6                    |
+| Second Rollback     | 3                      | 3                    |
+| Third Rollback      | 3                      | 0                    |
+
+After the first rollback, the remaining six components continue to be available.
+
+Users can return to the same deployment execution and perform additional rollbacks as required.
+
+Once all eligible metadata has been successfully rolled back, the Rollback option becomes unavailable.
+
+#### Steps to Perform an Additional Rollback
+
+1. Navigate to **Deployment > Deployment History**.
+2. Locate the original deployment execution.
+3. Click **Rollback**.
+4. Select either **All Metadata** or **Revision Based Changes**.
+5. Review the remaining eligible metadata.
+6. Select the required components.
+7. Initiate the rollback.
+
+You can repeat this process until all eligible metadata has been successfully rolled back.
+
+***
+
+### 4. Duplicate Metadata Selection Handling
+
+The same metadata component may be included in multiple revisions or appear in both rollback selection tabs.
+
+ARM prevents duplicate metadata selection within the same rollback operation.
+
+#### Across Revisions
+
+For example:
+
+* Revision 1 contains `ApexClass: AccountService`.
+* Revision 2 also contains `ApexClass: AccountService`.
+
+If you select `AccountService` from Revision 1, the same metadata component under Revision 2 becomes disabled.
+
+If you deselect it from Revision 1, the component becomes available again under Revision 2.
+
+#### Between All Metadata and Revision Based Changes
+
+The same behavior applies across both tabs.
+
+* Metadata selected under All Metadata becomes disabled under Revision Based Changes.
+* Metadata selected under Revision Based Changes becomes disabled under All Metadata.
+* Deselecting a component makes it available again in the other tab, provided it has not already been successfully rolled back.
+
+This ensures that the same metadata component is not included multiple times in the rollback request.
+
+***
+
+### 5. Handling Failed Rollbacks
+
+ARM tracks rollback completion at the metadata component level.
+
+If a rollback fails, the affected metadata is not considered successfully rolled back and remains available for another attempt.
+
+For example, if five metadata components are selected for rollback and only three are successfully rolled back:
+
+* The three successfully rolled-back components are excluded from subsequent rollback selections.
+* The two failed components remain eligible for another attempt.
+* The Rollback option remains available.
+
+This allows users to retry failed metadata without affecting components that have already been successfully rolled back.
+
+***
+
+### 6. Rollback History
+
+Each rollback operation maintains its own execution details and remains associated with the original deployment execution.
+
+Rollback information includes:
+
+* Rollback status
+* Selected metadata components
+* Execution timestamp
+* Deployment logs
+* Salesforce deployment results
+
+This provides traceability for the rollback operations performed against a particular deployment.
+
+***
+
+### Important Considerations
+
+* Multiple rollbacks are supported for the same deployment execution.
+* The Rollback option remains available until all eligible metadata has been successfully rolled back.
+* Successfully rolled-back metadata cannot be selected again from the same original deployment.
+* Failed metadata remains eligible for another attempt.
+* Duplicate metadata selection is prevented across revisions and tabs.
+* Existing constructive and destructive change handling remains unchanged.
+* Existing Salesforce deployment validations and dependency handling continue to apply.
+* Revision-based rollback does not automatically resolve Salesforce metadata dependencies.
+* Salesforce data rollback is not supported by this enhancement.
 

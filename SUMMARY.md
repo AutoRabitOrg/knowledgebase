@@ -980,7 +980,7 @@
       * [Visual Studio Git Enterprise](product-guides/arm-1/arm-features/webhooks/configure-a-webhook-in-visual-studio-git-enterprise.md)
       * [Teams(WorkFlows)](product-guides/arm-1/arm-features/webhooks/teams-workflows.md)
   * [Integration and Plugins](product-guides/arm-1/integration-and-plugins/README.md)
-    * [AccelQ Integration with AutoRABIT ARM.](product-guides/arm-1/integration-and-plugins/accelq.md)
+    * [AccelQ](product-guides/arm-1/integration-and-plugins/accelq.md)
     * [Active Directory](product-guides/arm-1/integration-and-plugins/active-directory.md)
     * [Apex PMD](product-guides/arm-1/integration-and-plugins/apex-pmd.md)
     * [ARM for Salesforce](product-guides/arm-1/integration-and-plugins/arm-for-salesforce-data-cloud.md)

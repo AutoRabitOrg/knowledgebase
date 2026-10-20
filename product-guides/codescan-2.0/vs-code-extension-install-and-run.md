@@ -41,7 +41,7 @@ The command downloads the VSIX that instance serves and installs it with the `co
 * Omit `--url` when `~/.codescan/configuration` already points at that instance. The file stores the URL only. No secrets are written there.
 * For a VS Code fork, pass the binary name: `--binary cursor` or `--binary code-insiders`.
 
-`codescan install vscode --url https://fc-dev.autorabit.com --binary cursor`
+`codescan install vscode --url CUSTOM_URL --binary cursor`
 
 If the editor’s command is not on your `PATH`, or the install fails, the command keeps the downloaded `.vsix` and tells you where it is, so you can install it by hand.
 
@@ -162,7 +162,7 @@ Run **CodeScan: Sign In** again.
 
 **The endpoint is rejected, or the extension cannot reach the host**
 
-Set **AutoRABIT CodeScan: Endpoint** to `https://fc-dev.autorabit.com` with no path, and leave **Web App URL** empty unless the web app is on another host. For a dev certificate this machine does not trust, enable `autorabit.codescan.allowUnauthorizedCertificate` only if you trust that host.
+Set **AutoRABIT CodeScan: Endpoint** to `CUSTOM_URL` with no path, and leave **Web App URL** empty unless the web app is on another host. For a dev certificate this machine does not trust, enable `autorabit.codescan.allowUnauthorizedCertificate` only if you trust that host.
 
 #### **API Keys is not in the web app**
 

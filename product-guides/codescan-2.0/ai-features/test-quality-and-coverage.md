@@ -16,7 +16,7 @@ Coverage percentages are easy to game. A test that calls a method and asserts no
 
 ### Switching It On
 
-Turn on **`AI test quality review`** in [Project Settings](/broken/pages/9130a1cc74fd1ebef58d3563d5a1d2d908986c76), or pass `--check-tests` to `codescan review`. The scan then includes an **Analyzing tests** step.
+Turn on **`AI test quality review`** in Repositories, or pass `--check-tests` to `codescan review`. The scan then includes an **Analyzing tests** step.
 
 ### What You See
 

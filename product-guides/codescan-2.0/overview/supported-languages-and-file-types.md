@@ -25,5 +25,5 @@ CodeScan runs more than 5,100 built-in rules across 49 languages and file types.
 
 ### Related Articles
 
-* How a Scan Works
 * [What Is CodeScan](../)
+* [How a Scan Works](how-a-scan-works.md)

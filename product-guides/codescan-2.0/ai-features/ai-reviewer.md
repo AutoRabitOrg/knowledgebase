@@ -57,15 +57,3 @@ In the same pass, the reviewer writes suggested fixes. Every Blocker and Critica
 | HTML report         | An AI-FP badge                                           |
 
 After reading the reasons, you can accept the whole group with **`Accept all AI-filtered`**, so the decision is remembered for the repository.&#x20;
-
-### Keeping Cost Down
-
-* Only the severities you choose are sent for review.
-* Verdicts are cached. Re-scanning unchanged code costs nothing. The cache resets when your rules, the AI model or the review instructions change.
-* Related findings are reviewed together, file by file, to keep each AI call efficient.
-
-### Related Articles
-
-* AI Credits
-* Suggested Fixes and Patches
-* How a Scan Works

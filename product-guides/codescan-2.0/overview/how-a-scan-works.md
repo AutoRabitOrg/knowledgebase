@@ -47,7 +47,7 @@ Before any AI is involved, CodeScan reduces noise automatically, at no credit co
 * It lowers convention rules to Info when your project has never followed that convention.
 * It runs framework rules only when that framework is present.
 
-Security rules and Blocker or Critical findings are never lowered by this step. To review noisy rules yourself, see **Reduce Noise** <mark style="color:red;">**\[LINK WHEN PUBLISHED]**</mark>.
+Security rules and Blocker or Critical findings are never lowered by this step.&#x20;
 
 ### AI Review
 
@@ -68,9 +68,3 @@ AI finding review is switched on per project, and you choose which severities it
 {% hint style="info" %}
 **Note:** The deterministic scan uses no AI credits. AI verdicts are cached, so re-scanning code that has not changed costs nothing.
 {% endhint %}
-
-### Related Articles
-
-* What Is CodeScan
-* Security and Data Handling
-* Supported Languages and File Types

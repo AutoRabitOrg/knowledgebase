@@ -1718,6 +1718,8 @@
   * [Supply Chain](product-guides/codescan-2.0/supply-chain/README.md)
     * [Software Bill of Materials](product-guides/codescan-2.0/supply-chain/software-bill-of-materials.md)
     * [Dependency and Container Analysis](product-guides/codescan-2.0/supply-chain/dependency-and-container-analysis.md)
+  * [CodeScan CLI - Install and Run](product-guides/codescan-2.0/codescan-cli-install-and-run.md)
+  * [VS Code Extension - Install and Run](product-guides/codescan-2.0/vs-code-extension-install-and-run.md)
 
 ## Resources
 

@@ -18,7 +18,6 @@ AI features in CodeScan draw on a monthly allowance of AI credits. The determini
 | Custom rules and Generate from file          | When you create or generate rules                                                                                                                                                                                                                                                                           |
 | Policy as Intent                             | When rules are drafted from a policy                                                                                                                                                                                                                                                                        |
 | Review Noisy Rules                           | When you run the review                                                                                                                                                                                                                                                                                     |
-| PR fixes                                     | <mark style="color:red;">**\[TO CONFIRM: how PR fixes are billed. The review page shows "Billed: n fixed findings"]**</mark>                                                                                                                                                                                |
 
 Each feature is hidden when AI is switched off for your organisation.
 
@@ -37,17 +36,11 @@ To control this:
 * **Check Repositories from time to time** for projects created from VS Code, and review their AI settings.
 * **Use AI Credit Usage** to see VS Code scans per user. See Monitoring Usage.
 
-## Limits
-
-Credits have a monthly limit and a daily limit. <mark style="color:red;">**\[TO CONFIRM: the daily limit, and whether customers can see or change either limit]**</mark>
-
 ## Monitoring Usage
 
 * **In the header:** **AI Credits Usage** shows **This Month** as used against your limit. At 80% you see _You're running low on AI credits for this month_.
 * **AI Credit Usage page:** the month's total, usage by feature as a percentage of the monthly limit, and a **Usage History** table with date, user, feature, event and credits. You can view the current month or any of the previous 11.
 * **Development Dashboard:** AI scan credit usage per user.
-
-The AI Credit Usage page is available to <mark style="background-color:yellow;">**Tenant manager**</mark>, <mark style="background-color:yellow;">**ACA admin**</mark>, <mark style="background-color:yellow;">**Support engineer**</mark> and <mark style="background-color:yellow;">**Guard admin**</mark>.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2026-10-16 at 17.11.01.png" alt=""><figcaption></figcaption></figure>
 
@@ -65,10 +58,4 @@ The same applies when AI is switched off or the AI service is unavailable. Every
 
 ## Choosing the AI Model
 
-An administrator can choose which AI model is used for each AI feature, from the models available. By default, high-volume work such as finding review and fixes uses a fast model, and lower-volume reasoning such as rule extraction and noise analysis uses a stronger one. <mark style="color:red;">**\[TO CONFIRM: which roles can change the model, and where]**</mark>
-
-## Related Articles
-
-* [The AI Reviewer](/broken/pages/5957a7e3fd8cac359477cb24a29c02599ef0ab6b)
-* [Project Settings](/broken/pages/9130a1cc74fd1ebef58d3563d5a1d2d908986c76)
-* [Security and Data Handling](/broken/pages/cde90742926e0b5763adb2fc8c9a7ea1b3b07533)
+An administrator can choose which AI model is used for each AI feature, from the models available. By default, high-volume work such as finding review and fixes uses a fast model, and lower-volume reasoning such as rule extraction and noise analysis uses a stronger one.&#x20;

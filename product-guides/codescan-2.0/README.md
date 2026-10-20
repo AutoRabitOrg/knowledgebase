@@ -84,11 +84,10 @@ Suggested fixes reach your developers in two ways: as a patch they apply themsel
 
 ### Where You Use It
 
-| Where                                                 | What happens                                                                                                                                                                     |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Web app                                               | Scan any connected branch, review and accept findings, tune rules, view dashboards and export reports.                                                                           |
-| Pull requests                                         | A GitHub, GitLab or Bitbucket webhook starts a review with no pipeline needed. Results come back on the pull request as a commit status and, if switched on, AI review comments. |
-| CI/CD                                                 | The CodeScan CLI runs in your pipeline. The quality gate decides whether the scan passes. Reports are written in SARIF, JUnit, GitLab and HTML formats.                          |
-| Terminal                                              | The CodeScan CLI scans a whole repository, your uncommitted changes, or the committed work on your branch.                                                                       |
-| VS Code                                               | The **AutoRABIT CodeScan** extension shows findings on the lines they belong to and in the **Problems** panel, and applies suggested fixes.                                      |
-| <mark style="color:$warning;">AI coding agents</mark> | <mark style="color:$warning;">A skill teaches Claude Code to run a scan before a commit and before a pull request.</mark>                                                        |
+| Where         | What happens                                                                                                                                                                     |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Web app       | Scan any connected branch, review and accept findings, tune rules, view dashboards and export reports.                                                                           |
+| Pull requests | A GitHub, GitLab or Bitbucket webhook starts a review with no pipeline needed. Results come back on the pull request as a commit status and, if switched on, AI review comments. |
+| CI/CD         | The CodeScan CLI runs in your pipeline. The quality gate decides whether the scan passes. Reports are written in SARIF, JUnit, GitLab and HTML formats.                          |
+| Terminal      | The CodeScan CLI scans a whole repository, your uncommitted changes, or the committed work on your branch.                                                                       |
+| VS Code       | The **AutoRABIT CodeScan** extension shows findings on the lines they belong to and in the **Problems** panel, and applies suggested fixes.                                      |

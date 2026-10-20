@@ -36,6 +36,8 @@ To initiate a rollback:
 5. Click the **Rollback** option for the corresponding build.
 6. The Rollback screen opens, displaying the available metadata selection options.
 
+<figure><img src="../../../../.gitbook/assets/image (3058).png" alt=""><figcaption></figcaption></figure>
+
 **Note:** The Rollback option remains available as long as eligible metadata from the original CI Job execution has not been successfully rolled back.
 
 ### 2. Selecting Metadata for Rollback
@@ -45,6 +47,8 @@ The Rollback screen provides two tabs:
 #### All Metadata
 
 The **All Metadata** tab displays the complete metadata available from the prepared rollback package, regardless of the revision that contributed the changes.
+
+<figure><img src="../../../../.gitbook/assets/image (3059).png" alt=""><figcaption></figcaption></figure>
 
 This tab retains the existing rollback structure, including:
 
@@ -64,9 +68,11 @@ This tab retains the existing rollback structure, including:
 
 This option is useful when you want to roll back selected metadata from the overall CI Job deployment package without reviewing individual revisions.
 
-#### Revision Based Changes
+#### Revision Based Metadata selection
 
 The **Revision Based Changes** tab allows users to view and select metadata based on the revisions that contributed changes to the deployed package.
+
+<figure><img src="../../../../.gitbook/assets/image (3060).png" alt=""><figcaption></figcaption></figure>
 
 Each applicable revision displays information such as:
 
@@ -135,6 +141,8 @@ This process can be repeated until all eligible metadata has been successfully r
 The same metadata component may appear in multiple revisions or in both rollback selection tabs.
 
 ARM automatically prevents duplicate selection within the same rollback operation.
+
+<figure><img src="../../../../.gitbook/assets/image (3061).png" alt=""><figcaption></figcaption></figure>
 
 #### Across Revisions
 

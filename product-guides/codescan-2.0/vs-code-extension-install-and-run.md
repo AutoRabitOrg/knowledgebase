@@ -108,7 +108,7 @@ The whole workspace is uploaded even for a narrowed scan, so rules that look acr
 
 Progress is written to the extension log. **CodeScan: Show Output** opens it. If a scan outlives `autorabit.codescan.publishTimeoutSeconds` (default 900), the notification closes but the status bar keeps watching, and the findings load when it finishes.
 
-### Read the results <a href="#read-the-results" id="read-the-results"></a>
+## Read the results <a href="#read-the-results" id="read-the-results"></a>
 
 When the scan finishes:
 

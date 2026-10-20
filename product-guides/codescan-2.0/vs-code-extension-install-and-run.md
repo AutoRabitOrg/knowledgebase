@@ -160,7 +160,7 @@ The key is missing, wrong, expired, or revoked. Sign in again in the same enviro
 
 Run **CodeScan: Sign In** again.
 
-**The endpoint is rejected, or the extension cannot reach the host**
+#### **The endpoint is rejected, or the extension cannot reach the host**
 
 Set **AutoRABIT CodeScan: Endpoint** to `CUSTOM_URL` with no path, and leave **Web App URL** empty unless the web app is on another host. For a dev certificate this machine does not trust, enable `autorabit.codescan.allowUnauthorizedCertificate` only if you trust that host.
 

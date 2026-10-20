@@ -35,6 +35,8 @@ To initiate a rollback:
 4. Click the **Rollback** option associated with the deployment.
 5. The Rollback screen opens, displaying the available metadata selection options.
 
+<figure><img src="../../../../.gitbook/assets/image (3053).png" alt=""><figcaption></figcaption></figure>
+
 **Note:** The Rollback option remains available as long as eligible metadata from the original deployment has not been successfully rolled back.
 
 ***
@@ -48,6 +50,8 @@ The Rollback screen provides two tabs:
 The **All Metadata** tab displays the complete metadata available from the prepared rollback package.
 
 It provides a consolidated view of the metadata available for rollback, regardless of the revision that contributed the changes.
+
+<figure><img src="../../../../.gitbook/assets/image (3054).png" alt=""><figcaption></figcaption></figure>
 
 The existing rollback structure is retained, including:
 
@@ -68,6 +72,8 @@ The existing rollback structure is retained, including:
 This option is useful when you want to roll back selected metadata from the overall deployment package without reviewing individual revisions.
 
 #### Revision Based Changes
+
+<figure><img src="../../../../.gitbook/assets/image (3055).png" alt=""><figcaption></figcaption></figure>
 
 The **Revision Based Changes** tab provides a revision-level view of metadata that contributed to the deployed package.
 
@@ -143,6 +149,8 @@ The same metadata component may be included in multiple revisions or appear in b
 
 ARM prevents duplicate metadata selection within the same rollback operation.
 
+<figure><img src="../../../../.gitbook/assets/image (3056).png" alt=""><figcaption></figcaption></figure>
+
 #### Across Revisions
 
 For example:
@@ -185,6 +193,8 @@ This allows users to retry failed metadata without affecting components that hav
 ### 6. Rollback History
 
 Each rollback operation maintains its own execution details and remains associated with the original deployment execution.
+
+<figure><img src="../../../../.gitbook/assets/image (3057).png" alt="" width="281"><figcaption></figcaption></figure>
 
 Rollback information includes:
 

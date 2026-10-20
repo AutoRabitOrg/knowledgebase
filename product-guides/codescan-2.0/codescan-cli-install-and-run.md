@@ -208,10 +208,6 @@ The whole workspace is still uploaded, so rules that look across files keep thei
 | `0`  | The scan finished, with or without findings, and even when the quality gate blocked it. Also: nothing was in scope to scan.                                                     |
 | `1`  | The command failed before a completed scan: authentication, the host was unreachable, the base branch was not found, the upload was too large, or the scan failed or timed out. |
 
-`codescan review` exits 0 even when the scan is blocked. The gate is enforced by CodeScan. To fail a pipeline, read `violationsWereFound` from the JSON:
-
-`mkdir -p .codescan codescan review --pr --json > .codescan/result.json node -e 'process.exit(JSON.parse(require("fs").readFileSync(".codescan/result.json","utf8")).violationsWereFound ? 1 : 0)'`
-
 ## Update and uninstall <a href="#update-and-uninstall" id="update-and-uninstall"></a>
 
 `codescan update`

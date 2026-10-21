@@ -17,6 +17,7 @@
   * [CodeScan FAQs](fundamentals/faq/codescan-faqs.md)
   * [AutoRABIT Vault FAQs](fundamentals/faq/vault-faqs.md)
   * [Automatic Cleanup of Deactivated Picklist Values](fundamentals/faq/automatic-cleanup-of-deactivated-picklist-values.md)
+  * [Azure DevOps Global PAT Retirement FAQs](fundamentals/faq/azure-devops-global-pat-retirement-faqs.md)
 * [Announcements](fundamentals/announcements/README.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT Guard Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-migrating-to-authhub.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT CodeScan Salesforce Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-codescan-salesforce-connections.md)

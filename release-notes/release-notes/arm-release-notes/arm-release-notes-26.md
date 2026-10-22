@@ -126,6 +126,22 @@ Resolved an issue in the New UI where the Audit Log CSV download icon was missin
 
 ARM now displays the download icon and allows users to export audit logs in CSV format, following the same file naming convention and including the relevant audit data as the Old UI.
 
+***
+
+## DataLoader + DataLoader Pro Release Notes **26.4.4**
+
+**Release Date:** **25 October 2026**
+
+#### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
+
+Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across Data Loader, Data Loader Pro, nCino datasets, deployments, and CI Jobs.
+
+#### Improved Data Loader Reliability and Data Protection <a href="#id-3.-improved-data-loader-reliability-and-data-protection" id="id-3.-improved-data-loader-reliability-and-data-protection"></a>
+
+Resolved multiple issues affecting Data Loader extraction, migration, masking, and configuration synchronization. The improvements ensure configured fields are masked correctly, mappings are applied consistently, Salesforce automation is restored after failures, and Bulk API extractions use appropriate polling, timeouts, progress logging, and PK chunking. Lookup and processing failures now provide clearer diagnostic information instead of being silently ignored.
+
+***
+
 ## ARM **Release Notes 26.4.3**
 
 **Release Date: 18 October 2026**

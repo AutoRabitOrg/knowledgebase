@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.4.4 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
+## nCino - Release 26.4.4 <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
 
 **Release Date:** **25 October 2026**
 
@@ -17,6 +17,8 @@ Resolved an issue where creating a new version of an existing nCino feature coul
 #### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
 
 Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across nCino datasets, deployments, and CI Jobs.
+
+***
 
 ## nCino - Release 26.4.3 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
 

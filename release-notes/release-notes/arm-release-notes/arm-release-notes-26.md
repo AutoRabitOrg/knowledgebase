@@ -8,7 +8,7 @@
 
 **Release Date: 25 October 2026**
 
-### External Approval Workflow Integration with ServiceNow
+#### External Approval Workflow Integration with ServiceNow
 
 Introduced an External Approval Workflow using ServiceNow, enabling customers to manage deployment approvals through ServiceNow Change Requests for CI Jobs and Deployments.
 
@@ -18,7 +18,7 @@ Once approved, ARM resumes the deployment without rebuilding the package and upd
 
 This enhancement improves deployment governance, approval tracking, and auditability through integration with ServiceNow.
 
-### Salesforce API 68.0 – Additional Metadata Type Support (Phase 3)
+#### Salesforce API 68.0 – Additional Metadata Type Support (Phase 3)
 
 Expanded ARM compatibility with Salesforce API 68.0 by adding support for 16 additional metadata types, including 11 non-settings types and 5 settings types.
 
@@ -26,27 +26,27 @@ This enhancement enables users to retrieve, commit, compare, deploy, merge, and 
 
 Supported Non-Settings Metadata Types (11)
 
-1. DebugLevel
-2. HealthInsDataSyncDefn
-3. LightningOutApp
-4. PlanningDimensionDef
-5. RecLifecyclCompanCpblDef
-6. RecLifecyclCompanDef
-7. ScndTelephPrvdOtbdDtl
-8. SecondaryTelephonyProvider
-9. SecurityCustomBaseline
-10. TelephonyProvider
-11. TrustedTelephonyProvider
+* DebugLevel
+* HealthInsDataSyncDefn
+* LightningOutApp
+* PlanningDimensionDef
+* RecLifecyclCompanCpblDef
+* RecLifecyclCompanDef
+* ScndTelephPrvdOtbdDtl
+* SecondaryTelephonyProvider
+* SecurityCustomBaseline
+* TelephonyProvider
+* TrustedTelephonyProvider
 
 Supported Settings Metadata Types (5)
 
-1. CustomPreferencePageSettings
-2. DigitalWalletSettings
-3. GenerativeCampaignsSettings
-4. ServiceHeliosSettings
-5. ServiceItamSettings
+* CustomPreferencePageSettings
+* DigitalWalletSettings
+* GenerativeCampaignsSettings
+* ServiceHeliosSettings
+* ServiceItamSettings
 
-### Controlled Credential Management for Standard Admins
+#### Controlled Credential Management for Standard Admins
 
 Introduced a new Manage Credentials permission, allowing Super Admins to grant selected Standard Admins controlled access to credentials owned by other users.
 
@@ -56,7 +56,7 @@ ARM also provides dependency warnings before credential deletion and captures cr
 
 Note: This permission is disabled by default and can only be managed by the Super Admin. It is not available to Custom Admins or regular users.
 
-### API Support for Release Label Creation and Updates
+#### API Support for Release Label Creation and Updates
 
 Introduced new REST API capabilities to create and update Release Labels with multiple revisions, eliminating the need to manually select individual revisions through the ARM UI.
 
@@ -66,39 +66,39 @@ The Update API supports bulk revision management through ADD, REMOVE, and REPLAC
 
 These APIs follow existing ARM authentication, authorization, and validation rules, enabling streamlined Release Label management through automated CI/CD workflows.
 
-### Fixed Mandatory Package Directory Field During Release Label Creation (New UI)
+#### Fixed Mandatory Package Directory Field During Release Label Creation (New UI)
 
 Resolved an issue in the New UI where the Package Directory field was incorrectly marked as mandatory when creating a Release Label, preventing users from saving without selecting a directory.
 
 The Package Directory field is now optional, consistent with the Old UI, allowing users to create Release Labels without specifying a package directory.
 
-### Fixed Pull Request Creation After Successful SCA Refresh in EZ-Merge
+#### Fixed Pull Request Creation After Successful SCA Refresh in EZ-Merge
 
-Resolved an issue where EZ-Merge failed to create a Pull Request after a previously failed Static Code Analysis (SCA) check passed upon refresh.
+Resolved an issue where EZ-Merge failed to create a Pull Request after a previously failed Static Code Analysis (SCA)check passed upon refresh.
 
 ARM now automatically initiates Pull Request creation when the refreshed SCA quality gate passes and the Create a Pull Request on Merged Changes option is enabled.
 
 Additionally, improved error handling ensures that Pull Request creation failures are correctly reflected in the EZ-Merge status and execution logs, preventing merges from remaining stuck in progress.
 
-### Fixed Search Functionality in My Version Control Mappings (Classic UI)
+#### Fixed Search Functionality in My Version Control Mappings (Classic UI)
 
-Resolved an issue in the Old UI where searching for an existing repository under Profile > My Version Control Mappings incorrectly displayed "No version control mappings found."
+Resolved an issue in the Old UI where searching for an existing repository under Profile > My Version Control Mappingsincorrectly displayed "No version control mappings found."
 
 ARM now supports case-insensitive searches by repository name, branch name, repository URL, and credential name, ensuring matching Version Control mappings are displayed correctly with proper pagination.
 
-### Fixed Missing Package Directory Filter in Release Labels (New UI)
+#### Fixed Missing Package Directory Filter in Release Labels (New UI)
 
 Resolved an issue in the New UI where the Package Directory filter was missing under Version Control > Manage Labels > Release Labels for DX repositories.
 
 ARM now displays the Package Directory filter when a branch is selected for a DX repository, allowing users to filter Release Labels by package directory, consistent with the Old UI.
 
-### Fixed Custom Label Deployment Inconsistencies in Pull Request-Based CI Jobs
+#### Fixed Custom Label Deployment Inconsistencies in Pull Request-Based CI Jobs
 
-Resolved an issue where Custom Labels and other metadata components displayed inconsistently between File Changes and Metadata Changes in Pull Request-based CI Jobs, resulting in incorrect component selection during deployment validation.
+Resolved an issue where Custom Labels and other metadata components displayed inconsistently between File Changesand Metadata Changes in Pull Request-based CI Jobs, resulting in incorrect component selection during deployment validation.
 
 ARM now correctly identifies metadata changes based on Pull Request differences, ensuring consistent component selection and accurate deployment packages, including destructive changes, for Git-based CI Jobs.
 
-### Fixed Quick Deploy Execution Through ARM APIs
+#### Fixed Quick Deploy Execution Through ARM APIs
 
 Resolved an issue where Quick Deploy operations triggered through ARM APIs and webhooks failed due to incorrect processing of CI Job names and build numbers.
 
@@ -106,13 +106,13 @@ ARM now correctly processes Quick Deploy requests using the specified CI Job and
 
 Additionally, improved API error handling ensures that failed Quick Deploy requests return appropriate failure responses instead of incorrectly indicating success.
 
-### Fixed Pagination Options for Metadata Selection in EZ-Commit (Classic UI)
+#### Fixed Pagination Options for Metadata Selection in EZ-Commit (Classic UI)
 
 Resolved an issue in the Old UI where pagination and page-size options were missing when manually selecting metadata components, such as CustomFields and Profiles, in EZ-Commit.
 
 ARM now displays the pagination and page-size controls, allowing users to view and select more metadata components per page, improving bulk metadata selection.
 
-### Fixed Duplicate CI Job Builds When Reopening GitLab Pull Requests
+#### Fixed Duplicate CI Job Builds When Reopening GitLab Pull Requests
 
 Resolved an issue where reopening an existing GitLab Merge Request (Pull Request) triggered multiple duplicate CI Job validation builds instead of a single execution.
 
@@ -120,7 +120,7 @@ ARM now correctly processes GitLab webhook events, ensuring that reopening a Mer
 
 This fix prevents unnecessary duplicate executions and improves the reliability of Pull Request-based CI Jobs.
 
-### Fixed Missing Audit Log CSV Download in Deployment History (New UI)
+#### Fixed Missing Audit Log CSV Download in Deployment History (New UI)
 
 Resolved an issue in the New UI where the Audit Log CSV download icon was missing under Deployment History > Audit Log, preventing users from downloading audit logs.
 

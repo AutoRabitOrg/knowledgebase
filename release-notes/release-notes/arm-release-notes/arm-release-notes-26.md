@@ -134,7 +134,7 @@ ARM now displays the download icon and allows users to export audit logs in CSV 
 
 #### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
 
-Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across Data Loader, Data Loader Pro, nCino datasets, deployments, and CI Jobs.
+Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across DataLoader and DataLoader Pro.
 
 #### Improved Data Loader Reliability and Data Protection <a href="#id-3.-improved-data-loader-reliability-and-data-protection" id="id-3.-improved-data-loader-reliability-and-data-protection"></a>
 

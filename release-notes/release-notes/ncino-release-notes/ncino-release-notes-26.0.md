@@ -14,6 +14,10 @@ Resolved an issue where an nCino CI Job rollback failed when only a post-deploym
 
 Resolved an issue where creating a new version of an existing nCino feature could fail with a **No object found** error despite using the previous version’s object configuration. Feature Management now recognizes the configured objects correctly and provides reliable access to version datasets.
 
+#### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
+
+Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across nCino datasets, deployments, and CI Jobs.
+
 ## nCino - Release 26.4.3 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
 
 **Release Date:** **18 October 2026**

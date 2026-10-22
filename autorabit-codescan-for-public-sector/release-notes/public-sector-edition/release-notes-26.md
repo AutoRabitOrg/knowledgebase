@@ -1,5 +1,401 @@
 # Release Notes 26
 
+## AutoRABIT CodeScan PubSec 26.0.21 Release Notes
+
+**Release Date: October 2026**
+
+### Summary
+
+AutoRABIT CodeScan PubSec 26.0.21 is comprised of the following components:
+
+* 3 New Features
+* 6 Application Enhancements
+* 1 New Rule
+* 5 Rule Enhancements
+* 0 Rule Deprecations
+* 7 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+{% hint style="info" %}
+All AI-powered features in AutoRABIT CodeScan are optional and disabled by default. They require explicit enablement and a separate AI license. Organizations that do not activate these features will experience no change to their existing CodeScan functionality.
+{% endhint %}
+
+### New Features
+
+#### **1. AI Code Assistant**
+
+Introducing the AI Code Assistant: an AI-powered code remediation capability built directly into CodeScan. The AI Code Assistant can generate fixes for common Apex rule violations, present changes in a side-by-side diff view for your review, and deliver approved fixes through automatically created Pull Request.
+
+{% hint style="info" %}
+The AI Code Assistant is currently available as a Pilot feature. To learn more about this feature or request access, please contact your AutoRABIT Customer Success representative.
+{% endhint %}
+
+#### **2. AI Credits, Usage Monitoring & Billing**
+
+Added AI credit management capabilities to support AI feature consumption tracking and governance.
+
+Key highlights:
+
+* AI credits integrated with subscription billing for accurate consumption tracking.
+* Real-time AI usage indicator in the top navigation bar with color-coded thresholds (Healthy, Low, Critical) and hover tooltip showing exact credit counts.
+* New AI Billing administration page (Administration → AI Billing) with a summary bar and searchable per-user consumption table with color-coded progress bars.
+* Organization-level daily execution limits with clear notifications when limits are reached.
+* Bulk assignment governance — maximum 10 issues per bulk action.
+
+{% hint style="info" %}
+The AI Billing page is visible only to organizations with licensed AI features.
+{% endhint %}
+
+#### **3. MCP Server**
+
+Introducing our MCP Server: a hosted endpoint that brings AutoRABIT CodeScan analysis data directly into the AI coding assistants developers already use, such as GitHub Copilot, Cursor, and Claude Desktop.
+
+Once connected, you can stay in your editor and query CodeScan conversationally:
+
+* Check which projects are passing or failing their quality gate.
+* Drill into issues, security hotspots, rules, and measures without opening the web UI.
+* Look up organizations, projects, branches, pull requests, and analysis job details as you code.
+* Pull CodeScan data into your own reporting or review workflow on demand.
+
+{% hint style="info" %}
+MCP Server is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
+{% endhint %}
+
+### Application Enhancements
+
+#### **1. Added "salesforce-project-only" Tags for Salesforce Query Rules**
+
+Several CodeScan rules perform queries directly against Salesforce to execute their analysis. These rules require an active Salesforce project connection and cannot be used in a standard static analysis context. The tag `salesforce-project-only` has been added to each of these rules to improve discoverability and filterability.
+
+The following 13 rules are now tagged:
+
+* `sfmeta:NcinoDuplicateLabels`
+* `sfmeta:NcinoComponentNamingDuplicate`
+* `sfmeta:NcinoIntUserConfig`
+* `sfmeta:NcinoDeprecatedFields`
+* `sfmeta:NcinoDuplicateLookupKeys`
+* `sfmeta:NcinoFeeTemplateScreenSection`
+* `sfmeta:NcinoNullLookupKeys`
+* `sfmeta:NcinoProductFeatureNotExist`
+* `sfmeta:NcinoProductFeatureSharing`
+* `sfmeta:NcinoNullCollateral`
+* `sfmeta:ExcessivePageLayout`
+* `sfmeta:CheckSystemAdministrator`
+* `sfmeta:CustomProfilesPermission`
+
+Outcome
+
+* Users can quickly filter Salesforce-project-only rules in or out of their rule sets.
+* Reduces noise for users working in non-Salesforce-connected environments.
+* Makes it clearer to new users why certain rules may not be producing findings.
+
+#### **2. Added Support for Salesforce Refresh Token Rotation (RTR)**
+
+Enhanced the Salesforce integration to support Refresh Token Rotation (RTR) for OAuth authentication.
+
+Salesforce now enables Refresh Token Rotation by default for newly created External Client Applications (ECAs). With RTR enabled, refresh tokens are rotated after use instead of remaining static. This enhancement updates Salesforce integration to correctly manage rotating refresh tokens, ensuring uninterrupted authentication for new and existing Salesforce connections.
+
+Behavior
+
+* Supports refresh token rotation for OAuth-based Salesforce connections.
+* Automatically manages refresh token updates during token renewal.
+* Maintains connection health across successive token refresh cycles.
+* Supports both RTR-enabled and non-RTR Salesforce External Client Applications.
+* Continues to use existing authentication flows for previously configured Salesforce connections.
+
+Compatibility
+
+* Salesforce Production and Sandbox organizations.
+* Newly created External Client Applications with RTR enabled.
+* Existing External Client Applications with RTR disabled.
+* Supported across all Salesforce analysis workflows: main branch, comparison branch, and scheduled analyses.
+
+Outcome
+
+* Ensures compatibility with Salesforce's latest OAuth security model.
+* Prevents unnecessary reauthorization for long-lived Salesforce connections.
+* Improves the reliability of Salesforce project analysis across repeated authentication cycles.
+
+#### **3. AI Code Assistant Prompt Quality Improvement**
+
+Improved AI CodeFix prompts to prevent the LLM from injecting prose, reasoning, or explanatory text into the generated code output. The worker expects only the fixed code from the AI model, but in some cases the model would include its reasoning alongside the code, which could get merged into the fixed file as if it were source code.
+
+Behavior
+
+* Prompts have been tightened to instruct the model to return code-only output without explanatory text.
+* Reduces cases where AI-generated fixes contain non-code content that could break compilation.
+
+Outcome
+
+* Improves the reliability of AI-generated code fixes.
+* Reduces manual cleanup of AI output before Pull Request creation.
+
+#### **4. Rule Version Rollback Support**
+
+Added a new `usePreviousVersion` boolean parameter to rules, allowing customers to continue using the previous version of a rule when a rule enhancement is released, while new customers and customers who do not opt in automatically receive the latest rule behavior.
+
+Behavior
+
+* A new rule parameter `usePreviousVersion` (default: `false`) is available on enhanced rules.
+* When `usePreviousVersion = false`, the rule executes the current/latest version.
+* When `usePreviousVersion = true`, the rule executes the previous version.
+* Only two versions of a rule are maintained at any time: Current and Previous.
+* When a rule receives a new enhancement: The new implementation becomes the Current Version. The existing Current Version becomes the Previous Version. `usePreviousVersion` is automatically reset to `false` for all customers, so everyone receives the new Current Version by default. Customers who wish to use the Previous Version must explicitly set `usePreviousVersion = true`.
+
+Example
+
+* Release 1: V2 = Current, V1 = Previous. Customer sets `usePreviousVersion = true` → gets V1.
+* Release 2: V3 = Current, V2 = Previous. Parameter is reset to `false` → customer gets V3. Customer can opt into V2 by setting `usePreviousVersion = true`.
+
+Outcome
+
+* Provides customers with a controlled migration path when rule behavior changes.
+* Ensures new enhancements are adopted by default while preserving an opt-out mechanism.
+* Reduces disruption when rule logic evolves across releases.
+
+#### **5. AI Credit Usage Tracking for Accurate Billing**
+
+Enhanced AI credit tracking to persist the exact credit cost at the time of each AI feature execution, ensuring accurate historical billing even when credit pricing changes.
+
+Behavior
+
+* A new `credits_used` column is added to the `ai_call_log` table, recording the number of credits consumed for each AI invocation at execution time.
+* Credit values are captured at execution time and are not derived dynamically from the current admin configuration.
+* Changes to feature credit costs in Admin Settings apply only to future executions; existing records remain unchanged.
+* The AI Billing page now calculates total and per-user credit consumption using the persisted `credits_used` values rather than current feature pricing.
+
+Outcome
+
+* Ensures billing accuracy when AI feature credit costs are adjusted over time.
+* Preserves historical billing integrity for audit and reconciliation.
+* Provides transparent, per-invocation credit tracking.
+
+#### **6. Salesforce Metadata File-Suffix Coverage**
+
+Expanded the SFMeta language registration to include previously missing Salesforce metadata file types that existing rules already parse, closing coverage gaps between file discovery and rule execution.
+
+Behavior
+
+* Added missing suffixes for Custom Metadata Types, PermissionSetGroup, Layout, and CustomLabels to the SFMeta language registration. Previously, only 10 file suffixes were registered (`.settings`, `.object`, `.profile`, `.flow`, `.workflow`, `.permissionset`, `.profileSessionSetting`, `.sharingRules`, `.profilePasswordPolicy`, `.network`), even though individual rules (e.g., `PageLayoutNamingRule`, `RequireDescriptionComponentRule`) already parse these file types' XML content.
+* Documented the LWC-via-ESLint pipeline (`@lwc/eslint-plugin-lwc`, `eslint-plugin-sfdx`, `@salesforce/core`) as an intentional secondary pipeline and confirmed its dependency versions are included in the version-unification cadence.
+
+Outcome
+
+* Ensures consistent file discovery for all Salesforce metadata types that rules already support.
+* Eliminates scenarios where rules could silently miss files due to unregistered suffixes.
+
+### New Rules
+
+#### **1. Communities With Guest Access**
+
+Rule Key: `sfmeta:CommunityGuestUserAccess`
+
+Added a new Salesforce Metadata rule to identify Salesforce Experience Cloud communities that allow guest user access and where the associated Guest User Profile has elevated permissions, potentially exposing sensitive data to unauthenticated users.
+
+Rule Details
+
+* Type: Vulnerability
+* Default Severity: Critical
+* Remediation effort: 15 minutes
+* Tags: salesforce, security
+* CWE: 732
+
+Conditions Flagged
+
+A. Object-Level Permissions — Flags if `allowRead = true` on standard objects (Account, Contact, Lead, User) or any custom object (`__c`), or if `allowCreate`, `allowEdit`, or `allowDelete` is true.
+
+B. Field-Level Access (PII Exposure) — Flags if `readable = true` for sensitive fields matching patterns such as `*Email*`, `*Phone*`, `*SSN*`, `*Password*`.
+
+C. Apex Class Access — Flags if Apex class access is enabled for the guest profile, especially for classes exposing `@AuraEnabled` or REST endpoints.
+
+Message: Guest user profile has elevated permissions in a community, which may expose sensitive data or allow unauthorized actions.
+
+{% hint style="info" %}
+This is a project-level rule. To get the rule triggered correctly, add "Network" in `codescan.cloud.packageTypes` and "network" & "profile" in `sonar.sfmeta.file.suffixes` in project settings.
+{% endhint %}
+
+Outcome
+
+* Detects real-world data exposure risks from misconfigured guest access.
+* Prevents unauthenticated access to sensitive objects and fields.
+* Ensures secure configuration of Experience Cloud communities.
+* Reduces risk of public data leaks and compliance violations.
+
+### Rule Enhancements
+
+#### **1. Enhanced `sf:UnusedFormalParameter` — SOQL Bind Variable Detection**
+
+Enhanced the `sf:UnusedFormalParameter` rule to ensure it does not raise a violation when a method parameter is referenced as a SOQL bind variable within a string passed to dynamic SOQL execution.
+
+Behavior
+
+* The rule now recognizes bind variable usage for operators such as `=`, `!=`, `>`, `<`, `>=`, `<=`, and `IN`.
+* Existing support for `IN :variable` patterns remains unchanged.
+* A violation is still reported when a method parameter is genuinely unused.
+* Covers dynamic query patterns including `fflib_QueryFactory` and `Database.query()`.
+
+Outcome
+
+* Eliminates false positives for parameters consumed as SOQL/SOSL bind variables in dynamic query patterns.
+* Provides more accurate unused-parameter detection for real-world Apex code.
+
+#### **2. Improved SOQL in Loops Rule Accuracy**
+
+Resolved an issue where the `sf:AvoidSoqlInLoops` rule could incorrectly report violations for certain method invocation patterns, resulting in false positives.
+
+Previously, the rule could identify SOQL or DML operations as being executed within a loop based solely on nested method call analysis, even when the queried method was not actually invoked from a looping execution path.
+
+Behavior
+
+* Reduced false positives for SOQL and DML operations that are not executed within loop constructs.
+* Improved evaluation of nested method invocation chains.
+* Improved validation to ensure nested-call violations are reported only when a genuine loop execution path exists.
+
+Outcome
+
+* Reduces false positives reported by the Avoid SOQL in Loops rule.
+* Improves accuracy of data flow and nested-call analysis.
+* Provides developers with more reliable and actionable rule findings.
+
+#### **3. Enhanced FLS Query Detection for Dynamic and Static Patterns**
+
+Enhanced the FLS (Field-Level Security) query detection rules to resolve dynamic and static SOQL query strings passed to `Database.getQueryLocator()`, improving detection of missing security enforcement clauses.
+
+Resolution Algorithm — Query String
+
+When the rule encounters `Database.getQueryLocator(q)`, it now:
+
+1. Finds the last assignment of the query variable before the call site.
+2. Inspects the right-hand side right-to-left (most recently appended fragment first) and evaluates each fragment:
+   * String literal containing `WITH USER_MODE` or `WITH SECURITY_ENFORCED` → no violation.
+   * String literal containing `WITH SYSTEM_MODE` → violation.
+   * Variable reference → recursively traces to its assignment.
+   * Method call → inspects the method's return statement(s) for the clause.
+   * Method parameter → traces all callers of the enclosing method and resolves the argument at each call site.
+3. If a fragment contains `FROM` or `WHERE` and no clause has been found → emits a violation.
+4. If recursion depth exceeds 5 without resolving → assumes no violation (conservative behavior to prevent infinite recursion).
+
+Resolution Algorithm — AccessLevel Parameter
+
+For the two-argument form `Database.getQueryLocator(q, mode)`:
+
+| Pattern                                    | Outcome                                            |
+| ------------------------------------------ | -------------------------------------------------- |
+| `AccessLevel.USER_MODE` (direct literal)   | Compliant                                          |
+| `AccessLevel.SYSTEM_MODE` (direct literal) | Violation                                          |
+| Local variable                             | Traces to its last assignment before the call site |
+| Method parameter                           | Finds all callers and resolves the argument        |
+| Method call (e.g. `getMode()`)             | Inspects the method's return statement(s)          |
+| Chain > 5 hops                             | No Violation (depth limit)                         |
+
+Outcome
+
+* Significantly improves detection accuracy for dynamically constructed SOQL queries.
+* Catches hidden `SYSTEM_MODE` usage across variable assignments, method returns, and call chains.
+* Reduces false negatives for FLS enforcement violations.
+
+#### **4. Clarified Configuration Limits for SOQL/DML Inside Loops Rule**
+
+Updated the documentation for the `sf:AvoidSoqlInLoops` rule to clearly communicate the supported configuration limits for method traversal depth. The parameter description has been updated to indicate the supported range, helping administrators configure the rule appropriately.
+
+Updated default guidance:
+
+* `MaxMethodTraversalDepth` = 5
+* `MaxMethodVisitedCount` = 200
+
+#### **5. Updated Guidance for Custom Field Requirement Configuration Rule**
+
+Updated the documentation and messaging for the `sfmeta:CustomFieldSecurityInStandardObject` rule to provide clearer guidance on the recommended approach for configuring required custom fields on Salesforce standard and shared objects.
+
+The updated rule metadata:
+
+* Title: Use the Page Layout to mark the custom field as required.
+* Message: Use the Page Layout to mark the custom field as required.
+* Description: Expanded to clarify that custom fields should be marked as required through page layouts rather than at the schema (system) level.
+
+The updated guidance explains that using page layouts limits the requirement to users interacting through the Salesforce UI, while avoiding unintended impacts on other data entry points such as APIs, Data Loader, Apex, and Integrations.
+
+Outcome
+
+* Provides clearer remediation guidance for Salesforce administrators.
+* Encourages Salesforce best practices for configuring required custom fields.
+* Helps prevent unintended validation issues across integrations and automated processes.
+
+### Fixes
+
+#### **1. CI Jobs Analyzing Entire Codebase Instead of Delta Changes**
+
+Fixed an issue where CodeScan CI jobs could analyze the entire repository instead of only the files modified in the current pull request or commit.
+
+Behavior
+
+* CI jobs now correctly analyze only the files included in the current delta (changed files).
+* Delta analysis is consistently applied across supported CI integrations.
+* Unmodified files are excluded from analysis when delta scanning is enabled.
+* Analysis execution time and resource utilization are reduced for incremental scans.
+
+Outcome
+
+* Improves CI pipeline performance and ensures analysis results remain relevant to the code changes being reviewed.
+
+#### **2. Project Summary Report Grammatical Error**
+
+Fixed a grammatical error in the Project Summary Report. The message "There is no any issues in the project analysis yet." has been updated to "There are currently no issues in the project analysis."
+
+#### **3. CSV Export "Status Marked By" Column Empty for Bulk Operations**
+
+Fixed an issue where the "Status Marked By" column in the CSV Issue Export was empty when issue statuses were changed via bulk operations (`api/issues/bulk_change`). The column now correctly displays the name of the user who performed the bulk status change.
+
+#### **4. GitHub App Authentication and Token Refresh**
+
+Resolved multiple issues where GitHub App integration analyses would fail with authentication errors after the initial access token expired, affecting both Pull Request analysis and manual analysis runs.
+
+a. Unauthorized Status After 24 Hours — Fixed an issue where GitHub Pull Request analysis reported "Unauthorized" status with "Bad credentials" (HTTP 401) errors when analyses were triggered more than 24 hours after the initial GitHub App connection.
+
+b. Refresh Token Expiry After \~8 Hours — Fixed an issue where both Manual Analysis and Pull Request Analysis failed with "The refresh token passed is incorrect or expired" after approximately 8 hours following a successful analysis.
+
+Outcome
+
+* Restores reliable, long-running GitHub App integration without requiring re-authorization.
+* Ensures consistent authentication for both Pull Request and manual analyses regardless of elapsed time.
+* Eliminates the need to re-create GitHub App connections as a workaround.
+
+#### **5. Username Whitespace Validation on Signup**
+
+Fixed an issue where users could sign up by entering only whitespace characters in the Username field. Username validation now rejects whitespace-only input during signup, with consistent behavior enforced across all environments.
+
+#### **6. New Code Highlighting Accuracy for Salesforce Metadata**
+
+Resolved an issue where new code highlighting could misalign with the actual changed lines in Salesforce metadata files during Pull Request analysis. When an object permission block was added, the system would incorrectly display new code markers on other, unchanged object permission blocks.
+
+Behavior
+
+* Diff generation for Salesforce metadata files (`.sfmeta`) now uses native Git CLI instead of the JGit Myers diff algorithm, which produces more accurate line-level change detection for structured XML metadata.
+* Apex classes (`.cls`) and Visualforce pages (`.vf`) continue to use the existing diff method.
+* The Git CLI diff mode is controlled by a feature flag that can be toggled per project.
+
+Outcome
+
+* Eliminates false new code highlighting on unchanged metadata blocks.
+* Improves accuracy of PR-based analysis results for Salesforce metadata files.
+
+#### **7. AI Code Fix Indicator Restricted to Supported Integrations**
+
+Fixed an issue where the "AI Fix Available" indicator was displayed for issues across all integration types, including Salesforce, Bitbucket, and Webhook repositories. AI Code Fix currently supports only GitHub and GitLab integrations.
+
+Behavior
+
+* The "AI Fix Available" indicator is now displayed only for projects connected through GitHub or GitLab.
+* The indicator is hidden for unsupported integrations (Salesforce, Bitbucket, Webhook).
+
+Outcome
+
+* Prevents user confusion about AI Code Fix availability for unsupported repository types.
+* Ensures the UI accurately reflects feature compatibility per integration.
+
+***
+
 ## AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 Release Notes
 
 **Release Date: 16 August 2026**

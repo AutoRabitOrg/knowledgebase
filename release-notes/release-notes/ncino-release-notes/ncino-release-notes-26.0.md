@@ -2,6 +2,18 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.4.4 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
+
+**Release Date:** **25 October 2026**
+
+#### Reliable Selective Rollback for Post-Deployment Orgs <a href="#id-1.-reliable-selective-rollback-for-post-deployment-orgs" id="id-1.-reliable-selective-rollback-for-post-deployment-orgs"></a>
+
+Resolved an issue where an nCino CI Job rollback failed when only a post-deployment org was selected and the destination org was excluded. Rollback processing now runs independently for selected post-deployment orgs, including scenarios involving multiple templates and selective template rollback.
+
+#### Reliable nCino Feature Version Creation <a href="#id-4.-reliable-ncino-feature-version-creation" id="id-4.-reliable-ncino-feature-version-creation"></a>
+
+Resolved an issue where creating a new version of an existing nCino feature could fail with a **No object found** error despite using the previous version’s object configuration. Feature Management now recognizes the configured objects correctly and provides reliable access to version datasets.
+
 ## nCino - Release 26.4.3 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
 
 **Release Date:** **18 October 2026**

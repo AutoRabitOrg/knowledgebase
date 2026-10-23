@@ -6,31 +6,30 @@ AutoRABIT’s Guard provides flexible role-based access control to ensure securi
 
 ### Roles Overview
 
-Guard currently supports two roles:
+AutoRABIT Guard currently supports three roles:
 
-1. **Admin**
-   1. Has full access to Guard’s user and org management features.
-   2. Can configure, add, and remove Salesforce orgs.
-   3. Manages user access and permissions for the workspace.
-2. **Standard User**
+1. **Tenant Manager**
+   1. Can use everything in Guard and CodeScan 2.0 (if enabled).&#x20;
+   2. Manages user access and permissions for the workspace.
+2. **Guard Admin**
+   1. Has full access to Guard’s org management features.
+   2. Cannot manage users.
+3. **Guard User**
    1. Has limited access, primarily focused on using Guard’s features without altering settings and configurations.
    2. Cannot manage other users or delete Salesforce orgs.
 
-&#x20;
-
 ### Access Levels & Permissions
 
-| Action                                                      | Admin | Standard User |
-| ----------------------------------------------------------- | ----- | ------------- |
-| Register and Edit Salesforce Orgs                           | ✅     | ❌             |
-| Delete Salesforce Orgs                                      | ✅     | ❌             |
-| Create Users                                                | ✅     | ❌             |
-| Activate / Deactivate Users                                 | ✅     | ❌             |
-| Unblock Users                                               | ✅     | ❌             |
-| Delete Users                                                | ✅     | ❌             |
-| Access Guard Features (analysis, scanning, reporting, etc.) | ✅     | ✅             |
-
-&#x20;
+| **Action**                                                       | **Tenant Manager** | **Guard Admin** | **Guard User** |
+| ---------------------------------------------------------------- | ------------------ | --------------- | -------------- |
+| Register and Edit Salesforce Orgs                                | ✅                  | ✅               | ❌              |
+| Delete Salesforce Orgs                                           | ✅                  | ✅               | ❌              |
+| Create Users                                                     | ✅                  | ❌               | ❌              |
+| Activate / Deactivate Users                                      | ✅                  | ❌               | ❌              |
+| Unblock Users                                                    | ✅                  | ❌               | ❌              |
+| Delete Users                                                     | ✅                  | ❌               | ❌              |
+| View Guard features (analysis and results)                       | ✅                  | ✅               | ✅              |
+| Manage and configure Guard features (run scans, receive exports) | ✅                  | ✅               | ❌              |
 
 ### Blocked and Deactivated Users
 
@@ -43,7 +42,7 @@ Guard currently supports two roles:
 * Impact:
   * The user is temporarily prevented from accessing Guard.
   * Their account remains active in the system and can be unblocked later.
-* Admin Actions:
+* Tenant Manager Actions:
   * Review the reason for blocking.
   * If safe, unblock the user in User Management to restore access.
 
@@ -56,20 +55,16 @@ Guard currently supports two roles:
 * Impact:
   * The user is permanently removed from active use of Guard.
   * Their access cannot be restored unless reactivated by an Admin.
-* Admin Actions:
+* Tenant Manager Actions:
   * If needed again, reactivate the user instead of creating a new account.
   * Otherwise, keep the account deactivated for compliance and auditing.
 
-&#x20;
-
 #### Quick Reference
 
-| Action     | Use Case                                   | Admin Can…                 |
+| Action     | Use Case                                   | Tenant Manager Can…        |
 | ---------- | ------------------------------------------ | -------------------------- |
 | Block      | Temporary suspension (e.g., security risk) | Unblock to restore access  |
 | Deactivate | Long-term or permanent removal             | Reactivate if needed later |
-
-&#x20;
 
 ### Example Scenarios
 
@@ -77,15 +72,12 @@ Guard currently supports two roles:
   * An Admin logs in, registers the org, and assigns access to specific users.
   * Standard Users can then interact with that org but cannot register or delete it.
 * Scenario 2: Managing a Team Member
-  * If a user leaves the team, the Admin can deactivate or delete their Guard account.
+  * If a user leaves the team, the Tenant Manager can deactivate or delete their Guard account.
   * Standard Users have no visibility into these actions.
 
 ### Best Practices
 
-* Always maintain at least two Admin users for redundancy.
-* Assign the Standard User role to team members who only need access to View Data
+* Assign the Guard User role to team members who only need access to View Data.
 * Regularly audit user access and deactivate accounts that are no longer in use.
-
-With this role-based structure, Guard ensures a balance between security and usability, giving Admins full control while allowing Standard Users to operate safely without the ability to make system-wide changes.
 
 &#x20;

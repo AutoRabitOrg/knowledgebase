@@ -10,24 +10,4 @@ Customers can include Agentforce components in their regular DevOps lifecycle wi
 
 Supported Agentforce metadata in ARM
 
-| Agentforce Metadata Type                   | Supported |
-| ------------------------------------------ | --------- |
-| GenAiPromptTemplate                        | Yes       |
-| GenAiPromptTemplateActv                    | Yes       |
-| GenAiPlugin                                | Yes       |
-| GenAiFunction                              | Yes       |
-| GenAiPlanner (API 60 to 63)                | Yes       |
-| GenAiPlannerBundle (API 64 and Above)      | Yes       |
-| Bot                                        | Yes       |
-| BotVersion                                 | Yes       |
-| Custom Apex invoked by agents (ApexClass)  | Yes       |
-| Flows used by agents (Flow)                | Yes       |
-| Permission Sets assigned to the Agent User | Yes       |
-| CustomSite                                 | Yes       |
-| Network                                    | Yes       |
-| DigitalExperienceBundle                    | Yes       |
-| EmbeddedServiceConfig                      | Yes       |
-| MessagingChannel                           | Yes       |
-| Flow (Omnichannel routing flow)            | Yes       |
-| Queue                                      | Yes       |
-| QueueRoutingConfig                         | Yes       |
+<table><thead><tr><th width="611.203125">Metadata Type</th></tr></thead><tbody><tr><td>AiAgentDefinition</td></tr><tr><td>AiAgentDefinitionVersion</td></tr><tr><td>AgenticCtxtDecorDefinition</td></tr><tr><td>AgentPlatformSettings</td></tr><tr><td>AgentforceAccountManagementSettings</td></tr><tr><td>AgentforceForDevelopersSettings</td></tr><tr><td>AgentforcePlatformTracingSettings</td></tr><tr><td>AiSurface</td></tr><tr><td>AiResponseFormat</td></tr><tr><td>AiTestingDefinition</td></tr><tr><td>GenAiPlugin</td></tr><tr><td>GenAiFunction</td></tr><tr><td>GenAiPlanner</td></tr><tr><td>GenAiPlannerBundle</td></tr><tr><td>GenAiPromptTemplate</td></tr><tr><td>GenAiPromptTemplateActv</td></tr></tbody></table>

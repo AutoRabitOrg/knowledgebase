@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # AutoRABIT Vault Connect
 
 ## AutoRABIT Vault Connect - Archive as Source

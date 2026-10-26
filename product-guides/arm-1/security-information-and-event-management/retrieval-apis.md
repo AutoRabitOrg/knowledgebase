@@ -10,7 +10,9 @@
     \&#xNAN;_For example: 2021-03-14T1000:00_
   * **maxResults**=**1000** (optional, default value is 1000)
   * **eventType**=**event1, event2** (this is optional, however, if not specified it will load all the events)\
-    \&#xNAN;_For example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._
+    \&#xNAN;_For example: eventType=DEPLOYMENT, DATALOADERPRO will load events for DEPLOYMENT and DATALOADERPRO respectively._\
+    \
+    **Important**: The values must exactly match the event type names listed on the ARM Event Type page. Use `eventType=USER` for user management events (including Create User). The DataLoader configuration event type is spelled `DATALOADERCONFIGUEATION` (not `DATALOADERCONFIGURATION`).
 * **Request Headers**:
   * **Content-Type**: application/json
   * **Authorization**: Your Bearer token
@@ -96,7 +98,9 @@ This guide provides information on how to use the Audit Logs Retrieval API to vi
 2. `maxResults` (optional): The maximum number of results to return. Default value is 1000.
    * **Example:** `maxResults=1000`
 3. `eventType` (optional): A comma-separated list of event types to filter the logs. If not specified, all event types are loaded.
-   * **Example:** `eventType=DEPLOYMENT,DATALOADERPRO`
+   * **Example:** `eventType=DEPLOYMENT,DATALOADERPRO` \
+     \
+     **Important**: Values must exactly match the names on the ARM Event Type page. Use `eventType=USER` to retrieve user management events (including Create User).
 
 #### Example Request
 
@@ -126,6 +130,7 @@ The response will contain the audit logs based on the specified parameters.
 * If only the `startTime` is provided, logs are retrieved up to the current day.
 * The date range (from `startTime` to `endTime` or the current day) must be within 90 days.
 * The downloaded logs are provided in a ZIP file.
+* • Audit events are only written when the organization audit setting and CEF logging are enabled. These controls are not currently exposed in the ARM product UI.
 
 #### Example Download Request
 

@@ -1,6 +1,6 @@
 # CodeScan CLI - Install and Run
 
-This guide explains how to install the CodeScan CLI (`codescan`), point it at your CodeScan instance, and run a review. The download needs no sign-in. An API key, or a username and password, is used only when a command talks to CodeScan.
+This guide explains how to install the CodeScan 2.0 CLI (`codescan`), point it at your CodeScan instance, and run a review. The download needs no sign-in. An API key, or a username and password, is used only when a command talks to CodeScan.
 
 ## Before you start <a href="#before-you-start" id="before-you-start"></a>
 

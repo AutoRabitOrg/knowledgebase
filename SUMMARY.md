@@ -1723,6 +1723,8 @@
     * [Dependency and Container Analysis](product-guides/codescan-2.0/supply-chain/dependency-and-container-analysis.md)
   * [CodeScan CLI - Install and Run](product-guides/codescan-2.0/codescan-cli-install-and-run.md)
   * [VS Code Extension - Install and Run](product-guides/codescan-2.0/vs-code-extension-install-and-run.md)
+  * [Cursor Extension - Install and Run](product-guides/codescan-2.0/cursor-extension-install-and-run.md)
+  * [Kiro Extension - Install and Run](product-guides/codescan-2.0/kiro-extension-install-and-run.md)
 
 ## Resources
 

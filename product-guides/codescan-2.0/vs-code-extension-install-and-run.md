@@ -1,6 +1,6 @@
 # VS Code Extension - Install and Run
 
-This guide explains how to install the AutoRABIT CodeScan extension for Visual Studio Code and run a scan from the editor. Findings show up in the CodeScan view, on the lines they belong to, and in VS Code’s Problems panel, before the code reaches a pull request.
+This guide explains how to install the AutoRABIT CodeScan 2.0 extension for Visual Studio Code and run a scan from the editor. Findings show up in the CodeScan view, on the lines they belong to, and in VS Code’s Problems panel, before the code reaches a pull request.
 
 ## Before you start <a href="#before-you-start" id="before-you-start"></a>
 

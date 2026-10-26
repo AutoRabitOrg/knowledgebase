@@ -35,6 +35,7 @@
   * [Upcoming Rule Deactivations: 4 Rules Retiring on the 27th of December 2026](fundamentals/announcements/upcoming-rule-deactivations-4-rules-retiring-on-the-27th-of-december-2026.md)
   * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
   * [Azure DevOps Global Personal Access Token Retirement on December 1, 2026](fundamentals/announcements/azure-devops-global-personal-access-token-retirement-on-december-1-2026.md)
+  * [AutoRABIT Response: PHP Vulnerability Advisory - Combined Product Assessment](fundamentals/announcements/autorabit-response-php-vulnerability-advisory-combined-product-assessment.md)
 
 ## Release Notes
 

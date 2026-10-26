@@ -18,6 +18,8 @@ Once approved, ARM resumes the deployment without rebuilding the package and upd
 
 This enhancement improves deployment governance, approval tracking, and auditability through integration with ServiceNow.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/alm-management/service-now" %}
+
 #### Salesforce API 68.0 – Additional Metadata Type Support (Phase 3)
 
 Expanded ARM compatibility with Salesforce API 68.0 by adding support for 16 additional metadata types, including 11 non-settings types and 5 settings types.
@@ -46,6 +48,8 @@ Supported Settings Metadata Types (5)
 * ServiceHeliosSettings
 * ServiceItamSettings
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started/understanding-arm/arm-supported-metadata-types#metadata-types-supported-in-arm" %}
+
 #### Controlled Credential Management for Standard Admins
 
 Introduced a new Manage Credentials permission, allowing Super Admins to grant selected Standard Admins controlled access to credentials owned by other users.
@@ -56,6 +60,8 @@ ARM also provides dependency warnings before credential deletion and captures cr
 
 Note: This permission is disabled by default and can only be managed by the Super Admin. It is not available to Custom Admins or regular users.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/arm-administration/user-management/managing-credentials-with-admin-permissions#prerequisites" %}
+
 #### API Support for Release Label Creation and Updates
 
 Introduced new REST API capabilities to create and update Release Labels with multiple revisions, eliminating the need to manually select individual revisions through the ARM UI.
@@ -65,6 +71,8 @@ Users can create Salesforce and Vlocity Release Labels by specifying the reposit
 The Update API supports bulk revision management through ADD, REMOVE, and REPLACE operations, allowing users to efficiently maintain Release Labels containing large numbers of revisions.
 
 These APIs follow existing ARM authentication, authorization, and validation rules, enabling streamlined Release Label management through automated CI/CD workflows.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 
 #### Fixed Mandatory Package Directory Field During Release Label Creation (New UI)
 

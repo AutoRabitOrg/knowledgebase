@@ -641,6 +641,7 @@
         * [Salesforce API Version](product-guides/arm-1/arm-administration/user-management/salesforce-api-version.md)
         * [User Types](product-guides/arm-1/arm-administration/user-management/different-users-in-arm.md)
         * [Users, Roles & Permissions](product-guides/arm-1/arm-administration/user-management/users-roles-and-permissions.md)
+        * [Managing Credentials with Admin Permissions](product-guides/arm-1/getting-started-1/arm-administration/user-management/managing-credentials-with-admin-permissions.md)
       * [Credentials](product-guides/arm-1/getting-started-1/arm-administration/arm-credential-manager/README.md)
         * [Generating SSH Keys and Configuring Git Repo Access](product-guides/arm-1/getting-started-1/arm-administration/arm-credential-manager/generating-ssh-keys-and-configuring-git-repo-access.md)
       * [Subscriptions](product-guides/arm-1/arm-administration/subscription-management.md)

@@ -42,7 +42,7 @@ The Deployment APIs allow external applications to retrieve deployment informati
 
 #### Release Label API
 
-[/api/releaselabel/v1/update](https://documenter.getpostman.com/view/46841090/2sBY4HSNpN#7b01d81c-47bf-4f22-9e46-5a799773c6af) - Add
+[/api/releaselabel/v1/update](https://documenter.getpostman.com/view/46841090/2sBYHUULkd) - Add
 
 [/api/releaselabel/v1/update](https://documenter.postman.com/preview/46841090-6d63a0ab-f53a-4935-ba23-22f311eeb89c?environment=\&versionTag=latest\&apiName=CURRENT\&version=latest\&documentationLayout=classic-double-column\&documentationTheme=light\&logo=https%3A%2F%2Fres.cloudinary.com%2Fpostman%2Fimage%2Fupload%2Ft_team_logo%2Fv1%2Fteam%2Fanonymous_team\&logoDark=https%3A%2F%2Fres.cloudinary.com%2Fpostman%2Fimage%2Fupload%2Ft_team_logo%2Fv1%2Fteam%2Fanonymous_team\&right-sidebar=303030\&top-bar=FFFFFF\&highlight=FF6C37\&right-sidebar-dark=303030\&top-bar-dark=212121\&highlight-dark=FF6C37) - Remove
 

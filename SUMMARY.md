@@ -662,6 +662,7 @@
           * [Creating a TFS Branch](product-guides/arm-1/getting-started-1/registration/version-control-repository/version-control-branch/creation-of-a-tfs-branch.md)
       * [ALM](product-guides/arm-1/getting-started-1/registration/alm-management/README.md)
         * [Salesforce ALM](product-guides/arm-1/getting-started-1/registration/alm-management/salesforce-alm.md)
+        * [Service Now](product-guides/arm-1/getting-started-1/registration/alm-management/service-now.md)
       * [Salesforce Org](product-guides/arm-1/registration/salesforce-org/README.md)
         * [SF Org Management](product-guides/arm-1/getting-started-1/registration/salesforce-org/salesforce-org-management/README.md)
           * [Default Apex Class Configuration](product-guides/arm-1/getting-started-1/registration/salesforce-org/salesforce-org-management/default-apex-class-configuration.md)

@@ -4,7 +4,7 @@
 
 The Authorization Policies feature in AutoRABIT Guard offers a powerful, automated mechanism to enforce governance and security in your Salesforce org. Unlike Salesforce’s native functionality, Guard Authorization Policies allow you to define strict rules, such as permission set allow lists, to ensure only authorized users can access sensitive permissions.
 
-Guard monitors your org in real time, detects violations, and can immediately act by reverting changes or notifying admins. This feature is the backbone of secure and compliant Salesforce operations.
+Guard monitors your org in real time, detects violations, and can immediately act by reverting changes or notifying admins.&#x20;
 
 ## Key Features
 
@@ -12,15 +12,15 @@ Guard monitors your org in real time, detects violations, and can immediately ac
 
 Permission Set Allow List Authorization Policies allow you to limit who can be assigned specific permission sets. For example, you can define an Authorization Policy that ensures only certain users are allowed to have a permission set that provides access to critical data.
 
-* Prevent Unauthorized Access: Prevent unauthorized users from being granted permissions that expose sensitive data.
-* Ensure Compliance: Enforce strict Authorization Policies for who can access certain permissions, ensuring compliance with both internal and external regulatory standards.
+* **Prevent unauthorized access:** Prevent unauthorized users from being granted permissions that expose sensitive data.
+* **Ensure compliance**: Enforce strict Authorization Policies for who can access certain permissions, ensuring compliance with both internal and external regulatory standards.
 
 ### Real-Time Monitoring and Enforcement
 
 Guard continuously scans your Salesforce org every five minutes to detect violations in real time.
 
-* Continuous Monitoring: Guard scans your org every five minutes, identifying and responding to Authorization Policy violations quickly.
-* Violation Actions: When an Authorization Policy violation is detected, Guard can:
+* **Continuous Monitoring:** Guard scans your org every five minutes, identifying and responding to Authorization Policy violations quickly.
+* **Violation Actions:** When an Authorization Policy violation is detected, Guard can:
   * Revert Changes Immediately: Automatically remove unauthorized permission sets, reverting the change to a compliant state.
   * Notify Admins: Alert admins via email to manually review and resolve the violation.
 
@@ -28,9 +28,9 @@ Guard continuously scans your Salesforce org every five minutes to detect violat
 
 Guard allows you to easily configure Authorization Policies that fit your specific needs.
 
-* Authorization Policy Details: Name the rule for easy identification and specify the Salesforce org where it applies.
-* Authorization Policy Criteria: Select the permission sets and users involved. This flexibility ensures the controls can be customized to fit your needs.
-* Remediation Actions: Define how violations should be handled, whether by automatically reverting the change or notifying admins. You can also specify which email addresses will receive notifications.
+* **Criteria:** Select the permission sets and users involved. Use criteria groups to create flexible rules that suit you.
+* **Remediation Actions:** Define how violations should be handled, whether by automatically reverting the change or notifying admins.&#x20;
+* **Notifications:** You can specify which email addresses will receive notifications, and use Notification Groups to send an email to a team or set of stakeholders who should review the policy breach.&#x20;
 
 ### Detailed Violation Notifications
 
@@ -77,20 +77,26 @@ Guard’s Authorization Policies can automatically revert violations or send act
 
 ### Create an Authorization Policy
 
-To create an Authorization Policy, go to the Authorization Policies section in AutoRABIT Guard and click "Add Authorization Policy":
+To create an Authorization Policy, go to the Authorization Policies section in AutoRABIT Guard and click "Create Authorization Policy":
 
-* Provide a descriptive name for the Authorization Policy, such as "Authorization Policy for Admin Permissions."
-* Configure Authorization Policies criteria by selecting the Salesforce org, permission sets, and users who fall under the rule.
-
-### Configure Authorization Policy Criteria
-
-* Salesforce Org: Choose the Salesforce org where the Authorization Policies will apply.
-* Permission Sets and Users: Select the permission sets you wish to monitor and the users allowed to access them. This ensures that only authorized users have access to critical permissions.
-
-### Define Remediation Actions
-
-* Auto-Revert or Notify: Decide whether violations should trigger an automatic revert (removal of unauthorized permissions) or a notification to admins for manual remediation.
-* Email Notifications: Specify the email addresses for receiving violation alerts. Admins will be notified when violations occur, ensuring they can take appropriate action.
+1. Choose whether to create an Authorization Policy based on permissions _or_ permission sets.
+2. Provide a descriptive name for the Authorization Policy, such as "Authorization Policy for Admin Permissions."
+3. Choose the Authorization Type:
+   1. Based on criteria. (You'll set-up the criteria on the next page).
+   2. Specific users. Use this option if you already know who or what you want to monitor.&#x20;
+4. Select the Salesforce org from the drop-down list. This is where the policy will be applied.
+5. Now configure your policy.&#x20;
+   1. Select the permissions or permission sets you want to monitor. You can select multiple from the drop-down list.
+   2. If you chose "Specific users" as the authorization type, now select the users that are _allowed_ to access the permissions. The policy will then be applied to all other users in the org.
+   3. If you're using criteria, now set how you'd like to choose the users _allowed_ to access the selected permissions.
+      1. You can do this based on one or more of Profile, Role, Company Name, Email Domain and License Type.&#x20;
+      2. Add a field to set another AND criteria.
+      3. And a group to create a stacked set of criterion, where OR is between each group. You can only stack to one level (i.e. you can't have a group within a group).&#x20;
+      4. Select the Operator NOT IN when building complex sets of criterion, to exclude the entered values from the policy.&#x20;
+6. Now set the remediation action.
+   1. Auto-Revert and Notify: Violations trigger an automatic revert, as well as a notification.
+   2. Notify only: A notification is sent to the users specified, for manual remediation.
+7. Email Notifications: Specify the Guard users who should receive violation alerts.&#x20;
 
 ### Activate and Monitor
 

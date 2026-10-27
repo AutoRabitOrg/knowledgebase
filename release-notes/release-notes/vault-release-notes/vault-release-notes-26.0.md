@@ -4,6 +4,78 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 
+## AutoRABIT Vault Release Notes 26.2.7
+
+**Release Date: 28 October 2026**
+
+#### **Access Archived Data in Salesforce Without Salesforce Connect**
+
+Added an alternative AutoRABIT Vault Connect experience for viewing archived data within Salesforce.
+
+<figure><img src="../../../.gitbook/assets/2 (21).png" alt=""><figcaption></figcaption></figure>
+
+The managed package provides access to archived information without requiring Salesforce Connect or external objects.
+
+Archived data can be explored through supported list, search, and related-record experiences.
+
+<figure><img src="../../../.gitbook/assets/image (3065).png" alt=""><figcaption></figcaption></figure>
+
+This extends access to archived information within familiar Salesforce workflows.
+
+Availability depends on AutoRABIT Vault Connect access and completion of the required connection and managed-package setup.
+
+#### **Updated Application Dependencies for Improved Security**
+
+Implemented security updates across AutoRABIT Vault. Strengthened application protection. Improved the security of supported operations. These updates are included in this release.
+
+**Accurate Scheduler Attribution in Backup and Archive Emails**
+
+Corrected the execution source shown in scheduled Backup and Archive notification emails.
+
+Previously, scheduled executions could display an individual account name in the Triggered by information.
+
+Notifications now identify Scheduler as the execution source for jobs started by the scheduler.
+
+This makes automated executions easier to distinguish when reviewing job notifications.
+
+This correction applies to scheduled Backup and Archive emails.
+
+#### **Reliable Reactivation of Salesforce Automation After Data Jobs**
+
+Improved automation handling for Restore, Replicate, and Archive jobs that temporarily disable Salesforce automation.
+
+Previously, delayed Salesforce deployments could leave Flows and Workflow Rules inactive after processing.
+
+Jobs now wait for confirmed automation deactivation before writing or deleting records and verify reactivation afterward.
+
+Coordinated handling across parallel jobs reduces the risk of reactivating automation while another job still requires it disabled.
+
+Objects are skipped when safe deactivation cannot be confirmed; automatic retry of the deactivation is not performed.
+
+#### **Clearer Scheduling Layout for nCino Backup Configuration**
+
+Improved the layout of the nCino backup configuration screen.
+
+Previously, the scheduler appeared beside the backup options and crowded the configuration area.
+
+The scheduler now appears on a separate line below the backup options.
+
+Updated spacing and alignment make scheduling controls easier to identify and review.
+
+This change applies to the nCino backup configuration creation flow.
+
+#### **Open Archived Record Details from Record Names**
+
+Added clickable record names to archived-record lists in AutoRABIT Vault Connect.
+
+Selecting a record name opens a read-only view of its available archived fields and values.
+
+The detail view provides information beyond the fields displayed in the list.
+
+Archived details remain accessible even when the original record no longer exists in the live Salesforce org.
+
+The record detail experience follows Salesforce Lightning conventions and preserves the read-only nature of archived data.
+
 ## AutoRABIT Vault Release Notes 26.2.6
 
 **Release Date: 7 October 2026**

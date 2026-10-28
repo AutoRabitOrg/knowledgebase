@@ -144,9 +144,9 @@ ARM now displays the download icon and allows users to export audit logs in CSV 
 
 Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across DataLoader and DataLoader Pro.
 
-#### Improved Data Loader Reliability and Data Protection <a href="#id-3.-improved-data-loader-reliability-and-data-protection" id="id-3.-improved-data-loader-reliability-and-data-protection"></a>
+#### Improved DataLoader Reliability and Data Protection <a href="#id-3.-improved-data-loader-reliability-and-data-protection" id="id-3.-improved-data-loader-reliability-and-data-protection"></a>
 
-Resolved multiple issues affecting Data Loader extraction, migration, masking, and configuration synchronization. The improvements ensure configured fields are masked correctly, mappings are applied consistently, Salesforce automation is restored after failures, and Bulk API extractions use appropriate polling, timeouts, progress logging, and PK chunking. Lookup and processing failures now provide clearer diagnostic information instead of being silently ignored.
+Resolved multiple issues affecting DataLoader extraction, migration, masking, and configuration synchronization. The improvements ensure configured fields are masked correctly, mappings are applied consistently, Salesforce automation is restored after failures, and bulk API extractions use appropriate polling, timeouts, progress logging, and PK chunking. Lookup and processing failures now provide clearer diagnostic information instead of being silently ignored.
 
 ***
 

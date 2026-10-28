@@ -1331,7 +1331,7 @@
       * [Live Compare](product-guides/vault/vault-features/compare/live-compare.md)
       * [Copy of Live Compare](product-guides/vault/vault-features/compare/enhanced-compare-capabilities-view-change-view-and-export-results.md)
     * [AutoRABIT Vault Connect](product-guides/vault/vault-features/vault-connect.md)
-    * [Vault Connect](product-guides/vault/vault-features/vault-connect-1.md)
+    * [Vault Connect - 1](product-guides/vault/vault-features/vault-connect-1.md)
   * [AutoRABIT Vault Best Practices](product-guides/vault/vault-best-practices.md)
   * [AutoRABIT Vault-FAQs](product-guides/vault/vault-faqs/README.md)
     * [AutoRABIT Vault-FAQs](product-guides/vault/vault-faqs/common-restore-errors-and-solutions/README.md)

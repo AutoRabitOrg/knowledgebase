@@ -4,6 +4,252 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.23
+
+**Release Date: 1 November 2026**
+
+## New Features
+
+#### 1. Resolution Transfer
+
+**Description**
+
+Resolution Transfer enables administrators to carry issue resolutions from an origin project or branch to a destination project or branch, avoiding repetitive manual updates when similar issues are analyzed in multiple locations.
+
+**Behavior**
+
+* Open Administration > Resolution Transfer. If no jobs exist, select Create Resolution Transfer; otherwise use New Transfer to add another configuration.
+* Select the origin and destination project and branch, then choose at least one resolution status: False Positive and/or Accepted.
+* Run a transfer on demand or configure a recurring schedule. Scheduled transfers use GMT.
+* The management page lists all configured transfers with their origin, destination, statuses, schedule, last run, and Edit/Delete actions. Updates and confirmed deletions are reflected in the list.
+* Review the last 10 executions with trigger type or user, start time, duration, transferred issue count, and execution status. Successful runs provide a CSV of the transferred issues.
+
+**Outcome**
+
+Teams can apply consistent issue dispositions across projects and branches, automate routine transfers, and review execution history and results in one place.
+
+<figure><img src="../../../../.gitbook/assets/image (3150).png" alt="" width="218"><figcaption><p align="center"><em>Administration menu: Resolution Transfer access.</em></p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3151).png" alt=""><figcaption><p align="center"><em>Empty-state page: create the first Resolution Transfer.</em></p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3152).png" alt=""><figcaption><p align="center"><em>New Transfer: select origin, destination, issue statuses, and scheduling.</em></p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3153).png" alt=""><figcaption><p align="center"><em>Resolution Transfer: scheduled job management and recent execution history.</em></p></figcaption></figure>
+
+#### 2. AI Users & Billing Management
+
+**Description**
+
+A new AI Users & Billing administration page provides visibility into AI credit consumption and user-level controls for token limits and AI feature licensing.
+
+**Behavior**
+
+* Administrators open Administration > AI Users & Billing to view licensed users, users approaching their allowance, and monthly AI credits. The available-credits view also shows the total allocated entitlement (for example, 7,500 / 10,000).
+* Search users by name or email and sort by user name or balance used. Per-user consumption is displayed as a color-coded progress bar and percentage of that user’s configured limit; credit usage can also be viewed against the organization’s monthly pool.
+* Edit an individual token limit directly, using a preset option or a custom value. The initial limit is 200 unless changed, and saved limits are applied to that user.
+* Use the + action to assign AI Code Assistant or AI Custom Rules licensing. Current assignments appear as labeled tags in the user table.
+* The AI usage indicator on the Home page reflects the signed-in user’s credit consumption rather than only organization-level usage.
+
+**Outcome**
+
+Administrators can monitor high-consumption users, allocate AI access and limits at the individual level, and manage their shared monthly credit entitlement more predictably.
+
+<figure><img src="../../../../.gitbook/assets/image (3154).png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
+
+#### 3. AutoRABIT Mule and API Analyzers
+
+**Description**
+
+CodeScan expands the existing MuleSoft add-on with two analyzers: AutoRABIT Mule Analyzer 3.0 for application-level Mule analysis and AutoRABIT API Analyzer 26.4.1 for API specification analysis. Existing MuleSoft Rules for Mule 3.x and Mule 4.x remain available.
+
+**Behavior**
+
+* AutoRABIT Mule Analyzer 3.0: 166 rules for Mule application-level analysis; optional auto-fix and Mule metrics.
+* AutoRABIT API Analyzer 26.4.1: 51 rules for RAML 0.8/1.0, OpenAPI 3.0, and Swagger 2.0 specifications in YAML or JSON; optional auto-fix.
+* Existing MuleSoft Rules: 28 Mule 4 and 18 Mule 3 file-level rules remain unchanged.
+
+**Quality Profiles:** From Quality Profiles, select the AutoRABIT Mule profile (166 rules) for Mule application analysis, or the API profile (51 rules) for API specification analysis. The API profile is built in and is the default for the API language. The AutoRABIT Mule profile is built in but does not automatically replace the existing MuleSoft default; it may show DEFAULT after an organization selects it as its default.
+
+<figure><img src="../../../../.gitbook/assets/image (3155).png" alt=""><figcaption><p align="center"><em>Quality Profiles > Mule: AutoRABIT Mule profile with 166 rules (shown as the organization default in this example).</em></p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3156).png" alt=""><figcaption><p align="center"><em>Quality Profiles > API: built-in default API profile with 51 rules.</em></p></figcaption></figure>
+
+#### Configuration for AutoRABIT Mule
+
+<table><thead><tr><th valign="top">Goal</th><th width="171" valign="top">Quality Profile</th><th valign="top">sonar.mule.file.suffixes</th><th width="188" valign="top">sonar.armule.file.suffixes</th></tr></thead><tbody><tr><td valign="top"><strong>Keep MuleSoft Rules (no change)</strong></td><td valign="top">MuleSoft Rules for Mule 4.x / 3.x</td><td valign="top">.xml</td><td valign="top">leave default</td></tr><tr><td valign="top"><strong>Switch to AutoRABIT Mule (new)</strong></td><td valign="top">AutoRABIT Mule</td><td valign="top">.txml  (matches nothing; not blank)</td><td valign="top">.xml,.properties</td></tr></tbody></table>
+
+1. Enable the CodeScan MuleSoft add-on for the organization, if it is not already enabled. In the project, select the AutoRABIT Mule quality profile.
+2. Under Project Settings > General Settings > Mule, add .xml and .properties to AutoRABIT Mule File Suffixes (sonar.armule.file.suffixes).
+3. At the same time, set the legacy Mule file suffix setting (sonar.mule.file.suffixes) to .txml. Do not leave it blank an empty value falls back to .xml and can cause a double-measure clash.
+4. Ensure that mule-artifact.json (Mule 4) or mule-project.xml (Mule 3) is present at the scan base directory, and run the analysis.
+
+<figure><img src="../../../../.gitbook/assets/image (3157).png" alt=""><figcaption><p align="center"><em>Project Settings > General Settings > Mule: AutoRABIT Mule File Suffixes showing .properties and .xml.</em></p></figcaption></figure>
+
+Recommended scanner overrides: sonar.mule.file.suffixes=.txml and sonar.armule.file.suffixes=.xml,.properties.
+
+For API specifications, use the API quality profile. The default API suffixes are .raml and .yaml; add .json to sonar.api.file.suffixes when analyzing JSON-formatted OpenAPI or Swagger files.
+
+**Important notes**
+
+* AutoRABIT Mule and existing MuleSoft rules should not process the same XML files in one scan; a duplicate metric error can occur if .xml is configured in both Mule suffix settings.
+* The AutoRABIT Mule Analyzer supports one Mule application per scan base. For multi-application repositories, retain the existing MuleSoft Rules profile.
+* Existing MuleSoft Rules projects do not need configuration changes. If migrating from the earlier IZ analyzer, historical issue and profile identities do not automatically carry over.
+* These analyzers are available on hosted CodeScan with the MuleSoft add-on; on-premises SonarQube is not supported.
+
+**Outcome**
+
+Customers gain broader Mule application and API-specification coverage through CodeScan, while retaining the existing MuleSoft rules and a single add-on entitlement.
+
+### Application Enhancements
+
+#### 1. AI CodeFix Pull Requests for Bitbucket Cloud
+
+**Description**
+
+AI CodeFix can now create pull requests in Bitbucket Cloud repositories, extending the existing GitHub and GitLab workflow.
+
+**Behavior**
+
+* CodeScan creates a branch, commits the AI-generated fix, and opens a Bitbucket Cloud pull request for review. Both automatic and manual pull-request paths are supported.
+* Existing Bitbucket Cloud connections do not need to be reconnected.
+* Permission-related failures identify the affected repository and likely cause. Re-running a job does not overwrite an existing pull-request description after comments have been added.
+
+**Outcome**
+
+Bitbucket Cloud users can review AI-generated fixes through their normal pull-request workflow instead of applying fixes manually.
+
+#### 2. AI Code Assistant Support for Three Additional Rules
+
+**Description**
+
+AI Code Assistant now provides assistance for three additional Apex security and code-quality rules.
+
+**Behavior**
+
+* Avoid Untrusted/Unescaped Variables in DML Query — sf:SOQLInjection.
+* Class Variable Fields Should Not Have Public Accessibility — sf:AvoidPublicFields.
+* URL Parameters Should Be Escaped/Sanitized — sf:UnescapedSource.
+
+**Outcome**
+
+Developers can use AI-assisted remediation for more detected Apex findings directly within their existing CodeScan workflow.
+
+#### 3. AI Credit Usage Threshold Notifications
+
+**Description**
+
+CodeScan now notifies organization administrators when monthly AI credit consumption reaches defined usage thresholds.
+
+**Behavior**
+
+* Organization-level notification emails are sent at 80% and 100% of the monthly AI credit entitlement.
+* Each email includes a usage summary and a link to the AI Credit Usage Dashboard.
+
+**Outcome**
+
+Administrators receive timely visibility into approaching or exhausted AI credit entitlements without needing to check usage manually.
+
+### Rule Enhancements
+
+#### 1. Salesforce Flow Naming Convention Rule (sfmeta:FlowNaming)
+
+**Description**
+
+The Flow Naming rule now more closely follows the SFXD Flow Naming Conventions, including flow type codes, record-triggered contexts, and case handling.
+
+**Behavior**
+
+* Screen (SCR), Event (EVT), and Scheduled (SCH) flows follow \<Domain/Object>\_\<FLOWTYPECODE>\_\<Description>. The flow type code must be uppercase.
+* Record-triggered flows follow \<Domain/Object>\_\<Context>\[\_\<Description>], with an optional description. The context can use any letter case.
+* The domain/object segment starts with an uppercase letter. Descriptions can use any letter case.
+* Improved trigger-context validation prevents incorrectly structured names; record-triggered names do not require an additional TRG prefix.
+
+Valid naming examples
+
+* Account\_SCR\_CreateContact  (Screen flow)
+* Opportunity\_EVT\_NotifyOwner  (Event flow)
+* Account\_SCH\_ArchiveInactiveRecords  (Scheduled flow)
+* Account\_beforeDelete\_PreventDeletion  (Record-triggered; lowercase context allowed)
+* Opportunity\_AfterUpdate  (Record-triggered; optional description omitted)
+
+**Outcome**
+
+Flow analyses now accept compliant naming patterns more consistently and flag malformed context or flow-type segments, reducing unnecessary naming violations.
+
+### Fixes
+
+#### 1. Salesforce Metadata Retrieval for Large Organizations
+
+**Description**
+
+Large metadata retrieves could repeatedly exceed the Salesforce retrieve-size limit and eventually appear as a generic start-job timeout.
+
+**Behavior**
+
+When a retrieve batch hits LIMIT\_EXCEEDED, CodeScan reduces its batch size and retries within a defined limit. If retries are exhausted, it reports the actual size-limit error.
+
+**Outcome**
+
+Metadata-heavy organizations get more resilient retrievals and clearer failure information.
+
+#### 2. Clearer Cloud Analysis Timeout and Token Expiration Errors
+
+**Description**
+
+Analysis jobs previously displayed generic errors when a CodeScan service request timed out or an analysis authentication token expired.
+
+**Behavior**
+
+Timeout errors now report “AutoRABIT CodeScan analysis failed because the request timed out.” Expired-token errors explain that the token expired and advise increasing the project analysis timeout before rerunning.
+
+**Outcome**
+
+Users can distinguish request timeouts from token expiration and take corrective action more quickly.
+
+#### 3. Metadata File Suffix Recognition
+
+**Description**
+
+Metadata files with uppercase characters in their configured suffixes, including validationRule-meta.xml, could be skipped during analysis.
+
+**Behavior**
+
+File suffix matching now recognizes uppercase characters correctly. Validation rule files are included in scans and visible in the Code view when matched by the default suffix configuration.
+
+**Outcome**
+
+Applicable Salesforce Metadata rules can analyze these files without manual suffix workarounds.
+
+#### 4. Exception Comments Saved to Issue Activity
+
+**Description**
+
+Comments entered when changing an issue to Exception with an expiry date were not retained in the Activity tab.
+
+**Behavior**
+
+The comment is now saved and shown in issue activity when the Exception transition is applied.
+
+**Outcome**
+
+Issue resolution history retains the comment entered during the transition.
+
+#### 5. Dynamic SOQL Bind Variables No Longer Incorrectly Flagged as Unused
+
+**Description**
+
+Apex variables referenced as bind variables in dynamic SOQL, including queries constructed through fflib QueryFactory, could be incorrectly reported as unused.
+
+**Behavior**
+
+sf:UnusedLocalVariable and sf:DUDataflowAnomalyAnalysis now recognize bind-variable usage in dynamic queries executed with Database.query(...).
+
+**Outcome**
+
+False positives are reduced for variables that are genuinely used in dynamic SOQL.
+
+***
+
 ## CodeScan Release Notes 26.0.22
 
 **Release Date: 14 October 2026**

@@ -1242,6 +1242,8 @@
     * [Restore](product-guides/vault/autorabit-vault-freemium/restore.md)
     * [Replicate](product-guides/vault/autorabit-vault-freemium/replicate/README.md)
       * [Replicate Config Creation](product-guides/vault/autorabit-vault-freemium/replicate/replicate-config-creation.md)
+      * [Replicate History](product-guides/vault/autorabit-vault-freemium/replicate/replicate-history/README.md)
+        * [AutoRABIT\_Vault\_Replicate\_Results\_Retry\_62 82](product-guides/vault/autorabit-vault-freemium/replicate/replicate-history/autorabit_vault_replicate_results_retry_62-82.md)
   * [AutoRABIT Vault™ Overview](product-guides/vault/vault-tm-overview.md)
   * [Getting Started with AutoRABIT Vault](product-guides/vault/getting-started/README.md)
     * [AutoRABIT Vault - App Installation and Configuration Guide](product-guides/vault/getting-started/autorabit-app-vault-installation-and-configuration-guide.md)

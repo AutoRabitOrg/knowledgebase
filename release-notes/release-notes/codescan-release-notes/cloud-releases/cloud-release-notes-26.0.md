@@ -8,7 +8,7 @@
 
 **Release Date: 1 November 2026**
 
-## New Features
+### New Features
 
 #### 1. Resolution Transfer
 

@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Vault Connect
 
 ### AutoRABIT Vault Connect – Complete Setup and Configuration Guide

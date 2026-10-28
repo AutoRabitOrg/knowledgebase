@@ -1452,6 +1452,7 @@
         * [Create Quality Rule](product-guides/iz-suite/quality-control/rules/create-quality-rule.md)
         * [Metric Rules](product-guides/iz-suite/quality-control/rules/metric-rules.md)
         * [Quality Rules](product-guides/iz-suite/quality-control/rules/quality-rules.md)
+        * [Findings: Severity and Categories](product-guides/integral-zone/iz-suite/quality-control/rules/findings-severity-and-categories.md)
     * [IZ Eye](product-guides/iz-suite/iz-eye/README.md)
       * [About IZ Eye](product-guides/iz-suite/iz-eye/about-iz-eye.md)
       * [Dashboard](product-guides/iz-suite/iz-eye/dashboard.md)

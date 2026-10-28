@@ -30,51 +30,21 @@ Implemented security updates across AutoRABIT Vault. Strengthened application pr
 
 **Accurate Scheduler Attribution in Backup and Archive Emails**
 
-Corrected the execution source shown in scheduled Backup and Archive notification emails.
-
-Previously, scheduled executions could display an individual account name in the Triggered by information.
-
-Notifications now identify Scheduler as the execution source for jobs started by the scheduler.
-
-This makes automated executions easier to distinguish when reviewing job notifications.
-
-This correction applies to scheduled Backup and Archive emails.
+Corrected the execution source shown in scheduled Backup and Archive notification emails. Previously, scheduled executions could display an individual account name in the Triggered by information. Notifications now identify Scheduler as the execution source for jobs started by the scheduler. This makes automated executions easier to distinguish when reviewing job notifications. This correction applies to scheduled Backup and Archive emails.
 
 #### **Reliable Reactivation of Salesforce Automation After Data Jobs**
 
-Improved automation handling for Restore, Replicate, and Archive jobs that temporarily disable Salesforce automation.
-
-Previously, delayed Salesforce deployments could leave Flows and Workflow Rules inactive after processing.
-
-Jobs now wait for confirmed automation deactivation before writing or deleting records and verify reactivation afterward.
-
-Coordinated handling across parallel jobs reduces the risk of reactivating automation while another job still requires it disabled.
-
-Objects are skipped when safe deactivation cannot be confirmed; automatic retry of the deactivation is not performed.
+Improved automation handling for Restore, Replicate, and Archive jobs that temporarily disable Salesforce automation. Previously, delayed Salesforce deployments could leave Flows and Workflow Rules inactive after processing. Jobs now wait for confirmed automation deactivation before writing or deleting records and verify reactivation afterward. Coordinated handling across parallel jobs reduces the risk of reactivating automation while another job still requires it disabled. Objects are skipped when safe deactivation cannot be confirmed; automatic retry of the deactivation is not performed.
 
 #### **Clearer Scheduling Layout for nCino Backup Configuration**
 
-Improved the layout of the nCino backup configuration screen.
-
-Previously, the scheduler appeared beside the backup options and crowded the configuration area.
-
-The scheduler now appears on a separate line below the backup options.
-
-Updated spacing and alignment make scheduling controls easier to identify and review.
-
-This change applies to the nCino backup configuration creation flow.
+Improved the layout of the nCino backup configuration screen. Previously, the scheduler appeared beside the backup options and crowded the configuration area. The scheduler now appears on a separate line below the backup options. Updated spacing and alignment make scheduling controls easier to identify and review. This change applies to the nCino backup configuration creation flow.
 
 #### **Open Archived Record Details from Record Names**
 
-Added clickable record names to archived-record lists in AutoRABIT Vault Connect.
+Added clickable record names to archived-record lists in AutoRABIT Vault Connect. Selecting a record name opens a read-only view of its available archived fields and values. The detail view provides information beyond the fields displayed in the list. Archived details remain accessible even when the original record no longer exists in the live Salesforce org. The record detail experience follows Salesforce Lightning conventions and preserves the read-only nature of archived data.
 
-Selecting a record name opens a read-only view of its available archived fields and values.
-
-The detail view provides information beyond the fields displayed in the list.
-
-Archived details remain accessible even when the original record no longer exists in the live Salesforce org.
-
-The record detail experience follows Salesforce Lightning conventions and preserves the read-only nature of archived data.
+***
 
 ## AutoRABIT Vault Release Notes 26.2.6
 

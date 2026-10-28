@@ -8,59 +8,13 @@
 
 AutoRABIT CodeScan PubSec 26.0.21 is comprised of the following components:
 
-* 3 New Features
-* 6 Application Enhancements
+* 4 Application Enhancements
 * 1 New Rule
 * 5 Rule Enhancements
 * 0 Rule Deprecations
-* 7 Fixes
+* 6 Fixes
 
 Component details are listed in their corresponding sections within this document.
-
-{% hint style="info" %}
-All AI-powered features in AutoRABIT CodeScan are optional and disabled by default. They require explicit enablement and a separate AI license. Organizations that do not activate these features will experience no change to their existing CodeScan functionality.
-{% endhint %}
-
-### New Features
-
-#### **1. AI Code Assistant**
-
-Introducing the AI Code Assistant: an AI-powered code remediation capability built directly into CodeScan. The AI Code Assistant can generate fixes for common Apex rule violations, present changes in a side-by-side diff view for your review, and deliver approved fixes through automatically created Pull Request.
-
-{% hint style="info" %}
-The AI Code Assistant is currently available as a Pilot feature. To learn more about this feature or request access, please contact your AutoRABIT Customer Success representative.
-{% endhint %}
-
-#### **2. AI Credits, Usage Monitoring & Billing**
-
-Added AI credit management capabilities to support AI feature consumption tracking and governance.
-
-Key highlights:
-
-* AI credits integrated with subscription billing for accurate consumption tracking.
-* Real-time AI usage indicator in the top navigation bar with color-coded thresholds (Healthy, Low, Critical) and hover tooltip showing exact credit counts.
-* New AI Billing administration page (Administration → AI Billing) with a summary bar and searchable per-user consumption table with color-coded progress bars.
-* Organization-level daily execution limits with clear notifications when limits are reached.
-* Bulk assignment governance — maximum 10 issues per bulk action.
-
-{% hint style="info" %}
-The AI Billing page is visible only to organizations with licensed AI features.
-{% endhint %}
-
-#### **3. MCP Server**
-
-Introducing our MCP Server: a hosted endpoint that brings AutoRABIT CodeScan analysis data directly into the AI coding assistants developers already use, such as GitHub Copilot, Cursor, and Claude Desktop.
-
-Once connected, you can stay in your editor and query CodeScan conversationally:
-
-* Check which projects are passing or failing their quality gate.
-* Drill into issues, security hotspots, rules, and measures without opening the web UI.
-* Look up organizations, projects, branches, pull requests, and analysis job details as you code.
-* Pull CodeScan data into your own reporting or review workflow on demand.
-
-{% hint style="info" %}
-MCP Server is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
-{% endhint %}
 
 ### Application Enhancements
 
@@ -117,21 +71,7 @@ Outcome
 * Prevents unnecessary reauthorization for long-lived Salesforce connections.
 * Improves the reliability of Salesforce project analysis across repeated authentication cycles.
 
-#### **3. AI Code Assistant Prompt Quality Improvement**
-
-Improved AI CodeFix prompts to prevent the LLM from injecting prose, reasoning, or explanatory text into the generated code output. The worker expects only the fixed code from the AI model, but in some cases the model would include its reasoning alongside the code, which could get merged into the fixed file as if it were source code.
-
-Behavior
-
-* Prompts have been tightened to instruct the model to return code-only output without explanatory text.
-* Reduces cases where AI-generated fixes contain non-code content that could break compilation.
-
-Outcome
-
-* Improves the reliability of AI-generated code fixes.
-* Reduces manual cleanup of AI output before Pull Request creation.
-
-#### **4. Rule Version Rollback Support**
+#### **3. Rule Version Rollback Support**
 
 Added a new `usePreviousVersion` boolean parameter to rules, allowing customers to continue using the previous version of a rule when a rule enhancement is released, while new customers and customers who do not opt in automatically receive the latest rule behavior.
 
@@ -154,24 +94,7 @@ Outcome
 * Ensures new enhancements are adopted by default while preserving an opt-out mechanism.
 * Reduces disruption when rule logic evolves across releases.
 
-#### **5. AI Credit Usage Tracking for Accurate Billing**
-
-Enhanced AI credit tracking to persist the exact credit cost at the time of each AI feature execution, ensuring accurate historical billing even when credit pricing changes.
-
-Behavior
-
-* A new `credits_used` column is added to the `ai_call_log` table, recording the number of credits consumed for each AI invocation at execution time.
-* Credit values are captured at execution time and are not derived dynamically from the current admin configuration.
-* Changes to feature credit costs in Admin Settings apply only to future executions; existing records remain unchanged.
-* The AI Billing page now calculates total and per-user credit consumption using the persisted `credits_used` values rather than current feature pricing.
-
-Outcome
-
-* Ensures billing accuracy when AI feature credit costs are adjusted over time.
-* Preserves historical billing integrity for audit and reconciliation.
-* Provides transparent, per-invocation credit tracking.
-
-#### **6. Salesforce Metadata File-Suffix Coverage**
+#### **4. Salesforce Metadata File-Suffix Coverage**
 
 Expanded the SFMeta language registration to include previously missing Salesforce metadata file types that existing rules already parse, closing coverage gaps between file discovery and rule execution.
 
@@ -379,20 +302,6 @@ Outcome
 
 * Eliminates false new code highlighting on unchanged metadata blocks.
 * Improves accuracy of PR-based analysis results for Salesforce metadata files.
-
-#### **7. AI Code Fix Indicator Restricted to Supported Integrations**
-
-Fixed an issue where the "AI Fix Available" indicator was displayed for issues across all integration types, including Salesforce, Bitbucket, and Webhook repositories. AI Code Fix currently supports only GitHub and GitLab integrations.
-
-Behavior
-
-* The "AI Fix Available" indicator is now displayed only for projects connected through GitHub or GitLab.
-* The indicator is hidden for unsupported integrations (Salesforce, Bitbucket, Webhook).
-
-Outcome
-
-* Prevents user confusion about AI Code Fix availability for unsupported repository types.
-* Ensures the UI accurately reflects feature compatibility per integration.
 
 ***
 

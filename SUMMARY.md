@@ -1239,7 +1239,7 @@
     * [Destination Org](product-guides/vault/autorabit-vault-freemium/destination-org.md)
     * [Backup Config](product-guides/vault/autorabit-vault-freemium/backup-config.md)
     * [Backup](product-guides/vault/autorabit-vault-freemium/backup.md)
-    * [Restore](product-guides/vault/autorabit-vault-freemium/restore.md)
+    * [Restore User Guide](product-guides/vault/autorabit-vault-freemium/restore-user-guide.md)
     * [Replicate](product-guides/vault/autorabit-vault-freemium/replicate/README.md)
       * [Replicate Config Creation](product-guides/vault/autorabit-vault-freemium/replicate/replicate-config-creation.md)
       * [Replicate History](product-guides/vault/autorabit-vault-freemium/replicate/replicate-history.md)

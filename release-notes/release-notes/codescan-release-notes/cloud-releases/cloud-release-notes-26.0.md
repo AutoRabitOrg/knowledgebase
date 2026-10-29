@@ -14,7 +14,7 @@ CodeScan 26.0.23 is comprised of the following components:
 
 * 3 New Features
 * 3 Application Enhancements
-* 1 Rule Enhancements
+* 1 Rule Enhancement
 * 5 Fixes
 
 Component details are listed in their corresponding sections within this document.

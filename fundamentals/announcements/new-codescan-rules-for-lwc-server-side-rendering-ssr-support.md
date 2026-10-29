@@ -6,7 +6,7 @@ hidden: true
 
 ### Overview
 
-CodeScan is expanding its JavaScript/LWC rule coverage with 6 new rules that help identify code incompatible with Lightning Web Components Server-Side Rendering (SSR), rolling out **November 15, 2026**. These rules are part of our ongoing sync with the latest `@lwc/eslint-plugin-lwc` release.
+CodeScan is expanding its JavaScript/LWC rule coverage with 6 new rules that help identify code incompatible with Lightning Web Components Server-Side Rendering (SSR), rolling out **November 1, 2026**. These rules are part of our ongoing sync with the latest `@lwc/eslint-plugin-lwc` release.
 
 ### What's New
 

@@ -8,6 +8,17 @@
 
 **Release Date: 1 November 2026**
 
+### Summary
+
+CodeScan 26.0.23 is comprised of the following components:
+
+* 3 New Features
+* 3 Application Enhancements
+* 1 Rule Enhancements
+* 5 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
 ### New Features
 
 #### 1. Resolution Transfer

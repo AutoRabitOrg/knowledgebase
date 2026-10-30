@@ -34,13 +34,13 @@ Each scan gets a number, such as `SCA-1`, whichever way it was started.
 
 The scan shows one of these statuses:
 
-| Status     | Meaning                                                                      |
-| ---------- | ---------------------------------------------------------------------------- |
-| Successful | Finished, with no findings of the severities that fail the gate              |
-| Blocked    | Finished, with at least one finding of a severity that fails the gate        |
-| Partial    | <mark style="color:red;">**\[TO CONFIRM: what a partial scan means]**</mark> |
-| Failed     | Could not finish                                                             |
-| Cancelled  | Someone cancelled it                                                         |
+| Status     | Meaning                                                               |
+| ---------- | --------------------------------------------------------------------- |
+| Successful | Finished, with no findings of the severities that fail the gate       |
+| Blocked    | Finished, with at least one finding of a severity that fails the gate |
+| Partial    | Some files or folders couldn't be fully analysed                      |
+| Failed     | Could not finish                                                      |
+| Cancelled  | Someone cancelled it                                                  |
 
 A blocked first scan is normal: it shows your existing backlog. Open the scan to read the results. See Reading Scan Results.
 

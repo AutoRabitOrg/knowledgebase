@@ -2,25 +2,9 @@
 
 This article lists the CodeScan roles and what each role can do.
 
-{% hint style="danger" %}
-**\[TO CONFIRM before publishing]**
+**Key:** ✓ allowed | — not allowed | Read-only&#x20;
 
-* Role names highlighted in yellow are placeholders and may change.
-* Cells marked **?** are not yet documented. Replace each with ✓, — or Read-only.
-* Tenant manager and ACA admin have identical documented rights. How do they differ?
-* Guard admin appears only as able to view AI credit usage. Does this role belong in CodeScan?
-* Support engineer entries marked — come from the rule that all write actions are hidden for this role. They are not documented action by action.
-{% endhint %}
-
-**Key:** ✓ allowed | — not allowed | Read-only | **?** to confirm
-
-| Role                                                               | View scans | Run Analysis | Accept findings | Edit repositories and projects | Add webhooks | Create custom rules | Review Noisy Rules | Switch AI on per project | Advanced AI Suggestions | Choose AI model | View AI credit usage | Create API keys | View dashboards |
-| ------------------------------------------------------------------ | ---------- | ------------ | --------------- | ------------------------------ | ------------ | ------------------- | ------------------ | ------------------------ | ----------------------- | --------------- | -------------------- | --------------- | --------------- |
-| <mark style="background-color:yellow;">**Tenant manager**</mark>   | ✓          | **?**        | **?**           | ✓                              | **?**        | **?**               | **?**              | **?**                    | **?**                   | **?**           | ✓                    | ✓               | ✓               |
-| <mark style="background-color:yellow;">**ACA admin**</mark>        | ✓          | **?**        | **?**           | ✓                              | **?**        | **?**               | **?**              | **?**                    | **?**                   | **?**           | ✓                    | ✓               | ✓               |
-| <mark style="background-color:yellow;">**ACA user**</mark>         | ✓          | **?**        | **?**           | **?**                          | **?**        | **?**               | **?**              | **?**                    | **?**                   | **?**           | **?**                | —               | **?**           |
-| <mark style="background-color:yellow;">**Support engineer**</mark> | Read-only  | —            | —               | —                              | —            | —                   | —                  | —                        | —                       | —               | ✓                    | —               | Read-only       |
-| <mark style="background-color:yellow;">**Guard admin**</mark>      | **?**      | **?**        | **?**           | **?**                          | **?**        | **?**               | **?**              | **?**                    | **?**                   | **?**           | ✓                    | **?**           | **?**           |
+<table><thead><tr><th>Role</th><th>View scans</th><th>Run Analysis</th><th>Accept findings</th><th>Edit repositories and projects</th><th>Add webhooks</th><th>Create custom rules</th><th>Review Noisy Rules</th><th>Switch AI on per project</th><th>Advanced AI Suggestions</th><th width="140">View AI credit usage</th><th>Create API keys</th><th>View dashboards</th></tr></thead><tbody><tr><td><strong>Tenant Manager</strong></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td><p>✓ </p><p>(all features)</p></td><td>✓</td><td>✓</td></tr><tr><td><strong>ACA admin</strong></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓<br>(scanner only)</td><td>✓</td><td>✓</td></tr><tr><td><strong>ACA user</strong></td><td>✓</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td><strong>Read-only</strong> (can start PR fixes)</td><td>—</td><td>—</td><td>—</td></tr><tr><td><strong>Support Engineer</strong></td><td>Read-only</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓</td><td>—</td><td>—</td></tr><tr><td><strong>Guard admin</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>✓<br>(scanner only)</td><td>—</td><td>—</td></tr></tbody></table>
 
 {% hint style="info" %}
 **Note:** Creating an API key requires an administrator account. If **`API Keys`** is not visible in your account, ask an administrator to create a key for you.

@@ -31,10 +31,6 @@ codescan sbom --output bom.json \
 
 All four `--dtrack-*` options are required together, and Dependency-Track upload works with CycloneDX only.
 
-### Creating an SBOM From the Web App
-
-<mark style="color:red;">**\[TO CONFIRM: how to export an SBOM from the web app. The Overview article says it can be exported there]**</mark>
-
 ### Related Articles
 
 * Dependency, Supply-Chain and Container Analysis

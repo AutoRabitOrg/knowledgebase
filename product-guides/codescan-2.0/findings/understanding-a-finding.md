@@ -44,12 +44,12 @@ Select a finding to open its details. Depending on the finding, you see:
 
 ## Findings You Don't Need to Act On Yet
 
-| Finding                   | What it means                                                                                                 | Counts toward the gate                            |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Likely false positive     | The AI reviewer found evidence the code is safe. Read the reason, and accept the finding if you agree.        | No                                                |
-| Accepted                  | Your team decided to live with it, or marked it as a false positive.                                          | No                                                |
-| Suppressed by the scanner | For example, a vendor has stated that a vulnerability does not affect their package. This cannot be reversed. | No                                                |
-| Unreachable dependency    | Your code does not import the vulnerable package. It is deprioritised, not deleted.                           | <mark style="color:red;">**\[TO CONFIRM]**</mark> |
+| Finding                   | What it means                                                                                                 | Counts toward the gate                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Likely false positive     | The AI reviewer found evidence the code is safe. Read the reason, and accept the finding if you agree.        | No                                                                                              |
+| Accepted                  | Your team decided to live with it, or marked it as a false positive.                                          | No                                                                                              |
+| Suppressed by the scanner | For example, a vendor has stated that a vulnerability does not affect their package. This cannot be reversed. | No                                                                                              |
+| Unreachable dependency    | Your code does not import the vulnerable package. It is deprioritised, not deleted.                           | Yes. Reachability only changes how findings are ranked, so an unreachable critical still blocks |
 
 ## Related Articles
 

@@ -44,6 +44,11 @@ Beyond known vulnerabilities, CodeScan looks for signs of an attack on your supp
 
 Licences are identified using standard SPDX names and checked against an allow and deny policy. CodeScan also catches restrictive licences pulled in indirectly under a permissive direct dependency, and licence combinations that conflict. <mark style="color:red;">**\[TO CONFIRM: where customers set the licence allow/deny policy]**</mark>
 
+Allowed Licenses: MIT, Apache-2.0, BSD and similar.\
+Denied Licenses: GPL, AGPL, SSPL, EUPL\
+Recognised licences not in the list are flagged for review.\
+Unrecognised licences are denied.
+
 Project health uses the OpenSSF Scorecard of each dependency's source repository, and flags deprecated packages and packages with no recent release that still have open advisories.
 
 ### Container Base Images

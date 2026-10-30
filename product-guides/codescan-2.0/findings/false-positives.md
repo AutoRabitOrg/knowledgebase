@@ -48,7 +48,7 @@ For each flagged finding:
 1. Read the **AI rationale**.
 2. Open the file at the line the rationale points to, and check that the code really does what the AI says.
 3. Decide:
-   * **You agree:** leave the finding in **`False Positives`**. <mark style="color:red;">**\[TO CONFIRM: whether to accept the finding as well, so the decision is kept on later scans, and how to do that from this tab]**</mark>
+   * **You agree:** leaving the finding in **`False Positives`** will leave it out of the gate and the score but nothing is saved, so whether it stays out depends on the AI flagging it again. To make the decision stick, **`Restore`** the finding, then use **`Mark as False Positive`** or **`Mark as Accepted`** from the New Findings tab, within the 1-day window.
    * **You disagree:** select **`Restore`**. The finding moves back to **`New Findings`** and counts toward the quality gate again.
 
 {% hint style="info" %}
@@ -76,7 +76,7 @@ The **`False Positives`** tab is empty when:
 
 ### On Later Scans
 
-AI verdicts are cached. Re-scanning code that hasn't changed gives the same verdict and uses no credits. When the code, your rules or the AI model change, the finding is reviewed again. <mark style="color:red;">**\[TO CONFIRM: whether a restored finding stays restored on later scans]**</mark>
+AI verdicts are cached. Re-scanning code that hasn't changed gives the same verdict and uses no credits. When the code, your rules or the AI model change, the finding is reviewed again.
 
 ### Outside the Web App
 

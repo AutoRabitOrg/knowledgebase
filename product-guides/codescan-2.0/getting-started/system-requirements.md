@@ -10,22 +10,22 @@ description: >-
 
 CodeScan is a cloud service, so there is nothing to install on a server. This article lists what you need for each way of using it.
 
-In the examples, `https://<your-codescan-url>` stands for your CodeScan application URL. <mark style="color:red;">**\[TO CONFIRM: production URL format to show customers]**</mark>
+In the examples, `https://<your-codescan-url>` stands for your CodeScan application URL.&#x20;
 
 ### Web App
 
-| Requirement | Details                                                                            |
-| ----------- | ---------------------------------------------------------------------------------- |
-| Browser     | <mark style="color:red;">**\[TO CONFIRM: supported browsers and versions]**</mark> |
-| Account     | A CodeScan username and password. See Sign Up and Sign In.                         |
+| Requirement | Details                                                                  |
+| ----------- | ------------------------------------------------------------------------ |
+| Browser     | <p>Chrome or Edge 111+<br>Firefox 112+<br>Safari or iOS Safari 16.4+</p> |
+| Account     | A CodeScan username and password. See Sign Up and Sign In.               |
 
 ### Git Hosts
 
-| Requirement     | Details                                                                                                                                                                                  |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Supported hosts | GitHub, GitLab and Bitbucket. <mark style="color:red;">**\[TO CONFIRM: cloud only, or also GitHub Enterprise Server, GitLab Self-Managed and Bitbucket Data Center]**</mark>             |
-| Access token    | A repository access token, needed for private repositories, commit statuses and PR fixes. See Register a Repository.                                                                     |
-| Webhook         | Only for pull-request review without a pipeline. Your git host must be able to reach your CodeScan URL. <mark style="color:red;">**\[TO CONFIRM: IP addresses to allow, if any]**</mark> |
+| Requirement     | Details                                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Supported hosts | GitHub, GitLab and Bitbucket. Currently only the cloud versions of these platforms are available for direct integration. |
+| Access token    | A repository access token, needed for private repositories, commit statuses and PR fixes. See Register a Repository.     |
+| Webhook         | Only for pull-request review without a pipeline. Your git host must be able to reach your CodeScan URL.                  |
 
 ### CI/CD
 
@@ -74,11 +74,11 @@ git --version
 
 ### Limits
 
-| Limit            | Value                                                                                                                                                                                                                                                   |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| File size        | Files larger than 2 MiB are skipped. Dependency manifests and lockfiles are scanned regardless of size.                                                                                                                                                 |
-| CLI scan timeout | A CLI scan stops after 5 minutes with no progress, or after one hour by default. Each project also has a **`CLI Timeout`** of 1 to 120 minutes (default 30). <mark style="color:red;">**\[TO CONFIRM: which timeout applies when both are set]**</mark> |
-| VS Code scan     | The notification closes after 900 seconds by default, but the scan keeps running and the findings load when it finishes.                                                                                                                                |
+| Limit            | Value                                                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| File size        | Files larger than 2 MiB are skipped. Dependency manifests and lockfiles are scanned regardless of size.                                                       |
+| CLI scan timeout | A CLI scan stops after 5 minutes with no progress, or after one hour by default. Each project also has a **`CLI Timeout`** of 1 to 120 minutes (default 30).  |
+| VS Code scan     | The notification closes after 900 seconds by default, but the scan keeps running and the findings load when it finishes.                                      |
 
 ### Next Step
 

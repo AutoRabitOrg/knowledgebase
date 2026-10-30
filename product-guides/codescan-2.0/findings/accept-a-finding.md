@@ -36,11 +36,11 @@ An accepted finding is identified by the rule, the file and the code itself, not
 
 ## Accepting Is Not the Same as an AI Flag
 
-|                           | AI flag (likely false positive)                   | Accepted                 |
-| ------------------------- | ------------------------------------------------- | ------------------------ |
-| Who decides               | The AI reviewer                                   | Your team                |
-| Remembered on later scans | <mark style="color:red;">**\[TO CONFIRM]**</mark> | Yes, for this repository |
-| Counts toward the gate    | No                                                | No                       |
+|                           | AI flag (likely false positive) | Accepted                 |
+| ------------------------- | ------------------------------- | ------------------------ |
+| Who decides               | The AI reviewer                 | Your team                |
+| Remembered on later scans | **No**                          | Yes, for this repository |
+| Counts toward the gate    | No                              | No                       |
 
 Both stay visible, so you can always check what was set aside and why.
 

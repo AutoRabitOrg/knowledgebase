@@ -14,7 +14,7 @@ Every scan follows the same five steps, whether you start it from the web app, a
 | 2. Understand        | Each file is parsed into a syntax tree, the same structure a compiler uses. Classes, methods and call chains are then indexed.                                                                        |
 | 3. Scan              | The deterministic rules run. This step is fast and repeatable. Test folders are left out of it.                                                                                                       |
 | 4. Review (optional) | If AI finding review is switched on, findings of the severities you selected go to the AI reviewer. This step uses AI credits.                                                                        |
-| 5. Deliver           | You get findings, suggested fixes, reports, an SBOM, the blast radius of a change, and the quality gate result.                                                                                       |
+| 5. Deliver           | You get findings, suggested fixes, reports, the blast radius of a change, and the quality gate result.                                                                                                |
 
 ### What Gets Scanned
 
@@ -47,7 +47,7 @@ Before any AI is involved, CodeScan reduces noise automatically, at no credit co
 * It lowers convention rules to Info when your project has never followed that convention.
 * It runs framework rules only when that framework is present.
 
-Security rules and Blocker or Critical findings are never lowered by this step.&#x20;
+Security rules and Blocker or Critical findings are never lowered by this step.
 
 ### AI Review
 

@@ -25,15 +25,15 @@ When the fixes are ready, the PR fix appears in the **`Create PR`** menu with it
 
 The **Review PR fix** page shows:
 
-| Field               | Meaning                                                                                                                                      |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`Status`**        | For example, **Ready for review**                                                                                                            |
-| **`Target branch`** | The branch the pull request will merge into                                                                                                  |
-| **`Fix branch`**    | The branch CodeScan creates for the fixes, named `codescan/fix-<scan>-<id>`                                                                  |
-| **`Fixed`**         | How many of the selected findings have a fix, for example _2/2 findings_                                                                     |
-| **`Files`**         | How many files the fixes change                                                                                                              |
-| **`Billed`**        | How many fixed findings are charged                                                                                                          |
-| **`Expires`**       | The date to review by. After it, the PR fix expires. <mark style="color:red;">**\[TO CONFIRM: expiry period. Seven days in testing]**</mark> |
+| Field               | Meaning                                                                                      |
+| ------------------- | -------------------------------------------------------------------------------------------- |
+| **`Status`**        | For example, **Ready for review**                                                            |
+| **`Target branch`** | The branch the pull request will merge into                                                  |
+| **`Fix branch`**    | The branch CodeScan creates for the fixes, named `codescan/fix-<scan>-<id>`                  |
+| **`Fixed`**         | How many of the selected findings have a fix, for example _2/2 findings_                     |
+| **`Files`**         | How many files the fixes change                                                              |
+| **`Billed`**        | How many fixed findings are charged                                                          |
+| **`Expires`**       | The date to review by, 7 days after the draft is ready. After this date, the PR fix expires. |
 
 To review the changes:
 

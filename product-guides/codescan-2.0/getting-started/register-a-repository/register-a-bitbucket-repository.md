@@ -7,7 +7,7 @@ description: >-
 # Register a Bitbucket Repository
 
 {% hint style="danger" %}
-**\[TO CONFIRM before publishing]** These steps are for Bitbucket Cloud. Confirm whether Bitbucket Data Center is supported.
+Please note Bitbucket Data Center is not currently supported.
 {% endhint %}
 
 This article takes you through registering a Bitbucket repository in three parts:

@@ -4,7 +4,7 @@
 
 Yes, custom rules can be created in IZ Analyzer using simple groovy scripts. Rules can be created by using either of the following ways -
 
-1. [Rules Playground in Studio](../integral-zone/iz-suite/iz-scan/anypoint-studio/source-code-analysis/anypoint-studio-rules-playground.md) - Rules playground is part of Anypoint Studio plug-in, where custom rules can be evaluated and published to server.
+1. [Rules Playground in Studio](../integral-zone/iz-suite-legacy/iz-scan/anypoint-studio/source-code-analysis/anypoint-studio-rules-playground.md) - Rules playground is part of Anypoint Studio plug-in, where custom rules can be evaluated and published to server.
 2. [Rules Template in Server](manage-rules/custom-rules.md) - Custom rules can also be created directly in server using the custom rule template.
 
 ### What are the different installation options?

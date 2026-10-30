@@ -1367,6 +1367,7 @@
     * [Single Sign-On (SSO)](product-guides/guard/getting-started-with-guard/single-sign-on-sso/README.md)
       * [SSO with Microsoft Entra ID (Azure AD)](product-guides/guard/getting-started-with-guard/single-sign-on-sso/sso-with-microsoft-entra-id-azure-ad.md)
       * [SSO with Okta](product-guides/guard/getting-started-with-guard/single-sign-on-sso/sso-with-okta.md)
+      * [SSO with PingOne Cloud](product-guides/guard/getting-started-with-guard/single-sign-on-sso/sso-with-pingone-cloud.md)
     * [Refreshing a Salesforce Sandbox](product-guides/guard/getting-started-with-guard/refreshing-a-salesforce-sandbox.md)
     * [Data Retention](product-guides/guard/getting-started-with-guard/data-retention.md)
   * [Features](product-guides/guard/features/README.md)

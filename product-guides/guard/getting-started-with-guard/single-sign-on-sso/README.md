@@ -1,6 +1,6 @@
 # Single Sign-On (SSO)
 
-Single Sign-On (SSO) allows your organization to streamline and secure access to Guard by integrating with your corporate identity provider (IdP). Any SAML 2.0 IdP works, including Azure and Okta.&#x20;
+Single Sign-On (SSO) allows your organization to streamline and secure access to Guard by integrating with your corporate identity provider (IdP). Any SAML 2.0 IdP works, including Microsoft Entra ID, Okta and PingOne Cloud.
 
 ### Benefits of Using SSO
 
@@ -13,7 +13,7 @@ Single Sign-On (SSO) allows your organization to streamline and secure access to
 
 Currently, Guard manages SSO through Keycloak. To set up SSO for your tenant:
 
-1. Speak to us about getting support for enabling SSO.&#x20;
+1. Speak to us about getting support for enabling SSO.
 2. Our team will help configure the integration with your IdP (e.g., Microsoft Entra ID).
 3. Once configured, users assigned to the proper IdP groups will automatically be granted access to Guard (recommended default is Standard User privileges). Admins retain their permissions as defined in Guard.
 

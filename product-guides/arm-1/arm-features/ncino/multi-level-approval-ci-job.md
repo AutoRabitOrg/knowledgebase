@@ -380,6 +380,112 @@ The Build info option is available from the action menu after workflow completio
 
 The Build Information panel provides a centralized audit view of the completed build. It displays job details, build number, build name, build status, deploy status, commit status, deployed Salesforce org, trigger information, Level 1 and Level 2 approvers, and the comments captured during deployment and commit approvals.
 
+## CI Jobs: Rerun Builds and Manage Approvals
+
+The following flow follows the CI Job through a new build submission and the resulting approval status review. It explains how the deployment type determines which approval selections are relevant, and how the submitted build is monitored from CI Job History.
+
+## Start a new build from CI Job History
+
+The nCino > CI Job History page provides the starting point for rerunning an existing CI Job. The table presents previous build entries and their Build status, Deploy status, and Commit status. Locate the intended CI Job and use its available build action to open the Trigger build panel. This creates a new build attempt without changing the earlier history entry.
+
+<figure><img src="../../../../.gitbook/assets/image (3298).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">CI Job History: identify the CI Job and its available actions</p>
+
+The Trigger build panel retains the selected job context. The CI job details, Source details, and Destination details sections identify the source organization, deployment destination, and commit target associated with the job. Review these values before entering the inputs for the new build.
+
+<figure><img src="../../../../.gitbook/assets/image (3299).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Trigger build: verify job context and destination information</p>
+
+## Define the rerun operation
+
+In Build inputs, provide a Build label and, where appropriate, a Build comment and Build notes. The Deployment type controls the requested operation: Commit and deploy performs both actions; Deploy only requests deployment; Commit only requests a repository commit. Select the option that matches the intended rerun. Approval selections are relevant to the operations enabled for that build.
+
+<figure><img src="../../../../.gitbook/assets/image (3300).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Deployment type and approval-related controls</p>
+
+When approval controls are available, open the corresponding approver selector. The selectable entries are presented within the control, allowing the appropriate approvers to be chosen for the configured level. The available choices depend on the approval setup associated with the CI Job.
+
+<figure><img src="../../../../.gitbook/assets/image (3301).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Open the approver list for the selected operation</p>
+
+## Configure the approval levels
+
+For an approval-enabled deployment or commit, the first approval stage is Level 1. Open the Level 1 selector and choose the required approvers. Where multiple selections are supported, the field summarizes the selected entries. Review the displayed selection before moving to the next approval level.
+
+<figure><img src="../../../../.gitbook/assets/image (3302).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Select approvers for the first approval level</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3303).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Review the selected Level 1 approvers</p>
+
+Continue within the approval controls to include any additional approvers required by the job configuration. The selections should reflect the intended approval routing before the build is submitted.
+
+<figure><img src="../../../../.gitbook/assets/image (3304).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Add approvers to the relevant selection</p>
+
+The second approval stage is Level 2. Open its selector and choose the approvers responsible for the subsequent review. Level 1 and Level 2 remain distinct approval stages; the build proceeds through the configured stages rather than treating every selected approver as part of one undifferentiated list.
+
+<figure><img src="../../../../.gitbook/assets/image (3305).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Open the next approval-level selector</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3306).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Select Level 2 approvers</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3307).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Review the selected approvers for the next level</p>
+
+After completing the relevant selectors, verify that the required deployment and/or commit approval fields reflect the intended approvers. For a combined Commit and deploy build, the approval information for both operations must be considered.
+
+<figure><img src="../../../../.gitbook/assets/image (3308).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Review the completed approval selections</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3309).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Confirm the build inputs before submission</p>
+
+## Trigger the rerun and return to history
+
+Select Trigger build after confirming the Build label, Deployment type, and applicable approvers. The interface processes the submission and returns to CI Job History. Submission initiates the build workflow; it does not by itself mean that deployment or commit approval has been completed.
+
+<figure><img src="../../../../.gitbook/assets/image (3310).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Trigger build: submission in progress</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3311).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">CI Job History: the new build appears in the history</p>
+
+## Interpret approval-related statuses
+
+The newly submitted build is tracked using separate Build status, Deploy status, and Commit status indicators. Inspect the relevant operation status rather than relying only on the overall build result. Hovering over a status icon displays its current meaning, including an approval-waiting state when the corresponding operation has not yet received the required approval.
+
+<figure><img src="../../../../.gitbook/assets/image (3312).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Inspect the deployment status tooltip</p>
+
+<figure><img src="../../../../.gitbook/assets/image (3313).png" alt=""><figcaption></figcaption></figure>
+
+<p align="center">Inspect the commit status tooltip</p>
+
+For a CI Job configured with multi-level approvals, the applicable Level 1 approvals are completed before the workflow advances to Level 2. Once the required approvals are obtained, the corresponding deployment or commit can proceed according to the existing CI Job approval workflow. The final result is reflected in the operation-specific status fields.
+
+## Scheduled reruns while approval is pending
+
+When approvers are enabled, a build that is awaiting approval must complete the required approval and subsequent deployment and/or commit before the next scheduled execution. This prevents a new scheduled build from being created while the earlier build remains blocked in the approval workflow.
+
+The CI Job History and build details remain the reference points for reviewing the build outcome and determining whether a further rerun is appropriate.
+
 ## Key System Behaviors
 
 Approval inactivity handling: Deployment and commit approvals that remain inactive for 14 days from the time of job creation are automatically rejected.

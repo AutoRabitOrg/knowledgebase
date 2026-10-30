@@ -2,6 +2,14 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino - Release 26.4.5 <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
+
+**Release Date:** **01 November 2026**
+
+#### Consistent Multi-Level Approvals for nCino CI Job Operations <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
+
+Multi-level approval controls now apply consistently to nCino CI Job builds, reruns, scheduled executions, deployments, commits, and rollbacks in the new interface. Approvers are prepopulated using the priority: CI Job configuration, My Account configuration, and the latest applicable build for the same destination. New manual or scheduled builds are prevented while an existing build is awaiting approval or completing its approved operation. Rollbacks can use independent L1 and L2 approval workflows with approval decisions retained in the build history.
+
 ## nCino - Release 26.4.4 <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
 
 **Release Date:** **25 October 2026**

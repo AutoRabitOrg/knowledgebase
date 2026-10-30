@@ -4,6 +4,56 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive updated release notes!" %}
 
+## ARM **Release Notes 26.4.5**
+
+**Release Date: 1st November 2026**
+
+#### Deployed Components Audit Report - FR - New UI <a href="#deployed-components-audit-report-fr-new-ui" id="deployed-components-audit-report-fr-new-ui"></a>
+
+Introduced a new **Deployment Component Audit Report** under **Reports**, providing centralized visibility into metadata components successfully deployed to Salesforce orgs.
+
+Users can track **what was deployed, when, by whom, and from which source**, including repository, branch, revision, and associated ALM story details.
+
+The report supports **advanced filtering, deployment-wise grouping, and CSV export**, helping customers improve deployment traceability, auditing, and compliance reporting.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/reports/deployment-component-audit-report" %}
+
+#### Scheduled Deployments with Approval Workflow - FR - New UI <a href="#scheduled-deployments-with-approval-workflow-fr-new-ui" id="scheduled-deployments-with-approval-workflow-fr-new-ui"></a>
+
+Introduced the ability to **schedule deployments for a specific date, time, and time zone**, allowing users to automate deployments during planned maintenance windows without manual intervention.
+
+Users can schedule deployments from the **Review & Deploy** step and **edit or cancel scheduled deployments** through Deployment History before execution.
+
+For deployments requiring approval, ARM follows the existing **L1/L2 approval workflow** and executes the deployment at the scheduled time only after all required approvals are completed.
+
+**Note:** This feature is available only when the **SCHEDULED\_DEPLOYMENTS** feature flag is enabled. Once enabled, the **Schedule** option becomes available during deployment.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/schedule-a-deployment" %}
+
+#### Enhanced Commit History with Revision Types, Status Indicators, and Expandable Details (New UI) <a href="#enhanced-commit-history-with-revision-types-status-indicators-and-expandable-details-new-ui" id="enhanced-commit-history-with-revision-types-status-indicators-and-expandable-details-new-ui"></a>
+
+Enhanced the **Commit History** page in the New UI to provide better visibility into commit types, execution statuses, and associated details.
+
+ARM now displays **revision-type badges (PV, EZ, VM)**, clear **commit status indicators**, and **expandable rows** that allow users to view additional commit information without navigating to another page.
+
+This enhancement improves **commit tracking, troubleshooting, and usability** while retaining the existing filters, navigation, and Commit History functionality.
+
+#### API Support for Automated Branch Creation, Metadata Commit, and Pull Request Generation <a href="#api-support-for-automated-branch-creation-metadata-commit-and-pull-request-generation" id="api-support-for-automated-branch-creation-metadata-commit-and-pull-request-generation"></a>
+
+Introduced a new **ARM API** to streamline Salesforce metadata management by automating branch creation, metadata retrieval, commit operations, and Pull Request creation through a single request.
+
+Users can provide a **package manifest, target Salesforce org, repository, and base branch** to automatically retrieve and commit the specified metadata to a new branch and create a Pull Request.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+
+#### Fixed Search & Substitute Rules Not Replacing Metadata Values Containing Special Characters (Classic UI) <a href="#fixed-search-and-substitute-rules-not-replacing-metadata-values-containing-special-characters-classi" id="fixed-search-and-substitute-rules-not-replacing-metadata-values-containing-special-characters-classi"></a>
+
+Resolved an issue where **Search & Substitute rules created in the Classic UI** failed to replace metadata values containing special characters during EZ-Commit, Deployments, and CI Jobs.
+
+The Classic UI now preserves special characters in **Search Criteria** and **Substitute** fields, ensuring accurate value replacement and consistent behavior across the Classic and New UI.
+
+**Note:** Existing rules affected by this issue must be edited to re-enter the original values containing special characters.
+
 ## ARM **Release Notes 26.4.4**
 
 **Release Date: 25 October 2026**

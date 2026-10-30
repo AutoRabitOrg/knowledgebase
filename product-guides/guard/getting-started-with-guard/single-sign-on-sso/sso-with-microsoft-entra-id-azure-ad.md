@@ -2,8 +2,6 @@
 
 Use this guide when your organization authenticates Guard users through Microsoft Entra ID with SAML 2.0.
 
-Guard SSO is configured by AutoRABIT Support in Keycloak. You set up the Entra application and send us the federation metadata.
-
 ### Before you start
 
 You need:
@@ -25,11 +23,11 @@ You need:
 
 In Basic SAML Configuration, edit and set:
 
-| Field                                      | Value                                         |
-| ------------------------------------------ | --------------------------------------------- |
-| Identifier (Entity ID)                     | The Identifier from Support                   |
-| Reply URL (Assertion Consumer Service URL) | The Reply URL from Support                    |
-| Sign on URL (optional)                     | Your Guard login URL, if Support provides one |
+| Field                                      | Value                |
+| ------------------------------------------ | -------------------- |
+| Identifier (Entity ID)                     | The Identifier       |
+| Reply URL (Assertion Consumer Service URL) | The Reply URL        |
+| Sign on URL (optional)                     | Your Guard login URL |
 
 Save the configuration.
 
@@ -45,7 +43,7 @@ In Attributes & Claims, make sure these claims are released. Guard maps them on 
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`         | Prefer the same value as the Guard username (often email) | Username match / account merge |
 
 {% hint style="warning" %}
-The username claim must match the existing Guard login where users already have accounts. If Entra sends email as the unique login instead of Name, tell Support so they can map the email claim as username.
+The username claim must match the existing Guard login where users already have accounts. If Entra sends email as the unique login instead of Name, tell us so we can map the email claim as username.
 {% endhint %}
 
 ### Step 4: Create the admin app role

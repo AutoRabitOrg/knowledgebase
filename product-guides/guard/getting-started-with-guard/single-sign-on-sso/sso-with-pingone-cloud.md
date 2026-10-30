@@ -2,8 +2,6 @@
 
 Use this guide when your organisation authenticates Guard users through PingOne Cloud with SAML 2.0.
 
-Guard SSO is configured by AutoRABIT Support in Keycloak. You create the PingOne SAML application and send us the IdP metadata.
-
 ### Before you start
 
 You need:

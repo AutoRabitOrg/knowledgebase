@@ -2,8 +2,6 @@
 
 Use this guide when your organisation authenticates Guard users through Okta with SAML 2.0.
 
-Guard SSO is configured by AutoRABIT Support in Keycloak. You create the Okta SAML app and send us the IdP metadata.&#x20;
-
 ### Before you start
 
 You need:
@@ -18,7 +16,7 @@ You need:
 1. Sign in to the Okta Admin Console.
 2. Go to Applications → Applications → Create App Integration.
 3. Choose SAML 2.0 → Next.
-4. Enter an app name such as `Guard` → Next.
+4. Enter an app name (such as `Guard` )→ Next.
 
 ### Step 2: Enter the Guard SAML values
 
@@ -26,12 +24,12 @@ On the Configure SAML tab:
 
 | Field                       | Value                                           |
 | --------------------------- | ----------------------------------------------- |
-| Single sign-on URL          | The Single sign-on URL from Support             |
-| Audience URI (SP Entity ID) | The Audience URI from Support                   |
+| Single sign-on URL          | The Single sign-on URL                          |
+| Audience URI (SP Entity ID) | The Audience URI                                |
 | Name ID format              | EmailAddress (recommended)                      |
 | Application username        | Email (recommended, so it matches Guard logins) |
 
-Leave other defaults unless Support asks for a change. Continue to the feedback step and finish creating the app.
+Leave other defaults. Continue to the feedback step and finish creating the app.
 
 ### Step 3: Configure attribute statements
 
@@ -44,9 +42,9 @@ In the SAML app, open Sign On (or edit SAML settings) and add attribute statemen
 | `email`     | Unspecified | `user.email`                                                 | Email                          |
 | `username`  | Unspecified | `user.email` (or the attribute that matches the Guard login) | Username match / account merge |
 
-If your Okta org already uses different attribute names, keep them consistent and tell Support the exact names so Keycloak mappers can be aligned.
+If your Okta org already uses different attribute names, keep them consistent and tell us the exact names so Keycloak mappers can be aligned.
 
-For admin elevation, also release a role or group attribute that Support can map to `TENANT-MANAGER`. Common options:
+For admin elevation, also release a role or group attribute that we can map to `TENANT-MANAGER`. Common options:
 
 Option A – group attribute
 
@@ -58,14 +56,14 @@ Option B – custom user attribute
 
 Create a user profile attribute (for example `guardRole`) and set it to `TENANT-MANAGER` for admins. Release it as a SAML attribute named `role`.
 
-Agree the exact attribute name and value with Support before go-live. The value they map is `TENANT-MANAGER`.
+Agree the exact attribute name and value with us before go-live. The value we map is `TENANT-MANAGER`.
 
 ### Step 4: Assign people and groups
 
 1. Open the Guard app → Assignments.
 2. Assign every person or group that should use Guard.
 3. Make sure Guard admins are in the admin group or have the custom attribute that releases `TENANT-MANAGER`.
-4. Everyone else receives standard Guard user access after Support finishes Keycloak mapping.
+4. Everyone else receives standard Guard user access after we finish Keycloak mapping.
 
 ### Step 5: Download IdP metadata and send it to us
 
@@ -80,7 +78,7 @@ Reply to us with:
 * The attribute statement names you configured (`firstName`, `lastName`, `email`, `username`, `role` or equivalent)
 * How admins are identified (group name or custom attribute value `TENANT-MANAGER`)
 * Confirmation that Application username / username attribute matches existing Guard logins (usually email)
-* Your preferred button label on the Guard login page (for example `Contoso SSO`)
+* Your preferred button label on the Guard login page
 
 We will complete the Keycloak side and confirm when you can proceed with testing.
 

@@ -38,11 +38,13 @@ ARM now displays **revision-type badges (PV, EZ, VM)**, clear **commit status in
 
 This enhancement improves **commit tracking, troubleshooting, and usability** while retaining the existing filters, navigation, and Commit History functionality.
 
-#### API Support for Automated Branch Creation, Metadata Commit, and Pull Request Generation <a href="#api-support-for-automated-branch-creation-metadata-commit-and-pull-request-generation" id="api-support-for-automated-branch-creation-metadata-commit-and-pull-request-generation"></a>
+**API Support for Automated Branch Creation, Metadata Commit, and Pull Request Generation**
 
-Introduced a new **ARM API** to streamline Salesforce metadata management by automating branch creation, metadata retrieval, commit operations, and Pull Request creation through a single request.
+Introduced a new ARM API to streamline Salesforce metadata management by automating branch creation, metadata retrieval, commit operations, and Pull Request creation through a single request.
 
-Users can provide a **package manifest, target Salesforce org, repository, and base branch** to automatically retrieve and commit the specified metadata to a new branch and create a Pull Request.
+Users can provide a package manifest, target Salesforce org, repository, and base branch to automatically retrieve and commit the specified metadata to a new branch and create a Pull Request.
+
+Note: This API is supported only for Non-DX repositories. DX repositories are currently not supported.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 

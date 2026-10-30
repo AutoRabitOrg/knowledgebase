@@ -972,6 +972,7 @@
       * [Audit Reports](product-guides/arm-1/arm-features/reports/audit-report.md)
       * [Deployment Reports](product-guides/arm-1/arm-features/reports/deployment-reports.md)
       * [Static Code Analysis](product-guides/arm-1/arm-features/reports/static-code-analysis.md)
+      * [Deployment Component Audit Report](product-guides/arm-1/arm-features/reports/deployment-component-audit-report.md)
     * [Webhooks](product-guides/arm-1/arm-features/webhooks/README.md)
       * [Bitbucket](product-guides/arm-1/arm-features/webhooks/configuring-a-webhook-in-bitbucket.md)
       * [Bitbucket Enterprise](product-guides/arm-1/arm-features/webhooks/configuring-a-webhook-in-bitbucket-enterprise.md)

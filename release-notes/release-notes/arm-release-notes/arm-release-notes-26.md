@@ -54,6 +54,14 @@ The Classic UI now preserves special characters in **Search Criteria** and **Sub
 
 **Note:** Existing rules affected by this issue must be edited to re-enter the original values containing special characters.
 
+#### Optimized Version Control Performance and Resource Utilization <a href="#optimized-version-control-performance-and-resource-utilization-internal" id="optimized-version-control-performance-and-resource-utilization-internal"></a>
+
+Improved **ARM performance and resource efficiency** by optimizing repository history retrieval and eliminating unnecessary full repository downloads during commit history and reporting operations.
+
+These improvements help **reduce CPU usage, disk I/O, and system overhead**, particularly for large repositories, contributing to better application stability and performance.
+
+**Note:** This optimization applies to repositories using **Optimized Workspaces** and does not change existing Version Control functionality or reporting results.
+
 ## ARM **Release Notes 26.4.4**
 
 **Release Date: 25 October 2026**

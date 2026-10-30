@@ -741,6 +741,7 @@
       * [Profile Compare](product-guides/arm-1/arm-features/deployment/deploying-the-profile-and-permissionsets.md)
       * [Track Profile & Permissions Compare History](product-guides/arm-1/arm-features/deployment/monitor-deployments-1.md)
       * [Sharing Settings for Custom Objects](product-guides/arm-1/arm-features/deployment/sharing-settings-for-custom-objects.md)
+      * [Schedule a Deployment](product-guides/arm-1/arm-features/deployment/schedule-a-deployment.md)
     * [DataLoader (Import Your Data)](product-guides/arm-1/arm-features/dataloader/README.md)
       * [Import Using Single DataLoader](product-guides/arm-1/arm-features/dataloader/single-dataloader/README.md)
         * [Deleting Salesforce Data](product-guides/arm-1/arm-features/dataloader/single-dataloader/delete-salesforce-data.md)

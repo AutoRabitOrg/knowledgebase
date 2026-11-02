@@ -303,6 +303,28 @@ Outcome
 * Eliminates false new code highlighting on unchanged metadata blocks.
 * Improves accuracy of PR-based analysis results for Salesforce metadata files.
 
+#### **7. Fixed issue of user experiencing 500 error when using the api/rules/create endpoint**
+
+**Summary**
+
+When creating a custom rule using the `api/rules/create` endpoint, the user would receive a 500 error even when providing all the documented required fields from the API documentation.
+
+**Expected Result**
+
+The API is expected to give a 200 response and return the details of the created rule. The user should immediately be able to see their custom rule in the rule list on the CodeScan Cloud platform.
+
+**Scenarios Validated**
+
+*   Reproduced the original 500 internal server error when calling the Create Rule API.
+
+    <figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+*   Post-fix, the API call executes successfully; is able to create custom rules via the API without errors.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+*   Verified the created custom rule is functional; issues are triggered as expected when the custom rule is activated.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## AutoRABIT CodeScan PubSec 26.0.13 Hotfix 2 Release Notes

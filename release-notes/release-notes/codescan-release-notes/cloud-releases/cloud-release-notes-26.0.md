@@ -6,7 +6,7 @@
 
 ## CodeScan Release Notes 26.0.23
 
-**Release Date: 1 November 2026**
+**Release Date: 4 November 2026**
 
 ### Summary
 

@@ -17,6 +17,8 @@ layout:
     visible: true
   actions:
     visible: true
+  anchors:
+    visible: true
 ---
 
 # IdP Group Mapping for Dedicated Instances
@@ -42,7 +44,7 @@ To configure the mapping between IdP Groups and Codescan Orgs and Groups:
    1. Enable `CodeScan idp-group-mapping`&#x20;
 3. Navigate to **Administration > SAML Connections** and edit the connection of your choice.  There is a **IdP Group Mapping** section on the SAML Configuration screen:
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can add multiple rows for the mapping. In each row you define:
 

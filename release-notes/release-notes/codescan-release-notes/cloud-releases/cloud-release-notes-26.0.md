@@ -977,7 +977,7 @@ CodeScan 26.0.15 is comprised of the following 5 components:&#x20;
 * 1 New Feature&#x20;
 * 1 New Rule&#x20;
 * 1 Rule Enhancement&#x20;
-* 2 Fixes&#x20;
+* 3 Fixes&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
@@ -1311,6 +1311,34 @@ Verified the same scenarios with Root-level admin, working as expected.\
 Verified the same scenarios with PR, working as expected.
 
 <img src="../../../../.gitbook/assets/unknown (114).png" alt="" height="122" width="624">
+
+
+
+3. **Fixed issue of user experiencing 500 error when using the api/rules/create endpoint**
+
+**Summary**
+
+When creating a custom rule using the `api/rules/create` endpoint, the user would receive a 500 error even when providing all the documented required fields from the API documentation.&#x20;
+
+**Expected Result**
+
+The API is expected to give a 200 response and return the details of the created rule.  The user should immediately be able to see their custom rule in the rule list on the CodeScan Cloud platform.
+
+**Scenarios Validated**
+
+* Reproduced the original 500 internal server error when calling the Create Rule API
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt="" width="375"><figcaption></figcaption></figure>
+
+
+
+* Post-fix, the API call executes successfully — able to create custom rules via the API without errors.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="375"><figcaption></figcaption></figure>
+
+* Verified the created custom rule is functional — issues are triggered as expected when the custom rule is activated.
+
+<figure><img src="../../../../.gitbook/assets/image (3314).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -3219,7 +3247,7 @@ This new feature allows organization admins to configure the default CodeScan us
 
 User type selection directly in the SSO/SAML configuration page to select either Platform Integration Users or Standard users.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The following scenarios have been verified and are working as expected:
 
@@ -3255,7 +3283,7 @@ Additional details regarding the Cursor IDE usage data:
 
 Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminstration and confirmed users are able to see the added Cursor symbol through the API call in the UI of the application. We also verified that existing behavior for VS Code and Intellij is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**3.     Updated Filter Message for Security Hotspot CSV Export**
 
@@ -3273,7 +3301,7 @@ Verified the updated Security Hotspot export filter message.
 
 All the above scenarios are working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **4.     Automatically generate Callback URL when adding ECA in Salesforce Org**
 
@@ -3310,7 +3338,7 @@ Added a custom tooltip, copy icon and copied label when user copies the URL
 
 We have verified that **Callback URL** is displayed correctly, and the **Copy** button is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE:** When hovering over the Callback URL button, the notes are displayed. The notes do not disappear when clicking on the Callback URL. They only disappear when clicking anywhere else on the page. This is the expected behavior.
@@ -3352,7 +3380,7 @@ Enhanced the Issues CSV export to include a separate column called “**Status M
 
 If the CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing issues outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -3381,7 +3409,7 @@ Enhanced the Security Hotspot CSV export to include a separate column called “
 
 If the Hotspot CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing hotspots outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -3428,11 +3456,11 @@ Validated the CSV Security Hotspot Export with Detailed Statuses; below is the v
 * Verified export remains consistent with UI status for the same hotspot set.
 * Confirmed export works for mixed-status datasets and filters/sorting do not alter status values.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -3464,7 +3492,7 @@ The enhancement for including closed issue statuses in CSV reports has been vali
 
 Concluding that the CSV export now accurately reflects the issues, including closed statuses (**FIXED, CLOSED, REMOVED**), ensuring consistency with the UI.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rule
 
@@ -3688,7 +3716,7 @@ There are no Rule Deprecations in this release.
 
 We identified an issue in CodeScan where the Data Flow Trace for a SOQL injection rule where the trace repeatedly shows the same assignment instead of a clean, non-duplicated trace.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We determined the root cause of the issue and updated the rule logic accordingly.  With this fix, this issue is now fully remediated.Top of Form
 
@@ -3697,7 +3725,7 @@ Verified the following scenarios and report that the rule is now working as expe
 * Verified for duplicated traces : verified along with test instance\
   in preview: no duplicated traces
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -4398,7 +4426,7 @@ Faster time to market with business requirements
 * Integrated seamlessly with CICD workflows
 * Delivers on the Cursor promise of “making developers extraordinarily productive”
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -4413,7 +4441,7 @@ If issue comments are included in the CSV export with clear attribution & timest
 
 _The image below illustrates the new format for comments added into CSV exports:_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -4471,13 +4499,13 @@ We have verified all the fixes related to user license counting and orphan membe
    2. Executed dev-provided cleanup SQL query.
    3. Confirmed Orphan entries were successfully deleted.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Fixed an issue with “Issues” assignment and status update, where filters are not working (as "Bulkchange and Bulkassign" API returns 500 Internal error)**
 

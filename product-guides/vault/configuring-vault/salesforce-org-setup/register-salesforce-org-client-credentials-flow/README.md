@@ -52,7 +52,7 @@ In AutoRABIT Vault, select **Setup** from the navigation menu. On the **Salesfor
 
 In the **Source Org Integration** window, select **Client Credentials Flow**. Select **Next** to continue.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select Client Credentials Flow as the authentication method._
 {% endstep %}
@@ -64,7 +64,7 @@ In the **Source Org Integration** window, select **Client Credentials Flow**. Se
 
 For **Environment Type**, select **Salesforce**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select Salesforce as the environment type._
 
@@ -72,7 +72,7 @@ For **Environment Type**, select **Salesforce**.
 
 From **Salesforce API Version**, select the API version required for the connection.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Select the Salesforce API version._
 
@@ -80,7 +80,7 @@ From **Salesforce API Version**, select the API version required for the connect
 
 Enter a meaningful name in **Org Title** and the integration user in **User Name**. Select **Production** or **Sandbox**, enter the Salesforce host in **My Domain URL**, and then select **Continue**.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Enter the Salesforce org and environment details._
 
@@ -98,7 +98,7 @@ AutoRABIT Vault displays the Salesforce configuration requirements for the Exter
 
 Review the initial Salesforce Admin Setup instructions displayed in AutoRABIT Vault.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                 _Review the External Client App setup requirements._
 

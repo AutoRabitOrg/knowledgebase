@@ -35,10 +35,10 @@ Before configuring SSO in OKTA, you must enable SSO in CodeScan.
     * If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 7.  Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 8.  You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to OKTA.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 2: Adding CodeScan as an App in OKTA <a href="#step-2-adding-codescan-as-an-app-in-okta" id="step-2-adding-codescan-as-an-app-in-okta"></a>
 
@@ -126,7 +126,7 @@ Once the application is created, you will need to enter the identity provider da
 5. A new tab will open, which displays the IdP metadata file in XML format.
 6.  In **CodeScan**, on the **`SAML`** page, go to **`Actions`** and click on **`Edit`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7.  Enter the following values:
 
     * **`Provider Entity Id`**: Copy the **entityID** value and paste it into **`Provider Entity Id`** inside CodeScan.

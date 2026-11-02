@@ -86,7 +86,7 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 
 ### Assigning Issues to the AI Code Assistant
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### Single Assignment
 

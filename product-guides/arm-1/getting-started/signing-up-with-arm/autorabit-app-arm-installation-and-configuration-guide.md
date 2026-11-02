@@ -36,7 +36,7 @@ ENVIRONMENT CHOICE: The AppExchange flow is different for Production/Developer o
 
 Open the Salesforce marketplace in a browser. Sign in if prompted.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><em>Figure 1. Salesforce AppExchange / AgentExchange landing page</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p><em>Figure 1. Salesforce AppExchange / AgentExchange landing page</em></p></figcaption></figure>
 
 #### 2. Search for AutoRABIT
 
@@ -44,13 +44,13 @@ Use the marketplace search field and search for “AutoRABIT.”
 
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p align="center"><em>Figure 2. Searching the marketplace for AutoRABIT.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p align="center"><em>Figure 2. Searching the marketplace for AutoRABIT.</em></p></figcaption></figure>
 
 #### 3.  Open the AutoRABIT listing
 
 Select the AutoRABIT Salesforce DevOps Platform listing from the search results.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p align="center"><em>Figure 3. AutoRABIT listing in the marketplace search results.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p align="center"><em>Figure 3. AutoRABIT listing in the marketplace search results.</em></p></figcaption></figure>
 
 ## 3.  Install in a Production or Developer Org
 
@@ -58,19 +58,19 @@ Select the AutoRABIT Salesforce DevOps Platform listing from the search results.
 
 From the AutoRABIT listing, choose “Get It Now” to begin the production/developer installation flow.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p><em>Figure 4. “Get It Now” on the AutoRABIT listing.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p><em>Figure 4. “Get It Now” on the AutoRABIT listing.</em></p></figcaption></figure>
 
 #### 2.  Authenticate to Salesforce
 
 Log in with the Salesforce credentials associated with the target Production/Developer org.
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Figure 5. Salesforce sign-in prompt launched from the marketplace.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Figure 5. Salesforce sign-in prompt launched from the marketplace.</p></figcaption></figure>
 
 #### 3.  Use the correct Salesforce or business identity
 
 If Salesforce requests account identification, use the Salesforce or business email tied to the intended org.
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p><em>Figure 6. Salesforce account identification screen.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p><em>Figure 6. Salesforce account identification screen.</em></p></figcaption></figure>
 
 #### 4.  Select the target org
 

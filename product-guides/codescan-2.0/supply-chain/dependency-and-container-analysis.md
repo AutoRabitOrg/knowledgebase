@@ -42,12 +42,31 @@ Beyond known vulnerabilities, CodeScan looks for signs of an attack on your supp
 
 ### Licences and Project Health
 
-Licences are identified using standard SPDX names and checked against an allow and deny policy. CodeScan also catches restrictive licences pulled in indirectly under a permissive direct dependency, and licence combinations that conflict. <mark style="color:red;">**\[TO CONFIRM: where customers set the licence allow/deny policy]**</mark>
+Licences are identified using standard SPDX names and checked against an allow and deny policy. CodeScan also catches restrictive licences pulled in indirectly under a permissive direct dependency, and licence combinations that conflict.&#x20;
 
-Allowed Licenses: MIT, Apache-2.0, BSD and similar.\
-Denied Licenses: GPL, AGPL, SSPL, EUPL\
-Recognised licences not in the list are flagged for review.\
-Unrecognised licences are denied.
+**Allow (40):**
+
+* Permissive: 0BSD, Apache-2.0, Artistic-2.0, BlueOak-1.0.0, BSD-1-Clause, BSD-2-Clause, BSD-2-Clause-Patent, BSD-3-Clause, BSD-3-Clause-Clear, bzip2-1.0.6, CC-BY-3.0, CC-BY-4.0, CC0-1.0, HPND, ISC, MIT, MIT-0, MIT-CMU, NTP, OFL-1.0, OFL-1.1, Plexus, PostgreSQL, PSF-2.0, Python-2.0, Unicode-DFS-2016, Unlicense, W3C, WTFPL, X11, Zlib
+* Weak copyleft: EPL-1.0, EPL-2.0, LGPL-2.0-only, LGPL-2.0-or-later, LGPL-2.1-only, LGPL-2.1-or-later, LGPL-3.0-only, LGPL-3.0-or-later
+* GPL with Classpath exception: GPL-2.0-with-classpath-exception
+
+**Notice (3):**&#x20;
+
+* MPL-2.0
+* CDDL-1.0
+* CDDL-1.1
+
+**Deny (16):**
+
+* AGPL-1.0-only, AGPL-1.0-or-later, AGPL-3.0-only, AGPL-3.0-or-later
+* GPL-1.0-only, GPL-1.0-or-later, GPL-2.0-only, GPL-2.0-or-later, GPL-3.0-only, GPL-3.0-or-later
+* MPL-1.0, MPL-1.1, EUPL-1.1, EUPL-1.2, OSL-3.0, SSPL-1.0
+* Liquibase 5 (FSL-1.1-ALv2): Functional Source License. It isn’t open source: it forbids competing commercial use and converts to Apache-2.0 after two years. Using Liquibase internally for our own database migrations is almost certainly fine, but legal should decide. The two options are to add it to the policy or to pin Liquibase 4.x, which is Apache-2.0.
+* Unicode-3.0 and CDLA-Permissive-2.0: both are permissive. They are safe to add to the table as Allow.
+* GPL in Java dependencies: every case is dual-licensed with EPL-2.0 or CDDL as the other choice, or is GPL with the Classpath exception. Examples are `logback` (EPL-2.0 or LGPL-2.1) and the `jakarta.*` APIs. All of them pass.
+* Bouncy Castle and EDL 1.0: their POM files give licence names rather than SPDX ids. In substance Bouncy Castle is MIT and EDL 1.0 is BSD-3-Clause. I didn’t check whether the scanner converts these names to those ids.
+
+Recognised licences not in the list are flagged for review.  Unrecognised licences are denied.
 
 Project health uses the OpenSSF Scorecard of each dependency's source repository, and flags deprecated packages and packages with no recent release that still have open advisories.
 

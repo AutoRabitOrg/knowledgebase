@@ -12,7 +12,7 @@ AutoRABIT CodeScan PubSec 26.0.21 is comprised of the following components:
 * 1 New Rule
 * 5 Rule Enhancements
 * 0 Rule Deprecations
-* 6 Fixes
+* 7 Fixes
 
 Component details are listed in their corresponding sections within this document.
 

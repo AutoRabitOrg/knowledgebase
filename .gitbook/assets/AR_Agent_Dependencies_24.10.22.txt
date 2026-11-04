@@ -1,0 +1,43 @@
+[INFO]    com.fasterxml.jackson.dataformat:jackson-dataformat-yaml ...
+[INFO]                                                 2.17.0-rc1 -> 2.18.0-rc1
+[INFO]   com.force.api:force-metadata-api .................... 61.1.0 -> 62.0.0
+[INFO]   com.force.api:force-partner-api ..................... 61.1.0 -> 62.0.0
+[INFO]   com.force.api:force-wsc ............................. 61.1.0 -> 62.0.0
+[INFO]   com.force.api:tooling ................................... 45 -> 49.0.0
+[INFO]   com.google.code.gson:gson ........................... 2.10.1 -> 2.11.0
+[INFO]   com.google.guava:guava ...................... 33.2.1-jre -> 33.3.0-jre
+[INFO]   de.codecentric:spring-boot-admin-starter-client ....... 3.3.2 -> 3.3.3
+[INFO]   io.github.bonigarcia:webdrivermanager ................. 5.8.0 -> 5.9.2
+[INFO]   net.sourceforge.pmd:pmd-apex .......................... 7.2.0 -> 7.5.0
+[INFO]   net.sourceforge.pmd:pmd-visualforce ................... 7.2.0 -> 7.5.0
+[INFO]   org.apache.ant:ant ................................ 1.10.14 -> 1.10.15
+[INFO]   org.apache.ant:ant-junit .......................... 1.10.14 -> 1.10.15
+[INFO]   org.apache.ant:ant-junit4 ......................... 1.10.14 -> 1.10.15
+[INFO]   org.apache.commons:commons-compress ................. 1.26.1 -> 1.27.1
+[INFO]   org.apache.httpcomponents.client5:httpclient5 ...
+[INFO]                                                  5.4-alpha2 -> 5.4-beta1
+[INFO]   org.ff4j:ff4j-store-aws-dynamodb ........................ 2.0.0 -> 2.1
+[INFO]   org.junit.jupiter:junit-jupiter .................. 5.11.0-M1 -> 5.11.0
+[INFO]   org.projectlombok:lombok .......................... 1.18.32 -> 1.18.34
+[INFO]   org.scala-lang:scala3-library_3 ...
+[INFO]                      3.5.0-RC2 -> 3.6.0-RC1-bin-20240907-614170f-NIGHTLY
+[INFO]   org.seleniumhq.selenium:selenium-java ............... 4.16.1 -> 4.24.0
+[INFO]   org.springframework:spring-web ..................... 6.1.9 -> 6.2.0-M7
+[INFO]   org.springframework.boot:spring-boot-starter ....... 3.3.1 -> 3.4.0-M2
+[INFO]   org.springframework.boot:spring-boot-starter-actuator ...
+[INFO]                                                        3.3.1 -> 3.4.0-M2
+[INFO]   org.springframework.boot:spring-boot-starter-test ...
+[INFO]                                                        3.3.1 -> 3.4.0-M2
+[INFO]   org.springframework.boot:spring-boot-starter-tomcat ...
+[INFO]                                                        3.3.1 -> 3.4.0-M2
+[INFO]   org.springframework.boot:spring-boot-starter-web ... 3.3.1 -> 3.4.0-M2
+[INFO]   org.springframework.security:spring-security-config ...
+[INFO]                                                        6.3.0 -> 6.4.0-M3
+[INFO]   org.springframework.security:spring-security-core ...
+[INFO]                                                        6.3.0 -> 6.4.0-M3
+[INFO]   org.springframework.security:spring-security-test ...
+[INFO]                                                        6.3.0 -> 6.4.0-M3
+[INFO]   org.springframework.security:spring-security-web ... 6.3.0 -> 6.4.0-M3
+[INFO]   software.amazon.awssdk:apache-client .............. 2.26.10 -> 2.27.22
+[INFO]   software.amazon.awssdk:dynamodb-enhanced .......... 2.26.10 -> 2.27.22
+[INFO]   software.amazon.awssdk:sts ........................ 2.26.10 -> 2.27.22

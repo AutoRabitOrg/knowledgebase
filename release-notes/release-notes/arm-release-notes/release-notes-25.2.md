@@ -1107,7 +1107,7 @@ Corrected behavior in which `ExpressionSetDefinitionVersion` metadata was includ
 
 **Release date:** 27 April 2025
 
-Refer to the latest release notes published for nCino + Data Loader at [https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes).
+Refer to the latest release notes published for nCino + Data Loader at [https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--dataloader-25.1.4](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--dataloader-25.1.4).
 
 ***
 
@@ -1224,7 +1224,7 @@ This release introduces significant new capabilities and key enhancements across
 
 **Release date:** 6 April 2025<br>
 
-See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.3-release-notes) for nCino + Data Loader improvements.&#x20;
+See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--dataloader-25.1.3) for nCino + Data Loader improvements.&#x20;
 
 ***
 

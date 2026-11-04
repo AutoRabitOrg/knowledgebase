@@ -1,25 +1,25 @@
 # Release Notes 24.4
 
-## nCino + Data Loader 24.4.5 Release Notes
+## nCino + DataLoader 24.4.5
 
-**Release Date: 19 January 2025**
+**Release date:** 19 January 2025
 
 * **Group Jobs Stability:** Fixed an issue to ensure group jobs execute without failure.
 * **Import Process Stability:** Resolved an issue to prevent failures during the import process.
 * **Rollback Functionality:** Fixed the rollback functionality on the nCino UAT instance to ensure it works as expected.
 
-## nCino + Data Loader 24.4.4 Release Notes
+## nCino + DataLoader 24.4.4
 
-**Release Date: 13 December 2024**
+**Release date:** 13 December 2024
 
 * **Revision Range:** Improved the checkout logic for the revision range to enhance performance.
 * **Fixed Query Logic:** Resolved an issue with adding conditions to queries.
 * **Template Failure:** Fixed the issue causing failures in the "nCino Template."
 * **Publish Icon:** Ensured the publish icon is visible for "nCino Customers" on the "Feature Template Manage" screen.
 
-## nCino 24.4.3 Release Notes
+## nCino 24.4.3
 
-**Release Date: 24 November 2024**
+**Release date:** 24 November 2024
 
 The following enhancements ensure compliance, improve flexibility, and streamline the user experience.&#x20;
 
@@ -28,9 +28,9 @@ The following enhancements ensure compliance, improve flexibility, and streamlin
 * **Trigger Build on Commit:** Scheduling conflicts are now resolved when the "Trigger Build on Commit" option is enabled, ensuring seamless automation.
 * **nCino Step Logs**: nCino step logs have been enhanced to provide additional details, improving visibility and troubleshooting capabilities.
 
-## nCino 24.4.2 Release Notes
+## nCino 24.4.2
 
-**Release Date: 10 November 2024**
+**Release date:** 10 November 2024
 
 The following enhancements include an upgrade for version compatibility and fixes to improve user experience and streamline performance.
 
@@ -38,9 +38,9 @@ The following enhancements include an upgrade for version compatibility and fixe
 * **RBC Fixes**: Resolved issues with RBC deployments and commits for improved reliability.
 * **Feature Version Loading**: Fixed loading issues with the Feature Version page for a smoother experience.
 
-## nCino & Data Loader Release Notes 24.4.1
+## nCino + DataLoader 24.4.1
 
-**Release Date: 27 October 2024**
+**Release date:** 27 October 2024
 
 The following features, enhancements, and fixes have been implemented to improve user experience and streamline performance.
 

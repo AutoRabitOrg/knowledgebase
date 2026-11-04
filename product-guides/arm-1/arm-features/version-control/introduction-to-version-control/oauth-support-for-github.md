@@ -165,9 +165,9 @@ After validation, ARM redirects you to the **GitHub authorization page**.
 1. Review the requested permissions.
 2. Click **Authorize**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2568).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4916).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2569).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4917).png" alt=""><figcaption></figcaption></figure>
 
 GitHub then redirects you back to ARM.
 

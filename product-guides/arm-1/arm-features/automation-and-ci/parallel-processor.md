@@ -12,7 +12,7 @@ The **Parallel Processor** feature allows you to configure POST requests to be f
 
 When you're triggering a new CI job, look for the **Configure Parallel Processor** function under the **Deploy > On Successful Deployment** section.
 
-<figure><img src="../../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1372).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**&#x20;
@@ -43,7 +43,7 @@ This feature is currently available for the following CI Jobs:
     * To send **JSON** in a request, use **application/json** and add your content in the body provided.
     * To send **XML** in a request, use **application/xml** and add your content in the body provided.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (13).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
 5. **Dynamic URL Parameters:** AutoRABIT allows you to include the various variables from your AutoRABIT organization, for example, the name of the CI job, build number, etc.
 
 **Dynamic Parameters:**
@@ -61,7 +61,7 @@ This feature is currently available for the following CI Jobs:
 6. **Request API Version (required):** Enter the API versions.
 7. To add a custom header, click on the **Add Header** button and enter the keys and the value to it. Multiple adding of keys and values are allowed.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1374).png" alt=""><figcaption></figcaption></figure>
 
 Default headers is set as _**"Accept" :"application/json", "Content-Type":"application/json"**_&#x20;
 
@@ -69,4 +69,4 @@ Default headers is set as _**"Accept" :"application/json", "Content-Type":"appli
 9. **Poll Interval (Mins):** Time-bound between two consecutive API calls, for example, 1 minute, 5 minutes. This field is mandatory.&#x20;
 10. Click on **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1375).png" alt="" width="563"><figcaption></figcaption></figure>

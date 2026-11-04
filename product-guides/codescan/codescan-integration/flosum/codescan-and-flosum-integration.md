@@ -15,13 +15,13 @@
    2. Install the CodeScan package in your Flosum organization.&#x20;
    3. After installation, click on the app launcher and open Flosum-CodeScan.
 
-<figure><img src="../../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4121).png" alt=""><figcaption></figcaption></figure>
 
 2.  **Authorize** CodeScan.
 
     *   Go to the **Authorization** tab in Flosum-CodeScan.<br>
 
-        <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (2315).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -33,7 +33,7 @@
       * **Organization Key**: Obtain this key from your hosted CodeScan instance.
       *   **Token**: Generate a token by navigating to **User > My Account > Security** in CodeScan. Set the token expiration or choose "no expiration."<br>
 
-          <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (2327).png" alt=""><figcaption></figcaption></figure>
 3. **Flosum Branch Configuration**:
    1. On the **Branch Configuration** tab, choose the branch you want to scan.
       * Select all or specific component types from the six supported profiles:
@@ -45,16 +45,16 @@
         * Component
       *   Check the boxes for the components you want to scan and click **Save**.<br>
 
-          <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (2328).png" alt=""><figcaption></figcaption></figure>
 4. **Finalize Setup**:&#x20;
    *   Log in to CodeScan and confirm that your branch is populated in the CodeScan server. <br>
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2127).png" alt=""><figcaption><p>Confirm branch population</p></figcaption></figure>
    *   Select the branch, click **Add Analysis Project**, and attach it as a webhook.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2128).png" alt=""><figcaption><p>Attach Analysis to Project</p></figcaption></figure>
 
-       <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Attach Analysis to Webhook</p></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2129).png" alt=""><figcaption><p>Attach Analysis to Webhook</p></figcaption></figure>
 
 ## Initiating a Scan on the Flosum Branch
 
@@ -62,11 +62,11 @@
    * Add the **Branch Sync** lightning component to your branch's Lightning record page.
    *   Click the **Branch Sync** button to trigger the static code analysis.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2332).png" alt=""><figcaption></figcaption></figure>
 2. **View Project Analysis**:
    *   Go to the **Project Analysis** page to see the analysis in progress.<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2333).png" alt=""><figcaption></figcaption></figure>
 
 Your Flosum-CodeScan integration is complete!
 

@@ -27,21 +27,21 @@ Key behaviors:
 
 1.  **Select the target Org** from the list of available organizations.
 
-    ![Select Org](<../../../../.gitbook/assets/image (2) (1) (1) (1) (2).png>)
+    ![Select Org](<../../../../.gitbook/assets/image (1846).png>)
 2. A list of jobs from various modules (Backup, Restore, Replicate, Archive) will be displayed for the selected Org.
 3. Navigate between module tabs to review stale jobs in each category:
    *   **Backup Jobs**<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1847).png" alt=""><figcaption></figcaption></figure>
    *   **Restore Jobs**<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1848).png" alt=""><figcaption></figcaption></figure>
    *   **Replicate Jobs**<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1849).png" alt=""><figcaption></figcaption></figure>
    *   **Archive Jobs**<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (1850).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -56,6 +56,6 @@ Key behaviors:
     * **Multiple Job Termination**:
       * A consolidated email lists all terminated jobs.
 
-    ![Termination Notification](<../../../../.gitbook/assets/image (5) (5).png>)
+    ![Termination Notification](<../../../../.gitbook/assets/image (1851).png>)
 
 This feature ensures system hygiene and prevents inactive jobs from consuming unnecessary system resources.

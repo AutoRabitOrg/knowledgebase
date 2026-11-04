@@ -9,4 +9,4 @@ With Salesforce DX, teams benefit from:
 * Full [version control](https://www.autorabit.com/8-benefits-of-version-control-in-salesforce-development/).
 * Streamlined continuous integration and continuous delivery (CI/CD).
 * Simplified workflows, eliminating the complexities of legacy release processes.
-* Advanced tools like [Scratch Orgs](../../../arm/create-a-scratch-org.md) to significantly boost development velocity.
+* Advanced tools like [Scratch Orgs](../../../arm/arm-features/salesforce-dx/create-a-scratch-org.md) to significantly boost development velocity.

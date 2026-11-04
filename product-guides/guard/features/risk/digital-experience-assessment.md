@@ -16,7 +16,7 @@ It supports both **Aura** and **LWR** Experience Cloud sites. Each site type use
 
 `Guard → Risk → Digital Experience Assessment`
 
-<figure><img src="../../../../.gitbook/assets/image (2708).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5111).png" alt=""><figcaption></figcaption></figure>
 
 #### Page Layout
 
@@ -40,7 +40,7 @@ The new scan appears in Scan History. While it is running, the status will show 
 Support users and Realm Managers cannot start a new scan.&#x20;
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (2709).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5112).png" alt=""><figcaption></figcaption></figure>
 
 #### Scan History
 
@@ -54,7 +54,7 @@ Each row in Scan History shows:
 * **Date**
 * **Scan Status** – successful, failed or in progress
 
-<figure><img src="../../../../.gitbook/assets/image (2710).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5113).png" alt=""><figcaption></figcaption></figure>
 
 #### Investigating a Scan
 
@@ -71,9 +71,9 @@ The security findings table lists checks from the Aura or LWR library that the s
 
 From the finding detail view, an Admin can start **Accept risk** for a finding that has not already been accepted.
 
-<figure><img src="../../../../.gitbook/assets/image (2711).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5114).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2712).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5115).png" alt=""><figcaption></figcaption></figure>
 
 **Objects exposed**
 
@@ -128,7 +128,7 @@ Accepted findings are excluded from future scans for those orgs and sites. They 
 
 _Removing an exclusion does not change past scan results. It only brings the risk back into future scans for those sites._
 
-<figure><img src="../../../../.gitbook/assets/image (2713).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5116).png" alt=""><figcaption></figcaption></figure>
 
 #### Security Risks Library
 
@@ -145,7 +145,7 @@ Each row shows:
 
 You can filter by Framework, Category, Severity and Excluded sites. Library filters are independent of Scan History filters.
 
-<figure><img src="../../../../.gitbook/assets/image (2714).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5117).png" alt=""><figcaption></figcaption></figure>
 
 **Risk detail in the library**
 
@@ -157,7 +157,7 @@ Opening a risk from the library shows:
 
 Admins can add exclusions with **Add excluded sites**: pick org(s), then one or more sites, confirm the count and save. Following this, the excluded risk will not appear in future scans for the selected sites.
 
-<figure><img src="../../../../.gitbook/assets/image (2715).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5118).png" alt=""><figcaption></figcaption></figure>
 
 
 

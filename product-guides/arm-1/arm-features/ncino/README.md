@@ -44,7 +44,7 @@ Before you start working with the nCino features in AutoRABIT, you need to confi
 3. Users are allowed to access the **Feature Migration** section. The Admin can assign the required permissions to users by visiting the **Admin > Roles** tab and creating a role with the permissions below enabled.
 4. You should only be able to edit/modify your existing CI job if the special permissions for CI Job List are assigned to you. For example, to edit or delete your existing job, you need **Edit** and **Delete** permissions.
 
-<figure><img src="../../../../.gitbook/assets/image (1287).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2923).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Super Admin roles in Account Activation and Categorization (Partner/Customer) <a href="#super-admin-roles-in-account-activation-and-categorization-partnercustomer" id="super-admin-roles-in-account-activation-and-categorization-partnercustomer"></a>
 
@@ -52,15 +52,15 @@ The Super Administrator will have the capability of marking an account as either
 
 Simply log in to the AutoRABIT account using the Super Admin credentials and go to the **My Account** section. Under the **Subscription Details**, assign the user as an **nCino Partner** to allow them to create Standard/Community Templates. If not assigned, the user will be treated as a customer account and is restricted to creating only Community templates.
 
-<figure><img src="../../../../.gitbook/assets/image (1288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2924).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2925).png" alt=""><figcaption></figcaption></figure>
 
 ### Registering nCino-Configured Version Control Repository <a href="#registering-ncino-configured-version-control-repository" id="registering-ncino-configured-version-control-repository"></a>
 
 1. Go to the [**Version Control**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/) **Repo** tab and click on **Register Repository**.
 
-<figure><img src="../../../../.gitbook/assets/image (1290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2926).png" alt=""><figcaption></figcaption></figure>
 
 2. On the next screen, select your **Version Control System**.
 3. Fill in the registration page with necessary details such as repository name, URL, master branch, etc.
@@ -68,7 +68,7 @@ Simply log in to the AutoRABIT account using the Super Admin credentials and go 
 5. Click on the **Test Connection** button to check whether the connection has been authenticated or not. A success message is displayed after the authentication is completed.
 6. Click **Save** to complete the registration process.
 
-<figure><img src="../../../../.gitbook/assets/image (1291).png" alt="" width="390"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2927).png" alt="" width="390"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: To quickly identify nCino-registered Version Control Repositories among all other repositories, the nCino logo is marked in front of the Repository name.
@@ -78,14 +78,14 @@ Simply log in to the AutoRABIT account using the Super Admin credentials and go 
 
 1. Go to the **SF Org Mgmt** tab and click on the **Add** button.
 
-<figure><img src="../../../../.gitbook/assets/image (1292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2928).png" alt=""><figcaption></figcaption></figure>
 
 2. On the next screen, give your Salesforce Org a **Name** and select your Salesforce Org **Type** and **Environment.**
 3. Select the authentication method in the **Access Type** dropdown.
 4. Select the checkbox: **Is nCino Installed**
 5. Click **Validate and Save** to proceed through the OAuth flow and allow AutoRABIT to connect to your Salesforce Org.
 
-<figure><img src="../../../../.gitbook/assets/image (1293).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2929).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: The **nCino logo** is marked in front of each Salesforce Org for easier identification from other Salesforce Orgs.

@@ -1,4 +1,4 @@
-# SCA for Checkmarx
+# Checkmarx SCA
 
 ### Checkmarx: Overview <a href="#checkmarx-overview" id="checkmarx-overview"></a>
 
@@ -15,5 +15,5 @@ Checkmarx is a unique source code analysis solution that helps in identifying, t
     * **Team Name:** Enter the relevant team name for the project.
     * **Select Credential:** Choose the correct user's credential from the list. To create a new credential, click on the + icon.
 
-    <figure><img src="../../../../.gitbook/assets/image (864).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2872).png" alt=""><figcaption></figcaption></figure>
 5. &#x20;Click on **Test Connection**. Wait until the credentials are validated and the Success status is indicated. Once, the connection is successful, click on **OK**. &#x20;

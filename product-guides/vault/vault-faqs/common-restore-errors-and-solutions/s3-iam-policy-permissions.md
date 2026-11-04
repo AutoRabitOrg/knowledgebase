@@ -26,7 +26,7 @@ Sign in to the AWS Management Console and open the IAM service (search for “IA
 
 In the left navigation pane, expand Access management and choose Policies.
 
-<figure><img src="../../../../.gitbook/assets/image (2577).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4925).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>IAM left navigation — Access management → Policies (illustrative)</em></p>
 
@@ -34,7 +34,7 @@ In the left navigation pane, expand Access management and choose Policies.
 
 In the search box, type the policy name and select it from the results list by clicking the policy name.
 
-<figure><img src="../../../../.gitbook/assets/image (2578).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4926).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Policies list — search for the policy and click its name (illustrative)</em></p>
 
@@ -42,7 +42,7 @@ In the search box, type the policy name and select it from the results list by c
 
 On the policy detail page, make sure the Permissions tab is selected, then click Edit.
 
-<figure><img src="../../../../.gitbook/assets/image (2580).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4928).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Policy detail page — Permissions tab → Edit (illustrative)</em></p>
 
@@ -58,7 +58,7 @@ Do not create a new policy — edit the JSON that is already in the editor. Loca
 
 The example below shows an existing policy after the change — the highlighted lines are the only ones added; everything else stays exactly as it was:
 
-<figure><img src="../../../../.gitbook/assets/image (2581).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4929).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>JSON editor — the three actions added into the existing Action array (illustrative)</em></p>
 
@@ -66,7 +66,7 @@ These three are bucket-level actions, so make sure the statement's Resource incl
 
 Choose Next, review the summary, and click Save changes. IAM saves the update as a new default version of the same policy, and it takes effect immediately for every user, group, and role the policy is attached to.
 
-<figure><img src="../../../../.gitbook/assets/image (2582).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4930).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Review and save — the change becomes the default policy version (illustrative)</em></p>
 

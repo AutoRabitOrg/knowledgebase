@@ -21,8 +21,8 @@ Currently, the **only safe and supported approach** to commit _only_ the OWD cha
 * Review the CustomObject XML and keep only the required nodes (including the OWD update)
 * Re-upload the updated `.zip` file and proceed with the commit
 
-<figure><img src="../../../../.gitbook/assets/image (2419).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4768).png" alt=""><figcaption></figcaption></figure>
 
 This ensures that **only the intended Sharing Settings change** is committed, without promoting any unintended metadata. &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2420).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4769).png" alt=""><figcaption></figcaption></figure>

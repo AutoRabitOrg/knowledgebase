@@ -73,4 +73,4 @@ When creating the CSV file, follow the considerations below to ensure compatibil
 
 Below is a sample CSV containing 11 records for the **Account** object. Each row includes six fields. You may include additional fields based on your data needs. Fields omitted from the CSV will not be updated.
 
-<figure><img src="../../../../.gitbook/assets/image (1139).png" alt="Sample CSV file with 11 account records and corresponding field headers"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3080).png" alt="Sample CSV file with 11 account records and corresponding field headers"><figcaption></figcaption></figure>

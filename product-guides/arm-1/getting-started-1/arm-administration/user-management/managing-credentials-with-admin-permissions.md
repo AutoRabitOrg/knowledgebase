@@ -75,7 +75,7 @@ The available actions depend on the credential scope and the Admin's permissions
 
 **Note:** These permissions apply regardless of whether the original credential owner is Active or Inactive.
 
-<figure><img src="../../../../../.gitbook/assets/image (3062).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5410).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -109,7 +109,7 @@ This is useful when an existing password or access token expires and needs to be
 
 **Existing configurations remain associated with the same credential**, so users do not need to select or configure the credential again in Version Control repositories, CI Jobs, or other dependent configurations.
 
-<figure><img src="../../../../../.gitbook/assets/image (3063).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5411).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -151,7 +151,7 @@ For example, if a Private credential belonging to an inactive user is referenced
 
 If ARM cannot complete the dependency check, a warning indicates that credential usage could not be verified. The Admin can still choose whether to proceed.
 
-<figure><img src="../../../../../.gitbook/assets/image (3064).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5412).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

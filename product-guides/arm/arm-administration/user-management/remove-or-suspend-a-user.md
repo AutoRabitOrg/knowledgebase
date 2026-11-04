@@ -14,11 +14,11 @@ Suspension preserves the account record so you can reactivate it later; deletion
 2. Navigate to **Admin › Users**.
 3.  Locate the user you want to modify.
 
-    <figure><img src="../../../../.gitbook/assets/image (575).png" alt="Users list with Delete User icon"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3758).png" alt="Users list with Delete User icon"><figcaption></figcaption></figure>
 4. **Delete User** – click the trash-can icon to erase the account permanently.
 5.  **Suspend / Activate** – click **Activate/De-activate** to toggle the account’s status.
 
-    <figure><img src="../../../../.gitbook/assets/image (576).png" alt="Activate/De-activate button for suspending or reactivating a user"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3759).png" alt="Activate/De-activate button for suspending or reactivating a user"><figcaption></figcaption></figure>
 6. Confirm the action by clicking **OK** in the dialog.
 
 ***

@@ -2,7 +2,7 @@
 
 “Updating Salesforce Data” allows users to modify existing records in a Salesforce org using the DataLoader module. This feature enables bulk updates to field values through structured data uploads, making it easier to manage and maintain large volumes of records efficiently.
 
-Example:If multiple Account records require updates to fields such as Industry, Status, or Ownership, users can prepare a data file with the updated values and execute a bulk update instead of manually editing each record individually.
+Example:&#x20;If multiple Account records require updates to fields such as Industry, Status, or Ownership, users can prepare a data file with the updated values and execute a bulk update instead of manually editing each record individually.
 
 This option is useful in the following scenarios:
 
@@ -40,7 +40,7 @@ This option is useful in the following scenarios:
 
     <figure><img src="../../../../../.gitbook/assets/Update - 9.png" alt=""><figcaption></figcaption></figure>
 8. Click on "AutoMap" option to map the fields from the source against the destination.
-9.  Click on the <img src="../../../../../.gitbook/assets/image (24) (1) (2).png" alt="" data-size="line"> icon to observe the options
+9.  Click on the <img src="../../../../../.gitbook/assets/image (2078).png" alt="" data-size="line"> icon to observe the options
 
     <figure><img src="../../../../../.gitbook/assets/Update - 9.1.png" alt=""><figcaption></figcaption></figure>
 10. The lookup field will have the "Look up" option against it at the "Salesforce field" column. This mapping is useful for mapping different fields.

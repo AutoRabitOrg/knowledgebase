@@ -29,7 +29,7 @@ Ensure the following before configuration:
 1. Navigate to **Plugins → Test Types**
 2. Enable **Testim**
 
-<figure><img src="../../../.gitbook/assets/image (2497).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4845).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Edit (✏️)** or add a new configuration
 4. In the **Create Credential** window:
@@ -37,7 +37,7 @@ Ensure the following before configuration:
    * **Type**: Select _Application Token_
    * **Token**: Enter the Testim token (generated at project level)
 
-<figure><img src="../../../.gitbook/assets/image (2498).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4846).png" alt="" width="375"><figcaption></figcaption></figure>
 
 5. Save the configuration
 
@@ -49,7 +49,7 @@ Ensure the following before configuration:
 2. Configure the **Build** and **Deploy** stages as required
 3. Navigate to the **Tests** stage
 
-<figure><img src="../../../.gitbook/assets/image (2499).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4847).png" alt=""><figcaption></figcaption></figure>
 
 ### **Step 3: Configure Testim in Test Stage**
 

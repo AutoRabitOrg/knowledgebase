@@ -39,11 +39,11 @@ General users work in ARM modules according to permissions their Admin assigns. 
 1. Log in to ARM.
 2.  Go to **Admin › Users** and click **Add User**.
 
-    <figure><img src="../../../../.gitbook/assets/image (606).png" alt="Add User button in the Users list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (800).png" alt="Add User button in the Users list"><figcaption></figcaption></figure>
 3. Fill **User Details** and assign **Role Permissions**.
 4.  Choose **Save & Activate** (immediate) or **Save Now & Activate Later**.
 
-    <figure><img src="../../../../.gitbook/assets/image (607).png" alt="User details form with role selection"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (801).png" alt="User details form with role selection"><figcaption></figcaption></figure>
 5. The new user receives an email to set a password.
 6. The user appears in **Admin › Users**.
 
@@ -53,7 +53,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 1.  In **Admin › Users**, locate the user and click **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/image (609).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (803).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
 2. Update fields (Username and Email are immutable).
 3. Click **Save**.
 
@@ -63,10 +63,10 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 *   **Delete User** – permanently remove the account.
 
-    <figure><img src="../../../../.gitbook/assets/image (610).png" alt="Trash-can icon to delete a user"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (804).png" alt="Trash-can icon to delete a user"><figcaption></figcaption></figure>
 *   **Activate / De-activate** – toggle suspension.
 
-    <figure><img src="../../../../.gitbook/assets/image (611).png" alt="Activate/De-activate toggle button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (805).png" alt="Activate/De-activate toggle button"><figcaption></figcaption></figure>
 
 Confirm the action to proceed.
 
@@ -80,7 +80,7 @@ Confirm the action to proceed.
 Admins can still log in with username/password.\
 To override SSO for select users, uncheck **Enforce SSO** next to their names.
 
-<figure><img src="../../../../.gitbook/assets/image (612).png" alt="Override Enforce SSO checkboxes for selected users"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (806).png" alt="Override Enforce SSO checkboxes for selected users"><figcaption></figcaption></figure>
 
 > When you disable standard login, **Enforce SSO** auto-checks for all users.
 
@@ -92,10 +92,10 @@ Admins can download all user data as CSV.
 
 1.  In **Admin › Users**, click **Export All Users**.
 
-    <figure><img src="../../../../.gitbook/assets/image (613).png" alt="Export All Users button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (807).png" alt="Export All Users button"><figcaption></figcaption></figure>
 2.  Select fields and click **Export**.
 
-    <figure><img src="../../../../.gitbook/assets/image (614).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (808).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
 3. A CSV downloads to your computer.
 
 > **Location privacy** – If a user blocks location sharing, ARM uses IP-based location.
@@ -106,13 +106,13 @@ Admins can download all user data as CSV.
 
 1.  Go to **Admin › Roles**.
 
-    <figure><img src="../../../../.gitbook/assets/image (615).png" alt="Roles option in Admin menu" width="251"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (809).png" alt="Roles option in Admin menu" width="251"><figcaption></figcaption></figure>
 2.  Click **Create Role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (616).png" alt="Create Role button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (810).png" alt="Create Role button"><figcaption></figcaption></figure>
 3.  Provide a **Role Name**, **Description**, and tick permissions.
 
-    <figure><img src="../../../../.gitbook/assets/image (617).png" alt="Role permissions checklist" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (811).png" alt="Role permissions checklist" width="563"><figcaption></figcaption></figure>
 4. Click **Save**.
 
 > _The default **Admin** role has full permissions and cannot be edited or renamed._
@@ -123,16 +123,16 @@ Admins can download all user data as CSV.
 
 1.  Open **Admin › Permissions**.
 
-    <figure><img src="../../../../.gitbook/assets/image (618).png" alt="Permissions tab in Admin menu" width="251"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (812).png" alt="Permissions tab in Admin menu" width="251"><figcaption></figcaption></figure>
 2.  Select two or more users and click **Bulk Assignment**.
 
-    <figure><img src="../../../../.gitbook/assets/image (619).png" alt="Bulk Assignment button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (813).png" alt="Bulk Assignment button"><figcaption></figcaption></figure>
 
 Admins are hidden on this screen because they already hold full access.
 
-<figure><img src="../../../../.gitbook/assets/image (622).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (816).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (621).png" alt="Save confirmation after assigning permissions" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (815).png" alt="Save confirmation after assigning permissions" width="563"><figcaption></figcaption></figure>
 
 ***
 

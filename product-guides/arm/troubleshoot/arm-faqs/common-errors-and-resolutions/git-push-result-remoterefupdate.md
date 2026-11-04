@@ -12,4 +12,4 @@ Cross-verify the following things:
 * Modify the existing Repository Link’s Key to align with the AutoRABIT Branching Baseline commit comment; or
 * Disable the Repository Link.
 
-For more content, refer to![](<../../../../../.gitbook/assets/image (783).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/).
+For more content, refer to![](<../../../../../.gitbook/assets/image (4177).png>)[Link to a web service | Bitbucket Cloud | Atlassian Support](https://support.atlassian.com/bitbucket-cloud/docs/link-to-a-web-service/).

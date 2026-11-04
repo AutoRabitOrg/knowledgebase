@@ -21,7 +21,7 @@ The **MobileSalesforceSettings** template allows the configuration of mobile-spe
 
     Then click **Save** to confirm and store the configuration.
 
-    ![Mobile Salesforce Settings Configuration](<../../../../../../.gitbook/assets/image (85).png>)
+    ![Mobile Salesforce Settings Configuration](<../../../../../../.gitbook/assets/image (1010).png>)
 10. Click **Save** again to save the template.
 11. Once saved, you will be redirected to the **Environment Provisioning History** screen.
 12. Click **Run** to execute the template on the selected destination org.

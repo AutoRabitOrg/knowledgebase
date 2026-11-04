@@ -1,4 +1,4 @@
-# NewContactRoles
+# New Contact Roles
 
 **NewContactRoles** template automatically adds a value to the picklist that allows you to auto-create a new case contact role picklist value.
 
@@ -13,7 +13,7 @@ To create this template, follow the steps below:
 7. Click **Add**.
 8. On the next screen, you will find a **test case name** appear automatically by default. To add the custom test data, click on **Add** button.&#x20;
 9. However, you'll need to add a new **Contact Role** for the auto-generated or your custom test case name, do the steps that follow:
-   * Click on![](<../../../../../../.gitbook/assets/image (39) (1) (1).png>)icon.
+   * Click on![](<../../../../../../.gitbook/assets/image (964).png>)icon.
    * Enter the contact role in the **Contact Role Name** field.&#x20;
    * You can even add multiple contacts for the above-generated test case. Click on the **+** symbol and fill in the fields as mentioned in the steps earlier.&#x20;
    * Click **OK**. Once done click on **Save** button to save this page

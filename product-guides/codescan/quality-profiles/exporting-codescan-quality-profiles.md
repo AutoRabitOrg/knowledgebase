@@ -13,13 +13,13 @@ This will only work with `Custom Quality Profiles.` The built-in profiles are av
 1. Log in to your CodeScan account.
 2. Navigate to your **Organization**.
 3. Click on the **Quality Profiles** tab.
-4. Once you have all the quality profile rules on the screen, select the rule you want to export and click on the (![](<../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
+4. Once you have all the quality profile rules on the screen, select the rule you want to export and click on the (![](<../../../.gitbook/assets/image (200).png>)) icon.
 5.  Click on **Back up**. This will download an XML file for your quality profile.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1733).png" alt=""><figcaption><p>Back Up</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3355).png" alt=""><figcaption><p>Back Up</p></figcaption></figure>
 6.  To upload the downloaded XML file to any CodeScan organization or account, go to the **Quality Profiles** tab and click on the **Restore** button.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1734).png" alt=""><figcaption><p>Restore</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3356).png" alt=""><figcaption><p>Restore</p></figcaption></figure>
 7.  A pop-up will allow you to browse for the XML file locally. Once you upload the file, click on **Restore**.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1735).png" alt="" width="375"><figcaption><p>Restore</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3357).png" alt="" width="375"><figcaption><p>Restore</p></figcaption></figure>

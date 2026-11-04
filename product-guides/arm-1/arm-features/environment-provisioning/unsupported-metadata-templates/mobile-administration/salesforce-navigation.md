@@ -16,10 +16,10 @@ The **SalesforceNavigation** template allows you to configure mobile navigation 
     * A **Test Case Name**, **Object Name**, and **Navigation Menu Items** appear by default.
     * Click **Add** to define custom test data and enter values for the available fields.
 
-    ![Salesforce Navigation Setup](<../../../../../../.gitbook/assets/image (86).png>)
+    ![Salesforce Navigation Setup](<../../../../../../.gitbook/assets/image (1011).png>)
 
     * To add additional menu items:
-      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (87).png>)
+      * Click the edit icon ![Edit Icon](<../../../../../../.gitbook/assets/image (1012).png>)
       * Enter names such as **Task** or **People** into the **Available Member** field.
       * Use the **Add/Remove** checkboxes to control their activation.
       * To add multiple items, click the **+** symbol and repeat the above steps.

@@ -1,4 +1,4 @@
-# Build a Package from Salesforce
+# Building a Package from Salesforce
 
 {% hint style="info" %}
 The **CI JOBS** screen is best viewed at **80%** zoom in Chrome or Firefox.
@@ -13,10 +13,10 @@ Create a package from a Salesforce org based on a **Start date** and deploy or v
 1. Log in to ARM.
 2.  From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1208).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New ➜ New CI Job menu option</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3724).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New ➜ New CI Job menu option</p></figcaption></figure>
 3.  Click the **Package from Salesforce** tile.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1209).png" alt="Package from Salesforce job tile"><figcaption><p>Package from Salesforce job tile</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3725).png" alt="Package from Salesforce job tile"><figcaption><p>Package from Salesforce job tile</p></figcaption></figure>
 4. Enter a descriptive **Job name**.
 5. Add a brief **Description**.
 6. (Optional) Choose a **Group** to organize the job, or click **`+`** to create a new group.
@@ -33,11 +33,11 @@ Under **Build**, provide:
     * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
     * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1210).png" alt="Package type selection list"><figcaption><p>Select the package type for metadata retrieval</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3726).png" alt="Package type selection list"><figcaption><p>Select the package type for metadata retrieval</p></figcaption></figure>
 
 **Additional build options**
 
-<figure><img src="../../../../../.gitbook/assets/image (1211).png" alt="Additional build options panel"><figcaption><p>Additional build options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3727).png" alt="Additional build options panel"><figcaption><p>Additional build options</p></figcaption></figure>
 
 1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – Automatically uses batch retrieval when a job approaches Salesforce limits. Specify **Batch size** (up to 10 000 items).
 2. **Exclude installed (managed) components and changes** – Skip all managed-package components.
@@ -48,15 +48,15 @@ Under **Build**, provide:
 
     *   **Apex PMD / Salesforce Scanner** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold.
 
-        <figure><img src="../../../../../.gitbook/assets/image (1212).png" alt="Criteria configuration for Apex PMD and Salesforce Scanner"><figcaption><p>Criteria configuration for Apex PMD and Salesforce Scanner</p></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (3728).png" alt="Criteria configuration for Apex PMD and Salesforce Scanner"><figcaption><p>Criteria configuration for Apex PMD and Salesforce Scanner</p></figcaption></figure>
     *   **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-        <figure><img src="../../../../../.gitbook/assets/image (1213).png" alt="Criteria configuration for CodeScan and SonarQube"><figcaption><p>Criteria configuration for CodeScan and SonarQube</p></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (3729).png" alt="Criteria configuration for CodeScan and SonarQube"><figcaption><p>Criteria configuration for CodeScan and SonarQube</p></figcaption></figure>
 
         * **Run on all supported metadata types** – Scan every retrieved component.
         *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-            <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
+            <figure><img src="../../../../../.gitbook/assets/image (3730).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
 
     For details on running **static code analysis in CI jobs**, see [this guide](../../../arm-administration/static-code-analysis-in-ci-cd.md).
 6. **Additional profile packaging options**
@@ -72,7 +72,7 @@ To set global exclusions, open **My Account > My Salesforce Settings**, select *
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1215).png" alt="Notification recipient list"><figcaption><p>Select notification recipients for build status</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3731).png" alt="Notification recipient list"><figcaption><p>Select notification recipients for build status</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

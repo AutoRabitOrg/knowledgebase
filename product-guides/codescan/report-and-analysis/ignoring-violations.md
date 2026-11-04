@@ -1,4 +1,4 @@
-# Ignoring violations
+# Ignoring Violations
 
 CodeScan offers multiple ways to manage false positives and avoid unwanted violations.
 
@@ -73,12 +73,12 @@ class newClass {
 
 * **SonarQube™/**[**CodeScan Cloud**](https://www.codescan.io/products/cloud/), by clicking on a specific rule in the Rules menu.
 
-<figure><img src="../../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3027).png" alt=""><figcaption></figcaption></figure>
 
 * **IntelliJ**, next to the rule violations themselves when a violation is selected.\
   CodeScan Rules found in IntelliJ
 
-<figure><img src="../../../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3028).png" alt=""><figcaption></figcaption></figure>
 
 **The syntax is as follows:**
 

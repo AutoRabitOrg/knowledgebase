@@ -11,20 +11,16 @@ The **Queue** template allows users to edit queue configurations in Salesforce u
 5. Provide a **template name** and a **short description**.
 6. Select the **Queue** checkbox under **Edit Queue**.
 7. Click **Add**.
-
 8. On the next screen:
-   - A **Test Case Name** is auto-generated.
-   - Click **Add** to enter custom test data.
-   - Fill in the required fields shown below:
+   * A **Test Case Name** is auto-generated.
+   * Click **Add** to enter custom test data.
+   *   Fill in the required fields shown below:
 
-     ![Queue Configuration](../../../../../.gitbook/assets/image%20(65).png)
-     
-     ![Additional Settings](../../../../../.gitbook/assets/image%20(66).png)
+       ![Queue Configuration](<../../../../../.gitbook/assets/image (990).png>)
 
-   - Click **Save** to finalize the data entry.
-
+       ![Additional Settings](<../../../../../.gitbook/assets/image (991).png>)
+   * Click **Save** to finalize the data entry.
 9. Click **Save** again to complete the template creation.
-
 10. You’ll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** from the dropdown and provide **email address(es)** to receive execution notifications.

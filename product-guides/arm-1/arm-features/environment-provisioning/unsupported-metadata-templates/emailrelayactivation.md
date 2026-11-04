@@ -24,7 +24,7 @@ The **EmailRelayActivation** template enables configuration and activation of em
       * **Restrict relay**
       * **Enable Email relaying**
 
-    ![Email Relay Activation Settings](<../../../../../.gitbook/assets/image (74).png>)
+    ![Email Relay Activation Settings](<../../../../../.gitbook/assets/image (999).png>)
 
     * Click **Save** to finalize the configuration.
 9. Click **Save** again to complete the template creation.

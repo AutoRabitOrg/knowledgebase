@@ -10,7 +10,7 @@ The Notification Center is your in-app inbox for Guard alerts. Notifications arr
 
 Notifications appear on the bell icon in the Guard header. Clicking “See Inbox” takes you to your personal inbox.
 
-<figure><img src="../../../.gitbook/assets/image (2857).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5205).png" alt=""><figcaption></figcaption></figure>
 
 ## Your Inbox
 
@@ -26,7 +26,7 @@ Clicking a notification takes you to the relevant policy in Guard where you can 
 
 Guard Admins can see all notifications across the platform, not just those that they are assigned to. Select **All Notifications** in the toggle under the inbox to move to this view.
 
-<figure><img src="../../../.gitbook/assets/image (2858).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5206).png" alt=""><figcaption></figcaption></figure>
 
 ## Archive
 
@@ -46,7 +46,7 @@ Notification Groups let you define named sets of Guard users who should receive 
 
 Only Admins can create, edit or delete Notification Groups.
 
-<figure><img src="../../../.gitbook/assets/image (2859).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5207).png" alt=""><figcaption></figcaption></figure>
 
 ### **Create a notification group**
 
@@ -58,7 +58,7 @@ Only Admins can create, edit or delete Notification Groups.
 
 The group is now available as a recipient option when configuring any policy notification.
 
-<figure><img src="../../../.gitbook/assets/image (2860).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5208).png" alt=""><figcaption></figcaption></figure>
 
 ### **Edit and delete groups**
 

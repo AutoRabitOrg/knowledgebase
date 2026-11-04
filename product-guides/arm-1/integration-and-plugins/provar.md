@@ -42,11 +42,11 @@ To integrate previous Provar versions with AutoRABIT, refer to the below steps:
 
 1. Set the Web Browser to **Desktop: Full Screen.**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1626).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the **Provider Name** to **Desktop** and the **Browser Configurations** to **Full Screen**.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1627).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. If test cases are running under ant, make sure that the build file consists of the following run test case configurations.
    * **webBrowserConfiguration="Desktop Full Screen"**
@@ -94,10 +94,10 @@ Now, you're done with the integration of Provar as a plugin with AutoRABIT, let'
 
 While triggering a build for Provar configured CI job, AutoRABIT application throws the error: **'Provar Plugin is not enabled. Please contact your Administrator and try again.'**
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="311"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1629).png" alt="" width="311"><figcaption></figcaption></figure>
 
 **Reason:**
 
 Typically this happens if you have built a CI Job with the provar configured in our application. However, for whatever reason, your org admin has disabled the Provar plugin for your account. Therefore, if you trigger a build for Provar configured CI job, our application will throw the previously described error, as your account is no longer configured with the Provar plug-in. Another scenario in which you would like to fetch the provar configured CI job with other test cases will promptly notify you that your CI job is already configured with the provar.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1630).png" alt=""><figcaption></figcaption></figure>

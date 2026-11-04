@@ -83,7 +83,7 @@ If you have specified your CodeScan for Azure DevOps versions in your pipeline, 
 
 Your script should now look similar to the image below.
 
-<figure><img src="../../../../.gitbook/assets/image (2423).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4771).png" alt=""><figcaption></figcaption></figure>
 
 ### Triggering Builds from a Repository <a href="#triggering-builds-from-an-azure-devops-repository" id="triggering-builds-from-an-azure-devops-repository"></a>
 

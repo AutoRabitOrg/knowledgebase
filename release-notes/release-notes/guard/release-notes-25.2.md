@@ -369,7 +369,7 @@ We’re launching API Security in Guard to help customers identify and mitigate 
 
 AutoRABIT Guard introduces a new API Security tab under the Risk section. From here, users can inspect API activity for a specific Salesforce org in real time.
 
-<figure><img src="../../../.gitbook/assets/image (2010).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2342).png" alt=""><figcaption></figcaption></figure>
 
 **Value to Users:**
 
@@ -438,7 +438,7 @@ Creating new users is now faster and more flexible. Admins can set up accounts w
 * The system now **automatically handles username conflicts** by suggesting available alternatives.
 *   The **user list view** and **user icons** have been updated to reflect these enhancements.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (1933).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -486,7 +486,7 @@ Guard now supports **Single Sign-On (SSO)** using **encrypted SAML assertions**.
 
 1. Risk Assessment is goal-oriented now!
 
-<figure><img src="../../../.gitbook/assets/image (1816).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1926).png" alt="" width="563"><figcaption></figcaption></figure>
 
 We have grouped risks under four key Security Goals:
 
@@ -512,29 +512,29 @@ Users can see their progress towards achieving each Goal and remediate the assoc
 
 Just give your query a name and definitive description, and it will be saved for your future revisits:
 
-<figure><img src="../../../.gitbook/assets/image (1817).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1927).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1818).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1928).png" alt=""><figcaption></figcaption></figure>
 
 3. New home page
 
 To help navigate and get instant value, we are happy to introduce a brand-new home page:
 
-<figure><img src="../../../.gitbook/assets/image (1819).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1929).png" alt=""><figcaption></figcaption></figure>
 
 4. Instance version details are available now in the bottom left corner of the expanded page:
 
-<figure><img src="../../../.gitbook/assets/image (1820).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1930).png" alt=""><figcaption></figcaption></figure>
 
 5. New menu
 
 To improve application navigation, in this release we have added a new menu:
 
-<figure><img src="../../../.gitbook/assets/image (1821).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1931).png" alt=""><figcaption></figcaption></figure>
 
 6. While we enhance its performance and functionality, we have temporarily removed the Field usage (data) tab from Data Classification UI:
 
-<figure><img src="../../../.gitbook/assets/image (1822).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1932).png" alt=""><figcaption></figcaption></figure>
 
 ### Bug Fixes
 

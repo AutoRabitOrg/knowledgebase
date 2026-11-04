@@ -17,10 +17,10 @@ Use ARM to back up changes from your Salesforce org to your [version-control](ht
 1. Log in to ARM.
 2.  From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1216).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3732).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New CI Job</p></figcaption></figure>
 3.  Click the **Backup to Version Control** tile.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3733).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
 4. Enter a descriptive **Job name**.
 5. Add a short **Description**.
 6. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
@@ -37,7 +37,7 @@ Under **Build**, provide:
     * **Unmanaged package** – Retrieves components from an unmanaged package so you can edit them.
     * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1218).png" alt="Package type selection list"><figcaption><p>Build</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3734).png" alt="Package type selection list"><figcaption><p>Build</p></figcaption></figure>
 
 **Additional build options**
 
@@ -50,15 +50,15 @@ Under **Build**, provide:
 6. **Run static analysis report** – Run an SCA tool before committing.
    *   **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1219).png" alt="Apex PMD and Checkmarx criteria configuration"><figcaption><p>Apex PMD / Checkmarx</p></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (3735).png" alt="Apex PMD and Checkmarx criteria configuration"><figcaption><p>Apex PMD / Checkmarx</p></figcaption></figure>
    *   **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-       <figure><img src="../../../../../.gitbook/assets/image (1220).png" alt="CodeScan and SonarQube criteria configuration"><figcaption><p>CodeScan / SonarQube</p></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (3736).png" alt="CodeScan and SonarQube criteria configuration"><figcaption><p>CodeScan / SonarQube</p></figcaption></figure>
 
        * **Run on all supported metadata types** – Scan every retrieved component.
        *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-           <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (3737).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 7. **Additional profile packaging options**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
    * **Remove system and user permissions** – Omit profile permissions from deployment.
@@ -74,20 +74,20 @@ Enable **Auto commit** to push changes directly to your VCS:
 
 1. Select the **Version control type** (Git, TFS, or SVN).
 2. Choose the **Repository**, **Branch**, and **Credential**.
-   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../salesforce-dx-metadata-format.md).
+   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../salesforce-dx/salesforce-dx-metadata-format.md).
 3.  Optional settings:
 
     * **Check out and commit with user’s credentials** – Commit all changes as the selected user.
     * **Check out with user credentials and commit with actual modified user credentials** – Preserve original authors.
     * **Configuration for recordTypes picklistValues** – Choose _Replace_, _Replace all_, or _Append_. ([Learn more](../../../troubleshoot/how-tos/configure-record-types-picklist-values.md))
 
-    <figure><img src="../../../../../.gitbook/assets/image (1222).png" alt="Auto-commit and credential options"><figcaption><p>Backup to Version Control (Auto Commit)</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3738).png" alt="Auto-commit and credential options"><figcaption><p>Backup to Version Control (Auto Commit)</p></figcaption></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (1223).png" alt="Notification recipient list"><figcaption><p>Notifications</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3739).png" alt="Notification recipient list"><figcaption><p>Notifications</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

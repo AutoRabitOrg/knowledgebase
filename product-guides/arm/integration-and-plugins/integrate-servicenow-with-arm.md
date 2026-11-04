@@ -3,41 +3,37 @@
 ## Step 1: Store Your ServiceNow Credentials in ARM
 
 1. Log in to your ARM account.
-2. Navigate to the **Admin** module and click the **Credentials** tab.
+2.  Navigate to the **Admin** module and click the **Credentials** tab.
 
-   ![Credential Tab](../../../.gitbook/assets/image%20(900).png)
+    ![Credential Tab](<../../../.gitbook/assets/image (2908).png>)
+3.  Click **Create Credential** from the right navigation.
 
-3. Click **Create Credential** from the right navigation.
-
-   ![Create Credential](../../../.gitbook/assets/image%20(901).png)
-
+    ![Create Credential](<../../../.gitbook/assets/image (2909).png>)
 4. In the popup:
-   - Enter a **Credential Name**
-   - Set **Credential Type** to _User name with Password_
-   - Input your **ServiceNow username** and **password**
-   - Ensure you're using your **username**, not your login email
-5. Click **Save**
+   * Enter a **Credential Name**
+   * Set **Credential Type** to _User name with Password_
+   * Input your **ServiceNow username** and **password**
+   * Ensure you're using your **username**, not your login email
+5.  Click **Save**
 
-   ![Credential Entry](../../../.gitbook/assets/image%20(902).png)
+    ![Credential Entry](<../../../.gitbook/assets/image (2910).png>)
 
----
+***
 
 ## Step 2: Integrate ServiceNow with ARM
 
 1. Log in to ARM (if not already logged in).
 2. Go to **Admin > My Account**
-3. Click **New ALM System** under the **ALM Management** section
+3.  Click **New ALM System** under the **ALM Management** section
 
-   ![New ALM System](../../../.gitbook/assets/image%20(903).png)
+    ![New ALM System](<../../../.gitbook/assets/image (2911).png>)
+4.  Set **ALM Type** as _SERVICENOW_
 
-4. Set **ALM Type** as _SERVICENOW_
-
-   ![ALM Type](../../../.gitbook/assets/image%20(904).png)
-
+    ![ALM Type](<../../../.gitbook/assets/image (2912).png>)
 5. Enter:
-   - A **Label Name**
-   - Your ServiceNow **subdomain URL** (e.g., `https://[subdomain].service-now.com`)
-   - The **credentials** stored in Step 1
+   * A **Label Name**
+   * Your ServiceNow **subdomain URL** (e.g., `https://[subdomain].service-now.com`)
+   * The **credentials** stored in Step 1
 6. Click **Test Connection** to validate
 7. Click **Save** to complete the integration
 
@@ -47,56 +43,56 @@
 **Note:** ServiceNow OAuth integration is supported only for **Cloud versions**. Contact **support@autorabit.com** to enable this feature.
 {% endhint %}
 
----
+***
 
 ## Configuring ServiceNow Work Items in ARM
 
 ### EZ-Commit Integration
 
-1. In the **EZ-Commit** screen under **Post Commit**:
-   - Check **Update ALM Workitem Status**
-   - Select:
-     - **ALM Type:** SERVICENOW
-     - **ALM Label, Project, Sprint,** and **Work Item**
-     - **Status** to be updated
+1.  In the **EZ-Commit** screen under **Post Commit**:
 
-   ![EZ Commit Config](../../../.gitbook/assets/image%20(905).png)
+    * Check **Update ALM Workitem Status**
+    * Select:
+      * **ALM Type:** SERVICENOW
+      * **ALM Label, Project, Sprint,** and **Work Item**
+      * **Status** to be updated
 
+    ![EZ Commit Config](<../../../.gitbook/assets/image (2913).png>)
 2. Upon commit, work item status will be reflected in ServiceNow.
 
----
+***
 
 ### CI Job Integration
 
 #### Applicable to:
 
-- Package from Version Control
-- Deploy from Version Control
-- Deploy from SFDX branch to Salesforce Org
-- Install Unlocked Package from VCS
+* Package from Version Control
+* Deploy from Version Control
+* Deploy from SFDX branch to Salesforce Org
+* Install Unlocked Package from VCS
 
-1. In **Build** section of CI Job creation:
-   - Check **Map ALM Project (Ex: ServiceNow)**
+1.  In **Build** section of CI Job creation:
 
-   ![CI Job Build](../../../.gitbook/assets/image%20(906).png)
+    * Check **Map ALM Project (Ex: ServiceNow)**
 
-2. Go to **ALM** section:
-   - Set:
-     - **ALM Type:** SERVICENOW
-     - **Label** and **Projects**
+    ![CI Job Build](<../../../.gitbook/assets/image (2914).png>)
+2.  Go to **ALM** section:
 
-   ![ALM Projects](../../../.gitbook/assets/image%20(907).png)
+    * Set:
+      * **ALM Type:** SERVICENOW
+      * **Label** and **Projects**
 
-3. Choose:
-   - One or all **Active Sprints**
+    ![ALM Projects](<../../../.gitbook/assets/image (2915).png>)
+3.  Choose:
 
-   ![Sprint Selection](../../../.gitbook/assets/image%20(908).png)
+    * One or all **Active Sprints**
 
-4. Select:
-   - **Work Item Type** (or all)
+    ![Sprint Selection](<../../../.gitbook/assets/image (2916).png>)
+4.  Select:
 
-   ![Work Item Type](../../../.gitbook/assets/image%20(909).png)
+    * **Work Item Type** (or all)
 
-5. Update the **Status** for selected work item types
+    ![Work Item Type](<../../../.gitbook/assets/image (2917).png>)
+5.  Update the **Status** for selected work item types
 
-   ![Status Update](../../../.gitbook/assets/image%20(910).png)
+    ![Status Update](<../../../.gitbook/assets/image (2918).png>)

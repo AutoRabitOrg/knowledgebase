@@ -8,7 +8,7 @@ The **Enable Org. Access Control** toggle on the **Manage Users** page is **enab
 
 If this toggle is **disabled**, all users in the AutoRABIT Vault account will have **unrestricted access** to all registered Salesforce orgs.
 
-<figure><img src="../../../.gitbook/assets/image (86) (1) (1) (1) (1) (1).png" alt="Enable Org Access Control Toggle"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3847).png" alt="Enable Org Access Control Toggle"><figcaption></figcaption></figure>
 
 ***
 

@@ -18,7 +18,7 @@ The **EditTerritoryViewRules** template allows modification of existing Territor
     * Fill in the required fields.
     * Click **Save** to store the test case data.
 
-    ![Edit Territory View Rules - Example](<../../../../../../.gitbook/assets/image (1476).png>)
+    ![Edit Territory View Rules - Example](<../../../../../../.gitbook/assets/image (4683).png>)
 9. Click **Save** to finalize the template.
 10. Once created, you will be redirected to the **Environment Provisioning History** screen.
 11. Click the **Run** button to execute the template in your target org.

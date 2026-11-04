@@ -20,11 +20,11 @@ A development team completes a set of enhancements in a sandbox environment over
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2795).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose the tile: **Deploy From Salesforce Org**
 
-<figure><img src="../../../../../.gitbook/assets/image (2194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2796).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter a descriptive **Job Name**.
 2. Add a brief **Description**.
@@ -46,7 +46,7 @@ Under **Build**, provide:
 
 **Additional Options in the Build Section**
 
-<figure><img src="../../../../../.gitbook/assets/image (2195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2797).png" alt=""><figcaption></figcaption></figure>
 
 1. **Auto Switch to Bulk Retrieve Service if Job Hits Metadata Governor Limit:** Use batch retrieval when a job approaches the 10,000 file or 39MB limit. Specify **Batch Size** (up to 10,000).
 2. **Exclude Installed (Managed) Components and Changes:** Skip all managed package components.
@@ -57,17 +57,17 @@ Under **Build**, provide:
 6. **Generate Code Coverage Report:** Include Apex test coverage details.
 7. **Run Static Analysis Report:** Identify code quality issues before production.
 
-<figure><img src="../../../../../.gitbook/assets/image (2196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2798).png" alt=""><figcaption></figcaption></figure>
 
 * **Apex PMD / Checkmarx:** Set scan criteria and **Priority**. If the threshold is not met, the build is marked unstable.
 
-<figure><img src="../../../../../.gitbook/assets/image (2197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2799).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube:** Choose to scan all metadata or only newly added components, then set a **Priority**.
   * **Run on All Supported Metadata Types:** Scan every retrieved component.
   *   **Run on Newly Added Supported Metadata Types:** Scan only newly added components.
 
-      <figure><img src="../../../../../.gitbook/assets/image (1241).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (3878).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
 
 _For more information on running **Static Code Analysis in CI Jobs**, see_ [_this guide_](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md)_._
 
@@ -84,12 +84,12 @@ _For more information on running **Static Code Analysis in CI Jobs**, see_ [_thi
 
 Deploy or validate the package in a destination org:
 
-<figure><img src="../../../../../.gitbook/assets/image (2198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2800).png" alt=""><figcaption></figcaption></figure>
 
 * **Deployment Org:** Select the destination org.
 * **Apex Test Level:** Choose the test scope:
 
-<figure><img src="../../../../../.gitbook/assets/image (2199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2801).png" alt=""><figcaption></figcaption></figure>
 
 1. **Use Salesforce Defaults** – Default Salesforce behavior.
 2. **No Test Run** – No tests unless deploying to production.
@@ -108,7 +108,7 @@ Deploy or validate the package in a destination org:
 
 ### **Additional Deployment Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (2200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2802).png" alt=""><figcaption></figcaption></figure>
 
 1. **Validate Only:** Run validation without deploying.
    * **Prevent Deployment:** Disable deployment for validation-only jobs.
@@ -127,37 +127,37 @@ Deploy or validate the package in a destination org:
 8. **Apply Search and Substitute Rules:** Apply custom find/replace rules during deployment.
 9. **On Successful Deployment:** Trigger post-deployment actions (Skuid pages, CI jobs, environment templates, DataLoader processes, merge processes, Jenkins jobs, parallel processors, or a sequence of activities).
 
-<figure><img src="../../../../../.gitbook/assets/image (2201).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2803).png" alt=""><figcaption></figcaption></figure>
 
 _You can sequence multiple post-deployment actions:_
 
-<figure><img src="../../../../../.gitbook/assets/image (2202).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2804).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2805).png" alt=""><figcaption></figcaption></figure>
 
 ### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 
 Analyze metadata dependencies to avoid breaking changes:
 
-<figure><img src="../../../../../.gitbook/assets/image (2204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2806).png" alt=""><figcaption></figcaption></figure>
 
 ### Tests <a href="#tests" id="tests"></a>
 
 Run functional tests before deployment:
 
-<figure><img src="../../../../../.gitbook/assets/image (2205).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2807).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * **Version Control:** Choose repository, branch, and test type (TAF, Selenium Maven, Selenium Non-Maven).
 
-<figure><img src="../../../../../.gitbook/assets/image (2206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2808).png" alt=""><figcaption></figcaption></figure>
 
 * **AccelQ:** Enter **Project Name**, **Test Job Name**, and parameters.
 
-<figure><img src="../../../../../.gitbook/assets/image (2207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2809).png" alt=""><figcaption></figcaption></figure>
 
 * **Provar:** Provide repository, branch, test-case root path, and execution path.
 
-<figure><img src="../../../../../.gitbook/assets/image (2208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2810).png" alt=""><figcaption></figcaption></figure>
 
 ### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -167,7 +167,7 @@ Configure HTTP callouts to external services. See the [Callout URL guide](../../
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (2209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2811).png" alt=""><figcaption></figcaption></figure>
 
 ### Schedule <a href="#schedule" id="schedule"></a>
 
@@ -181,7 +181,7 @@ Click **Save** to store the CI job settings.
 
 If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 
-<figure><img src="../../../../../.gitbook/assets/image (1256).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3893).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
 
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.

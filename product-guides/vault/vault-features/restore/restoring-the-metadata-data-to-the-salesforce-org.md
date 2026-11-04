@@ -20,23 +20,23 @@ Ensure you have the following:
     <figure><img src="../../../../.gitbook/assets/Labels Update - 0.png" alt=""><figcaption></figcaption></figure>
 3. On the next screen, select your source [**`Salesforce Org`**](../../configuring-vault/salesforce-org-setup/registering-salesforce-org/).
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (487).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4.  Next, select the **`restore source`** and its **`configuration`** from the dropdown.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1564).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4650).png" alt=""><figcaption></figcaption></figure>
 5. Click **`Get Details`**.
 6.  The configured list will be displayed based on the restore source and configuration selection.
 
     * To restore the **source** as **`backup`**, select multiple backups for restoration.
 
-    <figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (489).png" alt=""><figcaption></figcaption></figure>
 
     * For **`hierarchical backup`** and **`archival`**, you can choose only one from the list.
 
-    <figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (490).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (491).png" alt=""><figcaption></figcaption></figure>
 7. Click on either **`EZ Restore`** or **`Selective Restore`**.
 
 {% hint style="info" %}
@@ -51,7 +51,7 @@ EZ-Restore copies everything from the source to the destination, including new, 
 
 1.  Select the backup(s) from the list and click on the **`EZ Restore`** button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1562).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4648).png" alt=""><figcaption></figcaption></figure>
 2.  The **restore checklists** are displayed on the next pop-up screen, which must be considered before proceeding with the restoration operation. Once you're done, click the **`Got It`** button.&#x20;
 
     <figure><img src="../../../../.gitbook/assets/RESTORE – EZ RESTORE - 1 (1).png" alt=""><figcaption></figcaption></figure>
@@ -76,17 +76,17 @@ This option allows you to select specific metadata or data that gets restored on
 
 Select the backup(s) from the list and click on the **`Selective Restore`** button.
 
-<figure><img src="../../../../.gitbook/assets/image (34) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
 
 The next screen displays the metadata and data objects that will be replicated. From the list of **`Metadata`** and **`Data`** type components, the user needs to select the components (along with their members) that will be restored.
 
 1. Under the **`Metadata`** tab, choose the metadata members for each metadata type.
 
-<figure><img src="../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (496).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (497).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (498).png" alt=""><figcaption></figcaption></figure>
 
 2. Under the **`Data`** tab, you have multiple configurations to choose from:
 3.  #### **Schema Viewer:**
@@ -97,13 +97,13 @@ The next screen displays the metadata and data objects that will be replicated. 
        1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
        2.  Selecting the Hierarchy icon corresponding to an object opens the Account Hierarchy view.
 
-           <figure><img src="../../../../.gitbook/assets/image (2368).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3862).png" alt=""><figcaption></figcaption></figure>
        3. The hierarchy view opens in a modal window, preserving the current configuration context.
     2. **Hierarchy Layout and Navigation**
        1. The selected object is displayed as the root node of the hierarchy.
        2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
 
-           <figure><img src="../../../../.gitbook/assets/image (2369).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3863).png" alt=""><figcaption></figcaption></figure>
        3. Expand and collapse controls allow traversal across multiple hierarchy levels.
        4. **Each object card displays:**
           * Object name
@@ -117,7 +117,7 @@ The next screen displays the metadata and data objects that will be replicated. 
            1. Matching objects within the current hierarchy are highlighted.
            2. The info icon is automatically opened the first time typing is initiated.
 
-           <figure><img src="../../../../.gitbook/assets/image (2372).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3866).png" alt=""><figcaption></figcaption></figure>
        3. The info icon can be manually reopened at any time by selecting the icon.
     4.  **Search Help (Info Icon)**
 
@@ -141,10 +141,10 @@ The next screen displays the metadata and data objects that will be replicated. 
 
             1. Searches across the entire hierarchy path.
 
-            <figure><img src="../../../../.gitbook/assets/image (2373).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3867).png" alt=""><figcaption></figcaption></figure>
         4.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
 
-            <figure><img src="../../../../.gitbook/assets/image (2374).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3868).png" alt=""><figcaption></figcaption></figure>
     6. **Search Results Feedback**
        1. **A result banner displays:**
           1. Number of matches found on the current page.
@@ -155,7 +155,7 @@ The next screen displays the metadata and data objects that will be replicated. 
     7. **“Only Matches” Toggle**
        1.  The Only Matches toggle is available alongside search results.
 
-           <figure><img src="../../../../.gitbook/assets/image (2375).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3869).png" alt=""><figcaption></figcaption></figure>
        2. **When enabled:**
           1. Only objects matching the search criteria are displayed.
           2. Non-relevant hierarchy nodes are temporarily hidden.
@@ -165,13 +165,13 @@ The next screen displays the metadata and data objects that will be replicated. 
        1. The Root option is displayed at the top of the hierarchy view.
        2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
 
-           <figure><img src="../../../../.gitbook/assets/image (2376).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3870).png" alt=""><figcaption></figcaption></figure>
 
            1. This action resets the navigation context without clearing selected objects.
     9. **Path and Navigation Indicators**
        1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
 
-           <figure><img src="../../../../.gitbook/assets/image (2377).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3871).png" alt=""><figcaption></figcaption></figure>
        2. A Go Back option allows navigation to the previous hierarchy level.
        3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
     10. **Object Selection Behavior**
@@ -188,7 +188,7 @@ The next screen displays the metadata and data objects that will be replicated. 
     12. **Saving Hierarchy Configuration**
         1.  The Save button persists all selections made within the hierarchy view.
 
-            <figure><img src="../../../../.gitbook/assets/image (2378).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3872).png" alt=""><figcaption></figcaption></figure>
         2. Validation is performed before saving to ensure dependency consistency.
         3. On successful save, the hierarchy modal closes and returns to the configuration screen.
     13. **Key Functional Notes**
@@ -211,19 +211,19 @@ The next screen displays the metadata and data objects that will be replicated. 
         <figure><img src="../../../../.gitbook/assets/Restore - Common Object Selection - 1.png" alt=""><figcaption></figcaption></figure>
 * **`Selected Records:`** By default, all the records available in the objects will be auto-selected. To choose specific records, click **`All`** under **`Selected Records,`** which will lead you to a pop-up box where you can select the record. Post selection, the summary table should show the number of records set.
 
-<figure><img src="../../../../.gitbook/assets/image (47) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (508).png" alt=""><figcaption></figcaption></figure>
 
 You also have the option of importing records from a CSV file. To upload the CSV from your local system, click the **`Choose File`** button in the top right corner of the screen.
 
-<figure><img src="../../../../.gitbook/assets/image (48) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (509).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (49) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (510).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 
 * **`Selected Fields:`** By default, all the fields will be chosen for the objects selected. Clicking **`“All”`** under the **`Selected Fields`** column will open a pop-up window with all the fields listed for the selected objects. You can also use the **search** filter to search for a specific field faster. Here, you can map your source field with the destination field. The destination field should default to be mapped based on the source field name.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (512).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -235,7 +235,7 @@ You also have the option of importing records from a CSV file. To upload the CSV
 
 Based on your selection, the restore will happen only for selected fields. Post selection, the summary table should show the number of fields selected.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on **`Trigger Restore`**.
 
@@ -274,7 +274,7 @@ The AutoRABIT Vault application now automatically identifies and excludes system
 
 The following is a sample log for reference, showing the excluded system-generated Feeditems:
 
-<figure><img src="../../../../.gitbook/assets/image (2705).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5053).png" alt=""><figcaption></figcaption></figure>
 
 ### Restore Log
 
@@ -284,7 +284,7 @@ Refer to these logs to verify the exclusions and ensure smooth operations during
 
 For each restore activity triggered in AutoRABIT Vault, you will find the details below:
 
-<figure><img src="../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (516).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/Restore - 1.png" alt=""><figcaption></figcaption></figure>
 

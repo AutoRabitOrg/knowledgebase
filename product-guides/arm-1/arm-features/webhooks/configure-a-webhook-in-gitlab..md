@@ -18,14 +18,14 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to **Admin > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (974).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3513).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (975).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3514).png" alt=""><figcaption></figcaption></figure>
 
 8. Your API token is now created.
 
@@ -33,16 +33,16 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 1. Log in to your GitLab account and select the target repository.
 
-<figure><img src="../../../../.gitbook/assets/image (976).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3515).png" alt=""><figcaption></figcaption></figure>
 
 2. Go to **Settings > Webhooks**.\
-   ![](<../../../../.gitbook/assets/image (2890).png>)
+   ![](<../../../../.gitbook/assets/image (5238).png>)
 3. In the **URL** field, enter the webhook endpoint:
 
 For example:\
 https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-request<br>
 
-<figure><img src="../../../../.gitbook/assets/image (2891).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5239).png" alt=""><figcaption></figcaption></figure>
 
 4. Add the API Token created as the Secret.&#x20;
 5. Select the required triggers:
@@ -55,7 +55,7 @@ https://login.autorabit.com/api/webhook/v2/autorabit.com/trigger-scm-push-reques
 
 Define the pattern used to extract ALM-related information from commit messages. For example:
 
-<figure><img src="../../../../.gitbook/assets/image (979).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3518).png" alt=""><figcaption></figcaption></figure>
 
 To enable automatic updates via webhook:
 

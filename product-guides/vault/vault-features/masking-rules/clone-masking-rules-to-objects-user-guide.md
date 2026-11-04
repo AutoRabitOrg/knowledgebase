@@ -44,7 +44,7 @@ Select the Salesforce org and select Apply.
 
 Select Clone to Obj to open the Clone Masking Rules to Objects workflow.
 
-<figure><img src="../../../../.gitbook/assets/image (2904).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5252).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk Clone Rules page and Clone to Obj action**
 {% endstep %}
@@ -72,11 +72,11 @@ Select a masking rule. Only one rule for each field type can be selected.
 
 Review the selected-rule count and select Continue.
 
-<figure><img src="../../../../.gitbook/assets/image (2905).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5253).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Available source masking rules**
 
-<figure><img src="../../../../.gitbook/assets/image (2906).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5254).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **One source masking rule selected**
 {% endstep %}
@@ -104,23 +104,23 @@ Search for or select the required destination objects.
 
 Select Add to include the objects in the destination configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (2907).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5255).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Destination Objects step before objects are added**
 
-<figure><img src="../../../../.gitbook/assets/image (2908).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5256).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Object Selection dialog**
 
-<figure><img src="../../../../.gitbook/assets/image (2909).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5257).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Destination object search and available objects**
 
-<figure><img src="../../../../.gitbook/assets/image (2910).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5258).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Two destination objects selected**
 
-<figure><img src="../../../../.gitbook/assets/image (2911).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5259).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Maximum of five destination objects selected**
 {% endstep %}
@@ -158,15 +158,15 @@ Repeat the selection for each destination object.
 
 Confirm that the configured-object count reflects every intended destination object.
 
-<figure><img src="../../../../.gitbook/assets/image (2912).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5260).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Configured destination objects and object-level clone preview**
 
-<figure><img src="../../../../.gitbook/assets/image (2913).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5261).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Fields with existing masking and required field selection**
 
-<figure><img src="../../../../.gitbook/assets/image (2914).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5262).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Case preview showing field groups and cloned rule names**
 {% endstep %}
@@ -176,11 +176,11 @@ Confirm that the configured-object count reflects every intended destination obj
 
 For AccountTeamMember, all six selected fields are picklist fields. Because they share the same compatible field type, Vault groups them under one cloned substitution rule.
 
-<figure><img src="../../../../.gitbook/assets/image (2915).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5263).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Six selected picklist fields on AccountTeamMember**
 
-<figure><img src="../../../../.gitbook/assets/image (2916).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5264).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **One cloned rule configured to mask six AccountTeamMember fields**
 
@@ -214,19 +214,19 @@ Verify the source-to-cloned rule names and the masking style assigned to each fi
 
 Review the final Ready to clone summary and select Clone.
 
-<figure><img src="../../../../.gitbook/assets/image (2917).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5265).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Summary with source rules, destination objects, and clone preview**
 
-<figure><img src="../../../../.gitbook/assets/image (2918).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5266).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Summary mappings for Case, Opportunity, and Account**
 
-<figure><img src="../../../../.gitbook/assets/image (2919).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5267).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Summary mappings for Account and AccountTeamMember**
 
-<figure><img src="../../../../.gitbook/assets/image (2920).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5268).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Final readiness summary across five destination objects**
 {% endstep %}
@@ -238,23 +238,23 @@ Review the final Ready to clone summary and select Clone.
 
 After Clone is selected, Vault confirms that the operation was initiated and directs the user to Masking > Bulk Clone Rules. A separate job is created for each destination object.
 
-<figure><img src="../../../../.gitbook/assets/image (2921).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5269).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Clone operation initiated successfully**
 
-<figure><img src="../../../../.gitbook/assets/image (2922).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5270).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk clone jobs created for the destination objects**
 
-<figure><img src="../../../../.gitbook/assets/image (2923).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5271).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk Clone Rules list with destination-specific jobs**
 
-<figure><img src="../../../../.gitbook/assets/image (2924).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5272).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Job statuses and actions**
 
-<figure><img src="../../../../.gitbook/assets/image (2925).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5273).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Available action for an unsuccessful bulk clone job**
 
@@ -280,11 +280,11 @@ Select the Retry action and confirm the operation when prompted.
 
 Verify the confirmation message and monitor the updated Last Run Date, status, and retry result.
 
-<figure><img src="../../../../.gitbook/assets/image (2926).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5274).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Retry initiated for the selected bulk clone job**
 
-<figure><img src="../../../../.gitbook/assets/image (2927).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5275).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk clone job list after retry**
 {% endstep %}
@@ -294,23 +294,23 @@ Verify the confirmation message and monitor the updated Last Run Date, status, a
 
 Use the job information action to review the bulk job ID, operation type, destination, overall status, retry count, and field-level outcomes. The details identify the source and cloned rule, object, masking style, masking value, and remarks for each field.
 
-<figure><img src="../../../../.gitbook/assets/image (2928).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5276).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk clone job information**
 
-<figure><img src="../../../../.gitbook/assets/image (2929).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5277).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Partially failed job with field-level remarks**
 
-<figure><img src="../../../../.gitbook/assets/image (2930).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5278).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Bulk Clone Rules list after job-detail review**
 
-<figure><img src="../../../../.gitbook/assets/image (2931).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5279).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Detailed field mappings and masking values**
 
-<figure><img src="../../../../.gitbook/assets/image (2932).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5280).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                            **Additional field-level job information**
 

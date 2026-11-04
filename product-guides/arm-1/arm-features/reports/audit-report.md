@@ -10,14 +10,14 @@ To generate a report:
     In the dropdown, choose the target **Salesforce Org**.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2152).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2818).png" alt=""><figcaption></figcaption></figure>
 2. **Set a date range.**\
    Specify the **From** and **To** dates for the period you want to analyze.
 3.  **Run the search.**\
     Click **Search** to generate the report. When the results appear, click **Download** to save the CSV locally.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2153).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2819).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Time-zone note:** ARM stores audit timestamps in GMT. Salesforce displays times in the user’s own time zone, so the two can differ. This is expected and does not indicate an error.
@@ -29,7 +29,7 @@ On the **CI Job Results** page, you’ll see a **Job Audit Report** button. Clic
 \
 You can narrow the report to a specific time window—up to **120 days**—using either preset ranges or custom **From / To** dates.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (2154).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2820).png" alt=""><figcaption></figcaption></figure>
 
 The PDF contains:
 

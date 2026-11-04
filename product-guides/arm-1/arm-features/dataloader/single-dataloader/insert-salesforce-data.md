@@ -1,4 +1,4 @@
-# Insert Salesforce Data
+# Inserting Salesforce Data
 
 **The "Basic DataLoader" feature offers a user-friendly and efficient way to insert data into Salesforce using a CSV file.** It simplifies the data load process while maintaining accuracy and speed, making it ideal for quick and straightforward data uploads.
 
@@ -35,7 +35,7 @@
 11. Click on the drop-down beside the object name and select the required field from the list.
 
     <figure><img src="../../../../../.gitbook/assets/10 - Insert (1).png" alt=""><figcaption></figcaption></figure>
-12. Observe the <img src="../../../../../.gitbook/assets/image (1868).png" alt="" data-size="line"> icon beside the "Automap" option, clicking that will provide the options:
+12. Observe the <img src="../../../../../.gitbook/assets/image (2565).png" alt="" data-size="line"> icon beside the "Automap" option, clicking that will provide the options:
 
     1. All: Will display all of the fields existing from the mapping
     2. Mapped: will display the fields mapped through the "Automap" option

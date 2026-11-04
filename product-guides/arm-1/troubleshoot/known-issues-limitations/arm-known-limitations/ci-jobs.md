@@ -14,7 +14,7 @@
 3. **For ALM configured CI jobs:** The metadata members which are associated with the revision of a merged label will be included in the build. If the user has enabled the rollback option while configuring their CI jobs, the ALM work items status will get updated once the deployment is successful. However, if the user would like to rollback the same deployment, the ALM work items status remains unchanged.
 4.  The below points highlight the limitation for those CI jobs in which post-deployment activities are configured.
 
-    <figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="459"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1794).png" alt="" width="459"><figcaption></figcaption></figure>
 
     * Currently, workflow sequence is not supported as a post-deployment action for **"Run Skuid Pages"**
     * While carrying out the post-deployment workflow, make sure no manual effort has interfered.
@@ -28,7 +28,7 @@
 
     However, for the SFDX and Vlocity jobs, users will not get notified of any failed revisions.
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1795).png" alt=""><figcaption></figcaption></figure>
 
 6. Code coverage results during the CI job come from any tests you've run from the AutoRABIT application, however, you will be able to view the report only if the code coverage is more than **0%**.
 7. For CI Jobs builds that are more than 30 days old, **deployment/ quick deployment/ rollback reports** will not be accessible.
@@ -36,10 +36,10 @@
 9. For Validate deployments and Quick Deployment, we will not update the ALM statues.
 10. **Internet Explorer (IE)** is no longer supported as a **Test Browser** to **Run Test Automation Scripts** when creating CI jobs. The IE icon/checkbox has been disabled. The Firefox and the Chrome browser are still supported.
 
-<figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1796).png" alt="" width="536"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1797).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. The **Test Results** will not show any test scripts configured to run with the IE browser. However, the **Total Tests** in the report will include the IE tests. This may cause a discrepancy between the number of tests shown and the tests listed.
 
-<figure><img src="../../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1798).png" alt=""><figcaption></figcaption></figure>

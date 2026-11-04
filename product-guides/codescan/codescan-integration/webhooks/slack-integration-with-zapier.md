@@ -9,7 +9,7 @@ Zapier is a service that allows you to easily manage webhooks between apps. With
 1. First, sign up to Zapier and click **Make a Zap**.
 2. Use the App search bar to find **Webhooks by Zapier** and then select it. Choose **Catch Hook** as the trigger event and then click on **Continue**.
 
-<figure><img src="../../../../.gitbook/assets/image (534).png" alt="" width="503"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4146).png" alt="" width="503"><figcaption></figcaption></figure>
 
 3. You will be provided with a Custom **Webhook URL**, copy this URL.
 4. Now login into CodeScan Cloud and go to **Administration > Webhooks** menu at either the Organization or Project level (see note above).
@@ -17,13 +17,13 @@ Zapier is a service that allows you to easily manage webhooks between apps. With
 6. Now **run** a **scan** to trigger the webhook. This will allow you to find the the webhook in Zapier and customize the output as we'll see soon.
 7. Next, search for **Slack** and select it. Choose the **Action Event** that you want.
 
-<figure><img src="../../../../.gitbook/assets/image (533).png" alt="" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4145).png" alt="" width="506"><figcaption></figcaption></figure>
 
 8. Click **CONTINUE** and add your Slack Account. Click **CONTINUE**.
 9. Customize the message to your liking using the webhook fields, your own text, and Zapier's formatting options.
 
-<figure><img src="../../../../.gitbook/assets/image (532).png" alt="" width="505"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4144).png" alt="" width="505"><figcaption></figcaption></figure>
 
 10. Click **CONTINUE**, then send a test to Slack.
 
-<figure><img src="../../../../.gitbook/assets/image (531).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4143).png" alt=""><figcaption></figcaption></figure>

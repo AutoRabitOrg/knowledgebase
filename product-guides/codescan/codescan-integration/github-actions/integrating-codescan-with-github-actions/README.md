@@ -23,7 +23,7 @@ Now you'll be able to access this variable by using **`$codescan_token`** in you
 
 If you do not have a workflow setup on your GitHub repository, go to **`Actions > New workflow`** to create a **.yml workflow**.
 
-<figure><img src="../../../../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4134).png" alt=""><figcaption></figcaption></figure>
 
 Add the following into your **.YML file** in the workflow:
 
@@ -101,7 +101,7 @@ The **`scanChangedFilesOnly`** parameter will only work on a pull request trigge
 
 Now, you will be able to view the **.yml workflow** on your repository.
 
-<figure><img src="../../../../../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4135).png" alt=""><figcaption></figcaption></figure>
 
 Also check for the name of the master branch on both the CodeScan platform and the Git repository, as the new Git update changes the name of master branch to main.
 
@@ -117,17 +117,17 @@ The uploaded **SARIF file** in the **.yml** helps you to get the code analysis r
 
 1. For the files already existing in the repository, results can be found under code scanning alerts under the **`Security`** tab on GitHub repository.
 
-<figure><img src="../../../../../.gitbook/assets/image (524).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4136).png" alt=""><figcaption></figcaption></figure>
 
 2.  For the new files being uploaded to the repository, you can view the analysis during the pull requests on GitHub by clicking on the details:
 
     * Select the relevant pull request and then click on **`Details`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4137).png" alt=""><figcaption></figcaption></figure>
 
     * Once you click on the **`Details`**, go to **`Code scanning results > CodeScan`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4138).png" alt=""><figcaption></figcaption></figure>
 
     * Results are categorized as follows:
       1. **Bugs** and **vulnerabilities** are marked as **ERRORS**.

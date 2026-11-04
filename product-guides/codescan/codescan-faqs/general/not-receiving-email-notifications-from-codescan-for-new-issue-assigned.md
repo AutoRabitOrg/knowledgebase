@@ -7,7 +7,7 @@ My team member assigned me issues for a project, yet I have not received any ema
 
 1. Verify the **notifications feature is turned on** for any new issues in your profile.
 
-<figure><img src="../../../../.gitbook/assets/image (429).png" alt="" width="518"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3029).png" alt="" width="518"><figcaption></figcaption></figure>
 
 2. If you log in to CodeScan through SSO, ensure the following:
    * Email attributes are configured in SAML configuration.

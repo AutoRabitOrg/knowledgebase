@@ -6,13 +6,13 @@ For optimal viewing, set your browser zoom level to 80% in Chrome or Firefox.
 
 The CI Job List screen displays all CI jobs created in ARM, listed in reverse chronological order — the most recent jobs appear at the top.
 
-<figure><img src="../../../../.gitbook/assets/image (1179).png" alt="CI Job List UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3120).png" alt="CI Job List UI"><figcaption></figcaption></figure>
 
 Jobs that have been deployed display the icon, while jobs that have only been validated display.
 
 Filtering Options: Use the filters to refine your search for specific CI jobs.
 
-<figure><img src="../../../../.gitbook/assets/image (1182).png" alt="Filtering Options UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3123).png" alt="Filtering Options UI"><figcaption></figcaption></figure>
 
 Group By: Select a specific job group from the dropdown or type the group name. Choose All Groups to view jobs from all groups.
 
@@ -25,11 +25,11 @@ Last Modified Date Range: Filter jobs by modification date. Defaults to the last
 * Last 24 hours
 * Custom Range: Specify your own date and time range.
 
-<figure><img src="../../../../.gitbook/assets/image (1183).png" alt="Date Range Filter" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3124).png" alt="Date Range Filter" width="563"><figcaption></figcaption></figure>
 
 **Advanced Filter Options**:
 
-<figure><img src="../../../../.gitbook/assets/image (1185).png" alt="Filter Panel" width="401"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3126).png" alt="Filter Panel" width="401"><figcaption></figcaption></figure>
 
 Job Source Type:
 
@@ -37,13 +37,13 @@ Sandbox: Choose the Source Org. Select All to include all orgs.
 
 Version Control: Choose the Source Repository and Source Branch. Select All to include all repos and branches.
 
-<figure><img src="../../../../.gitbook/assets/image (1186).png" alt="Source Type Filters" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3127).png" alt="Source Type Filters" width="563"><figcaption></figcaption></figure>
 
 Destination Org: Select a specific org or choose All to include jobs targeting any destination org.
 
 #### Additional Options
 
-<figure><img src="../../../../.gitbook/assets/image (1187).png" alt="CI Job Actions" width="550"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3128).png" alt="CI Job Actions" width="550"><figcaption></figcaption></figure>
 
 Info: View job metadata including source/destination orgs, repositories, branches, timestamps, etc.
 
@@ -57,7 +57,7 @@ Selecting YES aborts the current job, saves changes, and redirects to the CI Job
 
 Selecting NO discards changes.
 
-<figure><img src="../../../../.gitbook/assets/image (1188).png" alt="Edit Job Prompt" width="332"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3129).png" alt="Edit Job Prompt" width="332"><figcaption></figcaption></figure>
 
 For Vlocity (FlexCard/OmniScript) deployments:
 
@@ -75,7 +75,7 @@ Invalid key:
 
 Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository
 
-<figure><img src="../../../../.gitbook/assets/image (1189).png" alt="Local Compilation Config" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3130).png" alt="Local Compilation Config" width="452"><figcaption></figcaption></figure>
 
 Activate/Deactivate: Temporarily disable jobs without deleting them. Reactivate when needed. This prevents unintended builds without loss of job data.
 

@@ -20,7 +20,7 @@ The **DeleteTerritoryViewRules** template enables deletion of specific Territory
       * **Rule Name**: Provide the name of the rule to delete.
     * Click **Save** to store the test data.
 
-    ![Delete Territory View Rules - Example](<../../../../../../.gitbook/assets/image (1475).png>)
+    ![Delete Territory View Rules - Example](<../../../../../../.gitbook/assets/image (4682).png>)
 9. Click **Save** again to save the template.
 10. After the template is successfully created, you’ll be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
 11. Click the **Run** button to execute the template on your destination org.

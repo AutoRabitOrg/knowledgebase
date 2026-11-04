@@ -53,7 +53,7 @@ If you already have an existing channel, you can use it directly.
 2. Click the **More options (⋯)** menu.
 3. Select **Workflows**.
 
-<figure><img src="../../../../.gitbook/assets/image (2561).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4909).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -65,7 +65,7 @@ Select:
 
 **Send webhook alerts to a channel**
 
-<figure><img src="../../../../.gitbook/assets/image (2562).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4910).png" alt=""><figcaption></figcaption></figure>
 
 This template creates a webhook endpoint that external applications (such as ARM) can use to send notifications.
 
@@ -82,7 +82,7 @@ where notifications should be delivered.
 
 Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (2563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4911).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -94,7 +94,7 @@ After saving the workflow:
 2. Click **Copy webhook link**.
 3. Save the generated URL.
 
-<figure><img src="../../../../.gitbook/assets/image (2564).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4912).png" alt=""><figcaption></figcaption></figure>
 
 This URL will be required while configuring ARM.
 
@@ -112,7 +112,7 @@ Expand:
 
 Select the **Microsoft Teams** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (2565).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4913).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -171,6 +171,6 @@ Click **Save**.
 
 Sample Notifications:
 
-<figure><img src="../../../../.gitbook/assets/image (2566).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4914).png" alt=""><figcaption></figcaption></figure>
 
 <br>

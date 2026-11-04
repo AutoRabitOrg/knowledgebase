@@ -18,17 +18,17 @@ You’ll need the **`Deployment History`** access permission.
 
 ### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (2141).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3682).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
 3.  **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last 7 days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for when you want to view the jobs.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2142).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3683).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2144).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3685).png" alt=""><figcaption></figcaption></figure>
 5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration, which gives you information about the entire deployment process run for the selected deployment label.
 
 {% hint style="info" %}
@@ -49,13 +49,13 @@ You’ll need the **`Deployment History`** access permission.
            \
            <br>
 
-           <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3374).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
 
-           <figure><img src="../../../../.gitbook/assets/image (1699).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3375).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
 
 
 
-           <figure><img src="../../../../.gitbook/assets/image (2145).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3686).png" alt=""><figcaption></figcaption></figure>
     2.  #### As an Approver <a href="#as-an-approver" id="as-an-approver"></a>
 
         As soon as the approver comes to the Deployment history screen, the approver clicks on the Deployment that is pending approval.
@@ -71,23 +71,23 @@ You’ll need the **`Deployment History`** access permission.
         2.  Once the Approver clicks on Approve → It is Auto-deployed. Users and approvers are notified via email.\
             Pending L1 Approval<br>
 
-            <figure><img src="../../../../.gitbook/assets/image (2549).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (4897).png" alt=""><figcaption></figcaption></figure>
 
             Email to Approver\
-            ![](<../../../../.gitbook/assets/image (2552).png>)<br>
+            ![](<../../../../.gitbook/assets/image (4900).png>)<br>
 
 
 
         Pending L2 Approval
 
-        <figure><img src="../../../../.gitbook/assets/image (2551).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (4899).png" alt=""><figcaption></figcaption></figure>
 
         \
         Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (2550).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4898).png" alt=""><figcaption></figcaption></figure>
 
 
 

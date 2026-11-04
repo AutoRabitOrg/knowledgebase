@@ -1,4 +1,4 @@
-# Setting Up Multifactor Authentication in AutoRABIT Vault
+# Setting Up Multi-Factor Authentication
 
 ## What is Multi-Factor Authentication? <a href="#what-is-multifactor-authentication" id="what-is-multifactor-authentication"></a>
 
@@ -27,7 +27,7 @@ AutoRABIT Vault administrators can enable MFA either **globally for all users** 
 2. Find the specific user in the list.
 3. Enable MFA by sliding the **MFA toggle** to the right for that user.
 
-<figure><img src="../../../.gitbook/assets/image (67) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="MFA Toggle for Users"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (715).png" alt="MFA Toggle for Users"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Notes:**
@@ -47,6 +47,6 @@ If a user loses their device or switches to a new phone, they must contact an ad
 1. Go to **Manage Users > Users**.
 2. Locate the user and click the **Reset** icon next to the MFA toggle.
 
-<figure><img src="../../../.gitbook/assets/image (68) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Reset MFA Icon"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (716).png" alt="Reset MFA Icon"><figcaption></figcaption></figure>
 
 3. On the user's next login, they will be prompted to scan a **new QR code** to register their authenticator app.

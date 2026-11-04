@@ -20,12 +20,12 @@ When attaching a GitHub repository to an analysis project for the first time:
 
 1. Select GitHub as the source in CodeScan (Add Analysis Project → GitHub):
 
-<figure><img src="../../../../../.gitbook/assets/image (2527).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4875).png" alt=""><figcaption></figcaption></figure>
 
 2. CodeScan will redirect the user back to GitHub.
 3. On the "Authorize & Install CodeScan GitHub App" screen, pick the account or organization that owns the repository:
 
-<figure><img src="../../../../../.gitbook/assets/image (2528).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4876).png" alt="" width="375"><figcaption></figcaption></figure>
 
 3. This authorizes and installs the CodeScan GitHub App on the chosen account or organization.
 4. GitHub will redirect the user back to CodeScan.
@@ -66,7 +66,7 @@ Approval is required only once per organization. Once the CodeScan GitHub App is
 
 If a user retries the GitHub authentication flow while their installation request is still awaiting approval (or has been rejected), the following message will be displayed:
 
-<figure><img src="../../../../../.gitbook/assets/image (2529).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4877).png" alt="" width="375"><figcaption></figcaption></figure>
 
 This means that your installation request has already been submitted and is waiting for your organization's owner approval. Because you are a member of the organization (not an owner), the request was sent.&#x20;
 
@@ -115,11 +115,11 @@ For an organization member to attach a GitHub analysis project, they must have r
 
 If your GitHub organization has enabled **Allow repository admins to install GitHub Apps** **for their repositories**, Repository admins can directly install the CodeScan GitHub App on the specific repositories they manage.
 
-<figure><img src="../../../../../.gitbook/assets/image (2531).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4879).png" alt=""><figcaption></figcaption></figure>
 
 However, due to a GitHub limitation, repositories outside their administration are not visible during install and remain inaccessible until the Organization Owner explicitly grants access.
 
-<figure><img src="../../../../../.gitbook/assets/image (2532).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4880).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## FAQ <a href="#faq" id="faq"></a>
 
@@ -129,7 +129,7 @@ A: The CodeScan UI only walks you through the GitHub App installation for one ac
 
 ### How to Install the CodeScan GitHub App on Another GitHub Org or Personal Account <a href="#how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account" id="how-to-install-the-codescan-github-app-on-another-github-org-or-personal-account"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (2559).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4907).png" alt=""><figcaption></figcaption></figure>
 
 1. **Step 1: Find Your Install Link**
 

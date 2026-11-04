@@ -33,11 +33,11 @@ The registration journey begins from the AutoRABIT Vault Freemium sign-in page. 
 
 Sign-in page and sign-up entry point
 
-<figure><img src="../../../.gitbook/assets/1 (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (32).png" alt=""><figcaption></figcaption></figure>
 
 Sign-in page and sign-up entry point
 
-<figure><img src="../../../.gitbook/assets/2 (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (30).png" alt=""><figcaption></figcaption></figure>
 
 ## Entering Registration Details
 
@@ -47,15 +47,15 @@ Required fields must be completed before registration can continue. The regional
 
 Registration form and regional selection
 
-<figure><img src="../../../.gitbook/assets/3 (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (30).png" alt=""><figcaption></figcaption></figure>
 
 Registration form and regional selection
 
-<figure><img src="../../../.gitbook/assets/4 (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (26).png" alt=""><figcaption></figcaption></figure>
 
 Registration form and regional selection
 
-<figure><img src="../../../.gitbook/assets/5 (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (26).png" alt=""><figcaption></figcaption></figure>
 
 ## Reviewing and Accepting the Agreement
 
@@ -63,19 +63,19 @@ After the registration details are entered, AutoRABIT Vault displays the agreeme
 
 Agreement review and acceptance
 
-<figure><img src="../../../.gitbook/assets/6 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (23).png" alt=""><figcaption></figcaption></figure>
 
 Agreement review and acceptance
 
-![](<../../../.gitbook/assets/Unknown image (412)>)
+![](<../../../.gitbook/assets/Unknown image (561)>)
 
 Agreement review and acceptance
 
-<figure><img src="../../../.gitbook/assets/7 (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (18).png" alt=""><figcaption></figcaption></figure>
 
 Agreement review and acceptance
 
-<figure><img src="../../../.gitbook/assets/8 (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (19).png" alt=""><figcaption></figcaption></figure>
 
 ## Completing OTP Verification
 
@@ -83,11 +83,11 @@ AutoRABIT Vault sends a verification email after the registration request is sub
 
 Verification email containing the login OTP
 
-![](<../../../.gitbook/assets/Unknown image (415)>)
+![](<../../../.gitbook/assets/Unknown image (564)>)
 
 OTP verification screen
 
-<figure><img src="../../../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9 (13).png" alt=""><figcaption></figcaption></figure>
 
 ## Activation Email and Trial Information
 
@@ -127,9 +127,9 @@ AutoRABIT Vault usage and trial limits can be monitored from the AutoRABIT Vault
 
 Activation email showing access details
 
-![](<../../../.gitbook/assets/Unknown image (417)>)
+![](<../../../.gitbook/assets/Unknown image (566)>)
 
 Activation email showing free trial limits
 
-![](<../../../.gitbook/assets/Unknown image (418)>)
+![](<../../../.gitbook/assets/Unknown image (567)>)
 

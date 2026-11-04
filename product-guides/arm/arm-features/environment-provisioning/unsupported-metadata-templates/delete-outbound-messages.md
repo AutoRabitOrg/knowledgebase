@@ -11,19 +11,15 @@ The **OutboundMessages** template enables users to delete existing outbound mess
 5. Provide a **template name** and a **short description**.
 6. Select the **OutboundMessages** checkbox under **Delete Outbound Messages**.
 7. Click **Add**.
-
 8. On the next screen:
-   - A **Test Case Name** is auto-generated.
-   - Click **Add** to insert custom test data.
-
+   * A **Test Case Name** is auto-generated.
+   * Click **Add** to insert custom test data.
 9. To add more outbound messages to your test case:
-   - Click the ![Add Icon](../../../../../.gitbook/assets/image%20(58).png) icon.
-   - In the **Delete Outbound Message** field, enter the name of the message you want to delete.
-   - To add multiple messages for the same test case, click the **+** symbol and complete the additional fields.
-   - Click **OK** and then **Save** to complete this step.
-
+   * Click the ![Add Icon](<../../../../../.gitbook/assets/image (983).png>) icon.
+   * In the **Delete Outbound Message** field, enter the name of the message you want to delete.
+   * To add multiple messages for the same test case, click the **+** symbol and complete the additional fields.
+   * Click **OK** and then **Save** to complete this step.
 10. Click **Save** to finalize the template creation.
-
 11. After saving, you’ll be redirected to the **Environment Provisioning History** screen.
 12. Click **Run** to execute the template on your destination org.
 13. Choose your **destination org** and provide **email address(es)** to receive execution notifications.

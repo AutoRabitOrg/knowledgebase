@@ -1,4 +1,4 @@
-# Scan External Repositories
+# Configuring Repository Sync
 
 ## Configuring External Repositories Sync
 
@@ -57,4 +57,4 @@
 ### See Also
 
 * [On The Fly Results](../anypoint-studio/source-code-analysis/anypoint-studio-analysis.md)
-* [Source Code Analysis - Auto Fix Issues](../../../../iz-analyzer/autofix/autofix-anypoint-studio.md)
+* [Source Code Analysis - Auto Fix Issues](../../../iz-analyzer/autofix/autofix-anypoint-studio.md)

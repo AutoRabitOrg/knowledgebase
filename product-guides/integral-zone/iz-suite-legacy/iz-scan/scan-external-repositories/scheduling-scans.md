@@ -12,13 +12,13 @@
    2. GitHub
    3.  Anypoint Design Center <br>
 
-       <figure><img src="../../../../../.gitbook/assets/image (2571).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (4919).png" alt=""><figcaption></figcaption></figure>
 5. Select the required schedule. Schedule can either be -
    1. One Time
    2.  Recurring\
        &#x20;
 
-       <figure><img src="../../../../../.gitbook/assets/image (2572).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (4920).png" alt=""><figcaption></figcaption></figure>
 
 ### Configure Scan Schedules - **`IZ Scan`** Job
 
@@ -31,15 +31,15 @@
    3.  Anypoint Design Center\
        &#x20;
 
-       <figure><img src="../../../../../.gitbook/assets/image (2570).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (4918).png" alt=""><figcaption></figcaption></figure>
 5. Select the required schedule. Schedule can either be -
    1. One Time
    2.  Recurring\
        &#x20;
 
-       <figure><img src="../../../../../.gitbook/assets/image (2573).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (4921).png" alt=""><figcaption></figcaption></figure>
 
 ### See Also
 
 * [On The Fly Results](../anypoint-studio/source-code-analysis/anypoint-studio-analysis.md)
-* [Source Code Analysis - Auto Fix Issues](../../../../iz-analyzer/autofix/autofix-anypoint-studio.md)
+* [Source Code Analysis - Auto Fix Issues](../../../iz-analyzer/autofix/autofix-anypoint-studio.md)

@@ -65,11 +65,11 @@ To make changes to the Quality Rules, users must be granted the _**Administer Qu
 Custom rules are considered like any other rule, except that you can edit or delete them. You can define your own custom rules in CodeScan using Rule templates.\
 To find templates, select the **Show Templates Only** option from the **Template** dropdown menu.<br>
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (3).png" alt="" width="375"><figcaption><p>Show Templates Only</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1919).png" alt="" width="375"><figcaption><p>Show Templates Only</p></figcaption></figure>
 
 To create a custom rule from a template, select **Create** next to the **Custom rules** heading and enter the following information:<br>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (3) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1920).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * Name
 * Key (auto-suggested)
@@ -85,4 +85,4 @@ Unlike other rules, you can edit or delete custom rules. When a custom rule is d
 
 Click on the custom rules to view its details. Under the **Parameter** section, you have the option to edit the custom rule information or delete them.<br>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption><p>Custom Test Rule</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1921).png" alt=""><figcaption><p>Custom Test Rule</p></figcaption></figure>

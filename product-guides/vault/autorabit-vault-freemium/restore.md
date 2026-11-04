@@ -1,4 +1,4 @@
-# Restore User Guide
+# Restore
 
 ## AutoRABIT Vault Restore Job User Guide
 
@@ -20,11 +20,11 @@ Review the Salesforce Org and Backup configuration displayed above the Restore J
 
 Select Create Restore Job to begin a restore.
 
-<figure><img src="../../../.gitbook/assets/image (3158).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5506).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                              _Restore Jobs page when no restore jobs are available_
 
-<figure><img src="../../../.gitbook/assets/image (3159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5507).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                              _Restore Jobs page with existing restore jobs_
 {% endstep %}
@@ -34,7 +34,7 @@ Select Create Restore Job to begin a restore.
 
 Selecting Create Restore Job opens the restore configuration flow. Available backup configurations and backup jobs are loaded for the selected Salesforce Org.
 
-<figure><img src="../../../.gitbook/assets/image (3160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5508).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore configuration loading_
 {% endstep %}
@@ -52,11 +52,11 @@ Select one or more backup jobs for the restore.
 
 The backup list displays the backup Label, Job Info, Date/Time, Expiry Date, Records, and Status. Restore actions remain unavailable until at least one backup job is selected.
 
-<figure><img src="../../../.gitbook/assets/image (3161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5509).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Available backup jobs before selection_
 
-<figure><img src="../../../.gitbook/assets/image (3162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5510).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Selected backup jobs with restore actions enabled_
 {% endstep %}
@@ -75,7 +75,7 @@ A warning appears before the restore settings are displayed. Review the conditio
 * Missing dependencies, including required fields, can contribute to restore failures. Required dependencies should be included in the restore job.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (3163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5511).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                      _Restore warning displayed before EZ Restore configuration_
 {% endstep %}
@@ -107,11 +107,11 @@ Select Restore Now to submit the restore job.
 | Override data with blank values | Allows blank values from the restore data to replace destination values. |
 | Enable serial mode for Bulk API | Runs Bulk API processing in serial mode when enabled.                    |
 
-<figure><img src="../../../.gitbook/assets/image (3164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5512).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore Summary before submission_
 
-<figure><img src="../../../.gitbook/assets/image (3165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5513).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore submission in progress_
 {% endstep %}
@@ -121,11 +121,11 @@ Select Restore Now to submit the restore job.
 
 After submission, the restore job appears in Restore Jobs. The Actions and Status area reflects the current job state and provides access to job details.
 
-<figure><img src="../../../.gitbook/assets/image (3166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5514).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore job added to the Restore Jobs table_
 
-<figure><img src="../../../.gitbook/assets/image (3167).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5515).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore job processing status_
 
@@ -135,11 +135,11 @@ Open the job details to track the restore stages and record-level progress. The 
 
 Live Activity displays Successful Objects, Failed Objects, Duration, Successful Records, and Failed Records. Object progress appears below the summary metrics.
 
-<figure><img src="../../../.gitbook/assets/image (3168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5516).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Job Details during restore processing_
 
-<figure><img src="../../../.gitbook/assets/image (3169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5517).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Job Details after successful completion_
 {% endstep %}
@@ -149,11 +149,11 @@ Live Activity displays Successful Objects, Failed Objects, Duration, Successful 
 
 The Restore Jobs table retains completed and failed restore jobs. Success and failure indicators appear in Actions and Status together with actions for further review. A retry action is available for a failed restore job where shown.
 
-<figure><img src="../../../.gitbook/assets/image (3170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5518).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore Jobs table showing completed and failed results_
 
-<figure><img src="../../../.gitbook/assets/image (3171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5519).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Completed Job Details and Live Activity_
 
@@ -161,13 +161,13 @@ The Restore Jobs table retains completed and failed restore jobs. Success and fa
 
 Select the Info action to review the configuration saved with the restore job.
 
-<figure><img src="../../../.gitbook/assets/image (3172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5520).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Info action in the Restore Jobs table_
 
 Restore Info displays the backup labels and restore settings, including validation rules, workflows, triggers, flows, Bulk API mode, failed-record handling, duplicate-record handling, blank-value handling, and email notifications.
 
-<figure><img src="../../../.gitbook/assets/image (3173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5521).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore Info details_
 
@@ -175,11 +175,11 @@ Restore Info displays the backup labels and restore settings, including validati
 
 Select the Summary action to review object-level restore results. The summary shows Success and Failure counts for each object, together with Download and Error columns.
 
-<figure><img src="../../../.gitbook/assets/image (3174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5522).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Summary action in the Restore Jobs table_
 
-<figure><img src="../../../.gitbook/assets/image (3175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5523).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Object-level Restore Summary_
 
@@ -187,11 +187,11 @@ Select the Summary action to review object-level restore results. The summary sh
 
 Select Detailed Logs to open the completed job directly on the Detailed Logs tab. The log view supports log search and provides Download full log for offline review.
 
-<figure><img src="../../../.gitbook/assets/image (3176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5524).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Detailed Logs action in the Restore Jobs table_
 
-<figure><img src="../../../.gitbook/assets/image (3177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5525).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Detailed Logs for a completed restore job_
 
@@ -199,7 +199,7 @@ Select Detailed Logs to open the completed job directly on the Detailed Logs tab
 
 When a restore label is truncated in the table, hover over the label to display the complete value. The full label helps distinguish restore runs with similar prefixes.
 
-<figure><img src="../../../.gitbook/assets/image (3178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5526).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Complete restore label displayed from a truncated table value_
 
@@ -207,7 +207,7 @@ When a restore label is truncated in the table, hover over the label to display 
 
 The Summary action remains available after completion and can be reopened to review object-level success and failure results or access the available download.
 
-<figure><img src="../../../.gitbook/assets/image (3179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5527).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                    _Restore Summary reopened from the Restore Jobs table_
 

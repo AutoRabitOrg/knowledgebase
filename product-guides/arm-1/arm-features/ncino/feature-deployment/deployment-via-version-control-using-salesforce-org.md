@@ -8,11 +8,11 @@ This section is about deploying the nCino metadata and data via version control 
 
 1. Hover your mouse over the [nCino ](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/)module and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (38) (1) (1) (1) (1).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1180).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (39) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1181).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description** of it.
 4. In the **Source** section, select Deployment From as [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **using Salesforce Org**.
@@ -21,13 +21,13 @@ This section is about deploying the nCino metadata and data via version control 
 
     * **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **template version** when you select the entire branch option.
 
-    <figure><img src="../../../../../.gitbook/assets/image (40) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1182).png" alt=""><figcaption></figcaption></figure>
 
     * **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
 
-    <figure><img src="../../../../../.gitbook/assets/image (41) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1183).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1184).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 After deploying a job, modifying the deployment type during subsequent edits may affect the integrity or effectiveness of any rollbacks performed thereafter.
@@ -36,18 +36,18 @@ After deploying a job, modifying the deployment type during subsequent edits may
 7. Select your **Source Salesforce Org**.
 8. Based on your template selection, the object configuration section will render the selected objects and apply filters and mappings.
 
-<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1185).png" alt=""><figcaption></figcaption></figure>
 
 9. Choose your **Destination Environment**.
 
-<figure><img src="../../../../../.gitbook/assets/image (44) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1186).png" alt=""><figcaption></figcaption></figure>
 
 10. There are various options that you can configure to your objects before you proceed with deployment or commit:
 
     * Applied Mappings
     * Applied Filters
 
-    <figure><img src="../../../../../.gitbook/assets/image (45) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1187).png" alt=""><figcaption></figcaption></figure>
 
 #### Applied Mappings <a href="#applied-mappings" id="applied-mappings"></a>
 
@@ -57,7 +57,7 @@ In the **Source** field: Select your own source field whose values will get popu
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (46) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1188).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:
@@ -70,7 +70,7 @@ In the **Destination** field: Select the required field from the destination org
 
 Such filters will be displayed here if any filter is applied to the objects. You can edit the already applied filter (if required) using **Edit Filter.**
 
-<figure><img src="../../../../../.gitbook/assets/image (47) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1189).png" alt=""><figcaption></figcaption></figure>
 
 #### Deployment Option <a href="#deployment-option" id="deployment-option"></a>
 
@@ -79,7 +79,7 @@ Based on your destination selection, you will have different deployment buttons 
 1. **Create Dataset:** Create a dataset from your Salesforce Org. On selection, you will be redirected to the [Commits History](../../../../arm/arm-features/version-control/ez-commits/commits-summary.md) screen.
 2. **Create Dataset & Deploy:** Create a dataset and deploy it to your Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (37) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1179).png" alt=""><figcaption></figcaption></figure>
 
 For deploying to the destination org, you will find the list of deployment criteria you can opt for before proceeding.
 
@@ -91,6 +91,6 @@ For deploying to the destination org, you will find the list of deployment crite
 4. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in Source Org) in Destination Org
 5. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (36) (1) (1) (1) (1).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1178).png" alt="" width="510"><figcaption></figcaption></figure>
 
 Click **OK** to complete the feature deployment process. You'll be redirected to the [Feature Deployment Summary](../../../../arm/arm-features/ncino/feature-deployment/feature-deployment-summary.md) page, where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org once again.

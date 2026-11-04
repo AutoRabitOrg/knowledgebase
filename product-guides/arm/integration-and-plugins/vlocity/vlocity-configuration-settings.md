@@ -24,6 +24,6 @@ OmniStudio integration with ARM allows you to retrieve and deploy OmniStudio met
     * **Local Compilation:** To perform a local compilation of **FlexCard** and **OmniScript** metadata types, select this checkbox and enter the **Access Key** of OmniStudio's private NPM repository to load the OmniStudio LWC compiler and deploy the compiled objects.
     * **Data Pack Types:** This gives you the option to choose the specific OmniStudio components to be committed to your destination org/branch.
 
-    <figure><img src="../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1739).png" alt=""><figcaption></figcaption></figure>
 
 3\. Click **Save.**

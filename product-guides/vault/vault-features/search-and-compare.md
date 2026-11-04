@@ -35,37 +35,37 @@ Search results are presented in a structured comparison view, allowing users to 
 2. Select the required **Salesforce Org** and click **Apply**.
 3.  Click **New Config** to create a new Search and Compare configuration.
 
-    <figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/1 (23).png" alt=""><figcaption></figcaption></figure>
 
 #### **Define Search Criteria**
 
 1. Specify the required parameters:
    1.  <mark style="color:red;">**From Date**</mark><mark style="color:red;">\*</mark> – Select the start date.
 
-       <figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/3 (20).png" alt=""><figcaption></figcaption></figure>
    2.  <mark style="color:red;">**To Date**</mark><mark style="color:red;">\*</mark> – Select the end date.
 
-       <figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/4 (17).png" alt=""><figcaption></figcaption></figure>
    3. <mark style="color:red;">**Configurations**</mark><mark style="color:red;">\*</mark> – Select one or more backup/archive configurations.
 2.  All mandatory fields must be completed before proceeding.
 
-    <figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/5 (17).png" alt=""><figcaption></figcaption></figure>
 
 #### **Select Object**
 
 1.  Choose the Salesforce **Object** to be searched and compared.
 
-    <figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/6 (14).png" alt=""><figcaption></figcaption></figure>
 2.  The object selection determines the available fields and filtering options.
 
-    <figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/7 (12).png" alt=""><figcaption></figcaption></figure>
 
 #### **Select Fields and Apply Filters**
 
 1. Select the required **Fields** from the list.
 2.  Click **Add Filter** to define filter conditions, if required.
 
-    <figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/8 (13).png" alt=""><figcaption></figcaption></figure>
 3.  Locate the **Case Sensitive** toggle at the bottom of the screen.
 
     Enable or disable the **Case Sensitive** option based on the requirement:
@@ -88,7 +88,7 @@ Search results are presented in a structured comparison view, allowing users to 
 6. Modify the auto-generated query if customization is needed.
 7.  The query section dynamically updates based on the selected fields and filters.
 
-    <figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/9 (8).png" alt=""><figcaption></figcaption></figure>
 8. Click **Next** to proceed.
 
 #### **Save Configuration**
@@ -96,26 +96,26 @@ Search results are presented in a structured comparison view, allowing users to 
 1. Enter the following details:
    1.  Enter a unique <mark style="color:red;">**Label**</mark><mark style="color:red;">\*</mark>. (Alphanumerics, underscores, hyphens, and spaces are allowed.)
 
-       <figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/10 (9).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../.gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/11 (7).png" alt=""><figcaption></figcaption></figure>
 2. Specify **Preserve The Result For**\* in days (Maximum: 30 days).
 3. Enter a **Description**, if required.
 4.  Click **Save** to create the configuration.
 
-    <figure><img src="../../../.gitbook/assets/12.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/12 (6).png" alt=""><figcaption></figcaption></figure>
 5. Click **Cancel** to discard the changes.
 6. After saving, a confirmation message is displayed:
 7.  _Search And Compare config '' created successfully_
 
-    <figure><img src="../../../.gitbook/assets/13.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/13 (6).png" alt=""><figcaption></figcaption></figure>
 8. Click **OK** to close the message and return to the configuration screen.
 
 ## View Available Configurations
 
 1.  After selecting the Salesforce Org and clicking **Apply**, the configured records are displayed in the **Job Config** grid.
 
-    <figure><img src="../../../.gitbook/assets/14.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/14 (7).png" alt=""><figcaption></figcaption></figure>
 2. **The grid displays:**
    1. **Label**
    2. **Object Name**
@@ -132,7 +132,7 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Query (\</>)** icon under the _Query_ column to view the configured query.
 
-    <figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/15 (7).png" alt=""><figcaption></figcaption></figure>
 2.  The query is displayed in a dialog window.
 
     <figure><img src="../../../.gitbook/assets/15.1.png" alt=""><figcaption></figcaption></figure>
@@ -142,31 +142,31 @@ Search results are presented in a structured comparison view, allowing users to 
 
 1.  Click the **Run (**<mark style="color:blue;">**▶**</mark>**)** icon under the Actions column to execute the configuration.
 
-    <figure><img src="../../../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/16 (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Configuration
 
 1.  Click the **Edit (**<mark style="color:blue;">**✎**</mark>**)** icon to modify the existing configuration details.
 
-    <figure><img src="../../../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/17 (5).png" alt=""><figcaption></figcaption></figure>
 
 ### Clone Configuration
 
 1.  Click the **Clone (**<mark style="color:blue;">**📄**</mark>**)** icon to create a duplicate of the selected configuration.
 
-    <figure><img src="../../../.gitbook/assets/18.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/18 (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Delete Configuration
 
 1.  Click the **Delete (🗑)** icon to remove the selected configuration.
 
-    <figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/19 (6).png" alt=""><figcaption></figcaption></figure>
 
 ### View All Config Names
 
 1.  Click the **Config Names** column to view all associated configuration names.
 
-    <figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/20 (5).png" alt=""><figcaption></figcaption></figure>
 2. The **Config Names** dialog displays:
 
 * A search field to filter config names

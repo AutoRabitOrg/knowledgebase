@@ -7,7 +7,7 @@
 3. Select a TFS repository for which the branch needs to be created.
 4.  Click on **`Create`** button.<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2023).png" alt=""><figcaption></figcaption></figure>
 5. In the **`Create Branch`** screen, enter a branch name in the **`Display Name`**&#x66;ield.Point to Note:The characters **"//" \ , \* ? & ' " < > | \` \~ ( )** and **space** are not allowed in the **`Display Name`** field.
 6. Select your **`Credential`** from the drop-down field.
 7. Under the **`Target URL`** field, do the following:

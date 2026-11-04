@@ -18,7 +18,7 @@ To utilize Azure Blob as your storage medium for backing up metadata and data ob
 6. Input your **Access Key** (either primary or secondary) for the selected storage account.
    * You are provided with two keys per account to enable rotation or delegated access.
 
-<figure><img src="../../../../.gitbook/assets/image (118) (1).png" alt="Azure Blob storage configuration screen in Vault" width="563"><figcaption><p>Azure Blob configuration in Vault</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3602).png" alt="Azure Blob storage configuration screen in Vault" width="563"><figcaption><p>Azure Blob configuration in Vault</p></figcaption></figure>
 
 7. Click **Save Settings** to complete the setup.
 

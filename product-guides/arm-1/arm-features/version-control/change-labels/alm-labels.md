@@ -9,25 +9,25 @@ AutoRABIT has introduced a section called ALM labels under the **Change Labels**
 1. Navigate to the left navigation pane, select Version Control, and click **Manage Labels** from the dropdown.
 2. Then, select **ALM Labels** from the top navigation bar.
 
-<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
 
 2. The ALM labels created either from the merge or commit process will get displayed.
 3. Click on one of the ALM labels to view the latest details of the ALM system such as description, assignee, status, or priority.
 
-<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
 
 4. It's always a good idea to break data into multiple pages when dealing with multiple templates records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
 5. Under **Associated Commits**, view revisions configured with the selected ALM. The same revision number can be found in the [Commits](../ez-commits/) screen for configured ALM label. You will also be able to view the list of _committed members_ along with the _prevalidation result_. The same goes for the [**Deployment History**](../../deployment/monitor-deployments.md) section as well.
 
-<figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
 
 ### Filtering ALM Labels <a href="#filtering-alm-labels" id="filtering-alm-labels"></a>
 
 Use the **Advanced Search** filter to find any specific ALM label faster.
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1501).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1502).png" alt=""><figcaption></figcaption></figure>
 
 Filter the ALM labels via:
 

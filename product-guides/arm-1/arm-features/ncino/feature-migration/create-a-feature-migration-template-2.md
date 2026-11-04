@@ -11,12 +11,12 @@ This details the step-by-step process to create a standard/community nCino migra
    * Feature Management
 2. Click on the “Feature” option under the "Create” drop-down to initiate a new feature migration template creation.
 
-<figure><img src="../../../../../.gitbook/assets/image (1639).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3293).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on the “Feature Management” section under the “nCino” section to navigate to it.
 4. Click on the “Create feature” button on the “Feature Management” screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (1638).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3292).png" alt=""><figcaption></figcaption></figure>
 
 5. Once the selection is made, the creation of the “Feature Migration Template” will be initiated by landing on the "Feature" page.
 6. You'll be taken to the record-based configuration section, where you will find three tabs that need completed to proceed:
@@ -69,7 +69,7 @@ Under the **Salesforce Org** **Details** section, do the following:
    * Bucket Exclusion Objects: Objects selected here will be excluded from further processing.
    * Bucket Mandatory Objects: Objects displayed under this section are mandatory.
 
-<div align="right"><figure><img src="../../../../../.gitbook/assets/image (1644).png" alt=""><figcaption></figcaption></figure></div>
+<div align="right"><figure><img src="../../../../../.gitbook/assets/image (3298).png" alt=""><figcaption></figcaption></figure></div>
 
 3. Based on the relationship between the objects, the AutoRABIT application will segregate the object sets, and applying a filter to each bucket is mandatory. By default, AutoRABIT will denote an object in a bucket as an entry point, which can be applied as a filter. This is not mandatory, but as a best practice, AutoRABIT recommends applying filters to the entry point object rather than any other object.
 
@@ -79,32 +79,32 @@ The filter criteria can be entered and the query can be built under this tab.
 
 1. Click on the pencil icon beside the query.
 
-<figure><img src="../../../../../.gitbook/assets/image (1647).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3301).png" alt=""><figcaption></figcaption></figure>
 
 2. On clicking the pencil icon, the ‘query builder’ will be opened.
 
-<figure><img src="../../../../../.gitbook/assets/image (1648).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3302).png" alt=""><figcaption></figcaption></figure>
 
 3. Clicking on the ‘field’ drop-down will provide the list of fields from the Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (1649).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3303).png" alt=""><figcaption></figcaption></figure>
 
 4. By clicking on the operator drop-down field, the available list of operators can be seen.
 
-<figure><img src="../../../../../.gitbook/assets/image (1651).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3305).png" alt=""><figcaption></figcaption></figure>
 
 5. On completing the field selection, click on the ‘ADD’ icon to add the query to the ‘query editor’ below.
 
-<figure><img src="../../../../../.gitbook/assets/image (1652).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3306).png" alt=""><figcaption></figcaption></figure>
 
 6. Once the query is added to the query editor, the query can be validated by clicking on the ‘Validate’ button.
 7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated using the validate option available.
 
-<figure><img src="../../../../../.gitbook/assets/image (1653).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3307).png" alt=""><figcaption></figcaption></figure>
 
 8. On validating the query, the application will display a success message.
 
-<figure><img src="../../../../../.gitbook/assets/image (1654).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3308).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Important Note:
@@ -128,7 +128,7 @@ Important Note:
 
 This is the summary of the “Feature Migration Template” that is being created. All the feature details can be observed on the ‘Preview and Save’ page. On the ‘change log’, any change log information required can be added.
 
-<figure><img src="../../../../../.gitbook/assets/image (1655).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3715).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** **Related List** section will display only if the **Attachment** object is part of the Feature Migration Template.&#x20;
@@ -137,7 +137,7 @@ This is the summary of the “Feature Migration Template” that is being create
 1. On verifying all the details on the ‘Preview and Save’ page, save the template by clicking on the 'Save' button.
 2. On clicking 'Save,' you will be redirected to the “Feature Management” page.
 
-<figure><img src="../../../../../.gitbook/assets/image (1656).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3716).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 

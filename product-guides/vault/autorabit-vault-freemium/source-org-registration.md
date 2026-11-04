@@ -20,7 +20,7 @@ After the source org is registered successfully, AutoRABIT Vault displays the co
 
 The source org registration starts from the AutoRABIT Vault Dashboard. When registration begins, AutoRABIT Vault opens the Source Org Registration workflow and displays the Environment Details step. A guided callout introduces the setup and explains that the first Salesforce org must be connected before AutoRABIT Vault activities such as backups, restores, replication, and related operations can proceed.
 
-<figure><img src="../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (25).png" alt=""><figcaption></figcaption></figure>
 
 The Environment Details step captures the basic Salesforce environment information. The Environment Name identifies the org across AutoRABIT Vault activities. The Salesforce username identifies the account used for registration. Org Type defines whether the connection targets a Production org or a Sandbox org.
 
@@ -30,15 +30,15 @@ After the org type is selected, the Salesforce Login URL is reviewed. For Sandbo
 **Note:** The login URL must point to the same Salesforce environment where the External Client App is configured. A mismatch can prevent successful authorization.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (23).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/3 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (22).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (19).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (18).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/6 (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (16).png" alt=""><figcaption></figcaption></figure>
 
 After the environment details are submitted, AutoRABIT Vault moves to Salesforce Admin Setup. This step provides a checklist for completing the required configuration in Salesforce before authorization. The setup creates an External Client App, enables OAuth, selects the Authorization Code Flow, disables the PKCE security option when required by the displayed instructions, adds the Callback URL, assigns OAuth scopes, and saves the credentials needed by AutoRABIT Vault.
 
@@ -58,13 +58,13 @@ The Required OAuth Scopes section identifies the permissions that must be select
 
 <figure><img src="/broken/files/qd1IxuknlXXwMHVQ5TPc" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/11 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/11 (8).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/12 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12 (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/13 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/13 (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/14 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/14 (8).png" alt=""><figcaption></figcaption></figure>
 
 Once the Salesforce setup is complete, AutoRABIT Vault displays the Enter Credentials step. The Client ID and Client Secret generated from the Salesforce External Client App are entered in AutoRABIT Vault. These values are used only for the secure connection process and must be copied from the same External Client App configured for this source org.
 
@@ -74,21 +74,21 @@ AutoRABIT Vault also displays guidance for locating the required values in Sales
 **Note**: A dedicated Salesforce integration account is recommended for API integrations. This provides better audit trails, permission control, and stability when personal accounts change
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/15 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (8).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/16 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16 (9).png" alt=""><figcaption></figcaption></figure>
 
 After the credentials are added, AutoRABIT Vault displays the Authorize Vault to Access Salesforce step. The connection details are reviewed before authorization starts. AutoRABIT Vault shows the org title, org type, and login URL so the connection target can be confirmed before continuing.
 
 Selecting Connect to Salesforce redirects to the Salesforce login page. Salesforce handles authentication directly. After successful login, Salesforce displays the access request for the External Client App. Selecting Allow grants the required permissions and redirects the session back to AutoRABIT Vault automatically.
 
-![](<../../../.gitbook/assets/Unknown image (28)>)
+![](<../../../.gitbook/assets/Unknown image (46)>)
 
-![](<../../../.gitbook/assets/Unknown image (29)>)
+![](<../../../.gitbook/assets/Unknown image (47)>)
 
-![](<../../../.gitbook/assets/Unknown image (30)>)
+![](<../../../.gitbook/assets/Unknown image (48)>)
 
-![](<../../../.gitbook/assets/Unknown image (31)>)
+![](<../../../.gitbook/assets/Unknown image (49)>)
 
 After Salesforce authorization is approved, AutoRABIT Vault completes the Salesforce connection and returns to the registration workflow. The Validation & Confirmation step displays the connected environment details and provides Test API Connection to confirm that AutoRABIT Vault can communicate with the Salesforce org.
 
@@ -118,7 +118,7 @@ The source org details view displays the org name, registered username, org ID, 
 
 AutoRABIT Vault displays Re-authenticate beside the registered Source Org. Re-authentication is used when the Salesforce authorization needs to be refreshed, such as after credential changes, permission updates, or authorization issues. Selecting Re-authenticate redirects to Salesforce login and follows the same authorization pattern used during the initial connection.
 
-![](<../../../.gitbook/assets/Unknown image (205)>)
+![](<../../../.gitbook/assets/Unknown image (354)>)
 
 ## Final Result
 

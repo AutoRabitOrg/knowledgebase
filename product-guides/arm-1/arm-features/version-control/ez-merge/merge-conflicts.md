@@ -26,12 +26,12 @@ To do so,
 
 3. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
 
-4. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (35) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon.
+4. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (1578).png>)icon.
 
-* ![](<../../../../../.gitbook/assets/image (36) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the listed items in ascending order
-* ![](<../../../../../.gitbook/assets/image (37) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)will sort the items in descending order
+* ![](<../../../../../.gitbook/assets/image (1579).png>)will sort the listed items in ascending order
+* ![](<../../../../../.gitbook/assets/image (1580).png>)will sort the items in descending order
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.38.26 1.png" alt="" width="363"><figcaption></figcaption></figure>
 
@@ -39,23 +39,23 @@ To do so,
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.40.06.png" alt="" width="375"><figcaption></figcaption></figure>
 
-6. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (40) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon.
+6. Now, select the conflicted files that you want to resolve and click on the **Download** (![](<../../../../../.gitbook/assets/image (1583).png>)) icon.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2348).png" alt="" width="362"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** If there is a conflict related to file tree, then GIT shows that the file does not have any conflicts.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (42) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="367"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1585).png" alt="" width="367"><figcaption></figcaption></figure>
 
 7. To proceed further, select the check box for the respective conflict, click on the **3 dots**, and then select if you want to use the **source** changes or the **destination** changes. Then you can go ahead and proceed with the next step to resolve the conflict.
 8. When you click on the **Download** icon, a confirmation message box to include **.git** or **.svn folder** with **"Yes"** and **"No"** buttons will be displayed. If you select the **'Yes'** button only, then the conflicted files including the **.git** or **.svn folder** will be downloaded to your local machine in **zip** format.
 
-<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1586).png" alt=""><figcaption></figcaption></figure>
 
 9. Now, work on the conflicted files using your merge tool (example- TortoiseSVN, TortoiseGit) and make necessary changes to it.&#x20;
-10. Click on the **Upload** (![](<../../../../../.gitbook/assets/image (44) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)) icon and upload the resolved files. Make sure the file uploaded is in **zipped** format.
+10. Click on the **Upload** (![](<../../../../../.gitbook/assets/image (1587).png>)) icon and upload the resolved files. Make sure the file uploaded is in **zipped** format.
 11. Finally, click on **Commit** to commit the changes in the destination branch.
 
 ### Merge Conflict Inline Editor <a href="#merge-conflict-inline-editor" id="merge-conflict-inline-editor"></a>
@@ -87,7 +87,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
    * **Entire Source**
    * **Entire Target**
 
-<figure><img src="../../../../../.gitbook/assets/image (2279).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2352).png" alt="" width="375"><figcaption></figcaption></figure>
 
 7. **Troubleshooting:** Do I have a provision to edit the inline code if the above merge criteria fail to resolve the merge conflicts?
 
@@ -104,7 +104,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 11. Repeat the steps for all other conflicted files in order to resolve them before you proceed to commit.
 12. You can find the conflicted files moved to the **Merged Files** section. Here, **CR** indicates **Conflicted Resolved** file&#x73;**, A** indicates **Added Files** to the destination branch, and **M** denotes **Modified Files**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2280).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2353).png" alt="" width="375"><figcaption></figcaption></figure>
 
 13. You will be directed to the next tab, **Profile Duplicates**.
 
@@ -112,7 +112,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 
 This tab will list all duplicate entries for your profile/permission sets, and you want to resolve them before resolving the conflict. For multiple entries, you have the option to delete the entry that you no longer require (using the **X** icon) or to keep all entries as they are by default.
 
-<figure><img src="../../../../../.gitbook/assets/image (50) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1593).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Points to Note:**
@@ -121,22 +121,22 @@ This tab will list all duplicate entries for your profile/permission sets, and y
 
 
 
-<img src="../../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../../.gitbook/assets/image (1594).png" alt="" data-size="original">
 
 2. There can also be a situation where the files are improperly solved while resolving the conflicted files. This can lead to the malformation of the conflicted files. To resolve those, you need to download the file locally, work on the conflicted files using your merge tool, and make necessary changes to it. Then upload the same.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (52) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1595).png" alt=""><figcaption></figcaption></figure>
 
 ### Review Artifacts <a href="#review-artifacts" id="review-artifacts"></a>
 
 The **Review Artifacts** tab will appear in the merge conflict screen only if you enabled the **Review Artifacts** checkbox while creating the merge operation.
 
-Under the **Review Artifacts** tab, you can see a list of the conflict-resolved files staged for commit. This gives you the ability to preview the changes, review them, or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (53) (1) (1) (1) (1) (1) (1) (1) (1).png>)icon) where you can compare the code from the source to the target branch before you merge them.
+Under the **Review Artifacts** tab, you can see a list of the conflict-resolved files staged for commit. This gives you the ability to preview the changes, review them, or edit the files before pushing them into your version control. You can switch to the diff mode (using![](<../../../../../.gitbook/assets/image (1596).png>)icon) where you can compare the code from the source to the target branch before you merge them.
 
-<figure><img src="../../../../../.gitbook/assets/image (54) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1597).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1598).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Finally, click on the **Commit** button to commit the necessary changes to your target branch.
 

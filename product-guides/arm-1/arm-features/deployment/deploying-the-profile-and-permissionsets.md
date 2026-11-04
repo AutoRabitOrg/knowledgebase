@@ -22,27 +22,27 @@ This option is useful in the following scenarios:
 2. From the top navigation pane, navigate to **`Create > Profile Compare`**.
 3. Click on the **`Profile Compare`** button.\
    \
-   ![](<../../../../.gitbook/assets/image (2402).png>)<br>
+   ![](<../../../../.gitbook/assets/image (4751).png>)<br>
 4. In the **`Profile/PermissionSet Manager`** screen, select the **`Salesforce orgs`** that need to be compared (max 3 Orgs).
 5. Click on either the **`Get Profiles`** or the **`Get PermissionSets`**&#x62;utton.
    * **`Get Profiles`** will fetch all the profiles available in selected Salesforce Orgs.
    *   **`Get PermissionSets`** will list all available permission sets in Salesforce Orgs.\
        <br>
 
-       <figure><img src="../../../../.gitbook/assets/image (2403).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (4752).png" alt=""><figcaption></figcaption></figure>
 6. Select the **`Profile/PermissionSets`** type based on the above selection.
 7. Select the metadata components (including its metadata members) for which you want to view the selected profile/permissionset comparison report. A minimum of one metadata component selection is required to proceed further.
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1258).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. About Object Permissions in Profiles, editing standard objects on standard profiles is not supported by Salesforce. Hence, these changes won't show up in your destination environment.
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1259).png" alt=""><figcaption></figcaption></figure>
 
 9. Select the **`'Hide components with no differences'`** checkbox to hide the components with no differences.
 10. Give the process a **`Label Name`**. Click **`Compare`**.
 
-<figure><img src="../../../../.gitbook/assets/image (53) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1260).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Notes:**
@@ -64,7 +64,7 @@ This option is useful in the following scenarios:
     * **`Update & Deploy:`** The changes will be updated in the selected source Org and deployed to the Destination Org(s).
     *   **`Ok/Deploy:`** The changes get deployed only in the selected Destination Org(s). No changes occur in the Source Org.<br>
 
-        <figure><img src="../../../../.gitbook/assets/image (2404).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (4753).png" alt=""><figcaption></figcaption></figure>
 15. Click **`OK`**.
 16. You will be redirected to the **`Deployment History`** screen, where you can find the deployment process.
 

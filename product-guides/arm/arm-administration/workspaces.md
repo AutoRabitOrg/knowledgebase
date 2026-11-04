@@ -1,4 +1,4 @@
-# Workspaces
+# Managing Your Workspaces
 
 A **workspace** is your isolated “build room” inside AutoRABIT (ARM).\
 Whenever you run an operation that needs local disk—such as **EZ-Commit**, a **merge** or a **CI job**—ARM spins up (or re-uses) a workspace linked to the repo/branch in question. That keeps files, temporary build artifacts, and logs separated per operation, so one task never overwrites another.
@@ -32,10 +32,10 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 1. Log in to ARM.
 2.  Go to **Admin › Workspaces**.
 
-    <figure><img src="../../../.gitbook/assets/image (721).png" alt="Admin menu highlighting Workspaces option" width="170"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4559).png" alt="Admin menu highlighting Workspaces option" width="170"><figcaption></figcaption></figure>
 3.  The list shows every workspace ever created:
 
-    <figure><img src="../../../.gitbook/assets/image (722).png" alt="Workspace list with labels, authors, sizes"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4560).png" alt="Workspace list with labels, authors, sizes"><figcaption></figcaption></figure>
 
     | Field                | Description                                           |
     | -------------------- | ----------------------------------------------------- |
@@ -56,7 +56,7 @@ Reset wipes the folder contents but keeps the workspace record.
 1. Find the workspace and click **Reset**.
 2.  Confirm to restore default state.
 
-    <figure><img src="../../../.gitbook/assets/image (723).png" alt="Reset confirmation dialog"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4561).png" alt="Reset confirmation dialog"><figcaption></figcaption></figure>
 
 ***
 
@@ -67,9 +67,9 @@ Delete removes the workspace permanently (repositories remain intact).
 1. Click the trash-can icon next to the workspace.
 2.  Confirm twice—you cannot undo this.
 
-    <figure><img src="../../../.gitbook/assets/image (724).png" alt="Delete workspace button"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4562).png" alt="Delete workspace button"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (725).png" alt="Final delete confirmation modal"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4563).png" alt="Final delete confirmation modal"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If the **Delete** button is missing, your role lacks the required permission.
@@ -87,10 +87,10 @@ Free up space by purging all workspaces idle since a given date.
 
 1.  Click **Settings**.
 
-    <figure><img src="../../../.gitbook/assets/image (726).png" alt="Workspace Settings gear icon"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4564).png" alt="Workspace Settings gear icon"><figcaption></figcaption></figure>
 2.  Choose the cutoff date and confirm.
 
-    <figure><img src="../../../.gitbook/assets/image (727).png" alt="Delete inactive workspaces dialog" width="418"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4565).png" alt="Delete inactive workspaces dialog" width="418"><figcaption></figcaption></figure>
 
 ***
 
@@ -101,7 +101,7 @@ Need more space? An Org Admin can request an increase.
 * Super Admin logs in and opens **Workspace Mgmt**.
 * Raise the tenant limit—maximum **1 TB** (1000 GB)—based on subscription.
 
-<figure><img src="../../../.gitbook/assets/image (728).png" alt="Super Admin screen showing workspace size adjustment"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4566).png" alt="Super Admin screen showing workspace size adjustment"><figcaption></figcaption></figure>
 
 Once approved, the new cap takes effect instantly and users can resume jobs without deleting old workspaces.
 
@@ -121,7 +121,7 @@ Once approved, the new cap takes effect instantly and users can resume jobs with
 
 Despite having admin privileges in your instance, you are unable to delete certain workspaces, as the Delete button appears grayed out, as shown in the screenshot below.
 
-<figure><img src="../../../.gitbook/assets/image (1751).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3173).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
 
 The reason the Delete button is grayed out is that these workspaces are classified as Base Workspaces. Base workspaces are directly linked to a branch in your instance, and they cannot be deleted unless the associated branch is unregistered from AutoRABIT. When you register a new branch, a workspace is created, and they are tightly connected.
 

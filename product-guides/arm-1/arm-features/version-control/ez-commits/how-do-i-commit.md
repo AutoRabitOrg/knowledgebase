@@ -12,13 +12,13 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to **80
 2.  Hover over **Create**, click the drop-down menu, and select **EZ-Commit**.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1972).png" alt="" width="206"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2446).png" alt="" width="206"><figcaption></figcaption></figure>
 3. On the next screen, select the source **`Salesforce Org`** from which the changes will be retrieved.
 4. Select the user registered for the above Salesforce org.
 5.  Select the version control **`Repository`** and the **`Branch`** where the changes will be committed. For Version Control as GIT type, the user can create a new branch from the EZ-Commit user interface.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1973).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2447).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -39,7 +39,7 @@ _**Note: This optimized flow is applicable only when GitHub Pull Request functio
    * **`Metadata Components:`** When selected, this retrieves all the metadata components available in the source Salesforce Org. Different ways to fetch the [**`Metadata Components`**](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/)are:
      1.  **`Auto Draft:`** This brings all the changes the author has made in the Salesforce org that is not yet committed to the Version Control (ARM does the calculation by using the last modified date in the Salesforce Org and comparing it against the last commit date to Version Control branch).<br>
 
-         <figure><img src="../../../../../.gitbook/assets/image (1976).png" alt=""><figcaption></figcaption></figure>
+         <figure><img src="../../../../../.gitbook/assets/image (2450).png" alt=""><figcaption></figcaption></figure>
      2. **`Select Manually:`** Choose the metadata components individually to be committed to the destination branch.
      3. **Detect Changes:** When enabled, compares the source(Org) and destination branches and displays component change status (A–Added, M–Modified, D–Deleted); when disabled, metadata components are loaded directly from the Salesforce org without change analysis for faster performance in large orgs
      4. **`Package Manifest:`** A package .xml file controls which metadata types and members are retrieved and deployed from the source org to the destination org. This type of file is also known as the project manifest. This control file allows you to initiate a commit process without manually selecting individual metadata components.
@@ -69,10 +69,10 @@ For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate 
 
 *   **`Re-use Previous Validated Commit Label:`** If you placed changes related to a user story or task, etc., under a specific commit label, you can choose the same in this field. The main advantage of creating a commit label is to reuse the labels and perform multiple commits under a given label.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1977).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2451).png" alt=""><figcaption></figcaption></figure>
 * **`Vlocity Components:`** This option exports Vlocity data packs from a Salesforce org through a YAML manifest describing your project and committing the same to a VCS. The primary goal is to enable [Continuous Integration](https://www.autorabit.com/ebooks/how-banks-benefit-from-continuous-integration-and-delivery/) for Vlocity metadata through source control.
 
-<figure><img src="../../../../../.gitbook/assets/image (1050).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4298).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note about Review Artifact:**&#x20;
@@ -80,7 +80,7 @@ For large Salesforce orgs, Auto Draft can take longer because ARM must evaluate 
 * You can create a review of selected artifacts or a module or collection.&#x20;
 * You can designate other team members as participants in the review. Depending on their assigned role in the review, participants receive requests and can approve, disapprove, or abstain from reviewing each artifact.
 * When you download the file through Review Artifact and edit the changes locally, you must upload the zip file with the same name if you have hit the previous button on the commit screen; otherwise, you will encounter the error below: \
-  ![](<../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (5).png>)
+  ![](<../../../../../.gitbook/assets/image (1825).png>)
 {% endhint %}
 
 To view changes to Salesforce metadata, edit them, and see the impact to ensure that your changes are correct, follow these steps:
@@ -89,10 +89,10 @@ To view changes to Salesforce metadata, edit them, and see the impact to ensure 
 2.  The Review Artifact screen will contain a **compare changes icon** that you can click on to view and edit any discrepancies that were identified with the artifacts:\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1979).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2453).png" alt=""><figcaption></figcaption></figure>
 3. When you edit any of the code in the integrated development environment (IDE) and save the changes, the 'Compare Changes' screen should automatically reflect the current changes, highlighting the modifications with a color difference to distinguish between what has been changed and what has not.
 
-<figure><img src="../../../../../.gitbook/assets/image (1052).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4300).png" alt=""><figcaption></figcaption></figure>
 
 4. If you open the 'Compare Changes' screen and perform edits on any of the artifacts and then click on the close button, the system will navigate back to the 'Review Artifact' screen, and any new changes made will be reflected in the 'Compare Changes' screen.
 5. If you are in the 'Review Artifact' screen and perform additional changes, once the changes are saved, the 'Compare Changes' screen will pick up the new changes and update the screen to reflect the most recent modifications.
@@ -104,13 +104,13 @@ If you check the **Review Artifact** box and choose only commit options for Prof
   2. **`Commit (Without Validation):`** Directly commit to your Version Control System without extra validations.
   3.  **`Create a Pull Request:`** Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures the master branch only contains finished and approved work.<br>
 
-      <figure><img src="../../../../../.gitbook/assets/image (1980).png" alt="" width="563"><figcaption></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (2454).png" alt="" width="563"><figcaption></figcaption></figure>
 * Under the **`Post Commit`** section, you can invoke certain processes after the commit is completed.
   1. **`Create/Append Revision to existing Label`**
      * **`Commit Label:`** Commit Label helps to label a commit. For example, for changes related to a user story or task, etc., under a specific label, you can reuse the labels and perform multiple commits under a given label. Select the label from the dropdown or create a new one by clicking the + icon.
      *   **`Release Label:`** A Release Label is created by grouping multiple EZ-Commit labels as a singular release label.<br>
 
-         <figure><img src="../../../../../.gitbook/assets/image (1981).png" alt="" width="563"><figcaption></figcaption></figure>
+         <figure><img src="../../../../../.gitbook/assets/image (2455).png" alt="" width="563"><figcaption></figcaption></figure>
      * **ALM Label:** Users have the option to commit using solely the ALM Label or by choosing "None." This is applicable when the ALM item has been mapped in the Salesforce Org Management mappings section and the skip mappings option is not enabled. As part of this process, an ALM Label is generated post-commit and is visible under "Change labels" in the ALM Labels panel.
 
 6. Click **`Next`**.
@@ -129,7 +129,7 @@ The next screen will list the metadata types and their corresponding members. Yo
 3.  **`Selected:`** Total selected components are displayed in this tab. The metadata components newly added or updated in the destination branch are shown as A/M (Added/ Modified), and the components to be deleted from the destination branch are shown as D (Deleted) under the **Action** tab.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1978).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2452).png" alt=""><figcaption></figcaption></figure>
 
 The next screen is displayed based on your commit process selection (prevalidate commit or commit only).
 
@@ -152,9 +152,9 @@ ARM allows performing a validation deployment before actually committing the cha
           *   Furthermore, for _CodeScan_ and _SonarQube_, ARM allows you to **`Select Baseline Branch`** from the drop-down list.\
               <br>
 
-              <figure><img src="../../../../../.gitbook/assets/image (1982).png" alt="" width="375"><figcaption></figcaption></figure>
+              <figure><img src="../../../../../.gitbook/assets/image (2456).png" alt="" width="375"><figcaption></figcaption></figure>
 
-              <figure><img src="../../../../../.gitbook/assets/image (1983).png" alt="" width="375"><figcaption></figcaption></figure>
+              <figure><img src="../../../../../.gitbook/assets/image (2457).png" alt="" width="375"><figcaption></figcaption></figure>
    3.  **`Validate Deployment:`** This feature allows you to validate code across multiple Salesforce orgs simultaneously, with independent Apex test class selection and skip member options for each org. <br>
 
        #### Selecting Salesforce Orgs for Validation
@@ -179,7 +179,7 @@ ARM allows performing a validation deployment before actually committing the cha
        * Within each org section, browse or search for the available test classes associated with that specific org.
        *   To select the desired test classes for each org, click the checkbox next to each class you want to include in the validation.<br>
 
-           <figure><img src="../../../../../.gitbook/assets/image (1984).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../../.gitbook/assets/image (2458).png" alt=""><figcaption></figcaption></figure>
 2. Under the **`Validation Settings`**, users are prompted to enter the commit label, commit message (if any), and reviewer email ID(s) to send an email notification of the commit process performed and the difference reports. Additionally, there are various options you can configure:
    1. **`Commit WaveXMD Components:`** Upon selection, this checkbox allows you to choose the respective Wave XMD files belonging to the Wave dashboard metadata. This checkbox is hidden if the 'WaveDashboard' metadata type or its corresponding members are not picked.
    2. **`Commit Options for Profile:`** This option lets you choose to commit settings for a full profile operation.
@@ -202,7 +202,7 @@ ARM allows performing a validation deployment before actually committing the cha
    7. **`Ignore installed components:`** When selected, ARM will scan for the components that are deployed, and if there are any managed package components located in the destination branch, these components will be excluded from the metadata.zip files when the remaining components are deployed.
 3.  **`Apply Search and Substitute Rules:`** If you created search and substitute rules to define custom find and replace rules which ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control, or vice-versa, that rule can be found here.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1985).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2459).png" alt=""><figcaption></figcaption></figure>
 4. Click **`Finish`**. View your recently created EZ-Commit in the [Commits](../../../../arm/arm-features/version-control/ez-commits/commits-summary.md) screen.
 
 **B. For Commit Only (Without Validation)**
@@ -268,11 +268,11 @@ Now, while deploying these changes, we recommend using the **Pre-destructive** o
 Salesforce Orgs are displayed on the EZ-Commit screen if an admin selects the **Skip Mappings** checkbox on the **Profile** page.\
 **Profile > My Roles > Skip Mappings.**<br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1986).png" alt="" width="345"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2460).png" alt="" width="345"><figcaption></figcaption></figure>
 
 If the admin does not enable **Skip Mappings**, users must map their respective **Version Control repository** branch to their **Salesforce Org:** Go to **Admin > Salesforce Org Mgmt > Selected Salesforce Org > Salesforce Org- Mapping**, then map the respective branches individually.
 
-<figure><img src="../../../../../.gitbook/assets/image (1988).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2462).png" alt="" width="563"><figcaption></figcaption></figure>
 
 To avoid this, contact your admin to select the **Skip Mappings** checkbox under the **My Roles** section on the **Profile** page. More information on how to map a branch to a Salesforce org is available [here](https://knowledgebase.autorabit.com/docs/salesforce-org-management#salesforce-org-mappings).
 

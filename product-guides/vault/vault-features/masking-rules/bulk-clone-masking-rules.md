@@ -35,7 +35,7 @@ Select the source Salesforce org from the Salesforce Orgs list, and then click A
 
 Click Clone to Org to open the Clone Masking Rules to ORGs wizard.
 
-<figure><img src="../../../../.gitbook/assets/image (2892).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5240).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Bulk Clone Rules page with the source org and Clone to Org action
 {% endstep %}
@@ -61,11 +61,11 @@ Keep the required checkboxes selected and clear the checkboxes for rules that mu
 
 Click Continue after the required masking rules are selected.
 
-<figure><img src="../../../../.gitbook/assets/image (2893).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5241).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Select Rules step with all masking rules selected by default
 
-<figure><img src="../../../../.gitbook/assets/image (2894).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5242).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Select Rules step with two masking rules selected
 {% endstep %}
@@ -91,11 +91,11 @@ Keep the required target-org checkboxes selected and clear the remaining checkbo
 
 Click Continue after one or more target orgs are selected. Click Back to revise the rule selection or Cancel to exit the workflow.
 
-<figure><img src="../../../../.gitbook/assets/image (2895).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5243).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Target orgs step with all available orgs selected
 
-<figure><img src="../../../../.gitbook/assets/image (2896).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5244).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Target orgs step with two orgs selected
 {% endstep %}
@@ -117,7 +117,7 @@ Each selected rule is validated against each target org during processing. A rul
 
 Click Clone to create the bulk clone jobs. Click Back to revise the target org selection or Cancel to exit without starting the clone.
 
-<figure><img src="../../../../.gitbook/assets/image (2898).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5246).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Summary step showing the source org, target orgs, and selected rules
 {% endstep %}
@@ -127,7 +127,7 @@ Click Clone to create the bulk clone jobs. Click Back to revise the target org s
 
 When the success message appears, click OK. The message confirms that cloning has started and may require time to complete.
 
-<figure><img src="../../../../.gitbook/assets/image (2899).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5247).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Cloning initiated confirmation message
 {% endstep %}
@@ -143,7 +143,7 @@ Return to the Bulk Clone Rules page. A separate row appears for each target org.
 
 Use Refresh to retrieve the latest job status. Search, Filter By Type, Columns, pagination controls, and the items-per-page setting refine the displayed job list.
 
-<figure><img src="../../../../.gitbook/assets/image (2900).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5248).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Bulk Clone Rules page with jobs created for the selected target orgs
 {% endstep %}
@@ -163,7 +163,7 @@ In the Info column, select the information icon for the required job. The Bulk C
 
 Review each rule row to confirm the object, field type, masking style, masking value, selected fields, status, and remarks. A Partially Failed status indicates that at least one rule failed while another rule completed successfully.
 
-<figure><img src="../../../../.gitbook/assets/image (2901).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5249).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Bulk Clone Job Info with rule-level status and remarks
 {% endstep %}
@@ -173,13 +173,13 @@ Review each rule row to confirm the object, field type, masking style, masking v
 
 The Actions column provides controls for the jobs displayed on the Bulk Clone Rules page. Select the applicable action to open job information, review job output, or run the supported job operation.
 
-<figure><img src="../../../../.gitbook/assets/image (2902).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5250).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Bulk Clone Rules job list and available actions
 
 Some job-information views display only rule configuration details. In this view, compare the source and cloned rule names, object, field type, masking style, masking value, and selected fields.
 
-<figure><img src="../../../../.gitbook/assets/image (2903).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5251).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                      Bulk Clone Job Info showing rule configuration details
 

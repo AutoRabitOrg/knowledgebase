@@ -18,7 +18,7 @@ The **ShareSettings** template allows you to configure sharing settings for repo
     * Enter the required values in the fields displayed.
     * Click **Save** to confirm the data.
 
-    ![Share Settings Configuration](<../../../../../../.gitbook/assets/image (33) (1).png>)
+    ![Share Settings Configuration](<../../../../../../.gitbook/assets/image (903).png>)
 9. Click **Save** to save the template.
 10. After the template is successfully created, you’ll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to deploy the template to the selected destination org.

@@ -33,7 +33,7 @@ To register a new Salesforce organization:
 
 1.  Click **REGISTER NEW ORG**.
 
-    <figure><img src="../../../../../.gitbook/assets/1 (14).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/1 (22).png" alt=""><figcaption></figcaption></figure>
 
 This action opens the **Source Org Integration** setup wizard.
 
@@ -41,7 +41,7 @@ This action opens the **Source Org Integration** setup wizard.
 
 The **Source Org Integration** wizard begins with **Environment Details**. This step captures the basic configuration required to connect the Salesforce environment.
 
-<figure><img src="../../../../../.gitbook/assets/2 (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2 (21).png" alt=""><figcaption></figcaption></figure>
 
 Configure the following fields:
 
@@ -78,7 +78,7 @@ Click **Continue** to proceed.
 
 The next step guides the creation of a **Salesforce External Client App** required for OAuth authentication.
 
-<figure><img src="../../../../../.gitbook/assets/3 (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/3 (18).png" alt=""><figcaption></figcaption></figure>
 
 AutoRABIT Vault displays the configuration steps that must be completed in Salesforce.
 
@@ -99,9 +99,9 @@ Click **I've completed the setup** to continue.
 
 Add the required OAuth scopes in the Salesforce External Client App.
 
-![](<../../../../../.gitbook/assets/Unknown image (4) (1) (1) (1) (1)>)
+![](<../../../../../.gitbook/assets/Unknown image (90)>)
 
-<figure><img src="../../../../../.gitbook/assets/5 (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/5 (16).png" alt=""><figcaption></figcaption></figure>
 
 The following scopes must be enabled:
 
@@ -119,14 +119,14 @@ Any mismatch will result in connection failure.
 
 After completing the Salesforce External Client App configuration, provide the OAuth credentials in AutoRABIT Vault.
 
-<figure><img src="../../../../../.gitbook/assets/6 (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/6 (13).png" alt=""><figcaption></figcaption></figure>
 
 Enter the following details:
 
 * **Client ID** – The Consumer Key generated from the Salesforce External Client App.
 * **Client Secret** – The Consumer Secret generated from the Salesforce External Client App.
 
-<figure><img src="../../../../../.gitbook/assets/7 (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/7 (11).png" alt=""><figcaption></figcaption></figure>
 
 These values are available in Salesforce under the External Client App configuration.
 
@@ -146,9 +146,9 @@ Click **Continue** to proceed to the authorization step.
 
 The **Connect to Salesforce** step initiates the OAuth authorization process.
 
-<figure><img src="../../../../../.gitbook/assets/8 (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/8 (12).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/9 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/9 (7).png" alt=""><figcaption></figcaption></figure>
 
 AutoRABIT Vault displays the connection details for verification:
 
@@ -166,15 +166,15 @@ After clicking **Connect to Salesforce**, the following process occurs:
 
 1.  The browser redirects to the Salesforce login page.
 
-    <figure><img src="../../../../../.gitbook/assets/10 (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/10 (8).png" alt=""><figcaption></figcaption></figure>
 2.  Authentication occurs using the provided Salesforce credentials.
 
-    <figure><img src="../../../../../.gitbook/assets/11 (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/11 (6).png" alt=""><figcaption></figcaption></figure>
 3.  Salesforce displays the permissions requested by AutoRABIT Vault.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2463).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4811).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2464).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4812).png" alt=""><figcaption></figcaption></figure>
 4. Select **Allow** to grant the required access.
 5. After authorization, Salesforce redirects back to AutoRABIT Vault automatically.
 
@@ -184,7 +184,7 @@ AutoRABIT Vault then completes the validation and confirms the connection.
 
 After the authorization process is completed, AutoRABIT Vault validates the Salesforce connection and displays a **Connection Successful** confirmation.
 
-<figure><img src="../../../../../.gitbook/assets/14 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/14 (6).png" alt=""><figcaption></figcaption></figure>
 
 The **Validation & Confirmation** step displays the environment details of the connected Salesforce org, including:
 
@@ -201,13 +201,13 @@ To verify that AutoRABIT Vault can communicate with the Salesforce environment, 
 
 1.  In the **Test Your Connection** section, click **Test API Connection**.
 
-    <figure><img src="../../../../../.gitbook/assets/15 (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/15 (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Verify the API Connection Status
 
 If the connection test succeeds, AutoRABIT Vault displays a confirmation message indicating that the API communication is working correctly.
 
-<figure><img src="../../../../../.gitbook/assets/16 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/16 (7).png" alt=""><figcaption></figcaption></figure>
 
 A notification message appears confirming that the **API connection test was successful**.
 
@@ -219,7 +219,7 @@ After the connection test is successful:
 
 1.  Click **Finish**.
 
-    <figure><img src="../../../../../.gitbook/assets/17 (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/17 (4).png" alt=""><figcaption></figcaption></figure>
 
 AutoRABIT Vault completes the org registration process and closes the **Source Org Integration** wizard.
 
@@ -229,7 +229,7 @@ The newly connected Salesforce organization now appears in the **Salesforce Orgs
 
 After clicking **Finish**, AutoRABIT Vault displays a confirmation message indicating that the Salesforce organization has been successfully registered.
 
-<figure><img src="../../../../../.gitbook/assets/18 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/18 (5).png" alt=""><figcaption></figcaption></figure>
 
 This confirmation verifies that the integration process has completed successfully and the Salesforce environment is now available for AutoRABIT Vault operations.
 
@@ -255,7 +255,7 @@ The newly added organization now appears in this list and is ready to be used wi
 
 If authentication credentials expire or require renewal, the Salesforce organization can be re-authenticated directly from the **Salesforce Orgs List**.
 
-<figure><img src="../../../../../.gitbook/assets/19 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/19 (5).png" alt=""><figcaption></figcaption></figure>
 
 To re-authenticate an organization:
 
@@ -269,7 +269,7 @@ AutoRABIT Vault redirects to the Salesforce login page to complete the authentic
 
 When the **Re-authenticate** action is initiated, the Salesforce login screen appears.
 
-![](<../../../../../.gitbook/assets/Unknown image (20) (1) (1)>)
+![](<../../../../../.gitbook/assets/Unknown image (106)>)
 
 Enter the following credentials:
 

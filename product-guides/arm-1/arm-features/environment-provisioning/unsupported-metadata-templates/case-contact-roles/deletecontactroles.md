@@ -1,4 +1,4 @@
-# DeleteContactRoles
+# Delete Contact Roles
 
 **DeleteContactRoles** template automatically deletes existing case contact role value from the picklist.
 
@@ -18,9 +18,9 @@ To create this template, follow the steps below:
     * Select the **Replace With Blank Value** checkbox.
     * Once you are finished, click on **Save** to save this page.
 
-    <figure><img src="../../../../../../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (965).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (966).png" alt=""><figcaption></figcaption></figure>
 9. Next, Click **Save** to save the template.
 10. Once the template is successfully created, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click on the **Run** button to run the current template on your destination org.

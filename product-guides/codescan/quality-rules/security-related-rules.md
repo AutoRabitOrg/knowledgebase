@@ -6,11 +6,11 @@ You can search for security-related rules using tags such as:
 
 **Example**: sans-top25-insecure, sans-top25-porous, phishing, owasp-m4, owasp-a8, owasp-a6, owasp-a1, owasp-a2, owasp-m5, owasp-a5, owasp-m3, owasp-a7, owasp-a10, owasp-a4, owasp-a3, owasp-m2, owasp-a9, owasp-m1…
 
-<figure><img src="../../../.gitbook/assets/image (1568).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3151).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1571).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1869).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1572).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1870).png" alt=""><figcaption></figcaption></figure>
 
 Note: Tags are a way to categorize rules and issues.
 
@@ -25,9 +25,9 @@ CodeScan features four types of rules: **Bug** (reliability domain), **Code Smel
 
 You can find the security category in the rules filter and related rules in the right-side panel, as shown in the images below.
 
-<figure><img src="../../../.gitbook/assets/image (1573).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1871).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1574).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1872).png" alt=""><figcaption></figcaption></figure>
 
 These security issues are divided into two categories: vulnerabilities and hotspots (see the main differences on the [Security Hotspots](https://knowledgebase.autorabit.com/product-guides/codescan/issues/security-hotspots) page).
 

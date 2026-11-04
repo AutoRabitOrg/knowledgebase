@@ -12,15 +12,15 @@ You will need:
 
 * In user environment Path variable, add the **Salesforce CLI** and **Git bin directories**.
 
-<figure><img src="../../../../.gitbook/assets/image (527).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4139).png" alt="" width="450"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (528).png" alt="" width="395"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4140).png" alt="" width="395"><figcaption></figcaption></figure>
 
 * In the System environment Path variable add the **Git\cmd**, **Git\usr\bin**, and **Salesforce CLI\bin directories**.
 
-<figure><img src="../../../../.gitbook/assets/image (529).png" alt="" width="450"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4141).png" alt="" width="450"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (530).png" alt="" width="400"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4142).png" alt="" width="400"><figcaption></figcaption></figure>
 
 ### Setup Jenkins <a href="#setup-jenkins" id="setup-jenkins"></a>
 

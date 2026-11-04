@@ -25,14 +25,14 @@ Benefits:
 3. Click **+ Create your own application**
 4. Name it `AutoRABIT VAULT`, select **Non-gallery application**, and click **Create**
 
-<figure><img src="../../../../.gitbook/assets/image (181).png" alt="Create non-gallery application in Azure"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2720).png" alt="Create non-gallery application in Azure"><figcaption></figcaption></figure>
 
 5. After creation, click **Set up single sign on** > **SAML**
 6. In **Basic SAML Configuration**:
    * **Identifier (Entity ID):** `<instanceURL>/ARVault/saml/metadata`
    * **Reply URL:** `<instanceURL>/ARVault/saml/SSO`
 
-<figure><img src="../../../../.gitbook/assets/image (185).png" alt="Basic SAML Configuration" width="527"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2724).png" alt="Basic SAML Configuration" width="527"><figcaption></figcaption></figure>
 
 7. In **User Attributes & Claims**:
    * Delete all **Additional claims**
@@ -45,11 +45,11 @@ Benefits:
 | customerid                 | Attribute | AutoRABIT Vault Customer ID (from your AutoRABIT Vault Profile section) |
 | restrictAutoCreationOfUser | Attribute | `Yes` or `No` (controls auto user creation in AutoRABIT Vault)          |
 
-<figure><img src="../../../../.gitbook/assets/image (190).png" alt="Claims configuration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2729).png" alt="Claims configuration"><figcaption></figcaption></figure>
 
 8. In **SAML Signing Certificate**, download the **Federation Metadata XML**
 
-<figure><img src="../../../../.gitbook/assets/image (191).png" alt="Download SAML Metadata"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2730).png" alt="Download SAML Metadata"><figcaption></figcaption></figure>
 
 ## Configure AutoRABIT Vault <a href="#in-vault" id="in-vault"></a>
 
@@ -59,9 +59,9 @@ Benefits:
 4. Choose **Metadata File**, upload the XML file from Azure
 5. Click **Update** and then **Activate**
 
-<figure><img src="../../../../.gitbook/assets/image (192).png" alt="Upload metadata in Vault"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2731).png" alt="Upload metadata in Vault"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (193).png" alt="Activate SSO in Vault"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2732).png" alt="Activate SSO in Vault"><figcaption></figcaption></figure>
 
 6. Sign out and test login via SSO:
    * On the login page, click **Login with SSO**

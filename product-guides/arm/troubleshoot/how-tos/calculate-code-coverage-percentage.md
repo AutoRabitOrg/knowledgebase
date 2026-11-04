@@ -12,4 +12,4 @@
 
 Please see the screenshot below for your reference.
 
-<figure><img src="../../../../.gitbook/assets/image (2339).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2867).png" alt=""><figcaption></figcaption></figure>

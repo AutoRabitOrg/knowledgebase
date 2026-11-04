@@ -8,7 +8,7 @@ Our Eagle Editions are designed for those customers who run newer versions of So
 
 It is important to note that in December 2024, SonarQube made the decision to separate their Community Build release from other editions (Developer, Enterprise, and Data Center). As such, the version numbers of SonarQube Community Edition are different from the version numbers of these other editions (see below):&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2342).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2678).png" alt=""><figcaption></figcaption></figure>
 
 Please note that once this split occurred, SonarQube released Community Build 24.12 in Dec 2024, and then released a new Community Build each month (25.1 – 25.12) for the calendar year of 2025.&#x20;
 
@@ -26,7 +26,7 @@ Please see our corresponding [Legacy SonarQube Compatibility Matrix ](https://kn
 
 Additionally, the following diagram provides more detailed information regarding release versioning and release dates.  &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2706).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5054).png" alt=""><figcaption></figcaption></figure>
 
 **Regarding earlier CodeScan Versions**: Our July 2024 release (24.0.8) fully supports SQ 9.9 LTA as well as SQ 10.0, 10.1, and 10.2. &#x20;
 

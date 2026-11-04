@@ -39,13 +39,13 @@ Resolution Transfer enables administrators to carry issue resolutions from an or
 
 Teams can apply consistent issue dispositions across projects and branches, automate routine transfers, and review execution history and results in one place.
 
-<figure><img src="../../../../.gitbook/assets/image (3150).png" alt="" width="218"><figcaption><p align="center"><em>Administration menu: Resolution Transfer access.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5498).png" alt="" width="218"><figcaption><p align="center"><em>Administration menu: Resolution Transfer access.</em></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3151).png" alt=""><figcaption><p align="center"><em>Empty-state page: create the first Resolution Transfer.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5499).png" alt=""><figcaption><p align="center"><em>Empty-state page: create the first Resolution Transfer.</em></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3152).png" alt=""><figcaption><p align="center"><em>New Transfer: select origin, destination, issue statuses, and scheduling.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5500).png" alt=""><figcaption><p align="center"><em>New Transfer: select origin, destination, issue statuses, and scheduling.</em></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3153).png" alt=""><figcaption><p align="center"><em>Resolution Transfer: scheduled job management and recent execution history.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5501).png" alt=""><figcaption><p align="center"><em>Resolution Transfer: scheduled job management and recent execution history.</em></p></figcaption></figure>
 
 #### 2. AI Users & Billing Management
 
@@ -65,7 +65,7 @@ A new AI Users & Billing administration page provides visibility into AI credit 
 
 Administrators can monitor high-consumption users, allocate AI access and limits at the individual level, and manage their shared monthly credit entitlement more predictably.
 
-<figure><img src="../../../../.gitbook/assets/image (3154).png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5502).png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
 
 #### 3. AutoRABIT Mule and API Analyzers
 
@@ -81,9 +81,9 @@ CodeScan expands the existing MuleSoft add-on with two analyzers: AutoRABIT Mule
 
 **Quality Profiles:** From Quality Profiles, select the AutoRABIT Mule profile (166 rules) for Mule application analysis, or the API profile (51 rules) for API specification analysis. The API profile is built in and is the default for the API language. The AutoRABIT Mule profile is built in but does not automatically replace the existing MuleSoft default; it may show DEFAULT after an organization selects it as its default.
 
-<figure><img src="../../../../.gitbook/assets/image (3155).png" alt=""><figcaption><p align="center"><em>Quality Profiles > Mule: AutoRABIT Mule profile with 166 rules (shown as the organization default in this example).</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5503).png" alt=""><figcaption><p align="center"><em>Quality Profiles > Mule: AutoRABIT Mule profile with 166 rules (shown as the organization default in this example).</em></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3156).png" alt=""><figcaption><p align="center"><em>Quality Profiles > API: built-in default API profile with 51 rules.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5504).png" alt=""><figcaption><p align="center"><em>Quality Profiles > API: built-in default API profile with 51 rules.</em></p></figcaption></figure>
 
 #### Configuration for AutoRABIT Mule
 
@@ -94,7 +94,7 @@ CodeScan expands the existing MuleSoft add-on with two analyzers: AutoRABIT Mule
 3. At the same time, set the legacy Mule file suffix setting (sonar.mule.file.suffixes) to .txml. Do not leave it blank an empty value falls back to .xml and can cause a double-measure clash.
 4. Ensure that mule-artifact.json (Mule 4) or mule-project.xml (Mule 3) is present at the scan base directory, and run the analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (3157).png" alt=""><figcaption><p align="center"><em>Project Settings > General Settings > Mule: AutoRABIT Mule File Suffixes showing .properties and .xml.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5505).png" alt=""><figcaption><p align="center"><em>Project Settings > General Settings > Mule: AutoRABIT Mule File Suffixes showing .properties and .xml.</em></p></figcaption></figure>
 
 Recommended scanner overrides: sonar.mule.file.suffixes=.txml and sonar.armule.file.suffixes=.xml,.properties.
 
@@ -1040,21 +1040,21 @@ We have verified that the tag "salesforce-project-only" has been added to all 13
 
 &#x20;
 
-<img src="../../../../.gitbook/assets/unknown (87).png" alt="" height="386" width="594">
+<img src="../../../../.gitbook/assets/unknown (139).png" alt="" height="386" width="594">
 
 2: Tag visible on rule detail page for each affected rule&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (88).png" alt="" height="312" width="624">
+<img src="../../../../.gitbook/assets/unknown (140).png" alt="" height="312" width="624">
 
 3: Filter by "salesforce-project-only" returns all 13 rules&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (89).png" alt="" height="365" width="562">
+<img src="../../../../.gitbook/assets/unknown (141).png" alt="" height="365" width="562">
 
 4: No existing tags removed or modified on any of the 13 rules&#x20;
 
 5: Issue got triggered for a random rule, working as expected. Hence closing this user story.&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (90).png" alt="" height="320" width="578">
+<img src="../../../../.gitbook/assets/unknown (142).png" alt="" height="320" width="578">
 
 ### New Rules&#x20;
 
@@ -1132,7 +1132,7 @@ Especially risky if:&#x20;
 
 Parameters should be displayed as shown below:&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (91).png" alt="" height="165" width="624">
+<img src="../../../../.gitbook/assets/unknown (143).png" alt="" height="165" width="624">
 
 Note: Regarding fields, the functionality should work as PII rule. &#x20;
 
@@ -1171,37 +1171,37 @@ NOTE:  This is a project-level rule.&#x20;
 
 * Rule correctly detects communities with guest access enabled.&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (92).png" alt="" height="405" width="624">
+<img src="../../../../.gitbook/assets/unknown (144).png" alt="" height="405" width="624">
 
 * Flags guest user profiles with elevated object-level permissions (read, create) on standard objects.&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (93).png" alt="" height="350" width="624">
+<img src="../../../../.gitbook/assets/unknown (145).png" alt="" height="350" width="624">
 
 * Flags guest user profiles with elevated object-level permissions (read, create) on custom objects.
 
-<img src="../../../../.gitbook/assets/unknown (94).png" alt="" height="343" width="624">
+<img src="../../../../.gitbook/assets/unknown (146).png" alt="" height="343" width="624">
 
 * Identifies sensitive/PII field-level access (Email, Phone, SSN patterns) on guest profiles.
 
-<img src="../../../../.gitbook/assets/unknown (95).png" alt="" height="344" width="624">
+<img src="../../../../.gitbook/assets/unknown (147).png" alt="" height="344" width="624">
 
 * Detects enabled Apex class access on guest profiles.
 
-<img src="../../../../.gitbook/assets/unknown (96).png" alt="" height="345" width="624">
+<img src="../../../../.gitbook/assets/unknown (148).png" alt="" height="345" width="624">
 
 * Configurable parameters (Sensitive Fields, Include Custom Objects) work as expected.
 
-<img src="../../../../.gitbook/assets/unknown (97).png" alt="" height="346" width="624">
+<img src="../../../../.gitbook/assets/unknown (149).png" alt="" height="346" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (98).png" alt="" height="344" width="624">
+<img src="../../../../.gitbook/assets/unknown (150).png" alt="" height="344" width="624">
 
 * Rule severity correctly classified as Critical Vulnerability.&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (99).png" alt="" height="318" width="624">
+<img src="../../../../.gitbook/assets/unknown (151).png" alt="" height="318" width="624">
 
 * Above scenarios verified with Comparison branch as well, work as expected.
 
-<img src="../../../../.gitbook/assets/unknown (100).png" alt="" height="341" width="624">
+<img src="../../../../.gitbook/assets/unknown (152).png" alt="" height="341" width="624">
 
 * Re-run & Run manual verified regarding the new changes, both work as expected.
 
@@ -1210,7 +1210,7 @@ NOTE:  This is a project-level rule.&#x20;
 * To get the rule triggered correctly, make sure to add “Network” in codescan.cloud.packageTypes and “network” & “profile” in sonar.sfmeta.file.suffixes in project settings.&#x20;
 * To give guest users access to the site's APIs, enable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (or Builder > Settings > Public access)&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (101).png" alt="" height="314" width="624">
+<img src="../../../../.gitbook/assets/unknown (153).png" alt="" height="314" width="624">
 
 * To take away guest users access to the site's APIs, disable “Allow guest users to access public APIs” in Salesforce> Setup > all Sites > Workspaces > Administration > Preferences (Also verify Builder > Settings > Public access is disabled)&#x20;
 * For custom sensitive/PII field-level access, configure “Filed Name” in the rule parameters. ( Field name and Field label can be different, get field name from sf org)&#x20;
@@ -1251,15 +1251,15 @@ We have verified that the error messages have been properly updated to “There 
 
 * Verified in the new project’s report&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (102).png" alt="" height="349" width="452">
+<img src="../../../../.gitbook/assets/unknown (154).png" alt="" height="349" width="452">
 
 * Verified in the old project’s report
 
-<img src="../../../../.gitbook/assets/unknown (103).png" alt="" height="312" width="399">
+<img src="../../../../.gitbook/assets/unknown (155).png" alt="" height="312" width="399">
 
 * Verified in the scheduled cron job reports&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (104).png" alt="" height="412" width="416">
+<img src="../../../../.gitbook/assets/unknown (156).png" alt="" height="412" width="416">
 
 2. **Fixed issue with CSV Export where the "Status Marked By" Column was empty for Bulk Operations**&#x20;
 
@@ -1281,36 +1281,36 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 4. Bulk status change to ACCEPTED – Column populated as expected&#x20;
 5. Mixed bulk + single-issue transitions in same CSV export – Both reflect correct user names&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (105).png" alt="" height="486" width="624">
+<img src="../../../../.gitbook/assets/unknown (157).png" alt="" height="486" width="624">
 
 6. Multiple bulk operations by different users – Each row shows the respective user who performed the action&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (106).png" alt="" height="69" width="624">
+<img src="../../../../.gitbook/assets/unknown (158).png" alt="" height="69" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (107).png" alt="" height="52" width="624">
+<img src="../../../../.gitbook/assets/unknown (159).png" alt="" height="52" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (108).png" alt="" height="72" width="624">
+<img src="../../../../.gitbook/assets/unknown (160).png" alt="" height="72" width="624">
 
 7. Single-issue regression – No regression, column still works correctly for single transitions
 
-<img src="../../../../.gitbook/assets/unknown (109).png" alt="" height="104" width="624">
+<img src="../../../../.gitbook/assets/unknown (161).png" alt="" height="104" width="624">
 
 8. Re-transition after bulk change – "Status Marked By" updates to the latest user
 
-<img src="../../../../.gitbook/assets/unknown (110).png" alt="" height="69" width="624">
+<img src="../../../../.gitbook/assets/unknown (162).png" alt="" height="69" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (111).png" alt="" height="52" width="624">
+<img src="../../../../.gitbook/assets/unknown (163).png" alt="" height="52" width="624">
 
-<img src="../../../../.gitbook/assets/unknown (112).png" alt="" height="72" width="624">
+<img src="../../../../.gitbook/assets/unknown (164).png" alt="" height="72" width="624">
 
 9. Issues with no status change – "Status Marked By" appropriately empty only for untouched issues - OPEN Status&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (113).png" alt="" height="173" width="624">
+<img src="../../../../.gitbook/assets/unknown (165).png" alt="" height="173" width="624">
 
 Verified the same scenarios with Root-level admin, working as expected.\
 Verified the same scenarios with PR, working as expected.
 
-<img src="../../../../.gitbook/assets/unknown (114).png" alt="" height="122" width="624">
+<img src="../../../../.gitbook/assets/unknown (166).png" alt="" height="122" width="624">
 
 
 
@@ -1338,7 +1338,7 @@ The API is expected to give a 200 response and return the details of the created
 
 * Verified the created custom rule is functional — issues are triggered as expected when the custom rule is activated.
 
-<figure><img src="../../../../.gitbook/assets/image (3314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5662).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1659,7 +1659,7 @@ Previously, severity labels were displayed using the default values throughout C
 * Default severity labels are automatically used when no severity masking configuration exists. &#x20;
 * Changes are applied immediately without requiring a refresh.&#x20;
 
-<img src="../../../../.gitbook/assets/unknown (64).png" alt="" height="308" width="624">
+<img src="../../../../.gitbook/assets/unknown (116).png" alt="" height="308" width="624">
 
 **Supported Default Severity Labels**&#x20;
 
@@ -2467,7 +2467,7 @@ Standardizes SLA handling for exceptions and reduces manual administrative effor
 
 We have enhanced user management by showing invited users in the Members list immediately after an invitation is sent:
 
-<figure><img src="../../../../.gitbook/assets/image (2500).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4848).png" alt=""><figcaption></figcaption></figure>
 
 Previously, invited users did not appear in the Members tab until they accepted the invitation, making it difficult for admins to track pending invites.
 
@@ -2555,7 +2555,7 @@ sharingRules-meta.xml
 
 profilePasswordPolicy-meta.xml
 
-<figure><img src="../../../../.gitbook/assets/image (2501).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4849).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -2641,7 +2641,7 @@ However, the actual API response in the Network tab contains a meaningful valida
 
 As such, we have enhanced the UI to now display the backend validation message instead of the generic error so users can clearly understand the reason for the failure.
 
-<figure><img src="../../../../.gitbook/assets/image (2502).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4850).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Resolved Blank Edit Project Settings Page for S3 Integration Projects**
 
@@ -2925,7 +2925,7 @@ For creating a GitHub App for an Enterprise account, users need to follow the st
 
 After successfully creating the connection with the GitHub Enterprise account, users will be able to run the analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (2470).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4818).png" alt=""><figcaption></figcaption></figure>
 
 Please note these important TECHNICAL details:
 
@@ -2964,30 +2964,30 @@ Validated this new feature via the following scenarios and have verified that al
 
 1.  Exception status is available in the status list in issues page.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2471).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4819).png" alt=""><figcaption></figcaption></figure>
 2.  Issues status changed to Exception (through single assign and bulk assign).<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2472).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4820).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  Issues status changed from Exception to Open (Rollback) (through single assign and bulk assign).<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4821).png" alt=""><figcaption></figcaption></figure>
 4.  Able to view the Exception status in CSV Issues export (in list and downloaded CSV).<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2475).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4823).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (2476).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4824).png" alt=""><figcaption></figcaption></figure>
 
 
 5.  Status visible in a single rule.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2477).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4825).png" alt=""><figcaption></figcaption></figure>
 
 
 6.  Comments in Activity.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2478).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4826).png" alt=""><figcaption></figcaption></figure>
 
     Comments in the activity section for Exception are able to deleted by the user (after these issues are moved into exception).<br>
 
@@ -3025,11 +3025,11 @@ Users are notified about analysis failures (both pre and post stages) via email,
 
 Validated that users are able to receive the email notifications for pre/post analysis errors, and verified that these users are able to receive notifications as expected. Several examples have been provided below for illustrative purposes.
 
-<figure><img src="../../../../.gitbook/assets/image (2479).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4827).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2480).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4828).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2481).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4829).png" alt=""><figcaption></figcaption></figure>
 
 Please note these important TECHNICAL details:
 
@@ -3037,7 +3037,7 @@ Please note these important TECHNICAL details:
 
 The system will leverage the **existing subscription-specific UI,** i.e., _**Profile> My Account>Notifications> Overall Notifications,**_ to allow users to opt in or opt out of analysis failure notifications.
 
-<figure><img src="../../../../.gitbook/assets/image (2482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4830).png" alt=""><figcaption></figcaption></figure>
 
 User preferences will be persisted using APIs, and any changes will be applied immediately when resolving notification recipients for analysis failures.
 
@@ -3071,7 +3071,7 @@ The ticket “Enable / Disable Subscription for Analysis Failure Notifications�
 
 Functionality is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2483).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4831).png" alt=""><figcaption></figcaption></figure>
 
 2\. Triggered Email Notifications are immediately sent to Subscribed Users on Analysis Failure, so they can be promptly informed and subsequently take action without waiting for manual checks or follow-up runs.
 
@@ -3102,7 +3102,7 @@ In this release, we have enhanced this capability within the IDE plug-in, which 
 3. Additionally, verified the VS Code plugin using the same VSIX file. Violations are displayed correctly for all supported file types, e.g., .cls, .page, .java, .js, .trigger, .css, .ts, .cmp, in the PREVIEW environment.
 4. Confirmed that VS Code usage is accurately shown on the IDE Usage page and validated that cross-user usage visibility is also functioning as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2484).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4832).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -3132,7 +3132,7 @@ This indicates that:
 
 As such, we confirm that the issue has been successfully remediated. The rule now handles deep assignment chains correctly and avoids infinite recursion in isSanitized, without causing a StackOverflowError.
 
-<figure><img src="../../../../.gitbook/assets/image (2485).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4833).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -3247,7 +3247,7 @@ This new feature allows organization admins to configure the default CodeScan us
 
 User type selection directly in the SSO/SAML configuration page to select either Platform Integration Users or Standard users.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 The following scenarios have been verified and are working as expected:
 
@@ -3283,7 +3283,7 @@ Additional details regarding the Cursor IDE usage data:
 
 Verified the Cursor IDE Usage on CodeScan in the page 'IDE USAGE' of the Adminstration and confirmed users are able to see the added Cursor symbol through the API call in the UI of the application. We also verified that existing behavior for VS Code and Intellij is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;**3.     Updated Filter Message for Security Hotspot CSV Export**
 
@@ -3301,7 +3301,7 @@ Verified the updated Security Hotspot export filter message.
 
 All the above scenarios are working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 **4.     Automatically generate Callback URL when adding ECA in Salesforce Org**
 
@@ -3338,7 +3338,7 @@ Added a custom tooltip, copy icon and copied label when user copies the URL
 
 We have verified that **Callback URL** is displayed correctly, and the **Copy** button is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **NOTE:** When hovering over the Callback URL button, the notes are displayed. The notes do not disappear when clicking on the Callback URL. They only disappear when clicking anywhere else on the page. This is the expected behavior.
@@ -3380,7 +3380,7 @@ Enhanced the Issues CSV export to include a separate column called “**Status M
 
 If the CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing issues outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -3409,7 +3409,7 @@ Enhanced the Security Hotspot CSV export to include a separate column called “
 
 If the Hotspot CSV export includes the “Status Marked By” column with the corresponding username (or left empty when no status exists), then users will have better traceability and accountability when analyzing hotspots outside the platform, reducing ambiguity about ownership and status changes.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -3456,11 +3456,11 @@ Validated the CSV Security Hotspot Export with Detailed Statuses; below is the v
 * Verified export remains consistent with UI status for the same hotspot set.
 * Confirmed export works for mixed-status datasets and filters/sorting do not alter status values.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -3492,7 +3492,7 @@ The enhancement for including closed issue statuses in CSV reports has been vali
 
 Concluding that the CSV export now accurately reflects the issues, including closed statuses (**FIXED, CLOSED, REMOVED**), ensuring consistency with the UI.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rule
 
@@ -3536,9 +3536,9 @@ The rule sf:LocaleInOldApi was validated for the following methods:
    * The rule behavior was validated against the defined conditions.
    * Classes with API versions prior to v45.0 and using locale-dependent methods are considered for detection, while classes with API v45.0+ are treated as compliant.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -3565,23 +3565,23 @@ Verified the following scenarios and confirmed that the are all working as expec
 * Verified error duplications are thrown - resolved (earlier)
 * Verified whether a parameter is sanitized using escapeSingleQuotes but still flagged or not - after sanitized, no issue was thrown.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 * Verified when a variable is reassigned multiple times - the issue will be thrown based on the last assigned value.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 * Verified when a variable is sanitized first and later overwritten with random function. - error thrown.
 * In a condition, Verified when a variable is sanitized first and later overwritten with random function. - error thrown.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 * Verified when a variable is assigned inside a loop before being used in the query. - If loop has non sanitized parameters then issue is thrown
 * Verified when a user input flows through multiple helper methods before reaching the query. - trace throws error up to 5 params.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -3619,9 +3619,9 @@ Validated the fix for the Sf:testclassnaming rule by verifying the following sce
 * Validation ensures parameter cannot be empty.
 * Particular Reg expressions given in the allowed parameters skips the violations Accordingly.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -3716,7 +3716,7 @@ There are no Rule Deprecations in this release.
 
 We identified an issue in CodeScan where the Data Flow Trace for a SOQL injection rule where the trace repeatedly shows the same assignment instead of a clean, non-duplicated trace.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 We determined the root cause of the issue and updated the rule logic accordingly.  With this fix, this issue is now fully remediated.Top of Form
 
@@ -3725,7 +3725,7 @@ Verified the following scenarios and report that the rule is now working as expe
 * Verified for duplicated traces : verified along with test instance\
   in preview: no duplicated traces
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -3771,22 +3771,22 @@ Verified the Security Hotspot Exception expiry behavior from the CodeScan UI on 
 * Hotspots without an expiry remain in **Exception** status.
 * Hotspots with an expiry date automatically reappear in “**To review**” after the expiry is reached.
 
-<figure><img src="../../../../.gitbook/assets/image (2425).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4773).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2426).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4774).png" alt=""><figcaption></figcaption></figure>
 
 Also verified the scheduled job functionality for the Security Hotspots.
 
 * Security Hotspots marked as **Exception** remain unchanged when no expiry date is provided.
 * When an expiry date is set, the scheduled job automatically transitions the hotspot back to “**To review**” after the expiry is reached.
 
-<figure><img src="../../../../.gitbook/assets/image (2428).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4776).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2429).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4777).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2430).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4778).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2431).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4779).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -3899,11 +3899,11 @@ With this completed, we now provide the following values in tabular form, specif
 
 Per the enhancement above, all the CVSS rules are now updated with CVSS score values in the CVSS Break Down tab UI provided (below Metric category specific tabs).
 
-<figure><img src="../../../../.gitbook/assets/image (2432).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4780).png" alt=""><figcaption></figcaption></figure>
 
 All the below Vector Metric names and values of score table are now visible in above UI
 
-<figure><img src="../../../../.gitbook/assets/image (2433).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4781).png" alt=""><figcaption></figcaption></figure>
 
 Verified the CVSS UI/UX update via the following scenarios:
 
@@ -3911,11 +3911,11 @@ Verified the CVSS UI/UX update via the following scenarios:
 * All vector metric names and values are displayed as per the updated CVSS v3.1 table for CodeScan vulnerability rules (VF, SF, Apex).
 * Update is visible and working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2434).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4782).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2435).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4783).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2436).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4784).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rules
 
@@ -3956,9 +3956,9 @@ Verified the newly added CodeScan rule **sf-meta:AvoidUnfiledPublic (Avoid Using
 * This behavior is expected, as metadata placed in unfiled public folders can lead to unrestricted access, lack of proper organization, and potential compliance concerns.
 * No issues were observed with the rule configuration or behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2437).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4785).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2438).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4786).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -3983,7 +3983,7 @@ Verified the Sf:fieldlevelsecurity – USER\_MODE subquery false positive via se
 
 which resolves the originally reported false positive.
 
-<figure><img src="../../../../.gitbook/assets/image (2439).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4787).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -4041,7 +4041,7 @@ We verified the CVVS UI enhancement and have validated that users are able to se
 
 No functional or UI issues were encountered or reported during testing.
 
-<figure><img src="../../../../.gitbook/assets/image (2381).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4730).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Added the ability to Download/Export IDE Usage Data from the IDE Usage page**
 
@@ -4056,7 +4056,7 @@ Testing was done with 18,000 records to validate performance standards.
 * On hovering over the download button, the application displays “Download the IDE usage history based on current filters.“
 * On clicking the download button, download of a CSV file commences and respects the filters the user has selected.
 
-<figure><img src="../../../../.gitbook/assets/image (2382).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4731).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Added Enhanced our logic for Queries in JavaScript to only contain fields that are used**
 
@@ -4070,7 +4070,7 @@ By limiting the fields in the queries to only those that are required for our LW
 
 Example 1: Retrieve the name of an Account and its owner's Name via getRecord
 
-<figure><img src="../../../../.gitbook/assets/image (2383).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4732).png" alt=""><figcaption></figcaption></figure>
 
 **Value/Purpose:**
 
@@ -4097,9 +4097,9 @@ Validated the newly added CodeScan rule UnusedQueryField via the following scena
 * Validated rule behavior using both positive (no-violation) and negative (violation) LWC test cases.
 * Confirmed that CodeScan correctly flags violations when unused fields are queried and does not report issues when all queried fields are used.
 
-<figure><img src="../../../../.gitbook/assets/image (2384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4733).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2385).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4734).png" alt=""><figcaption></figcaption></figure>
 
 ### New Rules
 
@@ -4114,7 +4114,7 @@ We believe that enforcing stricter validation on Flow execution context will pre
 
 _Note_: The runInMode of the flow in Default Mode violations should be given for all the below mentioned flows except Screen Flows, which will include an additional parameter to reduce false positives.
 
-<figure><img src="../../../../.gitbook/assets/image (2386).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4735).png" alt=""><figcaption></figcaption></figure>
 
 **Value/Purpose:**
 
@@ -4155,9 +4155,9 @@ We validated this newly added CodeScan rule “Validate Flow Run Context Mode (F
   * The violation message and rule key are displayed as expected.
   * The reported issue correctly points to the affected Flow metadata file.
 
-<figure><img src="../../../../.gitbook/assets/image (2387).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4736).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2388).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4737).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -4205,22 +4205,22 @@ This parameter allows to control whether the rule should enforce explicit sharin
 \
 Current Behavior (After Fix):
 
-<figure><img src="../../../../.gitbook/assets/unknown (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/unknown (71).png" alt=""><figcaption></figcaption></figure>
 
 This behavior aligns with the intended design:
 
 * Reduces noise and false positives by default
 * Allows stricter enforcement when required by security standards
 
-<figure><img src="../../../../.gitbook/assets/image (2389).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4738).png" alt=""><figcaption></figcaption></figure>
 
 **Parameter set to False:**
 
-<figure><img src="../../../../.gitbook/assets/image (2390).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4739).png" alt=""><figcaption></figcaption></figure>
 
 **Parameter set to True:**
 
-<figure><img src="../../../../.gitbook/assets/image (2391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4740).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Added Data Flow Tracking for SOQL Injection Detection to rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}**
 
@@ -4253,7 +4253,7 @@ Verified the enhancement for sf:SOQLInjection via the following scenarios:
 * intermediate assignments / concatenations, and
 * the exact sink where the query is executed (Database.query).
 
-<figure><img src="../../../../.gitbook/assets/image (2392).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4741).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Enhancement to Cross-Site Scripting (Reflected) Detection with Data Flow Tracing logic**
 
@@ -4307,7 +4307,7 @@ Verified the enhancement of the rule **sfmeta:DmlInFlowLoop** via the following 
 * Validated that the rule correctly detects DML operations (Create/Update/Delete) executed inside Flow loops.
 * Validated that the rule reports a clear **Data Flow Trace** from the loop through intermediate elements (e.g., Decision) to the DML element.
 
-<figure><img src="../../../../.gitbook/assets/image (2393).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4742).png" alt=""><figcaption></figcaption></figure>
 
 **5.     Added New Parameters for rule “Flow DML Should Not Be Called In Loops”**
 
@@ -4382,7 +4382,7 @@ Verified the new, configurable **Ignore parameters** for the **sfmeta:DmlInFlowL
 * Flow types are correctly identified by the rule.
 * Violations are conditional based on rule configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (2394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4743).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -4426,7 +4426,7 @@ Faster time to market with business requirements
 * Integrated seamlessly with CICD workflows
 * Delivers on the Cursor promise of “making developers extraordinarily productive”
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 ### Application Enhancements
 
@@ -4441,7 +4441,7 @@ If issue comments are included in the CSV export with clear attribution & timest
 
 _The image below illustrates the new format for comments added into CSV exports:_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 **Value / Purpose**
 
@@ -4499,13 +4499,13 @@ We have verified all the fixes related to user license counting and orphan membe
    2. Executed dev-provided cleanup SQL query.
    3. Confirmed Orphan entries were successfully deleted.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Fixed an issue with “Issues” assignment and status update, where filters are not working (as "Bulkchange and Bulkassign" API returns 500 Internal error)**
 

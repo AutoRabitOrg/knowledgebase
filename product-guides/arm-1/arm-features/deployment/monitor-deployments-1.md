@@ -20,4 +20,4 @@ The Profile Compare History page provides a centralized view of all profile and 
 • Search, filter, and navigate through historical comparison entries\
 • Delete comparison records that are no longer required
 
-<figure><img src="../../../../.gitbook/assets/image (2405).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4754).png" alt=""><figcaption></figcaption></figure>

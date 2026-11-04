@@ -47,7 +47,7 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 3\. In the **Permission Set Assignments** related list, click **Edit Assignments**.
 
-<figure><img src="../../../../.gitbook/assets/image (3258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5606).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                       Permission Set Assignments on the Salesforce user record
 
@@ -55,7 +55,7 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 5\. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (3259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5607).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                       Vault Connect Admin in Available Permission Sets
 
@@ -74,7 +74,7 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 3\. Search for **Vault Connect** and open it.
 
-<figure><img src="../../../../.gitbook/assets/image (3260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5608).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Vault Connect in the App Launcher
 
@@ -88,15 +88,15 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 4\. Generate the API Token for this Salesforce org and copy it.
 
-<figure><img src="../../../../.gitbook/assets/image (3261).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5609).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Vault Connect navigation in AutoRABIT Vault
 
-<figure><img src="../../../../.gitbook/assets/image (3262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5610).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Generate Connection Token
 
-<figure><img src="../../../../.gitbook/assets/image (3263).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5611).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Token Generated Successfully
 
@@ -106,7 +106,7 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 1\. Back in Vault Connect, on the welcome screen, click **Have an API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (3264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5612).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Vault Connect welcome screen
 
@@ -114,13 +114,13 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 3\. Click **Connect**.
 
-<figure><img src="../../../../.gitbook/assets/image (3265).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5613).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Connect AutoRABIT Vault
 
 4\. Wait for the message **Connected securely to AutoRABIT Vault**.
 
-<figure><img src="../../../../.gitbook/assets/image (3266).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5614).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Connected securely to AutoRABIT Vault
 
@@ -130,23 +130,23 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 2\. Select the Salesforce object and click the **Configure Fields..**
 
-<figure><img src="../../../../.gitbook/assets/image (3267).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5615).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Object Discovery and Configure Fields
 
 3\. Select the fields from the **Available Fields** tab and click **Save Changes**.
 
-<figure><img src="../../../../.gitbook/assets/image (3268).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5616).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Available Fields and Save Changes
 
 4\. After the configuration done for the desired objects click **Go to Configured Objects** to see the configured object list.
 
-<figure><img src="../../../../.gitbook/assets/image (3269).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5617).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Go to Configured Objects
 
-<figure><img src="../../../../.gitbook/assets/image (3270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5618).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;                                                            Configured objects list
 

@@ -8,7 +8,7 @@
 
 ### Subscription Tab Feature Availability
 
-<figure><img src="../../../.gitbook/assets/image (708).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4546).png" alt=""><figcaption></figcaption></figure>
 
 ## Subscription Management: Overview <a href="#subscription-management-overview" id="subscription-management-overview"></a>
 
@@ -19,7 +19,7 @@ ARM offers an easy and centralized solution for a **Registered User and ADMIN** 
 1. Log in to your ARM account using the **Registered User/ADMIN** credentials.
 2. Hover your mouse over the **`Admin`** tab and click on **`Subscriptions`**.
 
-<figure><img src="../../../.gitbook/assets/image (709).png" alt="" width="189"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4547).png" alt="" width="189"><figcaption></figcaption></figure>
 
 3.  Your active plan details will be shown on the dashboard with details like:
 
@@ -27,7 +27,7 @@ ARM offers an easy and centralized solution for a **Registered User and ADMIN** 
     * **`Total Subscription Allotted:`** Number of licenses utilized to date.
     * **`Total Subscription Available:`** Total number of licenses available.
 
-    <figure><img src="../../../.gitbook/assets/image (710).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4548).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note**: By default, ARM considers you as part of a team, and if the subscription available denotes 'zero', it means you completely utilize the entire team subscription for your team only.
@@ -44,10 +44,10 @@ This section is about creating the teams and assigning members to those teams. T
 1. Log in to the **`Subscription Management`** dashboard using the Registered User credential.
 2. On the right side of the screen, click **`Create Team`**.
 
-<figure><img src="../../../.gitbook/assets/image (711).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4549).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter a **name** for your team.
-4. Choose a **`Team Administrator`** or click on the![](<../../../.gitbook/assets/image (712).png>)icon to create a user account and assign them permission as a Team Administrator. Fill in the required details; the newly created user will be assigned as a Team Administrator.
+4. Choose a **`Team Administrator`** or click on the![](<../../../.gitbook/assets/image (4550).png>)icon to create a user account and assign them permission as a Team Administrator. Fill in the required details; the newly created user will be assigned as a Team Administrator.
 
 {% hint style="info" %}
 **Important Notes**:
@@ -65,7 +65,7 @@ This section is about creating the teams and assigning members to those teams. T
 
 7. Click **`Save`**.
 
-<figure><img src="../../../.gitbook/assets/image (713).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4551).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. The newly created team will be displayed on the **`Subscription Management`** home page.
 9. For each team created, the following information is displayed:
@@ -76,9 +76,9 @@ This section is about creating the teams and assigning members to those teams. T
    * **`Subs. Consumed:`** Number of licenses consumed
    * **`Subs. Available:`** Number of licenses pending
 10. Additional options:
-    * **`Add New Resource:`** Click on the![](<../../../.gitbook/assets/image (714).png>)symbol to add new resources to the team. The team administrator can create users with their login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](user-management/delegate-approvals-to-another-user.md) section.
-    * **`Edit Team:`** Click on the![](<../../../.gitbook/assets/image (715).png>)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.
-    * **`Delete a Team:`** Click on the![](<../../../.gitbook/assets/image (716).png>)icon to delete the team. This process cannot be undone.
+    * **`Add New Resource:`** Click on the![](<../../../.gitbook/assets/image (4552).png>)symbol to add new resources to the team. The team administrator can create users with their login. However, if you need to add resources from the existing login, follow the steps mentioned in the [Delegate Users](user-management/delegate-approvals-to-another-user.md) section.
+    * **`Edit Team:`** Click on the![](<../../../.gitbook/assets/image (4553).png>)icon to modify the team details, like assigning a new team administrator, changing the subscription licenses, etc.
+    * **`Delete a Team:`** Click on the![](<../../../.gitbook/assets/image (4554).png>)icon to delete the team. This process cannot be undone.
 
 {% hint style="info" %}
 **Important Note:** If the current **Team Administrator** is replaced with another **Team Administrator**, then the **entire permissions** that the current administrator holds will be delegated to the new **administrator**.
@@ -98,7 +98,7 @@ Navigate to **`Admin > Subscription Management`** once you've received the licen
 
 Click on **`Choose File`** and upload the **`license key`** (.l4j file format). Click **`Upload`**.
 
-<figure><img src="../../../.gitbook/assets/image (717).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4555).png" alt=""><figcaption></figcaption></figure>
 
 The total subscription counts will be changed based on the user's license specified in the key.
 
@@ -109,14 +109,14 @@ ErrorIf an incorrect file is selected, a notification popup stating that the fil
 After uploading the license key, the administrator can allot the available subscriptions to the desired team.
 
 1. Look for the desired team on the **Subscription Management** page.
-2. Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (718).png>)**)** icon to update the subscription count for a team.
+2. Then, under the **`Actions`** tab, click on the **Edit (**![](<../../../.gitbook/assets/image (4556).png>)**)** icon to update the subscription count for a team.
 
-<figure><img src="../../../.gitbook/assets/image (719).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4557).png" alt=""><figcaption></figcaption></figure>
 
 3. The number of user licenses available for your account is displayed in the **`Subscriptions Available`** field.
 4. In the **`Team Subscriptions`** section, click on the **`-`** or **`+`** buttons to update the license count, then click **`Save`**.
 
-<figure><img src="../../../.gitbook/assets/image (720).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4558).png" alt=""><figcaption></figcaption></figure>
 
 All fields on the **Subscription Management** page will get updated.
 
@@ -159,12 +159,12 @@ AutoRABIT Support and Operations teams do not have visibility into which users s
 2. Navigate to Settings › Users.
 3.  Locate the user you want to modify<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2533).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4881).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  Delete User – Select the User and click on Delete Selected and Confirm the pop up icon to erase the account permanently.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2534).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4882).png" alt=""><figcaption></figcaption></figure>
 5. Confirm the action by clicking OK in the dialog.
 
 

@@ -11,24 +11,24 @@ To create a new masking rule:
 1. Navigate to the **Masking Rules** section and click **New Masking Rules**.
 2. Select the **Salesforce Org** for which the masking rule will be created.
 
-![Select Org](<../../../../.gitbook/assets/image (121).png>)
+![Select Org](<../../../../.gitbook/assets/image (582).png>)
 
 3. Click **Select Orgs** to view and choose from the available orgs.
 4. Click **New Masking Rules** to open the **Masking Rule** creation dialog.
 
-![New Rule Window](<../../../../.gitbook/assets/image (122).png>)
+![New Rule Window](<../../../../.gitbook/assets/image (583).png>)
 
 5. Fill in all required details in the rule creation form and click **Save**.
 
-![Rule Creation Form](<../../../../.gitbook/assets/image (123).png>)
+![Rule Creation Form](<../../../../.gitbook/assets/image (584).png>)
 
 6. Upon successful creation, a confirmation notification will appear.
 
-![Save Notification](<../../../../.gitbook/assets/image (124).png>)
+![Save Notification](<../../../../.gitbook/assets/image (585).png>)
 
 7. Click **OK**. The newly created rule will now appear in the **Masking Rules** list.
 
-![Rules List](<../../../../.gitbook/assets/image (125).png>)
+![Rules List](<../../../../.gitbook/assets/image (586).png>)
 
 8. Created rules are globally accessible at the org level and can be selected during config creation.
 

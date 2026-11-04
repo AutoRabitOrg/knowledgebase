@@ -46,7 +46,7 @@ The email address is not required for Git operations such as:
    * Email Address (Optional)
 5. Save the credential.
 
-<figure><img src="../../../../../.gitbook/assets/image (2519).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4867).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -58,7 +58,7 @@ The email address is not required for Git operations such as:
 4. Enter or update the **Email Address** field.
 5. Save the changes.
 
-<figure><img src="../../../../../.gitbook/assets/image (2522).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4870).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 

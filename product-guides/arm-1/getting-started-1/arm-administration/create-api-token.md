@@ -16,7 +16,7 @@ To generate your access token, you should:
 
 1.  Hover your mouse over the **`Settings`** tile and select the option: **`API Token Manager.`**<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
 \
 <br>
@@ -24,15 +24,15 @@ To generate your access token, you should:
 2.  Click on the **`Create API Token`** button to generate a new token.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 3. Enter the API **`Token Name`** on the next screen.&#x20;
 4. Click **`Create`**.\
    \
-   ![](<../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)<br>
+   ![](<../../../../.gitbook/assets/image (130).png>)<br>
 5.  Write down your newly generated token as you will need it soon.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:** For security reasons, viewing the token after closing the creation dialog is not possible. If necessary, create a new token. A maximum of 10 tokens are permitted for each user license. It is best to store the token securely, as with any password.
@@ -43,4 +43,4 @@ To generate your access token, you should:
 If an ARM user account is deactivated, the API Token will be deactivated simultaneously. In some cases, ARM needs to revoke or invalidate tokens, for example, when a user logs out of the ARM application. If you revoke a token, it can be reapproved any time before it expires.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4744).png" alt=""><figcaption></figcaption></figure>

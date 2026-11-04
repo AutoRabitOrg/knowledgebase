@@ -28,27 +28,27 @@ This article will guide you through the process of creating a new Release Label 
 
 3. Click on **`Create Release Label.`**\\
 
-<figure><img src="../../../../../../.gitbook/assets/image (1597).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2271).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next screen, give the release label creation process a **`Label Name`** and a short **`Description`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (1) (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2272).png" alt=""><figcaption></figcaption></figure>
 
 5.  Select the **`Repository`** and the **`Branch`**&#x63;ontaining the commit labels.\
     \
-    Note: For the version control repository registered in the SFDX structure, you must choose an additional option: Package Directory. To learn more about Package Directory, refer to: [Salesforce DX Metadata Format](../../../../../arm/salesforce-dx-metadata-format.md).
+    Note: For the version control repository registered in the SFDX structure, you must choose an additional option: Package Directory. To learn more about Package Directory, refer to: [Salesforce DX Metadata Format](../../../../../arm/arm-features/salesforce-dx/salesforce-dx-metadata-format.md).
 
-    <figure><img src="../../../../../../.gitbook/assets/image (5) (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2685).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (6) (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2686).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../../.gitbook/assets/image (7) (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (2687).png" alt=""><figcaption></figcaption></figure>
 6. Select the commit **`Label Type`**, i.e., **`Salesforce`** or **`Vlocity`**.
 
 {% hint style="info" %}
 **Important Note:** If you choose just one revision while creating a new release label, a notification message asks you to select at least **two revisions**. You can choose the **Single Revision** option directly from the dropdown on the **New Merge** screen to perform a merge using only one revision. This helps avoid the creation of unnecessary release labels.
 
-<img src="../../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+<img src="../../../../../../.gitbook/assets/image (1489).png" alt="" data-size="original">
 {% endhint %}
 
 **Supported Components for Delta Metadata Generation in Release Label Deployments**
@@ -104,7 +104,7 @@ Important Note: If you choose just one revision while creating a new Release Lab
 
 \\
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2273).png" alt=""><figcaption></figcaption></figure>
 
 It's always a good idea to break data into multiple pages when dealing with multiple-label records. You can browse **25**, **50**, **75**, or **100** records on a single page or navigate to the previous or next page using the **`Previous`** and **`Next`** buttons.
 
@@ -120,9 +120,9 @@ The **`Release Labels Summary`** screen has been designed to enhance user experi
    * Click on the ![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669707355377.png) icon to download the package.xml file in a .zip format.
 5. Click on **`View Dataset`** to view the components in that release label package. You can view the components in **`JSON View`** or **`Tree View`**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2274).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2275).png" alt=""><figcaption></figcaption></figure>
 
 6. Click on the **Merge** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669113759125.png)) to merge the release label to a branch.
 7. Click on the **Edit** icon (![](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-1669114041351.png)) to update the Release Label information if required. You can also use the **`Search`** box to filter the results based on the label name.

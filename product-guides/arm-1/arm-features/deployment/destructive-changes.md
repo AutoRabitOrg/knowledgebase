@@ -33,7 +33,7 @@ If certain components should only be removed after ensuring the new deployment i
 
 After selecting the list of components to be deployed to the target Salesforce org, go to the **`Destructive Members`** tab.
 
-<figure><img src="../../../../.gitbook/assets/1 (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (16).png" alt=""><figcaption></figcaption></figure>
 
 You’ll see the list of metadata components in your target org but not in your source under the **`Post-Destructive Changes`** tab. Select the checkbox next to a component you want to delete, and that component will be deleted when you deploy.
 

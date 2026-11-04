@@ -1,4 +1,4 @@
-# Understanding branches for Salesforce projects
+# Understanding Branches for Salesforce projects
 
 When you create an analysis project from Salesforce, the org or sandbox you authorize will become your main branch. You can add your sandboxes as analysis project branches by editing your project (from the **Project Analysis** page). This allows for easy comparison between the production orgs or sandboxes and is especially good for checking features before production.
 
@@ -11,7 +11,7 @@ When you create an analysis project from Salesforce, the org or sandbox you auth
 
 <figure><img src="../../../../.gitbook/assets/PA Edit 4.7.png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Click on![](<../../../../.gitbook/assets/image (55) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)button to add a new branch.
+3. Click on![](<../../../../.gitbook/assets/image (419).png>)button to add a new branch.
 
 <figure><img src="../../../../.gitbook/assets/SFAddBranch 4.8.png" alt=""><figcaption></figcaption></figure>
 
@@ -93,14 +93,14 @@ On this page, you can:
 
 #### Delete a branch <a href="#delete-a-branch" id="delete-a-branch"></a>
 
-For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on <img src="../../../../.gitbook/assets/image (1689).png" alt="" data-size="line">icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
+For example, to delete a comparison branch, navigate to the **Comparisons Branches** tab, click on <img src="../../../../.gitbook/assets/image (2356).png" alt="" data-size="line">icon and click on **Delete Comparison Branch**. Note that this process cannot be undone.
 
-<figure><img src="../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
 
 #### Rename the main branch <a href="#rename-the-main-branch" id="rename-the-main-branch"></a>
 
 To update the name of the main branch, navigate to the **Branches** tab, and look for the main branch.\
-Click on <img src="../../../../.gitbook/assets/image (1688).png" alt="" data-size="line">icon under the **Actions** tab and click on **Rename branch**.
+Click on <img src="../../../../.gitbook/assets/image (2355).png" alt="" data-size="line">icon under the **Actions** tab and click on **Rename branch**.
 
 <figure><img src="../../../../.gitbook/assets/Rename Main.png" alt=""><figcaption></figcaption></figure>
 

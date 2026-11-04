@@ -22,9 +22,9 @@ Select one of the following options for **Profile IP Range Handling**:
 * **Append** (Default)
 * **Replace**
 
-<figure><img src="../../../../../.gitbook/assets/image (2557).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4905).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2558).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4906).png" alt="" width="375"><figcaption></figcaption></figure>
 
 > **Note:** When changing the setting to **Replace**, ARM displays a warning indicating that deployments will synchronize Profile IP Ranges and remove any IP ranges not present in the source or branch metadata.
 

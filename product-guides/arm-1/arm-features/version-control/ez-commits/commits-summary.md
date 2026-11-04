@@ -61,7 +61,7 @@ Quick Merge allows direct merging from the Commits screen without navigating to 
 1.  Hover over the three dots beside a commit and click **Detailed View**.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1989).png" alt="" width="276"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2463).png" alt="" width="276"><figcaption></figcaption></figure>
 
 The detailed view includes:
 
@@ -75,15 +75,15 @@ The detailed view includes:
 *   Logs and ALM integration\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1990).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2464).png" alt=""><figcaption></figcaption></figure>
 
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1991).png" alt=""><figcaption><p>Visual display of Commit steps</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2465).png" alt=""><figcaption><p>Visual display of Commit steps</p></figcaption></figure>
 
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1992).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2466).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.55.45 PM.png" alt=""><figcaption><p>Commit details Report panel</p></figcaption></figure>
 
@@ -91,16 +91,16 @@ The detailed view includes:
 
 Static Code Analysis (SCA) is part of the security development lifecycle. Tools include ApexPMD, Checkmarx, Salesforce Scanner, and CodeScan. Violations are displayed by file and line<br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1993).png" alt=""><figcaption><p>Sample Static Code Analysis Report in EZ Commit details</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2467).png" alt=""><figcaption><p>Sample Static Code Analysis Report in EZ Commit details</p></figcaption></figure>
 
 ## Files Changed
 
 ARM compares metadata changes between branches/orgs. RED indicates deletions or changes from the source; GREEN indicates changes in the destination.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1995).png" alt=""><figcaption><p>Metadata Diff view</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2469).png" alt=""><figcaption><p>Metadata Diff view</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1996).png" alt=""><figcaption><p>Inline diff and download options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2470).png" alt=""><figcaption><p>Inline diff and download options</p></figcaption></figure>
 
 ## Commit Status Types
 
@@ -112,7 +112,7 @@ ARM compares metadata changes between branches/orgs. RED indicates deletions or 
 *   **No Modifications**: No differences found.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1997).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2471).png" alt=""><figcaption></figcaption></figure>
 
 ## Filtering Commits
 
@@ -128,13 +128,13 @@ Filter options include:
 *   Board (Salesforce or Vlocity)\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1998).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2472).png" alt=""><figcaption></figcaption></figure>
 
 ## Delete Commits/Merges
 
 Only users who created the commit or org admins can delete commits (unmerged only).
 
-<figure><img src="../../../../../.gitbook/assets/image (1999).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2473).png" alt=""><figcaption></figcaption></figure>
 
 **Note:**
 
@@ -145,10 +145,10 @@ Only users who created the commit or org admins can delete commits (unmerged onl
 
 Parallel commits from the same source org to different VC branches are shown in the **Commit Workspace**. Users may remove commits queued for deployment.
 
-<figure><img src="../../../../../.gitbook/assets/image (1103).png" alt="Commit workspace showing queued commits"><figcaption><p>Commit queue overview</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4351).png" alt="Commit workspace showing queued commits"><figcaption><p>Commit queue overview</p></figcaption></figure>
 
 ## Deployment Workspace
 
 Prevalidated deployments waiting in the queue are listed in the **Deployment Workspace**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1105).png" alt="Deployment workspace with pending validations"><figcaption><p>Prevalidation queue view</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4353).png" alt="Deployment workspace with pending validations"><figcaption><p>Prevalidation queue view</p></figcaption></figure>

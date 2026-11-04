@@ -25,10 +25,10 @@ AutoRABIT Vault suits the Salesforce environment and is built for our customers 
 2. Go to the **`Backup`** module.
 3. Select your **`Salesforce Org`**, **`Environment (Salesforce/nCino),`** and backup **`Configurations`** from the drop-down.Note:
    * A list of all scheduled and manual backups triggered to date will get displayed under the **`Backup Summary`** section.
-   * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1) (1).png" alt="" data-size="line">) icon under the **`Actions`** tab.
+   * To know more about the list of metadata and data being backed up or the configurations set for each backup, you can find it by clicking on the **`Backup Summary`** (<img src="../../../../.gitbook/assets/image (433).png" alt="" data-size="line">) icon under the **`Actions`** tab.
 4. To initiate a new backup, click on **`Backup Now`**.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Backup Now</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (461).png" alt=""><figcaption><p>Backup Now</p></figcaption></figure>
 
 5. On the next screen:
    * Enter the **`label`** of your choice or leave the auto-generated default label.
@@ -39,11 +39,11 @@ AutoRABIT Vault suits the Salesforce environment and is built for our customers 
 6. Select the **`Exclude Deleted Records`** checkbox to exclude the recently deleted records from your environment.
 7. Click **`Backup`**.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)  (30).png" alt="" width="491"><figcaption><p>Start Backup</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (462).png" alt="" width="491"><figcaption><p>Start Backup</p></figcaption></figure>
 
 8. You'll be taken to the **`Backup Summary`** screen to display the status of the recently triggered backup activity.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) ( (9).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (463).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
 
 ## Exclude Deleted Records from Backup – User Guide
 
@@ -56,10 +56,10 @@ This feature provides flexibility in managing what data gets included in backups
 3. Enable this option to exclude records residing in Salesforce's Recycle Bin from being backed up.
 4.  Enabling this ensures only active data is considered during the backup process.
 
-    <figure><img src="../../../../.gitbook/assets/image (2693).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5041).png" alt=""><figcaption></figcaption></figure>
 5.  Navigate to Backup and click "Backup Now".
 
-    <figure><img src="../../../../.gitbook/assets/image (2694).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5042).png" alt=""><figcaption></figcaption></figure>
 6. In the Start Backup window, select the configuration.
 7. You will see the "Exclude Deleted Records From Backup" toggle below the Backup Type.
 8. Toggle this ON if deleted records should not be included in the manual backup.
@@ -69,7 +69,7 @@ This feature provides flexibility in managing what data gets included in backups
 
 For each backup performed inside AutoRABIT Vault, you will find the details below on the **`Backup Summary`** screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Backup Summary Screen</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (464).png" alt=""><figcaption><p>Backup Summary Screen</p></figcaption></figure>
 
 | Attribute            | Description                                                                                                                                                                                                                                                                                                                                                                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

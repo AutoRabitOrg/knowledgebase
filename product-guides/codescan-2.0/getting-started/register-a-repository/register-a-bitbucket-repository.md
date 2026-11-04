@@ -82,7 +82,7 @@ If you didn't enter the key in Part 2, add it to the project now: in **`Reposito
 1. In the CodeScan sidebar, select your organisation name at the bottom.
 2. Note the **`Tenant ID`**.
 
-<figure><img src="../../../../.gitbook/assets/image (3043).png" alt="" width="235"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5391).png" alt="" width="235"><figcaption></figcaption></figure>
 
 #### Step 3: Build Your Webhook URL
 

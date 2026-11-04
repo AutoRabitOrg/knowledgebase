@@ -1,4 +1,4 @@
-# CI Job History
+# See Past CI Build Results
 
 ## CI Job History
 
@@ -12,15 +12,15 @@ The CI Job History page allows you to:
 * Trigger a new build for an existing CI job
 * Access build and deployment details, SCA reports, and more
 
-<figure><img src="../../../../.gitbook/assets/image (2254).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3395).png" alt=""><figcaption></figcaption></figure>
 
 **Deployment Workspace:** On the right-hand side of the CI Job History page, the Deployment Workspace displays builds in the deployment queue and the reasons for their queue status.
 
-<figure><img src="../../../../.gitbook/assets/image (2255).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3396).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1154).png" alt="Deployment Queue - Screenshot" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3095).png" alt="Deployment Queue - Screenshot" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1155).png" alt="Deployment Queue Details"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3096).png" alt="Deployment Queue Details"><figcaption></figcaption></figure>
 
 **Common Queue Messages and Required Actions**: Parallel processing limit reached: Wait for current processes to complete.
 
@@ -32,7 +32,7 @@ The CI Job History page allows you to:
 
 **Build Details:** Each Build displays the following information:
 
-<figure><img src="../../../../.gitbook/assets/image (1156).png" alt="Build Details Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3097).png" alt="Build Details Overview"><figcaption></figcaption></figure>
 
 **Build Label**: Name of the build.
 
@@ -48,29 +48,29 @@ The CI Job History page allows you to:
 
 **Warnings, Changes, Check-ins, and SCA**: Hover over the icon in Build Details to access additional build data:
 
-<figure><img src="../../../../.gitbook/assets/image (2256).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3397).png" alt=""><figcaption></figcaption></figure>
 
 **Warning**: Displays build-time warnings. If none, a "No Warnings Found" message appears.
 
 **Changes Metadata Changes**: Lists all modified metadata in the build.
 
-<figure><img src="../../../../.gitbook/assets/image (2257).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3398).png" alt=""><figcaption></figcaption></figure>
 
 **Destructive Changes**: Shows components marked for deletion. (Learn More)
 
-<figure><img src="../../../../.gitbook/assets/image (1161).png" alt="Destructive Changes Tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3102).png" alt="Destructive Changes Tab" width="563"><figcaption></figcaption></figure>
 
 **File Changes**: Displays added/modified files with line-level diffs. Red = deleted, Green = added/updated.
 
-<figure><img src="../../../../.gitbook/assets/image (1162).png" alt="File Changes Tab" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3103).png" alt="File Changes Tab" width="563"><figcaption></figcaption></figure>
 
 Individual file diffs are downloadable:
 
-<figure><img src="../../../../.gitbook/assets/image (1163).png" alt="Download Diff Icon" width="347"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3104).png" alt="Download Diff Icon" width="347"><figcaption></figcaption></figure>
 
 **Check-ins**: Displays a summary of revisions included in the build:
 
-<figure><img src="../../../../.gitbook/assets/image (2258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3399).png" alt=""><figcaption></figcaption></figure>
 
 **Important Notes**: Diffs for large files may only be downloadable, not viewable in UI.
 
@@ -88,11 +88,11 @@ Parent Revisions are blank for builds before 22.1.18-RELEASE.
 
 Static Code Analysis (SCA): SCA is part of the secure development lifecycle, conducted during code review using tools like CodeScan, ApexPMD, and Checkmarx.
 
-<figure><img src="../../../../.gitbook/assets/image (1165).png" alt="SCA Overview"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3106).png" alt="SCA Overview"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1166).png" alt="SCA Detail View" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3107).png" alt="SCA Detail View" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1167).png" alt="Violation Highlights"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3108).png" alt="Violation Highlights"><figcaption></figcaption></figure>
 
 Click a file to view violations, and select a violation to jump to its corresponding line in the code preview panel.
 
@@ -102,7 +102,7 @@ Click a file to view violations, and select a violation to jump to its correspon
 
 **Deployment Status**:
 
-**Icon Status:** ![](<../../../../.gitbook/assets/image (1169).png>) Validation successful ![](<../../../../.gitbook/assets/image (1170).png>) Validation failed Deployment successful Deployment failed
+**Icon Status:** ![](<../../../../.gitbook/assets/image (3110).png>) Validation successful ![](<../../../../.gitbook/assets/image (3111).png>) Validation failed Deployment successful Deployment failed
 
 **Deployment Log**: View or download deployment log.
 
@@ -124,17 +124,17 @@ Includes Dependency Analyzer for failed components.
 
 Downloadable in Manifest (JSON) or XLS.
 
-<figure><img src="../../../../.gitbook/assets/image (2259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3400).png" alt=""><figcaption></figcaption></figure>
 
 Reports older than 30 days are unavailable.
 
 **Quick Deployment Report**:
 
-<figure><img src="../../../../.gitbook/assets/image (2260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3401).png" alt=""><figcaption></figcaption></figure>
 
 **Rollback History**:
 
-<figure><img src="../../../../.gitbook/assets/image (1177).png" alt="Rollback History"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3118).png" alt="Rollback History"><figcaption></figcaption></figure>
 
 **Post Activities**: Displays post-deployment outcomes for various components:
 
@@ -142,6 +142,6 @@ Reports older than 30 days are unavailable.
 
 **Functional Tests**: View the percentage of test success/failure per build.
 
-<figure><img src="../../../../.gitbook/assets/image (1178).png" alt="Functional Tests Summary"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3119).png" alt="Functional Tests Summary"><figcaption></figcaption></figure>
 
 **Apex Tests (Coverage)**: View code coverage including test-executed classes, failed assertions, and overall coverage percentage.

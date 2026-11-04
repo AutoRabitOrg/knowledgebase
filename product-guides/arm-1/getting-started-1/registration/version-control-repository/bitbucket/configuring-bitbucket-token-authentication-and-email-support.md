@@ -46,7 +46,7 @@ The email address is not required for Git operations such as:
    * Email Address (Optional)
 5. Click **Save**.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4866).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -58,7 +58,7 @@ The email address is not required for Git operations such as:
 4. Enter or update the **Email Address** field.
 5. Save the changes.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2520).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4868).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -82,7 +82,7 @@ When registering a Bitbucket repository:
 3. Verify the Email Address is configured.
 4. Save the mapping.
 
-<figure><img src="../../../../../../.gitbook/assets/image (2521).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4869).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

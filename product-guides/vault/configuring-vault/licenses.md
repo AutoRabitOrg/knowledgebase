@@ -9,7 +9,7 @@ The **License and Subscription Tracking** feature in AutoRABIT Vault serves as a
 3. Enter the **License Key** provided by the AutoRABIT Vault team and click **Apply**.
 4.  The system will fetch and display license details based on the subscriptions associated with your organization.
 
-    <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2 (1).png" alt=""><figcaption></figcaption></figure>
 5. &#x20;**CustomerID:** Displays the unique **AutoRABIT Vault User ID** assigned to the customer within the AutoRABIT Vault application.
 6. **Last Sync:** Indicates the **date and time** when the data was last synchronized between Salesforce and AutoRABIT Vault.
 7.  **Subscription Information:** Provides a **comprehensive overview** of the customer’s subscription duration and related details:&#x20;

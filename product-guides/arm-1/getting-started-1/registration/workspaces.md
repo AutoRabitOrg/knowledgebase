@@ -32,11 +32,11 @@ Only **Org Administrators** can view, reset, or delete workspaces.
 1. Log in to ARM.
 2.  Go to **Settings › Workspaces**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1950).png" alt="" width="234"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2482).png" alt="" width="234"><figcaption></figcaption></figure>
 3.  The list shows every workspace ever created:\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2485).png" alt=""><figcaption></figcaption></figure>
 
 | Field                | Description                                           |
 | -------------------- | ----------------------------------------------------- |
@@ -69,9 +69,9 @@ Delete removes the workspace permanently (repositories remain intact).
 1. Click the trash-can icon next to the workspace.
 2.  Confirm twice—you cannot undo this.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1954).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2486).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (1955).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2487).png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If the **Delete** button is missing, your role lacks the required permission.
@@ -94,7 +94,7 @@ Need more space? An Org Admin can request an increase.
 * Super Admin logs in and opens **Workspace Mgmt**.
 * Raise the tenant limit—maximum **1 TB** (1000 GB)—based on subscription.
 
-<figure><img src="../../../../.gitbook/assets/image (728).png" alt="Super Admin screen showing workspace size adjustment"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4566).png" alt="Super Admin screen showing workspace size adjustment"><figcaption></figcaption></figure>
 
 Once approved, the new cap takes effect instantly and users can resume jobs without deleting old workspaces.
 

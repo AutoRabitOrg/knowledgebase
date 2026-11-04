@@ -1,4 +1,4 @@
-# ReplaceTeamRole
+# Replace Team Role
 
 The **ReplaceTeamRole** template replaces an existing team role with a new role on a global level. Choose a replacement value to replace the deleted value in any records that contain it.
 
@@ -12,7 +12,7 @@ To create this template, follow the steps below:
 6. Select the **ReplaceTeamRole** checkbox available under **Case Team Roles.**
 7. Click **Add**.
 8. On the next screen, you will find a **Test case name** appear automatically by default. To add the custom test data, click on **Add** button. You will have the following options to check:
-9. Click on![](<../../../../../../.gitbook/assets/image (48) (1) (1).png>)icon to add the below details:
+9. Click on![](<../../../../../../.gitbook/assets/image (973).png>)icon to add the below details:
    * **Member Role Name:** Enter the name of the current role you'd like to replace.
    * **Existing Team Role:** Enter the team Role to be replaced.
    * You can even add multiple values for the above-generated test case. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.&#x20;

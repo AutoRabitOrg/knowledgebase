@@ -122,7 +122,7 @@ Since Salesforce does not retrieve deleted/deactivated picklist values in a meta
 
 This configuration for RecordType PicklistValues option only works in the EZ-Commit module. If picklist values need to be replaced, use this approach.
 
-<figure><img src="../../../../.gitbook/assets/image (1554).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3765).png" alt=""><figcaption></figcaption></figure>
 
 Refer to [How to Configure Record Types Picklist Values](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/how-tos/configure-record-types-picklist-values) for more information.
 

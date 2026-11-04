@@ -52,11 +52,11 @@ This reduces context switching and accelerates release workflows.
 
 ·       Click the + (Create new branch) icon next to the Branch field.
 
-<figure><img src="../../../../../.gitbook/assets/image (2503).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4851).png" alt=""><figcaption></figcaption></figure>
 
 ·       The Create Branch panel opens on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (2504).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4852).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Enter Branch Details
 
@@ -78,35 +78,35 @@ Choose the appropriate Branch Type from the available options:
 
 ·       Production
 
-<figure><img src="../../../../../.gitbook/assets/image (2505).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4853).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: Configure Credentials
 
 Select an existing Credential from the dropdown.
 
-<figure><img src="../../../../../.gitbook/assets/image (2506).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4854).png" alt=""><figcaption></figcaption></figure>
 
 OR
 
 Click the + (Add Credential) icon to create a new credential.
 
-<figure><img src="../../../../../.gitbook/assets/image (2507).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4855).png" alt=""><figcaption></figcaption></figure>
 
 #### Credential Creation
 
 ·       Enter the credential Name.
 
-<figure><img src="../../../../../.gitbook/assets/image (2508).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4856).png" alt=""><figcaption></figcaption></figure>
 
 ·       Select the credential Type, such as Username with Password, SSH, CA, HashiCorp Vault, SSH Certificate, or Application Token.
 
 ·       Choose the Scope as Global or Private.
 
-<figure><img src="../../../../../.gitbook/assets/image (2509).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4857).png" alt=""><figcaption></figcaption></figure>
 
 ·       Provide the required authentication details, such as Username and Token/Password.
 
-<figure><img src="../../../../../.gitbook/assets/image (2510).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4858).png" alt=""><figcaption></figcaption></figure>
 
 ·       Click Save.
 
@@ -114,13 +114,13 @@ Click the + (Add Credential) icon to create a new credential.
 
 ·       After completing all required fields, click Create.
 
-<figure><img src="../../../../../.gitbook/assets/image (2511).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4859).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2512).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4860).png" alt=""><figcaption></figcaption></figure>
 
 ·       A success message appears: Branch created successfully.
 
-<figure><img src="../../../../../.gitbook/assets/image (2513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4861).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 7: Verify Branch Selection
 

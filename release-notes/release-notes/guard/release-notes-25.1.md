@@ -14,9 +14,9 @@ This release includes a few bug fixes, including improvements to information dis
 
 New Access Controls can now be created from a home page directly.
 
-<figure><img src="../../../.gitbook/assets/image (1748).png" alt=""><figcaption><p>Create Access Control</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4440).png" alt=""><figcaption><p>Create Access Control</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1749).png" alt=""><figcaption><p>Access Details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4441).png" alt=""><figcaption><p>Access Details</p></figcaption></figure>
 
 ***
 

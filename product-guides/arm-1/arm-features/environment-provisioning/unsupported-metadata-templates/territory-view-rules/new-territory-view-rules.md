@@ -17,7 +17,7 @@ The **NewTerritoryViewRules** template allows you to create new territory view r
     * Click **Add** to input custom test data.
     * Fill in the required fields and click **Save** to save the page.
 
-    ![New Territory View Rules - Example](<../../../../../../.gitbook/assets/image (1477).png>)
+    ![New Territory View Rules - Example](<../../../../../../.gitbook/assets/image (4684).png>)
 9. Click **Save** to save the complete template.
 10. You will be redirected to the [**Environment Provisioning**](https://knowledgebase.autorabit.com/docs/environment-provisioning) **History** screen.
 11. Click the **Run** button to execute the template in your target org.

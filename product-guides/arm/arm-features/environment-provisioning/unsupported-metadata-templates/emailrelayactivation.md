@@ -11,25 +11,23 @@ The **EmailRelayActivation** template enables configuration and activation of em
 5. Provide a **template name** and a **short description**.
 6. Select the **EmailRelayActivation** checkbox under **Manage Email Relay Activation**.
 7. Click **Add**.
+8.  On the next screen:
 
-8. On the next screen:
-   - A **Test Case Name** appears automatically.
-   - Click **Add** to enter custom test data.
-   - Complete the following fields:
-     - **Email Host**
-     - **Port**
-     - **TLS setting**
-     - **Restrict Relay to Domain**
-   - Enable the options:
-     - **Restrict relay**
-     - **Enable Email relaying**
+    * A **Test Case Name** appears automatically.
+    * Click **Add** to enter custom test data.
+    * Complete the following fields:
+      * **Email Host**
+      * **Port**
+      * **TLS setting**
+      * **Restrict Relay to Domain**
+    * Enable the options:
+      * **Restrict relay**
+      * **Enable Email relaying**
 
-   ![Email Relay Activation Settings](../../../../../.gitbook/assets/image%20(74).png)
+    ![Email Relay Activation Settings](<../../../../../.gitbook/assets/image (999).png>)
 
-   - Click **Save** to finalize the configuration.
-
+    * Click **Save** to finalize the configuration.
 9. Click **Save** again to complete the template creation.
-
 10. You will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.
 12. Select your **destination org** from the dropdown and specify the **email address(es)** for notifications.

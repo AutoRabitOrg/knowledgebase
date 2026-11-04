@@ -23,20 +23,20 @@ To use GCP as your storage environment to back up metadata and data objects, con
       * Enter a **name**, **billing account**, and **location**.
       * Click **Create**.
 
-<figure><img src="../../../../.gitbook/assets/image (100) (1).png" alt="Creating a GCP Project"><figcaption><p>Create GCP Project</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3584).png" alt="Creating a GCP Project"><figcaption><p>Create GCP Project</p></figcaption></figure>
 
 5. Upload the **GC Storage Credential File** (.json) for your GCP service account. To create one:
    * Go to the **Service Accounts** page.
    * Select a project and click **Create Service Account**.
 
-<figure><img src="../../../../.gitbook/assets/image (101) (1).png" alt="Creating a GCP service account"><figcaption><p>Create Service Account</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3585).png" alt="Creating a GCP service account"><figcaption><p>Create Service Account</p></figcaption></figure>
 
 ```
 - Provide a name and optional description.
 - Click **Done**, or **Create** to proceed with role assignment.
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (103) (1).png" alt="GCP service account info form" width="298"><figcaption><p>Service Account Details</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3587).png" alt="GCP service account info form" width="298"><figcaption><p>Service Account Details</p></figcaption></figure>
 
 ```
 - Optionally assign IAM roles and service account users/admins.
@@ -44,14 +44,14 @@ To use GCP as your storage environment to back up metadata and data objects, con
 - Under **Actions**, choose **Manage Keys**.
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (104) (1).png" alt="Manage keys for service account" width="563"><figcaption><p>Manage Service Account Keys</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3588).png" alt="Manage keys for service account" width="563"><figcaption><p>Manage Service Account Keys</p></figcaption></figure>
 
 ```
 - Go to **Add Key > Create new key**.
 - Choose **JSON** and click **Create** to download the key.
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (105) (1).png" alt="Create and download GCP service account key" width="546"><figcaption><p>Download JSON Key</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3589).png" alt="Create and download GCP service account key" width="546"><figcaption><p>Download JSON Key</p></figcaption></figure>
 
 ```
 - Upload this JSON file under the **GC Storage Credential File** field.

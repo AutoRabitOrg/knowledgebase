@@ -12,27 +12,27 @@ Also, users have the option to produce reports either weekly, monthly, yearly, o
 
 1. Hover your mouse over the **Reports** module and click on the Analytics.\
    \
-   ![](<../../../../.gitbook/assets/image (2146).png>)<br>
+   ![](<../../../../.gitbook/assets/image (2812).png>)<br>
 2.  A screen displays the weekly summary report of EZ-Commits, deployments,[ DataLoader](https://www.autorabit.com/blog/9-ways-a-salesforce-data-loader-assists-compliance/), TAF, and continuous integration.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2147).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2813).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2814).png" alt=""><figcaption></figcaption></figure>
 
 \
 3\. Click on the option to filter the data based on the chosen date range. The users can view the reports either **weekly**, **monthly,** or **yearly**.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2815).png" alt=""><figcaption></figcaption></figure>
 
 
 
 4. View the reports for the selected dates using the **date range** icons
 5.  For CI Jobs triggered in ARM, you have a provision to view detailed reports for each project or all the projects at once.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2150).png" alt="" width="431"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2816).png" alt="" width="431"><figcaption></figcaption></figure>
 6.  You can also expand the audit report of each module for better visualization.\
     <br>
 
@@ -45,7 +45,7 @@ Select the required date range to download under the Analytics screen, Click on 
 &#x20;Click on **Download** you can export the report to a Zip format.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2817).png" alt=""><figcaption></figcaption></figure>
 
 Users can download reports for:
 

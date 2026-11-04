@@ -6,31 +6,31 @@ The following articles describe using **Single DataLoader** to delete data from 
 2. Hover your mouse over the **`DataLoader`** module and choose the **`DataLoader`** option.
 3. Click **`Delete`** on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (79) (1) (1).png" alt="Delete option on Dataloader page"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1464).png" alt="Delete option on Dataloader page"><figcaption></figcaption></figure>
 
 4. Choose your [**`Salesforce Org`**](/broken/pages/9pLgfInGvztETx4cXCc2) and select your org environment (**`Production or Development Edition`**, **`Sandbox`**, or **`Pre-Release`**).
 5. The corresponding **`URL`** and **`Username`** are auto-generated based on the selection.
 6. Click **`Login and Fetch Objects`** to load all objects from your Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (80) (1) (1).png" alt="Login and Fetch Objects screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1465).png" alt="Login and Fetch Objects screen"><figcaption></figcaption></figure>
 
 7. Select the object (e.g., **`Account`**, **`Contact`**, **`Lead`**). Use **`search`** and **`filter`** options to find standard/custom objects.
 8. Click **`Next`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (81) (1) (1).png" alt="Object selection screen in Dataloader"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1466).png" alt="Object selection screen in Dataloader"><figcaption></figcaption></figure>
 
 9. Upload your **CSV** file by clicking **`Upload`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (82) (1) (1).png" alt="CSV upload screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1467).png" alt="CSV upload screen"><figcaption></figcaption></figure>
 
 10. Confirm the number of impacted records in the popup. Click **`OK`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (83) (1) (1).png" alt="Notification showing impacted records"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1468).png" alt="Notification showing impacted records"><figcaption></figcaption></figure>
 
 11. Prepare field mappings to match your CSV fields with Salesforce fields.
 12. Use **`Automap`** to auto-match fields by name.
 
-<figure><img src="../../../../../.gitbook/assets/image (84) (1) (1).png" alt="Automap field mapping UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1469).png" alt="Automap field mapping UI"><figcaption></figcaption></figure>
 
 13. View the number of mapped vs. total fields below the Automap checkbox.
 14. Use **`search`** to locate fields and **`Filter`** to narrow down:
@@ -40,7 +40,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 15. Ensure all required fields are mapped, then click **`Next`**.
 16. On the **`Process Summary`** screen:
 
-<figure><img src="../../../../../.gitbook/assets/2 (1) (1) (2).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2 (8).png" alt="Dataloader Process Summary screen"><figcaption></figcaption></figure>
 
 * Name the process/job.
 * Select or create a **Category**.
@@ -51,7 +51,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 19. Your job appears at the top in the **`DataLoader Summary`** screen.
 20. Click **`Run`** to execute the job manually.
 
-<figure><img src="../../../../../.gitbook/assets/image (86) (1) (1).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1471).png" alt="Run button in Dataloader Summary"><figcaption></figcaption></figure>
 
 21. Choose criteria for running the DataLoader job:
 
@@ -62,11 +62,11 @@ The following articles describe using **Single DataLoader** to delete data from 
 
 22. Click **`Run`**.
 
-<figure><img src="../../../../../.gitbook/assets/3 (1) (1) (2).png" alt="Run confirmation screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/3 (7).png" alt="Run confirmation screen" width="563"><figcaption></figcaption></figure>
 
 23. The **`Results of Last Run`** section shows live updates of successful and failed record deletions. You can view/download records in CSV format.
 
-<figure><img src="../../../../../.gitbook/assets/image (88) (1) (1).png" alt="Run results summary showing deleted records"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1473).png" alt="Run results summary showing deleted records"><figcaption></figcaption></figure>
 
 24. The number of impacted records is updated dynamically in the **Records** section.
 
@@ -74,7 +74,7 @@ The following articles describe using **Single DataLoader** to delete data from 
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (78) (1) (1).png" alt="More options menu"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1463).png" alt="More options menu"><figcaption></figcaption></figure>
 
 1. **Edit** – Modify job details.
 2. **Abort** – Stop a running process.
@@ -83,10 +83,10 @@ The following articles describe using **Single DataLoader** to delete data from 
 5. **Log** – View execution logs.
 6. **VR/WFR** – Review and re-enable validation/workflow rules. See [Validation/ Workflow Rules](../validation-workflow-rules.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (76) (1) (1).png" alt="Validation/Workflow Rules list UI"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1461).png" alt="Validation/Workflow Rules list UI"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (77) (1) (1).png" alt="Sample validation rule execution log"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1462).png" alt="Sample validation rule execution log"><figcaption></figcaption></figure>
 
 7. **Clone** – Duplicate a process. You can upload a new CSV and select another Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (74) (1) (1) (1).png" alt="Cloning an existing dataloader process"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1459).png" alt="Cloning an existing dataloader process"><figcaption></figcaption></figure>

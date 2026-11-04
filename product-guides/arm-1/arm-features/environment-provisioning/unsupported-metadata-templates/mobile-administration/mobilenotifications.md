@@ -22,7 +22,7 @@ The **MobileNotifications** template configures mobile notification preferences 
 
     Then click **Save** to confirm the configuration.
 
-    ![Mobile Notifications Settings](<../../../../../../.gitbook/assets/image (84).png>)
+    ![Mobile Notifications Settings](<../../../../../../.gitbook/assets/image (1009).png>)
 10. Click **Save** again to save the template.
 11. After successful creation, you will be redirected to the **Environment Provisioning History** screen.
 12. Click **Run** to execute the template on your destination org.

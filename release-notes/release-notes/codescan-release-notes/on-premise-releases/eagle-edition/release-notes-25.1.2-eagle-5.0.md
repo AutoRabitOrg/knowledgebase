@@ -21,13 +21,13 @@ Currently, the rule is not working as expected, as it does not raise violations 
 
 Example:
 
-<figure><img src="../../../../../.gitbook/assets/image (2072).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3653).png" alt=""><figcaption></figcaption></figure>
 
 Verified that the updated rule now correctly flags switch statements without a when-else block, ensuring violations are raised consistently for missing default cases.
 
-<figure><img src="../../../../../.gitbook/assets/image (2073).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3654).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3655).png" alt=""><figcaption></figcaption></figure>
 
 2. **Enhancement to “Avoid Reversed Operators” Rule**
 
@@ -46,16 +46,16 @@ Expected Behavior:
 
 This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
 
-<figure><img src="../../../../../.gitbook/assets/image (2075).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3656).png" alt=""><figcaption></figcaption></figure>
 
 Verified the new logic via the following scenarios:\
 1\. Rule sf:AvoidReversedOperators raises violations for reversed operator cases (=-, =+).
 
 2\. Rule does not raise false positives on valid operator usage (+=, -=).
 
-<figure><img src="../../../../../.gitbook/assets/image (2076).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3657).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2077).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3658).png" alt=""><figcaption></figcaption></figure>
 
 **3.   Enhancement to “CouplingBetweenObjects” Rule**
 
@@ -63,11 +63,11 @@ Modified the rule logic to correctly detect and report violations, so users can 
 
 Verified that the violation is triggered when the number of classes used exceeds the defined threshold value in the rule parameter (for example, if the threshold is set to 4 and 5 classes are used, a violation will be raised).
 
-<figure><img src="../../../../../.gitbook/assets/image (2078).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3659).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (2079).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3660).png" alt=""><figcaption></figcaption></figure>
 
 **4.   Enhancement to “Add Empty String” Rule**
 
@@ -86,7 +86,7 @@ Verified the following scenarios are all working as expected:<br>
 5. Empty string used with - operator and literals\
    Examples: '' - 123, 123 - '', '' - -42
 
-<figure><img src="../../../../../.gitbook/assets/image (2080).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3661).png" alt=""><figcaption></figcaption></figure>
 
 **5.  Enhancement to “Avoid Hard-Coded Resource References” Rule**
 
@@ -94,11 +94,11 @@ Enhanced the rule logic to identify hard-coded file path references and raise vi
 
 Validated the logic by verifying that users are able to see violations for use of the attribute value that starts with '/resource/'.
 
-<figure><img src="../../../../../.gitbook/assets/image (2081).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3662).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2082).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3663).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2083).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3664).png" alt=""><figcaption></figcaption></figure>
 
 **6.  Enhancement to Suppress Warnings Rule**
 
@@ -110,7 +110,7 @@ This logic was added to the rule in this enhancement.
 
 Verified the SuppressWarnings rule enhancement and validated that the suppression tag is working in all case-insensitive instances and our TrackSuppressWarnings rule is throwing violations for all cases.
 
-<figure><img src="../../../../../.gitbook/assets/image (2084).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3665).png" alt=""><figcaption></figcaption></figure>
 
 **7.  Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}**
 
@@ -122,14 +122,14 @@ Verified the enhanced logic of rule “UnusedFormalParameter” via the followin
 
 1.  Previously, a parameter (e.g., encounterIds) used in a SOQL string (e.g., WHERE Id IN :encounterIds) was wrongly reported as unused. Now, this is correctly detected as usage — no violation.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2085).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3666).png" alt=""><figcaption></figcaption></figure>
 2.  Also verified the following cases are all working as expected: \
     Verified: Parameter used in SOQL with bind variable (:encounterIds) — no violation \
     Verified: Parameter used via clause string assembly — no violation \
     Verified: Parameter incorrectly concatenated into SOQL string — violation \
     Verified: Parameter declared but not used anywhere — violation<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2086).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3667).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -147,7 +147,7 @@ When designing your rule improvement, the logic should:
     * Confirm the containing class uses implements keyword for one of the known Salesforce interfaces.
     * Ensure parameter types match exactly, e.g., SchedulableContext, Database.BatchableContext.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2087).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3668).png" alt=""><figcaption></figcaption></figure>
 2. **Visibility Enforcement**
    * Only suppress violations if the method visibility is public or global, as required by the platform.
    * Private or protected methods should never be eligible for suppression under this rule.
@@ -179,11 +179,11 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
     * SchedulableContext
     * Database.BatchableContext
 
-    <figure><img src="../../../../../.gitbook/assets/image (2088).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3669).png" alt=""><figcaption></figcaption></figure>
 
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2089).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3670).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes&#x20;
 
@@ -197,5 +197,5 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
     \
     Verified the SOQL Injection rule fix (which was causing stack overflow error). Validated that now users are not encountering the error and project analyses are working as expected.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2090).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3671).png" alt=""><figcaption></figcaption></figure>
 

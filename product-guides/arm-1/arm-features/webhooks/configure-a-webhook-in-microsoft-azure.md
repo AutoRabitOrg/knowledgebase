@@ -31,14 +31,14 @@ A developer’s app running on Azure or any internet-enabled platform can POST t
 2. Navigate to **Admin Section > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (965).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3504).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (966).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3505).png" alt=""><figcaption></figcaption></figure>
 
 8. Your webhook API token is now created.
 
@@ -49,18 +49,18 @@ A developer’s app running on Azure or any internet-enabled platform can POST t
 1. Sign in to [https://portal.azure.com/](https://portal.azure.com/).
 2. Open the Service Hooks page of your project:
 
-<figure><img src="../../../../.gitbook/assets/image (967).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3506).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Create Subscription**.
 4. In the wizard, select the target service for integration.
 
-<figure><img src="../../../../.gitbook/assets/image (968).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3507).png" alt=""><figcaption></figcaption></figure>
 
 5. Click **Next** to select an event trigger and configure filters if needed.
 
-<figure><img src="../../../../.gitbook/assets/image (969).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3508).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (970).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3509).png" alt=""><figcaption></figcaption></figure>
 
 6. Enter the **Payload URL**:
 
@@ -72,7 +72,7 @@ Example:\
 * **Username:** ARM login username
 * **Password:** Webhook API token generated in ARM
 
-<figure><img src="../../../../.gitbook/assets/image (971).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3510).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** To trigger webhooks for events like _Pull Request Created_ or _Pull Request Updated_, use the same URL and authentication method described above.
@@ -80,11 +80,11 @@ Example:\
 
 8. Review and test the configuration, then complete the wizard.
 
-<figure><img src="../../../../.gitbook/assets/image (972).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3511).png" alt=""><figcaption></figcaption></figure>
 
 9. Click **Finish**. The configured webhook will appear under **Service Hooks**.
 
-<figure><img src="../../../../.gitbook/assets/image (973).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3512).png" alt=""><figcaption></figcaption></figure>
 
 10. After the webhook triggers a build and it completes, refresh the **Service Hooks** tab to confirm success. Review webhook history for trigger count and success/failure status.
 

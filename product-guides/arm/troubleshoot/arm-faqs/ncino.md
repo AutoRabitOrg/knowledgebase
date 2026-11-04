@@ -19,7 +19,7 @@ Standard, published nCino templates are locked by design and **cannot be edited*
 
 This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.
 
-<figure><img src="../../../../.gitbook/assets/image (1889).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3710).png" alt=""><figcaption></figcaption></figure>
 
 **Solution:**
 
@@ -29,7 +29,7 @@ This error is encountered if you do not have the "AutoRABITOAuth2" installed in 
 4. Install "AutoRABITOAuth2."
 5.  Re-run the job.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1890).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3711).png" alt=""><figcaption></figcaption></figure>
 
 ### Record-Based Migration error use case <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
 
@@ -152,38 +152,38 @@ Step 3: When object belongs to Type 1 and Type 2A and data for the Lookup field 
 
 3\.      Click on Create New Job.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 
 
 4. On the next screen, choose the Source Org and the Destination Org that automatically populate the selected sandbox's details.
 5. Click Login and Fetch Objects.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 6. Next, Select Master Object. Example: LLC\_BI\_\_Loan\_\_c
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
 7. View the relationship between child objects/ancestor objects and the master object in the Schema (Grid View) section.&#x20;
 
 Change the grid view to a graph view by clicking the Switch to Graph View button. Click on the icon to view the graphical representation on full screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
 8. Filters and Mappings: You can extract records by using specified criteria in the Filters section
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 Extract a single record by providing unique external ID field value.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 Extract multiple records by applying SOQL in the query editor.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 Validate the query and apply filter condition to get required records.\
 Once filters applied, we need to map the external id fields between source and destination\
@@ -198,7 +198,7 @@ based on the type of the object that are defined in above section.
   Destination.
 * TYPE 4: No mapping is required.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 Using the Automap feature, you can map the fields automatically based on fetched object\
 fields with destination fields. To set up manual mappings, automapping needs to be\
@@ -209,15 +209,15 @@ mappings.
 
 * Select the checkbox under Skip Records for those Ancestor objects which you do not want to migrate data. Selecting this checkbox will only omit data migrating, but relational object fetching happens as usual.
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 * Next select the checkboxes for child objects which you want to migrate data.
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 10. Once done with mappings, then save the job with required job configuration and job details.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 Note: Enable Automatically apply master object filter on other dependency objects\
 checkbox.
@@ -227,7 +227,7 @@ references. All objects in the hierarchy are calculated based on the Master Obje
 
 11. Save the job and run it. Later verify the job results from main window.
 
-<figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 
 

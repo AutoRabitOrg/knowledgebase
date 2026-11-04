@@ -50,7 +50,7 @@ https://arm-qan5.autorabit.com/oauth/_callback
 
 1. Login into Salesforce
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
 2. In **Salesforce**, go to **Setup**.
 3. In **Quick Find**, search **External Client Apps**.
@@ -93,7 +93,7 @@ The URL you collected in step 1.
 * Perform requests at any time (refresh\_token, offline\_access)
 * Access custom permissions (custom\_permissions)
 
-<figure><img src="../../../../../.gitbook/assets/image (2672).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5020).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -102,7 +102,7 @@ The URL you collected in step 1.
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.
 2. **User credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.
 
-<figure><img src="../../../../../.gitbook/assets/image (2673).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5021).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

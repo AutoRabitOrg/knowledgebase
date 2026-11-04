@@ -56,13 +56,13 @@ Check that the value of the **PROJECT\_ID** Function Execution Parameter is **{$
 
 If this property has a different value, please edit and change it as seen in the image below.
 
-<figure><img src="../../../../.gitbook/assets/image (2421).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 ### Function Modifications
 
 Then, navigate to the functions tab and find the **Run CodeScan QIF** function.
 
-<figure><img src="../../../../.gitbook/assets/image (1546).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4593).png" alt=""><figcaption></figcaption></figure>
 
 Under the script tab, click the lower edit button and replace the script with the following:
 
@@ -468,7 +468,7 @@ Click **save**.
 
 The configuration tab should show the callback type is **ApexClass** and the ApexClass is **EvaluateCodeScanResult.**
 
-<figure><img src="../../../../.gitbook/assets/image (1547).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4594).png" alt=""><figcaption></figcaption></figure>
 
 Navigate to the Parameters tab and click **Edit.**
 
@@ -499,11 +499,11 @@ The Quality Gate rule should show **After Commit** as a Trigger.  This is the de
 
 We recommend adding the Static Code Analysis results related list to the User Story page to make them easier to access.
 
-<figure><img src="../../../../.gitbook/assets/image (1550).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4597).png" alt=""><figcaption></figcaption></figure>
 
 Violations will be stored as Static Code Analysis Violations.
 
-<figure><img src="../../../../.gitbook/assets/image (1551).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4598).png" alt=""><figcaption></figcaption></figure>
 
 ### Using the "Run CodeScan" button or running functions directly from the User Story page
 

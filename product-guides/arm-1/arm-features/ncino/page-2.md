@@ -2,7 +2,7 @@
 hidden: true
 ---
 
-# Page 2
+# nCino Compare
 
 ## nCino Compare
 
@@ -33,7 +33,7 @@ The Compare and Selective Deployment functionality in nCino enables users to per
 
 1.  Click on "Create Feature Dployment" to initate the featre deployment creatio
 
-    <figure><img src="../../../../.gitbook/assets/image (2446).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4794).png" alt=""><figcaption></figcaption></figure>
 2.  Select **“Template”** or **“Version Control”** to reveal the **Retrieve Dataset** option.
 
     <figure><img src="../../../../.gitbook/assets/Compare - 1.1 (2).png" alt=""><figcaption></figcaption></figure>

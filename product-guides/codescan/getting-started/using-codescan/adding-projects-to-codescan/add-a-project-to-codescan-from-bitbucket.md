@@ -21,7 +21,7 @@ This document is a guide on how to add a Bitbucket project to your CodeScan clou
 
 6. Once you select **Bitbucket**, it will redirect you to the **Bitbucket login** page. Validate your credentials and click on **Login**.
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="328"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (166).png" alt="" width="328"><figcaption></figcaption></figure>
 
 7. Enter the necessary information in the below fields and then click on **Add and Run Now.**
 

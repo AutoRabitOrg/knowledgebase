@@ -27,7 +27,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     The required object is selected from the object list. The selected object becomes the master object for schema configuration and filter setup.
 
-    <figure><img src="../../../../.gitbook/assets/image (2620).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4968).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Login and select object step with the object list available for selection</p>
 7.  ### Open the filter configuration
@@ -36,11 +36,11 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     Selecting Filters opens the Filter panel for the selected object. The panel supports two input options: Insert Value and Upload CSV File. In this flow, Insert Value is selected to build the condition directly in the application.
 
-    <figure><img src="../../../../.gitbook/assets/image (2621).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4969).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Schema step with Filters available for the selected master object</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2622).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4970).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Filter panel with Insert Value selected</p>
 8.  ### Build filter conditions
@@ -51,19 +51,19 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     The generated query is displayed in the query editor area as the conditions are added. This provides visibility into the query that will be validated and applied.
 
-    <figure><img src="../../../../.gitbook/assets/image (2623).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4971).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Field and operator selected before adding the condition</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2624).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4972).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Added conditions displayed in the filter grid</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2625).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4973).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Order By configured after adding filter conditions</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2626).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4974).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Record Count configured to limit the query output</p>
 9.  ### Validate and apply the filter
@@ -72,15 +72,15 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     Apply saves the filter configuration for the selected master object and returns the flow to the Schema step. The filter indicator confirms that a filter is configured for the object.
 
-    <figure><img src="../../../../.gitbook/assets/image (2627).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4975).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validate action available for the generated query</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2628).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4976).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validation success notification displayed for a valid query</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2629).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4977).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Apply action available after the filter is validated</p>
 10. ### Edit the generated query manually
@@ -91,31 +91,31 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     The manually edited query must be validated before it is applied. Once validation succeeds, the updated query can be applied to the selected object.
 
-    <figure><img src="../../../../.gitbook/assets/image (2630).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4978).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Confirmation message before manual query editing is enabled</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2631).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4979).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Manual query editing mode with builder controls disabled</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2632).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4980).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Updated query ready for validation</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2633).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4981).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validation confirmation for the manually edited query</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2634).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4982).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Apply action available after successful validation</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2635).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4983).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Processing state while the filter is applied</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2636).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4984).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Schema step showing the configured filter after the panel closes</p>
 11. ### Select the source object
@@ -124,7 +124,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     The required object is selected from the object list. This selected object is used as the master object in the Schema step.
 
-    <figure><img src="../../../../.gitbook/assets/image (2637).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4985).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Login and select object step with the object list available for selection</p>
 12. ### Open the filter configuration
@@ -133,11 +133,11 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     Upload CSV File is selected under Input Options. This option allows filter values to be loaded from a CSV file instead of entering each value manually.
 
-    <figure><img src="../../../../.gitbook/assets/image (2638).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4986).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Schema step with Filters available for the selected master object</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2639).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4987).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Filter panel with Upload CSV File selected</p>
 13. ### Upload the CSV file
@@ -148,23 +148,23 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     If the uploaded file format or content is not valid for the selected filter setup, Vault displays a validation message so the file can be corrected before continuing.
 
-    <figure><img src="../../../../.gitbook/assets/image (2640).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4988).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Field, operator, and upload action available for the CSV filter</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2641).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4989).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">CSV file selected from the local file picker</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2642).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4990).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Success notification after the CSV file is uploaded</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2643).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4991).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validation message displayed for upload-related issues</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2644).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4992).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Action menu showing available options after file upload</p>
 14. ### Auto-populate and review the query
@@ -173,11 +173,11 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     Order By can be configured to define the sort order for the query output. Record Count can be used when the job must limit the number of records returned by the query.
 
-    <figure><img src="../../../../.gitbook/assets/image (2645).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4993).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Generated query populated from the uploaded CSV file</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2646).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4994).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Record Count area available for limiting returned records</p>
 15. ### Validate and apply the filter
@@ -186,23 +186,23 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
 
     Apply saves the filter configuration for the selected master object. During processing, Vault applies the CSV-based filter and then returns to the Schema step with the filter configured for the object.
 
-    <figure><img src="../../../../.gitbook/assets/image (2647).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4995).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validate action available after the query is generated</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2648).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4996).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Processing state while validation or apply action is in progress</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2649).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4997).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Success notification after the query is validated</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2650).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4998).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Apply action available after validation</p>
 
-    <figure><img src="../../../../.gitbook/assets/image (2651).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4999).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Schema step showing the configured filter after the panel closes</p>
 16.

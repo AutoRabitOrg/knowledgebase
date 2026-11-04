@@ -1,4 +1,4 @@
-# Creating a Module
+# Create a Module
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
@@ -11,37 +11,37 @@ Whenever you change the package’s [metadata](https://www.autorabit.com/blog/th
 Follow these steps to create a module in AutoRABIT:
 
 1.  **Open Modularization**\
-    Hover over the [**SFDX**](../../../arm/salesforce-dx-metadata-format.md) tile and click **Modularization**.
+    Hover over the [**SFDX**](../../../arm/arm-features/salesforce-dx/salesforce-dx-metadata-format.md) tile and click **Modularization**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1437).png" alt="SFDX → Modularization" width="209"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2976).png" alt="SFDX → Modularization" width="209"><figcaption></figcaption></figure>
 2.  **Start a new module**\
     Click **Create Module**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1438).png" alt="Create Module button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2977).png" alt="Create Module button"><figcaption></figcaption></figure>
 3.  **Name and source**
 
     * Enter a **Module Name**.
     * Choose the **Source Org** that contains the metadata.\
       Click **Next**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1439).png" alt="Name and source org"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2978).png" alt="Name and source org"><figcaption></figcaption></figure>
 4.  **Select metadata**\
     Choose the **Metadata Types** (and their members) to include. Use the **Search Filter** to locate items quickly.
 
-    <figure><img src="../../../../.gitbook/assets/image (1440).png" alt="Select metadata"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2979).png" alt="Select metadata"><figcaption></figcaption></figure>
 
     <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p><strong>Important:</strong> Avoid adding metadata types that already belong to another module in the same branch.</p></div>
 5.  **Review selection**\
     Click **Selected Members** to view a summary of chosen metadata, then click **OK**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1441).png" alt="Selected members summary" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2980).png" alt="Selected members summary" width="563"><figcaption></figcaption></figure>
 6.  Click **Next** to open the **Validate and Push** screen.
 
-    <figure><img src="../../../../.gitbook/assets/image (1442).png" alt="Validate and Push"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2981).png" alt="Validate and Push"><figcaption></figcaption></figure>
 7.  **Validate dependencies**\
     Compare the Source Org with another Salesforce Org to ensure no dependent components are omitted.
 
-    <figure><img src="../../../../.gitbook/assets/image (1443).png" alt="Validation options"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2982).png" alt="Validation options"><figcaption></figcaption></figure>
 8. **Additional options**
    * **Ignore Missing Visibility Settings, If Package Contains Profiles Or PermissionSets** – visible only when Profiles/PermissionSets are included; deploys delta changes.
    * **Ignore Installed Components** – skips managed-package components already present in the target org.
@@ -57,7 +57,7 @@ Follow these steps to create a module in AutoRABIT:
     * **Email Address** – recipient of the module-creation email.
     * **Include metadata dependencies** – automatically pull in required dependent members.
 
-    <figure><img src="../../../../.gitbook/assets/image (1444).png" alt="Publish To settings"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2983).png" alt="Publish To settings"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Tip:** To fetch dependency data, the Dependency API must be enabled. See Salesforce docs [here](https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/tooling_api_objects_metadatacomponentdependency.htm).
@@ -76,10 +76,10 @@ Conditions:
 
 11. **Add / arrange dependencies**
 
-    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (1445).png>) / ![](<../../../../.gitbook/assets/image (1446).png>) icons to add or remove them.
-    * Use ![](<../../../../.gitbook/assets/image (1447).png>) / ![](<../../../../.gitbook/assets/image (1448).png>) to reorder; the top package deploys first.
+    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (2984).png>) / ![](<../../../../.gitbook/assets/image (2985).png>) icons to add or remove them.
+    * Use ![](<../../../../.gitbook/assets/image (2986).png>) / ![](<../../../../.gitbook/assets/image (2987).png>) to reorder; the top package deploys first.
 
-    <figure><img src="../../../../.gitbook/assets/image (1449).png" alt="Package dependencies"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2988).png" alt="Package dependencies"><figcaption></figcaption></figure>
 12. **Create the module**\
     Click **Create Module**. You’ll return to the **Modularization** home page, where you can monitor progress.
 13. **Module list columns**
@@ -91,17 +91,17 @@ Conditions:
     * **Validation Status** – pre-validation result plus log
     * **Status** – creation progress (Success, Failed, or In Progress)
 
-    <figure><img src="../../../../.gitbook/assets/image (1450).png" alt="Module list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2989).png" alt="Module list"><figcaption></figcaption></figure>
 
 **Sample email notification**
 
-<figure><img src="../../../../.gitbook/assets/image (1451).png" alt="Email example" width="483"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2990).png" alt="Email example" width="483"><figcaption></figcaption></figure>
 
 ***
 
 ### Additional Features <a href="#additional-features" id="additional-features"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (1452).png" alt="Additional features"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2991).png" alt="Additional features"><figcaption></figcaption></figure>
 
 1. **Actions**
    * **Edit Module** – update module details

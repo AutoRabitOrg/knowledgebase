@@ -16,11 +16,11 @@ A Salesforce administrator makes configuration changes directly in a sandbox or 
 1. Log in to ARM.
 2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2185).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2787).png" alt=""><figcaption></figcaption></figure>
 
 1.  Click the **Backup to Version Control** tile.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1217).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3733).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
 2. Enter a descriptive **Job name**.
 3. Add a short **Description**.
 4. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
@@ -36,7 +36,7 @@ Under **Build**, provide:
    * **Unmanaged package** – Retrieves components from an unmanaged package, so you can edit them.
    * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-<figure><img src="../../../../../.gitbook/assets/image (2186).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2788).png" alt=""><figcaption></figcaption></figure>
 
 **Additional build options**
 
@@ -49,18 +49,18 @@ Under **Build**, provide:
 6. **Run static analysis report** – Run an SCA tool before committing.
    * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-<figure><img src="../../../../../.gitbook/assets/image (2188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2790).png" alt=""><figcaption></figcaption></figure>
 
 
 
 * **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (2189).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2791).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1221).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3737).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 
 1. **Additional profile packaging options:**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
@@ -77,19 +77,19 @@ Enable **Auto commit** to push changes directly to your VCS:
 
 1. Select the **version control type** (Git, TFS, or SVN).
 2. Choose the **Repository**, **Branch**, and **Credential**.
-   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../../arm/salesforce-dx-metadata-format.md).
+   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../../arm/arm-features/salesforce-dx/salesforce-dx-metadata-format.md).
 3. Optional settings:
    * **Check out and commit with user’s credentials** – Commit all changes as the selected user.
    * **Check out with user credentials and commit with actual modified user credentials** – Preserve original authors.
    * **Configuration for recordTypes picklistValues** – Choose _Replace_, _Replace all_, or _Append_. ([Learn more](../../../../arm/troubleshoot/how-tos/configure-record-types-picklist-values.md))
 
-<figure><img src="../../../../../.gitbook/assets/image (2190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2792).png" alt=""><figcaption></figcaption></figure>
 
 #### Notifications <a href="#notifications" id="notifications"></a>
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (2191).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2793).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

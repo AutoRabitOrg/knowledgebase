@@ -1,4 +1,4 @@
-# Edit Web Lead
+# Edit Web to Lead
 
 The **EditWebLead** template allows you to configure or update Web-to-Lead settings in your Salesforce org via AutoRABIT's Environment Provisioning module.
 
@@ -21,7 +21,7 @@ The **EditWebLead** template allows you to configure or update Web-to-Lead setti
       * **Default Response Template:** Provide a default email template to be used if no auto-response rule is matched.
     * Click **Save** to save the configuration.
 
-    ![Edit Web Lead Settings](<../../../../../../.gitbook/assets/image (1481).png>)
+    ![Edit Web Lead Settings](<../../../../../../.gitbook/assets/image (4688).png>)
 9. Click **Save** again to finalize the template.
 10. You will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.

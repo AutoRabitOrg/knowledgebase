@@ -16,7 +16,7 @@ To create a Web to Case template, follow the below below:
     * **Hide Record Information** – Enable this option to hide record details in failure notification emails.
     * **Email Signature** – Enter the desired email ID to appear in responses.
 
-    <figure><img src="../../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (981).png" alt=""><figcaption></figcaption></figure>
 9. Click **Save** to finalize the template.
 10. After saving, you will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your target org.

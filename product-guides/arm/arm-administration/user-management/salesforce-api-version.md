@@ -4,7 +4,7 @@ ARM's ability to support Salesforce standard and custom objects is determined by
 
 **Troubleshooting:**
 
-Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment.&#x20;
+Ensure your Salesforce API version in ARM matches the API version of the Salesforce org. Failure to match the version may result in metadata object commit/deployment failure in your target environment.
 
 Use case:
 
@@ -27,14 +27,10 @@ The following sections highlight the newly supported metadata types for each API
   * `ExtlClntAppPushSettings`
   * `ExtlClntAppPushConfigurablePolicies`
 
-
-
 Metadata types added as part of the **API 61** upgrade:
 
 * EnablementMeasureDefinition
 * EnablementProgramDefinition
-
-
 
 Metadata types added as part of the **API 59** upgrade:
 
@@ -56,8 +52,6 @@ Below is a list of the Metadata types supported, which were added as part of **A
 | `PlatformEventSettings`        | `.settings`                 | `settings`                      |
 | `ExperiencePropertyTypeBundle` | NR                          | `experiencePropertyTypeBundles` |
 | ProcessFlowMigration           | NA                          | NA                              |
-
-
 
 **API 57.0 newly Supported Metadata Types**
 
@@ -126,7 +120,7 @@ Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.r
 
 <table><thead><tr><th width="78">S. No.</th><th>Metadata Type</th><th>File Extension</th><th>Folder Name</th></tr></thead><tbody><tr><td>1</td><td>EinsteinAgentSettings</td><td>EinsteinAgent.settings</td><td>settings</td></tr><tr><td>2</td><td>FieldRestrictionRule</td><td>.rule</td><td>fieldRestrictionRules</td></tr><tr><td>3</td><td>ForecastingObjectListSettings</td><td>ForecastingObjectList.settings</td><td>settings</td></tr><tr><td>4</td><td>ForecastingSourceDefinition</td><td>.forecastingSourceDefinition</td><td>forecastingSourceDefinitions</td></tr><tr><td>5</td><td>ForecastingType</td><td>.forecastingType</td><td>forecastingTypes</td></tr><tr><td>6</td><td>ForecastingTypeSource</td><td>.forecastingTypeSource</td><td>ForecastingTypeSources</td></tr><tr><td>7</td><td>FunctionReference(Beta)</td><td>.functions</td><td>functions</td></tr><tr><td>8</td><td>MktCalcInsightObjectDef</td><td>.mktCalcInsightObjectDef</td><td>mktCalcInsightObjectDefs</td></tr><tr><td>9</td><td>OcrSampleDocument</td><td>.ocrSampleDocument</td><td>ocrSampleDocuments</td></tr><tr><td>10</td><td>OcrTemplate</td><td>.ocrTemplate</td><td>ocrTemplates</td></tr><tr><td>11</td><td>RestrictionRule</td><td>.rule</td><td>restrictionRules</td></tr><tr><td>12</td><td>ServiceCloudVoiceSettings</td><td>ServiceCloudVoice.settings</td><td>settings</td></tr><tr><td>13</td><td>WorkforceEngagementSettings</td><td>WorkforceEngagement.settings</td><td>settings</td></tr></tbody></table>
 
-**API 51.0 newly  Supported Metadata Types**
+**API 51.0 newly Supported Metadata Types**
 
 | S. No | Metadata Type                 | File Sufix                     | Folder Name                    |
 | ----- | ----------------------------- | ------------------------------ | ------------------------------ |
@@ -146,6 +140,6 @@ Please refer [here](https://help.salesforce.com/s/articleView?id=release-notes.r
 
 Below is the list of **API 49.0** metadata types supported for both **Salesforce DX** and **non-DX platforms**:
 
-<figure><img src="../../../../.gitbook/assets/image (638).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (832).png" alt=""><figcaption></figcaption></figure>
 
 For versions **48.0 and earlier**, please refer [here](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_list.htm) to find the list of Salesforce objects and their supported API versions.

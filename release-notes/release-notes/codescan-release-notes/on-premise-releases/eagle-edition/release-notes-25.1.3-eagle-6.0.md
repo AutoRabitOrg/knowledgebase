@@ -62,9 +62,9 @@ Verified that sf:SecurePIIFields rules are being triggered in following scenario
 * Verified by giving custom parameters (ssn, credit\_card, passport) and validated that they are working as expected.
 * Verified by sending both string and integer value for credit\_card.
 
-<figure><img src="../../../../../.gitbook/assets/image (2291).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4368).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4369).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -132,11 +132,11 @@ Sanitize input to avoid possible SSRF.  Data Flow Trace -
 
 Make sure to check for internal methods also (e.g., FirstName variable on line 8 if used in the set endpoint call on line 11).
 
-<figure><img src="../../../../../.gitbook/assets/image (2293).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4370).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (2294).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4371).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Updated the description in the CodeScan APEX rule “Resource Injection” to account detection with Source-to-Sink Tracing {Rule ID: sf: ResourceInjection}**
 
@@ -201,11 +201,11 @@ Sanitize input to avoid possible resource injection. Data Flow Trace -
 
 Make sure to check for internal methods also (E.g. FirstName variable on line 8 if used in the set endpoint call on line 11)
 
-<figure><img src="../../../../../.gitbook/assets/image (2295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4372).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4373).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4374).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Updated the description in the CodeScan APEX rule “Avoid Calling SOQL and DML Inside Loops”**
 
@@ -293,11 +293,11 @@ Executed the Above scenario and validated the rule description was updated as ex
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (2299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4376).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (2300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4377).png" alt=""><figcaption></figcaption></figure>
 
 **4.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
 
@@ -322,18 +322,18 @@ A Unit test assertion with a Boolean literal is unnecessary since it always will
 \
 If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
 
-<figure><img src="../../../../../.gitbook/assets/image (2301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4378).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
 
-<figure><img src="../../../../../.gitbook/assets/image (2302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4379).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (2303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4380).png" alt=""><figcaption></figcaption></figure>
 
 **5.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
 
@@ -351,7 +351,7 @@ These thresholds are hardcoded and not configurable. We decided to introduce par
 * Improves usability and flexibility of the rule.
 * Increases adoption by making the rule adaptable to various team standards.
 
-<figure><img src="../../../../../.gitbook/assets/image (2304).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4381).png" alt=""><figcaption></figcaption></figure>
 
 Verified the sf:GodClass by validating that users are able to see the violations as expected for the below scenarios
 
@@ -372,11 +372,11 @@ When users provide the following Threshold values:
 
 * wmc=0, atfd=0, tcc=1                            Result: Everything violates
 
-<figure><img src="../../../../../.gitbook/assets/image (2305).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4382).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4383).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4384).png" alt=""><figcaption></figcaption></figure>
 
 **6.     Updated the rule description for “God Class Rule” {Rule ID: sf:GodClass}**
 
@@ -404,7 +404,7 @@ of Object-Oriented Systems {Springer, Berlin, 1 edition, October 2006. Page 80}.
 
 Verified the Updated God Class Rule Description and confirmed that users are able to see the updated description for the rule.
 
-<figure><img src="../../../../../.gitbook/assets/image (2308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4385).png" alt=""><figcaption></figcaption></figure>
 
 **7.     Updated the Rule Description for rule "em" Tags Should Be Used Instead of "i" {Rule ID: vf:ItalicTagsCheck}**&#x20;
 
@@ -425,9 +425,9 @@ Consequently:
 
 Verified the rule description and confirmed that the updated description is displayed as expected.
 
-<figure><img src="../../../../../.gitbook/assets/image (2309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4386).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4387).png" alt=""><figcaption></figcaption></figure>
 
 **8. Updated the Rule Description and Example for rule “Check for Lightning Migration Issues for Salesforce.com and Force.com Links” {Rule ID: vf:LightningAvoidHardcodedSalesforceDomain}**
 
@@ -443,13 +443,13 @@ Example:
 
 Verified these rules updated by confirming that users are able to see the updated description and the example.<br>
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2575).png" alt=""><figcaption></figcaption></figure>
 
 **9.   Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:
 
-<figure><img src="../../../../../.gitbook/assets/unknown (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/unknown (68).png" alt=""><figcaption></figcaption></figure>
 
 This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
 
@@ -462,7 +462,7 @@ We have verified the rule logic and validated that users are able to see the vio
 
 &#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (2311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4388).png" alt=""><figcaption></figcaption></figure>
 
 **10.  Enhanced rule “Aura Controller Naming Convention” {Rule ID: sf:AuraControllerNaming}**
 
@@ -485,9 +485,9 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../../.gitbook/assets/image (2312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4389).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2313).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4390).png" alt=""><figcaption></figcaption></figure>
 
 **12.   Enhancement to “sf:AvoidLogicInTrigger” Rule**
 
@@ -524,11 +524,11 @@ But: for, while, do-while, SOQL, DML → always Violation (allow-list does not s
 
 But: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
 
-<figure><img src="../../../../../.gitbook/assets/image (2314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4391).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2315).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4392).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2316).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4393).png" alt=""><figcaption></figcaption></figure>
 
 **13.     Enhancement to “Use Annotation on Test Class” Rule**
 
@@ -544,11 +544,11 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” via on th
 3. Class containing only testMethod methods without @IsTest → Verified: Violation raised.
 4. Class containing only @IsTest methods without class-level @IsTest → Verified: Violation raised.
 
-<figure><img src="../../../../../.gitbook/assets/image (2317).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4394).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4395).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4396).png" alt=""><figcaption></figcaption></figure>
 
 **14.  Enhancement to sf:ServerSideRequestForgery Rule**
 
@@ -568,7 +568,7 @@ Verified that the rule ServerSideRequestForgery is throwing violations when the 
 * HttpRequest.setEndpoint(String)
 * PageReference.getContent()
 
-<figure><img src="../../../../../.gitbook/assets/image (2320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4397).png" alt=""><figcaption></figcaption></figure>
 
 **15.     Enhancement to Resource Injection Rule**
 
@@ -588,9 +588,9 @@ Verified that the rule Resource Injection is throwing violations when the follow
 * HttpRequest.setEndpoint(String)
 * PageReference.getContent()
 
-<figure><img src="../../../../../.gitbook/assets/image (2321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4398).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2322).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4399).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Deprecations
 
@@ -604,9 +604,9 @@ Further, we have updated the descriptions for these rules to include:&#x20;
 
 Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irregular-whitespace and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../../.gitbook/assets/image (2323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4400).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4401).png" alt=""><figcaption></figcaption></figure>
 
 **2.   Deprecation of 2 rules for “disallow octal escape sequences in string literals” (one for Visualforce and one for JavaScript) {Rule ID: cs-vf:no-octal-escape and Rule ID: cs-js:no-octal-escape}**
 
@@ -618,9 +618,9 @@ Further, we have updated the descriptions for these rules to include:&#x20;
 
 Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escape and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../../.gitbook/assets/image (2325).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4402).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2326).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4403).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes&#x20;
 
@@ -632,9 +632,9 @@ Several customers reported that they were receiving the error message “Permiss
 
 We have validated this new logic and verified that no vulnerabilities were raised (which is the expected and correct behavior for this updated rule logic).
 
-<figure><img src="../../../../../.gitbook/assets/image (2327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4404).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2328).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4405).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Fixed an issue in the APEX rule “Resource Injection”**
 
@@ -646,7 +646,7 @@ However, several customers reported that this rule was firing improperly, even w
 
 We verified the new logic and validated that the rule is now working as originally designed.
 
-<figure><img src="../../../../../.gitbook/assets/image (2329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4406).png" alt=""><figcaption></figcaption></figure>
 
 **3.  Fixed an issue in the APEX rule “URLs of Salesforce pages should be relative, not absolute”**
 
@@ -670,9 +670,9 @@ Verified the updated logic to the rule AvoidAbsoluteURL by validating that the u
 * \*.documentforce.com
 * \*.marketingcloudapis.com
 
-<figure><img src="../../../../../.gitbook/assets/image (2330).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4407).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4408).png" alt=""><figcaption></figcaption></figure>
 
 **4.     Fixed an issue in the rule “Require CSRF Protection On GET Requests”**
 
@@ -703,9 +703,9 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 * Verified the rule behavior using by uploading only page file and then with corresponding meta.xml file with true and meta.xml file with false.
 
-<figure><img src="../../../../../.gitbook/assets/image (2332).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4409).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2333).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4410).png" alt=""><figcaption></figcaption></figure>
 
 **5.   Fixed an issue in the rule “Switch statements should not have too many case clauses”**
 
@@ -720,7 +720,7 @@ Verified that the below scenarios are working as expected.
 * Verified that the rule does not throw out of bounds exceptions in the analysis logs (it should not throw this and, as such, has been validated as working as expected).
 * Verified “sf:MaximumNumberOfCase” rule is triggered only when the maximum limit is exceeded.
 
-<figure><img src="../../../../../.gitbook/assets/image (2334).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4411).png" alt=""><figcaption></figcaption></figure>
 
 **6.  Fixed an issue in the rule “Immutable Field”, which was causing false positives {Rule ID: sf:ImmutableField}**
 
@@ -728,16 +728,16 @@ Several customers have reported that the current rule logic incorrectly flags pr
 
 Example code:
 
-<figure><img src="../../../../../.gitbook/assets/image (2335).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4412).png" alt=""><figcaption></figcaption></figure>
 
 **Expected Behavior:**\
 The rule should not raise a violation when the private field’s value can be modified through class property accessors (get/set methods) or other internal logic. Such fields are not immutable, and marking them as final would cause compilation errors
 
 Verified that the “sf:ImmutableField” is getting triggered only when the private field’s value cannot be modified.  Further, we verified the rule behavior using both mutable and immutable field patterns.
 
-<figure><img src="../../../../../.gitbook/assets/image (2336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4413).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2337).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4414).png" alt=""><figcaption></figcaption></figure>
 
 **7.     Fixed an issue in the rule “Type Reflection Is Security Sensitive” {Rule ID: sf:HotspotTypeReflection}**
 
@@ -745,5 +745,5 @@ During our routine, internal rule evaluation process, we discovered that this ru
 
 Verified the sf:HotspotTypeReflection rule by activating the rule in a specified Quality Profile. Then, in a subsequent project analysis, validated that the rule is now working as expected.
 
-<figure><img src="../../../../../.gitbook/assets/image (2338).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4415).png" alt=""><figcaption></figcaption></figure>
 

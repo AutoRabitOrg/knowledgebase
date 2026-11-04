@@ -14,7 +14,7 @@ Approval setup defines who can approve deployment and commit requests. The confi
 
 ### Approval settings configuration
 
-![](<../../../../.gitbook/assets/Unknown image (40)>)
+![](<../../../../.gitbook/assets/Unknown image (58)>)
 
 The approval workflow begins in My Account, where approval settings are maintained for deployment, data deployment, and feature commit activities. The Deployment - Approval Settings, Data Deployment - Approval Settings, and Feature Commit - Approval Settings sections define the Salesforce orgs, repositories, branches, and Level 1 and Level 2 approvers that will be available during CI Job configuration.
 
@@ -24,25 +24,25 @@ After approval levels are configured, they are assigned to a CI Job during desti
 
 ### Destination approval fields are available during CI Job setup
 
-![](<../../../../.gitbook/assets/Unknown image (1) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (59)>)
 
 During CI Job configuration, the Destination step displays separate approval fields for deployment and commit activities. Selecting the destination org makes the Level 1 approval and Level 2 approval fields available for deployment. The commit section provides the corresponding Commit level 1 approval and Commit level 2 approval fields after repository and branch information is selected.
 
 ### Level 2 deployment approval selection
 
-![](<../../../../.gitbook/assets/Unknown image (2) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (60)>)
 
 The Level 2 approval field provides the list of configured approvers for the selected destination. This selection completes the secondary deployment approval configuration for the job and determines who can review the deployment request at the second approval level.
 
 ### Commit approval selection after branch selection
 
-![](<../../../../.gitbook/assets/Unknown image (3) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (61)>)
 
 After the repository and branch are selected, the commit approval fields become active. The Commit level 1 approval list displays available approvers for the first commit approval stage. The approval selection is linked to the configured repository and branch context.
 
 ### Commit Level 2 approval selection
 
-![](<../../../../.gitbook/assets/Unknown image (4) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (62)>)
 
 The Commit level 2 approval field captures the final commit approver for the job. A note on the page explains that deployment and commit approvals that remain inactive for 14 days from the time of job creation are automatically rejected, ensuring that pending approval requests do not remain open indefinitely.
 
@@ -52,55 +52,55 @@ The build trigger starts the approval-controlled lifecycle. The build status, de
 
 ### CI Job List with trigger build action
 
-![](<../../../../.gitbook/assets/Unknown image (5) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (63)>)
 
 After the CI Job is configured, it appears in the CI Job List. The Trigger build action is available from the Actions column and starts the approval-controlled build workflow for the selected job.
 
 ### Trigger build panel with approval details
 
-![](<../../../../.gitbook/assets/Unknown image (6) (1) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (64)>)
 
 The Trigger build panel summarizes the CI job details, source details, destination details, selected deployment approvers, and selected commit approvers. This review confirms the approval chain before the build is submitted.
 
 ### CI Job History after build submission
 
-![](<../../../../.gitbook/assets/Unknown image (7) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (65)>)
 
 Once the build is submitted, the CI Job History page displays the new build record. The build status begins processing while the deployment and commit approval states are tracked separately in their respective columns.
 
 ### Deployment status waiting for L1 approval
 
-![](<../../../../.gitbook/assets/Unknown image (8) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (66)>)
 
 The Deploy status icon displays the tooltip Waiting for L1 Approval. This indicates that the build has completed the initial stage and the deployment request is pending review by the Level 1 deployment approver.
 
 ### Commit status waiting for L1 approval
 
-![](<../../../../.gitbook/assets/Unknown image (9) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (67)>)
 
 The Commit status icon displays the tooltip Waiting for L1 Approval. This indicates that the commit request is also pending Level 1 approval as part of the same first approval stage.
 
 ### Build action menu before approval completion
 
-![](<../../../../.gitbook/assets/Unknown image (10) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (68)>)
 
 The build action menu provides access to Build list, Build results, Build info, Build changes, Edit approvals, Notify approvals, and Build log download. These actions support build review, approval management, and notification handling while the request is pending approval.
 
 ### Build list view for the selected job
 
-![](<../../../../.gitbook/assets/Unknown image (11) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (69)>)
 
 The Build list option opens the CI Job Builds view for the selected job. The build record shows build number, build name, triggered date, triggered by, build status, deploy status, commit status, and available actions.
 
 ### Approval status in the build list
 
-![](<../../../../.gitbook/assets/Unknown image (12) (1) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (70)>)
 
 Within the build list, the Deploy status and Commit status columns display approval-state icons. Hovering over these icons shows the current approval state, allowing the approval progress to be monitored directly from the build record.
 
 ### Build action menu in the build list
 
-![](<../../../../.gitbook/assets/Unknown image (13) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (71)>)
 
 The Actions menu in the build list provides the same workflow options available from CI Job History. Edit Approvals and Notify Approvals remain available while approvals are pending.
 
@@ -110,31 +110,31 @@ Pending builds provide controls to update approval assignments and resend approv
 
 ### Edit Approvals panel
 
-![](<../../../../.gitbook/assets/Unknown image (14) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (72)>)
 
 The Edit Approvals panel displays the current deployment and commit approval assignments. Deployment approvals and Commit approvals are separated into Level 1 and Level 2 fields, allowing approvers to be reviewed or updated without recreating the build.
 
 ### Updating deployment Level 1 approvers
 
-![](<../../../../.gitbook/assets/Unknown image (15) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (73)>)
 
 The Level 1 dropdown under Deployment approvals displays available approvers. Updating this list changes who can act on the first deployment approval stage for the current build.
 
 ### Saving updated approval assignments
 
-![](<../../../../.gitbook/assets/Unknown image (16) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (74)>)
 
 After approval assignments are reviewed or updated, the Save action stores the changes. Updated approvers are used for the remaining approval actions in the workflow.
 
 ### Deploy Approval and Commit Approval actions
 
-![](<../../../../.gitbook/assets/Unknown image (17) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (75)>)
 
 The action menu now exposes Deploy approval and Commit approval. These actions open the approval decision panels for the pending deployment and commit requests.
 
 ### Notify Approvals action
 
-![](<../../../../.gitbook/assets/Unknown image (18) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (76)>)
 
 The Notify approvals action sends or resends approval notifications to the configured approvers. This is useful when pending approval requests need to be brought back to the attention of the assigned approvers.
 
@@ -144,55 +144,55 @@ The first approval stage consists of Deployment L1 approval followed by Commit L
 
 ### Deployment L1 approval panel
 
-![](<../../../../.gitbook/assets/Unknown image (19) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (77)>)
 
 The Deployment L1 Approvals panel opens from the Deploy approval action. The approver selects an approval action, either Approve or Reject, and provides comments before submitting the decision.
 
 ### Deployment L1 approval action selected
 
-![](<../../../../.gitbook/assets/Unknown image (20) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (78)>)
 
 After Approve is selected, the comments field remains required. The Submit action is available, but the approval cannot be completed until comments are provided.
 
 ### Deployment L1 comment validation
 
-![](<../../../../.gitbook/assets/Unknown image (21) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (79)>)
 
 If the approval decision is submitted without comments, the system displays the warning Please enter a comment. This validation ensures that each approval decision includes an audit comment.
 
 ### Deployment L1 approval submitted with comments
 
-![](<../../../../.gitbook/assets/Unknown image (22) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (80)>)
 
 After comments are entered, the approver submits the Deployment L1 approval. The workflow records the approval decision and progresses to the next approval activity in the sequence.
 
 ### Workflow moves to Commit L1 approval
 
-![](<../../../../.gitbook/assets/Unknown image (23) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (81)>)
 
 After Deployment L1 approval is completed, the Commit status displays Waiting for L1 Approval. This confirms that the first-level commit approval is the next pending action in the same approval stage.
 
 ### Commit L1 status remains pending
 
-![](<../../../../.gitbook/assets/Unknown image (24) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (82)>)
 
 The build remains available in the CI Job Builds view while the commit approval awaits action. The Deploy status reflects the completed deployment approval stage, and the Commit status continues to indicate the pending Level 1 commit approval.
 
 ### Commit Approval action selected
 
-![](<../../../../.gitbook/assets/Unknown image (25) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (83)>)
 
 The Commit approval action is selected from the build action menu to open the approval panel for the pending Commit L1 approval request.
 
 ### Commit L1 approval panel
 
-![](<../../../../.gitbook/assets/Unknown image (26) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (84)>)
 
 The Commit L1 Approvals panel presents the same approval decision model as deployment approvals. The approver selects Approve or Reject and provides comments before submission.
 
 ### Commit L1 approval submitted with comments
 
-![](<../../../../.gitbook/assets/Unknown image (27) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (85)>)
 
 The Commit L1 approval decision is submitted with comments. Once accepted, the first approval stage is completed for both deployment and commit activities.
 
@@ -202,73 +202,73 @@ The second approval stage consists of Deployment L2 approval followed by Commit 
 
 ### Deployment status waiting for L2 approval
 
-![](<../../../../.gitbook/assets/Unknown image (24) (1)>)
+![](<../../../../.gitbook/assets/Unknown image (82)>)
 
 After both Level 1 approvals are completed, the workflow advances to the second approval level. The Deploy status icon displays Waiting for L2 Approval, indicating that Deployment L2 approval is pending.
 
 ### Commit status waiting for L2 approval
 
-![](<../../../../.gitbook/assets/Unknown image (158)>)
+![](<../../../../.gitbook/assets/Unknown image (307)>)
 
 The Commit status icon also displays Waiting for L2 Approval. This confirms that the second approval level is active for both deployment and commit approval paths.
 
 ### Second-level approval actions available
 
-![](<../../../../.gitbook/assets/Unknown image (159)>)
+![](<../../../../.gitbook/assets/Unknown image (308)>)
 
 The action menu continues to provide Deploy approval and Commit approval while the Level 2 approvals are pending. Each action opens the corresponding Level 2 approval decision panel.
 
 ### Deployment L2 approval panel
 
-![](<../../../../.gitbook/assets/Unknown image (160)>)
+![](<../../../../.gitbook/assets/Unknown image (309)>)
 
 The Deployment L2 Approvals panel is used by the second-level deployment approver to review the request and select the required approval action.
 
 ### Deployment L2 approval action selected
 
-![](<../../../../.gitbook/assets/Unknown image (161)>)
+![](<../../../../.gitbook/assets/Unknown image (310)>)
 
 After Approve is selected for Deployment L2, comments are still required before submission. The system applies the same approval-comment rule across all approval levels.
 
 ### Deployment L2 comment validation
 
-![](<../../../../.gitbook/assets/Unknown image (162)>)
+![](<../../../../.gitbook/assets/Unknown image (311)>)
 
 Submitting Deployment L2 approval without comments displays the warning Please enter a comment. This keeps approval history complete and consistent.
 
 ### Deployment L2 approval submitted with comments
 
-![](<../../../../.gitbook/assets/Unknown image (163)>)
+![](<../../../../.gitbook/assets/Unknown image (312)>)
 
 After comments are entered, the Deployment L2 approval is submitted. The deployment approval path is completed after this final deployment approval decision.
 
 ### Commit status waiting for L2 approval after Deployment L2 completion
 
-![](<../../../../.gitbook/assets/Unknown image (164)>)
+![](<../../../../.gitbook/assets/Unknown image (313)>)
 
 After Deployment L2 approval is completed, the Commit status remains Waiting for L2 Approval. This confirms that the final pending approval action is the second-level commit approval.
 
 ### Deployment approval completed while commit approval continues
 
-![](<../../../../.gitbook/assets/Unknown image (165)>)
+![](<../../../../.gitbook/assets/Unknown image (314)>)
 
 The build list reflects that deployment approval has progressed while commit approval remains pending. The workflow continues until the Commit L2 approval is completed.
 
 ### Commit Approval action for L2 review
 
-![](<../../../../.gitbook/assets/Unknown image (166)>)
+![](<../../../../.gitbook/assets/Unknown image (315)>)
 
 The Commit approval action opens the Commit L2 approval workflow. This action is used to complete the final approval stage before commit execution becomes available.
 
 ### Commit L2 approval panel
 
-![](<../../../../.gitbook/assets/Unknown image (167)>)
+![](<../../../../.gitbook/assets/Unknown image (316)>)
 
 The Commit L2 Approvals panel presents the final commit approval decision. The approver selects Approve or Reject and provides comments to complete the review.
 
 ### Commit L2 approval submitted with comments
 
-![](<../../../../.gitbook/assets/Unknown image (168)>)
+![](<../../../../.gitbook/assets/Unknown image (317)>)
 
 After comments are added, the Commit L2 approval is submitted. This completes the Level 2 approval stage for the commit workflow.
 
@@ -278,31 +278,31 @@ After approval completion, the status icons change to Approved and execution act
 
 ### Deployment approval approved
 
-![](<../../../../.gitbook/assets/Unknown image (169)>)
+![](<../../../../.gitbook/assets/Unknown image (318)>)
 
 The Deploy status icon displays Approved after all deployment approval stages are completed. This status confirms that deployment governance requirements are satisfied.
 
 ### Deploy action becomes available
 
-![](<../../../../.gitbook/assets/Unknown image (170)>)
+![](<../../../../.gitbook/assets/Unknown image (319)>)
 
 After deployment approval is completed, the Deploy action becomes available in the Actions column. This action starts deployment processing for the approved build.
 
 ### Commit approval approved
 
-![](<../../../../.gitbook/assets/Unknown image (171)>)
+![](<../../../../.gitbook/assets/Unknown image (320)>)
 
 The Commit status icon displays Approved after the Commit L2 approval is completed. This confirms that all configured commit approvals are complete.
 
 ### Commit action becomes available
 
-![](<../../../../.gitbook/assets/Unknown image (172)>)
+![](<../../../../.gitbook/assets/Unknown image (321)>)
 
 The Commit action becomes available after commit approvals are completed. This action starts commit execution for the approved changes.
 
 ### Deploy and Commit actions available
 
-![](<../../../../.gitbook/assets/Unknown image (170)>)
+![](<../../../../.gitbook/assets/Unknown image (319)>)
 
 When both deployment and commit approvals are completed, the build provides execution actions for Deploy, Commit, and Deploy & Commit depending on the configured operation.
 
@@ -312,43 +312,43 @@ Approved builds can be deployed, committed, or executed using the combined Deplo
 
 ### Deploy execution starts
 
-![](<../../../../.gitbook/assets/Unknown image (173)>)
+![](<../../../../.gitbook/assets/Unknown image (322)>)
 
 Selecting Deploy triggers deployment execution. The system displays Please wait... Triggering deploy... while the deployment request is submitted.
 
 ### Deployment trigger success message
 
-![](<../../../../.gitbook/assets/Unknown image (174)>)
+![](<../../../../.gitbook/assets/Unknown image (323)>)
 
 After the deployment request is submitted successfully, a Success notification appears. The deployment status then moves into processing until execution completes.
 
 ### Deploy action after approval completion
 
-![](<../../../../.gitbook/assets/Unknown image (171)>)
+![](<../../../../.gitbook/assets/Unknown image (320)>)
 
 The Deploy action remains visible from the build record when deployment can be executed independently. The tooltip confirms the action label as Deploy.
 
 ### Commit execution starts
 
-![](<../../../../.gitbook/assets/Unknown image (175)>)
+![](<../../../../.gitbook/assets/Unknown image (324)>)
 
 Selecting Commit triggers commit execution. The system displays Please wait... Triggering commit... while the commit request is submitted.
 
 ### Commit trigger success and processing status
 
-![](<../../../../.gitbook/assets/Unknown image (176)>)
+![](<../../../../.gitbook/assets/Unknown image (325)>)
 
 After commit execution is submitted, a Success notification appears. Deploy and Commit status icons display processing indicators while the operations complete.
 
 ### Post-execution action menu with commit artifacts
 
-![](<../../../../.gitbook/assets/Unknown image (177)>)
+![](<../../../../.gitbook/assets/Unknown image (326)>)
 
 After commit execution begins, the action menu includes commit-related artifacts such as Commit log, Commit revision log, and Commit file diff in addition to build results and build information.
 
 ### Build completes with commit ID and successful statuses
 
-![](<../../../../.gitbook/assets/Unknown image (178)>)
+![](<../../../../.gitbook/assets/Unknown image (327)>)
 
 When processing completes, the build record displays the generated Commit ID and successful status indicators for Build status, Deploy status, and Commit status. This confirms that the approval-controlled workflow has completed successfully.
 
@@ -358,25 +358,25 @@ After execution, the completed build can be reviewed through history, action men
 
 ### CI Job History after completion
 
-![](<../../../../.gitbook/assets/Unknown image (179)>)
+![](<../../../../.gitbook/assets/Unknown image (328)>)
 
 The completed build is also visible from CI Job History. The status indicators allow completed approval-controlled builds to be reviewed alongside other CI Job runs.
 
 ### Build list refresh or processing state
 
-![](<../../../../.gitbook/assets/Unknown image (180)>)
+![](<../../../../.gitbook/assets/Unknown image (329)>)
 
 The build list may briefly display a processing overlay while status updates are refreshed. This indicates that the system is updating the build record after execution.
 
 ### Build Info action
 
-![](<../../../../.gitbook/assets/Unknown image (181)>)
+![](<../../../../.gitbook/assets/Unknown image (330)>)
 
 The Build info option is available from the action menu after workflow completion. This option opens a consolidated panel containing build, deployment, commit, and approval information.
 
 ### Build Information panel
 
-![](<../../../../.gitbook/assets/Unknown image (182)>)
+![](<../../../../.gitbook/assets/Unknown image (331)>)
 
 The Build Information panel provides a centralized audit view of the completed build. It displays job details, build number, build name, build status, deploy status, commit status, deployed Salesforce org, trigger information, Level 1 and Level 2 approvers, and the comments captured during deployment and commit approvals.
 
@@ -388,13 +388,13 @@ The following flow follows the CI Job through a new build submission and the res
 
 The nCino > CI Job History page provides the starting point for rerunning an existing CI Job. The table presents previous build entries and their Build status, Deploy status, and Commit status. Locate the intended CI Job and use its available build action to open the Trigger build panel. This creates a new build attempt without changing the earlier history entry.
 
-<figure><img src="../../../../.gitbook/assets/image (3298).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5646).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">CI Job History: identify the CI Job and its available actions</p>
 
 The Trigger build panel retains the selected job context. The CI job details, Source details, and Destination details sections identify the source organization, deployment destination, and commit target associated with the job. Review these values before entering the inputs for the new build.
 
-<figure><img src="../../../../.gitbook/assets/image (3299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5647).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Trigger build: verify job context and destination information</p>
 
@@ -402,13 +402,13 @@ The Trigger build panel retains the selected job context. The CI job details, So
 
 In Build inputs, provide a Build label and, where appropriate, a Build comment and Build notes. The Deployment type controls the requested operation: Commit and deploy performs both actions; Deploy only requests deployment; Commit only requests a repository commit. Select the option that matches the intended rerun. Approval selections are relevant to the operations enabled for that build.
 
-<figure><img src="../../../../.gitbook/assets/image (3300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5648).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Deployment type and approval-related controls</p>
 
 When approval controls are available, open the corresponding approver selector. The selectable entries are presented within the control, allowing the appropriate approvers to be chosen for the configured level. The available choices depend on the approval setup associated with the CI Job.
 
-<figure><img src="../../../../.gitbook/assets/image (3301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5649).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Open the approver list for the selected operation</p>
 
@@ -416,41 +416,41 @@ When approval controls are available, open the corresponding approver selector. 
 
 For an approval-enabled deployment or commit, the first approval stage is Level 1. Open the Level 1 selector and choose the required approvers. Where multiple selections are supported, the field summarizes the selected entries. Review the displayed selection before moving to the next approval level.
 
-<figure><img src="../../../../.gitbook/assets/image (3302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5650).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Select approvers for the first approval level</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3303).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5651).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Review the selected Level 1 approvers</p>
 
 Continue within the approval controls to include any additional approvers required by the job configuration. The selections should reflect the intended approval routing before the build is submitted.
 
-<figure><img src="../../../../.gitbook/assets/image (3304).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5652).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Add approvers to the relevant selection</p>
 
 The second approval stage is Level 2. Open its selector and choose the approvers responsible for the subsequent review. Level 1 and Level 2 remain distinct approval stages; the build proceeds through the configured stages rather than treating every selected approver as part of one undifferentiated list.
 
-<figure><img src="../../../../.gitbook/assets/image (3305).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5653).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Open the next approval-level selector</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5654).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Select Level 2 approvers</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5655).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Review the selected approvers for the next level</p>
 
 After completing the relevant selectors, verify that the required deployment and/or commit approval fields reflect the intended approvers. For a combined Commit and deploy build, the approval information for both operations must be considered.
 
-<figure><img src="../../../../.gitbook/assets/image (3308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5656).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Review the completed approval selections</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5657).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Confirm the build inputs before submission</p>
 
@@ -458,11 +458,11 @@ After completing the relevant selectors, verify that the required deployment and
 
 Select Trigger build after confirming the Build label, Deployment type, and applicable approvers. The interface processes the submission and returns to CI Job History. Submission initiates the build workflow; it does not by itself mean that deployment or commit approval has been completed.
 
-<figure><img src="../../../../.gitbook/assets/image (3310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5658).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Trigger build: submission in progress</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5659).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">CI Job History: the new build appears in the history</p>
 
@@ -470,11 +470,11 @@ Select Trigger build after confirming the Build label, Deployment type, and appl
 
 The newly submitted build is tracked using separate Build status, Deploy status, and Commit status indicators. Inspect the relevant operation status rather than relying only on the overall build result. Hovering over a status icon displays its current meaning, including an approval-waiting state when the corresponding operation has not yet received the required approval.
 
-<figure><img src="../../../../.gitbook/assets/image (3312).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5660).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Inspect the deployment status tooltip</p>
 
-<figure><img src="../../../../.gitbook/assets/image (3313).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5661).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center">Inspect the commit status tooltip</p>
 

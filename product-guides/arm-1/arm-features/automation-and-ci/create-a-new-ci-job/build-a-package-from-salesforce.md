@@ -16,11 +16,11 @@ A development team completes a set of enhancements in a sandbox over a two-week 
 1. Log in to ARM.
 2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2780).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the **Package from Salesforce** tile.
 
-<figure><img src="../../../../../.gitbook/assets/image (2179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2781).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter a descriptive **Job name**.
 2. Add a brief **Description**.
@@ -37,11 +37,11 @@ Under **Build**, provide:
    * **Unmanaged package** – Retrieves components from an unmanaged package, so you can edit them.
    * **Managed package** – Retrieves components from a managed package created in a partner dev org.
 
-<figure><img src="../../../../../.gitbook/assets/image (2180).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2782).png" alt=""><figcaption></figcaption></figure>
 
 **Additional build options**
 
-<figure><img src="../../../../../.gitbook/assets/image (2181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2783).png" alt=""><figcaption></figcaption></figure>
 
 1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – Automatically uses batch retrieval when a job approaches Salesforce limits. Specify **Batch size** (up to 10,000 items).
 2. **Exclude installed (managed) components and changes** – Skip all managed-package components.
@@ -54,16 +54,16 @@ Under **Build**, provide:
 
     For details on running **static code analysis in CI jobs**, see [this guide](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (2182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2784).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (2183).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2785).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1214).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3730).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
 
 1. **Additional profile packaging options:**
    * **Remove login IP ranges** – Omit IP-range settings from profiles.
@@ -78,7 +78,7 @@ To set global exclusions, open **My Account > My Salesforce Settings**, select *
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (2184).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2786).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

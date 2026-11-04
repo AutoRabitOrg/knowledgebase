@@ -13,7 +13,7 @@ The **EmailToCase** template allows users to configure either On-Demand Email-to
 7. Click **Add**.
 8.  On the next screen, a **Test Case Name** is automatically generated. Click **Add** to provide custom test data. Fill in the necessary details, then click **Save**.
 
-    ![EmailToCase Test Case Screen](<../../../../../../.gitbook/assets/image (67).png>)
+    ![EmailToCase Test Case Screen](<../../../../../../.gitbook/assets/image (992).png>)
 9. Click **Save** again to finalize and save the template.
 10. After creation, you will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template in your destination org.

@@ -1,4 +1,4 @@
-# Release Notes 22
+# ARM Release Notes 22
 
 ## ARM Release Notes 22.3
 
@@ -62,7 +62,7 @@ The revamp of the **Release Label** page is the feature of version 22.3 that sta
 * The **selected revisions** are also displayed on the same screen and updated dynamically as you select/unselect revisions.
 * Release labels are **color-coded** on the **Release Label Summary** screen for easier identification, and the search now provides leaner results.
 
-[**Read more →**](../../../product-guides/arm/arm-features/version-control/change-labels/release-labels.md)
+[**Read more →**](../../../product-guides/arm/arm-features/version-control/change-labels/release-labels/)
 
 #### 2. Additional Metadata Support in Search and Substitute <a href="#id-2-additional-metadata-support-in-search-and-substitute" id="id-2-additional-metadata-support-in-search-and-substitute"></a>
 
@@ -99,7 +99,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 * For improved user experience, the **metadata.zip** file upload option has been added to the **New Deployment** page itself. When uploading large files, this is extremely useful.
 * The **password policy** is reduced from **13** previously used passwords not being allowed to **5** previously used passwords. This gives users more options while resetting their passwords after the **three months** period or if they forget their password.
 * Improvements have been made to **VC Repo flow** as well as to **Salesforce Org flow**. You can now run scans on a repo or an org to be tagged to the same project and run comparisons so that you have traceability across the scans. The comparison feature allows for every delta scanned to be compared with the baseline. Scans are run on the source, and the results are available in the **Reports** module. Users can trace the jobs run using the unique identifier.\
-  Click [HERE](../../../product-guides/arm/static-code-analysis.md) to see a few points to note about these improvements.
+  Click [HERE](../../../product-guides/arm/arm-features/reports/static-code-analysis.md) to see a few points to note about these improvements.
 * **Super Admin** and the user currently logged in are disabled for ALL actions. They cannot be added, deleted, suspended, activated, deactivated, edited, or their roles delegated to other users. Super Admin is displayed at the top of the users' list for easy identification.
 * The **Users** module now displays the last login date and time of the users instead of the phone number, and the first and last names appear under the single **Name** column for better monitoring and tracking.
 * **Super Admin** can now enter the desired thread pool count while registering an ARM agent.
@@ -1583,7 +1583,7 @@ The users could previously build a new package (unlocked or managed) and update 
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/import%20packages.gif" alt=""><figcaption></figcaption></figure>
 
-[**Read more →**](../../../product-guides/arm/import-an-unlocked-managed-package.md)
+[**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/import-an-unlocked-managed-package.md)
 
 **Dev Hub management**
 
@@ -1591,7 +1591,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 ![Dev hub.gif](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Dev%20hub.gif)
 
-[**Read more →**](../../../product-guides/arm/registering-a-devhub.md)
+[**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/registering-a-devhub.md)
 
 #### 3. Step-based rollback <a href="#id-3-stepbased-rollback" id="id-3-stepbased-rollback"></a>
 

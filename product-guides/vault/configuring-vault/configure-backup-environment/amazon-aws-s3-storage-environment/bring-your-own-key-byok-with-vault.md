@@ -1,4 +1,4 @@
-# Bring your own Key (BYOK) with AutoRABIT Vault
+# Bring Your Own Key (BYOK) with AutoRABIT Vault
 
 ## **Overview** <a href="#overview" id="overview"></a>
 
@@ -38,4 +38,4 @@ To use the key within AutoRABIT Vault:
 8. Enable the checkbox for **AR Vault Hosted Backup Environment**.
 9. Click **Save Settings**.
 
-<figure><img src="../../../../../.gitbook/assets/image (97) (1).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563"><figcaption><p>Vault configuration for AWS-KMS BYOK setup</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3581).png" alt="Vault BYOK AWS-KMS Configuration Screen" width="563"><figcaption><p>Vault configuration for AWS-KMS BYOK setup</p></figcaption></figure>

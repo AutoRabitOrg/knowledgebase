@@ -34,7 +34,7 @@ To enable:
 
 3. Turn on Enable AutoRABIT CodeScan AI Code Assistant.
 
-<figure><img src="../../../.gitbook/assets/image (2978).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5326).png" alt=""><figcaption></figcaption></figure>
 
 When  enabled:
 
@@ -93,14 +93,14 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 1. Open any issue that displays the "AI Fix Available" indicator.
 2. Click the Assign dropdown.
 
-<figure><img src="../../../.gitbook/assets/image (2979).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5327).png" alt=""><figcaption></figcaption></figure>
 
 3. Select AI Code Assistant from the list.
 4. The AI agent begins generating a fix. The issue status updates to reflect progress.
 
 #### Bulk Assignment
 
-<figure><img src="../../../.gitbook/assets/image (2971).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5319).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the issues you want to assign
 2. Click Bulk Change.
@@ -114,7 +114,7 @@ You can assign a maximum of 10 issues per bulk action. If you select more than 1
 
 ### Reviewing AI Fixes
 
-<figure><img src="../../../.gitbook/assets/image (2972).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5320).png" alt=""><figcaption></figcaption></figure>
 
 Once the AI agent generates a fix, a new "Fixed by AI" tab appears in the issue detail view.
 
@@ -146,7 +146,7 @@ After assignment, an issue progresses through these states:
 
 ### Creating Pull Requests
 
-<figure><img src="../../../.gitbook/assets/image (2973).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5321).png" alt=""><figcaption></figcaption></figure>
 
 The AI Code Assistant supports two modes for Pull Request creation, configurable in Project Settings.
 
@@ -159,7 +159,7 @@ The AI Code Assistant supports two modes for Pull Request creation, configurable
 5. Related repository information
 6. Click Apply to create the Pull Request.
 
-<figure><img src="../../../.gitbook/assets/image (2974).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5322).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating Pull Requests in Bulk
 
@@ -173,7 +173,7 @@ To create pull requests for multiple AI-generated fixes:
 
 The pull requests are created from the branches where the issues were found, using dedicated AI fix branches.
 
-<figure><img src="../../../.gitbook/assets/image (2975).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5323).png" alt=""><figcaption></figcaption></figure>
 
 The PR is created from the branch where the issue was found, using a dedicated AI fix branch. This ensures the fix targets the correct codebase context.
 
@@ -191,7 +191,7 @@ Under **Filters**, expand **AI Code Assistant** to view issues by their current 
 
 Select a status to filter and view the corresponding issues.
 
-<figure><img src="../../../.gitbook/assets/image (2976).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5324).png" alt=""><figcaption></figcaption></figure>
 
 #### Automation Mode
 
@@ -274,7 +274,7 @@ The AI Users & Billing page provides administrators with the following details:
 * **Credits Used:** Displays the number of AI credits consumed by each user.
 * **Licenses:** Shows the AI licenses assigned to each user.<br>
 
-<figure><img src="../../../.gitbook/assets/image (2977).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5325).png" alt=""><figcaption></figcaption></figure>
 
 **Accessing AI Users & Billing**
 

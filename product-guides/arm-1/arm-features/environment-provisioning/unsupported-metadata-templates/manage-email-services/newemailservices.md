@@ -1,4 +1,4 @@
-# NewEmailServices
+# New Email Services
 
 The **NewEmailServices** template allows users to configure new Email Service records in a Salesforce org via AutoRABIT's Environment Provisioning.
 
@@ -17,7 +17,7 @@ The **NewEmailServices** template allows users to configure new Email Service re
     * Fill in the required fields with appropriate values.
     * Click **Save**.
 
-    ![New Email Services Test Case](<../../../../../../.gitbook/assets/image (77).png>)
+    ![New Email Services Test Case](<../../../../../../.gitbook/assets/image (1002).png>)
 9. Click **Save** again to save the template.
 10. After saving, you'll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your selected destination org.

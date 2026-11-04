@@ -36,7 +36,7 @@ For each policy you decide what happens when a condition triggers:
 
 Notifications can be sent to individual Guard users or to a notification group.
 
-<figure><img src="../../../../.gitbook/assets/image (2864).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5212).png" alt=""><figcaption></figcaption></figure>
 
 **Monitor multiple orgs**
 
@@ -76,12 +76,12 @@ When you create and activate a policy, Guard turns on Salesforce Event Monitorin
 
 `Guard → Risk → Transaction Security Policies`
 
-<figure><img src="../../../../.gitbook/assets/image (2861).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5209).png" alt=""><figcaption></figcaption></figure>
 
 1. In Guard, open **Risk** from the primary navigation.
 2. Select **Transaction Security Policies**.
 
-<figure><img src="../../../../.gitbook/assets/image (2865).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5213).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Create policy**.
 4. Choose a policy template: **Detect Large PII Exports**, **Impossible Travel**, **Legacy Device Access**, or **Unapproved App Access**.
@@ -100,7 +100,7 @@ Guard creates the corresponding Salesforce Transaction Security Policy in each s
 
 Use this template when you want to stop or alert on large Lead or Contact exports through the API or reports.
 
-<figure><img src="../../../../.gitbook/assets/image (2867).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5215).png" alt=""><figcaption></figcaption></figure>
 
 The policy fires when more than 2,000 Lead or Contact rows are processed in a single API or report event. That threshold is fixed in the template. We recommend setting the action to **Block & Notify**.
 
@@ -108,7 +108,7 @@ The policy fires when more than 2,000 Lead or Contact rows are processed in a si
 
 Use this template to catch sessions that originate from geographically impossible locations relative to a user’s previous login.
 
-<figure><img src="../../../../.gitbook/assets/image (2868).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5216).png" alt=""><figcaption></figcaption></figure>
 
 Guard looks at distinct source IPs for the same user within a short window. If more than one IP appears, the policy triggers. Recommended action is **Notify Only.**
 
@@ -120,7 +120,7 @@ VPN usage and split-tunnelling can produce false positives, since a user’s app
 
 Use this template when you want to restrict or alert on logins from outdated or vulnerable devices and operating systems.
 
-<figure><img src="../../../../.gitbook/assets/image (2869).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5217).png" alt=""><figcaption></figcaption></figure>
 
 The policy evaluates the login platform. Logins from Android versions below 5, and iOS versions below 25, are flagged. Recommended action is **Block & Notify**.
 
@@ -132,7 +132,7 @@ Before using this policy, please ensure you have first given the Guard user **Tr
 
 Use this template to stop unapproved connected apps from running API query calls against your org.
 
-<figure><img src="../../../../.gitbook/assets/image (2871).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5219).png" alt=""><figcaption></figcaption></figure>
 
 When you create the policy, choose which of your connected apps are trusted. Any API query from an app that is not on that list triggers the policy. Other API operations are not evaluated. Recommended action is **Block & Notify**.
 
@@ -150,7 +150,7 @@ The Transaction Security Policies list shows all your configured policies. From 
 * Edit a policy to change orgs, action or recipients.
 * Delete a policy when it is no longer needed. Deleting requires confirmation and also removes the underlying Salesforce Transaction Security Policy from the connected orgs.
 
-<figure><img src="../../../../.gitbook/assets/image (2872).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5220).png" alt=""><figcaption></figcaption></figure>
 
 #### How Guard and Salesforce interact
 

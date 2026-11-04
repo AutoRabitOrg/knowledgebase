@@ -12,7 +12,7 @@ To change the settings for deleting inactive branches and PRs, navigate to the p
 
 Changes to the setting will also be reflected in the Branches and Pull Requests tab.
 
-<figure><img src="../../../.gitbook/assets/image (1575).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3530).png" alt=""><figcaption></figcaption></figure>
 
 **Note**: Changes only take effect after the next analysis.
 

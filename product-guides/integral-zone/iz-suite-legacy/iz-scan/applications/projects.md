@@ -13,7 +13,7 @@ To view all the Applications -
    2.  **`Updated`** - The last date and time the application was scanned\
        &#x20;
 
-       <figure><img src="../../../../../.gitbook/assets/image (2574).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (4922).png" alt=""><figcaption></figcaption></figure>
 2. Click on the **`Plus`** icon to view all the branches or pull requests associated with the application.
 3. Summary details include -
    1. **`Type`** - Branch or Pull Request

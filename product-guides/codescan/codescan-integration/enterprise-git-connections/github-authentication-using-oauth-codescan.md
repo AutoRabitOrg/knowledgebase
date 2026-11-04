@@ -28,6 +28,6 @@ Connecting AutoRABIT (CodeScan) to GitHub Enterprise requires a secure handshake
 4. Paste the URL into your browser.
 5.  Keep the app public by enabling **Any Account.**<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2489).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4837).png" alt=""><figcaption></figcaption></figure>
 6. Click **Create GitHub App**
 7. After creation, copy the App ID, Client ID and Client Secret, and use our [ALM Configuration Article](configuring-and-managing-alm-integrations.md) to complete your setup.

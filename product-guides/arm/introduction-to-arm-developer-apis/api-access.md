@@ -11,12 +11,12 @@ To generate your access token, you should:
 1. Go to the **API Tokens** screen under the **Admin** module.
 2. Click on the **Create API Token** button to generate a new token.
 
-<figure><img src="../../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4588).png" alt=""><figcaption></figcaption></figure>
 
 3. Enter the **API token name** on the next screen.
 4.  Note down your newly generated token - you are going to need it soon.
 
-    <figure><img src="../../../.gitbook/assets/image (752).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4590).png" alt=""><figcaption></figcaption></figure>
 
     * For security reasons, it is not possible to view the token after closing the creation dialog. If necessary, create a new token. Max of **10 tokens** is permitted for each user license.
     * You should store the token securely, as for any password.
@@ -27,4 +27,4 @@ If a user account gets deactivated in AutoRABIT, the API Token will get deactiva
 
 **For example**, when a user logs out of an ARM application. If you revoke a token, it can be re-approved anytime before it expires.
 
-<figure><img src="../../../.gitbook/assets/image (753).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4591).png" alt=""><figcaption></figcaption></figure>

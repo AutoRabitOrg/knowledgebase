@@ -1,4 +1,4 @@
-# Edit Queue
+# Edit Queue Settings
 
 The **Queue** template allows users to edit queue configurations in Salesforce using AutoRABIT.
 
@@ -16,9 +16,9 @@ The **Queue** template allows users to edit queue configurations in Salesforce u
    * Click **Add** to enter custom test data.
    *   Fill in the required fields shown below:
 
-       ![Queue Configuration](<../../../../../.gitbook/assets/image (65).png>)
+       ![Queue Configuration](<../../../../../.gitbook/assets/image (990).png>)
 
-       ![Additional Settings](<../../../../../.gitbook/assets/image (66).png>)
+       ![Additional Settings](<../../../../../.gitbook/assets/image (991).png>)
    * Click **Save** to finalize the data entry.
 9. Click **Save** again to complete the template creation.
 10. You’ll be redirected to the **Environment Provisioning History** screen.

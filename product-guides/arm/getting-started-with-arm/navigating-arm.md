@@ -4,7 +4,7 @@
 
 You'll see this when you log in to your ARM account.
 
-<figure><img src="../../../.gitbook/assets/image (31) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (748).png" alt=""><figcaption></figcaption></figure>
 
 Let's get to know the main areas of the ARM application.
 
@@ -12,7 +12,7 @@ Let's get to know the main areas of the ARM application.
 
 You see a list of icons with the context in the top-right corner.
 
-<figure><img src="../../../.gitbook/assets/image (32) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (749).png" alt=""><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 
@@ -22,7 +22,7 @@ A **`Create New`** drop-down is available, which allows users to perform the pri
 
 Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.
 
-<figure><img src="../../../.gitbook/assets/image (33) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (750).png" alt=""><figcaption></figcaption></figure>
 
 ### **Quick Links** <a href="#quick-links" id="quick-links"></a>
 
@@ -33,7 +33,7 @@ Here you can:
 3. ARM **`Feedback`** page
 4. **`Feature Management`** _(visible only for Administrator for both SAAS and On-Premise instances)_
 
-<figure><img src="../../../.gitbook/assets/image (34) (2).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (751).png" alt="" width="452"><figcaption></figcaption></figure>
 
 ### **User Details** <a href="#user-details" id="user-details"></a>
 
@@ -43,13 +43,13 @@ Here you can:
 2. Change your current password
 3. Logout from your ARM account
 
-<figure><img src="../../../.gitbook/assets/image (35) (2).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (752).png" alt="" width="336"><figcaption></figcaption></figure>
 
 ## Left Navigation Bar <a href="#left-navigation-bar" id="left-navigation-bar"></a>
 
 On the left-hand side of the application, you see a list of icons with the context in it. These icons are nothing but the modules or features of ARM. The sub-modules which are part of it will be listed by hovering your mouse over each module.
 
-<figure><img src="../../../.gitbook/assets/image (36) (2).png" alt="" width="201"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (753).png" alt="" width="201"><figcaption></figcaption></figure>
 
 Let's examine each of these links in detail:
 
@@ -74,11 +74,11 @@ The **Deployment** process allows you to quickly and safely transfer new develop
 
 ARM Data Loader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
 
-### [Salesforce-DX (SFDX)](../salesforce-dx.md) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
+### [Salesforce-DX (SFDX)](../arm-features/salesforce-dx/) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
 
 Salesforce Developer Experience (DX) is a new set of tools that streamlines the entire development life cycle. It improves team development and collaboration, facilitates automated testing and continuous integration, and makes the release cycle more efficient and agile. It’s a new approach that supports team collaboration, focusing on predictability, quality, and standardized development life-cycle on Salesforce. Salesforce DX enables developers to build and release the latest features in a short period with minimal risk. ARM provides the best Salesforce Developer Experience with continuous integration and helps deliver software rapidly.
 
-### [Reports](../reports-overview.md) <a href="#reports" id="reports"></a>
+### [Reports](../arm-features/reports/reports-overview.md) <a href="#reports" id="reports"></a>
 
 ARM allows its users to view all the deployment, merge, and data loader-related information carried out in the Salesforce Org in the form of reports. This information improves productivity, accountability, and insight into your business data in the form of reports.
 

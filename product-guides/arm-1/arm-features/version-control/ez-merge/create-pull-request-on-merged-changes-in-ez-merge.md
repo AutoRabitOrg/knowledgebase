@@ -17,11 +17,11 @@ ARM creates a temporary branch, applies and validates the selected changes, and 
 
 Navigate to **Version Control → ez-Merge** and select the required source and destination branches.
 
-<figure><img src="../../../../../.gitbook/assets/image (2776).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5124).png" alt=""><figcaption></figcaption></figure>
 
 Select the required Merge Type Such as Single Revision, Entire Branch,Commit Label, Release Label, ALM Label.
 
-<figure><img src="../../../../../.gitbook/assets/image (2777).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5125).png" alt=""><figcaption></figcaption></figure>
 
 Configure **Pre-validation Merge** and the required validation options, such as:
 
@@ -29,15 +29,15 @@ Configure **Pre-validation Merge** and the required validation options, such as:
 * Static Code Analysis
 * Validate Deploy
 
-<figure><img src="../../../../../.gitbook/assets/image (2778).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5126).png" alt=""><figcaption></figcaption></figure>
 
 Enable **Create Pull Request On Merged Changes**.
 
 When enabled, ARM creates a Pull Request instead of directly committing the merged changes to the destination branch.
 
-<figure><img src="../../../../../.gitbook/assets/image (2779).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5127).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2780).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5128).png" alt=""><figcaption></figcaption></figure>
 
 The following options are not applicable to this flow:
 
@@ -55,7 +55,7 @@ ARM will:
 3. Run the configured merge validations.
 4. Create a Pull Request from the temporary branch to the selected destination branch.
 
-<figure><img src="../../../../../.gitbook/assets/image (2781).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5129).png" alt=""><figcaption></figcaption></figure>
 
 ### Process Logs
 
@@ -65,9 +65,9 @@ A new **Pull Request Creation** process log provides:
 * Pull Request creation details
 * Pull Request URL
 
-<figure><img src="../../../../../.gitbook/assets/image (2782).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5130).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2783).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5131).png" alt=""><figcaption></figcaption></figure>
 
 The **Commit** and **Post Merge Updates** process logs are not available for this flow because ARM does not directly commit changes to the destination branch.
 
@@ -77,9 +77,9 @@ Once the Pull Request is created, use the URL available in the process log to op
 
 The Pull Request can then go through the repository's standard review process, including external or AI-based code review.
 
-<figure><img src="../../../../../.gitbook/assets/image (2784).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5132).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (2785).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5133).png" alt=""><figcaption></figcaption></figure>
 
 The final merge can be completed through:
 

@@ -1,0 +1,261 @@
+# Salesforce Issues
+
+This article summarizes Salesforce's known issues and limitations that AutoRABIT users should consider:
+
+## Custom Field Translation Retrieval with Source Tracking Enabled
+
+**Issue Summary**\
+When retrieving metadata via Metadata API, if only a single CustomField is included in the package, Salesforce retrieves all Custom Field Translations. This occurs specifically in orgs where Source Tracking is enabled.\
+Reference: [Salesforce Known Issue - Custom Field Translation Retrieval](https://help.salesforce.com/s/issue?id=a028c00000gAwUSAA0)
+
+**Root Cause**\
+This is a Salesforce platform issue affecting orgs with Source Tracking enabled. When Source Tracking is active, all translated values are retrieved, regardless of whether the translation metadata type is explicitly included in the changeset or package.
+
+Source Tracking Settings Overview\
+Types of Source Tracking Settings\
+1\. Dev Hub - Enable Source Tracking (preference):\
+2\. Set in the production org (Dev Hub).\
+3\. Sandbox SourceTracking (permission):\
+4\. Inherits from the Dev Hub setting.\
+5\. Sandbox SourceTrackingDirectlyEnabled (preference):\
+6\. Standalone setting, available since February 2025, can be enabled directly in sandboxes.
+
+Orgs Supporting Source Tracking\
+Supported:
+
+* Developer and Developer Pro sandboxes (if enabled in production)
+  * Scratch orgs (always supported)
+* UnSupported:
+  * Production orgs
+  * Developer Edition orgs
+  * Partial Copy sandboxes
+  * Full sandboxes
+
+How to Enable Source Tracking
+
+*   Method 1: Via Dev Hub (Traditional)
+
+    * Enable "Source Tracking" in Dev Hub settings (Production).
+    * Refresh sandbox; new/refreshed Dev/Dev Pro sandboxes inherit this setting.
+
+
+* Method 2: Direct Enable in Sandbox (Since Feb 2025)
+  * Enable "Source Tracking" directly in the sandbox via Setup > Dev Hub.
+  * This uses the SourceTrackingDirectlyEnabled preference and is independent of the Dev Hub setting.
+
+Note: Once enabled, Source Tracking cannot be disabled by customers; a request to Salesforce Product Team is required.
+
+**Conclusion**\
+This issue is not related to the Winter '25 release. It is directly tied to the known Salesforce issue regarding translation retrieval when Source Tracking is enabled.
+
+**Action**\
+Track this issue for impacted environments and monitor Salesforce updates for a resolution. For further troubleshooting or disabling Source Tracking, escalate to Salesforce Product Support.
+
+## Deployment <a href="#deployment" id="deployment"></a>
+
+1. For Salesforce API version **45.0**, Salesforce does not allow deployment or retrieval of the **"PlatformEventChannel"** component in any environment. Therefore, AutoRABIT will not be able to retrieve the **"PlatformEventChannel"** component into the destination org even though the deployment is successful.
+2. The above case is also similar to the **"PermissionSetGroup"** component (for API version 45.0 only). However, Salesforce has provision for selected customers to deploy the **PermissionSetGroup** component through a pilot program that requires agreement to specific terms and conditions. To be nominated to participate in the program, do contact Salesforce.
+3. I am receiving the following error messages while trying to deploy the standard Task object: **"Value too long for field: Name maximum length is: 40"**\
+   **Ans:** This is a Salesforce limitation that creates duplicate list views while performing either Selective or Full Deployment. Salesforce's R\&D team is currently working on addressing this issue.
+4. While deploying controlled picklist fields with altered picklist values, I am getting an error: **"control field "XXXXXXXX" is not found"**\
+   **Ans:** This is a known limitation from Salesforce.\
+   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found](https://trailblazer.salesforce.com/issues_view?id=a1p3A0000003eAfQAI\&title=deploying-controlled-picklist-fields-with-altered-picklist-values-is-failing-with-error-control-field-xxxxxxxx-is-not-found)
+5. While deploying picklist fields with empty values in translations, the deployment is successful; but any blank values are ignored and not persisted in the destination org. This is a known issue from Salesforce, and the Salesforce team is working to resolve it.\
+   **Reference:** [https://trailblazer.salesforce.com/issues\_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api](https://trailblazer.salesforce.com/issues_view?id=a1p3A000000KRWiQAO\&title=unable-to-update-translation-record-with-blank-null-value-via-metadata-api)
+6. A report with multiple subfolders was created by the user in Salesforce, and this report was subsequently added to **Skip Members** in ARM. Next, a job was created and the **Do Not Include Skip Members** check box was selected. After the job was finished, it was discovered that the report had not been skipped as anticipated. Analysis revealed that Salesforce is not displaying information about the parent folder. So, ARM cannot retrieve the right file path for the reports contained in the sub-folders.
+
+{% hint style="info" %}
+**Important Notes:**
+
+* This issue exists both for **CI Jobs** as well as **Deployments**, in **DX Repo** and **Non-DX Repo.**
+* Jobs with skipped reports without any subfolders are working as expected.
+{% endhint %}
+
+7. It is not possible to deploy the removal of **Field dependency** values from one org to another because **Field Dependencies** cannot be removed via **Metadata API**. This is expected behavior and a known limitation from Salesforce.\
+   **Reference:** [https://developer.salesforce.com/docs/atlas.enus.api\_meta.meta/api\_meta/meta\_field\_types.htm#meta\_type\_valueset](https://developer.salesforce.com/docs/atlas.enus.api_meta.meta/api_meta/meta_field_types.htm#meta_type_valueset)
+8. A deployment in ARM might fail with the following error: **\`UNKNOWN\_EXCEPTION: An unexpected error occurred. Please include this ErrorId if you contact support.\`** This API exception is thrown by Salesforce and not by AutoRABIT. We don't have any more information about these errors. Please get in touch with **Salesforce Customer Support** and provide them with the deployment **Async Request ID** and the error message for further assistance.
+9. If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
+   Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:
+
+<figure><img src="../../../../../.gitbook/assets/image (1803).png" alt="" width="563"><figcaption></figcaption></figure>
+
+10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm)
+
+    To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.
+
+<figure><img src="../../../../../.gitbook/assets/image (1804).png" alt="" width="563"><figcaption></figcaption></figure>
+
+### Deploying Case Creation Notification Template in Support Settings (Case Settings)
+
+**Summary**
+
+When the **Case Creation Notification Template** is set to **None** in the Salesforce UI, Salesforce removes the related node from the Case.settings-meta.xml file. As a result, this value cannot be deployed or cleared via metadata deployment (including CI jobs) and must be updated manually in the target org UI.
+
+**Details**
+
+When you configure **Case Creation Notification Template** to **None** in Salesforce (Setup → Support Settings), Salesforce updates the underlying metadata by **removing** the corresponding XML node from Case.settings-meta.xml.
+
+For example, when a template is configured, the metadata contains:
+
+{% code overflow="wrap" %}
+```
+<caseCreateNotificationTemplate>unfiled$public/SalesNewCustomerEmail</caseCreateNotificationTemplate>
+```
+{% endcode %}
+
+When this template is changed to **None** in the UI, Salesforce removes the `<caseCreateNotificationTemplate> node entirely from Case.settings-meta.xml`.
+
+**Impact on Deployments**
+
+* **Deployments complete successfully** (no validation or deployment errors are reported).
+* However, **the Case Creation Notification Template value is not updated in the target org** when trying to deploy a state where the template is set to **None**.
+* Because the \<caseCreateNotificationTemplate> node is missing from the source metadata, there is **no instruction in the deployment** to remove or clear the value in the target org.
+
+We validated this behavior using the **Salesforce CLI** as well and observed the same outcome. This confirms that the behavior is a **Salesforce platform / Metadata API limitation**, not an issue specific to AutoRABIT or any other deployment tooling.
+
+**Scope and Affected Deployment Methods**
+
+This limitation applies regardless of the deployment mechanism:
+
+* Salesforce CLI (SF CLI)
+* Metadata API–based deployments
+* CI/CD pipelines and deployment tools (including AutoRABIT)
+
+Any tool relying on the Metadata API will be subject to the same behaviour.
+
+**Recommended Workarounds**
+
+To manage the **Case Creation Notification Template** when you need to set it to **None** or change it:
+
+1. **To clear/unset the template (set to None):**
+   * Perform the change **directly in the target org UI** (Setup → Support Settings → Case Creation Notification Template → set to **None**).
+   * This action **cannot** be automated via metadata deployment.
+2. **To set a specific valid template via deployment:**
+   * Ensure the desired template is available and active in both source and target orgs.
+   * Include the \<caseCreateNotificationTemplate> node in Case.settings-meta.xml with the correct template API name.
+   * Deploy the updated Case.settings-meta.xml as usual.
+3. **Important constraint:**
+   * Metadata deployment can **set** a valid, existing template value.
+   * Metadata deployment **cannot explicitly unset** the value to **None**, because the platform represents **None** by omitting the node entirely.
+
+**Key Takeaways**
+
+* Setting **Case Creation Notification Template** to **None** removes the corresponding XML node from `Case.settings-meta.xml`.
+* Because the node is missing, deployments cannot propagate the "None" state to target orgs.
+* This is a **Salesforce Metadata API limitation**, not a defect in AutoRABIT.
+* Clearing or setting the value to **None** must be done **manually in the target org UI**.
+* Deployments can only **assign** a valid existing template, not **unset** it.
+
+## Version Control <a href="#version-control" id="version-control"></a>
+
+1. While performing an **EZ-Commit**, Salesforce Org is unable to retrieve the complete information on whether some members of the **WaveDataflow** metadata type are available or not in the package.xml file; and if it is available then whether it is **Added, Modified,** and **Deleted.** If the metadata type is available in the package.xml file, it will be listed in both **Added/Modified** and **Deleted** tabs. Select the metadata type in the correct tab, and it will become unavailable in the other tab immediately.
+2. For Salesforce API version **57.0**, **OmniSupervisorConfig** metadata type is not supported in **Unlocked Package** creation, but is working as expected in **Commits** and **Deployments**.
+
+
+
+## Profiles & Permission Sets Limitations <a href="#profiles-permission-sets-limitations" id="profiles-permission-sets-limitations"></a>
+
+1. Any profile permission (say Object’s FLS, User permission) which holds a Boolean value is changed from True to False, the change cannot be committed to a branch through AutoRABIT.
+2. Any Object CRUD for the profile is only fetched if at least one value is chosen. For example, if I change an Object CRUD from Create, Read, Update to None, this change is not fetched for Commit. In order to fetch Object CRUD at least one of Create, Edit, Read, Delete, View All, Modify All options should be selected.
+3. The same behavior is applicable for Permission Sets as well. Any permission that holds Boolean value is changed from True to False, the change cannot be committed to a branch through AutoRABIT.
+
+## Why does Salesforce recommend moving from SFDX to SFCLI?
+
+Salesforce strongly recommends moving from SFDX to SF CLI because SF CLI is the newer, more powerful, and more flexible tool. SFDX is based on the Force.com CLI, which was originally designed for command-line developers. &#x20;
+
+SFCLI is based on the Salesforce CLI, which was designed for a wider range of developers, including those who prefer to use a graphical user interface (GUI).&#x20;
+
+| Feature                         | SFDX                    | SF CLI                             |
+| ------------------------------- | ----------------------- | ---------------------------------- |
+| Command-line interface          | Yes                     | Yes                                |
+| Graphical user interface        | No                      | Yes                                |
+| Programming languages supported | JavaScript              | JavaScript, Python, Java, and more |
+| Power                           | Less powerful           | More powerful                      |
+| Flexibility                     | Less flexible           | More flexible                      |
+| Ease of use                     | More difficult to learn | Easier to learn                    |
+
+## Limitations of SF CLI
+
+Salesforce is aware of the limitations in SF CLI and is working to address them. One of the limitations that Salesforce is working to address includes:
+
+**Limitation 1**: ERROR running force:source:deploy: INVALID\_OPERATION: testLevel of NoTestRun cannot be used in production organizations" occurs although "RunLocalTests" is the default test level.
+
+**Description**: When deploying to a production instance, 'force:source:deploy -m ApexClass,' you will receive an error:
+
+'INVALID\_OPERATION: testLevel of NoTestRun cannot be used in production organizations'
+
+It should have a default testLevel of 'runLocalTests' for being a production org, but that isn't getting set.
+
+**Workaround:** Run the sfdx command through \[TESTLEVEL] option.
+
+Sample command: sfdx force:source:deploy -m ApexClass -u xxx@xxx.xxx -l RunLocalTests
+
+Use the following links for reference:
+
+[https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid\_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs](https://issues.salesforce.com/issue/a028c00000gAzEZAA0/error-running-%20forcesourcedeploy-invalid_operation-testlevel-of-notestrun-cannot-be-used-in-%20production-organizations-occurs)
+
+[https://github.com/forcedotcom/cli/issues/2105](https://github.com/forcedotcom/cli/issues/2105)
+
+_**What is AutoRABIT doing to help customers?**_
+
+AutoRABIT is committed to delivering an exceptional customer experience. Please continue providing the much-needed feedback that makes AutoRABIT the best choice for Salesforce DevOps.&#x20;
+
+## Data Loader <a href="#dataloader" id="dataloader"></a>
+
+1. Execution Governors Limitations handled by AutoRABIT's Data Loader Pro
+   * A total number of records retrieved by SOQL queries if it is greater than 50,000 limits- Dataloader Pro uses the **"Querymore"** operator to retrieve all the records that are greater than 50,000 limits.
+   * SOQL query runtime before Salesforce cancels the transaction is above 120 seconds- As per the Salesforce execution governors limitation, the maximum SOQL query runtime before Salesforce cancels the transaction is 120 seconds. If it is beyond 120 seconds, this cannot be handled by our Dataloader Pro.
+   * SOQL characters length should be 20,000 characters- Dataloader Pro divides a single query into multiple queries and execute them. Getting proper estimation while saving a [Dataloader](https://www.autorabit.com/blog/10-benefits-of-salesforce-data-loader/) job, is very difficult as the queries are randomly generated. This normally occurs in two different scenarios:
+     * When fetching parents and child records that are linked to the master objects and
+     * When extracting data of a particular object with all the linked fields. Since there are millions of records, there are more chances of the query being timed out. Therefore, it is highly recommended to create two or more jobs rather than creating a single job; apply proper filters on the master objects and select a minimum multiple reference option during execution.
+2. Salesforce does not retrieve Validation rules from destination org for a particular object if the same object is duplicated and is available in **Deleted objects** list.
+3. Salesforce restricts access to create an **External Id** for the following objects in AutoRABIT. These listed objects are not supported in **Dataloader Pro&#x20;**_**(**&#x66;or more details, refer_ _to_ [_How to perform Dataloader Pro Operation_](../../../../arm/arm-features/dataloader/dataloader-pro.md), step &#x36;_**)**_ and **Test Environment Setup&#x20;**_**(**&#x66;or more details, refer to_ [_Create a New Test Environment Setup_](../../../../arm/arm-features/dataloader/test-environment-setup.md)_, step &#x35;**)**_.
+
+| ActionLinkGroupTemplate | ActivityHistory       | AccountTeamMember      | AggregateResult      | EmailStatus              | DuplicateRecordItem             | DandBCompany             |
+| ----------------------- | --------------------- | ---------------------- | -------------------- | ------------------------ | ------------------------------- | ------------------------ |
+| ContentDistribution     | FeedLike              | FeedTrackedChange      | Name                 | OpenActivity             | ProcessInstanceHistory          | AccountFeed              |
+| AccountHistory          | AccountPartner        | AccountTag             | ApexLog              | ApexTestResult           | AssetFeed                       | AssetTag                 |
+| AssignmentRule          | AsyncApexJob          | CallCenter             | CampaignHistory      | CampaignFeed             | CampaignTag                     | CaseFeed                 |
+| CaseHistory             | CaseSolution          | CaseStatus             | CaseTag              | CaseTeamTemplateRecord   | ChatterActivity                 | Community                |
+| CollaborationGroupFeed  | NewsFeed              | NoteTag                | OpportunityFeed      | CollaborationInvitation  | CollaborationGroupRecord        | ContactShare             |
+| ContactFeed             | ContentDocumentFeed   | ContractStatus         | DashboardFeed        | ContentDocumentHistory   | DashboardComponent              | EventAttendee            |
+| ContactHistory          | ContractFeed          | CronTrigger            | DashboardTag         | ContentVersionHistory    | DashboardComponentFeed          | EventTag                 |
+| ContactTag              | ContractTag           | Dashboard              | DocumentTag          | EntitySubscription       | EventRelation                   | FeedComment              |
+| EventFeed               | LeadHistory           | LeadFeed               | GoogleDoc            | AttachedContentDocument  | FiscalYearSettings              | FeedItem                 |
+| ForecastShare           | GroupMember           | LeadTag                | LoginHistory         | OpportunityFieldHistory  | CombinedAttachment              | ProcessInstanceStep      |
+| LeadStatus              | OpportunityTag        | Partner                | OpportunityStage     | OpportunityHistory       | ProcessInstance                 | Report                   |
+| Period                  | Pricebook2History     | PartnerRole            | Product2Feed         | OpportunityPartner       | PermissionSetAssignment         | ReportFeed               |
+| SetupEntityAccess       | QueueSobject          | SolutionFeed           | SolutionHistory      | ContractHistory          | SiteHistory                     | ReportTag                |
+| SiteDomain              | Site                  | TaskFeed               |                      | UserLicense              | UserPreference                  | SolutionStatus           |
+| TaskPriority            | TaskStatus            | TaskTag                | UserFeed             | TopicAssignment          | SiteFeed                        | SolutionTag              |
+| UserRecordAccess        | Vote                  | ContentDocumentLink    | AccountShare         | AccountContactRole       | ApexExecutionOverlayAction      | CaseShare                |
+| Activity                | AdditionalNumber      | ApexComponent          | BusinessHours        | BusinessProcess          | CaseComment                     | CategoryData             |
+| ApexTestQueueItem       | UserProfileFeed       | Approval               | BrandTemplate        | CampaignShare            | CaseContactRole                 | CategoryNode             |
+| CaseTeamMember          | CaseTeamTemplate      | CaseTeamTemplateMember | Document             | CollaborationGroup       | CollaborationGroupMember        | PushTopic                |
+| ContentVersion          | ContentDocument       | ContractContactRole    | Holiday              | EmailMessage             | CollaborationGroupMemberRequest | IDEWorkspace             |
+| EmailServicesAddress    | EmailServicesFunction | LeadShare              | MailmergeTemplate    | Note                     | DocumentAttachmentMap           | ObjectPermissions        |
+| EmailTemplate           | IDEPerspective        | LiveChatTranscript     | NoteAndAttachment    | OpportunityCompetitor    | OpportunityContactRole          | Group                    |
+| ProcessInstanceWorkitem | OpportunityShare      | WebLink                | ApexPage             | Organization             | RecordType                      | StaticResource           |
+| CaseTeamRole            | TagDefinition         | ApexTrigger            | Folder               | PermissionSet            | Scontrol                        | UserRole                 |
+| SelfServiceUser         | ApexClass             | FieldPermissions       | OrgWideEmailAddress  | Profile                  | SlaProcess                      | AssetTokenEvent          |
+| TraceFlag               | Territory             | ContentAsset           | LookedUpFromActivity | AttachedContentNote      | ObjectTerritory2Association     | NetworkDiscoverableLogin |
+| User                    | EmailMessageRelation  | UserAppInfo            | FeedAttachment       | NetworkActivityAudit     | NetworkUserHistoryRecent        | RecordActionHistory      |
+| TodayGoal               | TestSuiteMembership   | SecurityCustomBaseline | Territory2Type       | CampaignMemberStatus     | ListEmailIndividualRecipient    | EmbeddedServiceLabel     |
+| TodayGoalShare          | EmbeddedServiceDetail | OutgoingEmail          | Territory2           | UserEmailPreferredPerson | UserEmailPreferredPersonShare   | Knowledge\_\_ka          |
+| ApexTestRunResult       | Stamp                 | OutgoingEmailRelation  | BatchApexErrorEvent  | ApexTestResultLimits     | StampAssignment                 | Audience                 |
+
+However, if the user wants to migrate data on the above objects, they can do so by using the Single Dataloader operation in AutoRABIT.
+
+### **Error While Registering a Salesforce Org**
+
+When you face the error below when registering a Salesforce Org in ARM, please follow the steps below.
+
+<figure><img src="https://desk.zoho.com/support/ImageDisplay?downloadType=uploadedFile&#x26;fileName=1722924639095.png&#x26;blockId=edbsn45bfc5c7c892feab813bb5f243cf86f6b984907ca5b63ed389e0b40f99624eac&#x26;zgId=edbsn317782ec0c00fdc0787a725c6c273926&#x26;mode=view" alt=""><figcaption></figcaption></figure>
+
+1. Log in to your Salesforce Org.
+2. Navigate to Setup.
+3. Open "**OAuth and OpenID Connect Settings**" in the quick find box.
+4. Disable the checkbox for "**Require Proof Key for Code Exchange (PKCE) Extension for Supported Authorization Flows.**"&#x20;
+5. Now try registering the org in ARM.
+
+This is a limitation of Salesforce. See the article: URL: [![](https://trailhead.salesforce.com/community/favicon-16x16.png)Feed Item Detail | Salesforce Trailblazer Community](https://trailhead.salesforce.com/trailblazer-community/feed/0D54V00007T42fmSAB).

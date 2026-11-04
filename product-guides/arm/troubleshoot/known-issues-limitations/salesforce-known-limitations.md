@@ -77,13 +77,13 @@ Track this issue for impacted environments and monitor Salesforce updates for a 
 9. If the **Flow Entry** criteria formulas are failing to **Commit/Deploy**, we recommend updating the **Salesforce API** **version** to **55.0** or later in ARM, then re-perform the commit/deployment, because the entry-related attributes for the **Flow** metadata were introduced in the **API version 55.0**.\
    Here's a list of the entry attributes only present in **API 55.0** from Flow metadata documentation:
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1803).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. **Reference:** [https://developer.salesforce.com/docs/atlas.en-us.api\_meta.meta/api\_meta/meta\_visual\_workflow.htm](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_visual_workflow.htm)
 
     To update the Salesforce API version, go to **Admin** > **My Account** > **Salesforce Settings**.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1804).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Deploying Case Creation Notification Template in Support Settings (Case Settings)
 

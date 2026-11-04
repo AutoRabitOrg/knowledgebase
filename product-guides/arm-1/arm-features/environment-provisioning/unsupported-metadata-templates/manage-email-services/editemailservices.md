@@ -1,4 +1,4 @@
-# EditEmailServices
+# Edit Email Services
 
 The **EditEmailServices** template allows you to modify existing Email Service configurations in your Salesforce org.
 
@@ -17,7 +17,7 @@ The **EditEmailServices** template allows you to modify existing Email Service c
     * Complete the required fields with appropriate values.
     * Click **Save** to finalize the test case.
 
-    ![Edit Email Services Test Case](<../../../../../../.gitbook/assets/image (76).png>)
+    ![Edit Email Services Test Case](<../../../../../../.gitbook/assets/image (1001).png>)
 9. Click **Save** again to save the full template.
 10. Once created, you will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to apply the template to your destination org.

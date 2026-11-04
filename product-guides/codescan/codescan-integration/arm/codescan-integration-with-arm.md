@@ -18,11 +18,11 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 1. Login into your ARM account.
 2. Go to the **Admin** module and click on **Credentials**.
 
-<figure><img src="../../../../.gitbook/assets/image (456).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4068).png" alt="" width="252"><figcaption></figcaption></figure>
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../../.gitbook/assets/image (457).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4069).png" alt="" width="359"><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, enter the **Credential name**.
 5. Choose the **Credential Type** as **Username with Password**.
@@ -35,7 +35,7 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
    **Note**: Please double check that you **use your CodeScan username** instead of the email address that you use to log in to CodeScan.
 9. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (458).png" alt="" width="454"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4070).png" alt="" width="454"><figcaption></figcaption></figure>
 
 ### Integrate ARM with CodeScan <a href="#integrate-arm-with-codescan" id="integrate-arm-with-codescan"></a>
 
@@ -43,23 +43,23 @@ To integrate [CodeScan](https://www.codescan.io/) with the ARM, follow the proce
 2. Go to the **Plugins** section.
 3. Select the **CodeScan** checkbox under **Static Code Analysis**.
 
-<figure><img src="../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4071).png" alt=""><figcaption></figcaption></figure>
 
 4. Fill in the following details:
    * Enter the CodeScan hosted URL.
    * For CodeScan cloud version use [https://app.codescan.io](https://app.codescan.io/).
    *   Choose the **Host Type** i.e., Cloud or On-premises. For CodeScan hosted on the Cloud, you need to add the [**Organization Key**](https://knowledgebase.autorabit.com/codescan/docs/finding-your-organization-keys).<br>
 
-       <figure><img src="../../../../.gitbook/assets/image (1) (9).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (2870).png" alt=""><figcaption></figcaption></figure>
 5. Select your **Credential** from the dropdown.
 6. Click **Test Connection** to check if the connection has been authenticated or not. A success message is displayed after the authentication is completed.
 7. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (461).png" alt="" width="422"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4073).png" alt="" width="422"><figcaption></figcaption></figure>
 
 8. Click on **Save** again and your CodeScan integration is all set.
 
-<figure><img src="../../../../.gitbook/assets/image (462).png" alt=""><figcaption><p>Click Save</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4074).png" alt=""><figcaption><p>Click Save</p></figcaption></figure>
 
 ### Integration for baseline folder in a non-SFDX structure
 
@@ -74,7 +74,7 @@ To avoid this, we recommend aligning the baseline structure to the SFDX format t
 3. Select the **Enable** checkbox.
 4. Enable the **CodeScan** checkbox and assign the Quality Gate status for all your projects. By default, it is set to **ERROR**, however, you can choose the criteria of your own. If the Quality Gate matches with the status assigned to the projects on your CodeScan tool, the validation process gets failed and the build aborts.
 
-<figure><img src="../../../../.gitbook/assets/image (463).png" alt="" width="308"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4075).png" alt="" width="308"><figcaption></figcaption></figure>
 
 5. Click **Save**.
 6. Next, go to section **Commit Validation - Approval Settings**. In this section, you can allow CodeScan tools to identify potential software quality issues before the code moves to production and abort the commit process if the Quality Gate set earlier matches the status in CodeScan.
@@ -84,14 +84,14 @@ To avoid this, we recommend aligning the baseline structure to the SFDX format t
     * CodeScan
     * Auto reject commit process if the criteria are not met
 
-    <figure><img src="../../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4076).png" alt=""><figcaption></figcaption></figure>
 9. Click **Save**.
 10. Similar to CodeScan criteria globally configured in ARM for the Commit operation, you can even set the same for Merge process.
 11. Go to next section: **Merge Settings.**
 12. Select the **Enable Criteria-Based Review Process** checkbox.
 13. Under **Should pass validation criteria for Static Code Analysis**, select the **CodeScan** checkbox.
 
-<figure><img src="../../../../.gitbook/assets/image (465).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4077).png" alt=""><figcaption></figcaption></figure>
 
 14. Now, click on **Save**.
 
@@ -107,16 +107,16 @@ With ARM integration, CodeScan only scans the components that are part of the co
 
 1. On the Deployment Settings screen, choose **CodeScan/Lint** as an **SCA tool**.
 
-<figure><img src="../../../../.gitbook/assets/image (466).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4078).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. AutoRABIT has a provision for you to freeze or stop the deployment if the build doesn't meet the global criteria set under **My Account > Validation Criteria-Static Code Analysis settings**.
 3. Select the **recipients** for the SCA alerts. To do so, enter the **recipient's email address** to indicate who should be notified about the alert in the SCA Mail Notification field.
 
-<figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4079).png" alt=""><figcaption></figcaption></figure>
 
 4. Once the deployment is done, you can find the detailed **SCA Report** for the deployment process under **Deployment History**.
 
-<figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4080).png" alt=""><figcaption></figcaption></figure>
 
 ### During the EZ-Merge Process <a href="#during-ez-merge-process" id="during-ez-merge-process"></a>
 
@@ -126,7 +126,7 @@ While merging Salesforce records between two Version Control branches, you can a
 2. Select **CodeScan/Lint** as an **SCA tool**.
 3. To run CodeScan on all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles**, select the checkbox for **All Supported Metadata Types**.
 
-<figure><img src="../../../../.gitbook/assets/image (469).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4081).png" alt=""><figcaption></figcaption></figure>
 
 4. Proceed with the merge process.
 5. Find the detailed **SCA Report** under **Commits** screen.
@@ -138,11 +138,11 @@ While performing a validation deployment before actually committing the changes,
 1. In the Submit for Validation screen, go to the **Validation Reports** section.
 2. Select **CodeScan/Lint** as an **SCA tool**.
 
-<figure><img src="../../../../.gitbook/assets/image (470).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4082).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Here, you will have provision to set the condition for running the CodeScan SCA tool, i.e., running for all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles** components or stating the time period for which it will run.
 
-<figure><img src="../../../../.gitbook/assets/image (471).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4083).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Proceed with the Prevalidate Commit process.
 5. Find the detailed **SCA Report** under **Commits** screen.
@@ -156,15 +156,15 @@ While carrying out the CI Job process, you can configure CodeScan to check for a
     * Enable the checkbox: **Run Code Analysis Report**.
     * Select **CodeScan/Lint** as a **SCA tool**.
 
-    <figure><img src="../../../../.gitbook/assets/image (472).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4084).png" alt="" width="563"><figcaption></figcaption></figure>
 2. Here, you will have provision to set the condition for running CodeScan SCA tool, i.e, running for all the **Apex Classes, Triggers, Apex Pages & AuraDefinitionBundles** components or from the full source or stating the time period from where it will run.
 3. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable.
 
-<figure><img src="../../../../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4085).png" alt=""><figcaption></figcaption></figure>
 
 4. Find the detailed **SCA report** in CI Job Results screen under the **Build Details** section.
 
-<figure><img src="../../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4086).png" alt=""><figcaption></figcaption></figure>
 
 ## CodeScan SCA Results <a href="#codescan-sca-results" id="codescan-sca-results"></a>
 
@@ -216,4 +216,4 @@ To display CodeScan results that are applicable for all kinds of tools (CodeScan
 
 * Click on the **link** at the bottom of the page as in the image below which will redirect you to CodeScan Analysis Dashboard page to compare the SCA report in your CodeScan account.
 
-<figure><img src="../../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4088).png" alt=""><figcaption></figcaption></figure>

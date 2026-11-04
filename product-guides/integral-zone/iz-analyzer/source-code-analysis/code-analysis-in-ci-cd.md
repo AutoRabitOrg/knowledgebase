@@ -110,7 +110,7 @@ If the system from which the projects are analyzed using **`sonar-scanner`** or 
 
 ### See Also
 
-* [Code Analysis In Anypoint Studio](../../../iz-analyzer/source-code-analysis/code-analysis-in-studio.md)
+* [Code Analysis In Anypoint Studio](code-analysis-in-studio.md)
 
 ***
 

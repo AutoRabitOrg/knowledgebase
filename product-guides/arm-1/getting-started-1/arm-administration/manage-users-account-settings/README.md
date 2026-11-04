@@ -10,7 +10,7 @@ You can create, edit, and view user account details as an Org administrator. Adm
 
 *   Hover your mouse over the **Settings** tile and select **`My Account`**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1905).png" alt="" width="236"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2506).png" alt="" width="236"><figcaption></figcaption></figure>
 *   The **`My Account`** page appears. You’ll then be presented with a screen divided into different sections, as depicted below:\
     <br>
 
@@ -84,12 +84,12 @@ However, an Org Admin can override SSO for specific users or groups:
 The admin can add different mail extensions based on the organization's requirements in this section.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1906).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2507).png" alt=""><figcaption></figcaption></figure>
 
 This allows new users to sign up for the ARM account by giving their mail extensions.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1907).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2508).png" alt="" width="375"><figcaption></figcaption></figure>
 
 #### 5. Plugins <a href="#id-5-plugins" id="id-5-plugins"></a>
 
@@ -104,7 +104,7 @@ Browsers Supported:
 *   Firefox 3+\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1908).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2509).png" alt=""><figcaption></figcaption></figure>
 
 #### 6. Configure Default SCA Baseline Branches <a href="#id-6-configure-default-sca-baseline-branches" id="id-6-configure-default-sca-baseline-branches"></a>
 
@@ -115,9 +115,9 @@ Admins can configure the default baseline branches for CodeScan and SonarQube SC
 
 ![](<../../../../../.gitbook/assets/unknown (2).webp>)
 
-![](<../../../../../.gitbook/assets/unknown (1) (1).webp>)
+![](<../../../../../.gitbook/assets/unknown (3).webp>)
 
-![](<../../../../../.gitbook/assets/unknown (2) (1).webp>)
+![](<../../../../../.gitbook/assets/unknown (4).webp>)
 
 **Configure the baseline branches**
 
@@ -125,9 +125,9 @@ Admins can configure the default baseline branches for CodeScan and SonarQube SC
 * **`Select Project`** from the dropdown list.
 * Click on the **`Select Default Branch`** field to display the available branches within the selected project, then click on the branch name from the list. You can choose multiple branches for each project. These branches are available for a developer to choose from during EZ-Commit.
 * Other options:
-  1. Click the ![](<../../../../../.gitbook/assets/image (590).png>) icon to add a project.
-  2. Click the![](<../../../../../.gitbook/assets/image (591).png>)icon to remove a branch from a project.
-  3. Click the![](<../../../../../.gitbook/assets/image (592).png>)icon to delete the project completely.
+  1. Click the ![](<../../../../../.gitbook/assets/image (784).png>) icon to add a project.
+  2. Click the![](<../../../../../.gitbook/assets/image (785).png>)icon to remove a branch from a project.
+  3. Click the![](<../../../../../.gitbook/assets/image (786).png>)icon to delete the project completely.
 * Click **`Save`** after selecting, adding, or deleting the required projects and corresponding branches.
 
 #### 7. Validation Criteria- Static Code Analysis <a href="#id-7-validation-criteria-static-code-analysis" id="id-7-validation-criteria-static-code-analysis"></a>
@@ -135,13 +135,13 @@ Admins can configure the default baseline branches for CodeScan and SonarQube SC
 With the current release, users can set the global criteria to enforce **`Static Code Analysis (SCA)`** tools across CI jobs and merge jobs. Based on the priority set, the build will be successful only if the criteria are met. The build will only succeed if the **Apex Classes**, **Triggers**, and **Visualforce** pages pass the priority set.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1910).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2511).png" alt=""><figcaption></figcaption></figure>
 
 #### 8. Commit Validation - Approval Settings <a href="#id-8-commit-validation-approval-settings" id="id-8-commit-validation-approval-settings"></a>
 
 Here the admin can specify specific evaluation criteria for which the commit will get reviewed before being committed to the version control branch.<br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1911).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2512).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **Auto reject commit after XX days**
 
@@ -152,7 +152,7 @@ Auto rejects an approval for pre-validation commit after the days mentioned here
 Select the **`User criteria based Review Process`** checkbox to enable the commit criteria.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1912).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2513).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Next, choose the approval criteria based on your requirement:&#x20;
 
@@ -161,7 +161,7 @@ Next, choose the approval criteria based on your requirement:&#x20;
   *   Select the SCA tool according to your requirements.\
       <br>
 
-      <figure><img src="../../../../../.gitbook/assets/image (1914).png" alt="" width="375"><figcaption></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (2515).png" alt="" width="375"><figcaption></figcaption></figure>
 * Select the **`Auto reject commits if the criteria are not met`** checkbox to auto-reject the commit if the set criteria are not met.
 * **`Auto approve on commit validation success:`** If all the criteria selected under **`Enable criteria based Review Process`** are successfully validated, selecting this checkbox will automatically approve the commit.
 
@@ -173,7 +173,7 @@ Next, choose the approval criteria based on your requirement:&#x20;
 
 Once the reviewer has approved the changes, or if you have opted to auto-approve upon successful validation, the commit process is automatically pushed to the destination branch.\
 \
-![](<../../../../../.gitbook/assets/image (1915).png>)
+![](<../../../../../.gitbook/assets/image (2516).png>)
 
 #### Deployment - Approval Settings
 
@@ -190,7 +190,7 @@ Admins can configure the approvals process for the **Custom Deployment** module 
 
 You cannot select the same user as an approver for both **Level 1** and **Level 2**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1917).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2518).png" alt=""><figcaption></figcaption></figure>
 
 #### 9. Merge Settings <a href="#id-9-merge-settings" id="id-9-merge-settings"></a>
 
@@ -213,18 +213,18 @@ Select the **`User criteria based Review Process`** checkbox to enable the merge
 
 #### 10. Salesforce Settings <a href="#id-10-salesforce-settings" id="id-10-salesforce-settings"></a>
 
-ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **64.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 64. The newly supported Salesforce objects for each API version can be found [here](../../../arm-administration/user-management/salesforce-api-version.md).
+ARM supports all the metadata types based on the **`Salesforce API Version`**. ARM now supports the Salesforce API **64.0** version, which means it can support any Salesforce standard or custom objects that require Salesforce API version 64. The newly supported Salesforce objects for each API version can be found [here](../user-management/salesforce-api-version.md).
 
 Select the API version to see the supported metadata types and avoid errors while accessing Salesforce orgs in Version Control, CI Jobs, Deployment, or SFDX modules.
 
-![](<../../../../../.gitbook/assets/unknown (3).webp>)
+![](<../../../../../.gitbook/assets/unknown (5).webp>)
 
 1. **`Configuration for recordTypes picklistValues:`** This topic is covered separately. Click [here](../../../troubleshoot/how-tos/configure-record-types-picklist-values.md) to go directly to the mentioned topic.&#x20;
 2. **`Configuration for Translations:`** Options to choose the configuration for the LabelTranslations, i.e., either replace or append. When selecting the _Replace_ option for the Configuration for LabelTranslations option for every EZ-commit operation, if the Label Translation has no custom label metadata type, it will override the LabelTranslations in Version Control, even if it has more than one custom label metadata type value. For the _Append_ option, instead of overriding the custom label metadata types, it keeps adding to the existing one.
 3.  **`Configuration for running delta on RecordType Picklist values:`** On selection, this allows you to check delta on RecordType Picklist values during a Deployment.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1920).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2521).png" alt="" width="563"><figcaption></figcaption></figure>
 4.  **Packaging and Deployment Settings:** Several options can be configured in this section:&#x20;
 
     1. **Manageable States**: In Salesforce, the `ManageableState` attribute indicates the status of a component within a package, reflecting its lifecycle stage and editability. The possible states are:
@@ -237,7 +237,7 @@ Select the API version to see the supported metadata types and avoid errors whil
        * **InstalledEditable**: The component is part of an installed managed package but can be edited by the subscriber.
        * **DeprecatedEditable**: The component is deprecated but remains editable.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1921).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2522).png" alt=""><figcaption></figcaption></figure>
 
     &#x62;**. Include Default Apex Tests For Run Tests Based On Changes**: When selected, the default configured tests are added to the set, even if Test classes or Apex Class Apex Triggers are unavailable. Apex Test Level executes as _RunSpecifiedTests_. However, if the checkbox is unchecked, no default tests are added, and no Apex Test Level is set. Salesforce default behavior is expected in such cases.
 
@@ -246,7 +246,7 @@ Select the API version to see the supported metadata types and avoid errors whil
     d. **`Include/Exclude Metadata Types`**: Be sure to exclude them to avoid retrieving unwanted metadata types during the deployment or merge.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1922).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2523).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**&#x20;
@@ -260,13 +260,13 @@ Enabling the **`Configuration for running delta on RecordType Picklist values`**
 
 Ensure you exclude them to avoid retrieving unwanted metadata types during deployment or commits rollback.
 
-<figure><img src="../../../../../.gitbook/assets/image (1923).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2524).png" alt=""><figcaption></figcaption></figure>
 
 **Profile/PermissionSets Settings**
 
 This section pertains to granting or revoking permissions to the **`Profiles/PermissionSets`** of any org. Based on the permission granted or revoked, the same is affected after committing the custom object in the Version Control.\
 \
-![](<../../../../../.gitbook/assets/image (1924).png>)
+![](<../../../../../.gitbook/assets/image (2525).png>)
 
 **What is a Profile?**
 
@@ -331,7 +331,7 @@ Vlocity Version Supported: v1.17.1
      3. When MaxDepth Values is set to **`1`** means, it will execute only first-level dependencies of the selected data pack record.
    *   **`Data Pack Types:`** This gives you an option to choose your specific Vlocity components that will be committed to your destination org/branch.<br>
 
-       <figure><img src="../../../../../.gitbook/assets/image (1925).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (2526).png" alt=""><figcaption></figcaption></figure>
 3. Click **`Save`**.
 
 #### 12. Session Settings <a href="#id-12-session-settings" id="id-12-session-settings"></a>
@@ -339,7 +339,7 @@ Vlocity Version Supported: v1.17.1
 After logging in, a user establishes a session with the ARM platform. As an admin, you can control when an inactive user session expires. The default session timeout is 30 mins of inactivity. When the session timeout is reached, users are prompted with a dialog that allows them to log out or continue working.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1926).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2527).png" alt=""><figcaption></figcaption></figure>
 
 #### 13. Retention Policy <a href="#id-13-retention-policy" id="id-13-retention-policy"></a>
 
@@ -348,7 +348,7 @@ In this section, the admin can define the period for which data is retained by A
 Clearing historical and irrelevant data from the database helps prevent the application from lagging, resulting in better performance in all modules. The default retention period is set as **`12 months`**. Data older than 12 months will be automatically cleaned. Admins can later change it to **`6 months`** or **`3 months`**.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (1927).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2528).png" alt="" width="375"><figcaption></figcaption></figure>
 
 This is applicable to the historical data on the following pages:
 

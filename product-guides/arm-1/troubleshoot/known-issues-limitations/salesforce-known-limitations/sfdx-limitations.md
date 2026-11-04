@@ -1,8 +1,8 @@
-# SFDX Known Limitations
+# SFDX Limitations
 
 ## Salesforce DX Known Issues <a href="#salesforce-dx-known-issues" id="salesforce-dx-known-issues"></a>
 
-These are the known issues for [Salesforce DX](../../../../arm/salesforce-dx.md) in this release.
+These are the known issues for [Salesforce DX](../../../../arm/arm-features/salesforce-dx/) in this release.
 
 **Failed to initiate deployment**\
 If a process is added to Salesforce's queue for more than 30 minutes during the deployment of CI Jobs with SFDX Repo as the source, the error **"Failed to initiate deployment"** is returned.

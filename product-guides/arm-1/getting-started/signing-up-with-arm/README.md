@@ -6,7 +6,7 @@ The ARM signup and activation process has several steps — some on our end and 
 2. Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.
 3.  Fill in the registration details, and then click **`Register.`**<br>
 
-    ![Registration Page](<../../../../.gitbook/assets/unknown (8).webp>)
+    ![Registration Page](<../../../../.gitbook/assets/unknown (10).webp>)
 4. **Wait for an email from us.** Next, we review your details to verify whether they comply with our policies and to set up the rest of your account. Once we've completed this process and your account is activated, you will get a confirmation sent to your email address.&#x20;
 
 {% hint style="info" %}
@@ -22,7 +22,7 @@ The ARM login screen allows you to log in to your instance.
 3. Enter your login credentials (username and password), and then click on **`Login.`**
 4.  Contact your org administrator if you do not know your instance's URL or login credentials.
 
-    <figure><img src="../../../../.gitbook/assets/image (2873).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (5221).png" alt=""><figcaption></figcaption></figure>
 
 ## Password Requirements
 
@@ -39,7 +39,7 @@ The ARM login screen allows you to log in to your instance.
 When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2053).png" alt=""><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 
@@ -56,7 +56,7 @@ Users can have multiple tabs of ARM pages open within the same web browser (e.g.
 If you're having trouble logging into your AutoRABIT account, here are some common causes and solutions.
 
 1. **The account is not created**: Please check with your admin to create a new account.
-2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password by following the instructions [here](../../arm-administration/user-management/reset-account-password.md).
+2. **The User ID and Password supplied to access the AutoRABIT account were incorrect or invalid**: Try resetting the password by following the instructions [here](../../getting-started-1/arm-administration/user-management/reset-account-password.md).
 3. **Check if your account subscription has expired or your account is disabled**: You'll see a message saying your account is disabled when you try to log in.
 4. If you get the following error **“getAttribute: Session already invalidated"**, try clearing your browser cache.
 5. **Restriction of your IP address**: Verify with your network team internally whether there are any issues or restrictions for your IP address from the network side.
@@ -75,7 +75,7 @@ ARM requires you to change your password every 90 days.&#x20;
 
 ### How do I reset my password?&#x20;
 
-Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
+Follow the instructions [here](../../getting-started-1/arm-administration/user-management/reset-account-password.md) to reset your ARM password.
 
 
 

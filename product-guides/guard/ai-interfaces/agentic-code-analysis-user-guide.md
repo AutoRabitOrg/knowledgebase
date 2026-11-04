@@ -131,11 +131,11 @@ Each rule from the Standard ruleset can be edited within AutoRABIT Guard or disa
 
 In addition, you can create new Custom Rules either by uploading a pdf file or typing your rule in natural language. Go to **Agentic Code Analysis** → **Repositories** → **Actions** → **Rules** → **Custom Rules** and click the **Create Rule** button.
 
-<figure><img src="../../../.gitbook/assets/image (2542).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4890).png" alt="" width="375"><figcaption></figcaption></figure>
 
 1. **Create from text**. Type your rule or intention and get it validated by an AI agent.
 
-<figure><img src="../../../.gitbook/assets/image (2543).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4891).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. For the best results, be as specific as possible. For example, “Block any code that looks suspicious” is too generic, and the agent will not be able to suggest an improvement. But instead a good prompt could be “Block Apex code that uses dynamic SOQL without validation”.
 3. After successful validation, the properties of the rule (Name, Type, Severity, Category and Framework) will be populated automatically. Please review these and edit if necessary - AI can make mistakes.
@@ -143,7 +143,7 @@ In addition, you can create new Custom Rules either by uploading a pdf file or t
 
     1. An AI agent will analyse the file and extract rules - depending on the size of the file this might take a few minutes.
 
-    <figure><img src="../../../.gitbook/assets/image (2544).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4892).png" alt="" width="375"><figcaption></figcaption></figure>
 
 
 
@@ -151,7 +151,7 @@ b. You will then be taken through each extracted rule for review. Please check t
 
 
 
-<figure><img src="../../../.gitbook/assets/image (2545).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4893).png" alt="" width="375"><figcaption></figcaption></figure>
 
 &#x20;
 

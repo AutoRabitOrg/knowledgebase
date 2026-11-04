@@ -10,7 +10,7 @@ You must have **Admin** privileges to configure SSO settings for your organizati
 
 To check your Admin access in AutoRABIT Vault, go to **Manage Users > Users** and verify if your "Type" is set to **Admin**.
 
-<figure><img src="../../../../.gitbook/assets/image (1584).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2871).png" alt=""><figcaption></figcaption></figure>
 
 ### How to enable SSO <a href="#how-to-enable-sso" id="how-to-enable-sso"></a>
 

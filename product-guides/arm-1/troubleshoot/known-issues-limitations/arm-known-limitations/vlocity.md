@@ -9,15 +9,15 @@
 
 **Structure 1**
 
-<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1800).png" alt=""><figcaption></figcaption></figure>
 
 **Structure 2**
 
-<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="498"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1801).png" alt="" width="498"><figcaption></figcaption></figure>
 
 **Structure 3**
 
-<figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1802).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**

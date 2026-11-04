@@ -61,7 +61,7 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 1. Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 
-<figure><img src="../../../../.gitbook/assets/image (481).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4093).png" alt=""><figcaption></figcaption></figure>
 
 2. Next, confirm the **JAVA\_HOME** variable is set properly on your system. Enter the command echo **%JAVA\_HOME%**. This should output the path to your Java installation folder. Reach out to your IT department if the **JAVA\_HOME** variable is not set.
 
@@ -69,11 +69,11 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 1. Click the CodeScan icon on the left panel.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (477).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4089).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2. Click on ‘Add CodeScan Connection.’
 
-<figure><img src="../../../../.gitbook/assets/image (478).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4090).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Add your CodeScan URL.
 4. Click on 'Generate Token.' This will open CodeScan in a browser.
@@ -83,11 +83,11 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 8. Enter a Unique Connection Name.
 9. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
 
-<figure><img src="../../../../.gitbook/assets/image (479).png" alt="" width="293"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4091).png" alt="" width="293"><figcaption></figcaption></figure>
 
 9. Click on your connection (CodeScan Cloud in the example.)
 
-<figure><img src="../../../../.gitbook/assets/image (480).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4092).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. Click the + symbol to the right. This will show you a list of projects from the Command palette.
 11. Select the project you would like to connect to.
@@ -247,22 +247,22 @@ unable to find valid certification path to requested target.
 
 **Steps:**
 
-1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (494).png>)).
+1. In your browser, to the left of the URL, there is a lock icon (![](<../../../../.gitbook/assets/image (4106).png>)).
 2. Click on this icon and a window will pop up. From the window, select **Connection is secure**.
 
-<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4107).png" alt=""><figcaption></figcaption></figure>
 
 3. Select the second option, i.e., **`Certificate is valid`**.
 
-<figure><img src="../../../../.gitbook/assets/image (496).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4108).png" alt=""><figcaption></figcaption></figure>
 
 4. Go to the **Details** tab and click on **Export**.
 
-<figure><img src="../../../../.gitbook/assets/image (497).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4109).png" alt="" width="452"><figcaption></figcaption></figure>
 
 5. Rename the certificate (e.g., _**codescan-certificate**_), then choose a location and save the certificate.
 
-<figure><img src="../../../../.gitbook/assets/image (498).png" alt="" width="540"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4110).png" alt="" width="540"><figcaption></figcaption></figure>
 
 6. The next process is to install the certificate in the **cacerts** file of the jdk installed in the system using the command line.
 
@@ -300,7 +300,7 @@ If the CodeScan update binding is getting failed, try disabling the VPN and anti
 
 **If the binding still fails**, check the HTTP client protocol version. Enter the Apache HTTP client protocol version (FORCE\_HTP\_1, FORCE\_HTTP\_2, or NEGOTIATE). Save and Update Bindings. Further documentation is available [here in the 'Parameters' section](https://knowledgebase.autorabit.com/codescan/docs/installing-codescan-for-vs-code?highlight=http%20client#integrate-vs-code-with-codescan-extension).
 
-<figure><img src="../../../../.gitbook/assets/image (499).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4111).png" alt=""><figcaption></figcaption></figure>
 
 **If the binding still fails**, raise a [Support Ticket](https://support.autorabit.com/portal/en/home), including the **analyzer logs** and **verbose logs** in the attachment.
 
@@ -322,7 +322,7 @@ CodeScan should automatically find the JRE installed on your computer. If you ha
 
 Under **CodeScan > Ls: Java Home** _(Not synced)_, enter the JRE path.
 
-<figure><img src="../../../../.gitbook/assets/image (500).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4112).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### How do I see warnings and errors in VS Code? <a href="#how-do-i-see-warnings-and-errors-in-vs-code" id="how-do-i-see-warnings-and-errors-in-vs-code"></a>
 
@@ -357,7 +357,7 @@ Changes were required to support fixes and enhancements of the **VS Code CodeSca
 
 New CodeScan Issue Filter: Quickly sort and filter issues by type and severity for efficient code review. You can click on the specific _Type_ or _Severity_ to only see issues of that type.
 
-<figure><img src="../../../../.gitbook/assets/image (567).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4677).png" alt=""><figcaption></figcaption></figure>
 
 The released plugin can be updated directly from VSCode and also can be found in this link: [https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode](https://marketplace.visualstudio.com/items?itemName=codescansf.codescan-vscode)
 
@@ -375,7 +375,7 @@ Before raising a support ticket, perform the following checks in VS Code:
 * **Is the Java path passed to CodeScan (codescan.ls.javaHome)?** Verify by going to **`VS Code Settings > Settings > Extensions > CodeScan`** and under **`Codescan › Ls: Java Home (Not synced),`** you should see the **`JAVA_HOME`** path mentioned. If not present, please enter the **`JAVA_HOME`** path.
 * You can also add the **`JAVA_HOME`** path in the **settings.json** file inside the **`codescan.ls.javaHome`** property.
 
-<figure><img src="../../../../.gitbook/assets/image (501).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4113).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Perform the **CodeScan Update Binding** and check if the issue is resolved.
 

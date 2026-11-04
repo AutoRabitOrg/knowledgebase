@@ -100,11 +100,11 @@ Provides precise visibility into where unsafe data originates and how it propaga
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (23) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3541).png" alt=""><figcaption></figcaption></figure>
 
 Verified the data flow tracking logic for unescaped output in Apex is working and the updated description has been applied.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3542).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Updated the Apex rule “URL Parameters should be Escaped/Sanitized” to include data flow analysis logic {Rule ID: sf:UnescapedSource}**
 
@@ -153,9 +153,9 @@ Verified scenarios:
 
 For all violating cases, the rule correctly reported the issue with an appropriate data flow trace (e.g., declaration point and usage path). The observed results match the expected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3543).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3544).png" alt=""><figcaption></figcaption></figure>
 
 **3.     Updated the Apex rule “Avoid Calling SOQL and DML Inside Loops”  message to include detailed data flow analysis logic {Rule ID: sf:AvoidSoqlInLoops}**
 
@@ -217,9 +217,9 @@ Executed the following scenarios and validated that the advanced logic is workin
 * Multi-hop scenarios (loop → method → method → SOQL) correctly show the full Data Flow Trace with SOQL → CALL → LOOP.
 * Direct SOQL-in-loop scenarios correctly show the simplified message, which is the expected behavior.
 
-<figure><img src="../../../../.gitbook/assets/image (4) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3545).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3546).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -298,15 +298,15 @@ Sanitize input to avoid possible SSRF.  Data Flow Trace -
 
 Make sure to check for internal methods also (E.g. FirstName variable on line 8 if used in the set endpoint call on line 11)
 
-<figure><img src="../../../../.gitbook/assets/image (2281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2422).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2423).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2424).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -367,19 +367,19 @@ Sanitize input to avoid possible resource injection. Data Flow Trace -
 
 Make sure to check for internal methods also (e.g., FirstName variable on line 8 if used in the set endpoint call on line 11)
 
-<figure><img src="../../../../.gitbook/assets/image (2284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2425).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2426).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2427).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2428).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Deprecations
 
@@ -395,11 +395,11 @@ Several customers reported that they were receiving the error message “Permiss
 
 We have validated this new logic and verified that no vulnerabilities were raised (which is the expected and correct behavior for this updated rule logic).
 
-<figure><img src="../../../../.gitbook/assets/image (2288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2429).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2430).png" alt=""><figcaption></figcaption></figure>
 
 **2.     Fixed an issue in the APEX rule “Resource Injection”**
 
@@ -411,7 +411,7 @@ However, several customers reported that this rule was firing improperly, even w
 
 We verified the new logic and validated that the rule is now working as originally designed.
 
-<figure><img src="../../../../.gitbook/assets/image (2290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2431).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -453,18 +453,18 @@ To improve coverage, we enhanced the rule logic to include these Assert class sc
 \
 If you just want a test to halt after finding an error, use the System.assert(false, 'message') or Assert.isFalse(false, 'message') methods and provide an indication message of why it did.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2349).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Verified the following scenarios are working as expected:
 
 * Noncompliant scenarios using System.assert(true), Assert.isTrue(true), and Assert.isFalse(false). All were correctly flagged as expected.
 * Compliant scenarios have been tested. (by using only string values).
 
-<figure><img src="../../../../.gitbook/assets/image (1) (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2350).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2) (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2351).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -497,9 +497,9 @@ _“vf:RequireConfirmationToken” getting triggered only_ when the correspondin
 
 * Verified the rule behavior using by uploading only page file and then with corresponding meta.xml file with true and meta.xml file with false.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2577).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2578).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -516,7 +516,7 @@ Verified that the below scenarios are working as expected.
 * Verified that the rule does not throw out of bounds exceptions in the analysis logs (it should not throw this and, as such, has been validated as working as expected).
 * Verified “sf:MaximumNumberOfCase” rule is triggered only when the maximum limit is exceeded.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2579).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -524,7 +524,7 @@ Verified that the below scenarios are working as expected.
 
 Some customers reported an issue in the CodeScan UI on the “Quality Gate Changelog” page, where the “author name” field overlaps with the “action taken” field.
 
-<figure><img src="../../../../.gitbook/assets/image (6) (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2580).png" alt=""><figcaption></figcaption></figure>
 
 This fix remediates that issue in full.
 
@@ -533,9 +533,9 @@ Verified the below scenarios and validated that the fix is working as expected.
 * Verified that the “author name” filed does not overlap with the “action taken” field.
 * Verified with different actions (Updated, Activated, Deactivated).
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2581).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2582).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -605,11 +605,11 @@ Verified that **sf:SecurePIIFields** rules are being triggered in following scen
 * Verified by giving custom parameters (ssn, credit\_card, passport) and validated that they are working as expected.
 * Verified by sending both string and integer value for credit\_card.
 
-<figure><img src="../../../../.gitbook/assets/image (2116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4178).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4179).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -631,7 +631,7 @@ Value / Purpose:
 * Improves usability and flexibility of the rule.
 * Increases adoption by making the rule adaptable to various team standards.Bottom of Form
 
-<figure><img src="../../../../.gitbook/assets/image (2118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4180).png" alt=""><figcaption></figcaption></figure>
 
 Verified the sf:GodClass by validating that users are able to see the violations as expected for the below scenarios
 
@@ -646,15 +646,15 @@ When users provide the below Threshold values:
 * wmc=0, atfd=0, tcc=0                     Result: No violation
 * wmc=0, atfd=0, tcc=1                      Result: Everything violates
 
-<figure><img src="../../../../.gitbook/assets/image (2119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4181).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2120).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4182).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4183).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -668,11 +668,11 @@ See: [Considerations Before Transitioning to Lightning Experience](https://resou
 
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image (2122).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4184).png" alt=""><figcaption></figcaption></figure>
 
 Verified these rule updated by confirming that users are able to see the updated description and the example.
 
-<figure><img src="../../../../.gitbook/assets/image (2123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4185).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -694,7 +694,7 @@ Consequently:
 
 Verified the rule description and confirmed that the updated description which is displayed as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2124).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4186).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -709,11 +709,11 @@ Further, we have updated the descriptions for these rules to include: \
 
 Verified the Rule Deprecations of cs-vf:no-irregular-whitespace and cs-js:no-irregular-whitespace and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../.gitbook/assets/image (2125).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4187).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2126).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4188).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -727,11 +727,11 @@ Further, we have updated the descriptions for these rules to include:&#x20;
 
 Verified the Rule Deprecation for cs-vf:no-octal-escape and cs-js:no-octal-escape and confirmed users are able to see the updated status as Deprecated and the updated description for these rules.
 
-<figure><img src="../../../../.gitbook/assets/image (2127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4189).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2128).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4190).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -785,11 +785,11 @@ This issue has been remediated fully, so that all selected projects (analyzed) a
 
 Verified the Bulk delete option for all project integrations, including comparison branches and regular branches. Confirmed via the following scenarios that users are now able to successfully delete multiple projects at once.
 
-<figure><img src="../../../../.gitbook/assets/image (2129).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4191).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (2130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4192).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -799,7 +799,7 @@ Several customers have reported that the current rule logic incorrectly flags pr
 
 Example code:
 
-<figure><img src="../../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4193).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -808,11 +808,11 @@ The rule should **not** raise a violation when the private field’s value can b
 
 Verified that the “sf:ImmutableField” is getting triggered only when the private field’s value cannot be modified. Further, we verified the rule behavior using both mutable and immutable field patterns.
 
-<figure><img src="../../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4194).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (2133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4195).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -822,7 +822,7 @@ During our routine, internal rule evaluation process, we discovered that this ru
 
 Verified the sf:HotspotTypeReflection rule by activating the rule in a specified Quality Profile. Then, in a subsequent project analysis, validated that the rule is now working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4196).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -846,7 +846,7 @@ Component details are listed in their corresponding sections within this documen
 &#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
 Previously, CodeScan did not raise violations if a method matched the condition:\
-![](<../../../../.gitbook/assets/unknown (1) (3).png>)
+![](<../../../../.gitbook/assets/unknown (57).png>)
 
 This exception was originally introduced to reduce noise and was added to our rule logic before Salesforce introduced USER\_MODE. However, with Salesforce’s updated guidance requiring all database operations to consistently enforce permissions, the exemption is no longer valid. Getters can still expose data through bindings, so excluding them would not align with best practices.
 
@@ -858,7 +858,7 @@ Note: The update has been refined to cover all scenarios—we’ve implemented l
 
 We have verified the rule logic and validated that users are able to see the violations for the getter methods on SOQL, DML operations.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1951).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -903,7 +903,7 @@ _of Object-Oriented Systems_ {Springer, Berlin, 1 edition, October 2006. Page 80
 
 Verified the Update God Class Rule Description and confirmed that users are able to see the updated description for the rule.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1952).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -917,11 +917,11 @@ This rule detects ESLint rule references written in code comments that are not c
 
 We have verified the Rule Description Updates on “CodeScan Other Rules (cs-vf:unknown and cs-js:unknown) and confirmed that users are able to see the updated descriptions.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1953).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1954).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -937,7 +937,7 @@ This issue has been fully remediated with this fix.
 
 Verified that users are now able to navigate to the Rule description page. Also verified that the “Why is this an issue link”  (as well as other associated pages) are all working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2092).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2837).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1004,17 +1004,17 @@ We have verified the fix via the following scenarios and confirm that Admins are
 
 1.  Admins can view all relevant details on the IDE Usage page after selecting the Individual tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1969).png" alt=""><figcaption></figcaption></figure>
 2.  Admins can also view the records displayed in the correct order under the All tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1970).png" alt=""><figcaption></figcaption></figure>
 3.  When the user selects "All" and filters the data for 120 days in the IDE Usage screen, the "Show More" option appears, allowing them to scroll down and view additional records from the last 120 days.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1971).png" alt=""><figcaption></figcaption></figure>
 
 
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1972).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1032,11 +1032,11 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
    * \*.marketingcloudapis.com
 2.  We also verified that usage of any of the below URLs in the code now triggers a violation after activating the AvoidAbsoluteURL rule.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1973).png" alt=""><figcaption></figcaption></figure>
 
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1974).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1078,9 +1078,9 @@ Verified for the existing projects and newly created projects (all project integ
 
 **“Connects to your Salesforce instance or repository to execute a CodeScan analysis.”**
 
-<figure><img src="../../../../.gitbook/assets/image (2052).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4707).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2053).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4708).png" alt=""><figcaption></figcaption></figure>
 
 2. **New Version of CodeScan VS Code Extension (v 2.1.2)**
 
@@ -1098,9 +1098,9 @@ In this updated extension, we have implemented improved synchronization of resol
 * Also verified on the **Self-Hosted** environments (SQ versions 25.1 and 25.2):
   * When the user sets an issue as False Positive or chooses to Accept the issue, the issue count is reduced on the UI as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2054).png" alt="" width="510"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4709).png" alt="" width="510"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2055).png" alt="" width="498"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4710).png" alt="" width="498"><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -1136,11 +1136,11 @@ Verified the new parameter on the sf:AvoidLogicInTrigger rule to ensure compatib
 
 **But**: for, while, do-while, SOQL, DML → always Violation (allow-list does not suppress these).
 
-<figure><img src="../../../../.gitbook/assets/image (2056).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4711).png" alt="" width="398"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2057).png" alt="" width="338"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4712).png" alt="" width="338"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2058).png" alt="" width="474"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4713).png" alt="" width="474"><figcaption></figcaption></figure>
 
 2. **Enhancement to “Use Annotation on Test Class” Rule**
 
@@ -1156,11 +1156,11 @@ Verified the enhanced rule logic in “Use Annotation on Test Class” in the fo
 3. Class containing only testMethod methods without @IsTest → Verified: Violation raised.
 4. Class containing only @IsTest methods without class-level @IsTest → Verified: Violation raised.
 
-<figure><img src="../../../../.gitbook/assets/image (2059).png" alt="" width="419"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4714).png" alt="" width="419"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2060).png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4715).png" alt="" width="536"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2061).png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4716).png" alt="" width="536"><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -1205,13 +1205,13 @@ Verified the fix for “Issues Filter is not working with CWE tags” via the fo
 
 1. Searching or filtering by a specific CWE ID in the Issues page under Security Category is working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2062).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4717).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Verified that the Show More button under the CWE filter works correctly, with the default filter count set to 15.
 
-<figure><img src="../../../../.gitbook/assets/image (2063).png" alt="" width="338"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4718).png" alt="" width="338"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2064).png" alt="" width="339"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4719).png" alt="" width="339"><figcaption></figcaption></figure>
 
 3. Even when the CWE filter is limited to the default 15 entries, searching for an ID like CWE-16 still returns the correct result for the user.
 
@@ -1237,13 +1237,13 @@ Component details are listed in their corresponding sections within this documen
    Verified the Migrate email verification Rule to Action in Auth0 via the following scenarios:\
    After signing up, the user receives a verification email. Only after successfully verifying the account, the user is able to log in to the instance as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2021).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2545).png" alt="" width="359"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2022).png" alt="" width="354"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2546).png" alt="" width="354"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2023).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2547).png" alt="" width="185"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2024).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2548).png" alt=""><figcaption></figcaption></figure>
 
 ### Rule Enhancements
 
@@ -1279,22 +1279,22 @@ Component details are listed in their corresponding sections within this documen
 * HttpRequest.setEndpoint(String)
 * PageReference.getContent()
 
-<figure><img src="../../../../.gitbook/assets/image (2025).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2549).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2026).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2550).png" alt=""><figcaption></figcaption></figure>
 
 3. **Enhancement to “Switch Statements Should Have a When Else Case” Rule**\
    Currently, the rule is not working as expected, as it does not raise violations when a switch statement lacks a when-else block. We have modified that logic to correctly identify switch statements that are missing a when-else case so that users can ensure the code is more robust, future-proof, and does not miss handling unexpected cases.\
    \
    Example:
 
-<figure><img src="../../../../.gitbook/assets/image (2027).png" alt="" width="254"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2551).png" alt="" width="254"><figcaption></figcaption></figure>
 
 Verified that the updated rule now correctly flags switch statements without a when-else block, ensuring violations are raised consistently for missing default cases.
 
-<figure><img src="../../../../.gitbook/assets/image (2028).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2552).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2029).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2553).png" alt=""><figcaption></figcaption></figure>
 
 4. **Enhancement to “Avoid Reversed Operators” Rule**\
    Modified the rule logic to correctly detect and report improper usage of reversed operators (=-, =+) in Apex code, so that users can avoid mistakes where variables are unexpectedly reassigned rather than incremented/decremented.\
@@ -1312,25 +1312,25 @@ Verified that the updated rule now correctly flags switch statements without a w
 
     This new logic will prevent developers from introducing subtle logic bugs caused by operator misuse.  Further, we updated the rule example with the following:
 
-<figure><img src="../../../../.gitbook/assets/image (2030).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2554).png" alt=""><figcaption></figcaption></figure>
 
 Verified the new logic via the following scenarios:\
 1\.  Rule sf:AvoidReversedOperators raises violations for reversed operator cases (=-, =+).
 
 2\.  Rule does not raise false positives on valid operator usage (+=, -=).
 
-<figure><img src="../../../../.gitbook/assets/image (2031).png" alt="" width="386"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2555).png" alt="" width="386"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2032).png" alt="" width="372"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2556).png" alt="" width="372"><figcaption></figcaption></figure>
 
 5. **Enhancement to “CouplingBetweenObjects” Rule**\
    Modified the rule logic to correctly detect and report violations so that users can identify classes with excessive dependencies and reduce code complexity for better maintainability and testability.\
    \
    Verified that the violation is triggered when the number of classes used exceeds the defined threshold value in the rule parameter (for example, if the threshold is set to 4 and 5 classes are used, a violation will be raised).
 
-<figure><img src="../../../../.gitbook/assets/image (2033).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2557).png" alt="" width="359"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2034).png" alt="" width="359"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2558).png" alt="" width="359"><figcaption></figcaption></figure>
 
 6. **Enhancement to “Avoid Insecure Digest Algorithms” Rule**\
    Enhanced the current rule logic to correctly raise violations when MD5 or SHA-1 algorithms are used. Since these algorithms are cryptographically broken and vulnerable to hash collision attacks, their continued use poses a security risk.\
@@ -1344,9 +1344,9 @@ Verified the new logic via the following scenarios:\
   Verified the new logic via the following scenario:\
   Validated that users are able to see a violation for the rule _AvoidInsecureMessageDigests_. This violation indicates the use of insecure message digest algorithms such as MD5 or SHA-1.
 
-<figure><img src="../../../../.gitbook/assets/image (2035).png" alt="" width="423"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2559).png" alt="" width="423"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2036).png" alt="" width="431"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2560).png" alt="" width="431"><figcaption></figcaption></figure>
 
 
 
@@ -1374,18 +1374,18 @@ Verified the new logic via the following scenarios:\
    Examples:\
    '' - 123, 123 - '', '' - -42
 
-<figure><img src="../../../../.gitbook/assets/image (2037).png" alt="" width="401"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2561).png" alt="" width="401"><figcaption></figcaption></figure>
 
 8. **Enhancement to “Avoid Hard-Coded Resource References” Rule**\
    Enhanced the rule logic to identify hard-coded file path references and raise violations with a clear issue message.\
    \
    Validated the logic by verifying that users are able to see the violations for the use of the attribute value that starts with '/resource/'.
 
-<figure><img src="../../../../.gitbook/assets/image (2038).png" alt="" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2562).png" alt="" width="545"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2039).png" alt="" width="561"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2563).png" alt="" width="561"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2040).png" alt="" width="512"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2564).png" alt="" width="512"><figcaption></figcaption></figure>
 
 ***
 
@@ -1414,7 +1414,7 @@ This logic was added to this rule in this enhancement.
 
 Verified the  SuppressWarnings Rule enhancement and validated that the suppression tag is working in all case-insensitive instances and our TrackSuppressWarnings rule is throwing violation for all cases.
 
-<figure><img src="../../../../.gitbook/assets/image (2003).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4059).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -1432,7 +1432,7 @@ When designing your rule improvement, the logic should:
 * Confirm the containing class uses implements keyword for one of the known Salesforce interfaces.
 * Ensure parameter types match exactly, e.g., SchedulableContext, Database.BatchableContext.
 
-<figure><img src="../../../../.gitbook/assets/image (2004).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4060).png" alt=""><figcaption></figcaption></figure>
 
 2. Visibility Enforcement
 
@@ -1465,9 +1465,9 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
   * SchedulableContext
   * Database.BatchableContext
 
-<figure><img src="../../../../.gitbook/assets/image (2005).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4061).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2006).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4062).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes&#x20;
 
@@ -1483,7 +1483,7 @@ With this fix, we added validation to detect and prevent such recursive referenc
 
 Verified the SOQL injection rule fix (which was causing stack overflow error) by validating that now users are not encountering the error, and their project analyses are working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (2007).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4063).png" alt=""><figcaption></figcaption></figure>
 
 2. Fixed an Error that was occurring when Deleting CodeScan Projects
 
@@ -1493,9 +1493,9 @@ This fix includes logic to delete projects properly.
 
 We have verified the fix for Error When Deleting CodeScan Projects  and validated that users are able to delete their projects without any errors.
 
-<figure><img src="../../../../.gitbook/assets/image (2008).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4064).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2009).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4065).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1540,9 +1540,9 @@ Also, Verified the category Quality Gates and checked the below details which ar
 * componentName\
   componentUuid
 
-<figure><img src="../../../../.gitbook/assets/image (2001).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2860).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2002).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2861).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -1603,9 +1603,9 @@ This fix remediates this issue in full.&#x20;
 Verified the fix by confirming that the documentation link under the "Status" tab in the Issues module has been updated and now redirects to the correct Knowledge Base page. \
 The link is updated to [About Issue Status | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/codescan/issues/about-issue-status) &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="483"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1987).png" alt="" width="483"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="486"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1988).png" alt="" width="486"><figcaption></figcaption></figure>
 
 2. **URIs are not Valid in decorated SARIF output**
 
@@ -1613,9 +1613,9 @@ It has been reported that the URLs are not valid in the SARIF file due to spaces
 
 Verified that users are now able to see valid URLs in the SARIF report even when the file names include underscores, numbers, hyphens, special characters, with spaces.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1989).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1990).png" alt="" width="305"><figcaption></figcaption></figure>
 
 3. **Fixed issue where scheduled analyses are not running for SF projects and its comparison branches**
 
@@ -1625,7 +1625,7 @@ This fix remediates this issue in full.
 
 Verified the fix and validated that the scheduled jobs are now running without issue (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1992).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **Fixed issue with deleting branches in projects using Salesforce Integration**
 
@@ -1638,7 +1638,7 @@ We uncovered that if the following steps were performed…
 
 …then users receive an error message indicating that an “unknown error occurred.”
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="353"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1993).png" alt="" width="353"><figcaption></figcaption></figure>
 
 This issue has been fully remediated in this release.
 
@@ -1694,23 +1694,23 @@ Verified Categories for Project Types in the following scenarios, and have verif
 1. **Verify that the user is able to see the correct tag for the project on the Project Information page after completing the analysis.**\
    _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2054).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the Projects tab of the organization.**\
    _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2055).png" alt=""><figcaption></figcaption></figure>
 
 3.  **Verify that the user is able to see the correct tag for each project integration under the "Tags" column in the My Projects tab.**\
     _&#x45;xample: For a Salesforce integration, the tag should display as “Salesforce.”_<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2056).png" alt=""><figcaption></figcaption></figure>
 4.  **Verify that the user is not able to remove an existing tag or add a tag of a different integration tag to the project.**<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2057).png" alt=""><figcaption></figcaption></figure>
 5.  **Verified that clicking on a tag correctly displays the associated projects, with accurate project count and correct project listings.**<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2058).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -1728,23 +1728,23 @@ Verified this enhancement via validating the below scenarios
 
 1.  If a malformed QP (with no profile name/language) is imported, an error message is shown.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2059).png" alt=""><figcaption></figcaption></figure>
 
 
 2. When importing a QP with custom rules from another instance, those custom rules are also created during import.
 3.  If the imported QP has no profile language, the error message says: "Profile language should be set."<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2060).png" alt=""><figcaption></figcaption></figure>
 4.  If the QP has no profile name, the error message says: "Profile name should be set."<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2061).png" alt=""><figcaption></figcaption></figure>
 5.  If no file is selected during import, an error occurs.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2062).png" alt=""><figcaption></figcaption></figure>
 6. If the repository key is missing, an import error is triggered.
 7.  If a QP with profile name CodeScan way/CodeScan strict way/CodeScan nCino way name is imported, an error is thrown.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2063).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1756,10 +1756,10 @@ Verified the Pagination enhancement via validating the following scenarios:
 
 1.  The _Projects Analysis_ section displays a maximum of 10 entries per page.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2064).png" alt=""><figcaption></figcaption></figure>
 2.  The _Previous Analysis_ section displays a maximum of 15 entries per page.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2065).png" alt=""><figcaption></figcaption></figure>
 3. Pagination controls (e.g., next, previous, specific result numbers) are present and functional in both sections independently.
 
 **3.     Email Limit & Validation for Multi-User Invites**
@@ -1783,16 +1783,16 @@ We have verified the enhancement for Email Limit & Validation for Multi-User Inv
 
 1.  Verified that if invite is sent to more than 50 members, then the following is thrown:<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (12) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2066).png" alt=""><figcaption></figcaption></figure>
 2.  Invite sent successfully if invite is sent to less than or equal to 50 users.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (13) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2067).png" alt=""><figcaption></figcaption></figure>
 3.  Verified, if mail address is more than 100 characters, then an error is thrown; if it is less than 100 characters, then the invite is sent successfully.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (14) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2068).png" alt=""><figcaption></figcaption></figure>
 4.  If invite sent to non-corporate domains, the following error is thrown:<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (15) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2069).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -1825,7 +1825,7 @@ Legacy Status Replacement:
 * Legacy status values such as Opened, Confirmed, ReOpened, Resolved, and Closed must no longer appear in the exported CSV.
 * These must be correctly mapped to the corresponding updated status where applicable.
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2070).png" alt=""><figcaption></figcaption></figure>
 
 2. Filter Cleanup:
 
@@ -1835,16 +1835,16 @@ The Is Resolved filter should be completely removed from the CSV Export page.
 
 Only the Status filter should be visible and functional.
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2071).png" alt=""><figcaption></figcaption></figure>
 
 3. UI-CSV Consistency: The status shown in the exported CSV for each issue must exactly match what is shown for the same issue in the UI.
 4.  The type, statuses and severity shown in the exported CSV is exactly matching what is shown in the issues page and CSV export page.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (18) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2072).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2073).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2074).png" alt=""><figcaption></figcaption></figure>
 
 2. Fixed an unclear error message displayed when invite is sent only to non-corporate email addresses
 
@@ -1856,17 +1856,17 @@ This fix addresses an unclear message that occurs when:
 
 After these steps, Admin receives the following unclear error message:
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2075).png" alt=""><figcaption></figcaption></figure>
 
 However, this issue does not occur when multiple users are invited, including at least one corporate email:
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2076).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been fully remediated.  We have verified the fix via the following scenario:\
 \
 Validated that the proper error message is displayed when invite is sent only to non-corporate email addresses.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2077).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -1924,23 +1924,23 @@ Verified Intelligent Prompts for cls, page, component, trigger, and cmp files, a
 
 1\. Able to click generate prompt and copy it
 
-<figure><img src="../../../../.gitbook/assets/image (1825).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3313).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Able to paste the generated prompt in the Agentforce search box
 
-<figure><img src="../../../../.gitbook/assets/image (1827).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3315).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Able to receive the message prompt copied to clipboard after generating prompt.
 
-<figure><img src="../../../../.gitbook/assets/image (1828).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3316).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. Able to receive a message stating that the file is too long; please select the impacted lines of code and click "Generate Prompt" if the selected file has more than 1,000 characters.
 
-<figure><img src="../../../../.gitbook/assets/image (1829).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3317).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Able to copy the code generated by Agentforce as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1830).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3318).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Notes:
@@ -1948,7 +1948,7 @@ Notes:
 If the file content isn’t too long (less than 1000 characters) the \<FILE\_CONTENT> placeholder gets the contents of the entire file.  Else, only selected items will be passed (needs to be selected manually by the user).  This is intentional because although Salesforce maintains that Agentforce’s input limit is 27k, we have discovered that when we do pass large code in the prompt the response generation is only for the first few lines (around 1000 chars) then stops (causing the response to be incomplete).
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (1831).png" alt="" width="536"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3319).png" alt="" width="536"><figcaption></figcaption></figure>
 
 2. **CVSS Implementation for Security Vulnerabilities**
 
@@ -1994,11 +1994,11 @@ _Verified the CVSS range from 0 to 10, where users are able to see the CVSS viol
 3. SOQL Injection
 4. FieldLevelSecurity
 
-<figure><img src="../../../../.gitbook/assets/image (1833).png" alt="" width="503"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3321).png" alt="" width="503"><figcaption></figcaption></figure>
 
 Verified the CVSS Category on RULES page, ISSUES page and also verified the CVSS issues for the specific analysis.
 
-<figure><img src="../../../../.gitbook/assets/image (1834).png" alt="" width="495"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3322).png" alt="" width="495"><figcaption></figcaption></figure>
 
 &#x20;**3. When encountering an Incorrect Custom XPath rule, CodeScan Analysis continues**
 
@@ -2037,36 +2037,36 @@ Verified the ability to define User Type While Inviting or Adding Member by vali
 1. Admin must be able to select the user type ("Standard User" or "Platform Integration User") when inviting or adding a member.
 2. The user type selection must be a required field.
 
-<figure><img src="../../../../.gitbook/assets/image (1835).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3323).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. "Standard User" should be the default selection.
 
-<figure><img src="../../../../.gitbook/assets/image (1836).png" alt="" width="539"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3324).png" alt="" width="539"><figcaption></figcaption></figure>
 
 4. Selected user type must determine the role and permissions automatically:
    * Standard Users get full access to all CodeScan features.
 
-<figure><img src="../../../../.gitbook/assets/image (1837).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3325).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * Platform Integration Users get limited access scoped to integration IDE tasks.
 
-<figure><img src="../../../../.gitbook/assets/image (1838).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3326).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. User type must be clearly labeled in the member management.
 
-<figure><img src="../../../../.gitbook/assets/image (1839).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3327).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. “Platform user cannot be added to the Owner group.” — should be displayed when the Owners group is selected for a Platform user. Additionally, the Send Invite button should be disabled in this case.
 
-<figure><img src="../../../../.gitbook/assets/image (1840).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3328).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. For multi-user invites, the flow should be the same as for a single invite. Invites can be sent in batches, but only for one user type at a time.
 
-<figure><img src="../../../../.gitbook/assets/image (1841).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3329).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. Able to see the standard and platform user type while adding a member to the organization
 
-<figure><img src="../../../../.gitbook/assets/image (1842).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3330).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -2104,7 +2104,7 @@ Verified the Add Eslint rules from @lwc/eslint-plugin-lwc for the below scenario
 3\. Verified that new rules is not included in the default Quality Profile.\
 4\. Verified that violation is thrown for all the 21 rules.
 
-<figure><img src="../../../../.gitbook/assets/image (1843).png" alt="" width="503"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3331).png" alt="" width="503"><figcaption></figcaption></figure>
 
 2. &#x20;Enhancement to Apex rule “Unused Formal Parameter” {sf:UnusedFormalParameter}
 
@@ -2117,11 +2117,11 @@ Verified the enhanced logic of rule “UnusedFormalParameter” via the followin
 1\. Previously, a parameter (e.g., encounterIds) used in a SOQL string (e.g., WHERE Id IN :encounterIds) was wrongly reported as unused.\
 Now, this is correctly detected as usage — no violation.
 
-<figure><img src="../../../../.gitbook/assets/image (1844).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3332).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Also verified below cases all are working as expected Verified: Parameter used in SOQL with bind variable (:encounterIds) — no violation Verified: Parameter used via clause string assembly — no violation Verified: Parameter incorrectly concatenated into SOQL string — violation Verified: Parameter declared but not used anywhere — violation
 
-<figure><img src="../../../../.gitbook/assets/image (1845).png" alt="" width="518"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3333).png" alt="" width="518"><figcaption></figcaption></figure>
 
 ### Fixes&#x20;
 
@@ -2133,7 +2133,7 @@ Note: The issue lies in one of the common methods many rules use, so this error 
 
 Other rules that use this method include:
 
-<figure><img src="../../../../.gitbook/assets/image (1846).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3334).png" alt="" width="563"><figcaption></figcaption></figure>
 
 With this fix, users are now able to see the violations for all 7 rules when running a CodeScan analysis from the ARM side using the CodeScan plugin:
 
@@ -2157,9 +2157,9 @@ Verified by committing only specific fields and triggering SCA analysis — viol
 
 **Ran analysis for the entire Salesforce org, including objects — violations were also detected."**
 
-<figure><img src="../../../../.gitbook/assets/image (1847).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3335).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1848).png" alt="" width="555"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3336).png" alt="" width="555"><figcaption></figcaption></figure>
 
 2. **Fixed issue where after a user is deactivated, the user is still displayed on Members page**
 
@@ -2201,32 +2201,32 @@ Violations Expected for the below scenarios
 
 1. Verified SOQL directly inside a for loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1849).png" alt="" width="474"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3337).png" alt="" width="474"><figcaption></figcaption></figure>
 
 2. Verified SOQL inside nested if blocks within a loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1850).png" alt="" width="474"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3338).png" alt="" width="474"><figcaption></figcaption></figure>
 
 3. Verified SOQL inside a try/catch block within a loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1851).png" alt="" width="443"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3339).png" alt="" width="443"><figcaption></figcaption></figure>
 
 4. Verified SOQL in a method (or recursive call) invoked from a loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1852).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3340).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Verified SOQL in static helper method called from a loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1853).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3341).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Verified SOQL inside a while loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1854).png" alt="" width="449"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3342).png" alt="" width="449"><figcaption></figcaption></figure>
 
 7. Verified SOQL inside a do-while loop — got violation as expected
 8. Verified SOQL directly inside System.debug() within a loop — got violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (1866).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3354).png" alt="" width="563"><figcaption></figcaption></figure>
 
 **No Violations Expected for the below scenarios**
 
@@ -2252,7 +2252,7 @@ As a PIU (Platform Integration User) with restricted access in the CodeScan plat
 * Projects
 * Organization
 
-<figure><img src="../../../../.gitbook/assets/image (1856).png" alt="" width="560"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3344).png" alt="" width="560"><figcaption></figcaption></figure>
 
 Additionally, the Help and Profile sections in the header should remain accessible. When clicking on the Profile icon, a pop-up should appear displaying (As shown in attached images):
 
@@ -2260,7 +2260,7 @@ Additionally, the Help and Profile sections in the header should remain accessib
 * My Account
 * Logout Option
 
-<figure><img src="../../../../.gitbook/assets/image (1857).png" alt="" width="515"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3345).png" alt="" width="515"><figcaption></figcaption></figure>
 
 Verified Restricted Access for CodeScan Platform Integration User by validating the following scenarios:
 
@@ -2269,23 +2269,23 @@ Verified Restricted Access for CodeScan Platform Integration User by validating 
 3. Verified IntelliJ, VS Code, GitHub Actions, SFDX, Sonar Scanner, and Azure as a Standard user.
 4. Platform users should have access only to the My Account page.
 
-<figure><img src="../../../../.gitbook/assets/image (1858).png" alt="" width="273"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3346).png" alt="" width="273"><figcaption></figcaption></figure>
 
 5. Platform users should only be able to view the Projects and Organizations tabs—no actions should be permitted.
 
-<figure><img src="../../../../.gitbook/assets/image (1859).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3347).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1860).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3348).png" alt="" width="563"><figcaption></figcaption></figure>
 
 6. Both Standard and Platform users should have:
 
 * The Help section is accessible in the header.
 
-<figure><img src="../../../../.gitbook/assets/image (1861).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3349).png" alt="" width="563"><figcaption></figcaption></figure>
 
 * The Profile section is accessible in the header.
 
-<figure><img src="../../../../.gitbook/assets/image (1862).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3350).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. On clicking the Profile icon, the Platform user should be able to see:
 
@@ -2299,15 +2299,15 @@ Verified Restricted Access for CodeScan Platform Integration User by validating 
 9. Users who are Standard users in some organizations and Platform Integration users in other organizations should be shown the homepage of the organizations where they are Standard users upon login.
 10. If Standard users do not have any homepage, they should be shown the My Projects page (All Projects), which should only display projects from the organizations where they are Standard users.
 
-<figure><img src="../../../../.gitbook/assets/image (1863).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3351).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. User type and UI should be organization-specific. If a user switches between organizations, the UI corresponding to their user type in the selected organization should be displayed.
 
-<figure><img src="../../../../.gitbook/assets/image (1864).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3352).png" alt="" width="563"><figcaption></figcaption></figure>
 
 12. If Standard users do not have any homepage, they should be shown the My Issues page (All Issues), which should only display issues from the organizations where they are Standard users.
 
-<figure><img src="../../../../.gitbook/assets/image (1865).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3353).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -2331,7 +2331,7 @@ Component details are listed in their corresponding sections within this documen
 
 In CodeScan, Enterprise Git Connections enable organizations to securely integrate with self-hosted or enterprise instances of GitHub, GitLab, and Bitbucket. Admins can configure these connections at the organization level using OAuth credentials and define allowed IP ranges for secure access. Once connected, these integrations streamline project onboarding by allowing users to directly link Git repositories during project setup for automated analysis and CI/CD workflows.
 
-<figure><img src="../../../../.gitbook/assets/image (1737).png" alt=""><figcaption><p>ALM Connections</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3366).png" alt=""><figcaption><p>ALM Connections</p></figcaption></figure>
 
 More detailed info can be found in our Knowledge Base here:&#x20;
 
@@ -2343,17 +2343,17 @@ More detailed info can be found in our Knowledge Base here:&#x20;
 
 CodeScan has traditionally used this rule to check against redirects to user-controlled locations. This is important because untrusted input could cause an attacker to redirect the user to a malicious site, thereby allowing the attacker to launch a phishing scam and steal user credentials.
 
-<figure><img src="../../../../.gitbook/assets/image (1738).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3367).png" alt=""><figcaption></figcaption></figure>
 
 However, our existing rule did not specifically check for the use of Network.forwardToAuthPage.
 
-<figure><img src="../../../../.gitbook/assets/image (1739).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3368).png" alt=""><figcaption></figcaption></figure>
 
 This rule has now been enhanced with this logic, and we have verified that users are now able to see the violation for the use of both Network.forwardToAuthPage and PageReference.
 
-<figure><img src="../../../../.gitbook/assets/image (1740).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3369).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1741).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3370).png" alt=""><figcaption></figcaption></figure>
 
 More details regarding the Network class can be found here: [Salesforce Developers](https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_network.htm#apex_System_Network_forwardToAuthPage).
 
@@ -2394,7 +2394,7 @@ Verified the SARIF report with the parameter generateSarifFile: false/true in th
 
 Customers who are using a user-based license model will now have a banner on their Billing Page that provides additional clarity regarding the CodeScan features available to users based upon their license type.  Standard users will have access to all CodeScan features (although access can be restricted by admin based on user privileges).  Platform Integration Users will only have access to their Profile, along with access to the Security Tab and the Notifications Tab.  Additionally, both types of users can fully use the CodeScan extension for VS Code and IntelliJ.
 
-<figure><img src="../../../../.gitbook/assets/image (1742).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3371).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -2467,7 +2467,7 @@ In this release, we created a new banner to inform admins when their licenses en
 
 Separately, the AutoRABIT account team will be notified directly as well.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2130).png" alt=""><figcaption></figcaption></figure>
 
 In the example shown, Customer X is licensed for 2 Platform Users, but currently have 4 Platform Users activated in their Org.  As such, the banner appears to advise the admins of this discrepancy.
 
@@ -2495,19 +2495,19 @@ _Verified that the 4 scenarios below are working as expected_
 
 3.1 - "Verified: The updated message after enabling project reports and enabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2131).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.2 - "Verified: The updated message after enabling project reports and disabling the received scheduled reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2132).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
 3.3 - "Verified: The updated message after disabling project reports in the CodeScan UI."
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2133).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 
@@ -2515,7 +2515,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2134).png" alt=""><figcaption></figcaption></figure>
 
 ### Fixes
 
@@ -2523,7 +2523,7 @@ _Verified that the 4 scenarios below are working as expected_
 
 Some users were reporting that they were unable to scroll down in the quality profiles section in project settings.
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2135).png" alt=""><figcaption></figcaption></figure>
 
 This issue has been remediated in this release.
 
@@ -2533,7 +2533,7 @@ We have verified that with this fix, users are able to scroll down in the Qualit
 
 &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2136).png" alt=""><figcaption></figcaption></figure>
 
 **2. Fixed Deprecation Warning associated with sonar.login**
 
@@ -2582,7 +2582,7 @@ We have added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80
 
 Verified the CWE number on the rule Unescaped Value Could Cause XSS by confirming that user is able to see the added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) (along with additional CWE numbers 95 and 470)
 
-<figure><img src="../../../../.gitbook/assets/image (1) (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2138).png" alt=""><figcaption></figcaption></figure>
 
 Please note, these rules are only available for projects created with CodeScan's direct Salesforce integration due to being based on a direct query to a Salesforce Org.
 
@@ -2602,33 +2602,33 @@ Verified below scenarios, all are working as expected\
 \
 1\. An option/toggle called "Disable Invite Members" should be available in Administration > Organization Settings of CodeScan.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2139).png" alt=""><figcaption></figcaption></figure>
 
 2. The default behavior of the invite member option should be active or visible.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2140).png" alt=""><figcaption></figcaption></figure>
 
 3. When the toggle is enabled, the "Invite Member" button is hidden in administration module and members page
 
-<figure><img src="../../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2141).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2142).png" alt=""><figcaption></figcaption></figure>
 
 4. When the toggle is disabled, the "Invite Member" button remains visible and functional as usual in administration module and members page
 
-<figure><img src="../../../../.gitbook/assets/image (6) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2143).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2144).png" alt=""><figcaption></figcaption></figure>
 
 5. Other functionalities related to member management (e.g., viewing members, editing permissions) should remain unaffected.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2145).png" alt=""><figcaption></figcaption></figure>
 
 6. Able to invite users to the codescan organization
 
-<figure><img src="../../../../.gitbook/assets/image (9) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2146).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (10) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2147).png" alt=""><figcaption></figcaption></figure>
 
 3. **Restricting Platform Integration User Access for Standard Users**
 
@@ -2642,15 +2642,15 @@ On the Members page, the following alert "You are a System Admin. You are requir
 \
 1\. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if Standard users with System Admin Permission try switching to a Platform Integration User.
 
-<figure><img src="../../../../.gitbook/assets/image (11) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2148).png" alt=""><figcaption></figcaption></figure>
 
 2. Verified admins are able to change users from standard to platform if standard user is without System Admin Permission
 
-<figure><img src="../../../../.gitbook/assets/image (12) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2149).png" alt=""><figcaption></figcaption></figure>
 
 3. Verified admins are able to see the alert “You are a System Admin. You are required to have a Standard User License.“ if user is owner and trying to switch from standard to platform user
 
-<figure><img src="../../../../.gitbook/assets/image (14) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2151).png" alt=""><figcaption></figcaption></figure>
 
 ### Enhancements
 
@@ -2674,7 +2674,7 @@ Verified the below scenarios for rule vf:AvoidJavaScriptScriptlets and report th
 3. Validated the rule without LightningFunctions then user is able to see the violation which is expected.
 4. Validated the rule by setting the parameter ignoreSupportingCode as false/true working as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (15) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2152).png" alt=""><figcaption></figcaption></figure>
 
 1\.     Enhanced rule “Controller Naming Convention” for Apex and Visualforce
 
@@ -2750,53 +2750,53 @@ CWE: 918
 \
 **1.Validated direct embedding of user input into a URL without sanitization, resulting in a violation (SSRF) as expected**
 
-<figure><img src="../../../../.gitbook/assets/image (16) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2153).png" alt=""><figcaption></figcaption></figure>
 
 2.Validated unescaped dynamic input into URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (17) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2154).png" alt=""><figcaption></figcaption></figure>
 
 3.Validated that one parameter is sanitised but the other is not sanitised, still resulting in a violation (SSRF) as expected
 
-<figure><img src="../../../../.gitbook/assets/image (18) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2155).png" alt=""><figcaption></figcaption></figure>
 
 4.Validated concatenated unsafe dynamic parameters in a URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (19) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2156).png" alt=""><figcaption></figcaption></figure>
 
 5.Validated the presence of a malicious SSRF-style payload embedded in the URL, resulting in a violation (SSRF) as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (21) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2158).png" alt=""><figcaption></figcaption></figure>
 
 6.Validated the attempt at "sanitization" using regex, which is not an approved method, resulting in a violation (Improper sanitization) as expected
 
-<figure><img src="../../../../.gitbook/assets/image (22) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2159).png" alt=""><figcaption></figcaption></figure>
 
 Test Cases with No Violations
 
 1\.     Validated input sanitized using Id.valueOf, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (23) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2160).png" alt=""><figcaption></figcaption></figure>
 
 2. Validated input escaped using String.escapeSingleQuotes, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (24) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2161).png" alt=""><figcaption></figcaption></figure>
 
 3. Validated that the URL starts with "/" ensuring an internal redirect, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (25) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2162).png" alt=""><figcaption></figcaption></figure>
 
 4. Validated date validated using Date.valueOf, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2163).png" alt=""><figcaption></figcaption></figure>
 
 5. Validated a static URL with no dynamic input, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (27) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2164).png" alt=""><figcaption></figcaption></figure>
 
 6. Validated fully escaped input and use of safe methods, resulting in no violation as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (28) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2165).png" alt=""><figcaption></figcaption></figure>
 
 _NOTE: The implementation currently addresses the most common scenarios related to resource injection and SSRF vulnerabilities. However, due to the dynamic and context-dependent nature of these issues—especially when influenced by external inputs, indirect references, or complex backend behaviors—there may be edge cases that are not readily identifiable or testable. These may only surface under specific configurations or data conditions._
 
@@ -2846,7 +2846,7 @@ Here, we are looking at resource injection because the URL is internal (starts w
 
 This rule should find any external variables that are used to create dynamic internal URLs.
 
-<figure><img src="../../../../.gitbook/assets/image (29) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2166).png" alt=""><figcaption></figcaption></figure>
 
 **Acceptance Criteria**
 
@@ -2879,35 +2879,35 @@ Verified the below scenarios are all working as expected
 
 1. **Verified that sanitizing both BaseObjId and AccListString before URL building prevents violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (30) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2167).png" alt=""><figcaption></figcaption></figure>
 
 2. **Verified that validating BaseObjId using Id.valueOf() ensures the ID is valid and safe to use in URLs.**
 
-<figure><img src="../../../../.gitbook/assets/image (31) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2168).png" alt=""><figcaption></figcaption></figure>
 
 3. **Verified that input AccListString validated with regex and sanitized prevents violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (32) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2169).png" alt=""><figcaption></figcaption></figure>
 
 4. **Verified that using AccListString directly in URL without any sanitization or validation causes violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (33) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2170).png" alt=""><figcaption></figcaption></figure>
 
 5. **Verified that sanitizing only BaseObjId but not AccListString leads to a violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (34) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2171).png" alt=""><figcaption></figcaption></figure>
 
 6. **Verified that sanitizing the URL string after using variables has no effect, resulting in a violation.**
 
-<figure><img src="../../../../.gitbook/assets/image (35) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2172).png" alt=""><figcaption></figcaption></figure>
 
 7. **Verified that URL encoding AccListString without further format validation leads to violation**
 
-<figure><img src="../../../../.gitbook/assets/image (36) (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2173).png" alt=""><figcaption></figcaption></figure>
 
 8. **Verified that replacing characters rather than proper sanitization leads to security violations.**
 
-<figure><img src="../../../../.gitbook/assets/image (37) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2174).png" alt=""><figcaption></figcaption></figure>
 
 _NOTE: This implementation currently addresses the most common scenarios related to resource injection and SSRF vulnerabilities. However, due to the dynamic and context-dependent nature of these issues, specially when influenced by external inputs, indirect references, or complex backend behaviors—there may be edge cases that are not readily identifiable or testable. These may only surface under specific configurations or data conditions._
 
@@ -2937,11 +2937,11 @@ CodeScan suggests the remediation for this issue is to use JSENCODE() to escape 
 
 * Verified the updated description and example under rule: vf:UnescapedAttributes vulnerability
 
-<figure><img src="../../../../.gitbook/assets/image (38) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2175).png" alt=""><figcaption></figcaption></figure>
 
 • Verified that Rule is throwing violation as expected
 
-<figure><img src="../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2176).png" alt=""><figcaption></figcaption></figure>
 
 This CodeScan rule was updated with the following changes:
 
@@ -2969,7 +2969,7 @@ Example :
 
 Some customers reported that our current rule does not handle the use of “Network.forwardToAuthPage”
 
-<figure><img src="../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2177).png" alt=""><figcaption></figcaption></figure>
 
 We remediated this issue and validated that CodeScan now throws a violation in both of these cases.
 
@@ -2977,7 +2977,7 @@ Verified the rule “Open Redirect” by validating:
 
 * Users are able to see the violation for the use of both Network.forwardToAuthPage and PageReference
 
-<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2178).png" alt=""><figcaption></figcaption></figure>
 
 More info regarding “Network class” can be found here:
 
@@ -2995,7 +2995,7 @@ CodeScan is designed to identify potential security issues; however, in the cont
 
 As such, the rule update in this release enables CodeScan to recognize that when a class is declared without sharing, field-level security checks are irrelevant, and the "Permissions should be checked before accessing resource" rule is suppressed for fields within without sharing classes.
 
-<figure><img src="../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2180).png" alt=""><figcaption></figcaption></figure>
 
 Note that a new parameter has been added to this rule to Ignore Without Sharing
 
@@ -3003,11 +3003,11 @@ Name: ignoreWithoutSharing\
 Message: When this parameter is true, this rule ignores Field Level Security issues in all without sharing classes.\
 Default: false
 
-<figure><img src="../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2181).png" alt=""><figcaption></figcaption></figure>
 
 Appropriately, CodeScan is flagging violations properly when “with sharing” is used.
 
-<figure><img src="../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2182).png" alt=""><figcaption></figcaption></figure>
 
 7. **Fixed issue with CodeScan’s APEX parser**
 
@@ -3024,7 +3024,7 @@ Verified the below queries in Apex code that users do not get any Parser errors;
 * UNDELETE AS SYSTEM
 * UPDATE AS SYSTEM&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2183).png" alt=""><figcaption></figcaption></figure>
 
 8. &#x20; Fixed issue with rule “Avoid running Soql and DML inside loops” {sf:AvoidSoqlInLoops}
 
@@ -3048,23 +3048,23 @@ The rule enhancement was verified via the below scenarios\
 \
 1\. Verified Custom Field on Standard Object – Missing Description
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2184).png" alt=""><figcaption></figcaption></figure>
 
 2. Verified Custom Field on Custom Object – Missing Description
 
-<figure><img src="../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2185).png" alt=""><figcaption></figcaption></figure>
 
 3. Verified Standard Fields on Standard Object – Missing Description
 
-<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2186).png" alt=""><figcaption></figcaption></figure>
 
 4. Verified Custom Field on Standard Object – With Description
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2187).png" alt=""><figcaption></figcaption></figure>
 
 5. Verified Custom Field( With Description) on Custom Object (Without description)
 
-<figure><img src="../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2188).png" alt=""><figcaption></figcaption></figure>
 
 **10.  Fixed issue with rule “sf: FieldLevelSecurityRule”**
 
@@ -3076,7 +3076,7 @@ We updated this rule to parse the trigger files by adding extra logic to find th
 
 We tested the fix to the Null pointer Exception with sf: FieldLevelSecurityRule and verified we are now no longer able to see the Null pointer exception for the trigger files in the logs (as expected).
 
-<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2189).png" alt=""><figcaption></figcaption></figure>
 
 **11.  Fixed issue with Organization images displaying as large icons in the org list**
 
@@ -3086,7 +3086,7 @@ After we released CodeScan 25.1.0 (April 2025), customers org icon images could 
 
 We have verified the Organization image is now restricted in size, and users are able to see the image as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2190).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -3160,7 +3160,7 @@ This update remediates these 2 issues.&#x20;
 
 Verified the IDP Group Mapping flag by Enabling and Disabling the instance is now working as expected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1672).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3360).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -3187,7 +3187,7 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 * Enhanced performance and responsiveness within CodeScan&#x20;
 * Brand modernization alignment with other AutoRABIT solutions&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2212).png" alt=""><figcaption><p>UI Upgrades</p></figcaption></figure>
 
 {% hint style="info" %}
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;

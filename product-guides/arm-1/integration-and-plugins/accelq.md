@@ -1,4 +1,4 @@
-# AccelQ Integration with AutoRABIT ARM.
+# AccelQ
 
 ### Overview
 
@@ -110,7 +110,7 @@ Once AccelQ is selected, the Tests section displays **Test Job 1**.
 5. For each additional test job, select the required project and test job.
 6. Repeat the process to configure up to **5 AccelQ test jobs**.
 
-<figure><img src="../../../.gitbook/assets/image (3049).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5397).png" alt=""><figcaption></figcaption></figure>
 
 You can configure test jobs using any of the following combinations:
 
@@ -178,7 +178,7 @@ ARM provides consolidated AccelQ test results in CI Job History, allowing users 
 4. Under the **Functional Tests** section, click the test results/details icon.
 5. The **AccelQ Test Results** panel opens with the consolidated results.
 
-<figure><img src="../../../.gitbook/assets/image (3050).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5398).png" alt=""><figcaption></figcaption></figure>
 
 #### Understanding the Consolidated Results
 
@@ -252,7 +252,7 @@ The enhanced AccelQ integration maintains compatibility with existing CI Jobs.
 
 #### Classic UI Support
 
-<figure><img src="../../../.gitbook/assets/image (3052).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5400).png" alt=""><figcaption></figcaption></figure>
 
 **New AccelQ CI Job configurations are supported only in the ARM New UI.**
 

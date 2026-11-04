@@ -4,7 +4,7 @@
 
 You'll see this when you log in to your ARM account. <br>
 
-<figure><img src="../../../.gitbook/assets/image (1899).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2500).png" alt=""><figcaption></figcaption></figure>
 
 Let's get to know the main areas of the ARM application.
 
@@ -12,7 +12,7 @@ Let's get to know the main areas of the ARM application.
 
 You see a list of icons with the context in the top-right corner.<br>
 
-<figure><img src="../../../.gitbook/assets/image (1897).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2498).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Let's examine each of these links in detail:**\
 \
@@ -27,7 +27,7 @@ A **`Create New`** drop-down is available, which allows users to perform the pri
 Hover your mouse over the **`Create New`** menu and click the drop-down icon. The drop-down field will allow the users to select a value from a predefined set of choices.\
 <br>
 
-<figure><img src="../../../.gitbook/assets/image (1898).png" alt="" width="195"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2499).png" alt="" width="195"><figcaption></figcaption></figure>
 
 ### **User Details** <a href="#user-details" id="user-details"></a>
 
@@ -47,7 +47,7 @@ On the left-hand side of the application, you see a list of icons with the conte
 Let's examine each of these links in detail:\
 <br>
 
-<figure><img src="../../../.gitbook/assets/image (2379).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3570).png" alt=""><figcaption></figcaption></figure>
 
 ### [Dashboard](../../arm/arm-features/dashboard-and-pipelines/dashboards-and-widgets.md) <a href="#dashboard" id="dashboard"></a>
 
@@ -70,11 +70,11 @@ The **Deployment** process allows you to quickly and safely transfer new develop
 
 ARM Data Loader allows you to configure your data loading operations in convenient and user-friendly GUI wizards and even allows importing and exporting Salesforce data without typing a line of code. Its powerful and easy-to-understand scheduling settings will enable you to specify almost any schedule quickly. You may schedule any data-loading operation for automatic execution.
 
-### [Salesforce-DX (SFDX)](../../arm/salesforce-dx.md) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
+### [Salesforce-DX (SFDX)](../../arm/arm-features/salesforce-dx/) <a href="#salesforcedx-sfdx" id="salesforcedx-sfdx"></a>
 
 Salesforce Developer Experience (DX) is a new set of tools that streamlines the entire development life cycle. It improves team development and collaboration, facilitates automated testing and continuous integration, and makes the release cycle more efficient and agile. It’s a new approach that supports team collaboration, focusing on predictability, quality, and standardized development life-cycle on Salesforce. Salesforce DX enables developers to build and release the latest features in a short period with minimal risk. ARM provides the best Salesforce Developer Experience with continuous integration and helps deliver software rapidly.
 
-### [Reports](../../arm/reports-overview.md) <a href="#reports" id="reports"></a>
+### [Reports](../../arm/arm-features/reports/reports-overview.md) <a href="#reports" id="reports"></a>
 
 ARM allows its users to view all the deployment, merge, and data loader-related information carried out in the Salesforce Org in the form of reports. This information improves productivity, accountability, and insight into your business data in the form of reports.
 

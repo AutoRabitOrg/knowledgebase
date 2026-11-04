@@ -10,7 +10,7 @@ AutoRABIT Vault provides administrators with visibility into all currently activ
 
 Administrators can view and manage user sessions from the **Profile > Session Information** screen.
 
-![Session Info](<../../../.gitbook/assets/image (69) (1) (1) (1) (1) (1) (1) (1) (1).png>) ![Session List](<../../../.gitbook/assets/image (70) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Session Info](<../../../.gitbook/assets/image (3159).png>) ![Session List](<../../../.gitbook/assets/image (3160).png>)
 
 To log out a user:
 
@@ -42,7 +42,7 @@ To monitor user activity:
 4. Enter a specific **Activity** keyword (e.g., backup, compare, replicate).
 5. Click **Get Details**.
 
-![Activity Log](<../../../.gitbook/assets/image (71) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Activity Log](<../../../.gitbook/assets/image (3161).png>)
 
 ***
 
@@ -51,4 +51,4 @@ To monitor user activity:
 1. On the **Activity Logs** page, click **Download**.
 2. The activity log will be saved as a **CSV** file on your device.
 
-![Export Logs](<../../../.gitbook/assets/image (72) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![Export Logs](<../../../.gitbook/assets/image (3162).png>)

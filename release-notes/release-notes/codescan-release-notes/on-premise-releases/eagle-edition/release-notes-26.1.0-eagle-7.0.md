@@ -52,7 +52,7 @@ By limiting the fields in the queries to only those that are required for our LW
 
 Retrieve the name of an Account and its owner's Name via getRecord:&#x20;
 
-<img src="../../../../../.gitbook/assets/unknown (73).png" alt="" height="312" width="513">
+<img src="../../../../../.gitbook/assets/unknown (125).png" alt="" height="312" width="513">
 
 This way, we are enhancing the performance of LWC components and streamlining the data retrieval process from the Salesforce database.&#x20;
 
@@ -64,7 +64,7 @@ Created a new rule for Flow metadata that validates the runInMode (or equivalent
 
 We believe that enforcing stricter validation on Flow execution context will prevent developers from inadvertently exposing sensitive operations or data access when Flows run under unclear or unsafe privilege assumptions. If CodeScan alerts developers when unsafe Flow run modes are used, developers will configure the correct context mode and explicitly handle permissions, leading to fewer security vulnerabilities in customer orgs. &#x20;
 
-<img src="../../../../../.gitbook/assets/unknown (74).png" alt="" height="323" width="574">
+<img src="../../../../../.gitbook/assets/unknown (126).png" alt="" height="323" width="574">
 
 **Value/Purpose:** &#x20;
 
@@ -224,7 +224,7 @@ If we trace the data flow from unescaped or unsanitized sources to the point of 
 
 Provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.&#x20;
 
-<img src="../../../../../.gitbook/assets/unknown (75).png" alt="" height="272" width="442">
+<img src="../../../../../.gitbook/assets/unknown (127).png" alt="" height="272" width="442">
 
 Verified that the data flow tracking logic for unescaped output in Apex is working, and the updated description has been applied.&#x20;
 
@@ -435,7 +435,7 @@ A new configurable parameter EnableForAbstractAndVirtual has been added, this pa
 
 Current Behavior:&#x20;
 
-<img src="../../../../../.gitbook/assets/unknown (76).png" alt="" height="210" width="560">
+<img src="../../../../../.gitbook/assets/unknown (128).png" alt="" height="210" width="560">
 
 This behavior aligns with the intended design: &#x20;
 

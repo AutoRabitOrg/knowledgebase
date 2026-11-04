@@ -4,97 +4,6 @@
 
 {% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
 
-
-
-## AutoRABIT Vault Release Notes 26.2.8
-
-**Release Date: 04 November 2026**
-
-#### **Improved Reliability for Flow and Workflow Rule Restoration**
-
-**Category**: Data Restore
-
-We have resolved an issue that could affect the reactivation of Salesforce Flows and Workflow Rules during restore operations.
-
-Previously, certain timing-related conditions could result in inconsistent activation behavior when restoring these automation components.
-
-**What's improved**:
-
-More consistent reactivation of Flows and Workflow Rules during restore operations.
-
-Reduced risk of unexpected automation states following a restore.
-
-Improved reliability of recovery operations involving Salesforce automation.
-
-**Customer Benefit**: Greater confidence in restoring Salesforce data with less need for manual verification of state of Flows and Workflow Rules after recovery.
-
-#### **Corrected Column Alignment in File Upload Diagnostic Reports**
-
-**Category**: Data Operations
-
-We have fixed an issue where columns in CSV diagnostic reports generated during file upload operations were not aligned correctly with their corresponding data.
-
-**What's improved**:
-
-Correct alignment of columns and values in diagnostic CSV files.
-
-Improved readability of file upload error reports.
-
-Easier identification and investigation of upload-related issues.
-
-**Customer Benefit**: Administrators can review diagnostic reports more efficiently and troubleshoot file upload issues with greater clarity.
-
-#### **Enhanced Platform Stability and Security**
-
-**Category**: Platform Improvements
-
-This release includes several backend enhancements designed to strengthen the stability, security, and reliability of Vault.
-
-**What's improved**:
-
-**Audit reliability**: Enhanced audit-related processing for more consistent and reliable operations.
-
-**Resource management**: Improved handling of system resources to reduce the risk of resource-related issues.
-
-**Concurrent processing**: Strengthened processing reliability when multiple operations execute simultaneously.
-
-**Operational diagnostics**: Refined application logging to support more effective issue investigation.
-
-**Customer Benefit**: A more resilient and dependable platform that supports consistent performance and reliable operations.
-
-These improvements are applied at the platform level and do not require changes to existing customer workflows.
-
-#### **Fixed Login Redirection for Subusers**
-
-**Category**: User Experience
-
-We have resolved an issue where subusers could be redirected to an unexpected location after successfully signing in to Vault.
-
-**What's improved:**
-
-Subusers are now directed to the expected application location after authentication.
-
-More consistent navigation following successful login.
-
-**Customer Benefit:** A smoother and more predictable sign-in experience for subusers.
-
-#### **Improved Table Alignment and Readability**
-
-**Category:** User Interface
-
-We have refined the presentation of tables across the Vault application to improve readability and visual consistency.
-
-**What's improved:**
-
-Improved alignment of table columns.
-
-More consistent spacing between table elements.
-
-Cleaner presentation of structured information.
-
-**Customer Benefit:** Easier navigation and review of information, particularly in screens that display large amounts of tabular data.
-
-
 ## AutoRABIT Vault Release Notes 26.2.7
 
 **Release Date: 28 October 2026**
@@ -103,13 +12,13 @@ Cleaner presentation of structured information.
 
 Added an alternative AutoRABIT Vault Connect experience for viewing archived data within Salesforce.
 
-<figure><img src="../../../.gitbook/assets/2 (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (31).png" alt=""><figcaption></figcaption></figure>
 
 The managed package provides access to archived information without requiring Salesforce Connect or external objects.
 
 Archived data can be explored through supported list, search, and related-record experiences.
 
-<figure><img src="../../../.gitbook/assets/image (3065).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5413).png" alt=""><figcaption></figcaption></figure>
 
 This extends access to archived information within familiar Salesforce workflows.
 
@@ -322,7 +231,7 @@ For the recommended IAM policy updates, refer to the following documentation:
 
 AutoRABIT Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.
 
-<figure><img src="../../../.gitbook/assets/1 (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (15).png" alt=""><figcaption></figcaption></figure>
 
 #### Context-Aware Synthetic Data Masking <a href="#dt-10880-context-aware-synthetic-data-masking" id="dt-10880-context-aware-synthetic-data-masking"></a>
 
@@ -604,9 +513,9 @@ Fixed an issue where data type mismatches between source data and schema caused 
 **Range-Based Date Masking for Sensitive Date Fields**\
 Introduced range‑based date masking for sensitive date fields, enabling more flexible and realistic anonymization by shifting dates within configurable ranges.
 
-<figure><img src="../../../.gitbook/assets/1 (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/2 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
 **Error while creating backup config with filter**\
 Fixed an error occurring when creating backup configurations with filters, so filtered backup configs can now be created reliably.
@@ -672,15 +581,15 @@ Fixed an issue that prevented replication of files larger than 10 MB, ensuring l
 
 AutoRABIT Vault now enables advanced searches across Backups and Archives within a selectable six-month time span using an intuitive query builder. Users can define specific criteria, execute the search configuration, and identify data from Archives & Backups.
 
-<figure><img src="../../../.gitbook/assets/1 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (12).png" alt=""><figcaption></figcaption></figure>
 
 The feature allows comparison of selected snapshots to pinpoint changes across Orgs based on the defined criteria. Once differences are identified, the **Review and Restore** capability enables targeted data restoration, ensuring precise recovery of required records.
 
-<figure><img src="../../../.gitbook/assets/2 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (12).png" alt=""><figcaption></figcaption></figure>
 
 This enhancement streamlines historical data analysis and controlled restoration from backups and archives.
 
-<figure><img src="../../../.gitbook/assets/3 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (12).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:**
@@ -698,7 +607,7 @@ Updated the Salesforce Org registration flow to use OAuth 2.0 aligned with Sales
 
 Resolved an issue where the QR code was not displayed during the multi-factor authentication (MFA) setup process. This fix ensures that the QR code is properly generated and available during authentication setup, allowing users to complete MFA configuration successfully.
 
-<figure><img src="../../../.gitbook/assets/image (2461).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4809).png" alt=""><figcaption></figcaption></figure>
 
 **SSO Login – SAML Issuer Handling Fix**
 

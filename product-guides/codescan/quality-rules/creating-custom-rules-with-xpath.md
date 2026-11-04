@@ -97,7 +97,7 @@ To find methods with the name `setup`, use this XPath:
 
 **Screenshot (PMD Rule Designer):**
 
-<figure><img src="../../../.gitbook/assets/image (23) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 In the Rule Designer, the analysis is performed solely on the **file’s source code**, from which an Abstract Syntax Tree (AST) is generated. Because the tool does not process the file as a whole, any metadata associated with the file—such as its **name, path, or other file-level attributes—cannot be accessed or retrieved during analysis**.”
@@ -163,16 +163,16 @@ The type of component being visualized is flow. Decisions exist within that flow
 2. Click on the Rules menu
 3.  In the Filters pane, search for XPath rule template.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1725).png" alt=""><figcaption><p>XPath Rule Template</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3712).png" alt=""><figcaption><p>XPath Rule Template</p></figcaption></figure>
 4. Select the XPath rule template of the language of your choice.&#x20;
 5. Under Custom Rules click on Create.
 
-<figure><img src="../../../.gitbook/assets/image (78) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 6. Assign the values to the Name, Key, Type, Severity, Status, Description and Message fields.&#x20;
 7. Insert the Xpath created in the field provided and click on Create.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (79) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (219).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Now you can add it to your Quality Profile as you would any built in-rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.
 
@@ -180,7 +180,7 @@ Now you can add it to your Quality Profile as you would any built in-rule.  Plea
 
 In the following screenshot, the CodeScan Rule Designer rule is not being used to validate the XPath expression.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2340).png" alt=""><figcaption></figcaption></figure>
 
 ### To download the Custom Rule designer:
 
@@ -189,8 +189,8 @@ In the following screenshot, the CodeScan Rule Designer rule is not being used t
 3. In the XPath query section, enter the XPath and click 'Go' to Validate the Path.
 4. If the XPath is correct, it will highlight the source code lines for that XPath expression.
 
-<figure><img src="../../../.gitbook/assets/image (1541).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3722).png" alt=""><figcaption></figcaption></figure>
 
 Example:
 
-<figure><img src="../../../.gitbook/assets/image (1542).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3723).png" alt=""><figcaption></figcaption></figure>

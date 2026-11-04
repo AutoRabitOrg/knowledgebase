@@ -16,8 +16,8 @@ The **PageLayoutAssignment** template allows users to create and assign differen
     * A **Test Case Name**, **Object Name**, and **Profile Name** are auto-populated.
     * Click **Add** to input custom test data.
 
-    ![Layout Input Fields](<../../../../../.gitbook/assets/image (81).png>)
-9. Click on the edit icon ![Edit](<../../../../../.gitbook/assets/image (80).png>).
+    ![Layout Input Fields](<../../../../../.gitbook/assets/image (1006).png>)
+9. Click on the edit icon ![Edit](<../../../../../.gitbook/assets/image (1005).png>).
 10. In the dialog:
     * Enter the **Profile**, **Record Type**, and **Layout Name**.
     * To assign multiple profile-specific layouts, click the **+** symbol and fill out the additional entries.

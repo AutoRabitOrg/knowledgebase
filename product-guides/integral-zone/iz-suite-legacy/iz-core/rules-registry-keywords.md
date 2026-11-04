@@ -173,4 +173,4 @@ return list
 ### See Also
 
 * [On The Fly Results](../iz-scan/vs-code-extension/source-code-analysis/on-the-fly-results.md)
-* [Rules Playground](../../../iz-analyzer/manage-rules/rules-playground.md)
+* [Rules Playground](../../iz-analyzer/manage-rules/rules-playground.md)

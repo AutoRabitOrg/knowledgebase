@@ -18,21 +18,21 @@ From this page, you can:
 7. Access and download datasets.
 8. Manage templates.
 
-<figure><img src="../../../../../.gitbook/assets/image (1329).png" alt="Template list view with management options"><figcaption><p>Template list view with management options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2965).png" alt="Template list view with management options"><figcaption><p>Template list view with management options</p></figcaption></figure>
 
 #### Viewing Dataset <a href="#viewing-dataset" id="viewing-dataset"></a>
 
 Click the **View Dataset** button to inspect the fetched records. You can choose between **JSON** and **TREE** view formats. Both metadata and data object lists are downloadable in ZIP format.
 
-<figure><img src="../../../../../.gitbook/assets/image (1330).png" alt="Dataset view options with JSON and TREE modes"><figcaption><p>Dataset view options with JSON and TREE modes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2966).png" alt="Dataset view options with JSON and TREE modes"><figcaption><p>Dataset view options with JSON and TREE modes</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1331).png" alt="Detailed record list in TREE view" width="563"><figcaption><p>Detailed record list in TREE view</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2967).png" alt="Detailed record list in TREE view" width="563"><figcaption><p>Detailed record list in TREE view</p></figcaption></figure>
 
 #### Manage Template <a href="#manage-template" id="manage-template"></a>
 
 Click the **Manage** button to update or publish your template.
 
-<figure><img src="../../../../../.gitbook/assets/image (1332).png" alt="Manage button to access template edit options"><figcaption><p>Manage button to access template edit options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2968).png" alt="Manage button to access template edit options"><figcaption><p>Manage button to access template edit options</p></figcaption></figure>
 
 **Additional Options on the 'Manage Template' Screen**
 
@@ -42,13 +42,13 @@ Click the **Manage** button to update or publish your template.
 
     * **View DataSet** – See the record list for each version created. Starting from ARM 22.2, datasets are version-specific.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1335).png" alt="Version-specific dataset viewing capability"><figcaption><p>Version-specific dataset viewing capability</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2971).png" alt="Version-specific dataset viewing capability"><figcaption><p>Version-specific dataset viewing capability</p></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1337).png" alt="Detailed dataset view per version" width="563"><figcaption><p>Detailed dataset view per version</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2973).png" alt="Detailed dataset view per version" width="563"><figcaption><p>Detailed dataset view per version</p></figcaption></figure>
 
     * **Clone Version** – Quickly generate a new version from an existing template.
     * **Version Log** – View a history of all changes made to the template.
     * **Change Log** – Document changes for each version.
     * **Delete Template** – Permanently remove the template. This action is irreversible.
 
-<figure><img src="../../../../../.gitbook/assets/image (1338).png" alt="Template action icons for versioning, logs, and delete"><figcaption><p>Template action icons for versioning, logs, and delete</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2974).png" alt="Template action icons for versioning, logs, and delete"><figcaption><p>Template action icons for versioning, logs, and delete</p></figcaption></figure>

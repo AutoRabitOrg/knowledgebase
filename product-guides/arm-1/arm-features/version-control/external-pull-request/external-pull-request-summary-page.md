@@ -1,4 +1,4 @@
-# External Pull Request Summary Page
+# External Pull Request Summary
 
 The **External Pull Request Summary** screen displays all pull requests created to date. You can also create a new pull request from this page.
 
@@ -16,11 +16,11 @@ You can choose to display 25, 50, 75, or 100 records per page or use **Previous*
 
 Click the **Create Pull Request** button on the right side of the screen.
 
-<figure><img src="../../../../../.gitbook/assets/image (58) (1) (1) (1) (1) (1).png" alt="Create Pull Request button"><figcaption><p>Create Pull Request button</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1533).png" alt="Create Pull Request button"><figcaption><p>Create Pull Request button</p></figcaption></figure>
 
 Complete the form on the pop-up screen:
 
-<figure><img src="../../../../../.gitbook/assets/image (59) (1) (1) (1) (1) (1).png" alt="Pull Request creation form" width="406"><figcaption><p>Pull Request creation form</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1534).png" alt="Pull Request creation form" width="406"><figcaption><p>Pull Request creation form</p></figcaption></figure>
 
 1. Select a **repository** (only enabled ones are listed).
 2. Choose the **Source Branch** and **Target Branch**.
@@ -36,17 +36,17 @@ ARM compares metadata between source and target branches and generates a differe
 * **Red** lines = deletions in the **Source Branch**
 * **Green** lines = additions in the **Target Branch**
 
-<figure><img src="../../../../../.gitbook/assets/image (60) (1) (1) (1) (1) (1).png" alt="Metadata diff view showing additions and deletions"><figcaption><p>Metadata diff view showing additions and deletions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1535).png" alt="Metadata diff view showing additions and deletions"><figcaption><p>Metadata diff view showing additions and deletions</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (61) (1) (1) (1) (1) (1).png" alt="Insertions and deletions summary in diff view"><figcaption><p>Insertions and deletions summary in diff view</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1536).png" alt="Insertions and deletions summary in diff view"><figcaption><p>Insertions and deletions summary in diff view</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (62) (1) (1) (1) (1) (1).png" alt="Inline code diff highlighting removed lines"><figcaption><p>Inline code diff highlighting removed lines</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1537).png" alt="Inline code diff highlighting removed lines"><figcaption><p>Inline code diff highlighting removed lines</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (63) (1) (1) (1) (1) (1).png" alt="Code diff showing added lines"><figcaption><p>Code diff showing added lines</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1538).png" alt="Code diff showing added lines"><figcaption><p>Code diff showing added lines</p></figcaption></figure>
 
 You can also **view/add/edit comments** at the revision level in the **Commits** section.
 
-<figure><img src="../../../../../.gitbook/assets/image (64) (1) (1) (1) (1) (1).png" alt="Comment section for pull request revisions"><figcaption><p>Comment section for pull request revisions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1539).png" alt="Comment section for pull request revisions"><figcaption><p>Comment section for pull request revisions</p></figcaption></figure>
 
 > **Important Notes:**
 >
@@ -56,13 +56,13 @@ You can also **view/add/edit comments** at the revision level in the **Commits**
 
 ## Additional Actions on the Pull Request Page <a href="#additional-actions-on-pull-request-page" id="additional-actions-on-pull-request-page"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (65) (1) (1) (1) (1) (1).png" alt="Action menu on pull request list"><figcaption><p>Action menu on pull request list</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1540).png" alt="Action menu on pull request list"><figcaption><p>Action menu on pull request list</p></figcaption></figure>
 
 ### More Operations <a href="#id-1-more-operations" id="id-1-more-operations"></a>
 
 1. **Navigate to Pull Request Page** – Click on the pull request label to open it on GitHub or Bitbucket.
 
-<figure><img src="../../../../../.gitbook/assets/image (66) (1) (1) (1) (1).png" alt="Pull request link to GitHub/Bitbucket" width="563"><figcaption><p>Pull request link to GitHub/Bitbucket</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1541).png" alt="Pull request link to GitHub/Bitbucket" width="563"><figcaption><p>Pull request link to GitHub/Bitbucket</p></figcaption></figure>
 
 2. **Edit Pull Request** – Click the edit icon (!\[Edit icon]\(../../../../../.gitbook/assets/image (67) (1) (1) (1) (1).png)) to update PR details.
 

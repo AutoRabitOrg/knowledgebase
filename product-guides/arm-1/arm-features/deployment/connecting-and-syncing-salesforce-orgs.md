@@ -27,7 +27,7 @@ To perform org synchronization, follow these steps:
 3. Go to the **`Org Synchronization History`** tab.
 4.  Click on the **`Get Org Differences`** call-to-action button.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2663).png" alt=""><figcaption></figcaption></figure>
 5.  In the **`Org Differences`** dialog box, you will need to:
 
     * Give the process a **`Name`**.
@@ -39,7 +39,7 @@ To perform org synchronization, follow these steps:
     To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2664).png" alt="" width="563"><figcaption></figcaption></figure>
 6. On the next screen, you can:
    * View the metadata list included in both source and target orgs.
    * Add or delete metadata components to/from the target org.
@@ -53,7 +53,7 @@ To perform org synchronization, follow these steps:
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or fail. This is optional.
 9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="516"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1221).png" alt="" width="516"><figcaption></figcaption></figure>
 
 10. Click on **`Deploy`**.
 11. You'll be taken to the [Track Deployment History](monitor-deployments.md) page, where the current synchronization progress can be seen.
@@ -62,21 +62,21 @@ To perform org synchronization, follow these steps:
 
 Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page. Additional options are available, such as View Info, Schedule, Delete, Download PDF Report, and Download CSV Report, by clicking the three dot (...) menu corresponding to a particular job on the Org Synchronization Summary Page.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2665).png" alt=""><figcaption></figcaption></figure>
 
-1.  **`Info:`** Click the ![](<../../../../.gitbook/assets/image (16) (1) (1) (1) (1) (1) (1) (1) (1).png>) icon to view the detailed synchronization report.\
+1.  **`Info:`** Click the ![](<../../../../.gitbook/assets/image (1223).png>) icon to view the detailed synchronization report.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
-2. **`Delete:`** Click on the ![](<../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1) (1) (1) (1).png>) icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
-3. **`Schedule:`** Click the ![](<../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>) icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
-4. **`Run:`** Click the ![](<../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1) (1).png>) icon to rerun the org synchronization process.
+    <figure><img src="../../../../.gitbook/assets/image (2666).png" alt="" width="563"><figcaption></figcaption></figure>
+2. **`Delete:`** Click on the ![](<../../../../.gitbook/assets/image (1225).png>) icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
+3. **`Schedule:`** Click the ![](<../../../../.gitbook/assets/image (1226).png>) icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
+4. **`Run:`** Click the ![](<../../../../.gitbook/assets/image (1227).png>) icon to rerun the org synchronization process.
 5. **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
-   *   **Log Report:** Click on the ![](<../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1) (1) (1).png>) icon under the **`Status`** column to view the log report for the sync process.<br>
+   *   **Log Report:** Click on the ![](<../../../../.gitbook/assets/image (1228).png>) icon under the **`Status`** column to view the log report for the sync process.<br>
 
        <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-20 at 12.00.15 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 6. **`Report:`**&#x54;here are two options in this column.
-   * Click on the![](<../../../../.gitbook/assets/image (23) (1) (1) (1) (1) (1) (1) (1).png>) icon to view the metadata components difference report between the source and the target org.
-   * Click on the![](<../../../../.gitbook/assets/image (24) (1) (1) (1) (1) (1) (1) (1).png>) icon to download the Diff report in your local system (in PDF or CSV format).
+   * Click on the![](<../../../../.gitbook/assets/image (1230).png>) icon to view the metadata components difference report between the source and the target org.
+   * Click on the![](<../../../../.gitbook/assets/image (1231).png>) icon to download the Diff report in your local system (in PDF or CSV format).
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2668).png" alt=""><figcaption></figcaption></figure>

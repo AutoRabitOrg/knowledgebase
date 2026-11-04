@@ -1,4 +1,4 @@
-# Find\_Replace - Masking\_Rules
+# Find & Replace
 
 The Masking Rules module centralizes the creation and management of masking rules for a selected Salesforce org. A masking rule defines the object, field type, masking style, selected fields, and replacement behavior used to protect sensitive values.
 
@@ -10,7 +10,7 @@ The Masking Rules page displays the selected Salesforce org and the available ru
 
 The Salesforce org is selected from Salesforce Orgs. The required rule can then be created by selecting NEW MASKING RULE.
 
-<figure><img src="../../../../.gitbook/assets/image (2666).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5014).png" alt=""><figcaption></figcaption></figure>
 
 ## Start a New Masking Rule
 
@@ -26,15 +26,15 @@ SAVE remains inactive until the mandatory configuration is completed. CANCEL clo
 
 The rule scope is defined by selecting the Salesforce object and the field type. Select Object displays the available objects for the selected Salesforce org. Field Type narrows the field list to the required type of field.
 
-![](<../../../../.gitbook/assets/Unknown image (363)>)
+![](<../../../../.gitbook/assets/Unknown image (512)>)
 
-![](<../../../../.gitbook/assets/Unknown image (364)>)
+![](<../../../../.gitbook/assets/Unknown image (513)>)
 
 ## Select Find & Replace as the Masking Style
 
 Masking Style is set to Find & Replace. This masking style searches selected fields for a configured value or pattern and replaces the matching values based on the selected replacement option.
 
-![](<../../../../.gitbook/assets/Unknown image (365)>)
+![](<../../../../.gitbook/assets/Unknown image (514)>)
 
 ## Configure the Find and Replacement Values
 
@@ -45,15 +45,15 @@ After the Find value is entered, Replace With determines how the matched values 
 * Specific Value replaces each matched value with the replacement value entered in the rule.
 * Synthetic Data replaces each matched value with generated synthetic data based on the configured replacement behavior.
 
-![](<../../../../.gitbook/assets/Unknown image (366)>)
+![](<../../../../.gitbook/assets/Unknown image (515)>)
 
-![](<../../../../.gitbook/assets/Unknown image (367)>)
+![](<../../../../.gitbook/assets/Unknown image (516)>)
 
-![](<../../../../.gitbook/assets/Unknown image (368)>)
+![](<../../../../.gitbook/assets/Unknown image (517)>)
 
-![](<../../../../.gitbook/assets/Unknown image (369)>)
+![](<../../../../.gitbook/assets/Unknown image (518)>)
 
-![](<../../../../.gitbook/assets/Unknown image (370)>)
+![](<../../../../.gitbook/assets/Unknown image (519)>)
 
 ## Select Fields and Review Sample Values
 
@@ -61,15 +61,15 @@ After the rule criteria are configured, the matching fields are displayed in the
 
 Selected fields display the masking strategy and sample value columns. The sample value indicates how the matched data will be replaced when the rule is applied.
 
-![](<../../../../.gitbook/assets/Unknown image (371)>)
+![](<../../../../.gitbook/assets/Unknown image (520)>)
 
-![](<../../../../.gitbook/assets/Unknown image (372)>)
+![](<../../../../.gitbook/assets/Unknown image (521)>)
 
-![](<../../../../.gitbook/assets/Unknown image (373)>)
+![](<../../../../.gitbook/assets/Unknown image (522)>)
 
-![](<../../../../.gitbook/assets/Unknown image (374)>)
+![](<../../../../.gitbook/assets/Unknown image (523)>)
 
-![](<../../../../.gitbook/assets/Unknown image (375)>)
+![](<../../../../.gitbook/assets/Unknown image (524)>)
 
 ## Save the Rule
 
@@ -77,7 +77,7 @@ After the Find value, Replace With option, replacement details, and selected fie
 
 The rule is then available from the Masking Rules page and can be reviewed or managed from the rule grid.
 
-![](<../../../../.gitbook/assets/Unknown image (376)>)
+![](<../../../../.gitbook/assets/Unknown image (525)>)
 
 ## Configuration Summary
 

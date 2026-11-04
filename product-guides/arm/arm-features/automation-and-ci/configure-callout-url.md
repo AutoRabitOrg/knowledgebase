@@ -24,7 +24,7 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 ### Configuring Callout URL <a href="#configuring-callout-url" id="configuring-callout-url"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (1190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3131).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the **Configure Callout URL** checkbox under the **Callout URL** section.
 2. Choose the **Callout Type**:
@@ -34,13 +34,13 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
        * **On Success**
        * **On Failure**
 
-       <figure><img src="../../../../.gitbook/assets/image (1191).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3132).png" alt=""><figcaption></figcaption></figure>
 3. The callout method defaults to **POST**.
 4. Enter the endpoint in the **URL** field.
 5. Select an **Authorization** type:
    *   **Basic**: Standard username and password.
 
-       <figure><img src="../../../../.gitbook/assets/image (1192).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/image (3133).png" alt=""><figcaption></figcaption></figure>
    *   **Custom**: Uses `username: API Token`. Prefix the token with the keyword `token`.
 
        <figure><img src="../../../../.gitbook/assets/Screenshot 2024-10-31 at 12.18.51 PM.png" alt="" width="563"><figcaption></figcaption></figure>
@@ -56,13 +56,13 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
     * Use `application/json` for JSON requests.
     * Use `application/xml` for XML requests.
 
-    <figure><img src="../../../../.gitbook/assets/image (1194).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3135).png" alt=""><figcaption></figcaption></figure>
 7.  To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
 
     * Default headers include:\
       `"Accept": "application/json", "Content-Type": "application/json"`
 
-    <figure><img src="../../../../.gitbook/assets/image (1195).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3136).png" alt=""><figcaption></figcaption></figure>
 8. Click **Save**.
 
 ### Dynamic Parameters <a href="#dynamic-parameters" id="dynamic-parameters"></a>
@@ -83,14 +83,14 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
 
 View detailed logs under the **Build Log** section.
 
-<figure><img src="../../../../.gitbook/assets/image (1196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3137).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3138).png" alt=""><figcaption></figcaption></figure>
 
 #### Callout Type: Post-Deployment <a href="#callout-type-postdeployment" id="callout-type-postdeployment"></a>
 
 Logs are available under the **Deployment Log** section.
 
-<figure><img src="../../../../.gitbook/assets/image (1198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3139).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3140).png" alt=""><figcaption></figcaption></figure>

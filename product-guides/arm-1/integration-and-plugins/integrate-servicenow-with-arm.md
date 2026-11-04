@@ -6,13 +6,13 @@
 2. Navigate to the **Admin** module and click the **Credentials** tab.
 
 \
-&#x20;<img src="../../../.gitbook/assets/image (2887).png" alt="" data-size="original">
+&#x20;<img src="../../../.gitbook/assets/image (5235).png" alt="" data-size="original">
 
 
 
 3. Click **Create Credential** from the right navigation.
 
-<figure><img src="../../../.gitbook/assets/image (2515).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4863).png" alt=""><figcaption></figcaption></figure>
 
 4. In the popup:
 
@@ -23,7 +23,7 @@
 
 5. Click **Save**
 
-<figure><img src="../../../.gitbook/assets/image (2516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4864).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -36,7 +36,7 @@
     \
     <br>
 
-    <figure><img src="../../../.gitbook/assets/image (2517).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4865).png" alt=""><figcaption></figcaption></figure>
 5. Enter:
    * A **Label Name**
    * Your ServiceNow **subdomain URL** (e.g., `https://[subdomain].service-now.com`)
@@ -82,7 +82,7 @@
 
     * Check **Map ALM Project (Ex: ServiceNow)**
 
-    <figure><img src="../../../.gitbook/assets/image (2889).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (5237).png" alt=""><figcaption></figcaption></figure>
 2. Go to **ALM** section:
 
 * Set:

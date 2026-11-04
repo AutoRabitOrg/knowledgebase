@@ -19,7 +19,7 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
 
 1.  Go to the **New CI Job** screen.
 
-    ![New CI Job](<../../../.gitbook/assets/image (879).png>)
+    ![New CI Job](<../../../.gitbook/assets/image (2887).png>)
 2. Choose a CI Job type from:
    * _Deploy SFDX source from Version Control_
    * _Deploy from Salesforce Org_
@@ -30,28 +30,28 @@ You can configure Jenkins to trigger jobs automatically after a successful deplo
 4. Check **On Successful Deployment** to enable post-deployment actions.
 5.  Check **Trigger Jenkins Job** to enable Jenkins job execution upon success.
 
-    ![Trigger Jenkins](<../../../.gitbook/assets/image (880).png>)
+    ![Trigger Jenkins](<../../../.gitbook/assets/image (2888).png>)
 6. Fill in the required fields:
    *   **URL:** Full Jenkins server URL\
        _&#x45;xample:_ `http://localhost:8080` or `http://<hostname>:8080`
 
-       ![Jenkins URL](<../../../.gitbook/assets/image (881).png>)
+       ![Jenkins URL](<../../../.gitbook/assets/image (2889).png>)
    *   **Job Name:** Name of the Jenkins project (e.g., `HelloWorld`)
 
-       ![Job Name](<../../../.gitbook/assets/image (882).png>)
+       ![Job Name](<../../../.gitbook/assets/image (2890).png>)
    *   **Job URL:** Relative job path\
        _&#x45;xample:_ `job/HelloWorld`
 
-       ![Job URL](<../../../.gitbook/assets/image (883).png>)
+       ![Job URL](<../../../.gitbook/assets/image (2891).png>)
    *   **User ID:** Jenkins user triggering the job
 
-       ![User ID](<../../../.gitbook/assets/image (884).png>)
+       ![User ID](<../../../.gitbook/assets/image (2892).png>)
    *   **API Token:** Found under **Profile > Configure** in Jenkins
 
-       ![API Token](<../../../.gitbook/assets/image (885).png>)
+       ![API Token](<../../../.gitbook/assets/image (2893).png>)
    *   **Build Parameters (Optional):** Define build parameters and values. To add multiple parameters, click the plus `+` icon.
 
-       ![Parameters](<../../../.gitbook/assets/image (878).png>)
+       ![Parameters](<../../../.gitbook/assets/image (2886).png>)
 
 ***
 

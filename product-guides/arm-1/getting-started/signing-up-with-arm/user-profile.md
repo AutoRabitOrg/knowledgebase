@@ -11,7 +11,7 @@ To access user preferences, click your user name in the upper right corner and s
 The **`Personal Details`** section displays your full name, ARM user name, email address, phone number, etc. Your personal details will be populated, as the system administrator must enter this information when creating a new user account. In this section, you can update your name, phone number, address, etc., accordingly.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2041).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -51,27 +51,27 @@ NOTE:
 View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2042).png" alt=""><figcaption></figcaption></figure>
 
 ### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
 
 View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. \
 You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2044).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2045).png" alt=""><figcaption></figcaption></figure>
 
 ### My ALM Mappings <a href="#my-alm-mappings" id="my-alm-mappings"></a>
 
 Under **`My ALM Mappings`** section, you can map your ALM using your credentials or **`Re-Authenticate`** Jira ALMs configured with OAuth access.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2046).png" alt=""><figcaption></figcaption></figure>
 
 For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have added the filter to fetch specific work items according to the filter applied.<br>
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2047).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -83,7 +83,7 @@ According to the filter set, only specific work items will get fetched. When the
 
 **`My Default Page`** is the first page that appears when you log in to ARM. You can customize ARM to open any page as the default page.
 
-<figure><img src="../../../../.gitbook/assets/image (26) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
 
 ## Mapping Your Profile with Version Control and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
 
@@ -163,7 +163,7 @@ Salesforce adds metadata types in each seasonal release, and some arrive with a 
 
 #### Connecting the Org <a href="#kreoib3n9dt7" id="kreoib3n9dt7"></a>
 
-Register each org with OAuth or OAuth through an External Client App. Go to Admin > SF Org Mgmt. For the full registration steps, see [ARM: Salesforce ECA Connection Setup Steps](../../getting-started-1/registration/salesforce-org/arm-salesforce-eca-local-connection-setup-steps.md) and [Salesforce Authentication Using OAuth](../../registration/salesforce-org/salesforce-authentication-using-oauth.md).
+Register each org with OAuth or OAuth through an External Client App. Go to Admin > SF Org Mgmt. For the full registration steps, see [ARM: Salesforce ECA Connection Setup Steps](../../getting-started-1/registration/salesforce-org/arm-salesforce-eca-local-connection-setup-steps.md) and [Salesforce Authentication Using OAuth](../../getting-started-1/registration/salesforce-org/salesforce-authentication-using-oauth.md).
 
 Both methods open the Salesforce login page so the integration user can approve access. The integration user must therefore be able to sign in to Salesforce. Leave API Only User off.
 

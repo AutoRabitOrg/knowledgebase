@@ -16,13 +16,13 @@ You’ll need the **`Deployment History`** access permission.
 
 #### List of fields available on the Deployment History screen <a href="#list-of-fields-available-on-the-deployment-history-screen" id="list-of-fields-available-on-the-deployment-history-screen"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1)   (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1208).png" alt=""><figcaption></figcaption></figure>
 
 1. **`Deployment Label:`** Deployment label along with the name of the user performing the deployment, the date and time when the deployment started, and the deployment status.
 2. **`Destination Sandbox:`** Filter the deployments based on the destination sandbox chosen.
 3. **`Last Created Date Range:`** By using this filter, you may narrow down the jobs based on when they were created. By default, the last seven days' jobs are displayed. The jobs created within the previous 14 days, 30 days, or 24 hours can be filtered. Use the custom range filter to specify more criteria. Then, choose the date and time range for which you want to view the jobs.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1209).png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. **`Last Iteration Status:`** Filter the jobs based on the status of the most recent deployment.
 5. **`Deployment Iterations:`**&#x45;ach new deployment updates the revision of the Deployment. Such revision details can be seen here (revision number, date, and time of the deployment). Also, view the deployment log for each iteration which gives you information about the entire deployment process run for the selected deployment label.
@@ -42,11 +42,11 @@ You’ll need the **`Deployment History`** access permission.
 
           User can also add any comments if required, e.g., "Deployment is waiting for approval."<br>
 
-          <figure><img src="../../../../.gitbook/assets/image (1697).png" alt=""><figcaption><p>Deployment History</p></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (3373).png" alt=""><figcaption><p>Deployment History</p></figcaption></figure>
 
-          <figure><img src="../../../../.gitbook/assets/image (1698).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (3374).png" alt=""><figcaption><p>Iterations</p></figcaption></figure>
 
-          <figure><img src="../../../../.gitbook/assets/image (1699).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
+          <figure><img src="../../../../.gitbook/assets/image (3375).png" alt=""><figcaption><p>SCA Report</p></figcaption></figure>
 
 
    2.  #### As an Approver <a href="#as-an-approver" id="as-an-approver"></a>
@@ -64,19 +64,19 @@ You’ll need the **`Deployment History`** access permission.
        2.  Once the Approver clicks on Approve → It should get Auto-deployed. Users and approvers should be notified via email.\
            Pending L1 Approval<br>
 
-           <figure><img src="../../../../.gitbook/assets/image (1700).png" alt=""><figcaption><p>Pending L1 Approval</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3376).png" alt=""><figcaption><p>Pending L1 Approval</p></figcaption></figure>
 
            Email sent to Approver.<br>
 
-           <figure><img src="../../../../.gitbook/assets/image (1701).png" alt=""><figcaption><p>Deployment Email</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3377).png" alt=""><figcaption><p>Deployment Email</p></figcaption></figure>
 
            Pending L2 Approval<br>
 
-           <figure><img src="../../../../.gitbook/assets/image (1702).png" alt=""><figcaption><p>Pending L2 Approval</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3378).png" alt=""><figcaption><p>Pending L2 Approval</p></figcaption></figure>
 
            Approver can drop a comment, either Approve or Reject, so the user can review the comments in the comments screen.<br>
 
-           <figure><img src="../../../../.gitbook/assets/image (1703).png" alt=""><figcaption><p>Confirmation</p></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3379).png" alt=""><figcaption><p>Confirmation</p></figcaption></figure>
 
 
    3. Once the Approver clicks on Reject, the → Approver should reject with comments. Users and approvers should be notified via email.
@@ -133,7 +133,7 @@ You’ll need the **`Deployment History`** access permission.
 
 A new section called the **`Audit Log`** has been added under the **`Deployment Information`** tab.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="560"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1210).png" alt="" width="560"><figcaption></figcaption></figure>
 
 The audit log lists the user's changes made during the deployment timestamp (based on the start time and end time of deployment).
 

@@ -17,8 +17,8 @@ You can use our CSV plugin if you want a self-hosted GUI tool. See below for det
 
     * Start your SonarQube™ server and run a scan on one or more projects. When the scan is finished, click on the **More** drop-down menu at the top of the screen. Click on **CSV Issue Export** and you’ll be given a list of filters and all projects currently in SonarQube™.
 
-    <figure><img src="../../../../.gitbook/assets/image (431).png" alt="" width="397"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3031).png" alt="" width="397"><figcaption></figcaption></figure>
 
     * Choose the filters you require and click the project name to download the **.CSV report** for that project with the selected filters. Open the file with a spreadsheet editor to view your project's issues.
 
-    <figure><img src="../../../../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (3032).png" alt=""><figcaption></figcaption></figure>

@@ -16,11 +16,11 @@ A development team completes several user stories during a sprint and commits th
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New >** [**New CI Job**](../../../../arm/arm-features/automation-and-ci/ci-job-history.md).
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2649).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose the tile: **Package from** [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/).
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2650).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter a descriptive **Job name**.
 2. Add a brief **Description**.
@@ -33,11 +33,11 @@ A development team completes several user stories during a sprint and commits th
 2. Choose the **Repository** and **Branch**.
 3.  Under **Build Using**, pick one option:
 
-    * **Baseline Revision** – Enter a revision manually or click **Edit** (![edit icon](<../../../../../.gitbook/assets/image (90) (1).png>)) to select it from a list.
+    * **Baseline Revision** – Enter a revision manually or click **Edit** (![edit icon](<../../../../../.gitbook/assets/image (1370).png>)) to select it from a list.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2651).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2653).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Important Notes:
@@ -48,7 +48,7 @@ Important Notes:
 
 * **Time Range** – Specify a period so ARM fetches only revisions in that window.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2654).png" alt=""><figcaption></figcaption></figure>
 
 #### Additional options in the Build section
 
@@ -79,21 +79,21 @@ Important Notes:
 7. **Prepare Destructive Changes** – Delete unwanted metadata from the destination org before deployment.
 8. **Run Static Analysis Report** – Identify code quality issues before production.
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2655).png" alt=""><figcaption></figcaption></figure>
 
 * **Apex PMD / Checkmarx** – Set criteria such as date range and **Priority**. If the priority threshold is not met, the build is marked unstable.
 
-<figure><img src="../../../../../.gitbook/assets/image (7) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2656).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube** – Choose to scan all metadata or only newly added components, then set a **Priority**.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2657).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 * **Run on newly added supported metadata types** – Scan only newly added components.
 *   **Run on all supported metadata types from the full source** – Scan the entire branch.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1225).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3741).png" alt="Scope options for supported metadata types"><figcaption><p>Scope options for supported metadata types</p></figcaption></figure>
 
 For details on running **Static Code Analysis in CI jobs**, see [this guide](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md).
 
@@ -114,7 +114,7 @@ For details on running **Static Code Analysis in CI jobs**, see [this guide](../
 
 Send email notifications on build success or failure.
 
-<figure><img src="../../../../../.gitbook/assets/image (2192).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2794).png" alt=""><figcaption></figcaption></figure>
 
 ### Schedule <a href="#schedule" id="schedule"></a>
 

@@ -163,7 +163,7 @@
 Navigate to **Live Data Masking → Job Config**.\
 Locate the required object from the list.
 
-<figure><img src="../../../.gitbook/assets/1 (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (31).png" alt=""><figcaption></figcaption></figure>
 
 Select the checkbox for the object.\
 Click the **Masking Rules** icon under the **Masking Rules** column.
@@ -172,7 +172,7 @@ Click the **Masking Rules** icon under the **Masking Rules** column.
 
 The **Selected Object** window is displayed.
 
-<figure><img src="../../../.gitbook/assets/2 (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (29).png" alt=""><figcaption></figcaption></figure>
 
 Review the existing masking rules for the selected object.\
 Click **NEW MASKING RULE** to create a new rule.
@@ -181,7 +181,7 @@ Click **NEW MASKING RULE** to create a new rule.
 
 The **Masking Rule** screen is displayed.
 
-<figure><img src="../../../.gitbook/assets/3 (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (27).png" alt=""><figcaption></figcaption></figure>
 
 Enter the **Rule Name**.\
 Ensure the rule name follows the allowed format (alphanumeric, `_`, `-`, and spaces).
@@ -192,7 +192,7 @@ Verify that the **Select Object** field is pre-populated (e.g., **Account**).
 
 Click the **Field Type** dropdown.
 
-<figure><img src="../../../.gitbook/assets/4 (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (24).png" alt=""><figcaption></figcaption></figure>
 
 Select the required field type (e.g., **date**, **double**, **picklist**, **textarea**, **encryptedstring**, **url**).
 
@@ -200,7 +200,7 @@ Select the required field type (e.g., **date**, **double**, **picklist**, **text
 
 Click the **Masking Style** dropdown.
 
-<figure><img src="../../../.gitbook/assets/5 (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (23).png" alt=""><figcaption></figcaption></figure>
 
 Select the required masking style (e.g., **substitution**, **dateRange**).
 
@@ -208,7 +208,7 @@ Select the required masking style (e.g., **substitution**, **dateRange**).
 
 If **dateRange** is selected:
 
-<figure><img src="../../../.gitbook/assets/6 (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (22).png" alt=""><figcaption></figcaption></figure>
 
 Enter the required date range in the **Enter a date range** field.\
 Use the calendar icon to select dates.
@@ -217,7 +217,7 @@ Use the calendar icon to select dates.
 
 Choose the start and end dates from the calendar.
 
-<figure><img src="../../../.gitbook/assets/7 (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (17).png" alt=""><figcaption></figcaption></figure>
 
 Verify that the selected range is populated in the **Enter a date range** field.\
 Confirm that the corresponding **Masking Value** is auto-generated.
@@ -226,7 +226,7 @@ Confirm that the corresponding **Masking Value** is auto-generated.
 
 Select the required fields from the list using the checkboxes.
 
-<figure><img src="../../../.gitbook/assets/8 (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (18).png" alt=""><figcaption></figcaption></figure>
 
 (Optional) Enable **Add to Org - 'Org Name' Masking Rules List** to save the rule at the org level.
 

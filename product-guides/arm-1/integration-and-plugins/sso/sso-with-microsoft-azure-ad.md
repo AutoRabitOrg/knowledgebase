@@ -110,7 +110,7 @@ Edit the required user in AutoRABIT and configure the following fields:
 * **Microsoft SSO Tenant ID** – Enter the Tenant ID obtained from Microsoft Entra ID.
 * **Microsoft SSO Object ID** – Enter the Object ID of the corresponding Entra user.
 
-<figure><img src="../../../../.gitbook/assets/image (2692).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5040).png" alt=""><figcaption></figcaption></figure>
 
 Save the user configuration after entering the required details.
 

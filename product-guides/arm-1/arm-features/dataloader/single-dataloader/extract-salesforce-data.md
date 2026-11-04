@@ -19,7 +19,7 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     The required object is selected from the object list. This selected object is used as the master object in the Schema step.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2605).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4953).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Login and select object step with the object list available for selection.</p>
 7.  ### Open the filter configuration
@@ -28,11 +28,11 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     Upload CSV File is selected under Input Options. This option allows filter values to be loaded from a CSV file instead of entering each value manually.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2606).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4954).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Schema step with Filters available for the selected master object.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2607).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4955).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Filter panel with Upload CSV File selected.</p>
 8.  ### Upload the CSV file
@@ -43,23 +43,23 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     If the uploaded file format or content is not valid for the selected filter setup, Vault displays a validation message so the file can be corrected before continuing.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2608).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4956).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Field, operator, and upload action available for the CSV filter.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2609).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4957).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">CSV file selected from the local file picker.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2610).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4958).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Success notification after the CSV file is uploaded.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2611).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4959).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validation message displayed for upload-related issues.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2612).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4960).png" alt=""><figcaption></figcaption></figure>
 
     &#x20;                                   Action menu showing available options after file upload.
 9.  ### Auto-populate and review the query
@@ -68,11 +68,11 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     Order By can be configured to define the sort order for the query output. Record Count can be used when the job must limit the number of records returned by the query.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2613).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4961).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Generated query populated from the uploaded CSV file.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2614).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4962).png" alt=""><figcaption></figcaption></figure>
 
     &#x20;                                   Record Count area available for limiting returned records.
 10. ### Validate and apply the filter
@@ -81,23 +81,23 @@ Basic DataLoader offers a convenient feature to extract data from Salesforce by 
 
     Apply saves the filter configuration for the selected master object. During processing, Vault applies the CSV-based filter and then returns to the Schema step with the filter configured for the object.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2615).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4963).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Validate action available after the query is generated.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2616).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4964).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Processing state while validation or apply action is in progress.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2617).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4965).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Success notification after the query is validated.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2618).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4966).png" alt=""><figcaption></figcaption></figure>
 
     <p align="center">Apply action available after validation.</p>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2619).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (4967).png" alt=""><figcaption></figcaption></figure>
 
     &#x20;                            Schema step showing the configured filter after the panel closes.
 11. Multiple schedule options are available to schedule the job

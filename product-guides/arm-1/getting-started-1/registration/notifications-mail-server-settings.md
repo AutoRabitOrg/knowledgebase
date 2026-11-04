@@ -11,7 +11,7 @@ You can use the mail server settings in this article to manually set up your ema
 Begin the process by hovering your mouse over the **Settings** module and selecting the option: **Notifications**.\
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2396).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4745).png" alt=""><figcaption></figcaption></figure>
 
 You’ll then be presented with a screen divided into **Mail Settings,** **Send a Test Mail,** and **Teams/Slack Settings** sections.&#x20;
 
@@ -19,7 +19,7 @@ You’ll then be presented with a screen divided into **Mail Settings,** **Send 
 
 To set up a mail client, it’s necessary to configure the server that will take care of the delivery of your emails. And here’s the standard procedure of mail configuration and adding the right parameters in the **Mail Settings** section
 
-<figure><img src="../../../../.gitbook/assets/image (2397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4746).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the required details as listed below (mandatory fields are marked with an asterisk (\*) mark.&#x20;
 
@@ -35,7 +35,7 @@ Fill in the required details as listed below (mandatory fields are marked with a
     \
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2398).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4747).png" alt=""><figcaption></figcaption></figure>
 
 #### How to reset your mail preferences?
 
@@ -45,7 +45,7 @@ You won't be able to switch back to the default AutoRABIT mail preferences once 
 
 Before using your customized email style, be sure to preview it once to be sure everything is displaying correctly. Simply enter your email address in the **Recipient** field and click on the **Test** button to receive a test mail notification. Sample email notification attached.
 
-<figure><img src="../../../../.gitbook/assets/image (757).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4151).png" alt=""><figcaption></figcaption></figure>
 
 #### Teams/Slack Settings <a href="#teamsslack-settings" id="teamsslack-settings"></a>
 
@@ -56,18 +56,18 @@ When an event is triggered in ARM, email notifications are sent to the selected 
 3.  Click on **Test Connection**. A **Test connection Successful** notification will be displayed.\
     <br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2399).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (4748).png" alt=""><figcaption></figcaption></figure>
 4. If the test connection fails, an error message will be displayed. Check and re-enter the correct webhook URL.
 
-<figure><img src="../../../../.gitbook/assets/image (759).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4153).png" alt=""><figcaption></figcaption></figure>
 
 5. After a successful test connection, click **Save**.
 
 {% hint style="info" %}
-**Important Note:** The first channel that you add is automatically configured to all the events by default. To remove the channel from any notification type, click on the![](<../../../../.gitbook/assets/image (760).png>)icon. Channels added after that will have to be configured to events manually.
+**Important Note:** The first channel that you add is automatically configured to all the events by default. To remove the channel from any notification type, click on the![](<../../../../.gitbook/assets/image (4154).png>)icon. Channels added after that will have to be configured to events manually.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (761).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4155).png" alt=""><figcaption></figcaption></figure>
 
 6. To add another channel, click on the (**+**) icon. You can add up to **10** channels.
 7. To delete a channel, click on the (**x**) icon and then click **YES** on the confirmation message.
@@ -78,7 +78,7 @@ This section is a guide to configuring the channels to the notification types. Y
 \
 <br>
 
-<figure><img src="../../../../.gitbook/assets/image (2401).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4750).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the checkbox for the **Notification Type** that you want to configure.
 2. Click in the **Selected channels** field to display a list of configured channels.
@@ -88,7 +88,7 @@ This section is a guide to configuring the channels to the notification types. Y
 6. When an event is triggered in ARM, the configured channels will receive a notification.\
    The image below is an example of what these notifications look like on Teams.
 
-<figure><img src="../../../../.gitbook/assets/image (765).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4159).png" alt=""><figcaption></figcaption></figure>
 
 ## Email Admin Settings
 

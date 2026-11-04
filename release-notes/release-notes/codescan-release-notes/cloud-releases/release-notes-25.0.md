@@ -2,7 +2,7 @@
 description: Newest CodeScan Releases
 ---
 
-# Release Notes 25.0
+# Cloud Release Notes 25.0
 
 ## CodeScan Cloud
 
@@ -203,11 +203,11 @@ Component details are listed in their corresponding sections within this documen
    \
    Example:
 
-<figure><img src="../../../../.gitbook/assets/image (1627).png" alt=""><figcaption><p>List Accounts</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1884).png" alt=""><figcaption><p>List Accounts</p></figcaption></figure>
 
 Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.
 
-<figure><img src="../../../../.gitbook/assets/image (1628).png" alt=""><figcaption><p>Query Results</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1885).png" alt=""><figcaption><p>Query Results</p></figcaption></figure>
 
 2. **Enhanced IDE to accept email IDs that have up to 255 characters**\
    \

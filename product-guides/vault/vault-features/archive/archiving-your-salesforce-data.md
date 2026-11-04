@@ -4,23 +4,23 @@
 2. Go to the **Setup** module.
 3.  Locate the Salesforce Org for which the data has to be archived. You can use the **Search** filter to easily find the required Salesforce Org.
 
-    <figure><img src="../../../../.gitbook/assets/image (1610).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1873).png" alt=""><figcaption><p>Search for Salesforce Org</p></figcaption></figure>
 4. Navigate to the **Configs** tab.
 5.  Click on **Add Archive Config**. This will allow you to view all the components available in your Salesforce Org and choose the components for which you want to define the archive policy.
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2216).png" alt=""><figcaption><p>Add Archive Config</p></figcaption></figure>
 6.  Select the components that you need to archive on the next screen.
 
-    <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2215).png" alt=""><figcaption><p>Select components</p></figcaption></figure>
 7.  Using **Filters,** you can define the criteria for which the records will get fetched. For example, you can define criteria to fetch **AccountBrand** records that are older than _1,000 days_ and _field Id_ is not empty.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2214).png" alt=""><figcaption><p>AccountBrand-Filter</p></figcaption></figure>
 
 Validate your query to see whether the criteria set is correct and view the number of records that will be fetched. You can even set the record count limit for your data being fetched. Click on **Apply** to set the criteria and close the Filter dialog box. To easily identify the objects for which the filter is applied, the filter icon is highlighted.
 
-<figure><img src="../../../../.gitbook/assets/image (232).png" alt="" width="563"><figcaption><p>Filter</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3921).png" alt="" width="563"><figcaption><p>Filter</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (233).png" alt=""><figcaption><p>Filters</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3922).png" alt=""><figcaption><p>Filters</p></figcaption></figure>
 
 8.  #### **Schema Viewer**
 
@@ -30,13 +30,13 @@ Validate your query to see whether the criteria set is correct and view the numb
        1. From the Edit Configuration screen, objects are displayed in a tabular list under the Data step.
        2.  Selecting the Hierarchy icon corresponding to an object opens the Account Hierarchy view.
 
-           <figure><img src="../../../../.gitbook/assets/image (2345).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3774).png" alt=""><figcaption></figcaption></figure>
        3. The hierarchy view opens in a modal window, preserving the current configuration context.
     2. Hierarchy Layout and Navigation
        1. The selected object is displayed as the root node of the hierarchy.
        2.  Child objects are listed beneath the root, reflecting direct and indirect relationships.
 
-           <figure><img src="../../../../.gitbook/assets/image (2346).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3775).png" alt=""><figcaption></figcaption></figure>
        3. Expand and collapse controls allow traversal across multiple hierarchy levels.
        4. Each object card displays:
           * Object name
@@ -50,7 +50,7 @@ Validate your query to see whether the criteria set is correct and view the numb
            1. Matching objects within the current hierarchy are highlighted.
            2. The info icon is automatically opened the first time typing is initiated.
 
-           <figure><img src="../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3776).png" alt=""><figcaption></figcaption></figure>
        3. The info icon can be manually reopened at any time by selecting the icon.
     4.  Search Help (Info Icon)
 
@@ -61,7 +61,7 @@ Validate your query to see whether the criteria set is correct and view the numb
             * Highlights matching objects only within the currently displayed hierarchy.
             * Does not change navigation or hierarchy depth.
 
-            <figure><img src="../../../../.gitbook/assets/image (2349).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3778).png" alt=""><figcaption></figcaption></figure>
         2. **Selecting from results**
            * Performs a global hierarchy search.
            * Automatically navigates to the object’s location within the schema tree.
@@ -77,10 +77,10 @@ Validate your query to see whether the criteria set is correct and view the numb
 
             1. Searches across the entire hierarchy path.
 
-            <figure><img src="../../../../.gitbook/assets/image (2351).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3780).png" alt=""><figcaption></figcaption></figure>
     6.  If no valid path exists for the selected direction, a contextual message is displayed indicating that the object is not reachable from the current root.
 
-        <figure><img src="../../../../.gitbook/assets/image (2352).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (3781).png" alt=""><figcaption></figcaption></figure>
     7. **Search Results Feedback**
        1. **A result banner displays:**
           * Number of matches found on the current page.
@@ -91,7 +91,7 @@ Validate your query to see whether the criteria set is correct and view the numb
     8. “Only Matches” Toggle
        1.  The Only Matches toggle is available alongside search results.
 
-           <figure><img src="../../../../.gitbook/assets/image (2354).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3783).png" alt=""><figcaption></figcaption></figure>
        2. **When enabled:**
           1. Only objects matching the search criteria are displayed.
           2. Non-relevant hierarchy nodes are temporarily hidden.
@@ -101,12 +101,12 @@ Validate your query to see whether the criteria set is correct and view the numb
        1. The Root option is displayed at the top of the hierarchy view.
        2.  Clicking the Root option redirects the view back to the root object of the hierarchy.
 
-           <figure><img src="../../../../.gitbook/assets/image (2355).png" alt=""><figcaption></figcaption></figure>
+           <figure><img src="../../../../.gitbook/assets/image (3784).png" alt=""><figcaption></figcaption></figure>
        3. This action resets the navigation context without clearing selected objects.
     10. Path and Navigation Indicators
         1.  A breadcrumb-style Path indicator displays the traversal route from the root object to the selected object.
 
-            <figure><img src="../../../../.gitbook/assets/image (2356).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3785).png" alt=""><figcaption></figcaption></figure>
         2. A Go Back option allows navigation to the previous hierarchy level.
         3. A Returning to indicator clarifies the navigation context when moving back up the hierarchy.
     11. Object Selection Behavior
@@ -123,7 +123,7 @@ Validate your query to see whether the criteria set is correct and view the numb
     13. **Saving Hierarchy Configuration**
         1.  The Save button persists all selections made within the hierarchy view.
 
-            <figure><img src="../../../../.gitbook/assets/image (2358).png" alt=""><figcaption></figcaption></figure>
+            <figure><img src="../../../../.gitbook/assets/image (3787).png" alt=""><figcaption></figcaption></figure>
         2. Validation is performed before saving to ensure dependency consistency.
         3. On successful save, the hierarchy modal closes and returns to the configuration screen.
     14. Key Functional Notes
@@ -183,31 +183,31 @@ Validate your query to see whether the criteria set is correct and view the numb
 
                 **Note:** This option creates a backup of the specified data for archival purposes and then waits for user confirmation—up to a maximum of 7 days —before proceeding with data deletion from Salesforce.
 
-                <figure><img src="../../../../.gitbook/assets/image (19) (6).png" alt=""><figcaption></figcaption></figure>
+                <figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
         14. On hovering over the “Confirm Archive”, the following message will be displayed “Your archival job confirmation option has expired because it is not confirmed within 7 days”.
 
             <figure><img src="../../../../.gitbook/assets/Confirm Archive.png" alt=""><figcaption></figcaption></figure>
 11. A summary of all the objects, filters, and criteria selected or applied will get displayed before your archive policy gets configured. Click **Save**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1620).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2767).png" alt=""><figcaption><p>Save Config Details</p></figcaption></figure>
 12. Now go to the **Archive** tab.
 13. Select your [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) for which you configured the archive recently.&#x20;
 14. Select the **Environment**.
 15. Select the archive configured recently under **Configurations** drop-down field.
 
-    <figure><img src="../../../../.gitbook/assets/image (1616).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1879).png" alt=""><figcaption><p>Archive Settings</p></figcaption></figure>
 16. Click on **Get Details** to fetch all the existing archives configured for your Salesforce Org. If you've initiated the archival process for the first time in AutoRABIT Vault, you will not find any details on this page.
 17. To run on-demand archive before the scheduled archive set, use **Archive Now** button.
 18. On the **Start Archive** screen, the label name gets auto-populated; however, you have the option to edit the label name and enter the label you desire.
 19. &#x20;Select your configuration and click **Archive**.
 
-    <figure><img src="../../../../.gitbook/assets/image (1617).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1880).png" alt=""><figcaption><p>Start Archive</p></figcaption></figure>
 20. You'll be redirected to the **Archive** page to view the status of the ongoing archive process being run.
 
-    <figure><img src="../../../../.gitbook/assets/image (1618).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1881).png" alt=""><figcaption><p>View Status</p></figcaption></figure>
 21. &#x20;For each archive job, the following information will be displayed:
 
-    <figure><img src="../../../../.gitbook/assets/image (1619).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1882).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="226">Parameters</th><th>Description</th></tr></thead><tbody><tr><td>Label<br></td><td>An identification name for each archive performed in AutoRABIT Vault<br></td></tr><tr><td>Configuration Name<br></td><td>Archive configuration name<br></td></tr><tr><td>Date/Time<br></td><td>The date and time stamp for the archive process took place<br></td></tr><tr><td>Expiry Date<br></td><td>Till which date the archive job will remain with AutoRABIT Vault<br></td></tr><tr><td>Duration<br></td><td>Time-taken to complete the archive operation<br></td></tr><tr><td>Records<br></td><td>Total numbers of records archived<br></td></tr><tr><td>API Calls<br></td><td>API call duration (in seconds)<br></td></tr><tr><td>Query<br></td><td>Filter or query that have been used to fetch the records<br></td></tr><tr><td>Data Backup<br></td><td>Backup type for data components i.e., <em>Full backup</em> or <em>Incremental backup</em><br></td></tr><tr><td>Status<br></td><td>Status of the archive i.e., <em>completed, in progress, or failed</em><br></td></tr><tr><td>Actions<br></td><td><ol><li><strong>Summary Report</strong>: View the summary info for the archive performed. The report will contain the list of both success and failed components for the job triggered as shown below.</li><li><strong>View Log</strong>: View the log information for the archive job triggered.</li><li><strong>Download Archival Report</strong>: Specify the email address to receive the downloadable link to allow mentioned users to download the archive report on their local machine.</li></ol></td></tr></tbody></table>
 

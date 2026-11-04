@@ -15,7 +15,7 @@ Before installing and using IZ Scan VS Code Extension, make sure you have:
 2.  Click on "IZ Analyzer Connection" to connect to IZ Analyzer\
     &#x20;
 
-    <figure><img src="../../../../../../.gitbook/assets/image (2575).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/image (4923).png" alt=""><figcaption></figcaption></figure>
 3.  Enter the Service URL, Security Token, Developer Token, and click on _**Save Connection**_. Service URL to connect to IZ Analyzer cloud is https://analyzer.integralzone.com. The service URL will differ for hybrid or on-premises installations.\
     &#x20;
 

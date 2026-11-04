@@ -19,7 +19,7 @@ Synthetic backup accelerates the process by capturing only the delta since the l
 
 On triggering a backup, if a configuration for which the “Enable Synthetic Backup (Faster Backup)” is enabled. The option comes auto enabled on the “Start Backup” pop-up.
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
 
 ### Frequently Asked Questions (FAQs)
 

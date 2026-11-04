@@ -23,10 +23,10 @@ Key benefits:
 
 1.  Hover over **`Admin`** and click **`Credentials`**.
 
-    <figure><img src="../../../../.gitbook/assets/image (630).png" alt="Admin menu with Credentials option highlighted" width="326"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (824).png" alt="Admin menu with Credentials option highlighted" width="326"><figcaption></figcaption></figure>
 2.  Click **Create Credential**.
 
-    <figure><img src="../../../../.gitbook/assets/image (631).png" alt="Create Credential button"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (825).png" alt="Create Credential button"><figcaption></figcaption></figure>
 3. In the pop-up, enter a **Credential name** and choose a **Credential Type**:
    * **Username with Password**
    * **SSH**
@@ -43,7 +43,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 * **Global** – share with the team.
 * **Private** – visible only to you.
 
-<figure><img src="../../../../.gitbook/assets/image (632).png" alt="Username with Password credential form" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (826).png" alt="Username with Password credential form" width="563"><figcaption></figcaption></figure>
 
 ***
 
@@ -51,7 +51,7 @@ Provide the service **username** and **password**. Choose a **Credential Scope**
 
 Upload or paste your **private key** (optionally protected by a passphrase). ARM stores the key and uses it for Git operations over SSH.
 
-<figure><img src="../../../../.gitbook/assets/image (633).png" alt="SSH credential form with key upload" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (827).png" alt="SSH credential form with key upload" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 * **Recommended** – SSH keys are more secure than user/password.
@@ -65,7 +65,7 @@ Upload or paste your **private key** (optionally protected by a passphrase). ARM
 
 Add HashiCorp Vault credentials once; ARM can now generate a new **Vault Token** automatically via **AWS authentication** whenever the old token expires.
 
-<figure><img src="../../../../.gitbook/assets/image (635).png" alt="HashiCorp Vault credential form with AWS Auth option" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (829).png" alt="HashiCorp Vault credential form with AWS Auth option" width="563"><figcaption></figcaption></figure>
 
 _For details, see the dedicated_ [_HashiCorp Vault guide_](https://knowledgebase.autorabit.com/product-guides/arm-1/integration-and-plugins/hashicorp-vault#what-is-hashicorp-vault)_._
 
@@ -78,7 +78,7 @@ _For details, see the dedicated_ [_HashiCorp Vault guide_](https://knowledgebase
 * Upload the **certificate-signed key** while creating the credential.
 * Supported for **GitHub Enterprise Cloud** orgs.
 
-<figure><img src="../../../../.gitbook/assets/image (636).png" alt="SSH Certificate credential form" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (830).png" alt="SSH Certificate credential form" width="563"><figcaption></figcaption></figure>
 
 > **Limitation:** Available only for GitHub Enterprise Cloud.
 
@@ -92,7 +92,7 @@ Connect ARM to Jira via **Personal Access Token (PAT)** to meet enterprise compl
 2. Paste the **PAT** generated in Jira.
 3. Click **Save**.
 
-<figure><img src="../../../../.gitbook/assets/image (637).png" alt="Application Token credential form for Jira integration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (831).png" alt="Application Token credential form for Jira integration"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Important Note:** The **Application Token** credential type is **not supported for ARM CI Jobs**.\

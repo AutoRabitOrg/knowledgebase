@@ -174,7 +174,7 @@ You can now retry only the records that failed during processing, without reproc
 
 AutoRABIT Vault now provides visibility into actual license usage, storage consumption, and other key metrics compared to Salesforce subscription limits.
 
-<figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 2.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/License &#x26; Subscription Tracking - 3.png" alt=""><figcaption></figcaption></figure>
 
@@ -266,12 +266,12 @@ The column headers in the **Archive Summary** screen have been updated to improv
 
 1.  A new capability has been added to AutoRABIT **Vault Connect**, enabling backups to be selected as a source in the configuration.
 
-    <figure><img src="../../../.gitbook/assets/image (1892).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3859).png" alt=""><figcaption></figcaption></figure>
 2.  This enhancement empowers customers to strengthen their business continuity strategies by seamlessly leveraging backup data during critical scenarios.
 
-    <figure><img src="../../../.gitbook/assets/image (1893).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3860).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3861).png" alt=""><figcaption></figcaption></figure>
 
 #### **Improved Email Message Handling** <a href="#improved-email-message-handling" id="improved-email-message-handling"></a>
 

@@ -16,7 +16,7 @@ The **FileUploadAndDownloadSecurity** template allows the configuration of file 
    * Click **Add** to input custom test data.
    *   Fill in the necessary details as shown in the interface.
 
-       ![File Upload and Download Security](<../../../../../.gitbook/assets/image (69).png>)
+       ![File Upload and Download Security](<../../../../../.gitbook/assets/image (994).png>)
    * Click **Save** to store the test data.
 9. Click **Save** again to complete the template creation.
 10. After saving, you will be redirected to the **Environment Provisioning History** screen.

@@ -35,13 +35,13 @@ For deployments requiring approval, ARM follows the existing **L1/L2 approval wo
 
 Once scheduled, the deployment appears in **Deployment History** with the status **Scheduled**.
 
-<figure><img src="../../../../.gitbook/assets/image (3294).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5642).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3295).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5643).png" alt="" width="185"><figcaption></figcaption></figure>
 
 ### Scheduling Deployments After Validation
 
-<figure><img src="../../../../.gitbook/assets/image (3296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5644).png" alt=""><figcaption></figcaption></figure>
 
 ARM also supports scheduling deployments that have already completed validation successfully.
 
@@ -73,7 +73,7 @@ Users can manage scheduled deployments through **Deployment → History**.
 
 #### Edit a Scheduled Deployment
 
-<figure><img src="../../../../.gitbook/assets/image (3297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5645).png" alt=""><figcaption></figcaption></figure>
 
 1. Navigate to **Deployment → History**.
 2. Select the deployment with the **Scheduled** status.

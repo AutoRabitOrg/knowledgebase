@@ -34,13 +34,13 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 
 1. Login into Salesforce
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
 1. In **Salesforce**, go to **Setup**.
 2. In **Quick Find**, search **External Client Apps**.
 3. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:
@@ -50,7 +50,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * **Distribution State**:
      * **Local** (only for this org)
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 ### 3) Enable OAuth + set callback URL + scopes <a href="#id-3-enable-oauth--set-callback-url--scopes" id="id-3-enable-oauth--set-callback-url--scopes"></a>
 
@@ -64,7 +64,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
    * Manage user data via Web browsers (web)
    * Perform requests at any time (refresh\_token, offline\_access)
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 By default, refresh tokens are valid for **365 days**.
@@ -75,7 +75,7 @@ By default, refresh tokens are valid for **365 days**.
 1. In **Flow Enablement**, select **Enable Authorization Code and Credentials Flow**.
 2. **User credentials are required in the POST body** (Salesforce shows this option when you choose that flow) should be disabled.
 
-<figure><img src="../../../.gitbook/assets/image (2449).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4797).png" alt=""><figcaption></figcaption></figure>
 
 ### 5) Security toggles (common defaults) <a href="#id-5-security-toggles-common-defaults" id="id-5-security-toggles-common-defaults"></a>
 
@@ -91,15 +91,15 @@ In the **Security** section the next options should be enabled:
    * **Consumer Key** = **Client ID**
    * **Consumer Secret** = **Client Secret**
 
-<figure><img src="../../../.gitbook/assets/image (2450).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4798).png" alt=""><figcaption></figcaption></figure>
 
 When you click the button for Consumer Key and Secret, a code will be sent to the registered email for the user creating the configuration:
 
-<figure><img src="../../../.gitbook/assets/image (2451).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4799).png" alt=""><figcaption></figcaption></figure>
 
 After receiving the code and verifying in Salesforce, the Consumer Key (Client ID) and Consumer Secret (Client Secret) will be displayed:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Store these values in a safe place and make sure you can access them as needed
@@ -125,38 +125,38 @@ After the configuration in Salesforce is complete, and you have obtained the Cli
 
 In Project analysis, click on Add Analysis Project
 
-<figure><img src="../../../.gitbook/assets/image (2452).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4800).png" alt=""><figcaption></figcaption></figure>
 
 If no previous connections are found or the required org is not present in the Connection list, a message to navigate to the Salesforce Connections page is displayed.
 
-<figure><img src="../../../.gitbook/assets/image (2453).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4801).png" alt=""><figcaption></figcaption></figure>
 
 If that is the case, move the Salesforce Connections page, click on the existing connection, or select the Create connection button
 
-<figure><img src="../../../.gitbook/assets/image (2454).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4802).png" alt=""><figcaption></figcaption></figure>
 
 Create the connection by entering the required information obtained from Salesforce.
 
-<figure><img src="../../../.gitbook/assets/image (2455).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4803).png" alt=""><figcaption></figcaption></figure>
 
 Once the connection is created, go back and add a new Analysis. Please click on Add Analysis Project and select the desired connection:
 
-<figure><img src="../../../.gitbook/assets/image (2456).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4804).png" alt=""><figcaption></figcaption></figure>
 
 Once confirmed, the Salesforce login page will be shown. Please log in again.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 A message from Salesforce will appear. Click "Allow":
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 Then, you will be redirected to configure the new Analysis. Fill in the details:
 
-<figure><img src="../../../.gitbook/assets/image (2459).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4807).png" alt=""><figcaption></figcaption></figure>
 
 Then the analysis with the connection will be added to the list:
 
-<figure><img src="../../../.gitbook/assets/image (2460).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4808).png" alt=""><figcaption></figcaption></figure>
 
 At this point, the setup for local ECA flow has been completed; your Salesforce analyses will now run as expected.

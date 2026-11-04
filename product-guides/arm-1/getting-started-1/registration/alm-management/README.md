@@ -22,12 +22,12 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 2. Navigate to **Settings › ALM Mgmt**.
 3.  Click **Register ALM**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1959).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2491).png" alt=""><figcaption></figcaption></figure>
 4.  Fill the form:
 
     **IBM RTC, CA Agile Central, Salesforce, ServiceNow VersionOne, or Azure DevOps**\
     \
-    ![](<../../../../../.gitbook/assets/image (1961).png>)<br>
+    ![](<../../../../../.gitbook/assets/image (2493).png>)<br>
 
     * **ALM Name** – friendly label.
     * **ALM Type** – choose the platform.
@@ -36,7 +36,7 @@ The **ALM Management** page (added in ARM 21.6) lives under **Admin** and lets y
 
     **Jira**\
     \
-    ![](<../../../../../.gitbook/assets/image (1962).png>)
+    ![](<../../../../../.gitbook/assets/image (2494).png>)
 
     * **ALM Name** – friendly label.
     * **ALM Type** – _Jira_.
@@ -82,7 +82,7 @@ Configure how work items are shown and filtered:
 3.  Click **Save Settings**.\
     <br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1963).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2495).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To remove a field’s filter, click the trash-can icon next to the rule.
@@ -100,7 +100,7 @@ git commit -m "\[PROJECT-123] add README"
 
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (746).png" alt="Smart Commits pattern settings" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4584).png" alt="Smart Commits pattern settings" width="488"><figcaption></figcaption></figure>
 
 * **Enable auto update on webhook** – reveals a webhook URL you can add to your VCS so external commits update the ALM automatically. See setup guides [here](../../../arm-features/webhooks/).
 * Optionally **sync external smart commits** made outside AutoRABIT.
@@ -118,7 +118,7 @@ Repository mappings let AutoRABIT update ALM work-item status after a successful
 
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (1964).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2496).png" alt="" width="563"><figcaption></figcaption></figure>
 
 1. Choose the version-control **Repository**.
 2. Select the **Source Branch** (click _Register here_ if it’s missing).
@@ -128,7 +128,7 @@ Repository mappings let AutoRABIT update ALM work-item status after a successful
    * Current status
    *   Target status after merge<br>
 
-       <figure><img src="../../../../../.gitbook/assets/image (1965).png" alt="" width="375"><figcaption></figcaption></figure>
+       <figure><img src="../../../../../.gitbook/assets/image (2497).png" alt="" width="375"><figcaption></figcaption></figure>
 5. Click **Save**.
 
 {% hint style="info" %}
@@ -148,12 +148,12 @@ Branches and repos you **can’t** access won’t appear in the dropdowns.
 2. Navigate to Settings **› ALM**.
 3. Click **Register ALM**.\\
 
-<figure><img src="../../../../../.gitbook/assets/image (2487).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4835).png" alt=""><figcaption></figcaption></figure>
 
 1. Fill the form:
    1. **ALM Name** – friendly label.
 
-<figure><img src="../../../../../.gitbook/assets/image (2488).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4836).png" alt="" width="188"><figcaption></figcaption></figure>
 
 **Field Mapping for Work Item Updates in Salesforce**
 

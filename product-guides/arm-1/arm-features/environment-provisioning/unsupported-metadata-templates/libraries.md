@@ -25,7 +25,7 @@ The **Libraries** template in AutoRABIT allows users to manage Salesforce conten
     * To include multiple library configurations, click the **+** symbol and repeat the steps.
     * Click **OK**, then **Save** to finalize the test data.
 
-    ![Library Configuration Example](<../../../../../.gitbook/assets/image (78).png>)
+    ![Library Configuration Example](<../../../../../.gitbook/assets/image (1003).png>)
 9. Click **Save** to save the template.
 10. Once saved, you will be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to execute the template on your destination org.

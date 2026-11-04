@@ -11,17 +11,15 @@ The **ShareSettings** template allows you to configure sharing settings for repo
 5. Provide a **name** and a **short description** for the template.
 6. Select the **ShareSettings** checkbox under **Report Dashboards Create Manage Folders**.
 7. Click **Add**.
+8.  On the next screen:
 
-8. On the next screen:
-   - A **Test Case Name** appears automatically by default.
-   - Click **Add** to input custom test data.
-   - Enter the required values in the fields displayed.
-   - Click **Save** to confirm the data.
+    * A **Test Case Name** appears automatically by default.
+    * Click **Add** to input custom test data.
+    * Enter the required values in the fields displayed.
+    * Click **Save** to confirm the data.
 
-   ![Share Settings Configuration](../../../../../../.gitbook/assets/image%20(33)%20(1).png)
-
+    ![Share Settings Configuration](<../../../../../../.gitbook/assets/image (903).png>)
 9. Click **Save** to save the template.
-
 10. After the template is successfully created, you’ll be redirected to the **Environment Provisioning History** screen.
 11. Click **Run** to deploy the template to the selected destination org.
 12. Select your **destination org** from the dropdown menu and enter the **email address(es)** to receive notifications.

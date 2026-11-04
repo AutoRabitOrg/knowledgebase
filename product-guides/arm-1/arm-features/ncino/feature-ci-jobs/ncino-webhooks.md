@@ -23,7 +23,7 @@ For the above-mentioned repositories, if you select **“Trigger Build on Auto-C
 
 1. Toggle the slider in the highlighted selection to enable 'Trigger Build on Commit' for the respective job.
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2324).png" alt=""><figcaption></figcaption></figure>
 
 2. Observe the copy symbol beside the URL. Use the highlighted URL as 'payload URL' in the configuration settings of the webhook. Refer to the following page for help configuring the [webhook](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/webhooks).
 3. Once a job is created with the 'Trigger Build on Commit' setting enabled, then every commit into the respective repository and branch will auto-trigger a run in the application.
@@ -78,7 +78,7 @@ Note:
 
 Follow the defined folder structure when creating new branches in Git to maintain consistency and standardization across repositories. The following is the standard folder structure.
 
-<figure><img src="../../../../../.gitbook/assets/image (2000).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1934).png" alt=""><figcaption></figcaption></figure>
 
 Refer to the attached ZIP file for the above recommended folder structure.
 

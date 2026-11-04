@@ -22,25 +22,25 @@ This document provides complete information about the new feature AutoRABIT Vaul
 
 1. Log in to the **AutoRABIT Vault** application.
 
-<figure><img src="../../../.gitbook/assets/image (307).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3996).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. Navigate to the setup module of the AutoRABIT Vault application. Click on the required Org.
 
-<figure><img src="../../../.gitbook/assets/image (351).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4040).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Click on the **Connect (Beta)** module of the AutoRABIT Vault application.
 4. &#x20;On landing on the Connect (Beta) tab of the AutoRABIT Vault setup, the user will see the following message on the screen:
 
-<figure><img src="../../../.gitbook/assets/image (352).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4041).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Once the customer reaches out to AutoRABIT support team as specified on the above screen, our technical team will perform due diligence to enable AutoRABIT Vault Connect for the customer(s).
 6. When AutoRABIT Vault Connect is enabled on the application, the user will see the following screen on the Connect (Beta) tab of the AutoRABIT Vault Setup module.
 
-<figure><img src="../../../.gitbook/assets/image (353).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4042).png" alt="" width="563"><figcaption></figcaption></figure>
 
 7. Click on the **Add Connect Config** button on the application.
 
-<figure><img src="../../../.gitbook/assets/image (354).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4043).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8.  A pop-up will be displayed with the following information:
 
@@ -48,49 +48,49 @@ This document provides complete information about the new feature AutoRABIT Vaul
     * OData URL for configuring the external data source; and
     * What to select when creating Auth. Providers.
 
-    <figure><img src="../../../.gitbook/assets/image (355).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4044).png" alt="" width="563"><figcaption></figcaption></figure>
 9. Copy the URL from the pop-up shown.&#x20;
 
 {% hint style="info" %}
 **Note:** The same URL can be copied from the pop-up and opened by clicking on the information icon available beside the **Add Connect Config** button.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (356).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4045).png" alt="" width="563"><figcaption></figcaption></figure>
 
 10. Select the required config from the Archive Config section and click on the **Next** button.
 
-<figure><img src="../../../.gitbook/assets/image (357).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4046).png" alt="" width="563"><figcaption></figcaption></figure>
 
 11. On clicking **Next,** you will be redirected to the **Jobs** section.
 
-<figure><img src="../../../.gitbook/assets/image (358).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4047).png" alt="" width="563"><figcaption></figcaption></figure>
 
 12. Select the required **Job** and click on Next.
 13. On clicking Next, you will be redirected to the **Objects** section.
 
-<figure><img src="../../../.gitbook/assets/image (359).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4048).png" alt="" width="563"><figcaption></figcaption></figure>
 
 14. The following operations can be performed:
 
     * Include/exclude the required objects from the list of objects available.
 
-    <figure><img src="../../../.gitbook/assets/image (360).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4049).png" alt="" width="563"><figcaption></figcaption></figure>
 
     * Include/exclude the fields as required from the list of Fields available. Click on the **File** icon from the **Fields** column.
 
-    <figure><img src="../../../.gitbook/assets/image (361).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4050).png" alt="" width="563"><figcaption></figcaption></figure>
 15. The following pop-up will be displayed, where the user can exclude the fields as required and click on **Apply** field.
 
-<figure><img src="../../../.gitbook/assets/image (362).png" alt="" width="545"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4051).png" alt="" width="545"><figcaption></figcaption></figure>
 
 16. On clicking Save, you will be prompted to enter the **Name** and **Description** for the config being created.
 
-<figure><img src="../../../.gitbook/assets/image (363).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4052).png" alt="" width="563"><figcaption></figcaption></figure>
 
 17. On entering the required details, click on **Save.**
 18. On clicking Save, you will be shown a pop-up that says, **“Config has been created/updated successfully,”** and you will be redirected to the **Connect Config Summary**.
 
-<figure><img src="../../../.gitbook/assets/image (364).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4053).png" alt="" width="563"><figcaption></figcaption></figure>
 
 19. On the Connect Config Summary, you can view all the configurations created.
 
@@ -105,7 +105,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 1. Log in to the AutoRABIT Vault application
 2.  Click on any Org and navigate to the Connect module under the Org.
 
-    <figure><img src="../../../.gitbook/assets/image (1875).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3696).png" alt=""><figcaption></figcaption></figure>
 3. After landing on the “Connect” module, click on the “ADD CONNECT CONFIG” button to initiate the connect config.
 4.  A pop-up will be displayed, with the following information:
 
@@ -113,51 +113,51 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
     2. OData URL for configuring the external data source, and
     3. What to select when selecting Auth providers
 
-    <figure><img src="../../../.gitbook/assets/image (1876).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3697).png" alt=""><figcaption></figcaption></figure>
 5. Follow the suggested links to configure as suggested or click “OK” to continue.
 6.  Clicking “OK” will provide the user with two options to select from.
 
-    <figure><img src="../../../.gitbook/assets/image (1877).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3698).png" alt=""><figcaption></figcaption></figure>
 7. Select “Backup” as a source and click ‘ok’.
 8.  Clicking on ‘ok’ will redirect to the “Backup Config” section of the flow.
 
-    <figure><img src="../../../.gitbook/assets/image (1878).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3699).png" alt=""><figcaption></figcaption></figure>
 9. Select any of the backups from the list of backups available.
 10. Click on the “info” icon available under the “Backup Config Details” to observe the configuration details of the selected config.
 
-    <figure><img src="../../../.gitbook/assets/image (1879).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3700).png" alt=""><figcaption></figcaption></figure>
 11. On selecting the required config, click on the “NEXT” to continue to the “Jobs” section.
 
-    <figure><img src="../../../.gitbook/assets/image (1880).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3701).png" alt=""><figcaption></figcaption></figure>
 12. Select the required job(s) from the available list of jobs and click ‘NEXT’ to continue.
 13. **Enable the “Automatically Include New Backup Jobs” option** to ensure that any newly created jobs associated with the selected backup configuration are automatically included in future AutoRABIT Vault Connect runs.
 
-    <figure><img src="../../../.gitbook/assets/image (1881).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3702).png" alt=""><figcaption></figcaption></figure>
 14. Now, the flow will navigate to the “Objects” section.
 15. Object selection and the field selection can be made under this section of the flow.
 
-    <figure><img src="../../../.gitbook/assets/image (1882).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3703).png" alt=""><figcaption></figcaption></figure>
 16. Click on the fields icon to observe the list of fields available under that object.
 
-    <figure><img src="../../../.gitbook/assets/image (1883).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3704).png" alt=""><figcaption></figcaption></figure>
 17. Observe the list of fields available and make sure only the required fields are selected.
 
-    <figure><img src="../../../.gitbook/assets/image (1884).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3705).png" alt=""><figcaption></figcaption></figure>
 18. After making the necessary selections, click “Apply” to successfully update the object list with the changes.
 19. Once all the required modifications are done, click on the “SAVE” to save the configuration created.
 20. Clicking on save will prompt for entering a label for the created config.
 21. Enter the name and click on “SAVE” to save the config.
 
-    <figure><img src="../../../.gitbook/assets/image (1885).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3706).png" alt=""><figcaption></figcaption></figure>
 22. On clicking the **“SAVE,”** a pop-up with a success message will be displayed.
 
-    <figure><img src="../../../.gitbook/assets/image (1886).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3707).png" alt=""><figcaption></figcaption></figure>
 23. Clicking **“OK”** will create a new config.
 
-    <figure><img src="../../../.gitbook/assets/image (1887).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3708).png" alt=""><figcaption></figcaption></figure>
 24. Click on the **“Excluded Fields”** icon to observe the excluded fields.
 
-    <figure><img src="../../../.gitbook/assets/image (1888).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3709).png" alt=""><figcaption></figcaption></figure>
 25. Hover over the icon under the **“Auto Pick New Jobs”** column to observe the **“Include New Backup Jobs”**.
     1. The icon in green color indicates that the “Include New Backup Jobs” option is enabled for this config.
     2. The icon in red color indicates that the “Include New Backup Jobs” option is not enabled for this config.
@@ -170,14 +170,14 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
     * Go to → Auth. Providers under setup.
     * Click on the Auth. Providers under setup.
 
-    <figure><img src="../../../.gitbook/assets/image (365).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4054).png" alt=""><figcaption></figcaption></figure>
 3. Click on **New.**
 
-<figure><img src="../../../.gitbook/assets/image (366).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4055).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;4\. Select the **Provider Type – Salesforce.**
 
-<figure><img src="../../../.gitbook/assets/image (367).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4056).png" alt=""><figcaption></figcaption></figure>
 
 5. Provide **Name** and **URL Suffix** and click on **Save.**
 
@@ -185,7 +185,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 **Note:** Do not change the remaining settings on the layout.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4057).png" alt=""><figcaption></figcaption></figure>
 
 6. On completing the required selections, click on the Save button.&#x20;
 
@@ -211,7 +211,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
    4. **Enable Client Credentials Flow**
 7.  Please find the following screenshot for reference<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1588).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3309).png" alt=""><figcaption></figcaption></figure>
 8. Click Save.
 
 ### Steps to Create Auth. Providers
@@ -222,9 +222,9 @@ Connected Apps allow external applications to securely integrate with Salesforce
 4. Provide the “**Consumer Key**” & “**Consumer Secret**”
    1.  To get the "**Consumer Key**" and "**Consumer Secret**", navigate to the connected app and select "**Manage Consumer Details**" (refer to the following screenshot for guidance).&#x20;
 
-       <figure><img src="../../../.gitbook/assets/image (1589).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3310).png" alt=""><figcaption></figcaption></figure>
 
-       <figure><img src="../../../.gitbook/assets/image (1590).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (3311).png" alt=""><figcaption></figcaption></figure>
    2. Click the “**Copy**” button to copy the respective “**Consumer Key**” & “**Consumer Secret.**”
 5. Under "**Default Scopes**", enter "**refresh\_token full**" and click **Save**.
 6. After saving, you will see the "**Callback URL.**"
@@ -235,7 +235,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 
 1. **Go to** → **External Data Sources** under setup.
 
-<figure><img src="../../../.gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4058).png" alt=""><figcaption></figcaption></figure>
 
 2. Click on **New External Data Sources.**
 3. Provide **External Data** **Source**.
@@ -271,13 +271,13 @@ To streamline the process and enhance functionality, the AutoRABIT Vault Connect
 2. Example: To display emailmessage body field in the emailMessage\_x object layout, follow these steps:
 3.  Open the Developer Console by going to: Setup → Developer Console<br>
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2264).png" alt=""><figcaption></figcaption></figure>
 4.  After landing on the developer console, create a new Visualforce page and save it to continue with the script creation.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2265).png" alt=""><figcaption></figcaption></figure>
 5.  Enter the script and save it.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2266).png" alt=""><figcaption></figcaption></figure>
 6. Example script:`<apex:page standardController="CustomX_c_x__x" >`\
    `<apex:outputText style="text-align:left" value="{!CustomX_c_x__x.RicheRich_c__c}" escape="false" />`\
    `</apex:page>`
@@ -285,17 +285,17 @@ To streamline the process and enhance functionality, the AutoRABIT Vault Connect
    1. Go to the external object through: Setup → External Objects
    2.  Select any external object as required. Here, email message is considered for illustration.<br>
 
-       <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (2267).png" alt=""><figcaption></figcaption></figure>
    3. **Add the Visualforce page to the object layout**
       1.  Go to the ‘Page Layout’ in the external object and observe the Visualforce page.<br>
 
-          <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (2268).png" alt=""><figcaption></figcaption></figure>
       2.  Observe the Visualforce pages highlighted.<br>
 
-          <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (2269).png" alt=""><figcaption></figcaption></figure>
       3.  Add the Visualforce page to the layout. Observe the ‘EmsgVFPage’ added to the page layout.<br>
 
-          <figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+          <figure><img src="../../../.gitbook/assets/image (2270).png" alt=""><figcaption></figcaption></figure>
 8. **Verify the Update**: Open a record within the object to ensure the rich text/html body, including images, is displayed correctly.
 
 This enhancement ensures that archived email body content with rich text and images is rendered seamlessly in Salesforce.
@@ -313,77 +313,77 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 1. Log in to the AutoRABIT Vault application.
 2.  Click on any Org to navigate to AutoRABIT Vault – Connect.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (68) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the “Connect” tab to go to the Connect application.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 4. Click on the “**Sync with Salesforce**” button to initiate the sync procedure
    * Please observe the information icon for informational purposes.
 5.  On initiating “**Sync with Salesforce,**” the user will go to the “Sync history” page.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
 6. This page will provide information on how many times the sync has happened to date.
 7.  On clicking “**Sync with Salesforce,**” the following pop-up will be displayed.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 8.  Clicking on “**Confirm**” will redirect the user to the object list page, where the list of objects is shown.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (5) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 9.  Click on “View Logs” to display the related logs.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 10. Logs can be downloaded using the "Download" button.
 11. Click on any of the objects to open the related pop-up and make the required selections.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 12. Field Label Name: The field label can be updated to a custom name by clicking on the pencil icon provided.
 13. Reference to: If a field has a pencil icon beside it, then “Type” for that field will be set to “Reference.”
 14. For polymorphic fields, at least one reference has to be selected.
 
     * For polymorphic fields, a pencil icon will be displayed beside the fields under the “Reference to” column.
 
-    <figure><img src="../../../.gitbook/assets/image (8) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
 15. An error will be displayed under the ‘error’ column if no references were selected under the “Reference to” column.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (9) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 16. On completing the selection(s), click on the “**Sync with Salesforce**” button to continue with the sync procedure.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (11) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 17. An information pop-up will be displayed on clicking the “**Sync with Salesforce**” button.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (12) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 18. Clicking on “CONFIRM” will display a success message pop-up.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (13) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 19. The latest job can be observed as the top entry on the “Sync history” page.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (14) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 20. Clicking on the latest job will provide the list of objects from the job.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (15) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 21. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (16) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 
 22. After performing the “**Sync With Salesforce**”, the user has to go to the “External Objects” and select the required object.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (837).png" alt=""><figcaption></figcaption></figure>
 23. To add the related lists to the page layout of the parent object, the user first has to set the field-level security by going to the field under the object. The permission should be set to 'visible.'
 24. The user can only view data to which they have access.
 
-    <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (838).png" alt=""><figcaption></figcaption></figure>
 25. After setting the permissions to visible, the user should continue to edit the parent object(s) to add related lists to the page layouts.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (839).png" alt=""><figcaption></figcaption></figure>
 26. Click edit on the “**Page Layouts.**”<br>
 
-    <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (840).png" alt=""><figcaption></figcaption></figure>
 27. On opening the page layouts, the user can view the “Related Lists” on the left side pane as highlighted.
 
-    <figure><img src="../../../.gitbook/assets/image (4) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (841).png" alt=""><figcaption></figcaption></figure>
 28. Click on the related lists and continue to add the required related lists to the layout to view under the related lists section.
 29. After completing the required configuration, the user can continue to open the object on which the configuration is done to view the related list items when the parent record is opened.
 

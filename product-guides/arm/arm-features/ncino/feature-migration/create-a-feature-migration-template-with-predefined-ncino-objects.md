@@ -39,13 +39,13 @@ Under the **`Feature Details`** section, enter the following details:
 2. **`Associated Partner:`** The default associate partner would be nCino, which you can change if necessary.
 3. **`Version:`** Enter the version number here. If you're creating the feature template for the first time, it is recommended to keep the version number as **1.0**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1317).png" alt=""><figcaption><p>Feature Details</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2953).png" alt=""><figcaption><p>Feature Details</p></figcaption></figure>
 
 Under the **`Salesforce Org Details`** section, do the following:
 
 4. Choose your **`Salesforce Org`**.
 5. Click **`Fetch Objects`** to retrieve all available objects in the selected source org. Predefined objects will be auto chosen based on your selected feature. By default, only nCino objects available in the source org will get auto-populated. To view all the objects available, click on **`Show All`** objects.
-6.  Using![](<../../../../../.gitbook/assets/image (1298).png>)/![](<../../../../../.gitbook/assets/image (1299).png>)button, you can select/deselect all the objects for your template. Or, use the **Ctrl** key and select multiple objects of your choice and move them to the selected tab using![](<../../../../../.gitbook/assets/image (1300).png>)/![](<../../../../../.gitbook/assets/image (1301).png>)button. Once you have selected the object, ARM will retrieve the fields included in that object behind the scenes.
+6.  Using![](<../../../../../.gitbook/assets/image (2934).png>)/![](<../../../../../.gitbook/assets/image (2935).png>)button, you can select/deselect all the objects for your template. Or, use the **Ctrl** key and select multiple objects of your choice and move them to the selected tab using![](<../../../../../.gitbook/assets/image (2936).png>)/![](<../../../../../.gitbook/assets/image (2937).png>)button. Once you have selected the object, ARM will retrieve the fields included in that object behind the scenes.
 
     <figure><img src="../../../../../.gitbook/assets/Old UI - Ability To Sync The Metadata - 1.png" alt=""><figcaption></figcaption></figure>
 
@@ -88,27 +88,27 @@ This section allows users to configure nCino records. The nCino platform that wi
 
     AutoRABIT automatically groups related objects into different buckets based on how they’re connected. While it’s not required, you’ll need to apply at least one filter to each bucket. By default, AutoRABIT marks one object in each bucket as the "entry point" — that’s the object the filter will apply to. Although you can choose any object, it’s generally a best practice to apply the filter to the entry point itself, since that helps keep things clean and consistent.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1319).png" alt="" width="250"><figcaption><p>List Selections</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2955).png" alt="" width="250"><figcaption><p>List Selections</p></figcaption></figure>
 
 Based on the object's relationship, the AutoRABIT application will segregate the object sets, and applying a filter on each bucket is mandatory. By default, AutoRABIT will denote an object in a bucket as an entry point, which can be applied as a filter. This is not mandatory, but as a best practice, AutoRABIT recommends applying filters to the entry point object rather than any other object.
 
 The entry object is selected by default, and the user can apply a filter. The entry object is denoted by **`“E”`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1320).png" alt=""><figcaption><p>Selection</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2956).png" alt=""><figcaption><p>Selection</p></figcaption></figure>
 
 **Applying the Filters**
 
 Apply the filter(s) using the steps as shown below:
 
-<figure><img src="../../../../../.gitbook/assets/image (1321).png" alt=""><figcaption><p>Query Selections</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2957).png" alt=""><figcaption><p>Query Selections</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1322).png" alt=""><figcaption><p>Add Dates</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2958).png" alt=""><figcaption><p>Add Dates</p></figcaption></figure>
 
 Click **`Add`**. The filter query gets added and gets displayed in the filter box. You can edit the query if any modification is required. Nevertheless, multiple queries can be added based on your requirement. **`Validate`** your query to see if the query entered is stable or not. Additionally, you'll be able to view several records that will get fetched.
 
-<figure><img src="../../../../../.gitbook/assets/image (1323).png" alt=""><figcaption><p>Validate Query</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2959).png" alt=""><figcaption><p>Validate Query</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1324).png" alt=""><figcaption><p>Success Notification</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2960).png" alt=""><figcaption><p>Success Notification</p></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -119,9 +119,9 @@ Click **`Add`**. The filter query gets added and gets displayed in the filter bo
 
 You can also use the **`Query Editor`** to execute an SOQL query on the selected source org. Results are displayed in a **`Query Results`** grid.
 
-<figure><img src="../../../../../.gitbook/assets/image (1325).png" alt=""><figcaption><p>Query Editor</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2961).png" alt=""><figcaption><p>Query Editor</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1326).png" alt="" width="563"><figcaption><p>Execute Query</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2962).png" alt="" width="563"><figcaption><p>Execute Query</p></figcaption></figure>
 
 Similar steps are to be followed for objects in other buckets as well. Once done, click **`Next`** to proceed to the **`Preview and Save`** screen.
 
@@ -136,7 +136,7 @@ Similar steps are to be followed for objects in other buckets as well. Once done
 
 This is the summary page for the feature migration template you're about to create. You can view the features details, and filters you have applied for the last time before the template is created. Any change log information that needs to be added can be mentioned in the **`Change Log`** box.
 
-<figure><img src="../../../../../.gitbook/assets/image (1327).png" alt=""><figcaption><p>Summary Page</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2963).png" alt=""><figcaption><p>Summary Page</p></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:`Related List`** section will display only if the **`Attachment`** object is a part of the Feature Migration Template.&#x20;

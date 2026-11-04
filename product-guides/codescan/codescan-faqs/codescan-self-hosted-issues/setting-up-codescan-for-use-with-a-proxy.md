@@ -12,8 +12,8 @@ Also, if your SonarQube™ server is not localhost and your proxy doesn’t reso
 
 For example, **antbuild.xml**
 
-<figure><img src="../../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3038).png" alt=""><figcaption></figcaption></figure>
 
 and **antbuild.properties**
 
-<figure><img src="../../../../.gitbook/assets/image (439).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3039).png" alt=""><figcaption></figcaption></figure>

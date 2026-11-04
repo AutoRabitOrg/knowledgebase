@@ -24,7 +24,7 @@ To map **Account Name** to **Account ID** in Salesforce:
 
 ARM DataLoader will search for the **Account ID** using the provided **Account Name** and populate the correct IDs expected by Salesforce.
 
-<figure><img src="../../../../../.gitbook/assets/image (89) (1) (1).png" alt="Lookup via field mapping in Data Loader"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1474).png" alt="Lookup via field mapping in Data Loader"><figcaption></figcaption></figure>
 
 ### More Lookup Options <a href="#more-lookup-options" id="more-lookup-options"></a>
 

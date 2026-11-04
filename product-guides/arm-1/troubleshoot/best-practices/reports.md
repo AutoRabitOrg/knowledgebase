@@ -12,11 +12,9 @@
 
 Please see the screenshot below for your reference.
 
-<figure><img src="../../../../.gitbook/assets/image (2341).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4616).png" alt=""><figcaption></figcaption></figure>
 
-
-
-### **Why is there a discrepancy between the test coverage average on the SFDC side and our manual calculations?**&#x20;
+### **Why is there a discrepancy between the test coverage average on the SFDC side and our manual calculations?**
 
 #### **How Salesforce calculates test coverage**
 

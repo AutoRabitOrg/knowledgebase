@@ -12,19 +12,19 @@ AutoRABIT Vault's Compare feature now includes three powerful options to enhance
 
 These additions provide a more flexible and actionable comparison experience.
 
-<figure><img src="../../../../.gitbook/assets/image (1676).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3533).png" alt=""><figcaption></figcaption></figure>
 
 ## View Records
 
 By clicking on the ‘View Records’ button at record level, a new window will be displayed. The entire record can be viewed in a single go in a source against the destination view.
 
-<figure><img src="../../../../.gitbook/assets/image (1677).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3534).png" alt=""><figcaption></figcaption></figure>
 
 ## Change View
 
 By clicking on the ‘Change View’ option available on the screen, a new window with list of fields will be displayed to the user. By default 20 fields will be auto selected on the screen. New fields can be added to the list to view any additional fields, to add new fields existing fields should be unselected.
 
-<figure><img src="../../../../.gitbook/assets/image (1680).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3537).png" alt=""><figcaption></figcaption></figure>
 
 ## Export - Compare
 
@@ -32,7 +32,7 @@ By clicking on the ‘Change View’ option available on the screen, a new windo
    1. **All Records**: will export all of the records retrieved from the compare operation.
    2. **Record Displayed On The Current Page**: will export the records available on the current page.
 
-<figure><img src="../../../../.gitbook/assets/image (1682).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3539).png" alt=""><figcaption></figcaption></figure>
 
 ## Export – Live Compare
 
@@ -41,7 +41,7 @@ By clicking on the ‘Change View’ option available on the screen, a new windo
    2. **Record Displayed On The Current Page**: will export the records available on the current screen.
    3. **Selected Records**: will export only the records that are selected from the compare operation.
 
-<figure><img src="../../../../.gitbook/assets/image (1683).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3540).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;
 

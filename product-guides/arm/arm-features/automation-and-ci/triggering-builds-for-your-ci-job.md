@@ -20,22 +20,22 @@ The following articles describe how to trigger a new build for your CI Job creat
 1. Navigate to the **CI Job Results** screen.
 2. This screen lists all CI Jobs for which builds have been triggered.
 
-<figure><img src="../../../../.gitbook/assets/image (1140).png" alt="CI Job Results screen with build history"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3081).png" alt="CI Job Results screen with build history"><figcaption></figcaption></figure>
 
-3. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (1141).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (1142).png>)
+3. Jobs with deployments display the icon: ![](<../../../../.gitbook/assets/image (3082).png>), while validated-only jobs show: ![](<../../../../.gitbook/assets/image (3083).png>)
 4. Use the **Select Job** dropdown to choose your CI job.
 
-<figure><img src="../../../../.gitbook/assets/image (1143).png" alt="Select CI Job from dropdown list" width="427"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3084).png" alt="Select CI Job from dropdown list" width="427"><figcaption></figcaption></figure>
 
 5. If no builds exist yet, you'll see:\
    **"No builds found for this job. Please trigger a new build for results."**\
    Click **Build Now**.
 
-<figure><img src="../../../../.gitbook/assets/image (1144).png" alt="Build Now button for first-time build trigger"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3085).png" alt="Build Now button for first-time build trigger"><figcaption></figcaption></figure>
 
 6. If previous builds exist, click **Build Now** to trigger a new build.
 
-<figure><img src="../../../../.gitbook/assets/image (1145).png" alt="Build Now button to trigger additional builds"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3086).png" alt="Build Now button to trigger additional builds"><figcaption></figcaption></figure>
 
 7. The build initiation screen will differ depending on whether your CI Job is configured with ALM.
 
@@ -45,15 +45,15 @@ The following articles describe how to trigger a new build for your CI Job creat
 
 ALM-integrated CI Jobs display ALM work item information from the source version control branch.
 
-<figure><img src="../../../../.gitbook/assets/image (1146).png" alt="ALM integration panel showing work items"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3087).png" alt="ALM integration panel showing work items"><figcaption></figcaption></figure>
 
 * **Commit**: Displays work items committed to the source branch.
 
-<figure><img src="../../../../.gitbook/assets/image (1147).png" alt="ALM work items from commits" width="513"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3088).png" alt="ALM work items from commits" width="513"><figcaption></figcaption></figure>
 
 * **Merge**: Displays work items merged into the source branch.
 
-<figure><img src="../../../../.gitbook/assets/image (1148).png" alt="ALM work items from merges" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3089).png" alt="ALM work items from merges" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -68,7 +68,7 @@ ALM-integrated CI Jobs display ALM work item information from the source version
 
 CI Jobs without ALM integration show the following build input screen:
 
-<figure><img src="../../../../.gitbook/assets/image (1149).png" alt="Trigger build screen for non-ALM jobs"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3090).png" alt="Trigger build screen for non-ALM jobs"><figcaption></figcaption></figure>
 
 * Enter a **Title** and optional **Comments**
 * Choose **Deployment Type**:
@@ -108,8 +108,8 @@ CI Jobs without ALM integration show the following build input screen:
 
 **Webhook Delivery Screenshot:**
 
-<figure><img src="../../../../.gitbook/assets/image (1150).png" alt="Webhook event delivery log from GitHub"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3091).png" alt="Webhook event delivery log from GitHub"><figcaption></figcaption></figure>
 
 **Webhook Configuration Screenshot:**
 
-<figure><img src="../../../../.gitbook/assets/image (1151).png" alt="Webhook settings for GitHub repository integration"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3092).png" alt="Webhook settings for GitHub repository integration"><figcaption></figcaption></figure>

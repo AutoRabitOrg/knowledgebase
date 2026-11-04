@@ -41,19 +41,19 @@ External IDs cause an index to be created on that field. The query optimizer the
 
 To view if a Field is Indexed/Searchable: Home -> Search Manager -> Index Management -> Select an Object to view the Indexed Fields:
 
-<figure><img src="../../../.gitbook/assets/image (1691) (1).png" alt=""><figcaption><p>Searchability</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1894).png" alt=""><figcaption><p>Searchability</p></figcaption></figure>
 
 For creating Indexes manually on Big Objects in Salesforce, create custom fields (Mandatory Checkbox – Always requires a value in this field in order to save the record).
 
-<figure><img src="../../../.gitbook/assets/image (1692).png" alt=""><figcaption><p>Index on Big Objects</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1895).png" alt=""><figcaption><p>Index on Big Objects</p></figcaption></figure>
 
 Navigate to Index Tab and click New.
 
-<figure><img src="../../../.gitbook/assets/image (1693).png" alt=""><figcaption><p>New Index Definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1896).png" alt=""><figcaption><p>New Index Definition</p></figcaption></figure>
 
 Once Indexes are created, Validate the Index on the Big Object.
 
-<figure><img src="../../../.gitbook/assets/image (1694).png" alt=""><figcaption><p>Big Object Definition Detail</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1897).png" alt=""><figcaption><p>Big Object Definition Detail</p></figcaption></figure>
 
 Important criteria to ensure a good fit for a custom index:
 
@@ -73,5 +73,5 @@ As noticed on our QA Org, the following is the Impact of creating Indexes on Sal
 
 Salesforce Org Backup taken prior to Indexing and Synthetic Backup ([https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup](https://knowledgebase.autorabit.com/product-guides/vault/vault-features/backup/synthetic-backup)) took approximately 8 hours for 3.2 million records now complete 8.9 million records backup with additional metadata in 1.5 hours.
 
-<figure><img src="../../../.gitbook/assets/image (1695).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1898).png" alt=""><figcaption><p>Backup Summary</p></figcaption></figure>
 

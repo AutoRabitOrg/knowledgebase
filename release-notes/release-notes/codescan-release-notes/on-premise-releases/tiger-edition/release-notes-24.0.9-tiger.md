@@ -1,6 +1,6 @@
 # Release Notes 24.0.9 Tiger
 
-## Release Notes Self-Hosted (On-Prem) 24.0.9 (TIGER edition)&#x20;
+## CodeScan Self-Hosted 24.0.9 (Tiger)
 
 **September 05, 2024**
 
@@ -64,7 +64,7 @@ System.debug('Doing something in OtherClass');\
 
 (where the parameter associated with this enhancement is nullCheck)
 
-### New Rules
+### New rules
 
 1. **New Rule for “Cognitive Complexity” in CodeScan**\
    This is a new rule for assessing Cognitive Complexity. Note that we had a previous Cognitive Complexity rule.  What’s different is that this rule aims to enhance the understanding of code readability and maintainability by identifying areas where the cognitive load on developers may be high.\

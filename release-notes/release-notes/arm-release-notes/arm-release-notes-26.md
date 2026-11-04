@@ -2,11 +2,11 @@
 
 <figure><img src="../../../.gitbook/assets/ARM_Banner_1920x1080.png" alt=""><figcaption></figcaption></figure>
 
-{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive updated release notes!" %}
+{% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
 ## ARM **Release Notes 26.4.5**
 
-**Release Date: 1st November 2026**
+**Release Date: 1 November 2026**
 
 #### Deployed Components Audit Report - FR - New UI <a href="#deployed-components-audit-report-fr-new-ui" id="deployed-components-audit-report-fr-new-ui"></a>
 
@@ -63,6 +63,8 @@ Improved **ARM performance and resource efficiency** by optimizing repository hi
 These improvements help **reduce CPU usage, disk I/O, and system overhead**, particularly for large repositories, contributing to better application stability and performance.
 
 **Note:** This optimization applies to repositories using **Optimized Workspaces** and does not change existing Version Control functionality or reporting results.
+
+***
 
 ## ARM **Release Notes 26.4.4**
 
@@ -1016,7 +1018,7 @@ Enhanced the rollback process for **Profile** metadata to ensure profile permiss
 
 #### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
 
-Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow. Refer to the documentation on External Pull Requests [here](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request).&#x20;
+Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow. Refer to the documentation on External Pull Requests [here](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request).
 
 #### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
 
@@ -1024,7 +1026,7 @@ Fixed an issue where a **Child CI Job** triggered automatically after a successf
 
 #### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
 
-Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).&#x20;
+Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).
 
 #### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
 
@@ -1372,7 +1374,7 @@ Fixed an issue in the New UI where deployment comparisons could become unrespons
 
 #### Register Branch Usability Improvements
 
-Enhanced the Register Branch experience by enabling branch searches to be executed using the **Enter** key in the Branch Name Search field, providing a faster and more intuitive workflow. Additionally, the informational Note  message has been updated for improved clarity.
+Enhanced the Register Branch experience by enabling branch searches to be executed using the **Enter** key in the Branch Name Search field, providing a faster and more intuitive workflow. Additionally, the informational Note message has been updated for improved clarity.
 
 **Updated Note Message:**
 
@@ -2054,7 +2056,7 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 **Release Date: 26 April 2026**
 
-**Dataloader Extract Job not returning all field columns**&#x20;
+**Dataloader Extract Job not returning all field columns**
 
 * When using a DataLoader Extract job with a WHERE IN clause, the downloaded file did not include all field columns from the query. Removing the WHERE IN clause returned all columns correctly. Fixed to ensure all queried fields are present in the extracted output, regardless of clause type.
 
@@ -2163,32 +2165,32 @@ These enhancements enable automatic synchronization of Work Item statuses during
    The issue also caused abort actions from the UI to fail. With this fix, CI job statuses are now correctly updated upon completion, ensuring normal job execution flow.\
    **Impacted Areas:**\
    CI Jobs<br>
-4. **AI Metadata Components Not Processed in Org-to-Org Deployments –  \[Support Case #201393]**\
+4. **AI Metadata Components Not Processed in Org-to-Org Deployments – \[Support Case #201393]**\
    Fixed an issue where AI metadata components (GenAiFunction) were not properly processed during Org-to-Org deployments, causing compare operations to hang indefinitely and direct deployments to fail with a “No changes found” message.\
    This update ensures AI metadata components are correctly considered during deployment and comparison workflows, enabling successful execution.\
    **Impacted Areas:**\
    Deployments (Org-to-Org)<br>
-5. **Release Label Not Fetching Latest HEAD Revisions –  \[Support Case #201799]**\
+5. **Release Label Not Fetching Latest HEAD Revisions – \[Support Case #201799]**\
    Fixed an issue where merged revisions from pull requests were not being fetched during Release Label creation, even though they were present in the remote repository. This led to discrepancies where revisions were visible in EZ-Merge but missing in Release Label selection.\
    This update improves the revision-fetching logic to include all relevant folder-based and merged revisions, ensuring consistency across features.\
    **Impacted Areas:**\
    Release Labels, EZ-Merge, CI Job Configuration, Deployments (Single Revision & Range), nCino Flows<br>
-6. **Commit History Date Format Inconsistency –  \[Support Case #209987]**\
+6. **Commit History Date Format Inconsistency – \[Support Case #209987]**\
    Fixed an issue where the commit history date format in the New UI differed from the Old UI. Previously, the New UI displayed dates in DD/MM/YY format, while the Old UI followed MM/DD/YY, leading to inconsistency.\
    This update standardizes the date format in the New UI to match the Old UI for a consistent user experience.\
    **Impacted Areas:**\
    Commit History, Version Control<br>
-7. **Save Button Triggering Re-authentication in Salesforce Org Details –  \[Support Case #213381]**\
+7. **Save Button Triggering Re-authentication in Salesforce Org Details – \[Support Case #213381]**\
    Fixed an issue where clicking the Save button in the Salesforce Org Detail page incorrectly triggered the re-authentication flow, redirecting users to the Salesforce login page.\
    This update ensures that the Save action only updates org details within the application, while the Re-authenticate action correctly handles the login flow, maintaining clear separation of functionality.\
    **Impacted Areas:**\
    Settings → Salesforce Org<br>
-8. **EZ Commit Pagination Infinite Loop in New UI –  \[Support Case #213239]**\
+8. **EZ Commit Pagination Infinite Loop in New UI – \[Support Case #213239]**\
    Fixed an issue in the EZ Commit flow where the paginated component list entered an infinite loop when users rapidly navigated between pages after setting a higher pagination limit.\
    This update improves pagination handling to ensure smooth and stable navigation across component lists.\
    **Impacted Areas:**\
    Version Control (EZ Commit), Metadata Selection Pagination (New UI)<br>
-9. **Unable to Add Users in New UI Due to Missing Mail Extension –  \[Support Case #214523]**\
+9. **Unable to Add Users in New UI Due to Missing Mail Extension – \[Support Case #214523]**\
    Fixed an issue where admins were unable to add new users in the New UI because the mail extension dropdown appeared empty, preventing user creation.\
    This update ensures the default domain is correctly handled and displayed, allowing admins to successfully add users.\
    **Impacted Areas:**\
@@ -2592,7 +2594,7 @@ Version Control → Repository Registration (GitHub OAuth)
 
 ***
 
-## DataLoader Pro Release Notes 26.1.11&#x20;
+## DataLoader Pro Release Notes 26.1.11
 
 **Release Date: 15 March 2026**
 
@@ -2602,7 +2604,7 @@ An issue was resolved where the **success count and error count** were displayed
 
 ***
 
-## DataLoader Release Notes 26.1.11&#x20;
+## DataLoader Release Notes 26.1.11
 
 **Release Date: 15 March 2026**
 
@@ -2633,7 +2635,7 @@ Deployments, CI Jobs
 
 ***
 
-## DataLoader Pro Release Notes 26.1.10&#x20;
+## DataLoader Pro Release Notes 26.1.10
 
 **Release Date: 08 March 2026**
 
@@ -2740,7 +2742,7 @@ The save logic has been corrected to ensure the Org association remains intact a
 
 ***
 
-## DataLoader Pro Release Notes 26.1.9&#x20;
+## DataLoader Pro Release Notes 26.1.9
 
 **Release Date: 01 March 2026**
 
@@ -3024,7 +3026,7 @@ Fixed an issue where data retrieval logs were not visible during selective deplo
 
 **Release Date: 01 February 2026**
 
-**Refreshed UI** \
+**Refreshed UI**\
 \
 The refreshed ARM UI is now available to all customers on shared instances.
 

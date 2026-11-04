@@ -1,8 +1,8 @@
 # ARM Release Notes 25
 
-## ARM Release Notes 25.4.13
+## ARM 25.4.13
 
-**Release Date: 28 December 2025**
+**Release date:** 28 December 2025
 
 **Support Case: #150240**
 
@@ -22,9 +22,9 @@ Fixed an issue where scheduled CI jobs for rebasing hotfix and pre-prod branches
 
 ***
 
-## ARM Release Notes 25.4.12
+## ARM 25.4.12
 
-**Release Date: 21 December 2025**
+**Release date:** 21 December 2025
 
 **User Story:  Commit Retrieval Issue**
 
@@ -54,9 +54,9 @@ We fixed an issue where a misleading warning message, **“Please select at leas
 
 ***
 
-## ARM Release Notes 25.4.11
+## ARM 25.4.11
 
-**Release Date: 14 December 2025**
+**Release date:** 14 December 2025
 
 **Internal Ticket:**
 
@@ -87,9 +87,9 @@ Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadat
 
 ***
 
-## ARM Release Notes 25.4.10
+## ARM 25.4.10
 
-**Release Date: 7 December 2025**
+**Release date:** 7 December 2025
 
 * Resolved an issue where the **IgnoreWarnings** flag from the UI was not passed correctly, causing prevalidation to fail on warnings even when the checkbox was selected. Updated the UI request mapping so the correct value is stored and processed by the backend.\
   Support Case: #160228
@@ -98,9 +98,9 @@ Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadat
 
 ***
 
-## ARM Release Notes 25.4.9
+## ARM 25.4.9
 
-**Release Date: 30 November 2025**<br>
+**Release date:** 30 November 2025<br>
 
 * Fixed an issue where scheduled jobs could not be deleted through Environment Provisioning. The system now correctly validates permissions and job eligibility, enabling successful scheduled job removals from target environments.\
   Support Case: #159287
@@ -109,9 +109,9 @@ Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadat
 
 ***
 
-## ARM Release Notes 25.4.8
+## ARM 25.4.8
 
-**Release Date: 23 November 2025**<br>
+**Release date:** 23 November 2025<br>
 
 * EZ-Merge report timestamps now adjust accurately to each user’s time-zone settings, ensuring Merge Submission, L1 Review, and L2 Review dates display consistently across regions.\
   Support Case: #156046
@@ -124,9 +124,9 @@ Addressed an issue where EZ Commit using **“Only Newly Added Supported Metadat
 
 ***
 
-## ARM Release Notes 25.4.7
+## ARM 25.4.7
 
-**Release Date: 16 November 2025**\
+**Release date:** 16 November 2025\
 \
 **Highlights**: Improved downstream CI chaining, expanded Agentforce support, optimized EZ-Commit performance, and key platform upgrades.
 
@@ -174,9 +174,9 @@ ARM’s application runtime has been upgraded to Tomcat 11.0.13, delivering impr
 
 ***
 
-## ARM Release notes 25.4.6&#x20;
+## ARM 25.4.6
 
-**Release Date: 9 November 2025**\
+**Release date:** 9 November 2025\
 \
 **Highlights**
 
@@ -224,13 +224,13 @@ ARM now handles the creation and execution of environment provisioning templates
 
 ***
 
-## ARM Release Notes 25.4.5
+## ARM 25.4.5
 
-**Release Date: 2 November 2025**\
+**Release date:** 2 November 2025\
 \
 **Highlights:** Improved validation visibility, enhanced deployment reliability, and Data Cloud DevOps support introduced.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
 **Data Cloud DevOps Support**\
 Introduced full support for Salesforce Data Cloud metadata deployment using DevOps Data Kits. Users can now commit, validate, and deploy Data Cloud components such as Data Streams, Data Model Objects, Calculated Insights, and Data Packages through EZ-Commit, Deployments, and CI Jobs.
@@ -246,7 +246,7 @@ Key highlights include:
   \
   _&#x4C;earn more_ [_https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud_](https://knowledgebase.autorabit.com/product-guides/arm/salesforce-extensions/arm-for-salesforce-data-cloud)
 
-### Bugs <a href="#bugs" id="bugs"></a>
+### Fixes
 
 **Partial FlexiPage Commit Handling**\
 Fixed an issue where FlexiPage metadata was partially committed during Prevalidation Commits, resulting in missing content during CI Job deployment. Added schema validation checks to ensure full FlexiPage integrity and introduced detailed logging for file uploads on the Review Artifact screen.\
@@ -265,9 +265,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM **Release Notes 25.4.4**
+## ARM 25.4.4
 
-**Release Date: 26 October 2025**\
+**Release date:** 26 October 2025\
 \
 **Highlights**: Improvements in EZ-Commit author handling, EZ-Merge responsiveness, and CI Job error reporting.
 
@@ -283,9 +283,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM **Release Notes 25.4.3**
+## ARM 25.4.3
 
-**Release Date**: **19 October 2025**\
+**Release date:** 19 October 2025\
 \
 **Highlights**: Enhancements to metadata handling for destructive commits, standard value set retrieval, CI Job status accuracy, and Quick Deploy validation behavior.
 
@@ -307,9 +307,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.4.2 <a href="#heading-title-text" id="heading-title-text"></a>
+## ARM 25.4.2
 
-**Release Date**: **15 October 2025**\
+**Release date:** 15 October 2025\
 \
 **Highlights**: Stability improvements across CI Jobs, Commit handling, and Scratch Org creation.
 
@@ -327,9 +327,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.4.1 <a href="#heading-title-text" id="heading-title-text"></a>
+## ARM 25.4.1
 
-**Release Date**: **5 October 2025**\
+**Release date:** 5 October 2025\
 \
 **Highlights:** Fixes for Quick Deploy iteration visibility, CI post-deploy log accuracy with DataLoader Pro, and complete Jira sprint retrieval across ALM flows.
 
@@ -345,9 +345,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.12
+## ARM 25.3.12
 
-**Release Date**: **28 September 2025**
+**Release date:** 28 September 2025
 
 * **Wavedashboard deployment failure due to xmd conversion**\
   When customers uploaded a package.xml containing wavedashboard type and members, ARM converted them to wavexmd and the deployment failed because the wavexmd files were missing from the zip. Implemented backend logic to prune xmd metadata entries when corresponding xmd files are not retrieved from the source org, preventing missing-file deployment errors.\
@@ -362,9 +362,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.11.1
+## ARM 25.3.11.1
 
-**Release Date**: **24 September 2025**
+**Release date:** 24 September 2025
 
 * **Jira Work Items Not Retrieved from Sprints**\
   Fixed an issue where customers were unable to select Jira work items during ALM flows in EZ-Commit and Merge, with the error “No work items found in this sprint.”
@@ -374,9 +374,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.11
+## ARM 25.3.11
 
-**Release Date**: **21 September 2025**
+**Release date:** 21 September 2025
 
 **Highlights**: Fixes for EZ-Commit folder retrieval, branch registration, SCA validation, and webhook API token updates.<br>
 
@@ -395,9 +395,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.10.1&#x20;
+## ARM 25.3.10.1
 
-**Release Date:** **20 September 2025**
+**Release date:** 20 September 2025
 
 * **SCA Validation with Special Characters**\
   Fixed an error where SCA analysis failed when branch names or paths contained "/" or special characters. The fix covers EZ-Commit, EZ-Merge (including Pre-validation and Release Label merges), CI Jobs (Package from Version Control), Deployment (Version Control & Release Label), and Report Module.\
@@ -405,13 +405,13 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.10
+## ARM 25.3.10
 
-**Release Date**: **14 September 2025**
+**Release date:** 14 September 2025
 
 **Highlights**: Stability improvements across Custom Deployment, Release Labels, EZ-Commit, CI Jobs, and Salesforce ALM integration.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **Custom Deployment – Full Profile Deployment Failure:** Fixed an issue where Full Profile Deployment using Version Control failed with a size limit error because the `.git` folder was unintentionally included in the build preparation. Now, hidden folders (starting with ".") are excluded from the build process.
 * **Custom Deployment – Deployment Fails with Ignore Installed Components:** Resolved an issue where deployments failed silently on the UI when the **Ignore Installed Components** option was selected. The deployment now completes as expected.
@@ -426,11 +426,11 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.9 <a href="#heading-title-text" id="heading-title-text"></a>
+## ARM 25.3.9
 
-**Release Date**: **7 September 2025**
+**Release date:** 7 September 2025
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **Revision Retrieval Error During Deployment:** Fixed an error where retrieving revisions with a single revision or while creating a release label caused runtime exceptions from Git. Updated logic now ensures stable fetch during revision retrieval.
 * **Intermittent Workspace Not Found Error in EZ-Merge:** Resolved an issue where merges intermittently failed with “Workspace not found with id….” Logic was updated to handle the scenario reliably.&#x20;
@@ -438,7 +438,7 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 * **CI Job Stuck Issue in Abort Functionality:** Fixed a corner case where a CI job could get stuck, preventing new builds from being triggered. The abort functionality has been refined to avoid such blocking scenarios.
 * **Deployment Trigger Date Accuracy:** The deployment date recorded in the Reports module and Audit Tab now reflects the exact trigger time instead of relying on package creation time. This ensures more accurate tracking for all new deployments.
 
-### **Enhancements** <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
 * **Webhook Security Update**\
   As part of our ongoing security improvements, webhook security has been strengthened in this release.
@@ -449,13 +449,13 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.8 <a href="#title-text" id="title-text"></a>
+## ARM 25.3.8
 
-**Release Date**: **31 August 2025**
+**Release date:** 31 August 2025
 
 **Highlights**: Fixes and improvements across permission sets, profile comparison, reports accuracy, and SSO configuration.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **Permission Set – Deleted Tags Displayed:** Resolved an issue where deleted tags appeared under Permission Sets when committing with ServicePresenceStatus. Support for ServicePresenceStatusAccess has been added to Permission Sets, and necessary code changes were made to ensure correct behavior.<br>
 * **Profile Compare – Custom Permissions Not Visible:** Fixed an issue where the Profile Compare feature in the Deployment module did not show custom permissions for orgs. Updated UI logic ensures that deltas for custom permissions now display correctly.<br>
@@ -464,13 +464,13 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.7 <a href="#title-text" id="title-text"></a>
+## ARM 25.3.7
 
-**Release Date: 24 August 2025**
+**Release date:** 24 August 2025
 
 **Highlights:** Fixes to EZ-Commit translations, webhook API token status, and rollback iterations.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 1. **EZ Commit – Case Values Removed from CustomObjectTranslation:** Resolved an issue where case values were being removed from the CustomObjectTranslation file when performing multiple EZ-Commits under Japanese language. The problem was caused by unmarshalling and marshalling logic comparing values incorrectly. The comparison logic has been updated to rely on additional fields to properly support translations for different languages.
 2. **Webhooks – API Token Last Access Not Updating:** Fixed an issue where webhook API tokens continued to display “Never Accessed” even after recent runs triggered by CI jobs. The back-end logic has been corrected to update and display the last access time accurately.
@@ -478,13 +478,13 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.6
+## ARM 25.3.6
 
-**Release Date: 17 August 2025**
+**Release date:** 17 August 2025
 
 **Highlights**: Stability improvements and fixes for CI Jobs and Admin functionalities.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **CI Jobs – Baseline Revision Update Issue**: Resolved an issue where CI jobs were stuck and queued after a specific build. The problem was traced to a scenario where the baseline revision was not updating. The back end has been updated to address this case and additional logging has been added for better diagnostics.<br>
 * **Admin – Adding Released Users to Teams**: Fixed an issue where adding a delegated or released user to a team displayed a success message but did not actually add the user. The root cause was an error in fetching released user details. Logic has been corrected to ensure the released user is properly added to the team.<br>
@@ -492,23 +492,23 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.5
+## ARM 25.3.5
 
-**Release date: 10 August 2025**
+**Release date:** 10 August 2025
 
-### Bug Fixes
+### Fixes
 
 * **Branching baseline now supports committing child metadata components for Sharing Rules, Workflow, and Managed Topics**: This enhancement ensures these metadata types are correctly captured and pushed to the remote repository, addressing gaps identified in earlier releases.
 
 ***
 
-## ARM Release Notes 25.3.4
+## ARM 25.3.4
 
-**Release Date: 3 August 2025**\
+**Release date:** 3 August 2025\
 \
 **Highlights**: Reliability and accuracy improvements across CI jobs, release labels, and EZ-Commit workflows.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **CI job cleanup for Provar executions**: Unused test-result folders in Provar job paths were not deleted after runs, slowly consuming disk space. A cleanup mechanism now removes temporary directories and report data immediately after each job completes.<br>
 * **Destructive change detection in remote branches**: CI jobs missed destructive updates performed directly in GitHub, causing build failures. Backend logic has been corrected so that remote destructive changes are reliably detected and processed.<br>
@@ -517,11 +517,11 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes 25.3.3
+## ARM 25.3.3
 
-**Release Date: 27 July 2025**
+**Release date:** 27 July 2025
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * **New ALM Support**: ARM now links to the SaaS Tool Kit so EZ-Commit can update Salesforce ALM records automatically. After a simple one-time setup, developers select the User Story or Defect during an EZ-Commit, add notes or effort, and ARM pushes the commit details to Salesforce while advancing the record’s status from Unit Complete → Ready For SIT and SIT Complete → Ready For UAT—no manual edits needed.
 
@@ -532,13 +532,13 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## ARM Release Notes **25.3.2**
+## ARM 25.3.2
 
-**Release Date**: **20 July 2025**\
+**Release date:** 20 July 2025\
 \
 **Highlights**: UI fixes in conflict resolution, improved destructive change handling in DX/Non-DX, and artifact preparation reliability enhancements.
 
-### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+### Fixes
 
 * **Merge Conflict Resolution – UI Handling:** Improved the reliability of conflict resolution in the Merge Conflict screen. Resolved a UI issue where repeated lines were unintentionally removed after resolving conflicts using "Block from Source/Destination", leading to incorrect merges.<br>
 * **Destructive Changes in Commit (Non-DX):** Enhanced support for Report, Dashboard, Document, and EmailTemplate components in the Deleted tab under EZ-Commit for Non-DX repositories. These were previously not triggering the proper validation and error messaging during component selection.<br>
@@ -547,9 +547,9 @@ In version 25.4.4, a cache-related issue caused errors when expanding metadata c
 
 ***
 
-## Release Notes 25.3.1
+## ARM 25.3.1
 
-**Release Date: 13 July 2025**
+**Release date:** 13 July 2025
 
 Highlights: Stability and accuracy improvements across EZ Commit, Branching Baseline, and CI Jobs.
 
@@ -560,13 +560,13 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM Release Notes 25.2.12
+## ARM 25.2.12
 
-**Release Date**: **6 July 2025**\
+**Release date:** 6 July 2025\
 \
 **Highlights**: Key enhancements and fixes to CI jobs, VS Code integration, deployment modules, audit reports, and environment provisioning.
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * **Audit Reports – Deployment Label & Metadata Fixes**\
   Added the Deployment Label column in the Audit Reports section. Fixed issues with Invalid Date in the created/modified date columns and removed special characters from downloaded CSV headers.<br>
@@ -587,20 +587,20 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM Release Notes 25.2.11
+## ARM 25.2.11
 
-**Release Date: 29 June 2025**
+**Release date:** 29 June 2025
 
 **Highlights**: Git Performance Optimization, Accurate CI Deployments, and Enhanced Reporting Visibility
 
-#### **Enhancements** <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * **Faster Git-Based Version Control Validations**\
   We’ve improved how ARM validates Git branches and revisions.\
   These checks are now performed directly on the **remote Git repository**, eliminating the need for local workspace setup.\
   This significantly boosts performance and reduces processing time during operations.
 
-#### **Bug Fixes** <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * **Installed Components Now Properly Excluded in CI Jobs**\
   The **“Ignore Installed Components”** option in CI jobs was previously not functioning as expected—installed components were still being deployed.\
@@ -617,15 +617,15 @@ Highlights: Stability and accuracy improvements across EZ Commit, Branching Base
 
 ***
 
-## ARM Release Notes 25.2.10
+## ARM 25.2.10
 
-**Release date: 22 June 2025**
+**Release date:** 22 June 2025
 
-### **Overview**
+### Overview
 
 This release delivers targeted improvements to Vlocity deployments, CI job processing, sandbox provisioning, permission settings, and EZ-Commit behavior. Key internal issues have been resolved to enhance reliability, reduce metadata deployment anomalies, and streamline configuration workflows.
 
-#### **Internal – Vlocity Calculation Matrix Fix**
+#### Internal – Vlocity Calculation Matrix Fix
 
 **1. Issue: After a commit, comma-separated Calculation Matrix Components were not being correctly committed to the branch. Only the YAML file was pushed, and that too in an incorrect format.**
 
@@ -679,15 +679,15 @@ This release delivers targeted improvements to Vlocity deployments, CI job proce
 
 ***
 
-## ARM Release Notes 25.2.9
+## ARM 25.2.9
 
-**Release Date: 15 June 2025**
+**Release date:** 15 June 2025
 
-#### **Overview** <a href="#overview" id="overview"></a>
+#### Overview
 
 This release introduces support for **Salesforce API 64 (Summer ‘24)** and adds compatibility for new metadata types. Key improvements include bug fixes for CI Job execution, Profile Compare deployments, permission retrieval, and DX-based destructive changes in EZ-Merge.
 
-#### **Salesforce API 64 Support** <a href="#salesforce-api-64-support" id="salesforce-api-64-support"></a>
+#### Salesforce API 64 Support
 
 **Module:** Metadata Compatibility
 
@@ -724,7 +724,7 @@ This release introduces support for **Salesforce API 64 (Summer ‘24)** and add
 
 **Module:** Admin → Salesforce Settings → Profiles and Permissions
 
-#### **Internal Enhancement** <a href="#internal-enhancement" id="internal-enhancement"></a>
+#### Internal Enhancement
 
 **Issue:** Destructive changes related to static resources were not working properly for DX-format deployments in EZ-Merge.
 
@@ -734,17 +734,17 @@ This release introduces support for **Salesforce API 64 (Summer ‘24)** and add
 
 ***
 
-## ARM Release Notes 25.2.8 <a href="#title-text" id="title-text"></a>
+## ARM 25.2.8
 
-**Release Date: 8 June 2025**
+**Release date:** 8 June 2025
 
-### **Overview** <a href="#overview" id="overview"></a>
+### Overview
 
 This release brings critical improvements and feature enhancements across multiple modules, including Environment Provisioning, CI Jobs, Admin, EZ-Merge, and Metadata handling. The updates aim to improve system flexibility, performance, and metadata deployment consistency.
 
 ### Bug Fixes and Improvements
 
-#### **1. Fix / Improvement** <a href="#support-ticket-123971" id="support-ticket-123971"></a>
+#### Fix / Improvement
 
 **Issue:** In Environment Provisioning, the Remote Site Settings template was failing to update the URL in the destination org when the user applied alphabetical sorting. This caused deployment inconsistencies.
 
@@ -752,15 +752,15 @@ This release brings critical improvements and feature enhancements across multip
 
 **Module:** Environment Provisioning
 
-#### **2. Fix / Improvement** <a href="#support-ticket-139461" id="support-ticket-139461"></a>
+#### Fix / Improvement
 
-#### **Issue:** Customers could not edit SSO domain changes directly from the platform, leading to manual intervention. <a href="#support-ticket-139461" id="support-ticket-139461"></a>
+#### Issue: Customers could not edit SSO domain changes directly from the platform, leading to manual intervention.
 
 **Fix:** Users can now update their SSO domain name via the **SSO Configuration** page. Once the domain name is changed, an automated email informing all users of the update is triggered.
 
 **Module:** Admin → My Account → SSO Configuration
 
-#### **3. Fix / Improvement** <a href="#support-ticket-140173" id="support-ticket-140173"></a>
+#### Fix / Improvement
 
 **Issue:** While attempting to delete static resources and their `.meta` files through EZ-Merge, no destructive changes package was being generated, even when the "Run Destructive Changes" checkbox was selected. This caused validation failure during merge.
 
@@ -768,7 +768,7 @@ This release brings critical improvements and feature enhancements across multip
 
 **Module:** EZ-Merge
 
-#### **4. Fix / Improvement** <a href="#support-ticket-141127" id="support-ticket-141127"></a>
+#### Fix / Improvement
 
 **Issue:** CI Job deployments were failing with a **504 Gateway Timeout** error, blocking staging environment activities and causing delays in deployment pipelines.
 
@@ -776,7 +776,7 @@ This release brings critical improvements and feature enhancements across multip
 
 **Module:** CI Jobs
 
-#### **5. Fix / Improvement** <a href="#support-ticket-140243" id="support-ticket-140243"></a>
+#### Fix / Improvement
 
 **Issue:** While running test classes in the Admin section, unrelated Apex test classes were being auto-populated.
 
@@ -784,7 +784,7 @@ This release brings critical improvements and feature enhancements across multip
 
 **Module:** Admin → My SF Org Management
 
-#### **6. Fix / Improvement** <a href="#support-ticket-140384" id="support-ticket-140384"></a>
+#### Fix / Improvement
 
 **Issue:** During CI Job deployments involving Search and Substitute rules, changes were not being applied to the destination org, even though the deployment was marked successful.
 
@@ -793,7 +793,7 @@ AutoResponseRule, CustomLabel, CustomMetadata, CustomObject, CustomSite, Dashboa
 
 **Module:** Search and Substitute
 
-#### **7. Fix / Improvement** <a href="#support-ticket-141464" id="support-ticket-141464"></a>
+#### Fix / Improvement
 
 **Issue:** When performing a destructive change (e.g., deleting a ProfileSearchLayout) and deploying via Single Revision, the system failed to identify the change correctly, expecting the metadata to be present instead.
 
@@ -803,13 +803,13 @@ AutoResponseRule, CustomLabel, CustomMetadata, CustomObject, CustomSite, Dashboa
 
 **Module:** Deployment / CI Jobs
 
-## Release Notes 25.2.7 <a href="#title-text" id="title-text"></a>
+## ARM 25.2.7
 
-**Release Date: 24 August 2025**
+**Release date:** 24 August 2025
 
 Highlights: Fixes to EZ-Commit translations, webhook API token status, and rollback iterations.
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 1. **EZ Commit – Case Values Removed from CustomObjectTranslation**\
    Resolved an issue where case values were being removed from the CustomObjectTranslation file when performing multiple EZ-Commits under Japanese language. The problem was caused by unmarshalling and marshalling logic comparing values incorrectly. The comparison logic has been updated to rely on additional fields to properly support translations for different languages.\
@@ -823,9 +823,9 @@ Highlights: Fixes to EZ-Commit translations, webhook API token status, and rollb
 
 ***
 
-## Release Notes 25.2.6 <a href="#title-text" id="title-text"></a>
+## ARM 25.2.6
 
-**Release Date: 25 May 2025**
+**Release date:** 25 May 2025
 
 **Overview**
 
@@ -833,9 +833,9 @@ This release focuses on stability, reliability, and enhanced usability across co
 
 We’ve also added support for Provar v25.2.1, improved error handling and logging, and ensured a smoother experience for EZ-Commit users leveraging custom metadata and commit labels.
 
-### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+### Bug Fixes and Improvements
 
-#### **1. Release label Abort Stuck Status** <a href="#id-1.-release-abort-stuck-status" id="id-1.-release-abort-stuck-status"></a>
+#### Release label Abort Stuck Status
 
 **Issue:**\
 When a user aborts a release label, the system prematurely sets the release status to **"Failed"** while the abort request to the agent is still pending. If the abort request isn’t successfully sent, the status gets stuck, causing confusion in monitoring and troubleshooting.
@@ -845,7 +845,7 @@ The system now updates the release status to **“Failed”** only after the age
 
 **Impacted Module:** Release label Management
 
-#### **2. EZ-Commit Metadata Filter with Reused Labels** <a href="#id-2.-ez-commit-metadata-filter-with-reused-labels" id="id-2.-ez-commit-metadata-filter-with-reused-labels"></a>
+#### EZ-Commit Metadata Filter with Reused Labels
 
 **Issue:**\
 When performing an EZ-Commit using the **SCA > CodeScan** option and enabling **“Only newly added supported metadata types,”** the commit wasn’t functioning properly if the user reused a previously used commit label.
@@ -855,7 +855,7 @@ Metadata filtering logic has been updated to support commit label reuse, ensurin
 
 **Impacted Module:** EZ-Commit
 
-#### **3. CI Jobs Stuck in Queue** <a href="#id-3.-ci-jobs-stuck-in-queue" id="id-3.-ci-jobs-stuck-in-queue"></a>
+#### CI Jobs Stuck in Queue
 
 **Issue:**\
 Some CI jobs were getting stuck in the queue due to:
@@ -871,7 +871,7 @@ Some CI jobs were getting stuck in the queue due to:
 
 **Impacted Module:** CI Jobs
 
-#### **4. Admin User Creation Validation** <a href="#id-4.-admin-user-creation-validation" id="id-4.-admin-user-creation-validation"></a>
+#### Admin User Creation Validation
 
 **Issue:**\
 Fields like **Phone Number**, **Zip Code**, and **State** were mandatory during user creation, restricting onboarding in certain cases.
@@ -881,7 +881,7 @@ These fields are now optional in the Admin module, streamlining user creation.
 
 **Impacted Module:** Admin (User Management)
 
-#### **5. Fieldset Translation Removal During Commit** <a href="#id-5.-fieldset-translation-removal-during-commit" id="id-5.-fieldset-translation-removal-during-commit"></a>
+#### Fieldset Translation Removal During Commit
 
 **Issue:**\
 When committing **CustomField** and **CustomObjectTranslations**, valid **Fieldset translation nodes** were unintentionally removed.
@@ -891,7 +891,7 @@ Translation node handling has been refined to preserve valid entries and prevent
 
 **Impacted Module:** EZ-Commit
 
-#### **6. Credential-Based CI Job Failures** <a href="#id-6.-credential-based-ci-job-failures" id="id-6.-credential-based-ci-job-failures"></a>
+#### Credential-Based CI Job Failures
 
 **Issue:**\
 CI Jobs were failing inconsistently when using existing credentials, with causes difficult to trace.
@@ -901,7 +901,7 @@ Improved logging at credential validation points to isolate issues and aid futur
 
 **Impacted Module:** CI Jobs
 
-#### **7. Provar v25.2.1 Compatibility Support** <a href="#id-7.-provar-v2521-compatibility-support" id="id-7.-provar-v2521-compatibility-support"></a>
+#### Provar v25.2.1 Compatibility Support
 
 **Request:**\
 Compatibility needed for **Provar version 25.2.1** to support automated test execution.
@@ -909,7 +909,7 @@ Compatibility needed for **Provar version 25.2.1** to support automated test exe
 **Update:**\
 Provar v25.2.1 is now supported and available on demand for integration with ARM workflows.
 
-#### **8. Branch Name Case Sensitivity in Release Labels** <a href="#id-8.-branch-name-case-sensitivity-in-release-labels" id="id-8.-branch-name-case-sensitivity-in-release-labels"></a>
+#### Branch Name Case Sensitivity in Release Labels
 
 **Issue:**\
 Sub-users could not view their own release labels due to a mismatch in branch name casing logic.
@@ -921,17 +921,17 @@ The filtering logic now respects case sensitivity, ensuring correct visibility o
 
 ***
 
-## Release Notes 25.2.5  <a href="#title-text" id="title-text"></a>
+## ARM 25.2.5
 
-**Release Date: 18 May 2025**\
+**Release date:** 18 May 2025\
 \
 **Overview**
 
 This release includes key bug fixes and improvements focused on enhancing CI Job stability, deployment reliability, and metadata diff accuracy. It addresses critical issues encountered in Salesforce-to-Salesforce deployments, destructive change logic, permission set handling, and package creation workflows. Additionally, customer-requested upgrades such as Provar support enhancements have been implemented.
 
-### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+### Bug Fixes and Improvements
 
-#### **1. CI Job: Destructive Changes Handling** <a href="#id-1.-ci-job-destructive-changes-handling" id="id-1.-ci-job-destructive-changes-handling"></a>
+#### CI Job: Destructive Changes Handling
 
 **Issue:**\
 The **“Prepare Destructive Changes”** option was not selected during initial CI Job creation but was unexpectedly selected during re-runs.
@@ -944,7 +944,7 @@ The **“Prepare Destructive Changes”** option was not selected during initial
 **Fix:**\
 Resolved inconsistencies in destructive change logic. The system now retains the correct state of the “Prepare Destructive Changes” flag across CI Job executions.
 
-#### **2. Permission Set FLS Diff Missing** <a href="#id-2.-permission-set-fls-diff-missing" id="id-2.-permission-set-fls-diff-missing"></a>
+#### Permission Set FLS Diff Missing
 
 **Issue:**\
 When attempting to commit FLS changes for a new field within a permission set, the changes were not captured in the diff report, resulting in missing commits.
@@ -952,7 +952,7 @@ When attempting to commit FLS changes for a new field within a permission set, t
 **Fix:**\
 Enhanced logic to correctly capture FLS changes by appending `Task` and `Event` objects for the `Activity` object when the **Global Permissions** option is selected in EZ-Commit.
 
-#### **3. Deployment Abort Functionality** <a href="#id-3.-deployment-abort-functionality" id="id-3.-deployment-abort-functionality"></a>
+#### Deployment Abort Functionality
 
 **Issue:**\
 When performing a **Single Revision Deployment**, even after aborting it (a confirmation popup showing a successful cancellation), the deployment continued and was marked as successful.
@@ -960,7 +960,7 @@ When performing a **Single Revision Deployment**, even after aborting it (a conf
 **Fix:**\
 Fixed the abort logic within the deployment module to correctly halt execution and reflect the accurate status post-abortion.
 
-#### **4. Unlocked Managed Package CI Job Failure** <a href="#id-4.-unlocked-managed-package-ci-job-failure" id="id-4.-unlocked-managed-package-ci-job-failure"></a>
+#### Unlocked Managed Package CI Job Failure
 
 **Issue:**\
 Customer experienced failures when triggering a CI Job to **create and install an unlocked managed package** from a version control branch.
@@ -968,7 +968,7 @@ Customer experienced failures when triggering a CI Job to **create and install a
 **Fix:**\
 Improved JSON handling during CI Job execution, ensuring compatibility with both internal and customer-specific JSON structures. Now, even in case of exceptions during package creation, the system attempts fallback version creation instead of complete failure, similar to the existing SFDX module behavior.
 
-#### **5. Provar Upgrade Request** <a href="#id-5.-provar-upgrade-request" id="id-5.-provar-upgrade-request"></a>
+#### Provar Upgrade Request
 
 **Request:**\
 Customer requested support for **Provar v25.2.1**
@@ -978,15 +978,15 @@ Support for Provar version 25.2.1 has been added to ensure compatibility with au
 
 ***
 
-## Release Notes 25.2.4
+## ARM 25.2.4
 
-**Release Date: 11 May 2025**
+**Release date:** 11 May 2025
 
-### **Overview**
+### Overview
 
 This release introduces feature enhancements and key bug fixes to improve deployment flexibility, metadata handling, CI job stability, and user experience. The update includes enhanced error handling for CI and Apex jobs, metadata recognition updates, and refined UI behavior in merge and licensing workflows.
 
-### **Bug Fixes & Improvements**
+### Bug Fixes & Improvements
 
 **CI Job Includes Unsupported Metadata Despite Exclusion Configuration**\
 A customer reported that certain metadata types (`CallCenterRoutingMap`, `CallCtrAgentFavTrfrDest`) were deployed despite being explicitly excluded in the deployment configuration.
@@ -1027,7 +1027,7 @@ The label was changed from “Skip all three prevalidation criteria” to “Ski
 
 * **Impacted Module:** Merge UI
 
-### **Known Issues** <a href="#known-issues" id="known-issues"></a>
+### Known Issues
 
 **License Upload Not Visible for Expired On-Premise Servers**\
 When the license expired, the option to upload a new key was not visible before login.
@@ -1038,9 +1038,9 @@ When the license expired, the option to upload a new key was not visible before 
 
 ***
 
-## Release Notes 25.2.3
+## ARM 25.2.3
 
-**Release Date:** **4 May 2025**
+**Release date:** 4 May 2025
 
 #### Overview
 
@@ -1071,15 +1071,15 @@ An issue was reported where creating or editing users with countries that do not
 
 ***
 
-## Release Notes 25.2.2
+## ARM 25.2.2
 
-**Release Date:** **27 April 2025**
+**Release date:** 27 April 2025
 
-#### **Overview** <a href="#overview" id="overview"></a>
+#### Overview
 
 This release introduces significant enhancements to AutoRABIT’s ARM platform, focusing on enhanced metadata support, improved deployment accuracy, and optimized performance across CI workflows. Previously unsupported metadata types are now fully recognized in DX-based branching and deployment. Issues with redundant code coverage reports and performance bottlenecks in ALM item loading have been resolved. Significant improvements also include full profile permission coverage in EZ-Commit and enhanced metadata exclusion logic.
 
-#### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+#### Bug Fixes and Improvements
 
 **Support for New Metadata Types in DX Repo CI Deployments**\
 Previously unsupported metadata types are now included in deployments created through DX repo-based branching. These include: `ApplicationSubtypeDefinition`, `BusinessProcessTypeDefinition`, `ConvIntelligenceSignalRule`, `ExplainabilityActionDefinition`, `ExpressionSetDefinitionVersion`, `ForecastingGroup`, and `PathAssistant`.\
@@ -1103,23 +1103,23 @@ Corrected behavior in which `ExpressionSetDefinitionVersion` metadata was includ
 
 ***
 
-### nCino + Data Loader Release Notes 25.1.4
+### nCino + DataLoader 25.1.4
 
-**Release Date: 27 April 2025**
+**Release date:** 27 April 2025
 
 Refer to the latest release notes published for nCino + Data Loader at [https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.4-release-notes).
 
 ***
 
-### ARM Release Notes 25.2.1 <a href="#arm-release-notes-25.2.1" id="arm-release-notes-25.2.1"></a>
+### ARM 25.2.1
 
-**Release Date: 20 April 2025**
+**Release date:** 20 April 2025
 
-#### **Overview** <a href="#overview" id="overview"></a>
+#### Overview
 
 This release brings meaningful enhancements that improve reliability, accuracy, and visibility across ARM workflows. Backup CI jobs now consistently capture StandardValueSet changes, ensuring more complete metadata tracking. Improved metadata classification prevents deployment errors, while CustomObjectTranslation handling in EZ-Commit for DX repos is now more precise. Custom settings deploy smoothly through Environment Provisioning, reducing manual effort. File comparisons are clearer with restored full diff visibility, aiding better change reviews. Updates to Search and Substitute and managed package exclusions streamline CI deployments. Audit trails now display correct timestamps, enhancing reporting accuracy.
 
-#### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+#### Bug Fixes and Improvements
 
 **StandardValueSet Metadata in Backup Jobs** Backup CI jobs now correctly detect and retrieve changes made to StandardValueSet metadata. Previously, these changes were not captured automatically, although manual commits through EZ-Commit functioned as expected. This enhancement ensures StandardValueSet changes are included in automated daily backups. _Impacted Modules: CI Jobs backup to VC. Support Case: #132829_
 
@@ -1139,15 +1139,15 @@ This release brings meaningful enhancements that improve reliability, accuracy, 
 
 ***
 
-## ARM Release Notes 25.1.4
+## ARM 25.1.4
 
-**Release Date: 17 April 2025**
+**Release date:** 17 April 2025
 
-### Overview <a href="#overview" id="overview"></a>
+### Overview
 
 This release focuses on streamlining the deployment process and improving reliability across the platform. OmniStudio deployments now handle dependencies more intelligently with Max Depth -1, ensuring a smoother experience from retrieval to deployment. Conflict resolution has been made more precise, avoiding issues like content bleed between files, and users can now seamlessly retry failed merges without losing progress. Improvements to Org Sync and Admin settings make it easier to spot differences and manage roles in real time, while enhancements to file comparison and commit labeling bring greater clarity and control to the deployment workflow.
 
-### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+### Bug Fixes and Improvements
 
 * **Max Depth -1 Support for OmniStudio Deployment**\
   Deployments using Max Depth -1 now correctly retrieve and include all dependent components such as IntegrationProcedure, DataRaptor, Document, and VlocityUiTemplate. The retrieved dependencies are now properly reflected in the UI and included in the deployment to the target org. _Impacted Modules: Deployment (org → org)._&#x20;
@@ -1168,27 +1168,27 @@ This release focuses on streamlining the deployment process and improving reliab
 
 ***
 
-## ARM Release Notes 25.1.3
+## ARM 25.1.3
 
-**Release Date: 06 April 2025**\
+**Release date:** 6 April 2025\
 \
 This release introduces significant new capabilities and key enhancements across the ARM platform. A major new feature enables **multi-level deployment approvals by Org**, offering structured release governance with customizable approval groups. Architecture improvements include enhanced **global workspace management** to handle deleted or missing branches more gracefully. The release also strengthens security with **encrypted installation key** handling. Core functionality has been optimized, including improved **commit revision sorting** and **faster loading of standard value sets**.
 
-#### **1. New Feature** <a href="#id-1.-new-feature" id="id-1.-new-feature"></a>
+#### New Feature
 
 * **Multi-Level Deployment Approval by Org**\
   A two-level deployment approval process has been introduced to provide better control over releases. Each approval level supports group-based approval, allowing any member within the group to approve the deployment. Email notifications are sent to approvers with a link to ARM for approval actions. This approval process can be configured based on Org name. Admins can select applicable orgs and assign separate approvers or approver groups for each.\
   \
   **Note:** Approval Process support is now limited to **Direct Custom Deployment** only. It is **not supported** via **Org Sync** or **Profile Management**.
 
-#### **2. Feature Enhancements** <a href="#id-2.-feature-enhancements" id="id-2.-feature-enhancements"></a>
+#### Feature Enhancements
 
 * **Secure Handling of Installation Key in Unlocked Packages CI Job**\
   The installation key used in the Unlocked Packages CI Job is now masked and encrypted for improved security. Additionally, a view/hide eye icon has been introduced to toggle the visibility of the installation key.
 * **Clear Status Indicators for Merge Pre-validation Outcomes**\
   The "Merge Prevalidation Process" logs now provide clearer visual indicators based on the outcome of the validation. A green checkmark ( <mark style="color:green;">✓</mark>) is shown only when the process completes successfully, while a red <mark style="color:red;">X</mark> clearly indicates when the pre-validation has failed or resulted in auto-rejection. This improvement ensures better visibility into validation outcomes for both merge and commit workflows.
 
-#### 3. Architecture Improvements <a href="#id-3.-architecture-improvements" id="id-3.-architecture-improvements"></a>
+#### Architecture Improvements
 
 * **3-Tier Architecture for ARM – Separate and Load the UI and Backend Services Individually**\
   The ARM UI can now be compiled and run independently from the backend. Based on configurable endpoints, the UI communicates with any designated backend server, defaulting to localhost. All UI components load locally, and API calls are routed according to the configured backend endpoint.
@@ -1197,7 +1197,7 @@ This release introduces significant new capabilities and key enhancements across
 
     A UI enhancement to allow users to change the default branch directly in the VC Repos module will be introduced in an upcoming release to fully resolve the issue.
 
-#### **4. Bug Fixes and Improvements** <a href="#id-4.-bug-fixes-and-improvements" id="id-4.-bug-fixes-and-improvements"></a>
+#### Bug Fixes and Improvements
 
 * **Reliable CI Job Queue Handling**\
   Resolved an issue where CI jobs were stuck in the queue due to mismatched build numbers between CIJobInfo and CIJobHistory tables. The system now handles these cases correctly, ensuring jobs progress without blocking subsequent builds. _Impacted Modules: CI Job abort and Queue flows, Release Label abort and Queue flows._&#x20;
@@ -1220,23 +1220,23 @@ This release introduces significant new capabilities and key enhancements across
 * **Provar Plugin Name Edit Handling**\
   Editing the Provar name in the Admin module no longer triggers an invalid notification pop-up when a key file is already uploaded. A response check ensures smoother and more accurate user feedback. _Impacted Modules: My Account plugins (Provar)._
 
-## **nCino + Data Loader 25.1.3 Release Notes**
+## nCino + DataLoader 25.1.3
 
-**Release Date: 6 April 2025**<br>
+**Release date:** 6 April 2025<br>
 
 See the [Release Notes](https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.3-release-notes) for nCino + Data Loader improvements.&#x20;
 
 ***
 
-## ARM Release Notes 25.1.2
+## ARM 25.1.2
 
-**Release Date: 09 March 2025**
+**Release date:** 9 March 2025
 
 This release introduces **Checkmarx One Integration**, enabling users to perform security scans within ARM using Checkmarx One alongside existing Static Code Analysis tools.
 
 Additionally, we have addressed multiple bug fixes and enhancements, including improved support for **PLATFORMEVENTCHANNELMEMBER** in destructive commits, enhanced **merge conflict detection for layouts**, and more reliable **duplicate resolution for profiles**. Security and stability improvements include **fully hiding API tokens after creation**, ensuring **correct project mapping for CodeScan in CI jobs**, and providing **consistent permission set deployments in Commit Label deployments**.
 
-### New Feature
+### New features
 
 *   **Checkmarx One Integration**
 
@@ -1265,15 +1265,15 @@ Additionally, we have addressed multiple bug fixes and enhancements, including i
 
 ## nCino + Data Loader Improvements
 
-**Release Date: 9 March 2025**
+**Release date:** 9 March 2025
 
 See the [Release Notes](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.2-release-notes) for nCino + Data Loader improvements.
 
 ***
 
-## ARM Release Notes 25.1.0
+## ARM 25.1.0
 
-**Release Date: 23 February 2025**
+**Release date:** 23 February 2025
 
 The ARM Release 25.1.0 introduces key upgrades, new features, and critical fixes to enhance security, compatibility, and overall performance. This release includes updates to third-party libraries, improved error handling, and several bug fixes to ensure a seamless user experience.
 
@@ -1305,6 +1305,6 @@ The ARM Release 25.1.0 introduces key upgrades, new features, and critical fixes
 
 ## nCino Improvements
 
-**Release Date 23 February 2025**
+**Release date:** 23 February 2025
 
 See the [Release Notes](https://knowledgebase.autorabit.com/overview/release-notes/ncino-release-notes/release-notes-25.1#ncino--data-loader-25.1.0-release-notes) for nCino + Data Loader improvements.&#x20;

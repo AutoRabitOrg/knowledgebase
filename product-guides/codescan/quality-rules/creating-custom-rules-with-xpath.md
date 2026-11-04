@@ -1,0 +1,196 @@
+# Creating Custom Rules with XPath
+
+[CodeScan](https://www.codescan.io/) allows you to create custom rules using XPath. You can use these rules to trigger violations based on any special requirements you may have.
+
+{% hint style="info" %}
+**Note:**
+
+1. The custom XPath Visualforce and Salesforce Metadata rule templates use **XPath version 2** whereas the custom XPath Apex rule template uses **XPath version 1**.
+2. This needs to be changed in the design as the rules are being developed or could introduce bugs.
+{% endhint %}
+
+### Before you begin <a href="#before-you-begin" id="before-you-begin"></a>
+
+* You will need an excellent working knowledge of XPath to get this operational.
+* [Download the **Apex-Custom Rule Designer**](https://license.codescan.io/index.php/download/login?path=codescan-designer-25.1.0.jar).
+
+{% hint style="info" %}
+Note: To download the Apex Rule Designer tool, you need a subscription code.
+{% endhint %}
+
+### Installing the Apex-Custom Rule Designer
+
+Run the following command to install the downloaded _Apex-Custom Rule Designer_:
+
+```
+java -jar <jar-file-name>.jar
+```
+
+### Apex
+
+Here are some examples of XPath queries for Apex.
+
+**Naming:**
+
+* XPath queries can be used to catch unwanted trends or enforce standards in the naming of your classes, methods, and variables.
+* This query will catch any class names that do not start with _**PREFIX\_**_
+
+```
+//ClassOrInterfaceDeclaration
+[
+  not(starts-with(@Image, 'PREFIX_'))
+]
+```
+
+This example would catch the first class here:
+
+```
+class NewClass{}
+class PREFIX_NewClass{}
+```
+
+_**starts-with**_ can also be replaced with:
+
+* _**ends-with**_ - This checks for a string at the end of the @image name.
+* _**matches**_ - This uses the regular expression in place of the string to check for patterns in the @image name.
+
+{% hint style="info" %}
+**Note:** When using a regular expression with escapes ( \ character) in XPath, you will need to double escape them when adding them in the UI due to the way our rule engine parses them.
+
+eg. **\\.** will become **\\\\.**
+{% endhint %}
+
+#### **Working Example: Creating a Custom XPath Rule to Detect a Method Named `setup`**
+
+**Sample Apex Code**
+
+```
+public class Foo {
+
+    static void setup() {
+
+        List<Account> accounts = new List<Account>{
+            new Account(Name='TestAcct0'),
+            new Account(Name='TestAcct1')
+        };
+        insert accounts;
+    }
+}
+```
+
+**Goal**
+
+We want to detect all method declarations where the method name is **setup**.
+
+**XPath Expression**
+
+To find methods with the name `setup`, use this XPath:
+
+```xpath
+//MethodDeclaration[@MethodName='setup']
+```
+
+**Explanation**
+
+* `MethodDeclaration` nodes represent method definitions in Apex.
+* `@MethodName='setup'` filters the nodes to only those whose method name matches `setup`.
+
+**Screenshot (PMD Rule Designer):**
+
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+In the Rule Designer, the analysis is performed solely on the **file’s source code**, from which an Abstract Syntax Tree (AST) is generated. Because the tool does not process the file as a whole, any metadata associated with the file—such as its **name, path, or other file-level attributes—cannot be accessed or retrieved during analysis**.”
+{% endhint %}
+
+### Visualforce and Aura Lightning <a href="#visualforce-and-aura-lightning" id="visualforce-and-aura-lightning"></a>
+
+You can also use this technique for VisualForce (in the Apex-Custom Rule designer, select the **VisualForce** language and use **XPath 2.0** instead of **XPath 1.0**).
+
+**Naming:**
+
+XPath queries can be used to catch unwanted trends or enforce standards in the naming of your pages.
+
+This query will catch any page names that do not start with _**PREFIX\_**_
+
+```
+//Document [@Filename[not(starts-with(.,'PREFIX_'))]]
+```
+
+This example would catch the first Filename here, but ignore the second:
+
+```
+NewPage.page
+PREFIX_NewPage.page
+```
+
+_**starts-with**_ can also be replaced with:
+
+* _**ends-with**_ - This checks for a string at the end of the @image name.
+* _**matches**_ - This uses the regular expression in place of the string to check for patterns in the @image name.
+
+### Other Salesforce metadata <a href="#other-salesforce-metadata" id="other-salesforce-metadata"></a>
+
+Most other metadata types come out of Salesforce in XML format. To scan these types, you can add any metadata you want to the list of file suffixes as seen in the [Enable CodeScan Cloud Metadata Rules](https://knowledgebase.autorabit.com/codescan/docs/enable-codescan-cloud-metadata-rules) article.
+
+XPath expressions for Salesforce metadata should start with double-slashes (“//”).\
+For example-
+
+```
+//ValidationRule
+```
+
+{% hint style="info" %}
+**Point to Note:**
+
+In CodeScan Designer, verify the XPath expressions. Using an XPath expression generated by any other online tool may not work because the XPath expression is dependent on how the AST is generated, which varies per tool.
+{% endhint %}
+
+If you want to create a rule for a new metadata type, spend time looking at the XML to determine where your fields, rules, decisions, or subtasks are, and then look into how to validate them.\
+**For example**, if you want to limit a flow to 20 decision points, the XPath would look something like this:
+
+```
+//Flow[
+ count(./decisions)>20
+]
+```
+
+The type of component being visualized is flow. Decisions exist within that flow; they are a direct child of the flow within the XML. Finally, the count () method can determine if there are too many flows.
+
+### Adding Your Custom Rule
+
+1. Log in to your CodeScan Cloud account or SonarQube™
+2. Click on the Rules menu
+3.  In the Filters pane, search for XPath rule template.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (3712).png" alt=""><figcaption><p>XPath Rule Template</p></figcaption></figure>
+4. Select the XPath rule template of the language of your choice.&#x20;
+5. Under Custom Rules click on Create.
+
+<figure><img src="../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+
+6. Assign the values to the Name, Key, Type, Severity, Status, Description and Message fields.&#x20;
+7. Insert the Xpath created in the field provided and click on Create.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (219).png" alt="" width="563"><figcaption></figcaption></figure>
+
+Now you can add it to your Quality Profile as you would any built in-rule.  Please refer to [our guide for customizing Quality Profiles](../quality-profiles/customizing-quality-profiles.md) for these steps.
+
+### How to Validate an XPath Expression with CodeScan Rule Designer
+
+In the following screenshot, the CodeScan Rule Designer rule is not being used to validate the XPath expression.
+
+<figure><img src="../../../.gitbook/assets/image (2340).png" alt=""><figcaption></figcaption></figure>
+
+### To download the Custom Rule designer:
+
+1. Enter the Source Code
+2. This will generate an Abstract Tree based on the code.
+3. In the XPath query section, enter the XPath and click 'Go' to Validate the Path.
+4. If the XPath is correct, it will highlight the source code lines for that XPath expression.
+
+<figure><img src="../../../.gitbook/assets/image (3722).png" alt=""><figcaption></figcaption></figure>
+
+Example:
+
+<figure><img src="../../../.gitbook/assets/image (3723).png" alt=""><figcaption></figcaption></figure>

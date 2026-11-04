@@ -1,0 +1,241 @@
+# nCino FAQs
+
+### Can users query other objects without creating a custom community template?
+
+Standard, published nCino templates are locked by design and **cannot be edited** directly. This is to ensure the integrity of the baseline templates provided out-of-the-box. To add custom logic, filters, or query different objects, a user must create a new, editable template. The most efficient way to do this is by cloning an existing standard template. While you cannot edit a standard template, you can achieve your goal by cloning it and then customizing the clone.
+
+**Action Steps**
+
+1. **Clone the Standard Template:** Navigate to the nCino templates in the module. Select the standard template that most closely matches your requirements (e.g., `nCino-Product Hierarchy Template`) and use the **Clone** function.
+2. **Customize the Cloned Template:** The new, cloned template is fully editable. Open it and add your desired custom filter (e.g., add a filter on the `Product Type` field on the appropriate object).
+3. **Save and Deploy:** Save your customized template. You can now select and use this new template to perform your nCino data deployments with the custom filter applied.
+
+**Best Practice Recommendation for Applying Filters**
+
+* **Standard Scenarios:** The general best practice for standard nCino migrations is to apply filters on the main **"Entry"** object to pull the required data.
+* **Custom Scenarios:** However, when adding a custom filter as described above, it is often more effective and reliable to apply the filter directly on the **child object** that contains the specific field, rather than filtering from the parent object.
+
+### Error: "This session is not valid for use with the API"
+
+This error is encountered if you do not have the "AutoRABITOAuth2" installed in your org.
+
+<figure><img src="../../../../.gitbook/assets/image (3710).png" alt=""><figcaption></figcaption></figure>
+
+**Solution:**
+
+1. Log in to the PROD org.
+2. Search for the connected app.
+3. Select "Connected App OAuth Usage."
+4. Install "AutoRABITOAuth2."
+5.  Re-run the job.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (3711).png" alt=""><figcaption></figcaption></figure>
+
+### Record-Based Migration error use case <a href="#recordbased-migration-error-use-case" id="recordbased-migration-error-use-case"></a>
+
+**Description:** The user was deploying nCino records using the nCino standard template from the source environment to the destination environment.
+
+**Problem Statements**:&#x20;
+
+1. ARM not picking up the **Parent route look up** value on the **Route group** object, thereby resulting in empty parent routes in the destination org.
+2. Blank lookup fields that were recently updated from not null to null are not being updated by ARM.
+
+**Resolution**:
+
+1. The parent object must also be included in the deployment for the child object's lookup fields' values to be updated.&#x20;
+2. Deploying both **Route** and **Route Group** objects while choosing the **"Insert/update with null values"** option will update the Parent Route lookup field with a null value.
+
+**Other Queries:**
+
+_**a. How exactly does ARM go about retrieving datasets?**_
+
+Preparing object sets (from child to parent) that reflect relationships between the chosen objects is the first step in the dataset retrieval process. Next, pull the data of the object on which the filter is applied (entry object). After then, ARM begins processing sets object by object, starting with the object sets that contain the entry object.
+
+_**b. Why is the nForce\_Route\_c object auto-selected on the Record Configuration screen?**_
+
+For the standard templates, ARM has a default **entry object** defined by the nCino team. So when trying to create a template from a standard tile, ARM auto-select that default object and indicate **"E"** to denote it as an entry object. If you are trying to create a new one via the **New +** icon, the first object will be auto-selected. This is the reason why the **nForce\_Route\_c** object is auto-selected in the below screen.\
+![](https://support.autorabit.com/api/v1/threads/241415000087954193/inlineImages/edbsn4b39aa565c2906852fbda870302a7600edea2b5e0e6ef9f0c8f341b1b50df84826707526dcc30592fcc8043ff25e0a91b6795283b9b386867eae31919393d32bb35fc4e4c62e54dc5113f6f01a2572b4?et=18466073fc6\&ha=66aed21f10d32604e94b3effa7f3db7567fe1e80ecf6e6fb3f90e91a61142000\&f=1.png)
+
+_**c. To pull all required data from parent and child objects, why apply a filter on the child object?**_
+
+In this current scenario, when Route and Route Group are selected, as per our process, we don prepare object sets first, and below are the object sets prepared. Group object is automatically picked since Route Group has a Master-detail relationship with Group.
+
+_Object Set 1: nFORCE\_\_Route\_Group\_\_c, nFORCE\_\_Route\_\_c_
+
+_Object Set 2: nFORCE\_\_Route\_Group\_\_c, nFORCE\_\_Group\_\_c_
+
+*   _**What if the filter is applied on Route Group?**_
+
+    First, we pull data from Route Group based on the filter, and then as per the set-1, we will pull relations of Route with the help of the below query.
+
+    Select **nFORCE\_\_Route\_\_c,nFORCE\_\_Parent\_Route\_\_c** from **nFORCE\_\_Route\_Group\_\_c** where _Id is (route group id's based on filter applied)_\
+    Next, if self-references exist on Route, we do retrieve those relations. In the same way, we do process set-2.
+*   _**What if the filter is applied on Route?**_
+
+    First, we pull data from Route based on the filter, and then as per the set-1, we will pull relations of Route Group with the help of the below queries.
+
+    _Select Id from nFORCE\_\_Route\_Group\_\_c where nFORCE\_\_Parent\_Route\_\_c in (route id's based on filter applied)_\
+    _&#x53;elect Id from nFORCE\_\_Route\_Group\_\_c where nFORCE\_\_Route\_\_c in (route id's based on filter applied)_\
+    Next, if self-references exist on Route Group, we do retrieve those relations. In the same way, we do process set-2.
+
+In the second case, if Route Group has any other Route via the _nFORCE\_\_Parent\_Route\_\_c_ field other than the route that is picked as a part of the query applied, that will not be considered. But in case one, we do consider data from both _nFORCE\_\_Route\_\_c_ and _nFORCE\_\_Parent\_Route\_\_c_ fields.
+
+So, in the case of custom configuration, the best practice is to apply a filter on the child object.\
+\
+**Exceptional Scenario:** Now, I would like to highlight here one more exceptional case where you need to have a look at considering the entry object when the below objects are part of your customized scenario.\
+\
+No matter whether it is parent relation or child relation, as per the nCino design, data for the objects on the right side have to be pulled only based on objects on the left side. So when your scenario includes any of the below object pairs, the filter has to be applied on left-side objects.
+
+### How to send custom label translations from one nCino environment to another
+
+To select the language translations and for you to view them in the list, they need to be enabled under your source salesforce org first. Follow the below steps to perform the translation deployments:
+
+* Under source Salesforce org, go to **Setup > Translation Workbench > Translation Language Settings** and enable the appropriate language.
+* Once enabled, go to ARM and try to retrieve the components under **Translations**. You will observe the languages populated.
+* Create a new deployment by selecting the **custom object translations**, its relevant languages under translations, and the custom object. Your target environment should have custom label translations now.
+
+Please refer to the article: [Working with Translation in ARM](../best-practices/working-with-translations-in-arm.md) for more detailed information.
+
+### Conditional rendering references in the 'Screen' sections are not included when using the nCino standard UI template <a href="#conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa" id="conditional-rendering-references-in-the-screen-sections-are-not-included-when-using-the-ncino-standa"></a>
+
+The _views_ and the _self-references_ screens sections were not picked up during the feature deployment using the nCino standard UI migration template. This is our top priority, and our development team is working hard to remedy the problem as quickly as possible. After running the nCino UI migration template, please run the Screen UI template to pick up all the missing components as a workaround.
+
+### Why are attachments failing when deploying nCino Form Templates?
+
+When deploying nCino Form Templates with attachments, the template records deploy fine, but all attachments may fail.\
+\
+There is a limitation when parsing the attachment name. If you have a slash in your attachment name, like the example below, then the nCino job will fail: \
+ncino-Forms/Attachment/DocPrep/Officer/Comments.html\
+\
+If you need to divide the file name, please change it to an underscore or a hyphen, like in the example here: ncino-Forms/Attachment/DocPrep/Officer\_Comments.htm
+
+### Why am I unable to perform transactional data migration through the nCino feature migration template?
+
+nCino Feature Migration template is restricted to transactional data due to the package’s schema\
+design. Transactional objects do not include "Lookup Keys" (External IDs) for record synchronization.
+
+**Solution through Dataloader Pro**
+
+Utilize Dataloader Pro to perform this migration. This tool allows for advanced record matching and\
+relationship mapping without requiring native Lookup Keys, ensuring data integrity for both\
+transactional and non-transactional objects during migration.
+
+Key Comparison of the Data Gap
+
+<table><thead><tr><th valign="top">Feature</th><th valign="top">Non-Transactional Data</th><th valign="top">Transactional Data</th></tr></thead><tbody><tr><td valign="top"><p> </p><p>Example</p></td><td valign="top"><p> </p><p>Product Templates, Fees</p></td><td valign="top"><p> </p><p>Loans, Covenants, Collateral</p></td></tr><tr><td valign="top"><p> </p><p>Lookup Key</p></td><td valign="top"><p> </p><p>Provided by nCino</p></td><td valign="top"><p> </p><p>Not Provided</p></td></tr><tr><td valign="top"><p> </p><p>Migration Tool</p></td><td valign="top"><p> </p><p>nCino Feature Management</p></td><td valign="top"><p> </p><p>Data Loader Pro</p></td></tr></tbody></table>
+
+**Prerequisites before creation and execution of Dataloader Pro Job**
+
+Step 1: Identify the type of object.
+
+* TYPE 1: nCino objects common for both transactional and non-transactional data where Lookup key field exists.
+* TYPE 2: nCino objects using only for transactional data.
+
+A.  Lookup key field exists.
+
+B.  Lookup key field doesn’t exist, and no external ID field is maintained.
+
+* TYPE 3: Non-nCino objects where customer has their own external ID field and maintaining the values in it.
+* TYPE 4: Non-nCino object where customer is not maintaining external ID.
+
+Step 2: When object belongs to Type 2-B and Type 4 are involved and if the target org is not empty, where the objects contain data but not the “AutorabitExtId  c“ field, then perform Dataloader Configuration job on source and destination orgs by selecting all relevant objects to generate AutoRABIT’s unique external Id (AutorabitExtId  c) field and populate source record IDs for the records that are identified as common based on the unique field(s) selected in the job.
+
+How to create and run DataLoader configuration job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-configuration)
+
+Step 3: When object belongs to Type 1 and Type 2A and data for the Lookup field is not maintained for the records, then contact nCino team to populate look up key values for existing records.
+
+**Create Dataloader Pro Jobs**
+
+1\.      Log in to your ARM account.
+
+2\.      Hover your mouse over the DataLoader module and select DataLoader Pro.
+
+3\.      Click on Create New Job.
+
+<figure><img src="../../../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+
+
+
+4. On the next screen, choose the Source Org and the Destination Org that automatically populate the selected sandbox's details.
+5. Click Login and Fetch Objects.
+
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+
+6. Next, Select Master Object. Example: LLC\_BI\_\_Loan\_\_c
+
+<figure><img src="../../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+
+7. View the relationship between child objects/ancestor objects and the master object in the Schema (Grid View) section.&#x20;
+
+Change the grid view to a graph view by clicking the Switch to Graph View button. Click on the icon to view the graphical representation on full screen.
+
+<figure><img src="../../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+
+8. Filters and Mappings: You can extract records by using specified criteria in the Filters section
+
+<figure><img src="../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+
+Extract a single record by providing unique external ID field value.
+
+<figure><img src="../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+
+Extract multiple records by applying SOQL in the query editor.
+
+<figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+
+Validate the query and apply filter condition to get required records.\
+Once filters applied, we need to map the external id fields between source and destination\
+based on the type of the object that are defined in above section.
+
+* TYPE 1: Map Lookup Key field as external id field mapping in both Source and  \
+  Destination.
+* TYPE 2A: Map Lookup Key field as external id field mapping in both Source and  \
+  Destination.
+* Type 2B: No mapping is required.
+* TYPE 3: Map the external if field which customer is maintaining on both Source and  \
+  Destination.
+* TYPE 4: No mapping is required.
+
+<figure><img src="../../../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+
+Using the Automap feature, you can map the fields automatically based on fetched object\
+fields with destination fields. To set up manual mappings, automapping needs to be\
+disabled. Click on Clear Mappings to remove the automapping and set up the desired manual\
+mappings.
+
+9. Dependency objects selection:&#x20;
+
+* Select the checkbox under Skip Records for those Ancestor objects which you do not want to migrate data. Selecting this checkbox will only omit data migrating, but relational object fetching happens as usual.
+
+<figure><img src="../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+
+* Next select the checkboxes for child objects which you want to migrate data.
+
+<figure><img src="../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+
+10. Once done with mappings, then save the job with required job configuration and job details.
+
+<figure><img src="../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+
+Note: Enable Automatically apply master object filter on other dependency objects\
+checkbox.
+
+This option avoids picking of additional records due to self-references and multiple\
+references. All objects in the hierarchy are calculated based on the Master Object filter.
+
+11. Save the job and run it. Later verify the job results from main window.
+
+<figure><img src="../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
+Helpful Knowledge Base Links:\
+How to configure DataLoader job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-configuration)\
+How to configure DataLoader Pro job: [Configuration Link](https://knowledgebase.autorabit.com/product-guides/arm/arm-features/dataloader/dataloader-pro)
+
+
+

@@ -1,0 +1,498 @@
+# Search & Compare
+
+### Introduction
+
+The Search & Compare feature enables users to identify, analyze, and restore data changes across Backups and Archives within AutoRABIT Vault. It provides a structured way to search for specific records using defined criteria and compare data across selected point-in-time snapshots.
+
+This functionality helps ensure data integrity, supports audit requirements, and enables controlled restoration of records when needed.
+
+{% hint style="info" %}
+**Note:**
+
+The **Search & Compare** functionality is supported only for data available in **AWS S3**. Data stored outside AWS S3 is not supported for Search & Compare operations.
+{% endhint %}
+
+### Overview
+
+**Search & Compare allows users to:**
+
+* Define search criteria using an advanced query builder
+* Select a specific time range to identify relevant backups and archives
+* Retrieve point-in-time data from historical snapshots
+* Compare records across multiple snapshots
+* Identify additions, modifications, and deletions
+* Restore selected records based on comparison results
+
+The feature operates on stored backup and archive data, ensuring that historical states of records can be reviewed and validated without impacting live environments.
+
+Search results are presented in a structured comparison view, allowing users to analyze field-level differences and take appropriate action through targeted restore operations.
+
+## Step-By-Step Guide
+
+#### **Create the Job Config**
+
+1. Navigate to **Search & Compare module** and click on the **Job Config**.
+2. Select the required **Salesforce Org** and click **Apply**.
+3.  Click **New Config** to create a new Search and Compare configuration.
+
+    <figure><img src="../../../.gitbook/assets/1 (23).png" alt=""><figcaption></figcaption></figure>
+
+#### **Define Search Criteria**
+
+1. Specify the required parameters:
+   1.  <mark style="color:red;">**From Date**</mark><mark style="color:red;">\*</mark> – Select the start date.
+
+       <figure><img src="../../../.gitbook/assets/3 (20).png" alt=""><figcaption></figcaption></figure>
+   2.  <mark style="color:red;">**To Date**</mark><mark style="color:red;">\*</mark> – Select the end date.
+
+       <figure><img src="../../../.gitbook/assets/4 (17).png" alt=""><figcaption></figcaption></figure>
+   3. <mark style="color:red;">**Configurations**</mark><mark style="color:red;">\*</mark> – Select one or more backup/archive configurations.
+2.  All mandatory fields must be completed before proceeding.
+
+    <figure><img src="../../../.gitbook/assets/5 (17).png" alt=""><figcaption></figcaption></figure>
+
+#### **Select Object**
+
+1.  Choose the Salesforce **Object** to be searched and compared.
+
+    <figure><img src="../../../.gitbook/assets/6 (14).png" alt=""><figcaption></figcaption></figure>
+2.  The object selection determines the available fields and filtering options.
+
+    <figure><img src="../../../.gitbook/assets/7 (12).png" alt=""><figcaption></figcaption></figure>
+
+#### **Select Fields and Apply Filters**
+
+1. Select the required **Fields** from the list.
+2.  Click **Add Filter** to define filter conditions, if required.
+
+    <figure><img src="../../../.gitbook/assets/8 (13).png" alt=""><figcaption></figcaption></figure>
+3.  Locate the **Case Sensitive** toggle at the bottom of the screen.
+
+    Enable or disable the **Case Sensitive** option based on the requirement:
+
+    * Enabled: Applies case-sensitive filtering to text-based fields
+    * Disabled: Applies case-insensitive filtering
+
+    Click the **info (i)** icon next to the toggle to view additional details.
+
+    <figure><img src="../../../.gitbook/assets/8.1.png" alt=""><figcaption></figcaption></figure>
+4.  The **Case sensitivity info** pop-up is displayed.
+
+    Review the details:
+
+    * Case-sensitive search is enabled by default for text-based fields when using operators such as **Starts with**, **Ends with**, **Contains**, **Equals**, and **Not Equals**
+    * Disabling this option enables case-insensitive search, which may impact query performance
+
+    <figure><img src="../../../.gitbook/assets/8.2.png" alt=""><figcaption></figcaption></figure>
+5. Click **OK** to close the pop-up.
+6. Modify the auto-generated query if customization is needed.
+7.  The query section dynamically updates based on the selected fields and filters.
+
+    <figure><img src="../../../.gitbook/assets/9 (8).png" alt=""><figcaption></figcaption></figure>
+8. Click **Next** to proceed.
+
+#### **Save Configuration**
+
+1. Enter the following details:
+   1.  Enter a unique <mark style="color:red;">**Label**</mark><mark style="color:red;">\*</mark>. (Alphanumerics, underscores, hyphens, and spaces are allowed.)
+
+       <figure><img src="../../../.gitbook/assets/10 (9).png" alt=""><figcaption></figcaption></figure>
+
+       <figure><img src="../../../.gitbook/assets/11 (7).png" alt=""><figcaption></figcaption></figure>
+2. Specify **Preserve The Result For**\* in days (Maximum: 30 days).
+3. Enter a **Description**, if required.
+4.  Click **Save** to create the configuration.
+
+    <figure><img src="../../../.gitbook/assets/12 (6).png" alt=""><figcaption></figcaption></figure>
+5. Click **Cancel** to discard the changes.
+6. After saving, a confirmation message is displayed:
+7.  _Search And Compare config '' created successfully_
+
+    <figure><img src="../../../.gitbook/assets/13 (6).png" alt=""><figcaption></figcaption></figure>
+8. Click **OK** to close the message and return to the configuration screen.
+
+## View Available Configurations
+
+1.  After selecting the Salesforce Org and clicking **Apply**, the configured records are displayed in the **Job Config** grid.
+
+    <figure><img src="../../../.gitbook/assets/14 (7).png" alt=""><figcaption></figcaption></figure>
+2. **The grid displays:**
+   1. **Label**
+   2. **Object Name**
+   3. **Config Names**
+   4. **Search Range**
+   5. **Created By / Created Date**
+   6. **Modified By / Modified Date**
+   7. **Query**
+   8. **Actions**
+   9. **Use Filter By to refine the list.**
+   10. **Click New Config to create a new configuration.**
+
+### View Query
+
+1.  Click the **Query (\</>)** icon under the _Query_ column to view the configured query.
+
+    <figure><img src="../../../.gitbook/assets/15 (7).png" alt=""><figcaption></figcaption></figure>
+2.  The query is displayed in a dialog window.
+
+    <figure><img src="../../../.gitbook/assets/15.1.png" alt=""><figcaption></figcaption></figure>
+3. Click OK to close the dialog.
+
+### Run Configuration
+
+1.  Click the **Run (**<mark style="color:blue;">**▶**</mark>**)** icon under the Actions column to execute the configuration.
+
+    <figure><img src="../../../.gitbook/assets/16 (8).png" alt=""><figcaption></figcaption></figure>
+
+### Edit Configuration
+
+1.  Click the **Edit (**<mark style="color:blue;">**✎**</mark>**)** icon to modify the existing configuration details.
+
+    <figure><img src="../../../.gitbook/assets/17 (5).png" alt=""><figcaption></figcaption></figure>
+
+### Clone Configuration
+
+1.  Click the **Clone (**<mark style="color:blue;">**📄**</mark>**)** icon to create a duplicate of the selected configuration.
+
+    <figure><img src="../../../.gitbook/assets/18 (6).png" alt=""><figcaption></figcaption></figure>
+
+### Delete Configuration
+
+1.  Click the **Delete (🗑)** icon to remove the selected configuration.
+
+    <figure><img src="../../../.gitbook/assets/19 (6).png" alt=""><figcaption></figcaption></figure>
+
+### View All Config Names
+
+1.  Click the **Config Names** column to view all associated configuration names.
+
+    <figure><img src="../../../.gitbook/assets/20 (5).png" alt=""><figcaption></figcaption></figure>
+2. The **Config Names** dialog displays:
+
+* A search field to filter config names
+*   The list of associated configurations
+
+    <figure><img src="../../../.gitbook/assets/21 (4).png" alt=""><figcaption></figcaption></figure>
+
+3. Click **Close** to exit the dialog.
+
+### **Run Search and Compare Configuration**
+
+1. Initiate Run
+   1.  In the **Job Config** grid, click the **Run (▶)** icon under the Actions column for the required configuration.
+
+       <figure><img src="../../../.gitbook/assets/22 (4).png" alt=""><figcaption></figcaption></figure>
+2. Configure Job Run Details
+   1. The **Job Run Details** dialog is displayed.
+   2.  **The dialog shows:**&#x20;
+
+       1. **Object Name**&#x20;
+       2. Auto-generated **Label**
+
+       <figure><img src="../../../.gitbook/assets/23 (3).png" alt=""><figcaption></figcaption></figure>
+3. Under **Emails**, select the email addresses to receive job notifications.
+4. Click **Search** to execute the configuration.
+5. Click **Cancel** to exit without running the job.
+
+### **Restore Records from the Backups:**
+
+AutoRABIT Vault displays the list of backups and archives identified based on the selected date range and the executed Search & Compare operation. From the resulting list, select the required backup to view its associated records. Individual records can then be selected and restored as needed.
+
+1.  As soon as the run is initiated, a new job will be start running, with an option to terminate the job run.
+
+    <figure><img src="../../../.gitbook/assets/23.1.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/23.2.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/23.3.png" alt=""><figcaption></figcaption></figure>
+2. **Access Job History**: Navigate to **Search & Compare → Job History**.
+   1. The page displays the list of executed Search and Compare jobs with the following details:
+      1. **Label**
+      2. **Configuration Name**
+      3. **Object Name**
+      4. **Job Info**
+      5. **Duration**
+      6. **Created Date**
+      7. **Valid Until**
+      8. **Created User**
+      9. **Status**
+      10. **Actions**
+   2.  Click on the required **Label** to view job details.
+
+       <figure><img src="../../../.gitbook/assets/24 (4).png" alt=""><figcaption></figcaption></figure>
+3. **View Job Details**
+   1.  The job details page displays:&#x20;
+
+       1. **Org Name**&#x20;
+       2. **Job Label**&#x20;
+       3. **Configuration Label**&#x20;
+       4. **Selected Object**&#x20;
+       5. **From Date**
+       6. **To Date**
+
+       <figure><img src="../../../.gitbook/assets/25 (4).png" alt=""><figcaption></figcaption></figure>
+   2. The page lists associated backup jobs, including:
+      1. **Label Name**
+      2. **Configuration Name**
+      3. **Job Type**
+      4. **Records Matched**
+      5. **Created Date & Time**
+   3. Select the required backup entry to proceed.
+4. Select Records for Restore
+   1. Clicking the backup would open the **Selected Object** dialog.
+   2.  Use the available options to:
+
+       1. Filter records using **Columns**, **Operator**, and **Search Text**
+       2. Choose file: Upload a file using this option
+       3. Navigate between record pages using the “Previous & Next” Rows
+       4. Download results
+       5. Change view
+
+       <figure><img src="../../../.gitbook/assets/26 (4).png" alt=""><figcaption></figcaption></figure>
+   3. Select the required records from the list.
+   4. Click Restore to initiate the restore process.
+   5. Click **Cancel** to exit.
+5. Review Restore Prerequisites
+   1.  A validation message is displayed highlighting important considerations such as:
+
+       1. Active triggers, workflows, flows, and validation rules
+       2. Metadata size limitations
+       3. Inactive owners
+       4. Missing dependencies
+
+       <figure><img src="../../../.gitbook/assets/27 (4).png" alt=""><figcaption></figcaption></figure>
+   2. Review the information and click **Got It** to continue.
+6. Restore Summary
+   1.  The **Restore Summary** dialog displays:
+
+       1. **Org Name**
+       2. **Restore Label**
+       3. **Batch Size**
+       4. **Email Notification**
+       5. **Salesforce Automation controls**
+
+       <figure><img src="../../../.gitbook/assets/28 (3).png" alt=""><figcaption></figcaption></figure>
+   2. It also provides a summary of:
+      1. Selected **Metadata**
+      2. Selected **Data**
+      3. Number of records
+   3. Click **Restore Now** to proceed.
+   4. Click **Cancel** to abort.
+7. Restore Job Confirmation
+   1.  A confirmation message is displayed indicating that the restore job has been created successfully.
+
+       <figure><img src="../../../.gitbook/assets/29 (2).png" alt=""><figcaption></figcaption></figure>
+   2. Click **OK** to continue.
+8. Access Restore Page: Click “OK” will redirects the navigation to the “Restore” module.
+9.  Observe the restore page for job details
+
+    <figure><img src="../../../.gitbook/assets/30 (2).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/31 (2).png" alt=""><figcaption></figcaption></figure>
+10. View Restore Job Details
+    1. Click the required restore job label.
+    2. **The details dialog displays**: 1. **MetaData** and **Data** tabs 2. Toggle options to view:
+       1. Failure Records
+       2. Success Records
+    3. Click **Download** to export results if required.
+    4. Click **Close** to exit.
+
+### **Search & Compare - Job History Page**
+
+1. Navigate to **Search & Compare → Job History**.
+2. Select the required **Salesforce Org** and click **Apply**.
+3. Review the list of backup jobs displayed with configuration name, object name, duration, and status.
+4.  Click the required **Label** to proceed with comparison.
+
+    <figure><img src="../../../.gitbook/assets/32 (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Select Backups for Comparison
+
+1.  From all the listed backups, at least should be selected to perform comparison
+
+    <figure><img src="../../../.gitbook/assets/32.1.png" alt=""><figcaption></figcaption></figure>
+2. Select two backup labels using the checkboxes.
+3. Ensure two backups are selected.
+4.  Click the **Compare** button to initiate the comparison process.
+
+    <figure><img src="../../../.gitbook/assets/33 (1).png" alt=""><figcaption></figcaption></figure>
+5. Click **Compare**.
+
+#### Save Compare Configuration
+
+1. Enter a **Label** for the comparison.
+2.  Specify the number of days to preserve the result (maximum 30 days).
+
+    <figure><img src="../../../.gitbook/assets/34 (1).png" alt=""><figcaption></figcaption></figure>
+3.  Add a description if required.
+
+    <figure><img src="../../../.gitbook/assets/35.png" alt=""><figcaption></figcaption></figure>
+4. Click **Save**.
+
+## Search & Compare – Compare Operation
+
+1. Review the confirmation message indicating that the comparison has started successfully.
+2. Click **OK**.
+3. Clicking OK will redirect the navigation to the “Compare” screen.
+
+#### Compare History Page
+
+1.  The recently triggered job would be running on the top of the list.
+
+    <figure><img src="../../../.gitbook/assets/36.png" alt=""><figcaption></figcaption></figure>
+
+#### Compare Result View
+
+1. Review the selected object and snapshot details displayed at the top.
+2.  Use filters such as **All**, **No Changes**, **Modifications**, or **Deletions to navigate across the changes identified in the application**.
+
+    <figure><img src="../../../.gitbook/assets/37.png" alt=""><figcaption></figcaption></figure>
+3.  Click the **View Records** icon to view field-level differences.
+
+    <figure><img src="../../../.gitbook/assets/38.png" alt=""><figcaption></figcaption></figure>
+
+#### View Record Details
+
+1. Review field-wise comparison between **Snapshot-1** and **Snapshot-2**.
+2. Scroll to view additional fields.
+3. Click **Close** to return to the results page.
+
+#### Select Field
+
+1.  Click **Select Field**.
+
+    <figure><img src="../../../.gitbook/assets/39.png" alt=""><figcaption></figcaption></figure>
+2.  Map or modify required fields.
+
+    <figure><img src="../../../.gitbook/assets/40.png" alt=""><figcaption></figcaption></figure>
+3. Click **Apply** to update the selection.
+
+#### Fields to Compare
+
+1.  Click **Fields to Compare**.
+
+    <figure><img src="../../../.gitbook/assets/41.png" alt=""><figcaption></figcaption></figure>
+2.  Select the required fields (maximum 20 fields).
+
+    <figure><img src="../../../.gitbook/assets/42.png" alt=""><figcaption></figcaption></figure>
+3. Click **Compare**.
+
+#### Re-execution Confirmation
+
+1.  Review the confirmation message for re-execution.
+
+    <figure><img src="../../../.gitbook/assets/43.png" alt=""><figcaption></figcaption></figure>
+2. Click **OK**.
+3. Monitor the status update in Compare History.
+
+#### Change View / Export
+
+1.  Click **Change View** to modify the column display.
+
+    <figure><img src="../../../.gitbook/assets/44.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/45.png" alt=""><figcaption></figcaption></figure>
+2.  Click **Export** to download the comparison results if required.
+
+    <figure><img src="../../../.gitbook/assets/46.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/47.png" alt=""><figcaption></figcaption></figure>
+
+#### Review and Restore
+
+1.  From the Compare results page, select the required record.
+
+    <figure><img src="../../../.gitbook/assets/48.png" alt=""><figcaption></figcaption></figure>
+2. Click **Review and Restore**.
+
+#### Restore Guidelines
+
+1.  Review the restore considerations displayed (triggers, workflows, dependencies, metadata limits, etc.).
+
+    <figure><img src="../../../.gitbook/assets/49.png" alt=""><figcaption></figcaption></figure>
+2. Click **Got It** to proceed.
+
+#### Restore Summary
+
+1.  Verify the **Org Name** and **Restore Label**.
+
+    <figure><img src="../../../.gitbook/assets/50.png" alt=""><figcaption></figcaption></figure>
+2. Enter the required **Batch Size** (maximum limit 9999).
+3. Select or modify the email notification address if required.
+4. Configure restore options such as disabling workflows, triggers, validation rules, flows, or enabling serial mode.
+5. Review the object, number of fields, and number of records.
+6. Click **Restore Now**.
+
+#### Restore Job Status
+
+1.  Navigate to **Restore** from the left panel.
+
+    <figure><img src="../../../.gitbook/assets/51.png" alt=""><figcaption></figcaption></figure>
+2. Review the restore job entry with date, duration, success records, and status.
+3. Monitor the job status until completion.
+
+#### Search and Compare Config
+
+1.  Click the “pencil icon” to edit the already created job
+
+    <figure><img src="../../../.gitbook/assets/52.png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../.gitbook/assets/53.png" alt=""><figcaption></figcaption></figure>
+
+## Clone Configuration
+
+1. Navigate to **Search & Compare → Job Config**.
+2.  In the configuration list, click the **Clone** icon under the **Actions** column for the required configuration.
+
+    <figure><img src="../../../.gitbook/assets/54.png" alt=""><figcaption></figcaption></figure>
+
+#### Config Clone Window
+
+1. In the **Config Clone** window, verify the **Source Org**.
+2.  Select the **Destination Org**.
+
+    <figure><img src="../../../.gitbook/assets/55.png" alt=""><figcaption></figcaption></figure>
+3. Click the **Configurations** dropdown to choose the required configuration(s).
+4. Enter a new **Label** for the cloned configuration.
+5. Click **Clone**.
+
+#### Select Configurations
+
+1.  From the dropdown list, select one or more configurations to clone.
+
+    <figure><img src="../../../.gitbook/assets/56.png" alt=""><figcaption></figcaption></figure>
+2.  On completing the required selections, click “CLONE” to initiate the cloning.
+
+    <figure><img src="../../../.gitbook/assets/57.png" alt=""><figcaption></figcaption></figure>
+
+#### Metadata Validation Warning
+
+1. If metadata differences are detected, review the warning message.
+2.  Check the listed **Objects** and **Fields** that may be missing in the target org.
+
+    <figure><img src="../../../.gitbook/assets/58.png" alt=""><figcaption></figcaption></figure>
+3. Click **Confirm** to proceed or **Cancel** to abort the cloning process.
+
+#### Clone Success Message
+
+1.  Upon successful cloning, a confirmation message is displayed indicating the target org.
+
+    <figure><img src="../../../.gitbook/assets/59.png" alt=""><figcaption></figcaption></figure>
+2. Click **OK** to close the message.
+3. Verify the cloned configuration in the destination org by selecting it from the Salesforce Org dropdown and clicking **Apply**.
+
+#### Delete Configuration
+
+1.  In the configuration list, locate the required config.
+
+    <figure><img src="../../../.gitbook/assets/60.png" alt=""><figcaption></figcaption></figure>
+2. Click the **Delete** icon under the **Actions** column.
+
+#### Delete Confirmation
+
+1.  A confirmation message is displayed with the configuration name.
+
+    <figure><img src="../../../.gitbook/assets/61.png" alt=""><figcaption></figcaption></figure>
+2. Click **Delete** to permanently remove the configuration.
+3. Click **Cancel** to abort the deletion.
+4. After successful deletion, the configuration is removed from the list.

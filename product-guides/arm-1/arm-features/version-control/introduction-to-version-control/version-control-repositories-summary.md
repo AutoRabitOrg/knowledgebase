@@ -1,0 +1,111 @@
+# Version Control Repositories Summary
+
+{% hint style="info" %}
+**Important Note**: This article is for the **Org Administrator** in particular. The actions discussed in the article will not be available to general users.
+{% endhint %}
+
+## Overview <a href="#overview" id="overview"></a>
+
+The lists of repositories you have added yourself and any other repositories your team members have shared can be seen on the **`Repositories`** page.
+
+Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitbook/assets/image (4275).png>)icon displayed, and nCino objects configured will have![](<../../../../../.gitbook/assets/image (4276).png>)icon beside their repository under **`Repositories List`** for easier identification.\
+<br>
+
+<figure><img src="../../../../../.gitbook/assets/image (2440).png" alt="" width="341"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (2441).png" alt="" width="353"><figcaption></figcaption></figure>
+
+For each version control repository registered in ARM, the following information or fields are displayed:
+
+Create a pull request to propose and collaborate on changes to a repository. This is discussed later.&#x20;
+
+| Field Name             | Description                                                                                                                                       |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Repository Name`      | Name of your  version control repository                                                                                                          |
+| `Type`                 | Version control repository type, i.e., GIT, TFS, or SVN.                                                                                          |
+| `URL`                  | Repository URL                                                                                                                                    |
+| `Created Date`         | Date and time stamp for repository created or modified                                                                                            |
+| `Credentials`          | User's credential linked with the version control repository                                                                                      |
+| `Test Connection`      | This will allow you to check whether the connection has been authenticated. A success message is displayed after the authentication is completed. |
+| `Enable nCino app`     | On selection, the nCino objects will get registered with the current repository.                                                                  |
+| `Pull Request Support` | Create a pull request to propose and collaborate on changes to a repository. This is discussed later.                                             |
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.55.16 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Pull Request Support <a href="#pull-request-support" id="pull-request-support"></a>
+
+Create a pull request to propose and collaborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work. You can specify which branch you'd like to merge your changes into when you create your pull request.<br>
+
+<figure><img src="../../../../../.gitbook/assets/image (2442).png" alt=""><figcaption></figcaption></figure>
+
+Pull requests can only be opened between two branches that are different. More detailed instructions are available in a separate article; please refer [HERE](../external-pull-request/).
+
+### Branches/Tags <a href="#branchestags" id="branchestags"></a>
+
+The Git tags created or branches registered for the version control repository will get displayed under the **`Branches/Tags`** section. For more information about Git Tags, check out the link [HERE](../../../getting-started-1/registration/version-control-repository/git-integration/git-tag.md).
+
+**Additional details under Branch**
+
+#### **A. Create a Branch**
+
+Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../getting-started-1/registration/branching-baseline.md))\
+<br>
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
+
+#### **B. Register a Branch**
+
+Register an existing branch to the current repository. ([LEARN MORE](version-control-repositories-summary.md)). Click on Register under the Branches tab, select the branch, and specify the Last Commit Date. The Last Commit Date is a mandatory field, used to determine the point from which commits should be tracked and synchronized for the registered branch.<br>
+
+<figure><img src="../../../../../.gitbook/assets/image (2443).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### **C. Unregister a Branch**
+
+Select one or more branches to unregister them from AutoRABIT. Upon confirmation, the selected branch(es) will be removed from AutoRABIT. This action does not delete the branch or its data from the underlying version control repository. The branch will continue to exist in the version control system and can be registered again if required.<br>
+
+<figure><img src="../../../../../.gitbook/assets/image (2444).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### **D. Sync Branches**
+
+The **`Sync Branches`** option will allow you to view the branches that are no longer available in your version control repositories but present in ARM; therefore, you can delete them from the ARM application.
+
+#### **E. Branch Details:**
+
+For each branch, view the following details:
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 8.01.41 PM.png" alt=""><figcaption></figcaption></figure>
+
+1. **`Name:`** Name of the branch assigned.
+2.  **`Settings:`**&#x54;his option allows you to update your branch configuration, which means:
+
+    * you can add your branch to one of the standard branch types _(development, integration, quality assurance, production, etc.)_
+    * configure your parent branch
+    * update the metadata folder path and/or,
+    * update the branch's last commit date.
+
+
+
+    **Pieces of information related to 'Metadata Folder Path'**
+
+    *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.<br>
+
+        <figure><img src="../../../../../.gitbook/assets/image (2445).png" alt="" width="563"><figcaption></figcaption></figure>
+3. **`Smart Commits-Sync:`** Use this toggle button to start/stop syncing external [Smart Commits](../../../getting-started-1/registration/alm-management/). If you try to sync external commits to a branch that has not been mapped, you will see a notification pop-up. You must map the required branch under **`Settings > ALM Mgmt > Repository Mappings`**, then you can proceed to sync the external Smart Commits. For more information on mapping a branch, refer [HERE](../../deployment/connecting-and-syncing-salesforce-orgs.md).
+
+<figure><img src="../../../../../.gitbook/assets/image (4287).png" alt=""><figcaption></figcaption></figure>
+
+4. **`Status:`** View the branch status along with the branch log report.
+5. **`Info:`** The display UI now shows key details — such as **Created By**, **Created Date**, **Type**, and **Parent.**
+6. **`Clear AutorabitExtId:`** Deletes the **`AutorabitExtId__c`** field from your branch.
+7. **`Migrate:`** Migrates custom object field **`Picklist`** to **`Value Set`** in your branch.
+
+## FAQ
+
+### Is it feasible to update the repository URL without having to re-register the repository in ARM? <a href="#is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm" id="is-it-feasible-to-update-the-repository-url-without-having-to-reregister-the-repository-in-arm"></a>
+
+The repository URL cannot be changed; you must use the new repository URL and re-register it with ARM. To register a new repository, click this [link](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md).
+
+### Why am I getting an error while registering the GitHub repository with SSH? <a href="#why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh" id="why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh"></a>
+
+**GitHub** no longer allows new **RSA** keys with **SHA-1** signatures. Execute the `ssh-keygen -t ed25519 -C “XXXXXXX@autorabit.com”` command in the terminal to create a new key, or contact **support@autorabit.com** for further assistance. Please note that you must create the new key in **Linux** or **Unix**, not in Windows. For more information, visit [https://github.blog/2021-09-01-improving-git-protocol-security-github/](https://github.blog/2021-09-01-improving-git-protocol-security-github/)
+

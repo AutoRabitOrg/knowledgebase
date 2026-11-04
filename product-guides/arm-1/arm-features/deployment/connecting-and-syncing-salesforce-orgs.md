@@ -1,0 +1,82 @@
+# Connect & Sync Your Salesforce Orgs
+
+The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
+
+> <mark style="color:$primary;">**Note:**</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">To improve application performance and stability, ARM allows a maximum of</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">**two Org Sync jobs to run concurrently**</mark><mark style="color:$primary;">. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.</mark>
+
+### About Salesforce Org Synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
+
+Salesforce Org synchronization allows teams to compare and align metadata between a source and a target Salesforce org to maintain consistency across environments. It identifies metadata differences and enables users to reconcile them efficiently.
+
+**Example:** If a hotfix is implemented directly in Production after a deployment, discrepancies may arise between Production and Sandbox. Org Synchronization helps detect these differences and allows teams to update the source org accordingly, ensuring both environments remain aligned.
+
+**This option is useful when:**
+
+* Changes are made directly in Production.
+* Multiple teams work across parallel environments.
+* There is a need to prevent configuration drift.
+* Deployments fail due to unexpected metadata differences.
+* Preparing environments before a major release.
+
+### How can I connect and sync metadata between two Salesforce orgs? <a href="#how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs" id="how-can-i-connect-and-sync-metadata-between-two-salesforce-orgs"></a>
+
+To perform org synchronization, follow these steps:
+
+1. Log in to your ARM account.
+2. Click on the **`Deployment`** tile on the left side of the screen.
+3. Go to the **`Org Synchronization History`** tab.
+4.  Click on the **`Get Org Differences`** call-to-action button.<br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2663).png" alt=""><figcaption></figcaption></figure>
+5.  In the **`Org Differences`** dialog box, you will need to:
+
+    * Give the process a **`Name`**.
+    * Select your **`Source Org`** and **`Destination Org`**.
+    * Select the **`Exclude Baseline Managed Package Changes`** checkbox if you do not wish to include baseline Managed Package changes during org sync.
+    * Select the **`Generate Member Differences`** checkbox to view the metadata member's differences between two Salesforce orgs based on file/data-level comparison.
+    * Specify the **`Batch size for Profile Components`** and the **`Batch size for other Components`** to retrieve records. So, the default size for the profile is **500**, and for other components is **2,000**. You can modify it as per your requirement. The bulk retrieve option helps run large jobs that exceed normal processing limits – you can deploy up to **10,000 files** at once or a maximum size of **14MB**. Using batch size, you can process records in batches to stay within platform limits. If you have a lot of records, processing records through batches is the best option.
+
+    To go to the next screen, click the **`Get Differences`** button. The next screen may take some time, depending on the number of components in your org.\
+    <br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2664).png" alt="" width="563"><figcaption></figcaption></figure>
+6. On the next screen, you can:
+   * View the metadata list included in both source and target orgs.
+   * Add or delete metadata components to/from the target org.
+   * View the metadata member's difference report (if any).
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-19 at 7.22.29 AM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-06-19 at 7.24.44 AM.png" alt=""><figcaption></figcaption></figure>
+
+7. Once done with your selection, click on **`Synchronize Orgs`**.
+8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or fail. This is optional.
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1221).png" alt="" width="516"><figcaption></figcaption></figure>
+
+10. Click on **`Deploy`**.
+11. You'll be taken to the [Track Deployment History](monitor-deployments.md) page, where the current synchronization progress can be seen.
+
+### More information on the Org Synchronization Summary page <a href="#more-information-on-the-org-synchronization-summary-page" id="more-information-on-the-org-synchronization-summary-page"></a>
+
+Synchronization summary information, such as label name, source org, destination org, etc., can be seen on the **`Org Synchronization History`** page. Additional options are available, such as View Info, Schedule, Delete, Download PDF Report, and Download CSV Report, by clicking the three dot (...) menu corresponding to a particular job on the Org Synchronization Summary Page.<br>
+
+<figure><img src="../../../../.gitbook/assets/image (2665).png" alt=""><figcaption></figcaption></figure>
+
+1.  **`Info:`** Click the ![](<../../../../.gitbook/assets/image (1223).png>) icon to view the detailed synchronization report.\
+    <br>
+
+    <figure><img src="../../../../.gitbook/assets/image (2666).png" alt="" width="563"><figcaption></figcaption></figure>
+2. **`Delete:`** Click on the ![](<../../../../.gitbook/assets/image (1225).png>) icon to delete a sync process. A confirmation message is displayed asking whether you want to delete the label. This process cannot be undone.
+3. **`Schedule:`** Click the ![](<../../../../.gitbook/assets/image (1226).png>) icon to set up when you want to carry out the org synchronization process. On the scheduled date and time, the org synchronization process runs automatically, and voila, you have a repeating schedule.
+4. **`Run:`** Click the ![](<../../../../.gitbook/assets/image (1227).png>) icon to rerun the org synchronization process.
+5. **`Status:`**&#x53;tatus of the synchronization process, i.e., successful or failed.
+   *   **Log Report:** Click on the ![](<../../../../.gitbook/assets/image (1228).png>) icon under the **`Status`** column to view the log report for the sync process.<br>
+
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2025-11-20 at 12.00.15 PM.png" alt="" width="563"><figcaption></figcaption></figure>
+6. **`Report:`**&#x54;here are two options in this column.
+   * Click on the![](<../../../../.gitbook/assets/image (1230).png>) icon to view the metadata components difference report between the source and the target org.
+   * Click on the![](<../../../../.gitbook/assets/image (1231).png>) icon to download the Diff report in your local system (in PDF or CSV format).
+
+<figure><img src="../../../../.gitbook/assets/image (2668).png" alt=""><figcaption></figcaption></figure>

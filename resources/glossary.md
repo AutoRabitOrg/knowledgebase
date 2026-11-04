@@ -1,0 +1,155 @@
+# Glossary
+
+
+
+[**A**](glossary.md#a) **|** [**B**](glossary.md#b) **|** [**C**](glossary.md#c) **|** [**D**](glossary.md#d) **|** [**E**](glossary.md#e) **|** [**F**](glossary.md#f) **|** [**G**](glossary.md#g) **| H |** [**I**](glossary.md#i) **| J |** [**K**](glossary.md#k) **|** [**L**](glossary.md#l) **|** [**M**](glossary.md#m) **| N |** [**O**](glossary.md#o) **|** [**P**](glossary.md#p) **|** [**Q**](glossary.md#q) **|** [**R**](glossary.md#r) **|** [**S**](glossary.md#s) **|** [**T**](glossary.md#t) **| U |** [**V**](glossary.md#v) **|** [**W**](glossary.md#w) **| X | Y |** [**Z**](glossary.md#z)
+
+Listed below are some commonly used terms you may encounter in the AutoRABIT documentation. Visit the [Salesforce Glossary ](https://help.salesforce.com/s/articleView?id=sf.glossary.htm\&type=5)to gain a better understanding of Salesforce-specific terms.
+
+## **A**
+
+* **ALM:** Application Lifecycle Management covers the entire process of a software application from planning and deployment to maintenance and retirement.
+* **Apex:** Apex is a strongly typed, object-oriented programming language that allows developers to execute flow and transaction control statements on the Lightning Platform server in conjunction with calls to the Lightning Platform API.&#x20;
+* **ARM:** AutoRABIT's Automated Release Management software that streamlines the release process and allows teams to manage version control, automate deployments, and enforce governance across development environments.
+* **Audit Trail:** A record showing permissions, access, and actions taken.
+
+## B
+
+* **Backup:** The process of saving a copy of your Salesforce metadata to prevent data loss.
+* **Blue/Green Deployment:** A release management strategy that reduces downtime and risk by running two identical production environments called Blue and Green.
+* **Bug Tracking:** The process of tracking and managing the bugs found in the code.
+
+## C
+
+* **Canary Release:** A technique to reduce the risk of introducing a new software version in production by rolling out the change to a small subset of users before rolling it out to the entire infrastructure.
+* **Chatter:** Salesforce collaboration tools that facilitate communication and record- or file-sharing.&#x20;
+* **Code Coverage:** A measure of the amount of code being tested by unit tests.
+* **Code Duplication:** The presence of duplicate code in a codebase, which can lead to maintenance issues and bugs.
+* **Code Review:** The systematic examination of computer source code intended to find and fix mistakes overlooked in the initial development phase.
+* **Code Smell:** A surface indication that usually corresponds to a deeper problem in the system.
+* **CodeScan:** AutoRABIT's static code analysis tool built for Salesforce that performs automated code reviews, identifies coding errors prior to deployment, and enforces best practices in CI/CD pipelines.&#x20;
+* **Compliance as Code:** An approach where compliance, audit, and security standards are treated as code and integrated into the DevOps pipeline.
+* **Configuration Management:** The process of systematically handling changes to a system in a way that allows the system to maintain integrity over time.
+* **Continuous Delivery (CD):** The ability to get changes of all types—including new features, configuration changes, bug fixes, and experiments—into production or into the hands of users safely and quickly in a sustainable way.
+* **Continuous Integration (CI):** The practice of merging all developers' working copies to a shared mainline several times a day.
+* **CRM Analytics:** A Salesforce-native product that provides advanced analytics capabilities powered by artificial intelligence (AI) and machine learning.
+*  **Custom Fields:** Information stored for custom objects, such as unique data or information about an organization.
+* **Custom Objects:** Salesforce Custom objects are those which the user creates. We can create any number of custom objects. For example, student info, college, etc.
+
+## D
+
+* **Data Compliance:** AutoRABIT's feature that ensures data in Salesforce complies with policies and standards.
+* **Data Loader Pro™:** AutoRABIT's feature for complex data migrations, backups, and archiving.
+* **Deployment:** The process of moving metadata from one Salesforce environment to another.
+* **Deployment Automation:** AutoRABIT's feature that automates the deployment of code to different environments.
+* **Deployment Pipeline:** The path that a code change takes from version control to production.
+* **DevHub:** The main Salesforce org teams use to create, delete, and manage Salesforce scratch orgs.&#x20;
+* **Docker:** An open-source platform used for automating the deployment, scaling, and management of applications within containers.
+
+## E
+
+* **Environment Comparison:** AutoRABIT's feature that allows the comparison of metadata and data across different Salesforce environments.
+
+## F
+
+*  **Field-Level Security:** This manages whether a user can see, modify, and delete a specific field in an object. In other cases, field-level security is used when you want to give a user access control over an object but don't want them to be able to access certain fields in that object.
+* **Force.com:** A Platform-as-a-Service (PaaS) product designed to simplify the development and deployment of cloud-based applications and websites.
+
+## G
+
+* **Governor Limits:** These run-time limits in Salesforce are enforced by the apex runtime engine to write scalable and efficient code.
+
+## I
+
+* **Identity and Access Management (IAM):** The framework of business processes, policies, and technologies that facilitates the management of electronic or digital identities.
+* **Infrastructure as Code (IaC):** The process of managing and provisioning computer data centers through machine-readable definition files rather than physical hardware configuration or interactive configuration tools.
+* **Intrusion Detection System (IDS):** A system that monitors network traffic for suspicious activity and issues alerts when such activity is discovered.
+
+## K
+
+* **Kubernetes:** An open-source platform designed to automate deploying, scaling, and operating application containers.
+
+## L
+
+* **Lightning Component:** A modular, reusable building block for Salesforce user interfaces, which can be standard from Salesforce or custom-built.
+* **Lightning Web Components:** Newer, modern components built with updated web technology, such as HTML, JavaScript, and CSS.
+
+## M
+
+* **Metadata Comparison:** The process of comparing metadata between different Salesforce environments or versions.
+* **Metadata Mastery™:** AutoRABIT's proprietary technology for Salesforce metadata management.
+* **Metadata Relationship Analysis:** A feature that allows you to see how different pieces of metadata are related to each other.
+* **Metadata Search:** A feature that allows you to search through your Salesforce metadata for specific items.
+* **Metadata Synchronization:** The process of ensuring that the same version of metadata is used across all Salesforce environments.
+* **Metadata Versioning:** The practice of keeping track of different versions of metadata, allowing you to see what has changed over time.
+* **Microservices:** A software development technique where an application is structured as a collection of loosely coupled services.
+
+## O
+
+* **Object:** An object is represented as a database table that stores organization data. Objects consist of a set of fields, and we store data against that field.
+
+
+
+## P
+
+* **Page Layout:** Allows customizations like fields, related lists, and custom links.
+* **Penetration Testing:** An authorized simulated cyberattack on a computer system, performed to evaluate the security of the system.
+*  **Permission Sets:** These define user access levels, i.e., what a user can do in the applications. These are used to grant additional permissions to a user.
+* **Profiles:** A profile is assigned to the user by the system administrator, which determines their access levels within the application. The same profile can be assigned to many users, but a user can only have one profile.
+
+## Q
+
+* **Quality Gates:** A set of threshold measures set on your project like code coverage, technical debt, security violations etc.
+* **Quality Profiles:** A set of rules and settings that can be applied to a project or a set of projects.
+
+## R
+
+* **Record Types:** Record types help to implement business processes like defining picklist values for standard and custom picklists.
+* **Relationship Analysis:** A feature that allows you to see how different pieces of metadata are related to each other.
+* **Release Management:** AutoRABIT's feature that helps manage, schedule and control software delivery process.
+* **Restore:** The process of bringing back a previous version of metadata from a backup.
+* **Risk Policy:** A statement that codifies the level of risk an organization is prepared to accept.
+* **Rollback:** A previous state to revert your metadata to.
+* **Rules:** The coding standards that CodeScan checks in your code.
+
+## S
+
+* **Salesforce:** One of the most widely used customer relationship management (CRM) tools on the market. Salesforce is a web-based, flexible, and powerful database provider. [What is Salesforce?](https://www.salesforcetutorial.com/what-is-salesforce-all-about-salesforce/)
+* **Salesforce DX:** Salesforce Developer Experience product in the cloud that allows users to develop and manage Salesforce apps throughout the entire platform.
+* **Salesforce Object Query Language (SOQL):** A language to query your organization’s Salesforce data for specific information from the Lightning Platform database.
+* **Salesforce Object Search Language (SOSL):** A Salesforce search language used to perform text searches in records using the Lightning Platform API.
+* **Sandbox:** An exact copy of your production environment used for testing, training, and development.
+* **Scratch Org:** A temporary, disposable deployment environment of Salesforce source code and metadata that can be created to build, test, and iterate faster and with more control and flexibility.
+* **Search:** A feature that allows you to search through your Salesforce metadata for specific items.
+* **Security as Code:** The integration of security in the application development process, treating security protocols as part of the code base.
+* **Security Automation:** The automatic handling of software security assessments tasks.
+* **Security Orchestration Automation and Response (SOAR):** A solution that allows organizations to collect data about security threats and respond to low-level security events without human assistance.
+*  **Standard Fields:** Information stored for custom objects, including created by, modified by, currency, name, owner, and division. These are the standard fields in Salesforce.
+*  **Standard Objects:** Standard Objects are those which Salesforce creates, which . We can use these standard objects automatically. For example, accounts, contacts, chatter, leads, etc.
+* **Static Code Analysis:** The analysis of computer software performed without actually executing the code.
+* **Synchronization:** The process of ensuring that the same version is used across environments.
+
+## T
+
+* **Technical Debt:** The additional rework left behind by choosing an easy solution instead of using the right (or better) approach that would take longer.
+* **Test Automation:** AutoRABIT's feature that automates the testing process.
+* **Threat Modeling:** A process by which potential threats can be identified, enumerated, and prioritized – all from a hypothetical attacker’s point of view.
+*  **Trigger:** A programmatic code approach that fires before or after a record is inserted, updated, or deleted. Using triggers, you can work on multiple objects. You can query, and you can perform any DML operation. The trigger works before and after some actions.
+
+## V
+
+* **Vault:** AutoRABIT's automated backup and recovery software for Salesforce metadata.
+* **Version Control System (VCS):** AutoRABIT's feature that allows you to track and manage changes to your code.
+* **Versioning:** The practice of keeping track of different versions, allowing you to see what has changed over time.
+* **Visualforce:** A framework that allows developers to build sophisticated, custom user interfaces that can be hosted natively on the Lightning platform.
+
+## W
+
+*  **Workflow:** Workflow is an automated process, a point-and-click that doesn't need coding. You can use Workflow rules when you want to take action (email, task, field update, or outbound message) for the same object or from Child to parent object. You cannot perform DML operations on workflow. Workflows work only after some actions.
+
+## Z
+
+* **Zero Trust:** A security concept centered on the belief that organizations should not automatically trust anything inside or outside its perimeters and instead must verify anything and everything trying to connect to its systems before granting access.
+
+
+

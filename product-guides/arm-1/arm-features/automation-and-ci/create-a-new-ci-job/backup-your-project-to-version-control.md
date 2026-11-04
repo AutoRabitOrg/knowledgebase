@@ -1,0 +1,106 @@
+# Backing up your project to Version Control
+
+{% hint style="info" %}
+The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox browsers.
+{% endhint %}
+
+### Overview <a href="#overview" id="overview"></a>
+
+Use ARM to automatically back up changes from your Salesforce org to your version control system, ensuring that metadata changes are securely stored and tracked over time. This feature is particularly useful for teams that want to maintain an audit trail of changes, recover previous versions when needed, and ensure that updates made directly in Salesforce are not lost.
+
+Example:\
+A Salesforce administrator makes configuration changes directly in a sandbox or production org. By running a backup job, those changes are committed to the version control repository, allowing the team to track who made the changes, review the history, and restore previous versions if required. Commit-to-user mapping further helps identify the Salesforce user responsible for each change.
+
+### Procedure <a href="#procedure" id="procedure"></a>
+
+1. Log in to ARM.
+2. From the top navigation bar, select **`Create New > New CI Job`**.
+
+<figure><img src="../../../../../.gitbook/assets/image (2787).png" alt=""><figcaption></figcaption></figure>
+
+1.  Click the **Backup to Version Control** tile.
+
+    <figure><img src="../../../../../.gitbook/assets/image (3733).png" alt="Backup to Version Control job tile"><figcaption><p>Backup to Version Control</p></figcaption></figure>
+2. Enter a descriptive **Job name**.
+3. Add a short **Description**.
+4. (Optional) Assign the job to a **Group** for easier filtering, or click **`+`** to create a new group.
+5. The configuration page is divided into several sections. The key sections are explained below.
+
+#### Build <a href="#build" id="build"></a>
+
+Under **Build**, provide:
+
+1. **Source Salesforce org** – The org to back up.
+2. **Package type** – How ARM collects metadata:
+   * **Unpackaged mode** – Retrieves metadata changed since the last ARM cycle (or since **Start date**, if specified).
+   * **Unmanaged package** – Retrieves components from an unmanaged package, so you can edit them.
+   * **Managed package** – Retrieves components from a managed package created in a partner dev org.
+
+<figure><img src="../../../../../.gitbook/assets/image (2788).png" alt=""><figcaption></figcaption></figure>
+
+**Additional build options**
+
+1. **Auto switch to bulk retrieve service if job hits metadata governor limit** – Automatically switches to batch retrieval if the job exceeds Salesforce limits. Specify **Batch size** (up to 10,000 items).
+2. **Exclude installed (managed) components and changes** – Skip all managed package components.
+   * **Exclude all manually created components** – Also skip custom components inside managed packages.
+3. **Incremental build** – Fetch only the metadata changed since the last successful deployment, greatly reducing build time.
+4. **Include picklist modifications** – Always include picklist fields, even if Salesforce did not update their “last modified” date. (Source = Salesforce org only)
+5. **Generate code coverage report** – Include Apex test coverage details.
+6. **Run static analysis report** – Run an SCA tool before committing.
+   * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
+
+<figure><img src="../../../../../.gitbook/assets/image (2790).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
+
+<figure><img src="../../../../../.gitbook/assets/image (2791).png" alt=""><figcaption></figcaption></figure>
+
+* **Run on all supported metadata types** – Scan every retrieved component.
+*   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
+
+    <figure><img src="../../../../../.gitbook/assets/image (3737).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+
+1. **Additional profile packaging options:**
+   * **Remove login IP ranges** – Omit IP range settings from profiles.
+   * **Remove system and user permissions** – Omit profile permissions from deployment.
+2. **Exclude metadata types** – Globally omit specific metadata types from all CI jobs.
+
+{% hint style="info" %}
+To set global exclusions in advance, open **My Account > My Salesforce Settings**, choose **Exclude metadata types**, and select the types to skip. These settings apply to all future CI jobs.
+{% endhint %}
+
+#### Backup to Version Control (Auto-Commit) <a href="#backup-to-version-control-auto-commit" id="backup-to-version-control-auto-commit"></a>
+
+Enable **Auto commit** to push changes directly to your VCS:
+
+1. Select the **version control type** (Git, TFS, or SVN).
+2. Choose the **Repository**, **Branch**, and **Credential**.
+   * For an SFDX-structured repo, also select the **Package directory**. See [SFDX metadata format](../../../../arm/arm-features/salesforce-dx/salesforce-dx-metadata-format.md).
+3. Optional settings:
+   * **Check out and commit with user’s credentials** – Commit all changes as the selected user.
+   * **Check out with user credentials and commit with actual modified user credentials** – Preserve original authors.
+   * **Configuration for recordTypes picklistValues** – Choose _Replace_, _Replace all_, or _Append_. ([Learn more](../../../../arm/troubleshoot/how-tos/configure-record-types-picklist-values.md))
+
+<figure><img src="../../../../../.gitbook/assets/image (2792).png" alt=""><figcaption></figcaption></figure>
+
+#### Notifications <a href="#notifications" id="notifications"></a>
+
+Send success or failure emails to selected recipients.
+
+<figure><img src="../../../../../.gitbook/assets/image (2793).png" alt=""><figcaption></figcaption></figure>
+
+#### Schedule <a href="#schedule" id="schedule"></a>
+
+Run the job automatically:
+
+* **Daily** – Run every day at the chosen time or interval.
+* **Weekly** – Run on selected day(s) and time.
+* **No schedule** – Save the job and run it manually when needed.
+
+For credential usage details across CI job types, see the [FAQs](../../../../arm/troubleshoot/arm-faqs/ci-jobs.md).
+
+### What’s next? <a href="#what-next" id="what-next"></a>
+
+After saving the job, ARM redirects you to the [CI job results](../../../../arm/arm-features/automation-and-ci/ci-job-history.md) page, where you can start the first build.

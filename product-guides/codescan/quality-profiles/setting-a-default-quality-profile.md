@@ -1,0 +1,14 @@
+# Setting a Default Quality Profile
+
+By setting a default Quality Profile, you assign every project without a specific Quality Profile to use the default one.
+
+1.  To assign Quality Profiles to specific Projects, use the **Project Settings > Quality Profiles** menu for your project and select the one you would like to use.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (1907).png" alt=""><figcaption><p>Quality Profiles</p></figcaption></figure>
+2.  On the Quality Profiles page, under Actions, select the 'Change Profile' option.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (1908).png" alt=""><figcaption><p>Change Profile</p></figcaption></figure>
+3.  Under the specific Quality Profile selection dropdown, choose the Quality Profile you want to use for the scans.<br>
+
+    <figure><img src="../../../.gitbook/assets/image (1909).png" alt=""><figcaption><p>Choose Quality Profile</p></figcaption></figure>
+

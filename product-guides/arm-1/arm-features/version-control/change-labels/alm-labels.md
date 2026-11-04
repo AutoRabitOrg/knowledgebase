@@ -1,0 +1,36 @@
+# ALM Labels
+
+### ALM Labels: Overview <a href="#alm-labels-overview" id="alm-labels-overview"></a>
+
+AutoRABIT has introduced a section called ALM labels under the **Change Labels** tab. This page will display all the ALM labels which you have created either from merge or commits, and show details of the ALM commits and the link between work items and commits. In this way, the user will be able to view the user stories info linked to its commits.
+
+### To view ALM Labels <a href="#to-view-alm-labels" id="to-view-alm-labels"></a>
+
+1. Navigate to the left navigation pane, select Version Control, and click **Manage Labels** from the dropdown.
+2. Then, select **ALM Labels** from the top navigation bar.
+
+<figure><img src="../../../../../.gitbook/assets/image (1498).png" alt=""><figcaption></figcaption></figure>
+
+2. The ALM labels created either from the merge or commit process will get displayed.
+3. Click on one of the ALM labels to view the latest details of the ALM system such as description, assignee, status, or priority.
+
+<figure><img src="../../../../../.gitbook/assets/image (1499).png" alt=""><figcaption></figcaption></figure>
+
+4. It's always a good idea to break data into multiple pages when dealing with multiple templates records. You can browse 25, 50, 75, or 100 records on a single page, or you can navigate to the previous or next page using the **Previous** and **Next** buttons.
+5. Under **Associated Commits**, view revisions configured with the selected ALM. The same revision number can be found in the [Commits](../ez-commits/) screen for configured ALM label. You will also be able to view the list of _committed members_ along with the _prevalidation result_. The same goes for the [**Deployment History**](../../deployment/monitor-deployments.md) section as well.
+
+<figure><img src="../../../../../.gitbook/assets/image (1500).png" alt=""><figcaption></figcaption></figure>
+
+### Filtering ALM Labels <a href="#filtering-alm-labels" id="filtering-alm-labels"></a>
+
+Use the **Advanced Search** filter to find any specific ALM label faster.
+
+<figure><img src="../../../../../.gitbook/assets/image (1501).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1502).png" alt=""><figcaption></figcaption></figure>
+
+Filter the ALM labels via:
+
+1. **Filter by Branch:** Filter the ALM labels based on the [Version Control Repository](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md)/ Branch for which the ALM label is registered.
+2. **Filter by ALM Type, label, project, and work items:** Filter the ALM based on its type. Next, select the ALM Label, Project, and work item type.
+3. **Filter by your Issues:** To fetch all the ALM labels that were assigned to your name, select the checkbox: _Filter by your issues_

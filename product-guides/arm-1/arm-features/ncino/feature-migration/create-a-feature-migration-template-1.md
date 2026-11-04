@@ -1,0 +1,142 @@
+# Create a Feature Migration Template
+
+### Overview <a href="#overview" id="overview"></a>
+
+This details the step-by-step process to create a standard/community nCino migration template.
+
+### Step-By-Step Guide <a href="#procedure" id="procedure"></a>
+
+1. Hover your mouse over the nCino module and click Feature Management.
+2. Click the Create Feature button.
+
+<figure><img src="../../../../../.gitbook/assets/image (3292).png" alt=""><figcaption></figcaption></figure>
+
+3. On the next screen, click Create New to create a new template and include the required objects.
+4. You will be taken to the record-based configuration section, where you will find the following tabs to complete the template:&#x20;
+
+* Metadata Configuration&#x20;
+* Record Configuration
+* &#x20;Preview and Save
+
+#### Metadata Configuration <a href="#metadata-configuration" id="metadata-configuration"></a>
+
+The following screen should be visible on clicking the "Feature" or the "Create Feature" option.
+
+<figure><img src="../../../../../.gitbook/assets/image (3297).png" alt=""><figcaption></figcaption></figure>
+
+Under **Feature Details**, enter the items below:
+
+1. **Name:** Provide a feature migration template name.
+2. **Associated Partner:** The default associate partner would be nCino, which you can change if necessary.
+3. **Version:** Enter the version number here. If you're creating the feature template for the first time, it is recommended to keep the version number as 1.0.
+
+Under the **Salesforce Org** **Details** section, do the following:
+
+4. Select the required “Source ORG”
+5. On selecting the required “Source ORG”, the related objects will be fetched automatically.
+6.  By default, only nCino objects available in the Source Org will be auto-populated. To view all the objects available, click on **Show All** **Objects**.&#x20;
+
+    <figure><img src="../../../../../.gitbook/assets/New UI - Ability To Sync The Metadata - 1.png" alt=""><figcaption></figcaption></figure>
+
+    1. **Sync Schena:**
+       1.  Overview
+
+           The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
+
+           1. **Functionality:**  When the Sync Schema option is enabled:
+              1. &#x20;The system fetches the latest metadata from the source org for the selected object.
+              2. Newly added fields are included.
+              3. Updated field properties (data type, required status, etc.) are refreshed.
+              4. Deprecated or inactive fields are removed.
+              5. The object schema in the template is updated before proceeding.
+           2. **Behavior**
+              1. Sync is applied only to selected objects.
+              2. The operation occurs during schema retrieval or object fetch.
+              3. Existing configurations are updated to match the source org structure.
+7. Click on **Next** to go to the **Record Configuration** Tab.
+
+{% hint style="info" %}
+**Important Note:** Only those objects will be considered nCino objects if their related prefix is included in the **Plugins** section under the [**My Account**](../../../../arm/arm-administration/user-management/manage-users-account-settings.md) page.
+{% endhint %}
+
+#### &#x20;Record Configuration <a href="#record-configuration" id="record-configuration"></a>
+
+1. The filters can be applied on the entry objects under this tab
+2. The following can be observed under this tab:
+   * The “Selected Objects” were displayed under the “Object Bucket List” with the columns “Entry Object”, “Object name” & “Query”
+   * Bucket Exclusion Objects: Objects selected here will be excluded from further processing
+   * Bucket Mandatory Objects: Objects displayed under this section are mandatory
+
+<div align="right"><figure><img src="../../../../../.gitbook/assets/image (3298).png" alt=""><figcaption></figcaption></figure></div>
+
+3. Based on the relationship between the objects, the AutoRABIT application will segregate the object sets, and applying a filter to each bucket is mandatory. By default, AutoRABIT will denote an object in a bucket as an entry point, which can be applied filter. This is not mandatory, but as a best practice, AutoRABIT recommends applying filters to the entry point object rather than any other object.
+
+**Applying the Filters**
+
+The filter criteria can be entered and the query can be built under this tab.
+
+1. Click on the pencil icon beside the query.
+
+<figure><img src="../../../../../.gitbook/assets/image (3301).png" alt=""><figcaption></figcaption></figure>
+
+2. On clicking the pencil icon, the ‘query builder’ will be opened.
+
+<figure><img src="../../../../../.gitbook/assets/image (3302).png" alt=""><figcaption></figcaption></figure>
+
+3. Clicking on the ‘field’ drop-down will provide the list of fields from the ORG.
+
+<figure><img src="../../../../../.gitbook/assets/image (3303).png" alt=""><figcaption></figcaption></figure>
+
+4. Clicking on the operator drop-down field the available list of operators can be observed
+
+<figure><img src="../../../../../.gitbook/assets/image (3305).png" alt=""><figcaption></figcaption></figure>
+
+5. On completing the field selection, click on the ‘ADD’ icon to add the query to the ‘query editor’ below.
+
+<figure><img src="../../../../../.gitbook/assets/image (3306).png" alt=""><figcaption></figcaption></figure>
+
+6. Once the query is added to the query editor, the query can be validated by clicking on the ‘Validate’ button.
+7. An SOQL query can also be added to the query editor. After adding the query, the query can be validated.
+
+<figure><img src="../../../../../.gitbook/assets/image (3307).png" alt=""><figcaption></figcaption></figure>
+
+8. On validating the query, the application will display a success message.
+
+<figure><img src="../../../../../.gitbook/assets/image (3308).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Important Note:
+
+1. All records that get fetched will be in order by "ASC nFORCE\_\_lookupKey\_\_c." If the "nFORCE\_\_lookupKey\_\_c" is unavailable, then the records will be fetched in order by "ASC Id."
+2. For the Attachment object, the filter cannot be applied.
+{% endhint %}
+
+9. As the query has been validated, the same query can be saved by clicking on the ‘Save’ button on the ‘Query Builder.’
+
+{% hint style="info" %}
+**Important Note:**
+
+1. &#x20;If your nCino objects include an Attachment object, users must confirm whether they want to fetch the Attachment dataset.
+2. Check the number of attachments pulled for the job once the attachment object is selected for the data deployment. For each API call, Salesforce returns at least one and a maximum of five attachments based on the size of the attachments. More APIs calls will get triggered for more attachments, which may result in the API limit being exceeded and the application reporting an error.
+{% endhint %}
+
+10. The query should be added to all the buckets. Click on 'Next' to continue to the “Preview and Save” step of the “Feature Migration Creation.”
+
+#### Preview and Save <a href="#preview-and-save" id="preview-and-save"></a>
+
+This is the summary of the “Feature Migration Template” that is being created. All of the feature details can be observed on the ‘Preview and Save’ page. On the ‘change log,’ any change log information required can be added.
+
+<figure><img src="../../../../../.gitbook/assets/image (3715).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Important Note:** **Related List** section will display only if the **Attachment** object is part of the Feature Migration Template.&#x20;
+{% endhint %}
+
+1. On verifying all the details on the ‘Preview and Save’ page, save the template by clicking on the 'Save' button.
+2. On clicking 'Save,' you will be redirected to the “Feature Management” page.
+
+<figure><img src="../../../../../.gitbook/assets/image (3716).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;
+
+&#x20;

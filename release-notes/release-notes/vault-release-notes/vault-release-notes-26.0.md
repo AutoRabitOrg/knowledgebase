@@ -1,0 +1,614 @@
+# AutoRABIT Vault Release Notes 26.0
+
+<figure><img src="/broken/files/qz78m5azLmHMNWukXKsS" alt=""><figcaption></figcaption></figure>
+
+{% @mailchimp/mailchimpSubscribe listId="a085e26e7e" cta="Sign up to receive AutoRABIT Vault updates!" %}
+
+## AutoRABIT Vault Release Notes 26.2.7
+
+**Release Date: 28 October 2026**
+
+#### **Access Archived Data in Salesforce Without Salesforce Connect**
+
+Added an alternative AutoRABIT Vault Connect experience for viewing archived data within Salesforce.
+
+<figure><img src="../../../.gitbook/assets/2 (31).png" alt=""><figcaption></figcaption></figure>
+
+The managed package provides access to archived information without requiring Salesforce Connect or external objects.
+
+Archived data can be explored through supported list, search, and related-record experiences.
+
+<figure><img src="../../../.gitbook/assets/image (5413).png" alt=""><figcaption></figcaption></figure>
+
+This extends access to archived information within familiar Salesforce workflows.
+
+Availability depends on AutoRABIT Vault Connect access and completion of the required connection and managed-package setup.
+
+#### **Updated Application Dependencies for Improved Security**
+
+Implemented security updates across AutoRABIT Vault. Strengthened application protection. Improved the security of supported operations. These updates are included in this release.
+
+**Accurate Scheduler Attribution in Backup and Archive Emails**
+
+Corrected the execution source shown in scheduled Backup and Archive notification emails. Previously, scheduled executions could display an individual account name in the Triggered by information. Notifications now identify Scheduler as the execution source for jobs started by the scheduler. This makes automated executions easier to distinguish when reviewing job notifications. This correction applies to scheduled Backup and Archive emails.
+
+#### **Reliable Reactivation of Salesforce Automation After Data Jobs**
+
+Improved automation handling for Restore, Replicate, and Archive jobs that temporarily disable Salesforce automation. Previously, delayed Salesforce deployments could leave Flows and Workflow Rules inactive after processing. Jobs now wait for confirmed automation deactivation before writing or deleting records and verify reactivation afterward. Coordinated handling across parallel jobs reduces the risk of reactivating automation while another job still requires it disabled. Objects are skipped when safe deactivation cannot be confirmed; automatic retry of the deactivation is not performed.
+
+#### **Clearer Scheduling Layout for nCino Backup Configuration**
+
+Improved the layout of the nCino backup configuration screen. Previously, the scheduler appeared beside the backup options and crowded the configuration area. The scheduler now appears on a separate line below the backup options. Updated spacing and alignment make scheduling controls easier to identify and review. This change applies to the nCino backup configuration creation flow.
+
+#### **Open Archived Record Details from Record Names**
+
+Added clickable record names to archived-record lists in AutoRABIT Vault Connect. Selecting a record name opens a read-only view of its available archived fields and values. The detail view provides information beyond the fields displayed in the list. Archived details remain accessible even when the original record no longer exists in the live Salesforce org. The record detail experience follows Salesforce Lightning conventions and preserves the read-only nature of archived data.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.6
+
+**Release Date: 7 October 2026**
+
+#### Improved Object Selection Table Alignment <a href="#id-1.-improved-object-selection-table-alignment" id="id-1.-improved-object-selection-table-alignment"></a>
+
+Corrected the alignment of table headers, values, and action icons on the object selection screen. The Filters and Hierarchy icons now appear consistently beneath their corresponding headers, improving readability and navigation.
+
+#### Enhanced Security Controls Across AutoRABIT Vault Workflows <a href="#id-2.-enhanced-security-controls-across-autorabit-vault-workflows" id="id-2.-enhanced-security-controls-across-autorabit-vault-workflows"></a>
+
+Strengthened security controls across AutoRABIT Vault administrative and data-processing workflows.
+
+#### Complete Profile Metadata in Full Backups <a href="#id-3.-complete-profile-metadata-in-full-backups" id="id-3.-complete-profile-metadata-in-full-backups"></a>
+
+Resolved an issue that produced empty Profile metadata files in downloaded Full Metadata Backup packages. AutoRABIT Vault now captures and includes complete Profile metadata, ensuring that backup packages contain the information required for inspection and recovery.
+
+#### Authenticated Access for Email Download Links <a href="#id-4.-authenticated-access-for-email-download-links" id="id-4.-authenticated-access-for-email-download-links"></a>
+
+Added active-session validation to download links delivered through AutoRABIT Vault email notifications. Signed-out recipients are directed to the login page and returned to the download after authentication. This protection covers Backup and Archive downloads, Archival Report ZIP files, Salesforce files, and Compare exports.
+
+#### Search and Compare with Proxy Setup <a href="#id-5.-search-and-compare-with-proxy-setup" id="id-5.-search-and-compare-with-proxy-setup"></a>
+
+Confirmed that Search and Compare works in proxy-enabled environments when the required proxy and network permissions are configured. AutoRABIT Vault routes these operations through the configured proxy as designed. Administrators should ensure that the necessary permissions are available.
+
+#### Reliable Restoration of Experience Cloud Metadata <a href="#id-6.-reliable-restoration-of-experience-cloud-metadata" id="id-6.-reliable-restoration-of-experience-cloud-metadata"></a>
+
+Resolved an issue that could cause Experience Cloud metadata restoration to fail when components listed in the deployment manifest were missing from the generated package. AutoRABIT Vault now includes the required ExperienceBundle and DigitalExperience components consistently when preparing Restore packages.
+
+#### Archival Reports for Azure and Google Cloud Storage <a href="#id-7.-archival-reports-for-azure-and-google-cloud-storage" id="id-7.-archival-reports-for-azure-and-google-cloud-storage"></a>
+
+Resolved an issue that prevented archival reports from being generated or downloaded when Azure Blob Storage or Google Cloud Storage was configured. AutoRABIT Vault now generates accessible reports for completed Archive jobs using either supported storage provider.
+
+#### Bulk Clone Masking Rules Across Salesforce Orgs <a href="#id-8.-bulk-clone-masking-rules-across-salesforce-orgs" id="id-8.-bulk-clone-masking-rules-across-salesforce-orgs"></a>
+
+Added the ability to clone multiple masking rules from one Salesforce org to multiple target orgs in a single operation. AutoRABIT Vault validates compatibility and records the outcome for each selected org, simplifying the rollout of consistent masking configurations across environments.
+
+#### Clone Masking Rules Across Compatible Objects <a href="#id-9.-clone-masking-rules-across-compatible-objects" id="id-9.-clone-masking-rules-across-compatible-objects"></a>
+
+Added the ability to clone an existing masking rule to compatible fields across multiple Salesforce objects. Users can select a source rule and apply it to fields with the same data type on up to five target objects. AutoRABIT Vault also identifies fields that already have masking rules, helping prevent duplicate configurations.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.5 <a href="#autorabit-vault-release-notes-26.2.5" id="autorabit-vault-release-notes-26.2.5"></a>
+
+**Release Date: 26 Aug 2026**
+
+#### **Complete Metadata Details in Restore Job Summaries** <a href="#id-3.-complete-metadata-details-in-restore-job-summaries" id="id-3.-complete-metadata-details-in-restore-job-summaries"></a>
+
+Resolved an issue where Restore job summaries did not display all selected metadata types.\
+The summary previously showed only `Network` and `NetworkBranding` in affected restore executions.
+
+AutoRABIT Vault now includes `DigitalExperience`, `DigitalExperienceBundle`, `ExperienceBundle`, and other selected metadata types. This provides an accurate view of the metadata processed by the Restore job.
+
+#### **Successful Restoration of NetworkBranding Metadata**
+
+Resolved an issue that caused `NetworkBranding` metadata restores to fail with a missing `primaryColor` error.
+
+The failure occurred even when the backup containing the same metadata completed successfully.
+
+AutoRABIT Vault now handles the required field correctly during the EZ Restore operation. This allows `NetworkBranding` metadata to be restored without the previous validation failure.
+
+#### **Salesforce Org Reauthentication Using Valid Client Credentials** <a href="#id-5.-salesforce-org-reauthentication-using-valid-client-credentials" id="id-5.-salesforce-org-reauthentication-using-valid-client-credentials"></a>
+
+Resolved an incorrect **Invalid Client ID and Client Secret** error during Salesforce org reauthentication. The issue affected existing orgs configured through the Client Credentials authentication flow. AutoRABIT Vault now validates the provided Client ID and Client Secret correctly during reauthentication. This prevents valid Salesforce org connections from being rejected unnecessarily.
+
+#### **Improved Timeout Handling for Large Live Data Masking Jobs** <a href="#id-6.-improved-timeout-handling-for-large-live-data-masking-jobs" id="id-6.-improved-timeout-handling-for-large-live-data-masking-jobs"></a>
+
+Resolved an issue causing Live Data Masking jobs to fail when large Salesforce queries timed out.\
+Previously, AutoRABIT Vault repeated the same query until all retry attempts were exhausted. AutoRABIT Vault now retries timed-out queries only once and retrieves the remaining records sequentially. This improves completion reliability and reports timeouts accurately instead of displaying **No records found**.
+
+#### **Incremental Record Selection for Scheduled Live Data Masking**
+
+Added incremental record selection for scheduled and manual Live Data Masking jobs.\
+Each run can process newly created records, newly updated records, both record types, or all records. Scheduled executions identify eligible records using the previous successful run and process each qualifying record only once. This reduces processing time, Salesforce API usage, and repeated masking of unchanged records.
+
+#### **Retry Failed Records in Live Data Masking Rollback Jobs**
+
+Added a **Retry** option for failed Live Data Masking rollback jobs.\
+AutoRABIT Vault retries only the records that failed during the selected rollback without reprocessing successful records. The retry results identify newly successful records, remaining failures, and the associated failure details. Retry remains available while the rollback data is retained for seven days, reducing API usage and manual reprocessing.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.4
+
+**Release Date: 12 Aug 2026**
+
+#### **Incremental Backup Support for Login History**
+
+AutoRABIT Vault now supports incremental backups for **Login History**, capturing only records added or modified since the previous backup. This enhancement improves backup efficiency and reduces processing time.
+
+#### **System Details Displayed in the System Limits Tab**
+
+The System Limits tab now displays system details, providing greater visibility into the underlying infrastructure.
+
+#### **Object Search by API Name in Masking Rules**
+
+The object search field now supports identifying objects by their API names during masking rule creation. This enhancement makes it easier to find and select the required objects.
+
+#### **Notification Origin Instance Tracking**
+
+Notifications now identify the specific instance from which they originated, improving traceability across multiple instances.
+
+#### **Activity Logs Missing from Downloaded CEF Files**
+
+Fixed an issue where downloaded CEF files did not contain activity logs for the selected one-month date range.
+
+#### **Expired SAML Credentials Message Updated**
+
+Updated the message displayed for expired SAML credentials to provide clearer and more helpful information.
+
+#### **Improved Support for Missing Synthetic Data Configurations**
+
+AutoRABIT Vault now remains operational when the Synthetic Data masking configuration or Synthetic Data Generator settings are unavailable for on-premises instances.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.3
+
+**Release Date: 29 July 2026**
+
+#### Optimized Processing for Salesforce Objects with Base64/Binary Fields <a href="#id-1.-optimized-processing-for-salesforce-objects-with-base64-binary-fields" id="id-1.-optimized-processing-for-salesforce-objects-with-base64-binary-fields"></a>
+
+Extended Synthetic Backup optimization to additional Salesforce objects containing Base64/Binary fields, including EventLogFile, StaticResource, and QuoteDocument. This enhancement reduces processing delays caused by large binary fields and improves backup performance.
+
+#### Product Rebranding: “Vault” to “AutoRABIT Vault” <a href="#id-3.-product-rebranding-vault-to-autorabit-vault" id="id-3.-product-rebranding-vault-to-autorabit-vault"></a>
+
+Updated applicable “Vault” references to “AutoRABIT Vault” across the application. The change covers the UI, authentication pages, emails, logs, reports, API responses, tooltips, and branding assets, including an updated product logo aligned with the latest design standards.
+
+#### Authentication Grant Type Switching <a href="#id-5.-authentication-grant-type-switching" id="id-5.-authentication-grant-type-switching"></a>
+
+Added the ability to switch an existing Salesforce org connection between Authorization Code and Client Credentials without re-registering the org. Existing configurations remain preserved, confirmation is required before switching, and unsuccessful attempts retain the previous working authentication setup. All changes are captured in the audit logs.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.2
+
+**Release Date: 22 July 2026**
+
+#### OAuth Client Credentials Flow for Salesforce Org Connection <a href="#dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection" id="dt-13561-oauth-client-credentials-flow-for-salesforce-org-connection"></a>
+
+AutoRABIT Vault now supports connecting Salesforce orgs using the OAuth Client Credentials Flow. Administrators can authenticate AutoRABIT Vault with Salesforce through a connected app without requiring interactive user login, enabling seamless machine-to-machine integration for automated backup, restore, and masking operations.
+
+#### Support for Salesforce Refresh Token Rotation (Local External Client Apps) <a href="#dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps" id="dt-13707-support-for-salesforce-refresh-token-rotation-local-external-client-apps"></a>
+
+Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, AutoRABIT Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.1
+
+**Release Date: 15 July 2026**
+
+#### Search & Compare Logs Downloaded in CSV Instead of ZIP Format <a href="#search-and-compare-logs-downloaded-in-csv-instead-of-zip-format" id="search-and-compare-logs-downloaded-in-csv-instead-of-zip-format"></a>
+
+Fixed an issue where downloading logs from the Search & Compare Job History page produced a CSV file instead of the expected ZIP format. Logs are now correctly downloaded as a ZIP archive containing the complete log files.
+
+#### Live Data Masking Job Failing in GCP and Azure Setups <a href="#live-data-masking-job-failing-in-gcp-and-azure-setups" id="live-data-masking-job-failing-in-gcp-and-azure-setups"></a>
+
+Resolved an issue where Live Data Masking jobs failed in GCP and Azure environments despite records being processed successfully. The failure was caused by a missing log file during the cloud storage upload step. Jobs now complete successfully across all supported cloud setups.
+
+#### Fixed an Issue With Sub-User Creation <a href="#fixed-an-issue-with-sub-user-creation" id="fixed-an-issue-with-sub-user-creation"></a>
+
+Fixed a critical issue where adding sub-users failed. The user is now correctly populated during user creation, ensuring users can be added without errors.
+
+#### Support for S3 Bucket Versioning <a href="#support-for-s3-bucket-versioning.1" id="support-for-s3-bucket-versioning.1"></a>
+
+AutoRABIT Vault now supports Amazon S3 bucket versioning as an additional security measure to protect backup files from accidental overwrites or deletions.
+
+Customers using their own S3 storage buckets are strongly encouraged to enable the required versioning permissions in the bucket’s IAM policy to improve backup resilience and recoverability.
+
+For the recommended IAM policy updates, refer to the following documentation:
+
+[S3 IAM Policy Permissions | AutoRABIT Knowledge Base](https://knowledgebase.autorabit.com/product-guides/vault/vault-faqs/common-restore-errors-and-solutions/s3-iam-policy-permissions#step-6-add-the-s3-versioning-permissions-to-the-existing-policy)\
+[DT-13716: Ignore Bucket Version check validationDone](https://autorabit.atlassian.net/browse/DT-13716)
+
+***
+
+## AutoRABIT Vault Release Notes 26.2.0
+
+**Release Date: 08 Jul 2026**
+
+#### Salesforce Data Anomaly Detection and Recovery <a href="#dt-10279-salesforce-data-anomaly-detection-and-recovery" id="dt-10279-salesforce-data-anomaly-detection-and-recovery"></a>
+
+AutoRABIT Vault now includes Salesforce data anomaly detection and recovery capabilities. This enhancement helps identify unusual Salesforce data changes, review anomalies through dashboards and alerts, and recover affected records with greater precision.
+
+<figure><img src="../../../.gitbook/assets/1 (15).png" alt=""><figcaption></figcaption></figure>
+
+#### Context-Aware Synthetic Data Masking <a href="#dt-10880-context-aware-synthetic-data-masking" id="dt-10880-context-aware-synthetic-data-masking"></a>
+
+AutoRABIT Vault now supports synthetic data masking. Masked values are generated based on the original data type, such as names, email addresses, and phone numbers, that are realistic while helping protect sensitive information.
+
+<figure><img src="../../../.gitbook/assets/Synthetic Data Gen.png" alt=""><figcaption></figcaption></figure>
+
+#### Pattern-Based Field Masking <a href="#dt-10986-pattern-based-field-masking" id="dt-10986-pattern-based-field-masking"></a>
+
+Pattern-based field masking has been added to support more precise protection of sensitive data. This enhancement identifies and replaces only the sensitive portions of field values, such as embedded email addresses, account numbers, and other sensitive text.
+
+<figure><img src="../../../.gitbook/assets/Pattern Based Masking.png" alt=""><figcaption></figcaption></figure>
+
+#### Secure AutoRABIT Vault APIs for AutoRABIT Tool Integrations <a href="#dt-10874-secure-vault-apis-for-autorabit-tool-integrations" id="dt-10874-secure-vault-apis-for-autorabit-tool-integrations"></a>
+
+Secure AutoRABIT Vault APIs have been introduced to support machine-to-machine integrations with other AutoRABIT tools. These APIs enable external workflows to trigger AutoRABIT Vault jobs, track job progress, and retrieve results more efficiently.
+
+<figure><img src="../../../.gitbook/assets/Token Gen (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Enhanced Log Segregation <a href="#dt-10901-enhanced-log-segregation" id="dt-10901-enhanced-log-segregation"></a>
+
+Log files are now enhanced for faster troubleshooting, more targeted support investigations, and more efficient audit-related analysis.
+
+#### AWS SDK Upgrade <a href="#dt-11420-aws-sdk-upgrade" id="dt-11420-aws-sdk-upgrade"></a>
+
+AWS SDK is upgraded to address known vulnerabilities and long-term maintainability.
+
+#### Column Adjustment and View Customization <a href="#dt-12135-column-adjustment-and-view-customization" id="dt-12135-column-adjustment-and-view-customization"></a>
+
+Supported AutoRABIT AutoRABIT Vault views now allow columns to be resized and selected based on preference. This improves readability and helps focus on the most relevant information in table-based views.
+
+#### Full Backup Execution Reliability for Sandbox Orgs <a href="#dt-13341-full-backup-execution-reliability-for-sandbox-orgs" id="dt-13341-full-backup-execution-reliability-for-sandbox-orgs"></a>
+
+An issue where full backup jobs for sandbox orgs could remain stuck for an extended period has been resolved. This improves backup reliability and reduces interruptions caused by long-running jobs.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.9
+
+**Release Date: 24 Jun 2026**
+
+**Sandbox Backup — Incorrect Failure Status on Partial Component Errors**\
+Addressed an issue in the AutoRABIT Vault Sandbox Backup module where a backup job was reported as **Failed** even when the majority of components were successfully backed up. The failure was triggered by specific error types in individual components, causing the entire job status to reflect as a complete failure rather than a partial success. This fix improves the accuracy and clarity of backup job status reporting.
+
+**Backup Module: Toggle State Retention on the Data Tab**
+
+Fixed an issue in the Backup module where changing the ON/OFF toggle on the **Data** tab incorrectly redirected the view to the **MetaData** tab. The **Data** tab now remains active after the toggle state is updated.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.8
+
+**Release Date: 10 Jun 2026**
+
+**Backup Configuration Retention Period Fix**
+
+Fixed a validation issue where the Backup Configuration retention field was restricted to a maximum of 9 years. Users can now configure retention values up to 99 years, enabling proper long-term retention policies.
+
+AutoRABIT **Vault Replicate Job Schedule Issue**
+
+Fixed an issue where scheduled Replication Jobs were not triggering at their configured times. Customers who configured a Replication Job with a daily schedule and specific interval observed that the job would not trigger as expected.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.7
+
+**Release Date: 3 June 2026**
+
+**Export AutoRABIT Vault User List with Access & Login Details**
+
+AutoRABIT Vault Admins can now export the complete list of users along with key access and activity details. This enables faster user access reviews, simplifies compliance and audit reporting, and reduces dependency on support for user access reports.
+
+**AutoRABIT** **Vault Logging Out Immediately After Login**
+
+Fixed an issue where AutoRABIT Vault was logging users out immediately after a successful login, preventing access to the application entirely.
+
+**Email Messages & Campaign Members Failing During Replication**
+
+Resolved replication failures for Email Messages and Campaign Members. Email Messages and Campaign Members are failing with errors, even though the associated Leads and Contacts were successfully created in the target org. Cross-reference ID resolution during replication has been corrected.
+
+**Corrupted Log Files for Failed Records**
+
+Fixed an issue where downloading failed records log files resulted in corrupted files that could not be opened in Excel or CSV viewers. The root cause was a file format mismatch; now the log files will be downloaded in a format that opens correctly without manual renaming or extraction.
+
+**Search & Compare Job History Table Data Misalignment**
+
+Fixed a display issue in the Search & Compare Job History page where table data was misaligned with column headers. Row values appeared under incorrect columns, and Job Info icons were stacked vertically instead of being aligned with their respective rows. The table now renders correctly with proper column alignment.
+
+**Schema Settings Lost When Saving Replication Configuration**
+
+Fixed a bug where saved schema settings were lost after editing and saving a Replication Configuration. If a schema was already associated with a config and the user edited other fields, the schema would be silently removed upon saving. Schema selections are now correctly preserved across edits.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.6
+
+**Release Date: 20 May 2026**
+
+**Restore Summary Not Visible in** AutoRABIT **Vault Job**
+
+Fixed an issue where the Restore Summary was not visible in the AutoRABIT Vault job.
+
+**Backup Jobs Not Loading in the Replicate Module**
+
+Resolved an issue where Backup Job details were not displayed in the Replicate module. The issue was caused by a missing null check in the backend query, which prevented backup job information from loading correctly.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.5
+
+**Release Date: 06 May 2026**
+
+**Enhance Authentication Event Logging with Detailed Failure Reasons**
+
+* Enhanced the authentication logging framework to capture granular failure reasons for all authentication attempts across UI login, API, and service-to-service flows. Logs follow a structured CEF format and are searchable by username, customerId, failureReason, and timestamp.
+
+**Upgrade Salesforce APIs to Spring '26 (v66)**
+
+* Upgraded all Salesforce APIs from the current version to v66 (Spring '26) to leverage new capabilities, improved performance, and stay compliant with customer Salesforce org versions.
+
+**Field-Level Restoration Not Working as Expected**
+
+* Fixed an issue where field-level restoration from a compare job failed to restore blank/null values when using the "Select field" option, even with "Override data with blank values" enabled. Full-record restoration worked correctly; the fix ensures field-level selection also honors the override setting.
+
+**Schema Search Showing "Path Not Found"**
+
+* Fixed an issue in Archive Configuration where searching for parent or child schemas incorrectly displayed a "Path Not Found" message instead of the expected schema hierarchy results.
+
+**Backup Configuration Screen Freezing on Object Deselection**
+
+* Fixed a UI freeze that occurred when selecting/deselecting Data or Metadata objects during Backup and Replication configuration setup.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.4
+
+**Release Date: 29 April 2026**
+
+**Replication Job Configuration — Target Org Update Issue**\
+Resolved an issue where modifying a Replication Job Configuration to update the Target Org resulted in an "Invalid Request" error, requiring the job to be recreated. Additionally, records uploaded via CSV were not displaying correctly during edit. Both issues have been addressed, allowing seamless updates and proper data visibility.
+
+**Accounts Backup Download Issue**\
+Fixed a problem where downloading the Accounts object from a backup job failed with a request error, causing the loading process to stall indefinitely. The download process now completes successfully across environments.
+
+**Activity Log User Information Display**\
+Addressed an intermittent issue where Activity Log entries displayed null values instead of the associated user details. User information is now consistently captured and displayed correctly.
+
+**Archive Deletion Navigation Behavior**\
+Corrected the navigation flow after deleting a configuration from the Archive section. The interface now remains within the Archive view instead of redirecting to another section.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.3
+
+**Release Date: 22 April 2026**
+
+**Configurable** **Session Timeout**\
+Administrators can now define session timeout duration from **Settings → General**. The configured value is centrally enforced for all users during authenticated API sessions.
+
+* Applies to all users within the customer environment
+* Enforced from the next login session onward
+* Does not impact already active sessions
+
+This enhancement improves session management and security control across the organization.
+
+**High‑Frequency Logging**
+
+Introduces fine-grained logging for storage operations to enhance troubleshooting and observability of I/O operations to storage.
+
+**Backup Logging Improvements**
+
+Refined logs to provide clearer insights into backup status processes, balancing visibility and log volume.
+
+**Enhanced Audit Logging for User Sessions & Role Changes**
+
+Added detailed audit logs for user sessions and role management activities to improve traceability for compliance and security.
+
+**Backup Performance Improvement**
+
+Optimized rich text field processing during backup to significantly reduce backup runtime, especially for orgs with extensive rich text content.
+
+**Restore Fix — Hierarchical Child Object Not Processed**
+
+Corrected an issue where restore jobs were not processing child objects in hierarchical schemas, ensuring complete data restoration.
+
+**Improved Backup Status Reporting**\
+Addressed an issue where the overall backup summary status did not align with the detailed component-level results. In some cases, components marked as failed in the summary were shown as successful in the detailed view. Additionally, certain data sets incorrectly reported errors despite having no records.
+
+This fix ensures:
+
+* Consistency between summary and detailed backup statuses
+* Accurate reporting of component-level results
+* Proper handling of empty data sets, eliminating false error indications
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.2
+
+**Release Date: 08 April 2026**
+
+**AutoRABIT Vault On‑prem search & compare failure**
+
+* Resolved failures in AutoRABIT Vault On‑prem search and compare jobs to ensure jobs complete successfully.
+
+**Partial child records Fetched When “Include All Child Objects” selected**
+
+* Corrected Replicate behavior so “Include All Child Objects” now processes all expected child records.
+
+**Resolved Data Type Mismatch in Search Jobs**
+
+Fixed an issue where data type mismatches between source data and schema caused errors during Search job execution.
+
+**Masking info icon shown without rules**
+
+* Updated UI to hide the masking info icon when no masking rules are configured.
+
+**Slow compare jobs for same dataset**
+
+* Improved Search & Compare performance where compare jobs were taking significantly longer than earlier runs on the same dataset.
+
+**Restore module missing for sub‑user**
+
+* Identified that the missing module issue was caused by insufficient permissions, and enhanced the error handling to display a clear and informative message indicating the permission constraint.
+
+**nCino backup retention mismatch**
+
+* Aligned backup retention details so configuration and edit views show consistent values for nCino backups.
+
+**Sub‑user org registration failure**
+
+* Resolved issues causing org registration to fail for sub‑users.
+
+**Date range masking timestamp shift**
+
+* Fixed a defect where date range masking altered the timestamp for datetime records.
+
+**“Edit Client Keys” auth flow issues**
+
+* Addressed authentication flow problems in the “Edit Client Keys” screen to provide a reliable sign‑in experience.
+
+**Retention period edit view mismatch**
+
+* Corrected retention period editing so years, months, and days are all displayed consistently instead of only days.
+
+**No max limit shown for retention period**
+
+* Added validation/feedback so the maximum allowed retention limit is enforced and clearly shown.
+
+**Task restore records mismatch**
+
+* Fixed Task Restore so it now restores the correct set of records as expected.
+
+**Date range masking issues in Replicate & Live Masking**
+
+* Resolved date range masking inconsistencies affecting both Replicate and Live Data Masking configurations.
+
+**Synthetic backup record count higher than actual**
+
+* Fixed synthetic backup logic so generated record counts now align with actual data volumes.
+
+**AutoRABIT Vault on‑prem checklist**
+
+* Introduced/updated an on‑prem validation checklist for AutoRABIT Vault deployments to standardize setup and verification.
+
+**Performance degradation in parallel Search & Compare**
+
+* Optimized system resources and job handling to reduce CPU, memory, and I/O bottlenecks during parallel Search & Compare jobs.
+
+**Errors when exporting >100K records**
+
+* Resolved authentication issues that caused errors when exporting large datasets
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.1
+
+**Release Date: 25 March 2026**
+
+**Range-Based Date Masking for Sensitive Date Fields**\
+Introduced range‑based date masking for sensitive date fields, enabling more flexible and realistic anonymization by shifting dates within configurable ranges.
+
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+
+**Error while creating backup config with filter**\
+Fixed an error occurring when creating backup configurations with filters, so filtered backup configs can now be created reliably.
+
+**Intermittent archive job failure**\
+Resolved intermittent archive job failures caused by “Failed to write backup to storage” errors, improving archive job reliability.
+
+**Live Data Masking - Auto-delete of Local Masking Rules**\
+Fixed an issue where local masking rules were not automatically deleted when their associated Live Data Masking configuration was removed, preventing leftover rules.
+
+**Search bar missing in field selection during configuration creation**\
+Added the missing search bar in the field selection section when creating Search & Compare configurations, making it easier to find and select fields.
+
+**Order of latest snapshot records in compare screen**\
+Adjusted snapshot ordering on the compare screen, so the latest snapshot records now display in the correct lower section, improving readability of comparisons.
+
+**Backup download email content mismatch**\
+Corrected the email template triggered for backup downloads so its content now accurately reflects the download action rather than showing backup summary text.
+
+**Search & Compare | Improved Failure Messaging**\
+Improved failure messaging by displaying a clearer message “Job failed. Please review the job logs for more details”, within the job details view, guiding users to review job logs for more information when a job fails.
+
+**Case Sensitivity toggle in Search & Compare**\
+Added a case sensitivity toggle in Search & Compare, allowing users to choose whether text comparisons are case‑sensitive or case‑insensitive.
+
+**Metadata restore issues**\
+Introduced a rollback capability for failed jobs, enabling recovery of missing files and resolution of metadata-related errors.
+
+**Environment-based backup retention policy**\
+Implemented environment‑based backup retention policies, allowing distinct retention behavior for Production versus Sandbox environments and correcting existing sandbox retention settings.
+
+**Reports failing to replicate in target org**\
+Fixed a problem that caused certain reports to fail replication to target orgs, improving reliability and coverage for report replication.
+
+**Compare job stuck “In Progress” with lengthy Customer ID**\
+Resolved an issue where compare jobs could remain stuck “In Progress” when the Customer ID was unusually long, improving job completion reliability.
+
+**Boolean config field accepts uppercase value without validation**\
+Improved validation for boolean configuration fields in Search & Compare so invalid uppercase values are no longer accepted without proper validation.
+
+**Config updates not reflected in the generated query**\
+Fixed an issue where updates to the selected object in Search & Compare configuration edits were not reflected in the generated query, ensuring configuration changes take effect correctly.
+
+**Provided Retry option for Live Data Masking**\
+Introduced a Retry option for Live Data Masking jobs, allowing users to quickly rerun failed masking operations without recreating the configuration.
+
+**Unable to access/login to** AutoRABIT **Vault**\
+Fixed a login issue that prevented some users from accessing AutoRABIT Vault, improving authentication stability and reducing access errors.
+
+**Restore seems stuck**\
+Resolved an issue where certain restore jobs are not retaining the partial selection of the records. After the fix is rolled-out the partial selection of the records is being retained.
+
+**Unable to replicate files larger than 10MB**\
+Fixed an issue that prevented replication of files larger than 10 MB, ensuring large files are now handled correctly during replication.
+
+***
+
+## AutoRABIT Vault Release Notes 26.1.0
+
+**Release Date: 4 March 2026**
+
+**Search Across Backups and Archives**
+
+AutoRABIT Vault now enables advanced searches across Backups and Archives within a selectable six-month time span using an intuitive query builder. Users can define specific criteria, execute the search configuration, and identify data from Archives & Backups.
+
+<figure><img src="../../../.gitbook/assets/1 (12).png" alt=""><figcaption></figcaption></figure>
+
+The feature allows comparison of selected snapshots to pinpoint changes across Orgs based on the defined criteria. Once differences are identified, the **Review and Restore** capability enables targeted data restoration, ensuring precise recovery of required records.
+
+<figure><img src="../../../.gitbook/assets/2 (12).png" alt=""><figcaption></figcaption></figure>
+
+This enhancement streamlines historical data analysis and controlled restoration from backups and archives.
+
+<figure><img src="../../../.gitbook/assets/3 (12).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Note:**
+
+The **Search & Compare** functionality is supported only for data available in **AWS S3**. Data stored outside AWS S3 is not supported for Search & Compare operations.
+{% endhint %}
+
+
+
+**Salesforce Org Registration – Enhanced to Support External Client Apps**
+
+Updated the Salesforce Org registration flow to use OAuth 2.0 aligned with Salesforce’s requirement to support OAuth flow through External Connected Apps. The enhanced guided setup enables secure onboarding of Production and Sandbox environments with real-time validation, encrypted credential storage, automatic token management, actionable error guidance, environment health visibility, and complete audit logging.
+
+#### Multi-Factor Authentication – QR Code Display
+
+Resolved an issue where the QR code was not displayed during the multi-factor authentication (MFA) setup process. This fix ensures that the QR code is properly generated and available during authentication setup, allowing users to complete MFA configuration successfully.
+
+<figure><img src="../../../.gitbook/assets/image (4809).png" alt=""><figcaption></figcaption></figure>
+
+**SSO Login – SAML Issuer Handling Fix**
+
+Resolved an issue where users could encounter login failures when authenticating through SSO due to improper handling of the SAML issuer during validation. The authentication process has been updated to correctly process the issuer value, ensuring successful login when the required attributes are provided by the Identity Provider.

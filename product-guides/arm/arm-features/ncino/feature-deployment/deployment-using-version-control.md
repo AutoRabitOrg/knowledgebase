@@ -1,0 +1,105 @@
+# Deployment Using Version Control
+
+**Deployment Using Version Control** allows users to deploy nCino data using a Feature Migration Template that is stored in Version Control. The selected template and its associated data are retrieved from the configured Version Control repository and deployed to the destination Salesforce org.
+
+**Example:** A team stores a Feature Migration Template and its associated nCino data in Version Control. When the changes are ready for promotion, the team can retrieve the template and data from the repository and deploy them to a QA, UAT, or another destination environment.
+
+**This option is useful in the following scenarios:**
+
+* You need to deploy nCino data using a Feature Migration Template stored in Version Control.
+* You want to retrieve the template and associated data from a repository rather than directly from a Salesforce org.
+* You want to maintain version history and track changes to Feature Migration Templates and their associated data.
+* You need to promote version-controlled nCino configurations across different environments.
+
+
+
+1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
+
+<figure><img src="../../../../../.gitbook/assets/image (1164).png" alt="" width="202"><figcaption></figcaption></figure>
+
+2. Click on the **Feature Deployment** button.
+
+<figure><img src="../../../../../.gitbook/assets/image (1166).png" alt=""><figcaption></figcaption></figure>
+
+3. Upon clicking on the "Create Feature Deployment" or selecting the "Feature Deployment," the Source Type screen will appear — choose the Deploy from Version Control option to proceed with deploying the Feature Migration Template and its associated data from Version Control to the destination environment..
+4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
+5. Select your **version control** type.
+6. Select your **repository** and **branch**.
+7.  Select the deployment type. There are three options to choose from:
+
+    * **Entire Branch:** This option will fetch the feature migration templates configured on your branch. You'll be asked to choose the **template** and **version when selecting** the entire branch option.
+
+    <figure><img src="../../../../../.gitbook/assets/image (1167).png" alt="" width="470"><figcaption></figcaption></figure>
+
+    * **Single Revision:** This option will pull all of the versions from your repo, allowing you to choose which revision to use in the deployment.
+
+    <figure><img src="../../../../../.gitbook/assets/image (1168).png" alt="" width="454"><figcaption></figcaption></figure>
+
+
+
+    <figure><img src="../../../../../.gitbook/assets/image (1170).png" alt=""><figcaption></figcaption></figure>
+
+    * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
+
+    <figure><img src="../../../../../.gitbook/assets/image (1171).png" alt="" width="434"><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+After deploying a job, modifying the deployment type during subsequent edits may affect the integrity or effectiveness of any rollbacks performed thereafter.
+{% endhint %}
+
+8. The object configuration section will render the selected objects and apply filters and mappings based on your selection.
+
+<figure><img src="../../../../../.gitbook/assets/image (1172).png" alt=""><figcaption></figcaption></figure>
+
+9. Choose your **target org**.
+
+<figure><img src="../../../../../.gitbook/assets/image (1173).png" alt=""><figcaption></figcaption></figure>
+
+10. There are various options that you can configure to your objects before you proceed with deployment:
+
+    * Applied Mappings
+    * Applied Filters
+
+    <figure><img src="../../../../../.gitbook/assets/image (1174).png" alt=""><figcaption></figcaption></figure>
+
+#### Applied Mapping <a href="#applied-mapping" id="applied-mapping"></a>
+
+In this section, you can use an external ID in place of a related record's Salesforce record ID to relate or associate records to each other as you process an Upsert operation. For example, if **Object B** has a lookup field to another **Object A,** you can use the values in a field marked as an External ID on **Object A** to relate the two (**Object B** to **Object A** records).
+
+In the **Source** field: Select your source field whose values will be populated in the destination External Id field.
+
+In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
+
+<figure><img src="../../../../../.gitbook/assets/image (1175).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Important Note (About Applied Mappings):**
+
+1. If there is no Lookup key and the name is set to External ID, AutoRABIT is still supported.
+2. Because the source for this is a CSV extract and not a salesforce org, all fields from the source sandbox will be fetched, regardless of the External ID in the **Source** column, whereas the source for Destination is a salesforce org.
+{% endhint %}
+
+#### Applied Filters <a href="#applied-filters" id="applied-filters"></a>
+
+Such filters will be displayed here if any filter is applied to the objects.
+
+<figure><img src="../../../../../.gitbook/assets/image (1176).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**Important Note**: The dataset is already prepared at the time of the commit, so you can’t edit it at this point. However, if you like to edit the filter, use the feature: [Deployment via Version Control using Salesforce org](deployment-via-version-control-using-salesforce-org.md)
+{% endhint %}
+
+Click on **Deploy** to proceed to the next screen. The next screen will display the list of deployment criteria that you can opt for before proceeding with deployment.
+
+#### Deployment Settings <a href="#deployment-settings" id="deployment-settings"></a>
+
+1. **Disable Workflow Rules:** This option will deactivate the workflow rules associated with objects part of the deployment
+2. **Disable Validation Rules:** This option will deactivate the validation rules associated with objects part of the deployment
+3. **Insert/update with Null Values:** This will either insert or update record field values with null (if the value is null in source org) in destination org.
+4. **Use UTF-8 file encoding for file read and write operations:** Use UTF-8 as the internal representation of strings. Text is transcoded from the local encoding to UTF-8 when data is written to or read from a file. UTF-8 must be enabled if your data exclusively contains English alphabets. UTF-8 must be disabled if your data contains non-English alphabets. UTF-8 should be enabled by default in accordance with Salesforce.
+
+<figure><img src="../../../../../.gitbook/assets/3 (9).png" alt=""><figcaption></figcaption></figure>
+
+Click **OK** to complete the feature deployment process.
+
+You'll be redirected to the [Feature Deployment Summary](feature-deployment-summary.md) screen, where you can view detailed deployment reports or re-deploy the nCino objects to your Salesforce Org once again.

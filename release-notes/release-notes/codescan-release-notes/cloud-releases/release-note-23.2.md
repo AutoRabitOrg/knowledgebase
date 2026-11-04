@@ -1,18 +1,18 @@
 # Release Notes 23.2
 
-## CodeScan Cloud&#x20;
+## CodeScan Cloud
 
 ## Summary 23.2 Release Notes
 
 Click on the version number in the chart below to go to the release notes.
 
-<table data-full-width="false"><thead><tr><th width="134" align="center">Date</th><th width="95" align="center">Version</th><th width="93" align="center">Type</th><th>Description</th></tr></thead><tbody><tr><td align="center"><mark style="color:blue;">December 2023</mark></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.7-minor-release"><mark style="color:blue;">23.2.7</mark></a></td><td align="center"><mark style="color:blue;">Minor</mark></td><td><mark style="color:blue;">V.S. Code 1.6.12 and support for IntelliJ 7.0.0 (Only Cloud customers)</mark> </td></tr><tr><td align="center"><strong>Nov 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup"><strong>23.2.5</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>North America includes 23.2.0–23.2.4, plus 3 fixes</strong></td></tr><tr><td align="center">Nov 2023</td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.6">23.2.6</a></td><td align="center">Minor</td><td>New rules for Salesforce flows and one rule misfire corrected.</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.4">23.2.4</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.3">23.2.3</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.2">23.2.2</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.1">23.2.1</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"><strong>Sept 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.0-eu-au-only"><strong>23.2.0</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>Europe + Australia only</strong></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="134" align="center">Date</th><th width="95" align="center">Version</th><th width="93" align="center">Type</th><th>Description</th></tr></thead><tbody><tr><td align="center"><mark style="color:blue;">December 2023</mark></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.7-minor-release"><mark style="color:blue;">23.2.7</mark></a></td><td align="center"><mark style="color:blue;">Minor</mark></td><td><mark style="color:blue;">V.S. Code 1.6.12 and support for IntelliJ 7.0.0 (Only Cloud customers)</mark> </td></tr><tr><td align="center"><strong>Nov 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-v.-23.2.5-north-america-na-includes-23.2.1-23.2.4-rollup"><strong>23.2.5</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>North America includes 23.2.0–23.2.4, plus 3 fixes</strong></td></tr><tr><td align="center">Nov 2023</td><td align="center"><a href="release-note-23.2.md#codescan-23.2.6">23.2.6</a></td><td align="center">Minor</td><td>New rules for Salesforce flows and one rule misfire corrected.</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.4">23.2.4</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.3">23.2.3</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.2">23.2.2</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.1">23.2.1</a></td><td align="center">Minor</td><td>Code fixes</td></tr><tr><td align="center"><strong>Sept 2023</strong></td><td align="center"><a href="release-note-23.2.md#codescan-23.2.0-eu-au-only"><strong>23.2.0</strong></a></td><td align="center"><strong>Major</strong></td><td><strong>Europe + Australia only</strong></td></tr></tbody></table>
 
 ***
 
 ## Current Release
 
-### CodeScan Cloud 23.2.7 (Minor Release)
+### CodeScan 23.2.7 (Minor Release)
 
 * The VS code version 1.6.12 fixed several issues that were impacting the performance during the binding process. The issues that were identified and fixed are as follows:&#x20;
   1. Fixed NPM audit vulnerability to use the latest version of dependencies as the context menu&#x20;
@@ -31,7 +31,7 @@ Deployed Fix for issue with the GitLab Handler required fix added configurations
 
 ## Major Releases
 
-### **CodeScan v. 23.2.5 (North America \[NA] includes 23.2.0–23.2.4 Rollup plus additional fixes)**
+### CodeScan 23.2.5 (North America [NA] includes 23.2.0–23.2.4 Rollup plus additional fixes)
 
 **November 2023**
 
@@ -46,7 +46,7 @@ The inclusion of special characters into the Payload sent by the GitHub webhook 
 
 ***
 
-### CodeScan v. 23.2.0 (EU, AU only)&#x20;
+### CodeScan 23.2.0 (EU, AU only)
 
 **September 2023** &#x20;
 
@@ -193,7 +193,7 @@ New screen
 
 Minor performance enhancements, bug fixes, and security improvements can also be observed in the CodeScan portal.
 
-### CodeScan v. 23.2.6
+### CodeScan 23.2.6
 
 **Nov 2023**
 
@@ -227,19 +227,19 @@ There are 19 new rules for Salesforce flows:
 
 * Rule Misfire: Corrected Apex code incorrectly detecting TODOs.&#x20;
 
-### **CodeScan v. 23.2.4**
+### CodeScan 23.2.4
 
 * ·Task definition changes for SMTP on API and worker on all SaaS instances.
 
-### **CodeScan v. 23.2.3**
+### CodeScan 23.2.3
 
 * Fix for Copado integration permissions issue
 
-### **CodeScan v. 23.2.2**
+### CodeScan 23.2.2
 
 * When users run a comparison branch analysis using the wrong base branch (not the master), the application results in a runtime error while trying to view the project analysis page.
 
-### **CodeScan v. 23.2.1**
+### CodeScan 23.2.1
 
 * Error related to application logic, which leaves existing issues from the target branch being displayed in PR. They filter out only the issues with the RESOLVED state. A code fix was applied to remove one condition and filter out all the remaining issues from the target branch with the decision to remove the condition only if the new feature flag is disabled.
 * Stack overflow error fix with SOQL Injection Rule

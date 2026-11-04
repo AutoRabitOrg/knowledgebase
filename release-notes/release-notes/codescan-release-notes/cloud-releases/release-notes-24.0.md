@@ -2,9 +2,9 @@
 
 ## CodeScan Cloud
 
-## Release Notes 24.0.14
+## CodeScan 24.0.14
 
-**Release Date: 04 December 2024**
+**Release date:** 4 December 2024
 
 ### Summary
 
@@ -16,7 +16,7 @@ CodeScan 24.0.14 is comprised of the following eight components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 There are no new features associated with this release.
 
@@ -43,7 +43,7 @@ There are no new features associated with this release.
 
     <figure><img src="../../../../.gitbook/assets/image (2282).png" alt=""><figcaption></figcaption></figure>
 
-### New Rules
+### New rules
 
 1. **New Rule for LWCs: “API Version Is Too Old”**\
    This is a new rule to ensure that all Lightning Web Components (LWCs) are using an acceptable API version (including the most current API version).\
@@ -147,24 +147,24 @@ If both rules are active, check the violations that were reported and disable on
 4. **Fixed issue with Group Synchronization for SAML connections**\
    We uncovered an issue with Group Synchronization during a recent customer implementation. We identified the root cause and a code change delivered in this release fixes the issue. Group synchronization is now working as designed. Further, we verified the Group synchronization option in SAML connection on a customer environment and have reported that this capability is working as expected.
 
-## Release Notes 24.0.13
+## CodeScan 24.0.13
 
-**Release Date: 30 October 2024**
+**Release date:** 30 October 2024
 
 ### Summary
 
 CodeScan 24.0.13 is comprised of the following 4 components:&#x20;
 
-* [1 Enhancement](release-notes-24.0.md#enhancement)
+* [1 Enhancement](release-notes-24.0.md#enhancements)
 * [3 Fixes](release-notes-24.0.md#fixes)&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### New Features
+### New features
 
 There are no new features associated with this release.
 
-### Enhancement
+### Enhancements
 
 1. **Enhancement to Rule for VF: “"vf:AvoidJavaScriptScriptlets”** \
    \
@@ -174,7 +174,7 @@ There are no new features associated with this release.
    \
    Considering both of these items together, we recognize that there was limitation on this rule where customers were getting violations flagged as false positives. This enhancement involves implementing Regex to detect the use of Lightning components within a \{{\<script>\}} tag in Visualforce pages. The rule \{{vf:AvoidJavaScriptScriptlets\}} should not trigger a violation if only Lightning components are found. However, if any additional lines of non-Lightning code are detected within the script, a violation will be raised. This ensures the proper use of Lightning components while avoiding insecure or outdated practices in scriptlets.
 
-### New Rules
+### New rules
 
 There are no new rules associated with this release.
 
@@ -241,9 +241,9 @@ There are no new rules associated with this release.
    This fix ensures that the check is limited to the **“value”** attribute only, to avoid false positives and ensure the rule functions as intended. As an example, the following will NOT be flagged as a violation:\
    \<apex:includeScript value="{!$Resource.example\_js}" loadOnReady="true"/> //Good: Uses a static resource.<br>
 
-## **Release Notes 24.0.12**&#x20;
+## CodeScan 24.0.12
 
-**Release Date: 9 October 2024**&#x20;
+**Release date:** 9 October 2024
 
 ### Summary
 
@@ -268,7 +268,7 @@ Further, we added SYSTEM\_MODE support to the rule enhancement via a rule parame
 
 For additional info on Object permission Checks and SYSTEM\_MODE, refer to: [https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex\_classes\_perms\_enforcing.htm|smart-link](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|https:/developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_perms_enforcing.htm|smart-link) &#x20;
 
-### Fixes&#x20;
+### Fixes
 
 1. &#x20;**Fixed errors when reattaching Bitbucket projects using new enhanced security.**&#x20;
 
@@ -308,9 +308,9 @@ Starting **1 January 2025**, you will not be allowed to trigger the analysis for
 
 ***
 
-## Release Notes 24.0.11&#x20;
+## CodeScan 24.0.11
 
-**Release Date: 25 September 2024**&#x20;
+**Release date:** 25 September 2024
 
 ### Summary
 
@@ -321,7 +321,7 @@ CodeScan 24.0.11 is comprised of the following 3 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### Functional Enhancements&#x20;
+### Functional Enhancements
 
 1. **Org Names are no longer restricted to a single word only**&#x20;
 
@@ -353,7 +353,7 @@ But these are not concerns when those public fields are on a private class. &#x2
 
 This enhancement adds a private class validation check first and will not flag the two previously mentioned issues if the class is a private class.&#x20;
 
-### Security Enhancement&#x20;
+### Security Enhancement
 
 **Enhanced security for Bitbucket webhooks**&#x20;
 
@@ -383,11 +383,11 @@ Starting **1 January 2025**, you will not be allowed to trigger the analysis for
 
 ***
 
-## Release Notes 24.0.10
+## CodeScan 24.0.10
 
-**Release Date: 28 August 2024**&#x20;
+**Release date:** 28 August 2024
 
-### **Summary**
+### Summary
 
 **CodeScan 24.0.10 is comprised of the following components:**&#x20;
 
@@ -405,7 +405,7 @@ The original aim of this rule is to identify ternary statements and suggest pote
 
 This rule was originally developed according to common development practices in Salesforce where most usages of this would be in ternary. However, it can be applied in scenarios involving if-else and return statements.  As such, we have adjusted the rule to account for these use cases. With this enhancement, CodeScan suggests where null coalescing could be used instead of an “if” block (recognizing that if a developer is already thinking about shortening their code with ternary, then they are likely considering null coalescing operator as well).&#x20;
 
-### New Rules&#x20;
+### New rules
 
 **1.     New Rule for APEX: “IsBlankForNullChecks”** &#x20;
 
@@ -419,7 +419,7 @@ This approach is especially relevant in programming environments and languages w
 
 Summary:  Enforce security best practices on classes by ensuring that sharing settings ('with sharing', 'without sharing', or 'inherited sharing') are explicitly declared. This prevents accidental data exposure and enhances code maintainability and compliance with security policies.&#x20;
 
-### Fixes&#x20;
+### Fixes
 
 **1.     Make fields of CustomObject Compatible with SFDX**&#x20;
 
@@ -512,7 +512,7 @@ However, the action “On click” wasn’t showing the filtered list as expecte
 
 ***
 
-## Release Notes 24.0.9
+## CodeScan 24.0.9
 
 **7 August 2024**
 
@@ -522,7 +522,7 @@ The latest CodeScan release is comprised of the following components:
 * [New Rule](release-notes-24.0.md#new-rule)
 * [Fix](release-notes-24.0.md#fix)
 
-### Enhancements&#x20;
+### Enhancements
 
 1. **Feature Enhances the “sf.testfile” parameter in project settings UI** \
    Summary:  Previously, customers using our Git integration could store their test coverage in their repository branches by using a parameter called sf.testfile, which allows you to add coverage to your code with SFDX JSON outputs.\
@@ -581,11 +581,11 @@ Basic criteria and methodology: A Cognitive Complexity score is assessed accordi
 
 ***
 
-## Release Notes 24.0.8
+## CodeScan 24.0.8
 
-**Release Date: 10 July 2024**
+**Release date:** 10 July 2024
 
-### New Features&#x20;
+### New features
 
 This update includes several New Features within CodeScan’s Visual Studio Code IDE Extension: &#x20;
 
@@ -645,7 +645,7 @@ This update includes several New Features within CodeScan’s Visual Studio Code
 
 ## CodeScan Polyfill Protection Release
 
-**Release Date: 6 July 2024**
+**Release date:** 6 July 2024
 
 We are excited to announce that CodeScan has been updated with crucial enhancements to address recent security concerns related to polyfills. Recent advisories have highlighted significant threats stemming from polyfills, particularly those distributed via the CDN polyfill.io, which are linked to malware.&#x20;
 
@@ -665,16 +665,16 @@ Recent security advisories highlight the risks associated with compromised polyf
 
 For our SaaS Cloud clients, these updates were included in the most recent maintenance release on July 06, so no action is required on your side.  For our On Prem clients, these rules will be included in the 24.0.8 On Prem release, which is scheduled for July 17.  For our Dedicated Cloud clients, please contact your Account Team to schedule your upgrade. &#x20;
 
-## Release Notes 24.0.7
+## CodeScan 24.0.7
 
-**Release Date: 19 June 2024**
+**Release date:** 19 June 2024
 
-### Rule Updates&#x20;
+### Rule Updates
 
 1. The 'Hard Coded Credentials' rule name has been changed to 'Use Named Credentials' for clarity.&#x20;
 2. 'Use Named Credentials' and 'Field Level Security' rules have updated descriptions highlighting Salesforce best practices and better paths to resolution.
 
-### Bug Fixes&#x20;
+### Fixes
 
 Fixed a false positive in the rule 'Avoid using methods getDescribe and getMap inside Loops' when using custom methods with similar names.&#x20;
 
@@ -684,11 +684,11 @@ Filtering the list by project, the rule now works correctly.&#x20;
 
 New code settings no longer switch depending on the main branch of the project; all branches can be configured independently. A warning will be shown if the setting chosen will have no effect.
 
-## Release Notes 24.0.6
+## CodeScan 24.0.6
 
-**Release Date: 5 June 2024**
+**Release date:** 5 June 2024
 
-### **Summary:**&#x20;
+### Summary:
 
 CodeScan 24.0.6 is comprised of the following 3 enhancements:&#x20;
 
@@ -777,11 +777,11 @@ The released plugin can be updated directly from VSCode and also can be found in
 
 ***
 
-## Release Notes 24.0.5
+## CodeScan 24.0.5
 
-**Release Date: 15 May 2024**
+**Release date:** 15 May 2024
 
-### New Rules
+### New rules
 
 1. **Rule Name:&#x20;**_**“Comment All Hardcoded Values”**_\
    \
@@ -880,11 +880,11 @@ The released plugin can be updated directly from VSCode and also can be found in
 
 ***
 
-## Release Notes 24.0.4
+## CodeScan 24.0.4
 
-**Release Date: 21 April 2024**
+**Release date:** 21 April 2024
 
-### **New Features**
+### New features
 
 In this release, we've added more metadata suffixes as recognized types for Salesforce metadata:
 
@@ -923,9 +923,9 @@ Any suffix with .\[dot] present will be treated as a correct suffix and not be m
 
 ***
 
-## Release Notes 24.0.3
+## CodeScan 24.0.3
 
-**Release Date: 27 March 2024**
+**Release date:** 27 March 2024
 
 This release has several new features that support enhanced user capabilities.
 
@@ -962,7 +962,7 @@ This release has several new features that support enhanced user capabilities.
 
 ***
 
-## Release Notes 24.0.2&#x20;
+## CodeScan 24.0.2
 
 **March 2024**
 
@@ -1017,7 +1017,7 @@ This update introduces several new rules and bug fixes for current rules. This i
 
 ***
 
-## Release Notes 24.0.1 **Feb 2024**
+## Release Notes 24.0.1 Feb 2024
 
 The following items were implemented, fixed, or enhanced with this release:
 

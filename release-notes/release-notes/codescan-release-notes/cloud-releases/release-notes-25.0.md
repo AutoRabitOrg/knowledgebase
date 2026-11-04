@@ -6,9 +6,9 @@ description: Newest CodeScan Releases
 
 ## CodeScan Cloud
 
-## Release Notes 25.0.3
+## CodeScan 25.0.3
 
-**Release Date: 5 March 2025**
+**Release date:** 5 March 2025
 
 ### Summary
 
@@ -58,21 +58,21 @@ public void otherRunAs(){
 }
 ```
 
-## Release Notes 25.0.2
+## CodeScan 25.0.2
 
-**Release Date: 5 February 2025**
+**Release date:** 5 February 2025
 
 ### Summary
 
 CodeScan 25.0.2 is comprised of the following 4 components:
 
-* [1 New Feature](release-notes-25.0.md#new-feature)
-* [1 Enhancement](release-notes-25.0.md#enhancement)
+* [1 New Feature](release-notes-25.0.md#new-features)
+* [1 Enhancement](release-notes-25.0.md#enhancements)
 * [2 Fixes](release-notes-25.0.md#fixes)
 
 Component details are listed in their corresponding sections within this document.
 
-### New Feature
+### New features
 
 1. **Added “Security Hotspots” in CSV Export**\
    \
@@ -98,7 +98,7 @@ Finally, we verified the following scenarios:
 * Verified that all the required fields were included in the exported CSV with correct data.
 * Verified that the resolutions are visible only when the status **Reviewed** is selected.
 
-### Enhancement
+### Enhancements
 
 1. **Enhanced rule “Avoid Classes Without Explicit Sharing" to account for interfaces**\
    \
@@ -112,7 +112,7 @@ Finally, we verified the following scenarios:
    * Violation is not thrown for an interface class, not even when used with/without sharing.
    * Violation is thrown if we only use sharing for classes.
 
-### New Rules
+### New rules
 
 There are no new rules associated with this release.
 
@@ -142,11 +142,11 @@ This was occurring when a user who had previously been either an Auth0 user or a
 
 This assumption, which triggered the issue, has been fully corrected with this fix.
 
-## Release Notes 25.0.1
+## CodeScan 25.0.1
 
-**Release Date: 29 January 2025**
+**Release date:** 29 January 2025
 
-### **Summary**
+### Summary
 
 CodeScan 25.0.1 is comprised of the following 11 components:
 
@@ -157,7 +157,7 @@ CodeScan 25.0.1 is comprised of the following 11 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 1. **Added nCino module**\
    \

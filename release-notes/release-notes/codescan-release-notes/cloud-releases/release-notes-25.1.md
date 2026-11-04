@@ -20,9 +20,9 @@ Please note that there are updated requirements for customers who are using one 
 
 ***
 
-## CodeScan Release 25.1.17
+## CodeScan 25.1.17
 
-**Release Date: 04 January 2026**
+**Release date:** 4 January 2026
 
 ### Summary
 
@@ -34,7 +34,7 @@ CodeScan 25.1.17 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1.     Data Flow Analysis**
 
@@ -78,7 +78,7 @@ Implementing GitLeaks rules within CodeScan provides tremendous value to our cus
 
 These rules run GitLeaks on Salesforce source files to detect hardcoded secrets such as API keys, passwords, OAuth tokens, and private keys. All standard and custom GitLeaks rules are applied, and detected issues are surfaced in CodeScan.
 
-### Rule Enhancements
+### Rule enhancements
 
 **1.     Updated the Apex rule “Unescaped Error Message XSS” to include data flow analysis logic {Rule ID: sf:UnescapedOutput}**
 
@@ -229,11 +229,11 @@ Executed the following scenarios and validated that the advanced logic is workin
 
 1. **Improved License Limit Enforcement**: When a customer exceeds their licensed limits, CodeScan will no longer block access to the platform or restrict any previously licensed features. Customers can continue to use all features they are entitled to without interruption, ensuring uninterrupted workflows while they address licensing limits.
 
-## CodeScan Release 25.1.16
+## CodeScan 25.1.16
 
-**Release Date: 14 December 2025**
+**Release date:** 14 December 2025
 
-### **Summary**
+### Summary
 
 CodeScan 25.1.16 is comprised of the following 4 components:
 
@@ -242,7 +242,7 @@ CodeScan 25.1.16 is comprised of the following 4 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Rule Enhancements
+### Rule enhancements
 
 **1.     Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
 
@@ -415,9 +415,9 @@ We verified the new logic and validated that the rule is now working as original
 
 ***
 
-## CodeScan Release 25.1.15
+## CodeScan 25.1.15
 
-**Release Date: 30 November 2025**
+**Release date:** 30 November 2025
 
 ### Summary
 
@@ -428,7 +428,7 @@ CodeScan 25.1.15 is comprised of the following 4 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Rule Enhancements
+### Rule enhancements
 
 **1.     Enhanced the logic in the CodeScan rule “Unnecessary Boolean Assertion”**
 
@@ -539,9 +539,9 @@ Verified the below scenarios and validated that the fix is working as expected.
 
 ***
 
-## CodeScan Release 25.1.14
+## CodeScan 25.1.14
 
-**Release Date: 16 November 2025**
+**Release date:** 16 November 2025
 
 ### Summary
 
@@ -554,7 +554,7 @@ CodeScan 25.1.14 is comprised of the following 10 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1.     New rules to Identify Potential Sensitive Data /PII Fields**
 
@@ -613,7 +613,7 @@ Verified that **sf:SecurePIIFields** rules are being triggered in following scen
 
 &#x20;
 
-### Rule Enhancements
+### Rule enhancements
 
 &#x20;**1.     Enhanced God Class Rule by adding parameters  {Rule ID: sf:GodClass}**
 
@@ -828,9 +828,9 @@ Verified the sf:HotspotTypeReflection rule by activating the rule in a specified
 
 ***
 
-## CodeScan Release 25.1.13
+## CodeScan 25.1.13
 
-**Release Date: 02 November 2025**
+**Release date:** 2 November 2025
 
 ### Summary
 
@@ -841,7 +841,7 @@ CodeScan 25.1.13 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Rule Enhancements
+### Rule enhancements
 
 &#x20;**1.  Enhanced rule “Field Level Security” {Rule ID: sf:FieldLevelSecurity}**
 
@@ -941,9 +941,9 @@ Verified that users are now able to navigate to the Rule description page. Also 
 
 ***
 
-## CodeScan Release 25.1.12
+## CodeScan 25.1.12
 
-**Release Date: 19 October 2025**
+**Release date:** 19 October 2025
 
 ### Summary
 
@@ -954,7 +954,7 @@ CodeScan 25.1.12 is comprised of the following 3 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1.  Better Management of CodeScan Orgs via Soft Deletion**
 
@@ -1040,9 +1040,9 @@ We have verified the fix of the AvoidAbsoluteURL rule via the following:
 
 ***
 
-## CodeScan Release 25.1.11
+## CodeScan 25.1.11
 
-**Release Date: 5 October 2025**
+**Release date:** 5 October 2025
 
 ### Summary
 
@@ -1054,7 +1054,7 @@ CodeScan 25.1.11 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 1. **Update Project Analysis Subtitle Dynamically**
 
@@ -1102,7 +1102,7 @@ In this updated extension, we have implemented improved synchronization of resol
 
 <figure><img src="../../../../.gitbook/assets/image (4710).png" alt="" width="498"><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 1. **Enhancement to “sf:AvoidLogicInTrigger” Rule**
 
@@ -1217,9 +1217,9 @@ Verified the fix for “Issues Filter is not working with CWE tags” via the fo
 
 ***
 
-## CodeScan Release 25.1.10&#x20;
+## CodeScan 25.1.10
 
-**Release Date: 21 September 2025**
+**Release date:** 21 September 2025
 
 ### Summary
 
@@ -1230,7 +1230,7 @@ CodeScan 25.1.10 is comprised of the following 9 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 1. CodeScan now imposes verification logic on email signup to enhance security. Previously, users were able to register and log in without verifying their email.  We recognize that this could potentially lead to the creation of fake or fraudulent accounts. In this release, we have implemented an email verification via unique links to a one-time verification link.  Additionally, we have added logic that restricts access to functionalities for unverified accounts.\
    \
@@ -1245,7 +1245,7 @@ Component details are listed in their corresponding sections within this documen
 
 <figure><img src="../../../../.gitbook/assets/image (2548).png" alt=""><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 1. **Enhancement to sf:ServerSideRequestForgery Rule**\
    As part of the CodeScan 25.1.2 release (June 2025), we added this new rule (Server Side Request Forgery).  We have had several customers request an enhancement to this rule, as they reported that this rule was not catching all of the SSRF issues.\
@@ -1389,9 +1389,9 @@ Verified the new logic via the following scenarios:\
 
 ***
 
-## CodeScan Release 25.1.9
+## CodeScan 25.1.9
 
-**Release Date: 07 September 2025**
+**Release date:** 7 September 2025
 
 ### Summary
 
@@ -1469,7 +1469,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
 
 <figure><img src="../../../../.gitbook/assets/image (4062).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes&#x20;
+### Fixes
 
 1. Fixed issue with CodeScan rule detecting SOQL Injections, which was causing analyses to break.
 
@@ -1499,11 +1499,11 @@ We have verified the fix for Error When Deleting CodeScan Projects  and validate
 
 ***
 
-## CodeScan Release 25.1.8
+## CodeScan 25.1.8
 
-**Release Date: 31 August 2025**&#x20;
+**Release date:** 31 August 2025
 
-### Summary:&#x20;
+### Summary:
 
 CodeScan 25.1.8 is comprised of the following 1 component:&#x20;
 
@@ -1511,7 +1511,7 @@ CodeScan 25.1.8 is comprised of the following 1 component:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### Fixes&#x20;
+### Fixes
 
 1. Fixed issue where CodeScan Project Analysis jobs getting stuck at "finalizing" stage.&#x20;
 
@@ -1546,11 +1546,11 @@ Also, Verified the category Quality Gates and checked the below details which ar
 
 ***
 
-## CodeScan Release 25.1.7&#x20;
+## CodeScan 25.1.7
 
-#### Release Date: 24 August 2025&#x20;
+#### Release Date: 24 August 2025
 
-### Summary&#x20;
+### Summary
 
 CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
 
@@ -1559,7 +1559,7 @@ CodeScan 25.1.7 is comprised of the following 5 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### New Features&#x20;
+### New features
 
 1. Enable/Disable feature of Mapping to multiple orgs from one SAML Connection at instance level.&#x20;
 
@@ -1588,7 +1588,7 @@ _NOTE:  This feature needs to be enabled in customers’ organizations.  It is N
 _NOTE:  This feature is only available to customers who have a dedicated Instance.  It is not available for customers who are deployed on our SaaS multi-tenant instances._&#x20;
 {% endhint %}
 
-### Fixes&#x20;
+### Fixes
 
 1. **Fixed Broken Documentation Link in Status Module**&#x20;
 
@@ -1651,9 +1651,9 @@ We have verified the fix and have validated that the following scenarios are all
 
 ***
 
-## CodeScan Release 25.1.6
+## CodeScan 25.1.6
 
-**Release Date: 3 August 2025**
+**Release date:** 3 August 2025
 
 ### Summary
 
@@ -1667,7 +1667,7 @@ Component details are listed in their corresponding sections within this documen
 
 &#x20;
 
-### New Features
+### New features
 
 1. **Categories for Project Types**
 
@@ -1872,9 +1872,9 @@ Validated that the proper error message is displayed when invite is sent only to
 
 ***
 
-## CodeScan Release 25.1.5
+## CodeScan 25.1.5
 
-**Release Date: July 20, 2025**
+**Release date:** 20 July 2025
 
 ### Summary
 
@@ -1894,7 +1894,7 @@ Component details are listed in their corresponding sections within this documen
 
 &#x20;
 
-### New Features
+### New features
 
 1. **Support Intelligent Prompts for A.I. LLMs**
 
@@ -2123,7 +2123,7 @@ Now, this is correctly detected as usage — no violation.
 
 <figure><img src="../../../../.gitbook/assets/image (3333).png" alt="" width="518"><figcaption></figcaption></figure>
 
-### Fixes&#x20;
+### Fixes
 
 1. **Fixed issue ARM users recieving an error: “Component can't be null” while running a CodeScan analysis from ARM.**
 
@@ -2311,9 +2311,9 @@ Verified Restricted Access for CodeScan Platform Integration User by validating 
 
 ***
 
-## CodeScan Release 25.1.4
+## CodeScan 25.1.4
 
-**Release Date: 6 July 2025**
+**Release date:** 6 July 2025
 
 ### Summary
 
@@ -2325,7 +2325,7 @@ CodeScan 25.1.4 is comprised of the following 6 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 1\.     Support for Enterprise Git Connections / Configuring & Managing ALM Integrations
 
@@ -2446,9 +2446,9 @@ Validated that all below scenarios are working as expected.
 
 ***
 
-## CodeScan Release 25.1.3
+## CodeScan 25.1.3
 
-**Release Date: 22 June 2025**&#x20;
+**Release date:** 22 June 2025
 
 Summary:
 
@@ -2554,9 +2554,9 @@ Sonar-scanner - 5.0.1.3006V
 
 ***
 
-## CodeScan Release 25.1.2
+## CodeScan 25.1.2
 
-**Release Date: June 11, 2025**&#x20;
+**Release date:** 11 June 2025
 
 ### Summary
 
@@ -2574,9 +2574,9 @@ Component details are listed in their corresponding sections within this documen
 
 &#x20;
 
-### New Features
+### New features
 
-#### 1. CWE Numbers Added to Vulnerability Rule “Unescaped Value Could Cause XSS”
+#### CWE Numbers Added to Vulnerability Rule “Unescaped Value Could Cause XSS”
 
 We have added CWE Number [MITRE CWE-80](http://cwe.mitre.org/data/definitions/80.html) and additional CWE numbers (95 and 470) to the rule “Unescaped Value Could Cause XSS” &#x20;
 
@@ -2723,7 +2723,7 @@ Sometimes expressions are wrapped in unnecessary parentheses, making them look l
 
 This rule has been deprecated. Please remove it from your custom Quality Profile and instead add the rule sf:UselessParentheses as a best practice for code styling.
 
-### New Rules
+### New rules
 
 **1.     Server Side Request Forgery**
 
@@ -3090,9 +3090,9 @@ We have verified the Organization image is now restricted in size, and users are
 
 ***
 
-## CodeScan Release 25.1.1&#x20;
+## CodeScan 25.1.1
 
-**Release Date: May 11, 2025**&#x20;
+**Release date:** 11 May 2025
 
 ### Summary
 
@@ -3102,19 +3102,19 @@ We have verified the Organization image is now restricted in size, and users are
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### **New Features**
+### New features
 
 There are no New Features associated with this release&#x20;
 
-### **Enhancements**&#x20;
+### Enhancements
 
 There are no Enhancements associated with this release&#x20;
 
-### **New Rules**
+### New rules
 
 There are no New Rules associated with this release&#x20;
 
-### **Fixes**
+### Fixes
 
 1. **Fixed an issue with rule tags blocking analyses**&#x20;
 
@@ -3164,9 +3164,9 @@ Verified the IDP Group Mapping flag by Enabling and Disabling the instance is no
 
 ***
 
-## Release Notes 25.1.0&#x20;
+## CodeScan 25.1.0
 
-**Release Date: 20 April 2025**&#x20;
+**Release date:** 20 April 2025
 
 ### Summary
 
@@ -3178,7 +3178,7 @@ CodeScan 25.1.0 is comprised of three main components / features:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### New User Interface&#x20;
+### New User Interface
 
 In this release, we have updated the CodeScan User Interface order to provide four key benefits:&#x20;
 
@@ -3193,11 +3193,11 @@ In this release, we have updated the CodeScan User Interface order to provide fo
 Please note: CodeScan documentation pages will have new images to reflect the latest UI changes over the coming weeks. This should not affect the effectiveness of instruction steps in the meantime.&#x20;
 {% endhint %}
 
-### Technical Architecture Improvements&#x20;
+### Technical Architecture Improvements
 
 * The CodeScan 25.1.0 contains various technical architecture improvements and upgrades to various libraries. We have also included several enhancements to CodeScan’s security architecture.
 
-### **Fixes**
+### Fixes
 
 * Fixed a false positive in the 'sf:AvoidGlobalModifier' rule. The violation is now ignored for global classes used as return types in any global static method.
 

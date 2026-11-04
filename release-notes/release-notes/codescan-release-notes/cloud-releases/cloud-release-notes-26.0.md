@@ -100,28 +100,36 @@ Recommended scanner overrides: sonar.mule.file.suffixes=.txml and sonar.armule.f
 
 For API specifications, use the API quality profile. The default API suffixes are .raml and .yaml; add .json to sonar.api.file.suffixes when analyzing JSON-formatted OpenAPI or Swagger files.
 
-**Important notes**
+**Important Notes**
 
-**Configure .xml in only one Mule suffix setting.**
+**Configure .xml in Only One Mule Suffix Setting**
 
-The setting must match the selected quality profile:
+The suffix configuration must match the selected quality profile:
 
-* **AutoRABIT Mule profile:** set sonar.armule.file.suffixes=.xml,.properties and set sonar.mule.file.suffixes to a suffix your project does not use, for example .txml.
-* **MuleSoft Rules profile:** keep sonar.mule.file.suffixes=.xml and leave sonar.armule.file.suffixes at its default (.properties,.arxml,.arjson).
+* **AutoRABIT Mule profile**: Set sonar.armule.file.suffixes=.xml,.properties and configure sonar.mule.file.suffixes with a file extension that your project does not use, such as .txml.
+* **MuleSoft Rules profile**: Keep sonar.mule.file.suffixes=.xml and leave sonar.armule.file.suffixes at its default value (.properties,.arxml,.arjson).
 
-If .xml is in both settings, the scan stops before analysis with Conflicting Mule file suffixes: '.xml' is configured in both sonar.mule.file.suffixes … and sonar.armule.file.suffixes …. Do not leave sonar.mule.file.suffixes blank, a blank value is treated as .xml and causes the same error.\
-\
-**A profile that doesn't match the suffix settings returns no Mule issues.** If .xml is in only one setting but it does not match the selected profile, the scan succeeds with zero Mule issues and logs a warning that starts with '.xml' is configured in one of the mule file suffixes.\
-**One Mule application per scan base:**\
-The AutoRABIT Mule Analyzer supports one Mule application per scan base. For repositories with several applications, keep the existing MuleSoft Rules profile.\
-**Existing projects don't need changes**\
-Existing MuleSoft Rules projects keep working as they are. If you are migrating from the earlier IZ analyzer, your earlier issue and profile identities do not automatically carry over.\
-**Availability:**\
-These analyzers are available only for hosted CodeScan with the MuleSoft add-on.&#x20;
+**Important**: If .xml is configured in both settings, the scan stops before analysis and reports a conflicting Mule file suffixes error. Do not leave sonar.mule.file.suffixes blank, as a blank value is treated as .xml and causes the same error.
+
+**A Mismatched Profile and Suffix Configuration Returns No Mule Issues**
+
+If .xml is configured in only one setting but does not match the selected quality profile, the scan completes successfully with zero Mule issues. A warning is logged indicating that .xml is configured in one of the Mule file suffix settings.
+
+**One Mule Application per Scan Base**
+
+The AutoRABIT Mule Analyzer supports one Mule application per scan base. For repositories containing multiple applications, retain the existing MuleSoft Rules profile.
+
+**Existing Projects Do Not Require Changes**
+
+Existing MuleSoft Rules projects continue to work without changes. However, when migrating from the earlier IZ analyzer, existing issue and profile identities are not automatically carried over.
+
+**Availability**
+
+These analyzers are available only for hosted AutoRABIT CodeScan with the MuleSoft add-on.
 
 **Outcome**
 
-Customers gain broader Mule application and API-specification coverage through CodeScan, while retaining the existing MuleSoft rules and a single add-on entitlement.
+Customers gain broader Mule application and API specification coverage through AutoRABIT CodeScan while retaining the existing MuleSoft rules and a single add-on entitlement.
 
 ### Application Enhancements
 

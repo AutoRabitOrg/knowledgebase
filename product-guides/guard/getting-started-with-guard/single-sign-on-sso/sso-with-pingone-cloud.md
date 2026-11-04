@@ -56,22 +56,31 @@ The subject and `username` values must match the existing Guard login where user
 
 If PingOne shows different attribute names in your environment, keep them consistent and tell us the exact names you have used.
 
-For admin access, also release an attribute that we can map to `TENANT-MANAGER`. The simplest option in PingOne is a group attribute:
+Guard roles also come from PingOne. Release a group attribute that we can map to the Guard roles:
 
 | SAML attribute name | PingOne attribute | Purpose                                                   |
 | ------------------- | ----------------- | --------------------------------------------------------- |
 | `role`              | Group Names       | Sends the names of the PingOne groups the user belongs to |
 
-Create a PingOne group for Guard admins, for example `Guard Admins`, and tell us the group name. We will map that group to `TENANT-MANAGER` in Keycloak.
+Create two PingOne groups, one for standard users and one for admins:
 
-Agree the exact attribute name and group name with us before go-live. A role assigned only inside Keycloak or Guard does not stick across SSO logins, because the PingOne assertion is checked on every login.
+| PingOne group                     | Who goes in it                                      | Guard role we map it to |
+| --------------------------------- | --------------------------------------------------- | ----------------------- |
+| `Guard users` (or your own name)  | Everyone who should use Guard but not administer it | Standard Guard user     |
+| `Guard Admins` (or your own name) | The people who administer Guard                     | `TENANT-MANAGER`        |
+
+Every Guard user needs to be in one of these two groups. A user who is in neither group signs in without a Guard role. A user only needs to be in the admin group if they administer Guard, as that group gives full admin access.
+
+Tell us both group names exactly as you have created them, including spaces and capital letters. We map each group to its Guard role in Keycloak, and the names have to match.
+
+Agree the exact attribute name and group names with us before go-live. A role assigned only inside Keycloak or Guard does not stick across SSO logins, because the PingOne assertion is checked on every login.
 
 ### Step 4: Assign users and groups
 
 1. Open the Guard application and go to Access.
 2. Add every user or group that should access Guard. Users need to exist in the PingOne environment and be enabled for the application before they can sign in.
-3. Make sure Guard admins belong to the admin group in Step 3.
-4. Everyone else receives standard Guard user access (after we finish the Keycloak mapping).
+3. Put every Guard user into one of the two groups from Step 3, admins in the admin group and everyone else in the standard user group.
+4. Make sure Guard admins belong to the admin group and not only to the standard user group.
 
 ### Step 5: Download the IdP metadata and send it to us
 
@@ -83,7 +92,7 @@ Reply to us with:
 
 * The IdP metadata XML file, or the metadata URL
 * The attribute names you configured (`saml_subject`, `firstName`, `lastName`, `email`, `username` and `role`, or your equivalents)
-* The name of the PingOne group that identifies Guard admins
+* The names of both PingOne groups, the standard user group and the admin group
 * Confirmation that the subject and `username` values match existing Guard logins (usually email)
 * Your preferred button label on the Guard login page (for example `Contoso SSO`)
 
@@ -109,10 +118,11 @@ Some organisations require encrypted SAML assertions. If you need this:
 
 ### Troubleshooting
 
-| Symptom                                                           | What to check                                                                                                                                                          |
-| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User reaches Guard as the wrong person or with an opaque username | Subject NameID Format is not set to Email, or the `saml_subject` or `username` attribute does not match the Guard login. Prefer email and check the mapping in Step 3. |
-| Admin loses admin rights after the next SSO login                 | The admin is not in the PingOne admin group, or the `role` attribute is not being sent.                                                                                |
-| First or last name is blank in Guard                              | The `firstName` or `lastName` mapping is missing, or it is named differently from what we mapped.                                                                      |
-| Login fails after a URL change                                    | The ACS URL or Entity ID in PingOne no longer matches the values we configured. Ask us before changing them.                                                           |
-| User is told they cannot access the application in PingOne        | The user has not been given access to the Guard application. Check Step 4.                                                                                             |
+| Symptom                                                           | What to check                                                                                                                                                              |
+| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User reaches Guard as the wrong person or with an opaque username | Subject NameID Format is not set to Email, or the `saml_subject` or `username` attribute does not match the Guard login. Prefer email and check the mapping in Step 3.     |
+| Admin loses admin rights after the next SSO login                 | The admin is not in the PingOne admin group, or the `role` attribute is not being sent.                                                                                    |
+| Standard user has no Guard access or the wrong access after SSO   | The user is not in the standard user group in PingOne, or the group name does not match what we mapped. Every Guard user needs to be in one of the two groups from Step 3. |
+| First or last name is blank in Guard                              | The `firstName` or `lastName` mapping is missing, or it is named differently from what we mapped.                                                                          |
+| Login fails after a URL change                                    | The ACS URL or Entity ID in PingOne no longer matches the values we configured. Ask us before changing them.                                                               |
+| User is told they cannot access the application in PingOne        | The user has not been given access to the Guard application. Check Step 4.                                                                                                 |

@@ -71,5 +71,5 @@ Example:
 To configure a webhook:
 
 * Enable the **auto update on webhook** checkbox to display the webhook URL.
-* For setup in other repository types, refer to the [Webhook Guide](file://product-guides/arm/arm-features/webhooks).
-* To integrate with external smart commit systems, see the [Version Control Repositories Summary](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+* For setup in other repository types, refer to the [Webhook Guide](README.md).
+* To integrate with external smart commit systems, see the [Version Control Repositories Summary](../version-control/introduction-to-version-control/version-control-repositories-summary.md).

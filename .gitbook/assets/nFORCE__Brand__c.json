@@ -1,0 +1,4 @@
+{
+  "name": "nFORCE__Brand__c",
+  "query": "Select Id From nFORCE__Brand__c Where Id \u003d \u0027a1uKa000000NwxxIAC\u0027"
+}

@@ -65,7 +65,7 @@ A new AI Users & Billing administration page provides visibility into AI credit 
 
 Administrators can monitor high-consumption users, allocate AI access and limits at the individual level, and manage their shared monthly credit entitlement more predictably.
 
-<figure><img src="../../../../.gitbook/assets/image (5502).png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2026-11-04 at 4.59.00 PM.png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
 
 #### 3. AutoRABIT Mule and API Analyzers
 
@@ -76,7 +76,7 @@ CodeScan expands the existing MuleSoft add-on with two analyzers: AutoRABIT Mule
 **Behavior**
 
 * AutoRABIT Mule Analyzer 3.0: 166 rules for Mule application-level analysis; optional auto-fix and Mule metrics.
-* AutoRABIT API Analyzer 26.4.1: 51 rules for RAML 0.8/1.0, OpenAPI 3.0, and Swagger 2.0 specifications in YAML or JSON; optional auto-fix.
+* AutoRABIT API Analyzer 26.4.1: 51 rules for RAML 0.8/1.0, OpenAPI 3.0.0, and Swagger 2.0 specifications in YAML or JSON; optional auto-fix.
 * Existing MuleSoft Rules: 28 Mule 4 and 18 Mule 3 file-level rules remain unchanged.
 
 **Quality Profiles:** From Quality Profiles, select the AutoRABIT Mule profile (166 rules) for Mule application analysis, or the API profile (51 rules) for API specification analysis. The API profile is built in and is the default for the API language. The AutoRABIT Mule profile is built in but does not automatically replace the existing MuleSoft default; it may show DEFAULT after an organization selects it as its default.
@@ -102,10 +102,22 @@ For API specifications, use the API quality profile. The default API suffixes ar
 
 **Important notes**
 
-* AutoRABIT Mule and existing MuleSoft rules should not process the same XML files in one scan; a duplicate metric error can occur if .xml is configured in both Mule suffix settings.
-* The AutoRABIT Mule Analyzer supports one Mule application per scan base. For multi-application repositories, retain the existing MuleSoft Rules profile.
-* Existing MuleSoft Rules projects do not need configuration changes. If migrating from the earlier IZ analyzer, historical issue and profile identities do not automatically carry over.
-* These analyzers are available on hosted CodeScan with the MuleSoft add-on; on-premises SonarQube is not supported.
+**Configure .xml in only one Mule suffix setting.**
+
+The setting must match the selected quality profile:
+
+* **AutoRABIT Mule profile:** set sonar.armule.file.suffixes=.xml,.properties and set sonar.mule.file.suffixes to a suffix your project does not use, for example .txml.
+* **MuleSoft Rules profile:** keep sonar.mule.file.suffixes=.xml and leave sonar.armule.file.suffixes at its default (.properties,.arxml,.arjson).
+
+If .xml is in both settings, the scan stops before analysis with Conflicting Mule file suffixes: '.xml' is configured in both sonar.mule.file.suffixes … and sonar.armule.file.suffixes …. Do not leave sonar.mule.file.suffixes blank, a blank value is treated as .xml and causes the same error.\
+\
+**A profile that doesn't match the suffix settings returns no Mule issues.** If .xml is in only one setting but it does not match the selected profile, the scan succeeds with zero Mule issues and logs a warning that starts with '.xml' is configured in one of the mule file suffixes.\
+**One Mule application per scan base:**\
+The AutoRABIT Mule Analyzer supports one Mule application per scan base. For repositories with several applications, keep the existing MuleSoft Rules profile.\
+**Existing projects don't need changes**\
+Existing MuleSoft Rules projects keep working as they are. If you are migrating from the earlier IZ analyzer, your earlier issue and profile identities do not automatically carry over.\
+**Availability:**\
+These analyzers are available only for hosted CodeScan with the MuleSoft add-on.&#x20;
 
 **Outcome**
 
@@ -113,11 +125,11 @@ Customers gain broader Mule application and API-specification coverage through C
 
 ### Application Enhancements
 
-#### 1. AI CodeFix Pull Requests for Bitbucket Cloud
+#### 1. AI Code Assistant support for Bitbucket Cloud Pull Requests
 
 **Description**
 
-AI CodeFix can now create pull requests in Bitbucket Cloud repositories, extending the existing GitHub and GitLab workflow.
+AI Code Assistant can now create pull requests in Bitbucket Cloud repositories, extending the existing GitHub and GitLab workflow.
 
 **Behavior**
 

@@ -24,10 +24,13 @@ You need:
 
 Enter these values:
 
-| Field     | Value                  |
-| --------- | ---------------------- |
-| ACS URL   | The Single sign-on URL |
-| Entity ID | The Entity ID          |
+| Field                 | Value                  |
+| --------------------- | ---------------------- |
+| ACS URL               | The Single sign-on URL |
+| Entity ID             | The Entity ID          |
+| Subject NameID Format | Email                  |
+
+Set Subject NameID Format to Email so PingOne sends the user email address as the subject of the SAML response. In PingOne this shows as `urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress`. Guard uses this value to match the user to their Guard account, so it needs to be the same value as the Guard login, usually the email address.
 
 Leave the other settings at their PingOne defaults. In particular, keep the default signing key and keep responses or assertions signed. PingOne cannot connect to Guard until Keycloak has been configured with this application, so do not test the connection yet.
 
@@ -106,10 +109,10 @@ Some organisations require encrypted SAML assertions. If you need this:
 
 ### Troubleshooting
 
-| Symptom                                                           | What to check                                                                                                            |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| User reaches Guard as the wrong person or with an opaque username | `saml_subject` or the `username` attribute does not match the Guard login. Prefer email and check the mapping in Step 3. |
-| Admin loses admin rights after the next SSO login                 | The admin is not in the PingOne admin group, or the `role` attribute is not being sent.                                  |
-| First or last name is blank in Guard                              | The `firstName` or `lastName` mapping is missing, or it is named differently from what we mapped.                        |
-| Login fails after a URL change                                    | The ACS URL or Entity ID in PingOne no longer matches the values we configured. Ask us before changing them.             |
-| User is told they cannot access the application in PingOne        | The user has not been given access to the Guard application. Check Step 4.                                               |
+| Symptom                                                           | What to check                                                                                                                                                          |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User reaches Guard as the wrong person or with an opaque username | Subject NameID Format is not set to Email, or the `saml_subject` or `username` attribute does not match the Guard login. Prefer email and check the mapping in Step 3. |
+| Admin loses admin rights after the next SSO login                 | The admin is not in the PingOne admin group, or the `role` attribute is not being sent.                                                                                |
+| First or last name is blank in Guard                              | The `firstName` or `lastName` mapping is missing, or it is named differently from what we mapped.                                                                      |
+| Login fails after a URL change                                    | The ACS URL or Entity ID in PingOne no longer matches the values we configured. Ask us before changing them.                                                           |
+| User is told they cannot access the application in PingOne        | The user has not been given access to the Guard application. Check Step 4.                                                                                             |

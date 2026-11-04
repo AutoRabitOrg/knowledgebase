@@ -2,13 +2,13 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Guard Release Notes Mailing List:" listId="a085e26e7e" %}
 
-## Guard 25.2.9 Release Notes
+## Guard 25.2.9
 
-**Release Date:  3 December 2025**&#x20;
+**Release date:** 3 December 2025
 
-### New Features&#x20;
+### New features
 
-#### Embedded Virtual Assistant&#x20;
+#### Embedded Virtual Assistant
 
 A new in-product chatbot that provides real-time guidance on product features, navigation, troubleshooting, and best practices.&#x20;
 
@@ -19,9 +19,9 @@ Includes:&#x20;
 * Documentation-backed responses&#x20;
 * Smart fallback and escalation to Support&#x20;
 
-### Enhancements&#x20;
+### Enhancements
 
-#### Permissions Explorer Enhancements&#x20;
+#### Permissions Explorer Enhancements
 
 **Permission History**&#x20;
 
@@ -38,15 +38,15 @@ A new view selector supports switching between:&#x20;
 
 Available in both Permissions Explorer and Explore Object Access.&#x20;
 
-#### Session-Wide Org Preselection&#x20;
+#### Session-Wide Org Preselection
 
 Selecting a Salesforce org in any feature now auto-selects it across all features for the duration of the session. Logging out clears the selection.&#x20;
 
-#### Salesforce Orgs Accessible from Main Menu&#x20;
+#### Salesforce Orgs Accessible from Main Menu
 
 Salesforce orgs are now directly accessible from the main navigation menu, improving discoverability and reducing navigation steps.&#x20;
 
-#### Tenant Name Displayed in UI&#x20;
+#### Tenant Name Displayed in UI
 
 Users can now see their tenant's name next to the Release version in the bottom-left corner of the interface, providing better environment awareness.&#x20;
 
@@ -54,13 +54,13 @@ Users can now see their tenant's name next to the Release version in the bottom-
 
 The platform has been upgraded to Spring Boot 4.0 for enhanced performance, security, and framework stability. &#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Missing Salesforce Field&#x20;
+#### Missing Salesforce Field
 
 User Activity Monitoring now works even in orgs missing the User.LastPasswordChangeDate field, preventing GQL errors.&#x20;
 
-#### **Risk Assessment**&#x20;
+#### Risk Assessment
 
 Multiple issues have been fixed, including:&#x20;
 
@@ -70,90 +70,90 @@ Multiple issues have been fixed, including:&#x20;
 
 ***
 
-## Guard 25.2.8 Release Notes&#x20;
+## Guard 25.2.8
 
-**Release Date:  26 November 2025**&#x20;
+**Release date:** 26 November 2025
 
-### Improvements&#x20;
+### Enhancements
 
-#### Salesforce Org Dashboard Enhancements&#x20;
+#### Salesforce Org Dashboard Enhancements
 
 * Added Change Monitoring and Data Classification widgets to the Salesforce Org Dashboard.&#x20;
 * Widgets link directly to their respective feature pages.&#x20;
 * Updated the Executive Report to include Change Monitoring and Data Classification insights.
 
-#### Password Hints&#x20;
+#### Password Hints
 
 * Added clear password requirement hints to the New Password screen.
 * Helps users understand the strict password criteria and successfully set up their account.&#x20;
 
-### &#x20;Bug Fixes&#x20;
+### Fixes
 
-#### Risk Assessment: Certificate Values&#x20;
+#### Risk Assessment: Certificate Values
 
 * Fixed the formatting of certificate details.
 * Shows “No certificate created” when no certificates are available.&#x20;
 
-#### “Sync to Salesforce” button&#x20;
+#### “Sync to Salesforce” button
 
 * Fixed an issue with the Sync to Salesforce button appearing multiple times in Data Classification.
 
-#### Placeholder in Permission Explorer&#x20;
+#### Placeholder in Permission Explorer
 
 * Improved placeholder text shown in the Permission Explorer.&#x20;
 * The placeholder now displays the intended guidance.&#x20;
 
 ***
 
-## Guard 25.2.7 Release Notes&#x20;
+## Guard 25.2.7
 
-**Release Date: 29 October 2025**&#x20;
+**Release date:** 29 October 2025
 
-### New Features & Enhancements&#x20;
+### New Features & Enhancements
 
-#### API Security Dashboard&#x20;
+#### API Security Dashboard
 
 Gain deeper insight into your connected apps and organizational exposure with the enhanced API Security Dashboard. &#x20;
 
 View key risk metrics, filter results by org, explore detailed app information, and export data for further analysis — all from a responsive, easy-to-use interface.&#x20;
 
-#### Permissions Explorer – Support All Permissions&#x20;
+#### Permissions Explorer – Support All Permissions
 
 The Permissions Explorer now automatically supports all available Salesforce permissions, giving you a complete view of your org’s access setup. &#x20;
 
 A new “Other” category dynamically lists uncategorized permissions, ensuring nothing is missed and reducing manual effort.&#x20;
 
-#### Permissions Explorer – Object Permissions Saved Queries&#x20;
+#### Permissions Explorer – Object Permissions Saved Queries
 
 You can now save custom Object Permission queries with names and descriptions, making it easy to revisit important configurations without rebuilding them each time.&#x20;
 
-#### Help Section Improvements&#x20;
+#### Help Section Improvements
 
 Access to support resources is now simpler. The Help menu has been redesigned to include quick links to the Support Portal, Guard Product Guide, and Support Login Access.&#x20;
 
-#### Guard Home Page Update&#x20;
+#### Guard Home Page Update
 
 The Guard home page now features interactive cards that highlight recently added features. Each card links directly to its feature page for quick navigation, and the updated Change Monitoring card reflects the latest functionality for easier discovery.&#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Permissions Explorer Field Error&#x20;
+#### Permissions Explorer Field Error
 
 Fixed an issue where the “Approve Uninstalled Connected Apps” permission caused an error indicating that the field PermissionsCanApproveUninstalledApps did not exist in the PermissionSet entity. &#x20;
 
-#### Permissions Explorer Not Displaying Permissions&#x20;
+#### Permissions Explorer Not Displaying Permissions
 
 Resolved an issue where some permissions were not displaying correctly in the Custom Explorer view for some environments. Permissions now load correctly under their respective categories.
 
 ***
 
-## Guard 25.2.6 Release Notes&#x20;
+## Guard 25.2.6
 
-**Release Date: 15 October 2025**&#x20;
+**Release date:** 15 October 2025
 
-### New Features
+### New features
 
-#### Sync Data Classification Results to Salesforce&#x20;
+#### Sync Data Classification Results to Salesforce
 
 We’re thrilled to announce that users can now sync Data Classification results directly back to their Salesforce org. This closes the loop between AutoRABIT Guard and Salesforce, keeping compliance data consistent and up to date.&#x20;
 
@@ -166,7 +166,7 @@ We’re thrilled to announce that users can now sync Data Classification results
 
 **Impact:** Automates alignment between Guard and Salesforce for compliance data — reducing manual effort, errors, and audit risk.&#x20;
 
-#### Salesforce Org Summary Dashboard&#x20;
+#### Salesforce Org Summary Dashboard
 
 A brand-new Org Summary Dashboard provides a unified overview of an org’s health, compliance, and risk posture.&#x20;
 
@@ -181,7 +181,7 @@ A brand-new Org Summary Dashboard provides a unified overview of an org’s heal
 
 **Impact:** Gives customers an executive-level view of org performance and compliance in one place.&#x20;
 
-#### Support Login Access for Secure, Audited Troubleshooting&#x20;
+#### Support Login Access for Secure, Audited Troubleshooting
 
 We’re introducing Support Login Access—a secure, auditable way for AutoRABIT Support Engineers to access Guard instances with customer approval and full transparency.&#x20;
 
@@ -194,34 +194,34 @@ We’re introducing Support Login Access—a secure, auditable way for AutoRABIT
 
 **Impact:** Faster issue resolution with complete transparency, security, and customer control.&#x20;
 
-### Enhancements&#x20;
+### Enhancements
 
-#### Re-authentication for Salesforce Orgs&#x20;
+#### Re-authentication for Salesforce Orgs
 
 We’ve added a “Reauthenticate” button to simplify reconnecting Salesforce orgs without deleting them.&#x20;
 
 **Impact:** No more data loss when tokens expire—orgs, access controls, and rules stay intact.&#x20;
 
-#### Display Risk Level of Changes in Change Monitoring&#x20;
+#### Display Risk Level of Changes in Change Monitoring
 
 **Module:** Change Monitoring \
 Risk levels (Low, Medium, High) are now visually displayed for each change.&#x20;
 
 **Impact:** Greater visibility into risky activities and faster prioritization of security review.&#x20;
 
-#### Capture Detailed Profile Permission Changes in Change Monitoring&#x20;
+#### Capture Detailed Profile Permission Changes in Change Monitoring
 
 Change Monitoring now records granular details when user permissions change on Profiles, aligning with existing tracking for Permission Sets.&#x20;
 
 **Impact:** Improved traceability and audit accuracy, enabling downstream features.&#x20;
 
-#### Tabular View in Risk Assessment&#x20;
+#### Tabular View in Risk Assessment
 
 Introduced an alternative table view for displaying risks, complete with sorting and filtering by name or properties.&#x20;
 
 **Impact:** Simplifies navigation and analysis, especially for large number of orgs.&#x20;
 
-#### Separated Status and Severity in Risk Assessment&#x20;
+#### Separated Status and Severity in Risk Assessment
 
 The previous single “Status” field was split into two:&#x20;
 
@@ -230,14 +230,14 @@ The previous single “Status” field was split into two:&#x20;
 
 **Impact:** Improves clarity, ensuring severity and progress are tracked distinctly.&#x20;
 
-#### Org Selection from Main Detail Page in Permissions Explorer&#x20;
+#### Org Selection from Main Detail Page in Permissions Explorer
 
 Added the ability to change the org directly from the main detail page, streamlining workflows.&#x20;
 
 **Impact:** \
 Saves time for admins managing multiple orgs.&#x20;
 
-#### Show/Hide Frozen Users in Permissions Explorer&#x20;
+#### Show/Hide Frozen Users in Permissions Explorer
 
 Added a new “Show Frozen Users” checkbox in Custom Explorer.&#x20;
 
@@ -247,9 +247,9 @@ Added a new “Show Frozen Users” checkbox in Custom Explorer.&#x20;
 **Impact:** \
 Provides clarity and control in results interpretation.&#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Notification Rules in Delete Org Confirmation Modal&#x20;
+#### Notification Rules in Delete Org Confirmation Modal
 
 Fixed an issue where the Delete Org confirmation modal displayed unrelated notification rules.&#x20;
 
@@ -258,11 +258,11 @@ Now shows only items tied to the org being deleted, eliminating confusion.
 
 ***
 
-## Guard 25.2.5 Release Notes&#x20;
+## Guard 25.2.5
 
-**Release Date**: 24 September 2025
+**Release date:** 24 September 2025
 
-### User Activity Monitoring&#x20;
+### User Activity Monitoring
 
 A new User Activity Monitoring section is now available under Compliance, giving admins real-time visibility into Salesforce users' activity.&#x20;
 
@@ -274,7 +274,7 @@ A new User Activity Monitoring section is now available under Compliance, giving
 
 **Why it matters**: Strengthens compliance visibility and enables proactive security monitoring of user behavior.&#x20;
 
-### Change Monitoring Notifications&#x20;
+### Change Monitoring Notifications
 
 We’ve introduced a dedicated Real-time Change Notifications section with pre-built notification templates, making it easier to detect and respond to critical security-related changes.&#x20;
 
@@ -293,7 +293,7 @@ We’ve introduced a dedicated Real-time Change Notifications section with pre-b
 
 **Why it matters**: Helps enforce Compliance requirements and ensures visibility into high-impact configuration changes.
 
-### Tenant Data Expiration & Deletion&#x20;
+### Tenant Data Expiration & Deletion
 
 Tenant data now has a mandatory expiration time to enforce lifecycle management.&#x20;
 
@@ -305,7 +305,7 @@ Tenant data now has a mandatory expiration time to enforce lifecycle management.
 
 **Why it matters**: Ensures consistent data lifecycle management and enforces retention limits.&#x20;
 
-### Event Logging & Audit Records&#x20;
+### Event Logging & Audit Records
 
 The platform now provides comprehensive event logging to strengthen accountability and monitoring.&#x20;
 
@@ -317,7 +317,7 @@ The platform now provides comprehensive event logging to strengthen accountabili
 
 **Why it matters**: Provides robust traceability and supports effective security investigations.&#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
 * Salesforce Org Registration OAuth Error: Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures. &#x20;
 * Password Reset Flow: Password policy error messages now clearly display complete requirements&#x20;
@@ -327,9 +327,9 @@ The platform now provides comprehensive event logging to strengthen accountabili
 
 ***
 
-## Guard 25.2.4.3 Release Notes
+## Guard 25.2.4.3
 
-**Release Date**: 15 September 2025
+**Release date:** 15 September 2025
 
 ### Enhanced Export Capabilities
 
@@ -346,22 +346,22 @@ The platform now provides comprehensive event logging to strengthen accountabili
   * Customers can now export all data from the **API Security** page into a CSV file.
   * This export provides a complete view of connected applications and their security posture.
 
-### Other Enhancements
+### Enhancements
 
 * Copy as JSON
   * A new **“Copy as JSON”** button has been added to the Permissions Explorer.
 
 This feature allows users to copy the **entire JSON response**, which simplifies troubleshooting, data sharing, and downstream analysis.
 
-### Bug Fixes
+### Fixes
 
 * Implemented additional APIs and added extended logs for deeper insights during troubleshooting, improving visibility into system operations.
 
 ***
 
-## Guard 25.2.4 Release Notes
+## Guard 25.2.4
 
-**Release Date: 10 September 2025**
+**Release date:** 10 September 2025
 
 ### API Security
 
@@ -414,7 +414,7 @@ These changes make Risk Assessment more accessible for both technical and non-te
 * Improved Icon Visibility: Table header icons are now larger and easier to read, improving accessibility and UI consistency.
 * Data Classification Transparency: A new “Non-Started” state prevents confusion and allows users to trigger analysis manually when needed.
 
-### Bug Fixes
+### Fixes
 
 * Data Classification Export: Email notifications correctly include attached exports.
 * Permissions Explorer: Accurate Access visibility ensured.
@@ -427,9 +427,9 @@ These changes make Risk Assessment more accessible for both technical and non-te
 
 ***
 
-## Guard 25.2.3 Release Notes
+## Guard 25.2.3
 
-**Release Date: 20 August 2025**
+**Release date:** 20 August 2025
 
 ### New User Creation Simplified
 
@@ -469,20 +469,20 @@ Guard now supports **Single Sign-On (SSO)** using **encrypted SAML assertions**.
 * Reduced risk of data interception or tampering.
 * Compliance with **federal security standards**.
 
-### Bug Fixes
+### Fixes
 
 * **User Unlocking**: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
 
-### Other Enhancements
+### Enhancements
 
 * **Security & Compliance**: We have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
 * Implemented a few back-end optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable user experience.
 
 ***
 
-## Guard 25.2.2 Release Notes
+## Guard 25.2.2
 
-**Release Date: 23 July 2025**
+**Release date:** 23 July 2025
 
 1. Risk Assessment is goal-oriented now!
 
@@ -536,7 +536,7 @@ To improve application navigation, in this release we have added a new menu:
 
 <figure><img src="../../../.gitbook/assets/image (1932).png" alt=""><figcaption></figcaption></figure>
 
-### Bug Fixes
+### Fixes
 
 1\.      Zoho desk link now works as expected.
 

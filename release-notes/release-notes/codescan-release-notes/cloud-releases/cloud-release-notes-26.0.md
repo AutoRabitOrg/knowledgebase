@@ -183,7 +183,7 @@ The Flow Naming rule now more closely follows the SFXD Flow Naming Conventions, 
 **Behavior**
 
 * Screen (SCR), Event (EVT), and Scheduled (SCH) flows follow \<Domain/Object>\_\<FLOWTYPECODE>\_\<Description>. The flow type code must be uppercase.
-* Record-triggered flows follow \<Domain/Object>\_\<Context>\[\_\<Description>], with an optional description. The context can use any letter case.
+* Record-triggered flows follow \<Domain/Object>\_\<Context>\_\<Description>. The context can use any letter case.
 * The domain/object segment starts with an uppercase letter. Descriptions can use any letter case.
 * Improved trigger-context validation prevents incorrectly structured names; record-triggered names do not require an additional TRG prefix.
 
@@ -193,7 +193,6 @@ Valid naming examples
 * Opportunity\_EVT\_NotifyOwner  (Event flow)
 * Account\_SCH\_ArchiveInactiveRecords  (Scheduled flow)
 * Account\_beforeDelete\_PreventDeletion  (Record-triggered; lowercase context allowed)
-* Opportunity\_AfterUpdate  (Record-triggered; optional description omitted)
 
 **Outcome**
 

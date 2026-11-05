@@ -102,7 +102,7 @@
     10. **Enable Serial Mode for Bulk API**\
         Enable this toggle to process Bulk API operations sequentially (one after another) to reduce the risk of record-locking or related execution errors.
 
-    <figure><img src="../../../.gitbook/assets/17 - Live Masking (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/17 - Live Masking.png" alt=""><figcaption></figcaption></figure>
 35. The **“Masking Info”** section of the **“Config Details”** page will provide information about the list of rules created per object.
 
     <figure><img src="../../../.gitbook/assets/18 - Live Masking.png" alt=""><figcaption></figcaption></figure>
@@ -231,4 +231,3 @@ Select the required fields from the list using the checkboxes.
 (Optional) Enable **Add to Org - 'Org Name' Masking Rules List** to save the rule at the org level.
 
 Click **SAVE** to create the masking rule.
-

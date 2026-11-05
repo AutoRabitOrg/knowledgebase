@@ -60,7 +60,7 @@ CodeScan offers MFA/2FA to further support account privacy and security. This do
 
     * Click the **checkbox** next to **`I have safely recorded this code`** to confirm you have recorded it and continue.
 
-    <figure><img src="../../../.gitbook/assets/image (457).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (456).png" alt=""><figcaption></figcaption></figure>
 
 **And you have set your 2FA!!**
 
@@ -92,10 +92,10 @@ The CodeScan login screen allows you to log in to your instance.
 
 ### Getting Started with CodeScan Cloud <a href="#getting-started-with-codescan-cloud" id="getting-started-with-codescan-cloud"></a>
 
-There are three steps to get CodeScan Cloud working for you.&#x20;
+There are three steps to get CodeScan Cloud working for you.
 
-1. Defining Your Standards&#x20;
-2. Achieving Visibility&#x20;
+1. Defining Your Standards
+2. Achieving Visibility
 3. Enforcing Your Standards
 
 The following sections will include links to articles to help you set up CodeScan through these three steps.

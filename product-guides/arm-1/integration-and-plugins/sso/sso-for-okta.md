@@ -16,7 +16,7 @@ To add the AutoRABIT application to Okta:
 
 4. From the main menu, go to **Applications > Applications.**
 
-<figure><img src="../../../../.gitbook/assets/image (3205).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2693).png" alt="" width="185"><figcaption></figcaption></figure>
 
 5. Click on **Create App Integration.**
 
@@ -57,7 +57,7 @@ To add the AutoRABIT application to Okta:
 
 <figure><img src="../../../../.gitbook/assets/image (3213).png" alt="" width="511"><figcaption></figcaption></figure>
 
-14. After you assign the user, click on **Save and Go Back** and then click  **Done**.
+14. After you assign the user, click on **Save and Go Back** and then click **Done**.
 
 <figure><img src="../../../../.gitbook/assets/image (3214).png" alt="" width="525"><figcaption></figcaption></figure>
 
@@ -67,7 +67,7 @@ To add the AutoRABIT application to Okta:
 
 <figure><img src="../../../../.gitbook/assets/image (3216).png" alt="" width="369"><figcaption></figcaption></figure>
 
-16. This will open up a new tab with some data. You must save this data in XML format on your own system. When you press **CTRL + S**, the data is downloaded in XML format.&#x20;
+16. This will open up a new tab with some data. You must save this data in XML format on your own system. When you press **CTRL + S**, the data is downloaded in XML format.
 
 <figure><img src="../../../../.gitbook/assets/image (3217).png" alt="" width="563"><figcaption></figcaption></figure>
 

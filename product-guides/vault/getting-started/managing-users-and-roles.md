@@ -94,7 +94,7 @@ After you’ve created a user, you can change most of their information and perm
 1. By default, all existing sub-users have access to all of the Salesforce Orgs registered. However, the Org Administrator can redefine their sub-users' access to the Salesforce Orgs on the **Manage Users** screen.
 2.  The logged-in administrator's details are disabled and cannot be edited.
 
-    <figure><img src="../../../.gitbook/assets/image (604).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (598).png" alt=""><figcaption></figcaption></figure>
 {% endhint %}
 
 ### Suspending Users <a href="#suspending-users" id="suspending-users"></a>

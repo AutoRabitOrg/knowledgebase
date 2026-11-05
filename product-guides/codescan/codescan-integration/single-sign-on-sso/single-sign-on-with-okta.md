@@ -137,17 +137,15 @@ Once the application is created, you will need to enter the identity provider da
     *   Copy the content of the downloaded certificate \[_refer to **Step 2** above to download the certificate_] into the **`X509 Signing Certificate`** field of Codescan SAML connection.<br>
 
         <figure><img src="../../../../.gitbook/assets/image (2122).png" alt=""><figcaption></figcaption></figure>
-8. Make sure the "Include user as Member to current Organization" checkbox is enabled under Groups synchronization.&#x20;
+8. Make sure the "Include user as Member to current Organization" checkbox is enabled under Groups synchronization.
 9. Click **`Update`** on the CodeScan page.
 10. The next step is to confirm your corporate domain to get the SSO working. You can confirm domain by raising a request via [Codescan Support](https://mailto:support@autorabit.com/).
 
 ### Step 4: Testing the Single Sign-On Configuration <a href="#step-4-testing-the-single-signon-configuration" id="step-4-testing-the-single-signon-configuration"></a>
 
 1. Log out of the CodeScan Console, and then log back in using the **`Log in with SAML2`** option.\
-   ![](<../../../../.gitbook/assets/image (3056).png>)
+   ![](<../../../../.gitbook/assets/image (2126).png>)
 2. Enter the corporate domain name you have configured when enabling SSO inside CodeScan in the **`Your Company email`** field. **For example**- _`autorabit.com`_
 3. You should successfully redirect to the CodeScan **`Organization`** page after authentication.
-
-
 
 Here is a sample document from OKTA on how to set up network zones that restrict access to apps registered in OKTA: [https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm](https://help.okta.com/oie/en-us/content/topics/security/network/network-zones.htm).

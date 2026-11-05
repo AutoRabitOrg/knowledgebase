@@ -100,7 +100,7 @@ ARM compares metadata changes between branches/orgs. RED indicates deletions or 
 
 <figure><img src="../../../../../.gitbook/assets/image (4328).png" alt="Metadata diff showing insertions and deletions"><figcaption><p>Metadata diff view</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (4330).png" alt="Expanded inline diff with download option"><figcaption><p>Inline diff and download options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4329).png" alt="Expanded inline diff with download option"><figcaption><p>Inline diff and download options</p></figcaption></figure>
 
 ## Commit Status Types
 

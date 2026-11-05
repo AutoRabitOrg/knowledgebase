@@ -39,10 +39,10 @@ When a user signs in, ARM requests browser permission to access location service
 
 1.  In **Admin › Users**, click **Export All Users** in the upper-right corner.
 
-    <figure><img src="../../../../.gitbook/assets/image (3760).png" alt="Export All Users button on the Users page"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (807).png" alt="Export All Users button on the Users page"><figcaption></figcaption></figure>
 2.  In the pop-up, choose which fields to include, then click **Export**.
 
-    <figure><img src="../../../../.gitbook/assets/image (3761).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (808).png" alt="Field-selection dialog for CSV export" width="511"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Core identity fields—**First Name, Last Name, Status, Email, Login Name**—are preselected.\

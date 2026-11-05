@@ -1,0 +1,219 @@
+---
+description: >-
+  Run IZ Suite on a single VM with Docker Compose for a proof of concept or
+  trial.
+---
+
+# Proof of Concept Installation
+
+A proof of concept runs every IZ Suite component on one VM with Docker Compose: PostgreSQL, the server, a worker and an agent. A start script generates the secrets, downloads the images and starts everything.
+
+{% hint style="warning" %}
+
+
+**HINT (warning):** Before you start, make sure you have:
+
+* A licence key from AutoRABIT.
+* An x86-64 VM sized as in [Requirements & Sizing](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/requirements-and-sizing): at least 4 vCPU, 16 GB RAM and 100 GB disk for a trial.
+* Outbound HTTPS from the VM to `public.ecr.aws` and to the platforms you want to assess.
+{% endhint %}
+
+### Install Docker
+
+On Ubuntu 24.04 or Debian 12, install Docker Engine and the Compose plugin from Docker's repository (see the [Docker documentation](https://docs.docker.com/engine/install/)), then add your user to the `docker` group and sign in again:
+
+```sh
+sudo usermod -aG docker "$USER"
+```
+
+Check the installation with `docker compose version`.
+
+### Get the Installation Files
+
+Create a folder, for example `~/izsuite`, with two files:
+
+**docker-compose.yml**
+
+```yaml
+# IZ Suite on a single VM: PostgreSQL, server, worker and agent.
+# Start it with ./up.sh <release>, which also creates .env.
+
+x-logging: &logging
+  driver: json-file
+  options: { max-size: "50m", max-file: "5" }
+
+x-server-env: &server-env
+  DATABASE_URL: postgres://izsuite:${POSTGRES_PASSWORD:?run ./up.sh}@postgres:5432/izsuite
+  # Never rotate once data exists: stored credentials become undecryptable.
+  SECRETS_ENCRYPTION_KEY: ${SECRETS_ENCRYPTION_KEY:?run ./up.sh}
+  # Agent and job-type version: the server and worker refuse to start without it.
+  AGENT_JOB_TYPE_VERSION: ${AGENT_JOB_TYPE_VERSION:?run ./up.sh <version>}
+
+services:
+  postgres:
+    image: public.ecr.aws/docker/library/postgres:16
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      POSTGRES_DB: izsuite
+      POSTGRES_USER: izsuite
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?run ./up.sh}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U izsuite -d izsuite"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # Runs schema + data migrations at boot; worker and agent wait for it to be healthy.
+  falcon-server:
+    image: ${IMAGE_REGISTRY:-public.ecr.aws/h0h7r7j4}/iz-suite-server:${IZ_VERSION:?run ./up.sh <version>}
+    restart: unless-stopped
+    logging: *logging
+    depends_on:
+      postgres: { condition: service_healthy }
+    ports:
+      - "${HTTP_PORT:-80}:80"
+    environment:
+      <<: *server-env
+      FALCON_MODE: api
+      AGENT_WRAPPER_SECRET: ${AGENT_WRAPPER_SECRET:?run ./up.sh}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost/api/graphql/health || exit 1"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 600s   # first boot applies every migration
+
+  falcon-worker:
+    image: ${IMAGE_REGISTRY:-public.ecr.aws/h0h7r7j4}/iz-suite-server:${IZ_VERSION:?run ./up.sh <version>}
+    restart: unless-stopped
+    logging: *logging
+    stop_grace_period: 120s
+    # The worker has no migration gate of its own, so it must start after the server.
+    depends_on:
+      falcon-server: { condition: service_healthy }
+    environment:
+      <<: *server-env
+      FALCON_MODE: worker
+      NODE_OPTIONS: --max-old-space-size=${WORKER_NODE_HEAP_MB:-3072}
+
+  falcon-agent:
+    image: ${IMAGE_REGISTRY:-public.ecr.aws/h0h7r7j4}/iz-suite-agent:${IZ_VERSION:?run ./up.sh <version>}
+    restart: unless-stopped
+    logging: *logging
+    stop_grace_period: 120s
+    depends_on:
+      falcon-server: { condition: service_healthy }
+    environment:
+      FALCON_AGENT_OPTS: --serviceUrl http://falcon-server
+      AGENT_WRAPPER_SECRET: ${AGENT_WRAPPER_SECRET:?run ./up.sh}
+
+volumes:
+  pgdata:
+```
+
+**up.sh**
+
+```sh
+#!/bin/sh
+# Usage: ./up.sh <version> [agent-job-type-version]    e.g. ./up.sh 26.4.2
+# The agent and job-type version defaults to <version>; AutoRABIT support may ask you to pass a second value.
+# Optional env (read from .env or the shell): HTTP_PORT (80), IMAGE_REGISTRY.
+#
+# First run writes .env with generated secrets; later runs keep them and only change
+# IZ_VERSION and AGENT_JOB_TYPE_VERSION. Keep .env backed up: SECRETS_ENCRYPTION_KEY
+# decrypts data in the database, and losing it makes stored credentials unreadable.
+# Never touches the database volume: an upgrade keeps all data and the server applies
+# the new release's migrations at boot.
+set -eu
+cd "$(dirname "$0")"
+
+VERSION="${1:?usage: ./up.sh <version> [agent-job-type-version]   e.g. ./up.sh 26.4.2}"
+AGENT_JOB_TYPE_VERSION="${2:-$VERSION}"
+
+if [ ! -f .env ]; then
+  umask 077
+  hex() { openssl rand -hex 32; }
+  {
+    echo "POSTGRES_PASSWORD=$(hex)"
+    echo "SECRETS_ENCRYPTION_KEY=$(hex)"
+    echo "AGENT_WRAPPER_SECRET=$(hex)"
+  } > .env
+  echo "created .env (back it up)"
+fi
+
+# Set KEY=VALUE in .env, appending it when missing (a .env from 26.4.1 has no AGENT_JOB_TYPE_VERSION).
+set_env() {
+  if grep -q "^$1=" .env; then
+    sed -i.bak "s/^$1=.*/$1=$2/" .env && rm -f .env.bak
+  else
+    echo "$1=$2" >> .env
+  fi
+}
+# The server refuses to boot a version older than the one the database last recorded,
+# so only move forward.
+set_env IZ_VERSION "$VERSION"
+set_env AGENT_JOB_TYPE_VERSION "$AGENT_JOB_TYPE_VERSION"
+
+docker compose pull
+docker compose up -d
+docker compose ps
+```
+
+Make the script executable: `chmod +x up.sh`.
+
+### Start IZ Suite
+
+1.  In the folder, run the script with the release to install:
+
+    ```sh
+    ./up.sh 26.4.2
+    ```
+
+    On the first run it creates `.env` with a generated database password, secrets encryption key and agent secret, downloads the images and starts the stack.
+2.  Wait for the server to become healthy. The first start applies every database update and takes a few minutes:
+
+    ```sh
+    docker compose ps
+    docker compose logs -f falcon-server
+    ```
+3. Open `http://<VM address>` in a browser and continue with [First Start](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/first-start).
+
+> **HINT (danger):** Back up `.env` outside the VM. It holds the database password and the secrets encryption key. Without the key, the credentials stored in IZ Suite cannot be read again, even from a database backup.
+
+> **HINT (info):** Until the licence is applied, the agent restarts repeatedly and logs an error when it tries to register. This is expected: applying the licence creates the agent's registration, and its next restart succeeds.
+
+### Add HTTPS
+
+The server listens on plain HTTP on port 80 (change it with `HTTP_PORT` in `.env`). For anything beyond a local trial, put HTTPS in front of it: a cloud load balancer with your certificate, or a reverse proxy such as nginx or Caddy on the VM that forwards to port 80. Point your IZ Suite hostname at it and use that address as the **Base URL** when you apply the licence.
+
+### Operate the Stack
+
+Run these from the installation folder:
+
+| To                                           | Run                                                                                     |
+| -------------------------------------------- | --------------------------------------------------------------------------------------- |
+| See status and health                        | `docker compose ps`                                                                     |
+| Follow logs                                  | `docker compose logs -f falcon-server` (or `falcon-worker`, `falcon-agent`, `postgres`) |
+| Stop everything (containers are kept)        | `docker compose stop`                                                                   |
+| Start again after a stop                     | `docker compose start`                                                                  |
+| Remove the containers (the database is kept) | `docker compose down`                                                                   |
+| Start again after `down`                     | `./up.sh <release>`                                                                     |
+| Restart one component                        | `docker compose restart falcon-agent`                                                   |
+| Back up the database                         | `docker compose exec -T postgres pg_dump -U izsuite -Fc izsuite > izsuite.dump`         |
+
+Every container restarts by itself after a VM reboot unless you stopped it.
+
+{% hint style="danger" %}
+**HINT (danger):** Never run `docker compose down -v`. The `-v` option deletes the database volume and every IZ Suite record with it.
+{% endhint %}
+
+Schedule a daily snapshot of the VM disk, or a daily `pg_dump`, and keep a copy of `.env` with it.
+
+### Next steps
+
+* [First Start](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/first-start): apply the licence and sign in.
+* [Upgrades](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/upgrades): move the proof of concept to a newer release.
+* [Production Deployment](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/production-deployment): the recommended setup once the proof of concept succeeds.

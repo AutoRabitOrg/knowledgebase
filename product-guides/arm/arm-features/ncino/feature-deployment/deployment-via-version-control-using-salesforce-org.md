@@ -4,11 +4,11 @@ This section is about deploying the nCino metadata and data via version control 
 
 1. Hover your mouse over the [nCino ](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/)module and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (1180).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1142).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (1181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1143).png" alt=""><figcaption></figcaption></figure>
 
 3. On the next screen, give the process a **name** and a brief **description** of it.
 4. In the **Source** section, select Deployment From as [**Version Control**](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/) **using Salesforce Org**.
@@ -23,7 +23,7 @@ This section is about deploying the nCino metadata and data via version control 
 
     <figure><img src="../../../../../.gitbook/assets/image (1183).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (1184).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1169).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 After deploying a job, modifying the deployment type during subsequent edits may affect the integrity or effectiveness of any rollbacks performed thereafter.
@@ -53,7 +53,7 @@ In the **Source** field: Select your own source field whose values will get popu
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (1188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1147).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings)**:

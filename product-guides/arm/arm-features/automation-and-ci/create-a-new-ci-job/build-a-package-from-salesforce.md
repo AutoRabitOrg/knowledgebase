@@ -13,7 +13,7 @@ Create a package from a Salesforce org based on a **Start date** and deploy or v
 1. Log in to ARM.
 2.  From the top navigation bar, select **`Create New > New CI Job`**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3724).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New ➜ New CI Job menu option</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1280).png" alt="Create New > New CI Job menu option"><figcaption><p>Create New ➜ New CI Job menu option</p></figcaption></figure>
 3.  Click the **Package from Salesforce** tile.
 
     <figure><img src="../../../../../.gitbook/assets/image (3725).png" alt="Package from Salesforce job tile"><figcaption><p>Package from Salesforce job tile</p></figcaption></figure>
@@ -72,7 +72,7 @@ To set global exclusions, open **My Account > My Salesforce Settings**, select *
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (3731).png" alt="Notification recipient list"><figcaption><p>Select notification recipients for build status</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1369).png" alt="Notification recipient list"><figcaption><p>Select notification recipients for build status</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

@@ -69,7 +69,7 @@ Publishing changes your workspace's rules and quality profile. The security toke
 
 ## After You Publish
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsqc-quality-rules-list (1).png" alt="Quality rules list in IZ Suite, where published custom rules appear"><figcaption><p>Quality rules</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetsqc-quality-rules-list.png" alt="Quality rules list in IZ Suite, where published custom rules appear"><figcaption><p>Quality rules</p></figcaption></figure>
 
 * The rule appears in **Operations** → **Quality Control** → **Quality rules** as a custom rule. Review or refine it there. See [Quality Rules](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-rules).
 * It is active in the quality profile you used in the IDE. See [Quality Profiles](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-profiles).

@@ -81,8 +81,6 @@ To set up a Git repository, follow the steps below:
 
     <figure><img src="../../../../../../.gitbook/assets/Screenshot 2025-08-16 at 8.31.34 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 **Points to Remember:**
 
@@ -108,21 +106,13 @@ This section guides you through creating your personal access token directly on 
 2.  In the upper-right corner of any page, click your profile photo, then click **`Settings`**.<br>
 
     ![Settings](<../../../../../../.gitbook/assets/unknown (15).webp>)
-
-
 3.  In the left sidebar, click **`Developer settings`**.
-
-
 
     ![Developer Settings](<../../../../../../.gitbook/assets/unknown (16).webp>)
 4.  In the left sidebar, click **`Personal access tokens`**.
 
-
-
-    ![Personal Access Tokens](<../../../../../../.gitbook/assets/unknown (18).webp>)
+    ![Personal Access Tokens](<../../../../../../.gitbook/assets/unknown (17).webp>)
 5.  Click **`Generate new token`**.
-
-
 
     ![Generate Token](<../../../../../../.gitbook/assets/unknown (19).webp>)
 6.  Give your token a descriptive name.
@@ -135,8 +125,6 @@ This section guides you through creating your personal access token directly on 
 
     ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1677574050356.png\&width=768\&dpr=4\&quality=100\&sign=e5ded83e\&sv=2)
 9.  Click ![](https://knowledgebase.autorabit.com/~gitbook/image?url=https%3A%2F%2Fcdn.document360.io%2F8711f4e7-c040-4616-aac9-d947f87e4619%2FImages%2FDocumentation%2Fimage-1606156266000.png\&width=300\&dpr=4\&quality=100\&sign=25a8ef27\&sv=2) to copy the token to your clipboard. You cannot see the token again after navigating off the page for security reasons.
-
-
 
     ![Click the Copy icon to copy the token to your clipboard](<../../../../../../.gitbook/assets/unknown (20).webp>)
 10. Use the copied token as a password for creating/updating the credential in ARM.

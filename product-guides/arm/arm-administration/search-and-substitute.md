@@ -81,7 +81,7 @@ Click **Save** to store the rule. It appears in the list with **Edit**, **Delete
 On the **Deployment Settings** screen:
 
 1. Open **Apply Search and Substitute Rules**.
-2. Move rules to **Selected** with ![](<../../../.gitbook/assets/image (4572).png>) / ![](<../../../.gitbook/assets/image (4573).png>).
+2. Move rules to **Selected** with ![](<../../../.gitbook/assets/image (1248).png>) / ![](<../../../.gitbook/assets/image (1249).png>).
 3. Use the arrows to order execution (top rule runs first).
 
 <figure><img src="../../../.gitbook/assets/image (4574).png" alt="Deployment Settings with Search and Substitute rules selected"><figcaption></figcaption></figure>

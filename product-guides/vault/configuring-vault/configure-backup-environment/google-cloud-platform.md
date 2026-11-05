@@ -36,7 +36,7 @@ To use GCP as your storage environment to back up metadata and data objects, con
 - Click **Done**, or **Create** to proceed with role assignment.
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (3587).png" alt="GCP service account info form" width="298"><figcaption><p>Service Account Details</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3586).png" alt="GCP service account info form" width="298"><figcaption><p>Service Account Details</p></figcaption></figure>
 
 ```
 - Optionally assign IAM roles and service account users/admins.

@@ -1,6 +1,6 @@
 # User Profiles
 
-Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc. <br>
+Numerous configuration options are available to users when setting up their profile in ARM. The **`Profile`** section allows users to view and update their basic information, personal email settings, etc.<br>
 
 To access user preferences, click your user name in the upper right corner and select **`Profile`**.<br>
 
@@ -26,7 +26,7 @@ The **`My Projects`** section will list all the projects that you have created o
 
 ### My Roles <a href="#my-roles" id="my-roles"></a>
 
-The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.&#x20;
+The **`My Roles`** displays the list of roles assigned to the user. If you have admin roles and permission, you can perform all the tasks an administrator can perform and access all modules within ARM.
 
 ### About Skip Mappings
 
@@ -41,9 +41,9 @@ NOTE:
 
     To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-<p align="center"><img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.22.29.png" alt=""></p>
+<img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.22.29.png" alt="" data-size="original">
 
-<p align="center"><img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.20.41.png" alt=""></p>
+<img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.20.41.png" alt="" data-size="original">
 
 1. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}
@@ -55,7 +55,7 @@ View the **`Salesforce Orgs`** assigned to you, or you have permission to view.\
 
 ### My Version Control Mappings <a href="#my-version-control-mappings" id="my-version-control-mappings"></a>
 
-View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section. \
+View the Version Control Repositories here based on the Salesforce Orgs selected in the **My Salesforce Orgs** section.\
 You can view the list of all repositories configured under each version control system (VC). Select a repository to display its branches. From there, map the required branches by choosing the appropriate **`Credential`** from the drop-down field. Click **`Test Connection`** to determine whether the connection has been authenticated or not.<br>
 
 <figure><img src="../../../../.gitbook/assets/image (2044).png" alt=""><figcaption></figcaption></figure>
@@ -73,8 +73,6 @@ For ALM type **`IBMRTC (IBM Rational Team Concert)`** and **`JIRA`**, we have ad
 
 <figure><img src="../../../../.gitbook/assets/image (2047).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-08-16 at 2.18.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 According to the filter set, only specific work items will get fetched. When the developers progress (via EZ-Commit or merge operation in ARM) on updating the ALM status, they are reflected on the corresponding work items. If the user wishes to discard the filter selected, uncheck the **`Apply My Filter`** option, and all work items will get fetched.
@@ -83,7 +81,7 @@ According to the filter set, only specific work items will get fetched. When the
 
 **`My Default Page`** is the first page that appears when you log in to ARM. You can customize ARM to open any page as the default page.
 
-<figure><img src="../../../../.gitbook/assets/image (743).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 ## Mapping Your Profile with Version Control and Salesforce Org <a href="#mapping-your-profile-with-version-control-and-salesforce-org" id="mapping-your-profile-with-version-control-and-salesforce-org"></a>
 
@@ -206,7 +204,3 @@ Create one integration user in production on a standard Salesforce license, give
 If your security policy does not allow that, use the custom profile and permission set in this article, and review it after each Salesforce seasonal release.
 
 Register orgs with OAuth or OAuth through an External Client App. The integration user must be able to sign in to Salesforce to approve access, so leave API Only User off.
-
-&#x20;
-
-&#x20;

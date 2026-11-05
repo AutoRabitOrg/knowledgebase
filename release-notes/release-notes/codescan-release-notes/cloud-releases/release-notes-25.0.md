@@ -203,7 +203,7 @@ Component details are listed in their corresponding sections within this documen
    \
    Example:
 
-<figure><img src="../../../../.gitbook/assets/image (1884).png" alt=""><figcaption><p>List Accounts</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1883).png" alt=""><figcaption><p>List Accounts</p></figcaption></figure>
 
 Verified after the rule enhancement was engineered that users are able to see the violation for rule “Avoid Untrusted/Unescaped Variables in DML Query” as expected.
 

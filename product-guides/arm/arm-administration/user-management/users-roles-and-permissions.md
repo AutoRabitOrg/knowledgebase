@@ -53,7 +53,7 @@ General users work in ARM modules according to permissions their Admin assigns. 
 
 1.  In **Admin › Users**, locate the user and click **Edit**.
 
-    <figure><img src="../../../../.gitbook/assets/image (803).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (802).png" alt="Edit icon for user row"><figcaption></figcaption></figure>
 2. Update fields (Username and Email are immutable).
 3. Click **Save**.
 
@@ -130,7 +130,7 @@ Admins can download all user data as CSV.
 
 Admins are hidden on this screen because they already hold full access.
 
-<figure><img src="../../../../.gitbook/assets/image (816).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (814).png" alt="Assign roles and modules to selected users"><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (815).png" alt="Save confirmation after assigning permissions" width="563"><figcaption></figcaption></figure>
 

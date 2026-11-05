@@ -79,8 +79,8 @@ Follow these steps to create a module in AutoRABIT:
 
 11. **Add / arrange dependencies**
 
-    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (2984).png>) / ![](<../../../../.gitbook/assets/image (2985).png>) icons to add or remove them.
-    * Use ![](<../../../../.gitbook/assets/image (2986).png>) / ![](<../../../../.gitbook/assets/image (2987).png>) to reorder; the top package deploys first.
+    * Select packages in **Available Packages** and use the ![](<../../../../.gitbook/assets/image (1248).png>) / ![](<../../../../.gitbook/assets/image (1249).png>) icons to add or remove them.
+    * Use ![](<../../../../.gitbook/assets/image (1250).png>) / ![](<../../../../.gitbook/assets/image (1251).png>) to reorder; the top package deploys first.
 
     <figure><img src="../../../../.gitbook/assets/image (2988).png" alt="Package dependencies"><figcaption></figcaption></figure>
 12. **Create the module**\

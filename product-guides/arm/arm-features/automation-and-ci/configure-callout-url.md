@@ -56,13 +56,13 @@ A new section, i.e., **Callout URL**, is available for the following CI jobs:
     * Use `application/json` for JSON requests.
     * Use `application/xml` for XML requests.
 
-    <figure><img src="../../../../.gitbook/assets/image (3135).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1373).png" alt=""><figcaption></figcaption></figure>
 7.  To add custom headers, click **Add Header** and define key-value pairs. You can add multiple.
 
     * Default headers include:\
       `"Accept": "application/json", "Content-Type": "application/json"`
 
-    <figure><img src="../../../../.gitbook/assets/image (3136).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (1374).png" alt=""><figcaption></figcaption></figure>
 8. Click **Save**.
 
 ### Dynamic Parameters <a href="#dynamic-parameters" id="dynamic-parameters"></a>

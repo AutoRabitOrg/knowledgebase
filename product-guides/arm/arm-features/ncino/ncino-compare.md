@@ -19,7 +19,7 @@ The compare and selective deployment functionality allows you to perform compari
 
 #### Feature Deployment – Template & Version Control
 
-<figure><img src="../../../../.gitbook/assets/image (3790).png" alt="Retrieve Dataset option from Template or Version Control"><figcaption><p>Retrieve Dataset option from Template or Version Control</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3788).png" alt="Retrieve Dataset option from Template or Version Control"><figcaption><p>Retrieve Dataset option from Template or Version Control</p></figcaption></figure>
 
 1. Select “Template” or “Version Control” to reveal the **Retrieve Dataset** option.
 2. Clicking it redirects to the **Deployment History** page.
@@ -56,7 +56,7 @@ The compare and selective deployment functionality allows you to perform compari
    * Unique ID
    * Exclude From Compare
 
-<figure><img src="../../../../.gitbook/assets/image (3795).png" alt="Comparison fields and options" width="375"><figcaption><p>Comparison fields and options</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3793).png" alt="Comparison fields and options" width="375"><figcaption><p>Comparison fields and options</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3796).png" alt="Compare results with yellow highlights" width="375"><figcaption><p>Compare results with yellow highlights</p></figcaption></figure>
 
@@ -110,15 +110,15 @@ Compares one record at a time and lets you drill down further.
 * Supports multiple levels of nested comparison:
   * Level 1, 2, 3, etc.
 
-<figure><img src="../../../../.gitbook/assets/image (3811).png" alt="Record-level comparison level 1" width="375"><figcaption><p>Record-level comparison level 1</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3810).png" alt="Record-level comparison level 1" width="375"><figcaption><p>Record-level comparison level 1</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3812).png" alt="Record-level comparison level 2" width="375"><figcaption><p>Record-level comparison level 2</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3813).png" alt="Record-level with nested relational compare" width="375"><figcaption><p>Record-level with nested relational compare</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3810).png" alt="Record-level with nested relational compare" width="375"><figcaption><p>Record-level with nested relational compare</p></figcaption></figure>
 
 * Continue record selection:
 
-<figure><img src="../../../../.gitbook/assets/image (3815).png" alt="Record selection after relational comparison" width="375"><figcaption><p>Record selection after relational comparison</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3814).png" alt="Record selection after relational comparison" width="375"><figcaption><p>Record selection after relational comparison</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (3816).png" alt="Parent and child record listing" width="375"><figcaption><p>Parent and child record listing</p></figcaption></figure>
 
@@ -128,16 +128,16 @@ Compares one record at a time and lets you drill down further.
   * **Save and Continue** – Save and proceed.
   * **Save and Deploy** – Go to deployment screen.
 
-<figure><img src="../../../../.gitbook/assets/image (3818).png" alt="Object Summary screen before final deployment" width="375"><figcaption><p>Object Summary screen before final deployment</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3803).png" alt="Object Summary screen before final deployment" width="375"><figcaption><p>Object Summary screen before final deployment</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3819).png" alt="Selected records visible for deployment" width="375"><figcaption><p>Selected records visible for deployment</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3805).png" alt="Selected records visible for deployment" width="375"><figcaption><p>Selected records visible for deployment</p></figcaption></figure>
 
 * View selected records:
 
-<figure><img src="../../../../.gitbook/assets/image (3820).png" alt="Popup of selected records before deployment" width="375"><figcaption><p>Popup of selected records before deployment</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3806).png" alt="Popup of selected records before deployment" width="375"><figcaption><p>Popup of selected records before deployment</p></figcaption></figure>
 
 * After deployment:
 
-<figure><img src="../../../../.gitbook/assets/image (3821).png" alt="Deployment staging confirmation" width="375"><figcaption><p>Deployment staging confirmation</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3804).png" alt="Deployment staging confirmation" width="375"><figcaption><p>Deployment staging confirmation</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3822).png" alt="Final deployment result with status" width="375"><figcaption><p>Final deployment result with status</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3807).png" alt="Final deployment result with status" width="375"><figcaption><p>Final deployment result with status</p></figcaption></figure>

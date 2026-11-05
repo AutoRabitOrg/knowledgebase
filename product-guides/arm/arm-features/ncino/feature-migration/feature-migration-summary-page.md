@@ -42,9 +42,9 @@ Click the **Manage** button to update or publish your template.
 
     * **View DataSet** – See the record list for each version created. Starting from ARM 22.2, datasets are version-specific.
 
-    <figure><img src="../../../../../.gitbook/assets/image (2971).png" alt="Version-specific dataset viewing capability"><figcaption><p>Version-specific dataset viewing capability</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2969).png" alt="Version-specific dataset viewing capability"><figcaption><p>Version-specific dataset viewing capability</p></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2973).png" alt="Detailed dataset view per version" width="563"><figcaption><p>Detailed dataset view per version</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2970).png" alt="Detailed dataset view per version" width="563"><figcaption><p>Detailed dataset view per version</p></figcaption></figure>
 
     * **Clone Version** – Quickly generate a new version from an existing template.
     * **Version Log** – View a history of all changes made to the template.

@@ -37,7 +37,7 @@ Click Clone to Org to open the Clone Masking Rules to ORGs wizard.
 
 <figure><img src="../../../../.gitbook/assets/image (5240).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Bulk Clone Rules page with the source org and Clone to Org action
+Bulk Clone Rules page with the source org and Clone to Org action
 {% endstep %}
 {% endstepper %}
 
@@ -63,11 +63,11 @@ Click Continue after the required masking rules are selected.
 
 <figure><img src="../../../../.gitbook/assets/image (5241).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Select Rules step with all masking rules selected by default
+Select Rules step with all masking rules selected by default
 
 <figure><img src="../../../../.gitbook/assets/image (5242).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Select Rules step with two masking rules selected
+Select Rules step with two masking rules selected
 {% endstep %}
 {% endstepper %}
 
@@ -93,11 +93,11 @@ Click Continue after one or more target orgs are selected. Click Back to revise 
 
 <figure><img src="../../../../.gitbook/assets/image (5243).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Target orgs step with all available orgs selected
+Target orgs step with all available orgs selected
 
 <figure><img src="../../../../.gitbook/assets/image (5244).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Target orgs step with two orgs selected
+Target orgs step with two orgs selected
 {% endstep %}
 {% endstepper %}
 
@@ -117,9 +117,9 @@ Each selected rule is validated against each target org during processing. A rul
 
 Click Clone to create the bulk clone jobs. Click Back to revise the target org selection or Cancel to exit without starting the clone.
 
-<figure><img src="../../../../.gitbook/assets/image (5246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5245).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Summary step showing the source org, target orgs, and selected rules
+Summary step showing the source org, target orgs, and selected rules
 {% endstep %}
 
 {% step %}
@@ -129,7 +129,7 @@ When the success message appears, click OK. The message confirms that cloning ha
 
 <figure><img src="../../../../.gitbook/assets/image (5247).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Cloning initiated confirmation message
+Cloning initiated confirmation message
 {% endstep %}
 {% endstepper %}
 
@@ -145,7 +145,7 @@ Use Refresh to retrieve the latest job status. Search, Filter By Type, Columns, 
 
 <figure><img src="../../../../.gitbook/assets/image (5248).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Bulk Clone Rules page with jobs created for the selected target orgs
+Bulk Clone Rules page with jobs created for the selected target orgs
 {% endstep %}
 {% endstepper %}
 
@@ -165,7 +165,7 @@ Review each rule row to confirm the object, field type, masking style, masking v
 
 <figure><img src="../../../../.gitbook/assets/image (5249).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Bulk Clone Job Info with rule-level status and remarks
+Bulk Clone Job Info with rule-level status and remarks
 {% endstep %}
 {% endstepper %}
 
@@ -175,13 +175,13 @@ The Actions column provides controls for the jobs displayed on the Bulk Clone Ru
 
 <figure><img src="../../../../.gitbook/assets/image (5250).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Bulk Clone Rules job list and available actions
+Bulk Clone Rules job list and available actions
 
 Some job-information views display only rule configuration details. In this view, compare the source and cloned rule names, object, field type, masking style, masking value, and selected fields.
 
 <figure><img src="../../../../.gitbook/assets/image (5251).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                      Bulk Clone Job Info showing rule configuration details
+Bulk Clone Job Info showing rule configuration details
 
 ## Status Interpretation
 

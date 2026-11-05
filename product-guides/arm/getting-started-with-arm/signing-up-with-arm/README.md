@@ -1,17 +1,17 @@
 # Signing Up with ARM
 
-The ARM signup and activation process has several steps - some on our end and others on yours.&#x20;
+The ARM signup and activation process has several steps - some on our end and others on yours.
 
 1. Go to [https://www.autorabit.com/](https://www.autorabit.com/) and log in or go directly to [https://login.autorabit.com/](https://login.autorabit.com/).
 2. Now, click on the **`Sign up for a Demo`** link. The **`AutoRABIT – New Registration`** screen appears.
 
-![](<../../../../.gitbook/assets/unknown (332).png>)
+![](<../../../../.gitbook/assets/unknown (331).png>)
 
 3. Fill in the registration details, and then click **`Register.`**
 
 ![](<../../../../.gitbook/assets/unknown (333).png>)
 
-4. **Wait for an email from us.** Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process and your account is activated, you will get a confirmation sent to your email address.&#x20;
+4. **Wait for an email from us.** Next, we review your details to check if they comply with our policies and to set up the rest of your account. When we've completed this process and your account is activated, you will get a confirmation sent to your email address.
 
 {% hint style="info" %}
 **Important Note:** If your account isn't activated at this stage, you'll get an email explaining why and the next steps you can take.
@@ -21,12 +21,12 @@ The ARM signup and activation process has several steps - some on our end and ot
 
 The ARM login screen allows you to log in to your instance.
 
-1. Go to your web browser to your instance's URL (for example, _https://instance.autorabit.com_).&#x20;
-2. The ARM login screen appears.&#x20;
+1. Go to your web browser to your instance's URL (for example, _https://instance.autorabit.com_).
+2. The ARM login screen appears.
 3. Enter your login credentials (username and password), and then click on **`Login.`**
 4. Contact your org administrator if you do not know your instance's URL or login credentials.
 
-<figure><img src="../../../../.gitbook/assets/image (719).png" alt="" width="368"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (610).png" alt="" width="368"><figcaption></figcaption></figure>
 
 ## Password Requirements
 
@@ -42,13 +42,13 @@ The ARM login screen allows you to log in to your instance.
 
 When you are done working in ARM and wish to log out of the system, click your username in the upper right corner and click **`Logout`**. This will log you out completely from ARM, and you must log in again to access your account.
 
-<figure><img src="../../../../.gitbook/assets/image (720).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (615).png" alt="" width="252"><figcaption></figcaption></figure>
 
 ## How to Prevent Credential Sharing <a href="#automatic-logout" id="automatic-logout"></a>
 
 ARM only allows a username to be logged in under one session, and any additional user sessions started using the same username will be logged out of the previous session. This mechanism is for security, as ARM does not allow multiple sessions for the same username from different machines or browsers. To prevent situations like this, please do not share your login credentials (username and password) with users in your organization.
 
-Another situation where users are automatically logged out is when the user does not perform any actions in ARM for a certain period. Configuration settings in the ARM UI control the security timeout period in ARM.&#x20;
+Another situation where users are automatically logged out is when the user does not perform any actions in ARM for a certain period. Configuration settings in the ARM UI control the security timeout period in ARM.
 
 Users can have multiple tabs of ARM pages open within the same web browser (e.g., Chrome) without getting logged out of the system. For example, this is useful when working with multiple ARM pages or records without navigating away from previous pages.
 
@@ -74,17 +74,8 @@ If you requested a new password but didn't receive your reset email:
 
 ### How often do I have to change my password for ARM? <a href="#how-often-do-i-have-to-change-my-password-for-the-arm-application" id="how-often-do-i-have-to-change-my-password-for-the-arm-application"></a>
 
-ARM requires you to change your password every 90 days.&#x20;
+ARM requires you to change your password every 90 days.
 
-### How do I reset my password?&#x20;
+### How do I reset my password?
 
 Follow the instructions [here](../../arm-administration/user-management/reset-account-password.md) to reset your ARM password.
-
-
-
-
-
-
-
-
-

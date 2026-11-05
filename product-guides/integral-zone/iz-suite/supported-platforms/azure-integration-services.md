@@ -42,7 +42,7 @@ The client secret expires on the date you chose. Before it does, create a new se
 
 ## Connect Azure in IZ Suite
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetssetup-azure-connect (1).png" alt="Connect Azure subscriptions drawer with the Entra ID instructions, Directory (tenant) ID, Application (client) ID, Client secret and Inventory sync"><figcaption><p>Connect Azure subscriptions</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetssetup-azure-connect.png" alt="Connect Azure subscriptions drawer with the Entra ID instructions, Directory (tenant) ID, Application (client) ID, Client secret and Inventory sync"><figcaption><p>Connect Azure subscriptions</p></figcaption></figure>
 
 1. Open **Administration** → **Setup** and click **Set up** (or **Review**) on **Connect Azure subscriptions**.
 2. Enter the **Directory (tenant) ID**, **Application (client) ID** and **Client secret**.

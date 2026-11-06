@@ -16,12 +16,20 @@ This enhancement simplifies repository management when a repository URL changes 
 #### 1. Update Repository URL
 
 * A new **Edit** option is available next to the Repository URL in the **Details** tab.
+
+<figure><img src="../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
 * Clicking Edit opens an **Update Repository URL** dialog displaying the current URL and allowing users to enter a new URL.
+
+<figure><img src="../../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+
 * ARM validates the new URL to ensure it is valid, different from the existing URL, and not already registered with another repository.
 
 #### 2. Confirmation and Update Status
 
 Before updating the URL, ARM displays the following confirmation message:
+
+<figure><img src="../../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 **"Ensure no users are performing any actions or have any pending tasks on this repository before you change its URL."**
 

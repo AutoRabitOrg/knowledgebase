@@ -2,7 +2,7 @@
 
 ## CodeScan On-Premises
 
-## Release Notes 24.0.4
+## CodeScan Self-Hosted 24.0.4
 
 **Release Date: April 2024**
 

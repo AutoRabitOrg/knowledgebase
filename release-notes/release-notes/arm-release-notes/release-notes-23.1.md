@@ -1,6 +1,6 @@
 # Release Notes 23
 
-## ARM Release Notes 23.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>
+## ARM 23.1
 
 **September 2023**
 
@@ -10,7 +10,7 @@
 
 **Supports Apex PMD** Current Version: 7.0.0
 
-### New Features
+### New features
 
 **1. Automatic Merge after Successful CI Build**\
 We know that understanding and managing version control can sometimes be a challenge. ARM offers the flexibility to cherry-pick branch revisions for merge or deployment. Now you can automate this process of cherry-picking the revisions in CI Jobs as a post-deployment step.
@@ -82,7 +82,7 @@ ServiceNow will make information more easily accessible and workflows more strea
 9. <mark style="color:blue;">**Enhanced security and user experience. (NEW)**</mark>\
    The new features focus on enhancing security and user experience. They include a single-user session control to prevent multiple active sessions under the same username, automatic logout for inactivity to bolster security, and support for multiple tabs or pages in the same browser, improving user productivity and maintaining the environment's integrity.
 
-### Improvements
+### Enhancements
 
 This update has implemented significant performance upgrades to enhance the tool's efficiency and responsiveness. These enhancements encompass optimized queries and leverage new technologies, collectively resulting in a smoother, faster user experience.
 
@@ -122,7 +122,7 @@ This update has implemented significant performance upgrades to enhance the tool
 4. A code fix was applied to the Admin module in version 23.1 related to a use-case scenario that required additional support to create the ARM instance from scratch. Support ticket #117015
 5. A code fix was applied to the Deployment module in version 23.1 due to a use-case error in which the user was unable to get the popup while deploying using package.xml as the source. Support ticket #116967
 
-#### **3 & 7 July 2024**
+#### 3 & 7 July 2024
 
 **ARM 23.1.36**
 
@@ -251,7 +251,7 @@ This update has implemented significant performance upgrades to enhance the tool
 
 <table data-full-width="true"><thead><tr><th>Module</th><th width="252">Summary</th><th align="center">Status</th><th align="center">Fix Version</th><th align="center">Resolution</th><th align="center">Cause</th></tr></thead><tbody><tr><td><p> </p><p>CI Jobs</p><p> </p></td><td>nCino CI jobs created are not visible for CI job on successful deployment</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Version Control</p><p> </p></td><td>Regarding unable to approve commit request</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Version Control</p><p> </p></td><td>Very slow commits</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Version Control</p><p> </p></td><td>Unable to create branch with '&#x26;' character getting Exception Error</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Version Control</p><p> </p></td><td>Issues after Branching Baseline</td><td align="center"><p> </p><p>Requires Customer Coordination</p><p> </p></td><td align="center"><p> </p><p>Added Loggers</p><p> </p></td><td align="center">No Code Fix</td><td align="center"></td></tr><tr><td><p> </p><p>Reports</p><p> </p></td><td>Static Code Analysis fails with timeout error</td><td align="center"><p> </p><p>Requires Customer Coordination</p><p> </p></td><td align="center"><p> </p><p>Post fix awaiting customer confirmation.</p><p> </p></td><td align="center">Code Fix for SF CL timeout configuration. </td><td align="center"></td></tr><tr><td><p> </p><p>Admin</p><p> </p></td><td>Observing that after the 7th file, RabitCS and Agent logs are not being created or generated. From the 8th file, they are being overridden from Existing files 1 to 7.</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>CI Jobs, Deployments</p><p> </p></td><td>Identified below nCino CI Job "related to VC Source job type" displaying issue in CI jobs and Deployments</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Flow Center</p><p> </p></td><td>Enable SSL for the Kafka used to communicate with FlowCenter.</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"> Use Case </td></tr><tr><td><p> </p><p>nCino</p><p> </p></td><td>nCino Feature deployment failed with a “malformed query” error, Feature deployment and Ci Job.<br>nCino CI jobs the customer has run failed with an exception, and the failed records column shows zero.</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Data Loader Pro</p><p> </p></td><td>[ARM-QAN5,7] The job is currently running in progress, but the Success Record Count is showing in the Failure Count.</td><td align="center"><p> </p><p>QA Passed</p><p> </p></td><td align="center"><p> </p><p>23.1</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
 
-#### **13 March 2024**
+#### 13 March 2024
 
 **(ARM v. 23.1.22)**
 

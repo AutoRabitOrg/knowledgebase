@@ -1,8 +1,8 @@
 # Release Notes 25.1.3 Eagle 6.0
 
-## CodeScan Self-Hosted Release Notes 25.1.3 Eagle 6.0
+## CodeScan Self-Hosted 25.1.3 (Eagle 6.0)
 
-**Release Date: 28 December 2025**
+**Release date:** 28 December 2025
 
 ### Summary
 
@@ -15,7 +15,7 @@ CodeScan Self-Hosted version 25.1.3 (Eagle v6) is comprised of the following 25 
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1. New Rules to Identify Potential Sensitive Data/PII Fields**
 
@@ -66,7 +66,7 @@ Verified that sf:SecurePIIFields rules are being triggered in following scenario
 
 <figure><img src="../../../../../.gitbook/assets/image (4179).png" alt=""><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 **1. Updated the description in the CodeScan APEX rule “Server Side Request Forgery (SSRF)”**
 

@@ -1,6 +1,6 @@
 # Self-Hosted Releases
 
-### CodeScan Self-Hosted Editions&#x20;
+### CodeScan Self-Hosted Editions
 
 Our latest CodeScan Self-Hosted release is the Eagle Edition v10 (26.1.3), released in August 2026. Please refer to the Release Notes for [Eagle Edition v10](https://knowledgebase.autorabit.com/release-notes/release-notes/codescan-release-notes/on-premise-releases/eagle-edition/release-notes-26.1.3-eagle-10.0) for complete documentation.&#x20;
 

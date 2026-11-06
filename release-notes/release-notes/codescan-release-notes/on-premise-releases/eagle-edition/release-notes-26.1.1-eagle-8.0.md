@@ -1,8 +1,8 @@
 # Release Notes 26.1.1 Eagle 8.0
 
-**Release Date: 17 July 2026**
+**Release date:** 17 July 2026
 
-### Summary&#x20;
+### Summary
 
 CodeScan Self-hosted 26.1.1 is comprised of the following 6 components:&#x20;
 
@@ -15,7 +15,7 @@ CodeScan Self-hosted 26.1.1 is comprised of the following 6 components:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### &#x20;Rule Enhancements&#x20;
+### Rule enhancements
 
 **1. Improved Rule Stability and Error Handling**&#x20;
 
@@ -128,7 +128,7 @@ When enabled, the rule identifies supported platform methods that may consume hi
 * Helps developers avoid query-limit violations. &#x20;
 * Preserves existing behavior unless explicitly enabled.&#x20;
 
-### Fixes&#x20;
+### Fixes
 
 1. **Improved SOQL in Loops Rule Accuracy**&#x20;
 

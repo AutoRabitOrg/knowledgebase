@@ -2,11 +2,11 @@
 
 ## CodeScan On-Premises
 
-### Release Notes 24.0.5
+### CodeScan Self-Hosted 24.0.5
 
-**Release Date: 7 June 2024**
+**Release date:** 7 June 2024
 
-### New Rules
+### New rules
 
 1. **Rule Name:&#x20;**_**“Comment All Hardcoded Values”**_\
    \

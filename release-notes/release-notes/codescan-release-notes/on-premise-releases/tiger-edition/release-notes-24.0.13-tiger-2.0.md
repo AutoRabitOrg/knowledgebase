@@ -1,8 +1,8 @@
 # Release Notes 24.0.13 Tiger 2.0
 
-## CodeScan On-Premises/Self-Hosted <a href="#cs-on-prem-tiger-v.-2.0" id="cs-on-prem-tiger-v.-2.0"></a>
+## CodeScan On-Premises/Self-Hosted
 
-## Release Notes Tiger 2.0 (v. 24.0.13) <a href="#cs-on-prem-tiger-v.-2.0" id="cs-on-prem-tiger-v.-2.0"></a>
+## CodeScan Self-Hosted 24.0.13 (Tiger 2.0)
 
 **Issue Date: 13 November 2024**
 
@@ -16,7 +16,7 @@ The CodeScan On-Premises/Self-Hosted Tiger 2.0 (24.0.13) is comprised of the fol
 
 Component details are listed in their corresponding sections within this document.
 
-### New Rules
+### New rules
 
 1.  **New CodeScan rule to check for special characters in Page Layout Name (for example: : , ( ) ' " - & )**\
     \

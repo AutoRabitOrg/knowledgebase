@@ -1,8 +1,8 @@
 # IZ Suite Release Notes 26
 
-## IZ Suite Release Notes 26.4.2
+## IZ Suite 26.4.2
 
-Release Date: 04 November 2026
+**Release date:** 4 November 2026
 
 #### Overview
 
@@ -21,7 +21,7 @@ This release includes:
 * Dashboards with 16 starter dashboards for every role, new data subjects and attribute filters, export and import of dashboard configurations, a modern Schedules screen, notifications with a delivery log
 * Change Assurance and Compliance with shared standards, a risk matrix and treatment plans
 
-#### 1. The Modern IZ Suite Experience
+#### The Modern IZ Suite Experience
 
 IZ Suite opens in a new modern experience with one navigation across Platform Analysis, Code Analysis, Dependency Insights, Service Health, Change Assurance, Compliance, Quality Control and administration.
 
@@ -33,7 +33,7 @@ IZ Suite opens in a new modern experience with one navigation across Platform An
 * **Consistent tables:** every table has search, a result count, **Refresh**, **Columns** and **Export** in one row, sortable columns, page sizes from 10 to 200, and icon buttons with tooltips for row actions.
 * **Assigned work:** one page, next to **Findings** in the navigation, for the upgrade, maintenance, review and acknowledgment work assigned to people, with a **Remediation** tab for Change Assurance remediation tasks. **My open work** on the home page opens it on the user's own open items.
 
-#### 2. Platform Analysis and Code Analysis Workspaces
+#### Platform Analysis and Code Analysis Workspaces
 
 * **Overview, Applications and Findings:** Platform Analysis opens on three tabs, and the Code Analysis overview matches it: status cards, an asset type chart and a **Top rules** chart of the most frequent Critical and Blocker findings. Selecting a rule opens the affected applications.
 * **Findings across products:** the new **Findings** workspace lists findings from Platform Analysis and Code Analysis together, filtered by product and asset type. Each row opens the application in its own product.
@@ -49,7 +49,7 @@ IZ Suite opens in a new modern experience with one navigation across Platform An
   * Other platforms make a newly discovered version the default.
   * A user can choose the default in **Manage application** with **Make default**. After that, syncs and scans no longer change it. If the default version is deleted, the most recently changed version takes over.
 
-#### 3. Code Analysis: Issue Lifecycle and Pull Requests
+#### Code Analysis: Issue Lifecycle and Pull Requests
 
 Code Analysis now follows each finding from one scan to the next and understands pull requests.
 
@@ -62,7 +62,7 @@ Code Analysis now follows each finding from one scan to the next and understands
 * **Tasks from findings:** findings can be turned into tracked tasks that close automatically when a rescan shows them fixed.
 * **Source upload message:** when the workspace keeps source files for review, the scanner says it is uploading them after the quality gate line, so a long upload no longer looks like a stalled scan.
 
-#### 4. Governed Exceptions and the Quality Gate
+#### Governed Exceptions and the Quality Gate
 
 A finding can be marked a false positive or an accepted risk, approved by someone other than the requester, and kept out of the quality gate until it expires.
 
@@ -76,14 +76,14 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * **Quality Control lists:** quality gates, quality and metric rules and their profiles open with the most recently changed first and have a sortable **Last updated** column.
 * **Build pipelines:** with `abortOnQualityGateFailure`, the scanner waits for IZ Suite's gate, so exceptions and new-code conditions decide the build, and the scanner exits with code `1` when the gate fails, so the pipeline step fails. If the gate cannot be obtained the build fails with a clear message. A 26.4.2 scanner against an older server falls back to the previous local calculation; older scanners keep working unchanged.
 
-#### 5. Security Standards
+#### Security Standards
 
 * **References on rules:** built-in rules are mapped to CWE, OWASP Top 10 categories and AWS Foundational Security Best Practices controls (368 controls across the 16 AWS rule packs). OWASP mappings are derived from the CWEs each category lists.
 * **Quality Control › Security standards:** a new screen lists each standard's references with the number of mapped rules. Custom rules can be mapped in the rule editor; built-in mappings are shown read-only.
 * **Posture card:** the application page shows findings per security standard and drills down to them.
 * The previous `cwe-` and `owasp-` rule tags are replaced by these mappings. Other tags are kept.
 
-#### 6. AI Reviews
+#### AI Reviews
 
 * **Provider connections:** Amazon Bedrock with the server's own AWS identity (**Auto Discover AWS Bedrock**), Amazon Bedrock with an API key, OpenAI and Anthropic. An OpenAI or Anthropic connection can use a custom endpoint, for example a company AI gateway in front of the provider; the endpoint must be a public HTTPS address. **Check access** explains provider errors and finds the regions that work.
 * **One AI setting:** dashboards, reporting, product pages, the assistant and reviews all use the same provider settings, with a workspace switch and one per schedule, off by default.
@@ -94,7 +94,7 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * **Long model calls:** reviews no longer fail when the AI provider takes longer than a minute to answer. A model call that does not finish within 10 minutes marks the review as failed with a message; the scan itself is not failed.
 * **Source storage:** off, excerpts or complete source, stored encrypted in IZ Suite, in Amazon S3 or in Google Cloud Storage, with credentials from the workload identity or a saved sign-in.
 
-#### 7. Service Health
+#### Service Health
 
 * **Resource monitoring:** monitors for AWS resources and MuleSoft runtimes, with discovery, bulk setup and policy-managed status pages. A setup guide on the **Monitors** tab walks through agent, first monitor, schedule and first check.
 * **Monitor sign-in:** HTTP monitors support no sign-in, Basic, client secret, OAuth 2.0 client credentials, mutual TLS, bearer token and API key.
@@ -103,7 +103,7 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * **Coverage:** one list of monitoring suggestions, filtered by **All**, **Linked** and **Gaps**.
 * **Status page subscriptions:** visitors can subscribe by email with double opt-in. Administrators see and remove subscribers, and subscribers are notified of status changes and maintenance. Maintenance windows are now checked every minute instead of every hour.
 
-#### 8. Operations, Notifications and Dashboards
+#### Operations, Notifications and Dashboards
 
 * **Schedules:** a redesigned **Schedules** screen with **Active** and **Disabled** tabs, one shared frequency picker, one-time platform scans, and internal system jobs hidden. One schedule can cover a whole connected AWS, Anypoint or Azure organization. Execution history uses the same layout.
 * **Notifications:** the bell marks notifications read when opened, **Mark all read**, a delivery log with resend, and Change Assurance email.
@@ -114,7 +114,7 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * **Dashboards count the default version:** the built-in application, organization, environment and IZ Suite dashboards count each application's default version unless **Show all applications** is chosen.
 * **Report storage:** Google Cloud Storage is available alongside the existing providers.
 
-#### 9. Change Assurance and Compliance
+#### Change Assurance and Compliance
 
 * **IZ Suite as a source:** Change Assurance reads this IZ Suite in place, with one asset identity, posture-aware gating and targeted rescans.
 * **Release readiness and ticket lineage:** release readiness opens with a drillable summary, and ticket lineage has a story view.
@@ -127,7 +127,7 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * **Dependency Insights layout:** **Actions** (upgrade waves and risk review notes) is now a tab of **Updates & maintenance**, and applications without relationship evidence are found with the **Missing relationship evidence** filter of **Asset exposure**.
 * **Scale:** the governance pipeline, reachability, evidence ledger and page loads are bounded for large estates.
 
-#### 10. Agent, Scanner and Integrations
+#### Agent, Scanner and Integrations
 
 * The agent loads every job type it is assigned, and job types added by a licence or a new asset type reach agents that are already running.
 * The agent runs AI reviews and uploads source files after a scan, and skips operations an older server does not support.

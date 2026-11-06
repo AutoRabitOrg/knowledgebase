@@ -1,6 +1,6 @@
 # Release Notes 26.1.0 Eagle 7.0
 
-**Release Date: 1 June 2026**
+**Release date:** 1 June 2026
 
 ### Summary
 
@@ -13,9 +13,9 @@ CodeScan Self-Hosted version 26.1.0 (Eagle v7) is comprised of the following 24 
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
-#### 1. Data Flow Analysis
+#### Data Flow Analysis
 
 CodeScan has implemented new logic in some of the rules that detect vulnerabilities. This advanced logic provides precise visibility into where unsafe data originates and how it propagates, helping developers fix vulnerabilities at their source rather than applying superficial patches at the output stage.
 
@@ -30,9 +30,9 @@ In this release, we have added an advanced “source to sink” logic to the fol
 
 Specific details about the rules updates are available under the “Rule Enhancements” section of these Release Notes.
 
-### New Rules
+### New rules
 
-#### 1. Avoid Querying Fields That Aren’t Used Rule
+#### Avoid Querying Fields That Aren’t Used Rule
 
 **Rule details**
 
@@ -56,7 +56,7 @@ Retrieve the name of an Account and its owner's Name via getRecord:
 
 This way, we are enhancing the performance of LWC components and streamlining the data retrieval process from the Salesforce database.
 
-#### 2. Avoid Querying Fields That Aren’t Used Rule
+#### Avoid Querying Fields That Aren’t Used Rule
 
 Created a new rule for Flow metadata that validates the runInMode (or equivalent context property of a Flow). This rule inspects whether the flow is executing in DefaultMode, SystemModeWithSharing, or SystemModeWithoutSharing. If configured to DefaultMode, the rule produces a violation as the default behavior of the rule. The rule ensures that flows explicitly check access permissions and don’t unintentionally run with improper privilege elevation. The developer should be able to override or configure the rule to allow certain modes as exceptions.
 
@@ -102,7 +102,7 @@ Description:
 
 If enabled, the rule will ignore Screen flows using runInMode in DefaultMode (Default: false)
 
-#### 3. Locale Formats in API Versions pre-v45.0 Rule
+#### Locale Formats in API Versions pre-v45.0 Rule
 
 This new rule finds locale methods in Apex classes with API versions below v45.0. Failure to upgrade to API v45.0 or above could result in date and time formatting issues, affecting user experience and functionality.
 
@@ -137,7 +137,7 @@ The rule behavior was validated against the defined conditions.
 
 Classes with API versions prior to v45.0 and using locale-dependent methods are considered for detection, while classes with API v45.0+ are treated as compliant.
 
-#### 4. Avoid Plain Text Values in External Credential Parameters Rule
+#### Avoid Plain Text Values in External Credential Parameters Rule
 
 Added a new Salesforce Metadata security rule to detect plain text values in External Credential parameter values.
 
@@ -167,7 +167,7 @@ _Plain text value detected in parameterValue field. Use a dynamic merge field re
 
 Helps prevent sensitive credentials such as API keys, client IDs, and authentication tokens from being exposed in source control.
 
-#### **5. Avoid Using Unfiled Public Folders Rule**
+#### Avoid Using Unfiled Public Folders Rule
 
 **Rule ID:** _sf-meta:AvoidUnfiledPublic_
 
@@ -206,9 +206,9 @@ Verified the newly added rule _sf-meta:AvoidUnfiledPublic_ **(Avoid Using Unfile
 * This behavior is expected, as metadata placed in unfiled public folders can lead to unrestricted access, lack of proper organization, and potential compliance concerns.
 * No issues were observed with the rule configuration or behavior.
 
-### Rule Enhancements
+### Rule enhancements
 
-#### 1. Updated Unescaped Error Message XSS Rule
+#### Updated Unescaped Error Message XSS Rule
 
 Reimplemented the _sf:UnescapedOutput_ rule to include data flow tracing for variables passed to addError() (e.g., addError(html, false)).
 
@@ -228,7 +228,7 @@ Provides precise visibility into where unsafe data originates and how it propaga
 
 Verified that the data flow tracking logic for unescaped output in Apex is working, and the updated description has been applied.
 
-#### 2. Updated URL Parameters should be Escaped/Sanitized Rule
+#### Updated URL Parameters should be Escaped/Sanitized Rule
 
 Extended the _sf:UnescapedSource_ rule to track the flow of URL parameters retrieved from ApexPages.currentPage().getParameters().get(...). The data flow analysis will identify whether these variables are properly sanitized or escaped before reaching any sensitive sink or being rendered.
 
@@ -242,7 +242,7 @@ If the system highlights the full journey of parameters from getParameters() to 
 
 Enables developers to pinpoint missing sanitization in their Apex controllers by visualizing data flow paths, thus improving the security posture of Visualforce and Lightning pages.
 
-#### 3. Updated the Avoid Calling SOQL and DML Inside Loops Rule
+#### Updated the Avoid Calling SOQL and DML Inside Loops Rule
 
 Refined the issue description for _sf:AvoidSoqlInLoops_ to clearly identify the loop structure and the query being executed inside it.
 
@@ -254,7 +254,7 @@ Providing contextual information about where and how SOQL queries are invoked wi
 
 Enhances readability and educational value of performance warnings by showing contextual flow, helping developers refactor code more efficiently.
 
-#### 4. Added Data Flow Tracking for SOQL Injection Detection to Avoid Untrusted/Unescaped Variables in DML Query Rule
+#### Added Data Flow Tracking for SOQL Injection Detection to Avoid Untrusted/Unescaped Variables in DML Query Rule
 
 Enhanced the _sf:SOQLInjection_ rule to trace variable origins used in dynamic SOQL queries.
 
@@ -283,7 +283,7 @@ Verified the enhancement for sf:SOQLInjection via the following scenarios:
 * The rule correctly triggers for Apex code where untrusted input flows into dynamically constructed SOQL queries.
 * The issue message now includes an updated Data Flow Trace, clearly showing the origin/source of the untrusted input, and intermediate assignments / concatenations, and the exact sink where the query is executed.
 
-#### 5. Enhancement to Cross-Site Scripting (Reflected) Detection with Data Flow Tracing logic
+#### Enhancement to Cross-Site Scripting (Reflected) Detection with Data Flow Tracing logic
 
 Implemented data flow tracking for the _vf:CrossSiteScriptingReflected_ rule to trace how untrusted input propagates from sources like location.href, location.search, document.location, and window.location to sinks such as document.write, .innerHTML, or eval().
 
@@ -306,7 +306,7 @@ Verified the enhancement logic of Cross-Site Scripting (Reflected) Detection wit
 * Intermediate variable propagation
 * The final sink where the vulnerability occurs
 
-#### 6. Data Flow Tracking Logic added to Flow DML in Loops Rule
+#### Data Flow Tracking Logic added to Flow DML in Loops Rule
 
 Enhanced the _sfmeta:DmlInFlowLoop_ rule to include data flow tracking that identifies how DML operations (Create, Update, Delete Records) are executed within loop elements in Flows.
 
@@ -337,7 +337,7 @@ Verified the enhancement of the rule sfmeta:DmlInFlowLoop via the following scen
 * Validated that the rule correctly detects DML operations (Create/Update/Delete) executed inside Flow loops.
 * Validated that the rule reports a clear Data Flow Trace from the loop through intermediate elements (e.g., Decision) to the DML element.
 
-#### 7. Added New Parameters to Flow DML Should Not Be Called In Loops Rule
+#### Added New Parameters to Flow DML Should Not Be Called In Loops Rule
 
 Enhanced lag DML operations inside Salesforce Flows as violations across all flow types. However, some flow types (e.g., Scheduled Flows, Record-Triggered Flows configured for specific contexts) may legitimately require DML operations and should not be treated as violations.
 
@@ -402,7 +402,7 @@ Verified the new, configurable Ignore parameters for the sfmeta:DmlInFlowLoop ru
 
 All the parameters that are mentioned are added and are default to false supporting the correct behavior.
 
-#### 8. New Parameter added to rule Outer Class Explicit Sharing Rule
+#### New Parameter added to rule Outer Class Explicit Sharing Rule
 
 We have updated the rule _sf:OuterClassExplicitSharing_ to provide a configurable parameter that controls whether violations are raised for abstract and virtual outer classes. With this new parameter, users can avoid false positives in framework or base classes while still having the option to enforce explicit sharing when required by the security standards.
 
@@ -442,7 +442,7 @@ This behavior aligns with the intended design:
 * Reduces noise and false positives by default
 * Allows stricter enforcement when required by security standards
 
-#### 9. Improved Field Level Security Rule where User mode subqueries generated false positives
+#### Improved Field Level Security Rule where User mode subqueries generated false positives
 
 We have identified false positives and have concluded that there is an edge case that was not accounted for in _Sf:fieldlevelsecurity_ rule. Specifically, when the User mode is defined via AccessLevel in the return statement, the rule flagged it as a violation, resulting in false positives.
 
@@ -453,7 +453,7 @@ Verified the Sf:fieldlevelsecurity – USER\_MODE subquery false positive via se
 * Inline usage in Database.getQueryLocator
 * Simple variable assignment (AccessLevel mode = AccessLevel.USER\_MODE)
 
-#### 10. Added Data Flow Tracking for SOQL Injection Detection to Avoid Untrusted/Unescaped Variables in DML Query Rule
+#### Added Data Flow Tracking for SOQL Injection Detection to Avoid Untrusted/Unescaped Variables in DML Query Rule
 
 We verified the rule expression, and confirmed that we did not support the naming pattern PR\_TestClassName in _Sf:testclassnaming_ rule.
 
@@ -484,7 +484,7 @@ Validated the enhancement for the Sf:testclassnaming rule by verifying the follo
 * Validation ensures parameter cannot be empty.
 * Particular Reg expressions given in the allowed parameters skips the violations cccordingly.
 
-#### 11. Enhanced Parser for Methods Named “void”
+#### Enhanced Parser for Methods Named “void”
 
 Earlier, our parser wouldn’t process Apex methods named void.
 
@@ -585,7 +585,7 @@ Conclusion
 * Invalid syntax continues to be rejected as expected
 * No regressions observed in parsing behavior
 
-#### 12. Enhanced AvoidDMLInLoops Rule with Interprocedural Analysis
+#### Enhanced AvoidDMLInLoops Rule with Interprocedural Analysis
 
 Enhanced the Avoid DML/SOQL Inside Loops rule to detect violations across method calls, files, and nested execution paths.
 
@@ -606,7 +606,7 @@ Improves rule accuracy and helps detect governor-limit risks that were previousl
 
 ### Fixes
 
-#### 1. Fixed issue with data flow analysis logic in Avoid Untrusted/Unescaped Variables in DML Query Rule
+#### Fixed issue with data flow analysis logic in Avoid Untrusted/Unescaped Variables in DML Query Rule
 
 We identified an issue in CodeScan where the Data Flow Trace for a SOQL injection rule where the trace repeatedly shows the same assignment instead of a clean, non-duplicated trace.
 
@@ -616,7 +616,7 @@ We determined the root cause of the issue and updated the rule logic accordingly
 
 Verified relevant scenarios and rule is now working as expected.
 
-#### 2. SOQL Injection Rules Improvements
+#### SOQL Injection Rules Improvements
 
 Fix addresses a few scenarios described below.
 
@@ -642,7 +642,7 @@ Because of this limitation, these cases could not be properly handled and would 
 
 We remediated these issues with this fix, greatly improving the value of the data flow logic in tracing the vulnerability from sink to source.
 
-#### 3. Fixed issue with Avoid Cleartext Transmission of Sensitive Information Rule
+#### Fixed issue with Avoid Cleartext Transmission of Sensitive Information Rule
 
 Previously, the rule _InsecureEndpointRule_ was throwing a ClassCastException due to an invalid cast from ClassNameDeclaration to VariableNameDeclaration when analyzing endpoint expressions involving enum/class references (e.g., MODE.ERASE).
 
@@ -659,7 +659,7 @@ No runtime exceptions are observed during analysis.
 * No ClassCastException observed.
 * Rule executes as expected across all tested scenarios.
 
-#### 4. Fixed issue with Resource Injection Rule
+#### Fixed issue with Resource Injection Rule
 
 Several customers were reporting a StackOverflowError for the _sf:ResourceInjection_ rule. Based on the analysis of logs and review of implementation, we uncovered an infinite recursive call in the isSanitized method in the UrlSanitization.java and determined that this is the reason for the StackOverflowError.
 
@@ -674,7 +674,7 @@ Validation after fix:
 
 As such, we are reporting that this issue has been fully remediated.
 
-#### 5. Fixed issue with Unescaped Error Message XSS Rule
+#### Fixed issue with Unescaped Error Message XSS Rule
 
 Earlier, the Unescaped Output Rule was able to trace data flow through methods but not through assignment chains effectively. Due to missing/inefficient assignment data flow handling, the rule repeatedly re-entered isSanitized while resolving sanitization status for variables passed through assignments. This resulted in deep recursive calls and ultimately a StackOverflowError, instead of reporting a violation
 
@@ -685,7 +685,7 @@ Earlier, the Unescaped Output Rule was able to trace data flow through methods b
 
 As such, the issue has been successfully remediated. The rule now handles deep assignment chains correctly and avoids infinite recursion in isSanitized, without causing a StackOverflowError.
 
-#### 6. Resolved Stack Overflow Issue in Field Level Security Rule Analysis
+#### Resolved Stack Overflow Issue in Field Level Security Rule Analysis
 
 Fixed an issue where project analysis could become stuck or fail due to a stack overflow error in the Field Level Security rule during Apex analysis.
 

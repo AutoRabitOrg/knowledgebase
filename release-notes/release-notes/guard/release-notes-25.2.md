@@ -2,11 +2,11 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Guard Release Notes Mailing List:" listId="a085e26e7e" %}
 
-## Guard 25.2.9 Release Notes
+## Guard 25.2.9
 
-**Release Date: 3 December 2025**
+**Release date:** 3 December 2025
 
-### New Features
+### New features
 
 #### Embedded Virtual Assistant
 
@@ -54,13 +54,13 @@ Users can now see their tenant's name next to the Release version in the bottom-
 
 The platform has been upgraded to Spring Boot 4.0 for enhanced performance, security, and framework stability.
 
-### Bug Fixes
+### Fixes
 
 #### Missing Salesforce Field
 
 User Activity Monitoring now works even in orgs missing the User.LastPasswordChangeDate field, preventing GQL errors.
 
-#### **Risk Assessment**
+#### Risk Assessment
 
 Multiple issues have been fixed, including:
 
@@ -70,11 +70,11 @@ Multiple issues have been fixed, including:
 
 ***
 
-## Guard 25.2.8 Release Notes
+## Guard 25.2.8
 
-**Release Date: 26 November 2025**
+**Release date:** 26 November 2025
 
-### Improvements
+### Enhancements
 
 #### Salesforce Org Dashboard Enhancements
 
@@ -87,7 +87,7 @@ Multiple issues have been fixed, including:
 * Added clear password requirement hints to the New Password screen.
 * Helps users understand the strict password criteria and successfully set up their account.
 
-### Bug Fixes
+### Fixes
 
 #### Risk Assessment: Certificate Values
 
@@ -105,9 +105,9 @@ Multiple issues have been fixed, including:
 
 ***
 
-## Guard 25.2.7 Release Notes
+## Guard 25.2.7
 
-**Release Date: 29 October 2025**
+**Release date:** 29 October 2025
 
 ### New Features & Enhancements
 
@@ -135,7 +135,7 @@ Access to support resources is now simpler. The Help menu has been redesigned to
 
 The Guard home page now features interactive cards that highlight recently added features. Each card links directly to its feature page for quick navigation, and the updated Change Monitoring card reflects the latest functionality for easier discovery.
 
-### Bug Fixes
+### Fixes
 
 #### Permissions Explorer Field Error
 
@@ -147,11 +147,11 @@ Resolved an issue where some permissions were not displaying correctly in the Cu
 
 ***
 
-## Guard 25.2.6 Release Notes
+## Guard 25.2.6
 
-**Release Date: 15 October 2025**
+**Release date:** 15 October 2025
 
-### New Features
+### New features
 
 #### Sync Data Classification Results to Salesforce
 
@@ -247,7 +247,7 @@ Added a new “Show Frozen Users” checkbox in Custom Explorer.
 **Impact:**\
 Provides clarity and control in results interpretation.
 
-### Bug Fixes
+### Fixes
 
 #### Notification Rules in Delete Org Confirmation Modal
 
@@ -258,9 +258,9 @@ Now shows only items tied to the org being deleted, eliminating confusion.
 
 ***
 
-## Guard 25.2.5 Release Notes
+## Guard 25.2.5
 
-**Release Date**: 24 September 2025
+**Release date:** 24 September 2025
 
 ### User Activity Monitoring
 
@@ -317,7 +317,7 @@ The platform now provides comprehensive event logging to strengthen accountabili
 
 **Why it matters**: Provides robust traceability and supports effective security investigations.
 
-### Bug Fixes
+### Fixes
 
 * Salesforce Org Registration OAuth Error: Fixed an issue preventing new Salesforce Orgs from being registered due to OAuth flow failures.
 * Password Reset Flow: Password policy error messages now clearly display complete requirements
@@ -327,9 +327,9 @@ The platform now provides comprehensive event logging to strengthen accountabili
 
 ***
 
-## Guard 25.2.4.3 Release Notes
+## Guard 25.2.4.3
 
-**Release Date**: 15 September 2025
+**Release date:** 15 September 2025
 
 ### Enhanced Export Capabilities
 
@@ -346,22 +346,22 @@ The platform now provides comprehensive event logging to strengthen accountabili
   * Customers can now export all data from the **API Security** page into a CSV file.
   * This export provides a complete view of connected applications and their security posture.
 
-### Other Enhancements
+### Enhancements
 
 * Copy as JSON
   * A new **“Copy as JSON”** button has been added to the Permissions Explorer.
 
 This feature allows users to copy the **entire JSON response**, which simplifies troubleshooting, data sharing, and downstream analysis.
 
-### Bug Fixes
+### Fixes
 
 * Implemented additional APIs and added extended logs for deeper insights during troubleshooting, improving visibility into system operations.
 
 ***
 
-## Guard 25.2.4 Release Notes
+## Guard 25.2.4
 
-**Release Date: 10 September 2025**
+**Release date:** 10 September 2025
 
 ### API Security
 
@@ -414,7 +414,7 @@ These changes make Risk Assessment more accessible for both technical and non-te
 * Improved Icon Visibility: Table header icons are now larger and easier to read, improving accessibility and UI consistency.
 * Data Classification Transparency: A new “Non-Started” state prevents confusion and allows users to trigger analysis manually when needed.
 
-### Bug Fixes
+### Fixes
 
 * Data Classification Export: Email notifications correctly include attached exports.
 * Permissions Explorer: Accurate Access visibility ensured.
@@ -427,9 +427,9 @@ These changes make Risk Assessment more accessible for both technical and non-te
 
 ***
 
-## Guard 25.2.3 Release Notes
+## Guard 25.2.3
 
-**Release Date: 20 August 2025**
+**Release date:** 20 August 2025
 
 ### New User Creation Simplified
 
@@ -467,20 +467,20 @@ This ensures:
 * Reduced risk of data interception or tampering.
 * Compliance with **federal security standards**.
 
-### Bug Fixes
+### Fixes
 
 * **User Unlocking**: Resolved an issue with locked accounts that couldn’t be unlocked from the Settings page. Admins can now restore users' access without any errors.
 
-### Other Enhancements
+### Enhancements
 
 * **Security & Compliance**: We have strengthened our platform’s security by implementing targeted improvements that meet stringent federal standards. These updates reduce potential attack surfaces and further enhance data protection.
 * Implemented a few back-end optimizations to enhance system stability and ensure long-term maintainability, supporting a smoother and more reliable user experience.
 
 ***
 
-## Guard 25.2.2 Release Notes
+## Guard 25.2.2
 
-**Release Date: 23 July 2025**
+**Release date:** 23 July 2025
 
 1. Risk Assessment is goal-oriented now!
 
@@ -534,7 +534,7 @@ To improve application navigation, in this release we have added a new menu:
 
 <figure><img src="../../../.gitbook/assets/image (1932).png" alt=""><figcaption></figcaption></figure>
 
-### Bug Fixes
+### Fixes
 
 1\. Zoho desk link now works as expected.
 

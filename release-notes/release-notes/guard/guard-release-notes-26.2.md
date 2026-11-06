@@ -4,9 +4,9 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" %}
 
-## AutoRABIT Guard 26.2.6 Release Notes
+## Guard 26.2.6
 
-**Release Date: 14 October 2026**
+**Release date:** 14 October 2026
 
 ### Enhancements
 
@@ -80,7 +80,7 @@ Updates that only change notification recipients are also processed more efficie
 
 Notification group member selection now shows usernames and email addresses, making users with the same email address easier to distinguish.
 
-### Bug Fixes
+### Fixes
 
 #### Digital Experience Assessment: Site Discovery
 
@@ -130,9 +130,9 @@ Response handling and tool validation have been improved for more consistent int
 
 ***
 
-## AutoRABIT Guard 26.2.5.6 Release Notes
+## Guard 26.2.5.6
 
-**Release Date: 7 October 2026**
+**Release date:** 7 October 2026
 
 ### Enhancements
 
@@ -150,7 +150,7 @@ Guard now avoids retired or deprecated Salesforce API version pins in affected S
 
 Guard documentation and related guidance now include the Salesforce permissions required for upcoming Salesforce release updates, including View All Profiles and View Setup Audit Trail.
 
-### Bug Fixes
+### Fixes
 
 #### Automated Data Classification: Manual run control
 
@@ -172,11 +172,11 @@ Risk Assessment auto-resolve now works for Salesforce orgs where multi-factor au
 
 ***
 
-## AutoRABIT Guard 26.2.5 Release Notes
+## Guard 26.2.5
 
-**Release Date: 23 September 2026**
+**Release date:** 23 September 2026
 
-### New Features
+### New features
 
 #### Notification Center
 
@@ -277,7 +277,7 @@ Real-time Change Notifications has been renamed Change Monitoring Policies acros
 
 The new name distinguishes policy configuration from the notifications generated when a policy is triggered.
 
-### Bug Fixes
+### Fixes
 
 #### Drift Policies: Editing policies with deactivated recipients
 
@@ -303,11 +303,11 @@ Large Permission Explorer exports now complete reliably and provide the full exp
 
 ***
 
-## AutoRABIT Guard 26.2.4 Release Notes
+## Guard 26.2.4
 
-**Release Date: 19 August 2026**
+**Release date:** 19 August 2026
 
-### New Features
+### New features
 
 #### Digital Experience Assessment
 
@@ -347,7 +347,7 @@ Guard now provides clearer feedback when a user is created but the invitation em
 
 Administrators can see the relevant invitation error and resend the invitation from the user page.
 
-### Bug Fixes
+### Fixes
 
 #### API Security: Stable dashboard rendering
 
@@ -365,9 +365,9 @@ The organization selector is now locked while Permission History results are bei
 
 ***
 
-## AutoRABIT Guard Release Notes 26.2.3
+## Guard 26.2.3
 
-**Release Date: 5 August 2026**
+**Release date:** 5 August 2026
 
 ### Enhancements
 
@@ -387,7 +387,7 @@ This enables administrators to identify increases or decreases in locked user ac
 
 When creating a Drift Policy from a template, users can now view the metrics and comparison behavior included in the template before saving.
 
-### Bug Fixes
+### Fixes
 
 #### Automated Data Classification – Custom Regulations
 
@@ -407,9 +407,9 @@ Risk Assessment now displays PII labels consistently and accurately counts disti
 
 ***
 
-## AutoRABIT Guard Release Notes 26.2.2
+## Guard 26.2.2
 
-**Release Date: 15 July 2026**
+**Release date:** 15 July 2026
 
 ### Enhancements
 
@@ -431,7 +431,7 @@ Recipient selection is also aligned across Real-Time Change Notifications and Dr
 
 The User Management interface now displays each user’s Creation Date and Last Login. These fields are available in the Users table and in the User Details view, helping admins review account age and identify inactive users.
 
-### Bug Fixes
+### Fixes
 
 #### Drift Policy Direct Links
 
@@ -439,13 +439,13 @@ Opening a Drift Policy from a direct link, such as a notification email, will no
 
 ***
 
-## AutoRABIT Guard Release Notes 26.2.1
+## Guard 26.2.1
 
-**Release Date: 17 June 2026**
+**Release date:** 17 June 2026
 
-### New Features
+### New features
 
-#### **Drift Policies**
+#### Drift Policies
 
 This release introduces Drift Policies: a dedicated area for monitoring meaningful changes in security posture across supported Guard data sources. Users can:
 
@@ -458,7 +458,7 @@ For more information, please see the [Drift Policies article](https://knowledgeb
 
 ### Enhancements
 
-#### **Public File Exposure Improvements**
+#### Public File Exposure Improvements
 
 Public File Exposure now provides clearer visibility into public links. This includes:
 
@@ -467,44 +467,44 @@ Public File Exposure now provides clearer visibility into public links. This inc
 * Filtering by expiration date and active-only;
 * Remediation actions to expire links immediately or schedule expiration.
 
-#### **Real-Time Change Notification Filtering**
+#### Real-Time Change Notification Filtering
 
 Real-Time Change Notifications now support filtering and sorting by organization.
 
-#### **Permission Set Targeting for Change Notifications**
+#### Permission Set Targeting for Change Notifications
 
 Users can now configure Real-Time Change Notifications to track changes for specific permission sets.
 
-#### **Guard CLI Export Filtering**
+#### Guard CLI Export Filtering
 
 Guard CLI export commands now support more targeted data extraction with filtering options.
 
-### Bug Fixes
+### Fixes
 
-#### **Session Timeout Improvements**
+#### Session Timeout Improvements
 
 Guard now handles client-side idle timeout more consistently across browser tabs, helping inactive sessions expire as expected.
 
-#### **Risk Assessment**
+#### Risk Assessment
 
 Fixed an issue where auto-resolve controls could be bypassed when auto-resolution was disabled.
 
-#### **User Activity Monitoring**
+#### User Activity Monitoring
 
 Fixed an issue where large Salesforce orgs could encounter errors when browsing beyond the first set of user records.
 
-#### **Permissions Explorer**
+#### Permissions Explorer
 
 Fixed inconsistencies where user status could appear incorrectly across Permissions Explorer table and user detail views.
 
-#### **Automated Data Classification**
+#### Automated Data Classification
 
 Fixed an issue where classification analysis could fail after refresh.
 
-#### **User Management**
+#### User Management
 
 Improved validation so user details cannot be saved with empty or whitespace-only values. Also fixed an issue where temporary locks could not be removed for users who had not yet logged in.
 
-#### **General UI Error Handling**
+#### General UI Error Handling
 
 Fixed an issue where some error messages appeared twice in the UI.

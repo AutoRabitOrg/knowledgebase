@@ -1,6 +1,6 @@
 # Release Notes 26.1.2 Eagle 9.0
 
-**Release Date: 5 August 2026**
+**Release date:** 5 August 2026
 
 ### What Changed
 

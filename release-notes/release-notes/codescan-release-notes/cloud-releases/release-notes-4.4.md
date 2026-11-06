@@ -1,8 +1,8 @@
 # Release Notes 4.4
 
-### CodeScan 4.4 <a href="#codescan-44" id="codescan-44"></a>
+### CodeScan 4.4
 
-#### New Features <a href="#new-features" id="new-features"></a>
+#### New features
 
 **New Cloud Features**
 
@@ -24,13 +24,13 @@
 
 * **Avoid using Tab Characters Check (v4.4.5)**: checks that there are no tab characters ('\t') in the source code.
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * Field Level Security now specifies the field it is failing on.
 * Old Page API Version now specifies the API version in the message (**v4.4.4**).
 * Metadata parsing was improved to fix memory errors caused by larger types (**v4.4.5**).
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * Excessive Method Length no longer counts comments as lines.
 * Use Singleton now ignores Aura controllers.

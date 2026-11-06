@@ -1,8 +1,8 @@
 # Release Notes 4.2
 
-### CodeScan 4.2 <a href="#codescan-42" id="codescan-42"></a>
+### CodeScan 4.2
 
-#### New Features <a href="#new-features" id="new-features"></a>
+#### New features
 
 **New Apex Rules**
 
@@ -35,14 +35,14 @@
 * **Unescaped Value Could Cause XSS**: Reflected Cross-site Scripting (XSS) occurs when an attacker injects browser executable code within a single HTTP response. Using unescaped parameters can be a security risk.
 * **Avoid Apex Tags Within Script**: Avoid using \<apex:\*> tags within \<script> tags for readability and security.
 
-#### &#x20;Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * Improved documentation on vulnerabilities including links to OWASP and CERT explanations.
 * Support for Inherited Sharing Keywords in Apex - [Salesforce Documentation](https://help.salesforce.com/s/articleView?id=release-notes.rn_apex_inherited_sharing.htm\&type=5\&release=216)
 
 <br>
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * Code coverage that does not match the current state of the codebase no longer causes unrecoverable errors (**v4.2.0**)
 * Fixed bug that caused component files to not scan correctly (**v4.2.2**)
@@ -57,7 +57,7 @@
 
 <br>
 
-#### Other Changes <a href="#other-changes" id="other-changes"></a>
+#### Other Changes
 
 * The rule "Class with only Private Constructors should be Final" has been deprecated and removed completely.  Classes are final by default therefore this rule is unnecessary.
 * The rule "Remove OnClick Javascript" has been removed from the default Visualforce and Lightning Quality Profile.

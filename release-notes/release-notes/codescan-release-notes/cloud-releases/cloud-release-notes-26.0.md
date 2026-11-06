@@ -4,9 +4,9 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
-## CodeScan Release Notes 26.0.23
+## CodeScan 26.0.23
 
-**Release Date: 4 November 2026**
+**Release date:** 4 November 2026
 
 ### Summary
 
@@ -19,9 +19,9 @@ CodeScan 26.0.23 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
-#### 1. Resolution Transfer
+#### Resolution Transfer
 
 **Description**
 
@@ -47,7 +47,7 @@ Teams can apply consistent issue dispositions across projects and branches, auto
 
 <figure><img src="../../../../.gitbook/assets/image (5501).png" alt=""><figcaption><p align="center"><em>Resolution Transfer: scheduled job management and recent execution history.</em></p></figcaption></figure>
 
-#### 2. AI Users & Billing Management
+#### AI Users & Billing Management
 
 **Description**
 
@@ -67,7 +67,7 @@ Administrators can monitor high-consumption users, allocate AI access and limits
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2026-11-04 at 4.59.00 PM.png" alt=""><figcaption><p align="center"><em>AI Users &#x26; Billing: consumption summary, user limits, and license assignments.</em></p></figcaption></figure>
 
-#### 3. AutoRABIT Mule and API Analyzers
+#### AutoRABIT Mule and API Analyzers
 
 **Description**
 
@@ -131,9 +131,9 @@ These analyzers are available only for hosted AutoRABIT CodeScan with the MuleSo
 
 Customers gain broader Mule application and API specification coverage through AutoRABIT CodeScan while retaining the existing MuleSoft rules and a single add-on entitlement.
 
-### Application Enhancements
+### Enhancements
 
-#### 1. AI Code Assistant support for Bitbucket Cloud Pull Requests
+#### AI Code Assistant support for Bitbucket Cloud Pull Requests
 
 **Description**
 
@@ -149,7 +149,7 @@ AI Code Assistant can now create pull requests in Bitbucket Cloud repositories, 
 
 Bitbucket Cloud users can review AI-generated fixes through their normal pull-request workflow instead of applying fixes manually.
 
-#### 2. AI Code Assistant Support for Three Additional Rules
+#### AI Code Assistant Support for Three Additional Rules
 
 **Description**
 
@@ -165,7 +165,7 @@ AI Code Assistant now provides assistance for three additional Apex security and
 
 Developers can use AI-assisted remediation for more detected Apex findings directly within their existing CodeScan workflow.
 
-#### 3. AI Credit Usage Threshold Notifications
+#### AI Credit Usage Threshold Notifications
 
 **Description**
 
@@ -180,9 +180,9 @@ CodeScan now notifies organization administrators when monthly AI credit consump
 
 Administrators receive timely visibility into approaching or exhausted AI credit entitlements without needing to check usage manually.
 
-### Rule Enhancements
+### Rule enhancements
 
-#### 1. Salesforce Flow Naming Convention Rule (sfmeta:FlowNaming)
+#### Salesforce Flow Naming Convention Rule (sfmeta:FlowNaming)
 
 **Description**
 
@@ -208,7 +208,7 @@ Flow analyses now accept compliant naming patterns more consistently and flag ma
 
 ### Fixes
 
-#### 1. Salesforce Metadata Retrieval for Large Organizations
+#### Salesforce Metadata Retrieval for Large Organizations
 
 **Description**
 
@@ -222,7 +222,7 @@ When a retrieve batch hits LIMIT\_EXCEEDED, CodeScan reduces its batch size and 
 
 Metadata-heavy organizations get more resilient retrievals and clearer failure information.
 
-#### 2. Clearer Cloud Analysis Timeout and Token Expiration Errors
+#### Clearer Cloud Analysis Timeout and Token Expiration Errors
 
 **Description**
 
@@ -236,7 +236,7 @@ Timeout errors now report “AutoRABIT CodeScan analysis failed because the requ
 
 Users can distinguish request timeouts from token expiration and take corrective action more quickly.
 
-#### 3. Metadata File Suffix Recognition
+#### Metadata File Suffix Recognition
 
 **Description**
 
@@ -250,7 +250,7 @@ File suffix matching now recognizes uppercase characters correctly. Validation r
 
 Applicable Salesforce Metadata rules can analyze these files without manual suffix workarounds.
 
-#### 4. Exception Comments Saved to Issue Activity
+#### Exception Comments Saved to Issue Activity
 
 **Description**
 
@@ -264,7 +264,7 @@ The comment is now saved and shown in issue activity when the Exception transiti
 
 Issue resolution history retains the comment entered during the transition.
 
-#### 5. Dynamic SOQL Bind Variables No Longer Incorrectly Flagged as Unused
+#### Dynamic SOQL Bind Variables No Longer Incorrectly Flagged as Unused
 
 **Description**
 
@@ -280,9 +280,9 @@ False positives are reduced for variables that are genuinely used in dynamic SOQ
 
 ***
 
-## CodeScan Release Notes 26.0.22
+## CodeScan 26.0.22
 
-**Release Date: 14 October 2026**
+**Release date:** 14 October 2026
 
 ### Summary
 
@@ -297,9 +297,9 @@ CodeScan 26.0.22 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
-#### **Salesforce Static Resource Scanning**
+#### Salesforce Static Resource Scanning
 
 Introduced the ability to extract and analyze the contents of Salesforce Static Resource files. Supported file types within archives (JS, CSS, HTML, JSON, etc.) are routed to their existing language analyzers, with findings reported against the original resource name and internal file path.
 
@@ -327,9 +327,9 @@ Please note that files within static resource archives that exceed 500 KB in siz
 * Provides granular control at both instance and project levels.
 * No impact to existing analysis when the feature is not enabled.
 
-### Application Enhancements
+### Enhancements
 
-#### **Rebranded to AutoRABIT CodeScan**
+#### Rebranded to AutoRABIT CodeScan
 
 Updated branding throughout the product from "CodeScan" to "AutoRABIT CodeScan."
 
@@ -344,7 +344,7 @@ Updated branding throughout the product from "CodeScan" to "AutoRABIT CodeScan."
 
 * Consistent AutoRABIT CodeScan branding across all customer-facing surfaces.
 
-#### **Quality Profiles Page Displays Actual Profile Name**
+#### Quality Profiles Page Displays Actual Profile Name
 
 Updated the project-level Quality Profiles page to show the actual profile name instead of the generic "Instance default" label.
 
@@ -359,7 +359,7 @@ Updated the project-level Quality Profiles page to show the actual profile name 
 * Eliminates the need to navigate to Administration > Quality Profiles to identify which profile is applied.
 * Improves usability of the project settings page.
 
-#### **AI Code Assistant Hidden from Assignee Dropdown for Unlicensed Users**
+#### AI Code Assistant Hidden from Assignee Dropdown for Unlicensed Users
 
 Updated the assignee dropdown to display the AI Code Assistant option only for organizations with an active AI Code Assistant license.
 
@@ -368,7 +368,7 @@ Outcome
 * Prevents confusion for users whose organization does not have an AI Code Assistant license.
 * Ensures the UI accurately reflects available functionality per subscription.
 
-#### **Migrated from Deprecated SOAP Login to OAuth**
+#### Migrated from Deprecated SOAP Login to OAuth
 
 Migrated the on-prem SonarQube plugin's Salesforce authentication from the deprecated SOAP `login()` call (pinned at API v41.0) to an OAuth JWT Bearer flow, ahead of Salesforce's announced full retirement of SOAP `login()` by mid-2027.
 
@@ -382,15 +382,15 @@ Migrated the on-prem SonarQube plugin's Salesforce authentication from the depre
 * Future-proofs on-prem customer deployments against the Salesforce SOAP login retirement (Winter 27 Release).
 * Aligns authentication with Salesforce's recommended OAuth patterns.
 
-### Rule Enhancements
+### Rule enhancements
 
-#### **Added `usePreviousVersion` Support for `sf:FieldLevelSecurity`**
+#### Added `usePreviousVersion` Support for `sf:FieldLevelSecurity`
 
 Applied the `usePreviousVersion` parameter to the `sf:FieldLevelSecurity` rule following the versioning framework introduced in 26.0.21.
 
 Customers can set `usePreviousVersion = true` to continue using the prior version of the FLS rule behavior while transitioning to the latest enhancements.
 
-#### **Updated Class Sharing Rules for Salesforce API 67+**
+#### Updated Class Sharing Rules for Salesforce API 67+
 
 Updated `sf:OuterClassExplicitSharing`, `sf:DMLWithoutSharingEnabled`, and `sf:ClassExplicitSharing` to account for the default `with sharing` behavior introduced in Salesforce API 67.
 
@@ -404,7 +404,7 @@ Updated `sf:OuterClassExplicitSharing`, `sf:DMLWithoutSharingEnabled`, and `sf:C
 * Eliminates false violations for customers on API 67+.
 * Aligns rule behavior with current Salesforce platform defaults.
 
-#### **Updated Field-Level Security Rule for Salesforce API 67+**
+#### Updated Field-Level Security Rule for Salesforce API 67+
 
 Updated the `sf:FieldLevelSecurity` rule to align with API 67+ changes to field-level security enforcement behavior.
 
@@ -412,7 +412,7 @@ Updated the `sf:FieldLevelSecurity` rule to align with API 67+ changes to field-
 
 * Ensures FLS rule accuracy for customers targeting Salesforce API 67 and above.
 
-#### **Extended `sf:TrackSuppressWarnings` to Detect NOPMD Comments**
+#### Extended `sf:TrackSuppressWarnings` to Detect NOPMD Comments
 
 Extended the `sf:TrackSuppressWarnings` rule to also detect `NOPMD` comment annotations, which serve a similar suppression purpose to `@SuppressWarnings`.
 
@@ -420,7 +420,7 @@ Extended the `sf:TrackSuppressWarnings` rule to also detect `NOPMD` comment anno
 
 * Ensures all code-analysis suppression mechanisms are tracked consistently.
 
-#### **Updated API-Version Rule-Floor Defaults**
+#### Updated API-Version Rule-Floor Defaults
 
 Bumped the default minimum API version thresholds for `OldApiVersionRule`, `OldFlowApiRule`, and `OldLWCApiRule` to reflect current Salesforce release levels.
 
@@ -430,39 +430,39 @@ Bumped the default minimum API version thresholds for `OldApiVersionRule`, `OldF
 
 ### Fixes
 
-#### **Analysis Failure on Large Salesforce Profiles During PR Scans**
+#### Analysis Failure on Large Salesforce Profiles During PR Scans
 
 Fixed an issue where CodeScan analysis failed when processing very large Salesforce Profile metadata files during pull request scans. SARIF file size generation has been increased to handle high-volume profile data.
 
 Customers with large Profile metadata files will no longer experience analysis failures.
 
-#### **Field-Level Security Rule Not Raised for Switch Cases and Enum Fields**
+#### Field-Level Security Rule Not Raised for Switch Cases and Enum Fields
 
 Fixed an issue where the `sf:FieldLevelSecurity` rule was not raised correctly when secured fields were accessed inside `switch` statement conditions or through enum values.
 
 Outcome: FLS violations in `switch`/`enum` patterns are now detected consistently.
 
-#### **`sfmeta:ExternalCredentialPlainTextValue` False Positive on Dynamic Merge Fields**
+#### `sfmeta:ExternalCredentialPlainTextValue` False Positive on Dynamic Merge Fields
 
 Fixed a false violation where the rule incorrectly flagged dynamic merge field references as plain-text credential values.
 
-#### **CVSS Score Breakdown Missing in Rules Module**
+#### CVSS Score Breakdown Missing in Rules Module
 
 Fixed an issue where the CVSS Score Breakdown button was missing from vulnerability rules in the CodeScan GUI portal.
 
-#### **`sf:AuraControllerNaming` False Positives for DTO Classes**
+#### `sf:AuraControllerNaming` False Positives for DTO Classes
 
 Fixed false positives where non-controller Apex classes with `@AuraEnabled` properties (used as Data Transfer Objects) were incorrectly flagged. The rule now triggers only on classes with `@AuraEnabled` methods, not just any class containing `@AuraEnabled`.
 
 DTO classes are no longer incorrectly reported as Aura controllers.
 
-#### **`sf:CommentRequired` Misfired When Annotation Precedes Method Comment**
+#### `sf:CommentRequired` Misfired When Annotation Precedes Method Comment
 
 Fixed a false positive where the rule did not recognize method comments when an annotation declaration appeared between the comment and the method signature.
 
 Methods with annotations before their comment blocks are now recognized correctly.
 
-#### **JavaScript Parser for ES Module Syntax**
+#### JavaScript Parser for ES Module Syntax
 
 Fixed an issue where JavaScript files using ES module `export {}` syntax were incorrectly parsed as CommonJS scripts (`sourceType: "script"`), causing parser errors (`cs-js:exception`).
 
@@ -470,9 +470,9 @@ JavaScript files using standard ES module export syntax are now analyzed without
 
 ***
 
-## CodeScan Release Notes 26.0.21
+## CodeScan 26.0.21
 
-**Release Date: 20 September 2026**
+**Release date:** 20 September 2026
 
 ### Summary
 
@@ -487,7 +487,7 @@ CodeScan 26.0.21 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 #### Rule Version Rollback Support
 
@@ -550,7 +550,7 @@ Expanded the SFMeta language registration to include previously missing Salesfor
 * Eliminates scenarios where rules could silently miss files due to unregistered suffixes.
 * Clarifies the LWC analysis architecture for maintenance and update purposes.
 
-### Rule Enhancements
+### Rule enhancements
 
 #### Enhanced FLS Query Detection for Dynamic and Static Patterns
 
@@ -607,9 +607,9 @@ Fixed an issue where the "AI Fix Available" indicator was displayed for issues a
 
 ***
 
-## CodeScan Release Notes 26.0.20
+## CodeScan 26.0.20
 
-**Release Date: 6 September 2026**
+**Release date:** 6 September 2026
 
 ### Summary
 
@@ -624,11 +624,11 @@ CodeScan 26.0.20 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 There are no New Features in this release.
 
-### Application Enhancements
+### Enhancements
 
 #### AI Code Assistant Prompt Quality Improvement
 
@@ -678,9 +678,9 @@ Resolved an issue where new code highlighting could misalign with the actual cha
 
 ***
 
-## CodeScan Release Notes 26.0.19
+## CodeScan 26.0.19
 
-**Release Date: 23 August 2026**
+**Release date:** 23 August 2026
 
 ### Summary
 
@@ -695,9 +695,9 @@ CodeScan 26.0.19 is comprised of the following components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
-#### 1. Self-Service Trial Experience (PLG)
+#### Self-Service Trial Experience (PLG)
 
 Added a self-service trial experience that allows new users to sign up for a time-limited CodeScan trial directly from a dedicated trial URL, without requiring manual provisioning or sales involvement.
 
@@ -746,9 +746,9 @@ Added a self-service trial experience that allows new users to sign up for a tim
 
 ***
 
-## CodeScan Release Notes 26.0.18
+## CodeScan 26.0.18
 
-**Release Date: 16 August 2026**
+**Release date:** 16 August 2026
 
 ### Summary
 
@@ -765,7 +765,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Fix
 
-#### 1. GitHub App Authentication and Token Refresh Improvements
+#### GitHub App Authentication and Token Refresh Improvements
 
 Resolved multiple issues where GitHub App integration analyses would fail with authentication errors after the initial access token expired, affecting both Pull Request analysis and manual analysis runs.
 
@@ -785,9 +785,9 @@ Fixed an issue where both Manual Analysis and Pull Request Analysis failed with 
 
 ***
 
-## CodeScan Release Notes 26.0.17
+## CodeScan 26.0.17
 
-**Release Date: 2 August 2026**
+**Release date:** 2 August 2026
 
 ### Summary
 
@@ -802,7 +802,7 @@ AutoRABIT CodeScan 26.0.17 is comprised of the following 3 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 #### AI Code Assistant (Pilot)
 
@@ -845,9 +845,9 @@ The CodeScan MCP Server is currently available as a Pilot feature. To learn more
 
 ***
 
-## CodeScan Release Notes 26.0.16
+## CodeScan 26.0.16
 
-**Release Date: 19 July 2026**
+**Release date:** 19 July 2026
 
 ### Summary
 
@@ -862,7 +862,7 @@ AutoRABIT CodeScan 26.0.16 is comprised of the following 4 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 1. **Added Support for Salesforce Refresh Token Rotation (RTR)**
 
@@ -981,9 +981,9 @@ The updated guidance explains that using page layouts limits the requirement to 
 
 ***
 
-## CodeScan Release Notes 26.0.15
+## CodeScan 26.0.15
 
-**Release Date: 05 July 2026**
+**Release date:** 5 July 2026
 
 ### Summary
 
@@ -996,7 +996,7 @@ CodeScan 26.0.15 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 1. **CodeScan now has “salesforce-project-only” tags for Rules with SF queries**
 
@@ -1069,7 +1069,7 @@ We have verified that the tag "salesforce-project-only" has been added to all 13
 
 <img src="../../../../.gitbook/assets/unknown (142).png" alt="" height="320" width="578">
 
-### New Rules
+### New rules
 
 1. **New CodeScan Metadata Rule: “Communities With Guest Access”**
 
@@ -1232,7 +1232,7 @@ NOTE: This is a project-level rule.
 
 All verification use cases passed successfully, the rule is working as expected, and no issues were reported during verification.
 
-### Rule Enhancements
+### Rule enhancements
 
 1. **Enhanced logic in CodeScan Apex rule “Unused Formal Parameter” to address common false positives {Rule ID: sf:UnusedFormalParameter}**
 
@@ -1361,9 +1361,9 @@ The API is expected to give a 200 response and return the details of the created
 
 ***
 
-## CodeScan Release Notes 26.0.14
+## CodeScan 26.0.14
 
-**Release Date: 28 June 2026**
+**Release date:** 28 June 2026
 
 ### Summary
 
@@ -1395,9 +1395,9 @@ Improves CI pipeline performance and ensures analysis results remain relevant to
 
 ***
 
-## CodeScan Release Notes 26.0.13
+## CodeScan 26.0.13
 
-**Release Date: 21 June 2026**
+**Release date:** 21 June 2026
 
 ### Summary
 
@@ -1412,7 +1412,7 @@ CodeScan 26.0.13 is comprised of the following 6 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 1. **Enhanced CSV Export Reporting for Issues and Security Hotspots**
 
@@ -1465,7 +1465,7 @@ The updated exports provide users with improved visibility into severity, owners
 * Reduces the need to manually gather information from multiple areas of the platform.
 * Enhances offline analysis and reporting workflows.
 
-### New Rules
+### New rules
 
 1. **Connected App Missing Description**
 
@@ -1507,7 +1507,7 @@ _Connected App does not have a description defined. Add a description for better
 * Supports security audits and compliance reviews.
 * Provides better visibility into app purpose and ownership.
 
-### Rule Enhancements
+### Rule enhancements
 
 **1. Improved Rule Engine Stability and Error Handling**
 
@@ -1635,9 +1635,9 @@ Previously, analyses configured with the _Use previous run_ option could fail wh
 
 ***
 
-## CodeScan Release Notes 26.0.12
+## CodeScan 26.0.12
 
-**Release Date: 7 June 2026**
+**Release date:** 7 June 2026
 
 ### Summary
 
@@ -1650,7 +1650,7 @@ CodeScan 26.0.12 is comprised of the following 8 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 1. **Instance-Level Severity Masking**
 
@@ -1801,7 +1801,7 @@ Rules are included regardless of whether violations were detected.
 * Allows users to validate rule execution even when no issues are found.
 * Preserves historical accuracy based on the quality profiles used during the scan.
 
-### New Rules
+### New rules
 
 1. **Connected App Uses High-Risk OAuth Scopes**
 
@@ -1838,7 +1838,7 @@ _Connected App contains high-risk OAuth scopes: {scopes}. Review and restrict ac
 * Encourages implementation of least-privilege access principles.
 * Reduces the risk of unauthorized or persistent access through overly permissive OAuth scope configurations.
 
-### Rule Enhancements
+### Rule enhancements
 
 1. **Enhanced Avoid Calling SOQL and DML Inside Loops Rule**
 
@@ -1952,9 +1952,9 @@ Fixed an issue where users with valid scan permissions could receive unauthorize
 
 ***
 
-## CodeScan Release Notes 26.0.11
+## CodeScan 26.0.11
 
-**Release Date: 24 May 2026**
+**Release date:** 24 May 2026
 
 ### Summary
 
@@ -1966,7 +1966,7 @@ CodeScan 26.0.11 is comprised of the following 10 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 **1. Severity Selection for Custom Security Hotspots**
 
@@ -1997,7 +1997,7 @@ Previously, severity levels were available for standard Security Hotspot rules, 
 NOTE: Severity selection wasn’t available for custom Security Hotspots. To ensure consistency across standard and custom rules, we expanded functionality, and users can now select and assign a severity level during the creation and editing of custom Security Hotspots.
 {% endhint %}
 
-### New Rules
+### New rules
 
 **1. Avoid Plain Text Values in External Credential Parameters**
 
@@ -2307,9 +2307,9 @@ Users with valid project scan access can now successfully start and complete ana
 
 ***
 
-## CodeScan Release Notes 26.0.10
+## CodeScan 26.0.10
 
-**Release Date: 17 May 2026**
+**Release date:** 17 May 2026
 
 ### Summary
 
@@ -2321,7 +2321,7 @@ Component details are listed in their corresponding sections within this documen
 
 ### Fixes
 
-#### 1. Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens
+#### Resolved “No Scan Access for Project” Errors Caused by Expired Salesforce Tokens
 
 Fixed an issue where users could encounter a “No scan access for project”/ “expired access/refresh token” error when running scans against Salesforce-connected projects after Salesforce authentication token expiration.
 
@@ -2334,7 +2334,7 @@ The issue affected environments using Salesforce connected app integrations wher
 * Reduced scan interruptions caused by token validation failures
 * Improved compatibility with Salesforce authentication changes introduced in May 2026
 
-#### 2. Resolved Intermittent Delays in PR-Scoped EZ-Commit Analysis Jobs
+#### Resolved Intermittent Delays in PR-Scoped EZ-Commit Analysis Jobs
 
 Fixed an issue where PR-scoped EZ-Commit analysis jobs could intermittently remain in the preparing state for an extended period during the “Compute new coverage” step.
 
@@ -2346,9 +2346,9 @@ PR-scoped EZ-Commit analysis jobs now complete the new coverage computation step
 
 ***
 
-## CodeScan Release 26.0.9
+## CodeScan 26.0.9
 
-**Release Date: 10 May 2026**
+**Release date:** 10 May 2026
 
 ### Summary
 
@@ -2363,7 +2363,7 @@ CodeScan 26.0.9 is comprised of the following 12 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Feature
+### New features
 
 **1. Cross-File Analysis in IDE**
 
@@ -2409,7 +2409,7 @@ Project Settings → General Settings → CodeScan → CodeScan Lang → Cross-f
 * Project teams can enable the feature only where needed.
 * Improves usability and configurability of Cross-File Analysis.
 
-### Application Enhancements
+### Enhancements
 
 **1. Issue Exceptions Enhancements**
 
@@ -2560,7 +2560,7 @@ profilePasswordPolicy-meta.xml
 
 <figure><img src="../../../../.gitbook/assets/image (4849).png" alt=""><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 **1. Added CVSS Scoring for Security Rules**
 
@@ -2652,9 +2652,9 @@ Users can now open and update settings for S3-based projects, including memory a
 
 ***
 
-## CodeScan Release 26.0.8
+## CodeScan 26.0.8
 
-**Release date: 26 April 2026**
+**Release date:** 26 April 2026
 
 ### Summary
 
@@ -2666,7 +2666,7 @@ CodeScan 26.0.8 is comprised of the following 6 components:
 
 Component details are listed in their corresponding sections within this release document.
 
-### Application Enhancements
+### Enhancements
 
 1. **Updated Bitbucket Integration to Use Workspace-Scoped Repository APIs**
 
@@ -2862,9 +2862,9 @@ This feature is currently available on **AUS and EU instances**.<br>
 
 ***
 
-## CodeScan Release 26.0.7
+## CodeScan 26.0.7
 
-**Release Date: 12 April 2026**
+**Release date:** 12 April 2026
 
 ### Summary
 
@@ -2876,7 +2876,7 @@ CodeScan 26.0.7 is comprised of the following 8 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1. GitHub Apps Integration for GitHub Enterprise in CodeScan**
 
@@ -3067,7 +3067,7 @@ Subscribed users are notified immediately when intermittent analysis failures oc
 * Ensures notifications are sent **only to subscribed users**
 * Enables **faster troubleshooting and recovery**
 
-### Application Enhancements
+### Enhancements
 
 **1. Track Cursor IDE Usage in the VS Code Extension**
 
@@ -3169,9 +3169,9 @@ As such, we are reporting that this issue has been fully remediated.
 
 ***
 
-## CodeScan Release 26.0.6
+## CodeScan 26.0.6
 
-**Release Date: 29 March 2026**
+**Release date:** 29 March 2026
 
 ### Summary
 
@@ -3183,7 +3183,7 @@ CodeScan 26.0.6 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1. CodeScan Audit Logs API**
 
@@ -3207,7 +3207,7 @@ If organization administrators are given access to audit logs for their organiza
 
 For more details, refer to the [CodeScan API Documentation.](../../../../product-guides/codescan/codescan-api-documentation/)
 
-### Application Enhancements
+### Enhancements
 
 **1. Configurable Default User Role for SSO-Provisioned Users**
 
@@ -3327,9 +3327,9 @@ We have verified that **Callback URL** is displayed correctly, and the **Copy** 
 
 ***
 
-## CodeScan Release 26.0.5
+## CodeScan 26.0.5
 
-**Release Date: 15 March 2026**
+**Release date:** 15 March 2026
 
 ### Summary
 
@@ -3342,7 +3342,7 @@ CodeScan 26.0.5 is comprised of the following 8 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### Application Enhancements
+### Enhancements
 
 **1. CSV ISSUE EXPORT – Added Issue Status User**
 
@@ -3499,7 +3499,7 @@ The rule sf:LocaleInOldApi was validated for the following methods:
 
 <figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 1\. Enhanced data flow analysis logic in rule “Avoid Untrusted/Unescaped Variables in DML Query” {Rule ID: sf:SOQLInjection}
 
@@ -3598,9 +3598,9 @@ Also verified that users who login with SAML are unblocked, which we confirmed b
 
 ***
 
-## CodeScan Release 26.0.4
+## CodeScan 26.0.4
 
-**Release Date: 01 March 2026**
+**Release date:** 1 March 2026
 
 {% hint style="info" %}
 As of release 26.0.4, CodeScan has adopted the External Client App (ECA) flow for Salesforce, replacing our existing Connected Apps flow.
@@ -3621,11 +3621,11 @@ CodeScan 26.0.4 is comprised of the following 2 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 There are no New Features in this release.
 
-### Application Enhancements
+### Enhancements
 
 **1. Salesforce External App Connection**
 
@@ -3653,11 +3653,11 @@ This update ensures continued secure and compliant integration with Salesforce o
 
 For more detailed information, please review AutoRABIT’s published article “Salesforce OAuth External Client App (ECA) Transition” at [https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition](https://knowledgebase.autorabit.com/fundamentals/announcements/salesforce-oauth-external-client-app-eca-transition)
 
-### New Rules
+### New rules
 
 There are no New Rules in this release.
 
-### Rule Enhancements
+### Rule enhancements
 
 There are no Rule Enhancements in this release.
 
@@ -3686,9 +3686,9 @@ Verified the following scenarios and report that the rule is now working as expe
 
 ***
 
-## CodeScan Release 26.0.3
+## CodeScan 26.0.3
 
-**Release Date: 15 February 2026**
+**Release date:** 15 February 2026
 
 ### Summary
 
@@ -3701,7 +3701,7 @@ CodeScan 26.0.3 is comprised of the following 5 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1. Expiry Dates for Exception Status on Security Hotspots**
 
@@ -3745,7 +3745,7 @@ Also verified the scheduled job functionality for the Security Hotspots.
 
 <figure><img src="../../../../.gitbook/assets/image (4779).png" alt=""><figcaption></figcaption></figure>
 
-### Application Enhancements
+### Enhancements
 
 **1. CVSS Metrics: Advanced Calculations**
 
@@ -3874,7 +3874,7 @@ Verified the CVSS UI/UX update via the following scenarios:
 
 <figure><img src="../../../../.gitbook/assets/image (4784).png" alt=""><figcaption></figcaption></figure>
 
-### New Rules
+### New rules
 
 **1. New Rule: “Avoid Using Unfiled Public Folders” {Rule ID: sf-meta:AvoidUnfiledPublic}**
 
@@ -3944,9 +3944,9 @@ which resolves the originally reported false positive.
 
 ***
 
-## CodeScan Release 26.0.2
+## CodeScan 26.0.2
 
-**Release Date: 01 February 2026**
+**Release date:** 1 February 2026
 
 ### Summary
 
@@ -3959,7 +3959,7 @@ CodeScan 26.0.2 is comprised of the following 10 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 **1. Data Flow Analysis**
 
@@ -3979,7 +3979,7 @@ In this current CodeScan 26.0.2 release (Feb 01, 2026), we added this advanced �
 
 You can find specific details about each of these 3 newly updated rules in the “Rule Enhancements” section of these release notes.
 
-### Application Enhancements
+### Enhancements
 
 **1. Updated the UI for the CVSS Filter**
 
@@ -4058,7 +4058,7 @@ Validated the newly added CodeScan rule UnusedQueryField via the following scena
 
 <figure><img src="../../../../.gitbook/assets/image (4734).png" alt=""><figcaption></figcaption></figure>
 
-### New Rules
+### New rules
 
 **1. New Rule that validates the runInMode (or equivalent context property) of a Flow**
 
@@ -4116,7 +4116,7 @@ We validated this newly added CodeScan rule “Validate Flow Run Context Mode (F
 
 <figure><img src="../../../../.gitbook/assets/image (4737).png" alt=""><figcaption></figcaption></figure>
 
-### Rule Enhancements
+### Rule enhancements
 
 **1. New Parameter added to rule “Outer Class Explicit Sharing” allowing configurable enforcement of the rule for abstract and virtual classes**
 
@@ -4343,9 +4343,9 @@ Verified the new, configurable **Ignore parameters** for the **sfmeta:DmlInFlowL
 
 ***
 
-## CodeScan Release 26.0.1
+## CodeScan 26.0.1
 
-**Release Date: 18 January 2026**
+**Release date:** 18 January 2026
 
 ### Summary
 
@@ -4357,7 +4357,7 @@ CodeScan 26.0.1. is comprised of the following 4 components:
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 1\. CodeScan extension for Cursor
 
@@ -4385,7 +4385,7 @@ Faster time to market with business requirements
 
 <figure><img src="../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
-### Application Enhancements
+### Enhancements
 
 **1. Include Issue Comments in CSV Issues Export**
 

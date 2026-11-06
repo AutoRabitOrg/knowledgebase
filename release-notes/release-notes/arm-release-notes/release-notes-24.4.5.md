@@ -1,12 +1,12 @@
 # ARM Release Notes 24
 
-## ARM Release Notes 24.4.5
+## ARM 24.4.5
 
-**Release Date: 19 January 2025**
+**Release date:** 19 January 2025
 
 With this release, we have implemented the following enhancements and support fixes to improve features and functionality and streamline the user experience.
 
-### Security Improvements <a href="#enhancements" id="enhancements"></a>
+### Security Improvements
 
 **Email and Username Validation**
 
@@ -16,7 +16,7 @@ Registration processes now enforce unique email addresses and usernames, ensurin
 
 Implemented robust measures to prevent XSS risks, including validation of untrusted data, HTML sanitization, and Content Security Policy (CSP). These updates safeguard data and prevent script-based attacks. _Impacted Modules: All Modules._
 
-### Support <a href="#support" id="support"></a>
+### Support
 
 **Improved Remote Site Settings Updates**
 
@@ -62,27 +62,27 @@ The VALIDATINGSALESFORCEXML performs a single file check during branch-to-branch
 
 ***
 
-## ARM Release Notes 24.4.4
+## ARM 24.4.4
 
-**Release Date: 15 December 2024**
+**Release date:** 15 December 2024
 
 With this release, we have implemented the following enhancements and support fixes to improve features and functionality and streamline the user experience.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### **TAF Sunset Feature Flag**
+#### TAF Sunset Feature Flag
 
 We introduced a feature flag to support the gradual phase-out of TAF functionality in AutoRABIT. This flag allows controlled activation or deactivation of TAF at the customer account level, enabling a seamless transition without disrupting existing workflows. Automated testing and monitoring have been implemented to ensure functionality operates correctly and customer environments remain stable during the transition. Affected customers will be notified with detailed timelines, guidance, and alternative solutions to support their migration. Impacted Modules: TAF, CI Jobs, Reporting
 
-#### **Protection Against CSV Injection**
+#### Protection Against CSV Injection
 
 We strengthened protection against the potential for a security vulnerability related to CSV injection, where malicious formulas embedded in CSV files could execute commands when opened in spreadsheet applications. User-generated data is now thoroughly sanitized, and special characters are omitted to prevent formula execution. This enhancement ensures that exported CSV files are safe to open, enhancing security against attempted cyberattacks. Impacted Modules: Org Sync History, Users, CI Job History, Reports, CI Job List
 
-#### **Unique Email Enforcement for User Registration**
+#### Unique Email Enforcement for User Registration
 
 We eliminated the possibility for users to register using multiple email accounts for the same email ID, preventing potential confusion and security risks. The registration process now includes strict validation checks to ensure each email address is linked to only one active account. Email verification has also been implemented to confirm ownership and prevent unauthorized registrations, improving data privacy and system integrity.
 
-#### **Asynchronous Deployment Processing**
+#### Asynchronous Deployment Processing
 
 We implemented an update to the deployMetadata SOAP service within the Deployment module, which now enables the process to run asynchronously in the background when initiating a Full Deployment. Previously, the service remained in a "pending" state until the deployment job completed. With this enhancement, the deployment process is more efficient, allowing the service to proceed without blocking user actions while the deployment completes in the background. Impacted Module: Deployments
 
@@ -90,13 +90,13 @@ We implemented an update to the deployMetadata SOAP service within the Deploymen
 
 AutoRABIT introduced a new API endpoint in the audit logs service to provide structured access to CEF audit logs. The API allows querying audit events based on a specified time range and maximum results, returning a detailed JSON response that includes event metadata, such as timestamps, event types, user actions, and outcomes. This enhancement replaces the previous plain-text log format with a structured system with query capabilities, enabling easier integration and analysis of audit data. Impacted Module: API Audit Log Event
 
-#### **Fixed Redirect for Unsupported Types in Org Sync Report**
+#### Fixed Redirect for Unsupported Types in Org Sync Report
 
 We corrected an issue in which clicking "Here" in the Org Sync Report failed to redirect to the Unsupported Types Salesforce screen. The href attribute spelling has been corrected, ensuring users are properly redirected to the relevant page for unsupported metadata types. This fix improves navigation and user experience within the Org Sync Report. Impacted Module: Org Sync
 
-### Support <a href="#support" id="support"></a>
+### Support
 
-#### **Improved Stability for Commit and Merge Operations**
+#### Improved Stability for Commit and Merge Operations
 
 We resolved an issue causing failures in commit and merge operations due to corrupted global workspaces. The global workspace handling mechanism has been enhanced to ensure stability, even when the OPTIMIZED\_WORKSPACE feature flag is disabled. This fix eliminates runtime exceptions during clone operations, improving the reliability of EZ-Commit and EZ-Merge processes. Impacted Modules: EZ-Commit, EZ-Merge, Deployment & CI Jobs, Repo & Branch Registration.&#x20;
 
@@ -104,15 +104,15 @@ We resolved an issue causing failures in commit and merge operations due to corr
 
 We corrected an error occurring in which a CodeScan code analysis with more than 500 violations displayed incorrect results in the UI and incomplete data in downloaded reports. The fix ensures that all scanned violations are accurately reflected in the UI and included in the downloaded Excel files, providing a complete and reliable report for large code scans. Impacted Modules: CodeScan SCA Execution Reports, CI Jobs, Deployments, Commits, and Merges.&#x20;
 
-#### **Improved Grouping for Salesforce Scanner Violations**
+#### Improved Grouping for Salesforce Scanner Violations
 
 We resolved a mismatch issue between Apex PMD and Salesforce Scanner results. Violations in bundle or static resource subfolders are now correctly grouped under their respective metadata types instead of being displayed as separate components. This fix ensures accurate and consistent results, improving the clarity of scanned violations across all file types, including .JS files. Impacted Modules: SCA Execution for both DX and Non-DX.&#x20;
 
-#### **ToRevision Included in Scheduled CI Jobs**
+#### ToRevision Included in Scheduled CI Jobs
 
 We fixed an issue in which the ToRevision parameter was missing in scheduled CI jobs. This issue caused jobs to fail by incorrectly using the baseline revision instead of the incremental revision. The fix ensures that ToRevision is consistently included, enabling accurate and reliable execution of CI jobs. Impacted Module: CI Jobs.&#x20;
 
-#### **Accurate Metadata Selection in AutoRABIT Build Deployments**
+#### Accurate Metadata Selection in AutoRABIT Build Deployments
 
 We resolved an issue in which AutoRABIT Build deployments failed to pick all metadata components when certain components were excluded. The deployment process now ensures that all remaining metadata is correctly included, even after exclusions. This fix addresses issues with missing data-table rows, ensuring complete and accurate metadata deployment. Impacted Module: Deployments.&#x20;
 
@@ -120,39 +120,39 @@ We resolved an issue in which AutoRABIT Build deployments failed to pick all met
 
 We corrected an issue in which manually triggered incremental CI jobs were skipping the previous revision. The build process now ensures accurate handling of "From" and "To" revisions, preventing gaps in deployed commits. This enhancement guarantees that all relevant changes are included during incremental builds, maintaining consistency and reliability in deployment workflows. Impacted Module: CI Jobs.&#x20;
 
-#### **Improved Handling of Managed Package Components in CI Jobs**
+#### Improved Handling of Managed Package Components in CI Jobs
 
 We have resolved an issue causing CI job deployments to fail by including managed package components in destructive changes, despite the "Ignore Installed (Managed) Components" setting being enabled. Logic has been added to exclude installed components from destructive changes in both custom deployments and CI jobs. This enhancement ensures successful deployments without errors related to managed package components. Impacted Modules: CI Jobs, Deployments \[DX, Non-DX, and Org-to-Org Deployments].&#x20;
 
-#### **Resolved Deployment Error for DigitalExperienceBundle**
+#### Resolved Deployment Error for DigitalExperienceBundle
 
 We corrected an issue during org-to-org deployments in which DigitalExperienceBundle components were not found in the zipped directory, resulting in deployment failure. The logic handling Digital Experience bundles has been corrected to account for scenarios where excluded components exceed 50. This enhancement ensures successful deployments are completed without errors related to missing DigitalExperienceBundle components. Impacted Module: Custom Deployments with Digital Experience bundles.&#x20;
 
-#### **Accurate Package Version Updates in sfdx-project.json**
+#### Accurate Package Version Updates in sfdx-project.json
 
 We resolved an issue where AutoRABIT failed to commit the latest package version to the `sfdx-project.json` file. When a new package version is created, it is now correctly updated and committed in the `sfdx-project.json` file, ensuring consistency between the project configuration and the deployed package versions. Impacted Module: CI Jobs.&#x20;
 
-## ARM Release Notes 24.4.4.1
+## ARM 24.4.4.1
 
-**Release Date: 22 December 2024**
+**Release date:** 22 December 2024
 
 Patch to fix bugs in the nCino Query Validation module.&#x20;
 
 ***
 
-## ARM Release Notes 24.4.3
+## ARM 24.4.3
 
-**Release Date: 24 November 2024**
+**Release date:** 24 November 2024
 
 The following enhancements and support fixes have been implemented with this release to improve features and functionality and streamline the user experience.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### **Special Character Support in Commit Comments**
+#### Special Character Support in Commit Comments
 
 The EZ-Commit workflow now supports special characters in commit comments, including German characters (ä, ö, ü) and punctuation marks (colon \[:], semicolon \[;], slash \[/]). These characters are correctly displayed in commit messages, and the commit process completes without errors when they are used. Impacted Module: EZ-Commit.
 
-#### **Duplicate Detection for Layout Metadata Subnodes**
+#### Duplicate Detection for Layout Metadata Subnodes
 
 The system now supports duplicate detection for all subnodes in Layout metadata, ensuring consistent layout configurations and preventing errors during deployment. Duplicate detection functionality has been extended to include the following subnodes:
 
@@ -167,23 +167,23 @@ The system now supports duplicate detection for all subnodes in Layout metadata,
 
 Users will be prompted with clear, actionable messages when duplicates are detected in any of these subnodes, allowing them to resolve issues efficiently. This enhancement builds on existing duplicate detection for `<layoutItems>`, `<layoutColumns>`, and `<layoutSections>`. Impacted Module: Back End.
 
-### Support <a href="#support" id="support"></a>
+### Support
 
-#### **Digital Experience Metadata Type Improvements**
+#### Digital Experience Metadata Type Improvements
 
-#### **Accurate Metadata Selection in Profile Deployment**
+#### Accurate Metadata Selection in Profile Deployment
 
 When deploying a profile via the CI Job build, only the selected profile is now included in the deployment. The issue in which Digital Experience metadata was incorrectly included has been resolved, ensuring that deployments contain only the metadata explicitly chosen by the user. Impacted Modules: Every module that uses Digital Experience Bundle Metadata type.&#x20;
 
-#### **Delete Support for DigitalExperience Metadata**
+#### Delete Support for DigitalExperience Metadata
 
 Users can now delete DigitalExperience metadata in the EZ-Commit module. Additionally, support for managing DigitalExperience metadata has been extended across all modules. Impacted Modules: EZ-Merge, Custom Deployment, CI Jobs, Prevalidation Deployments, and Release Labels.&#x20;
 
-#### **Subscription Extension via Super Admin**
+#### Subscription Extension via Super Admin
 
 Super Admin users can now successfully extend subscription counts for active accounts. The issue causing an empty notification pop-up when attempting to increase subscriptions has been resolved. Impacted Module: SuperAdmin - Extend Customer tab. Found in QA.
 
-#### **Vlocity Deployment Visibility in Deployment History**
+#### Vlocity Deployment Visibility in Deployment History
 
 The Vlocity deployment process has been updated to address issues with visibility and interaction:
 
@@ -194,7 +194,7 @@ The Vlocity deployment process has been updated to address issues with visibilit
 
 These improvements enhance the usability and reliability of Vlocity deployments in ARM. Impacted Module: Vlocity Deployments.&#x20;
 
-#### **Accurate Notifications for Scheduled Code Coverage Report Changes**
+#### Accurate Notifications for Scheduled Code Coverage Report Changes
 
 The notification system for scheduled code coverage reports has been improved to accurately reflect changes in settings.
 
@@ -205,43 +205,43 @@ The notification system for scheduled code coverage reports has been improved to
 
 This enhancement eliminates misleading messages, ensuring that users receive correct feedback on configuration updates. Impacted Module: Admin-Code coverage report → Reports.&#x20;
 
-#### **Automatic Mapping of JIRA Credentials**
+#### Automatic Mapping of JIRA Credentials
 
 The JIRA credentials mapping process has been improved to eliminate the need for manual workarounds. Credentials using application tokens are now automatically populated in the ALM Mapping section of the profile, without requiring modifications to the default credentials in the ALM Management admin section. This enhancement simplifies the mapping process and ensures seamless integration with JIRA. Impacted Modules: VC Repos, Modularization, EZ-Commit, My Account, SF Org Management.
 
-#### **Improved Handling of Empty Metadata in Release Label Deployment**
+#### Improved Handling of Empty Metadata in Release Label Deployment
 
 The release label deployment process has been enhanced to prevent failures caused by empty metadata. When no deployable changes exist and the package.xml is empty, the system now accurately reflects the absence of metadata in both the UI and back end, ensuring consistency and preventing deployment errors. Impacted Module: Release Labels.&#x20;
 
-#### **Notification Emails for New User Creation**
+#### Notification Emails for New User Creation
 
 The issue in which notification emails were not being sent to new users upon creation in ARM has been resolved. New users now receive a notification email in their mailbox immediately after being created by an admin, ensuring consistent communication and a smoother onboarding process.&#x20;
 
-## ARM Release Notes 24.4.2
+## ARM 24.4.2
 
-**Release Date: 10 November 2024**
+**Release date:** 10 November 2024
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### **Salesforce API Version 62 Support**
+#### Salesforce API Version 62 Support
 
 ARM now supports Salesforce API Version 62 for all functions, allowing users to utilize the latest metadata types and capabilities introduced by Salesforce. This upgrade includes comprehensive integration across all ARM functions, including the Data Loader, ensuring alignment with Salesforce's Winter '25 release. ARM Admins can set the global API to version 62, ensuring consistent functionality across all features.
 
-### Support <a href="#support" id="support"></a>
+### Support
 
-#### **Accurate Metadata Count for Repeated Deployments**
+#### Accurate Metadata Count for Repeated Deployments
 
 ARM now ensures accurate tracking of metadata counts across multiple deployments using previous deployment labels. The request node sent for deployment has been corrected in the front end, ensuring that when performing a follow-up deployment with a prior label, all specified components are included. This enhancement resolves issues in which subsequent deployments using previous labels reflected only a partial count of metadata components, providing a consistent and complete deployment experience across repeated operations.&#x20;
 
-#### **Confirmation for Destructive-Only Deployments**
+#### Confirmation for Destructive-Only Deployments
 
 A new confirmation prompt has been added to notify users when a deployment includes only destructive changes and no constructive changes. This enhancement helps clarify deployment contents, reducing potential confusion for users who may expect other metadata components to be included.&#x20;
 
-#### **Inclusion of Destructive Changes File in Deployment Backups**
+#### Inclusion of Destructive Changes File in Deployment Backups
 
 The backup.zip file now includes the `destructiveChanges.xml` file, allowing users to access destructive change data for potential rollback scenarios. This enhancement provides a more comprehensive backup package to support safer and more flexible deployment management.&#x20;
 
-#### **Improved Commit Label Search Functionality**
+#### Improved Commit Label Search Functionality
 
 Enhancements have been made to the commit label search feature to address two user concerns:
 
@@ -250,43 +250,43 @@ Enhancements have been made to the commit label search feature to address two us
 
 These improvements enhance usability and consistency within the Version Control module, providing a more reliable experience for commit label management.&#x20;
 
-#### **Corrected Revision Display in EZ-Merge Confirmation**
+#### Corrected Revision Display in EZ-Merge Confirmation
 
 An update has been made to ensure proper display of revision numbers in EZ-Merge confirmations. Previously, certain revision formats containing the character "e" were misinterpreted as exponential values, causing them to display incorrectly as "Infinity" or scientific notation.
 
 This issue has been resolved by adjusting the response handling, allowing revisions to appear as intended without conversion errors. This enhancement improves the accuracy and reliability of revision details displayed during merges, especially for branches with specific revision formats.&#x20;
 
-#### **Quick Deploy Auto-Population for Deployment Label and Asynchronous ID**
+#### Quick Deploy Auto-Population for Deployment Label and Asynchronous ID
 
 An improvement has been made to the Quick Deploy feature to ensure the Deployment Label Name and Asynchronous ID fields auto-populate after a validated deployment. This update addresses issues in which these fields were previously blank, preventing users from completing Quick Deploy without manually reentering data.
 
 This enhancement improves efficiency and consistency for custom deployments, particularly for users working with single revision DX deployments.&#x20;
 
-#### **Stable Permissions View for Newly Created Teams**
+#### Stable Permissions View for Newly Created Teams
 
 An update has been implemented to ensure stable loading of the Permissions View in the Admin module for newly created teams under Subscription Management. Previously, permissions were not displayed due to an incomplete setup for new users created via the "Create Team" option.
 
 Now, the `releaseNotify` setting for new users defaults to "true," and additional checks have been added to handle null values during data conversion. This enhancement ensures permissions load reliably, enhancing usability for subscription-based team management.&#x20;
 
-#### **Improved CI Job Editing with Null Check for Checkmarx Configuration**
+#### Improved CI Job Editing with Null Check for Checkmarx Configuration
 
 A fix has been implemented to prevent blank pages from displaying when editing CI jobs. Previously, attempting to edit CI jobs with no rules configured for Checkmarx would result in an unresponsive, blank screen.
 
 This enhancement includes a null check, ensuring CI jobs are editable even if no rules are set for Checkmarx configurations. This update improves stability and usability for managing CI jobs in ARM.
 
-#### **Improved Tag-Based Deployment**
+#### Improved Tag-Based Deployment
 
 An update has been made to ensure successful deployments when using tags in the deployment module. Previously, deployments initiated with tags would sometimes fail with a "No Changes are found in the package" error due to issues with file copying during tag-based deployments.
 
 This enhancement ensures accurate file handling for tag-based deployments, providing stable and reliable performance for both DX and non-DX branches.&#x20;
 
-#### **Accurate Error Messaging for CI Jobs and Deployments**
+#### Accurate Error Messaging for CI Jobs and Deployments
 
 An update has been implemented to improve the accuracy of error messages displayed in CI job logs and deployments. Previously, CI jobs that encountered baseline revision failures or exceeded file limits displayed misleading error messages. Additionally, deployment failures were showing unrelated errors, such as "Invalid Login," instead of indicating the true cause, such as reaching Salesforce file limits or the need for reauthentication.
 
 This enhancement ensures that CI job and deployment errors reflect the actual underlying issues, providing users with clearer, more actionable information for troubleshooting.&#x20;
 
-#### **Direct Commit Support for Profiles and Permission Sets**
+#### Direct Commit Support for Profiles and Permission Sets
 
 An update has been applied to the direct commit process to ensure that both profiles and permission sets are committed together when selected. Previously, when committing Field-Level Security (FLS) for profiles and permission sets in a single direct commit, only profile FLS was committed, while permission sets were excluded.
 
@@ -298,13 +298,13 @@ An update has been applied to ensure accurate status updates during merge confli
 
 With this fix, the merge status will correctly display as "In Progress" when unresolved conflicts are pending, and actions will show as "Check Details" instead of "Commit." This enhancement ensures clearer guidance during conflict resolution, streamlining the merge process in EZ-Merge for better user experience.&#x20;
 
-#### **Optimized Inline Comment Retrieval in Large File Diffs**
+#### Optimized Inline Comment Retrieval in Large File Diffs
 
 An improvement has been made to reduce "Network Connection Interrupted" errors when expanding large files under the "Files Changed" tab in EZ-Merge. Previously, each line in files exceeding 3,000 lines triggered an individual API call to fetch inline comments, leading to network interruptions and interface freezes, particularly for files with 15,000 lines or more.
 
 With this enhancement, a single API call now retrieves all inline comments at the file level, significantly improving performance and stability when working with large files. This update prevents excessive network calls and enhances usability during merge and commit actions.&#x20;
 
-#### **Accurate Component Inclusion for Reused Commit Labels**
+#### Accurate Component Inclusion for Reused Commit Labels
 
 An update has been made to the "Re-use Previously Validated Commit Labels" functionality to ensure that only selected components are included in the commit. Previously, when reusing a validated commit label, additional, unintended changes (such as Profiles and Permission Sets) could appear in the "Files Changed" tab during the approval stage, even if only specific components were selected initially.
 
@@ -312,11 +312,11 @@ This enhancement corrects the commit process so that only the selected component
 
 ***
 
-## ARM Release Notes 24.4.1
+## ARM 24.4.1
 
-**Release Date: 27 October 2024**
+**Release date:** 27 October 2024
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
 **Manageable-State Selection for Branching Baseline**\
 A new option has been added to select the Salesforce org's manageable state when initiating or re-running a branching baseline. This option is available only when the retrieval type is set to Salesforce, ensuring greater control over the data types included in the process.
@@ -360,7 +360,7 @@ Thorough internal QA checks have been performed to ensure the stability of this 
 **Enable the “Trigger Build On Commit” option when creating a CI Job**\
 Users can now enable the “Trigger Build On Commit” option when creating a CI Job, allowing automated builds triggered directly by commits. Upon selecting this option, a webhook setup will become available, ensuring that every new change in the version control system triggers an update to the CI Job. Builds will only initiate for commits made in the feature templates folder.
 
-### Support <a href="#support" id="support"></a>
+### Support
 
 **Accurate Merge Status Display**
 
@@ -452,18 +452,18 @@ By streamlining the selective deployment process, this improvement enhances effi
 
 ***
 
-## ARM Release Notes 24.2 <a href="#improved-reporting-features-and-enhancements" id="improved-reporting-features-and-enhancements"></a>
+## ARM 24.2
 
-**Release Date: 25 August 2024**
+**Release date:** 25 August 2024
 
 **Improved Reporting Features and Enhancements**
 
-### **New Features**
+### New features
 
 * The new merge report is now included in the downloaded reports.
 * Failure/Auto-reject reasons have been added to the reports for merge, commits, deployment, and CI build jobs, ensuring that if any jobs fail, the reason is included in the reports.
 
-### **Enhancements**
+### Enhancements
 
 * Extra fields have been correctly added to the current report.
 * The name of "Latest Reports" has been changed to "Refresh Reports View."
@@ -483,7 +483,7 @@ By streamlining the selective deployment process, this improvement enhances effi
 * **Commit Template:** Components selection screen.
 * **Deployments:** Retrieval screen and "Additional Metadata" section.
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 1. In this release, we revolutionized the system by converting all JSP pages into a RESTful API, enhancing modularity, scalability, and interoperability.
 2. SOAP to REST services were upgraded.
@@ -491,7 +491,7 @@ By streamlining the selective deployment process, this improvement enhances effi
 
 ***
 
-## ARM Release Notes 24.1 <a href="#arm-release-notes-23-1" id="arm-release-notes-23-1"></a>
+## ARM 24.1
 
 **June 2024**
 
@@ -512,7 +512,7 @@ By streamlining the selective deployment process, this improvement enhances effi
 6. **New Email Templates Implementation**\
    In this release, a significant enhancement has been made by implementing new email templates that align with current visualization standards. This update reflects our commitment to maintaining high standards in user interface design and enhancing overall user engagement.
 
-### Improvements
+### Enhancements
 
 This update improves the tool's efficiency and responsiveness and leverages new technologies, collectively resulting in a smoother, faster user experience.
 

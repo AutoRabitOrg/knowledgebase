@@ -1,6 +1,6 @@
 # Release Notes 23.1
 
-## nCino Release Notes 23.1 <a href="#ncino-release-notes-23-1" id="ncino-release-notes-23-1"></a>
+## nCino 23.1
 
 **September 2023**\
 **Version 23.1 – Streamlined CI/CD and Enhanced Control**

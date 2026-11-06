@@ -1,8 +1,8 @@
 # Release Notes 4.3
 
-### CodeScan 4.3 <a href="#codescan-43" id="codescan-43"></a>
+### CodeScan 4.3
 
-#### New Features <a href="#new-features" id="new-features"></a>
+#### New features
 
 **New Apex Security Hotspots**
 
@@ -21,13 +21,13 @@
 * Removed Unescaped Source rule from default Apex profile (**v4.3.12**).
 * Removed deprecated rule javascript: S2228 from Salesforce Lightning Quality Profile (**v4.3.9**).
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * SonarQube™ Ant task has been updated to **2.6.0.1**
 * SOQL Injection Rule updated and improved.(**v4.3.11**)
 * Open Redirect Rule updated and improved. (**v4.3.11, v4.3.12**)
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * Bug fixed in RightLineBracesPositions rule.
 * Bug fixed in Field Level Security Vulnerabilities rule. (**v4.3.10**)

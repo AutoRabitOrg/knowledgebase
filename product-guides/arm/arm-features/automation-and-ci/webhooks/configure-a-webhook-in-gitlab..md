@@ -59,8 +59,8 @@ To enable automatic updates via webhook:
 * Check the **Enable auto update on webhook** option.
 * This will display the required webhook URL for use in repository settings.
 
-For more detailed setup across repositories, refer to the [Webhook Configuration Guide](file://product-guides/arm/arm-features/webhooks).\
-To integrate with external Smart Commit systems, see the [Version Control Repositories Summary](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+For more detailed setup across repositories, refer to the [Webhook Configuration Guide](../../webhooks/README.md).\
+To integrate with external Smart Commit systems, see the [Version Control Repositories Summary](../../version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ## For Enterprise Customers
 

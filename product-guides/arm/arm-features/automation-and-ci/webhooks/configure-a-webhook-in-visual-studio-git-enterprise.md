@@ -90,8 +90,8 @@ Example:
 To configure a webhook in your repository:
 
 * Enable the **auto update on webhook** checkbox to display the required URL.
-* For repository-specific instructions, refer to the [Webhook Guide](file://product-guides/arm/arm-features/webhooks).
-* To sync external smart commits, see the [Version Control Repositories Summary](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+* For repository-specific instructions, refer to the [Webhook Guide](../../webhooks/README.md).
+* To sync external smart commits, see the [Version Control Repositories Summary](../../version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ***
 

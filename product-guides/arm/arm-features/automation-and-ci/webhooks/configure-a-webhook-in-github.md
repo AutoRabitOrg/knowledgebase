@@ -82,8 +82,8 @@ Smart Commits allow linking commits to ALM stories using custom comment patterns
 To configure a webhook in your repository:
 
 * Enable the **Enable auto update on webhook** checkbox to reveal the webhook URL.
-* For more repository-specific instructions, refer to the [Webhook Configuration Guide](file://product-guides/arm/arm-features/webhooks).
-* You may also choose to [Sync External Smart Commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+* For more repository-specific instructions, refer to the [Webhook Configuration Guide](../../webhooks/README.md).
+* You may also choose to [Sync External Smart Commits](../../version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ## For Enterprise Customers
 

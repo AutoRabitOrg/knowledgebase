@@ -76,8 +76,8 @@ Smart Commits allow you to associate Git commits with ALM stories using specific
 To configure Smart Commits:
 
 * Select the **Enable auto update on webhook** checkbox to reveal the required webhook URL.
-* For more information on configuring webhooks in different repositories, refer to the [Webhook Setup Guide](file://product-guides/arm/arm-features/webhooks).
-* You can also choose to [sync external smart commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+* For more information on configuring webhooks in different repositories, refer to the [Webhook Setup Guide](README.md).
+* You can also choose to [sync external smart commits](../version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ![Smart Commit Configuration](<../../../../.gitbook/assets/image (3491).png>)
 

@@ -90,7 +90,7 @@ Users can now automate **branch creation, Salesforce metadata retrieval, commit 
 
 **Note:** For DX repositories with multiple package directories, users must specify the target package directory in the API request.
 
-{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/introduction-to-arm-developer-apis/api-references" %}
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 
 #### Update Repository Remote URL from Version Control Repositories (New UI) <a href="#update-repository-remote-url-from-version-control-repositories-new-ui" id="update-repository-remote-url-from-version-control-repositories-new-ui"></a>
 

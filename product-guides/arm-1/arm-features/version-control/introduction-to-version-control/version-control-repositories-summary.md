@@ -17,11 +17,11 @@ Repositories with **Salesforce DX** enabled will have![](<../../../../../.gitboo
 
 For each version control repository registered in ARM, the following information or fields are displayed:
 
-Create a pull request to propose and collaborate on changes to a repository. This is discussed later.&#x20;
+Create a pull request to propose and collaborate on changes to a repository. This is discussed later.
 
 | Field Name             | Description                                                                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Repository Name`      | Name of your  version control repository                                                                                                          |
+| `Repository Name`      | Name of your version control repository                                                                                                           |
 | `Type`                 | Version control repository type, i.e., GIT, TFS, or SVN.                                                                                          |
 | `URL`                  | Repository URL                                                                                                                                    |
 | `Created Date`         | Date and time stamp for repository created or modified                                                                                            |
@@ -48,7 +48,7 @@ The Git tags created or branches registered for the version control repository w
 
 #### **A. Create a Branch**
 
-Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../getting-started-1/registration/branching-baseline.md))\
+Create a new branch for the current repository. Newly created branches will get listed under the **`Branches`** tab. ([LEARN MORE](../../../getting-started-1/registration/branching-baseline/))\
 <br>
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-08-17 at 7.56.48 PM.png" alt=""><figcaption></figcaption></figure>
@@ -83,8 +83,6 @@ For each branch, view the following details:
     * update the metadata folder path and/or,
     * update the branch's last commit date.
 
-
-
     **Pieces of information related to 'Metadata Folder Path'**
 
     *   When the user changes the **`Metadata Folder Path`**, ARM updates the **project-def.json** file at the time of the initial commit. The commits will now occur in the newly created _.src_ folder once the src metadata folder location has been updated. In an instance where the user has many commits on the newly created src folder and then reverts the src folder to default, all of the components in the src folder will now be included in the **package.xml** as well.<br>
@@ -108,4 +106,3 @@ The repository URL cannot be changed; you must use the new repository URL and re
 ### Why am I getting an error while registering the GitHub repository with SSH? <a href="#why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh" id="why-am-i-getting-an-error-while-trying-to-register-github-repository-with-ssh"></a>
 
 **GitHub** no longer allows new **RSA** keys with **SHA-1** signatures. Execute the `ssh-keygen -t ed25519 -C “XXXXXXX@autorabit.com”` command in the terminal to create a new key, or contact **support@autorabit.com** for further assistance. Please note that you must create the new key in **Linux** or **Unix**, not in Windows. For more information, visit [https://github.blog/2021-09-01-improving-git-protocol-security-github/](https://github.blog/2021-09-01-improving-git-protocol-security-github/)
-

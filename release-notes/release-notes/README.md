@@ -12,7 +12,7 @@ Here, you'll find detailed release notes that provide insights into new features
 
 {% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/ncino-release-notes" %}
 
-{% embed url="https://knowledgebase.autorabit.com/~/revisions/XD9QHUxnAfKVdhwkBhK6/release-notes/release-notes/vault-release-notes" %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes" %}
 
 {% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/guard" %}
 

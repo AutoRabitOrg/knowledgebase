@@ -77,15 +77,16 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
 
 3. Add your CodeScan URL.
 4. Click on 'Generate Token.' This will open CodeScan in a browser.
+    
     Note: The Security Token / Personal Access Token (PAT) generated through this process is configured with a 1-year expiry.
     
     Alternatively, you can generate a PAT directly in CodeScan with your preferred expiry period (30, 60, 90 days, or No Expiration) and            manually paste the generated token into the IDE.
     
-6. Click 'Allow Connection' to send the newly generated token back to your IDE.
-7. Add your organization key.
-8. You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.<br>
-9. Enter a Unique Connection Name.
-10. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
+7. Click 'Allow Connection' to send the newly generated token back to your IDE.
+8. Add your organization key.
+9. You can always find your **organization key** at the top right of your \*\***organization**\*\* home page.<br>
+10. Enter a Unique Connection Name.
+11. Click on 'Save Connection.' You will see your connection appear in your connected mode window.
 
 <figure><img src="../../../../.gitbook/assets/image (4091).png" alt="" width="293"><figcaption></figcaption></figure>
 

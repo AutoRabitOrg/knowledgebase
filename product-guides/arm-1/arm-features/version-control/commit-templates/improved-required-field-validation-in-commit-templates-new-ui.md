@@ -17,8 +17,13 @@ With this enhancement, the **Next** and **Save Template** buttons support click-
 * The **Next** button remains enabled even when required fields are incomplete or metadata has not been selected, except when an operation is temporarily unavailable.
 * Clicking **Next** or **Save Template** validates the required information.
 * Missing or invalid fields are highlighted with inline error messages displayed directly below them.
+
+<figure><img src="../../../../../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
+
 * ARM automatically scrolls to and focuses on the first missing required field.
 * Validation messages disappear as users provide valid information.
+
+<figure><img src="../../../../../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Validation Across Commit Template Steps
 

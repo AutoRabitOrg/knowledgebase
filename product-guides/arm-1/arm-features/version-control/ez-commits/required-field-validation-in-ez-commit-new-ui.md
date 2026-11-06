@@ -22,6 +22,8 @@ With this enhancement, the **Next** and **Submit** buttons remain enabled, and A
 
 #### 2. Validation Across EZ-Commit Steps
 
+<figure><img src="../../../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
 **Step 1 – New Commit**
 
 ARM validates required fields such as:

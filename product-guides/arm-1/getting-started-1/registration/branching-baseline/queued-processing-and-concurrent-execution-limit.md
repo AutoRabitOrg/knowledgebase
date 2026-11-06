@@ -36,8 +36,14 @@ With this enhancement, a maximum of **2 Branch Baseline operations can run concu
 1. Navigate to **Version Control > Branch Baseline**.
 2. Initiate a new Branch Baseline operation.
 3. If fewer than two baselines are running for your account and execution capacity is available, the request can start processing.
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-11-06 at 23.07.12.png" alt=""><figcaption></figcaption></figure>
+
 4. If the concurrent execution limit has been reached, ARM places the request in the queue and displays a **Queued** message.
 5. Users can monitor or cancel pending requests from the queue view.
+
+<figure><img src="../../../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
+
 6. ARM automatically starts queued requests as execution slots become available.
 
 ### Important Notes

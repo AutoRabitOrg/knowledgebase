@@ -39,9 +39,18 @@ The **Salesforce Org User** field under **My Profile > Org Registration** is aut
 
 1. Navigate to **Version Control > EZ-Commit** in the New UI.
 2. Start a new EZ-Commit operation and select the required Salesforce org.
+
+<figure><img src="../../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+
 3. Review the automatically populated author information and other available values.
 4. When creating a new branch, review the default Parent Branch, Credentials, and suggested Branch Display Name.
+
+<figure><img src="../../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+
 5. Review the suggested Commit Label, Commit Comment, and Reviewer Email.
+
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2026-11-06 at 23.02.13.png" alt=""><figcaption></figcaption></figure>
+
 6. Modify any values if needed and continue with the existing EZ-Commit workflow.
 
 ### Important Notes

@@ -25,6 +25,8 @@ All automatically populated values remain editable, allowing users to review and
 
 #### 2. Improved Required Field Validation
 
+<figure><img src="../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
 The EZ-Merge workflow now provides clearer validation when required information is missing.
 
 * The **Dry Run** and **Merge** buttons remain enabled even when required fields are incomplete.

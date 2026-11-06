@@ -4,6 +4,166 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
+## ARM **Release Notes 26.4.6**
+
+**Release Date: 8 November 2026**
+
+#### Automatic Field Population in EZ-Commit (New UI) <a href="#automatic-field-population-in-ez-commit-new-ui" id="automatic-field-population-in-ez-commit-new-ui"></a>
+
+Enhanced the **EZ-Commit workflow** to automatically populate known values and suggest relevant information, reducing repetitive manual entry and improving user efficiency.
+
+ARM now automatically fills fields such as **Reviewer Email, Salesforce Org Author, Parent Branch, and Credentials**when the information is available. It also suggests meaningful values for **Commit Labels, Commit Comments, and Branch Names** based on the current context.
+
+All automatically populated and suggested values remain **editable**, allowing users to review and modify them before proceeding.
+
+#### Enhanced SIEM Audit Logging for User Creation <a href="#enhanced-siem-audit-logging-for-user-creation" id="enhanced-siem-audit-logging-for-user-creation"></a>
+
+Enhanced **ARM's Security Information and Event Management (SIEM) audit logging** to capture user creation activities, improving security monitoring and audit traceability.
+
+ARM now records an **audit event whenever a user account is created**, including the administrator who performed the action. This applies to user creation through both the **ARM UI and APIs**.
+
+This enhancement improves **user activity tracking, security auditing, and compliance reporting**, while maintaining existing audit logging functionality.
+
+**Note:** Audit logging must be enabled for these events to be recorded.
+
+#### Improved Required Field Validation in EZ-Commit (New UI) <a href="#improved-required-field-validation-in-ez-commit-new-ui" id="improved-required-field-validation-in-ez-commit-new-ui"></a>
+
+Enhanced the **Create EZ-Commit workflow** with clearer required-field validation to help users identify and correct missing information.
+
+The **Next and Submit** buttons now remain enabled, and clicking them highlights missing required fields with **inline error messages**. ARM automatically scrolls to the first missing field, allowing users to quickly identify and complete the required information.
+
+Validation messages disappear as fields are completed, providing a **smoother and more intuitive EZ-Commit experience**.
+
+#### Optimized Branch Baseline Processing with Queue Management <a href="#optimized-branch-baseline-processing-with-queue-management" id="optimized-branch-baseline-processing-with-queue-management"></a>
+
+Enhanced **Branch Baseline processing** by introducing a queue mechanism that limits the number of concurrent baseline operations(Two), preventing excessive server resource consumption and improving overall application stability.
+
+When the concurrent processing limit is reached, additional baseline requests are automatically **queued and processed as capacity becomes available**. Users can view and cancel queued requests, with support available in both **Classic and New UI**.
+
+#### Improved EZ-Merge with Automatic Field Population and Required Field Validation (New UI) <a href="#improved-ez-merge-with-automatic-field-population-and-required-field-validation-new-ui" id="improved-ez-merge-with-automatic-field-population-and-required-field-validation-new-ui"></a>
+
+Enhanced the **EZ-Merge workflow** to reduce manual effort and improve usability by automatically populating known values and providing clearer required-field validation.
+
+ARM now automatically fills the **Target Branch** based on the selected source branch, populates **Reviewer Emails**, and applies **Deployment Validation and Static Code Analysis** options based on the organization's Merge Review Settings.
+
+The **Dry Run and Merge** buttons remain enabled, and clicking them highlights missing required fields with **inline error messages**, allowing users to identify and correct missing information before proceeding.
+
+All automatically populated values remain editable, providing a smoother and more efficient merge experience.
+
+#### Improved Required Field Validation in Commit Templates (New UI) <a href="#improved-required-field-validation-in-commit-templates-new-ui" id="improved-required-field-validation-in-commit-templates-new-ui"></a>
+
+Enhanced the **Create Commit Template workflow** with clearer required-field validation to simplify template creation, editing, and cloning.
+
+The **Next and Save Template** buttons now support click-based validation, highlighting missing required fields such as **Template Name, Source Org, and Metadata Selection** with inline error messages.
+
+ARM automatically scrolls to the first missing field, and validation messages disappear as users complete the required information. When an action is temporarily unavailable, a tooltip explains the reason, providing a **smoother and more intuitive user experience**.
+
+#### Introduced "Select All" Option for Release Labels (Classic and New UI) <a href="#introduced-select-all-option-for-release-labels-classic-and-new-ui" id="introduced-select-all-option-for-release-labels-classic-and-new-ui"></a>
+
+Enhanced the **Release Label creation and update workflow** by introducing a **Select All** option, allowing users to select or deselect all available revisions with a single click.
+
+Users can continue to select or deselect individual revisions as needed, reducing manual effort and simplifying Release Label management.
+
+This enhancement is available in both **Classic UI and New UI**.
+
+#### Extended Branch and Pull Request API Support for DX Repositories <a href="#extended-branch-and-pull-request-api-support-for-dx-repositories" id="extended-branch-and-pull-request-api-support-for-dx-repositories"></a>
+
+Enhanced the **ARM Branch and Pull Request API** to support **Salesforce DX (Source Format) repositories**, extending the existing functionality available for metadata-format repositories.
+
+Users can now automate **branch creation, Salesforce metadata retrieval, commit operations, and Pull Request creation** for DX repositories through a single API request. The enhancement also supports existing branches, package directory selection, and Commit History tracking.
+
+**Note:** For DX repositories with multiple package directories, users must specify the target package directory in the API request.
+
+#### Update Repository Remote URL from Version Control Repositories (New UI) <a href="#update-repository-remote-url-from-version-control-repositories-new-ui" id="update-repository-remote-url-from-version-control-repositories-new-ui"></a>
+
+Introduced the ability for **Super Admins** to update a repository's remote URL directly from the **Version Control Repositories** screen without requiring Support assistance.
+
+Users can now modify repository URLs when migrating repositories, renaming organizations, or switching connection methods such as HTTPS and SSH.
+
+ARM automatically updates the repository URL across associated configurations and records, ensuring consistency across existing workflows.
+
+The enhancement includes **URL validation, confirmation prompts, progress tracking, and audit logging**, providing a secure and streamlined repository management experience.
+
+**Note:** This functionality is available only to the registered organization's Super Admin.
+
+#### Fixed Missing Skip Org Mappings Permission in Role Management (New UI) <a href="#fixed-missing-skip-org-mappings-permission-in-role-management-new-ui" id="fixed-missing-skip-org-mappings-permission-in-role-management-new-ui"></a>
+
+Resolved an issue where the **Skip Org Mappings** permission was not visible when creating or editing roles in the **New UI**, preventing authorized users from assigning it.
+
+The permission is now consistently available under **Special Permissions in Version Control**, matching the Classic UI experience.
+
+This fix also ensures that existing **Skip Org Mappings** permissions are preserved when roles are edited and saved, preventing unintended permission changes.
+
+**Note:** Roles that previously lost this permission must be updated manually to restore it.
+
+#### Fixed CRM Analytics Metadata Deletion Failures in EZ-Commit <a href="#fixed-crm-analytics-metadata-deletion-failures-in-ez-commit" id="fixed-crm-analytics-metadata-deletion-failures-in-ez-commit"></a>
+
+Resolved an issue where **EZ-Commit failed when processing deleted CRM Analytics (Wave) metadata components**in Salesforce DX (SFDX) repositories.
+
+ARM now supports deletion of **WaveApplication, WaveComponent, WaveDashboard, WaveDataset, WaveLens, WaveRecipe, and WaveXmd** metadata types, allowing users to commit these deletions to Git repositories without encountering metadata recognition errors.
+
+#### Improved Test Class Validation for Multiple Salesforce Orgs in EZ-Commit (New UI) <a href="#improved-test-class-validation-for-multiple-salesforce-orgs-in-ez-commit-new-ui" id="improved-test-class-validation-for-multiple-salesforce-orgs-in-ez-commit-new-ui"></a>
+
+Resolved an issue where the **Submit** button became disabled without an explanation when users selected multiple Salesforce orgs with the **Run Specified Tests** option during EZ-Commit validation.
+
+Enhanced the validation logic to clearly identify Salesforce orgs with missing test class selections and provide appropriate feedback, allowing users to complete the required information before submitting.
+
+This improvement provides a **clearer and more intuitive EZ-Commit validation experience** when working with multiple Salesforce orgs.
+
+#### Fixed Search & Substitute Rules Not Applied to Encoded URLs During Deployment <a href="#fixed-search-and-substitute-rules-not-applied-to-encoded-urls-during-deployment" id="fixed-search-and-substitute-rules-not-applied-to-encoded-urls-during-deployment"></a>
+
+Resolved an issue where **Search & Substitute rules failed to replace URL values containing XML-encoded special characters**, such as `&amp;`, during deployments.
+
+Enhanced XML entity handling and escaping to ensure Search & Substitute rules correctly process encoded values retrieved from Git repositories.
+
+This fix improves the reliability of **Search & Substitute operations across Deployments and EZ-Commit**, while preserving existing functionality.
+
+#### Fixed Missing Package Directory Option in Static Code Analysis (New UI) <a href="#fixed-missing-package-directory-option-in-static-code-analysis-new-ui" id="fixed-missing-package-directory-option-in-static-code-analysis-new-ui"></a>
+
+Resolved an issue where the **Package Directory** field was missing when creating a Static Code Analysis label using a Salesforce Org with **Run with DX Format** enabled.
+
+ARM now displays the **Package Directory** field, defaulting to `force-app`, while allowing users to specify a custom package directory for Salesforce DX metadata analysis.
+
+This fix also introduces **required-field validation**, ensuring the correct package directory is configured and used during Static Code Analysis.
+
+**Note:** This fix applies only to the New UI. Existing labels and Classic UI functionality remain unchanged.
+
+#### Fixed Prevalidation Request Errors in AutoRABIT VS Code Extension <a href="#fixed-prevalidation-request-errors-in-autorabit-vs-code-extension" id="fixed-prevalidation-request-errors-in-autorabit-vs-code-extension"></a>
+
+Resolved an issue where users encountered a **JavaScript error after successfully submitting a Prevalidation Request**through the AutoRABIT VS Code extension.
+
+The issue also prevented submitted requests from appearing in the **Prevalidations** section, making it difficult for users to track their status.
+
+This fix improves compatibility with newer VS Code environments, ensuring that **Prevalidation Requests are submitted without errors and displayed correctly** in the extension for tracking.
+
+#### Fixed Missing Metadata Components in Version Control Deployments <a href="#fixed-missing-metadata-components-in-version-control-deployments" id="fixed-missing-metadata-components-in-version-control-deployments"></a>
+
+Resolved an issue where **metadata components stored in subfolders were not included in deployment packages**, particularly when multiple metadata types contained subfolders with the same name.
+
+Enhanced deployment package preparation to correctly identify and include metadata components from nested folders, ensuring accurate deployments without modifying the source repository.
+
+This fix improves reliability across **Release Label, Commit Label, Single Revision, Revision Range, and Full Deploy from Version Control**, as well as **CI Jobs, Merge Prevalidation, and EZ-Commit workflows**.
+
+Additionally, improved **File Diff accuracy** for metadata stored in subfolders.
+
+#### Fixed Incorrect CustomLabels Display and Rollback History in DX CI Jobs <a href="#fixed-incorrect-customlabels-display-and-rollback-history-in-dx-ci-jobs" id="fixed-incorrect-customlabels-display-and-rollback-history-in-dx-ci-jobs"></a>
+
+Resolved an issue where **DX Version Control CI Jobs incorrectly displayed an additional CustomLabels metadata type** in the Build Changes screen, even when only specific custom labels were modified.
+
+This issue also caused the **Rollback History report to incorrectly list unrelated custom labels as rolled back**.
+
+ARM now correctly identifies and displays only the relevant custom labels during build preparation and ensures that **rollback operations restore only the affected labels**, improving deployment accuracy and rollback reporting.
+
+**Note:** This fix applies to Salesforce DX Version Control CI Jobs.
+
+#### Improved SonarQube Plugin Connection Error Messages <a href="#improved-sonarqube-plugin-connection-error-messages" id="improved-sonarqube-plugin-connection-error-messages"></a>
+
+Resolved an issue where the **SonarQube plugin displayed an empty warning message** when the **Test Connection**operation failed due to expired authentication tokens or incorrect credentials.
+
+ARM now displays a **clear and meaningful error message** when the connection test fails, helping users identify and troubleshoot connection issues more effectively.
+
+This fix improves the user experience when configuring or updating the **SonarQube plugin under My Account → Plugins**.
+
 ## ARM **Release Notes 26.4.5**
 
 **Release Date: 1 November 2026**

@@ -16,6 +16,8 @@ ARM now automatically fills fields such as **Reviewer Email, Salesforce Org Auth
 
 All automatically populated and suggested values remain **editable**, allowing users to review and modify them before proceeding.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-commits/automatic-field-population-in-ez-commit-new-ui" %}
+
 #### Enhanced SIEM Audit Logging for User Creation <a href="#enhanced-siem-audit-logging-for-user-creation" id="enhanced-siem-audit-logging-for-user-creation"></a>
 
 Enhanced **ARM's Security Information and Event Management (SIEM) audit logging** to capture user creation activities, improving security monitoring and audit traceability.
@@ -26,6 +28,8 @@ This enhancement improves **user activity tracking, security auditing, and compl
 
 **Note:** Audit logging must be enabled for these events to be recorded.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/security-information-and-event-management/arm-event-type" %}
+
 #### Improved Required Field Validation in EZ-Commit (New UI) <a href="#improved-required-field-validation-in-ez-commit-new-ui" id="improved-required-field-validation-in-ez-commit-new-ui"></a>
 
 Enhanced the **Create EZ-Commit workflow** with clearer required-field validation to help users identify and correct missing information.
@@ -34,11 +38,15 @@ The **Next and Submit** buttons now remain enabled, and clicking them highlights
 
 Validation messages disappear as fields are completed, providing a **smoother and more intuitive EZ-Commit experience**.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-commits/required-field-validation-in-ez-commit-new-ui" %}
+
 #### Optimized Branch Baseline Processing with Queue Management <a href="#optimized-branch-baseline-processing-with-queue-management" id="optimized-branch-baseline-processing-with-queue-management"></a>
 
 Enhanced **Branch Baseline processing** by introducing a queue mechanism that limits the number of concurrent baseline operations(Two), preventing excessive server resource consumption and improving overall application stability.
 
 When the concurrent processing limit is reached, additional baseline requests are automatically **queued and processed as capacity becomes available**. Users can view and cancel queued requests, with support available in both **Classic and New UI**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/branching-baseline/queued-processing-and-concurrent-execution-limit" %}
 
 #### Improved EZ-Merge with Automatic Field Population and Required Field Validation (New UI) <a href="#improved-ez-merge-with-automatic-field-population-and-required-field-validation-new-ui" id="improved-ez-merge-with-automatic-field-population-and-required-field-validation-new-ui"></a>
 
@@ -50,6 +58,8 @@ The **Dry Run and Merge** buttons remain enabled, and clicking them highlights m
 
 All automatically populated values remain editable, providing a smoother and more efficient merge experience.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-merge/automatic-field-population-and-improved-required-field-validation-in-ez-merge-new-ui" %}
+
 #### Improved Required Field Validation in Commit Templates (New UI) <a href="#improved-required-field-validation-in-commit-templates-new-ui" id="improved-required-field-validation-in-commit-templates-new-ui"></a>
 
 Enhanced the **Create Commit Template workflow** with clearer required-field validation to simplify template creation, editing, and cloning.
@@ -57,6 +67,8 @@ Enhanced the **Create Commit Template workflow** with clearer required-field val
 The **Next and Save Template** buttons now support click-based validation, highlighting missing required fields such as **Template Name, Source Org, and Metadata Selection** with inline error messages.
 
 ARM automatically scrolls to the first missing field, and validation messages disappear as users complete the required information. When an action is temporarily unavailable, a tooltip explains the reason, providing a **smoother and more intuitive user experience**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/commit-templates/improved-required-field-validation-in-commit-templates-new-ui" %}
 
 #### Introduced "Select All" Option for Release Labels (Classic and New UI) <a href="#introduced-select-all-option-for-release-labels-classic-and-new-ui" id="introduced-select-all-option-for-release-labels-classic-and-new-ui"></a>
 
@@ -66,6 +78,10 @@ Users can continue to select or deselect individual revisions as needed, reducin
 
 This enhancement is available in both **Classic UI and New UI**.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/change-labels/release-labels/select-all-revisions-in-release-labels-new-ui" %}
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/change-labels/release-labels/select-all-revisions-in-release-labels-classic-ui" %}
+
 #### Extended Branch and Pull Request API Support for DX Repositories <a href="#extended-branch-and-pull-request-api-support-for-dx-repositories" id="extended-branch-and-pull-request-api-support-for-dx-repositories"></a>
 
 Enhanced the **ARM Branch and Pull Request API** to support **Salesforce DX (Source Format) repositories**, extending the existing functionality available for metadata-format repositories.
@@ -73,6 +89,8 @@ Enhanced the **ARM Branch and Pull Request API** to support **Salesforce DX (Sou
 Users can now automate **branch creation, Salesforce metadata retrieval, commit operations, and Pull Request creation** for DX repositories through a single API request. The enhancement also supports existing branches, package directory selection, and Commit History tracking.
 
 **Note:** For DX repositories with multiple package directories, users must specify the target package directory in the API request.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/introduction-to-arm-developer-apis/api-references" %}
 
 #### Update Repository Remote URL from Version Control Repositories (New UI) <a href="#update-repository-remote-url-from-version-control-repositories-new-ui" id="update-repository-remote-url-from-version-control-repositories-new-ui"></a>
 
@@ -85,6 +103,8 @@ ARM automatically updates the repository URL across associated configurations an
 The enhancement includes **URL validation, confirmation prompts, progress tracking, and audit logging**, providing a secure and streamlined repository management experience.
 
 **Note:** This functionality is available only to the registered organization's Super Admin.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/version-control-repository/update-repository-remote-url-in-version-control-repositories-new-ui" %}
 
 #### Fixed Missing Skip Org Mappings Permission in Role Management (New UI) <a href="#fixed-missing-skip-org-mappings-permission-in-role-management-new-ui" id="fixed-missing-skip-org-mappings-permission-in-role-management-new-ui"></a>
 

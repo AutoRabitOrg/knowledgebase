@@ -1,8 +1,8 @@
 # Release Notes 4.5
 
-### CodeScan 4.5 <a href="#codescan-45" id="codescan-45"></a>
+### CodeScan 4.5
 
-#### New Features <a href="#new-features" id="new-features"></a>
+#### New features
 
 **New Cloud Features**
 
@@ -18,13 +18,13 @@
 * **Using Database.AllowCallouts interface in Batch Apex**: it is not recommended to make HTTP calls as part of Batch Apex logic.
 * **Source files should have a sufficient density of comment lines (v4.5.3)**: this version of the rule is able to be used in the IDE. An issue is created on a file as soon as the density of comment lines on this file is less than the required threshold.
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * DMLWithoutSharingEnabled now takes Inheritance into account (**v4.5.2**).
 * FieldLevelSecurity now has a parameter to check classes that extend system level classes ie. Database.Batchable, Queueable, and Install Handler (**v4.5.3**).
 * CommentRequired now checks for private methods via parameter (**v4.5.3**).
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * Parsing issues for the Safe Navigation Operator fixed (**v4.5.1**).
 * False positive fixed in SOQLInjection (**v4.5.1**).

@@ -1,8 +1,8 @@
 # nCino Release Notes 24.1
 
-## nCino Release Notes 24.1
+## nCino 24.1
 
-**Release Date: 16 June 2024**
+**Release date:** 16 June 2024
 
 ### Overview
 
@@ -15,7 +15,7 @@ nCino 24.1 is a major release that encompasses the following release items:&#x20
 * **Triggering nCino CI Jobs Using REST API**
 * **Select external unique identifier During nCino Feature Deployment**
 
-### **New Features**
+### New features
 
 1.  **nCino Compare Functionality**
 

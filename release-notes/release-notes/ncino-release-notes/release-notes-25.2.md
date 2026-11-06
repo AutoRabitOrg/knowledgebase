@@ -1,8 +1,8 @@
 # nCino Release Notes 25.2
 
-### nCino + **DataLoader** - 25.2.12 Release Notes
+### nCino + DataLoader 25.2.12
 
-**Release Date: 06 July, 2025**
+**Release date:** 6 July 2025
 
 **Job Comment Retention**
 
@@ -28,9 +28,9 @@ In the CI Job configuration, the order of templates within the _Selected Templat
 
 A fix has been applied to ensure that the _Triggered Date_ field is correctly populated whenever a job is initiated. This resolves earlier inconsistencies and supports accurate build history tracking.
 
-### nCino + **DataLoader** - 25.2.11 Release Notes
+### nCino + DataLoader 25.2.11
 
-**Release Date:** 29 June 2025
+**Release date:** 29 June 2025
 
 **CI Job Failure**\
 Resolved an issue causing CI job failures due to improperly rendered template objects. The fix ensures templates are now rendered correctly, allowing jobs to execute successfully.
@@ -38,29 +38,29 @@ Resolved an issue causing CI job failures due to improperly rendered template ob
 **CI Job Baseline Revision**\
 Implemented a fix to ensure the rollback mechanism for CI job baseline revisions functions as expected, maintaining consistency and stability during version changes.
 
-### nCino + **DataLoader** - 25.2.9 Release Notes <a href="#title-text" id="title-text"></a>
+### nCino + DataLoader 25.2.9
 
-**Release Date:** 15 June 2025
+**Release date:** 15 June 2025
 
 **DL Job Execution Stability**
 
 A fix has been implemented to ensure that DL job executions complete without errors, improving overall job reliability and system stability.
 
-#### Post-Deployment Status Tracking <a href="#post-deployment-status-tracking" id="post-deployment-status-tracking"></a>
+#### Post-Deployment Status Tracking
 
 Enhanced the tracking mechanism to accurately reflect both **cumulative** and **individual statuses** of deployment jobs, including those targeting **post-deployment ORGs**.
 
-#### Salesforce API Upgrade <a href="#salesforce-api-upgrade" id="salesforce-api-upgrade"></a>
+#### Salesforce API Upgrade
 
 Upgraded the Salesforce integration to use the **latest API version 64**, ensuring continued compatibility and access to the newest platform features.
 
-#### Trigger Build on Commit <a href="#trigger-build-on-commit" id="trigger-build-on-commit"></a>
+#### Trigger Build on Commit
 
 Resolved an issue where builds were not reliably triggered upon commit. The trigger-build-on-commit functionality now operates **seamlessly and consistently**.
 
-### **nCino + DataLoader 25.2.8 Release Notes**
+### nCino + DataLoader 25.2.8
 
-**Release Date:** 08 June 2025
+**Release date:** 8 June 2025
 
 **Validation Rules Activation**\
 Resolved an issue where enabling validation rules was not functioning consistently.
@@ -74,9 +74,9 @@ Addressed issues to ensure job group cloning now completes reliably.
 **CI Job Baseline Revision**\
 Corrected an error encountered during CI Job baseline revision selection.
 
-### nCino + DataLoader 25.2.7 Release Notes
+### nCino + DataLoader 25.2.7
 
-**Release Date**: 01 June, 2025
+**Release date:** 1 June 2025
 
 **API Refactoring**
 
@@ -98,9 +98,9 @@ Addressed an issue where filters were reset after being edited. Filters now pers
 
 Resolved an IndexOutOfBoundsException occurring during DL PRO job execution. The fix ensures more stable and error-free job runs moving forward.
 
-### nCino + DataLoader 25.2.6 Release Notes
+### nCino + DataLoader 25.2.6
 
-**Release Date**: 25 May, 2025
+**Release date:** 25 May 2025
 
 **Fix on Rollback**
 
@@ -112,9 +112,9 @@ Resolved discrepancies in CI job execution. All triggered actions are now accura
 
 ***
 
-### nCino + DataLoader 25.2.5 Release Notes
+### nCino + DataLoader 25.2.5
 
-**Release Date**: 18 May, 2025
+**Release date:** 18 May 2025
 
 **Post-Deploy ORGs Selection**
 
@@ -129,9 +129,9 @@ Resolved discrepancies in CI job execution. All triggered actions are now accura
 
 ***
 
-### nCino + DataLoader 25.2.4 Release Notes
+### nCino + DataLoader 25.2.4
 
-**Release Date**: 10 May, 2025
+**Release date:** 10 May 2025
 
 **Rollback Behavior Improved**
 
@@ -139,9 +139,9 @@ Rollback operations now skip any undeployed changes introduced after deployment 
 
 ***
 
-### nCino + DataLoader 25.2.3 Release Notes
+### nCino + DataLoader 25.2.3
 
-**Release Date**: 4 May, 2025
+**Release date:** 4 May 2025
 
 **Post-Deployment ORG Rollback**
 
@@ -153,9 +153,9 @@ Introduced support for rolling back individual templates, giving users finer con
 
 ***
 
-### nCino + DataLoader 25.2.2 Release Notes
+### nCino + DataLoader 25.2.2
 
-**Release Date:** 27 April, 2025
+**Release date:** 27 April 2025
 
 **Data Transfer Fix**
 
@@ -163,9 +163,9 @@ Resolved an issue causing data transfer failures. Uploaded files are now reliabl
 
 ***
 
-### nCino + DataLoader 25.2.1 Release Notes
+### nCino + DataLoader 25.2.1
 
-**Release Date:** 20 April, 2025
+**Release date:** 20 April 2025
 
 **Template Creation Fix**
 

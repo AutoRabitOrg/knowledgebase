@@ -1,8 +1,8 @@
 # AutoRABIT Vault Release Notes 22.0
 
-## AutoRABIT Vault 22.2 Release Notes <a href="#vault-222" id="vault-222"></a>
+## Vault 22.2
 
-#### What's New <a href="#whats-new1" id="whats-new1"></a>
+#### What's New
 
 **Support for Serial Backups**
 

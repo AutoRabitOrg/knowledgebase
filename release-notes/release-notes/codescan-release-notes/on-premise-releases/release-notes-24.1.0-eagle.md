@@ -1,6 +1,6 @@
 # Release Notes 24.1.0 Eagle
 
-## Release Notes Self-Hosted (On-Prem) 24.1.0 - EAGLE Edition
+## CodeScan Self-Hosted 24.1.0 (Eagle)
 
 **August 29, 2024**
 
@@ -56,7 +56,7 @@ Further details are within the following article: [https://knowledgebase.autorab
    }\
    (where the parameter associated with this enhancement is nullCheck)
 
-### New Rules
+### New rules
 
 1. **New Rule for “Cognitive Complexity” in CodeScan**\
    This is a new rule for assessing Cognitive Complexity. This rule aims to enhance the understanding of code readability and maintainability by identifying areas where the cognitive load on developers may be high.\
@@ -98,7 +98,7 @@ Top of Form
 
 ·       Avoid false positive when a recursive call happens without matching to the method name
 
-### **New Configuration Settings**
+### New Configuration Settings
 
 We are excited to announce that CodeScan now supports SonarQube versions 10.4, 10.5 and 10.6. In\
 order for the Self-Hosted plug-in to function properly, the following configuration settings are introduced.\

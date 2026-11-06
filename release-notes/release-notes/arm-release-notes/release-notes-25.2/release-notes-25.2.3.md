@@ -1,14 +1,14 @@
 # Release Notes 25.2.3
 
-## Release Notes 25.2.3
+## ARM 25.2.3
 
-**Release Date:** **04 May 2025**
+**Release date:** 4 May 2025
 
-### **Overview** <a href="#overview" id="overview"></a>
+### Overview
 
 This release of AutoRABIT ARM introduces key bug fixes and stability improvements to deployment label handling, CI job webhook executions, and user management across regions. Notably, a critical internal issue affecting metadata filtering during full deployments has been addressed. Additionally, issues related to saving users for countries without state-level details and CI job webhook failures have been resolved.
 
-### **Bug Fixes and Improvements** <a href="#bug-fixes-and-improvements" id="bug-fixes-and-improvements"></a>
+### Bug Fixes and Improvements
 
 **Issue with full Deployment - Previous Deployment Label type**\
 A defect was identified when performing a full deployment using the “Previous Deployment Label” type, which inadvertently included all metadata members from the source organization, rather than only those associated with the selected label.

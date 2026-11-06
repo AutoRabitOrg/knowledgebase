@@ -1,8 +1,8 @@
 # Release Notes 25.1.0 Eagle 3.0
 
-## Release Notes 25.1.0 (Eagle v.3)
+## CodeScan Self-Hosted 25.1.0 (Eagle 3)
 
-**Release Date: 26 February 2025**
+**Release date:** 26 February 2025
 
 ### Summary
 
@@ -14,7 +14,7 @@ CodeScan Self-Hosted—versions 25.0.1 (Tiger v3) and 25.1.0 (Eagle v3)—are co
 
 Component details are listed in their corresponding sections within this document.
 
-### New Features
+### New features
 
 There are no new features associated with this release.
 
@@ -55,7 +55,7 @@ There are no new features associated with this release.
 
     <figure><img src="../../../../.gitbook/assets/image (1632).png" alt=""><figcaption><p>Clear, accurate error message</p></figcaption></figure>
 
-### New Rules
+### New rules
 
 1. **New Rule for Apex: “OuterClassExplicitSharing”**\
    \

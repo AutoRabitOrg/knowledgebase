@@ -1,8 +1,8 @@
 # Release Notes 26.1.3 Eagle 10.0
 
-**Release Date: 10 August 2026**
+**Release date:** 10 August 2026
 
-### Summary&#x20;
+### Summary
 
 CodeScan Self-hosted 26.1.3 is comprised of the following 1 component:&#x20;
 
@@ -15,9 +15,9 @@ CodeScan Self-hosted 26.1.3 is comprised of the following 1 component:&#x20;
 
 Component details are listed in their corresponding sections within this document.&#x20;
 
-### &#x20;Fixes
+### Fixes
 
-#### 1. Enhanced Detection of Unused Formal Parameters in Dynamic SOQL Queries
+#### Enhanced Detection of Unused Formal Parameters in Dynamic SOQL Queries
 
 Enhanced the _sf:UnusedFormalParameter_ rule to analyze SOQL condition strings that are first assigned to local variables before being passed to dynamic SOQL methods, so that unused formal parameters referenced in dynamically constructed queries are detected consistently regardless of how the query string is built.
 

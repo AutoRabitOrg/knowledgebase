@@ -2,9 +2,9 @@
 
 ## CodeScan Self-Hosted/On-Premises
 
-## Release Notes Eagle 2.0 (v. 24.1.1)
+## CodeScan Self-Hosted 24.1.1 (Eagle 2.0)
 
-**Release Date: November 13, 2024**
+**Release date:** 13 November 2024
 
 ### Summary
 
@@ -16,7 +16,7 @@ The CodeScan On-Premises/Self Hosted Eagle 2.0 (24.1.1) edition is comprised of 
 
 Component details are listed in their corresponding sections within this document.
 
-### New Rules
+### New rules
 
 1.  **New CodeScan rule to check for special characters in Page Layout Name (for example: : , ( ) ' " - & )**\
     \

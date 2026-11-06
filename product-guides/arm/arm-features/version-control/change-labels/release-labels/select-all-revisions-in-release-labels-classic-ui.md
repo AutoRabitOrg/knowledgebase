@@ -26,9 +26,19 @@ The following capabilities are now available when creating or updating Release L
 1. Log in to AutoRABIT ARM using the **Classic UI**.
 2. Navigate to **Version Control > Release Labels**.
 3. Create a new Release Label or edit an existing one.
-4. Complete the required Release Label configuration and navigate to the revision selection section.
-5. Select the **Select All** checkbox to select all available revisions.
+
+<figure><img src="../../../../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+
+Complete the required Release Label configuration and navigate to the revision selection section.
+
+4. Select the **Select All** checkbox to select all available revisions.
+
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2026-11-06 at 23.24.38.png" alt=""><figcaption></figcaption></figure>
+
 6. Uncheck **Select All** to clear the selection, or select and deselect individual revisions as needed.
+
+<figure><img src="../../../../../../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+
 7. Review the selected revisions and save the Release Label.
 
 ### Important Notes

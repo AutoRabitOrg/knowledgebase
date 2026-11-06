@@ -26,9 +26,18 @@ The revision selection section now includes a **Select All** checkbox with the f
 1. Log in to AutoRABIT ARM using the **New UI**.
 2. Navigate to **Version Control > Release Labels**.
 3. Click to create a new Release Label or edit an existing Release Label.
+
+<figure><img src="../../../../../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
+
 4. Complete the required configuration details and navigate to the revision selection section.
 5. Select the **Select All** checkbox to select all available revisions.
+
+<figure><img src="../../../../../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+
 6. Uncheck **Select All** to clear the selection, or manually adjust individual revision selections.
+
+<figure><img src="../../../../../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+
 7. Review the selected revisions and save the Release Label.
 
 ### Important Notes

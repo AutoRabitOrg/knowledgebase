@@ -46,7 +46,7 @@ The plugin checks regularly whether its version is still supported. When it is n
 
 Open the plugin's preferences: **Window** → **Preferences** → **IZ Preferences**. On macOS, the preferences are under the **Anypoint Studio** menu.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsaccount-ide-projects-keys (1).png" alt="Your IDE keys in My Account, where you copy the key for the plugin"><figcaption><p>Copy your IDE key from My Account → IDE projects</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetsaccount-ide-projects-keys.png" alt="Your IDE keys in My Account, where you copy the key for the plugin"><figcaption><p>Copy your IDE key from My Account → IDE projects</p></figcaption></figure>
 
 1.  Under **Connection Details**, fill in the fields:
 

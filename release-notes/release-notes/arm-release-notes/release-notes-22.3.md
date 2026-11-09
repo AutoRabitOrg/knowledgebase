@@ -1,6 +1,6 @@
 # ARM Release Notes 22
 
-## ARM Release Notes 22.3
+## ARM 22.3
 
 We would like to inform you about the End of Life (EOL) for ARM version 22.3. Per our support agreement, this version is now more than 365 days old and is no longer supported. As part of our ongoing commitment to providing the best possible experience for our users and maintaining the highest standards of security and performance, we have made the decision to discontinue support for ARM 22.3.
 
@@ -28,32 +28,32 @@ Thank you for your understanding and continued support.
 **Date of release:** _18 December 2022_\
 **Article last updated:** 31 _July 2023_
 
-### New Features <a href="#new-features" id="new-features"></a>
+### New features
 
-#### 1. Retention Policy <a href="#id-1-retention-policy" id="id-1-retention-policy"></a>
+#### Retention Policy
 
 You can now define a data **Retention Policy** and choose how much data should be stored for how long. ARM will now be considerably quicker by eliminating outdated data. Clearing out old and useless data from the database and moving it to the archives keeps the application from underperforming and improves speed across all modules.
 
 A weekly clean-up will ensure that the application runs smoothly. The default data retention period is set as 12 months which will be implemented with the release of **ARM version 22.3**. Admins can specify the duration of data retention in the history tables from the My Account section and change the retention period from **12 months** to **6 months** or **3 months**.\
 [**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings.md)
 
-#### 2. Search, Group, and Filter CI Job List <a href="#id-2-search-group-and-filter-ci-job-list" id="id-2-search-group-and-filter-ci-job-list"></a>
+#### Search, Group, and Filter CI Job List
 
 Finding a **CI Job** has never been easier. Instead of scrolling through endless pages, you can search for a job or a group by simply typing the name in the new dropdown lists. You can further narrow the search results by combining these two options to look for a particular job within a group.
 
 Additionally, the **filter** feature provides further options to narrow the search results by source type, date range, and more.\
 [**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/ci-job-list.md)
 
-#### 3. Ability to Abort a Vlocity Deployment <a href="#id-3-ability-to-abort-a-vlocity-deployment" id="id-3-ability-to-abort-a-vlocity-deployment"></a>
+#### Ability to Abort a Vlocity Deployment
 
 We just included new functionality to the **ARM 22.3 version** that allows users to terminate an ongoing Vlocity deployment process or abort it if get stuck. The **Deployment History** screen contains the **Abort** option, which allows you to terminate the deployment process.\
 ![image.png](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/image-I1GT03M7.png)
 
 ***
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### 1. Release Label Revamp <a href="#id-1-release-label-revamp" id="id-1-release-label-revamp"></a>
+#### Release Label Revamp
 
 The revamp of the **Release Label** page is the feature of version 22.3 that stands out the most. This enhancement is actually a collection of multiple smaller enhancements, each of which is briefly discussed in this section.
 
@@ -64,7 +64,7 @@ The revamp of the **Release Label** page is the feature of version 22.3 that sta
 
 [**Read more →**](../../../product-guides/arm/arm-features/version-control/change-labels/release-labels/)
 
-#### 2. Additional Metadata Support in Search and Substitute <a href="#id-2-additional-metadata-support-in-search-and-substitute" id="id-2-additional-metadata-support-in-search-and-substitute"></a>
+#### Additional Metadata Support in Search and Substitute
 
 Additional metadata types are now compatible with the **Search and Substitute** rule, allowing the application to use them for Deployments and Commits.
 
@@ -75,7 +75,7 @@ This enhancement is also helpful when users want to add object permissions only 
 It is also beneficial to have this feature so that the rules can be created and used in **CI Jobs** to do the replacements automatically, depending on the deployment settings in the CI Job.\
 [**Read more →**](../../../product-guides/arm/arm-administration/search-and-substitute.md)
 
-#### 3. Additional details in the Users Export List <a href="#id-3-additional-details-in-the-users-export-list" id="id-3-additional-details-in-the-users-export-list"></a>
+#### Additional details in the Users Export List
 
 **Export List** is a comprehensive list of all registered users with an organization. This list can be downloaded from the **Users** module. It includes details like the users' name, email, and title; and information about user accounts created, modified, deactivated, and deleted.
 
@@ -84,7 +84,7 @@ With the recent release, the **Export List** will include a few additional detai
 The access level of users is not mentioned in the export list for security reasons, i.e., if any users are **Admin** or **Super Admin**, this will not be specified. The company can share this list, if required, with people both inside and outside their organization without jeopardizing the confidentiality of the access granted to the users.\
 [**Read more →**](../../../product-guides/arm/arm-administration/user-management/users-roles-and-permissions.md)
 
-#### 4. Dataloader Clone process <a href="#id-4-dataloader-clone-process" id="id-4-dataloader-clone-process"></a>
+#### Dataloader Clone process
 
 In addition to providing a new name, **Dataloader users** can now specify a different Salesforce org as a source or destination for the operation while cloning an existing job. This helps the users to reuse the same job configuration with a different Salesforce org without going through the entire process again.
 
@@ -93,7 +93,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ***
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 * The `/syncbranchcommits` service is no longer supported. The users will no longer require **Auto-sync** functionality to create a release label. This simplifies the function's use and gets rid of unnecessary steps.
 * For improved user experience, the **metadata.zip** file upload option has been added to the **New Deployment** page itself. When uploading large files, this is extremely useful.
@@ -112,7 +112,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 ***
 
-### Changelogs <a href="#changelogs" id="changelogs"></a>
+### Changelogs
 
 #### 28 February 2024
 
@@ -419,7 +419,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an error related to the nCino module with **scheduled Job not showing up in UI** after completion due to **Deploy Status Not Updated**.&#x20;
 * Fixed an error related to the nCino module with a **CI Job Edit not populating with scheduled time details**.&#x20;
 
-#### 30 July 2023 <a href="#id-23-july-2023" id="id-23-july-2023"></a>
+#### 30 July 2023
 
 **(ARM v22.3.32)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -436,7 +436,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an error related to BHG with **CI Job webhooks** failing to trigger.&#x20;
 * Performed **nCino AR template** updates.&#x20;
 
-#### 23 July 2023 <a href="#id-23-july-2023" id="id-23-july-2023"></a>
+#### 23 July 2023
 
 **(ARM v22.3.31)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -461,7 +461,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Enhanced UI in **Post Deployment** activities result page in CI Job – nCino.
 * Enhanced the **View details page** not being visible unless post-deployment activities are completed – nCino.
 
-#### 18 June 2023 <a href="#id-18-june-2023" id="id-18-june-2023"></a>
+#### 18 June 2023
 
 **(ARM v22.3.26)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -480,7 +480,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **DataLoader** where **Insert** operation bulk API selection was resulting in console error message `serializeToString`.
 * Fixed an issue where **Vlocity** metadata components were getting expanded on the **Finish** page.
 
-#### 11 June 2023 <a href="#id-11-june-2023" id="id-11-june-2023"></a>
+#### 11 June 2023
 
 **(ARM v22.3.25)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -495,7 +495,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Null Values** were displayed on the **ALM Labels** screen as well as the **ALM Details** tab on the respective **ALM Commit Label Details** screen (internal ticket).
 * Fixed an issue where selected files for DX Commits were not displayed in the **File Changes** tab, and after the commit it was showing as **No Modifications** (internal ticket).
 
-#### 04 June 2023 <a href="#id-04-june-2023" id="id-04-june-2023"></a>
+#### 04 June 2023
 
 **(ARM v22.3.24)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -514,7 +514,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Layout** file was not displayed in the **Review Artifact** screen after resolving the layout **duplicates** (internal ticket).
 * Fixed an issue where **4 CI jobs** were running parallelly even though the **parallel process limit** was **1** on the e**xternal agent** (internal ticket).
 
-#### 28 May 2023 <a href="#id-28-may-2023" id="id-28-may-2023"></a>
+#### 28 May 2023
 
 **(ARM v22.3.23)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -532,7 +532,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a UI bug where **SF Org Test Connection** notification message was displayed on an unrelated module (internal ticket).
 * Removed the option to sign up for a 30-day Salesforce trial while registering a DevHub as the trial offer is no longer applicable (internal ticket).
 
-#### 21 May 2023 <a href="#id-21-may-2023" id="id-21-may-2023"></a>
+#### 21 May 2023
 
 **(ARM v22.3.22)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -550,7 +550,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **Prevalidation Merge** where users were unable to deploy the **ApexClass Tests** related to ApexClasses and Apex Triggers (internal ticket).
 * Fixed a UI bug where the **date column** in the **EZ-Commit Weekly report** was displaying incorrect values (internal ticket).
 
-#### 14 May 2023 <a href="#id-14-may-2023" id="id-14-may-2023"></a>
+#### 14 May 2023
 
 **(ARM v22.3.21)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -569,7 +569,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **Dataloader** where user was able to upload a 900 MB file despite the limit being 100 MB, causing the process to hang (internal ticket).
 * Fixed an issue with **Dataloader** where sever crashed after user performed an **Extract** operation from an SF org which had **Account Object** with 2 million records (internal ticket).
 
-#### 07 May 2023 <a href="#id-07-may-2023" id="id-07-may-2023"></a>
+#### 07 May 2023
 
 **(ARM v22.3.20)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -589,7 +589,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where release label creation was failing when user tried to create package manifest and aborted and refreshed the label for DX repo (internal ticket).
 * Fixed an issue where **Super admin user** was getting a blank popup screen while trying to click on the **Register Agent** button from the **Pool Mgmt** screen (internal ticket).
 
-#### 30 April 2023 <a href="#id-30-april-2023" id="id-30-april-2023"></a>
+#### 30 April 2023
 
 **(ARM v22.3.19)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -613,7 +613,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Vlocity** revisions were not displaying while user was trying to edit a release label (internal ticket).
 * Enhanced the **Release Label** creation page by adding options to the **Vlocity** label type which were only available for Salesforce revisions before (internal ticket).
 
-#### 23 April 2023 <a href="#id-23-april-2023" id="id-23-april-2023"></a>
+#### 23 April 2023
 
 **(ARM v22.3.18)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -632,7 +632,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Release Label artifact** was not displaying metadata types in the Destructive changes tab for DX repos, but was working as expected for non-DX repos (internal ticket).
 * Fixed an issue where user was unable to revert the commit if a previously reverted commit was deleted while in **Conflict** state (internal ticket).
 
-#### 16 April 2023 <a href="#id-16-april-2023" id="id-16-april-2023"></a>
+#### 16 April 2023
 
 **(ARM v22.3.17)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -655,7 +655,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where SSO user's org was not deleted from the **Security-Context XML** (internal ticket).
 * Fixed an issue where the **API Token** status was marked as **Never Accessed**, despite the API being in use already (internal ticket).
 
-#### 09 April 2023 <a href="#id-09-april-2023" id="id-09-april-2023"></a>
+#### 09 April 2023
 
 **(ARM v22.3.16)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -677,7 +677,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Improved **nCino** by adding additional loggers for **Branching baseline** for user to view the status in the UI (internal ticket).
 * Fixed an issue where user was unable to filter while trying to select a job which had spaces in the job name (internal ticket).
 
-#### 02 April 2023 <a href="#id-02-april-2023" id="id-02-april-2023"></a>
+#### 02 April 2023
 
 **(ARM v22.3.15)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -707,7 +707,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Revision** in **Vlocity** release label was not getting selected after you clicked save (internal ticket).
 * Fixed an issue with **nCino** where user was getting an exception while creating a CI job, and user was selecting the same **VC Repo**/**Branch** for multiple times (internal ticket).
 
-#### 26 March 2023 <a href="#id-26-march-2023" id="id-26-march-2023"></a>
+#### 26 March 2023
 
 **(ARM v22.3.14)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -725,7 +725,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a UI bug in **nCino** where the header in **template details** section was missing in **Feature Deployment** (internal ticket).
 * Fixed an issue with **nCino** where **Deployment Logs** were not displayed when the **CI Job** failed (internal ticket).
 
-#### 19 March 2023 <a href="#id-19-march-2023" id="id-19-march-2023"></a>
+#### 19 March 2023
 
 **(ARM v22.3.13)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -746,7 +746,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where errors were occuring while performing **Delete Org** (internal ticket).
 * Fixed an issue where for **Build only** job source from VC with DX repo, if **Master Details Object Change** is included in the build, we're getting **No Modifications** even if changes exist (internal ticket).
 
-#### 12 March 2023 <a href="#id-12-march-2023" id="id-12-march-2023"></a>
+#### 12 March 2023
 
 **(ARM v22.3.12)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -759,7 +759,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where multiple fields of the respective custom objects were getting selected parallelly while performing **edit** or **save** or **exit** operations on the **Review Artifact** screen (internal ticket).
 * Enhanced ARM by adding an option for **multiple ARM instances** to share a **single database cluster** (internal ticket).
 
-#### 05 March 2023 <a href="#id-05-march-2023" id="id-05-march-2023"></a>
+#### 05 March 2023
 
 **(ARM v22.3.11)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -780,7 +780,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Baseline Managed Package Changes** option was not displayed on the UI when navigating from **Package xml** to select manually (internal ticket).
 * Fixed an issue where there was a discrepancy between the **Attachments Records Success/Failure Count** and the **Retrieved Count** when **BULK API** was enabled for **Deployment** (internal ticket).
 
-#### 26 February 2023 <a href="#id-26-february-2023" id="id-26-february-2023"></a>
+#### 26 February 2023
 
 **(ARM v22.3.10)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -797,7 +797,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Enhanced **nCino** by introducing **New Spreads Schedule** tile in the **Feature Creation** screen (internal ticket).
 * Fixed an issue where if the fields did not load for **Applied Mappings** during deployment, no error was thrown by the application (internal ticket).
 
-#### 19 February 2023 <a href="#id-19-february-2023" id="id-19-february-2023"></a>
+#### 19 February 2023
 
 **(ARM v22.3.9)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -820,7 +820,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with nCino where user created a feature Deployment for **Credit memo** template with attachments, but **Attachments Objects Data** was not fetched, and the deployment failed with the following error: `Data file not fetched for object: Attachment` (internal ticket).
 * Fixed an issue with nCino where **Standard Features** were not loaded in the **Feature Management** page (internal ticket).
 
-#### 12 February 2023 <a href="#id-12-february-2023" id="id-12-february-2023"></a>
+#### 12 February 2023
 
 **(ARM v22.3.8)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -836,7 +836,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **User Permissions** and **Ip Ranges** are completly removed from the branch after commiting the **Permission Sets** and **Profiles** (internal ticket).
 * Fixed an issue where **Super Admin** was getting an error while trying to activate newly signed up users (internal ticket).
 
-#### 05 February 2023 <a href="#id-05-february-2023" id="id-05-february-2023"></a>
+#### 05 February 2023
 
 **(ARM v22.3.7)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -851,7 +851,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Merge** was taking longer than usual, and then failing with `Null Exception` ([#60757](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000097574427)).
 * Fixed an issue where **EZ-Commits** and **EZ-Merges** were taking much longer than usual ([#58098](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000094302292)).
 
-#### 29 January 2023 <a href="#id-29-january-2023" id="id-29-january-2023"></a>
+#### 29 January 2023
 
 **(ARM v22.3.6)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -864,7 +864,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Validate Deploy** failed in **QuickMerge** and displayed the following message: `This folder unique name already exists for this folder type or has been previously used. Please choose a different name` (internal ticket).
 * Fixed an issue where CI job wasn't considering the metadata changes, so the destructive changes were not being prepared or displayed on the build. (internal ticket).
 
-#### 22 January 2022 <a href="#id-22-january-2022" id="id-22-january-2022"></a>
+#### 22 January 2022
 
 **(ARM v22.3.5)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -890,7 +890,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the selected tab checkbox in the **metadata components** page in the EZ-Commit was not functioning as expected (internal ticket).
 * Fixed an issue where the **EZ-Commit** validation screen was displaying incorrect notification when name of the template was empty (internal ticket).
 
-#### 15 January 2022 <a href="#id-15-january-2022" id="id-15-january-2022"></a>
+#### 15 January 2022
 
 **(ARM v22.3.4)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -903,7 +903,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a UI bug on **CI List** and **CI Results** pages where when pagination was changed, the first 25 records were repeated (internal ticket).
 * Fixed an UI bug where the **LastUsedDate** column was not displayed in the **Branch Table** (internal ticket).
 
-#### 8 January 2022 <a href="#id-8-january-2022" id="id-8-january-2022"></a>
+#### 8 January 2022
 
 **(ARM v22.3.3)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -920,7 +920,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **CheckMarx** is executed successfully, but when trying to open the file user is the following error popup: `Result file not exists` (internal ticket).
 * Fixed an issue where **ActionCall** and **Decision Nodes** were not shown in the **Duplicate Resolving** screen (internal ticket).
 
-#### 1 January 2022 <a href="#id-1-january-2022" id="id-1-january-2022"></a>
+#### 1 January 2022
 
 **(ARM v22.3.2)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -934,7 +934,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Destructive Components** are not seen in case of **PV-DX-Destructive Merge** for **Report** metadata type. Instead, it displaying a message: `Package is empty` (internal ticket).
 * Fixed an issue where **Deployment** was failing with certain **Permission set metadatatypes** that were not selected (internal ticket).
 
-#### 25 December 2022 <a href="#id-25-december-2022" id="id-25-december-2022"></a>
+#### 25 December 2022
 
 **(ARM v22.3.1)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -953,7 +953,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **prevalidation commit** failed at **delta** stage ([#55763](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090435979)).
 * Fixed an issue where user was unable to create **commit label** for the same repository second time, and branches were not displayed (internal ticket).
 
-#### 18 December 2022 <a href="#id-18-december-2022" id="id-18-december-2022"></a>
+#### 18 December 2022
 
 **(ARM v22.3.0)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -968,20 +968,20 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-## **ARM Release Notes 22.2**
+## ARM 22.2
 
 **Date of release:** _9 October 2022_\
 **Article last updated:** _15 May 2023_
 
-### New Features <a href="#new-features" id="new-features"></a>
+### New features
 
-#### 1. Teams/Slack Notifications <a href="#id-1-teamsslack-notifications" id="id-1-teamsslack-notifications"></a>
+#### Teams/Slack Notifications
 
 **Mail Settings** module in the **Admin** section is relabeled as **Notifications**. Through this module, you can choose to send notifications about specific events triggered in ARM to specific groups or channels within your organization through **Teams** or **Slack**. For whichever messaging app you use, you can configure a webhook connection for each of the groups or channels, and then integrate them with ARM. You can customize and select which group(s) to notify when events like build failure, build success, deployment failure, merge reports, etc. are triggered.
 
 [**Read more →**](../../../product-guides/arm/troubleshoot/how-tos/notifications-mail-server-settings.md)
 
-#### 2. Salesforce Scanner plugin <a href="#id-2-salesforce-scanner-plugin" id="id-2-salesforce-scanner-plugin"></a>
+#### Salesforce Scanner plugin
 
 In addition to the existing static code analysis tools, ARM now provides the ability to choose the **Salesforce Scanner CLI** plugin.
 
@@ -996,31 +996,31 @@ With the Salesforce CLI Scanner plugin, you can look forward to a:
 * A unified set of rules that are checked by their respective rule engines
 * Unified rule violation report that includes all issues identified by the engines.
 
-#### 3. AutoRABIT for nCino <a href="#id-3-autorabit-for-ncino" id="id-3-autorabit-for-ncino"></a>
+#### AutoRABIT for nCino
 
 We’ve added the ability to view and review datasets corresponding to each version of the nCino feature template before using it for deployment. Prior to this release, the capability was available only for the latest version of the template.
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### 1. ApexPMD Upgrade to 6.49 version <a href="#id-1-apexpmd-upgrade-to-649-version" id="id-1-apexpmd-upgrade-to-649-version"></a>
+#### ApexPMD Upgrade to 6.49 version
 
 With this release, PMD has been upgraded to version **6.49**. If you have not uploaded a rules file, ARM will use the default Apex PMD rules file. However, you can add new rules to the default ruleset.
 
 Click [HERE](https://pmd.github.io/latest/pmd_next_major_development.html#list-of-currently-deprecated-rules) to view the list of currently deprecated rules available on GitHub.
 
-#### 2. Auto-approve on validation success <a href="#id-2-autoapprove-on-validation-success" id="id-2-autoapprove-on-validation-success"></a>
+#### Auto-approve on validation success
 
 We have moved one step closer to automating the flow by adding an option to choose if an **EZ-Commit** or an **EZ-Merge** should be approved automatically if the SCA validation is successful. Combined with the existing option to auto-commit on approval, this leads to a true CI/CD experience.
 
 [**Read more →**](../../../product-guides/arm/arm-administration/user-management/manage-users-account-settings.md)
 
-#### 3. HashiCorp Vault Integration <a href="#id-3-hashicorp-vault-integration" id="id-3-hashicorp-vault-integration"></a>
+#### HashiCorp Vault Integration
 
 While adding HashiCorp credentials to ARM, you can now choose the **AWS Authentication** method so that the Vault Token will be generated automatically whenever the existing token expires. Now the user will not have to update the token manually from the application when it expires.
 
 [**Read more →**](release-notes-22.3.md#3-hashicorp-vault-integration)
 
-#### 4. SFDX CLI Upgrade <a href="#id-4-sfdx-cli-upgrade" id="id-4-sfdx-cli-upgrade"></a>
+#### SFDX CLI Upgrade
 
 The SFDX CLI has been upgraded to the latest stable **7.169** version.
 
@@ -1029,31 +1029,31 @@ Key characteristics to look for:
 * Support for the **quick deploy** functionality for SFDX jobs.
 * Use CLI commands to generate the package manifest and rollbacks.
 
-#### 5. Salesforce Winter (API 56.0) Support <a href="#id-5-salesforce-winter-api-560-support" id="id-5-salesforce-winter-api-560-support"></a>
+#### Salesforce Winter (API 56.0) Support
 
 To keep our product up to date with the most recent Salesforce updates, AutoRABIT supports the most recent **API 56.0** version in this release. The most recent API version is intended for customizing the metadata model and developing tools to manage it.
 
 [**Read more →**](../../../product-guides/arm/arm-administration/user-management/salesforce-api-version.md)
 
-#### 6. Merge to multiple branches <a href="#id-6-merge-to-multiple-branches" id="id-6-merge-to-multiple-branches"></a>
+#### Merge to multiple branches
 
 With this release, you can choose to **merge** from one **source branch** to multiple **destination branches** upon successful deployment.
 
 [**Read more →**](../../../product-guides/arm/arm-features/automation-and-ci/create-a-new-ci-job/deploy-from-sfdx-branch-to-a-salesforce-org.md)
 
-#### 7. OAuth for Jira <a href="#id-7-oauth-for-jira" id="id-7-oauth-for-jira"></a>
+#### OAuth for Jira
 
 In addition to the **Standard** access type, users can now set up **SSO** as authentication for **Jira** using the OAuth access type while registering an ALM. You can also switch between **Standard** and **OAuth** access types for already registered ALMs.
 
 [**Read more →**](../../../product-guides/arm/arm-administration/alm-management.md)
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 * Users with Admin access can now turn off the Jira comments and notifications created by AR. This ensures a cleaner workspace. These comments and notifications are very development centric, so the end users who use Jira cannot make sense of our technical comments from AR, and this may create confusion for them.
 
-### Changelogs <a href="#changelogs" id="changelogs"></a>
+### Changelogs
 
-#### 28 May 2023 <a href="#id-28-may-2023" id="id-28-may-2023"></a>
+#### 28 May 2023
 
 **(ARM v22.2.28)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1071,7 +1071,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a UI bug where **SF Org Test Connection** notification message was displayed on an unrelated module (internal ticket).
 * Removed the option to sign up for a 30-day Salesforce trial while registering a DevHub as the trial offer is no longer applicable (internal ticket).
 
-#### 21 May 2023 <a href="#id-21-may-2023" id="id-21-may-2023"></a>
+#### 21 May 2023
 
 **(ARM v22.2.27)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1089,7 +1089,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **Prevalidation Merge** where users were unable to deploy the **ApexClass Tests** related to ApexClasses and Apex Triggers (internal ticket).
 * Fixed a UI bug where the **date column** in the **EZ-Commit Weekly report** was displaying incorrect values (internal ticket).
 
-#### 14 May 2023 <a href="#id-14-may-2023" id="id-14-may-2023"></a>
+#### 14 May 2023
 
 **(ARM v22.2.26)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1108,7 +1108,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **Dataloader** where user was able to upload a 900 MB file despite the limit being 100 MB, causing the process to hang (internal ticket).
 * Fixed an issue with **Dataloader** where sever crashed after user performed an **Extract** operation from an SF org which had **Account Object** with 2 million records (internal ticket).
 
-#### 07 May 2023 <a href="#id-07-may-2023" id="id-07-may-2023"></a>
+#### 07 May 2023
 
 **(ARM v22.2.25)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1128,7 +1128,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where release label creation was failing when user tried to create package manifest and aborted and refreshed the label for DX repo (internal ticket).
 * Fixed an issue where **Super admin user** was getting a blank popup screen while trying to click on the **Register Agent** button from the **Pool Mgmt** screen (internal ticket).
 
-#### 09 April 2023 <a href="#id-09-april-2023" id="id-09-april-2023"></a>
+#### 09 April 2023
 
 **(ARM v22.2.23)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1150,7 +1150,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Improved **nCino** by adding additional loggers for **Branching baseline** for user to view the status in the UI (internal ticket).
 * Fixed an issue where user was unable to filter while trying to select a job which had spaces in the job name (internal ticket).
 
-#### 19 March 2023 <a href="#id-19-march-2023" id="id-19-march-2023"></a>
+#### 19 March 2023
 
 **(ARM v22.2.22)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1171,7 +1171,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where errors were occuring while performing **Delete Org** (internal ticket).
 * Fixed an issue where for **Build only** job source from VC with DX repo, if **Master Details Object Change** is included in the build, we're getting **No Modifications** even if changes exist (internal ticket).
 
-#### 12 March 2023 <a href="#id-12-march-2023" id="id-12-march-2023"></a>
+#### 12 March 2023
 
 **(ARM v22.2.21)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1184,7 +1184,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where multiple fields of the respective custom objects were getting selected parallelly while performing **edit** or **save** or **exit** operations on the **Review Artifact** screen (internal ticket).
 * Enhanced ARM by adding an option for **multiple ARM instances** to share a **single database cluster** (internal ticket).
 
-#### 05 March 2023 <a href="#id-05-march-2023" id="id-05-march-2023"></a>
+#### 05 March 2023
 
 **(ARM v22.2.20)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1205,7 +1205,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Baseline Managed Package Changes** option was not displayed on the UI when navigating from **Package xml** to select manually (internal ticket).
 * Fixed an issue where there was a discrepancy between the **Attachments Records Success/Failure Count** and the **Retrieved Count** when **BULK API** was enabled for **Deployment** (internal ticket).
 
-#### 26 February 2023 <a href="#id-26-february-2023" id="id-26-february-2023"></a>
+#### 26 February 2023
 
 **(ARM v22.2.19)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1222,7 +1222,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Enhanced **nCino** by introducing **New Spreads Schedule** tile in the **Feature Creation** screen (internal ticket).
 * Fixed an issue where if the fields did not load for **Applied Mappings** during deployment, no error was thrown by the application (internal ticket).
 
-#### 19 February 2023 <a href="#id-19-february-2023" id="id-19-february-2023"></a>
+#### 19 February 2023
 
 **(ARM v22.2.18)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1245,7 +1245,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with nCino where user created a feature Deployment for **Credit memo** template with attachments, but **Attachments Objects Data** was not fetched, and the deployment failed with the following error: `Data file not fetched for object: Attachment` (internal ticket).
 * Fixed an issue with nCino where **Standard Features** were not loaded in the **Feature Management** page (internal ticket).
 
-#### 12 February 2023 <a href="#id-12-february-2023" id="id-12-february-2023"></a>
+#### 12 February 2023
 
 **(ARM v22.2.17)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1261,7 +1261,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **User Permissions** and **Ip Ranges** are completly removed from the branch after commiting the **Permission Sets** and **Profiles** (internal ticket).
 * Fixed an issue where **Super Admin** was getting an error while trying to activate newly signed up users (internal ticket).
 
-#### 05 February 2023 <a href="#id-05-february-2023" id="id-05-february-2023"></a>
+#### 05 February 2023
 
 **(ARM v22.2.16)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1276,7 +1276,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Merge** was taking longer than usual, and then failing with `Null Exception` ([#60757](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000097574427)).
 * Fixed an issue where **EZ-Commits** and **EZ-Merges** were taking much longer than usual ([#58098](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000094302292)).
 
-#### 29 January 2023 <a href="#id-29-january-2023" id="id-29-january-2023"></a>
+#### 29 January 2023
 
 **(ARM v22.2.15)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1289,7 +1289,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Validate Deploy** failed in **QuickMerge** and displayed the following message: `This folder unique name already exists for this folder type or has been previously used. Please choose a different name` (internal ticket).
 * Fixed an issue where CI job wasn't considering the metadata changes, so the destructive changes were not being prepared or displayed on the build. (internal ticket).
 
-#### 22 January 2022 <a href="#id-22-january-2022" id="id-22-january-2022"></a>
+#### 22 January 2022
 
 **(ARM v22.2.14)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1315,7 +1315,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the selected tab checkbox in the **metadata components** page in the EZ-Commit was not functioning as expected (internal ticket).
 * Fixed an issue where the **EZ-Commit** validation screen was displaying incorrect notification when name of the template was empty (internal ticket).
 
-#### 15 January 2022 <a href="#id-15-january-2022" id="id-15-january-2022"></a>
+#### 15 January 2022
 
 **(ARM v22.2.13)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1328,7 +1328,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a UI bug on **CI List** and **CI Results** pages where when pagination was changed, the first 25 records were repeated (internal ticket).
 * Fixed an UI bug where the **LastUsedDate** column was not displayed in the **Branch Table** (internal ticket).
 
-#### 8 January 2022 <a href="#id-8-january-2022" id="id-8-january-2022"></a>
+#### 8 January 2022
 
 **(ARM v22.2.12)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1342,7 +1342,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Code coverage** job was running **4 hours** earlier than scheduled every time services were restarted ([#54837](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000088878005)).
 * Fixed a UI bug where scrollbar and pagination were not visible on the **Org Sync History** page (internal ticket).
 
-#### 01 January 2022 <a href="#id-01-january-2022" id="id-01-january-2022"></a>
+#### 01 January 2022
 
 **(ARM v22.2.11)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1356,7 +1356,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where after triggering **Branching baseline**, standard value set metadata type was getting displayed under the **deleted components** through **Autodraft** for **Non-DX repo** (internal ticket).
 * Fixed an issue where **Destructive Components** are not seen in case of **PV-DX-Destructive Merge** for **Report** metadata type. Instead, it displaying a message: `Package is empty` (internal ticket).
 
-#### 25 December 2022 <a href="#id-25-december-2022" id="id-25-december-2022"></a>
+#### 25 December 2022
 
 **(ARM v22.2.10)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1375,7 +1375,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **prevalidation commit** failed at **delta** stage ([#55763](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090435979)).
 * Fixed an issue where user was unable to create **commit label** for the same repository second time, and branches were not displayed (internal ticket).
 
-#### 18 December 2022 <a href="#id-18-december-2022" id="id-18-december-2022"></a>
+#### 18 December 2022
 
 **(ARM v22.2.9)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1388,7 +1388,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user triggered a **CI Job** but it deployed with many more components than expected ([#46983](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079512053)).
 * Fixed an issue where user was creating an **EZ-Commit**, mapping the ALM Project (VersionOne) but received the following error: `JSONObject["Assets"] is not a string` ([#57238](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000092610150)).
 
-#### 11 December 2022 <a href="#id-11-december-2022" id="id-11-december-2022"></a>
+#### 11 December 2022
 
 **(ARM v22.2.8)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1404,7 +1404,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Modify **notification** messages for null checks on request parameters (internal ticket).
   * Display only **nCino** revisions for Version Control in nCino feature **deployment** (internal ticket).
 
-#### 04 December 2022 <a href="#id-04-december-2022" id="id-04-december-2022"></a>
+#### 04 December 2022
 
 **(ARM v22.2.7)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1424,7 +1424,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Commits** added from **non-nCino** **Repositories** were not cleared from the **Workspace** causing the Commit to either not be visible in the UI or it is added to the queue but not deployed to the **Destination Org** (internal ticket).
 * Fixed an issue where user was performing a merge operation and validating the package on the **target org** but the validation was failing with multiple errors ([#55541](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090145025)).
 
-#### 27 November 2022 <a href="#id-27-november-2022" id="id-27-november-2022"></a>
+#### 27 November 2022
 
 **(ARM v22.2.6)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1443,7 +1443,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **EZ-Commit** where **Autodraft** feature was taking too long and eventually failing when user was trying to retrieve components ([#48257](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000082041269)).
 * Fixed an issue where user was able to create a **Delegated Group** but was unable to add a **Delegated Admin** user to the group using **Environment Provisioning** ([#55266](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000089705014)).
 
-#### 20 November 2022 <a href="#id-20-november-2022" id="id-20-november-2022"></a>
+#### 20 November 2022
 
 **(ARM v22.2.5)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1464,7 +1464,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Destructive** commit **Diff** was including more components than selected ([#54795](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000088780309)).
 * Fixed an issue where a merge got stuck for a long time and the **Commit ID** was reflected in **BitBucket** but unavailable to select for release label deployment ([#52964](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087060140)).
 
-#### 13 November 2022 <a href="#id-13-november-2022" id="id-13-november-2022"></a>
+#### 13 November 2022
 
 **(ARM v22.2.4)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1479,7 +1479,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where ARM was slowing at different phases in the **EZ-Commit** module ([#50503](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084910726)).
 * Fixed an issue where Git check response was not delivered for validation **CI Job** even though user has added the comment for a **Pull request** in the remote repository ([#53036](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087171146)).
 
-#### 06 November 2022 <a href="#id-06-november-2022" id="id-06-november-2022"></a>
+#### 06 November 2022
 
 **(ARM v22.2.3)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1500,7 +1500,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Deleted Report** metadata components were not found in the **EZ-Commit** ([#53119](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087247293)).
 * Fixed an issue where user was trying to perform a **Quick Merge** but was getting an **Undefined** error for all labels (internal ticket).
 
-#### 30 October 2022 <a href="#id-30-october-2022" id="id-30-october-2022"></a>
+#### 30 October 2022
 
 **(ARM v22.2.2)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1518,7 +1518,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Page Size** value on the **Edit Release Label** screen is defaulting to the previous value instead of the set value (internal ticket).
 * Fixed a UI bug where **OK Button** in **Automation** is not visible in the **Create Release Label** pop-up when opened in 100% zoom (internal ticket).
 
-#### 23 October 2022 <a href="#id-23-october-2022" id="id-23-october-2022"></a>
+#### 23 October 2022
 
 **(ARM v22.2.1)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1535,7 +1535,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user set **Commit validation Criteria** to **Auto reject after 7 days** but the older Pre-validation commits are not auto rejected after 7 days ([#49874](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084033082)).
 * Fixed an issue where user cannot add **Skip** members manually and it is failing due to **special characters** being included ([#53139](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087266642)).
 
-#### 16 October 2022 <a href="#id-16-october-2022" id="id-16-october-2022"></a>
+#### 16 October 2022
 
 **(ARM v22.2.0)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1560,14 +1560,14 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-## **ARM Release Notes 22.1**
+## ARM 22.1
 
 **Date of release:** _20 March 2022_\
 **Article last updated:** _23 October 2022_
 
-### New features <a href="#new-features" id="new-features"></a>
+### New features
 
-#### 1. Squash and merge <a href="#id-1-squash-and-merge" id="id-1-squash-and-merge"></a>
+#### Squash and merge
 
 We have added the **Squash and Merge** feature in this release. Sometimes, when merging a long list of changes from a development branch into the master, it's helpful to squash those commits into one change for ease of review and declutter the repo's commit history. AutoRABIT offers an option to squash all commits in a merge request into one commit after the merge is approved and completed.<br>
 
@@ -1575,7 +1575,7 @@ We have added the **Squash and Merge** feature in this release. Sometimes, when 
 
 [**Read more →**](../../../product-guides/arm/arm-features/version-control/ez-merge/squash-and-merge.md)
 
-#### 2. SFDX- Import packages <a href="#id-2-sfdx-import-packages" id="id-2-sfdx-import-packages"></a>
+#### SFDX- Import packages
 
 **Packages**
 
@@ -1593,7 +1593,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 [**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/registering-a-devhub.md)
 
-#### 3. Step-based rollback <a href="#id-3-stepbased-rollback" id="id-3-stepbased-rollback"></a>
+#### Step-based rollback
 
 The option to list the API-supported and unsupported API components is added to the CI job/deployment rollback. If such components may be deployed to the target environment but do not have API support to delete them, ARM will display them individually as unsupported API types. Take, for example, **RecordType**.
 
@@ -1605,13 +1605,13 @@ The **RecordType** component may be deployed to the target environment, but it c
 
 ***
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### 1. Checkmarx upgrade to v9.4.1 <a href="#id-1-checkmarx-upgrade-to-v941" id="id-1-checkmarx-upgrade-to-v941"></a>
+#### Checkmarx upgrade to v9.4.1
 
 Checkmarx has been updated to version **9.4.1**. Earlier, Checkmarx used a username/password-based authentication method. Now, the user will be able to use token-based authentication with the Checkmarx upgrade.
 
-#### 2. Export all users <a href="#id-2-export-all-users" id="id-2-export-all-users"></a>
+#### Export all users
 
 The **Export All Users** feature allows the org admins to export a CSV file of all the users currently in their account. We now have added the following fields to the existing CSV file:
 
@@ -1627,11 +1627,11 @@ The **Export All Users** feature allows the org admins to export a CSV file of a
 
 [**Read more →**](../../../product-guides/arm/arm-administration/user-management/users-roles-and-permissions.md)
 
-#### 3. Pull request support for Azure cloud repositories <a href="#id-3-pull-request-support-for-azure-cloud-repositories" id="id-3-pull-request-support-for-azure-cloud-repositories"></a>
+#### Pull request support for Azure cloud repositories
 
 We have extended the support of having the pull request support in the CI Job for the Azure repository. This feature was previously available for Github cloud/Enterprise and Bitbucket cloud/Enterprise; however, we've added support for Azure cloud repositories (DX and non-DX repositories) with this release.
 
-#### 4. Merge/commit approval eligibility <a href="#id-4-mergecommit-approval-eligibility" id="id-4-mergecommit-approval-eligibility"></a>
+#### Merge/commit approval eligibility
 
 If you want to make sure one or more people approve every commit or merge, you can enforce this workflow by using merge/commit approvals. These approvals allow you to set the number of necessary approvals to approve every commit/ merge in a project.
 
@@ -1641,7 +1641,7 @@ The org admins' eligibility level has been enhanced with the ARM 22.1 version. I
 
 [**Read more →**](../../../product-guides/arm/arm-features/version-control/merge-approvals.md)
 
-#### 5. CodeScan additional metadata support <a href="#id-5-codescan-additional-metadata-support" id="id-5-codescan-additional-metadata-support"></a>
+#### CodeScan additional metadata support
 
 We have enhanced the scope for analysis of what CodeScan does by adding support for additional metadata and rules. For our ARM users who want to incorporate the SCA tool into their subscriptions, CodeScan would be their first choice as it now supports more robust integrations.
 
@@ -1655,7 +1655,7 @@ Below is the list of CodeScan supported metadata types:
 | Profiles                          | Sharing Rules           | Sharing Criteria Rules  |
 | Sharing Owner Rules               | Sharing Territory Rules | Permission Sets         |
 
-#### 6. SFDX CLI update <a href="#id-6-sfdx-cli-update" id="id-6-sfdx-cli-update"></a>
+#### SFDX CLI update
 
 The SFDX CLI has been upgraded to the latest stable **7.134** version.
 
@@ -1667,16 +1667,16 @@ Key characteristics to look for:
 
 ***
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 * The jquery-UI version has been upgraded to **v1.13.0** to fix security issues. Upgrading to the most recent version of jquery makes our application more secure and potentially faster in script execution and loading.
 * Minor performance, bug fixes, and security improvements can also be observed in the ARM portal.
 
 ***
 
-### Changelogs <a href="#changelogs" id="changelogs"></a>
+### Changelogs
 
-#### 21 May 2023 <a href="#id-21-may-2023" id="id-21-may-2023"></a>
+#### 21 May 2023
 
 **(ARM v22.1.48)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1694,7 +1694,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **Prevalidation Merge** where users were unable to deploy the **ApexClass Tests** related to ApexClasses and Apex Triggers (internal ticket).
 * Fixed a UI bug where the **date column** in the **EZ-Commit Weekly report** was displaying incorrect values (internal ticket).
 
-#### 09 April 2023 <a href="#id-09-april-2023" id="id-09-april-2023"></a>
+#### 09 April 2023
 
 **(ARM v22.1.46)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1716,7 +1716,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Improved **nCino** by adding additional loggers for **Branching baseline** for user to view the status in the UI (internal ticket).
 * Fixed an issue where user was unable to filter while trying to select a job which had spaces in the job name (internal ticket).
 
-#### 25 December 2022 <a href="#id-25-december-2022" id="id-25-december-2022"></a>
+#### 25 December 2022
 
 **(ARM v22.1.38)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1735,7 +1735,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **prevalidation commit** failed at **delta** stage ([#55763](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090435979)).
 * Fixed an issue where user was unable to create **commit label** for the same repository second time, and branches were not displayed (internal ticket).
 
-#### 11 December 2022 <a href="#id-11-december-2022" id="id-11-december-2022"></a>
+#### 11 December 2022
 
 **(ARM v22.1.37)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1751,7 +1751,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Modify **notification** messages for null checks on request parameters (internal ticket).
   * Display only **nCino** revisions for Version Control in nCino feature **deployment** (internal ticket).
 
-#### 04 December 2022 <a href="#id-04-december-2022" id="id-04-december-2022"></a>
+#### 04 December 2022
 
 **(ARM v22.1.36)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1771,7 +1771,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Commits** added from **non-nCino** **Repositories** were not cleared from the **Workspace** causing the Commit to either not be visible in the UI or it is added to the queue but not deployed to the **Destination Org** (internal ticket).
 * Fixed an issue where user was performing a merge operation and validating the package on the **target org** but the validation was failing with multiple errors ([#55541](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000090145025)).
 
-#### 27 November 2022 <a href="#id-27-november-2022" id="id-27-november-2022"></a>
+#### 27 November 2022
 
 **(ARM v22.1.35)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1790,7 +1790,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **EZ-Commit** where **Autodraft** feature was taking too long and eventually failing when user was trying to retrieve components ([#48257](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000082041269)).
 * Fixed an issue where user was able to create a **Delegated Group** but was unable to add a **Delegated Admin** user to the group using **Environment Provisioning** ([#55266](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000089705014)).
 
-#### 20 November 2022 <a href="#id-20-november-2022" id="id-20-november-2022"></a>
+#### 20 November 2022
 
 **(ARM v22.1.34)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1811,7 +1811,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Destructive** commit **Diff** was including more components than selected ([#54795](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000088780309)).
 * Fixed an issue where a merge got stuck for a long time and the **Commit ID** was reflected in **BitBucket** but unavailable to select for release label deployment ([#52964](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087060140)).
 
-#### 13 November 2022 <a href="#id-13-november-2022" id="id-13-november-2022"></a>
+#### 13 November 2022
 
 **(ARM v22.1.33)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1826,7 +1826,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where ARM was slowing at different phases in the **EZ-Commit** module ([#50503](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084910726)).
 * Fixed an issue where Git check response was not delivered for validation **CI Job** even though user has added the comment for a **Pull request** in the remote repository ([#53036](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087171146)).
 
-#### 06 November 2022 <a href="#id-06-november-2022" id="id-06-november-2022"></a>
+#### 06 November 2022
 
 **(ARM v22.1.32)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1847,7 +1847,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Deleted Report** metadata components were not found in the **EZ-Commit** ([#53119](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087247293)).
 * Fixed an issue where user was trying to perform a **Quick Merge** but was getting an **Undefined** error for all labels (internal ticket).
 
-#### 30 October 2022 <a href="#id-30-october-2022" id="id-30-october-2022"></a>
+#### 30 October 2022
 
 **(ARM v22.1.31)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1865,7 +1865,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Page Size** value on the **Edit Release Label** screen is defaulting to the previous value instead of the set value (internal ticket).
 * Fixed a UI bug where **OK Button** in **Automation** is not visible in the **Create Release Label** pop-up when opened in 100% zoom (internal ticket).
 
-#### 23 October 2022 <a href="#id-23-october-2022" id="id-23-october-2022"></a>
+#### 23 October 2022
 
 **(ARM v22.1.30)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1882,7 +1882,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user set **Commit validation Criteria** to **Auto reject after 7 days** but the older Pre-validation commits are not auto rejected after 7 days ([#49874](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084033082)).
 * Fixed an issue where user cannot add **Skip** members manually and it is failing due to **special characters** being included ([#53139](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000087266642)).
 
-#### 16 October 2022 <a href="#id-16-october-2022" id="id-16-october-2022"></a>
+#### 16 October 2022
 
 **(ARM v22.1.29)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1905,7 +1905,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where user was performing a **Prevalidation EZ-Commit** and found that some **Layout Assignments** were deleted though those layouts were not part of the commit ([#50945](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000085371456)).
 * Fixed an issue with **nCino** where migration was failing due to errors with **Standard Screen** and **UI Templates** ([#50432](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084739297)).
 
-#### 09 October 2022 <a href="#id-09-october-2022" id="id-09-october-2022"></a>
+#### 09 October 2022
 
 **(ARM v22.1.28)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1913,7 +1913,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **nCino** where user was getting errors with **Standard Screen** and **UI Templates** ([#50432](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084739297)).
 * Fixed an issue where user noticed discrepancy in the **Conflict Resolution Log** ([#47559](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000080771349)).
 
-#### 02 October 2022 <a href="#id-02-october-2022" id="id-02-october-2022"></a>
+#### 02 October 2022
 
 **(ARM v22.1.27)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1928,7 +1928,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where old **Commit Labels** were not getting auto-rejected after 7 days as the user had configured under **Commit Validation Criteria** ([#49874](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084033082)).
 * Fixed an issue where user was getting an error pop-up on the **Permissions** and the **SF ORG MGMNT** pages, and the SF org and VC repo mappings were lost in the profile section of a role ([#49108](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000083164265)).
 
-#### 26 September 2022 <a href="#id-26-september-2022" id="id-26-september-2022"></a>
+#### 26 September 2022
 
 **(ARM v22.1.26)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1946,7 +1946,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with **EZ-Commit** where user was trying to deploy **Permission Sets** and **Profiles** together, and the pre-validation process was stuck in **In-Progress** status ([#49340](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000083456001)).
 * Fixed an issue where old **Commit Labels** were not getting auto-rejected as configured ([#49874](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000084033082)).
 
-#### 19 September 2022 <a href="#id-19-september-2022" id="id-19-september-2022"></a>
+#### 19 September 2022
 
 **(ARM v22.1.25)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1967,7 +1967,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where **New A-Z Merge** was throwing an error ([#46754](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079012711)).
 * Fixed an issue with **Autorabit Commit Label** related to **Permission Sets Deployment** ([#48709](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000082892203)).
 
-#### 11 September 2022 <a href="#id-11-september-2022" id="id-11-september-2022"></a>
+#### 11 September 2022
 
 **(ARM v22.1.24)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -1985,7 +1985,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where **Layout** was being removed from the **Diff** while deploying **Profile** changes with related **Layouts** and **RecordTypes** ([#48268](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000082045983)).
 * Fixed multiple issues with **CodeScan<>ARM** Integration ([#49605](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000083671017)).
 
-#### 04 September 2022 <a href="#id-04-september-2022" id="id-04-september-2022"></a>
+#### 04 September 2022
 
 **(ARM v22.1.23)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2000,7 +2000,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where creating multiple deployment jobs from the same source org to the same destination org for different templates, the jobs were failing with **Null Pointer Exception** error (internal ticket).
 * Fixed an issue with **DX Pre-validation merge** where **Destructive Deployment** for custom labels failed without any errors (internal ticket).
 
-#### 28 August 2022 <a href="#id-28-august-2022" id="id-28-august-2022"></a>
+#### 28 August 2022
 
 **(ARM v22.1.22)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2022,7 +2022,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue in CI Jobs deployments where Bulk API option for **Attachments** was throwing an error (internal ticket).
 * Fixed an issue where **nCino CI Jobs** were failing the first time and completing the second time successfully ([#46545](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000078644141)).
 
-#### 21 August 2022 <a href="#id-21-august-2022" id="id-21-august-2022"></a>
+#### 21 August 2022
 
 **(ARM v22.1.21)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2040,7 +2040,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue for the nCino CI Jobs where **Attachments** were failing due to **External Mappings** not being set to the **NAME** field (internal ticket).
 * Added the feature to dynamically handle the respective nCino Prefix rather than depending on the JSON file to identify the External Id field
 
-#### 14 August 2022 <a href="#id-14-august-2022" id="id-14-august-2022"></a>
+#### 14 August 2022
 
 **(ARM v22.1.20)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2054,7 +2054,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the commit labels was getting auto-rejected while committing Profile FLS ([#46844](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079276142)).
 * Fixed an issue where the users while deploying a destructive XML file from one sandbox to another, is getting auto rejected ([#47714](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000081149440), [#47747](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000081187577)).
 
-#### 07 August 2022 <a href="#id-07-august-2022" id="id-07-august-2022"></a>
+#### 07 August 2022
 
 **(ARM v22.1.19)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2074,7 +2074,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where while deploying a **nCino-User Interface** template, only partial records are deployed and no deployment logs are generated ([#47494](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000080488668)).
 * Fixed an issue where the users, while performing an EZ-Commit by enabling the run SCA option, the CodeScan analysis is getting failed, but EZ-Commit is not getting auto-rejected ([#47155](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079921059)).
 
-#### 31 July 2022 <a href="#id-31-july-2022" id="id-31-july-2022"></a>
+#### 31 July 2022
 
 **(ARM v22.1.18)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2098,7 +2098,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the merge was getting failed with the following error: `Fetch operation is failed due to some runtime exceptions from Git` ([#46773](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079094055)).
 * Fixed an issue where the username and passwords fields were not editable for users registered in ARM with basic authentication ([#47099](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079788018)).
 
-#### 24 July 2022 <a href="#id-24-july-2022" id="id-24-july-2022"></a>
+#### 24 July 2022
 
 **(ARM v22.1.17)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2116,7 +2116,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the settings related with user permissions were erased ([#46472](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000078507457)).
 * Fixed an issue where the users when performed EZ-Commit using a package manifest file, doesn't include managed components that are in the **package.xml** file ([#47083](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000079769291)).
 
-#### 17 July 2022 <a href="#id-17-july-2022" id="id-17-july-2022"></a>
+#### 17 July 2022
 
 **(ARM v22.1.16)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2133,7 +2133,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue for the nCino Feature Deployments where the users were getting audit field issue when trying to deploy with `Insert/Update with Null Values` option (internal ticket).
 * Fixed an issue for the nCino CI jobs using Spreads Templates where the users were getting `NullPointerException` error when trying to deploy with `Insert/Update with Null Values` option (internal ticket).
 
-#### 10 July 2022 <a href="#id-10-july-2022" id="id-10-july-2022"></a>
+#### 10 July 2022
 
 **(ARM v22.1.15)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2159,7 +2159,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the `Invalid Schema` error is seen for non-SFDX prevalidation merge (internal ticket).
 * Fixed an EZ-Commit issue where additional permissions were removed from Profiles metadata type, which is not a part of the commit ([#44543](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000075040441)).
 
-#### 03 July 2022 <a href="#id-03-july-2022" id="id-03-july-2022"></a>
+#### 03 July 2022
 
 **(ARM v22.1.14)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2184,7 +2184,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the merges were getting failed and throws the `Schema is invalid for the file` error ([#45768](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000077202614)).
 * Fixed an issue where the exported users list contained inaccurate information ([#44782](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000075451374)).
 
-#### 26 June 2022 <a href="#id-26-june-2022" id="id-26-june-2022"></a>
+#### 26 June 2022
 
 **(ARM v22.1.13)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2207,7 +2207,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed a bug where the users were not able to view the log reports after registering **Tags** via ARM (internal ticket).
 * Fixed an issue where the tags creation got failed when the tag name contains **'error'** with custom API flow (internal ticket).
 
-#### 19 June 2022 <a href="#id-19-june-2022" id="id-19-june-2022"></a>
+#### 19 June 2022
 
 **(ARM v22.1.12)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2228,7 +2228,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **skip members** feature of ARM was not working as expected (internal ticket).
 * Fixed an issue where the user while performing **EZ-Commit** with SonarQube code analysis was getting failed with `Failed to run the sonar-scanner: null` error ([#46070](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000077717988)).
 
-#### 12 June 2022 <a href="#id-12-june-2022" id="id-12-june-2022"></a>
+#### 12 June 2022
 
 **(ARM v22.1.11)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2239,7 +2239,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users while performing org to org migration of nCino record based configurations, all the related items are getting carried over except the _notes_ and _attachment_ of the Credit Memo from source to the destination environment ([#40990](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069124041))
 * Fixed an issue where the Jenkins builds were failing during the CI/CD process (internal ticket).
 
-#### 05 June 2022 <a href="#id-05-june-2022" id="id-05-june-2022"></a>
+#### 05 June 2022
 
 **(ARM v22.1.10)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2253,7 +2253,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users could not view the commits list to merge them into a release label ([#43718](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 * Fixed an issue where the code coverage reports fail to include all the classes in the CSV file ([#42848](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000072441595), [#39582](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000066807003)).
 
-#### 29 May 2022 <a href="#id-29-may-2022" id="id-29-may-2022"></a>
+#### 29 May 2022
 
 **(ARM v22.1.9)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2264,7 +2264,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the users while performing org to org migration of nCino record based configurations, all the related items are getting carried over except the _notes_ and _attachment_ of the Credit Memo from source to the destination environment ([#40990](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069124041))
 * Fixed an issue where the Jenkins builds were failing during the CI/CD process (internal ticket).
 
-#### 22 May 2022 <a href="#id-22-may-2022" id="id-22-may-2022"></a>
+#### 22 May 2022
 
 **(ARM v22.1.8)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2282,7 +2282,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-#### 15 May 2022 <a href="#id-15-may-2022" id="id-15-may-2022"></a>
+#### 15 May 2022
 
 **(ARM v22.1.7)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2294,7 +2294,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the ARM user interface gets distorted when the zoom is 100% ([#43735](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073906153)).
 * Fixed an issue where the ALM workflow was mismatched ([#43775](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073985001)).
 
-#### 08 May 2022 <a href="#id-08-may-2022" id="id-08-may-2022"></a>
+#### 08 May 2022
 
 **(ARM v22.1.6)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2312,7 +2312,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-#### 01 May 2022 <a href="#id-01-may-2022" id="id-01-may-2022"></a>
+#### 01 May 2022
 
 **(ARM v22.1.5)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2335,7 +2335,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where extra metadata members are picked up for the profile component during the EZ-Commit process ([#41361](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069919263)).
 * Fixed an issue where the users could not use commit template for the deployment ([#43995](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000074325045), [#43586](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073635324), [#43905](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000074163310), [#43407](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073339003)).
 
-#### 24 April 2022 <a href="#id-24-april-2022" id="id-24-april-2022"></a>
+#### 24 April 2022
 
 **(ARM v22.1.4)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2353,7 +2353,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue with the Dataloader Pro job where the users, when trying to migrate the case object along with feed item & feed comment, the ARM application throws the "**invalid cross reference id**" error ([#43703](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000073896030)).
 * Fixed an issue where the merge process, after being sucessful, did not display the code coverage report ([#42079](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000071200468)).
 
-#### 17 April 2022 <a href="#id-17-april-2022" id="id-17-april-2022"></a>
+#### 17 April 2022
 
 **(ARM v22.1.3)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2373,7 +2373,7 @@ This is a maintenance release. The following items were fixed and/or added:
   * Non-template records are fetched in the dataset.
   * Spread Statement Record failing with the error **“Missing Statement Types.”** This is now fixed.
 
-#### 10 April 2022 <a href="#id-10-april-2022" id="id-10-april-2022"></a>
+#### 10 April 2022
 
 **(ARM v22.1.2)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2388,7 +2388,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where creating a new nCino feature migration template takes longer than expected ([#41855](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070869289)).
 * Addressed out of memory (OOM) and other performance issues in this weekly release.
 
-#### 03 April 2022 <a href="#id-03-april-2022" id="id-03-april-2022"></a>
+#### 03 April 2022
 
 **(ARM v22.1.1)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -2401,7 +2401,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the non-licensed users were receiving the deployment email failure notification for the unsuccessful deployment ([#41705](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000070543145)).
 * Fixed an issue where the users were unable to use the nCino feature after the ARM was upgraded to v21.6 ([#41108](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000069360251)).
 
-#### 27 March 2022 <a href="#id-27-march-2022" id="id-27-march-2022"></a>
+#### 27 March 2022
 
 **(ARM v22.1.0)**\
 This is a maintenance release. The following items were fixed and/or added:

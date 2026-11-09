@@ -76,7 +76,7 @@ If the **Delete** button is missing, your role lacks the required permission.
 {% endhint %}
 
 {% hint style="info" %}
-If the **Delete** button is grayed out, see the FAQ [below](workspaces.md#why-am-i-unable-to-delete-certain-workspaces).&#x20;
+If the **Delete** button is grayed out, see the FAQ [below](workspaces.md#why-am-i-unable-to-delete-certain-workspaces).
 {% endhint %}
 
 ***
@@ -121,7 +121,7 @@ Once approved, the new cap takes effect instantly and users can resume jobs with
 
 Despite having admin privileges in your instance, you are unable to delete certain workspaces, as the Delete button appears grayed out, as shown in the screenshot below.
 
-<figure><img src="../../../.gitbook/assets/image (3173).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3172).png" alt=""><figcaption><p>Base Workspaces</p></figcaption></figure>
 
 The reason the Delete button is grayed out is that these workspaces are classified as Base Workspaces. Base workspaces are directly linked to a branch in your instance, and they cannot be deleted unless the associated branch is unregistered from AutoRABIT. When you register a new branch, a workspace is created, and they are tightly connected.
 

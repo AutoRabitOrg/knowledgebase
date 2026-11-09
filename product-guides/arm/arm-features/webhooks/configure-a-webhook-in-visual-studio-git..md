@@ -18,14 +18,14 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to **Admin Section > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (4239).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3479).png" alt="API Token creation screen in ARM"><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Enter a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (4240).png" alt="Webhook API token details input screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3480).png" alt="Webhook API token details input screen in ARM"><figcaption></figcaption></figure>
 
 8. Your webhook API token is now created.
 
@@ -84,7 +84,7 @@ Example:\
 Use custom commit message patterns to link commits to ALM stories.\
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image (4238).png" alt="Smart commit configuration in Visual Studio Git" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3491).png" alt="Smart commit configuration in Visual Studio Git" width="563"><figcaption></figcaption></figure>
 
 To reveal the webhook configuration URL:
 

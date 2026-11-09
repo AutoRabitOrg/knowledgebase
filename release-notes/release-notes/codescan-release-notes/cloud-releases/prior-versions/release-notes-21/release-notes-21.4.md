@@ -1,10 +1,10 @@
 # Release Notes 21.4
 
-### CodeScan 21.4 <a href="#codescan-214" id="codescan-214"></a>
+### CodeScan 21.4
 
 **Released Date: 01 July 2021**
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 * **Enhanced Reports**: CodeScan's weekly reports have been improved, with more scheduling choices, insights into project issue patterns, logs of project configuration changes, and false positives logged.
 * **Enhanced Metadata Ruleset**: Before deploying from the developer environment, Salesforce metadata components can now be scanned to ensure that they have an associated description, improving the clarity around their purpose and function.

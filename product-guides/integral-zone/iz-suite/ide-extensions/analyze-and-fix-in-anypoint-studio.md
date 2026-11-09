@@ -90,7 +90,7 @@ Every fix you apply is logged in the project, in `target/izanalyzer/autofix-log.
 
 The plugin publishes a summary of each project you analyze to IZ Suite: the issue counts by severity and type, not your code. Open **Administration** → **My Account** → **IDE projects**, click **Scanned projects** on your key, and click **Review results** on a project. The first analysis of a project uses one project of your key's allowance; **Token Usage** in the plugin's preferences shows how many you have used.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review (1).png" alt="Review results drawer with the latest published scan counts and recent scans"><figcaption><p>Results published from the IDE</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review.png" alt="Review results drawer with the latest published scan counts and recent scans"><figcaption><p>Results published from the IDE</p></figcaption></figure>
 
 ## Next steps
 

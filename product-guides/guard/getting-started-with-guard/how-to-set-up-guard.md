@@ -5,15 +5,15 @@ hidden: true
 
 # Connecting a Salesforce Org to Guard using Connected Apps flow
 
-Getting started with AutoRABIT Guard takes just a few minutes. There’s no need to connect GitHub or any other infrastructure—we only require a connection to your Salesforce org.&#x20;
+Getting started with AutoRABIT Guard takes just a few minutes. There’s no need to connect GitHub or any other infrastructure—we only require a connection to your Salesforce org.
 
-### Step 1: Log in to Guard&#x20;
+### Step 1: Log in to Guard
 
-Sign in to your Guard account.&#x20;
+Sign in to your Guard account.
 
-### Step 2: Open Settings&#x20;
+### Step 2: Open Settings
 
-In the right-hand menu, go to Settings.&#x20;
+In the right-hand menu, go to Settings.
 
 <figure><img src="../../../.gitbook/assets/image (3362).png" alt="" width="531"><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ In the right-hand menu, go to Settings.&#x20;
 
 Click Add New Org.
 
-<figure><img src="../../../.gitbook/assets/image (3364).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3363).png" alt="" width="563"><figcaption></figcaption></figure>
 
 You’ll be prompted to log in with your Salesforce org credentials through a standard OAuth flow.
 
@@ -37,11 +37,11 @@ Authorize Guard to connect with your Salesforce org. Once complete, the connecti
 
 That’s it! Guard will automatically:
 
-·      Scan your org for vulnerabilities
+· Scan your org for vulnerabilities
 
-·      Classify data in your custom fields
+· Classify data in your custom fields
 
-·      Check your security settings
+· Check your security settings
 
 _**You’re now ready to start using Guard!**_
 

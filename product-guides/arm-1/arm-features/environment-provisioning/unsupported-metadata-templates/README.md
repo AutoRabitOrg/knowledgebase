@@ -84,10 +84,10 @@ To create a new unsupported metadata template, please follow the below steps:
 
     <figure><img src="../../../../../.gitbook/assets/image (2674).png" alt="" width="563"><figcaption></figcaption></figure>
 9. However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
-   * Click on![](<../../../../../.gitbook/assets/image (948).png>)icon.
-   * Enter the page layout name in the **Page Layout** field.&#x20;
-   * Activate the page layout by selecting the **Active** checkbox.&#x20;
-   * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
+   * Click on![](<../../../../../.gitbook/assets/image (842).png>)icon.
+   * Enter the page layout name in the **Page Layout** field.
+   * Activate the page layout by selecting the **Active** checkbox.
+   * You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.
    *   Click **OK**.\
        <br>
 
@@ -106,19 +106,17 @@ The **View History** screen will display the detailed summary report of the temp
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.\
 <br>
 
-<figure><img src="../../../../../.gitbook/assets/image (2676).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2669).png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../../../../../.gitbook/assets/image (2677).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2345).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-11-19 at 1.17.07 PM.png" alt=""><figcaption></figcaption></figure>
 
 \
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more. \
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.\
 \
-**Re-Run** option allows you to run the template once again.&#x20;
+**Re-Run** option allows you to run the template once again.
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.

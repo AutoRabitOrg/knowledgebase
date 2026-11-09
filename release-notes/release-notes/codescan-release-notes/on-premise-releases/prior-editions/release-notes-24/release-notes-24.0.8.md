@@ -2,7 +2,7 @@
 
 ## CodeScan Self-Hosted
 
-### Release 24.0.8
+### CodeScan Self-Hosted 24.0.8
 
 **19 July 2024**
 
@@ -28,6 +28,6 @@ Activate the Polyfill rules, Avoid Script References to Polyfill.io, and Avoid C
 1. The 'Hard-Coded Credentials' rule name has been changed to 'Use Named Credentials' for clarity.
 2. 'Use Named Credentials' and 'Field-Level Security' rules have updated descriptions highlighting Salesforce best practices and better paths to resolution.
 
-### Bug Fixes
+### Fixes
 
 Fixed a false positive in the rule 'Avoid using methods getDescribe and getMap inside Loops' when using custom methods with similar names.

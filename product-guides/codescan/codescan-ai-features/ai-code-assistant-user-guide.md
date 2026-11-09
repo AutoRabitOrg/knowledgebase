@@ -25,9 +25,9 @@ The AI Code Assistant is controlled at the project level.
 
 To enable:
 
-&#x20;1\.  Navigate to Project Settings → AutoRABIT CodeScan AI.
+1\. Navigate to Project Settings → AutoRABIT CodeScan AI.
 
-2. Under AI Automation Mode, select Automatic or Manual.&#x20;
+2. Under AI Automation Mode, select Automatic or Manual.
 
 * Automatic: AI handles the code-fix process after an issue is assigned.
 * Manual: Users review and approve AI-suggested fixes.
@@ -36,7 +36,7 @@ To enable:
 
 <figure><img src="../../../.gitbook/assets/image (5326).png" alt=""><figcaption></figcaption></figure>
 
-When  enabled:
+When enabled:
 
 * The AI Code Assistant agent appears in the issue Assign dropdown.
 * Eligible issues display an "AI Fix Available" indicator.
@@ -100,7 +100,7 @@ This approach ensures the AI receives concise, relevant input, improving fix acc
 
 #### Bulk Assignment
 
-<figure><img src="../../../.gitbook/assets/image (5319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5318).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the issues you want to assign
 2. Click Bulk Change.

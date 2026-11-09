@@ -39,7 +39,7 @@ When a user signs in, ARM requests browser permission to access location service
 
 1.  In **Settings** **› Manage Users**, click **Export All Users** in the upper-right corner.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2505).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2029).png" alt=""><figcaption></figcaption></figure>
 2.  In the pop-up, choose which fields to include, then click **Export**.\
     <br>
 

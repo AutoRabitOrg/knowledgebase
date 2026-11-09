@@ -144,7 +144,7 @@ When enabled, ARM attempts to execute the configured AccelQ test jobs even if th
 
 This setting applies to all AccelQ test jobs configured within the CI Job.
 
-After completing the configuration, proceed through the remaining CI Job wizard steps and save the CI Job.&#x20;
+After completing the configuration, proceed through the remaining CI Job wizard steps and save the CI Job.
 
 **Important:** A maximum of 5 AccelQ test jobs can be configured within a single CI Job.
 
@@ -252,7 +252,7 @@ The enhanced AccelQ integration maintains compatibility with existing CI Jobs.
 
 #### Classic UI Support
 
-<figure><img src="../../../.gitbook/assets/image (5400).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5399).png" alt=""><figcaption></figcaption></figure>
 
 **New AccelQ CI Job configurations are supported only in the ARM New UI.**
 

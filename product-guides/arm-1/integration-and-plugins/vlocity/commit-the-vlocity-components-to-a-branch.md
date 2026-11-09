@@ -15,7 +15,7 @@ This section explains exporting OmniStudio data packs from a Salesforce Org thro
 <figure><img src="../../../../.gitbook/assets/image (1741).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section.  Otherwise, the branch will automatically be selected based on the org mappings, and it is not editable.
+**Note**: The selection of a branch is only available if you have enabled **'Skip Mappings'** in the **My Profile** section. Otherwise, the branch will automatically be selected based on the org mappings, and it is not editable.
 {% endhint %}
 
 5. Under **Fetch Changes**, select the components as **OmniStudio Components**.
@@ -84,7 +84,7 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 **Example:**
 
-<figure><img src="../../../../.gitbook/assets/image (1745).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1743).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path**: _**"\<repoURL>/\<autorabit\_alldefault\_OmniStudio\_build>"**_
 
@@ -92,6 +92,6 @@ Fill in the remaining fields as per your requirements, and proceed to the next s
 
 **Example:**
 
-<figure><img src="../../../../.gitbook/assets/image (1746).png" alt="" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1744).png" alt="" width="452"><figcaption></figcaption></figure>
 
 **Retrieval Path:**_**"\<repoURL>/\<metadata folder path>"**_

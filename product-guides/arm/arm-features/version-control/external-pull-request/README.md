@@ -10,7 +10,7 @@ You can specify which branch you'd like to merge your changes into when you crea
 
 **Merge Request** and **Pull Request** are equivalent. Both are means of pulling changes from another branch or fork into your branch and merging the changes with your existing code.
 
-#### Merge Request  <a href="#merge-request" id="merge-request"></a>
+#### Merge Request <a href="#merge-request" id="merge-request"></a>
 
 Merge Request is essentially a **request** to merge one branch into another. With Merge Request, AutoRABIT allows you (the reviewer) to go through the suggested changes. From here, you can choose to apply them or add comments to make further changes to the code. It is particularly useful as it helps merge code from different branches and make sure the code that gets deployed to production is bug-free.
 
@@ -58,7 +58,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 1. Go to the **My Account** page.
 2. Under **Plugins**, select the hosting service to manage your repositories. AutoRABIT currently supports both GitHub/Bitbucket (cloud and server) and Azure Cloud in raising a pull request.
 
-<figure><img src="../../../../../.gitbook/assets/image (5023).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5022).png" alt=""><figcaption></figcaption></figure>
 
 3. Click **Save**.
 4. Next, go to the **Version Control Repository** page.
@@ -127,14 +127,14 @@ Pull requests are a mechanism for a developer to notify team members that they h
 
 #### Creating Pull Request during CI Job <a href="#creating-pull-request-during-ci-job" id="creating-pull-request-during-ci-job"></a>
 
-Now since you have enabled pull requests for your Version Control Repository, you can trigger CI Job via AutoRABIT using the pull request webhook.&#x20;
+Now since you have enabled pull requests for your Version Control Repository, you can trigger CI Job via AutoRABIT using the pull request webhook.
 
 The CI Job will get triggered for the newly created pull requests and are in the **OPEN** state.
 
 1. Go to **Create New > New CI Job**.
 2.  On the next screen, select one of the below criteria for running the CI Job:
 
-    * _Package from Version Control_&#x20;
+    * _Package from Version Control_
     * _Deploy from Version Control_
     * _Deploy SFDX source from Version Control_
 
@@ -148,6 +148,6 @@ The CI Job will get triggered for the newly created pull requests and are in the
 6. Pull Request facilitation is provided for both GitHub and Bitbucket (cloud and enterprise) services.
 7. When Pull Request is validated via CI job, the **'Validate Only'** option (under **Deploy** section) will be in the selected mode. The user won't be able to deselect it.
 8. Choose the remaining fields that best fit your needs and click **Save**.
-9. &#x20;Go to the **'External Pull Requests'** page, where you can find the CI Job details that were triggered via webhook pull request. Upon successful Build/Deploy, comments get updated to the pull request. The revisions associated with the pull request will be packaged. These changes will be validated and the results will get updated back to the pull request as a comment.
+9. Go to the **'External Pull Requests'** page, where you can find the CI Job details that were triggered via webhook pull request. Upon successful Build/Deploy, comments get updated to the pull request. The revisions associated with the pull request will be packaged. These changes will be validated and the results will get updated back to the pull request as a comment.
 
 <figure><img src="../../../../../.gitbook/assets/image (1516).png" alt=""><figcaption></figcaption></figure>

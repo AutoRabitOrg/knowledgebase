@@ -14,7 +14,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
 
     * The account owner or admin can assign the required permission to the users by visiting the **Admin > Roles** tab and selecting the **'External Pull Requests'** checkbox under the [**Version Control**](https://www.autorabit.com/blog/do-i-really-need-salesforce-version-control/) section
 
-    <figure><img src="../../../../../.gitbook/assets/image (1520).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1504).png" alt="" width="563"><figcaption></figcaption></figure>
 2.  Pull Request support is enabled for the **Azure Cloud plugin**.
 
     * Make sure the [**Azure Cloud**](../../../../arm/arm-features/version-control/external-pull-request/azure-cloud-authentication.md) checkbox is selected under the **My Account** > **Plugins** > **Pull Request Support** section.
@@ -24,7 +24,7 @@ There is also a provision to approve the pull request within the AutoRABIT appli
    * Such privileges are granted by their account owner or admin. They can assign the required permission to the employees by visiting the **Admin > Roles** tab and selecting the **'Create Pull Request'** checkbox under the **'Special Permissions In Version Control'** section.
 4. The Approver should have the **Pull Request Approver** permission.
 
-<figure><img src="../../../../../.gitbook/assets/image (1522).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1503).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5.  Your **version control repo** should be eligible for the Azure cloud pull requests.
 
@@ -60,7 +60,7 @@ The **External Pull Request** screen is best viewed when the zoom setting is set
     * Select your [**version control repository**](../../../../arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary.md). Only those version control repositories for which the pull request is enabled will be listed under the **Repositories** drop-down.
     * Choose the **Source branch** and the **Destination Branch** to compare.
     * Enter a **Title** and detailed **Description** of your changes, so others can see what problems the changes solve.
-    * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.&#x20;
+    * Add reviewers' details that will accept your pull request. As you enter a name or email address, a list of matching users appears. Select the names to add as **Required reviewer** or **Optional reviewer**.
     * Additional checkbox to **delete the source branch once the pull request has been approved**.
 
     <figure><img src="../../../../../.gitbook/assets/image (1525).png" alt="" width="428"><figcaption></figcaption></figure>
@@ -74,7 +74,7 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 
 1. From the top navigation pane, go to **Create New** > **New EZ-Commit**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1527).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1508).png" alt="" width="563"><figcaption></figcaption></figure>
 
 2. On the **EZ-Commit** screen, select the [**Salesforce Org**](/broken/pages/9pLgfInGvztETx4cXCc2) from which the metadata components will get fetched.
 3. Select the Salesforce Org registered **Author**.
@@ -82,12 +82,12 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
 5. Select the way to fetch the metadata components from the selected Salesforce Org under the **Fetch Changes** section. Choose the one that best fits your needs.
 6. Under **Perform** section, select the option: **Create a Pull Request**
 
-<figure><img src="../../../../../.gitbook/assets/image (1528).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1509).png" alt=""><figcaption></figcaption></figure>
 
 7. Leave the remaining field as default and click on the **Next** button to proceed ahead.
 8. On the next page, select the metadata components and their members to be committed to the Version Control branch. Click **Next**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1529).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1510).png" alt=""><figcaption></figcaption></figure>
 
 9.  On the next screen, you need to do the following:
 
@@ -95,14 +95,14 @@ The **New EZ-Commit** screen is best viewed when the zoom setting is set to 80% 
     * **Apply Search and Substitute Rules**: If you have created the SEARCH and SUBSTITUTE rules to define custom find and substitute rules, AutoRABIT applies whenever you commit and deploy files from one Sandbox to another Sandbox one Sandbox to Version Control or vice-versa, such rule can be found here.
     * Enter the **Commit Comment**. This is a mandatory step.
 
-    <figure><img src="../../../../../.gitbook/assets/image (1530).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1511).png" alt=""><figcaption></figcaption></figure>
 10. Under **Create a Pull Request** section, choose where you like to commit i.e., in your base branch, or create a new branch and commit under it.
 11. To create a new branch and later commit the changes, enter the new branch name.
 12. Give the Pull Request a **Label Name**.
 
-<figure><img src="../../../../../.gitbook/assets/image (1531).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1512).png" alt=""><figcaption></figcaption></figure>
 
 13. Once all the fields are filled in, click on **Finish**. This concludes the creation of a pull request and is ready for review. After you create a pull request, you can ask a specific person to review your proposed changes.
 14. Once the commit process is initiated, you will be redirected to the **Commits** screen where you can view the progress of your commit operation initiated.
 
-<figure><img src="../../../../../.gitbook/assets/image (1532).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1513).png" alt=""><figcaption></figcaption></figure>

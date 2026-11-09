@@ -227,7 +227,7 @@ Select **`Stop deployment if build doesn't meet global criteria`** to block depl
 
 Choose an SCA tool during a pre-validation merge.<br>
 
-![Choose an SCA Tool](<../../../../.gitbook/assets/unknown (37).webp>)
+![Choose an SCA Tool](<../../../../.gitbook/assets/unknown (36).webp>)
 
 * **Run Static Code Analysis** – enabled by default if SCA criteria are set globally.
 * **All supported metadata** – scans the whole target branch during an EZ-Merge, or only commit files during an EZ-Commit.

@@ -21,9 +21,9 @@ The configuration flow selects the monitored Salesforce data and metadata, appli
 
 Open ANOMALY DETECTION > CONFIG and select a Salesforce org. When no configuration exists, the page displays the Anomaly Detection setup message. Select the Configuration Settings gear icon or Set Up Anomaly Detection Now to begin.
 
-<figure><img src="../../../.gitbook/assets/image (5057).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5055).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Empty configuration state with the Configuration Settings tooltip
+Empty configuration state with the Configuration Settings tooltip
 
 ### Select data objects and deviation thresholds
 
@@ -31,7 +31,7 @@ The Config Creation dialog opens on the DATA tab. Select each object that requir
 
 <figure><img src="../../../.gitbook/assets/image (5058).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Config Creation DATA tab with object and percentage-deviation controls
+Config Creation DATA tab with object and percentage-deviation controls
 
 {% hint style="info" %}
 **Note:** Anomaly Detection runs daily at 1:00 AM UTC. Configuration changes take effect during the next scheduled run. Daily changes are tracked and notification email is sent.
@@ -43,7 +43,7 @@ Select the required object checkboxes and confirm the percentage-deviation value
 
 <figure><img src="../../../.gitbook/assets/image (5059).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Selected objects on the DATA tab
+Selected objects on the DATA tab
 
 ### Open the MetaData configuration
 
@@ -51,7 +51,7 @@ Select the MetaData tab. The list displays supported metadata types together wit
 
 <figure><img src="../../../.gitbook/assets/image (5060).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      MetaData tab with available metadata types
+MetaData tab with available metadata types
 
 ### Select metadata types
 
@@ -59,7 +59,7 @@ Select the metadata types that require anomaly monitoring and retain or update t
 
 <figure><img src="../../../.gitbook/assets/image (5061).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Selected metadata types and deviation thresholds
+Selected metadata types and deviation thresholds
 
 ### Configure email recipients
 
@@ -67,7 +67,7 @@ Under Email Notifications, select Select Vault Users. The selected Vault account
 
 <figure><img src="../../../.gitbook/assets/image (5062).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Select Vault Users link under Email Notifications
+Select Vault Users link under Email Notifications
 
 ### Apply Vault notification recipients
 
@@ -75,7 +75,7 @@ User Details lists each Vault account by Name, Email, Role, and Status. Select t
 
 <figure><img src="../../../.gitbook/assets/image (5063).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      User Details dialog for Vault notification recipients
+User Details dialog for Vault notification recipients
 
 ### Configure excluded Salesforce activity
 
@@ -83,7 +83,7 @@ Under Exclude Changes of Users, select Salesforce Users. Activity performed by t
 
 <figure><img src="../../../.gitbook/assets/image (5064).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Salesforce Users link under Exclude Changes of Users
+Salesforce Users link under Exclude Changes of Users
 
 ### Apply excluded Salesforce users and save
 
@@ -91,7 +91,7 @@ The Salesforce User Details dialog lists Username, Email, and Profile Name. Sele
 
 <figure><img src="../../../.gitbook/assets/image (5065).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Salesforce User Details dialog for excluded change activity
+Salesforce User Details dialog for excluded change activity
 
 ## Activate and Monitor Anomaly Detection
 
@@ -103,7 +103,7 @@ The status changes to Initialize while Vault prepares Anomaly Detection. Data an
 
 <figure><img src="../../../.gitbook/assets/image (5066).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Initialize status while Anomaly Detection starts
+Initialize status while Anomaly Detection starts
 
 ### Confirm the active state
 
@@ -111,7 +111,7 @@ The status changes to Active when anomaly monitoring is enabled. The refresh ico
 
 <figure><img src="../../../.gitbook/assets/image (5067).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Active status on the Anomaly Detection dashboard
+Active status on the Anomaly Detection dashboard
 
 ### Review deleted-record activity
 
@@ -119,7 +119,7 @@ Select an object in the Data panel and move the pointer over a chart bar to disp
 
 <figure><img src="../../../.gitbook/assets/image (5068).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Data chart tooltip showing six deleted records on 4 Jul
+Data chart tooltip showing six deleted records on 4 Jul
 
 ### Review added-record activity
 
@@ -127,7 +127,7 @@ Move the pointer over another chart bar to review its date, change type, and rec
 
 <figure><img src="../../../.gitbook/assets/image (5069).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Data chart tooltip showing ten added records on 6 Jul
+Data chart tooltip showing ten added records on 6 Jul
 
 ## Review Anomalies and Run a Rollback
 
@@ -139,7 +139,7 @@ Select a chart result to open Anomaly Details. Use Selected Change Type, Object 
 
 <figure><img src="../../../.gitbook/assets/image (5070).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Anomaly Details with deleted Account records
+Anomaly Details with deleted Account records
 
 {% hint style="info" %}
 **Note:** Compare evaluates all records. Rollback becomes available only after one or more specific records are selected.
@@ -151,7 +151,7 @@ Select the required record checkboxes. The page reports the number selected and 
 
 <figure><img src="../../../.gitbook/assets/image (5071).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Selected anomaly record with the ROLLBACK action enabled
+Selected anomaly record with the ROLLBACK action enabled
 
 ### Acknowledge rollback considerations
 
@@ -159,7 +159,7 @@ Vault displays rollback considerations before the RollBack Summary opens. Select
 
 <figure><img src="../../../.gitbook/assets/image (5072).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Rollback considerations displayed before job configuration
+Rollback considerations displayed before job configuration
 
 {% hint style="info" %}
 **Important:** Rollback failures can result from active triggers, process builders, workflows, flows, validation rules, inactive Salesforce owners, or missing dependencies such as required fields. Salesforce limits uncompressed metadata to 500 MB per job; an appropriate batch size is required when metadata exceeds that limit.
@@ -171,7 +171,7 @@ Review Org Name and Rollback Label, enter a Batch Size when required, and confir
 
 <figure><img src="../../../.gitbook/assets/image (5073).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      RollBack Summary with execution controls and selected record count
+RollBack Summary with execution controls and selected record count
 
 {% hint style="info" %}
 **Note:** The displayed Batch Size field supports a maximum value of 9999. The Data summary identifies the object, number of fields, and number of records included in the job.
@@ -183,7 +183,7 @@ Vault displays Rollback has been initiated successfully. Select OK to close the 
 
 <figure><img src="../../../.gitbook/assets/image (5074).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Successful rollback-initiation confirmation
+Successful rollback-initiation confirmation
 
 ### Monitor an in-progress rollback
 
@@ -191,7 +191,7 @@ Open ANOMALY DETECTION > ROLLBACK and select the Salesforce org. Enable Show In 
 
 <figure><img src="../../../.gitbook/assets/image (5075).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Anomaly Rollback page with the In Progress tooltip
+Anomaly Rollback page with the In Progress tooltip
 
 ### Review the completed rollback row
 
@@ -199,7 +199,7 @@ After completion, the row displays Duration, Total Count, Success Count, Failed 
 
 <figure><img src="../../../.gitbook/assets/image (5076).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Completed rollback with the full-label tooltip
+Completed rollback with the full-label tooltip
 
 ### Review the data rollback log
 
@@ -207,7 +207,7 @@ Open the rollback log and select the DATA tab. Failure Records and Success Recor
 
 <figure><img src="../../../.gitbook/assets/image (5077).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      DATA rollback log with success, failure, and download information
+DATA rollback log with success, failure, and download information
 
 ### Review the metadata rollback log
 
@@ -215,7 +215,7 @@ Select the METADATA tab to review Failure Members and Success Members. The displ
 
 <figure><img src="../../../.gitbook/assets/image (5078).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      METADATA rollback log with no member results
+METADATA rollback log with no member results
 
 ### Use the View Log action
 
@@ -223,7 +223,7 @@ Move the pointer over the document icon in the Action column to display the View
 
 <figure><img src="../../../.gitbook/assets/image (5079).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      View Log tooltip in the rollback Action column
+View Log tooltip in the rollback Action column
 
 ## Compare Anomaly Records and Review Results
 
@@ -235,7 +235,7 @@ Return to CONFIG and select the monitored object. The Active dashboard continues
 
 <figure><img src="../../../.gitbook/assets/image (5080).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Active dashboard with a deleted-record activity tooltip
+Active dashboard with a deleted-record activity tooltip
 
 ### Start a comparison from Anomaly Details
 
@@ -243,7 +243,7 @@ Open the applicable Anomaly Details view and select COMPARE. Comparison evaluate
 
 <figure><img src="../../../.gitbook/assets/image (5081).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      COMPARE action on Anomaly Details
+COMPARE action on Anomaly Details
 
 ### Confirm comparison initiation
 
@@ -251,7 +251,7 @@ Vault displays that the comparison is initiated successfully and that notificati
 
 <figure><img src="../../../.gitbook/assets/image (5082).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Successful comparison-initiation confirmation
+Successful comparison-initiation confirmation
 
 ### Monitor the comparison job
 
@@ -259,7 +259,7 @@ Open ANOMALY DETECTION > JOB HISTORY, select Source Org, and select APPLY. The c
 
 <figure><img src="../../../.gitbook/assets/image (5083).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Comparison row in Anomaly Detection Job History
+Comparison row in Anomaly Detection Job History
 
 ### Display the complete comparison label
 
@@ -267,7 +267,7 @@ Move the pointer over the truncated Compare Label to display the complete label 
 
 <figure><img src="../../../.gitbook/assets/image (5084).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Complete comparison label displayed in a tooltip
+Complete comparison label displayed in a tooltip
 
 ### Review Anomaly Detection Results
 
@@ -275,7 +275,7 @@ Open the comparison result from Job History. The results page identifies Compare
 
 <figure><img src="../../../.gitbook/assets/image (5085).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Anomaly Detection Results with snapshot differences
+Anomaly Detection Results with snapshot differences
 
 ### Open a record comparison
 
@@ -283,7 +283,7 @@ Move the pointer over the record-detail icon to display the viewrecords tooltip.
 
 <figure><img src="../../../.gitbook/assets/image (5086).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      ViewRecords tooltip for record-level comparison
+ViewRecords tooltip for record-level comparison
 
 ### Compare field values for one record
 
@@ -291,7 +291,7 @@ The View Record dialog lists each Field with its Snapshot-1 and Snapshot-2 value
 
 <figure><img src="../../../.gitbook/assets/image (5087).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      View Record dialog comparing Snapshot-1 and Snapshot-2
+View Record dialog comparing Snapshot-1 and Snapshot-2
 
 ### Open the export workflow
 
@@ -299,7 +299,7 @@ Select EXPORT to download comparison results. The exported scope is selected in 
 
 <figure><img src="../../../.gitbook/assets/image (5088).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      EXPORT action on Anomaly Detection Results
+EXPORT action on Anomaly Detection Results
 
 ### Choose the export scope
 
@@ -307,7 +307,7 @@ In the Export dialog, select All Records, Records Displayed On The Current Page,
 
 <figure><img src="../../../.gitbook/assets/image (5089).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Export dialog with available record scopes
+Export dialog with available record scopes
 
 ### Change the displayed result columns
 
@@ -315,7 +315,7 @@ Select CHANGE VIEW to revise the fields displayed as columns in the results grid
 
 <figure><img src="../../../.gitbook/assets/image (5090).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      CHANGE VIEW action on Anomaly Detection Results
+CHANGE VIEW action on Anomaly Detection Results
 
 ### Select fields for the result view
 
@@ -323,7 +323,7 @@ The Fields dialog displays the selected count and a searchable field list. Selec
 
 <figure><img src="../../../.gitbook/assets/image (5091).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Fields dialog for result-column selection
+Fields dialog for result-column selection
 
 ### Select compared records for rollback
 
@@ -331,7 +331,7 @@ Select the required result rows or select the header checkbox. The page reports 
 
 <figure><img src="../../../.gitbook/assets/image (5092).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Selected comparison-result rows with ROLLBACK enabled
+Selected comparison-result rows with ROLLBACK enabled
 
 ### Revise the fields used for comparison
 
@@ -339,7 +339,7 @@ Select FIELDS TO COMPARE. The number in parentheses reports the fields currently
 
 <figure><img src="../../../.gitbook/assets/image (5093).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      FIELDS TO COMPARE action with the current field count
+FIELDS TO COMPARE action with the current field count
 
 ### Select comparison fields and re-execute
 
@@ -347,7 +347,7 @@ The Select Fields Of : Account dialog lists the available Field API Name values.
 
 <figure><img src="../../../.gitbook/assets/image (5094).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Field API selections for comparison re-execution
+Field API selections for comparison re-execution
 
 ### Confirm comparison re-execution
 
@@ -355,7 +355,7 @@ Vault confirms that re-execution of compare records started successfully and tha
 
 <figure><img src="../../../.gitbook/assets/image (5095).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Successful comparison re-execution confirmation
+Successful comparison re-execution confirmation
 
 ### Review the completed re-execution
 
@@ -363,7 +363,7 @@ Return to Job History and refresh the page. The completed row shows the updated 
 
 <figure><img src="../../../.gitbook/assets/image (5096).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Completed re-executed comparison in Job History
+Completed re-executed comparison in Job History
 
 ### Identify the compared object
 
@@ -371,7 +371,7 @@ Move the pointer over the Object value to display its full tooltip. The displaye
 
 <figure><img src="../../../.gitbook/assets/image (5097).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Account tooltip in the Object column
+Account tooltip in the Object column
 
 ### Review comparison-field status from the object
 
@@ -379,7 +379,7 @@ Select the linked object value to open the comparison-field status dialog. The d
 
 <figure><img src="../../../.gitbook/assets/image (5098).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Comparison-field status dialog opened from the object link
+Comparison-field status dialog opened from the object link
 
 ### Locate the View Fields action
 
@@ -387,7 +387,7 @@ Move the pointer over the Fields icon to display the View Fields tooltip.
 
 <figure><img src="../../../.gitbook/assets/image (5099).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      View Fields tooltip in Anomaly Detection Job History
+View Fields tooltip in Anomaly Detection Job History
 
 ### Review comparison-field status from View Fields
 
@@ -395,7 +395,7 @@ Select the View Fields icon to open the same comparison-field status dialog. Scr
 
 <figure><img src="../../../.gitbook/assets/image (5100).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Comparison-field status dialog opened from View Fields
+Comparison-field status dialog opened from View Fields
 
 ## Pause, Stop, and Resume Anomaly Detection
 
@@ -407,7 +407,7 @@ Select the calendar under Pause anomaly detection until and choose the date thro
 
 <figure><img src="../../../.gitbook/assets/image (5101).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Pause-date calendar on the Active dashboard
+Pause-date calendar on the Active dashboard
 
 ### Confirm the paused state
 
@@ -415,7 +415,7 @@ After a pause date is selected, the status changes from Active to Paused and the
 
 <figure><img src="../../../.gitbook/assets/image (5102).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Paused status with the selected pause date
+Paused status with the selected pause date
 
 ### Clear the temporary pause date
 
@@ -423,7 +423,7 @@ Move the pointer over the X icon to display the Clear Date tooltip, then select 
 
 <figure><img src="../../../.gitbook/assets/image (5103).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Clear Date tooltip for the temporary pause control
+Clear Date tooltip for the temporary pause control
 
 ### Confirm monitoring reactivation
 
@@ -431,7 +431,7 @@ After the pause date is cleared, the status returns to Active and the pause cont
 
 <figure><img src="../../../.gitbook/assets/image (5104).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Active status after the pause date is cleared
+Active status after the pause date is cleared
 
 ### Turn off Anomaly Detection permanently
 
@@ -439,7 +439,7 @@ Enable Turn off anomaly detection permanently to stop the active monitoring job.
 
 <figure><img src="../../../.gitbook/assets/image (5105).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Permanent Anomaly Detection stop control
+Permanent Anomaly Detection stop control
 
 ### Confirm the permanent stop
 
@@ -447,7 +447,7 @@ The Confirmation dialog reports that the job is currently running and requests c
 
 <figure><img src="../../../.gitbook/assets/image (5106).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Confirmation dialog for stopping a running job
+Confirmation dialog for stopping a running job
 
 ### Review the stopped state
 
@@ -455,7 +455,7 @@ After confirmation, the status changes to Stopped and the permanent-stop switch 
 
 <figure><img src="../../../.gitbook/assets/image (5107).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Stopped status after Anomaly Detection is turned off
+Stopped status after Anomaly Detection is turned off
 
 ### Resume a stopped job
 
@@ -463,7 +463,7 @@ Disable Turn off anomaly detection permanently. The Confirmation dialog reports 
 
 <figure><img src="../../../.gitbook/assets/image (5108).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Confirmation dialog for resuming a stopped job
+Confirmation dialog for resuming a stopped job
 
 ### Review initialization and select the dashboard date range
 
@@ -471,4 +471,4 @@ The status changes to Initialize while monitoring restarts. Use Date range (7 da
 
 <figure><img src="../../../.gitbook/assets/image (5109).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                      Initialize status and seven-day dashboard date-range calendar
+Initialize status and seven-day dashboard date-range calendar

@@ -2,11 +2,11 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive Guard updates!" listId="a085e26e7e" fullWidth="false" %}
 
-## AutoRABIT Guard Release Notes 26.1.7
+## Guard 26.1.7
 
-**Release Date: 17 May 2026**
+**Release date:** 17 May 2026
 
-### **Enhancements**
+### Enhancements
 
 #### Risk Assessment – New Salesforce Security Check Details
 
@@ -14,7 +14,7 @@ Risk Assessment now includes curated Overview and Impact descriptions for additi
 
 These descriptions help users understand what each check means and why it matters, rather than relying only on raw Salesforce labels.
 
-### **Bug Fixes**
+### Fixes
 
 #### Authorization Policies – Profile Selection
 
@@ -54,9 +54,9 @@ Filtering User Activity Monitoring by Last Password Change Date now completes su
 
 ***
 
-## AutoRABIT Guard Release Notes 26.1.6
+## Guard 26.1.6
 
-**Release Date: 6 May 2026**
+**Release date:** 6 May 2026
 
 ### New features
 
@@ -100,7 +100,7 @@ Flag icons in the User Activity Monitoring table now include tooltips so users c
 
 Frozen users and password-locked users are now clearly identified on hover and keyboard focus, improving usability and accessibility without affecting table layout.
 
-### Bug fixes
+### Fixes
 
 #### Guard Expert – Latest Release Notes Response
 
@@ -112,11 +112,11 @@ Guard Expert now handles organization context more reliably, preventing intermit
 
 ***
 
-## AutoRABIT Guard 26.1.5 Release Notes
+## Guard 26.1.5
 
-**Release Date: 12 April 2026**
+**Release date:** 12 April 2026
 
-### New Features
+### New features
 
 #### Permissions Explorer – Agentforce Visibility
 
@@ -164,7 +164,7 @@ Guard now dynamically generates the callback URL during Salesforce org setup and
 
 This streamlines configuration, improves accuracy across environments, and helps reduce setup friction when configuring the external client app in Salesforce.
 
-### Bug Fixes
+### Fixes
 
 #### Salesforce Orgs – Reauthentication Flow
 
@@ -174,19 +174,19 @@ Improved the reauthentication experience for Salesforce orgs so responses are ha
 
 Improved User Activity Monitoring so inactive user details are presented more clearly.
 
-#### Notifications  – **Invalid URL**
+#### Notifications – Invalid URL
 
 URLs have been updated in Change Notifications email templates.
 
 ***
 
-## AutoRABIT Guard 26.1.4 Release Notes
+## Guard 26.1.4
 
-**Release Date: 25 March 2026**
+**Release date:** 25 March 2026
 
-### New Features&#x20;
+### New features
 
-#### User Security Overview&#x20;
+#### User Security Overview
 
 AutoRABIT Guard introduces the **User Security Overview**, a centralized dashboard that provides administrators with a comprehensive, per-user view of security and access within a connected Salesforce org. This feature allows users to select an org and a specific Salesforce user, then review their security posture across multiple dimensions in a single place.&#x20;
 
@@ -204,37 +204,37 @@ Key capabilities:&#x20;
 
 This feature helps security teams quickly investigate access, identify over-permissioned users, detect suspicious activity, and improve overall governance. The feature is read-only and does not impact existing permissions, configurations, or system performance.&#x20;
 
-### Enhancements&#x20;
+### Enhancements
 
-#### Prevent Password Reuse&#x20;
+#### Prevent Password Reuse
 
 AutoRABIT Guard now enforces a password reuse restriction, preventing users from reusing previously used passwords. This enhancement improves overall security posture by ensuring stronger password hygiene and reducing the risk of compromised credentials being reused. &#x20;
 
-#### Access Controls become Authorization Policies&#x20;
+#### Access Controls become Authorization Policies
 
 This update aligns AutoRABIT Guard with industry-standard infosec terminology and better reflects the scope and value of the feature. All references in the UI, workflows, notifications, and documentation have been updated accordingly. There are no changes to functionality, and existing configurations and permissions remain unaffected.&#x20;
 
-#### Improved External Connected App (ECA) Credential Management&#x20;
+#### Improved External Connected App (ECA) Credential Management
 
 The External Connected App (ECA) authentication flow has been enhanced to allow users to update OAuth credentials for existing org connections.&#x20;
 
 Users can now update the Client ID and Client Secret and trigger a fresh authentication flow without needing to delete and re-register the org. This reduces operational friction when credentials change and improves overall usability. Existing connected orgs are not impacted.&#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Improved Export Stability for Large Datasets&#x20;
+#### Improved Export Stability for Large Datasets
 
 Export processing has been improved to better handle large datasets, ensuring exports complete successfully even in high-volume environments. Export behavior and format remain unchanged.&#x20;
 
 ***
 
-## AutoRABIT Guard 26.1.3 Release Notes
+## Guard 26.1.3
 
-**Release Date: 25 February 2026**&#x20;
+**Release date:** 25 February 2026
 
-### Enhancements&#x20;
+### Enhancements
 
-#### External Connected App (ECA) Authentication Migration&#x20;
+#### External Connected App (ECA) Authentication Migration
 
 To align with Salesforce Spring ’26 security requirements, Guard has updated the authentication flow for External Connected Apps (ECA).&#x20;
 
@@ -262,41 +262,41 @@ Learn more here:
 
 [Connecting a Salesforce Org to Guard using local ECA flow](https://knowledgebase.autorabit.com/product-guides/guard/getting-started-with-guard/connecting-a-salesforce-org-to-guard-using-local-eca-flow)
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Duplicate Success Popups When Creating Real-Time Notifications&#x20;
+#### Duplicate Success Popups When Creating Real-Time Notifications
 
 Duplicate success messages when creating Real-Time Notifications are no longer shown. The system now displays a single, clear confirmation message.&#x20;
 
-#### Session Token Expiration Error in Permission Explorer&#x20;
+#### Session Token Expiration Error in Permission Explorer
 
 Fixed an intermittent issue that caused a “Session Token Expired” error when accessing Permission Explorer, ensuring uninterrupted usage.&#x20;
 
-#### Permission Explorer Stuck on Org Switch&#x20;
+#### Permission Explorer Stuck on Org Switch
 
 Resolved loading issue when switching orgs with multiple permissions selected. Org switching complete successfully now (where applicable)&#x20;
 
-#### Invalid ZIP when no Records found&#x20;
+#### Invalid ZIP when no Records found
 
 Exporting with no records was generating an invalid ZIP file. No-data exports are disabled now.&#x20;
 
 ***
 
-## AutoRABIT Guard 26.1.2 Release Notes&#x20;
+## Guard 26.1.2
 
-**Release Date:  15 February 2026**&#x20;
+**Release date:** 15 February 2026
 
-### New Features&#x20;
+### New features
 
-#### Public Links – Visibility into Exposed Salesforce Files&#x20;
+#### Public Links – Visibility into Exposed Salesforce Files
 
 Guard now provides visibility into Salesforce files that are publicly accessible via shared links, helping customers identify potential data exposure risks.&#x20;
 
 A new Public File Exposure view under Risk lists files that have public links enabled, along with key details such as file name, public link, expiration date, and creator. This allows administrators to quickly identify links that may lack expiration controls or have been left active longer than intended.&#x20;
 
-### Enhancements&#x20;
+### Enhancements
 
-#### Access Controls – Multi-Selection Support&#x20;
+#### Access Controls – Multi-Selection Support
 
 Access Control criteria creation has been enhanced to provide greater flexibility and precision when defining access rules.&#x20;
 
@@ -304,7 +304,7 @@ Users can now select multiple Profiles, Roles, Company Names, and Domains when c
 
 Existing Access Controls continue to function without any behavior changes, and all violation detection, auto-revert, and notification workflows remain unchanged.&#x20;
 
-#### Access Controls – Modification Tracking&#x20;
+#### Access Controls – Modification Tracking
 
 Access Control detail pages now include Last Modified Date and Modified By fields to improve visibility into configuration changes.&#x20;
 
@@ -312,7 +312,7 @@ This enhancement makes it easier for administrators to understand when an Access
 
 This change is informational only and does not impact Access Control enforcement or performance.&#x20;
 
-#### Permission Explorer – Multi-Selection Filters&#x20;
+#### Permission Explorer – Multi-Selection Filters
 
 Permission Explorer now supports multi-selection across query filters, enabling more advanced and targeted permission analysis.&#x20;
 
@@ -320,7 +320,7 @@ Users can select multiple values for Profile, Role, Company Name, and Domain.&#x
 
 Selected filters are clearly visible in the UI and can be individually removed, making complex queries easier to build and adjust.&#x20;
 
-#### Persistent Filters Across Guard&#x20;
+#### Persistent Filters Across Guard
 
 Guard now remembers user-applied filters during a session, improving usability when navigating across features.&#x20;
 
@@ -328,7 +328,7 @@ Once filters are applied, they remain active when users navigate away from a pag
 
 Default filters continue to apply on initial login, and users can modify or clear filters at any time, with changes saved immediately.&#x20;
 
-#### Filter-Aware Export&#x20;
+#### Filter-Aware Export
 
 Exports now include only records that match the currently applied filters, ensuring consistency between the UI and exported files. This enhancement applies to:&#x20;
 
@@ -340,39 +340,39 @@ Exports now include only records that match the currently applied filters, ensur
 
 When no filters are applied, export behavior remains unchanged and continues to include all records using the default format.&#x20;
 
-#### Change Monitoring – Content Settings Tracking&#x20;
+#### Change Monitoring – Content Settings Tracking
 
 Change Monitoring has been enhanced to provide greater visibility into content-related configuration changes.&#x20;
 
 Events related to content settings are now parsed and tracked, allowing administrators to better audit and understand changes made within Salesforce orgs.&#x20;
 
-#### Change Monitoring – “Login as Any User” Event Tracking&#x20;
+#### Change Monitoring – “Login as Any User” Event Tracking
 
 Change Monitoring now captures “Login as any user” events generated when administrators access user accounts using Salesforce’s delegated login capability.&#x20;
 
 These events are parsed and displayed in Change Monitoring in the Other tab, providing improved visibility into elevated access activity and supporting stronger audit and compliance requirements.&#x20;
 
-### Bug Fixes&#x20;
+### Fixes
 
-#### Risk Assessment – Risk Name Typo&#x20;
+#### Risk Assessment – Risk Name Typo
 
 Corrected a typo in a risk name to “Anonymous user access is properly restricted”.&#x20;
 
-#### User Activity Monitoring – User Count by Profile&#x20;
+#### User Activity Monitoring – User Count by Profile
 
 Fixed an issue where User Count by Profile displayed incomplete data. Profile-based user counts are now accurate and consistent with overall user and license data.&#x20;
 
-#### Change Monitoring – Intermittent “Subscription Error”&#x20;
+#### Change Monitoring – Intermittent “Subscription Error”
 
 Resolved an intermittent “Subscription Error” pop-up that occurred when switching filters or orgs in the Change Monitoring module. Filter navigation now works smoothly without errors.&#x20;
 
 ***
 
-## AutoRABIT Guard Release Notes 26.1.1
+## Guard 26.1.1
 
-**Release Date: 25 January 2026**
+**Release date:** 25 January 2026
 
-### New Features
+### New features
 
 #### Deep Data Scanning
 
@@ -427,7 +427,7 @@ User Benefits:
 * Updated menu and refreshed logo\
   Minor UI updates improve visual consistency and overall user experience.
 
-### Bug Fixes
+### Fixes
 
 * Tenant creation is no longer failing when a tenant's name starts with a number.
 * Expiration dates for export download links generated during weekends are set properly now.

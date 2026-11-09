@@ -14,7 +14,7 @@ To create this template, follow the below steps:
 8. On the next screen, a **Test Case Name** and **Deleting Email** appear automatically by default. To add the custom test data, click on **Add** button.
 9.  However, you must add more email addresses for the auto-generated or your custom test case name. To add more emails, do the following:
 
-    * Click on![](<../../../../../../.gitbook/assets/image (883).png>)icon.
+    * Click on![](<../../../../../../.gitbook/assets/image (842).png>)icon.
     * Enter the email ID in the **Org Wide Email Address** field.
     * You can even add multiple pages for the above-generated test case name. Click on the **+** symbol and fill in the fields mentioned in the earlier steps.
     * Click **OK**. Once you are finished, click **Save** to save this page.

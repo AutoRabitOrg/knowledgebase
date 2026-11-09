@@ -36,7 +36,7 @@ Once you are done with the selection of nCino objects, set up when you would lik
    * **Incremental-Backup**: An incremental backup operation will result in copying only the objects that have been changed since the last backup operation. The modified time stamp on files is typically used and compared to the timestamp of the last backup.
 4. Select the email notification checkbox to receive an email notification whenever the objects are being backed up from your Salesforce Org.
 
-<figure><img src="../../../.gitbook/assets/image (3965).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (470).png" alt="" width="563"><figcaption></figcaption></figure>
 
 5. Next, choose the frequency for backup i.e., either **daily**, **weekly**, **monthly,** or at any **specific interval**.
    * Say, you want the schedule of the backup process to run every **4 hours**, then select the **Specific** option and mention the time frame as **4 hours**.
@@ -53,6 +53,6 @@ Once you are done with the selection of nCino objects, set up when you would lik
 10. You will be next redirected to the **Configs** page where you will find your newly added backup configured for your Salesforce Org.
 11. **Additional options**:
     * **Schedule**: The user can either enable or disable the backup schedule of a Salesforce org temporarily by sliding the **Schedule** icon on either the right or left side.
-    * **Backup Config Details**: Click on the![](<../../../.gitbook/assets/image (442).png>)icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
-    * **Actions (Edit/Delete)**:  The user can either delete the backup scheduled using Delete (![](<../../../.gitbook/assets/image (443).png>)) icon or update the metadata/data components from being backed up using the **Edit** (![](<../../../.gitbook/assets/image (444).png>)) icon.
+    * **Backup Config Details**: Click on the![](<../../../.gitbook/assets/image (441).png>)icon to view the list of metadata/data members of Salesforce org that will be backed up based on the process scheduled.
+    * **Actions (Edit/Delete)**: The user can either delete the backup scheduled using Delete (![](<../../../.gitbook/assets/image (443).png>)) icon or update the metadata/data components from being backed up using the **Edit** (![](<../../../.gitbook/assets/image (444).png>)) icon.
     * **Last Backup Status**: Last backup activity status will be displayed in this section.

@@ -11,15 +11,13 @@
 * You want to maintain version history and track changes to Feature Migration Templates and their associated data.
 * You need to promote version-controlled nCino configurations across different environments.
 
-
-
 1. Hover your mouse over the [**nCino** module](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) and click on the **Deployment History** option.
 
-<figure><img src="../../../../../.gitbook/assets/image (1164).png" alt="" width="202"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1142).png" alt="" width="202"><figcaption></figcaption></figure>
 
 2. Click on the **Feature Deployment** button.
 
-<figure><img src="../../../../../.gitbook/assets/image (1166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1165).png" alt=""><figcaption></figcaption></figure>
 
 3. Upon clicking on the "Create Feature Deployment" or selecting the "Feature Deployment," the Source Type screen will appear — choose the Deploy from Version Control option to proceed with deploying the Feature Migration Template and its associated data from Version Control to the destination environment..
 4. In the **SOURCE** section, select **Deployment From** as **'Version Control.'**
@@ -35,9 +33,7 @@
 
     <figure><img src="../../../../../.gitbook/assets/image (1168).png" alt="" width="454"><figcaption></figcaption></figure>
 
-
-
-    <figure><img src="../../../../../.gitbook/assets/image (1170).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1169).png" alt=""><figcaption></figcaption></figure>
 
     * **Revision Range:** This option allows you to specify a commit range from which the revisions are to be deployed.
 
@@ -70,7 +66,7 @@ In the **Source** field: Select your source field whose values will be populated
 
 In the **Destination** field: Select the required field from the destination org whose values will remain unique for all the records.
 
-<figure><img src="../../../../../.gitbook/assets/image (1175).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1147).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note (About Applied Mappings):**

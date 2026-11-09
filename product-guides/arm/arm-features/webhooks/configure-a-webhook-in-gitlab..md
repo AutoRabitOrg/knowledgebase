@@ -18,14 +18,14 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 2. Navigate to **Admin > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (3513).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3479).png" alt=""><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (3514).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3480).png" alt=""><figcaption></figcaption></figure>
 
 8. Your API token is now created.
 
@@ -37,7 +37,7 @@ Unless you update the Payload URL, you might face pull request/trigger build-on-
 
 2. Go to **Settings > Integrations**.
 
-<figure><img src="../../../../.gitbook/assets/image (3516).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3487).png" alt=""><figcaption></figcaption></figure>
 
 3. In the **URL** field, enter the webhook endpoint:
 
@@ -52,7 +52,7 @@ For example:\
 
 Define the pattern used to extract ALM-related information from commit messages. For example:
 
-<figure><img src="../../../../.gitbook/assets/image (3518).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3491).png" alt=""><figcaption></figcaption></figure>
 
 To enable automatic updates via webhook:
 

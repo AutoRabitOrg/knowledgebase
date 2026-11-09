@@ -74,8 +74,8 @@ Example:<br>
 To enable automatic webhook URL retrieval:
 
 * Check the **Enable auto update on webhook** box.
-* For guidance on other repositories, see the [Webhook Setup Guide](file://product-guides/arm/arm-features/webhooks).
-* To sync with external ALM tools, refer to the [Smart Commit Integration Guide](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary).
+* For guidance on other repositories, see the [Webhook Setup Guide](../../webhooks/README.md).
+* To sync with external ALM tools, refer to the [Smart Commit Integration Guide](../../version-control/introduction-to-version-control/version-control-repositories-summary.md).
 
 ***
 

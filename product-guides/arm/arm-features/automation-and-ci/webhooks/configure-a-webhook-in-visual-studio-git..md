@@ -92,8 +92,8 @@ To reveal the webhook configuration URL:
 
 For additional help, refer to:
 
-* [Webhook Setup Guide](file://product-guides/arm/arm-features/webhooks)
-* [Sync External Smart Commits](file://product-guides/arm/arm-features/version-control/introduction-to-version-control/version-control-repositories-summary)
+* [Webhook Setup Guide](../../webhooks/README.md)
+* [Sync External Smart Commits](../../version-control/introduction-to-version-control/version-control-repositories-summary.md)
 
 ***
 

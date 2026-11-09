@@ -13,7 +13,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 1. Log in to your ARM account.
 2. From the top navigation pane, navigate to **Create New > New CI Job**.
 
-<figure><img src="../../../../../.gitbook/assets/image (4655).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4448).png" alt=""><figcaption></figcaption></figure>
 
 1. Choose the tile: **Deploy from** [**Version Control**](https://www.autorabit.com/blog/7-tips-for-salesforce-version-control-integration/)**.**
 
@@ -32,12 +32,12 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
 **Baseline Revision:** Enter the baseline revision number manually or click on the **Edit** (![](<../../../../../.gitbook/assets/image (1282).png>)) icon to select the baseline revision. A new pop-up window appears; from the list displayed, choose the required baseline revision number.
 
-<figure><img src="../../../../../.gitbook/assets/image (4657).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4449).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (4658).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4450).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-**Important Note:**&#x20;
+**Important Note:**
 
 1. For the first CI Job to run, you need to choose the **Baseline Revision** of your selected Version Control Repository.
 2. **Get Latest HEAD** points out the last commit in the current checkout branch.
@@ -45,7 +45,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 
 **Time Range:** This option allows you to create a CI job using a timeline. You need to specify the time period from where the revisions will get fetched. This improves the usability of our CI server and helps build a package based on time rather than commits.
 
-<figure><img src="../../../../../.gitbook/assets/image (4659).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4451).png" alt=""><figcaption></figcaption></figure>
 
 #### **Additional options in the 'Build' section**
 
@@ -59,7 +59,7 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 {% hint style="info" %}
 **Important Notes:**
 
-1. Prepare Destructive Changes, Run Static Analysis Report, Profile Packaging Options, and Exclude Metadata types option will be disabled whenever **'vlocity build'** checkbox is selected.&#x20;
+1. Prepare Destructive Changes, Run Static Analysis Report, Profile Packaging Options, and Exclude Metadata types option will be disabled whenever **'vlocity build'** checkbox is selected.
 2. You can now trigger rollback deployment for **'vlocity build'** i.e., you can keep a copy of the changes before deployment and can revert the changes later. To do so, select the **Rollback** checkbox under the **Deploy** section.
 {% endhint %}
 
@@ -69,15 +69,15 @@ Use ARM CI intelligence to extract and package from a Version Control branch to 
 6. **Trigger Build on commit:** A new build is triggered when changes are committed to the mapped version control system.
 7. **Process commit revision via hook only:** This option is visible only for Version Control as GIT (Enterprise Bitbucket, Bitbucket, VSGit, GitLab, GitHub) type. Upon selection, the build agent will read the commit revision number and generate a package from that revision number to the branch head.
 
-**Let’s take the following scenario:**&#x20;
+**Let’s take the following scenario:**
 
 Two developers (**Developer A** and **Developer B**) both working on the same code base.
 
 * **Developer A** has committed some changes to its local repository at 10 a.m. but did not push the changes to the remote repository.
-* **Developer B** has also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 a.m. \
+* **Developer B** has also performed some changes in the code, but he pushed the changes into the remote repository by 10:05 a.m.\
   So, when ARM builds get triggered by webhook, **Developer B** changes will be packaged and deployed and the codes get updated with the latest revision. However, **Developer A** changes are ahead of **Developer B**, ARM will show no modifications for the build since the **Developer B** changes are in the **HEAD** position. To overcome this scenario, ARM has come up with an option to **"Process commit revision via hook only."** This will prepare the build from the revision of **Developer A** to the HEAD revision of the branch; therefore, no commits are skipped through the ARM cycle.
 
-<figure><img src="../../../../../.gitbook/assets/image (4661).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4452).png" alt=""><figcaption></figcaption></figure>
 
 In addition, the endpoint URL of your repo webhook will be displayed, and you can verify the URL from here. No action is required if you have configured the above-displayed URL in your remote repository.
 
@@ -94,12 +94,12 @@ In addition, the endpoint URL of your repo webhook will be displayed, and you ca
 
 **For ApexPMD and Checkmarx:** ARM allows you to set the criteria for running the ApexPMD SCA tool. This means running for all the Apex classes or stating the period from where it will run. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
-<figure><img src="../../../../../.gitbook/assets/image (4663).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4453).png" alt=""><figcaption></figcaption></figure>
 
 **For CodeScan and SonarQube:** Set the criteria for running the CodeScan or SonarQube tool, whether to run on the supported metadata types from the full source or to run on the newly added components. Also, you can set the priority, which means if the priority set is not achieved, the current build is unstable. This helps us in reporting the code quality of the developer team.
 
 * **Run on all supported Metadata types:** Analysis is performed on all the metadata types that are supported. For example, if the build includes 2 classes and 2 triggers, then the analysis will run on all the supported components that are retrieved for these 2 classes and 2 triggers in the build.
-* **Run on Newly added supported Metadata types:** Analysis is performed only on those components that are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components&#x20;
+* **Run on Newly added supported Metadata types:** Analysis is performed only on those components that are received during build retrieval. For example, if there are added as well as modified components in the build, then the analysis runs on the newly added components, not on the modified components
 * **Run on all supported Metadata types from the Full source:** Analysis is performed on the entire branch, including all supported metadata types, regardless of any build changes.
 
 <figure><img src="../../../../../.gitbook/assets/image (1289).png" alt="" width="368"><figcaption></figcaption></figure>
@@ -120,13 +120,13 @@ For more information on running **Static Code Analysis in CI Jobs**, refer [here
 
 This section is all about either deploying or validating the above package onto a different Salesforce Org.
 
-<figure><img src="../../../../../.gitbook/assets/image (4664).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4454).png" alt=""><figcaption></figcaption></figure>
 
 Select the **Deployment org**.
 
 Specify the **Apex test level** you would like to run for the CI job.
 
-<figure><img src="../../../../../.gitbook/assets/image (4665).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4455).png" alt=""><figcaption></figcaption></figure>
 
 1. **Use Salesforce Defaults:** It keeps the default behavior for all tests. In the sandbox, no tests are executed. In production, all local tests are executed if it contains Apex classes or triggers. Local tests are all tests, except the ones that originate from managed packages. If the package doesn’t contain Apex components, no tests are run.
 2. **No Test Run:** No Apex test is run unless it is a production deployment.
@@ -146,16 +146,16 @@ Specify the **Apex test level** you would like to run for the CI job.
 
 1. Only CI Jobs have the **"Do you want us to update the test classes"** checkbox enabled. This feature is yet to be implemented in other modules.
 2. Please make sure to execute all Apex tests before configuring this option. This allows you to configure the mapping between the main class and the test class.
-3. If you have cleared the last run history in your destination org, again you are required to execute run all tests. If not done, the dependent test execution will fail.&#x20;
+3. If you have cleared the last run history in your destination org, again you are required to execute run all tests. If not done, the dependent test execution will fail.
 4. If you have refreshed your sandbox, then again you are required to execute run all tests. If not done, the dependent test execution will fail.
 5. If the test classes do not exist in the package, the test level is configured based on the Run Local Tests.
 {% endhint %}
 
 #### **Additional Deployment Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (4666).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4456).png" alt=""><figcaption></figcaption></figure>
 
-1. **Validate Only:** With ARM, you can set up validation-only CI jobs between your Salesforce Orgs or Version Control, so you can catch any problematic changes early and make sure that when the time comes to deploy, you’ll be able to release successfully. All success and error messages are displayed on the CI Job Result page.&#x20;
+1. **Validate Only:** With ARM, you can set up validation-only CI jobs between your Salesforce Orgs or Version Control, so you can catch any problematic changes early and make sure that when the time comes to deploy, you’ll be able to release successfully. All success and error messages are displayed on the CI Job Result page.
    * **Prevent Deployment:** With AR 20.1 release onward, ARM will make sure that you do not trigger a build deployment for the validation-only CI jobs. Therefore, the **Deploy** option will either be in disabled mode or in some cases, will not be seen to the user whenever trying to trigger a new build for the validation-only CI jobs.
 
 {% hint style="info" %}
@@ -174,10 +174,10 @@ Specify the **Apex test level** you would like to run for the CI job.
 5. **Ignore warnings:** These allow the metadata members to be deployed even though errors/warnings are encountered during deployment.
 6. **Do not include 'Skip members' during Deployment:** This option will be displayed only if the user has configured certain metadata types for their Salesforce Org which gets skipped whenever deployment happens for the same Salesforce Org. The user can configure such metadata members in the [Salesforce Org Management](../../../../arm/registration/salesforce-org/salesforce-org-management.md) page in our application.
 7. **Run Destructive Changes:** Here you can specify whether to run pre- or post-destructive changes while carrying out the deployment process.
-8. **Apply Search and Substitute Rules:** If you have created the Search and Substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.&#x20;
+8. **Apply Search and Substitute Rules:** If you have created the Search and Substitute rules to define custom find and substitute rules that ARM applies whenever you commit and deploy files from one Sandbox to another Sandbox, one Sandbox to Version Control or vice-versa, such rule can be found here.
 9. **On successful Deployment**
 
-<figure><img src="../../../../../.gitbook/assets/image (4667).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4457).png" alt=""><figcaption></figcaption></figure>
 
 * **Run Skuid Pages:** As the name suggests, this option, on selection, will let you run another Skuid page.
 * **Trigger another CI Job:** Trigger another build on successful deployment of the current build.
@@ -187,14 +187,14 @@ Specify the **Apex test level** you would like to run for the CI job.
   * **Add**: Click on the![](<../../../../../.gitbook/assets/image (1295).png>)icon to add up to **5** destination branches.
   * **Delete**: Click on the![](<../../../../../.gitbook/assets/image (1296).png>)icon to delete a destination branch row.
 
-<figure><img src="../../../../../.gitbook/assets/image (4668).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4458).png" alt=""><figcaption></figcaption></figure>
 
 * **Trigger Jenkins Job:** Triggers Jenkins jobs on successful deployment.
 * **Configure Parallel Processor:** This is covered in a separate topic; check out the link [here ](../../../../arm/arm-features/automation-and-ci/parallel-processor.md).
 * **Set Sequence For Post Activities - On Success:** This option creates a sequencing workflow that runs a particular action after the CI Job is successfully executed. For example, you can create a workflow to run a merge process or a DataLoader job once your CI job is deployed. However, in order to create a workflow sequence, a minimum of two (2) activities need to be selected.\
   To have a better understanding of the post-activity sequence, let's take the following scenario: User **'XYZ'** would like to trigger one of the CI Jobs through ARM and parallelly would like to carry other post activities such as running an Environment Provisioning Template, DataLoader job, and triggering another CI Job as well. Therefore, **XYZ** user navigates to the **Deploy > On Successful Deployment** section and selects the necessary post activities checkbox as shown below. The above-selected post-deployment activities will run in parallel with the initial CI job once it is successfully deployed.
 
-<figure><img src="../../../../../.gitbook/assets/image (4669).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4430).png" alt=""><figcaption></figcaption></figure>
 
 4.  However, **XYZ** would like to run the above activities in the following sequence:
 
@@ -206,7 +206,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 
     Click to assign the sequence for the remaining activities. In the new auto-populated screen, select the CI Job option as the second activity. So, if the CI Job operation is successfully executed, the third and final task will be to run the Environment Provisioning template. Select the Environment Provisioning checkbox for the next activity. Using the above steps, the user can easily set the sequential order in which the post-deployment activities will be executed.
 
-<figure><img src="../../../../../.gitbook/assets/image (4670).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4431).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Note:**
@@ -214,7 +214,7 @@ Specify the **Apex test level** you would like to run for the CI job.
 1. Both the CI Job and the Environment Provisioning post activities are allowed to run in parallel once the DataLoader job is successfully completed. This can be achieved if both the CI Job and Environment Provisioning checkboxes are selected together as the next activity.
 2. However, if you select the CI Job checkbox and leave the Environment Provisioning checkbox blank, in such case:
    * CI Job will get triggered only if the DataLoader Job is successfully executed,
-   * Environment Provisioning will run in parallel to the DataLoader Job.&#x20;
+   * Environment Provisioning will run in parallel to the DataLoader Job.
 {% endhint %}
 
 ### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
@@ -235,12 +235,12 @@ There are different ways to fetch the test cases:
 * AccelQ (if AccelQ plugin is installed in ARM)
 * Provar (if Provar plugin is installed in ARM)
 
-<figure><img src="../../../../../.gitbook/assets/image (4672).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4432).png" alt=""><figcaption></figcaption></figure>
 
 1.  **Version Control:** The test cases committed to a branch in version control are displayed.
 
     * Select the **Version Control Repository** type.
-    * Select the **Repository** and the **Branch**.&#x20;
+    * Select the **Repository** and the **Branch**.
     * Select the way you would like to run your test cases, e.g., Selenium Maven or Selenium Non-Maven.
       1. For the **Selenium Maven** test type, you need to enter the test case root path in the **Test Case Root Path** field. Also, specify the goals.
       2. For the **Selenium Non-Maven** test type, you need to choose the **Execution Type** and enter the test case root path in the **Test Case Root Path** field.
@@ -250,11 +250,11 @@ There are different ways to fetch the test cases:
     * **Run Test even when the Deployment fails:** Until now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage was successful. This led to failure of the deployment of the test cases to fail in the 'test' stage. In the recent release, the user will be able to proceed with the test even if the deployment fails.
     * **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-<figure><img src="../../../../../.gitbook/assets/image (4673).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4433).png" alt=""><figcaption></figcaption></figure>
 
-1. **AccelQ:** Select the Fetch Test Cases as **'AccelQ.'**  Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
+1. **AccelQ:** Select the Fetch Test Cases as **'AccelQ.'** Enter your **Project Name** and the **Test Job Name** and set the **parameter(s)** for your AccelQ test.
 
-<figure><img src="../../../../../.gitbook/assets/image (4674).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4434).png" alt=""><figcaption></figcaption></figure>
 
 1.  **Provar:** Select Fetch Test Cases From as **'Provar.'**
 
@@ -268,7 +268,7 @@ There are different ways to fetch the test cases:
     2. **Run Test even when the Deployment fails:** Till now, the user was able to run the test module (Selenium, Provar, or AccelQ) only if the deploy stage was successful. This led to failure of the deployment of the test cases to fail in the 'test' stage. With the 19.3 release, the user will be able to proceed with the test even if the deployment fails.
     3. **Test Browsers:** Cross-browser compatibility testing needs to be performed to ensure if the rendering of data is correct across multiple browsers. Select the browser in which you would like to run the test cases.
 
-<figure><img src="../../../../../.gitbook/assets/image (4675).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4435).png" alt=""><figcaption></figcaption></figure>
 
 ### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -278,21 +278,21 @@ The Callout URL lets you call another service from the ARM application via an HT
 
 Send email notifications to selected users' emails on the success or failure of a build.
 
-<figure><img src="../../../../../.gitbook/assets/image (4676).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4436).png" alt=""><figcaption></figcaption></figure>
 
-Also, for Version Control as **GIT**, you will have an additional checkbox to choose: **On a failed deployment send a notification to the respective check-in user.**&#x20;
+Also, for Version Control as **GIT**, you will have an additional checkbox to choose: **On a failed deployment send a notification to the respective check-in user.**
 
 Upon selection, the respective developer/check-in users for whom the deployment does not happen will be notified about the failed deployment operation. However, if the number of Check-In users is more than 50, then the notification is not sent.
 
 **For example,** let's say **Developer A** and **Developer B** have committed some changes to a particular branch, but due to some reason, **Developer B** commits wrong data for which the deployment fails. In such case, **Developer B** will be notified about the failed deployment operation. A sample email notification for deployment failing is shared below. This will also have information for the revision history for which the deployment failed. If the revision lists are more than 20, the report in CSV format will be attached to your mail, which will have the complete list of failed revision lists.
 
-### Schedule  <a href="#schedule" id="schedule"></a>
+### Schedule <a href="#schedule" id="schedule"></a>
 
 Allows you to schedule the process at which it must run.
 
 1. **Daily:** The process will run every day at the scheduled time or time interval set.
-2. **Weekly:** The process will run weekly on the scheduled day and time.&#x20;
-3. **No schedule:** The process will only get saved, and you can run it when required.&#x20;
+2. **Weekly:** The process will run weekly on the scheduled day and time.
+3. **No schedule:** The process will only get saved, and you can run it when required.
 
 ### Save <a href="#save" id="save"></a>
 

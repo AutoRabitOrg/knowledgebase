@@ -30,12 +30,12 @@ The following articles describe using **Single DataLoader** to upsert data into 
 
 10. Click **`OK`** on the notification popup showing impacted records.
 
-<figure><img src="../../../../../.gitbook/assets/image (1452).png" alt="Notification on number of records affected"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1438).png" alt="Notification on number of records affected"><figcaption></figcaption></figure>
 
 11. Prepare field mappings: Match CSV columns to Salesforce fields.
 12. Use **`Automap`** to match fields automatically if names align.
 
-<figure><img src="../../../../../.gitbook/assets/image (1453).png" alt="Field mapping with Automap"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1439).png" alt="Field mapping with Automap"><figcaption></figcaption></figure>
 
 13. Confirm all required fields are mapped, then click **`Next`**.
 
@@ -55,7 +55,7 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 14. The task appears in the **DataLoader Summary** list.
 15. Click **`Run`** to execute the task immediately.
 
-<figure><img src="../../../../../.gitbook/assets/image (1455).png" alt="Run Dataloader job" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1409).png" alt="Run Dataloader job" width="563"><figcaption></figcaption></figure>
 
 ### DataLoader Configuration Options
 
@@ -76,11 +76,11 @@ You can also schedule tasks as **Daily**, **Weekly**, or **On-demand**. Click **
 * **Results of Last Run:** Shows success/failure record count dynamically.
 * **Records:** Displays the total records affected.
 
-<figure><img src="../../../../../.gitbook/assets/image (1457).png" alt="Results of last run" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1411).png" alt="Results of last run" width="563"><figcaption></figcaption></figure>
 
 ### More Options
 
-<figure><img src="../../../../../.gitbook/assets/image (1447).png" alt="More options menu" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1412).png" alt="More options menu" width="563"><figcaption></figcaption></figure>
 
 1. **Edit:** Update job configuration.
 2. **Abort:** Stop a running job.

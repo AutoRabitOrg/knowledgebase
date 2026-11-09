@@ -9,14 +9,14 @@ If a user has multiple roles, the role that grants **more** permissions always o
 
 1.  Hover over **`Admin`** and click **`Roles`**.
 
-    <figure><img src="../../../../.gitbook/assets/image (3752).png" alt="Roles option highlighted in the Admin menu" width="251"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (809).png" alt="Roles option highlighted in the Admin menu" width="251"><figcaption></figcaption></figure>
 2.  Click **Create Role**.
 
-    <figure><img src="../../../../.gitbook/assets/image (3753).png" alt="Create Role button on Roles page" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (810).png" alt="Create Role button on Roles page" width="563"><figcaption></figcaption></figure>
 3. Provide a **Role Name** and **Description**.
 4.  In the **Permissions** tab, tick the checkboxes for every capability this role should grant.
 
-    <figure><img src="../../../../.gitbook/assets/image (3754).png" alt="Permissions tab showing module checkboxes" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (811).png" alt="Permissions tab showing module checkboxes" width="563"><figcaption></figcaption></figure>
 5. Click **Save**.
 
 {% hint style="info" %}

@@ -16,7 +16,7 @@ It supports both **Aura** and **LWR** Experience Cloud sites. Each site type use
 
 `Guard → Risk → Digital Experience Assessment`
 
-<figure><img src="../../../../.gitbook/assets/image (5111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5110).png" alt=""><figcaption></figcaption></figure>
 
 #### Page Layout
 
@@ -30,14 +30,14 @@ The Digital Experience Assessment page has two tabs:
 1. Open **Risk → Digital Experience Assessment**.
 2. Select **New scan**.
 3. Choose a Salesforce org.
-4. Choose an Experience Cloud site in that org. _Note that an org must be selected first._&#x20;
+4. Choose an Experience Cloud site in that org. _Note that an org must be selected first._
 5. If Automated Data Classification is available for your Guard instance, leave the classification option enabled if you want sensitive-field context in the results.
 6. Select **Scan Site**.
 
-The new scan appears in Scan History. While it is running, the status will show as **in progress** and the row is not clickable.&#x20;
+The new scan appears in Scan History. While it is running, the status will show as **in progress** and the row is not clickable.
 
 {% hint style="info" %}
-Support users and Realm Managers cannot start a new scan.&#x20;
+Support users and Realm Managers cannot start a new scan.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (5112).png" alt=""><figcaption></figcaption></figure>
@@ -94,7 +94,7 @@ Scan detail also lists any external domains or trusted sites that the LWR/Aura s
 
 #### Automated Data Classification
 
-When Automated Data Classification is enabled for your Guard instance, you can include classification in a Digital Experience scan.&#x20;
+When Automated Data Classification is enabled for your Guard instance, you can include classification in a Digital Experience scan.
 
 Classification follows the settings already configured in Guard’s Data Classification area, including deep data scan settings by org or field.
 
@@ -158,8 +158,6 @@ Opening a risk from the library shows:
 Admins can add exclusions with **Add excluded sites**: pick org(s), then one or more sites, confirm the count and save. Following this, the excluded risk will not appear in future scans for the selected sites.
 
 <figure><img src="../../../../.gitbook/assets/image (5118).png" alt=""><figcaption></figcaption></figure>
-
-
 
 #### Recommended Best Practices
 

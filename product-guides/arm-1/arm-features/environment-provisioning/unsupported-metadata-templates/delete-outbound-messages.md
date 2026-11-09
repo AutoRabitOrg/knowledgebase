@@ -15,7 +15,7 @@ The **OutboundMessages** template enables users to delete existing outbound mess
    * A **Test Case Name** is auto-generated.
    * Click **Add** to insert custom test data.
 9. To add more outbound messages to your test case:
-   * Click the ![Add Icon](<../../../../../.gitbook/assets/image (983).png>) icon.
+   * Click the ![Add Icon](<../../../../../.gitbook/assets/image (842).png>) icon.
    * In the **Delete Outbound Message** field, enter the name of the message you want to delete.
    * To add multiple messages for the same test case, click the **+** symbol and complete the additional fields.
    * Click **OK** and then **Save** to complete this step.

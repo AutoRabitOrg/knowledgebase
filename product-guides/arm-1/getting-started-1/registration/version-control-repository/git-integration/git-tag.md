@@ -9,7 +9,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
 #### A. Create GIT Tag in your Version Control Branch <a href="#a-create-git-tag-in-your-version-control-branch" id="a-create-git-tag-in-your-version-control-branch"></a>
 
 1. Log in to your AutoRABIT account.
-2. From the AutoRABIT home page, click ![](<../../../../../../.gitbook/assets/image (4212).png>) and go to the **VC Repo's** tab.
+2. From the AutoRABIT home page, click ![](<../../../../../../.gitbook/assets/image (3188).png>) and go to the **VC Repo's** tab.
 3.  Select your [Version Control ](https://www.autorabit.com/blog/8-benefits-of-version-control-in-salesforce-development/)Repository under **Repository List.**\
     <br>
 
@@ -19,7 +19,7 @@ GIT tags are a simple and effective way to keep track of your code's different v
 
     <figure><img src="../../../../../../.gitbook/assets/image (2010).png" alt=""><figcaption></figcaption></figure>
 5. In the **Create Tag** screen, select the **VC branch** from the drop-down. The branch that was registered with AutoRABIT for your Version Control repository will be populated here.
-6.  Use the **Search** (![](<../../../../../../.gitbook/assets/image (4215).png>)) button next to the Revision field to pull a list of revisions from which you can choose which revision to use in the deployment.\
+6.  Use the **Search** (![](<../../../../../../.gitbook/assets/image (1549).png>)) button next to the Revision field to pull a list of revisions from which you can choose which revision to use in the deployment.\
     <br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (2011).png" alt="" width="375"><figcaption></figcaption></figure>
@@ -45,11 +45,11 @@ Once the merge process is completed and pushed to the remote branch, AutoRABIT w
 
 1.  From the top navigation pane, navigate to **Create New > New EZ-Merge.**<br>
 
-    ![EZ-Merge](<../../../../../../.gitbook/assets/unknown (22).webp>)
+    ![EZ-Merge](<../../../../../../.gitbook/assets/unknown (21).webp>)
 2.  On the New Merge screen, select your **GIT Version Control Repository, Base Branch,** and the **Target Branch**.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/image (2017).png" alt=""><figcaption></figcaption></figure>
-3. Scroll a bit below and you can see the option: **Create Git Tag**. Select this checkbox.&#x20;
+3. Scroll a bit below and you can see the option: **Create Git Tag**. Select this checkbox.
 4.  Give a name for the tag and any additional info in the message box.\
     <br>
 

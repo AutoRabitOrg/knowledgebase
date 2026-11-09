@@ -14,17 +14,13 @@ Job Schedules lists all the schedules created in the system
 
 <figure><img src="../../../../../.gitbook/assets/job-schedules.png" alt=""><figcaption></figcaption></figure>
 
-
-
 2. **`Status`** column indicates the Job status. A **`One Time`** job will be automatically disabled once the execution is complete
 3. Click on **`Disable Job`** to disable any active job instances
-4. Click on **`View Executions`** to view the list of executions for the configured schedule&#x20;
+4. Click on **`View Executions`** to view the list of executions for the configured schedule
 
-<figure><img src="../../../../../.gitbook/assets/job-executions (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/job-executions.png" alt=""><figcaption></figcaption></figure>
 
 ### How Schedules Are Executed
-
-
 
 1. The IZ Server evaluates every enabled schedule and records when it fired last and when it is due next.
 2. When a schedule is due, the server queues it. Any running agent that supports the schedule's job type picks it up and creates the job executions for the selected organizations and environments.

@@ -24,41 +24,39 @@ Anomaly Detection is configured from the Anomaly Detection workspace. The config
 
 <figure><img src="/broken/files/nwZGLr17Lc4yfpslNLKC" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                _Anomaly Detection landing page before configuration_
+_Anomaly Detection landing page before configuration_
 
 <figure><img src="/broken/files/t8b7VrqnfP4FM4KIOnml" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                _Config Creation window with Data threshold settings_
+_Config Creation window with Data threshold settings_
 
-<figure><img src="../../../.gitbook/assets/3 (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (28).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                _Data object selection for anomaly monitoring_
+_Data object selection for anomaly monitoring_
 
 <figure><img src="../../../.gitbook/assets/4 (25).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                _Config Creation window with Metadata threshold settings_
+_Config Creation window with Metadata threshold settings_
 
-<figure><img src="../../../.gitbook/assets/5 (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (24).png" alt=""><figcaption></figcaption></figure>
 
-
-
-&#x20;                                                _Metadata type selection for anomaly monitoring_
+_Metadata type selection for anomaly monitoring_
 
 ![](<../../../.gitbook/assets/Unknown image (422)>)
 
-&#x20;                                                _Email Notifications and External Changes of Users options_
+_Email Notifications and External Changes of Users options_
 
 ![](<../../../.gitbook/assets/Unknown image (423)>)
 
-&#x20;                              _User Details selection for excluding internal application users_
+_User Details selection for excluding internal application users_
 
 ![](<../../../.gitbook/assets/Unknown image (424)>)
 
-&#x20;                       _External Changes of Users option after selecting AutoRABIT Vault users_
+_External Changes of Users option after selecting AutoRABIT Vault users_
 
 ![](<../../../.gitbook/assets/Unknown image (425)>)
 
-&#x20;                                                _Salesforce User Details selection for excluding Salesforce users_
+_Salesforce User Details selection for excluding Salesforce users_
 
 ## Monitoring the Dashboard
 
@@ -66,19 +64,19 @@ After configuration is saved, the dashboard displays the detection status, sourc
 
 ![](<../../../.gitbook/assets/Unknown image (426)>)
 
-&#x20;                                                _Anomaly Detection dashboard after configuration is saved_
+_Anomaly Detection dashboard after configuration is saved_
 
 ![](<../../../.gitbook/assets/Unknown image (427)>)
 
-&#x20;                                                _Active anomaly detection status on the dashboard_
+_Active anomaly detection status on the dashboard_
 
 ![](<../../../.gitbook/assets/Unknown image (428)>)
 
-&#x20;                                                _Data anomaly summary chart for the selected object_
+_Data anomaly summary chart for the selected object_
 
 ![](<../../../.gitbook/assets/Unknown image (429)>)
 
-&#x20;                                                _Data anomaly summary chart with severity filter_
+_Data anomaly summary chart with severity filter_
 
 ## Reviewing Data Anomaly Details
 
@@ -86,133 +84,133 @@ The Data anomaly details view lists detected records for the selected source org
 
 ![](<../../../.gitbook/assets/Unknown image (430)>)
 
-&#x20;                                                _Anomaly Details page with detected records_
+_Anomaly Details page with detected records_
 
 ![](<../../../.gitbook/assets/Unknown image (431)>)
 
-&#x20;                                                _Record selection for rollback action_
+_Record selection for rollback action_
 
 ![](<../../../.gitbook/assets/Unknown image (432)>)
 
-&#x20;                                                _Rollback prerequisite and behavior information_
+_Rollback prerequisite and behavior information_
 
 Rollback is initiated from the anomaly details or result views after eligible records are selected. AutoRABIT Vault presents a rollback summary before submission, including rollback options and the selected record count. Once confirmed, a rollback job is created and tracked from the Anomaly Rollback section until completion.
 
 ![](<../../../.gitbook/assets/Unknown image (433)>)
 
-&#x20;                                           _Rollback Summary window with selected records and rollback preferences_
+_Rollback Summary window with selected records and rollback preferences_
 
 ![](<../../../.gitbook/assets/Unknown image (434)>)
 
-&#x20;                                                _Rollback job submitted confirmation_
+_Rollback job submitted confirmation_
 
 ![](<../../../.gitbook/assets/Unknown image (435)>)
 
-&#x20;                                                _Anomaly Rollback job list_
+_Anomaly Rollback job list_
 
 ![](<../../../.gitbook/assets/Unknown image (436)>)
 
-&#x20;                                                _Rollback job actions and progress tracking_
+_Rollback job actions and progress tracking_
 
 ![](<../../../.gitbook/assets/Unknown image (437)>)
 
-&#x20;                                                _Rollback result details with Follow Records tab_
+_Rollback result details with Follow Records tab_
 
 ![](<../../../.gitbook/assets/Unknown image (438)>)
 
-&#x20;                                                _Rollback result details with Outcome Records tab_
+_Rollback result details with Outcome Records tab_
 
 ![](<../../../.gitbook/assets/Unknown image (439)>)
 
-&#x20;                                                _Completed rollback status in the rollback job list_
+_Completed rollback status in the rollback job list_
 
 Comparison results are accessed from Anomaly Detection Job History. The results view shows detected changes by compare label and object. Field-level changes are highlighted in the results table, and detailed record comparison is available through the View Record action. Export and field-selection options support focused review of the result set.
 
 ![](<../../../.gitbook/assets/Unknown image (440)>)
 
-&#x20;                                                _Return to the Anomaly Detection dashboard after rollback review_
+_Return to the Anomaly Detection dashboard after rollback review_
 
 ![](<../../../.gitbook/assets/Unknown image (441)>)
 
-&#x20;                                                _Anomaly Details page with records selected for comparison_
+_Anomaly Details page with records selected for comparison_
 
 ![](<../../../.gitbook/assets/Unknown image (442)>)
 
-&#x20;                                                _Comparison job submitted confirmation_
+_Comparison job submitted confirmation_
 
 ![](<../../../.gitbook/assets/Unknown image (443)>)
 
-&#x20;                                                _Anomaly Detection Job History list_
+_Anomaly Detection Job History list_
 
 ![](<../../../.gitbook/assets/Unknown image (444)>)
 
-&#x20;                                                _Job history action for viewing comparison results_
+_Job history action for viewing comparison results_
 
 ![](<../../../.gitbook/assets/Unknown image (445)>)
 
-&#x20;                                                _Anomaly Detection Results page with comparison records_
+_Anomaly Detection Results page with comparison records_
 
 ![](<../../../.gitbook/assets/Unknown image (446)>)
 
-&#x20;                                                _View Record action in the comparison results table_
+_View Record action in the comparison results table_
 
 ![](<../../../.gitbook/assets/Unknown image (447)>)
 
-&#x20;                                                _View Record window showing field-level snapshot comparison_
+_View Record window showing field-level snapshot comparison_
 
 ![](<../../../.gitbook/assets/Unknown image (448)>)
 
-&#x20;                                                _Export option in Anomaly Detection Results_
+_Export option in Anomaly Detection Results_
 
 ![](<../../../.gitbook/assets/Unknown image (449)>)
 
-&#x20;                                                _Export window with available export scope options_
+_Export window with available export scope options_
 
 ![](<../../../.gitbook/assets/Unknown image (450)>)
 
-&#x20;                                                _Choose Fields option in Anomaly Detection Results_
+_Choose Fields option in Anomaly Detection Results_
 
 ![](<../../../.gitbook/assets/Unknown image (451)>)
 
-&#x20;                                                _Fields selection window for result display_
+_Fields selection window for result display_
 
 ![](<../../../.gitbook/assets/Unknown image (452)>)
 
-&#x20;                                                _Records selected for rollback from Anomaly Detection Results_
+_Records selected for rollback from Anomaly Detection Results_
 
 ![](<../../../.gitbook/assets/Unknown image (453)>)
 
-&#x20;                                                _Rollback action from Anomaly Detection Results_
+_Rollback action from Anomaly Detection Results_
 
 ![](<../../../.gitbook/assets/Unknown image (454)>)
 
-&#x20;                                                _Rollback fields selection window_
+_Rollback fields selection window_
 
 ![](<../../../.gitbook/assets/Unknown image (455)>)
 
-&#x20;                                                _Rollback job submitted from comparison results_
+_Rollback job submitted from comparison results_
 
 Anomaly Detection Job History maintains the comparison and rollback activity initiated from the anomaly workflow. Each job entry provides status, timing, and action controls. Compare label actions open detailed field-level status information for the selected compare run.
 
 ![](<../../../.gitbook/assets/Unknown image (456)>)
 
-&#x20;                                                _Job History list after rollback submission from results_
+_Job History list after rollback submission from results_
 
 ![](<../../../.gitbook/assets/Unknown image (457)>)
 
-&#x20;                                                _Job History action for compare label review_
+_Job History action for compare label review_
 
 ![](<../../../.gitbook/assets/Unknown image (458)>)
 
-&#x20;                                                _Compare Label window showing field-level status_
+_Compare Label window showing field-level status_
 
 ![](<../../../.gitbook/assets/Unknown image (459)>)
 
-&#x20;                                                _Job History action for detailed compare label review_
+_Job History action for detailed compare label review_
 
 ![](<../../../.gitbook/assets/Unknown image (458)>)
 
-&#x20;                                                _Compare Label window with scrollable field status list_
+_Compare Label window with scrollable field status list_
 
 ## Pausing, Stopping, and Restarting Detection
 
@@ -220,39 +218,39 @@ Anomaly detection can be temporarily paused until a selected date or permanently
 
 ![](<../../../.gitbook/assets/Unknown image (460)>)
 
-&#x20;                                                _Date picker for changing the dashboard date range_
+_Date picker for changing the dashboard date range_
 
 ![](<../../../.gitbook/assets/Unknown image (461)>)
 
-&#x20;                                                _Pause anomaly detection date selection on the dashboard_
+_Pause anomaly detection date selection on the dashboard_
 
 ![](<../../../.gitbook/assets/Unknown image (462)>)
 
-&#x20;                                                _Save action for pausing anomaly detection until a selected date_
+_Save action for pausing anomaly detection until a selected date_
 
 ![](<../../../.gitbook/assets/Unknown image (463)>)
 
-&#x20;                                                _Active status after date-based anomaly detection control_
+_Active status after date-based anomaly detection control_
 
 ![](<../../../.gitbook/assets/Unknown image (464)>)
 
-&#x20;                                                _Turn off anomaly detection permanently option_
+_Turn off anomaly detection permanently option_
 
 ![](<../../../.gitbook/assets/Unknown image (465)>)
 
-&#x20;                                                _Confirmation window for turning off anomaly detection permanently_
+_Confirmation window for turning off anomaly detection permanently_
 
 ![](<../../../.gitbook/assets/Unknown image (466)>)
 
-&#x20;                                                _Stopped anomaly detection status after permanent turn off_
+_Stopped anomaly detection status after permanent turn off_
 
 ![](<../../../.gitbook/assets/Unknown image (467)>)
 
-&#x20;                                                _Confirmation window for restarting anomaly detection_
+_Confirmation window for restarting anomaly detection_
 
 ![](<../../../.gitbook/assets/Unknown image (468)>)
 
-&#x20;                                                _Date picker available after anomaly detection is restarted_
+_Date picker available after anomaly detection is restarted_
 
 ## Result
 

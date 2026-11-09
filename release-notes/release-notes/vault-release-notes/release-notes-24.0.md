@@ -1,16 +1,16 @@
 # AutoRABIT Vault Release Notes 24.0
 
-## AutoRABIT Vault 24.2.14 Release Notes
+## Vault 24.2.14
 
-**Release Date: 07 May 2025**
+**Release date:** 7 May 2025
 
 * **Security Enhancement:** A security-related update has been implemented to strengthen the overall protection and integrity of the application.
 
 ***
 
-## AutoRABIT Vault 24.2.13 Release Notes
+## Vault 24.2.13
 
-**Release Date: 30 April 2025**
+**Release date:** 30 April 2025
 
 * **Improved Person Account Contact Handling:** Processing Person Account records is now streamlined when their related contacts are selected as parent records.
 * **Optimized Query Execution:** A code fix ensures accurate record retrieval based on the value specified in the `LIMIT` clause.
@@ -20,9 +20,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.12 Release Notes <a href="#title-text" id="title-text"></a>
+## Vault 24.2.12
 
-**Release Date: 16 April 2025**
+**Release date:** 16 April 2025
 
 * **Data Restore:** Fixed an issue to ensure only selected parent records are restored.
 * **Email Triggers:** Resolved an issue where alerts were sent for deactivated schedules.
@@ -33,9 +33,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.11 Release Notes <a href="#title-text" id="title-text"></a>
+## Vault 24.2.11
 
-**Release Date: 16 April 2025**
+**Release date:** 16 April 2025
 
 **Automate AutoRABIT Vault Connect Config:** Added support for **“Automatically Include New Jobs”**—new jobs created under the archive config will now be auto-included in the Connect config.
 
@@ -49,18 +49,18 @@
 
 ***
 
-## AutoRABIT Vault 24.2.10 Release Notes <a href="#title-text" id="title-text"></a>
+## Vault 24.2.10
 
-**Release Date: 16 April 2025**
+**Release date:** 16 April 2025
 
 * **Common Child objects Selections:** Users can now select common child records like Files, attachments, Tasks, events, etc. shared across multiple parents during data operations without having to select them from the complex schema.
 * **Updating Parent Records in Destination:** Parent records already present in the destination will no longer be updated during Restore/Replicate operations.
 
 ***
 
-## AutoRABIT Vault 24.2.9 Release Notes
+## Vault 24.2.9
 
-**Release Date: 16 March 2025**
+**Release date:** 16 March 2025
 
 **Bug Fixes:**
 
@@ -71,9 +71,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.8 Release Notes
+## Vault 24.2.8
 
-**Release Date: 5 March 2025**
+**Release date:** 5 March 2025
 
 * **Inline Images in Rich Text Fields**: Resolved an issue preventing the display of inline images in Rich Text fields through Vault Connect.
 * **Processing of Common Child Objects**: Improved the handling of common child objects (e.g., Task, Event) during restore/replicate operations to eliminate redundant actions.
@@ -82,18 +82,18 @@
 
 ***
 
-## AutoRABIT Vault 24.2.7 Release Notes
+## Vault 24.2.7
 
-**Release Date: 12 February 2025**
+**Release date:** 12 February 2025
 
-### **New Features**
+### New features
 
 * **Download Files from Backups and Archives:** Users can now download files directly from backups and archives within the AutoRABIT Vault UI, improving accessibility and efficiency.
 * **Limitations**
   * **Inconsistent File Download During GDPR Requests**: When a GDPR request is initiated within an organization, file downloads may behave inconsistently. This issue will be resolved in the upcoming release.
   * **File Download Issues with Special Characters in File Names**: Files with special characters in their names may not function properly in certain environments, particularly on macOS. This issue will be addressed in the upcoming release.
 
-### **Enhancements & Fixes**
+### Enhancements & Fixes
 
 * **Backup Stability Improvements:** Fixed an issue where backups could get stuck when multiple backup jobs were run in parallel on the same Salesforce org.
 * **Schema Representation Fixes:** Resolved a minor UI issue in archive job schema representation where _EmailMessage_ was incorrectly displayed as a required child object for all Salesforce objects.
@@ -104,9 +104,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.6 Release Notes
+## Vault 24.2.6
 
-**Release Date: 29 January 2025**
+**Release date:** 29 January 2025
 
 * **Rich Text Field Data:** Enhanced AutoRABIT Vault Connect to support the display of images and HTML content seamlessly in rich text fields and in emailMessage body.
 * **Objects Backup:** Resolved issues to ensure proper backup of "Big Objects," "Special Objects," and "Entity Definition."
@@ -118,9 +118,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.5 Release Notes
+## Vault 24.2.5
 
-**Release Date: 18 December 2024**
+**Release date:** 18 December 2024
 
 * **Customer Session Expired:** Enhanced record processing to prevent user session timeouts.
 * **OData Backward Compatibility:** Fixed an issue to ensure old Archival jobs process files correctly in Vault Connect.
@@ -129,9 +129,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.4 Release Notes
+## Vault 24.2.4
 
-**Release Date: 27 November 2024**
+**Release date:** 27 November 2024
 
 * **Salesforce Spring '24 Upgrade:** Upgraded Salesforce to the latest Spring '24 release for improved features and functionality.
 * **AutoRABIT Vault Connect – Seamless Access to Archived Files:** Customers now have seamless access to files added to records.
@@ -147,18 +147,18 @@
 
 ***
 
-## AutoRABIT Vault 24.2.3 Release Notes
+## Vault 24.2.3
 
-**Release Date: 6 November 2024**
+**Release date:** 6 November 2024
 
 * **Addressed AutoRABIT** **Vault Restore Issues**: Enhanced restore functionality to ensure seamless performance while restoring records.
 * **Addressed Issues in Archive Functionality**: Optimized archive functionality for enhanced performance and reliability.
 
 ***
 
-## AutoRABIT Vault 24.2.2 Release Notes
+## Vault 24.2.2
 
-**Release Date: 18 October 2024**
+**Release date:** 18 October 2024
 
 * **UI Enhancements:** Improved UI for a smoother user experience in multiple areas.
 * **AutoRABIT Vault Connect Updates:** Now supports attachments with Salesforce External Objects, enabling a comprehensive view of archived data.
@@ -166,9 +166,9 @@
 
 ***
 
-## AutoRABIT Vault 24.2.1 Release Notes
+## Vault 24.2.1
 
-**Release Date: 4 October 2024**
+**Release date:** 4 October 2024
 
 * **Improved Metadata Backups:** Enhancements have been made to metadata backups to better handle expected errors during retrieval from Salesforce.
 * **FeedComment Restore/Replication:** Improved error handling ensures better support for FeedComment replication and restoration.
@@ -179,15 +179,15 @@
 
 ***
 
-## AutoRABIT Vault 24.2 Release Notes
+## Vault 24.2
 
-**Release Date: 24 Sep 2024**
+**Release date:** 24 September 2024
 
-#### **Overview**
+#### Overview
 
 AutoRABIT is thrilled to announce a series of significant enhancements to our platform. These updates are designed to elevate your experience, offering improved performance, enhanced security, and greater reliability. Below, you'll find detailed information on the key updates included in this release.
 
-#### **Key Updates**
+#### Key Updates
 
 1. **Operating System Upgrade**
    * **Upgrade Details**: The platform's underlying operating system has been upgraded to the latest version.
@@ -207,7 +207,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 
 ***
 
-### AutoRABIT Vault v24.1.19
+### Vault 24.1.19
 
 **3 July 2024**
 
@@ -220,7 +220,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 7. **Special Character Handling:** Implemented a fix to properly handle and escape special characters.
 8. **Salesforce Toggle State Issue:** Resolved an issue in which the “Auto-pick new objects and metadata in Salesforce” toggle appeared disabled, despite being enabled.
 
-### AutoRABIT Vault v24.1.18
+### Vault 24.1.18
 
 **19 June 2024**
 
@@ -228,7 +228,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 2. **Duplicate Configuration Name Error**: When a duplicate name is entered in the connect section, an incorrect 500 internal server error was displayed.
 3. **Updated Error Code**: The error code has been updated to correctly display a 400 series "Bad Request" status instead.
 
-### AutoRABIT Vault v24.1.17
+### Vault 24.1.17
 
 **12 June 2024**
 
@@ -237,7 +237,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 3. **Archival Report Expiration Fix:** Archival reports were not expiring after 7 days as intended. A fix ensures reports now expire 7 days after creation.
 4. **Config ID Requirement:** The absence of a config ID in the script caused unintended actions for other clients. Config ID and client are now mandatory to prevent this.
 
-### AutoRABIT Vault v 24.1.16
+### Vault 24.1.16
 
 **29 May 2024**
 
@@ -249,7 +249,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 6. **Email Body Logging Issue:** Previously, the email body was being printed in the logs along with email activity tracking. A fix has been applied to prevent the email body from being logged.
 7. **Enhanced Log Failure Details:** The logs have been updated to provide more detailed information regarding the reasons for log failures.
 
-### AutoRABIT Vault 24.1.15
+### Vault 24.1.15
 
 **22 May 2024**
 
@@ -258,7 +258,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 3. **Query Column Display Adjustment:** The query column will now only be displayed at the criteria level, not at the object level, ensuring a more streamlined view.
 4. **Separation of Synchronous and Asynchronous Methods:** The previously created asynchronous method was causing errors. To address this, separate methods have been developed for both synchronous and asynchronous operations.
 
-### AutoRABIT Vault 24.1.14
+### Vault 24.1.14
 
 **15 May 2024**
 
@@ -270,7 +270,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 6. **Typographic Error in Column Name**: A typographic error in a column name was identified and corrected.
 7. **Field Mapping for Target Environment:** The customer selected an object and set individual mappings for fields to be moved to the target environment.
 
-### AutoRABIT Vault v24.1.13
+### Vault 24.1.13
 
 **08 May 2024**
 
@@ -288,7 +288,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 12. **Lookup-Related Parent Processing:** When a lookup was selected, related parent objects were not being processed. The fix now ensures that related objects are automatically picked up and processed accordingly.
 13. **Replicate Label Display Issue:** The label "Replicate Label" was not being displayed in the configuration details. A code fix has corrected this, and the label now appears correctly in the configuration details pop-up.
 
-### AutoRABIT Vault v24.1.12
+### Vault 24.1.12
 
 **24 Apr 2024**
 
@@ -303,7 +303,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 9. **Filter Limit Visibility Issue:** The limit set on the filter was not visible when users tried to edit it. This issue has been resolved with the latest fix.
 10. **Child Record Processing Fix:** Child records should not be processed unless explicitly selected. In scenarios where child records were being processed automatically, a fix has been applied to correct this behavior.
 
-### AutoRABIT Vault v24.1.11
+### Vault 24.1.11
 
 **03 Apr 2024**
 
@@ -311,7 +311,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 2. **Filter Modification Issue in Queries:** When filters are modified in a query, the changes were not being reflected. A fix has been implemented to ensure that filter modifications are properly applied in the query.
 3. **Removal of Mobile Number Field:** The mobile number field has been removed from the user profile sections.
 
-### AutoRABIT Vault v 24.1.10
+### Vault 24.1.10
 
 **27 Mar 2024**
 
@@ -325,7 +325,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 8. **Thread Writing Conflict Resolution:** Previously, multiple threads were writing into a single file, causing some threads to move into a wait state. A fix has been implemented so that each thread writes to its own file, with all files being merged at the end.
 9. **Admin Session Visibility Update:** Admin users were unable to see other users' sessions. New updates have been made to address this issue.
 
-### AutoRABIT Vault v 24.1.9
+### Vault 24.1.9
 
 **23 Mar 2024**
 
@@ -337,7 +337,7 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 6. **Enhanced Error/Notification Logging:** The username and refresh ID have been added to the system to ensure that users receive precise error messages and notifications.
 7. **Customer ID Replacement with Bucket Name:** The customer ID has been replaced with the bucket name to ensure that the correct folder is created during the process.
 
-### AutoRABIT Vault v 24.1.8
+### Vault 24.1.8
 
 **13 Mar 2024**
 
@@ -350,13 +350,13 @@ AutoRABIT is thrilled to announce a series of significant enhancements to our pl
 7. **Connect Config Deletion:** A fix has been provided to ensure that the connect configuration is properly deleted when required.
 8. **Delete Flow Corrections:** Necessary corrections have been made to ensure that the delete flow operates correctly and as intended.
 
-### AutoRABIT Vault 24.1.7
+### Vault 24.1.7
 
 **28 Feb 2024**
 
 AWS KMS support has been added for encryption and decryption to the ingestion service.
 
-### AutoRABIT Vault 24.1.6
+### Vault 24.1.6
 
 **21 Feb 2024**
 
@@ -367,7 +367,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 5. **Encrypted AutoRABIT Vault Connect Job Logs:** The downloaded file for AutoRABIT Vault Connect job logs was displaying in encrypted mode. This issue has been corrected.
 6. **AutoRABIT Vault Connect UI Data Alignment:** The data alignment on the AutoRABIT Vault Connect UI has been corrected as part of the recent fix deployment.
 
-### AutoRABIT Vault v24.1.5
+### Vault 24.1.5
 
 **14 Feb 2024**
 
@@ -376,7 +376,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 3. **Batch Processing Failure Count:** For data processed in batches, the failure count was previously calculated on a batch basis rather than as a consolidated total. This has been reviewed to ensure accurate reporting.
 4. **Data Sorting Issue:** Data in Salesforce is stored in ascending order, but retrieving it in descending order was taking longer than expected, causing job delays. This issue has been identified as a cause of jobs getting stuck, and steps are being taken to address it.
 
-### AutoRABIT Vault v24.1.4
+### Vault 24.1.4
 
 **07 Feb 2024**
 
@@ -387,7 +387,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 5. **Log Output Simplification**: Logs have been streamlined to print on a single line instead of across three lines.
 6. **Null Pointer Exception Handling:** A fix has been provided to handle null pointer exceptions, ensuring successful records are processed without failure.
 
-### AutoRABIT Vault v24.1.3
+### Vault 24.1.3
 
 **31 Jan 2024**
 
@@ -398,7 +398,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 5. **Parent-Child Mapping Bug Fix:** A bug related to the `isDisableParentChildMapping` flag, which was disrupting the flow, has been addressed by introducing a new flag, `disableParentChildMappingForCommonObjects`.
 6. **Restore and Replicate Bug Fix:** A fix has been rolled out to resolve issues causing restore and replicate failures.
 
-### AutoRABIT Vault v24.1.2
+### Vault 24.1.2
 
 **24 Jan 2024**
 
@@ -410,7 +410,7 @@ AWS KMS support has been added for encryption and decryption to the ingestion se
 
 ***
 
-## AutoRABIT **Vault 24.1 Release Notes** <a href="#whats-new" id="whats-new"></a>
+## Vault 24.1
 
 **Anticipated Release Date: 17 April 2024**
 

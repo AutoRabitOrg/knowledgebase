@@ -5,32 +5,32 @@
 > Date of release: 18 December 2022\
 > Article last updated: 24 April 2023
 
-### New Updates <a href="#new-updates" id="new-updates"></a>
+### New Updates
 
-#### 1. User Registration Flow Enhanced for CodeScan Cloud <a href="#id-1-user-registration-flow-enhanced-for-codescan-cloud" id="id-1-user-registration-flow-enhanced-for-codescan-cloud"></a>
+#### User Registration Flow Enhanced for CodeScan Cloud
 
 The user registration flow is now _enhanced_ for improved user experience in the CodeScan cloud by updating several options and removing others that no longer apply.
 
 * **Validate Email address-** The CodeScan team to allow users to register for a new CodeScan account using corporate email addresses only.
 * The users who attempt to sign up using an email domain not registered with us require approval from the CodeScan team. To simplify the approval process, it is recommended that you only invite persons whose email domains already exist with us.
 
-#### 2. SOQL/DML Rule Upgrade <a href="#id-2-soqldml-rule-upgrade" id="id-2-soqldml-rule-upgrade"></a>
+#### SOQL/DML Rule Upgrade
 
 The existing CodeScan rule is now enhanced to verify if SOQL queries are in the loop. With this release, if a SOQL query is called in a loop in another method or class, the rule will now alert the users with information like _class name_, _method name_, and the _line number_ of the violation.
 
-#### 3. CodeScan IntelliJ plugin Upgrade <a href="#id-3-codescan-intellij-plugin-upgrade" id="id-3-codescan-intellij-plugin-upgrade"></a>
+#### CodeScan IntelliJ plugin Upgrade
 
 The CodeScan IntelliJ plugin has been upgraded to the stable **6.1.4** version. This update improves the connection process with your server.
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 This release includes minor stability fixes and improvements for the CodeScan platform.
 
 ***
 
-### Changelogs <a href="#changelogs" id="changelogs"></a>
+### Changelogs
 
-#### 19 April 2023 <a href="#id-19-april-2023" id="id-19-april-2023"></a>
+#### 19 April 2023
 
 **(CodeScan v23.0.6)**
 
@@ -42,7 +42,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-#### 22 March 2023 <a href="#id-22-march-2023" id="id-22-march-2023"></a>
+#### 22 March 2023
 
 **(CodeScan v23.0.5)**
 
@@ -57,7 +57,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-#### 15 March 2023 <a href="#id-15-march-2023" id="id-15-march-2023"></a>
+#### 15 March 2023
 
 **(CodeScan v23.0.4)**
 
@@ -68,7 +68,7 @@ This is a maintenance release. The following items were fixed and/or added:
 
 ***
 
-#### 28 Feb 2023 <a href="#id-28-feb-2023" id="id-28-feb-2023"></a>
+#### 28 Feb 2023
 
 **(CodeScan v23.0.3)**
 

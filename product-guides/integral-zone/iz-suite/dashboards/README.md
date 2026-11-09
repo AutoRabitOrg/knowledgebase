@@ -4,12 +4,12 @@ Dashboards let you build views of your evidence from familiar fields, without de
 
 Open it from **Dashboards** in the sidebar, under **Explore**.
 
-| Page                                      | What it covers                                                                                                       |
-| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| [Your Dashboards](your-dashboards.md)     | Open starter and custom dashboards, create and customize your own, filter them, export a PDF and ask AI for a brief. |
-| [Query](query.md)                         | Ask your evidence a question, choose how to present the answer and add it to a dashboard.                            |
-| [Scheduled Reports](scheduled-reports.md) | Generate a PDF of a dashboard every day or every week, by email and in Report history.                               |
-| [Report History](report-history.md)       | Download generated PDFs, check their scope and retry failed ones.                                                    |
+| Page                                                            | What it covers                                                                                                       |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| [Your Dashboards](your-dashboards.md)                           | Open starter and custom dashboards, create and customize your own, filter them, export a PDF and ask AI for a brief. |
+| [Query](/broken/pages/d2fd9a615db2b0c41860bfc867037b83e20fcbdd) | Ask your evidence a question, choose how to present the answer and add it to a dashboard.                            |
+| [Scheduled Reports](scheduled-reports.md)                       | Generate a PDF of a dashboard every day or every week, by email and in Report history.                               |
+| [Report History](report-history.md)                             | Download generated PDFs, check their scope and retry failed ones.                                                    |
 
 {% hint style="warning" %}
 You need a role that can view, create or update dashboards to see **Dashboards** in the sidebar. Creating dashboards, scheduling reports and changing report branding each need their own permission; buttons you cannot use are not shown.
@@ -37,5 +37,5 @@ At the bottom of each dashboard and query, a list of evidence notes explains wha
 ## Next steps
 
 * [Your Dashboards](your-dashboards.md): start from a starter dashboard.
-* [Query](query.md): ask your evidence a question.
+* [Query](/broken/pages/d2fd9a615db2b0c41860bfc867037b83e20fcbdd): ask your evidence a question.
 * [Scheduled Reports](scheduled-reports.md): get a PDF before every review.

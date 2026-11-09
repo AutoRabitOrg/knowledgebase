@@ -75,7 +75,7 @@ Invalid key:
 
 Deployment is completed without local compilation due to the incorrect Access Key of Vlocity's Private NPM Repository
 
-<figure><img src="../../../../.gitbook/assets/image (3130).png" alt="Local Compilation Config" width="452"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1308).png" alt="Local Compilation Config" width="452"><figcaption></figcaption></figure>
 
 Activate/Deactivate: Temporarily disable jobs without deleting them. Reactivate when needed. This prevents unintended builds without loss of job data.
 

@@ -8,7 +8,7 @@ The **CI Jobs** screen is best viewed at **80%** zoom in Chrome or Firefox brows
 
 Use ARM to automatically back up changes from your Salesforce org to your version control system, ensuring that metadata changes are securely stored and tracked over time. This feature is particularly useful for teams that want to maintain an audit trail of changes, recover previous versions when needed, and ensure that updates made directly in Salesforce are not lost.
 
-Example:\
+Example:\
 A Salesforce administrator makes configuration changes directly in a sandbox or production org. By running a backup job, those changes are committed to the version control repository, allowing the team to track who made the changes, review the history, and restore previous versions if required. Commit-to-user mapping further helps identify the Salesforce user responsible for each change.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
@@ -16,7 +16,7 @@ A Salesforce administrator makes configuration changes directly in a sandbox or 
 1. Log in to ARM.
 2. From the top navigation bar, select **`Create New > New CI Job`**.
 
-<figure><img src="../../../../../.gitbook/assets/image (2787).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2780).png" alt=""><figcaption></figcaption></figure>
 
 1.  Click the **Backup to Version Control** tile.
 
@@ -49,18 +49,16 @@ Under **Build**, provide:
 6. **Run static analysis report** – Run an SCA tool before committing.
    * **Apex PMD / Checkmarx** – Choose whether to scan all Apex classes or only those modified after a given date, and set a **Priority** threshold that causes the build to be marked unstable if not met.
 
-<figure><img src="../../../../../.gitbook/assets/image (2790).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../../.gitbook/assets/image (2789).png" alt=""><figcaption></figcaption></figure>
 
 * **CodeScan / SonarQube** – Choose to scan all supported metadata types or only newly added ones, and set a **Priority** threshold.
 
-<figure><img src="../../../../../.gitbook/assets/image (2791).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2785).png" alt=""><figcaption></figcaption></figure>
 
 * **Run on all supported metadata types** – Scan every retrieved component.
 *   **Run on newly added supported metadata types** – Scan only components added in the current retrieval.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3737).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3730).png" alt="Run-scope options for supported metadata types"><figcaption><p>Components in Current Retrieval</p></figcaption></figure>
 
 1. **Additional profile packaging options:**
    * **Remove login IP ranges** – Omit IP range settings from profiles.
@@ -89,7 +87,7 @@ Enable **Auto commit** to push changes directly to your VCS:
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (2793).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2786).png" alt=""><figcaption></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 

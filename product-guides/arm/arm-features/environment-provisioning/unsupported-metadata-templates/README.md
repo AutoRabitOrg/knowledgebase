@@ -82,14 +82,14 @@ To create a new unsupported metadata template, please follow the below steps:
 7. Click **Add**.
 8. On the next screen, you will find a **Test Case Name** appear automatically by default. To add the custom test data, click on **Add** button.
 
-![](<../../../../../.gitbook/assets/unknown (41).webp>)
+![](<../../../../../.gitbook/assets/unknown (40).webp>)
 
 9. However, you'll need to add a page layout for the auto-generated or your custom test case name. To do a page layout, do the following,
 
-* Click on![](<../../../../../.gitbook/assets/image (948).png>)icon.
-* Enter the page layout name in the **Page Layout** field.&#x20;
-* Activate the page layout by selecting the **Active** checkbox.&#x20;
-* You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.&#x20;
+* Click on![](<../../../../../.gitbook/assets/image (842).png>)icon.
+* Enter the page layout name in the **Page Layout** field.
+* Activate the page layout by selecting the **Active** checkbox.
+* You can even add multiple page layout for the above-generated test case name. Click on the + symbol beside Active and fill in the fields as mentioned in the steps earlier.
 * Click **OK**.
 
 <figure><img src="../../../../../.gitbook/assets/image (949).png" alt="" width="534"><figcaption></figcaption></figure>
@@ -107,14 +107,14 @@ The **View History** screen will display the detailed summary report of the temp
 
 The left side screen will display the template name, the template creation date/time stamp, and the Salesforce org where the template was run.
 
-<figure><img src="../../../../../.gitbook/assets/image (950).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (937).png" alt=""><figcaption></figcaption></figure>
 
 Click on the **Log** icon to view the log report on the right side of the page.
 
-<figure><img src="../../../../../.gitbook/assets/image (951).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (938).png" alt=""><figcaption></figcaption></figure>
 
-**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.&#x20;
+**Result** icon will display the status of the deployment for the template (success or failed), deployed components, deployed components path, and many more.
 
-**Re-Run** option allows you to run the template once again.&#x20;
+**Re-Run** option allows you to run the template once again.
 
 **Info** option allows you to view the input file which you have uploaded in the initial stage for template creation.

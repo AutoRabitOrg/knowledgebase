@@ -2,9 +2,9 @@
 
 **May 2022 - New Features, Enhancements, and Improvements**
 
-### New Features <a href="#new-features" id="new-features"></a>
+### New features
 
-#### [Added new nCino rules](https://knowledgebase.autorabit.com/codescan/docs/codescan-rule-list) <a href="#added-new-ncino-rules" id="added-new-ncino-rules"></a>
+#### [Added new nCino rules](https://knowledgebase.autorabit.com/codescan/docs/codescan-rule-list)
 
 The following are the **"ncino-goldstandard"** nCino-related rules that have been added to the current _Apex/Salesforce Metadata rule sets_.
 
@@ -19,26 +19,26 @@ The following are the **"ncino-goldstandard"** nCino-related rules that have bee
 | Test Class Names Should Include 'Test'    | This rule is required as Test classes should include the word 'Test' in their class names                                                                 |
 | Hard Coded Email Address                  | This rule is required as to avoid hardcoded email addresses                                                                                               |
 
-#### SonarQube compatible <a href="#sonarqube-compatible" id="sonarqube-compatible"></a>
+#### SonarQube compatible
 
 CodeScan self-hosted is compatible with **SonarQube™ 8.9** and **SonarJS 6.2+**. For more information, see [Installing CodeScan Self-Hosted](https://knowledgebase.autorabit.com/codescan/docs/codescan-self-hosted)
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### Updated existing nCino rules <a href="#updated-existing-ncino-rules" id="updated-existing-ncino-rules"></a>
+#### Updated existing nCino rules
 
 Below are the exisitng CodeScan rules key that are tagged as **“ncino-goldstandard.”**
 
 <table data-full-width="false"><thead><tr><th>Rule Key</th></tr></thead><tbody><tr><td>sf:AvoidUsingHardCodedId</td></tr><tr><td>sf:MultipleTriggersOnObject</td></tr><tr><td>sf:LongMethodName</td></tr><tr><td>sf:LongClassName</td></tr><tr><td>sf:LongTriggerName</td></tr><tr><td>sf:VariableNamingConventions</td></tr><tr><td>vf:HeaderCheck</td></tr><tr><td>sf:UncommentedEmptyMethod</td></tr><tr><td>sf:UncommentedEmptyConstructor</td></tr><tr><td>sf:CommentRequired</td></tr><tr><td>sf:UnitTestContainsTooManyAsserts</td></tr><tr><td>sf:AvoidUsingTestIsRunningTest</td></tr><tr><td>sf:OnlyOneReturn</td></tr><tr><td>sf:UnusedLocalVariable</td></tr><tr><td>sf:EmptyTryBlock</td></tr><tr><td>sf:EmptyFinallyBlock</td></tr><tr><td>sf:AvoidSoqlInLoops</td></tr><tr><td>sfmeta:ExcessiveWorkflowsOrgWide</td></tr><tr><td>sfmeta:RequireDescriptionComponent</td></tr><tr><td>sfmeta:LimitCustomFields</td></tr></tbody></table>
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 1. Updated all third-party libraries to the most recent versions to address security, stability, and reliability issues.
 2. The CodeScan portal has been updated to include minor speed, bug fixes, and security enhancements.
 
-### Changelog <a href="#changelog" id="changelog"></a>
+### Changelog
 
-#### CodeScan v22.6.2 <a href="#codescan-v2262" id="codescan-v2262"></a>
+#### CodeScan v22.6.2
 
 **(12 July 2022)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -49,7 +49,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Resolved an issue where the **Project Analysis** jobs were stuck in the queue and were not triggered at the scheduled time ([46552](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000078677885)).
 * Fixed an issue where the CodeScan-Visual Studio Code plugin failed to detect javascript errors even though SonarQube have identified it at the Salesforce Lightning web component ([46104](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000077797001)).
 
-#### CodeScan v22.6.1 <a href="#codescan-v2261" id="codescan-v2261"></a>
+#### CodeScan v22.6.1
 
 **(23 June 2022)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -60,7 +60,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue for all child rule violations that happen when files are crossed (rule violation location in two different files).. This was fixed by setting the correct file location for child rule violations.
 * Fixed an issue where users were experiencing an expired token error that appeared on the master branch every time a comparison branch was analysed before it ([44492](https://support.autorabit.com/support/autorabit/ShowHomePage.do#Cases/dv/241415000074950299)).
 
-#### CodeScan v22.6 <a href="#codescan-v226" id="codescan-v226"></a>
+#### CodeScan v22.6
 
 **(13 June 2022)**\
 This is a maintenance release. The following items were fixed and/or added:
@@ -69,7 +69,7 @@ This is a maintenance release. The following items were fixed and/or added:
 * Fixed an issue where the **Field Level Security Rule** displayed a false negative for the code below:\
   `update Security.stripInaccessible(AccessType.UPDATABLE, new List<vlocity_ins__ContactEmployment__c> { ceLst.get(0) }).getRecords();`
 
-#### CodeScan v22.5 <a href="#codescan-v225" id="codescan-v225"></a>
+#### CodeScan v22.5
 
 **(30 May 2022)**\
 This is a maintenance release. The following items were fixed and/or added:

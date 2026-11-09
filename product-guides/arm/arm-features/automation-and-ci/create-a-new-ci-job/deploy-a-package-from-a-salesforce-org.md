@@ -19,7 +19,7 @@ Back up your Salesforce metadata to version control and trigger a deployment to 
 1. Log in to your ARM account.
 2.  From the top navigation pane, navigate to **Create New > New CI Job**.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3873).png" alt="Create New ➜ New CI Job"><figcaption><p>Create New ➜ New CI Job</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1280).png" alt="Create New ➜ New CI Job"><figcaption><p>Create New ➜ New CI Job</p></figcaption></figure>
 3.  Choose the tile: **Deploy From Salesforce Org**
 
     <figure><img src="../../../../../.gitbook/assets/image (3874).png" alt="Deploy From Salesforce Org tile"><figcaption><p>Deploy From Salesforce Org tile</p></figcaption></figure>
@@ -54,16 +54,16 @@ Under **Build**, provide:
 6. **Generate Code Coverage Report:** Include Apex test-coverage details.
 7.  **Run Static Analysis Report:** Identify code-quality issues before production.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3876).png" alt="Static analysis options"><figcaption><p>Static Analysis Options</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1291).png" alt="Static analysis options"><figcaption><p>Static Analysis Options</p></figcaption></figure>
 
     *   **Apex PMD / Checkmarx:** Set scan criteria and **Priority**. If the threshold is not met, the build is marked unstable.
 
-        <figure><img src="../../../../../.gitbook/assets/image (3877).png" alt="Criteria for Apex PMD and Checkmarx"><figcaption><p>Criteria for Apex PMD and Checkmarx</p></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/image (1288).png" alt="Criteria for Apex PMD and Checkmarx"><figcaption><p>Criteria for Apex PMD and Checkmarx</p></figcaption></figure>
     * **CodeScan / SonarQube:** Choose to scan all metadata or only newly added components, then set a **Priority**.
       * **Run on All Supported Metadata Types:** Scan every retrieved component.
       *   **Run on Newly Added Supported Metadata Types:** Scan only newly added components.
 
-          <figure><img src="../../../../../.gitbook/assets/image (3878).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
+          <figure><img src="../../../../../.gitbook/assets/image (3730).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
 
     _For more information on running **Static Code Analysis in CI Jobs**, see_ [_this guide_](../../../arm-administration/static-code-analysis-in-ci-cd.md)_._
 8. **Additional Profile Packaging Options:**
@@ -79,12 +79,12 @@ Under **Build**, provide:
 
 Deploy or validate the package in a destination org:
 
-<figure><img src="../../../../../.gitbook/assets/image (3880).png" alt="Deployment options"><figcaption><p>Deployment Options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1292).png" alt="Deployment options"><figcaption><p>Deployment Options</p></figcaption></figure>
 
 * **Deployment Org:** Select the destination org.
 *   **Apex Test Level:** Choose the test scope:
 
-    <figure><img src="../../../../../.gitbook/assets/image (3881).png" alt="Apex test level options"><figcaption><p>Apex Test Level Options</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1293).png" alt="Apex test level options"><figcaption><p>Apex Test Level Options</p></figcaption></figure>
 
     1. **Use Salesforce Defaults** – Default Salesforce behavior.
     2. **No Test Run** – No tests unless deploying to production.
@@ -103,7 +103,7 @@ Deploy or validate the package in a destination org:
 
 **Additional Deployment Options**
 
-<figure><img src="../../../../../.gitbook/assets/image (3882).png" alt="Additional deployment options"><figcaption><p>Additional Deployment Options</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1294).png" alt="Additional deployment options"><figcaption><p>Additional Deployment Options</p></figcaption></figure>
 
 1. **Validate Only:** Run validation without deploying.
    * **Prevent Deployment:** Disable deployment for validation-only jobs.
@@ -122,35 +122,35 @@ Deploy or validate the package in a destination org:
 8. **Apply Search and Substitute Rules:** Apply custom find/replace rules during deployment.
 9.  **On Successful Deployment:** Trigger post-deployment actions (Skuid pages, CI jobs, environment templates, DataLoader processes, merge processes, Jenkins jobs, parallel processors, or a sequence of activities).
 
-    <figure><img src="../../../../../.gitbook/assets/image (3883).png" alt="Post-deployment actions"><figcaption><p>Post-Deployment Actions</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1300).png" alt="Post-deployment actions"><figcaption><p>Post-Deployment Actions</p></figcaption></figure>
 
     _You can sequence multiple post-deployment actions:_
 
-    <figure><img src="../../../../../.gitbook/assets/image (3884).png" alt="Set sequence for post activities"><figcaption><p>Set Sequence for Post Activities</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1298).png" alt="Set sequence for post activities"><figcaption><p>Set Sequence for Post Activities</p></figcaption></figure>
 
-    <figure><img src="../../../../../.gitbook/assets/image (3885).png" alt="Sequential workflow example"><figcaption><p>Sequential Workflow Example</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1299).png" alt="Sequential workflow example"><figcaption><p>Sequential Workflow Example</p></figcaption></figure>
 
 #### Dependency Analyzer <a href="#dependency-analyzer" id="dependency-analyzer"></a>
 
 Analyze metadata dependencies to avoid breaking changes:
 
-<figure><img src="../../../../../.gitbook/assets/image (3886).png" alt="Dependency Analyzer"><figcaption><p>Dependency Analyzer</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1301).png" alt="Dependency Analyzer"><figcaption><p>Dependency Analyzer</p></figcaption></figure>
 
 #### Tests <a href="#tests" id="tests"></a>
 
 Run functional tests before deployment:
 
-<figure><img src="../../../../../.gitbook/assets/image (2544).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2050).png" alt="" width="375"><figcaption></figcaption></figure>
 
 *   **Version Control:** Choose repository, branch, and test type (Selenium Maven, Selenium Non-Maven).
 
-    <figure><img src="../../../../../.gitbook/assets/image (3889).png" alt="Version-control test options"><figcaption><p>Version-Control Test Options</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1304).png" alt="Version-control test options"><figcaption><p>Version-Control Test Options</p></figcaption></figure>
 *   **AccelQ:** Enter **Project Name**, **Test Job Name**, and parameters.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3890).png" alt="AccelQ test settings"><figcaption><p>AccelQ Test Settings</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1305).png" alt="AccelQ test settings"><figcaption><p>AccelQ Test Settings</p></figcaption></figure>
 *   **Provar:** Provide repository, branch, test-case root path, and execution path.
 
-    <figure><img src="../../../../../.gitbook/assets/image (3891).png" alt="Provar test settings"><figcaption><p>Provar Test Settings</p></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (1306).png" alt="Provar test settings"><figcaption><p>Provar Test Settings</p></figcaption></figure>
 
 #### Callout URL <a href="#callout-url" id="callout-url"></a>
 
@@ -160,7 +160,7 @@ Configure HTTP callouts to external services. See the [Callout URL guide](../con
 
 Send success or failure emails to selected recipients.
 
-<figure><img src="../../../../../.gitbook/assets/image (3892).png" alt="Notification settings"><figcaption><p>Notification Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1369).png" alt="Notification settings"><figcaption><p>Notification Settings</p></figcaption></figure>
 
 #### Schedule <a href="#schedule" id="schedule"></a>
 
@@ -174,7 +174,7 @@ Click **Save** to store the CI job settings.
 
 If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 
-<figure><img src="../../../../../.gitbook/assets/image (3893).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1308).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
 
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.

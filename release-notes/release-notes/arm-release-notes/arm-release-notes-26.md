@@ -4,11 +4,191 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
-## ARM **Release Notes 26.4.5**
+## ARM 26.4.6
 
-**Release Date: 1 November 2026**
+**Release date:** 8 November 2026
 
-#### Deployed Components Audit Report - FR - New UI <a href="#deployed-components-audit-report-fr-new-ui" id="deployed-components-audit-report-fr-new-ui"></a>
+#### Automatic Field Population in EZ-Commit (New UI)
+
+Enhanced the **EZ-Commit workflow** to automatically populate known values and suggest relevant information, reducing repetitive manual entry and improving user efficiency.
+
+ARM now automatically fills fields such as **Reviewer Email, Salesforce Org Author, Parent Branch, and Credentials**when the information is available. It also suggests meaningful values for **Commit Labels, Commit Comments, and Branch Names** based on the current context.
+
+All automatically populated and suggested values remain **editable**, allowing users to review and modify them before proceeding.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-commits/automatic-field-population-in-ez-commit-new-ui" %}
+
+#### Enhanced SIEM Audit Logging for User Creation
+
+Enhanced **ARM's Security Information and Event Management (SIEM) audit logging** to capture user creation activities, improving security monitoring and audit traceability.
+
+ARM now records an **audit event whenever a user account is created**, including the administrator who performed the action. This applies to user creation through both the **ARM UI and APIs**.
+
+This enhancement improves **user activity tracking, security auditing, and compliance reporting**, while maintaining existing audit logging functionality.
+
+**Note:** Audit logging must be enabled for these events to be recorded.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/security-information-and-event-management/arm-event-type" %}
+
+#### Improved Required Field Validation in EZ-Commit (New UI)
+
+Enhanced the **Create EZ-Commit workflow** with clearer required-field validation to help users identify and correct missing information.
+
+The **Next and Submit** buttons now remain enabled, and clicking them highlights missing required fields with **inline error messages**. ARM automatically scrolls to the first missing field, allowing users to quickly identify and complete the required information.
+
+Validation messages disappear as fields are completed, providing a **smoother and more intuitive EZ-Commit experience**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-commits/required-field-validation-in-ez-commit-new-ui" %}
+
+#### Optimized Branch Baseline Processing with Queue Management
+
+Enhanced **Branch Baseline processing** by introducing a queue mechanism that limits the number of concurrent baseline operations(Two), preventing excessive server resource consumption and improving overall application stability.
+
+When the concurrent processing limit is reached, additional baseline requests are automatically **queued and processed as capacity becomes available**. Users can view and cancel queued requests, with support available in both **Classic and New UI**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/branching-baseline/queued-processing-and-concurrent-execution-limit" %}
+
+#### Improved EZ-Merge with Automatic Field Population and Required Field Validation (New UI)
+
+Enhanced the **EZ-Merge workflow** to reduce manual effort and improve usability by automatically populating known values and providing clearer required-field validation.
+
+ARM now automatically fills the **Target Branch** based on the selected source branch, populates **Reviewer Emails**, and applies **Deployment Validation and Static Code Analysis** options based on the organization's Merge Review Settings.
+
+The **Dry Run and Merge** buttons remain enabled, and clicking them highlights missing required fields with **inline error messages**, allowing users to identify and correct missing information before proceeding.
+
+All automatically populated values remain editable, providing a smoother and more efficient merge experience.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-merge/automatic-field-population-and-improved-required-field-validation-in-ez-merge-new-ui" %}
+
+#### Improved Required Field Validation in Commit Templates (New UI)
+
+Enhanced the **Create Commit Template workflow** with clearer required-field validation to simplify template creation, editing, and cloning.
+
+The **Next and Save Template** buttons now support click-based validation, highlighting missing required fields such as **Template Name, Source Org, and Metadata Selection** with inline error messages.
+
+ARM automatically scrolls to the first missing field, and validation messages disappear as users complete the required information. When an action is temporarily unavailable, a tooltip explains the reason, providing a **smoother and more intuitive user experience**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/commit-templates/improved-required-field-validation-in-commit-templates-new-ui" %}
+
+#### Introduced "Select All" Option for Release Labels (Classic and New UI)
+
+Enhanced the **Release Label creation and update workflow** by introducing a **Select All** option, allowing users to select or deselect all available revisions with a single click.
+
+Users can continue to select or deselect individual revisions as needed, reducing manual effort and simplifying Release Label management.
+
+This enhancement is available in both **Classic UI and New UI**.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/change-labels/release-labels/select-all-revisions-in-release-labels-new-ui" %}
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm/arm-features/version-control/change-labels/release-labels/select-all-revisions-in-release-labels-classic-ui" %}
+
+#### Extended Branch and Pull Request API Support for DX Repositories
+
+Enhanced the **ARM Branch and Pull Request API** to support **Salesforce DX (Source Format) repositories**, extending the existing functionality available for metadata-format repositories.
+
+Users can now automate **branch creation, Salesforce metadata retrieval, commit operations, and Pull Request creation** for DX repositories through a single API request. The enhancement also supports existing branches, package directory selection, and Commit History tracking.
+
+**Note:** For DX repositories with multiple package directories, users must specify the target package directory in the API request.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
+
+#### Update Repository Remote URL from Version Control Repositories (New UI)
+
+Introduced the ability for **Super Admins** to update a repository's remote URL directly from the **Version Control Repositories** screen without requiring Support assistance.
+
+Users can now modify repository URLs when migrating repositories, renaming organizations, or switching connection methods such as HTTPS and SSH.
+
+ARM automatically updates the repository URL across associated configurations and records, ensuring consistency across existing workflows.
+
+The enhancement includes **URL validation, confirmation prompts, progress tracking, and audit logging**, providing a secure and streamlined repository management experience.
+
+**Note:** This functionality is available only to the registered organization's Super Admin.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/getting-started-1/registration/version-control-repository/update-repository-remote-url-in-version-control-repositories-new-ui" %}
+
+#### Fixed Missing Skip Org Mappings Permission in Role Management (New UI)
+
+Resolved an issue where the **Skip Org Mappings** permission was not visible when creating or editing roles in the **New UI**, preventing authorized users from assigning it.
+
+The permission is now consistently available under **Special Permissions in Version Control**, matching the Classic UI experience.
+
+This fix also ensures that existing **Skip Org Mappings** permissions are preserved when roles are edited and saved, preventing unintended permission changes.
+
+**Note:** Roles that previously lost this permission must be updated manually to restore it.
+
+#### Fixed CRM Analytics Metadata Deletion Failures in EZ-Commit
+
+Resolved an issue where **EZ-Commit failed when processing deleted CRM Analytics (Wave) metadata components**in Salesforce DX (SFDX) repositories.
+
+ARM now supports deletion of **WaveApplication, WaveComponent, WaveDashboard, WaveDataset, WaveLens, WaveRecipe, and WaveXmd** metadata types, allowing users to commit these deletions to Git repositories without encountering metadata recognition errors.
+
+#### Improved Test Class Validation for Multiple Salesforce Orgs in EZ-Commit (New UI)
+
+Resolved an issue where the **Submit** button became disabled without an explanation when users selected multiple Salesforce orgs with the **Run Specified Tests** option during EZ-Commit validation.
+
+Enhanced the validation logic to clearly identify Salesforce orgs with missing test class selections and provide appropriate feedback, allowing users to complete the required information before submitting.
+
+This improvement provides a **clearer and more intuitive EZ-Commit validation experience** when working with multiple Salesforce orgs.
+
+#### Fixed Search & Substitute Rules Not Applied to Encoded URLs During Deployment
+
+Resolved an issue where **Search & Substitute rules failed to replace URL values containing XML-encoded special characters**, such as `&amp;`, during deployments.
+
+Enhanced XML entity handling and escaping to ensure Search & Substitute rules correctly process encoded values retrieved from Git repositories.
+
+This fix improves the reliability of **Search & Substitute operations across Deployments and EZ-Commit**, while preserving existing functionality.
+
+#### Fixed Missing Package Directory Option in Static Code Analysis (New UI)
+
+Resolved an issue where the **Package Directory** field was missing when creating a Static Code Analysis label using a Salesforce Org with **Run with DX Format** enabled.
+
+ARM now displays the **Package Directory** field, defaulting to `force-app`, while allowing users to specify a custom package directory for Salesforce DX metadata analysis.
+
+This fix also introduces **required-field validation**, ensuring the correct package directory is configured and used during Static Code Analysis.
+
+**Note:** This fix applies only to the New UI. Existing labels and Classic UI functionality remain unchanged.
+
+#### Fixed Prevalidation Request Errors in AutoRABIT VS Code Extension
+
+Resolved an issue where users encountered a **JavaScript error after successfully submitting a Prevalidation Request**through the AutoRABIT VS Code extension.
+
+The issue also prevented submitted requests from appearing in the **Prevalidations** section, making it difficult for users to track their status.
+
+This fix improves compatibility with newer VS Code environments, ensuring that **Prevalidation Requests are submitted without errors and displayed correctly** in the extension for tracking.
+
+#### Fixed Missing Metadata Components in Version Control Deployments
+
+Resolved an issue where **metadata components stored in subfolders were not included in deployment packages**, particularly when multiple metadata types contained subfolders with the same name.
+
+Enhanced deployment package preparation to correctly identify and include metadata components from nested folders, ensuring accurate deployments without modifying the source repository.
+
+This fix improves reliability across **Release Label, Commit Label, Single Revision, Revision Range, and Full Deploy from Version Control**, as well as **CI Jobs, Merge Prevalidation, and EZ-Commit workflows**.
+
+Additionally, improved **File Diff accuracy** for metadata stored in subfolders.
+
+#### Fixed Incorrect CustomLabels Display and Rollback History in DX CI Jobs
+
+Resolved an issue where **DX Version Control CI Jobs incorrectly displayed an additional CustomLabels metadata type** in the Build Changes screen, even when only specific custom labels were modified.
+
+This issue also caused the **Rollback History report to incorrectly list unrelated custom labels as rolled back**.
+
+ARM now correctly identifies and displays only the relevant custom labels during build preparation and ensures that **rollback operations restore only the affected labels**, improving deployment accuracy and rollback reporting.
+
+**Note:** This fix applies to Salesforce DX Version Control CI Jobs.
+
+#### Improved SonarQube Plugin Connection Error Messages
+
+Resolved an issue where the **SonarQube plugin displayed an empty warning message** when the **Test Connection**operation failed due to expired authentication tokens or incorrect credentials.
+
+ARM now displays a **clear and meaningful error message** when the connection test fails, helping users identify and troubleshoot connection issues more effectively.
+
+This fix improves the user experience when configuring or updating the **SonarQube plugin under My Account → Plugins**.
+
+## ARM 26.4.5
+
+**Release date:** 1 November 2026
+
+#### Deployed Components Audit Report - FR - New UI
 
 Introduced a new **Deployment Component Audit Report** under **Reports**, providing centralized visibility into metadata components successfully deployed to Salesforce orgs.
 
@@ -18,7 +198,7 @@ The report supports **advanced filtering, deployment-wise grouping, and CSV expo
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/reports/deployment-component-audit-report" %}
 
-#### Scheduled Deployments with Approval Workflow - FR - New UI <a href="#scheduled-deployments-with-approval-workflow-fr-new-ui" id="scheduled-deployments-with-approval-workflow-fr-new-ui"></a>
+#### Scheduled Deployments with Approval Workflow - FR - New UI
 
 Introduced the ability to **schedule deployments for a specific date, time, and time zone**, allowing users to automate deployments during planned maintenance windows without manual intervention.
 
@@ -30,7 +210,7 @@ For deployments requiring approval, ARM follows the existing **L1/L2 approval wo
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/schedule-a-deployment" %}
 
-#### Enhanced Commit History with Revision Types, Status Indicators, and Expandable Details (New UI) <a href="#enhanced-commit-history-with-revision-types-status-indicators-and-expandable-details-new-ui" id="enhanced-commit-history-with-revision-types-status-indicators-and-expandable-details-new-ui"></a>
+#### Enhanced Commit History with Revision Types, Status Indicators, and Expandable Details (New UI)
 
 Enhanced the **Commit History** page in the New UI to provide better visibility into commit types, execution statuses, and associated details.
 
@@ -48,7 +228,7 @@ Note: This API is supported only for Non-DX repositories. DX repositories are cu
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references" %}
 
-#### Fixed Search & Substitute Rules Not Replacing Metadata Values Containing Special Characters (Classic UI) <a href="#fixed-search-and-substitute-rules-not-replacing-metadata-values-containing-special-characters-classi" id="fixed-search-and-substitute-rules-not-replacing-metadata-values-containing-special-characters-classi"></a>
+#### Fixed Search & Substitute Rules Not Replacing Metadata Values Containing Special Characters (Classic UI)
 
 Resolved an issue where **Search & Substitute rules created in the Classic UI** failed to replace metadata values containing special characters during EZ-Commit, Deployments, and CI Jobs.
 
@@ -56,7 +236,7 @@ The Classic UI now preserves special characters in **Search Criteria** and **Sub
 
 **Note:** Existing rules affected by this issue must be edited to re-enter the original values containing special characters.
 
-#### Optimized Version Control Performance and Resource Utilization <a href="#optimized-version-control-performance-and-resource-utilization-internal" id="optimized-version-control-performance-and-resource-utilization-internal"></a>
+#### Optimized Version Control Performance and Resource Utilization
 
 Improved **ARM performance and resource efficiency** by optimizing repository history retrieval and eliminating unnecessary full repository downloads during commit history and reporting operations.
 
@@ -66,9 +246,9 @@ These improvements help **reduce CPU usage, disk I/O, and system overhead**, par
 
 ***
 
-## ARM **Release Notes 26.4.4**
+## ARM 26.4.4
 
-**Release Date: 25 October 2026**
+**Release date:** 25 October 2026
 
 #### External Approval Workflow Integration with ServiceNow
 
@@ -198,23 +378,23 @@ ARM now displays the download icon and allows users to export audit logs in CSV 
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.4.4**
+## DataLoader and DataLoader Pro 26.4.4
 
-**Release Date:** **25 October 2026**
+**Release date:** 25 October 2026
 
-#### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
+#### Accurate Currency, Decimal, and Percentage Values
 
 Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across DataLoader and DataLoader Pro.
 
-#### Improved DataLoader Reliability and Data Protection <a href="#id-3.-improved-data-loader-reliability-and-data-protection" id="id-3.-improved-data-loader-reliability-and-data-protection"></a>
+#### Improved DataLoader Reliability and Data Protection
 
 Resolved multiple issues affecting DataLoader extraction, migration, masking, and configuration synchronization. The improvements ensure configured fields are masked correctly, mappings are applied consistently, Salesforce automation is restored after failures, and bulk API extractions use appropriate polling, timeouts, progress logging, and PK chunking. Lookup and processing failures now provide clearer diagnostic information instead of being silently ignored.
 
 ***
 
-## ARM **Release Notes 26.4.3**
+## ARM 26.4.3
 
-**Release Date: 18 October 2026**
+**Release date:** 18 October 2026
 
 #### Fixed Workspace Synchronization Errors in EZ-Commit and EZ-Merge
 
@@ -294,17 +474,17 @@ This upgrade incorporates the latest Tomcat security updates, stability improvem
 
 ***
 
-## ARM **Release Notes 26.4.2**
+## ARM 26.4.2
 
-**Release Date: 11 October 2026**
+**Release date:** 11 October 2026
 
-#### EZ-Commit Auto Draft Deleted Components Fix <a href="#ez-commit-auto-draft-deleted-components-fix" id="ez-commit-auto-draft-deleted-components-fix"></a>
+#### EZ-Commit Auto Draft Deleted Components Fix
 
 Fixed an issue where components already deleted and committed through **Select Manually** continued to appear under the **Deleted** tab in EZ-Commit Auto Draft. In some cases, attempting to commit these components again resulted in a **“No Modifications”** message.
 
 The Auto Draft processing logic has been corrected to remove empty files after deletions are committed, ensuring previously committed deletions no longer appear as pending changes.
 
-#### Target Branch HEAD Revision Validation for EZ-Merge Approvals(Only New UI) <a href="#target-branch-head-revision-validation-for-ez-merge-approvals" id="target-branch-head-revision-validation-for-ez-merge-approvals"></a>
+#### Target Branch HEAD Revision Validation for EZ-Merge Approvals(Only New UI)
 
 Added a new **Validate Target Branch Head Revision before Approval** setting under **Settings → My Account → Merge Settings** to help prevent approvals when the target branch has changed after a Merge or Quick Merge was created.
 
@@ -314,7 +494,7 @@ When enabled, ARM compares the current target branch HEAD revision with the revi
 
 The validation applies to **Merge and Quick Merge** workflows, including **multi-level approvals** and scenarios where **Auto Commit on Approval** is enabled. When the setting is disabled, the existing approval behavior remains unchanged.
 
-#### EZ-Merge Re-Push for Failed Git Pushes <a href="#ez-merge-re-push-for-failed-git-pushes" id="ez-merge-re-push-for-failed-git-pushes"></a>
+#### EZ-Merge Re-Push for Failed Git Pushes
 
 Fixed an issue where the **Re-Push** option was not available after an EZ-Merge push failed due to repository restrictions such as branch protection or target branch changes.
 
@@ -322,7 +502,7 @@ The **DISABLE\_MERGE\_REPUSH** feature flag now correctly controls this behavior
 
 The fix applies to both the **New UI and Old UI** and ensures Post Merge Updates are performed only after the changes are successfully pushed to the remote repository.
 
-#### Environment Provisioning Template Log Display Fix (New UI) <a href="#environment-provisioning-template-log-display-fix-new-ui" id="environment-provisioning-template-log-display-fix-new-ui"></a>
+#### Environment Provisioning Template Log Display Fix (New UI)
 
 Fixed an issue in the New UI where logs were not displayed for certain **Unsupported Metadata (TAF)** Environment Provisioning template steps, even though the logs were generated successfully.
 
@@ -330,13 +510,13 @@ The log retrieval logic has been updated to use the template step’s actual fil
 
 This issue was limited to the **New UI** and did not affect template execution, Info, Re-run, or the Old UI.
 
-#### Azure DevOps Pull Request CI Trigger Fix <a href="#azure-devops-pull-request-ci-trigger-fix" id="azure-devops-pull-request-ci-trigger-fix"></a>
+#### Azure DevOps Pull Request CI Trigger Fix
 
 Fixed an issue where **CI Jobs configured for Azure DevOps Pull Request triggers** were not starting automatically, while commit-based triggers continued to work as expected.
 
 The Azure webhook URL matching logic has been updated to support both **DefaultCollection** URL formats used by Azure DevOps, ensuring Pull Request webhook events are correctly recognized and processed. This improves CI Job triggering for Azure DevOps repositories without affecting existing commit-based webhook behavior.
 
-#### Vlocity Commit and Release Label Selection Fix (New UI) <a href="#vlocity-commit-and-release-label-selection-fix-new-ui" id="vlocity-commit-and-release-label-selection-fix-new-ui"></a>
+#### Vlocity Commit and Release Label Selection Fix (New UI)
 
 Fixed an issue in the New UI where **Commit Labels** and **Release Labels** were not available for selection during **Vlocity EZ-Commit** under the Post Commit options.
 
@@ -344,7 +524,7 @@ The EZ-Commit request logic has been corrected to send the selected component ty
 
 This update ensures users can correctly select applicable **Commit Labels** and **Release Labels** during Vlocity EZ-Commit workflows without affecting existing Metadata label behavior.
 
-#### Environment Provisioning Navigation Error Fix (New UI) <a href="#environment-provisioning-navigation-error-fix-new-ui" id="environment-provisioning-navigation-error-fix-new-ui"></a>
+#### Environment Provisioning Navigation Error Fix (New UI)
 
 Fixed an issue in the New UI where navigating between **Environment Provisioning** template options displayed an unexpected **“No static resource api/deployment/posttemplateexists”** error.
 
@@ -352,21 +532,21 @@ The template name validation logic has been corrected to prevent unnecessary API
 
 ***
 
-## ARM **Release Notes 26.4.1**
+## ARM 26.4.1
 
-**Release Date: 7 October 2026**
+**Release date:** 7 October 2026
 
-#### CI Job Build History Reporting Fix <a href="#ci-job-build-history-reporting-fix" id="ci-job-build-history-reporting-fix"></a>
+#### CI Job Build History Reporting Fix
 
 Fixed an issue where **CI Job Reports** displayed only the most recent build instead of including all builds executed during the selected reporting period. The reporting logic has been updated to correctly aggregate CI Job build data week by week, ensuring **Reports → Analytics → Weekly Reports → CI Job Reports** accurately reflects the complete build history for the selected CI Job.
 
-#### Profile and Permission Set Refactoring UI Update <a href="#profile-and-permission-set-refactoring-ui-update" id="profile-and-permission-set-refactoring-ui-update"></a>
+#### Profile and Permission Set Refactoring UI Update
 
 Updated the **Deployment** UI to clearly display the applicable refactoring options based on the selected Salesforce API version. For API versions **below 40**, both **Profile** and **Permission Set Refactoring** options are available. For API version **40 and later**, only the **Profile Refactoring** option is displayed, as Permission Set refactoring is not supported for these API versions.
 
 This update prevents confusion and ensures the available refactoring options accurately reflect the supported Salesforce API behavior.
 
-#### Salesforce API 68.0 Metadata Support – Phase 2 <a href="#salesforce-api-68.0-metadata-support-phase-2" id="salesforce-api-68.0-metadata-support-phase-2"></a>
+#### Salesforce API 68.0 Metadata Support – Phase 2
 
 Expanded ARM support for **Salesforce API version 68.0** with additional metadata types. These metadata types are now supported across applicable ARM workflows, including **metadata retrieval, EZ-Commit, file differences, deployments, EZ-Merge, and metadata filtering**.
 
@@ -393,11 +573,11 @@ The following metadata types are included in Phase 2:
 
 ***
 
-## ARM **Release Notes 26.3.13**
+## ARM 26.3.13
 
-**Release Date: 27 September 2026**
+**Release date:** 27 September 2026
 
-#### Salesforce Standard Authentication Retirement Notifications <a href="#salesforce-standard-authentication-retirement-notifications" id="salesforce-standard-authentication-retirement-notifications"></a>
+#### Salesforce Standard Authentication Retirement Notifications
 
 Added notifications to help customers prepare for Salesforce’s retirement of username- and password-based **Standard authentication**.
 
@@ -409,7 +589,7 @@ Warnings are displayed for Salesforce orgs using Standard authentication in the 
 
 The warning is not displayed for orgs using OAuth or OAuth via ECA. Customers can migrate existing Standard-authenticated orgs to **OAuth via ECA**, including orgs whose Standard connection has already stopped working, without affecting their existing mappings, CI Jobs, schedules, or permissions.
 
-#### Salesforce API Version 68.0 Support – Phase 1 <a href="#salesforce-api-version-68.0-support-phase-1" id="salesforce-api-version-68.0-support-phase-1"></a>
+#### Salesforce API Version 68.0 Support – Phase 1
 
 Added ARM compatibility with Salesforce API version 68.0 across metadata retrieval, deployment, validation-only deployments, Org Compare, and EZ-Commit workflows. ARM continues to support Salesforce organizations running earlier API versions.
 
@@ -427,7 +607,7 @@ As part of Phase 1, added support for the following Agentforce metadata types:
 
 These metadata types are supported across retrieval, commit, change detection, deployment, merge, and filtering workflows. Support for the remaining metadata types introduced with API version 68.0 is planned for the next release.
 
-#### Cascading Selection for Custom Setting Data – Environment Provisioning <a href="#cascading-selection-for-custom-setting-data-environment-provisioning" id="cascading-selection-for-custom-setting-data-environment-provisioning"></a>
+#### Cascading Selection for Custom Setting Data – Environment Provisioning
 
 Enhanced Custom Setting selection while creating Environment Provisioning migration templates.
 
@@ -435,19 +615,19 @@ Selecting a Custom Setting now automatically selects all eligible fields. After 
 
 Users can still refine the migration by deselecting individual records or fields. Existing behavior for mandatory, system, and non-editable fields remains unchanged. This enhancement applies to List and Hierarchy Custom Settings where applicable.
 
-#### Target Branch Credentials for Pull Request Creation in EZ-Merge <a href="#target-branch-credentials-for-pull-request-creation-in-ez-merge" id="target-branch-credentials-for-pull-request-creation-in-ez-merge"></a>
+#### Target Branch Credentials for Pull Request Creation in EZ-Merge
 
 Fixed an issue where the **Create Pull Request on Merged Changes** option used the credentials of the user who registered the repository instead of the credentials configured for the target branch.
 
 With this fix, ARM uses the target branch credentials when creating the pull request. The help link for this option has also been updated to direct users to the relevant Knowledge Base article.
 
-#### Merge Conflict Handling Improvements <a href="#merge-conflict-handling-improvements" id="merge-conflict-handling-improvements"></a>
+#### Merge Conflict Handling Improvements
 
 Fixed an issue where attempting to download large conflicted Profile files could fail and invalidate the user session.
 
 With this fix, the **Download Files** option is not displayed in Merge Request history when conflicts are present, preventing failed downloads and unexpected logout. An additional issue with the **Revert** action after selecting the source or destination version during conflict resolution has also been resolved.
 
-#### SCA Run Options Fix in CI Jobs – New UI <a href="#sca-run-options-fix-in-ci-jobs-new-ui" id="sca-run-options-fix-in-ci-jobs-new-ui"></a>
+#### SCA Run Options Fix in CI Jobs – New UI
 
 Fixed an issue where the selected **Run on** option under **Run SCA Analysis** was not retained when reopening a CI Job in Edit mode.
 
@@ -457,9 +637,9 @@ With this fix, saved SCA options are displayed correctly, and the applicable Son
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.13**
+## DataLoader and DataLoader Pro 26.3.13
 
-**Release Date:** **27 September 2026**
+**Release date:** 27 September 2026
 
 #### Accurate Save Messaging for DataLoader Pro Jobs
 
@@ -471,11 +651,11 @@ Changes made to a SOQL query while cloning a DataLoader Basic Extract Job were n
 
 ***
 
-## ARM **Release Notes 26.3.12.1**
+## ARM 26.3.12.1
 
-**Release Date: 23 Sep 2026**
+**Release date:** 23 September 2026
 
-#### GitLab OAuth Support for Repository Registration <a href="#gitlab-oauth-support-for-repository-registration" id="gitlab-oauth-support-for-repository-registration"></a>
+#### GitLab OAuth Support for Repository Registration
 
 Added **OAuth authentication support for GitLab repositories**, providing a secure alternative to Personal Access Token (PAT) and SSH authentication.
 
@@ -483,9 +663,9 @@ Users can now authorize ARM through GitLab OAuth and register GitLab repositorie
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/introduction-to-version-control/configure-gitlab-oauth-for-repository-registration-in-arm" %}
 
-## ARM **Release Notes 26.3.12**
+## ARM 26.3.12
 
-**Release Date: 20 Sep 2026**
+**Release date:** 20 September 2026
 
 #### Org Sync Performance and Stability Improvements
 
@@ -549,29 +729,29 @@ With this fix, the Email Notification field is restored and displayed as **manda
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.12**
+## DataLoader and DataLoader Pro 26.3.12
 
-**Release Date:** **20 Sep 2026**
+**Release date:** 20 September 2026
 
-#### Reliable Loading for Test Environment Jobs <a href="#id-4.-automatic-timeout-status-for-stalled-jobs" id="id-4.-automatic-timeout-status-for-stalled-jobs"></a>
+#### Reliable Loading for Test Environment Jobs
 
 Resolved an issue where editing a Test Environment job repeatedly requested Salesforce organization and object data, leaving the page stuck in a loading state. Job initialization now runs only once and prevents duplicate requests. Users can open and edit Test Environment jobs normally. Automatic Timeout Status for Stalled Jobs
 
 Jobs that remain in progress for more than 24 hours are now automatically marked as **Timeout** when the status scheduler runs. This prevents outdated job statuses from remaining active indefinitely. The update applies across DataLoader Jobs, and Feature Management operations.
 
-#### Correct Job Statuses Following Instance Restarts <a href="#id-6.-correct-job-statuses-following-instance-restarts" id="id-6.-correct-job-statuses-following-instance-restarts"></a>
+#### Correct Job Statuses Following Instance Restarts
 
 Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers DataLoader Jobs, and Feature Management activities.
 
-#### Automatic Recovery of Stalled nCino and DataLoader Jobs <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
+#### Automatic Recovery of Stalled nCino and DataLoader Jobs
 
 DataLoader jobs could remain in an **In Progress** state when processing was interrupted or the status was not updated for more than 24 hours. Status-handling logic was corrected to move these stalled jobs to the appropriate terminal status. This prevents inactive jobs from appearing to run indefinitely and ensures that subsequent DataLoader processing can continue normally.
 
 ***
 
-## ARM **Release Notes 26.3.11**
+## ARM 26.3.11
 
-**Release Date: 13 Sep 2026**
+**Release date:** 13 September 2026
 
 #### Apache Tomcat 11.0.24 Upgrade – Enhancement
 
@@ -621,9 +801,9 @@ With this fix, Revision Details open from a completed baseline row and show auth
 
 ***
 
-## ARM **Release Notes 26.3.10**
+## ARM 26.3.10
 
-**Release Date: 6 Sep 2026**
+**Release date:** 6 September 2026
 
 #### API 67 Metadata Types – Enhancement
 
@@ -681,9 +861,9 @@ Token creation and use in the application and the VS Code plugin are unchanged.
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.10**
+## DataLoader and DataLoader Pro 26.3.10
 
-**Release Date:** **6 Sep 2026**
+**Release date:** 6 September 2026
 
 #### Correct Empty Relationship Fields in Data Loader Exports
 
@@ -691,9 +871,9 @@ Resolved an issue where empty User Role or Manager fields could incorrectly disp
 
 ***
 
-## ARM **Release Notes 26.3.9.1**
+## ARM 26.3.9.1
 
-**Release Date: 2 Sep 2026**
+**Release date:** 2 September 2026
 
 #### Salesforce Winter ’27 (API 68.0) Deploy Result Parsing Fix
 
@@ -710,9 +890,9 @@ Fixed an issue that caused EZ-Merge, deployments, and CI Jobs to fail after Sale
 
 ***
 
-## ARM **Release Notes 26.3.9**
+## ARM 26.3.9
 
-**Release Date: 30 Aug 2026**
+**Release date:** 30 August 2026
 
 #### Support Custom Package XML Filenames in Deployment – Enhancement
 
@@ -788,11 +968,11 @@ With this fix, ARM locks the commit log file during read and write operations an
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.9**
+## DataLoader and DataLoader Pro 26.3.9
 
-**Release Date:** **30 Aug 2026**
+**Release date:** 30 August 2026
 
-#### Data Loader Pro Job Configuration Settings Not Retained <a href="#id-5.-data-loader-pro-job-configuration-settings-not-retained" id="id-5.-data-loader-pro-job-configuration-settings-not-retained"></a>
+#### Data Loader Pro Job Configuration Settings Not Retained
 
 Resolved an issue where selected Data Loader Pro job settings were not retained during execution.
 
@@ -800,11 +980,11 @@ Options such as disabling workflows and validation rules and processing null val
 
 ***
 
-## ARM **Release Notes 26.3.8**
+## ARM 26.3.8
 
-**Release Date: 23 Aug 2026**
+**Release date:** 23 August 2026
 
-#### Create Pull Request for Merged Changes in ez-Merge – New Enhancement (New UI) <a href="#create-pull-request-for-merged-changes-in-ez-merge-new-enhancement-new-ui" id="create-pull-request-for-merged-changes-in-ez-merge-new-enhancement-new-ui"></a>
+#### Create Pull Request for Merged Changes in ez-Merge – New Enhancement (New UI)
 
 Introduced the **Create Pull Request On Merged Changes** option in ez-Merge. When enabled, ARM applies the merged changes to a temporary branch, validates them, and creates a pull request targeting the selected destination branch instead of committing the changes directly.
 
@@ -812,65 +992,65 @@ The option is available only when **Pre-validation Merge** is configured and sup
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-merge/create-pull-request-on-merged-changes-in-ez-merge" %}
 
-#### Duplicate Picklist Member Selection Fix in EZ-Commit – New UI <a href="#duplicate-picklist-member-selection-fix-in-ez-commit-new-ui" id="duplicate-picklist-member-selection-fix-in-ez-commit-new-ui"></a>
+#### Duplicate Picklist Member Selection Fix in EZ-Commit – New UI
 
 Fixed an issue where a Custom Object already added as a Picklist member remained available in the dropdown and could be selected again without any feedback.
 
 With this fix, previously added Custom Objects are no longer displayed in the dropdown, preventing duplicate selection and improving the metadata selection experience.
 
-#### Branching Baseline Gitignore Handling Fix <a href="#branching-baseline-gitignore-handling-fix" id="branching-baseline-gitignore-handling-fix"></a>
+#### Branching Baseline Gitignore Handling Fix
 
 Fixed an issue where the Branching Baseline process replaced the repository’s existing `.gitignore` file with a default version. This caused ignored files, such as `manifest/package.xml`, to be included and could trigger repository push-protection violations.
 
 With this fix, ARM retains and applies the existing `.gitignore` file during the Branching Baseline process. The default `.gitignore` file is used only when one is not already available in the repository.
 
-#### EZ-Commit File Diff Failure Fix – Old UI <a href="#ez-commit-file-diff-failure-fix-old-ui" id="ez-commit-file-diff-failure-fix-old-ui"></a>
+#### EZ-Commit File Diff Failure Fix – Old UI
 
 Fixed an issue where Picklist metadata was incorrectly treated as a Custom Field when reusing a previously validated EZ-Commit label. This caused false deleted components and resulted in a file-diff failure.
 
 With this fix, Picklist values are correctly processed as Picklist metadata, preventing false destructive entries and file-diff failures.
 
-#### SonarQube SCA Execution with S3 Fix <a href="#sonarqube-sca-execution-with-s3-fix" id="sonarqube-sca-execution-with-s3-fix"></a>
+#### SonarQube SCA Execution with S3 Fix
 
 Fixed an issue where SonarQube SCA executions failed when using S3 and incorrectly displayed the **Updating CodeScan Project** message.
 
 With this fix, the S3-specific analysis path is restricted to CodeScan, ensuring SonarQube SCA executions are processed correctly.
 
-#### Ignore Missing Visibility Setting Display Fix <a href="#ignore-missing-visibility-setting-display-fix" id="ignore-missing-visibility-setting-display-fix"></a>
+#### Ignore Missing Visibility Setting Display Fix
 
 Fixed an issue where the **Ignore Missing Visibility** setting was not displayed in the commit history details.
 
 With this fix, the setting and its configured value are now visible under **More** on the Commit History Details page.
 
-#### Standard Field Changes Detection Fix in EZ-Commit – New UI <a href="#standard-field-changes-detection-fix-in-ez-commit-new-ui" id="standard-field-changes-detection-fix-in-ez-commit-new-ui"></a>
+#### Standard Field Changes Detection Fix in EZ-Commit – New UI
 
 Fixed an issue where changes to standard field permissions were not detected or displayed during comparison in EZ-Commit.
 
 With this fix, standard field permission changes are correctly retrieved and displayed in the New UI.
 
-#### Skipped Components Exclusion Fix <a href="#skipped-components-exclusion-fix" id="skipped-components-exclusion-fix"></a>
+#### Skipped Components Exclusion Fix
 
 Fixed an issue where components configured as skipped were still included during repository-to-org deployments, even when **Do Not Include Skip Members During Deployment** was enabled.
 
 With this fix, skipped components are correctly excluded from CI Job and Manual Deployment workflows for both DX and non-DX repositories.
 
-#### Password Reset Screen Responsiveness Fix <a href="#password-reset-screen-responsiveness-fix" id="password-reset-screen-responsiveness-fix"></a>
+#### Password Reset Screen Responsiveness Fix
 
 Fixed an issue where the password reset screen became unresponsive when a Pendo survey appeared during login, preventing users from entering a new password.
 
 With this fix, users can complete the password reset process without interference from Pendo notifications.
 
-#### Support Contact Information on Password Reset – Enhancement <a href="#support-contact-information-on-password-reset-enhancement" id="support-contact-information-on-password-reset-enhancement"></a>
+#### Support Contact Information on Password Reset – Enhancement
 
 Added the AutoRABIT Support email address to the password reset message. Users who do not receive the reset email or continue experiencing login issues can now contact [**support@autorabit.com**](mailto:support@autorabit.com) directly for assistance.
 
-#### CheckmarxOne Analysis Report Category Display Fix – New UI <a href="#checkmarxone-analysis-report-category-display-fix-new-ui" id="checkmarxone-analysis-report-category-display-fix-new-ui"></a>
+#### CheckmarxOne Analysis Report Category Display Fix – New UI
 
 Fixed an issue where the **Critical** category was missing from CheckmarxOne SCA analysis reports and appeared as an unlabeled column.
 
 With this fix, all severity categories—Critical, High, Medium, Low, and Information—are displayed correctly.
 
-#### AI Bundle Metadata Processing Fix <a href="#ai-bundle-metadata-processing-fix" id="ai-bundle-metadata-processing-fix"></a>
+#### AI Bundle Metadata Processing Fix
 
 Fixed issues where **AiAuthoringBundle** and **GenAiPlannerBundle** metadata could be incorrectly included or processed during commit, CI Job, and deployment workflows.
 
@@ -878,9 +1058,9 @@ With this fix, bundle metadata is handled correctly based on user selection, exc
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.8**
+## DataLoader and DataLoader Pro 26.3.8
 
-**Release Date:** **23 Aug 2026**
+**Release date:** 23 August 2026
 
 #### Data Loader Pro Org Re-Registration Consistency
 
@@ -888,109 +1068,109 @@ Corrected inconsistent behavior between manual and scheduled executions after a 
 
 ***
 
-## ARM **Release Notes 26.3.7**
+## ARM 26.3.7
 
-**Release Date: 16 Aug 2026**
+**Release date:** 16 August 2026
 
-#### Vlocity CI Job Deployment Report Fix - New UI <a href="#vlocity-ci-job-deployment-report-fix-new-ui" id="vlocity-ci-job-deployment-report-fix-new-ui"></a>
+#### Vlocity CI Job Deployment Report Fix - New UI
 
 Fixed an issue in the New UI where **Deployment Reports** for Vlocity CI Jobs displayed a **"Reports not available"**&#x6D;essage even when the deployment completed successfully. The CI Job deployment flow has been updated to capture and store Vlocity deployment results correctly, allowing users to view component-level deployment details directly from the CI Job History.
 
-#### Vlocity Deployment Validation Flow Fix <a href="#vlocity-deployment-validation-flow-fix" id="vlocity-deployment-validation-flow-fix"></a>
+#### Vlocity Deployment Validation Flow Fix
 
 Fixed an issue where **Vlocity deployments and Quick Merge workflows** could fail or remain stuck due to unsupported validation and Static Code Analysis (SCA) options being processed for Vlocity components.
 
 The deployment configuration flow has been updated to correctly handle Vlocity deployments by hiding SCA, deployment validation, and their related configuration fields when they are not applicable. This ensures Vlocity deployment and Quick Merge workflows can be configured and processed without unintended validation failures.
 
-#### Auto Populate Apex Test Classes Progress Status Fix <a href="#auto-populate-apex-test-classes-progress-status-fix" id="auto-populate-apex-test-classes-progress-status-fix"></a>
+#### Auto Populate Apex Test Classes Progress Status Fix
 
 Fixed an issue where the **Auto Populate** progress status for default Apex test classes was incorrectly carried over when switching between Salesforce orgs. The loading and progress state is now handled independently for each selected org, allowing users to initiate Auto Populate for different Salesforce orgs without requiring a page refresh or waiting for another org's process to complete.
 
-#### EZ-Commit Version Control Credential Handling Fix <a href="#ez-commit-version-control-credential-handling-fix" id="ez-commit-version-control-credential-handling-fix"></a>
+#### EZ-Commit Version Control Credential Handling Fix
 
 Fixed an issue where **EZ-Commit** used the repository credentials configured under Admin settings instead of the logged-in user's profile-mapped Version Control credentials when **Salesforce Org Author** was set to **All** and **Skip Mappings** was disabled.
 
 EZ-Commit now consistently uses the credentials mapped to the user performing the commit, ensuring repository permissions and branch protection rules are correctly enforced for both **Direct** and **Pre-Validated** commits.
 
-#### Rollback Button State Fix - New UI <a href="#rollback-button-state-fix-new-ui" id="rollback-button-state-fix-new-ui"></a>
+#### Rollback Button State Fix - New UI
 
 Fixed an issue in the New UI where the **Rollback** button remained enabled even after a rollback completed successfully. The Deployment History screen now disables the Rollback button while rollback is in progress and hides it once the rollback has completed successfully.
 
-#### Weekly Reports Data Consistency Fix <a href="#weekly-reports-data-consistency-fix" id="weekly-reports-data-consistency-fix"></a>
+#### Weekly Reports Data Consistency Fix
 
 Fixed an issue where data generated from the **Weekly Reports** module did not match the corresponding build information displayed in **CI Job History**. The filtering logic in both the UI and back end has been corrected to ensure reports display accurate and consistent CI Job build data across both the **Classic** and **New UI**.
 
-#### CI Job Apex PMD SCA Criteria Status Fix <a href="#ci-job-apex-pmd-sca-criteria-status-fix" id="ci-job-apex-pmd-sca-criteria-status-fix"></a>
+#### CI Job Apex PMD SCA Criteria Status Fix
 
 Fixed an issue where **CI Jobs** configured with **Apex PMD SCA criteria** could be incorrectly marked as unstable during execution. The SCA criteria processing and logging have been corrected to ensure the build status accurately reflects the Apex PMD analysis results.
 
-#### EZ-Commit ALM Mapping Fix - Classic UI <a href="#ez-commit-alm-mapping-fix-classic-ui" id="ez-commit-alm-mapping-fix-classic-ui"></a>
+#### EZ-Commit ALM Mapping Fix - Classic UI
 
 Fixed an issue in the Classic UI where **ALM Work Item** details were not correctly populated and configured during EZ-Commit when using a Scratch Org with **Skip Mappings** disabled. The EZ-Commit selection flow now ensures ALM work items are fully loaded before resolving their statuses, allowing the mapped work item, current status, and available status options to be populated and function correctly. This provides consistent ALM mapping behavior across the Classic and New UI.
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.7**
+## DataLoader and DataLoader Pro 26.3.7
 
-**Release Date:** **16 Aug 2026**
+**Release date:** 16 August 2026
 
-#### **Summary Side Panel Alignment Fix**
+#### Summary Side Panel Alignment Fix
 
 The Summary side pop-up in Dataloader Pro and DL Config now displays content with proper left alignment. This reduces unused blank space, improves readability, and helps prevent long values from appearing clipped at the right edge.
 
 ***
 
-## ARM **Release Notes 26.3.6**
+## ARM 26.3.6
 
-**Release Date: 9 Aug 2026**
+**Release date:** 9 August 2026
 
-#### Azure DevOps SSO Enhancement New UI <a href="#azure-devops-sso-enhancement" id="azure-devops-sso-enhancement"></a>
+#### Azure DevOps SSO Enhancement New UI
 
 Enhanced Azure DevOps Single Sign-On (SSO) to support authentication using **Microsoft Entra Tenant ID** and **Object ID**, providing greater flexibility in user identity mapping. Administrators can now configure these identifiers for users, enabling successful SSO authentication even when the Identity Provider (IDP) username differs from the ARM username. If the Tenant ID and Object ID are not configured or do not match, ARM automatically falls back to the existing username-based validation, ensuring backward compatibility with current SSO configurations.
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/integration-and-plugins/sso/sso-with-microsoft-azure-ad" %}
 
-#### Org-to-Org CI Job Incremental Build Fix <a href="#org-to-org-ci-job-incremental-build-fix" id="org-to-org-ci-job-incremental-build-fix"></a>
+#### Org-to-Org CI Job Incremental Build Fix
 
 Fixed an issue in **Org-to-Org CI Jobs** where destructive change tracking did not behave correctly for unpackaged deployments. The destructive change processing has been improved to correctly maintain the destructive baseline, ensuring deleted components are tracked consistently across deployment cycles while preserving the expected behavior for incremental builds.
 
-#### External Credential File Diff Fix <a href="#external-credential-file-diff-fix" id="external-credential-file-diff-fix"></a>
+#### External Credential File Diff Fix
 
 Fixed an issue where deleting **External Credential** metadata in DX repositories caused file diff generation to fail during EZ-Commit with a **"No enum constant"** error. ARM now correctly recognizes External Credential metadata during deletion workflows, enabling successful file diff generation for both direct and pre-validation commit operations.
 
-#### Scratch Org Azure Boards Mapping Fix - New UI <a href="#scratch-org-azure-boards-mapping-fix-new-ui" id="scratch-org-azure-boards-mapping-fix-new-ui"></a>
+#### Scratch Org Azure Boards Mapping Fix - New UI
 
 Fixed an issue in the New UI where the **Team Name** field was not displayed during Scratch Org creation when configuring **Azure Boards** ALM mappings. The ALM mapping workflow has been updated to correctly display the required Team Name field, allowing users to complete Scratch Org creation without additional manual configuration.
 
-#### Deployment Destructive Changes Pagination Fix <a href="#deployment-destructive-changes-pagination-fix" id="deployment-destructive-changes-pagination-fix"></a>
+#### Deployment Destructive Changes Pagination Fix
 
 Fixed an issue where the **Destructive Changes** selection list did not display all available components during deployments, making it difficult to select destructive changes. The pagination logic has been improved to dynamically track the total number of filtered records, ensuring all matching components are displayed correctly during browsing and search.
 
-#### Profile Rollback Permission Restoration Fix <a href="#profile-rollback-permission-restoration-fix" id="profile-rollback-permission-restoration-fix"></a>
+#### Profile Rollback Permission Restoration Fix
 
 Enhanced the rollback process for **Profile** metadata to correctly restore **Object** and **Field** permissions to their original state. ARM now preserves the pre-deployment permission state, including cases where no permissions previously existed, ensuring newly added permissions are properly removed during rollback for both **Deployments** and **CI Jobs**.
 
-#### Search & Substitute XPath Handling Fix <a href="#search-and-substitute-xpath-handling-fix" id="search-and-substitute-xpath-handling-fix"></a>
+#### Search & Substitute XPath Handling Fix
 
 Fixed an issue where **Search & Substitute** rules failed to replace values containing special characters, such as single quotes, in Custom Metadata fields. The XPath parsing logic has been corrected to properly handle these values, ensuring substitutions are applied successfully during deployment instead of being silently skipped.
 
-#### Custom Field Translation Deletion Fix <a href="#custom-field-translation-deletion-fix" id="custom-field-translation-deletion-fix"></a>
+#### Custom Field Translation Deletion Fix
 
 Fixed an issue where deleting a **Custom Field** through EZ-Commit did not remove its associated **Field Translation** metadata from the repository. ARM now automatically deletes the related field translations when a destructive commit is performed for Custom Fields, ensuring translation metadata remains synchronized with the deleted field in both DX and non-DX repositories.
 
-#### Ignore Missing Visibility Settings Fix <a href="#ignore-missing-visibility-settings-fix" id="ignore-missing-visibility-settings-fix"></a>
+#### Ignore Missing Visibility Settings Fix
 
 Fixed an issue in **CI Jobs** where enabling **Ignore Missing Visibility Settings, If Package Contains Profiles or Permission Sets** incorrectly removed valid Permission Set tab visibility entries during deployment. The backend logic has been updated to remove only references to metadata that are unavailable in the target org, preserving existing valid visibility settings and preventing unintended changes to Permission Sets.
 
-#### EZ-Commit Object Selection Fix - New UI <a href="#ez-commit-object-selection-fix-new-ui" id="ez-commit-object-selection-fix-new-ui"></a>
+#### EZ-Commit Object Selection Fix - New UI
 
 Fixed an issue in the New UI where duplicate object names could appear in the **EZ-Commit** object selection picklist, preventing users from accessing the required fields. The object filtering logic has been updated to correctly handle object prefixes, ensuring object names are displayed uniquely and the appropriate fields are available for selection.
 
-#### Deployment Timeout Status Fix <a href="#deployment-timeout-status-fix" id="deployment-timeout-status-fix"></a>
+#### Deployment Timeout Status Fix
 
 Fixed an issue where long-running **Quick Deploy** operations with a large number of components could be incorrectly marked as **Timed Out** in ARM, even though the deployment completed successfully in Salesforce. The deployment status handling has been improved to prevent active deployments from being incorrectly classified as timed out while background processing is still in progress, ensuring the deployment status accurately reflects the final outcome.
 
-#### Automatic Cleanup of Deactivated Picklist Value References <a href="#automatic-cleanup-of-deactivated-picklist-value-references" id="automatic-cleanup-of-deactivated-picklist-value-references"></a>
+#### Automatic Cleanup of Deactivated Picklist Value References
 
 Introduced an enhancement that automatically removes references to **deactivated picklist values** from affected **Record Types** during metadata processing. When a picklist value is deactivated, ARM identifies all Record Types belonging to the same object, removes only the invalid picklist value references, and automatically includes the updated Record Types in the generated deployment or commit package. This ensures metadata consistency across branches and deployments while preserving all other Record Type configurations and unrelated metadata.
 
@@ -998,9 +1178,9 @@ Introduced an enhancement that automatically removes references to **deactivated
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.6**
+## DataLoader and DataLoader Pro 26.3.6
 
-**Release Date:** **09 Aug 2026**
+**Release date:** 9 August 2026
 
 #### External ID Mapping Persistence
 
@@ -1008,67 +1188,67 @@ Addressed a DataLoader issue reported through Support Case, where saved custom *
 
 ***
 
-## ARM **Release Notes 26.3.5**
+## ARM 26.3.5
 
-**Release Date: 2 Aug 2026**
+**Release date:** 2 August 2026
 
-#### Profile Rollback Restoration Improvement <a href="#profile-rollback-restoration-improvement" id="profile-rollback-restoration-improvement"></a>
+#### Profile Rollback Restoration Improvement
 
 Enhanced the rollback process for **Profile** metadata to ensure profile permissions are restored correctly after a rollback operation. ARM now creates a more complete Profile backup by including the required dependent metadata, enabling Salesforce to accurately restore Profile permissions during rollback for both **CI Jobs** and **Deployments**.
 
-#### GitLab Cloud Pull Request Support <a href="#gitlab-cloud-pull-request-support" id="gitlab-cloud-pull-request-support"></a>
+#### GitLab Cloud Pull Request Support
 
 Added support for creating **GitLab Cloud Pull Requests** directly from ARM, allowing users to create Pull Requests without leaving the application. ARM validates the selected repository and branches before creating the Pull Request and displays the Pull Request number and URL upon successful creation, providing a streamlined and integrated GitLab Cloud workflow. Refer to the documentation on External Pull Requests [here](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/external-pull-request).
 
-#### Dependent CI Job Execution Fix <a href="#dependent-ci-job-execution-fix" id="dependent-ci-job-execution-fix"></a>
+#### Dependent CI Job Execution Fix
 
 Fixed an issue where a **Child CI Job** triggered automatically after a successful **Parent CI Job** deployment could fail during the build phase without displaying an error. The post-deployment execution flow has been improved to handle deployment status correctly, ensuring dependent Child CI Jobs execute reliably when triggered from Parent CI Jobs.
 
-#### Salesforce Org Registration API <a href="#salesforce-org-registration-api" id="salesforce-org-registration-api"></a>
+#### Salesforce Org Registration API
 
 Added a new API that enables Salesforce organizations to be registered in ARM using standard **Username**, **Password**, and **Security Token** authentication. The API supports secure, token-based access, allowing Salesforce Org registration to be automated and integrated with external provisioning and onboarding workflows without relying on the ARM user interface. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).
 
-#### CI Job Clone API <a href="#ci-job-clone-api" id="ci-job-clone-api"></a>
+#### CI Job Clone API
 
 Added a new API that enables users to clone an existing **CI Job** in ARM, allowing CI Job configurations to be duplicated programmatically without using the ARM user interface. This simplifies the automation of CI/CD setup and integration with external systems. Refer to the full list of API references [here](https://knowledgebase.autorabit.com/product-guides/arm-1/introduction-to-arm-developer-apis/api-references).
 
-#### CI Job Baseline Revision Pagination Fix <a href="#ci-job-baseline-revision-pagination-fix" id="ci-job-baseline-revision-pagination-fix"></a>
+#### CI Job Baseline Revision Pagination Fix
 
 Fixed an issue where the **Baseline Revision** selection dialog retained the previously selected page after clicking **Get Latest Head** or **Get All Revisions**. The revision list now refreshes from the first page, ensuring users can immediately view the latest revisions and browse the complete revision list as expected.
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.5**
+## DataLoader and DataLoader Pro 26.3.5
 
-**Release Date:** **02 Aug 2026**
+**Release date:** 2 August 2026
 
-#### DataLoader Pro Job Visibility for Subusers (DevHub Orgs) <a href="#dataloader-pro-job-visibility-for-subusers-devhub-orgs" id="dataloader-pro-job-visibility-for-subusers-devhub-orgs"></a>
+#### DataLoader Pro Job Visibility for Subusers (DevHub Orgs)
 
 Fixed an issue where Dataloader Pro jobs created by a subuser were not visible to the same subuser who created them. Jobs now correctly appear for both the creator (subuser) and admin users, ensuring consistent ownership-based visibility.
 
 ***
 
-## ARM **Release Notes 26.3.4**
+## ARM 26.3.4
 
-**Release Date: 26 July 2026**
+**Release date:** 26 July 2026
 
-#### Provar CI Job Execution Fix (New UI) <a href="#provar-ci-job-execution-fix-new-ui" id="provar-ci-job-execution-fix-new-ui"></a>
+#### Provar CI Job Execution Fix (New UI)
 
 Fixed an issue where CI Jobs configured by selecting the **Provar Plugin** before entering Version Control details failed to execute due to missing credential and test file information. The configuration flow has been corrected so Provar jobs execute successfully regardless of the order in which the Provar and Version Control options are selected.
 
-#### GitHub Enterprise Pull Request Webhook Fix <a href="#github-enterprise-pull-request-webhook-fix" id="github-enterprise-pull-request-webhook-fix"></a>
+#### GitHub Enterprise Pull Request Webhook Fix
 
 Fixed an issue where CI Jobs configured to trigger on Pull Request events in GitHub Enterprise were not starting automatically, even though the webhook payload was successfully received. The webhook processing logic has been updated to correctly identify the configured repository and process Pull Request events, ensuring CI Jobs are triggered as expected.
 
-#### Deployment History Search Fix New UI <a href="#deployment-history-search-fix" id="deployment-history-search-fix"></a>
+#### Deployment History Search Fix New UI
 
 Fixed an issue where searching by **Deployment Label** in the Deployment History page did not return matching deployment records, even though the deployments were present in the history. The search logic has been updated to use the correct deployment label field, ensuring accurate results when searching by full or partial deployment label names.
 
-#### Scratch Org ALM Mapping Validation Fix <a href="#scratch-org-alm-mapping-validation-fix" id="scratch-org-alm-mapping-validation-fix"></a>
+#### Scratch Org ALM Mapping Validation Fix
 
 Fixed an issue where creating a Scratch Org failed with the error **"Please fill in all required ALM mapping fields"** even when all required mappings were configured. The validation logic has been updated to correctly recognize ServiceNow ALM mappings, allowing users to proceed with Scratch Org creation successfully.
 
-#### Org Synchronization Deployment Navigation Fix (New UI) <a href="#org-synchronization-deployment-navigation-fix-new-ui" id="org-synchronization-deployment-navigation-fix-new-ui"></a>
+#### Org Synchronization Deployment Navigation Fix (New UI)
 
 Fixed an issue where initiating an Org Synchronization deployment did not automatically redirect users to the Deployment History page. The navigation flow has been updated to redirect users after deployment initiation, and automatic log polling has been added so deployment progress and status are displayed without requiring manual page refreshes.
 
@@ -1078,25 +1258,25 @@ Enhanced Salesforce External Connected App authentication with automatic OAuth t
 
 When an access token expires, ARM uses the stored refresh token to obtain a new access token and automatically retries the original Salesforce API request, eliminating the need for manual reauthorization. PKCE support further strengthens the security of the OAuth authorization flow.
 
-#### AiAuthoringBundle Merge Validation Fix <a href="#aiauthoringbundle-merge-validation-fix" id="aiauthoringbundle-merge-validation-fix"></a>
+#### AiAuthoringBundle Merge Validation Fix
 
 Fixed an issue where EZ-Merge validation for **AiAuthoringBundle** metadata failed because the required `.bundle-meta.xml` file was not included in the deployment package during merge validation. ARM now automatically includes the corresponding bundle metadata file, ensuring successful validation and consistent behavior across subsequent versions of the same agent.
 
 ***
 
-## ARM **Release Notes 26.3.3**
+## ARM 26.3.3
 
-**Release Date: 19 July 2026**
+**Release date:** 19 July 2026
 
-#### Release Label Artifact Update Fix <a href="#release-label-artifact-update-fix" id="release-label-artifact-update-fix"></a>
+#### Release Label Artifact Update Fix
 
 Fixed an issue where updating an existing Release Label with a new revision did not regenerate the associated artifact correctly, resulting in missing delta files. ARM now regenerates the package manifest using the latest revision data whenever a Release Label is updated, ensuring the generated artifact accurately reflects all changes included in the updated Release Label.
 
-#### Ignore Installed Components Information Update <a href="#ignore-installed-components-information-update" id="ignore-installed-components-information-update"></a>
+#### Ignore Installed Components Information Update
 
 Updated the **Ignore Installed Components** option across ARM to provide clearer guidance on its behavior. An informational message is now displayed wherever this option is available, helping users understand when installed components will be skipped during deployment and CI Job execution. This enhancement improves usability by setting the correct expectations before the operation is initiated.
 
-#### Additional Vlocity DataPack Metadata Support <a href="#additional-vlocity-datapack-metadata-support" id="additional-vlocity-datapack-metadata-support"></a>
+#### Additional Vlocity DataPack Metadata Support
 
 Added support for the following Vlocity DataPack metadata types in ARM:
 
@@ -1107,59 +1287,59 @@ Added support for the following Vlocity DataPack metadata types in ARM:
 
 These metadata types can now be retrieved through Vlocity commit workflows, committed to version control, and deployed between Salesforce orgs while preserving the required matching keys, parent-child relationships, and Global Key handling.
 
-#### Financial Cloud Standard Value Set Support <a href="#financial-cloud-standard-value-set-support" id="financial-cloud-standard-value-set-support"></a>
+#### Financial Cloud Standard Value Set Support
 
 Added support for additional Salesforce Financial Cloud Standard Value Sets to ensure standard picklist values are correctly retrieved during metadata operations. This enhancement improves compatibility with Salesforce Financial Cloud by enabling standard value sets to be included in EZ-Commit, Review Artifact creation, and selective deployment workflows.
 
-#### Deployment History Visibility Fix <a href="#deployment-history-visibility-fix" id="deployment-history-visibility-fix"></a>
+#### Deployment History Visibility Fix
 
 Fixed an issue where newly initiated deployments could temporarily disappear from the **Deployment History** page after clicking **Deploy**, requiring multiple page refreshes before becoming visible. The deployment processing flow has been updated to ensure deployment jobs are displayed immediately after they are initiated, providing a more consistent and reliable user experience.
 
-#### Sharing Rule Destructive Change Detection Fix <a href="#sharing-rule-destructive-change-detection-fix" id="sharing-rule-destructive-change-detection-fix"></a>
+#### Sharing Rule Destructive Change Detection Fix
 
 Fixed an issue where deleted **Sharing Rule** metadata was not automatically detected as a destructive change during Version Control deployments. ARM now correctly identifies deleted Sharing Rule components and automatically includes them in the **Destructive Items** list, ensuring consistent destructive change handling across DX, Non-DX, and Release Label deployment workflows.
 
 ***
 
-## ARM **Release Notes 26.3.2**
+## ARM 26.3.2
 
-**Release Date: 12 July 2026**
+**Release date:** 12 July 2026
 
-#### Salesforce CLI Upgrade <a href="#salesforce-cli-upgrade" id="salesforce-cli-upgrade"></a>
+#### Salesforce CLI Upgrade
 
 Upgraded the bundled **Salesforce CLI (SF CLI)** from **v2.130.9** to **v2.140.6** to incorporate the latest Salesforce CLI enhancements, stability improvements, and bug fixes. This update improves compatibility with the latest Salesforce platform capabilities and ensures continued support for ARM operations that rely on the Salesforce CLI.
 
-#### EZ-Merge Multi-Level Approval Fix - New UI <a href="#ez-merge-multi-level-approval-fix-new-ui" id="ez-merge-multi-level-approval-fix-new-ui"></a>
+#### EZ-Merge Multi-Level Approval Fix - New UI
 
 Fixed an issue in the New UI where EZ-Merge requests requiring multiple approval levels could complete after the first approval instead of progressing through the configured approval workflow. The approval flow has been corrected to properly process all configured approvers, ensuring merge requests follow the expected approval sequence before completion.
 
-#### Subscription Management for All Customers <a href="#subscription-management-for-all-customers" id="subscription-management-for-all-customers"></a>
+#### Subscription Management for All Customers
 
 Enhanced **Subscription Management** to be available for all ARM customers, regardless of the number of purchased licenses. Customers with fewer than 20 licenses can now access subscription details, release allocated licenses, and manage license usage without requiring manual intervention for license downgrades. Team management remains unchanged for customers with 20 or more licenses, while the **Create Team** option is unavailable for customers with fewer than 20 licenses.
 
 This enhancement simplifies license management and enables a smoother license downgrade process.
 
-#### Vlocity Build Tool CLI Upgrade <a href="#vlocity-build-tool-cli-upgrade" id="vlocity-build-tool-cli-upgrade"></a>
+#### Vlocity Build Tool CLI Upgrade
 
 Upgraded the bundled **Vlocity Build Tool (VBT) CLI** from **v1.17.20** to **v1.17.24** to include the latest fixes, stability improvements, and compatibility updates for Vlocity-related operations in ARM.
 
-#### Compare Process Notification Improvement <a href="#compare-process-notification-improvement" id="compare-process-notification-improvement"></a>
+#### Compare Process Notification Improvement
 
 Updated the Compare Changes workflow to display a clear warning message instead of an error when a compare or commit operation is already in progress in another browser tab or session. This provides a more accurate user experience and better communicates the operation status during concurrent Compare Changes activities.
 
-#### External Client Application File Diff Fix <a href="#external-client-application-file-diff-fix" id="external-client-application-file-diff-fix"></a>
+#### External Client Application File Diff Fix
 
 Fixed an issue where deleting an **External Client Application (ECA)** through EZ-Commit did not generate the expected file diff, causing the commit process to fail. Support for ECA metadata has been added to ensure file differences are generated correctly during both direct commits and pre-validation commit workflows involving metadata deletions.
 
-#### EZ-Merge File Difference Consistency Fix <a href="#ez-merge-file-difference-consistency-fix" id="ez-merge-file-difference-consistency-fix"></a>
+#### EZ-Merge File Difference Consistency Fix
 
 Fixed an issue where the file changes displayed during EZ-Merge did not match the changes shown during the corresponding EZ-Commit. The merge file comparison logic has been corrected to ensure the merge preview accurately reflects the committed changes, providing consistent and reliable file difference information during conflict resolution.
 
-#### Provar Configuration Display Fix - New UI <a href="#provar-configuration-display-fix-new-ui" id="provar-configuration-display-fix-new-ui"></a>
+#### Provar Configuration Display Fix - New UI
 
 Fixed an issue in the New UI where Provar configuration fields were not displayed after selecting **Provar** in the CI Job Tests screen. The configuration options now load correctly, allowing users to configure the required Provar settings, including Repository, Branch, Test Cases Root Path, and Test Cases Execution Path.
 
-#### SonarQube Baseline Branch Support - New UI <a href="#sonarqube-baseline-branch-support-new-ui" id="sonarqube-baseline-branch-support-new-ui"></a>
+#### SonarQube Baseline Branch Support - New UI
 
 Fixed multiple issues in the New UI where the **Baseline Branch** dropdown was not displayed for SonarQube Static Code Analysis. The Baseline Branch selection is now available and retained correctly across EZ-Merge, CI Job Edit, and SCA Label workflows, ensuring a consistent configuration experience with CodeScan.
 
@@ -1171,25 +1351,25 @@ Fixed an issue in the Old UI where the **Save** button did not respond when crea
 
 Fixed an issue in the New UI where navigating directly to the **Release Labels** page from the left-side menu caused the page to remain in an infinite loading state. The navigation flow has been corrected to ensure the Release Labels page loads successfully when accessed directly.
 
-#### **Package.xml Upload Fix (Old UI)**
+#### Package.xml Upload Fix (Old UI)
 
 Fixed an issue in the Classic (Old) UI where clicking **Select Package.xml** while creating a Custom Deployment from **Package.xml** did not respond or open the local file browser. The upload component has been corrected to initialize properly, allowing users to successfully select and upload **Package.xml** and ZIP deployment files during deployment creation. This issue was limited to the Classic UI and did not affect the New UI.
 
 ***
 
-## DataLoader + DataLoader Pro Release Notes **26.3.2**
+## DataLoader and DataLoader Pro 26.3.2
 
-**Release Date:** **12 July 2026**
+**Release date:** 12 July 2026
 
-#### Knowledge KAV language filter not auto-populating in New UI <a href="#dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui" id="dt-13616-knowledge-kav-language-filter-not-auto-populating-in-new-ui"></a>
+#### Knowledge KAV language filter not auto-populating in New UI
 
 Fixed an issue in the New UI where the **Language** filter on the Knowledge KAV object did not prefill with the existing language value. The filter behavior now matches the Old UI.
 
 ***
 
-## ARM **Release Notes 26.3.1.1**
+## ARM 26.3.1.1
 
-**Release Date: 6 July 2026**
+**Release date:** 6 July 2026
 
 #### SSO Login Redirection Fix
 
@@ -1201,11 +1381,11 @@ Fixed an issue that prevented users from logging in through Single Sign-On (SSO)
 
 ***
 
-## ARM **Release Notes 26.3.1**
+## ARM 26.3.1
 
-**Release Date: 5 July 2026**
+**Release date:** 5 July 2026
 
-#### Backup-Enabled Validation Metadata Retrieval Fix <a href="#backup-enabled-validation-metadata-retrieval-fix" id="backup-enabled-validation-metadata-retrieval-fix"></a>
+#### Backup-Enabled Validation Metadata Retrieval Fix
 
 Fixed an issue where Validate Only deployments with Backup enabled could fail due to additional metadata retrieval during the backup flow. The backup metadata retrieval process has been improved to correctly handle validation scenarios and avoid unnecessary failures when deployment components are limited to selected metadata.
 
@@ -1213,7 +1393,7 @@ Fixed an issue where Validate Only deployments with Backup enabled could fail du
 
 * Deployment Module
 
-#### Branch Unregistration Improvements <a href="#branch-unregistration-improvements" id="branch-unregistration-improvements"></a>
+#### Branch Unregistration Improvements
 
 Improved the branch unregistration process to ensure branch-related records are cleaned up correctly during synchronization. The update enhances multi-branch unregistration handling, removes stale branch mapping data, and improves logging to provide more accurate status reporting and consistent behavior across branch synchronization workflows.
 
@@ -1222,7 +1402,7 @@ Improved the branch unregistration process to ensure branch-related records are 
 * Version Control Repository Settings
 * Sync Branches
 
-#### Apache Tomcat 11.0.22 Upgrade <a href="#apache-tomcat-11.0.22-upgrade" id="apache-tomcat-11.0.22-upgrade"></a>
+#### Apache Tomcat 11.0.22 Upgrade
 
 Upgraded Apache Tomcat from **11.0.21** to **11.0.22** across Shared, Dedicated, and On-Prem environments to incorporate the latest security fixes and stability improvements. This update enhances platform security while maintaining compatibility and consistent performance across all deployment models.
 
@@ -1232,7 +1412,7 @@ Upgraded Apache Tomcat from **11.0.21** to **11.0.22** across Shared, Dedicated,
 * Dedicated Instances
 * On-Prem Deployments
 
-#### Permission Set Compare Changes Consistency Fix <a href="#permission-set-compare-changes-consistency-fix" id="permission-set-compare-changes-consistency-fix"></a>
+#### Permission Set Compare Changes Consistency Fix
 
 Fixed an issue where the **Compare Changes** view did not match the actual changes committed to GitHub when using **Create/Append Revision to Existing Label** in EZ-Commit. Permission Set commit options are now applied consistently throughout the commit workflow, ensuring the Compare Changes view accurately reflects the final commit content.
 
@@ -1240,7 +1420,7 @@ Fixed an issue where the **Compare Changes** view did not match the actual chang
 
 * EZ-Commit
 
-#### CI Job File Changes Retention Fix <a href="#ci-job-file-changes-retention-fix" id="ci-job-file-changes-retention-fix"></a>
+#### CI Job File Changes Retention Fix
 
 Fixed an issue where the **File Changes** tab in CI Job history could appear empty after historical CI Job data was cleaned up. The retention process has been updated to preserve the required file difference information, ensuring deployed file changes remain available for supported CI Job history records.
 
@@ -1248,7 +1428,7 @@ Fixed an issue where the **File Changes** tab in CI Job history could appear emp
 
 * CI Jobs
 
-#### Microsoft Teams Workflows Webhook Support <a href="#microsoft-teams-workflows-webhook-support" id="microsoft-teams-workflows-webhook-support"></a>
+#### Microsoft Teams Workflows Webhook Support
 
 Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notifications to continue working as Microsoft phases out traditional Incoming Webhooks. ARM can now deliver deployment and system notifications using the new Teams Workflows integration, helping customers transition seamlessly to Microsoft's supported notification model.
 
@@ -1260,9 +1440,9 @@ Added support for **Microsoft Teams Workflows** webhook URLs, enabling ARM notif
 
 ***
 
-## DataLoader & DataLoader Pro Release Notes **26.3.1**
+## DataLoader and DataLoader Pro 26.3.1
 
-**Release Date:** **05 June 2026**
+**Release date:** 5 June 2026
 
 #### Query Editor Workflow for Dynamic and Custom Queries – DL & DL PRO
 
@@ -1270,9 +1450,9 @@ The Query Editor in DataLoader Basic and DataLoader Pro now supports two modes: 
 
 ***
 
-## ARM **Release Notes 26.2.13**
+## ARM 26.2.13
 
-**Release Date: 28 June 2026**
+**Release date:** 28 June 2026
 
 #### Environment Provisioning History Performance Improvement
 
@@ -1340,9 +1520,9 @@ Fixed an issue in the New UI where Pre-Validation Commit SCA did not correctly a
 
 ***
 
-## ARM **Release Notes 26.2.12**
+## ARM 26.2.12
 
-**Release Date: 21 June 2026**
+**Release date:** 21 June 2026
 
 #### Merge Conflict Resolution Progress Indicator
 
@@ -1412,11 +1592,11 @@ Fixed an issue where ARM displayed incorrect CodeScan analysis results by retrie
 
 ***
 
-## ARM **Release Notes 26.2.11**
+## ARM 26.2.11
 
-**Release Date: 14 June 2026**
+**Release date:** 14 June 2026
 
-#### Parallel Processor Execution Fix <a href="#parallel-processor-execution-fix" id="parallel-processor-execution-fix"></a>
+#### Parallel Processor Execution Fix
 
 Fixed an issue in CI Jobs where Parallel Processor executions could fail to trigger external automation workflows due to backend request handling inconsistencies. The execution logic has been updated to ensure parallel processor requests are processed correctly, improving the reliability of post-deployment automation integrations.
 
@@ -1426,7 +1606,7 @@ Fixed an issue in CI Jobs where Parallel Processor executions could fail to trig
 * Parallel Processor Integration
 * Post-Deployment Automation Workflows
 
-#### Branching Baseline Deletion Control Improvement <a href="#branching-baseline-deletion-control-improvement" id="branching-baseline-deletion-control-improvement"></a>
+#### Branching Baseline Deletion Control Improvement
 
 Improved Branching Baseline handling by restricting deletion actions when an abort operation is already in progress. This prevents users from performing conflicting actions on baseline iterations and helps maintain consistent baseline processing behavior.
 
@@ -1434,7 +1614,7 @@ Improved Branching Baseline handling by restricting deletion actions when an abo
 
 * Settings → Branching Baseline Module
 
-#### Connected App Search & Substitute Support <a href="#connected-app-search-and-substitute-support" id="connected-app-search-and-substitute-support"></a>
+#### Connected App Search & Substitute Support
 
 Enhanced Search & Substitute to support `ConnectedApp` metadata, allowing users to dynamically replace Connected App configuration values during Commit, CI Job, and Deployment execution.
 
@@ -1444,7 +1624,7 @@ This enhancement helps manage environment-specific Connected App configurations 
 
 * Search & Substitute
 
-#### Permission Set Agent Access Support <a href="#permission-set-agent-access-support" id="permission-set-agent-access-support"></a>
+#### Permission Set Agent Access Support
 
 Added support for the `<agentAccesses>` node in Salesforce Permission Sets to ensure agent access configurations are correctly retained during metadata operations. Previously, these entries were retrieved successfully but were excluded during commit processing. With this enhancement, agent access configurations are now preserved across version control and deployment workflows.
 
@@ -1453,7 +1633,7 @@ Added support for the `<agentAccesses>` node in Salesforce Permission Sets to en
 * Version Control
 * Deployments
 
-#### Package.xml Custom Object Retrieval Fix <a href="#package.xml-custom-object-retrieval-fix" id="package.xml-custom-object-retrieval-fix"></a>
+#### Package.xml Custom Object Retrieval Fix
 
 Fixed an issue in EZ-Commit where certain metadata components, including Custom Objects, could be skipped when retrieving components using an uploaded `package.xml`. The package.xml retrieval logic has been improved to ensure valid metadata components are retained and displayed correctly in the Added/Modified Metadata Components tab.
 
@@ -1461,7 +1641,7 @@ Fixed an issue in EZ-Commit where certain metadata components, including Custom 
 
 * EZ-Commit using `package.xml`
 
-#### Merge Approval Link Fix - New UI <a href="#merge-approval-link-fix-new-ui" id="merge-approval-link-fix-new-ui"></a>
+#### Merge Approval Link Fix - New UI
 
 Fixed an issue in the New UI where approvers saw an “Unknown Error” after clicking the approval link from an EZ-Merge email notification. The approval link now redirects correctly to the Merge Label approval pop-up, allowing users to review and approve merge requests as expected.
 
@@ -1469,7 +1649,7 @@ Fixed an issue in the New UI where approvers saw an “Unknown Error” after cl
 
 * EZ-Merge Approval Workflow (New UI)
 
-#### Branch Permission Inheritance for Commit Visibility <a href="#branch-permission-inheritance-for-commit-visibility" id="branch-permission-inheritance-for-commit-visibility"></a>
+#### Branch Permission Inheritance for Commit Visibility
 
 Fixed an issue where commit labels created by sub-users were not visible to Custom Admins when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited and synchronized during branch creation, ensuring authorized users can view and approve commits without requiring manual branch access assignment.
 
@@ -1478,7 +1658,7 @@ Fixed an issue where commit labels created by sub-users were not visible to Cust
 * EZ-Commit Branch Creation
 * Commit Label Visibility
 
-#### Commit Label Visibility for Custom Admins <a href="#commit-label-visibility-for-custom-admins" id="commit-label-visibility-for-custom-admins"></a>
+#### Commit Label Visibility for Custom Admins
 
 Fixed an issue where Custom Admins could not view or approve commit labels created by sub-users when branches were created through the EZ-Commit workflow. Branch permissions are now automatically inherited from the parent branch and synchronized during branch creation, ensuring commit labels remain visible and accessible to authorized approvers.
 
@@ -1489,51 +1669,51 @@ Fixed an issue where Custom Admins could not view or approve commit labels creat
 
 ***
 
-## DataLoader Pro Release Notes **26.2.11**
+## DataLoader Pro 26.2.11
 
-**Release Date:** **14 June 2026**
+**Release date:** 14 June 2026
 
-#### DL Data Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
+#### DL Data Retention Policy Fix
 
 Fixed missing components in the data retention policy for "DL & DL PRO". Single DataLoader bulk file deletion was not being executed, and "DL & DL PRO" S3 backup deletions were targeting the wrong bucket. ARM data retention settings now apply to "DL & DL PRO" by default without requiring a separate checkbox.
 
-#### DataLoader Pro Query Failure on Knowledge\_\_kav Object <a href="#dt-13345-dataloader-pro-query-failure-on-knowledge__kav-object-support-case-234338" id="dt-13345-dataloader-pro-query-failure-on-knowledge__kav-object-support-case-234338"></a>
+#### DataLoader Pro Query Failure on Knowledge\_\_kav Object
 
 Fixed an issue where DataLoader Pro jobs failed when a custom query was applied to the `Knowledge__kav` object. The error occurred because the system incorrectly appended a `WHERE` clause to queries that already contained filtering conditions (e.g., `LIMIT`), resulting in a syntax error. Query construction logic has been corrected to handle Knowledge objects properly.
 
 ***
 
-## ARM **Release Notes 26.2.10**
+## ARM 26.2.10
 
-**Release Date: 7 June 2026**
+**Release date:** 7 June 2026
 
-#### Support for Salesforce Run Relevant Tests in Deployments (New Enhancement) <a href="#support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement" id="support-for-salesforce-run-relevant-tests-in-deployments-new-enhancement"></a>
+#### Support for Salesforce Run Relevant Tests in Deployments (New Enhancement)
 
 AutoRABIT now supports Salesforce’s **Run Relevant Tests** test level for deployment validations and deployments. This option executes only the Apex tests identified by Salesforce as impacted by the changes being deployed, helping reduce deployment time and improve CI/CD efficiency while maintaining required test coverage. Support is available across validation, deployment, and Quick Deploy workflows.
 
-#### Salesforce Summer ’26 (API Version 67) Support (New) <a href="#salesforce-summer-26-api-version-67-support-new" id="salesforce-summer-26-api-version-67-support-new"></a>
+#### Salesforce Summer ’26 (API Version 67) Support (New)
 
 AutoRABIT now supports **Salesforce API Version 67**, enabling compatibility with the latest Salesforce Summer ’26 release. This update includes support for newly introduced metadata types such as **FlowValueMap, EmailAuthorizationSettings, InsPlcyLimitConsumptionRule, and OrchestrationPlanCtxMapping**, along with support for Salesforce metadata enhancements in Queue, DataSrcDataModelFieldMap, Network, InvocableActionExtension, and Flow.
 
-#### EZ-Commit Performance Improvements for Large Salesforce Schemas <a href="#ez-commit-performance-improvements-for-large-salesforce-schemas" id="ez-commit-performance-improvements-for-large-salesforce-schemas"></a>
+#### EZ-Commit Performance Improvements for Large Salesforce Schemas
 
 Enhanced EZ-Commit performance for Salesforce orgs containing large volumes of custom fields and metadata components. Optimizations to schema processing and change detection improve component loading, retrieval responsiveness, and overall user experience across EZ-Commit, AutoDraft, and Package Manifest workflows.
 
-#### My Profile – VC Mappings Performance Improvements <a href="#my-profile-vc-mappings-performance-improvements" id="my-profile-vc-mappings-performance-improvements"></a>
+#### My Profile – VC Mappings Performance Improvements
 
 Improved performance of the **My Profile → VC Mappings** page for environments with a large number of branches. Backend pagination and loading optimizations reduce page load times and improve responsiveness when viewing and managing version control mappings.
 
-#### EZ-Commit User Experience Improvements <a href="#ez-commit-user-experience-improvements" id="ez-commit-user-experience-improvements"></a>
+#### EZ-Commit User Experience Improvements
 
 Enhanced the EZ-Commit save experience by improving validation feedback for required fields. Mandatory fields are now clearly highlighted when left unselected, helping users identify missing information more quickly and reducing submission errors.
 
 ***
 
-## ARM **Release Notes 26.2.9**
+## ARM 26.2.9
 
-**Release Date: 31 May 2026**
+**Release date:** 31 May 2026
 
-#### Bitbucket Token Authentication & Email Support Update <a href="#bitbucket-token-authentication-and-email-support-update" id="bitbucket-token-authentication-and-email-support-update"></a>
+#### Bitbucket Token Authentication & Email Support Update
 
 **Effective Date: 9 June 2026**
 
@@ -1552,7 +1732,7 @@ For complete details, configuration steps, and migration guidance, please refer 
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm/registration/version-control-repository/bitbucket/configuring-bitbucket-token-authentication-and-email-support" %}
 
-#### Pin/Favorite CI Jobs for Quick Access - New UI <a href="#pin-favorite-ci-jobs-for-quick-access-new-ui" id="pin-favorite-ci-jobs-for-quick-access-new-ui"></a>
+#### Pin/Favorite CI Jobs for Quick Access - New UI
 
 Introduced the ability to pin or favorite CI Jobs in the New UI, allowing users to quickly access frequently used jobs without searching through the full job list. Pinned jobs are displayed in a dedicated section at the top of the CI Job List and are maintained individually for each user.
 
@@ -1560,7 +1740,7 @@ Introduced the ability to pin or favorite CI Jobs in the New UI, allowing users 
 
 * CI Jobs List (New UI)
 
-#### SiteDotCom Metadata Retrieval Fix <a href="#sitedotcom-metadata-retrieval-fix" id="sitedotcom-metadata-retrieval-fix"></a>
+#### SiteDotCom Metadata Retrieval Fix
 
 Fixed an issue where `SiteDotComSite` metadata changes were not included in Single Revision Deployments and Release Labels when only the `.site` file was modified. Metadata processing has been improved to correctly retain and retrieve associated SiteDotCom components, ensuring changes are accurately captured across deployment workflows.
 
@@ -1573,7 +1753,7 @@ Fixed an issue where `SiteDotComSite` metadata changes were not included in Sing
 * CI Jobs (DX & Non-DX)
 * SiteDotCom Metadata Processing
 
-#### SonarQube Analysis Result Synchronization Fix <a href="#sonarqube-analysis-result-synchronization-fix" id="sonarqube-analysis-result-synchronization-fix"></a>
+#### SonarQube Analysis Result Synchronization Fix
 
 Fixed an issue where SonarQube violations were not displayed in the ARM Analysis Dashboard despite being available in SonarQube. The result retrieval process has been updated to correctly fetch and synchronize SonarQube scan results, ensuring accurate visibility of violations within ARM.
 
@@ -1586,11 +1766,11 @@ Fixed an issue where SonarQube violations were not displayed in the ARM Analysis
 
 ***
 
-## ARM **Release Notes 26.2.8.1**
+## ARM 26.2.8.1
 
-**Release Date: 27 May 2026**
+**Release date:** 27 May 2026
 
-#### Conflict File Truncation Fix <a href="#conflict-file-truncation-fix" id="conflict-file-truncation-fix"></a>
+#### Conflict File Truncation Fix
 
 Fixed an issue in EZ-Merge where conflicted files could become truncated during conflict resolution, causing merge failures for certain profile files. The file copy handling has been improved to ensure complete file content is preserved during conflict processing.
 
@@ -1598,7 +1778,7 @@ Fixed an issue in EZ-Merge where conflicted files could become truncated during 
 
 * EZ-Merge
 
-#### Multiple Branch Mapping Retention Fix <a href="#multiple-branch-mapping-retention-fix" id="multiple-branch-mapping-retention-fix"></a>
+#### Multiple Branch Mapping Retention Fix
 
 Fixed an issue in My Version Control Mappings where selecting and saving a new branch caused previously mapped branches to become unselected. The credential update logic has been improved to retain mappings for existing branches while updating credentials only for the selected branch.
 
@@ -1611,11 +1791,11 @@ Fixed an issue in My Version Control Mappings where selecting and saving a new b
 
 ***
 
-## ARM **Release Notes 26.2.8**
+## ARM 26.2.8
 
-**Release Date: 24 May 2026**
+**Release date:** 24 May 2026
 
-#### **Improvements to Log Viewer Experience - New UI** <a href="#improvements-to-log-viewer-experience" id="improvements-to-log-viewer-experience"></a>
+#### Improvements to Log Viewer Experience - New UI
 
 We’ve enhanced the log viewing experience across multiple ARM modules to improve usability and performance.
 
@@ -1634,7 +1814,7 @@ We’ve enhanced the log viewing experience across multiple ARM modules to impro
 
 CI Jobs, Deployment, Dataloader, Reports, SFDX, Admin Settings, and Version Control.
 
-#### **Improvements to EZ-Commit Destructive Changes Handling** <a href="#improvements-to-ez-commit-destructive-changes-handling" id="improvements-to-ez-commit-destructive-changes-handling"></a>
+#### Improvements to EZ-Commit Destructive Changes Handling
 
 Enhanced the handling and display of deleted metadata changes in EZ-Commit for improved consistency and accuracy.
 
@@ -1651,23 +1831,23 @@ EZ-Commit – Deleted Metadata Changes Handling (Destructive Changes)
 
 ***
 
-## ARM **Release Notes 26.2.7**
+## ARM 26.2.7
 
-**Release Date:** **17 May 2026**
+**Release date:** 17 May 2026
 
-#### Report Folder Selection Handling <a href="#report-folder-selection-handling" id="report-folder-selection-handling"></a>
+#### Report Folder Selection Handling
 
 Improved metadata filtering in VC-EZ-Commit to correctly recognize nested Report folders from `package.xml` uploads, even when a corresponding metadata file is not present. This ensures complete folder hierarchies are properly detected and displayed during metadata selection.
 
 **Impacted Area:** VC-EZ-Commit
 
-#### Azure Logic App Audit Log API Compatibility <a href="#azure-logic-app-audit-log-api-compatibility" id="azure-logic-app-audit-log-api-compatibility"></a>
+#### Azure Logic App Audit Log API Compatibility
 
 Enhanced the Audit Logs service to improve compatibility with Azure Logic Apps by removing mandatory header validation for GET requests. This resolves issues where audit log API calls were failing due to automatically stripped `Content-Type` headers in Azure Logic App integrations.
 
 **Impacted Area:** Audit Logs Service
 
-#### Branch Credential Mapping Improvement <a href="#branch-credential-mapping-improvement" id="branch-credential-mapping-improvement"></a>
+#### Branch Credential Mapping Improvement
 
 Improved branch credential mapping in ARM Version Control to ensure branches created through the EZ-Commit workflow are correctly associated with the user-selected credentials. This resolves issues where feature branches created by sub-users were not searchable during PR creation workflows.
 
@@ -1678,7 +1858,7 @@ Improved branch credential mapping in ARM Version Control to ensure branches cre
 * Branch Registration & Credential Mapping
 * Version Control Repository Integration
 
-#### Enhanced Pagination Support - New UI <a href="#enhanced-pagination-support-new-ui" id="enhanced-pagination-support-new-ui"></a>
+#### Enhanced Pagination Support - New UI
 
 Improved pagination options across deployment reporting screens by adding support for viewing up to 100 records per page. This enhancement helps users review large datasets more efficiently within Deployment History, Release Labels, and related deployment report views.
 
@@ -1687,7 +1867,7 @@ Improved pagination options across deployment reporting screens by adding suppor
 * Deployment History
 * Release Labels
 
-#### Active CI Job Filtering in Permissions - New UI <a href="#active-ci-job-filtering-in-permissions-new-ui" id="active-ci-job-filtering-in-permissions-new-ui"></a>
+#### Active CI Job Filtering in Permissions - New UI
 
 Updated the New UI permissions workflow to display only active CI jobs during user permission assignment, aligning the behavior with the Old UI experience. This prevents inactive jobs from appearing in CI job selection lists across permission management screens.
 
@@ -1695,7 +1875,7 @@ Updated the New UI permissions workflow to display only active CI jobs during us
 
 * Users & Permissions
 
-#### AiAuthoringBundle Metadata Support <a href="#aiauthoringbundle-metadata-support" id="aiauthoringbundle-metadata-support"></a>
+#### AiAuthoringBundle Metadata Support
 
 Added support for the `AiAuthoringBundle` metadata type across ARM metadata operations, enabling proper handling during deployments, exclusions, skip-member configurations, and CI job processing. This resolves issues where deployments involving `AiAuthoringBundle` components were failing or not being recognized correctly.
 
@@ -1707,21 +1887,21 @@ Added support for the `AiAuthoringBundle` metadata type across ARM metadata oper
 
 ***
 
-## DataLoader Pro Release Notes **26.2.7**
+## DataLoader Pro 26.2.7
 
-**Release Date:** **17 May 2026**
+**Release date:** 17 May 2026
 
-#### **ZIP File Attachments Not Migrating via Data Loader Pro**
+#### ZIP File Attachments Not Migrating via Data Loader Pro
 
 Resolved an issue where ZIP file attachments associated with HTML Report object records were not being migrated from Production to sandbox environments using Data Loader Pro. PDF and other attachment types migrated correctly, but ZIP files were silently skipped. All attachment types now migrate as expected.
 
 ***
 
-## ARM **Release Notes 26.2.6.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
+## ARM 26.2.6.1
 
-**Release Date: 13 May 2026**
+**Release date:** 13 May 2026
 
-#### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes <a href="#deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes" id="deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes"></a>
+#### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes
 
 Resolved an issue where Merge/Commit validations and deployments were incorrectly reported as failed in ARM for Salesforce Sandbox/Production environments upgraded to Salesforce Summer ’26 (API version 67).
 
@@ -1740,9 +1920,9 @@ Upgraded Salesforce Metadata API libraries to version 67 to support Salesforce S
 
 ***
 
-## **ARM Release Notes 26.2.6**
+## ARM 26.2.6
 
-**Release Date: 10 May 2026**
+**Release date:** 10 May 2026
 
 #### Testim Integration with ARM CI Jobs – New UI
 
@@ -1816,11 +1996,11 @@ Resolved issue where commits were not fetched for SFDX repositories.
 
 ***
 
-## ARM **Release Notes 26.2.5.1** <a href="#release-notes-26.2.6.1" id="release-notes-26.2.6.1"></a>
+## ARM 26.2.5.1
 
-**Release Date: 13 May 2026**
+**Release date:** 13 May 2026
 
-#### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes <a href="#deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes" id="deployment-and-validation-status-reporting-failure-for-salesforce-summer-26-sandboxes"></a>
+#### Deployment and Validation Status Reporting Failure for Salesforce Summer ’26 Sandboxes
 
 Resolved an issue where Merge/Commit validations and deployments were incorrectly reported as failed in ARM for Salesforce Sandbox/Production environments upgraded to Salesforce Summer ’26 (API version 67).
 
@@ -1839,11 +2019,11 @@ Upgraded Salesforce Metadata API libraries to version 67 to support Salesforce S
 
 ***
 
-## ARM **Release Notes 26.2.5** <a href="#release-notes-26.2.5" id="release-notes-26.2.5"></a>
+## ARM 26.2.5
 
-**Release Date: 3 May 2026**
+**Release date:** 3 May 2026
 
-#### **Configurable Deployment Behavior for Profile IP Ranges (Limited)** <a href="#id-1.-configurable-deployment-behavior-for-profile-ip-ranges-new-enhancement" id="id-1.-configurable-deployment-behavior-for-profile-ip-ranges-new-enhancement"></a>
+#### Configurable Deployment Behavior for Profile IP Ranges (Limited)
 
 Introduced a new configuration to control how Profile IP Ranges are handled during deployments. This feature is enabled via a **Feature Flag**, and the **Deployment Mode** options are visible only when the flag is turned ON.
 
@@ -1858,7 +2038,7 @@ Introduced a new configuration to control how Profile IP Ranges are handled duri
 * For other deployment types (such as CI Jobs, Single Revision, Commit Label, and Revision Range), behavior depends on **package preparation**. Only the IP ranges included in the deployment package are applied, and any others **will be removed** from the target.
 * Since these deployments follow a **delta-based mechanism**, users should carefully prepare packages when using **Replace All** to avoid unintended removal of IP ranges.
 
-#### **BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)**
+#### BotOne V Metadata Upload – Full Path Exposure Fix (Support Case #213285)
 
 Fixed an issue where full file path details were exposed during metadata ZIP upload for the BotOne V type, posing a potential security concern.
 
@@ -1867,7 +2047,7 @@ This issue occurred due to missing bot metadata during Release Label package gen
 **Impacted Areas:**\
 Release Labels, DX Deployments, DX ZIP Deployment, CI Jobs (DX with Bot metadata)
 
-#### **Independent Visibility for Permission Set Commit Options (Enhancement)**
+#### Independent Visibility for Permission Set Commit Options (Enhancement)
 
 Improved the EZ Commit experience by making Permission Set commit options visible independently in the Submit Validation panel. Previously, the **Remove user permissions** option was only shown when **Commit access settings for selected metadata** was enabled, causing confusion.
 
@@ -1879,7 +2059,7 @@ With this enhancement:
 **Impacted Areas:**\
 Version Control – EZ Commit
 
-#### **SonarQube New Code Identification Fix for PR Analysis (Support Case #204387)**
+#### SonarQube New Code Identification Fix for PR Analysis (Support Case #204387)
 
 Fixed an issue where SonarQube analysis from ARM did not correctly identify new code for commits made to non-main branches without an associated Pull Request. Previously, such analyses were treated as standalone branches, leading to incorrect reporting.
 
@@ -1888,7 +2068,7 @@ With this fix, the selected baseline branch is now correctly used during Pull Re
 **Impacted Areas:**\
 EZ Commit, EZ Merge, SCA Reports, Deployments with SCA (SonarQube Integration)
 
-#### **Stale Scheduled Job Execution Fix for ACCELQ Jobs (Support Case #222962)**
+#### Stale Scheduled Job Execution Fix for ACCELQ Jobs (Support Case #222962)
 
 Fixed an issue where scheduled jobs were triggering even when they were not present, deleted, or not properly saved in the UI. This caused inconsistencies between the UI and scheduler, leading to repeated and unnecessary job executions.
 
@@ -1897,7 +2077,7 @@ With this fix, cleanup logic has been implemented to remove stale and orphaned s
 **Impacted Areas:**\
 CI Jobs, Scheduler (ACCELQ Jobs), Deployment Execution
 
-#### **Pattern-Based Substitution Support for Named Credentials (Enhancement)**
+#### Pattern-Based Substitution Support for Named Credentials (Enhancement)
 
 Enhanced the Search & Substitute feature to support pattern/wildcard-based substitution for Named Credential parameter values. Previously, only exact-match substitutions were supported, requiring multiple rules for similar URL patterns.
 
@@ -1910,20 +2090,20 @@ Admin – Search & Substitute, CI Jobs, Deployment Configuration
 
 ***
 
-## DataLoader Pro Release Notes **26.2.5** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## DataLoader Pro 26.2.5
 
-**Release Date:** **03 May 2026**
+**Release date:** 3 May 2026
 
 **DataLoader Pro Job Result Inaccessible**\
 Resolved an issue where result files from completed DataLoader Pro jobs were not accessible. Users can now successfully view and download job results as expected.
 
 ***
 
-## **ARM Release Notes 26.2.4** <a href="#release-notes-26.2.3" id="release-notes-26.2.3"></a>
+## ARM 26.2.4
 
-**Release Date:** **26 April 2026**
+**Release date:** 26 April 2026
 
-#### **Accurate Error Message Display for Deployment Failures (Support Case #207169)** <a href="#accurate-error-message-display-for-deployment-failures-support-case-207169" id="accurate-error-message-display-for-deployment-failures-support-case-207169"></a>
+#### Accurate Error Message Display for Deployment Failures (Support Case #207169)
 
 Fixed an issue where incorrect or misleading error messages were displayed in the Deployment UI logs. In certain cases, users saw generic authentication-related errors, even when the actual failure was due to invalid deployment configurations (e.g., selecting “No Test Run” for Production deployments).
 
@@ -1932,7 +2112,7 @@ With this fix, the UI now reflects the correct backend error messages, providing
 **Impacted Areas:**\
 Deployment, CI Jobs
 
-#### **Template Sharing for Subusers – Environment Provisioning (Both UIs) - New Enhancement** <a href="#template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement" id="template-sharing-for-subusers-environment-provisioning-both-uis-new-enhancement"></a>
+#### Template Sharing for Subusers – Environment Provisioning (Both UIs) - New Enhancement
 
 Introduced an enhancement to allow Subusers to share environment provisioning templates they have created. Previously, only Admin users could share templates.
 
@@ -1947,7 +2127,7 @@ This improvement reduces dependency on Admins and enables better collaboration.
 **Impacted Areas:**\
 Environment Provisioning (Template Management) – Old UI & New UI
 
-#### **Multiple Diff View Support in EZ-Commit – New UI (Support Case #215475)** <a href="#multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475" id="multiple-diff-view-support-in-ezcommit-new-ui-support-case-215475"></a>
+#### Multiple Diff View Support in EZ-Commit – New UI (Support Case #215475)
 
 Enhanced the EZ-Commit experience in the New UI to allow users to view multiple file diffs simultaneously. Previously, opening a diff would automatically close any previously opened diff, limiting comparison across components.
 
@@ -1956,7 +2136,7 @@ With this update, users can expand multiple diff sections at the same time, enab
 **Impacted Areas:**\
 EZ-Commit, CI Jobs, Deployments, Version Control, Merge Requests
 
-#### **Baseline Revision Selection Display Fix – Classic UI (Support Case #211183)** <a href="#baseline-revision-selection-display-fix-classic-ui-support-case-211183" id="baseline-revision-selection-display-fix-classic-ui-support-case-211183"></a>
+#### Baseline Revision Selection Display Fix – Classic UI (Support Case #211183)
 
 Fixed an issue in the Classic UI where the selected Baseline Revision was not visually reflected in the CI Job edit screen, even though it was correctly saved. This caused confusion and unnecessary validation errors.
 
@@ -1965,7 +2145,7 @@ With this fix, the selected revision is now properly highlighted, and users are 
 **Impacted Areas:**\
 CI Jobs, Deployments, Merge Requests (Revision Selection Popup)
 
-#### **Merge Conflict Email Notification Accuracy Fix (Support Case #210042)** <a href="#merge-conflict-email-notification-accuracy-fix-support-case-210042" id="merge-conflict-email-notification-accuracy-fix-support-case-210042"></a>
+#### Merge Conflict Email Notification Accuracy Fix (Support Case #210042)
 
 Fixed an issue where non-conflicting files were incorrectly listed under the “Conflicted Files” section in merge conflict email notifications.
 
@@ -1974,14 +2154,14 @@ With this fix, only the actual conflicting files are displayed in the “Conflic
 **Impacted Areas:**\
 Version Control – EZ-Merge
 
-#### **Apache Tomcat Upgrade for On-Prem Instances** <a href="#apache-tomcat-upgrade-for-on-prem-instances" id="apache-tomcat-upgrade-for-on-prem-instances"></a>
+#### Apache Tomcat Upgrade for On-Prem Instances
 
 Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 for all On-Prem deployments. This update ensures improved performance, enhanced security, and better stability of the ARM application environment.
 
 **Impacted Areas:**\
 On-Prem Installations
 
-#### **Login Redirection Issue Fix – New UI (Support Case #214960,#222145,#218645)** <a href="#login-redirection-issue-fix-new-ui-support-case-214960" id="login-redirection-issue-fix-new-ui-support-case-214960"></a>
+#### Login Redirection Issue Fix – New UI (Support Case #214960,#222145,#218645)
 
 Fixed an issue where users were unable to log in correctly after enabling the New UI and were repeatedly redirected despite switching back to the Old UI.
 
@@ -1990,7 +2170,7 @@ This fix ensures stable login behavior by restoring failed script handling and i
 **Impacted Areas:**\
 Login, UI Navigation (Old UI & New UI)
 
-#### **Faster Branch Creation Using GitHub API (Both UIs) - New Enhancement** <a href="#faster-branch-creation-using-github-api-both-uis-new-enhancement" id="faster-branch-creation-using-github-api-both-uis-new-enhancement"></a>
+#### Faster Branch Creation Using GitHub API (Both UIs) - New Enhancement
 
 Introduced an enhancement to improve branch creation performance by creating branches instantly using the GitHub API. Previously, branch creation was delayed due to synchronous workspace copy and setup processes.
 
@@ -2006,7 +2186,7 @@ This enhancement improves responsiveness and overall user experience.
 **Impacted Areas:**\
 Version Control, EZ-Commit (Old UI & New UI)
 
-#### **CI Jobs List Auto-Refresh Fix After Activate/Deactivate (Support Case #217089 – New UI)** <a href="#ci-jobs-list-auto-refresh-fix-after-activate-deactivate-support-case-217089-new-ui" id="ci-jobs-list-auto-refresh-fix-after-activate-deactivate-support-case-217089-new-ui"></a>
+#### CI Jobs List Auto-Refresh Fix After Activate/Deactivate (Support Case #217089 – New UI)
 
 Fixed an issue in the New UI where the CI Jobs list did not automatically refresh after activating or deactivating a job. Previously, although the change was successfully applied in the backend, the UI did not reflect the updated _Last Date Modified_ or reorder the job in the list until a manual refresh was performed.
 
@@ -2015,7 +2195,7 @@ With this fix, the CI Jobs list now refreshes automatically upon successful acti
 **Impacted Areas:**\
 CI Jobs – List Page (New UI)
 
-#### **Users/Permissions Access Issue for Non-Admin Users (Support Case #216643 – New UI)** <a href="#users-permissions-access-issue-for-non-admin-users-support-case-216643-new-ui" id="users-permissions-access-issue-for-non-admin-users-support-case-216643-new-ui"></a>
+#### Users/Permissions Access Issue for Non-Admin Users (Support Case #216643 – New UI)
 
 Fixed an issue where non-admin users were unable to directly access the Users/Permissions section in the New UI despite having the required permissions. Access was only possible after navigating via the Old UI, leading to inconsistent behavior.
 
@@ -2024,7 +2204,7 @@ With this fix, routing logic now correctly validates user permissions, allowing 
 **Impacted Areas:**\
 User Management – Navigation (Old UI & New UI)
 
-#### **Apache Tomcat Upgrade to Version 11.0.21 (Shared & Dedicated Environments)** <a href="#apache-tomcat-upgrade-to-version-11.0.21-shared-and-dedicated-environments" id="apache-tomcat-upgrade-to-version-11.0.21-shared-and-dedicated-environments"></a>
+#### Apache Tomcat Upgrade to Version 11.0.21 (Shared & Dedicated Environments)
 
 Upgraded Apache Tomcat from version 11.0.13 to 11.0.21 across both Shared (SaaS) and Dedicated environments to address known security vulnerabilities and improve overall platform stability.
 
@@ -2033,7 +2213,7 @@ This upgrade ensures a secure and reliable runtime environment, with validation 
 **Impacted Areas:**\
 Platform Infrastructure – Shared (SaaS) & Dedicated Environments
 
-#### **Salesforce CLI Upgrade to v2.130.9 (Support Case #219699)** <a href="#salesforce-cli-upgrade-to-v2.130.9-support-case-219699" id="salesforce-cli-upgrade-to-v2.130.9-support-case-219699"></a>
+#### Salesforce CLI Upgrade to v2.130.9 (Support Case #219699)
 
 Upgraded the Salesforce CLI from version 2.125.2 to 2.130.9 across development and CI/CD environments to ensure compatibility with the latest Salesforce features, bug fixes, and security updates.
 
@@ -2044,17 +2224,17 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-## DataLoader Release Notes 26.2.4
+## DataLoader 26.2.4
 
-**Release Date: 26 April 2026**
+**Release date:** 26 April 2026
 
 **Data Retention Policy for nCino & DataLoader** — Admins can now enable automatic cleanup of unused jobs (DataLoader processes, Feature Deployments, CI Job histories, etc.) via a configurable retention policy under My Account.
 
 ***
 
-## DataLoader Release Notes 26.2.3
+## DataLoader 26.2.3
 
-**Release Date: 26 April 2026**
+**Release date:** 26 April 2026
 
 **Dataloader Extract Job not returning all field columns**
 
@@ -2062,11 +2242,11 @@ Development Environments, CI/CD Pipelines, Deployment Workflows
 
 ***
 
-## **ARM Release Notes 26.2.2**
+## ARM 26.2.2
 
-**Release Date:** **12 April 2026**
+**Release date:** 12 April 2026
 
-#### **1. ARM Deployment: Improved Error Message Rendering (Support Case #206745 – New UI)**
+#### ARM Deployment: Improved Error Message Rendering (Support Case #206745 – New UI)
 
 Fixed an issue in the New UI where ARM did not correctly parse or escape `< >` characters in error messages returned from Salesforce during deployments. This caused error details to display incorrectly in the Failed Components section of the deployment report.
 
@@ -2077,7 +2257,7 @@ Deployment Report (Failed Components Section)
 
 ***
 
-#### **2. Permission Set XML Consistency for Data Cloud (Support Case #211123)**
+#### Permission Set XML Consistency for Data Cloud (Support Case #211123)
 
 Resolved an issue where Data Cloud-enabled Permission Sets showed inconsistencies between ARM IDE and Compare Files, due to the `<dataspaceScopes>` node missing in comparison results. This prevented users from committing changes successfully.
 
@@ -2088,7 +2268,7 @@ EZ Commit, Merge, Deployment, CI Jobs (DX and Non-DX)
 
 ***
 
-#### **3. EZ Commit: Duplicate Component Selection Prevention (Support Case #212351 – New UI)**
+#### EZ Commit: Duplicate Component Selection Prevention (Support Case #212351 – New UI)
 
 Fixed an issue in the New UI where components selected under the Added/Modified Components tab in EZ-Commit (with Autodraft enabled) were not reflected in the All Metadata Components tab, allowing duplicate selections during commit.
 
@@ -2099,7 +2279,7 @@ EZ-Commit Flow
 
 ***
 
-#### **4. CI & Selective Deployment: Consistent Component Evaluation (Support Case #210095)**
+#### CI & Selective Deployment: Consistent Component Evaluation (Support Case #210095)
 
 Addressed inconsistent behavior between CI Jobs and Selective Deployment when using the Ignore Installed Components option.
 
@@ -2113,7 +2293,7 @@ Org-to-Org Deployment, VC-to-Org Deployment (Workflow Metadata)
 
 ***
 
-#### **5. Salesforce Org Registration via OAuth with ECA Fails with “Undefined Error” (Support Case #217635)**
+#### Salesforce Org Registration via OAuth with ECA Fails with “Undefined Error” (Support Case #217635)
 
 Fixed an issue where users encountered an “undefined error” while registering a Salesforce Org in AR using OAuth via ECA. This issue was specific to version 26.2.1 and did not occur in earlier releases.
 
@@ -2124,7 +2304,7 @@ Salesforce Org Registration, ECA OAuth Flow
 
 ***
 
-#### **6. ALM Integration Enhancements (Salesforce)**
+#### ALM Integration Enhancements (Salesforce)
 
 **Note:** These enhancements are available only in the New UI.
 
@@ -2146,9 +2326,9 @@ These enhancements enable automatic synchronization of Work Item statuses during
 
 ***
 
-## **ARM Release Notes 26.2.1** <a href="#release-notes-version-26.2.1" id="release-notes-version-26.2.1"></a>
+## ARM 26.2.1
 
-**Release Date: 05 April 2026**
+**Release date:** 5 April 2026
 
 1. **Custom Setting Migration Template – Save Confirmation Pop-up Fix (New UI) \[SupportCase#205885]**\
    Fixed an issue where newly provisioned data values were not displayed in the Save confirmation pop-up while creating or editing a Custom Setting migration template in the New UI. This prevented users from verifying configuration details before saving.\
@@ -2198,9 +2378,9 @@ These enhancements enable automatic synchronization of Work Item statuses during
 
 ***
 
-## DataLoader Pro Release Notes 26.2.1 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## DataLoader Pro 26.2.1
 
-**Release Date:** **05 April 2026**
+**Release date:** 5 April 2026
 
 **New UI: DataLoader Pro CSV validation incorrect**
 
@@ -2208,9 +2388,9 @@ Fixed DataLoader Pro in the new UI so invalid CSV input is correctly validated a
 
 ***
 
-## DataLoader Release Notes 26.2.1
+## DataLoader 26.2.1
 
-**Release Date:** **05 April 2026**
+**Release date:** 5 April 2026
 
 **DataLoader Basic job stuck / Salesforce error during extract**
 
@@ -2222,11 +2402,11 @@ Fixed DataLoader extract job editing so fields and the saved query now load corr
 
 ***
 
-## **ARM Release Notes 26.1.13**
+## ARM 26.1.13
 
-**Release Date: 29 March 2026**
+**Release date:** 29 March 2026
 
-#### **Automatic Dependency Fetch for Data Cloud Data Kits (DX only) - New UI**
+#### Automatic Dependency Fetch for Data Cloud Data Kits (DX only) - New UI
 
 ARM now automatically retrieves all dependent metadata for a selected Salesforce Data Cloud Data Kit using connected org credentials. This eliminates the need to manually download and upload the package manifest (_package.xml_) during commit or deployment workflows.
 
@@ -2237,7 +2417,7 @@ Data Cloud Deployments, Commit Workflow.
 
 ***
 
-#### **Environment Provisioning – Post Deployment Behavior Fix -** #201758
+#### Environment Provisioning – Post Deployment Behavior Fix - #201758
 
 Fixed issues with the Post Deployment step to ensure templates are included only when explicitly selected.
 
@@ -2246,7 +2426,7 @@ This update improves usability and ensures more reliable execution of provisioni
 **Impacted Areas:**\
 Environment Provisioning, Migration Templates
 
-#### **CodeScan Baseline Not Applied in EZ Commit – Fix - (**#199417,#204388,#204387)
+#### CodeScan Baseline Not Applied in EZ Commit – Fix - (#199417,#204388,#204387)
 
 Resolved an issue where the configured CodeScan baseline was not applied during **EZ Commit** or **EZ Merge** operations for mapped Salesforce orgs.
 
@@ -2255,7 +2435,7 @@ The system now correctly uses the defined baseline for analysis.
 **Impacted Areas:**\
 EZ Commit, EZ Merge, SCA Module
 
-#### **OmniStudio Components Missing in CI Deployments – Fix -** #206010
+#### OmniStudio Components Missing in CI Deployments – Fix - #206010
 
 Fixed an issue where OmniStudio components (such as **OmniScript** and **OmniDataTransform**) were excluded from CI deployments when listed under excluded metadata types.
 
@@ -2264,7 +2444,7 @@ Improved visibility helps identify such configurations and ensures accurate depl
 **Impacted Areas:**\
 CI Jobs, OmniStudio Deployments
 
-#### **CI Jobs History – “More Info” Text Selection Fix -** #209352
+#### CI Jobs History – “More Info” Text Selection Fix - #209352
 
 Fixed a regression in the New UI where users were unable to select or copy text from the **More Info** popup in CI Jobs History.
 
@@ -2273,7 +2453,7 @@ Text selection and copying now work as expected.
 **Impacted Areas:**\
 CI Jobs History, More Info Popup (New UI)
 
-#### **Missing Bot & GenAI Metadata in Deployments – Fix -** #209232
+#### Missing Bot & GenAI Metadata in Deployments – Fix - #209232
 
 Fixed an issue where **GenAI** and **GenAI Planner Bundle** metadata were not included during deployments using Release Labels, even when selected.
 
@@ -2282,7 +2462,7 @@ Deployments now correctly include all selected metadata components.
 **Impacted Areas:**\
 Commits, Deployments
 
-#### **Assessment Metadata Missing in Release Label Deployments – Fix -** #204091
+#### Assessment Metadata Missing in Release Label Deployments – Fix - #204091
 
 Resolved an issue where **AssessmentQuestionSet** and **AssessmentQuestion** metadata were not included during Release Label deployments.
 
@@ -2291,7 +2471,7 @@ These components are now properly processed and deployed.
 **Impacted Areas:**\
 Deployments, CI Jobs
 
-#### **LightningTypeBundle Metadata Not Detected in EZ Commit – Fix -** #210860
+#### LightningTypeBundle Metadata Not Detected in EZ Commit – Fix - #210860
 
 Fixed an issue where **LightningTypeBundle** metadata was not retrieved or displayed in **Review Artifacts** during EZ Commit, resulting in missing diffs.
 
@@ -2302,9 +2482,9 @@ EZ Commit, EZ Merge, CI Jobs, Deployments
 
 ***
 
-## DataLoader Pro Release Notes 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## DataLoader Pro 26.1.13
 
-**Release Date:** **29 March 2026**
+**Release date:** 29 March 2026
 
 **DataLoader Pro - Pagination Issue in DataLoader Pro (New UI)**
 
@@ -2312,9 +2492,9 @@ Resolved an issue where pagination did not function correctly after fetching obj
 
 ***
 
-## DataLoader Release Notes 26.1.13 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## DataLoader 26.1.13
 
-**Release Date:** **29 March 2026**
+**Release date:** 29 March 2026
 
 **DataLoader Basic** - **Concurrent Job Validation in Data Loader Basic (New UI)**
 
@@ -2322,11 +2502,11 @@ Fixed an issue where multiple jobs could be triggered for the same org without p
 
 ***
 
-## ARM Release Notes 26.1.12 <a href="#release-notes-version-26.1.12" id="release-notes-version-26.1.12"></a>
+## ARM 26.1.12
 
-**Release Date:** **22 March 2026**
+**Release date:** 22 March 2026
 
-#### **Code Coverage & Test Class Report Structure Enhancement (New Enhancement)** <a href="#code-coverage-and-test-class-report-structure-enhancement-new-enhancement" id="code-coverage-and-test-class-report-structure-enhancement-new-enhancement"></a>
+#### Code Coverage & Test Class Report Structure Enhancement (New Enhancement)
 
 Improved the structure of the **Code Coverage Report CSV** and **Test Class report** so that the test class name is now repeated on every row for each test method. This makes sorting, filtering, and analysis by class and method more reliable, especially for larger orgs.
 
@@ -2336,7 +2516,7 @@ Test Class Report
 
 ***
 
-#### **Parallel Processor Support in CI Jobs – New UI** <a href="#parallel-processor-support-in-ci-jobs-new-ui" id="parallel-processor-support-in-ci-jobs-new-ui"></a>
+#### Parallel Processor Support in CI Jobs – New UI
 
 The **Parallel Processor** configuration is now available in the **New UI** for CI Jobs. This feature allows users to configure **GET or POST requests** to be executed before or after a Salesforce deployment as part of the CI job execution.
 
@@ -2347,7 +2527,7 @@ CI Jobs – New UI Configuration
 
 ***
 
-#### **Scratch Org Deployment – Access Token Retrieval Fix** <a href="#scratch-org-deployment-access-token-retrieval-fix" id="scratch-org-deployment-access-token-retrieval-fix"></a>
+#### Scratch Org Deployment – Access Token Retrieval Fix
 
 Fixed an issue where **CI Job deployments from a Salesforce Org to a Scratch Org** could fail with a **400 Bad Request error** while attempting to fetch an access token using the stored refresh token. This occurred when the **destination org was registered using Standard authentication and had a different login URL than the source org** (for example, Production/Developer source org and Sandbox destination org).
 
@@ -2358,7 +2538,7 @@ CI Jobs – Deploy from Salesforce Org to Scratch Org
 
 ***
 
-#### **Dev Hub Selection Retention Fix – Create Unlocked Package Version and Install It to Salesforce (New UI)** <a href="#dev-hub-selection-retention-fix-create-unlocked-package-version-and-install-it-to-salesforce-new-ui" id="dev-hub-selection-retention-fix-create-unlocked-package-version-and-install-it-to-salesforce-new-ui"></a>
+#### Dev Hub Selection Retention Fix – Create Unlocked Package Version and Install It to Salesforce (New UI)
 
 Fixed an issue in the **New UI** where the selected **Dev Hub** was not retained in the CI Job type **“Create Unlocked Package Version and Install It to Salesforce.”** After saving the job configuration and completing deployment, returning to the **Edit Deployment** screen showed the **Dev Hub** field as empty, even though a value had been previously selected.
 
@@ -2369,7 +2549,7 @@ CI Job → Create Unlocked Package Version and Install It to Salesforce → Depl
 
 ***
 
-#### **ContentAsset Handling Fix – Release Label Artifacts** <a href="#contentasset-handling-fix-release-label-artifacts" id="contentasset-handling-fix-release-label-artifacts"></a>
+#### ContentAsset Handling Fix – Release Label Artifacts
 
 Fixed an issue where **including a ContentAsset modification revision in a Release Label artifact** caused package generation to fail with an error indicating missing source files for the **ContentAsset** type.
 
@@ -2381,7 +2561,7 @@ Release Label Deployment and Merge (ContentAsset changes)
 
 ***
 
-#### **CI Job Backup Failure Fix – Unsupported Metadata Type Handling** <a href="#ci-job-backup-failure-fix-unsupported-metadata-type-handling" id="ci-job-backup-failure-fix-unsupported-metadata-type-handling"></a>
+#### CI Job Backup Failure Fix – Unsupported Metadata Type Handling
 
 Fixed an issue where **CI Jobs configured for Backup to Version Control** could fail with the error **“Missing metadata type definition in registry for id 'CustomObjectBinding'.”**
 
@@ -2394,7 +2574,7 @@ CI Jobs – Backup to Version Control
 
 ***
 
-#### **1-Month Data Retention Policy Option** <a href="#id-1-month-data-retention-policy-option" id="id-1-month-data-retention-policy-option"></a>
+#### 1-Month Data Retention Policy Option
 
 ARM now supports a **1-Month retention policy** to provide greater flexibility in managing system data. Previously, retention policies were limited to **3 months, 6 months, and 12 months**.
 
@@ -2407,7 +2587,7 @@ Administration → Retention Policy Settings
 
 ***
 
-#### **Multiple Approver Support for EZ-Merge – New UI** <a href="#multiple-approver-support-for-ez-merge-new-ui" id="multiple-approver-support-for-ez-merge-new-ui"></a>
+#### Multiple Approver Support for EZ-Merge – New UI
 
 Added support for selecting **multiple approvers in EZ-Merge** within the **New UI**. Previously, users were limited to selecting only a **single approver** when creating a merge request, unlike the Old UI which allowed multiple approvers.
 
@@ -2418,7 +2598,7 @@ EZ-Merge – New UI
 
 ***
 
-#### **CI Job Configuration Save Fix – Install Package Job (New UI)** <a href="#ci-job-configuration-save-fix-install-package-job-new-ui" id="ci-job-configuration-save-fix-install-package-job-new-ui"></a>
+#### CI Job Configuration Save Fix – Install Package Job (New UI)
 
 Fixed an issue in the **New UI** where configuration changes were not saved correctly for the CI Job type **“Install an Unlocked or Managed Package from a Version Control Branch.”** In some cases, fields such as **Run Apex Compile, Security Type, and Upgrade Type** reverted to different values when switching between the New UI and Old UI.
 
@@ -2429,7 +2609,7 @@ CI Job → Edit Job → Deploy Page (New UI)
 
 ***
 
-#### **Salesforce Spring ’26 (API 66) Metadata Support** <a href="#salesforce-spring-26-api-66-metadata-support" id="salesforce-spring-26-api-66-metadata-support"></a>
+#### Salesforce Spring ’26 (API 66) Metadata Support
 
 ARM now supports additional metadata types introduced with **Salesforce Spring ’26 (API 66)**. The following metadata types are now supported:
 
@@ -2447,9 +2627,9 @@ CI Jobs
 
 ***
 
-## Data Loader Pro Release Notes 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+## DataLoader Pro 26.1.12
 
-**Release Date: 22 March 2026**
+**Release date:** 22 March 2026
 
 **Flexible Result File Downloads**\
 Users can now download Dataloader Pro job results in their preferred file format, making it easier to consume and share output data. This enhancement allows teams to align exports with their reporting standards or downstream tools without needing manual conversions after download.
@@ -2462,9 +2642,9 @@ Aborted DL Pro jobs from the old UI now show an accurate status instead of incor
 
 ***
 
-## DataLoader Release Notes 26.1.12 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+## DataLoader 26.1.12
 
-**Release Date: 22 March 2026**
+**Release date:** 22 March 2026
 
 **Accurate Count(id) in DL Basic Extract**\
 The Count(id) column now correctly displays record counts in the new UI for DL Basic Extract jobs. Earlier, the column appeared empty in the new UI while still showing values in the old UI, leading to confusion and forcing users to cross-check between interfaces. The fix aligns both UIs so users can confidently rely on the new interface for record counts.
@@ -2474,11 +2654,11 @@ The Count(id) column now correctly displays record counts in the new UI for DL B
 
 ***
 
-## ARM Release Notes 26.1.11 <a href="#release-notes-version-26.1.11" id="release-notes-version-26.1.11"></a>
+## ARM 26.1.11
 
-**Release Date:** **15 March 2026**
+**Release date:** 15 March 2026
 
-#### Backup to Version Control – Credential Refresh Fix <a href="#backup-to-version-control-credential-refresh-fix" id="backup-to-version-control-credential-refresh-fix"></a>
+#### Backup to Version Control – Credential Refresh Fix
 
 Fixed an issue in **CI → Jobs → Backup to Version Control** where changing the selected repository or branch did not refresh the associated credentials. The system previously continued using credentials from the initial selection, which could lead to authentication failures or incorrect commit identities. The credential refresh logic has been corrected to ensure the appropriate credentials are loaded whenever the repository or branch selection changes.
 
@@ -2487,7 +2667,7 @@ CI → Jobs → Backup to Version Control
 
 ***
 
-#### EZ-Commit – Retrieval Logs Button Fix <a href="#ez-commit-retrieval-logs-button-fix" id="ez-commit-retrieval-logs-button-fix"></a>
+#### EZ-Commit – Retrieval Logs Button Fix
 
 Fixed an issue in **Version Control → EZ-Commit (Review Artifact screen)** where the **Retrieval Logs** button became unresponsive after the first click. Users can now open the logs panel multiple times without interruption, ensuring smooth review of retrieval logs during the commit process.
 
@@ -2496,7 +2676,7 @@ EZ-Commit (Version Control) → Retrieval Logs Button
 
 ***
 
-#### Mail Extension Placeholder & Validation Fix – New UI <a href="#mail-extension-placeholder-and-validation-fix-new-ui" id="mail-extension-placeholder-and-validation-fix-new-ui"></a>
+#### Mail Extension Placeholder & Validation Fix – New UI
 
 Fixed an issue in the **New UI → My Account → Mail Extensions** where the placeholder text in the **Extension Name field** suggested using an “@” symbol even though the system does not allow it. The placeholder and validation message have been updated to display valid examples and ensure consistency with the accepted input format.
 
@@ -2505,7 +2685,7 @@ New UI → My Account → Mail Extensions
 
 ***
 
-#### Env Provisioning – Unsupported Metadata Template Execution Fix <a href="#env-provisioning-unsupported-metadata-template-execution-fix" id="env-provisioning-unsupported-metadata-template-execution-fix"></a>
+#### Env Provisioning – Unsupported Metadata Template Execution Fix
 
 Fixed an issue in **Env Provisioning** where executing the **“DisableTeams” template (Environment Provisioning Unsupported Metadata)** returned a **Succeeded** status, but the changes were not reflected in the target Salesforce Org. The template creation logic has been updated to ensure the configuration is properly processed so that all expected settings are applied after execution.
 
@@ -2514,7 +2694,7 @@ Env Provisioning
 
 ***
 
-#### Environment Provisioning History – Pagination Fix <a href="#environment-provisioning-history-pagination-fix" id="environment-provisioning-history-pagination-fix"></a>
+#### Environment Provisioning History – Pagination Fix
 
 Fixed an issue in the **Environment Provisioning History** page where the grid displayed only **10 records** even when a higher page size was selected. Pagination has been corrected to ensure the grid displays the number of records based on the selected page size.
 
@@ -2523,7 +2703,7 @@ Environment Provisioning History Page
 
 ***
 
-#### Environment Provisioning – Duplicate Template Name Validation <a href="#environment-provisioning-duplicate-template-name-validation" id="environment-provisioning-duplicate-template-name-validation"></a>
+#### Environment Provisioning – Duplicate Template Name Validation
 
 Fixed an issue in **New UI → Environment Provisioning → Templates** where the system allowed creation of templates with duplicate names without any validation. A validation check has been added to prevent duplicate template names and ensure users receive an appropriate error message when attempting to create one.
 
@@ -2532,7 +2712,7 @@ Create New Environment Provisioning Template
 
 ***
 
-#### #200317 – CI Jobs: Email Notification After Quick Deploy <a href="#id-200317-ci-jobs-email-notification-after-quick-deploy" id="id-200317-ci-jobs-email-notification-after-quick-deploy"></a>
+#### #200317 – CI Jobs: Email Notification After Quick Deploy
 
 Enhanced **CI Job notifications** to support sending report emails after **Quick Deploy** execution. Previously, email notifications were sent only after the **Validate** stage. With this update, users will also receive CI Job report emails once the **Quick Deploy** process is completed.
 
@@ -2541,7 +2721,7 @@ CI Jobs with notification enabled and Quick Deploy applicable
 
 ***
 
-#### #201002 – Revision Range Deployment Commit Selection Fix <a href="#id-201002-revision-range-deployment-commit-selection-fix" id="id-201002-revision-range-deployment-commit-selection-fix"></a>
+#### #201002 – Revision Range Deployment Commit Selection Fix
 
 Fixed an issue in **Deployment → Revision Range Deployments** where users were unable to select commits from the **first page of the “To” revision list** during a revision-range deployment. The UI logic has been corrected to allow proper selection of commits from the displayed list.
 
@@ -2550,7 +2730,7 @@ Deployment → Revision Range Deployments
 
 ***
 
-#### #198567 – Quick Merge Continue Button Fix (New UI) <a href="#id-198567-quick-merge-continue-button-fix-new-ui" id="id-198567-quick-merge-continue-button-fix-new-ui"></a>
+#### #198567 – Quick Merge Continue Button Fix (New UI)
 
 Fixed an issue in **New UI → Version Control → Commit History** where the **Continue** button in **Quick Merge** was disabled immediately after performing a new **EZ-Commit**. Users can now proceed with Quick Merge without needing to exit and reopen the page.
 
@@ -2559,7 +2739,7 @@ Version Control → Commit History → Quick Merge
 
 ***
 
-#### #202013 – CheckmarxOne Project Creation During EZ-Merge <a href="#id-202013-checkmarxone-project-creation-during-ez-merge" id="id-202013-checkmarxone-project-creation-during-ez-merge"></a>
+#### #202013 – CheckmarxOne Project Creation During EZ-Merge
 
 Resolved an issue where **AutoRABIT EZ-Merge operations with CheckmarxOne SCA validation** created a **new project in CheckmarxOne for every execution**. With the fix, scans executed during EZ-Merge will use a **single common project** instead of creating multiple projects.
 
@@ -2570,7 +2750,7 @@ EZ-Merge with CheckmarxOne SCA Validation
 
 ***
 
-#### #203270 – CI Job Validate Only Execution Fix <a href="#id-203270-ci-job-validate-only-execution-fix" id="id-203270-ci-job-validate-only-execution-fix"></a>
+#### #203270 – CI Job Validate Only Execution Fix
 
 Fixed an issue in **CI Jobs** where a queued job triggered with the **Validate Only** option executed as a **regular deployment**instead of validation. The issue occurred when multiple jobs were triggered and one entered the queue. The logic has been corrected to ensure queued jobs retain the **Validate Only** configuration and execute accordingly.
 
@@ -2579,7 +2759,7 @@ CI Jobs with Deployment (Validate Only and Real Deployment) option
 
 ***
 
-#### **GitHub OAuth Authentication Support for Repository Integration (New UI)**
+#### GitHub OAuth Authentication Support for Repository Integration (New UI)
 
 Introduced OAuth-based authentication support for GitHub repository integration in ARM, alongside the existing Personal Access Token (PAT) method. Users can now select OAuth during repository registration, authorize access via GitHub, and securely connect repositories without manually managing tokens.
 
@@ -2594,9 +2774,9 @@ Version Control → Repository Registration (GitHub OAuth)
 
 ***
 
-## DataLoader Pro Release Notes 26.1.11
+## DataLoader Pro 26.1.11
 
-**Release Date: 15 March 2026**
+**Release date:** 15 March 2026
 
 **DL Pro – Corrected Record Count Display for Objects with Similar Names**
 
@@ -2604,9 +2784,9 @@ An issue was resolved where the **success count and error count** were displayed
 
 ***
 
-## DataLoader Release Notes 26.1.11
+## DataLoader 26.1.11
 
-**Release Date: 15 March 2026**
+**Release date:** 15 March 2026
 
 **Deployment from Deployment History Fix**
 
@@ -2622,9 +2802,9 @@ An issue was addressed in **DataLoader** where running aggregate SOQL queries re
 
 ***
 
-## ARM Release Notes 26.1.10
+## ARM 26.1.10
 
-**Release Date: 08 March 2026**
+**Release date:** 8 March 2026
 
 #### RecordType Picklist Values Detection Fix #190557
 
@@ -2635,9 +2815,9 @@ Deployments, CI Jobs
 
 ***
 
-## DataLoader Pro Release Notes 26.1.10
+## DataLoader Pro 26.1.10
 
-**Release Date: 08 March 2026**
+**Release date:** 8 March 2026
 
 #### Processing Rule Migration – Parent-Child Relationship Fix
 
@@ -2647,9 +2827,9 @@ The migration logic has been updated to correctly handle **self-referential pare
 
 ***
 
-## ARM Release Notes 26.1.9
+## ARM 26.1.9
 
-**Release Date: 01 March 2026**
+**Release date:** 1 March 2026
 
 This release includes usability improvements, UI consistency enhancements, deployment fixes, and expanded authentication support.
 
@@ -2669,7 +2849,7 @@ This enhancement prevents accidental multiple deletions and improves workflow cl
 
 Resolved icon visibility issues during the **Clear AutorabitExtId** operation in both Old UI and New UI.
 
-### Improvements
+### Enhancements
 
 * Status and Log icons no longer disappear during or after execution.
 * Status now correctly updates to **Success** or **Failed** upon completion.
@@ -2682,7 +2862,7 @@ This ensures better execution tracking and improved transparency.
 
 Addressed a CI deployment issue related to incomplete Static Resource deletions.
 
-### Enhancement
+### Enhancements
 
 * Static Resources are now fully removed during deletion.
 * Prevents deployment errors caused by residual metadata.
@@ -2742,9 +2922,9 @@ The save logic has been corrected to ensure the Org association remains intact a
 
 ***
 
-## DataLoader Pro Release Notes 26.1.9
+## DataLoader Pro 26.1.9
 
-**Release Date: 01 March 2026**
+**Release date:** 1 March 2026
 
 #### Hierarchical Object Handling – Parent Resolution Consistency
 
@@ -2756,11 +2936,11 @@ With this fix, only the objects selected during configuration will be processed 
 
 ***
 
-## ARM Release Notes 26.1.8 <a href="#release-notes-version-26.1.8" id="release-notes-version-26.1.8"></a>
+## ARM 26.1.8
 
-**Release Date: 22 February 2026**
+**Release date:** 22 February 2026
 
-#### Test Mapping Management – Bulk Import/Export (New UI) <a href="#test-mapping-management-bulk-import-export-new-ui" id="test-mapping-management-bulk-import-export-new-ui"></a>
+#### Test Mapping Management – Bulk Import/Export (New UI)
 
 Enhanced Test Mapping management is now available in the new UI to simplify maintenance and reduce unnecessary test executions.
 
@@ -2777,7 +2957,7 @@ CI Jobs – Test Mapping Configuration (New UI)
 CI/CD – Run Tests Based on Changes\
 Test Mapping Management (New UI Only)\*\*
 
-#### Rollback Log – Org Name Display Fix <a href="#rollback-log-org-name-display-fix" id="rollback-log-org-name-display-fix"></a>
+#### Rollback Log – Org Name Display Fix
 
 Fixed an issue where the **Org Name** was displayed as `null` on the Rollback Log page after executing a CI Job with rollback enabled.
 
@@ -2791,13 +2971,13 @@ Rollback Log Page
 **Functional Impact Areas (QA)**\
 CI Rollback
 
-#### CI Job History – Pagination Missing for Sub-users <a href="#ci-job-history-pagination-missing-for-sub-users" id="ci-job-history-pagination-missing-for-sub-users"></a>
+#### CI Job History – Pagination Missing for Sub-users
 
 Fixed an issue where **Sub-users** could not see pagination controls on the **CI Job History** page. As a result, only the first **25** job records were shown and users could not navigate to additional history entries.
 
 Sub-users can now view pagination (Next/Previous/page numbers) and access all available CI Job History records.
 
-#### Sync Branch – Unregister Button Visibility Fix <a href="#sync-branch-unregister-button-visibility-fix" id="sync-branch-unregister-button-visibility-fix"></a>
+#### Sync Branch – Unregister Button Visibility Fix
 
 Fixed a UI issue in the **Sync Branch** pop-up where the **Unregister** button was not visible when a large number of branches (100+) were listed. The modal did not provide scrolling, preventing users from accessing the action button.
 
@@ -2809,7 +2989,7 @@ Sync Branches Popup
 **Functional Impact Areas (QA)**\
 Sync Branches Popup
 
-#### Report Deployment – Package Structure Fix- #193182 <a href="#report-deployment-package-structure-fix-193182" id="report-deployment-package-structure-fix-193182"></a>
+#### Report Deployment – Package Structure Fix- #193182
 
 Fixed an issue where Report deployments were failing with the error:\
 _“An object '\<reportfolder/reportname>' of type Report was named in package.xml, but was not found in zipped directory.”_
@@ -2824,7 +3004,7 @@ Org to Org Deployment\
 CI – Salesforce to Salesforce Deployment\
 Repo to Org Deployment
 
-#### ALM Integration (New UI) – Work Items Not Displaying - #198093 <a href="#alm-integration-new-ui-work-items-not-displaying-198093" id="alm-integration-new-ui-work-items-not-displaying-198093"></a>
+#### ALM Integration (New UI) – Work Items Not Displaying - #198093
 
 Fixed an issue where work items were not displayed in the **ALM Integration (New UI)** for certain projects and sprint selections. The issue occurred due to the request payload using the project/sprint key instead of the required ID, resulting in empty responses.
 
@@ -2836,7 +3016,7 @@ EZ-Merge – ALM Integration
 **Functional Impact Areas (QA)**\
 EZ-Merge – ALM Work Items (New UI)\*\*
 
-#### Pagination Count & Record Display Fix <a href="#pagination-count-and-record-display-fix" id="pagination-count-and-record-display-fix"></a>
+#### Pagination Count & Record Display Fix
 
 Fixed an issue where changing the pagination dropdown (e.g., 10 to 20 or 50 records) did not update the displayed results on the **CI Job History and Details** pages. The back-end logic has been corrected to properly apply the selected page size.
 
@@ -2855,7 +3035,7 @@ CI Job Details Page
 **Functional Impact Areas (QA)**\
 CI Job History and Related Modules
 
-#### Default Apex Test Cases – Success Message Added <a href="#default-apex-test-cases-success-message-added" id="default-apex-test-cases-success-message-added"></a>
+#### Default Apex Test Cases – Success Message Added
 
 Fixed an issue where no confirmation message was shown after successfully downloading the **Default Apex Test Cases** file.
 
@@ -2869,13 +3049,13 @@ UI/UX Validation – Toast Notifications & Front-End Response Handling
 
 ***
 
-## ARM Release Notes 26.1.7
+## ARM 26.1.7
 
-**Release Date: 15 February 2026**
+**Release date:** 15 February 2026
 
-#### Internal Cases <a href="#internal-cases" id="internal-cases"></a>
+#### Internal Cases
 
-#### Smart Commit Pattern & Webhook Selection Not Persisting <a href="#smart-commit-pattern-and-webhook-selection-not-persisting" id="smart-commit-pattern-and-webhook-selection-not-persisting"></a>
+#### Smart Commit Pattern & Webhook Selection Not Persisting
 
 Fixed an issue where the selected Smart Commit pattern and enabled Webhook settings under ALM Management were getting cleared after saving the Integration configuration.
 
@@ -2883,7 +3063,7 @@ The issue was caused by null values overwriting existing records in the database
 
 **Impacted Areas:** ALM Configuration Updation
 
-#### Default Branch Not Updated After Deletion via Sync Branches <a href="#default-branch-not-updated-after-deletion-via-sync-branches" id="default-branch-not-updated-after-deletion-via-sync-branches"></a>
+#### Default Branch Not Updated After Deletion via Sync Branches
 
 Fixed an issue where ARM did not automatically assign a new default branch after the existing default branch was deleted using the **Sync Branches** operation.
 
@@ -2894,7 +3074,7 @@ The implementation introduces a streamlined default-branch update flow (without 
 **Impacted Areas:**\
 Branch Management (Sync Branches), Branch Creation, Registration, Deletion, and Updation
 
-#### Default Branch Not Reflected in UI After Sync (New UI) <a href="#default-branch-not-reflected-in-ui-after-sync-new-ui" id="default-branch-not-reflected-in-ui-after-sync-new-ui"></a>
+#### Default Branch Not Reflected in UI After Sync (New UI)
 
 Fixed an issue in the New UI where, after deleting the current default branch via the **Sync Branches** operation, the updated default branch was not immediately reflected in the UI. The system required a full page refresh for the new default branch to appear correctly.
 
@@ -2903,7 +3083,7 @@ The backend correctly promoted the next available branch as the default; however
 **Impacted Areas:**\
 Sync Branches in VC Repositories
 
-#### Time Zone Discrepancy in Default Date Range (New UI) <a href="#time-zone-discrepancy-in-default-date-range-new-ui" id="time-zone-discrepancy-in-default-date-range-new-ui"></a>
+#### Time Zone Discrepancy in Default Date Range (New UI)
 
 Fixed an issue in the New UI where the default calendar date range was calculated using the system time zone instead of the time zone configured in the user’s profile. This resulted in incorrect date ranges and missing recent entries across history-related screens.
 
@@ -2912,7 +3092,7 @@ The logic has been updated to apply the user-specific time zone when determining
 **Impacted Areas:**\
 Default date range handling in CI Jobs, Deployments, Dashboards, and Analytics
 
-#### Repository Search Not Updating Branch Details Panel (New UI) <a href="#repository-search-not-updating-branch-details-panel" id="repository-search-not-updating-branch-details-panel"></a>
+#### Repository Search Not Updating Branch Details Panel (New UI)
 
 Fixed an issue where searching for a repository on the **Repositories** screen filtered the list correctly but did not update the right-hand **Branches** detail panel. The previously selected repository’s branch data remained visible, and the newly searched repository could not be selected to load its details.
 
@@ -2921,11 +3101,11 @@ The behavior has been corrected to reset the detail view after search and defaul
 **Impacted Areas:**\
 Search functionality in VC Repositories
 
-#### Support Cases: <a href="#support-cases" id="support-cases"></a>
+#### Support Cases:
 
 **Support Case: #186557**
 
-#### Sandbox Mapping Failure in My Salesforce Orgs <a href="#sandbox-mapping-failure-in-my-salesforce-orgs" id="sandbox-mapping-failure-in-my-salesforce-orgs"></a>
+#### Sandbox Mapping Failure in My Salesforce Orgs
 
 Fixed an issue where mapping a specific sandbox under **Profile → My Salesforce Orgs** resulted in an error, even after re-registering the sandbox.
 
@@ -2939,7 +3119,7 @@ Salesforce Integration – User Retrieval
 
 **Support Case: #174294**
 
-#### Reports with Subfolders Not Recognized in EZ Commit <a href="#reports-with-subfolders-not-recognized-in-ez-commit" id="reports-with-subfolders-not-recognized-in-ez-commit"></a>
+#### Reports with Subfolders Not Recognized in EZ Commit
 
 Fixed an issue where Reports containing subfolders were not retrieved in **EZ Commit** when uploading a `package.xml`, although the same worked correctly in the Deployment module.
 
@@ -2949,7 +3129,7 @@ Enhanced metadata handling to correctly process members with subfolder paths ("/
 
 **Support Case: #186894**
 
-#### Workflow Deletion – Destructive Merge Validation Failure <a href="#workflow-deletion-destructive-merge-validation-failure" id="workflow-deletion-destructive-merge-validation-failure"></a>
+#### Workflow Deletion – Destructive Merge Validation Failure
 
 Fixed an issue where **Merge Validation** failed for revisions containing only destructive metadata (e.g., deleted Workflow components) when **Run Destructive = Enabled** and **Type = Post**.
 
@@ -2961,7 +3141,7 @@ The logic has been updated to always process destructive components and generate
 
 **Support Case: #189316**
 
-#### Incorrect Storage Display in Super Admin Workspace Management <a href="#incorrect-storage-display-in-super-admin-workspace-management" id="incorrect-storage-display-in-super-admin-workspace-management"></a>
+#### Incorrect Storage Display in Super Admin Workspace Management
 
 Fixed a UI issue where increasing workspace storage from the **Super Admin** account did not correctly update the displayed used and remaining storage values. The discrepancy was visible only in the Super Admin view, while registered user accounts displayed accurate values.
 
@@ -2981,9 +3161,9 @@ A new internal flag (`AR_37880_PARALLEL_EXEC_ENDPOINT_IGNORE_LAST_SEGMENT`) allo
 
 ***
 
-## ARM Release Notes 26.1.6
+## ARM 26.1.6
 
-**Release Date: 08 February 2026**
+**Release date:** 8 February 2026
 
 \
 **Support Ticket: #186267**
@@ -3008,23 +3188,23 @@ The filtering logic has been improved to ensure group and other applied filters 
 
 ***
 
-## DataLoader Pro Release Notes 26.1.6
+## DataLoader Pro 26.1.6
 
-**Release Date:** **08 February 2026**
+**Release date:** 8 February 2026
 
-#### Improved Filtered Data Migration <a href="#dl-pro-improved-filtered-data-migration" id="dl-pro-improved-filtered-data-migration"></a>
+#### Improved Filtered Data Migration
 
 Resolved an issue where data migrations could fail when filters were applied to master objects. The system now ensures that all required related records are included automatically, preventing migration failures due to missing references.
 
-#### Selective Deployment – Improved Log Visibility <a href="#selective-deployment-improved-log-visibility" id="selective-deployment-improved-log-visibility"></a>
+#### Selective Deployment – Improved Log Visibility
 
 Fixed an issue where data retrieval logs were not visible during selective deployments. Logs are now displayed correctly and only when applicable, providing clearer visibility into deployment progress.
 
 ***
 
-## ARM Release Notes 26.1.5
+## ARM 26.1.5
 
-**Release Date: 01 February 2026**
+**Release date:** 1 February 2026
 
 **Refreshed UI**\
 \
@@ -3056,9 +3236,9 @@ Profile → My Salesforce Orgs
 
 ***
 
-## ARM Release Notes 26.1.4
+## ARM 26.1.4
 
-**Release Date: 25 January 2026**\
+**Release date:** 25 January 2026\
 \
 **Refreshed UI – Phase 2 – Europe / Canada / Middle East Region**\
 The refreshed ARM UI is now available to customers in the APAC region as part of a phased, region-based rollout. This update refreshes the UI layout only, with no changes to functionality or core workflows. Some UI elements have been repositioned to improve usability and consistency.
@@ -3081,29 +3261,29 @@ In Branching Baseline, the UI logs showed the process as completed while the bac
 
 ***
 
-## DataLoader Pro Release Notes 26.1.4
+## DataLoader Pro 26.1.4
 
-**Release Date:** **25 January 2026**
+**Release date:** 25 January 2026
 
-#### DataLoader Pro – FeedItem & ContentDocumentLink Status Handling <a href="#dl-pro-feeditem-and-contentdocumentlink-status-handling" id="dl-pro-feeditem-and-contentdocumentlink-status-handling"></a>
+#### DataLoader Pro – FeedItem & ContentDocumentLink Status Handling
 
 Improved DataLoader Pro job execution for Account migrations by correctly handling field mappings for objects processed via **Bulk API v1**, ensuring accurate status reporting for related objects such as **FeedItem** and **ContentDocumentLink**.
 
-#### DataLoader Pro – Parent Record Handling with Filters <a href="#dl-pro-parent-record-handling-with-filters" id="dl-pro-parent-record-handling-with-filters"></a>
+#### DataLoader Pro – Parent Record Handling with Filters
 
 Enhanced DataLoader Pro data retrieval logic to ensure that when filters are applied, **all related parent records (including self-referenced and multi-level parents)** are automatically identified and migrated up to the top level, preventing partial data migration when filters are used.
 
-#### DataLoader Pro – Batch Size Handling for Screen Section Objects <a href="#dl-pro-batch-size-handling-for-screen-section-objects" id="dl-pro-batch-size-handling-for-screen-section-objects"></a>
+#### DataLoader Pro – Batch Size Handling for Screen Section Objects
 
 Fixed an issue where DataLoader Pro jobs completed with a “No Records” status when a batch size was specified for Screen Section objects by improving handling of recursive processing scenarios.
 
 ***
 
-## DataLoader Release Notes 26.1.4
+## DataLoader 26.1.4
 
-**Release Date:** **25 January 2026**
+**Release date:** 25 January 2026
 
-#### DataLoader Extract – Limit Not Applied <a href="#data-loader-extract-limit-not-applied" id="data-loader-extract-limit-not-applied"></a>
+#### DataLoader Extract – Limit Not Applied
 
 Fixed an issue where the **Limit** specified in the Extract Job configuration pop-up was not being honored during execution, causing all records to be extracted instead of the defined subset.
 
@@ -3113,9 +3293,9 @@ Fixed an issue where DataLoader insert jobs failed without producing success or 
 
 ***
 
-## ARM Release Notes 26.1.3
+## ARM 26.1.3
 
-**Release Date: 18 January 2026**
+**Release date:** 18 January 2026
 
 **Refreshed UI – APAC only**\
 The refreshed ARM UI is now available to customers in the APAC region as part of a phased, region-based rollout. This update refreshes the UI layout only, with no changes to functionality or core workflows. Some UI elements have been repositioned to improve usability and consistency.
@@ -3151,39 +3331,39 @@ Backend logic has been updated to avoid unnecessary workspace creation, allowing
 
 ***
 
-## DataLoader Pro Release Notes 26.1.3
+## DataLoader Pro 26.1.3
 
-**Release Date**: **18 January 2026**
+**Release date:** 18 January 2026
 
-#### **DataLoader - Validation and Workflow Rules Visibility Fix**
+#### DataLoader - Validation and Workflow Rules Visibility Fix
 
 Resolved an issue where **Validation Rules and Workflow Rules** were not displayed in the Data Loader job pop-up when disabled during Insert, Update, or Upsert operations.
 
-#### **DataLoader - Test Environment Dropdown Fix** <a href="#data-loader-test-environment-dropdown-fix" id="data-loader-test-environment-dropdown-fix"></a>
+#### DataLoader - Test Environment Dropdown Fix
 
 Fixed an issue where the **“All Groups”** dropdown remained disabled after creating a Data Loader job in the Test environment and required a manual page refresh. The dropdown is now enabled immediately, improving usability.
 
-#### **DataLoader Pro - Custom Mapping Fix** <a href="#dl-pro-data-loader-pro-custom-mapping-fix" id="dl-pro-data-loader-pro-custom-mapping-fix"></a>
+#### DataLoader Pro - Custom Mapping Fix
 
 Resolved an issue where **Data Loader Pro jobs** failed when custom object mappings were selected. The issue has been fixed to ensure successful job execution with custom mappings.
 
-#### DataLoader Pro - **Group Job Clone Filter Restoration Fix**
+#### DataLoader Pro - Group Job Clone Filter Restoration Fix
 
 Resolved an issue where **object filters were not restored when cloning group jobs** in Data Loader Pro. Filters are now correctly retained and displayed after cloning.
 
-#### **DataLoader Pro - Upsert Fix for Knowledge Objects** <a href="#data-loader-pro-upsert-fix-for-knowledge-objects" id="data-loader-pro-upsert-fix-for-knowledge-objects"></a>
+#### DataLoader Pro - Upsert Fix for Knowledge Objects
 
 Resolved an issue where **Data Loader Pro upsert jobs** processed zero records despite valid source data being present. The issue was fixed by correctly handling **external ID fields for Knowledge (KAV) objects**.
 
-#### **DataLoader Pro - Skip Object Selection UI Fix** <a href="#skip-object-selection-ui-fix" id="skip-object-selection-ui-fix"></a>
+#### DataLoader Pro - Skip Object Selection UI Fix
 
 Resolved an issue where the **Skip** checkbox was not reflected in the UI after an ancestor object was skipped. The selection state is now correctly saved and displayed.
 
 ***
 
-## ARM Release Notes 26.1.2
+## ARM 26.1.2
 
-**Release Date: 11 January 2026**
+**Release date:** 11 January 2026
 
 **Internal Case**\
 An issue where adding a user to a team completed user creation but returned an API 404 error has been resolved. The user creation process now completes successfully without errors.
@@ -3200,9 +3380,9 @@ Version Control → EZ-Merge (Single Revision)
 
 ***
 
-## ARM Release Notes 26.1.1
+## ARM 26.1.1
 
-**Release Date: 4 January 2026**
+**Release date:** 4 January 2026
 
 **Support Case: #160652**
 

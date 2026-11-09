@@ -23,11 +23,11 @@ From the left navigation, select **Replicate**. The **Replicate Config** page li
 
 <figure><img src="../../../../.gitbook/assets/image (5414).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Config landing page_
+_Replicate Config landing page_
 
 <figure><img src="../../../../.gitbook/assets/image (5415).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Create New Replicate Config action_
+_Create New Replicate Config action_
 
 ## Create a Replicate configuration
 
@@ -39,11 +39,11 @@ The first stage displays available backups. Select the backup that contains the 
 
 <figure><img src="../../../../.gitbook/assets/image (5416).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose Backup stage_
+_Choose Backup stage_
 
 <figure><img src="../../../../.gitbook/assets/image (5417).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Selected backup_
+_Selected backup_
 {% endstep %}
 
 {% step %}
@@ -51,41 +51,41 @@ The first stage displays available backups. Select the backup that contains the 
 
 In **Object Selection**, choose the objects to include. Use the available object controls to expand the selection and inspect fields. Where provided, configure object-level criteria before proceeding. The chosen objects form the scope of the replicate configuration.
 
-<figure><img src="../../../../.gitbook/assets/image (5419).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5418).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Object Selection stage_
+_Object Selection stage_
 
 <figure><img src="../../../../.gitbook/assets/image (5420).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Object selection with available controls_
+_Object selection with available controls_
 
 <figure><img src="../../../../.gitbook/assets/image (5421).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose objects dialog_
+_Choose objects dialog_
 
 <figure><img src="../../../../.gitbook/assets/image (5422).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Select an object from the object list_
+_Select an object from the object list_
 
 <figure><img src="../../../../.gitbook/assets/image (5423).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Object fields and selection controls_
+_Object fields and selection controls_
 
 <figure><img src="../../../../.gitbook/assets/image (5424).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Edit an object selection_
+_Edit an object selection_
 
 <figure><img src="../../../../.gitbook/assets/image (5425).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Selected fields dialog_
+_Selected fields dialog_
 
 <figure><img src="../../../../.gitbook/assets/image (5426).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Review selected fields_
+_Review selected fields_
 
 <figure><img src="../../../../.gitbook/assets/image (5427).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Object Selection ready to proceed_
+_Object Selection ready to proceed_
 {% endstep %}
 
 {% step %}
@@ -95,47 +95,47 @@ In **Field Matching**, define how Vault identifies the corresponding destination
 
 <figure><img src="../../../../.gitbook/assets/image (5428).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Field Matching stage_
+_Field Matching stage_
 
 <figure><img src="../../../../.gitbook/assets/image (5429).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Add Matching Rule dialog_
+_Add Matching Rule dialog_
 
 <figure><img src="../../../../.gitbook/assets/image (5430).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose the source object_
+_Choose the source object_
 
 <figure><img src="../../../../.gitbook/assets/image (5431).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose the source field_
+_Choose the source field_
 
 <figure><img src="../../../../.gitbook/assets/image (5432).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose a matching operator_
+_Choose a matching operator_
 
 <figure><img src="../../../../.gitbook/assets/image (5433).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Choose the destination field_
+_Choose the destination field_
 
 <figure><img src="../../../../.gitbook/assets/image (5434).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Select source fields for matching_
+_Select source fields for matching_
 
 <figure><img src="../../../../.gitbook/assets/image (5435).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Select destination fields for matching_
+_Select destination fields for matching_
 
 <figure><img src="../../../../.gitbook/assets/image (5436).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Save the matching rule_
+_Save the matching rule_
 
 <figure><img src="../../../../.gitbook/assets/image (5437).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Matching rule shown in Field Matching_
+_Matching rule shown in Field Matching_
 
 <figure><img src="../../../../.gitbook/assets/image (5438).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Matching warning and acknowledgement_
+_Matching warning and acknowledgement_
 {% endstep %}
 
 {% step %}
@@ -145,19 +145,19 @@ The **Review and Replicate** stage summarizes the selected source and target con
 
 <figure><img src="../../../../.gitbook/assets/image (5439).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Review and Replicate stage_
+_Review and Replicate stage_
 
 <figure><img src="../../../../.gitbook/assets/image (5440).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replication warning_
+_Replication warning_
 
 <figure><img src="../../../../.gitbook/assets/image (5441).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Summary dialog_
+_Replicate Summary dialog_
 
 <figure><img src="../../../../.gitbook/assets/image (5442).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Summary settings_
+_Replicate Summary settings_
 {% endstep %}
 {% endstepper %}
 
@@ -167,63 +167,63 @@ After saving, the **Replicate Config** page displays the configuration in the li
 
 <figure><img src="../../../../.gitbook/assets/image (5443).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Saved Replicate Config list_
+_Saved Replicate Config list_
 
 <figure><img src="../../../../.gitbook/assets/image (5444).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Config information_
+_Replicate Config information_
 
 <figure><img src="../../../../.gitbook/assets/image (5445).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Matching Rule Details_
+_Matching Rule Details_
 
 <figure><img src="../../../../.gitbook/assets/image (5446).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Configuration list with actions_
+_Configuration list with actions_
 
 <figure><img src="../../../../.gitbook/assets/image (5447).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Saved configuration confirmation_
+_Saved configuration confirmation_
 
 <figure><img src="../../../../.gitbook/assets/image (5448).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Config details_
+_Replicate Config details_
 
 <figure><img src="../../../../.gitbook/assets/image (5449).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Additional configuration details_
+_Additional configuration details_
 
 <figure><img src="../../../../.gitbook/assets/image (5450).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Delete Replicate Config confirmation_
+_Delete Replicate Config confirmation_
 
 <figure><img src="../../../../.gitbook/assets/image (5451).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Configuration deleted confirmation_
+_Configuration deleted confirmation_
 
 <figure><img src="../../../../.gitbook/assets/image (5452).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Configuration action menu_
+_Configuration action menu_
 
 <figure><img src="../../../../.gitbook/assets/image (5453).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Edit Replicate Config - Choose Backup_
+_Edit Replicate Config - Choose Backup_
 
 <figure><img src="../../../../.gitbook/assets/image (5454).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Config list after update_
+_Replicate Config list after update_
 
 <figure><img src="../../../../.gitbook/assets/image (5455).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Delete warning acknowledgement_
+_Delete warning acknowledgement_
 
 <figure><img src="../../../../.gitbook/assets/image (5456).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Summary before replication_
+_Replicate Summary before replication_
 
 <figure><img src="../../../../.gitbook/assets/image (5457).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;                                                   _Replicate Summary confirmation_
+_Replicate Summary confirmation_
 
 ## Best practices
 

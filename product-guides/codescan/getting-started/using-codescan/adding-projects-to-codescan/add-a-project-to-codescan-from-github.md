@@ -1,7 +1,7 @@
 # Add a project to CodeScan from GitHub
 
 {% hint style="info" %}
-**This integration has recently switched from using OAuth 2.0 to GitHub Apps.** &#x20;
+**This integration has recently switched from using OAuth 2.0 to GitHub Apps.**
 
 If you are currently using the OAuth version of this integration, **you do not have to change anything**. **AutoRABIT will continue to support all current projects of this type**. However, all future connections must be made using GitHub Apps.
 
@@ -10,22 +10,20 @@ For users moving from OAuth to Apps, you can remove the CodeScan OAuth App manua
 Be careful as any projects still connected with OAuth will be disconnected if you delete the OAuth App without reconnecting your GitHub projects.
 {% endhint %}
 
-
-
 This document guides you how to add a **GitHub** project to your CodeScan cloud account and run the analysis.
 
 1. Log in to your **CodeScan** account.
 2. On the top right corner, click on the **'+'** icon and select **Analyze new project**.
 
-<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/AnalyzeProzect 5.9.png" alt=""><figcaption></figcaption></figure>
 
 3. This takes you to a different window. Choose the **Organization** for which you'd like to create a project. Click **Set Up**.
 
-<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7 (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7.png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. On the next window, click on **Add Analysis Project**.
 
-<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Analysis Project 6.1.png" alt=""><figcaption></figcaption></figure>
 
 5. You will now see a new pop-up window; select [**GitHub**](https://knowledgebase.autorabit.com/codescan/docs/integrating-codescan-with-github-actions) from the given option.
 
@@ -39,16 +37,16 @@ This document guides you how to add a **GitHub** project to your CodeScan cloud 
 
     * Choose the **Repository** you want to add, followed by the **Project Branch** name.\
       **NOTE**: If you do not specify the Branch Name during GitHub integration, then it will take the main branch by default.
-    * Make sure you select the checkbox under **Check Pull Requests**. \
+    * Make sure you select the checkbox under **Check Pull Requests**.\
       **NOTE:** Admin permissions in GitHub are **required,** or else the pull request will not be triggered, even though a user may be able to select the box to "check pull requests" during GitHub integration.
     * The **Project Key** and the **Project Name** are automatically assigned. You can edit the fields per your requirements.
     * Click on **Add and Run Now.**
 
-    <figure><img src="../../../../../.gitbook/assets/GitHubRun 6.0 (1).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/GitHubRun 6.0.png" alt="" width="375"><figcaption></figcaption></figure>
 
     * About **Project Key**: To find the project key, refer to our documentation [HERE](https://knowledgebase.autorabit.com/codescan/docs/finding-your-project-key).
 8. This triggers the project analysis and the project being added under your CodeScan organization.
-9. &#x20;You can view the project analysis report by clicking on **Details** from your VC repository.
+9. You can view the project analysis report by clicking on **Details** from your VC repository.
 
 <figure><img src="../../../../../.gitbook/assets/PR Check 6.1.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -66,6 +64,3 @@ Now that the webhooks have been created, every time there is a push to the track
 **Error: Expected — Waiting for status to be reported**\
 This is a GitHub issue. To prevent recursive workflow, users are not able to trigger a subsequent workflow, leading it to The Eternal Pending State. If this occurs, you will need to reattach the project. For additional information, refer to the following article on this issue: [GitHub Actions: Bypassing Expected — Waiting for status to be reported](https://manumagalhaes.medium.com/github-actions-bypassing-expected-waiting-for-status-to-be-reported-4712032ef129)
 {% endhint %}
-
-
-

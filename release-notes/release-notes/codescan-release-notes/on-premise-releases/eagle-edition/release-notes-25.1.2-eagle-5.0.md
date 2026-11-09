@@ -1,10 +1,10 @@
 # Release Notes 25.1.2 Eagle 5.0
 
-## Release Notes 25.1.2 Eagle 5.0
+## CodeScan Self-Hosted 25.1.2 (Eagle 5.0)
 
-**Release Date: 17 October 2025**
+**Release date:** 17 October 2025
 
-### **Summary**
+### Summary
 
 CodeScan Self-Hosted version 25.1.2 (Eagle v5) is comprised of the following 9 components:
 
@@ -13,7 +13,7 @@ CodeScan Self-Hosted version 25.1.2 (Eagle v5) is comprised of the following 9 c
 
 Component details are listed in their corresponding sections within this document.
 
-### Rule Enhancements
+### Rule enhancements
 
 **1.     Enhancement to “Switch Statements Should Have a When-Else Case” Rule**
 
@@ -185,7 +185,7 @@ Verified the rule sf:UnusedFormalParameter and validated the following condition
 
     <figure><img src="../../../../../.gitbook/assets/image (3670).png" alt=""><figcaption></figcaption></figure>
 
-### Fixes&#x20;
+### Fixes
 
 1.  **Fixed issue with CodeScan rule detecting SOQL Injections, which was causing analyses to break**\
     Previously, while analyzing for SOQL Injection, if a local variable is declared using a class-level variable of the same name, then CodeScan analyses were erroring with StackOverflowError, as it was stuck in a loop while resolving the reference.\

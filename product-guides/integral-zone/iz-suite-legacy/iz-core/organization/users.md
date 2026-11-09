@@ -2,17 +2,17 @@
 
 List of all users in the system
 
-1. Navigate to **`Organization`** -> **`Users`**&#x20;
+1. Navigate to **`Organization`** -> **`Users`**
 
-<figure><img src="../../../../../.gitbook/assets/users (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/users.png" alt=""><figcaption></figcaption></figure>
 
 2. Actions include -
 
-a. **`Assign Roles`** - Configure roles to the user&#x20;
+a. **`Assign Roles`** - Configure roles to the user
 
 <figure><img src="../../../../../.gitbook/assets/assign-role.png" alt=""><figcaption></figcaption></figure>
 
-b. **`Assign Permission`** - Configure permissions to the user&#x20;
+b. **`Assign Permission`** - Configure permissions to the user
 
 <figure><img src="../../../../../.gitbook/assets/assign-permission.png" alt=""><figcaption></figcaption></figure>
 
@@ -26,8 +26,6 @@ c. The actions menu of each user also offers, depending on your permissions:
 | **`Disable User`** / **`Enable User`** | Disable or re-enable the user. A disabled user cannot sign in.                                                                                                   |
 
 **`Set Temporary Password`** and **`Reset MFA`** require the **`Generate Security Token For Another User`** permission. See [Sign-in and MFA](../sign-in-and-mfa.md).
-
-
 
 {% hint style="info" %}
 From 26.4.1 every tenant has an **`IZ Support User`** licence administrator. It has no password and is used only by Integral Zone support to recover access when all administrators are locked out.

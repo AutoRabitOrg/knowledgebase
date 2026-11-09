@@ -1,16 +1,16 @@
 # Guard Release Notes 25.1
 
-## Guard Release Notes 25.1.7
+## Guard 25.1.7
 
-**Release Date: 9 July 2025**
+**Release date:** 9 July 2025
 
 This release includes a few bug fixes, including improvements to information displayed under Field Usage of unsupported types.
 
 ***
 
-## Guard Release Notes 25.1.6
+## Guard 25.1.6
 
-**Release Date: 25 June 2025**
+**Release date:** 25 June 2025
 
 New Access Controls can now be created from a home page directly.
 
@@ -20,9 +20,9 @@ New Access Controls can now be created from a home page directly.
 
 ***
 
-## Guard Release Notes 25.1.5
+## Guard 25.1.5
 
-**Release Date: 11 June 2025**
+**Release date:** 11 June 2025
 
 The following content provides information and videos on new capabilities associated with Guard.
 
@@ -40,17 +40,17 @@ CSV Format Export&#x20;
 
 ***
 
-## Guard Release Notes 25.1.4
+## Guard 25.1.4
 
-**Release Date: 28 May 2025**
+**Release date:** 28 May 2025
 
 This release included several bug fixes as well as back-end enhancements designed to optimize processing efficiency and support future feature development.
 
 ***
 
-## Guard Release Notes 25.1.3
+## Guard 25.1.3
 
-**Release Date: 21 May 2025**
+**Release date:** 21 May 2025
 
 AutoRABIT Guard's Automated Data Classification scans and classifies data based on major regulatory standards—PCI, HIPAA, GDPR, COPPA, and more. It provides visibility into sensitive data within your Salesforce environments and helps understand where and how it is used.
 
@@ -86,11 +86,11 @@ Email Notification
 
 ***
 
-## Guard Release Notes 25.1.2
+## Guard 25.1.2
 
 **Release Date: 16 April 16 2025**
 
-### **New Features**&#x20;
+### New features
 
 When users add their first Salesforce org, we automatically create two policies to be used as templates. This can help you understand policies a lot faster and use them as a starting point. &#x20;
 
@@ -126,11 +126,11 @@ Finding permissions in Permissions Explorer
 
 ***
 
-## Guard Release Notes 25.1.1
+## Guard 25.1.1
 
-**Release Date: 21 March 2025**
+**Release date:** 21 March 2025
 
-### New Features
+### New features
 
 * **Multi-Factor Authentication (MFA) for Guard:** MFA is now implemented for Guard.
 * **User Lockout After Failed Login Attempts:** Users will be locked out after three consecutive failed login attempts and notified via email.

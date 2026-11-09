@@ -2,7 +2,7 @@
 
 Every modern page shares the same frame: the sidebar on the left and the top bar above the page. This page describes both.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsnavigating-iz-suite-shell.png" alt="IZ Suite page with the sidebar, the breadcrumb and the top bar"><figcaption><p>The sidebar, breadcrumb and top bar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetssuite-home-overview.png" alt="IZ Suite page with the sidebar, the breadcrumb and the top bar"><figcaption><p>The sidebar, breadcrumb and top bar</p></figcaption></figure>
 
 ## Sidebar
 

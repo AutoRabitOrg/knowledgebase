@@ -5,10 +5,10 @@
 1. Log in to your ARM account.
 2.  Navigate to the **Admin** module and click the **Credentials** tab.
 
-    ![Credential Tab](<../../../.gitbook/assets/image (2908).png>)
+    ![Credential Tab](<../../../.gitbook/assets/image (1702).png>)
 3.  Click **Create Credential** from the right navigation.
 
-    ![Create Credential](<../../../.gitbook/assets/image (2909).png>)
+    ![Create Credential](<../../../.gitbook/assets/image (1631).png>)
 4. In the popup:
    * Enter a **Credential Name**
    * Set **Credential Type** to _User name with Password_
@@ -16,7 +16,7 @@
    * Ensure you're using your **username**, not your login email
 5.  Click **Save**
 
-    ![Credential Entry](<../../../.gitbook/assets/image (2910).png>)
+    ![Credential Entry](<../../../.gitbook/assets/image (1632).png>)
 
 ***
 
@@ -26,7 +26,7 @@
 2. Go to **Admin > My Account**
 3.  Click **New ALM System** under the **ALM Management** section
 
-    ![New ALM System](<../../../.gitbook/assets/image (2911).png>)
+    ![New ALM System](<../../../.gitbook/assets/image (1705).png>)
 4.  Set **ALM Type** as _SERVICENOW_
 
     ![ALM Type](<../../../.gitbook/assets/image (2912).png>)
@@ -75,7 +75,7 @@
 
     * Check **Map ALM Project (Ex: ServiceNow)**
 
-    ![CI Job Build](<../../../.gitbook/assets/image (2914).png>)
+    ![CI Job Build](<../../../.gitbook/assets/image (1709).png>)
 2.  Go to **ALM** section:
 
     * Set:

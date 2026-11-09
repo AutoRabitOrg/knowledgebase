@@ -15,7 +15,7 @@ To generate the security tokens, follow the steps below:
     Select the type according to your needs.
 4.  Next, click on **`Security`** tab.<br>
 
-    <figure><img src="../../../../.gitbook/assets/Security Token (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Security Token.png" alt=""><figcaption></figcaption></figure>
 5.  **Name** your token and click **`Generate`**. The tokens page appears.<br>
 
     <figure><img src="../../../../.gitbook/assets/Security Token 3.8.png" alt=""><figcaption></figcaption></figure>

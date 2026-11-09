@@ -20,22 +20,20 @@ As of 9 September 2025, app username and passwords have been deprecated as a typ
     * **Username:** `pavankumar_kodange`
     * **Password:** _(API token generated from Atlassian Account Settings → Security → API tokens with scope)_
 
-
-
 ## A. Create a Webhook API Token in ARM
 
 1. Log in to ARM.
 2. Navigate to **Admin Section > API Token**.
 3. Click **Create API Token**.
 
-<figure><img src="../../../../.gitbook/assets/image (4233).png" alt="Create API Token screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3479).png" alt="Create API Token screen in ARM"><figcaption></figcaption></figure>
 
 4. Enter a **Token Name**.
 5. Select **Type** as **webhook**.
 6. (Optional) Add a **Description**.
 7. Click **Create Option**.
 
-<figure><img src="../../../../.gitbook/assets/image (4234).png" alt="Webhook token details input screen in ARM"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3480).png" alt="Webhook token details input screen in ARM"><figcaption></figcaption></figure>
 
 8. Your webhook API token is now created.
 
@@ -46,7 +44,7 @@ As of 9 September 2025, app username and passwords have been deprecated as a typ
 1. Log in to your **Bitbucket** account and open the target repository.
 2. Go to **Settings** and select [**Webhooks**](https://knowledgebase.autorabit.com/product-guides/codescan/codescan-integration/webhooks).
 
-<figure><img src="../../../../.gitbook/assets/image (4236).png" alt="Bitbucket Webhooks configuration section"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3521).png" alt="Bitbucket Webhooks configuration section"><figcaption></figcaption></figure>
 
 3. In the webhook configuration form, use the following URL formats:
    *   For SCM push events:
@@ -68,7 +66,7 @@ As of 9 September 2025, app username and passwords have been deprecated as a typ
 Configure commit message patterns that associate commits with ALM stories.\
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image (4237).png" alt="Smart commit example and configuration options" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3491).png" alt="Smart commit example and configuration options" width="563"><figcaption></figcaption></figure>
 
 To configure a webhook:
 

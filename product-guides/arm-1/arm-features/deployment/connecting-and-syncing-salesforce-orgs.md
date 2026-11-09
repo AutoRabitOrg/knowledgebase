@@ -2,7 +2,7 @@
 
 The **Deployment** screen is best viewed when the zoom setting is set to **80%** on your Chrome/Firefox browser.
 
-> <mark style="color:$primary;">**Note:**</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">To improve application performance and stability, ARM allows a maximum of</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">**two Org Sync jobs to run concurrently**</mark><mark style="color:$primary;">. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.</mark>
+> <mark style="color:$primary;">**Note:**</mark> <mark style="color:$primary;">To improve application performance and stability, ARM allows a maximum of</mark> <mark style="color:$primary;">**two Org Sync jobs to run concurrently**</mark><mark style="color:$primary;">. Any additional Org Sync requests, whether initiated manually or through a schedule, are automatically queued and will start when one of the active jobs is completed. The queued status is displayed in the ARM UI.</mark>
 
 ### About Salesforce Org Synchronization <a href="#about-salesforce-org-synchronization" id="about-salesforce-org-synchronization"></a>
 
@@ -51,7 +51,7 @@ To perform org synchronization, follow these steps:
 
 7. Once done with your selection, click on **`Synchronize Orgs`**.
 8. On the next screen, check the **`Validate Deployment`** checkbox to verify whether the synchronization process will be successful or fail. This is optional.
-9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).&#x20;
+9. Select the **`Apex Test Level`** to validate your deployment. For detailed information on each Apex test level, refer to the article: [Run Apex Tests Before Deployment](https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/deployment/apex-unit-tests).
 
 <figure><img src="../../../../.gitbook/assets/image (1221).png" alt="" width="516"><figcaption></figcaption></figure>
 
@@ -79,4 +79,4 @@ Synchronization summary information, such as label name, source org, destination
    * Click on the![](<../../../../.gitbook/assets/image (1230).png>) icon to view the metadata components difference report between the source and the target org.
    * Click on the![](<../../../../.gitbook/assets/image (1231).png>) icon to download the Diff report in your local system (in PDF or CSV format).
 
-<figure><img src="../../../../.gitbook/assets/image (2668).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2667).png" alt=""><figcaption></figcaption></figure>

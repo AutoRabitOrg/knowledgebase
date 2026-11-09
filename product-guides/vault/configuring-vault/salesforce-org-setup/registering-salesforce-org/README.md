@@ -255,7 +255,7 @@ The newly added organization now appears in this list and is ready to be used wi
 
 If authentication credentials expire or require renewal, the Salesforce organization can be re-authenticated directly from the **Salesforce Orgs List**.
 
-<figure><img src="../../../../../.gitbook/assets/19 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/19 (4).png" alt=""><figcaption></figcaption></figure>
 
 To re-authenticate an organization:
 
@@ -350,8 +350,6 @@ AutoRABIT Vault opens the **Environment Details** window for the selected Salesf
 
 1.  The **Environment Details** window allows modification of the registered Salesforce org configuration.
 
-
-
     <figure><img src="../../../../../.gitbook/assets/25 (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../../.gitbook/assets/26 (1).png" alt=""><figcaption></figcaption></figure>
@@ -389,7 +387,7 @@ The first stage of the wizard provides guidance for creating an **External Clien
     4. Select **Authorization Code (Web Server) Flow**.
     5. Disable the **PKCE security option** if required.
 
-    <figure><img src="../../../../../.gitbook/assets/28 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/28.png" alt=""><figcaption></figcaption></figure>
 2.  Copy the **Callback URL (Redirect URI)** displayed in AutoRABIT Vault and add it to the External Client App configuration in Salesforce.
 
     <figure><img src="../../../../../.gitbook/assets/29.png" alt=""><figcaption></figcaption></figure>
@@ -443,6 +441,3 @@ The **Connect (Beta)** configuration page opens for the selected org.
 
 3. If no configurations exist, the page displays the message **“No Connects.”**
 4. To create a new configuration, click **Add Connect Config**.
-
-
-

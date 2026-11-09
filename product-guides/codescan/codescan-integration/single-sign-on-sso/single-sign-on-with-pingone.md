@@ -18,13 +18,13 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 
 1.  In **CodeScan**, click on the **`Profile`** icon on the right corner of the screen and select your organization (under **`My Organizations`**).<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2123).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2116).png" alt=""><figcaption><p>Profile</p></figcaption></figure>
 2.  Go to **`Administration > SAML Connections`**.<br>
 
     <figure><img src="../../../../.gitbook/assets/image (2124).png" alt="" width="375"><figcaption><p>SAML Connections</p></figcaption></figure>
 3.  Click on **`Create Connection`**.<br>
 
-    <figure><img src="../../../../.gitbook/assets/image (2125).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2118).png" alt=""><figcaption><p>Create Connection</p></figcaption></figure>
 4. In the **`Connection name`** field, enter the _identity provider_ name as you want to appear (use only Latin characters without spaces and any special characters).\
    **Example-** `PingOne-SAML`
 5. Enter a valid domain name of the organization in the **`Corporate domain`** field that can be authenticated in the Identity Provider. _**This property cannot be updated after SAML Connection creation.**_\
@@ -39,7 +39,7 @@ Before configuring SSO in PingOne, you must enable SSO in CodeScan.
 3. If the **`Enforce SSO`** is enabled prematurely, it will prevent all **users in their organisation** from accessing CodeScan. Consider enforcing SSO only after admins have logged in to CodeScan using SSO.
 4. Keep the **`SAML Connection status`** checkbox as **`Enabled`** and click on **`Create`** button.
 
-![](<../../../../.gitbook/assets/image (329).png>)
+<img src="../../../../.gitbook/assets/image (329).png" alt="" data-size="original">
 
 5. You will be able to see the **`Metadata URL`** generated for your SSO configuration. Keep the current page open while you continue to add the CodeScan app to PingOne.
 
@@ -127,7 +127,7 @@ It’s necessary to sync attributes of IDP users with properties of CodeScan use
 
 <figure><img src="../../../../.gitbook/assets/image (344).png" alt="" width="563"><figcaption></figcaption></figure>
 
-3. Click **`Save`**.&#x20;
+3. Click **`Save`**.
 4. Enable the **`CodeScan`** app.
 
 <figure><img src="../../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>

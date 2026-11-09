@@ -1,8 +1,8 @@
 # Release Notes 25.1.1 Eagle 4.0
 
-## CodeScan Release Notes 25.1.1 Eagle 4.0
+## CodeScan Self-Hosted 25.1.1 (Eagle 4.0)
 
-Release Date: 18 July 2025
+**Release date:** 18 July 2025
 
 ### Summary
 
@@ -112,7 +112,7 @@ We validated the fix by:
 * Setting parameters for controller naming in CS, try the parameters with different cased letters ex: ConTroLLer etc.
 * After scanning false positives should not be visible
 
-### New Rules
+### New rules
 
 &#x20;1\.     Server Side Request Forgery
 

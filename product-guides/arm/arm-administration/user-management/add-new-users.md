@@ -11,14 +11,14 @@ Only **Org Administrators** can create or modify users.
 2. Hover over **`Admin`** and click **`Users`**.
 3.  Click **Add User**.
 
-    <figure><img src="../../../../.gitbook/assets/image (3755).png" alt="Add User button on the Users page"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (800).png" alt="Add User button on the Users page"><figcaption></figcaption></figure>
 4. Complete **User Details** and assign a **Role Permission Set** that matches the person’s responsibilities.
 5.  Choose one of the activation options:
 
     * **Save & Activate** – sends the invitation email immediately.
     * **Save Now & Activate Later** – save the profile and activate at a future time.
 
-    <figure><img src="../../../../.gitbook/assets/image (3756).png" alt="User Details and Role Permissions form"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (801).png" alt="User Details and Role Permissions form"><figcaption></figcaption></figure>
 6. The new user receives an email to set their password and log in.
 7. Newly created users appear in **Admin › Users**.
 
@@ -31,7 +31,7 @@ You can edit most profile fields and permissions after creation—except **Usern
 1. Go to **Admin › Users** and locate the user.
 2.  Click the **Edit** icon.
 
-    <figure><img src="../../../../.gitbook/assets/image (3757).png" alt="Edit icon on Users list row"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (802).png" alt="Edit icon on Users list row"><figcaption></figcaption></figure>
 3. Update fields as needed and click **Save**.
 
 ***

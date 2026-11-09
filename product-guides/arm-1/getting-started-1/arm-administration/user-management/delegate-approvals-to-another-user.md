@@ -1,7 +1,7 @@
 # Delegating Approvals to Another User
 
 {% hint style="info" %}
-**Important Note:** The steps below can be performed only by an **Org Administrator**. General users do not have access to the delegation feature.&#x20;
+**Important Note:** The steps below can be performed only by an **Org Administrator**. General users do not have access to the delegation feature.
 {% endhint %}
 
 When a teammate is on vacation or otherwise unavailable, an administrator can **delegate** that user’s approvals, scheduled tasks, and repository access to an active colleague. The original account is deactivated, and the delegate steps in with identical permissions.
@@ -13,7 +13,7 @@ When a teammate is on vacation or otherwise unavailable, an administrator can **
 1. Log in to **AutoRABIT**.
 2.  Hover over **`Admin`** and click **`Users`**.<br>
 
-    <figure><img src="../../../../../.gitbook/assets/image (2038).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2031).png" alt="" width="375"><figcaption></figcaption></figure>
 3.  Locate the **user** whose responsibilities you need to delegate and click on **Actions** drop down and then click on **Delegate**.<br>
 
     <figure><img src="../../../../../.gitbook/assets/image (2540).png" alt="" width="269"><figcaption></figcaption></figure>

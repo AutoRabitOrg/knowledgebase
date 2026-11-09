@@ -54,7 +54,7 @@ The following article describes using **Single DataLoader** to update data in Sa
 20. Your task is listed on top of the lists in the **`DataLoader Summary`** screen.
 21. Click **`Run`** to run the DataLoader immediately before the scheduled time.
 
-<figure><img src="../../../../../.gitbook/assets/image (1441).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1409).png" alt="" width="563"><figcaption></figcaption></figure>
 
 22. Select the criteria you can set for the DataLoader process to continue:
 
@@ -72,24 +72,24 @@ The following article describes using **Single DataLoader** to update data in Sa
 
 24. The number of successful or failed records updated can be seen in the **`Results of Last Run`** section. The values in this field are updated dynamically while the job is still running. You can view the records or download them to your local system. The records are generated in CSV format.
 
-<figure><img src="../../../../../.gitbook/assets/image (1443).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1411).png" alt="" width="563"><figcaption></figcaption></figure>
 
 25. The number of impacted records can be seen in the **`Records`** section. The value in this field is updated dynamically while the job is still running.
 
 ### More Options <a href="#more-options" id="more-options"></a>
 
-<figure><img src="../../../../../.gitbook/assets/image (1433).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1412).png" alt="" width="563"><figcaption></figcaption></figure>
 
-1. **`Edit:`** Modifies or updates the process details.&#x20;
+1. **`Edit:`** Modifies or updates the process details.
 2. **`Abort:`** Aborts the process while it is still running.
 3. **`Schedule:`** Sets the schedule at which the process must run.
 4. **`Delete:`** Deletes the update process.
 5. **`Log:`** Provides information about the execution of the updated task.
 6. **`VR/WFR:`** ARM lists all the validations/workflow rules that were set. The UI lists all the validation rules, and users must enable them for the disabled validation rules (if required). For more info, refer to the article: [Validation/ Workflow Rules](../validation-workflow-rules.md). Sample VR/WFR attached:
 
-<figure><img src="../../../../../.gitbook/assets/image (1431).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1413).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (1432).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1414).png" alt=""><figcaption></figcaption></figure>
 
 7. **`Clone:`** Creates a copy (clone) of the insert process. Operation type and object name are displayed. Enter the **`Process Name`** in the field. The default **`Salesforce Org`** is automatically selected. To choose a different org, use the dropdown list. Select the **`Choose Different Data CSV File`** check box to upload a different CSV file. Finally, click **`Clone`**.
 

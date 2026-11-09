@@ -1,7 +1,7 @@
 # Connecting a Salesforce Org to CodeScan using local ECA flow
 
 {% hint style="info" %}
-Starting October 20th 2026, all new Salesforce org registrations will go through AuthHub. Existing connections are not affected by this change.&#x20;
+Starting October 20th 2026, all new Salesforce org registrations will go through AuthHub. Existing connections are not affected by this change.
 
 For details, timelines, and what to expect, see [Upcoming Salesforce authentication changes for new AutoRABIT CodeScan connections](https://knowledgebase.autorabit.com/fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-codescan-salesforce-connections)
 {% endhint %}
@@ -40,7 +40,7 @@ _https://perf.codescan.io/\_codescan/oauth2/authorize_
 2. In **Quick Find**, search **External Client Apps**.
 3. Open **External Client App Manager** (or the External Client Apps area).
 
-<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 2. Click **New External Client App**.
 3. Fill in the basics:

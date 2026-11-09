@@ -15,7 +15,7 @@ An Azure storage account contains all your Azure Storage data objects—blobs, f
 
 3. On the **Storage accounts** page, click **Create**.
 
-<figure><img src="../../../../.gitbook/assets/image (3593).png" alt="Creating a new storage account in Azure"><figcaption><p>Create Storage Account</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3592).png" alt="Creating a new storage account in Azure"><figcaption><p>Create Storage Account</p></figcaption></figure>
 
 4. Fill in the details across the following tabs:
 

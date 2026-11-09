@@ -13,10 +13,9 @@ The retry failed records feature provides a streamlined way to reprocess only th
 
     <figure><img src="../../../../.gitbook/assets/image (2433).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (2435).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (2434).png" alt=""><figcaption></figcaption></figure>
 3. In “Retry Replicate Summary”, selecting 'Restore Now' will only attempt to restore failed records.
 4. The retry option remains available for 30 days from the time the job is initiated.
 5.  After the retention period elapses, the retry button is disabled (grayed out).
 
-    <figure><img src="../../../../.gitbook/assets/image (2436).png" alt=""><figcaption></figcaption></figure>
-
+    <figure><img src="../../../../.gitbook/assets/image (1978).png" alt=""><figcaption></figcaption></figure>

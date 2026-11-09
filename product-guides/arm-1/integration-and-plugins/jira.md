@@ -21,7 +21,7 @@ This is an initial step where the user's JIRA credential, such as username and p
 
 3. Next, click on **Create Credential** from the right navigation bar.
 
-<figure><img src="../../../.gitbook/assets/image (1703).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1631).png" alt=""><figcaption></figcaption></figure>
 
 4. On the next pop-up screen, give a **Credential name**.
 5. Choose the **Credential Type** as '**User name with Password.'**
@@ -29,7 +29,7 @@ This is an initial step where the user's JIRA credential, such as username and p
 7. Please double-check that you use your JIRA username instead of the email address that you use to log in to JIRA.
 8. Click **Save**.
 
-<figure><img src="../../../.gitbook/assets/image (1704).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1632).png" alt="" width="416"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 **Troubleshooting:**
@@ -68,7 +68,7 @@ While registering JIRA with ARM, if JIRA fails to connect and results in **"Auth
 
 ### Mapping JIRA to Salesforce Org or Version Control <a href="#mapping-jira-to-salesforce-org-version-control" id="mapping-jira-to-salesforce-org-version-control"></a>
 
-Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org or Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your JIRA projects and teams.&#x20;
+Once you are done registering the plugins with ARM, make sure you map the JIRA ALM type with your required Salesforce Org or Version Control. Mapping will help you manage a seamless and accurate Salesforce change management process directly from within your JIRA projects and teams.
 
 1. Go to the **Salesforce Org Management (Admin > SF Org Mgmt.)** page.
 2. Select the **Salesforce org** for which you like to map the JIRA as a plugin.
@@ -98,7 +98,7 @@ In the **EZ-Commit** screen and under the **Post Commit** section, you need to:
 #### In CI Job <a href="#in-ci-job" id="in-ci-job"></a>
 
 {% hint style="info" %}
-**Important Notes:**&#x20;
+**Important Notes:**
 
 Configuring the Jira work items is applicable to the following CI Jobs:
 
@@ -130,6 +130,6 @@ Configuring the Jira work items is applicable to the following CI Jobs:
 
 #### #Mandatory Scopes are listed below:
 
-_**Classic Scope**_ -  `read:jira-work` , `manage:jira-project` ,`read:jira-user` , `write:jira-work` ,`manage:jira-configuration`
+_**Classic Scope**_ - `read:jira-work` , `manage:jira-project` ,`read:jira-user` , `write:jira-work` ,`manage:jira-configuration`
 
-_**Granular Scope**_ - `read:board-scope:jira-software` , `read:issue-details:jira` , `read:jql:jira` ,`read:sprint:jira-software` ,`read:project:jira` `read:project.avatar:jira` ,`read:project.avatar:jira`,`read:project-category:jira` , `read:project.property:jira`, `read:user:jira`,`read:application-role:jira` , `read:avatar:jira` , `read:group:jira`, `read:issue-type-hierarchy:jira` ,  `read:project-version:jira` , `read:project.component:jira`
+_**Granular Scope**_ - `read:board-scope:jira-software` , `read:issue-details:jira` , `read:jql:jira` ,`read:sprint:jira-software` ,`read:project:jira` `read:project.avatar:jira` ,`read:project.avatar:jira`,`read:project-category:jira` , `read:project.property:jira`, `read:user:jira`,`read:application-role:jira` , `read:avatar:jira` , `read:group:jira`, `read:issue-type-hierarchy:jira` , `read:project-version:jira` , `read:project.component:jira`

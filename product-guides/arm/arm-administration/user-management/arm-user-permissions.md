@@ -11,20 +11,20 @@ _Users with the **Admin** role manage their own permissions under that role and 
 
 1.  From the **`Admin`** module, open the **`Permissions`** tab.
 
-    <figure><img src="../../../../.gitbook/assets/image (817).png" alt="Admin menu with Permissions tab selected" width="251"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (812).png" alt="Admin menu with Permissions tab selected" width="251"><figcaption></figcaption></figure>
 2.  Select one or more users:
 
     * **Single user** – click the person’s first name.
     * **Bulk assignment** – tick the checkboxes for at least **two** users.
 
-    <figure><img src="../../../../.gitbook/assets/image (819).png" alt="Permissions list with checkboxes for bulk assignment"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (813).png" alt="Permissions list with checkboxes for bulk assignment"><figcaption></figcaption></figure>
 3. In the user-permission screen, choose the **Roles** and check the modules those users should access.
 4. Click **Save**. The changes take effect on the users’ next login.
 5.  You can always click a name later to revisit that user’s detail view.
 
-    <figure><img src="../../../../.gitbook/assets/image (820).png" alt="User detail view showing role and module assignments"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (814).png" alt="User detail view showing role and module assignments"><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (821).png" alt="Save button for user permissions" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (815).png" alt="Save button for user permissions" width="563"><figcaption></figcaption></figure>
 
 ***
 

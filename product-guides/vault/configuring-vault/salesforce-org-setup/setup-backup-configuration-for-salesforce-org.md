@@ -21,7 +21,7 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
    * **Metadata and data excluding special objects**
    * **Special objects (history, audit logs, KAV, etc.)**
 
-<figure><img src="../../../../.gitbook/assets/image (2741).png" alt="Configuration type selection screen in Vault"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2739).png" alt="Configuration type selection screen in Vault"><figcaption></figcaption></figure>
 
 3. Select metadata types from the list to include in the backup.\
    Click **`Next`**.
@@ -76,9 +76,9 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
    * **Bulk API for Data** (serial or parallel)
    * **Batch Size** for Metadata (max 10,000 records)
 
-<figure><img src="../../../../.gitbook/assets/image (2751).png" alt="Bulk API toggle for data objects" width="376"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (467).png" alt="Bulk API toggle for data objects" width="376"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2752).png" alt="Metadata batch size configuration" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (468).png" alt="Metadata batch size configuration" width="371"><figcaption></figcaption></figure>
 
 3. Choose **Backup Type**:
    * **Full Backup**
@@ -89,19 +89,19 @@ Backups can be scheduled to run **daily**, **weekly**, **monthly**, or at a **cu
 
 5. Enable or disable **Allow multiple backups to run in parallel**.
 
-<figure><img src="../../../../.gitbook/assets/image (2754).png" alt="Parallel backup option toggle"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (469).png" alt="Parallel backup option toggle"><figcaption></figcaption></figure>
 
 6. Define **Backup Frequency** (e.g., every 4 hours via **Specific**).
 
-<figure><img src="../../../../.gitbook/assets/image (2755).png" alt="Custom interval backup frequency setting" width="511"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (472).png" alt="Custom interval backup frequency setting" width="511"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (2756).png" alt="Time interval selection example" width="560"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (471).png" alt="Time interval selection example" width="560"><figcaption></figcaption></figure>
 
 7. Set the **Backup Retention Period**.
 8. Click **`Save Config`**.
 9. Review summary of selected metadata/data and backup plan.
 
-<figure><img src="../../../../.gitbook/assets/image (2757).png" alt="Backup configuration summary screen" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (473).png" alt="Backup configuration summary screen" width="563"><figcaption></figcaption></figure>
 
 10. Click **`Save`**. A success message confirms configuration.
 11. You are redirected to the **Configs** tab. Your new configuration will appear at the top.

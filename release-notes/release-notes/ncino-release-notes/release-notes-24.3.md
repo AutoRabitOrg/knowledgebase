@@ -1,8 +1,8 @@
 # Release Notes 24.3
 
-## nCino Release Notes 24.3.2
+## nCino 24.3.2
 
-**Release Date: 22 September 2024**
+**Release date:** 22 September 2024
 
 1. **Default Sorting by ExternalID for CI Jobs**\
    The sorting structure for "CI Jobs" has been updated. From now on, the **ExternalID** will be selected by default for sorting, replacing the previous selection of LookupKey.
@@ -13,9 +13,9 @@
 4. **Disable Delete Button for In-Progress Jobs**\
    The delete button will now be **grayed out** and disabled for any **In-Progress** CI jobs, preventing accidental deletions during the execution process.
 
-## nCino Release Notes 24.3.1
+## nCino 24.3.1
 
-**Release Date: 10 September 2024**
+**Release date:** 10 September 2024
 
 The following features have been enhanced to facilitate user productivity, simplify tasks, and perform selections more easily.
 

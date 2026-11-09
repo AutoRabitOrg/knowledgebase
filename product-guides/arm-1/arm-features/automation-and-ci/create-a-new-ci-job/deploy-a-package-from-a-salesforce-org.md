@@ -12,7 +12,7 @@ Click [here](../../../../arm/troubleshoot/known-issues-limitations/salesforce-kn
 
 Create a deployment package from metadata changes made in a Salesforce org after a specified start date and deploy those changes in another Salesforce org. This job helps teams automate the promotion of recently developed changes without manually selecting individual components. The job can also be configured to execute functional test cases as part of the deployment process.
 
-Example:\
+Example:\
 A development team completes a set of enhancements in a sandbox environment over several days. By specifying a start date, ARM automatically identifies the metadata changes made during that period, builds a deployment package, and deploys it in a QA environment. This streamlines the release process, reduces manual effort, and helps ensure that only the intended changes are migrated.
 
 ### Procedure <a href="#procedure" id="procedure"></a>
@@ -67,7 +67,7 @@ Under **Build**, provide:
   * **Run on All Supported Metadata Types:** Scan every retrieved component.
   *   **Run on Newly Added Supported Metadata Types:** Scan only newly added components.
 
-      <figure><img src="../../../../../.gitbook/assets/image (3878).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
+      <figure><img src="../../../../../.gitbook/assets/image (3730).png" alt="Scope options for supported metadata types"><figcaption><p>Scope Options for Supported Metadata Types</p></figcaption></figure>
 
 _For more information on running **Static Code Analysis in CI Jobs**, see_ [_this guide_](../../../../arm/arm-administration/static-code-analysis-in-ci-cd.md)_._
 
@@ -181,7 +181,7 @@ Click **Save** to store the CI job settings.
 
 If you deploy compiled **FlexCard** and **OmniScript** objects, verify both:
 
-<figure><img src="../../../../../.gitbook/assets/image (3893).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1308).png" alt="Vlocity compilation settings"><figcaption><p>Vlocity Compilation Settings</p></figcaption></figure>
 
 1. The destination org is registered via **OAuth** (not Standard).
 2. **Local Compilation** is enabled in **My Account** and the correct **Access Key** is entered.

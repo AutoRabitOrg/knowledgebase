@@ -19,19 +19,19 @@ ARM has given a provision to the user to download the conflicted files in their 
 
 To do so,
 
-1. Go to the **Commits** screen.&#x20;
+1. Go to the **Commits** screen.
 2. Search for your merge label that has a conflict. Click on the **Resolve Conflict** button.
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.28.02.png" alt=""><figcaption></figcaption></figure>
 
-3. The list of **conflicted files** or **merged files** will display on the next screen.&#x20;
+3. The list of **conflicted files** or **merged files** will display on the next screen.
 
 <figure><img src="../../../../../.gitbook/assets/image (2347).png" alt=""><figcaption></figcaption></figure>
 
 4. To sort all listed items in ascending or descending order, click on![](<../../../../../.gitbook/assets/image (1578).png>)icon.
 
-* ![](<../../../../../.gitbook/assets/image (1579).png>)will sort the listed items in ascending order
-* ![](<../../../../../.gitbook/assets/image (1580).png>)will sort the items in descending order
+* ![](<../../../../../.gitbook/assets/image (1578).png>)will sort the listed items in ascending order
+* ![](<../../../../../.gitbook/assets/image (1578).png>)will sort the items in descending order
 
 <figure><img src="../../../../../.gitbook/assets/Screenshot 2025-12-02 at 17.38.26 1.png" alt="" width="363"><figcaption></figcaption></figure>
 
@@ -54,7 +54,7 @@ To do so,
 
 <figure><img src="../../../../../.gitbook/assets/image (1586).png" alt=""><figcaption></figcaption></figure>
 
-9. Now, work on the conflicted files using your merge tool (example- TortoiseSVN, TortoiseGit) and make necessary changes to it.&#x20;
+9. Now, work on the conflicted files using your merge tool (example- TortoiseSVN, TortoiseGit) and make necessary changes to it.
 10. Click on the **Upload** (![](<../../../../../.gitbook/assets/image (1587).png>)) icon and upload the resolved files. Make sure the file uploaded is in **zipped** format.
 11. Finally, click on **Commit** to commit the changes in the destination branch.
 
@@ -67,7 +67,7 @@ The Merge inline editor helps users to resolve more complex merging conflicts di
 {% endhint %}
 
 1. Go to the **Commits** screen and search for your merge label that has a conflict. Click on the **Resolve Conflict** icon.
-2. The list of conflicted files or merged files will display on the next screen.&#x20;
+2. The list of conflicted files or merged files will display on the next screen.
 3. There is an easier method to resolve the conflicted files in one go. Select all the files and click on the 3 dots as shown in the image below, and choose either of the criteria to resolve the files.
    * **Use Source:** This option retains the revisions located in the source branch
    * **Use Destination:** This option retains the revisions located in the destination branch
@@ -118,8 +118,6 @@ This tab will list all duplicate entries for your profile/permission sets, and y
 **Important Points to Note:**
 
 1. If you receive the following error as highlighted below for duplicate entry, we suggest you download the file locally in such a case and search for any duplicity. Or, you can continue to commit directly by resolving the conflicting files (using the **Resolve Duplicates** button).
-
-
 
 <img src="../../../../../.gitbook/assets/image (1594).png" alt="" data-size="original">
 

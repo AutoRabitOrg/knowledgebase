@@ -1,7 +1,7 @@
 # Add a project to CodeScan from Salesforce
 
 {% hint style="info" %}
-**PLEASE NOTE:**  As of September 2025, Salesforce has started to enforce restrictions on the use of Connected Apps.  These changes impact AutoRABIT products that connect to your Salesforce environments using the OAuth 2.0 Client Credentials Flow (including CodeScan).  [Please see here about how to adjust to these changes.](https://knowledgebase.autorabit.com/fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions)
+**PLEASE NOTE:** As of September 2025, Salesforce has started to enforce restrictions on the use of Connected Apps. These changes impact AutoRABIT products that connect to your Salesforce environments using the OAuth 2.0 Client Credentials Flow (including CodeScan). [Please see here about how to adjust to these changes.](https://knowledgebase.autorabit.com/fundamentals/announcements/preparing-for-salesforce-connected-app-usage-restrictions)
 {% endhint %}
 
 This document guides how to add a Salesforce project to your [CodeScan cloud](https://www.codescan.io/products/cloud/) account and run the analysis.
@@ -13,7 +13,7 @@ This document guides how to add a Salesforce project to your [CodeScan cloud](ht
 
 3. It takes you to a different window. Choose the **`Organization`** for which you'd like to create a project. Click **`Set Up`**.
 
-<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7 (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/ProjectSetup 7.7.png" alt="" width="563"><figcaption></figcaption></figure>
 
 4. In the next window, click on **`Add Analysis Project`** option.
 
@@ -25,8 +25,8 @@ This document guides how to add a Salesforce project to your [CodeScan cloud](ht
 
 6. Next, choose the environment from the dropdown between _**Production/Developer**, **My own domain**, and **Sandbox**_.
 
-* **`Production/Developer:`** Production/Developer refers authenticating users to Salesforce.com for a Developer account and/or a  Production account using the username and password at [_login.salesforce.com_](https://login.salesforce.com/)_._
-* **`Sandbox:`** Sandboxes are test environments that provide a way to copy and create metadata from a production org (above).  It is a separate environment where you can test (including seeding with data). There are four different types of sandboxes, accessed at [_test.salesforce.com_](https://test.salesforce.com/)_._
+* **`Production/Developer:`** Production/Developer refers authenticating users to Salesforce.com for a Developer account and/or a Production account using the username and password at [_login.salesforce.com_](https://login.salesforce.com/)_._
+* **`Sandbox:`** Sandboxes are test environments that provide a way to copy and create metadata from a production org (above). It is a separate environment where you can test (including seeding with data). There are four different types of sandboxes, accessed at [_test.salesforce.com_](https://test.salesforce.com/)_._
 * **`My own domain:`** Choose this if you have set up your domain or custom URL to access your Salesforce org rather than [_https://login.salesforce.com_](https://login.salesforce.com/). Next, specify the Salesforce login URL in the text box. For example, _https://mydomainname.my.salesforce.com_. Companies and admins can better manage login and authentication for their Salesforce orgs by creating a custom domain.
 
 <figure><img src="../../../../../.gitbook/assets/Environment 6.3.png" alt="" width="563"><figcaption></figcaption></figure>

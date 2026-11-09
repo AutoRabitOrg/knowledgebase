@@ -48,7 +48,7 @@ To restore Knowledge data objects with AutoRABIT Vault, follow the steps below:
 {% hint style="info" %}
 **Point to Note:**
 
-If you choose to deploy KAV objects along with other metadata/data objects, the AutoRABIT Vault application will not allow you to continue further. The message below pops up:&#x20;
+If you choose to deploy KAV objects along with other metadata/data objects, the AutoRABIT Vault application will not allow you to continue further. The message below pops up:
 
 `Ensure only KAV object is selected for this restore job. KAV is a special object and can be processed only in separate job. To restore other data objects/ metadata run another job including all the required metadata and data objects.`
 {% endhint %}
@@ -58,7 +58,7 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
 15. Choose the recipients from the **`Email notification`** dropdown of who should receive notifications whenever the action is performed. The currently logged-in recipient will automatically be checked by default.
 16. Select the criteria for performing the restore and click on **`Restore Now`**.
 
-<figure><img src="../../../.gitbook/assets/image (3953).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (515).png" alt="" width="563"><figcaption></figcaption></figure>
 
 17. You'll be taken to the **`Restore Summary`** screen, which will display the status of the recently triggered restore activity.
 18. Once the restore operation is successfully triggered, the status changes to **`Ready to link kav to case`**.
@@ -76,5 +76,5 @@ If you choose to deploy KAV objects along with other metadata/data objects, the 
 
 * To ensure successful linking, do confirm that the **KAV records** for linking are in `Published` status in Salesforce.
 * Once the Kav record is successfully linked, the job status changes to complete (![](<../../../.gitbook/assets/image (440).png>)) state.
-* The **`trigger`** (![](<../../../.gitbook/assets/image (439).png>)) button will not be available; henceforth, linking KAV to case is triggered.
+* The **`trigger`** (![](<../../../.gitbook/assets/image (438).png>)) button will not be available; henceforth, linking KAV to case is triggered.
 {% endhint %}

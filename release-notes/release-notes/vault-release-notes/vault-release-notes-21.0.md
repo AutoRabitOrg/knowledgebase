@@ -1,14 +1,14 @@
 # AutoRABIT Vault Release Notes 21.0
 
-## AutoRABIT Vault 21.4 Release Notes <a href="#vault-214" id="vault-214"></a>
+## Vault 21.4
 
 **Release: 01 August 2021**
 
-#### Enhancements <a href="#enhancements" id="enhancements"></a>
+#### Enhancements
 
 **nCino Template Sync:** Now that AutoRABIT Vault is linked to nCino, whenever the nCino team changes or releases a template, AutoRABIT Vault's [nCino features](https://www.autorabit.com/industry-solution/banking-financial-services-ncino/) will be updated as well.&#x20;
 
-#### Bug Fixes <a href="#bug-fixes" id="bug-fixes"></a>
+#### Fixes
 
 * AutoRABIT’s help desk access via AutoRABIT Vault had certain issues that have been rectified. Now you can see all of your support tickets when you access the helpdesk via AutoRABIT Vault.&#x20;
 * The combination of full and incremental [metadata backups](https://www.autorabit.com/blog/7-salesforce-security-concerns-relating-to-metadata/) was not picking up all metadata for restore. This has now been rectified and is working as it should.&#x20;
@@ -16,31 +16,31 @@
 
 ***
 
-## AutoRABIT Vault 21.3 Release Notes <a href="#vault-213" id="vault-213"></a>
+## Vault 21.3
 
 **Release: 06 June 2021**
 
-#### Enhancements <a href="#enhancements1" id="enhancements1"></a>
+#### Enhancements
 
 * **Pre Restore/ Replicate Checklist:** Now you can achieve improved governance for restore/ replicate jobs by following a set of guidelines to maximize the success rate.
 * **UI Improvement:** With this release, you will see all the jobs on a single summary page. The In-Progress tab under Backup, Restore, Replicate, Archival, GDPR module has been deprecated.&#x20;
 * Vault now provides a capability to download backed-up metadata files for the on-premises offering&#x20;
 * **Improved security:** We have worked on strengthening security by adding an additional layer of security.&#x20;
 
-#### Bug Fixes <a href="#bug-fixes1" id="bug-fixes1"></a>
+#### Fixes
 
 * **Field-level restores fix for On-Premise offering:** The field-level restore showed peculiar behavior for on-prem hosting this issue was identified and fixed. Now you can successfully restore at field level for the on-prem offering.&#x20;
 * **Backup member count for Dashboard, Reports, and EmailTemplate:** There was an issue identified on backup count mismatch for incremental backups for metadata (Dashboard, Reports, and EmailTemplate). This issue has been fixed, now you can see the exact count of the metadata that got changed and picked up in an incremental backup.
 
 ***
 
-## AutoRABIT Vault 21.2 Release Notes <a href="#vault-212" id="vault-212"></a>
+## Vault 21.2
 
 **Release: 26 April 2021**
 
 For our customers in regulated industries with extended needs to meet compliance and security auditing standards – Now AutoRABIT Vault is fully available for on-premises or in-your-cloud deployment and use of on-premises storage (including SANs). These new deployment and storage options give you complete control of the environment where Vault is deployed and your data sets are stored.
 
-#### New Features <a href="#new-features" id="new-features"></a>
+#### New features
 
 **On-premises or “in-your-cloud” deployment**
 
@@ -50,7 +50,7 @@ Now AutoRABIT Vault can be deployed where you need it to be. You can choose our 
 
 We now support on-premises as well as cloud storage. Host your backups and archives within your premises, DR sites, or cloud environments. And get all the control you need to meet regulated industries' extended security, compliance, and risk reduction needs.
 
-#### Enhancements <a href="#enhancements2" id="enhancements2"></a>
+#### Enhancements
 
 **Continued updates to the UI**
 
@@ -71,7 +71,7 @@ We’ve added support for some previously unsupported FinancialForce metadata ty
 
 ***
 
-## AutoRABIT Vault 21.1 Release Notes <a href="#vault-211" id="vault-211"></a>
+## Vault 21.1
 
 **Release: 25 March 2021**
 
@@ -79,7 +79,7 @@ The first thing you’ll notice with this new release is our updated look and fe
 
 Elsewhere, you’ll find new capabilities for using Google Cloud Platform (GCP) storage, enhanced support for Azure retention policies, and restore/replication functionality for non-required parents.
 
-#### New Features <a href="#new-features1" id="new-features1"></a>
+#### New features
 
 **Google Cloud Platform (GCP) storage support for AutoRABIT Vault**
 
@@ -87,7 +87,7 @@ You can now use GCP storage for backups. Options available are to use either Aut
 
 <figure><img src="https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_3_GCP(1).gif" alt=""><figcaption></figcaption></figure>
 
-#### Enhancements <a href="#enhancements3" id="enhancements3"></a>
+#### Enhancements
 
 **Application Rebranding**&#x20;
 

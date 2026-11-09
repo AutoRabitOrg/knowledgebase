@@ -13,7 +13,7 @@ The **DeleteEmailServices** template allows you to remove specific fields from e
 7. Click **Add**.
 8. On the next screen, a **Test Case Name** and **Fields To Delete** are auto-populated. To add custom test data, click **Add**.
 9. To change field names for auto-generated or custom test cases:
-   * Click the ![Edit Field Icon](<../../../../../../.gitbook/assets/image (1000).png>) icon.
+   * Click the ![Edit Field Icon](<../../../../../../.gitbook/assets/image (842).png>) icon.
    * Enter the new field name in the provided text box.
    * To add multiple fields, click the **+** symbol and repeat the above steps.
    * Click **OK** once done.

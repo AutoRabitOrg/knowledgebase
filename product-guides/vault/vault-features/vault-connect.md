@@ -29,7 +29,7 @@ This document provides complete information about the new feature AutoRABIT Vaul
 <figure><img src="../../../.gitbook/assets/image (4040).png" alt="" width="563"><figcaption></figcaption></figure>
 
 3. Click on the **Connect (Beta)** module of the AutoRABIT Vault application.
-4. &#x20;On landing on the Connect (Beta) tab of the AutoRABIT Vault setup, the user will see the following message on the screen:
+4. On landing on the Connect (Beta) tab of the AutoRABIT Vault setup, the user will see the following message on the screen:
 
 <figure><img src="../../../.gitbook/assets/image (4041).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -49,7 +49,7 @@ This document provides complete information about the new feature AutoRABIT Vaul
     * What to select when creating Auth. Providers.
 
     <figure><img src="../../../.gitbook/assets/image (4044).png" alt="" width="563"><figcaption></figcaption></figure>
-9. Copy the URL from the pop-up shown.&#x20;
+9. Copy the URL from the pop-up shown.
 
 {% hint style="info" %}
 **Note:** The same URL can be copied from the pop-up and opened by clicking on the information icon available beside the **Add Connect Config** button.
@@ -164,7 +164,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 
 ### **View Archived Data in Salesforce**
 
-1. &#x20;Log in to the Salesforce org for which you want to view the data.
+1. Log in to the Salesforce org for which you want to view the data.
 2.  **Create Auth. Providers**
 
     * Go to → Auth. Providers under setup.
@@ -175,7 +175,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 
 <figure><img src="../../../.gitbook/assets/image (4055).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;4\. Select the **Provider Type – Salesforce.**
+4\. Select the **Provider Type – Salesforce.**
 
 <figure><img src="../../../.gitbook/assets/image (4056).png" alt=""><figcaption></figcaption></figure>
 
@@ -187,7 +187,7 @@ AutoRABIT Vault-Connect now supports backups as a source, significantly expandin
 
 <figure><img src="../../../.gitbook/assets/image (4057).png" alt=""><figcaption></figcaption></figure>
 
-6. On completing the required selections, click on the Save button.&#x20;
+6. On completing the required selections, click on the Save button.
 
 ### Configure Connected Apps in Salesforce
 
@@ -220,7 +220,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 2. Select the "**Provider Type**" as "**Salesforce**".
 3. Provide a "**Name**" and set the "**URL Suffix**" to default.
 4. Provide the “**Consumer Key**” & “**Consumer Secret**”
-   1.  To get the "**Consumer Key**" and "**Consumer Secret**", navigate to the connected app and select "**Manage Consumer Details**" (refer to the following screenshot for guidance).&#x20;
+   1.  To get the "**Consumer Key**" and "**Consumer Secret**", navigate to the connected app and select "**Manage Consumer Details**" (refer to the following screenshot for guidance).
 
        <figure><img src="../../../.gitbook/assets/image (3310).png" alt=""><figcaption></figcaption></figure>
 
@@ -263,7 +263,7 @@ Connected Apps allow external applications to securely integrate with Salesforce
 
 To streamline the process and enhance functionality, the AutoRABIT Vault Connect integration has been updated to support viewing of rich text fields (unsupported by external objects) through Visualforce pages in Salesforce, enabling the seamless viewing of images and other HTML content in rich text fields.
 
-&#x20;**Steps to Implement the Fix:**
+**Steps to Implement the Fix:**
 
 1.  **Create a Visualforce Page**:
 
@@ -316,7 +316,7 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
     <figure><img src="../../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 3.  Click on the “Connect” tab to go to the Connect application.<br>
 
-    <figure><img src="../../../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 4. Click on the “**Sync with Salesforce**” button to initiate the sync procedure
    * Please observe the information icon for informational purposes.
 5.  On initiating “**Sync with Salesforce,**” the user will go to the “Sync history” page.<br>
@@ -366,8 +366,6 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 21. Hovering over the list of fields under the References column, the list of fields selected under the references will be displayed to the user.<br>
 
     <figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
-
-
 22. After performing the “**Sync With Salesforce**”, the user has to go to the “External Objects” and select the required object.<br>
 
     <figure><img src="../../../.gitbook/assets/image (837).png" alt=""><figcaption></figcaption></figure>
@@ -407,8 +405,6 @@ This feature enables the user to sync the latest metadata changes on Salesforce 
 
 By following these steps, you will enable **global search** functionality for **AutoRABIT Vault Connect** in Salesforce.
 
-
-
 ### Limitations of Querying Archived Data via AutoRABIT Vault Connect <a href="#limitations-of-querying-archived-data-via-vault-connect" id="limitations-of-querying-archived-data-via-vault-connect"></a>
 
 #### 1. Indexed Fields Only <a href="#id-1.-indexed-fields-only" id="id-1.-indexed-fields-only"></a>
@@ -425,8 +421,6 @@ By following these steps, you will enable **global search** functionality for **
 
 * Queries or Salesforce functionalities that require a query on non-indexed fields may or may not work.
 * **Impact**: As the size of your archived data increases, these queries are more likely to result in timeouts.
-
-&#x20;
 
 ### Troubleshooting Guide: Verifying Salesforce Queries to External Database (AutoRABIT Vault Connect) <a href="#troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect" id="troubleshooting-guide-verifying-salesforce-queries-to-external-database-vault-connect"></a>
 
@@ -482,15 +476,12 @@ Salesforce Connect OData 4.0 license subscription.
     **Precision:** The maximum number of digits in a numeric value includes all numbers to the left and the right of the decimal point (but excludes the decimal point character).
 
     **Scale:** The number of digits to the right of the decimal point in a numeric value must be less than the precision value.\
-    **Example 1:**&#x20;
+    **Example 1:**
 
     Define a custom number field, e.g., "Number." Give it length = 3 and decimal places = 1 (scale). It might seem that this is done to restrict the precision of the field to one decimal place. However, on the UI level (on a standard edit page), if you try to type in, for example, 237.631, it will round it off to 237.631. Here precision is 4 and scale is 1. When mapping it back to Salesforce as the external object’s field, the value will be truncated to 237.6.
 
-    **Example 2:**&#x20;
+    **Example 2:**
 
     Say a field holds info on geolocation latitude and longitude and their precision and scale are 5 and 2, respectively. Assign the value as 77.2090, then when mapping it back to Salesforce as the external object’s field, it will be truncated to 77.20.
 7. Field type "time" is not supported in this version.
-8. No more than four external lookup fields can be added to your page layout. On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts_limitations.htm\&type=5).&#x20;
-
-
-
+8. No more than four external lookup fields can be added to your page layout. On Lightning Experience record pages, a Record Detail component that contains more than four external lookup fields breaks the page at runtime. Please refer to the following documentation for more information on the limitations related to the layouts [https://help.salesforce.com/s/articleView?id=sf.layouts\_limitations.htm\&type=5](https://help.salesforce.com/s/articleView?id=sf.layouts_limitations.htm\&type=5).

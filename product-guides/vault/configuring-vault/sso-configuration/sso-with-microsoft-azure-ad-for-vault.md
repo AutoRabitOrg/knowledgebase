@@ -67,11 +67,9 @@ Benefits:
    * On the login page, click **Login with SSO**
    *   Enter your **Customer ID** and click **Sign In**
 
-       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.07.29 PM (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.07.29 PM.png" alt=""><figcaption></figcaption></figure>
 
-
-
-       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.16.06 PM (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../../.gitbook/assets/Screenshot 2026-08-14 at 6.16.06 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Troubleshooting <a href="#troubleshooting" id="troubleshooting"></a>
 
@@ -82,7 +80,5 @@ _"Your user is not available in the account with provided customer ID. Please co
 
 1. User not assigned in Azure to the AutoRABIT Vault app.
 2. `restrictAutoCreationOfUser` claim is set to `Yes` and user not pre-created in AutoRABIT Vault.
-
-
 
 Here is a sample document from Microsoft Entra on how to set up network zones that restrict access to apps registered in Microsoft Entra: [https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-assignment-network).

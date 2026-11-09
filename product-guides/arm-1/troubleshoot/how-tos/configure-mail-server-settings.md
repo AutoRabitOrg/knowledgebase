@@ -6,13 +6,13 @@
 
 ### Overview <a href="#overview" id="overview"></a>
 
-You can use the mail server settings in this article to manually set up your email to send and receive an email with an iCloud email account. ARM requires mail server settings to send the ARM notification emails for events like build failures, build successes, deployment failures, merge reports, etc.&#x20;
+You can use the mail server settings in this article to manually set up your email to send and receive an email with an iCloud email account. ARM requires mail server settings to send the ARM notification emails for events like build failures, build successes, deployment failures, merge reports, etc.
 
 Begin the process by hovering your mouse over the **`Admin`** module and selecting the option: **`Notifications`**.
 
 <figure><img src="../../../../.gitbook/assets/image (1763).png" alt="" width="235"><figcaption></figcaption></figure>
 
-You’ll then be presented with a screen divided into **`Mail Settings`**, **`Send a test email`**, **`Restricted Emails`**, and **`Teams/Slack Settings`** sections.&#x20;
+You’ll then be presented with a screen divided into **`Mail Settings`**, **`Send a test email`**, **`Restricted Emails`**, and **`Teams/Slack Settings`** sections.
 
 #### Mail Settings <a href="#mail-settings" id="mail-settings"></a>
 
@@ -20,21 +20,21 @@ To set up a mail client, it’s necessary to configure the server to take care o
 
 <figure><img src="../../../../.gitbook/assets/image (1764).png" alt="" width="536"><figcaption></figcaption></figure>
 
-Fill in the required details as listed below (mandatory fields are marked with an asterisk (\*) mark.&#x20;
+Fill in the required details as listed below (mandatory fields are marked with an asterisk (\*) mark.
 
 1. **`Host Name:`** Your incoming mail server name. _Ex- smtp.office365.com_
 2. **`Port:`** The port number your incoming mail server uses. _Ex- Port 25_
 3. **`User Name:`** The email address you want to set up. _Ex- yourusername@autorabit.com_
 4. **`Password:`** The password associated with your email account.
 5. **`Protocol:`** The protocol to manage the transmission and outgoing mail over the internet. If your email is encrypted using SSL, select the **`Use SSL/TLS if available`** checkbox.
-6. **`Email From:`** Enter the email addresses you want to receive notifications while configuring the mail server.&#x20;
+6. **`Email From:`** Enter the email addresses you want to receive notifications while configuring the mail server.
 7. Select the **`Email Notifications`** checkbox to receive notification alerts.
 8. **`Custom Email Template:`** ARM has its default email template styles, but you can also create your own. Enable the **`Custom Email Template`** field and add your logo at the top or bottom of the page. You can add footer text too. Once you're happy with your template, save it.
 9. You can use the **`Reset`** button to clear all the data in the **`Mail Settings`** section and again fill in the fields.
 
 <figure><img src="../../../../.gitbook/assets/image (1765).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### How to reset your mail preferences?&#x20;
+#### How to reset your mail preferences?
 
 You won't be able to switch back to the default ARM mail preferences once you have configured your email template. If you want to switch back to the default email style, please email us at [support@autorabit.com](mailto:%20support@autorabit.com), and we can do it for you.
 
@@ -64,7 +64,7 @@ When an event is triggered in ARM, email notifications are sent to the selected 
 
 <figure><img src="../../../../.gitbook/assets/image (1768).png" alt=""><figcaption></figcaption></figure>
 
-2. Enter a **`Channel Name`** and the **`Webhook Integration URL`**.&#x20;
+2. Enter a **`Channel Name`** and the **`Webhook Integration URL`**.
 3.  Click on **`Test Connection`**. A **`Test connection Successful`** notification will be displayed.
 
     <figure><img src="../../../../.gitbook/assets/image (1769).png" alt=""><figcaption></figcaption></figure>
@@ -80,13 +80,13 @@ When an event is triggered in ARM, email notifications are sent to the selected 
 
 5. Click on the **`+`** icon to add another channel. You can add up to **10** channels.
 
-<figure><img src="../../../../.gitbook/assets/image (1773).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1772).png" alt=""><figcaption></figcaption></figure>
 
 6. Click the **`x`** icon to delete a channel and click **`Yes`** on the confirmation message.
 
 **Notification Configuration**
 
-This section is a guide to configuring the channels to the notification types. You can select which group(s) on Teams or Slack should be notified when a particular event is triggered.&#x20;
+This section is a guide to configuring the channels to the notification types. You can select which group(s) on Teams or Slack should be notified when a particular event is triggered.
 
 <figure><img src="../../../../.gitbook/assets/image (1774).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -97,7 +97,7 @@ This section is a guide to configuring the channels to the notification types. Y
 
 3. Click the channel that you want to send the notification to when this event is triggered. You can select up to five channels for each notification type, meaning you can select as many channels as you have configured.
 4. You can select multiple checkboxes for numerous notification types and select the channels to which you want to send notifications for each event.
-5. Click **`Save`**. All the selected **`Notification types`** will be saved simultaneously.&#x20;
+5. Click **`Save`**. All the selected **`Notification types`** will be saved simultaneously.
 6. When an event is triggered in ARM, the configured channels will receive a notification.\
    The image below is an example of what these notifications look like on Teams.
 

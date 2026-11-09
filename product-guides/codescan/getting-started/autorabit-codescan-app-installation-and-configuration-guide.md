@@ -2,13 +2,12 @@
 
 Salesforce UI Compatibility Notice
 
-
 The AutoRABIT package is a Second-Generation Managed Package (2GP) designed for Salesforce administrators to perform a one-time setup operation. It is supported exclusively in Salesforce Lightning Experience and is not compatible with Salesforce Classic.
 
 Please ensure that your Salesforce org is using Lightning Experience before proceeding with the AutoRABIT package installation and configuration. Customers using Salesforce Classic must switch to Lightning Experience to complete the setup, as supporting Salesforce Classic is not technically feasible for this 2GP package.
 
 {% hint style="info" %}
-This guide is intended for the Salesforce administrator responsible for installing and configuring AutoRABIT in your organization. It walks you through package installation, required Salesforce OAuth settings, AutoRABIT Connector authorization, product enablement, permission assignment, and final Salesforce org registration in your licensed AutoRABIT products.&#x20;
+This guide is intended for the Salesforce administrator responsible for installing and configuring AutoRABIT in your organization. It walks you through package installation, required Salesforce OAuth settings, AutoRABIT Connector authorization, product enablement, permission assignment, and final Salesforce org registration in your licensed AutoRABIT products.
 {% endhint %}
 
 ## Process at a Glance
@@ -130,7 +129,7 @@ Do not begin post-install configuration until Salesforce confirms the package ha
 <figure><img src="../../../.gitbook/assets/image (5171).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;**Long-running installation**
+**Long-running installation**
 
 If Salesforce reports that the package is taking a long time to install, wait for either the completion screen or the Salesforce completion email before continuing.
 {% endhint %}
@@ -167,7 +166,7 @@ In Setup, search for and open “Session Settings.” Under “Session Settings,
 * Lock sessions to the IP address from which they originated
 * Lock sessions to the domain in which they were first used
 
-<figure><img src="../../../.gitbook/assets/image (5395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5393).png" alt=""><figcaption></figcaption></figure>
 
 5\. Open External Client App Manager
 
@@ -222,7 +221,7 @@ The System Connections page contains two authorization areas. Start with Inbound
 <figure><img src="../../../.gitbook/assets/image (5182).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;**Integration User requirement**
+**Integration User requirement**
 
 If you are currently signed in as a different Salesforce user than the intended integration user, use the “Not you?” option on the Salesforce authorization screen and sign in as the correct user. The account completing this authorization must have the “AutoRABIT Setup User” permission set assigned before you continue.
 {% endhint %}
@@ -230,7 +229,7 @@ If you are currently signed in as a different Salesforce user than the intended 
 {% hint style="info" %}
 **Non-Administrator Profile requirement**
 
-If the Salesforce user connecting the org to the AutoRABIT product is not a System Administrator, their profile must also include the following permissions:&#x20;
+If the Salesforce user connecting the org to the AutoRABIT product is not a System Administrator, their profile must also include the following permissions:
 
 * **API Enabled**
 * **Modify Metadata Through Metadata API Functions**
@@ -305,9 +304,9 @@ After all three values are entered, click “Authorize.” Confirm that the outb
 
 The Add New Org dialog displays the Subdomain, Client ID, and Client Secret. Copy these values into the corresponding Outbound Connection fields in the Salesforce AutoRABIT Connector.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120702 (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120702.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5189).png" alt=""><figcaption></figcaption></figure>
 
 4\. Authorize
 
@@ -334,7 +333,7 @@ For products your organization is licensed to use, the connector displays an ena
 <figure><img src="../../../.gitbook/assets/image (5195).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-&#x20;**Default behavior**
+**Default behavior**
 
 After the org is registered, available licensed products are enabled by default in the flow shown. Turn off a product only when the org should not be exposed to that application.
 {% endhint %}
@@ -439,13 +438,13 @@ Unlike AutoRABIT ARM and AutoRABIT Guard, the AutoRABIT CodeScan permission set 
 
 After the Salesforce-side registration and permissions are complete, return to the AutoRABIT product and click “Refresh” in the Add New Org dialog.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120650 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120650.png" alt=""><figcaption></figcaption></figure>
 
 2\. Select the newly authorized Salesforce org
 
 The newly registered Salesforce org should appear in the selection list. Choose it to create the product configuration.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120722 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2026-09-08 120722.png" alt=""><figcaption></figcaption></figure>
 
 3\. Add the org
 
@@ -488,7 +487,7 @@ Before you begin using the integration, verify each item below.
 {% hint style="info" %}
 **If something is missing**
 
-Recheck the package installation status, OAuth settings, connector authorization state, product license availability, product enablement toggle, and permission sets assigned to the integration user. Refresh the product-side org list after Salesforce-side changes.&#x20;
+Recheck the package installation status, OAuth settings, connector authorization state, product license availability, product enablement toggle, and permission sets assigned to the integration user. Refresh the product-side org list after Salesforce-side changes.
 
 If the configuration still does not complete, capture the screen or error message and contact AutoRABIT Support.
 {% endhint %}

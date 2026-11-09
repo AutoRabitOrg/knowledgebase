@@ -27,7 +27,7 @@ To connect [AutoRABIT Vault](https://www.autorabit.com/products/vault-data-backu
 
 1.  Click the **Gear** icon and select **Setup**.
 
-    ![Setup Gear](<../../../.gitbook/assets/image (3170).png>)
+    ![Setup Gear](<../../../.gitbook/assets/image (3163).png>)
 2.  In the Quick Find box, type **Permission Sets** and select it.
 
     ![Permission Sets](<../../../.gitbook/assets/image (3171).png>)

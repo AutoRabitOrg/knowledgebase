@@ -1,6 +1,6 @@
 # Release Notes 24.2
 
-## nCino Release Notes 24.2 <a href="#title-text" id="title-text"></a>
+## nCino 24.2
 
 **09 September 2024**
 

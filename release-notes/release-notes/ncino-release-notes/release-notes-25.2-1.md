@@ -5,9 +5,9 @@ noIndex: true
 
 # Release Notes 25.2
 
-## nCino + DataLoader 25.2.4 Release Notes
+## nCino + DataLoader 25.2.4
 
-**Release Date:** 10 May, 2025
+**Release date:** 10 May 2025
 
 **Rollback Behavior Improved**
 
@@ -31,15 +31,15 @@ noIndex: true
 
 
 
-## nCino + DataLoader 25.2.2 Release Notes
+## nCino + DataLoader 25.2.2
 
-Release Date: April 27, 2025
+**Release date:** 27 April 2025
 
 
 
-## nCino + DataLoader 25.2.1 Release Notes
+## nCino + DataLoader 25.2.1
 
-**Release Date**: 20 May, 2025
+**Release date:** 20 May 2025
 
 Retrieving Source Columns
 

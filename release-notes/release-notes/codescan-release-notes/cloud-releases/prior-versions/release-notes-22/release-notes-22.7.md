@@ -2,35 +2,35 @@
 
 **October 2022 - New Features, Enhancements, Improvements, and Bugs Fixed**
 
-### New Features <a href="#new-features" id="new-features"></a>
+### New features
 
-#### 1. SAML-based SSO for login <a href="#id-1-samlbased-sso-for-login" id="id-1-samlbased-sso-for-login"></a>
+#### SAML-based SSO for login
 
 You can easily log in to CodeScan Cloud by setting up a Single Sign-On (SSO) through SAML-based third-party identity providers such as Okta, PingOne, and Microsoft Azure.
 
 For more information, see [Single Sign-On](../../../../../../product-guides/codescan/codescan-integration/single-sign-on-sso/).
 
-#### 2. CSV Export tool for CodeScan Cloud <a href="#id-2-csv-export-tool-for-codescan-cloud" id="id-2-csv-export-tool-for-codescan-cloud"></a>
+#### CSV Export tool for CodeScan Cloud
 
 The ability to download a CSV file containing the issues has now been added. The CodeScan **CSV issue export** option can be found in the **More** menu. Prior to this release, this functionality was only accessible to CodeScan Self-Hosted users; however, we have now enabled support for Cloud users as well.
 
 For more information, see [Exporting Issues in CodeScan Cloud](https://knowledgebase.autorabit.com/codescan/docs/exporting-issues-in-codescan-cloud)
 
-#### 3. New CodeScan Rule <a href="#id-3-new-codescan-rule" id="id-3-new-codescan-rule"></a>
+#### New CodeScan Rule
 
 CodeScan now has a new rule added to their Quality Profile called `Do not use vulnerable packages,` which checks for deprecated and outdated dependencies in the project and highlights the vulnerabilities available.
 
 ***
 
-### Enhancements <a href="#enhancements" id="enhancements"></a>
+### Enhancements
 
-#### Scheduled Reports available for Project Branches <a href="#scheduled-reports-available-for-project-branches" id="scheduled-reports-available-for-project-branches"></a>
+#### Scheduled Reports available for Project Branches
 
 Previously, project reports were available for download for the main branches. With this update, we now support generating reports manually or by scheduling them for every project branch.
 
 For more information, see [Scheduled Reports](https://knowledgebase.autorabit.com/codescan/docs/scheduled-reports)
 
-#### UX Enhancement <a href="#ux-enhancement" id="ux-enhancement"></a>
+#### UX Enhancement
 
 1. The drop-down list for the entry of Rule Parameters has been introduced to the improved **Activate in Quality Profiles** page. You could only feed regular text into fields prior to this release.
 
@@ -46,7 +46,7 @@ Fig 2: New Screen<br>
 
 ***
 
-### Improvements <a href="#improvements" id="improvements"></a>
+### Enhancements
 
 * This release includes significant security improvements. Updating is strongly recommended.
 * The existing metadata rules in CodeScan have been tweaked for SFDX compatibility.
@@ -54,7 +54,7 @@ Fig 2: New Screen<br>
 
 ***
 
-### Bugs fixed <a href="#bugs-fixed" id="bugs-fixed"></a>
+### Fixes
 
 * Fixed a minor issue where the analysis would start for both branches when merging a feature branch into the master branch. This shouldn't happen as analysis should be initiated only on the master branch and not the feature branch.
 * Fixed an issue where the target branch's newly added code was not being fetched when the analysis was running.

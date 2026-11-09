@@ -9,7 +9,7 @@ noIndex: true
 
 ### Introduction <a href="#introduction" id="introduction"></a>
 
-Security Information and Event Management (SIEM) system logs allow you to record and transport event data.&#x20;
+Security Information and Event Management (SIEM) system logs allow you to record and transport event data.
 
 ### How to Access SIEM Logs <a href="#how-to-access-cef-logs" id="how-to-access-cef-logs"></a>
 
@@ -60,13 +60,13 @@ Two APIs are involved: one to prepare the zip file and the other to download the
 
 1. `GET: {{url}}/ARVault/eventlogs/prepare-zip?from=2023-10-09&to=2023-10-10`
 
-<figure><img src="../../../.gitbook/assets/image (834).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (833).png" alt=""><figcaption></figcaption></figure>
 
 **Output:** A temporary token for the file, which is valid for a minute.
 
-* The API works in the same manner as described above, with the same from and to parameter validation and process.&#x20;
-* It will prepare a consolidated zip file for the user.&#x20;
-* File names are the user's email for that day, with special characters in the email replaced by '\_'.&#x20;
+* The API works in the same manner as described above, with the same from and to parameter validation and process.
+* It will prepare a consolidated zip file for the user.
+* File names are the user's email for that day, with special characters in the email replaced by '\_'.
 * It returns a temporary token cached for the file for a minute.
 
 2. `GET: {{url}}/ARVault/eventlogs/download/code/{token}`
@@ -97,8 +97,6 @@ Two APIs are involved: one to prepare the consolidated file and the other to dow
 * If the token is invalid/expired, the API will respond with a forbidden message.
 * If the token is valid, it will download the consolidated log file.
 
-
-
 ### SIEM Log Structure <a href="#cef-log-structure" id="cef-log-structure"></a>
 
 **The following is the structure of the log.**
@@ -112,7 +110,7 @@ The following table describes the fields of the SIEM log structure.
 
 <table><thead><tr><th width="97">SL.No</th><th width="120">Field</th><th width="110">Data Type</th><th width="86" data-type="number">Length</th><th>Description</th></tr></thead><tbody><tr><td><strong>1</strong></td><td><strong>Date (ISO Format) SIEM</strong></td><td>Date Time</td><td>24</td><td>This field describes the date on which the log is created.</td></tr><tr><td><strong>2</strong></td><td><strong>CEF Version</strong></td><td>Number</td><td>2</td><td>This defines the version of the SIEM log.</td></tr><tr><td><strong>3</strong></td><td><strong>Device Vendor</strong></td><td>Text</td><td>9</td><td>This field denotes the vendor providing the device.</td></tr><tr><td><strong>4</strong></td><td><strong>Device Product</strong></td><td>Text</td><td>5</td><td>This denotes which product of the SIEM logs.</td></tr><tr><td><strong>5</strong></td><td><strong>Device Version</strong></td><td>Number</td><td>10</td><td>This denotes the product version.</td></tr><tr><td><strong>6</strong></td><td><strong>Thread Id</strong></td><td>Text</td><td>32</td><td>This is the ID from the server for a request.</td></tr><tr><td><strong>7</strong></td><td><strong>Name</strong></td><td>Text</td><td>256</td><td>This denotes the module of the product being accessed.</td></tr><tr><td><strong>8</strong></td><td><strong>Severity</strong></td><td>Text</td><td>10</td><td>This denotes the severity of the event logged.</td></tr><tr><td><strong>9</strong></td><td><strong>Extension</strong></td><td>Text</td><td>5120</td><td>This provides additional information on the event logged.</td></tr></tbody></table>
 
-### &#x20;Custom Keys
+### Custom Keys
 
 The custom keys or extensions will have the following tracked in the event logs.
 
@@ -122,7 +120,7 @@ The custom keys or extensions will have the following tracked in the event logs.
 
 <table><thead><tr><th width="86">SI No</th><th width="231">Event Type</th><th width="153">Module</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>AnamolyDetails</td><td>Setup > Alerts</td><td>Event type to track the configured triggers activity in AutoRABIT Vault</td></tr><tr><td>2</td><td>Archival</td><td>Archive</td><td>Event type to track the activity on the Archival module</td></tr><tr><td>3</td><td>ArchivalReport</td><td>Archive Reports</td><td>Event type to track the user activity on the Archive Reports module</td></tr><tr><td>4</td><td>ArchivalReportDownload</td><td>Archive Reports</td><td>Event type to track the user download on the reports module</td></tr><tr><td>5</td><td>ArchivalReportItem</td><td>Archive Reports</td><td>Event type to track the user activity on the Archival Report Items</td></tr><tr><td>6</td><td>ArchivalReportItemQuery</td><td>Archive Reports</td><td>Event type to track the user activity on the Archival Report Item Queries</td></tr><tr><td>7</td><td>ArchivalReportQuery</td><td>Archive Reports</td><td>Event type to track the user activity on the Archival Report Queries</td></tr><tr><td>8</td><td>AwsEnviReg</td><td>Settings</td><td>Event type for tracking the AWS storage registration</td></tr><tr><td>9</td><td>BakupSchedulesManage</td><td>Config</td><td>Event type for tracking all the user actions on the schedules</td></tr><tr><td>10</td><td>BlackList</td><td>GDPR</td><td>Event type to track the user activity on GDPR module</td></tr><tr><td>11</td><td>Customer</td><td>User Management</td><td>Event type to track the activity every time the user details are fetched</td></tr><tr><td>12</td><td>DataMasking</td><td>Replicate</td><td>Event type to track activity every time the data masking is performed</td></tr><tr><td>13</td><td>EventLog</td><td>CEF Logs</td><td>Event type to track the user activity when the CEF logs are downloaded by the user either from API or UI</td></tr><tr><td>14</td><td>FileDownload</td><td>File Downloads</td><td>Event type to track the UI file downloads</td></tr><tr><td>15</td><td>MultiFactorAuth</td><td>User Management</td><td>Event type to track the login and access of the user(s)</td></tr><tr><td>16</td><td>Proxy</td><td>AutoRABIT Vault Settings</td><td>Event type to track the activity on the proxy settings page</td></tr><tr><td>17</td><td>Restore</td><td>Replicate Restore</td><td>Event type to track the user activity on the Replicate &#x26; Restore modules</td></tr><tr><td>18</td><td>Role</td><td>User Management</td><td>Event type to track the user activity every time the user role details are fetched</td></tr><tr><td>19</td><td>SalesforceFeatures</td><td>Setup > Config</td><td>Event type to track the nCino Features accessed by the AutoRABIT Vault application</td></tr><tr><td>20</td><td>SforgBakupCfg</td><td>Setup > BackupConfig</td><td>Event type to track the activities performed on the backup config</td></tr><tr><td>21</td><td>SforgBakupStatus</td><td>Backup Restore Replicate</td><td>Event type to track the user activity on the Backup Restore Replicate module</td></tr><tr><td>22</td><td>SfOrgConnectConfig</td><td>Setup > Config</td><td>Event type to track the AutoRABIT Vault connect configuration</td></tr><tr><td>23</td><td>SfOrgConnectSync</td><td>Setup > Config</td><td>Event type to track the user activity on the AutoRABIT Vault Connect ‘Sync With Salesforce’</td></tr><tr><td>24</td><td>SforgEnviReg</td><td>Settings</td><td>Event type to track the storage registration in AutoRABIT Vault</td></tr><tr><td>25</td><td>SforgUniqueFiledsConfig</td><td>Unique Identifiers</td><td>Event type to track the user activity on the Unique Identifiers tabs</td></tr><tr><td>26</td><td>SFReader</td><td>All Modules</td><td>Event type to track the activity every time the SFORG details are read</td></tr><tr><td>27</td><td>StartBackup</td><td>Backup &#x26; Archive</td><td>Event type to track the activity every time the “Backup &#x26; Archive” are triggered</td></tr><tr><td>28</td><td>User</td><td>User Management</td><td>Event type to track the activity on the user management</td></tr><tr><td>29</td><td>Zoho</td><td>Zoho Integration</td><td>Event type to track the user activity when the user accesses “Zoho”</td></tr></tbody></table>
 
-### &#x20;Messages <a href="#messages" id="messages"></a>
+### Messages <a href="#messages" id="messages"></a>
 
 Following are the audit log messages
 
@@ -163,7 +161,7 @@ Following are the audit log messages
 * **Vault Connect**
   * "Sforg Odata Connector Config creation/update request has been submitted."
 
-**Backup**&#x20;
+**Backup**
 
 * "Backup configuration creation request has been submitted."
 * "Backup configuration update request has been submitted."
@@ -185,13 +183,13 @@ Following are the audit log messages
   * "Hierarchical backup configuration delete request has been submitted.”
   * "Stop hierarchical process has been initiated.”
   * "Hierarchical backup download operation has been initiated."
-* **Archive**&#x20;
+* **Archive**
   * "Archive process has been initiated."
   * "Archive backup configuration creation request has been submitted."
   * "Archive backup configuration update request has been submitted."
   * "Archive backup delete request has been submitted."
   * "Stop archive process has been initiated."
-  * "Archive download operation has been initiated."&#x20;
+  * "Archive download operation has been initiated."
 * **Replication**
   * "Replicate operation has been initiated."
   * "Replicate configuration creation request has been submitted."
@@ -208,5 +206,3 @@ Following are the audit log messages
   * "Delete GDPR request has been submitted."
   * "Object has been downloaded from GDPR."
   * "Upload search file for GDPR request has been initiated."
-
-&#x20;

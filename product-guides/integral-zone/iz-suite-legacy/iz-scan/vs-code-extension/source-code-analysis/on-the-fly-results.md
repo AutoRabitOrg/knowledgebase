@@ -13,10 +13,9 @@ Before analyzing the source code in VS Code, make sure you have
 Issues will be detected and reported as and when the connectors/components are configured in the project. With this, the issues can be fixed even before they exist.\
 Follow the steps below to explore **`On The Fly Results`** view.
 
-1.  Navigate to **`IZ Scan`** tab in the panel or use `Ctrl+Shift+P` (Cmd+Shift+P on macOS) and search for **`IZ Scan: Fly Results`** to open the view\
-    &#x20;
+1.  Navigate to **`IZ Scan`** tab in the panel or use `Ctrl+Shift+P` (Cmd+Shift+P on macOS) and search for **`IZ Scan: Fly Results`** to open the view<br>
 
-    <figure><img src="../../../../../../.gitbook/assets/fly-results (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../.gitbook/assets/fly-results.png" alt=""><figcaption></figcaption></figure>
 
     * NOTE: **`On The Fly Results`** scans the whole project and displays the results
 
@@ -24,16 +23,16 @@ Follow the steps below to explore **`On The Fly Results`** view.
 
 The Results tab provides options such as start or stop analysis, sync rules from the server, reload on the fly results.
 
-1.  In the **`IZ Scan`** tab, all the options are displayed at the top right corner. <br>
+1.  In the **`IZ Scan`** tab, all the options are displayed at the top right corner.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/fly-results-settings.png" alt=""><figcaption></figcaption></figure>
 2.  By default, the analysis is active and will immediately report any issues it sees fit. Clicking on the **`Stop Auto Analysis`** will stop the analysis. You can start it at a later time once a part of your development is completed.
 
     <figure><img src="../../../../../../.gitbook/assets/fly-results-stop-analysis.png" alt=""><figcaption></figcaption></figure>
-3.  Auto analysis can be turned on by clicking the **`Play`** icon as shown below <br>
+3.  Auto analysis can be turned on by clicking the **`Play`** icon as shown below<br>
 
     <figure><img src="../../../../../../.gitbook/assets/fly-results-start-analysis.png" alt=""><figcaption></figcaption></figure>
-4.  Your organization might have added new rules or updated the rules in the server. By clicking on the **`Sync Rules`** option, you will be importing these updated rules onto VS Code Extension. <br>
+4.  Your organization might have added new rules or updated the rules in the server. By clicking on the **`Sync Rules`** option, you will be importing these updated rules onto VS Code Extension.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/fly-results-sync-rules.png" alt=""><figcaption></figcaption></figure>
 5.  By Clicking on **`Reload Analysis Results`** option, your project will be validated against the rules to refresh the tab so as to display any new issues along with the previously displayed issues.
@@ -46,7 +45,7 @@ The Results tab provides options such as start or stop analysis, sync rules from
 
 Issue fix recommendation helps to deal with this scenario with detailed description and examples on how to fix the issue.
 
-1.  Double-click on any issue that needs a fix to open up the **`Rule Description`** view. <br>
+1.  Double-click on any issue that needs a fix to open up the **`Rule Description`** view.<br>
 
     <figure><img src="../../../../../../.gitbook/assets/rule_description.png" alt=""><figcaption></figcaption></figure>
 2. **`Rule Description`** view provides information about:

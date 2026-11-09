@@ -2,91 +2,91 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino - Release 26.4.5 <a href="#ncino-release-26.4.5" id="ncino-release-26.4.5"></a>
+## nCino 26.4.5
 
-**Release Date:** **1 November 2026**
+**Release date:** 1 November 2026
 
-#### Consistent Multi-Level Approvals for nCino CI Job Operations <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
+#### Consistent Multi-Level Approvals for nCino CI Job Operations
 
 Multi-level approval controls now apply consistently to nCino CI Job builds, reruns, scheduled executions, deployments, commits, and rollbacks in the new interface. Approvers are prepopulated using the priority: CI Job configuration, My Account configuration, and the latest applicable build for the same destination. New manual or scheduled builds are prevented while an existing build is awaiting approval or completing its approved operation. Rollbacks can use independent L1 and L2 approval workflows with approval decisions retained in the build history.
 
 ***
 
-## nCino - Release 26.4.4 <a href="#ncino-release-26.4.4" id="ncino-release-26.4.4"></a>
+## nCino 26.4.4
 
-**Release Date:** **25 October 2026**
+**Release date:** 25 October 2026
 
-#### Reliable Selective Rollback for Post-Deployment Orgs <a href="#id-1.-reliable-selective-rollback-for-post-deployment-orgs" id="id-1.-reliable-selective-rollback-for-post-deployment-orgs"></a>
+#### Reliable Selective Rollback for Post-Deployment Orgs
 
 Resolved an issue where an nCino CI Job rollback failed when only a post-deployment org was selected and the destination org was excluded. Rollback processing now runs independently for selected post-deployment orgs, including scenarios involving multiple templates and selective template rollback.
 
-#### Reliable nCino Feature Version Creation <a href="#id-4.-reliable-ncino-feature-version-creation" id="id-4.-reliable-ncino-feature-version-creation"></a>
+#### Reliable nCino Feature Version Creation
 
 Resolved an issue where creating a new version of an existing nCino feature could fail with a **No object found** error despite using the previous version’s object configuration. Feature Management now recognizes the configured objects correctly and provides reliable access to version datasets.
 
-#### Accurate Currency, Decimal, and Percentage Values <a href="#id-2.-accurate-currency-decimal-and-percentage-values" id="id-2.-accurate-currency-decimal-and-percentage-values"></a>
+#### Accurate Currency, Decimal, and Percentage Values
 
 Resolved an issue where large currency values could be extracted in exponential notation instead of their original format. Currency, decimal, and percentage values are now processed accurately across nCino datasets, deployments, and CI Jobs.
 
 ***
 
-## nCino - Release 26.4.3 <a href="#ncino-release-26.4.3" id="ncino-release-26.4.3"></a>
+## nCino 26.4.3
 
-**Release Date:** **18 October 2026**
+**Release date:** 18 October 2026
 
-#### Reliable Migration of Same-Named Attachments <a href="#id-1.-reliable-migration-of-same-named-attachments" id="id-1.-reliable-migration-of-same-named-attachments"></a>
+#### Reliable Migration of Same-Named Attachments
 
 Resolved an issue where attachments could be overwritten when multiple records contained attachments with the same name. Attachments are now distinguished and migrated correctly across nCino Deployments, nCino CI Jobs, and DataLoader Pro, including rollback operations.
 
-#### Correct Notification for nCino Rollbacks <a href="#id-2.-correct-notification-for-ncino-rollbacks" id="id-2.-correct-notification-for-ncino-rollbacks"></a>
+#### Correct Notification for nCino Rollbacks
 
 Resolved an issue where an incorrect notification appeared after initiating a rollback from an nCino deployment. The application now displays the appropriate confirmation message: **Rollback initiated successfully**.
 
-#### Preserve Version-Control Files During Rollback <a href="#id-3.-preserve-version-control-files-during-rollback" id="id-3.-preserve-version-control-files-during-rollback"></a>
+#### Preserve Version-Control Files During Rollback
 
 Resolved an issue where certain files could be deleted from version control when a rollback was performed for an nCino CI Job with commit enabled. Rollback processing now preserves the required files and generates a valid rollback commit for subsequent deployments.
 
-#### Reliable Rollback for Deploy-from-Version-Control CI Jobs <a href="#id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs" id="id-4.-reliable-rollback-for-deploy-from-version-control-ci-jobs"></a>
+#### Reliable Rollback for Deploy-from-Version-Control CI Jobs
 
 Resolved an issue where rollback could fail during the Commit stage for nCino CI Jobs created using **Deploy from Version Control**. Rollback commit processing now handles missing feature-history information correctly, allowing selective rollback operations to complete successfully.
 
-#### Correct External Field Mappings During Redeployment <a href="#id-5.-correct-external-field-mappings-during-redeployment" id="id-5.-correct-external-field-mappings-during-redeployment"></a>
+#### Correct External Field Mappings During Redeployment
 
 Resolved an issue where External Field Mapping values were not displayed during nCino feature redeployment, resulting in a **Partially Completed** status. External ID mappings are now loaded according to the selected destination org, allowing redeployments to complete without null partition-value errors.
 
 ***
 
-## nCino - Release 26.4.2 <a href="#ncino-release-26.4.2" id="ncino-release-26.4.2"></a>
+## nCino 26.4.2
 
-**Release Date:** **11 October 2026**
+**Release date:** 11 October 2026
 
-#### Correct Backup Snapshot Availability for Rejected Deployments <a href="#id-1.-correct-backup-snapshot-availability-for-rejected-deployments" id="id-1.-correct-backup-snapshot-availability-for-rejected-deployments"></a>
+#### Correct Backup Snapshot Availability for Rejected Deployments
 
 Resolved an issue in the existing interface where selecting **Download Backup Snapshot** for a rejected nCino deployment resulted in an error. The option is now hidden for rejected deployments when no backup snapshot is available, preventing unsuccessful download attempts.
 
-#### Improved nCino Processing Stability <a href="#id-2.-improved-ncino-processing-stability" id="id-2.-improved-ncino-processing-stability"></a>
+#### Improved nCino Processing Stability
 
 Improved the stability and resource handling of nCino deployments and CI Jobs. The changes address potential processing loops and unexpected errors, helping ensure reliable job execution across supported nCino workflows.
 
-#### Reliable CI Job Action Changes <a href="#id-3.-reliable-ci-job-action-changes" id="id-3.-reliable-ci-job-action-changes"></a>
+#### Reliable CI Job Action Changes
 
 Resolved an issue where changing an nCino CI Job action from **Commit Only** to **Deploy Only** could display an **Unable to retrieve source columns** error. Required feature configurations, External ID mappings, and sorting fields are now loaded correctly when the CI Job is edited.
 
-#### Accurate Post-Deployment Results for Rollback Iterations <a href="#id-4.-accurate-post-deployment-results-for-rollback-iterations" id="id-4.-accurate-post-deployment-results-for-rollback-iterations"></a>
+#### Accurate Post-Deployment Results for Rollback Iterations
 
 Resolved an issue where the **Post Deployment Result** option appeared for rollback iterations that did not execute any post-deployment activities. The option is now displayed only when relevant post-deployment processing occurred, preventing empty **No Data Found** results.
 
-#### Responsive File Diff Handling for Large nCino Commits <a href="#id-5.-responsive-file-diff-handling-for-large-ncino-commits" id="id-5.-responsive-file-diff-handling-for-large-ncino-commits"></a>
+#### Responsive File Diff Handling for Large nCino Commits
 
 Improved File Diff handling in nCino Commit History to prevent the interface from becoming unresponsive when processing large files. Files containing up to 3,000 lines continue to display an inline diff, while larger files provide a message directing users to download the diff. Change Logs also display the complete feature list when a commit contains multiple templates.
 
 ***
 
-## nCino - Release 26.4.1 <a href="#ncino-release-26.4.1" id="ncino-release-26.4.1"></a>
+## nCino 26.4.1
 
-**Release Date:** **04 October 2026**
+**Release date:** 4 October 2026
 
-#### Accurate Record Downloads for Selective Commits <a href="#ncino-release-26.3.13" id="ncino-release-26.3.13"></a>
+#### Accurate Record Downloads for Selective Commits
 
 Downloaded files from the **Feature Details** window could contain every record from the source object instead of only the records retrieved for a Selective Commit. Download processing was corrected to export only the applicable retrieved records. The number of records in the downloaded file now matches the **Retrieved count** displayed in the application. The correction applies to both the existing and new interfaces.
 
@@ -96,9 +96,9 @@ Users can now select approvers when deploying or committing a previously retriev
 
 ***
 
-## nCino - Release 26.3.13 <a href="#ncino-release-26.3.13" id="ncino-release-26.3.13"></a>
+## nCino 26.3.13
 
-**Release Date:** **27 September 2026**
+**Release date:** 27 September 2026
 
 #### Automatic Field Mapping for First-Time Subset Deployments
 
@@ -106,39 +106,39 @@ When deploying a subset of a newly created dataset, source-to-destination field 
 
 ***
 
-## nCino - Release 26.3.12 <a href="#ncino-release-26.3.12" id="ncino-release-26.3.12"></a>
+## nCino 26.3.12
 
-**Release Date: 20 September 2026**
+**Release date:** 20 September 2026
 
-#### Successful Dataset Comparison with Version Control <a href="#id-2.-successful-dataset-comparison-with-version-control" id="id-2.-successful-dataset-comparison-with-version-control"></a>
+#### Successful Dataset Comparison with Version Control
 
 Resolved an issue where dataset comparisons failed because empty or invalid request parameters were sent when Version Control was selected as the destination. Request handling now excludes Salesforce organization fields that do not apply to Version Control. Comparisons with both Version Control and Salesforce organizations now complete successfully.
 
-#### Correct Record Type Assignment for Document Rule Deployments <a href="#id-3.-correct-record-type-assignment-for-document-rule-deployments" id="id-3.-correct-record-type-assignment-for-document-rule-deployments"></a>
+#### Correct Record Type Assignment for Document Rule Deployments
 
 Resolved an issue where the Record Type ID was not populated for Document Rule records during nCino data deployments. Bulk deployment requests now include the Record Type ID and correctly respect the destination organization’s record-type configuration. The correction applies to deployments and CI Jobs.
 
-#### Automatic Timeout Status for Stalled Jobs <a href="#id-4.-automatic-timeout-status-for-stalled-jobs" id="id-4.-automatic-timeout-status-for-stalled-jobs"></a>
+#### Automatic Timeout Status for Stalled Jobs
 
 Jobs that remain in progress for more than 24 hours are now automatically marked as **Timeout** when the status scheduler runs. This prevents outdated job statuses from remaining active indefinitely. The update applies across nCino CI Jobs, and Feature Management operations.
 
-#### Consistent Loading Across nCino Screens <a href="#id-5.-consistent-loading-across-ncino-screens" id="id-5.-consistent-loading-across-ncino-screens"></a>
+#### Consistent Loading Across nCino Screens
 
 Resolved intermittent blank screens and delayed content loading in the existing nCino interface. Commit History now loads consistently without requiring a manual refresh. Feature Management, Deployment History, and CI Job screens also display an appropriate loading message while data is being retrieved.
 
-#### Correct Job Statuses Following Instance Restarts <a href="#id-6.-correct-job-statuses-following-instance-restarts" id="id-6.-correct-job-statuses-following-instance-restarts"></a>
+#### Correct Job Statuses Following Instance Restarts
 
 Jobs interrupted by an instance restart no longer remain indefinitely in an **In Progress** state. Interrupted jobs are now marked as **Aborted** or **Failed**, preventing stale records from blocking later processing. The correction covers nCino Jobs, and Feature Management activities.
 
-#### Automatic Recovery of Queued CI Job Commits <a href="#id-7.-automatic-recovery-of-queued-ci-job-commits" id="id-7.-automatic-recovery-of-queued-ci-job-commits"></a>
+#### Automatic Recovery of Queued CI Job Commits
 
 Resolved an issue where a scheduled nCino CI Job commit interrupted by a service restart remained in progress and blocked later commits to the same branch. Interrupted commits are now marked as **Aborted**. Subsequent commits can leave the queue and continue normally.
 
 ***
 
-## nCino - Release 26.3.11 <a href="#ncino-release-26.3.11" id="ncino-release-26.3.11"></a>
+## nCino 26.3.11
 
-**Release Date: 13 Sep 2026**
+**Release date:** 13 September 2026
 
 #### Automatic Cleanup of nCino CI Job Files
 
@@ -150,9 +150,9 @@ Deployment results now include the configured External ID field to help identify
 
 ***
 
-## nCino - Release 26.3.10 <a href="#ncino-release-26.3.10" id="ncino-release-26.3.10"></a>
+## nCino 26.3.10
 
-**Release Date: 6 Sep 2026**
+**Release date:** 6 September 2026
 
 #### Reliable nCino Full and Delta CI Job Execution
 
@@ -160,40 +160,40 @@ Resolved an issue that could cause scheduled or manually triggered nCino Full an
 
 ***
 
-## nCino - Release 26.3.9 <a href="#ncino-release-26.3.9" id="ncino-release-26.3.9"></a>
+## nCino 26.3.9
 
-**Release Date: 30 Aug 2026**
+**Release date:** 30 August 2026
 
-#### **Corrected Feature Cloning and Version Creation** <a href="#id-1.-corrected-feature-cloning-and-version-creation" id="id-1.-corrected-feature-cloning-and-version-creation"></a>
+#### Corrected Feature Cloning and Version Creation
 
 Resolved an issue where feature version operations could incorrectly create a separate feature because the feature prefix was applied improperly. Cloning and version creation now follow the expected behavior for standard and community templates in both the existing and new user interfaces.
 
-#### **Approval Setting Deletion Not Retained** <a href="#id-2.-approval-setting-deletion-not-retained" id="id-2.-approval-setting-deletion-not-retained"></a>
+#### Approval Setting Deletion Not Retained
 
 Resolved an issue where deleting an nCino approval setting for a Salesforce org was not persisted after saving. Deleted settings now remain removed when the approval configuration is reopened.
 
-#### **Improved Approval Reminder and Auto-Rejection Processing** <a href="#id-3.-improved-approval-reminder-and-auto-rejection-processing" id="id-3.-improved-approval-reminder-and-auto-rejection-processing"></a>
+#### Improved Approval Reminder and Auto-Rejection Processing
 
 Resolved an issue that could interrupt approval reminder processing across Salesforce orgs.\
 Log handling and executor shutdown have been corrected to prevent processing failures and thread leakage. Day 7 and Day 12 reminders and Day 14 automatic rejections are now processed reliably.
 
-#### **Sorting Criteria Not Saved for Commit-Only CI Jobs** <a href="#id-4.-sorting-criteria-not-saved-for-commit-only-ci-jobs" id="id-4.-sorting-criteria-not-saved-for-commit-only-ci-jobs"></a>
+#### Sorting Criteria Not Saved for Commit-Only CI Jobs
 
 Resolved an issue where **Sorting Criteria** configured for an nCino CI Job using the **Commit Only** trigger were not saved. The configured criteria are now retained and applied during job execution.
 
-#### **Improved User Interface Behavior** <a href="#id-6.-improved-user-interface-behavior" id="id-6.-improved-user-interface-behavior"></a>
+#### Improved User Interface Behavior
 
 Resolved multiple user interface issues affecting queue notifications, filter behavior, and filter status indicators. Feature versions now reset correctly when the selected feature changes, and clearing filters no longer causes errors. The **Apply** button also remains unavailable until the required version data finishes loading.
 
-#### **Pre-Deployment Backup for All Objects** <a href="#id-7.-pre-deployment-backup-for-all-objects" id="id-7.-pre-deployment-backup-for-all-objects"></a>
+#### Pre-Deployment Backup for All Objects
 
 nCino now completes the backup of all objects included in a deployment before executing any deployment changes. The deployment proceeds only after every required object is backed up successfully. If any backup fails, the deployment is stopped to ensure that a complete recovery point remains available.
 
 ***
 
-## nCino - Release 26.3.8 <a href="#ncino-release-26.3.8" id="ncino-release-26.3.8"></a>
+## nCino 26.3.8
 
-**Release Date: 23 Aug 2026**
+**Release date:** 23 August 2026
 
 **Approval Reminder and Auto-Rejection Reliability**: Resolved an issue where CI jobs awaiting approval could remain stuck indefinitely when approval detail records were missing. This fix ensures that approval reminders and auto-rejection triggers function correctly even when initial records are absent.
 
@@ -211,9 +211,9 @@ nCino now completes the backup of all objects included in a deployment before ex
 
 ***
 
-## nCino - Release 26.3.7 <a href="#release-notes-ncinodl-26.3.7" id="release-notes-ncinodl-26.3.7"></a>
+## nCino 26.3.7
 
-**Release Date: 16 Aug 2026**
+**Release date:** 16 August 2026
 
 **Feature Version Cleanup**
 
@@ -233,11 +233,11 @@ Field-based sorting in nCino Deployments and CI Jobs now properly loads availabl
 
 ***
 
-## nCino - Release 26.3.6 <a href="#release-notes-ncinodl-26.3.6" id="release-notes-ncinodl-26.3.6"></a>
+## nCino 26.3.6
 
-**Release Date: 09 Aug 2026**
+**Release date:** 9 August 2026
 
-#### CI Job Name Display <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
+#### CI Job Name Display
 
 Fixed an issue in nCino CI Jobs where the **Job Name** field appeared blank while editing an existing job, even though a valid name had already been saved. The field now loads correctly in the edit form, making it easier for users to review and update job settings without risking accidental overwrites.
 
@@ -247,55 +247,55 @@ Resolved a **NullPointerException** in nCino Deployment History that occurred du
 
 ***
 
-## nCino - Release 26.3.5 <a href="#release-notes-ncinodl-26.3.5" id="release-notes-ncinodl-26.3.5"></a>
+## nCino 26.3.5
 
-**Release Date: 02 Aug 2026**
+**Release date:** 2 August 2026
 
-#### Rollback Build DynamoDB Duplicate Key Error <a href="#rollback-build-dynamodb-duplicate-key-error" id="rollback-build-dynamodb-duplicate-key-error"></a>
+#### Rollback Build DynamoDB Duplicate Key Error
 
 Resolved a rollback build failure caused by a DynamoDB exception ("Provided list of item keys contains duplicates"). Rollback operations after CI Job execution now handle item keys correctly without passing duplicates to the DynamoDB API.
 
-#### Post Deployment Result Not Generated After Rollback with Removed Org <a href="#post-deployment-result-not-generated-after-rollback-with-removed-org" id="post-deployment-result-not-generated-after-rollback-with-removed-org"></a>
+#### Post Deployment Result Not Generated After Rollback with Removed Org
 
 Fixed a bug where removing a pre-selected Post Deployment Org before initiating rollback would result in no Post Deployment Result being generated. The rollback now correctly produces execution results for all selected orgs.
 
-#### Feature Deployment Stuck at Retrieving Dataset <a href="#feature-deployment-stuck-at-retrieving-dataset-support-247963" id="feature-deployment-stuck-at-retrieving-dataset-support-247963"></a>
+#### Feature Deployment Stuck at Retrieving Dataset
 
 Addressed a customer-reported issue where nCino Feature Deployment failed with "sfOrg is null" and became stuck at the dataset retrieval stage. The root cause was related to HTML content on the object.
 
-#### Incorrect Post-Deploy Logs in CI Jobs (New UI) <a href="#incorrect-post-deploy-logs-in-ci-jobs-new-ui" id="incorrect-post-deploy-logs-in-ci-jobs-new-ui"></a>
+#### Incorrect Post-Deploy Logs in CI Jobs (New UI)
 
 Fixed a display issue in the new UI where viewing Post-Deploy logs incorrectly showed deployment logs instead of the specific post-deploy org execution details.
 
-#### nCino CI Jobs with ECA Orgs Failing After Initial Successful Builds <a href="#ncino-ci-jobs-with-eca-orgs-failing-after-initial-successful-builds" id="ncino-ci-jobs-with-eca-orgs-failing-after-initial-successful-builds"></a>
+#### nCino CI Jobs with ECA Orgs Failing After Initial Successful Builds
 
 Resolved an issue where scheduled nCino CI jobs using ECA (External Connected App) OAuth-based org connections would fail after a few successful runs. The failure was caused by OAuth token expiry or refresh token issues during subsequent scheduled executions. Token refresh now works reliably across repeated builds.
 
 ***
 
-## nCino - Release 26.3.4 <a href="#release-notes-ncinodl-26.3.4" id="release-notes-ncinodl-26.3.4"></a>
+## nCino 26.3.4
 
-**Release Date: 26 July 2026**
+**Release date:** 26 July 2026
 
-#### Batch Size Should Not Default to Zero <a href="#batch-size-should-not-default-to-zero" id="batch-size-should-not-default-to-zero"></a>
+#### Batch Size Should Not Default to Zero
 
 Fixed an issue where the batch size field was auto-populated with zero by default. The batch size field will no longer be pre-filled with a value in all areas involving data migration.
 
-#### \[nCino] Deployment Iteration – Step 5 Data Deployment DynamoDB Error <a href="#ncino-deployment-iteration-step-5-data-deployment-dynamodb-error" id="ncino-deployment-iteration-step-5-data-deployment-dynamodb-error"></a>
+#### [nCino] Deployment Iteration – Step 5 Data Deployment DynamoDB Error
 
 Resolved a failure in **Step 5 – Data Deployment** during Feature Deployment using Deploy from Template Configuration. The deployment was failing with a DynamoDB error due to an empty attribute. Data Deployment now completes successfully without DynamoDB validation errors.
 
-#### CI Job Build Fails with "No Default External ID Found" Error <a href="#ci-job-build-fails-with-no-default-external-id-found-error" id="ci-job-build-fails-with-no-default-external-id-found-error"></a>
+#### CI Job Build Fails with "No Default External ID Found" Error
 
 Fixed a CI Job build failure that occurred during **Step 2 – Object Configuration** when using **Deploy using Salesforce and Version Control**. The build was throwing an exception, causing the entire CI Job to fail. The object configuration step now handles this scenario correctly.
 
 ***
 
-## nCino - Release 26.3.3 <a href="#release-notes-ncinodl-26.3.3" id="release-notes-ncinodl-26.3.3"></a>
+## nCino 26.3.3
 
-**Release Date: 19 July 2026**
+**Release date:** 19 July 2026
 
-#### Fixed Queue Item Persistence Failure During Data Retrieval Processing <a href="#dt-13651-fixed-queue-item-persistence-failure-during-data-retrieval-processing" id="dt-13651-fixed-queue-item-persistence-failure-during-data-retrieval-processing"></a>
+#### Fixed Queue Item Persistence Failure During Data Retrieval Processing
 
 Resolved an exception that occurred when writing queue items to DynamoDB due to a null attribute in the table schema mapping. Queue items are now persisted successfully even when optional fields are absent, preventing queue processing interruptions.
 
@@ -321,31 +321,31 @@ Resolved an error where dataset creation failed with **"Repository/Branch/Unique
 
 ***
 
-## nCino - Release 26.3.2 <a href="#release-notes-ncinodl-26.3.2" id="release-notes-ncinodl-26.3.2"></a>
+## nCino 26.3.2
 
-**Release Date: 12 July 2026**
+**Release date:** 12 July 2026
 
-#### Feature Migration API triggered repeatedly <a href="#dt-13608-feature-migration-api-triggered-repeatedly" id="dt-13608-feature-migration-api-triggered-repeatedly"></a>
+#### Feature Migration API triggered repeatedly
 
 Fixed an issue where the `1.0?completeInfo=true` API was triggered repeatedly during Feature Migration until the action was cancelled. The call now runs only as intended, reducing unnecessary server load and UI confusion.
 
-#### nCino user type not retained in Edit Mode <a href="#dt-12925-ncino-user-type-not-retained-in-edit-mode" id="dt-12925-ncino-user-type-not-retained-in-edit-mode"></a>
+#### nCino user type not retained in Edit Mode
 
 Fixed an issue in Super Admin where the selected nCino user type was not retained after saving. The saved value now remains correctly set in Edit Mode across both Old and New UI.
 
-#### Post-deployment status mismatch between New UI and Old UI <a href="#dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui" id="dt-13574-post-deployment-status-mismatch-between-new-ui-and-old-ui"></a>
+#### Post-deployment status mismatch between New UI and Old UI
 
 Resolved an inconsistency where the New UI showed post-deployment orgs as **Success** and displayed **No Objects found** while deployment was still in progress. Deployment status messaging is now consistent across both UIs.
 
-#### Deploy from Version Control failed while loading External ID Mappings <a href="#dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings" id="dt-13629-deploy-from-version-control-failed-while-loading-external-id-mappings"></a>
+#### Deploy from Version Control failed while loading External ID Mappings
 
 Fixed an issue where deployment from Version Control could fail for Salesforce Org sources because the External ID Mappings API returned a backend exception when `featureName` was null. External ID Mappings now load correctly and no longer block deployment.
 
 ***
 
-## nCino - Release 26.3.1 <a href="#release-notes-ncinodl-26.3.1" id="release-notes-ncinodl-26.3.1"></a>
+## nCino 26.3.1
 
-**Release Date: 05 July 2026**
+**Release date:** 5 July 2026
 
 #### nCino CI Job Failure Due to DynamoDB Throughput Error
 
@@ -357,73 +357,73 @@ Resolved an error where creating a new version for an existing feature failed wi
 
 ***
 
-## nCino - Release 26.2.13 <a href="#release-notes-ncinodl-26.2.13" id="release-notes-ncinodl-26.2.13"></a>
+## nCino 26.2.13
 
-**Release Date: 28 June 2026**
+**Release date:** 28 June 2026
 
-#### Latest Templates and Versions Sorting in CI Jobs Features Dropdown <a href="#latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172" id="latest-templates-and-versions-sorting-in-ci-jobs-features-dropdown-dt-13172"></a>
+#### Latest Templates and Versions Sorting in CI Jobs Features Dropdown
 
 The **Features** template list and the related **Version/Versions** dropdown in CI Jobs and Feature Deployments now display the most recently changed items first. This allows users to quickly locate and select the latest updated template and version without scrolling through the entire list.
 
-#### Consistent Deploy Destination Org Dropdown Across UIs <a href="#consistent-deploy-destination-org-dropdown-across-uis-dt-13458" id="consistent-deploy-destination-org-dropdown-across-uis-dt-13458"></a>
+#### Consistent Deploy Destination Org Dropdown Across UIs
 
 Fixed an inconsistency where the **Deploy – Dest Org** dropdown in the New UI listed the source org as a selectable target, while the Old UI did not. The behavior is now aligned across both UIs to prevent accidental same-org deployments and eliminate user confusion.
 
-#### External Field Mappings Retained for Post-Approval Deployments <a href="#external-field-mappings-retained-for-post-approval-deployments-dt-13356" id="external-field-mappings-retained-for-post-approval-deployments-dt-13356"></a>
+#### External Field Mappings Retained for Post-Approval Deployments
 
 Fixed an issue where configured **external field mappings** were missing when deploying a dataset from **Deployment History** after it had passed the approval process. All mapped fields are now correctly applied during post-approval deployments.
 
-#### Accurate Deployment Status for Dataset Retrieval in Deployment History <a href="#accurate-deployment-status-for-dataset-retrieval-in-deployment-history-dt-13476" id="accurate-deployment-status-for-dataset-retrieval-in-deployment-history-dt-13476"></a>
+#### Accurate Deployment Status for Dataset Retrieval in Deployment History
 
 Fixed an issue where performing a **dataset retrieval** (without an actual deployment) incorrectly showed the status as **Success** in Deployment History. The status now accurately reflects that only retrieval was performed, preventing misleading audit and release validation records.
 
-#### VC-to-VC Commit Deployment to Org Fix <a href="#vc-to-vc-commit-deployment-to-org-fix-dt-13459" id="vc-to-vc-commit-deployment-to-org-fix-dt-13459"></a>
+#### VC-to-VC Commit Deployment to Org Fix
 
 Fixed an issue where a successful **VC-to-VC commit** was followed by a deployment failure with the error _"No objects were retrieved for label: {}"_. The deployment process now correctly retrieves committed components and completes successfully.
 
 ***
 
-## nCino - Release 26.2.12
+## nCino 26.2.12
 
-**Release Date:** **21 June 2026**
+**Release date:** 21 June 2026
 
-#### Custom Field Exclusion for Cleaner nCino Commits and Deployments <a href="#custom-field-exclusion-for-cleaner-ncino-commits-and-deployments" id="custom-field-exclusion-for-cleaner-ncino-commits-and-deployments"></a>
+#### Custom Field Exclusion for Cleaner nCino Commits and Deployments
 
 Users can now exclude unwanted Salesforce system fields during nCino commit and deployment review — reducing noise in pull requests and keeping change reviews focused on meaningful business changes.
 
-#### Rollback Enabled for Partially Successful Deployments <a href="#rollback-enabled-for-partially-successful-deployments" id="rollback-enabled-for-partially-successful-deployments"></a>
+#### Rollback Enabled for Partially Successful Deployments
 
 Rollback is now available when a deployment partially succeeds before hitting an error. Previously, any error incorrectly blocked rollback for components that deployed successfully.
 
-#### Fixed Undefined Error When Opening CI Jobs in Old UI <a href="#fixed-undefined-error-when-opening-ci-jobs-in-old-ui" id="fixed-undefined-error-when-opening-ci-jobs-in-old-ui"></a>
+#### Fixed Undefined Error When Opening CI Jobs in Old UI
 
 Resolved a blocking `undefined` error that appeared when navigating to CI Jobs in the Old UI. CI Jobs now load correctly.
 
-#### Improved Notification Email Visibility in Preview Screens <a href="#improved-notification-email-visibility-in-preview-screens" id="improved-notification-email-visibility-in-preview-screens"></a>
+#### Improved Notification Email Visibility in Preview Screens
 
 Long notification email addresses in the Deployment and CI Jobs Preview screens now wrap properly instead of being truncated, making it easier to verify notification recipients.
 
 ***
 
-## nCino - Release 26.2.11 <a href="#release-notes-ncinodl-26.2.11" id="release-notes-ncinodl-26.2.11"></a>
+## nCino 26.2.11
 
-**Release Date:** **14 June 2026**
+**Release date:** 14 June 2026
 
-#### nCino Retention Policy Fix <a href="#dt-13273-ncino-and-dl-data-retention-policy-fix" id="dt-13273-ncino-and-dl-data-retention-policy-fix"></a>
+#### nCino Retention Policy Fix
 
 Fixed missing components in the data retention policy for nCino. Single DataLoader bulk file deletion was not being executed, and nCino S3 backup deletions were targeting the wrong bucket. ARM data retention settings now apply to nCino by default without requiring a separate checkbox.
 
-#### Classic UI Deployment Approval Settings Not Loading <a href="#dt-13427-classic-ui-deployment-approval-settings-not-loading" id="dt-13427-classic-ui-deployment-approval-settings-not-loading"></a>
+#### Classic UI Deployment Approval Settings Not Loading
 
 Fixed a blocking issue where the Deployment Approval settings fragment in the Classic UI failed to load due to an API error. Admins can now access and configure deployment approval settings under **My Account** as expected.
 
 ***
 
-## nCino - Release 26.2.10
+## nCino 26.2.10
 
-**Release Date:** **7 June 2026**
+**Release date:** 7 June 2026
 
-#### Multi-Level Approvals for nCino Deployments and Commits <a href="#multi-level-approvals-for-ncino-deployments-and-commits" id="multi-level-approvals-for-ncino-deployments-and-commits"></a>
+#### Multi-Level Approvals for nCino Deployments and Commits
 
 Introduced a configurable multi-level approval workflow for **nCino Data Deployments** and **nCino Commits**, enabling organizations to define **Level 1 (L1)** and **Level 2 (L2)** approvers for deployment and commit activities.
 
@@ -471,31 +471,31 @@ Introduced a configurable multi-level approval workflow for **nCino Data Deploym
 * Prevents users from approving deployments or commits that they created themselves.
 * Provides end-to-end visibility into approval status through deployment and commit workflows.
 
-#### RBC Deployment Label Name Auto-Population <a href="#rbc-deployment-label-name-auto-population" id="rbc-deployment-label-name-auto-population"></a>
+#### RBC Deployment Label Name Auto-Population
 
 Fixed an issue where the deployment label name was not auto-populating with the selected Feature/Template name during RBC deployments in the new UI. The label name now auto-fills as expected, matching the old UI behavior.
 
 ***
 
-## nCino - Release 26.2.8
+## nCino 26.2.8
 
-**Release Date:** **24 May 2026**
+**Release date:** 24 May 2026
 
-#### CI Job History Pagination Shows Stale Data on Back Navigation <a href="#ci-job-history-pagination-shows-stale-data-on-back-navigation" id="ci-job-history-pagination-shows-stale-data-on-back-navigation"></a>
+#### CI Job History Pagination Shows Stale Data on Back Navigation
 
 The pagination now properly refreshes and displays the most up-to-date job data when navigating back and forth, including any newly completed jobs.
 
-#### Removed Salesforce Org Persists in Post-Deployment Activities After Navigation <a href="#removed-salesforce-org-persists-in-post-deployment-activities-after-navigation" id="removed-salesforce-org-persists-in-post-deployment-activities-after-navigation"></a>
+#### Removed Salesforce Org Persists in Post-Deployment Activities After Navigation
 
 The removed org is now correctly cleared and no longer reappears after navigating back and forth during CI Job creation.
 
 ***
 
-## nCino - Release 26.2.7
+## nCino 26.2.7
 
-**Release Date:** **17 May 2026**
+**Release date:** 17 May 2026
 
-#### CI Job History Pagination Shows Stale Data on Back Navigation <a href="#ci-job-history-pagination-shows-stale-data-on-back-navigation" id="ci-job-history-pagination-shows-stale-data-on-back-navigation"></a>
+#### CI Job History Pagination Shows Stale Data on Back Navigation
 
 Code refactoring for the Feature Commit History module in the New UI, improving maintainability and code quality.
 
@@ -503,9 +503,9 @@ Code refactoring for the Feature Commit History module in the New UI, improving 
 
 Code refactoring for the Create Feature module in the New UI, improving maintainability and code quality.
 
-## nCino - Release 26.2.6
+## nCino 26.2.6
 
-**Release Date:** **10 May 2026**
+**Release date:** 10 May 2026
 
 **Create Branch from Feature Deployment**
 
@@ -529,18 +529,18 @@ Fixed the build trigger dialog not auto-closing after a build is successfully qu
 
 ***
 
-## nCino - Release 26.2.5
+## nCino 26.2.5
 
-**Release Date:** **03 May 2026**
+**Release date:** 3 May 2026
 
 **Selective Deployment Download Scope**\
 Fixed an issue where downloading data from a selective deployment iteration exported the entire dataset instead of only the records belonging to that iteration. Downloads now correctly scope to the current iteration.
 
 ***
 
-## nCino - Release 26.2.4
+## nCino 26.2.4
 
-**Release Date:** **26 April 2026**
+**Release date:** 26 April 2026
 
 **Server start issue on data retention bucket update**\
 Server failed to start when the data retention bucket was updated in the installation file. Fixed to handle bucket configuration changes gracefully.
@@ -562,9 +562,9 @@ Parent Route values were being cleared during deployment when multiple reference
 
 ***
 
-## nCino - Release 26.2.3
+## nCino 26.2.3
 
-**Release Date:** **26 April 2026**
+**Release date:** 26 April 2026
 
 **Re-login prompt when going to nCino Deployment History tab in new UI**
 
@@ -576,9 +576,9 @@ Parent Route values were being cleared during deployment when multiple reference
 
 ***
 
-## nCino - Release 26.1.13
+## nCino 26.1.13
 
-**Release Date: 29 March 2026**
+**Release date:** 29 March 2026
 
 **Streamlined Feature Migration Logging**
 
@@ -586,9 +586,9 @@ HTTP response bodies are no longer logged in standard logs. Logging now captures
 
 ***
 
-## nCino - Release 26.1.11
+## nCino 26.1.11
 
-**Release Date: 15 March 2026**
+**Release date:** 15 March 2026
 
 **View Dataset Pagination Improvement**
 
@@ -604,9 +604,9 @@ The icons for **Global Compare** and **Field-Level Compare** in the **Compare mo
 
 ***
 
-## nCino - Release 26.1.8
+## nCino 26.1.8
 
-**Release Date: 22 February 2026**
+**Release date:** 22 February 2026
 
 **CI Jobs & Feature Deployment – Version Control Merge Enhancement**
 
@@ -618,9 +618,9 @@ Resolved an issue with the select all **“Features”** functionality in CI Job
 
 ***
 
-## nCino - Release 26.1.7
+## nCino 26.1.7
 
-**Release Date:** **15 February 2026**
+**Release date:** 15 February 2026
 
 **Relational Compare – Select All Fix**
 
@@ -632,59 +632,59 @@ Fixed an issue where the **Data Comparison** step was not marked as completed. T
 
 ***
 
-## nCino - Release 26.1.5
+## nCino 26.1.5
 
-**Release Date:** **01 February 2026**
+**Release date:** 1 February 2026
 
-#### Feature Deployment Status Handling <a href="#feature-deployment-status-handling" id="feature-deployment-status-handling"></a>
+#### Feature Deployment Status Handling
 
 An issue was resolved where a feature deployment could remain stuck in an **IN PROGRESS** state even after successful execution, blocking subsequent deployments. The deployment status handling logic has been corrected to ensure the final state transitions properly, preventing further deployment or integration blocks.
 
-#### Staging Deployment Data Scope <a href="#staging-deployment-data-scope" id="staging-deployment-data-scope"></a>
+#### Staging Deployment Data Scope
 
 An issue was fixed where deployments triggered after staging would incorrectly process the entire dataset instead of only the staged data. The deployment logic has been updated to ensure the latest staging iteration is correctly used during deployment.
 
-#### Selective Re-Deployment – External ID Mappings <a href="#selective-re-deployment-external-id-mappings" id="selective-re-deployment-external-id-mappings"></a>
+#### Selective Re-Deployment – External ID Mappings
 
 An issue was resolved where External ID mappings were not loading during selective re-deployment iterations. The fix ensures External ID mappings are correctly stored and retrieved as part of the dataset, enabling accurate re-deployments.
 
 ***
 
-## nCino - Release 26.1.4
+## nCino 26.1.4
 
-**Release Date:** **25 January 2026**
+**Release date:** 25 January 2026
 
-#### Batch Size Support for Data Migration <a href="#batch-size-support-for-data-migration" id="batch-size-support-for-data-migration"></a>
+#### Batch Size Support for Data Migration
 
 Reintroduced the **Batch Size** option for data migration to process records in controlled batches, helping manage system load and ensure proper trigger execution during create or update operations in the target org.
 
-#### Feature Deployment – Screens Template Batch Size Handling <a href="#feature-deployment-screens-template-batch-size-handling" id="feature-deployment-screens-template-batch-size-handling"></a>
+#### Feature Deployment – Screens Template Batch Size Handling
 
 Resolved an issue where enabling a batch size during the Screens template deployment caused failures by adding validation for CSV file size limits in bulk operations.
 
-#### Forms Manager Template Deployment <a href="#forms-manager-template-deployment" id="forms-manager-template-deployment"></a>
+#### Forms Manager Template Deployment
 
 Resolved an issue where Forms Manager template deployments remained stuck in an _In Progress_ state by correcting the handling of self-referenced records during entry object data retrieval.
 
 ***
 
-## nCino - Release 26.1.3
+## nCino 26.1.3
 
-**Release Date:** **18 January 2026**
+**Release date:** 18 January 2026
 
-#### **Query Editor Validation Fix (nCino)** <a href="#query-editor-validation-fix-ncino" id="query-editor-validation-fix-ncino"></a>
+#### Query Editor Validation Fix (nCino)
 
 Resolved an issue where valid queries entered in the **Query Editor** were incorrectly rejected with a validation error, preventing query execution during template configuration.
 
-#### **nCino CI Job Deployment Consistency Fix**
+#### nCino CI Job Deployment Consistency Fix
 
 Resolved an issue where the same **nCino template** produced inconsistent results between Deployment and CI Jobs. The fix ensures consistent behavior by correcting record type ID update logic during nCino CI job deployments.
 
 ***
 
-## nCino + DataLoader - Release 26.1.2
+## nCino + DataLoader 26.1.2
 
-**Release Date: 11 January 2026**
+**Release date:** 11 January 2026
 
 **Clone Version – Bucket Filter Retention**
 
@@ -696,22 +696,22 @@ Fixed an issue where entry object filter queries from the original version were 
 
 ***
 
-## nCino - Release 26.1.1
+## nCino 26.1.1
 
-**Release Date: 04 January 2026**
+**Release date:** 4 January 2026
 
-#### **Version Control Source Reset in CI Jobs** <a href="#version-control-source-reset-in-ci-jobs" id="version-control-source-reset-in-ci-jobs"></a>
+#### Version Control Source Reset in CI Jobs
 
 Resolved an issue where source details were not refreshed when changing the source type or repository during CI Job editing. The source configuration now resets correctly, ensuring accurate and consistent setup.
 
-#### **Single DataLoader – Limit Value Persistence Issue** <a href="#single-dataloader-limit-value-persistence-issue" id="single-dataloader-limit-value-persistence-issue"></a>
+#### Single DataLoader – Limit Value Persistence Issue
 
 Fixed an issue where an unintended record limit was applied to subsequent Single DataLoader jobs. The system now correctly resets and applies record counts and limits when running jobs again or switching between extract, insert, and update operations with new CSV files.
 
-#### **DataLoader Extract – Download Performance Improvement** <a href="#dataloader-extract-download-performance-improvement" id="dataloader-extract-download-performance-improvement"></a>
+#### DataLoader Extract – Download Performance Improvement
 
 Improved the performance of the DataLoader Extract file download process. The download now initiates promptly upon user action, reducing extended pending time and ensuring faster response and file availability compared to earlier behavior.
 
-#### **nCino Object Migration with Rollback – Stability Fix** <a href="#ncino-object-migration-with-rollback-stability-fix" id="ncino-object-migration-with-rollback-stability-fix"></a>
+#### nCino Object Migration with Rollback – Stability Fix
 
 Resolved an issue where nCino object migrations failed during rollback-enabled feature deployments. The rollback process has been stabilized to prevent errors and ensure successful execution during rollback builds.

@@ -2,13 +2,13 @@
 
 List of organizations the user is part of
 
-1. Navigate to **`Organization`** -> **`My Organizations`**&#x20;
+1. Navigate to **`Organization`** -> **`My Organizations`**
 
 <figure><img src="../../../../../.gitbook/assets/orgs.png" alt=""><figcaption></figcaption></figure>
 
-2. Click on **`View Users`** action to view the users of organization&#x20;
+2. Click on **`View Users`** action to view the users of organization
 
-<figure><img src="../../../../../.gitbook/assets/users (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/users.png" alt=""><figcaption></figcaption></figure>
 
 ### Onboard Organization<br>
 
@@ -30,8 +30,6 @@ Users with the **`Onboard Organization`** permission can add an organization:
 For an AWS organization, IZ Suite creates one environment per region and a **`global`** environment for region-agnostic resources such as CloudFront distributions. Each AWS account is onboarded as its own organization with its own environments; a tenant can onboard any number of accounts. The administrator who onboards an AWS organization is granted the AWS permissions on it automatically.
 
 #### Edit Organization <a href="#edit-organization" id="edit-organization"></a>
-
-
 
 1. Click on the **`Edit Organization`** action of the organization
 2. Update the **`Organization Name`**. The **`Source`** cannot be changed.

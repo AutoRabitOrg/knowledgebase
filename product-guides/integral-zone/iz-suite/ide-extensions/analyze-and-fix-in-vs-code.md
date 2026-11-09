@@ -107,7 +107,7 @@ Run these from the Command Palette (`Ctrl+Shift+P`, or `Cmd+Shift+P` on macOS). 
 
 The extension publishes a summary of each project you analyze to IZ Suite: the issue counts by severity and type, not your code. Open **Administration** → **My Account** → **IDE projects**, click **Scanned projects** on your key, and click **Review results** on a project to see its latest published analysis and its recent ones. The first analysis of a project uses one project of your key's allowance.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review (1).png" alt="Review results drawer with the latest published scan counts and recent scans"><figcaption><p>Results published from the IDE</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review.png" alt="Review results drawer with the latest published scan counts and recent scans"><figcaption><p>Results published from the IDE</p></figcaption></figure>
 
 ## Next steps
 

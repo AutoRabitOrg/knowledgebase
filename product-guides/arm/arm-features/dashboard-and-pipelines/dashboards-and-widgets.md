@@ -126,4 +126,4 @@ Widgets give insight into your project’s status and performance.
 
 <figure><img src="../../../../.gitbook/assets/image (3473).png" alt="Expand widget icon for detailed view"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3474).png" alt="Expanded widget view showing raw data" width="333"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3457).png" alt="Expanded widget view showing raw data" width="333"><figcaption></figcaption></figure>

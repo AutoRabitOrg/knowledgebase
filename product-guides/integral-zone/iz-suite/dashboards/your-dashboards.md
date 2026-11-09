@@ -72,7 +72,7 @@ You need a role that can create dashboards. A draft is not saved until you click
 
 1. Open the dashboard and click **Customize**.
 2. Change the name if needed, and select or clear **Share with everyone in this workspace (view only)**.
-3. Click **Add widget** (or the **Add a widget** tile) to open **What would you like to see?**. Search the ready-made widgets and click one to add it, or click **Build your own** to define one as in [Query](query.md).
+3. Click **Add widget** (or the **Add a widget** tile) to open **What would you like to see?**. Search the ready-made widgets and click one to add it, or click **Build your own** to define one as in [Query](/broken/pages/d2fd9a615db2b0c41860bfc867037b83e20fcbdd).
 4. Rearrange the widgets: drag them, or use the move up and move down arrows. Use the gear to edit a widget and the bin to remove it.
 5. Optionally, click **Report layout** to set the PDF layout, or **Suggest a layout** to have AI propose widgets.
 6. Click **Save dashboard**, or **Cancel** to drop the changes.
@@ -131,7 +131,7 @@ You need a role that can edit global settings to change report branding.
 
 ## Next steps
 
-* [Query](query.md): build a widget from a question.
+* [Query](/broken/pages/d2fd9a615db2b0c41860bfc867037b83e20fcbdd): build a widget from a question.
 * [Scheduled Reports](scheduled-reports.md): generate a dashboard PDF every day or week.
 * [Report History](report-history.md): download your PDFs.
 * [Dashboards](./): back to the overview.

@@ -154,7 +154,7 @@ Select Download Full Log from Detailed Logs when a copy of the execution message
 
 Close Job Details to return to Replicate History. The row action icons provide access to additional information and follow-up operations, covered in the next guide.
 
-<figure><img src="../../../../.gitbook/assets/image (5477).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5476).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -258,7 +258,7 @@ Enter or review the retry batch size and the available execution settings. Selec
 
 Return to Replicate History and review the status indicator for the newly started execution.
 
-<figure><img src="../../../../.gitbook/assets/image (5490).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5465).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -266,7 +266,7 @@ Return to Replicate History and review the status indicator for the newly starte
 
 Use the status and actions for the retry job to track execution. Open the job details when more detailed progress information is required.
 
-<figure><img src="../../../../.gitbook/assets/image (5491).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5464).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

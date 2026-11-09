@@ -41,7 +41,7 @@ To integrate previous Provar versions with AutoRABIT, refer to the below steps:
 
 1. Set the Web Browser to **Desktop: Full Screen.**
 
-<figure><img src="../../../.gitbook/assets/image (1626).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1625).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the **Provider Name** to **Desktop** and the **Browser Configurations** to **Full Screen**.
 

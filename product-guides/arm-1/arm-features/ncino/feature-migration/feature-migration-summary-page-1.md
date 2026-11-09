@@ -32,13 +32,13 @@ From this page, you can:
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 0.png" alt=""><figcaption></figcaption></figure>
 
-3. When the source type is selected as **Community,** those templates that are either in progress or yet to be published (Ready-Draft) will be displayed in the grid.&#x20;
+3. When the source type is selected as **Community,** those templates that are either in progress or yet to be published (Ready-Draft) will be displayed in the grid.
 4. When the source type is selected as **Standard**, the published templates that are ready to be used will be displayed in the grid.
 5. **Feature Name:** The name of the feature or the template created can be entered here to filter data in the grid.
-6. **Version:** The version number can be entered here to filter data in the grid based on the version.&#x20;
+6. **Version:** The version number can be entered here to filter data in the grid based on the version.
 7. **Filters:** The data on the grid can be further filtered based on two different filter options available.
 
-<figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 1.png" alt=""><figcaption></figcaption></figure>
 
 8. **Status:** The data on the grid can be filtered based on the statuses of different templates created. The following values are available under the status options:
    * Ready published
@@ -65,7 +65,7 @@ From this page, you can:
       * Change log
 11. **Manage template:** Click on this action to access the page where any changes to the created template can be made and/or the template can be published.
 
-<figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4.png" alt=""><figcaption></figcaption></figure>
 
 12. Clicking on "Manage template" will redirect you to the following page.
 
@@ -73,7 +73,7 @@ From this page, you can:
 
 12. The following actions can be performed on this page:
     * Create new version
-    * Publish&#x20;
+    * Publish
     * View dataset
     * Version log
     * Change log
@@ -81,7 +81,7 @@ From this page, you can:
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4.0 (2).png" alt=""><figcaption></figcaption></figure>
 
-12. **Publish**: Click the 'Publish' button to publish the template. Clicking on 'Publish' shows the following prompt for confirmation.&#x20;
+12. **Publish**: Click the 'Publish' button to publish the template. Clicking on 'Publish' shows the following prompt for confirmation.
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4.3.png" alt=""><figcaption></figcaption></figure>
 
@@ -90,7 +90,7 @@ From this page, you can:
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 4.4.png" alt=""><figcaption></figcaption></figure>
 
-15. **View dataset:** You can view the list of records fetched separately for each version you create.&#x20;
+15. **View dataset:** You can view the list of records fetched separately for each version you create.
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 5.png" alt=""><figcaption></figcaption></figure>
 
@@ -105,6 +105,3 @@ From this page, you can:
 16. **Delete Template:** Use this option to delete the template. Caution: this process cannot be undone.
 
 <figure><img src="../../../../../.gitbook/assets/Feature Migration Summary Page - 6.3.png" alt=""><figcaption></figcaption></figure>
-
-
-

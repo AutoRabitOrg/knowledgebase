@@ -80,30 +80,30 @@ To run a static code tool on your [Salesforce Org](/broken/pages/9pLgfInGvztETx4
 
 1. **Editing the Schedule:** Locate the edit schedule icon.
 
-<figure><img src="../../../../.gitbook/assets/image (1049).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1044).png" alt=""><figcaption></figcaption></figure>
 
 2. Choose the desired report frequency (daily, weekly, monthly, etc.).
 3. Specify the exact times for reports to run.
 4. Please add/remove an email If you want to send/not send the notification.
 5. Click on **UPDATE** to save and confirm the changes made to the schedule.
 
-<figure><img src="../../../../.gitbook/assets/image (1048).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1045).png" alt=""><figcaption></figcaption></figure>
 
-6. **Running On-demand SCA**: To run the SCA tool before the scheduled time frame, click on the     **Run (**![](<../../../../.gitbook/assets/image (1050).png>)**)** button.
+6. **Running On-demand SCA**: To run the SCA tool before the scheduled time frame, click on the **Run (**![](<../../../../.gitbook/assets/image (1050).png>)**)** button.
 
-<figure><img src="../../../../.gitbook/assets/image (1053).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1054).png" alt="" width="362"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1052).png" alt="" width="362"><figcaption></figcaption></figure>
 
 7. **Log**: Click on the **Log** (![](<../../../../.gitbook/assets/image (1055).png>)) icon to find the detailed log report.
 
-<figure><img src="../../../../.gitbook/assets/image (1056).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1057).png" alt="" width="563"><figcaption></figcaption></figure>
 
 8. **SCA Result**: ARM generates a detailed SCA report whenever you run static code analysis. This report will have info about the reviewed files and the related violations. Click on each file to view its related violations at the bottom right side of the page. If you click on any violation, it will take you to the respective line (in the black screen on the right side) where the violation occurred.
 
-<figure><img src="../../../../.gitbook/assets/image (1058).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1043).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1059).png" alt=""><figcaption></figcaption></figure>
 
@@ -126,7 +126,7 @@ Scans will run only on the **source**, whether the source is **VC Repo** or **SF
 {% hint style="info" %}
 **Important Note:**
 
-If there is no **master analysis** available, you will get the following message on the screen:&#x20;
+If there is no **master analysis** available, you will get the following message on the screen:
 
 _You do not have a Master analysis. We recommend you run the Master (baseline) analysis from the Static Code Analysis (hyperlink) section in the Reports module before you proceed. If you do not run the Master analysis, the analysis from this job will become your Master (baseline) analysis._
 

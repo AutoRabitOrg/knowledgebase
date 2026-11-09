@@ -8,7 +8,7 @@ This guide describes the modern IZ Suite interface in version 26.4.2. For the cl
 
 The landing page that opens before you sign in shows IZ Suite as one flow in five steps. Each step answers one question and names the parts of the product that answer it.
 
-<figure><img src="../../../.gitbook/assets/.gitbookassetsabout-iz-suite-flow (1).png" alt="The five steps Connect, Scan, Assure, Watch and Prove with the products that deliver each"><figcaption><p>From connection to evidence, in one flow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/.gitbookassetsabout-iz-suite-flow.png" alt="The five steps Connect, Scan, Assure, Watch and Prove with the products that deliver each"><figcaption><p>From connection to evidence, in one flow</p></figcaption></figure>
 
 | Step                           | Question it answers                                                         | Delivered by                                                                                                                                                                                          |
 | ------------------------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

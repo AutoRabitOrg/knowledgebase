@@ -12,7 +12,7 @@ Requires the **Dependency Insights** licence.
 You need a role that can view the inventory. Some tabs inside a view need more: for example **Vulnerability catalog** needs access to vulnerable applications and **Deprecation rules** needs access to deprecations.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdependency-insights-workspace.png" alt="Dependency Insights workspace with its view tabs"><figcaption><p>Dependency Insights</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-exposure-overview.png" alt="Dependency Insights workspace with its view tabs"><figcaption><p>Dependency Insights</p></figcaption></figure>
 
 ## Views
 

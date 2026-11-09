@@ -80,7 +80,7 @@ CodeScan should automatically find the JRE installed on your computer. Or you ca
     
     Note: The Security Token / Personal Access Token (PAT) generated through this process is configured with a 1-year expiry.
     
-    Alternatively, you can generate a PAT directly in CodeScan with your preferred expiry period (30, 60, 90 days, or No Expiration) and            manually paste the generated token into the IDE.
+    Alternatively, you can generate a PAT directly in CodeScan with your preferred expiry period (30, 90 days, or No Expiration) and            manually paste the generated token into the IDE.
     
 7. Click 'Allow Connection' to send the newly generated token back to your IDE.
 8. Add your organization key.

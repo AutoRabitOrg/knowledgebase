@@ -9,9 +9,7 @@ description: >-
 A proof of concept runs every IZ Suite component on one VM with Docker Compose: PostgreSQL, the server, a worker and an agent. A start script generates the secrets, downloads the images and starts everything.
 
 {% hint style="warning" %}
-
-
-**HINT (warning):** Before you start, make sure you have:
+Before you start, make sure you have:
 
 * A licence key from AutoRABIT.
 * An x86-64 VM sized as in [Requirements & Sizing](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/requirements-and-sizing): at least 4 vCPU, 16 GB RAM and 100 GB disk for a trial.
@@ -35,23 +33,32 @@ Create a folder, for example `~/izsuite`, with two files:
 **docker-compose.yml**
 
 ```yaml
-# IZ Suite on a single VM: PostgreSQL, server, worker and agent.
-# Start it with ./up.sh <release>, which also creates .env.
+# IZ Suite on a single VM: postgres + falcon-server (api) + falcon-worker + falcon-agent.
+# Derived from the izsuite-uat-ecs task definitions (cloudformation/ecs.yml), keeping
+# only the variables 26.4.2 needs; the ALB, WAF, autoscaling and CloudWatch pieces
+# have no single-VM equivalent and are left out. NODE_ENV=production is baked into
+# the server image. Start it with ./up.sh <version>, which also creates .env.
 
 x-logging: &logging
   driver: json-file
   options: { max-size: "50m", max-file: "5" }
 
 x-server-env: &server-env
+  # No sslmode: the local postgres has no TLS (RDS used sslmode=require).
   DATABASE_URL: postgres://izsuite:${POSTGRES_PASSWORD:?run ./up.sh}@postgres:5432/izsuite
   # Never rotate once data exists: stored credentials become undecryptable.
   SECRETS_ENCRYPTION_KEY: ${SECRETS_ENCRYPTION_KEY:?run ./up.sh}
-  # Agent and job-type version: the server and worker refuse to start without it.
+  # Agent + job-type jar version (26.4.2+ refuse to boot without it). At every boot the
+  # server points the built-in job types and the agent's AGENT_VERSION at it. 26.4.1 ignores it.
   AGENT_JOB_TYPE_VERSION: ${AGENT_JOB_TYPE_VERSION:?run ./up.sh <version>}
+  # Session/MFA/password-reset JWT RSA pair (base64 PEM). Generated once by up.sh;
+  # replacing it signs everyone out.
+  SESSION_JWT_PRIVATE_KEY: ${SESSION_JWT_PRIVATE_KEY:?run ./up.sh}
+  SESSION_JWT_PUBLIC_KEY: ${SESSION_JWT_PUBLIC_KEY:?run ./up.sh}
 
 services:
   postgres:
-    image: public.ecr.aws/docker/library/postgres:16
+    image: public.ecr.aws/docker/library/postgres:16   # UAT runs RDS 16.13
     restart: unless-stopped
     logging: *logging
     environment:
@@ -78,6 +85,7 @@ services:
     environment:
       <<: *server-env
       FALCON_MODE: api
+      # Verifies the agent wrapper's bootstrap call (allocateAgentToWrapper).
       AGENT_WRAPPER_SECRET: ${AGENT_WRAPPER_SECRET:?run ./up.sh}
     healthcheck:
       test: ["CMD-SHELL", "curl -fsS http://localhost/api/graphql/health || exit 1"]
@@ -107,11 +115,17 @@ services:
     depends_on:
       falcon-server: { condition: service_healthy }
     environment:
+      # Straight to the server container, not the public URL (no ALB/TLS hop here).
       FALCON_AGENT_OPTS: --serviceUrl http://falcon-server
+      # No AGENT_ID: core-util's AgentService also reads it as the agent's identity,
+      # so a made-up value is not safe. Without it the entrypoint uses a random
+      # instance id and the server allocates the wrapper an agent.
+      # Passed by entrypoint-agent.sh as --agentWrapperSecret; must match the server's.
       AGENT_WRAPPER_SECRET: ${AGENT_WRAPPER_SECRET:?run ./up.sh}
 
 volumes:
   pgdata:
+
 ```
 
 **up.sh**
@@ -119,12 +133,13 @@ volumes:
 ```sh
 #!/bin/sh
 # Usage: ./up.sh <version> [agent-job-type-version]    e.g. ./up.sh 26.4.2
-# The agent and job-type version defaults to <version>; AutoRABIT support may ask you to pass a second value.
+# The agent/job-type jar version defaults to <version> (pass e.g. 26.4.2-SNAPSHOT to override).
 # Optional env (read from .env or the shell): HTTP_PORT (80), IMAGE_REGISTRY.
 #
 # First run writes .env with generated secrets; later runs keep them and only change
-# IZ_VERSION and AGENT_JOB_TYPE_VERSION. Keep .env backed up: SECRETS_ENCRYPTION_KEY
-# decrypts data in the database, and losing it makes stored credentials unreadable.
+# IZ_VERSION and AGENT_JOB_TYPE_VERSION, and add the session JWT keys if missing. Keep
+# .env backed up: SECRETS_ENCRYPTION_KEY decrypts data in the database, and losing it
+# makes stored credentials unreadable.
 # Never touches the database volume: an upgrade keeps all data and the server applies
 # the new release's migrations at boot.
 set -eu
@@ -144,22 +159,30 @@ if [ ! -f .env ]; then
   echo "created .env (back it up)"
 fi
 
-# Set KEY=VALUE in .env, appending it when missing (a .env from 26.4.1 has no AGENT_JOB_TYPE_VERSION).
+# Set KEY=VALUE in .env (drop any old line, append the new one); safe for base64 values.
 set_env() {
-  if grep -q "^$1=" .env; then
-    sed -i.bak "s/^$1=.*/$1=$2/" .env && rm -f .env.bak
-  else
-    echo "$1=$2" >> .env
-  fi
+  sed -i.bak "/^$1=/d" .env && rm -f .env.bak
+  echo "$1=$2" >> .env
 }
 # The server refuses to boot a version older than the one the database last recorded,
 # so only move forward.
 set_env IZ_VERSION "$VERSION"
 set_env AGENT_JOB_TYPE_VERSION "$AGENT_JOB_TYPE_VERSION"
 
+# Session JWT RSA pair: generated only when .env has none, then reused on every run.
+if ! grep -q '^SESSION_JWT_PRIVATE_KEY=.' .env; then
+  umask 077
+  openssl genrsa -out .session.pem 2048 2>/dev/null
+  set_env SESSION_JWT_PRIVATE_KEY "$(base64 < .session.pem | tr -d '\n')"
+  set_env SESSION_JWT_PUBLIC_KEY "$(openssl rsa -in .session.pem -pubout 2>/dev/null | base64 | tr -d '\n')"
+  rm -f .session.pem
+  echo "generated session JWT keys in .env (back it up)"
+fi
+
 docker compose pull
 docker compose up -d
 docker compose ps
+
 ```
 
 Make the script executable: `chmod +x up.sh`.

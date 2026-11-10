@@ -1415,6 +1415,7 @@
       * [Production Deployment](product-guides/integral-zone/iz-suite/installation/production-deployment.md)
       * [First Start](product-guides/integral-zone/iz-suite/installation/first-start.md)
       * [Upgrades](product-guides/integral-zone/iz-suite/installation/upgrades.md)
+      * [Using AWS Debian CIS Hardened Image](product-guides/integral-zone/iz-suite/installation/using-aws-debian-cis-hardened-image.md)
     * [Supported Platforms](product-guides/integral-zone/iz-suite/supported-platforms/README.md)
       * [How Assessments Run](product-guides/integral-zone/iz-suite/supported-platforms/how-assessments-run.md)
       * [MuleSoft Anypoint Platform](product-guides/integral-zone/iz-suite/supported-platforms/mulesoft-anypoint-platform.md)

@@ -76,7 +76,6 @@ Replace `https://izsuite.example.com` with your IZ Suite address (in a multi-ten
     "url": "https://izsuite.example.com/mcp",
     "type": "http",
     "headers": {
-      "x-iz-service-url": "https://izsuite.example.com",
       "x-iz-access-token": "<token generated in IZ Suite>"
     }
   }
@@ -84,7 +83,7 @@ Replace `https://izsuite.example.com` with your IZ Suite address (in a multi-ten
 ```
 {% endcode %}
 
-Every request carries the two headers: `x-iz-service-url` with your IZ Suite address and `x-iz-access-token` with your token.
+Every request carries a header:  `x-iz-access-token` with your token.
 
 {% hint style="info" %}
 Assistant configurations created before release 26.4.2 send the earlier header names. IZ Suite still accepts them, so they keep working; new configurations use the `x-iz-` headers.

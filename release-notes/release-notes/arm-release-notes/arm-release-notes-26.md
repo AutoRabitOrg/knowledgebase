@@ -6,13 +6,13 @@
 
 ## ARM 26.4.6
 
-**Release date:** 8 November 2026
+**Release date:** **8 November 2026**
 
 #### Automatic Field Population in EZ-Commit (New UI)
 
 Enhanced the **EZ-Commit workflow** to automatically populate known values and suggest relevant information, reducing repetitive manual entry and improving user efficiency.
 
-ARM now automatically fills fields such as **Reviewer Email, Salesforce Org Author, Parent Branch, and Credentials**when the information is available. It also suggests meaningful values for **Commit Labels, Commit Comments, and Branch Names** based on the current context.
+ARM now automatically fills fields such as **Reviewer Email, Salesforce Org Author, Parent Branch, and Credentials** when the information is available. It also suggests meaningful values for **Commit Labels, Commit Comments, and Branch Names** based on the current context.
 
 All automatically populated and suggested values remain **editable**, allowing users to review and modify them before proceeding.
 
@@ -184,9 +184,11 @@ ARM now displays a **clear and meaningful error message** when the connection te
 
 This fix improves the user experience when configuring or updating the **SonarQube plugin under My Account → Plugins**.
 
+***
+
 ## ARM 26.4.5
 
-**Release date:** 1 November 2026
+**Release date:** **1 November 2026**
 
 #### Deployed Components Audit Report - FR - New UI
 
@@ -248,7 +250,7 @@ These improvements help **reduce CPU usage, disk I/O, and system overhead**, par
 
 ## ARM 26.4.4
 
-**Release date:** 25 October 2026
+**Release date:** **25 October 2026**
 
 #### External Approval Workflow Integration with ServiceNow
 
@@ -380,7 +382,7 @@ ARM now displays the download icon and allows users to export audit logs in CSV 
 
 ## DataLoader and DataLoader Pro 26.4.4
 
-**Release date:** 25 October 2026
+**Release date:** **25 October 2026**
 
 #### Accurate Currency, Decimal, and Percentage Values
 
@@ -394,7 +396,7 @@ Resolved multiple issues affecting DataLoader extraction, migration, masking, an
 
 ## ARM 26.4.3
 
-**Release date:** 18 October 2026
+**Release date:** **18 October 2026**
 
 #### Fixed Workspace Synchronization Errors in EZ-Commit and EZ-Merge
 
@@ -476,7 +478,7 @@ This upgrade incorporates the latest Tomcat security updates, stability improvem
 
 ## ARM 26.4.2
 
-**Release date:** 11 October 2026
+**Release date:** **11 October 2026**
 
 #### EZ-Commit Auto Draft Deleted Components Fix
 
@@ -534,7 +536,7 @@ The template name validation logic has been corrected to prevent unnecessary API
 
 ## ARM 26.4.1
 
-**Release date:** 7 October 2026
+**Release date: 7 October 2026**
 
 #### CI Job Build History Reporting Fix
 
@@ -575,7 +577,7 @@ The following metadata types are included in Phase 2:
 
 ## ARM 26.3.13
 
-**Release date:** 27 September 2026
+**Release date:** **27 September 2026**
 
 #### Salesforce Standard Authentication Retirement Notifications
 
@@ -639,7 +641,7 @@ With this fix, saved SCA options are displayed correctly, and the applicable Son
 
 ## DataLoader and DataLoader Pro 26.3.13
 
-**Release date:** 27 September 2026
+**Release date:** **27 September 2026**
 
 #### Accurate Save Messaging for DataLoader Pro Jobs
 

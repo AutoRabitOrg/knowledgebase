@@ -15,7 +15,7 @@ Exit code 1 if anything fails.
 """
 import csv, re, subprocess, sys
 
-ALLOWED_NEW_WORDS = {'fixes', 'enhancements', 'new', 'features', 'rules', 'rule', 'dataloader', 'and', 'pro',
+ALLOWED_NEW_WORDS = {'autorabit', 'fixes', 'enhancements', 'new', 'features', 'rules', 'rule', 'dataloader', 'and', 'pro',
                      'self-hosted', 'codescan', 'arm', 'vault', 'guard', 'ncino', 'iz', 'suite', 'eagle', 'tiger',
                      'date', 'release', '+'} | set('january february march april may june july august september october november december'.split())
 MONTHS = {m[:3]: i + 1 for i, m in enumerate('january february march april may june july august september october november december'.split())}

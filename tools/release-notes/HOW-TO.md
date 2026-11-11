@@ -23,6 +23,8 @@ tools/release-notes/run.sh            # every product
 tools/release-notes/run.sh Vault      # one product
 ```
 
+Vault release headings read `## AutoRABIT Vault <version>`; every other mention of Vault in the Vault release notes reads "AutoRABIT Vault" too.
+
 Products: `ARM`, `DataLoader`, `CodeScan`, `"CodeScan Self-Hosted"`, `Vault`, `Guard`, `nCino`, `"IZ Suite"`.
 
 The script:

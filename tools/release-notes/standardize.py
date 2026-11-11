@@ -24,7 +24,7 @@ GROUPS={
  'DataLoader':([RN+'arm-release-notes-26.md'],'DataLoader'),
  'CodeScan':(sorted(glob.glob(RN+'codescan-release-notes/cloud-releases/**/*.md',recursive=True))+[RN+'codescan-release-notes/README.md'],'CodeScan'),
  'CodeScan Self-Hosted':(sorted(glob.glob(RN+'codescan-release-notes/on-premise-releases/**/*.md',recursive=True)),'CodeScan Self-Hosted'),
- 'Vault':(sorted(glob.glob(RN+'vault-release-notes/*.md')),'Vault'),
+ 'Vault':(sorted(glob.glob(RN+'vault-release-notes/*.md')),'AutoRABIT Vault'),  # Vault release notes always say AutoRABIT Vault
  'Guard':(sorted(glob.glob(RN+'guard/*.md'))+[RN+'guard.md'],'Guard'),
  'nCino':(sorted(glob.glob(RN+'ncino-release-notes/*.md')),'nCino'),
  'IZ Suite':(sorted(glob.glob(RN+'iz-suite-release-notes/*.md')),'IZ Suite'),

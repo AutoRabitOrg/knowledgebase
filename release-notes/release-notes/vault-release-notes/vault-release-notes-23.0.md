@@ -2,13 +2,13 @@
 
 This release incorporates new features, enhancements, and resolved issues from all previous significant releases. If you're upgrading from an earlier version of AutoRABIT Vault, check the release notes for any interim versions or details about additional improvements in this release over your current release.
 
-### Vault 23.2.13
+### AutoRABIT Vault 23.2.13
 
 **August 2023**
 
 _**What's New?**_
 
-#### View Archived Data through Vault Connect (Beta)
+#### View Archived Data through AutoRABIT Vault Connect (Beta)
 
 The archival capabilities of AutoRABIT Vault are now enhanced further to create a connection between Salesforce and the storage environment (AWS S3 bucket), leveraging Salesforce Connect with OData 4.0 adapter to display the archived records directly within Salesforce without having to perform complex data loading operations.
 
@@ -40,7 +40,7 @@ For details on how to configure AutoRABIT Vault Connect, please click here to ac
 
 ***
 
-## Vault 23.1.12
+## AutoRABIT Vault 23.1.12
 
 **January 2023**
 
@@ -126,7 +126,7 @@ _**AutoRABIT Vault v23.1.8**_
 
 This is a maintenance release. The following items were fixed and/or added:
 
-1. Fixed an issue where the AutoRABIT Vault archival failed with **`"No Records Archived"`** status in the Vault UI.
+1. Fixed an issue where the AutoRABIT Vault archival failed with **`"No Records Archived"`** status in the AutoRABIT Vault UI.
 2. Fixed an issue where replicating the **Assest records** from the source to the destination org ran for a few hours, but no records were picked up.
 3. Fixed an issue where the scheduled backups failed for production orgs.
 

@@ -4,7 +4,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT Vault updates!" listId="a085e26e7e" %}
 
-## Vault 26.2.8
+## AutoRABIT Vault 26.2.8
 
 **Release date:** 4 November 2026
 
@@ -46,7 +46,7 @@ Easier identification and investigation of upload-related issues.
 
 **Category**: Platform Improvements
 
-This release includes several backend enhancements designed to strengthen the stability, security, and reliability of Vault.
+This release includes several backend enhancements designed to strengthen the stability, security, and reliability of AutoRABIT Vault.
 
 **What's improved**:
 
@@ -66,7 +66,7 @@ These improvements are applied at the platform level and do not require changes 
 
 **Category**: User Experience
 
-We have resolved an issue where subusers could be redirected to an unexpected location after successfully signing in to Vault.
+We have resolved an issue where subusers could be redirected to an unexpected location after successfully signing in to AutoRABIT Vault.
 
 **What's improved:**
 
@@ -80,7 +80,7 @@ More consistent navigation following successful login.
 
 **Category:** User Interface
 
-We have refined the presentation of tables across the Vault application to improve readability and visual consistency.
+We have refined the presentation of tables across the AutoRABIT Vault application to improve readability and visual consistency.
 
 **What's improved:**
 
@@ -94,7 +94,7 @@ Cleaner presentation of structured information.
 
 ***
 
-## Vault 26.2.7
+## AutoRABIT Vault 26.2.7
 
 **Release date:** 28 October 2026
 
@@ -136,7 +136,7 @@ Added clickable record names to archived-record lists in AutoRABIT Vault Connect
 
 ***
 
-## Vault 26.2.6
+## AutoRABIT Vault 26.2.6
 
 **Release date:** 7 October 2026
 
@@ -178,7 +178,7 @@ Added the ability to clone an existing masking rule to compatible fields across 
 
 ***
 
-## Vault 26.2.5
+## AutoRABIT Vault 26.2.5
 
 **Release date:** 26 August 2026
 
@@ -218,7 +218,7 @@ AutoRABIT Vault retries only the records that failed during the selected rollbac
 
 ***
 
-## Vault 26.2.4
+## AutoRABIT Vault 26.2.4
 
 **Release date:** 12 August 2026
 
@@ -252,7 +252,7 @@ AutoRABIT Vault now remains operational when the Synthetic Data masking configur
 
 ***
 
-## Vault 26.2.3
+## AutoRABIT Vault 26.2.3
 
 **Release date:** 29 July 2026
 
@@ -270,7 +270,7 @@ Added the ability to switch an existing Salesforce org connection between Author
 
 ***
 
-## Vault 26.2.2
+## AutoRABIT Vault 26.2.2
 
 **Release date:** 22 July 2026
 
@@ -280,11 +280,11 @@ AutoRABIT Vault now supports connecting Salesforce orgs using the OAuth Client C
 
 #### Support for Salesforce Refresh Token Rotation (Local External Client Apps)
 
-Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, AutoRABIT Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
+AutoRABIT Vault now handles Salesforce's Refresh Token Rotation for Local External Client Apps (ECAs). When Salesforce issues a new refresh token during an access token refresh, AutoRABIT Vault securely persists the updated token and continues authentication without manual intervention. This ensures uninterrupted operations and compliance with Salesforce's latest OAuth security requirements.
 
 ***
 
-## Vault 26.2.1
+## AutoRABIT Vault 26.2.1
 
 **Release date:** 15 July 2026
 
@@ -313,7 +313,7 @@ For the recommended IAM policy updates, refer to the following documentation:
 
 ***
 
-## Vault 26.2.0
+## AutoRABIT Vault 26.2.0
 
 **Release date:** 8 July 2026
 
@@ -359,7 +359,7 @@ An issue where full backup jobs for sandbox orgs could remain stuck for an exten
 
 ***
 
-## Vault 26.1.9
+## AutoRABIT Vault 26.1.9
 
 **Release date:** 24 June 2026
 
@@ -372,7 +372,7 @@ Fixed an issue in the Backup module where changing the ON/OFF toggle on the **Da
 
 ***
 
-## Vault 26.1.8
+## AutoRABIT Vault 26.1.8
 
 **Release date:** 10 June 2026
 
@@ -386,7 +386,7 @@ Fixed an issue where scheduled Replication Jobs were not triggering at their con
 
 ***
 
-## Vault 26.1.7
+## AutoRABIT Vault 26.1.7
 
 **Release date:** 3 June 2026
 
@@ -416,7 +416,7 @@ Fixed a bug where saved schema settings were lost after editing and saving a Rep
 
 ***
 
-## Vault 26.1.6
+## AutoRABIT Vault 26.1.6
 
 **Release date:** 20 May 2026
 
@@ -430,7 +430,7 @@ Resolved an issue where Backup Job details were not displayed in the Replicate m
 
 ***
 
-## Vault 26.1.5
+## AutoRABIT Vault 26.1.5
 
 **Release date:** 6 May 2026
 
@@ -456,7 +456,7 @@ Resolved an issue where Backup Job details were not displayed in the Replicate m
 
 ***
 
-## Vault 26.1.4
+## AutoRABIT Vault 26.1.4
 
 **Release date:** 29 April 2026
 
@@ -474,7 +474,7 @@ Corrected the navigation flow after deleting a configuration from the Archive se
 
 ***
 
-## Vault 26.1.3
+## AutoRABIT Vault 26.1.3
 
 **Release date:** 22 April 2026
 
@@ -518,7 +518,7 @@ This fix ensures:
 
 ***
 
-## Vault 26.1.2
+## AutoRABIT Vault 26.1.2
 
 **Release date:** 8 April 2026
 
@@ -596,7 +596,7 @@ Fixed an issue where data type mismatches between source data and schema caused 
 
 ***
 
-## Vault 26.1.1
+## AutoRABIT Vault 26.1.1
 
 **Release date:** 25 March 2026
 
@@ -663,7 +663,7 @@ Fixed an issue that prevented replication of files larger than 10 MB, ensuring l
 
 ***
 
-## Vault 26.1.0
+## AutoRABIT Vault 26.1.0
 
 **Release date:** 4 March 2026
 

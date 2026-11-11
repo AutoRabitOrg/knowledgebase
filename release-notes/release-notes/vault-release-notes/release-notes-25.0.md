@@ -2,7 +2,7 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT Vault updates!" listId="a085e26e7e" %}
 
-## Vault 25.3.2
+## AutoRABIT Vault 25.3.2
 
 **Release date:** 25 February 2026
 
@@ -30,7 +30,7 @@ Resolved an issue where updates to a Masking Configuration impacted previously e
 
 ***
 
-## Vault 25.3.1
+## AutoRABIT Vault 25.3.1
 
 **Release date:** 21 January 2026
 
@@ -52,7 +52,7 @@ Improved the update process for **Attachment** and **ContentVersion** records by
 
 ***
 
-## Vault 25.3.0
+## AutoRABIT Vault 25.3.0
 
 **Release date:** 7 January 2026
 
@@ -83,7 +83,7 @@ Resolved an issue where SSO metadata file uploads were failing. The upload proce
 
 ***
 
-## Vault 25.2.3
+## AutoRABIT Vault 25.2.3
 
 **Release date:** 26 November 2025
 
@@ -105,7 +105,7 @@ Enhanced the support for the **PermissionSetAssignment** object during restore. 
 
 ***
 
-## Vault 25.2.2
+## AutoRABIT Vault 25.2.2
 
 **Release date:** 19 November 2025
 
@@ -138,7 +138,7 @@ Applied security enhancements to address the latest identified vulnerabilities.
 
 ***
 
-## Vault 25.2.1
+## AutoRABIT Vault 25.2.1
 
 **Release date:** 29 October 2025
 
@@ -160,7 +160,7 @@ Fixed an issue causing intermittent backup job failures. Code enhancements now e
 
 ***
 
-## Vault 25.2.0
+## AutoRABIT Vault 25.2.0
 
 **Release date:** 8 October 2025
 
@@ -192,7 +192,7 @@ Upgraded underlying platform components to enhance security, improve performance
 
 ***
 
-## Vault 25.1.9
+## AutoRABIT Vault 25.1.9
 
 **Release date:** 24 September 2025
 
@@ -206,7 +206,7 @@ Additional information has been added to ensure that email alerts include releva
 
 ***
 
-## Vault 25.1.8
+## AutoRABIT Vault 25.1.8
 
 **Release date:** 3 September 2025
 
@@ -232,7 +232,7 @@ Improved memory management during archive job execution. Archive jobs now run re
 
 ***
 
-## Vault 25.1.7
+## AutoRABIT Vault 25.1.7
 
 **Release date:** 20 August 2025
 
@@ -254,7 +254,7 @@ Added additional logging to replication jobs, enabling more precise identificati
 
 ***
 
-## Vault 25.1.6
+## AutoRABIT Vault 25.1.6
 
 **Release date:** 13 August 2025
 
@@ -286,15 +286,15 @@ Improvements have been made to the **event logging mechanism**, including:
 
 #### AutoRABIT Vault Compare Performance Optimization
 
-The **Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
+The **AutoRABIT Vault Compare** operation has been optimized to provide a faster and more seamless user experience during large-scale data comparisons.
 
 #### Improved Salesforce Org Identification
 
-Enhancements have been made to the logic that fetches **Salesforce Org details**, ensuring more accurate identification of the Salesforce environment connected to Vault.
+Enhancements have been made to the logic that fetches **Salesforce Org details**, ensuring more accurate identification of the Salesforce environment connected to AutoRABIT Vault.
 
 ***
 
-## Vault 25.1.5
+## AutoRABIT Vault 25.1.5
 
 **Release Notes: 21 July 2025**
 
@@ -334,7 +334,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault 25.1.4
+## AutoRABIT Vault 25.1.4
 
 **Release Notes:** **16 July 2025**
 
@@ -349,7 +349,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault 25.1.3
+## AutoRABIT Vault 25.1.3
 
 **Release Notes: 9 July 2025**
 
@@ -365,7 +365,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault 25.1.2
+## AutoRABIT Vault 25.1.2
 
 **Release date:** 2 July 2025
 
@@ -387,7 +387,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault 25.1.1
+## AutoRABIT Vault 25.1.1
 
 **Release date:** 18 June 2025
 
@@ -399,7 +399,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 
 ***
 
-## Vault 25.1
+## AutoRABIT Vault 25.1
 
 **Release date:** 4 June 2025
 
@@ -415,7 +415,7 @@ A fix is implemented to prevent special fields—such as audit fields—from bei
 * **Salesforce Winter ’25 Upgrade:** Upgraded the Salesforce integration to support the latest Winter ’25 API version.
 * **S3 Policy Management**: Improved S3 configuration checks to surface errors early during AutoRABIT Vault account setup.
 * **Tomcat Upgrade**: Upgraded Tomcat version 10 to 11 for improved security, performance, and standards compliance.
-* **Vault Data Masking**: Improved pattern recognition in specific data types to ensure accurate masking while preserving the original format required for valid data representation.
+* **AutoRABIT Vault Data Masking**: Improved pattern recognition in specific data types to ensure accurate masking while preserving the original format required for valid data representation.
 * **Restore UI Label Updates**: Updated restore flow labels:
   * “Restore Now” is renamed to “Create Restore Job”
   * “Trigger Restore” is renamed to “Review and Restore”

@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes 22.0
 
-## Vault 22.2
+## AutoRABIT Vault 22.2
 
 #### What's New
 

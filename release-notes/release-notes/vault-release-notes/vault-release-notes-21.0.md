@@ -1,6 +1,6 @@
 # AutoRABIT Vault Release Notes 21.0
 
-## Vault 21.4
+## AutoRABIT Vault 21.4
 
 **Release: 01 August 2021**
 
@@ -16,7 +16,7 @@
 
 ***
 
-## Vault 21.3
+## AutoRABIT Vault 21.3
 
 **Release: 06 June 2021**
 
@@ -24,7 +24,7 @@
 
 * **Pre Restore/ Replicate Checklist:** Now you can achieve improved governance for restore/ replicate jobs by following a set of guidelines to maximize the success rate.
 * **UI Improvement:** With this release, you will see all the jobs on a single summary page. The In-Progress tab under Backup, Restore, Replicate, Archival, GDPR module has been deprecated.&#x20;
-* Vault now provides a capability to download backed-up metadata files for the on-premises offering&#x20;
+* AutoRABIT Vault now provides a capability to download backed-up metadata files for the on-premises offering&#x20;
 * **Improved security:** We have worked on strengthening security by adding an additional layer of security.&#x20;
 
 #### Fixes
@@ -34,11 +34,11 @@
 
 ***
 
-## Vault 21.2
+## AutoRABIT Vault 21.2
 
 **Release: 26 April 2021**
 
-For our customers in regulated industries with extended needs to meet compliance and security auditing standards – Now AutoRABIT Vault is fully available for on-premises or in-your-cloud deployment and use of on-premises storage (including SANs). These new deployment and storage options give you complete control of the environment where Vault is deployed and your data sets are stored.
+For our customers in regulated industries with extended needs to meet compliance and security auditing standards – Now AutoRABIT Vault is fully available for on-premises or in-your-cloud deployment and use of on-premises storage (including SANs). These new deployment and storage options give you complete control of the environment where AutoRABIT Vault is deployed and your data sets are stored.
 
 #### New features
 
@@ -71,7 +71,7 @@ We’ve added support for some previously unsupported FinancialForce metadata ty
 
 ***
 
-## Vault 21.1
+## AutoRABIT Vault 21.1
 
 **Release: 25 March 2021**
 
@@ -98,13 +98,13 @@ Here’s a quick look at the product's updated UI and branding changes. Again �
 * Application fonts&#x20;
 * Application colors
 
-![Vault Data Backup Enhancements](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_1_loginpage.gif)
+![AutoRABIT Vault Data Backup Enhancements](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_1_loginpage.gif)
 
 **Restore/Replicate parents with relationship lookups**
 
 We’ve now added the capability to restore or replicate any non-required parents. To do this, select them from the schema before running a restore/replicate job.
 
-![Vault Data Restore/Replicate](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_2_Schema.gif)
+![AutoRABIT Vault Data Restore/Replicate](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Fig_2_Schema.gif)
 
 **Retention policy enhancements for Azure** &#x20;
 

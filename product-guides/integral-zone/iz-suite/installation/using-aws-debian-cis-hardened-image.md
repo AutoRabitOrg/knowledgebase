@@ -2,8 +2,6 @@
 
 IZ Suite is available as an Amazon Machine Image (AMI) built on Debian and hardened to the CIS benchmark. The image comes with Docker installed. When the instance starts, it reads a short configuration you provide in the EC2 **User data** field, then pulls and runs the IZ Suite server and agent. You don't install anything by hand.
 
-
-
 {% hint style="info" %}
 Prefer containers on your own host? See Server Installation for running IZ Suite with Docker or Docker Compose.
 {% endhint %}
@@ -17,8 +15,6 @@ Prefer containers on your own host? See Server Installation for running IZ Suite
    * **IZ Suite agent**: runs scans and other jobs, at the version you set in `AGENT_VERSION`. It connects to the server on the same host.
 4. The server connects to your PostgreSQL database through `DB_URL` and prepares it on first start.
 5. Optionally, logs are sent to an Amazon CloudWatch log group.
-
-
 
 <figure><img src="../../../../.gitbook/assets/ec2_launch_instance.png" alt=""><figcaption></figcaption></figure>
 
@@ -103,11 +99,7 @@ DB_URL=postgres://dbuser:dbpass@dbhost:5432/dbname
 EOF
 ```
 
-
-
-<figure><img src="../../../../.gitbook/assets/ec2_launch_instance_2 (1).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/ec2_launch_instance_2.png" alt=""><figcaption></figcaption></figure>
 
 To send logs to CloudWatch, add one more line before `EOF`:
 
@@ -174,9 +166,6 @@ Take a snapshot or backup of the database before upgrading. The new server versi
 | The configuration didn't apply                             | Check `/etc/falcon-suite/config.env` on the instance, and review `/var/log/cloud-init-output.log` for errors from the user data script.                 |
 | No logs in CloudWatch                                      | The IAM role with **CloudWatchAgentServerPolicy** is attached to the instance, and `CLOUD_WATCH_LOGS_GROUP` is set.                                     |
 
-
-
 ### Next Steps
 
 * Prerequisites: system and database requirements.
-

@@ -4,6 +4,120 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
+## ARM 26.4.7
+
+**Release date:** **15th November 2026**
+
+#### Improved GitHub OAuth Authorization Error Handling <a href="#improved-github-oauth-authorization-error-handling" id="improved-github-oauth-authorization-error-handling"></a>
+
+Resolved an issue where users were **unexpectedly logged out of ARM** when registering or re-authorizing GitHub repositories without the required organization permissions.
+
+ARM now displays a **clear error message with guidance to resolve authorization issues**, allowing users to grant the necessary permissions without creating a new OAuth application or resetting existing credentials.
+
+#### Fixed Salesforce OAuth Authentication Failures in CI Jobs <a href="#fixed-salesforce-oauth-authentication-failures-in-ci-jobs" id="fixed-salesforce-oauth-authentication-failures-in-ci-jobs"></a>
+
+Resolved an issue where **CI Job deployments failed due to Salesforce authentication requests being redirected to the org's My Domain URL**, resulting in security policy restrictions.
+
+ARM now uses the **registered Salesforce login URL** for authentication with External Client App (ECA) connections, preventing unexpected login failures caused by URL restrictions.
+
+This fix improves **CI Job deployment reliability for DX and Non-DX repositories** while maintaining existing deployment functionality.
+
+**Note:** Deployment and metadata API requests continue to use the Salesforce instance URL.
+
+#### Fixed Search and Substitute for Dashboard Users During Deployment <a href="#fixed-search-and-substitute-for-dashboard-users-during-deployment" id="fixed-search-and-substitute-for-dashboard-users-during-deployment"></a>
+
+Resolved an issue where **Search and Substitute failed to replace Dashboard running users** when multiple usernames were provided as comma-separated values, resulting in deployment failures.
+
+ARM now correctly identifies and replaces matching usernames from the configured list, ensuring **accurate Dashboard user substitutions** during deployments and CI Jobs.
+
+#### Fixed Missing Metadata Components During SFDX Deployments <a href="#fixed-missing-metadata-components-during-sfdx-deployments" id="fixed-missing-metadata-components-during-sfdx-deployments"></a>
+
+Resolved an issue where **Sharing Reasons and Translation metadata were excluded from deployments** when more than 50 Skip Members were configured and the **Do not include Skip Members** option was enabled.
+
+ARM now correctly includes the required metadata components, preventing **“No local changes to deploy”** errors and ensuring successful deployment validation.
+
+#### Improved Credential Management and Private Credential Visibility <a href="#improved-credential-management-and-private-credential-visibility" id="improved-credential-management-and-private-credential-visibility"></a>
+
+Enhanced credential management to allow **Super Admins to enable or disable Manage Credentials** for their own accounts.
+
+Additionally, resolved an issue where **other users' Private credentials were visible in credential selection dropdowns**, including Branch Creation and EZ-Commit.
+
+Credential dropdowns now display only the **logged-in user's Private credentials and Global credentials**, improving credential privacy and preventing incorrect credential selection.
+
+#### Fixed Object Translation Errors in SFDX CI Job Deployments <a href="#fixed-object-translation-errors-in-sfdx-ci-job-deployments" id="fixed-object-translation-errors-in-sfdx-ci-job-deployments"></a>
+
+Resolved an issue where **SFDX CI Jobs failed due to orphaned field translation files** when the **Ignore Installed Components** or **Skip Members** option was enabled.
+
+ARM now correctly excludes the entire object translation folder, preventing metadata validation errors and ensuring successful CI Job deployments.
+
+#### Fixed Deployment Status Update Failures in Vlocity CI Jobs <a href="#fixed-deployment-status-update-failures-in-vlocity-ci-jobs" id="fixed-deployment-status-update-failures-in-vlocity-ci-jobs"></a>
+
+Resolved an issue where **Vlocity CI Jobs encountered HTTP 500 errors** while updating deployment status, even when the deployment completed successfully.
+
+ARM now correctly updates deployment status and recognizes successful Vlocity retry operations.
+
+Additionally, **deployment logs now display detailed DataPack errors and failure summaries**, making it easier to identify and troubleshoot deployment failures.
+
+#### Fixed WaveDataflow Retrieval in Branching Baseline <a href="#fixed-wavedataflow-retrieval-in-branching-baseline" id="fixed-wavedataflow-retrieval-in-branching-baseline"></a>
+
+Resolved an issue where **WaveDataflow components associated with CRM Analytics recipes were missing** during Branching Baseline operations.
+
+ARM now automatically identifies and retrieves these components, ensuring they are correctly included in the repository.
+
+This fix also improves WaveDataflow retrieval across other supported metadata retrieval operations.
+
+#### Fixed SharingReason Validation Failures in SFDX Deployments <a href="#fixed-sharingreason-validation-failures-in-sfdx-deployments" id="fixed-sharingreason-validation-failures-in-sfdx-deployments"></a>
+
+Resolved an issue where **deployment validation failed when only a SharingReason component was selected**, due to an incomplete parent CustomObject definition being included in the deployment package.
+
+ARM now correctly processes selected SharingReason components, preventing unnecessary validation errors in **Single Revision and Revision Range deployments**.
+
+#### Fixed Incorrect Commit Status in EZ-Commit <a href="#fixed-incorrect-commit-status-in-ez-commit" id="fixed-incorrect-commit-status-in-ez-commit"></a>
+
+Resolved an issue where **EZ-Commit continued to display "In Progress"** even when the commit was awaiting approval, preventing users from approving or rejecting it.
+
+ARM now correctly updates and displays the commit status, ensuring users can proceed with the **approval or rejection workflow** without unnecessary delays.
+
+#### Added Mandatory Dev Hub Org Validation for CI Jobs <a href="#added-mandatory-dev-hub-org-validation-for-ci-jobs" id="added-mandatory-dev-hub-org-validation-for-ci-jobs"></a>
+
+Resolved an issue where users could create **Package Installation CI Jobs (Types 9 and 10)** without selecting a Dev Hub Org when the **Create a scratch org and install package** option was enabled.
+
+ARM now validates the **Dev Hub Org** selection and displays an appropriate error message, preventing users from proceeding until the required configuration is provided.
+
+#### Improved Required Field Validation for Merge Request Creation (New UI) <a href="#improved-required-field-validation-for-merge-request-creation-new-ui" id="improved-required-field-validation-for-merge-request-creation-new-ui"></a>
+
+Enhanced the **Merge Request creation process** with clear, user-friendly validation for mandatory fields.
+
+When users click **Create Merge Request** without completing required fields, ARM now highlights the missing information, displays inline error messages, and automatically navigates to the first invalid field.
+
+Additionally, ARM automatically populates the **Target Branch** based on the selected Source Branch's default configuration and provides meaningful tooltips when Merge Request creation is unavailable.
+
+#### Improved Required Field Validation for SFDX Package Version Creation (New UI) <a href="#improved-required-field-validation-for-sfdx-package-version-creation-new-ui" id="improved-required-field-validation-for-sfdx-package-version-creation-new-ui"></a>
+
+Enhanced the **Create Package Version** workflow with clear, user-friendly validation for mandatory fields.
+
+When users click **Create** without completing required fields, ARM now highlights the missing or invalid information, displays inline error messages, and automatically navigates to the first invalid field.
+
+Additionally, meaningful tooltips explain why the **Create** button is unavailable, helping users complete package version creation more efficiently.
+
+#### Improved Required Field Validation for Commit Label Creation (New UI) <a href="#improved-required-field-validation-for-commit-label-creation-new-ui" id="improved-required-field-validation-for-commit-label-creation-new-ui"></a>
+
+Enhanced the **Create Commit Label** workflow with clear, user-friendly validation for mandatory fields.
+
+When users click **Create** without completing required fields, ARM now highlights the missing information, displays inline error messages, and automatically navigates to the first invalid field.
+
+Additionally, meaningful tooltips explain why the **Create** button is unavailable, helping users create Commit Labels more efficiently.
+
+#### Enhanced Deployment Component Audit Report for CI Jobs and Quick Deployments (New UI) <a href="#enhanced-deployment-component-audit-report-for-ci-jobs-and-quick-deployments-new-ui" id="enhanced-deployment-component-audit-report-for-ci-jobs-and-quick-deployments-new-ui"></a>
+
+Enhanced the **Deployment Component Audit Report** to display associated **ALM Stories** for CI Job builds and rollbacks, improving traceability of deployed changes.
+
+Additionally, **Quick Deployments initiated from CI Jobs** are now automatically recorded in the audit report upon successful completion, with their own deployment ID and completion time.
+
+These improvements provide more accurate deployment tracking and audit visibility across CI operations.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/reports/deployment-component-audit-report" %}
+
 ## ARM 26.4.6
 
 **Release date:** **8 November 2026**

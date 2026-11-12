@@ -26,7 +26,7 @@ Creating a package involves two steps:
 6. Choose the **Version Control Repository** and **Branch**.
 7. Pick the **Package Directory**.
 
-<figure><img src="../../../../.gitbook/assets/image (2992).png" alt="Create Package form fields"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2992).png" alt="Create Package form fields"><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ Fill in the **Package Version** section:
 4. **Installation Key** – optional password to protect the package.
 5. **Tag** – release label such as `Release 1.0.0`.
 
-<figure><img src="../../../../.gitbook/assets/image (2993).png" alt="Package Version details"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2993).png" alt="Package Version details"><figcaption></figcaption></figure>
 
 ***
 
@@ -53,11 +53,11 @@ Fill in the **Package Version** section:
 If the Dev Hub owns other packages, they appear here.
 
 * Move items between lists with
-  * ![Add dependency](<../../../../.gitbook/assets/image (1248).png>) and ![Remove dependency](<../../../../.gitbook/assets/image (1249).png>)
+  * ![Add dependency](<../../../../../.gitbook/assets/image (1248).png>) and ![Remove dependency](<../../../../../.gitbook/assets/image (1249).png>)
 * Re-order with
-  * ![Move up](<../../../../.gitbook/assets/image (1250).png>) and ![Move down](<../../../../.gitbook/assets/image (1251).png>)
+  * ![Move up](<../../../../../.gitbook/assets/image (1250).png>) and ![Move down](<../../../../../.gitbook/assets/image (1251).png>)
 
-<figure><img src="../../../../.gitbook/assets/image (2997).png" alt="Package Dependencies list"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2997).png" alt="Package Dependencies list"><figcaption></figcaption></figure>
 
 ***
 
@@ -65,30 +65,30 @@ Click **View Metadata** or **Create Package**:
 
 *   **View Metadata** – review the metadata pulled from VCS before creating.
 
-    <figure><img src="../../../../.gitbook/assets/image (2998).png" alt="View Metadata list"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (2998).png" alt="View Metadata list"><figcaption></figcaption></figure>
 * **Create Package** – create the package with the specified data.
 
 Progress appears on the **Unlocked Package** home screen.
 
-<figure><img src="../../../../.gitbook/assets/image (2999).png" alt="Package home progress"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2999).png" alt="Package home progress"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3000).png" alt="Package progress details"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3000).png" alt="Package progress details"><figcaption></figcaption></figure>
 
 ***
 
 ### More Information on the Package Screen <a href="#more-information-on-the-package-screen" id="more-information-on-the-package-screen"></a>
 
-<figure><img src="../../../../.gitbook/assets/image (3001).png" alt="Package management screen"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3001).png" alt="Package management screen"><figcaption></figcaption></figure>
 
 1. **Status** – view success/failure and download the log.
 2. **Actions**
    * **Delete Package** – permanently removes the package.
-   * **Create Version** ![Plus icon](<../../../../.gitbook/assets/image (1248).png>) – add a new version.
+   * **Create Version** ![Plus icon](<../../../../../.gitbook/assets/image (1248).png>) – add a new version.
 3. **Info** – hover for package metadata.
 
-**View Packaged Versions** ![View versions icon](<../../../../.gitbook/assets/image (3002).png>) – shows each version’s details.
+**View Packaged Versions** ![View versions icon](<../../../../../.gitbook/assets/image (3002).png>) – shows each version’s details.
 
-<figure><img src="../../../../.gitbook/assets/image (3003).png" alt="Packaged version details"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3003).png" alt="Packaged version details"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Important Notes**
@@ -100,7 +100,7 @@ Progress appears on the **Unlocked Package** home screen.
     * Selecting **None** creates a version without an ancestor.
     * To choose a non-latest ancestor, tick **Skip Ancestor Check**.
 
-    <figure><img src="../../../../.gitbook/assets/image (3004).png" alt="Skip ancestor check option"><figcaption></figcaption></figure>
+    <figure><img src="../../../../../.gitbook/assets/image (3004).png" alt="Skip ancestor check option"><figcaption></figcaption></figure>
 3. Non-linear versioning in the same branch is restricted.
 {% endhint %}
 
@@ -120,4 +120,4 @@ You may promote only **once** per version number.
 
 Hover the info icon to see author, timestamps, and last-modified details.
 
-<figure><img src="../../../../.gitbook/assets/image (3005).png" alt="Package information tooltip"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3005).png" alt="Package information tooltip"><figcaption></figcaption></figure>

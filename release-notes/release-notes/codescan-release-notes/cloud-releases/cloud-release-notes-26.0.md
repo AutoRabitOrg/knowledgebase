@@ -1206,6 +1206,8 @@ NOTE: This is a project-level rule.
 
 <img src="../../../../.gitbook/assets/unknown (149).png" alt="" height="346" width="624">
 
+&#x20;
+
 <img src="../../../../.gitbook/assets/unknown (150).png" alt="" height="344" width="624">
 
 * Rule severity correctly classified as Critical Vulnerability.
@@ -1300,7 +1302,11 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 
 <img src="../../../../.gitbook/assets/unknown (158).png" alt="" height="69" width="624">
 
+&#x20;
+
 <img src="../../../../.gitbook/assets/unknown (159).png" alt="" height="52" width="624">
+
+&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (160).png" alt="" height="72" width="624">
 
@@ -1312,7 +1318,11 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 
 <img src="../../../../.gitbook/assets/unknown (158).png" alt="" height="69" width="624">
 
+&#x20;
+
 <img src="../../../../.gitbook/assets/unknown (159).png" alt="" height="52" width="624">
+
+&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (160).png" alt="" height="72" width="624">
 

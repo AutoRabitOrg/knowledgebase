@@ -41,9 +41,7 @@ NOTE:
 
     To resolve this issue, the admin must grant the sub-user access to the **"**&#x53;F ORG MGM&#x54;**"** page. This can be done by selecting the human icon in the screenshot below.
 
-<img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.22.29.png" alt="" data-size="original">
-
-<img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.20.41.png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.22.29.png" alt="" data-size="original"> <img src="../../../../.gitbook/assets/Screenshot 2026-02-04 at 14.20.41.png" alt="" data-size="original">
 
 1. Then, the sub-users can view the mapped Salesforce Orgs in the EZ Commit screen once the user is added.
 {% endhint %}

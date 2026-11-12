@@ -27,6 +27,16 @@ Component details are listed in their corresponding sections within this documen
 
 Resolution Transfer enables administrators to carry issue resolutions from an origin project or branch to a destination project or branch, avoiding repetitive manual updates when similar issues are analyzed in multiple locations.
 
+{% hint style="info" %}
+Exercise caution when transferring resolutions to the main branch of your project. Your main branch typically serves as the baseline for all other branches and quality gates. Transferring incorrect or outdated resolutions to it may affect issue visibility and quality reporting across your entire project.
+{% endhint %}
+
+{% hint style="info" %}
+Resolution Transfer assumes that the source and target projects contain the same codebase. Before proceeding, please verify that both projects share the same code. Transferring resolutions between projects with different codebases may result in mismatched or incorrectly applied issue statuses.&#x20;
+
+Please proceed with caution and review the results after transfer.
+{% endhint %}
+
 **Behavior**
 
 * Open Administration > Resolution Transfer. If no jobs exist, select Create Resolution Transfer; otherwise use New Transfer to add another configuration.

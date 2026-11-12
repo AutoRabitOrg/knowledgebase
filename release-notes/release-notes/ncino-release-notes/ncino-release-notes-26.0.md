@@ -2,6 +2,16 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino 26.4.6
+
+**Release date:** 8 November 2026
+
+#### Sorting for nCino Features and Versions
+
+Added sorting controls for nCino feature and version lists across CI Jobs and Feature Deployment workflows. Lists can be sorted by creation date and, where supported, alphabetically. Sorting is applied immediately while preserving searches, selections, and source configuration.
+
+***
+
 ## nCino 26.4.5
 
 **Release date:** 1 November 2026
@@ -281,7 +291,7 @@ Resolved an issue where scheduled nCino CI jobs using ECA (External Connected Ap
 
 Fixed an issue where the batch size field was auto-populated with zero by default. The batch size field will no longer be pre-filled with a value in all areas involving data migration.
 
-#### [nCino] Deployment Iteration – Step 5 Data Deployment DynamoDB Error
+#### \[nCino] Deployment Iteration – Step 5 Data Deployment DynamoDB Error
 
 Resolved a failure in **Step 5 – Data Deployment** during Feature Deployment using Deploy from Template Configuration. The deployment was failing with a DynamoDB error due to an empty attribute. Data Deployment now completes successfully without DynamoDB validation errors.
 

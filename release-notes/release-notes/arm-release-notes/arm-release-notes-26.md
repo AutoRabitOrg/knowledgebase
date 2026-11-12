@@ -92,6 +92,8 @@ When users click **Create Merge Request** without completing required fields, AR
 
 Additionally, ARM automatically populates the **Target Branch** based on the selected Source Branch's default configuration and provides meaningful tooltips when Merge Request creation is unavailable.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/ez-merge/merge-requests/required-field-validation-for-merge-request-creation-new-ui" %}
+
 #### Improved Required Field Validation for SFDX Package Version Creation (New UI) <a href="#improved-required-field-validation-for-sfdx-package-version-creation-new-ui" id="improved-required-field-validation-for-sfdx-package-version-creation-new-ui"></a>
 
 Enhanced the **Create Package Version** workflow with clear, user-friendly validation for mandatory fields.
@@ -100,6 +102,8 @@ When users click **Create** without completing required fields, ARM now highligh
 
 Additionally, meaningful tooltips explain why the **Create** button is unavailable, helping users complete package version creation more efficiently.
 
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/salesforce-dx/create-an-unlocked-managed-package/required-field-validation-for-sfdx-package-version-creation-new-ui" %}
+
 #### Improved Required Field Validation for Commit Label Creation (New UI) <a href="#improved-required-field-validation-for-commit-label-creation-new-ui" id="improved-required-field-validation-for-commit-label-creation-new-ui"></a>
 
 Enhanced the **Create Commit Label** workflow with clear, user-friendly validation for mandatory fields.
@@ -107,6 +111,8 @@ Enhanced the **Create Commit Label** workflow with clear, user-friendly validati
 When users click **Create** without completing required fields, ARM now highlights the missing information, displays inline error messages, and automatically navigates to the first invalid field.
 
 Additionally, meaningful tooltips explain why the **Create** button is unavailable, helping users create Commit Labels more efficiently.
+
+{% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/version-control/change-labels/commit-labels/required-field-validation-for-commit-label-creation-new-ui" %}
 
 #### Enhanced Deployment Component Audit Report for CI Jobs and Quick Deployments (New UI) <a href="#enhanced-deployment-component-audit-report-for-ci-jobs-and-quick-deployments-new-ui" id="enhanced-deployment-component-audit-report-for-ci-jobs-and-quick-deployments-new-ui"></a>
 

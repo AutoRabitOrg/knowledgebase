@@ -5,14 +5,14 @@ Activity & audit answers two questions: what did AI reviews cost and how long di
 Open it from **Workspaces** → **AI & Automation** → **Activity & audit** in the sidebar.
 
 {% hint style="info" %}
-AI is not licensed separately. It works only when AI is turned on for your workspace in [Usage & Budgets](/broken/pages/141b3a55abd504e600706ee949e0eb059a62bdde) and allowed by [AI Access](ai-access.md).
+AI is not licensed separately. It works only when AI is turned on for your workspace in [Usage & Budgets](usage-and-budgets.md) and allowed by [AI Access](ai-access.md).
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsai-activity-audit-overview.png" alt="Activity and audit page with AI review cost and timing"><figcaption><p>Activity &#x26; audit</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ai-activity.png" alt="Activity and audit page with AI review cost and timing"><figcaption></figcaption></figure>
 
-## AI review cost & timing
+## AI Review Cost & Timing
 
-This panel uses measured provider usage of AI reviews. Agent execution, storage and other cloud charges are not included. **Asset coverage & results** opens [AI Coverage & Findings](/broken/pages/88b3c1fbbe09ac8d1f8c3235b4cad076b2108233).
+This panel uses measured provider usage of AI reviews. Agent execution, storage and other cloud charges are not included. **Asset coverage & results** opens [AI Coverage & Findings](ai-coverage-and-findings.md).
 
 Choose the time range: **All agent review attempts**, **Last hour**, **Last 24 hours** or **Last 7 days**.
 
@@ -24,11 +24,11 @@ Choose the time range: **All agent review attempts**, **Last hour**, **Last 24 h
 
 The table breaks this down per **Asset type**: **Completed / attempts**, **Booked cost**, **Average completed review**, **Typical duration** and **90% finished within**. Durations exclude time waiting in the queue.
 
-### Estimate the next run
+### Estimate the Next Run
 
 Enter a number in **Estimate for** … **asset reviews** and pick an asset type, or **Observed asset mix**. **Estimated cost** multiplies the average completed review by that number. Platform reviews, retries, document size and caching change the actual result.
 
-## Action audit
+## Action Audit
 
 The audit lists each event with its **Action**, when it was **Recorded**, **Tokens booked / adjusted**, **USD booked / adjusted** and the **Feature** (with **Open review** for review events). A settlement row shows the adjustment to the original reservation, so it is often negative. The line above the table totals the net tokens and cost of the matching events.
 
@@ -42,9 +42,9 @@ The audit lists each event with its **Action**, when it was **Recorded**, **Toke
 | Time range                      | **Last 24 hours**, **Last 7 days**, **Last 30 days**, **This month (UTC)** (the default), **Custom range** or **All retained history**.                                          |
 | **Include events with no cost** | Also show events that booked nothing, such as agent steps, evidence reads and policy changes.                                                                                    |
 
-Use **Save filters** to keep a combination and pick it from **Saved filters**.
+Use **Save filters** to keep a combination and pick it from **Saved filters**. **Refresh** reloads the list, **Columns** chooses the visible columns and **Export this page** downloads the rows shown.
 
-### Open an event
+### Open an Event
 
 Click an action name. The drawer explains what happened and shows:
 
@@ -53,8 +53,8 @@ Click an action name. The drawer explains what happened and shows:
 * **Who and where**: who triggered it, the provider and the model.
 * **Identifiers for audit** and the **Full recorded payload**.
 
-## Next steps
+## Next Steps
 
-* [Usage & Budgets](/broken/pages/141b3a55abd504e600706ee949e0eb059a62bdde): change the budget or pricing behind these numbers.
-* [AI Coverage & Findings](/broken/pages/88b3c1fbbe09ac8d1f8c3235b4cad076b2108233): open the reviews these events belong to.
+* [Usage & Budgets](usage-and-budgets.md): change the budget or pricing behind these numbers.
+* [AI Coverage & Findings](ai-coverage-and-findings.md): open the reviews these events belong to.
 * [AI Access](ai-access.md): see access rule changes in context.

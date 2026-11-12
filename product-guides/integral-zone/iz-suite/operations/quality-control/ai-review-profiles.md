@@ -12,36 +12,46 @@ Reviews use the AI provider and the monthly budget configured in **AI & Automati
 You need a role that can view or run AI insights to see this tab. Creating and editing profiles needs a role that can manage them.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-ai-review-profiles-list.png" alt="AI review profiles tab with the list of review profiles"><figcaption><p>AI review profiles</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-ai-profiles.png" alt="AI review profiles tab with the list of review profiles"><figcaption></figcaption></figure>
 
-## How profiles combine
+## How Profiles Combine
 
 A review merges every enabled profile that matches the asset: the global profile first, then platform profiles, then asset-type profiles. When guidance conflicts, the more specific level wins. Missing evidence cannot be marked as passed.
 
 The line under the page title shows how many profiles are enabled and how many review questions they hold. **Usage & budgets** opens the AI usage and budget settings.
 
-## Review profiles
+## Review Profiles
+
+The tab has two views: **Review profiles** (with the number of profiles) and **Review questions & SDK**.
 
 | Control                                  | Description                                     |
 | ---------------------------------------- | ----------------------------------------------- |
 | **Search profiles, questions or assets** | Finds profiles by name, question or asset type. |
 | **Hide draft and inactive profiles**     | Shows enabled profiles only.                    |
 | **Refresh**                              | Reloads the list.                               |
+| **Columns**                              | Shows or hides columns.                         |
+| **Export**                               | Downloads the list.                             |
 
-| Column                       | Description                                                                                                                                                                                |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Profile & what it checks** | The profile name, the titles of its review questions, the question count and whether customer guidance is included. Click the name to see the profile and the latest reviews that used it. |
-| **Applies to**               | **Global · every asset**, the chosen platforms, or the chosen asset types.                                                                                                                 |
-| **Status**                   | **Enabled** or disabled.                                                                                                                                                                   |
-| **Actions**                  | **Edit profile**, and **Disable profile** or **Enable profile**.                                                                                                                           |
+| Column                       | Description                                                                                                                                                                                                                                                    |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Profile & what it checks** | The profile name, the titles of its review questions, the question count and whether customer guidance is included. Click the name to see the profile and the latest reviews that used it.                                                                     |
+| **Applies to**               | **Global · every asset**, the chosen platforms, or the chosen asset types.                                                                                                                                                                                     |
+| **Status**                   | **Enabled** or **Draft / inactive**. A warning such as **3 questions over the review limit** means that, together with the other enabled profiles for the same asset, a review would have more questions than the AI budget covers; the last ones are dropped. |
+| **Actions**                  | **Edit profile**, and **Disable profile** or **Enable profile**.                                                                                                                                                                                               |
 
-## Review questions & SDK
+## Review Questions & SDK
 
-**All AI review rules** lists every review question across all profiles. Each row shows the question, **Evidence & verification** (the evidence it needs and how the outcome is verified) and where it applies. **Edit profile** opens the profile that holds the question; when several profiles share it, choose the profile first.
+**All AI review rules** lists every review question across all profiles. Search with **Find a review question**; **Refresh**, **Columns** and **Export** work as on the profile list.
 
-Accepted AI suggestions appear here as disabled drafts until they are assigned and enabled. **AI suggestions & rule improvements** opens the suggestions in **AI & Automation**, and **Native quality rules** opens [Quality rules](quality-rules.md).
+| Column              | Description                                                                                                           |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Review rule**     | The question, with **Evidence & verification** (the evidence it needs and how the outcome is verified).               |
+| **Applies to**      | Where the question applies.                                                                                           |
+| **Edit in profile** | **Edit profile** opens the profile that holds the question; when several profiles share it, choose the profile first. |
 
-## Create an AI review profile
+Accepted AI suggestions appear here as disabled drafts until they are assigned and enabled. **AI suggestions & rule improvements** opens the suggestions in **AI & Automation**, and **Native quality rules** opens [Quality Rules](quality-rules.md).
+
+## Create an AI Review Profile
 
 1. Click **Create review profile**.
 2. Enter the **Profile name**. Required.
@@ -51,7 +61,7 @@ Accepted AI suggestions appear here as disabled drafts until they are assigned a
 6. Turn on **Enable this profile** when the profile should run.
 7. Click **Save review profile**.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-ai-review-profiles-form.png" alt="Create an AI review profile drawer with name, scope and guidance fields"><figcaption><p>Creating an AI review profile</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-ai-profile-form.png" alt="Create an AI review profile drawer with scope, guidance and a review question"><figcaption></figcaption></figure>
 
 | Field                                        | Description                                                                                                                                                                                                                                                                     |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -72,12 +82,12 @@ Enabled profiles send the matching assets' evidence, and their source when it is
 {% endhint %}
 
 {% hint style="info" %}
-The AI budget limits how many questions fit in one review, shared by every profile that applies to an asset. The form shows the limit under the questions; at most 40 questions are merged into one review. Raise the model calls per action in **Usage & budgets** for more.
+The AI budget limits how many questions fit in one review, shared by every profile that applies to an asset. The form shows the limit under the questions (for example **1 of 20 questions**); at most 40 questions are merged into one review. Raise the model calls per action in **Usage & budgets** for more.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Customer Requirements](customer-requirements.md): turn a customer's requirements into checks and AI questions.
+* [AI Coverage & Findings](../../workspaces/ai-and-automation/ai-coverage-and-findings.md): see the reviews that used your profiles.
 * [Quality Rules](quality-rules.md): review the native rules that AI reviews complement.
-* Usage & Budgets: set the provider and budget AI reviews use.
+* [Usage & Budgets](../../workspaces/ai-and-automation/usage-and-budgets.md): set the provider and budget AI reviews use.
 * [Quality Control](./): return to the Quality Control overview.

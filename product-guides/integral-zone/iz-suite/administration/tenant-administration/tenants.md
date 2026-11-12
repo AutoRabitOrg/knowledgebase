@@ -2,13 +2,13 @@
 
 **Tenants** lists every tenant of the installation. Platform administrators use it to change a tenant, hand settings over to it or keep them, and remove organizations or whole tenants.
 
-Open it from **Administration** → **Tenant Administration** → **Tenants** in the sidebar.
+Open it from **Administration** → **Tenant Administration** → **Tenants** in the sidebar. The **Tenants** and **Operations** tabs at the top of the page switch between the two screens.
 
 {% hint style="info" %}
 Available only to platform administrators in the platform tenant.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsta-tenants-directory.png" alt="Tenant directory with Tenant, Status, Contact, Created and Manage columns"><figcaption><p>The tenant directory</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ta-tenants.png" alt="Tenant directory with Tenant, Status, Contact, Created and Manage columns"><figcaption><p>The tenant directory</p></figcaption></figure>
 
 ## Page Actions
 
@@ -45,7 +45,7 @@ Click a tenant's name, or its **Manage** icon. The tenant drawer shows:
 | **Operational evidence** | Recorded counts for the tenant, the same figures as on [Operations](operations.md#tenant-health): **Organizations**, **Connections (stalled)**, **Governance events**, **Open remediation**, **Jobs failed / completed**, **Pipeline error rate (7 days)** and **Last pipeline run**. |
 | **Record identity**      | The tenant's internal identifier, for support requests.                                                                                                                                                                                                                               |
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsta-tenants-tenant-drawer.png" alt="Tenant drawer with details, operational evidence and the tenant actions"><figcaption><p>A tenant's drawer</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ta-tenant-drawer.png" alt="Tenant drawer with details, operational evidence and the tenant actions"><figcaption><p>A tenant's drawer</p></figcaption></figure>
 
 The actions under the drawer are:
 
@@ -102,7 +102,7 @@ Do not use these reserved words as a slug, because the sign-in page does not tre
 
 Some global settings hold secrets or values you may want to run on the tenant's behalf, such as AI provider keys or report storage. **Managed Settings** decides, per tenant and per setting, who supplies the values.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsta-tenants-managed-settings.png" alt="Managed Settings drawer with AI Agent Settings and Reporting Config tenant managed and Email Settings managed by the platform"><figcaption><p>Managed settings of a tenant</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ta-managed-settings.png" alt="Managed Settings drawer with AI Agent Settings and Reporting Config tenant managed and Email Settings managed by the platform"><figcaption><p>Managed settings of a tenant</p></figcaption></figure>
 
 1. Open the tenant and click the shield icon. The drawer **Managed Settings - \<slug>** opens.
 2. For each setting, choose who manages it with the switch:
@@ -169,7 +169,7 @@ Deleting an organization is permanent. All of its data (environments, applicatio
 Deleting a tenant removes all of its data: users, roles, tokens, organizations, applications, scans, schedules, settings, licence and audit records, and the source files IZ Suite kept for it. Its sign-in address stops working. This cannot be undone. The licence key can then be used for another tenant. The platform tenant cannot be deleted.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Onboard a Tenant](onboard-a-tenant.md): provision a new tenant.
 * [Operations](operations.md): see which tenants need attention.

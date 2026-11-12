@@ -6,15 +6,15 @@ These are the pipeline steps that **Administration** → **Setup** → **Scan in
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetscicd-pipeline-examples-github.png" alt="Scan in your CI/CD pipeline drawer showing the generated GitHub Actions workflow"><figcaption><p>The GitHub Actions step in Setup</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-cicd-github.png" alt="Scan in your CI/CD pipeline drawer showing the generated GitHub Actions workflow"><figcaption></figcaption></figure>
 
-## Before you add a step
+## Before You Add a Step
 
 1. Create a token with the **Pipeline scanner** role and store it as a masked secret named `IZ_ACCESS_TOKEN` (in Jenkins, a **Secret text** credential with the ID `iz-access-token`). See [Pipeline Access Tokens](pipeline-access-tokens.md).
 2. Choose the application key. The Bitbucket, GitHub and GitLab steps use the repository name; replace it if you want another key.
 3. Decide whether a failed quality gate fails the build. In Setup, **Fail the build when the quality gate fails** adds the last line (`grep ...`) or, for Maven, `-DabortOnQualityGateFailure=true`. It is on by default.
 
-## Steps per platform
+## Steps per Platform
 
 Every step except Maven downloads the Linux scanner, runs it with its output in `iz-scan.log`, prints the log, and fails the step unless the log has `QUALITY GATE STATUS:: PASSED`. Checking the log also catches a scan that stopped with an error; `-abortOnQualityGateFailure true` is the alternative. See [Break the Build on a Quality Gate](break-the-build-on-a-quality-gate.md).
 
@@ -40,7 +40,7 @@ pipelines:
 ```
 {% endcode %}
 
-With **Scan pull requests instead of branches** turned on, Setup writes a `pull-requests` pipeline instead:
+With **Scan pull requests instead of branches** turned on (a Bitbucket-only switch; the other platforms pick pull request or branch automatically), Setup writes a `pull-requests` pipeline instead:
 
 {% code title="bitbucket-pipelines.yml" %}
 ```yaml
@@ -173,11 +173,11 @@ mvn -B -s iz-settings.xml com.integralzone.izsuite:iz-scan-cli:26.4.1:scan -Dser
 ```
 {% endcode %}
 
-The Maven goal fails the build by itself on a failed quality gate. See [Maven Plugin](maven-plugin.md).
+With `-DabortOnQualityGateFailure=true` (added when **Fail the build when the quality gate fails** is on), the Maven goal fails the build by itself on a failed quality gate. See [Maven Plugin](maven-plugin.md).
 {% endtab %}
 {% endtabs %}
 
-## Judge pull requests on new code
+## Judge Pull Requests on New Code
 
 The pull request steps above pass `-pullRequestId` only. IZ Suite then has no target branch to compare with, so the pull request is judged on all its findings, like a branch. To judge it on the code it changes, add `-pullRequestTargetBranch` with the branch it merges into, next to `-pullRequestId`:
 
@@ -196,13 +196,13 @@ if [ -n "$IZ_PR" ]; then SCM="-pullRequestId $IZ_PR -pullRequestTargetBranch $GI
 
 The target branch must have been scanned under the same application key. See [Pull Request Analysis](pull-request-analysis.md).
 
-## Other CI/CD platforms
+## Other CI/CD Platforms
 
-Any platform that can run a shell step works the same way: download the zip for the build machine's operating system, run the scanner with the options in [Command-Line Scanner](command-line-scanner.md#options), and check the log for `QUALITY GATE STATUS:: PASSED`.
+Any platform that can run a shell step works the same way: download the zip for the build machine's operating system, run the scanner with the options in [Command-Line Scanner](command-line-scanner.md), and check the log for `QUALITY GATE STATUS:: PASSED`.
 
-## Next steps
+## Next Steps
 
 * [Command-Line Scanner](command-line-scanner.md): every option the steps use.
 * [Pull Request Analysis](pull-request-analysis.md): how pull requests are judged.
 * [Break the Build on a Quality Gate](break-the-build-on-a-quality-gate.md): what makes the step fail.
-* [Setup](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/setup): generate the step with your own server address.
+* [Setup](../administration/setup.md): generate the step with your own server address.

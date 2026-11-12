@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Platform Analysis** → **Overview** in the si
 Requires the **Platform Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetspa-overview-workspace.png" alt="Platform Analysis Overview tab with filters, metric tiles and the platform posture banner"><figcaption><p>Platform Analysis overview</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-pa-overview.png" alt="Platform Analysis Overview tab with filters, metric tiles and the platform posture banner"><figcaption><p>Platform Analysis overview</p></figcaption></figure>
 
 ## Filters
 
@@ -21,7 +21,7 @@ Requires the **Platform Analysis** licence.
 | **Environment**     | One or more environments, or **Without an environment**.                                                              |
 | **Filters** panel   | **Severity**, **Category**, **Rule** and **Security standard**: keep applications with open findings that match.      |
 
-**All applications** at the top right opens the [Applications](applications.md) tab with the same scope. Saved filters and **Copy link** work as described in Workspaces.
+**All applications** at the top right opens the [Applications](applications.md) tab with the same scope. Saved filters and **Copy link** work as described in [Workspaces](../).
 
 ## Metric tiles
 
@@ -55,7 +55,7 @@ Every chart has **Show data table**.
 
 ## Applications to review first
 
-The applications to look at first: most high-severity occurrences, then a failed gate, then the most recorded findings.
+The applications to look at first: most high-severity occurrences, then a failed gate, then the most recorded findings. Columns chooses the columns shown and Export downloads the list.
 
 | Column                 | Description                              |
 | ---------------------- | ---------------------------------------- |
@@ -71,30 +71,14 @@ The applications to look at first: most high-severity occurrences, then a failed
 
 **Cross-platform · AI recommendations** lists recorded **Platform investigations**: shared risks and priorities that an AI review found across applications. Individual application reviews stay in each application's dossier.
 
-## Prepare an AI review
+## AI reviews
 
-**Prepare AI review** (bottom right of every Platform Analysis tab) opens the **AI review · connected evidence** drawer. It is shown only when your role can run AI reviews.
+AI reviews are requested for one application at a time, from the application's dossier. The review, its fix plan and your team's decisions are shown in the dossier's AI focus report tab. See [AI Focus Report](ai-focus-report.md).
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetspa-overview-ai-review.png" alt="AI review drawer listing recent reviews and the Prepare a decision review button"><figcaption><p>AI review · connected evidence</p></figcaption></figure>
-
-The drawer lists your recent reviews and their status. To prepare a new one:
-
-1. Click **Prepare a decision review**.
-2. In **Review scope**, choose what to review (for example **Application / version** or **Platform / connected portfolio**).
-3. Choose the **Evidence workspace** and the **Application or record**.
-4. Choose the **Review type**. **Review profiles applied** shows the AI review profiles that apply.
-5. Optionally, add **Additional review input**: what the review should check or know. Do not enter secrets.
-6. Click **Prepare evidence briefing**, or **Cancel** to close the form.
-
-Preparing a review only collects evidence inside IZ Suite. Nothing is sent to the AI provider until you approve the investigation on the next screen.
-
-{% hint style="info" %}
-Each AI review is charged to your AI budget. See AI & Automation.
-{% endhint %}
-
-## Next steps
+## Next Steps
 
 * [Applications](applications.md): open an application's dossier.
+* [AI Focus Report](ai-focus-report.md): request an AI review of one application and see what to fix first.
 * [Findings](findings.md): investigate the findings behind a failed gate.
-* AI Review Profiles: change what AI reviews check.
+* [AI Review Profiles](../../operations/quality-control/ai-review-profiles.md): change what AI reviews check.
 * [Platform Analysis](./): back to the workspace.

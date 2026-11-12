@@ -6,7 +6,7 @@ IZ Suite is available as an Amazon Machine Image (AMI) built on Debian and harde
 Prefer containers on your own host? See Server Installation for running IZ Suite with Docker or Docker Compose.
 {% endhint %}
 
-### How It Works
+## How It Works
 
 1. You launch an EC2 instance from the **IZ Suite CIS** AMI.
 2. The user data script writes your settings to `/etc/falcon-suite/config.env`.
@@ -18,7 +18,7 @@ Prefer containers on your own host? See Server Installation for running IZ Suite
 
 <figure><img src="../../../../.gitbook/assets/ec2_launch_instance.png" alt=""><figcaption></figcaption></figure>
 
-### Before You Begin
+## Before You Begin
 
 Make sure you have:
 
@@ -32,7 +32,7 @@ Make sure you have:
 The database must be reachable from the EC2 instance. With Amazon RDS, allow inbound PostgreSQL traffic (port `5432` by default) from the instance's security group.
 {% endhint %}
 
-### Step 1: Prepare the Database
+## Step 1: Prepare the Database
 
 1. Create an empty database for IZ Suite, for example `izsuite`.
 2. Create a database user that owns this database (or has full rights on it).
@@ -54,14 +54,14 @@ postgres://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<DB_NAME>
 If the password contains special characters such as `@`, `:`, `/` or `#`, URL-encode them. For example, `@` becomes `%40`.
 {% endhint %}
 
-### Step 2: Launch an Instance From the AMI
+## Step 2: Launch an Instance From the AMI
 
 1. In the AWS console, go to **EC2 → AMIs**.
 2. Select **IZ Suite CIS 1.x**, then choose **Launch instance from AMI**.
 3. Enter a name, choose an instance type, and select a key pair if you want SSH access.
 4. Under **Network settings**, choose the VPC and subnet that can reach your database.
 
-### Step 3: Allow Network Access
+## Step 3: Allow Network Access
 
 Create or choose a security group for the instance:
 
@@ -72,7 +72,7 @@ Create or choose a security group for the instance:
 | Outbound  | `5432` (or your DB port) | The database            | Server to database                                                              |
 | Outbound  | `443`                    | Internet                | Pull IZ Suite images from `public.ecr.aws`, and reach the platforms you analyse |
 
-### Step 4: Add the Configuration
+## Step 4: Add the Configuration
 
 Expand **Advanced details** and paste your configuration into **User data**.
 
@@ -111,7 +111,7 @@ CLOUD_WATCH_LOGS_GROUP=/izsuite/production
 User data is stored with the instance in plain text. Anyone who can view the instance's user data can read the database password in `DB_URL`. Limit who can view instance attributes in IAM, and use a database user that only has access to the IZ Suite database.
 {% endhint %}
 
-### Step 5 (Optional): Send Logs to CloudWatch
+## Step 5 (Optional): Send Logs to CloudWatch
 
 If you set `CLOUD_WATCH_LOGS_GROUP`, the instance needs permission to write logs:
 
@@ -123,7 +123,7 @@ If you set `CLOUD_WATCH_LOGS_GROUP`, the instance needs permission to write logs
 
 Logs then appear in the log group you named.
 
-### Step 6: Launch and Verify
+## Step 6: Launch and Verify
 
 1. Choose **Launch instance**.
 2. Wait a few minutes while the instance starts, pulls the images and prepares the database. The first start takes the longest.
@@ -143,7 +143,7 @@ curl --fail http://<SERVER_IP>/api/graphql/health
 A successful response means the server is up and connected to the database.
 {% endhint %}
 
-### Upgrade to a New Version
+## Upgrade to a New Version
 
 The configuration is applied each time the instance starts. To move to a new version:
 
@@ -156,7 +156,7 @@ The configuration is applied each time the instance starts. To move to a new ver
 Take a snapshot or backup of the database before upgrading. The new server version may update the database schema on first start.
 {% endhint %}
 
-### Troubleshooting
+## Troubleshooting
 
 | Symptom                                                    | What to check                                                                                                                                           |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -166,6 +166,6 @@ Take a snapshot or backup of the database before upgrading. The new server versi
 | The configuration didn't apply                             | Check `/etc/falcon-suite/config.env` on the instance, and review `/var/log/cloud-init-output.log` for errors from the user data script.                 |
 | No logs in CloudWatch                                      | The IAM role with **CloudWatchAgentServerPolicy** is attached to the instance, and `CLOUD_WATCH_LOGS_GROUP` is set.                                     |
 
-### Next Steps
+## Next Steps
 
 * Prerequisites: system and database requirements.

@@ -4,13 +4,13 @@ IZ Suite sends emails from templates: notifications, invitations, password reset
 
 Open it from **Administration** → **Global Settings** → **Email templates** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-email-templates-list.png" alt="Email templates list with category, events, source tag and Edit template"><figcaption><p>Email templates</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-email.png" alt="Email templates list with category, events, source tag and Edit template"><figcaption><p>Email templates</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view global settings to open this tab, and a role that can edit global settings to change a template. Without it, each template opens read-only with **View template**.
 {% endhint %}
 
-## Message templates
+## Message Templates
 
 Use **Search templates or events** to find a template by name, title or notification event. The source filter shows **All templates**, **Using default** or **Customized**, and the refresh button reloads the list.
 
@@ -24,7 +24,7 @@ Each template shows:
 | Source             | **Using default** or **Customized**.                                                                                                            |
 | **Edit template**  | Opens the template editor (**View template** for read-only roles).                                                                              |
 
-## Edit a template
+## Edit a Template
 
 1. Click **Edit template** on the template.
 2. Edit the HTML under **Email HTML**. Keep the variables the message needs.
@@ -43,7 +43,7 @@ Each template shows:
 
 Saving applies the template to this workspace only. Other workspaces keep their own settings.
 
-## Go back to the default
+## Go Back to the Default
 
 A customized template can switch back to the shared default and receive future default updates again.
 
@@ -55,8 +55,8 @@ A customized template can switch back to the shared default and receive future d
 This replaces your workspace's customization. The template's email events switch back to the shared default.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* Organization Subscriptions: choose who receives the notification emails.
+* [Organization Subscriptions](../../operations/notifications/organization-subscriptions.md): choose who receives the notification emails.
 * [Settings](settings.md): review the other workspace settings.
 * [Global Settings](./): the other configuration screens.

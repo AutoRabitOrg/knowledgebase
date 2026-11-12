@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Pull requests** in the s
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-pull-requests-list.png" alt="Pull requests tab with organization and state filters, three metric tiles and the pull request list"><figcaption><p>Pull requests</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-prs.png" alt="Pull requests tab with organization and state filters, three metric tiles and the pull request list"><figcaption><p>Pull requests</p></figcaption></figure>
 
 ## Filters
 
@@ -49,7 +49,7 @@ As the note under the list says, closed pull requests are kept for 30 days, and 
 
 ## Pull request dossier
 
-The dossier of a pull request has the same layout as a [branch dossier](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f#branch-dossier). Its subtitle shows the pull request number, source and target branches, state and commit. The **Posture & evidence** panel compares the pull request with its target branch, and **New code only** in its findings keeps only findings that are not open on the target branch.
+The dossier of a pull request has the same layout as a [branch dossier](branches-and-baselines.md). Its subtitle shows the pull request number, source and target branches, state and commit. The **Posture & evidence** panel compares the pull request with its target branch, and **New code only** in its findings keeps only findings that are not open on the target branch.
 
 ## Scan pull requests
 
@@ -64,7 +64,7 @@ Pull requests reach this list in two ways:
 ./iz-scan-cli-$IZ_CLI_VERSION-linux/bin/iz-scan-cli -serviceHost "https://izsuite.example.com" -authToken "$IZ_ACCESS_TOKEN" -applicationKey "orders-eapi" -source . -pullRequestId "$BITBUCKET_PR_ID" -pullRequestTargetBranch "$BITBUCKET_PR_DESTINATION_BRANCH" > iz-scan.log 2>&1 || true
 ```
 
-See [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f#scan-a-branch-from-your-pipeline) for the full pipeline step.
+See [Branches & Baselines](branches-and-baselines.md) for the full pipeline step.
 
 ## How a pull request is assessed
 
@@ -77,9 +77,9 @@ The target branch's latest scan is the pull request's baseline.
 Scan your main branches first, so pull requests are judged only on the code they change.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f): open the target branch's dossier.
+* [Branches & Baselines](branches-and-baselines.md): open the target branch's dossier.
 * [Findings](findings.md): investigate the findings a pull request introduced.
 * [Manage Scanning](manage-scanning.md): turn on pull-request scanning.
 * [Code Analysis](./): back to the workspace.

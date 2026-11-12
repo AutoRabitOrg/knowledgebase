@@ -8,17 +8,17 @@ Open it from **Operations** → **Quality Control** → **Security standards** i
 You need a role that can view quality rules. Adding and removing mappings needs a role that can edit quality rules.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-security-standards-list.png" alt="Security standards tab showing OWASP Top 10 2025 references and mapped rule counts"><figcaption><p>Security standards</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-security.png" alt="Security standards tab showing OWASP Top 10 2025 references and mapped rule counts"><figcaption></figcaption></figure>
 
-## Choose a standard
+## Choose a Standard
 
 | Filter                   | Description                                                                                                                                          |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Standard**             | **CWE**, **OWASP Top 10 2025**, **OWASP Top 10 2021 (earlier)**, **OWASP API Security Top 10 2023** or **AWS Foundational Security Best Practices**. |
 | **Status**               | **All references**, **Mapped to rules** or **Not mapped**.                                                                                           |
+| **Standard**             | **CWE**, **OWASP Top 10 2025**, **OWASP Top 10 2021 (earlier)**, **OWASP API Security Top 10 2023** or **AWS Foundational Security Best Practices**. |
 | **Search by id or name** | Finds a reference by its id or name, for example `CWE-89` or `injection`.                                                                            |
 
-**About this standard** opens the standard's own website. **Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the list.
+**About this standard** opens the standard's own website. **Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the list, **Columns** chooses the visible columns and **Export** downloads the list.
 
 Supplied mappings come with the rule packs. OWASP categories follow automatically from a mapped CWE.
 
@@ -30,7 +30,7 @@ Supplied mappings come with the rule packs. OWASP categories follow automaticall
 | **Name**         | The reference name and a short description. Click it to open the rules that detect it.         |
 | **Mapped rules** | How many rules detect the reference. Click it to open the rules.                               |
 
-## Rules that detect a reference
+## Rules That Detect a Reference
 
 Click a reference's name or mapped rule count to open it. The drawer shows the standard, the reference and its mapped rule count, then **Rules that detect this**:
 
@@ -42,7 +42,7 @@ Click a reference's name or mapped rule count to open it. The drawer shows the s
 
 Supplied and derived mappings are locked. **Remove mapping** removes a mapping that was added in Quality Control.
 
-## Map rules to a reference
+## Map Rules to a Reference
 
 1. Click the reference's name.
 2. Under **Add rules**, search for rules by name or id and select one or more.
@@ -50,7 +50,7 @@ Supplied and derived mappings are locked. **Remove mapping** removes a mapping t
 
 A CWE added this way also maps the rule to the OWASP categories that follow from it. You can also map a rule to references from the rule itself, in its **Security standards** field.
 
-## Next steps
+## Next Steps
 
 * [Quality Rules](quality-rules.md): open a rule and edit its security standards.
 * [Quality Profiles](quality-profiles.md): make sure the rules that detect a weakness are active.

@@ -4,9 +4,9 @@
 
 Open it from **Operations** → **Notifications** → **My updates** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsnotifications-my-updates-list.png" alt="My updates tab with filters and the list of updates"><figcaption><p>My updates</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-notif-updates.png" alt="My updates tab with filters and the list of updates"><figcaption></figcaption></figure>
 
-## Filter updates
+## Filter Updates
 
 | Filter             | Description                                                        |
 | ------------------ | ------------------------------------------------------------------ |
@@ -23,7 +23,7 @@ Each update shows its title, description and date, with its severity (**Info**, 
 
 When the list is empty, **Review subscriptions** opens [My subscriptions](my-subscriptions.md) so you can follow the organizations, status pages and events relevant to your work.
 
-## Dismiss your updates
+## Dismiss Your Updates
 
 1. Click **Dismiss my updates**.
 2. Confirm with **Dismiss my updates**.
@@ -32,7 +32,7 @@ Dismissing applies to all of your own subscription updates, across all pages and
 
 **Manage my subscriptions** opens [My subscriptions](my-subscriptions.md).
 
-## Next steps
+## Next Steps
 
 * [My Subscriptions](my-subscriptions.md): change which updates reach you.
 * [Delivery Log](delivery-log.md): check whether an update was delivered.

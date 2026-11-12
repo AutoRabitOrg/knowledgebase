@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Branches & baselines** i
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-branches-baselines-list.png" alt="Applications and versions table grouped by application with source, scope, quality gate and open findings"><figcaption><p>Branches and baselines</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-bb-list.png" alt="Applications and versions table grouped by application with source, scope, quality gate and open findings"><figcaption><p>Branches and baselines</p></figcaption></figure>
 
 ## Filters, tiles and charts
 
@@ -39,9 +39,9 @@ The baseline is the repository's default branch: the branch the repository list 
 
 ## Branch dossier
 
-Click a repository or branch name to open its dossier as a full page. **View in drawer**, **Copy dossier link** and **Back to workspace** sit at the top.
+Click a repository or branch name to open its dossier in a drawer; **Open full dossier** opens it as a full page. **View in drawer**, **Copy dossier link** and **Back to workspace** sit at the top of the full page.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-branches-baselines-dossier.png" alt="Repository branch dossier with branch picker, risk strip and panel tabs"><figcaption><p>Repository branch dossier</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-bb-dossier.png" alt="Repository branch dossier with branch picker, risk strip and panel tabs"><figcaption><p>Repository branch dossier</p></figcaption></figure>
 
 ### Header
 
@@ -59,7 +59,7 @@ The metric tiles show **Open finding occurrences**, **Critical + Blocker occurre
 
 | Panel                                         | Description                                                                                                                                                                                      |
 | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **AI focus report**                           | The latest AI review of this assessment, or how to request one.                                                                                                                                  |
+| **AI focus report**                           | The latest AI review of this assessment, or how to request one. See [AI Focus Report](ai-focus-report.md).                                                                                       |
 | **Posture & evidence**                        | The change decision against the baseline, why the gate failed, the findings that need a decision, where the findings are concentrated and the assessment surfaces.                               |
 | **Native findings** (**Findings** without AI) | The findings of this branch, as on the [Findings](findings.md) tab.                                                                                                                              |
 | **App Inventory**                             | The latest values the metric rules recorded.                                                                                                                                                     |
@@ -71,7 +71,7 @@ The metric tiles show **Open finding occurrences**, **Critical + Blocker occurre
 
 ### Management
 
-The **Management** panel works as for Platform Analysis applications, worded for branches: **Default branch**, **Request fresh evidence**, **Reports for this branch**, **Assessment settings** (**This branch** or **All branches and pull requests (application default)**) and **Update subscriptions**. Code Analysis adds:
+The **Management** panel works as for Platform Analysis applications, worded for branches: **Default branch**, **Request fresh evidence**, **Assessment settings** (**This branch** or **All branches and pull requests (application default)**) and **Update subscriptions**. Code Analysis adds:
 
 | Action                                          | Description                                                                                |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -107,7 +107,7 @@ grep -q "QUALITY GATE STATUS:: PASSED" iz-scan.log
 
 The last line fails the pipeline step when the quality gate did not pass. **Setup** → **Scan in your CI/CD pipeline** generates the complete step for Bitbucket Pipelines, GitHub Actions, GitLab CI, Jenkins and Maven; see Setup. The full list of CLI options is in the [CLI guide](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite-legacy/iz-scan/ci-cd-integration/using-iz-scan-cli).
 
-## Next steps
+## Next Steps
 
 * [Pull Requests](pull-requests.md): review the gate of each pull request.
 * [Findings](findings.md): investigate findings across branches.

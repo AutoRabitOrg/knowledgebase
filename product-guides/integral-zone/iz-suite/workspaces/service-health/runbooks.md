@@ -8,9 +8,9 @@ Open it from **Workspaces** → **Service Health** → **Runbooks** in the sideb
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-runbooks-list.png" alt="Runbooks list"><figcaption><p>Runbooks</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-runbooks.png" alt="Runbooks list"><figcaption><p>Runbooks</p></figcaption></figure>
 
-## Runbooks list
+## Runbooks List
 
 The list has a search box, **Refresh**, **Columns** and **Export**.
 
@@ -25,9 +25,9 @@ The list has a search box, **Refresh**, **Columns** and **Export**.
 A monitoring policy creates starter runbooks for the resource types it monitors. Edit them freely: the policy never overwrites or re-creates them.
 {% endhint %}
 
-## Create a runbook
+## Create a Runbook
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-runbooks-create.png" alt="Create response runbook form"><figcaption><p>Create response runbook</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-runbook-create.png" alt="Create response runbook form"><figcaption><p>Create response runbook</p></figcaption></figure>
 
 1. Click **Create runbook**.
 2. To reuse an existing procedure, search under **Start from a saved runbook** and click **Use saved procedure**. This creates an independent copy; the saved runbook is unchanged.
@@ -41,7 +41,7 @@ A monitoring policy creates starter runbooks for the resource types it monitors.
 | **External procedure link** | Optional `http` or `https` link to the procedure your team maintains.                                   |
 | **Response procedure**      | The procedure in Markdown: when to act, checks to perform, recovery steps, escalation and verification. |
 
-## Read a runbook
+## Read a Runbook
 
 Click **Read runbook** on a row. The drawer shows:
 
@@ -49,7 +49,7 @@ Click **Read runbook** on a row. The drawer shows:
 * **Response procedure**: the formatted procedure.
 * **Monitors using this procedure**: each linked monitor version and whether it is enabled. Click one to open it in [Monitors](monitors.md).
 
-## Link a runbook to a monitor
+## Link a Runbook to a Monitor
 
 Edit the monitor, expand **More details · version, system, visibility and runbook**, and choose the runbook in **Response runbook**. See [Monitors](monitors.md#create-an-http-monitor).
 
@@ -57,7 +57,7 @@ Edit the monitor, expand **More details · version, system, visibility and runbo
 A runbook that is still linked to monitors cannot be deleted, unless a monitoring policy created it. You need a role that can create monitors to create runbooks, a role that can edit monitors to edit them, and a role that can delete monitors to delete them.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Monitors](monitors.md): link the runbook to the monitors it covers.
 * [Maintenance Windows](maintenance-windows.md): plan the work a runbook describes.

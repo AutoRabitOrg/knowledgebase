@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Findings** in the sideba
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-findings-open.png" alt="Open findings grouped by rule with the New code only switch and table tools"><figcaption><p>Open findings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-findings-open.png" alt="Open findings grouped by rule with the New code only switch and table tools"><figcaption><p>Open findings</p></figcaption></figure>
 
 ## Filters and tiles
 
@@ -29,11 +29,11 @@ The filter bar has **Organization**, **Source** and **Asset type**; the **Filter
 | **Occurrences** | Open occurrences in the group. Sortable.                                                              |
 | **Assessed**    | When the assessment was recorded. Sortable.                                                           |
 
-Click **Inspect occurrences** on a group to list its occurrences (**Location**, **Application**, **Status on branch**, **Assessed**), and **Back to groups** to return. **Status on branch** is **New**, **Reopened**, **Already open**, or shows an exception request.
+Click **Inspect occurrences** on a group to list its occurrences (**Location**, **Application**, **Status on branch**, **Assessed**), and **Back to groups** to return. **Status on branch** is **New**, **Reopened**, **Already open**, or shows an exception request. Above the list, Refresh reloads it, Columns chooses the columns shown and Export this page downloads the current page.
 
 ## Finding detail
 
-Click **Read finding** to open the detail: severity and category, **What was found** (application, location, change), the affected code when the assessment retained the files, **How to fix**, **About the rule** with **Open this rule in Quality Control**, and **Technical details**. The layout is the same as in Platform Analysis.
+Click **Read finding** to open the detail: severity and category, **What was found** (application, location, change), the affected code when the assessment retained the files, **How to fix**, **About the rule** with **Open this rule in Quality Control**, and **Capture details**. The layout is the same as in Platform Analysis.
 
 ### Mark a finding as a false positive or accepted risk
 
@@ -47,7 +47,7 @@ Another person with edit access to the application decides the request. An appro
 
 ## Time to fix
 
-The **Time to fix** sub-tab estimates the work to fix the open findings: **By severity and category**, **By rule** (with **Per finding** effort and an **Auto-fix** tag) and **By application**. Choose a **Severity** to estimate only that severity. See Platform Analysis Findings for the columns.
+The **Time to fix** sub-tab estimates the work to fix the open findings: **By severity and category**, **By rule** (with **Per finding** effort and an **Auto-fix** tag) and **By application**. Select a severity in By severity and category to estimate only that severity. Findings under an approved exception are left out, and a day is 8 working hours. See [Platform Analysis Findings](../platform-analysis/findings.md) for the columns.
 
 ## Exceptions
 
@@ -57,9 +57,9 @@ The **Exceptions** sub-tab shows the **In force**, **Expire in 30 days**, **Laps
 Deciding or revoking an exception needs edit access to the application. The person who requested an exception cannot decide it.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f): open the dossier of an affected branch.
+* [Branches & Baselines](branches-and-baselines.md): open the dossier of an affected branch.
 * [Pull Requests](pull-requests.md): see the findings each pull request introduced.
-* Quality Rules: review the rules behind the findings.
+* [Quality Rules](../../operations/quality-control/quality-rules.md): review the rules behind the findings.
 * [Code Analysis](./): back to the workspace.

@@ -19,7 +19,7 @@ Have ready:
 
 ## Provision the Tenant
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsta-onboard-tenant-form.png" alt="Onboard Tenant drawer with Slug, Name, Admin Email, Temporary Admin Password, License Key, Contact Name and External Link fields"><figcaption><p>Onboard Tenant</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ta-onboard.png" alt="Onboard Tenant drawer with Slug, Name, Admin Email, Temporary Admin Password, License Key, Contact Name and External Link fields"><figcaption><p>Onboard Tenant</p></figcaption></figure>
 
 1. Click **Onboard Tenant**. The drawer **Onboard Tenant** opens.
 2. Fill in the fields.
@@ -78,8 +78,8 @@ If the administrator loses the temporary password, they can use **Forgot passwor
 5. Invite people in **Organizations** → **Users** and give them roles.
 6. Continue with **Setup**: agents, connected systems and schedules for what the tenant licensed.
 
-## Next steps
+## Next Steps
 
 * [Tenants](tenants.md): change the new tenant or the settings you manage for it.
 * [Operations](operations.md): check that the tenant's first jobs run.
-* [Setup](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/setup): the checklist the tenant administrator works through next.
+* [Setup](../setup.md): the checklist the tenant administrator works through next.

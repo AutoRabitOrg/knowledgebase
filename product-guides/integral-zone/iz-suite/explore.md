@@ -4,7 +4,7 @@ Explore shows what the suite does for you. Choose a role or a topic, then a job:
 
 Open it from **Explore** in the sidebar.
 
-<figure><img src="../../../.gitbook/assets/.gitbookassetsexplore-roles.png" alt="Explore page viewed by role, with the role buttons, the role brief and story cards"><figcaption><p>Explore, viewed by role</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v2-explore-roles.png" alt="Explore page viewed by role, with the role buttons, the role brief and story cards"><figcaption><p>Explore, viewed by role</p></figcaption></figure>
 
 ## Choose How to Browse
 
@@ -23,7 +23,7 @@ Explore remembers your place in this browser, and the page address keeps your ch
 | **Your data**   | Each screen reads your organization's records when you open it, with the time it was read (for example **Your data · as of 18:50**). A screen your account cannot open shows sample data and says why. Missing evidence is shown as missing. |
 | **Sample data** | A fictional company, Northwind Retail. It shows how each story works; none of it is your organization's data or a measured customer outcome. Previews are marked **Sample data — not your organization's**.                                  |
 
-Explore starts on **Your data** when you can open at least one workspace, and on **Sample data** otherwise. The **Sales & pre-sales** role always starts on sample data. You can switch at any time, also inside a story.
+Explore starts on **Your data** when you can open at least one workspace, and on **Sample data** otherwise. The **Sales & pre-sales** role always starts on sample data. You can switch at any time, also inside a story. When a preview has nothing to show on your data, click **See how it looks with sample data** on it.
 
 ## View by Role
 
@@ -55,7 +55,7 @@ Choose a topic: **Security**, **Compliance & audit**, **Change & release**, **Re
 
 ## Follow a Story
 
-<figure><img src="../../../.gitbook/assets/.gitbookassetsexplore-story.png" alt="A story drawer with its chapters, a chapter&#x27;s explanation and a live preview"><figcaption><p>A story, chapter by chapter</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v2-explore-story.png" alt="A story drawer with its chapters, a chapter&#x27;s explanation and a live preview"><figcaption><p>A story, chapter by chapter</p></figcaption></figure>
 
 1. Click **See how it works** on a card.
 2. Read the question the story answers and, under **Why track this**, the published references behind it (they open in a new tab).
@@ -70,7 +70,7 @@ Choose a topic: **Security**, **Compliance & audit**, **Change & release**, **Re
 
 The feature library lists every capability of the suite.
 
-<figure><img src="../../../.gitbook/assets/.gitbookassetsexplore-features.png" alt="Feature library with product area buttons, search and feature cards on sample data"><figcaption><p>The feature library</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/v2-explore-features.png" alt="Feature library with product area buttons, search and feature cards on sample data"><figcaption><p>The feature library</p></figcaption></figure>
 
 1. Choose a product area, or **All product areas**.
 2. Type in **Search by customer problem, platform or feature…** to narrow the list. The count beside it shows how many features match.
@@ -99,7 +99,7 @@ Customer use cases follow practical workflows across teams and platforms.
 5. Open **Measure value · KPIs and evidence** and **Limits and process responsibilities** for the measures and the limits of the workflow.
 6. Click **Adapt this use case with AI** to ask Ask AI to fit the use case to your estate.
 
-## Next steps
+## Next Steps
 
 * [Suite Home](suite-home.md): see the platform reports for your estate.
 * Navigating IZ Suite: page help and Ask AI on every page.

@@ -2,24 +2,26 @@
 
 Every modern page shares the same frame: the sidebar on the left and the top bar above the page. This page describes both.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetssuite-home-overview.png" alt="IZ Suite page with the sidebar, the breadcrumb and the top bar"><figcaption><p>The sidebar, breadcrumb and top bar</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-nav-shell.png" alt="IZ Suite page with the sidebar, the breadcrumb and the top bar"><figcaption><p>The sidebar, breadcrumb and top bar</p></figcaption></figure>
 
 ## Sidebar
 
 The sidebar lists only what your licences and roles allow.
 
-| Entry or group     | Contents                                                                                                                                                             |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Suite home**     | Platform reports and what to act on next. See Suite Home.                                                                                                            |
-| **Explore**        | What each part of the suite does, by role, topic, feature or customer use case. See Explore.                                                                         |
-| **Dashboards**     | Your dashboards, queries, scheduled reports and report history. See Dashboards.                                                                                      |
-| **Workspaces**     | **Platform Analysis**, **Code Analysis**, **Dependency Insights**, **Change Assurance**, **Service Health**, **Compliance** and **AI & Automation**. See Workspaces. |
-| **Operations**     | **Quality Control**, **Schedules** and **Notifications**. See Operations.                                                                                            |
-| **Administration** | **Setup**, **Organizations**, **System Activity**, **Global Settings** and **My Account**. See Administration.                                                       |
+| Entry or group     | Contents                                                                                                                                                                               |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Suite home**     | Platform reports and what to act on next. See [Suite Home](../suite-home.md).                                                                                                          |
+| **Explore**        | What each part of the suite does, by role, topic, feature or customer use case. See [Explore](../explore.md).                                                                          |
+| **Dashboards**     | Your dashboards, queries, scheduled reports and report history. See [Dashboards](../dashboards/).                                                                                      |
+| **Findings**       | Open findings across Platform Analysis and Code Analysis. See [Findings](../findings.md).                                                                                              |
+| **Assigned work**  | Upgrade, maintenance and review work assigned to people, and your remediation tasks. See [Assigned Work](../assigned-work.md).                                                         |
+| **Workspaces**     | **Platform Analysis**, **Code Analysis**, **Dependency Insights**, **Change Assurance**, **Service Health**, **Compliance** and **AI & Automation**. See [Workspaces](../workspaces/). |
+| **Operations**     | **Quality Control**, **Schedules** and **Notifications**. See [Operations](../operations/).                                                                                            |
+| **Administration** | **Setup**, **Organizations**, **System Activity**, **Global Settings** and **My Account**. See [Administration](../administration/).                                                   |
 
 Click a group name to expand or collapse it. When you open a workspace or area, its own sections appear at the bottom of the sidebar under its name (for example **Your dashboards**, **Query**, **Scheduled reports** and **Report history** under **Dashboards**). The section you are on is highlighted.
 
-Click the **IZ Suite** logo to go back to Suite home.
+Click the **IZ Suite** logo, or **Explore IZ Suite** at the bottom of the sidebar, to go back to Suite home.
 
 ## Breadcrumb and Favourites
 
@@ -36,7 +38,7 @@ To add a favourite:
 
 To remove a page from your favourites, click its filled star. You can keep up to 20 favourites.
 
-To open a favourite, click the star button in the top bar (**Favourites** with the number you have). The **Favourites** drawer lists them all; the one you use as your home page is tagged **Home page**. Click **Rename, reorder or remove favourites** to manage them in My Preferences.
+To open a favourite, click the star button in the top bar (**Favourites** with the number you have). The **Favourites** drawer lists them all; the one you use as your home page is tagged **Home page**. Click **Rename, reorder or remove favourites** to manage them in [My Preferences](../administration/my-account/my-preferences.md).
 
 ## Top Bar
 
@@ -52,7 +54,7 @@ To open a favourite, click the star button in the top bar (**Favourites** with t
 
 ### Search or Jump
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsnavigating-iz-suite-search.png" alt="Where would you like to go dialog listing pages"><figcaption><p>Search or jump to a page</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-nav-search.png" alt="Where would you like to go dialog listing pages"><figcaption><p>Search or jump to a page</p></figcaption></figure>
 
 1. Click **Search or jump**, or press ⌘ K (Mac) or Ctrl K (Windows).
 2. Type part of a page name, task or customer problem in **Search pages, settings or features…**.
@@ -67,7 +69,7 @@ Click **?** in the top bar to open **Help with this page**. For each feature on 
 * Click **Walk through this feature** for a step-by-step walkthrough.
 * Click **Guide me through setup** to follow the setup steps. While a setup guide is in progress, a bar at the bottom of the screen offers **Resume guide** and **Dismiss**.
 * Choose another guide in **Browse another feature…**.
-* Click **Explore all features and use cases** to open the feature library in Explore.
+* Click **Explore all features and use cases** to open the feature library in [Explore](../explore.md).
 
 ### Ask AI
 
@@ -91,37 +93,37 @@ Click **Legacy** to open the classic interface, and **Modern** to come back. IZ 
 
 Click the bell to open the **Notifications** drawer.
 
-| Control                  | What it does                                                           |
-| ------------------------ | ---------------------------------------------------------------------- |
-| **Unread** / **All**     | Shows only unread notifications, or all of them.                       |
-| Type                     | **All types**, **Errors**, **Warnings** or **Info**.                   |
-| **Mark all read**        | Marks every unread notification as read.                               |
-| **Mark read**            | Marks one notification as read.                                        |
-| Notification title       | Opens the record the notification is about, or expands its details.    |
-| **Open My updates**      | Opens My Updates.                                                      |
-| **Manage subscriptions** | Opens My Subscriptions.                                                |
-| **Delivery log**         | Opens the Delivery Log. Shown when your role can view global settings. |
+| Control                  | What it does                                                                                                          |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| **Unread** / **All**     | Shows only unread notifications, or all of them.                                                                      |
+| Type                     | **All types**, **Errors**, **Warnings** or **Info**.                                                                  |
+| **Mark all read**        | Marks every unread notification as read.                                                                              |
+| **Mark read**            | Marks one notification as read.                                                                                       |
+| Notification title       | Opens the record the notification is about, or expands its details.                                                   |
+| **Open My updates**      | Opens [My Updates](../operations/notifications/my-updates.md).                                                        |
+| **Manage subscriptions** | Opens [My Subscriptions](../operations/notifications/my-subscriptions.md).                                            |
+| **Delivery log**         | Opens the [Delivery Log](../operations/notifications/delivery-log.md). Shown when your role can view global settings. |
 
 ### Account Menu
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsnavigating-iz-suite-account-menu.png" alt="Account menu open with My account, My preferences, My updates and Sign out"><figcaption><p>The account menu</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-nav-account.png" alt="Account menu open with My account, My preferences, My updates and Sign out"><figcaption><p>The account menu</p></figcaption></figure>
 
 Click your name in the top bar. The menu shows your picture, name and email, and these entries:
 
-| Entry              | Opens                                                                        |
-| ------------------ | ---------------------------------------------------------------------------- |
-| **My account**     | My Account: your profile, security credentials, IDE projects and activity.   |
-| **My preferences** | My Preferences: picture, availability, home page, favourites and appearance. |
-| **My updates**     | My Updates.                                                                  |
-| **Sign out**       | Ends your session.                                                           |
+| Entry              | Opens                                                                                                                          |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| **My account**     | [My Account](../administration/my-account/): your profile, security credentials, IDE projects and activity.                    |
+| **My preferences** | [My Preferences](../administration/my-account/my-preferences.md): picture, availability, home page, favourites and appearance. |
+| **My updates**     | [My Updates](../operations/notifications/my-updates.md).                                                                       |
+| **Sign out**       | Ends your session.                                                                                                             |
 
 ## Licence Messages
 
 When the workspace licence is about to expire, has expired, or a licensed allowance reaches 90%, a banner at the top of the page says so. Click **View license details** if you can see them; otherwise contact your administrator.
 
-## Next steps
+## Next Steps
 
-* Suite Home: read the platform reports.
-* Explore: see what each part of the suite does for your role.
-* My Preferences: set your home page and manage favourites.
+* [Suite Home](../suite-home.md): read the platform reports.
+* [Explore](../explore.md): see what each part of the suite does for your role.
+* [My Preferences](../administration/my-account/my-preferences.md): set your home page and manage favourites.
 * [Getting Started](./): back to the overview.

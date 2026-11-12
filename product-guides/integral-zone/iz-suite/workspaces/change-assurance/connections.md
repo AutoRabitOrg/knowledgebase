@@ -2,7 +2,7 @@
 
 Connections are how Change Assurance learns about change. Each connection reads one source system (a source-control workspace, a cloud account, an integration platform, a ticket tracker) on a schedule and records its assets and events.
 
-Open it from **Workspaces** → **Change Assurance** → **Connections** in the sidebar, then pick a tab in the switcher.
+Open it from **Workspaces** → **Change Assurance** → **Connections** in the sidebar, or with **Connections** at the top right of the Change Assurance stages. **Back to Overview** returns to the Change Assurance overview; the switcher next to it opens **Connections** and **Collection coverage**.
 
 {% hint style="info" %}
 Requires the **Change Assurance** licence. **Connections** needs a role that can view connections; **Collection coverage** needs a role that can view the Change Assurance dashboard.
@@ -10,9 +10,9 @@ Requires the **Change Assurance** licence. **Connections** needs a role that can
 
 ## Connections
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsca-connections-list.png" alt="Connections list with health tiles"><figcaption><p>Connections</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ca-connections-list (1).png" alt="Connections list with health tiles"><figcaption></figcaption></figure>
 
-Filters: **CONNECTOR** and **STATUS**.
+Filters: **CONNECTOR** and **STATUS**. **Save filters** keeps the current filters under a name; **Saved filters** brings them back.
 
 | Tile                                  | Description                                                                           |
 | ------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -25,17 +25,17 @@ Filters: **CONNECTOR** and **STATUS**.
 
 Columns: **Connection** (name, connector and address), **Status**, **Schedule**, **Last success**, **Assets**, **Events (7d)** and **Sync**. The **Sync** column pauses or resumes a connection's sync.
 
-**Export** and **Import** download and load connection configurations.
+**Import** loads connection configurations from a JSON file; credentials are not imported, so edit each imported connection to enter them before it syncs. **Export** above the table downloads the list.
 
 {% hint style="info" %}
-A reported status is not proof of complete or continuous collection. Check [Collection coverage](connections.md#collection-coverage) for what each connection substantiates.
+A reported status is not proof of complete or continuous collection. Check **Collection Coverage** below for what each connection substantiates.
 {% endhint %}
 
-### Connection details
+### Connection Details
 
 Select a connection to open its details.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsca-connections-detail.png" alt="Connection details drawer"><figcaption><p>Connection details</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ca-connections-detail.png" alt="Connection details drawer"><figcaption></figcaption></figure>
 
 The details show **Connector**, **Points at**, **Schedule**, **Last successful sync**, **Last attempt**, **Assets contributed**, **Events, last 7 days** and **Sync job**.
 
@@ -55,13 +55,13 @@ The details show **Connector**, **Points at**, **Schedule**, **Last successful s
 Deleting a connection cannot be undone.
 {% endhint %}
 
-### Add a connection
+### Add a Connection
 
 {% hint style="warning" %}
 You need a role that can manage connections.
 {% endhint %}
 
-1. Click **Add connection**.
+1. Click **Add connection**. The steps open on their own page; **Cancel** leaves without creating anything.
 2. **Choose connector**: select the system to bring into assurance and click **Continue**.
 3. **Connection details**: enter the address and credentials, or sign in for connectors that use OAuth.
 4. **Collection settings**: choose what to collect and how often.
@@ -81,7 +81,7 @@ You need a role that can manage connections.
 | **MuleSoft Anypoint Platform** | API management, specs and contracts, runtime deployments and access management.                                                                 |
 | **Salesforce**                 | Change, security configuration, integration surface and Agentforce metadata activity.                                                           |
 
-### Jira release timing
+### Jira Release Timing
 
 A Jira connection can record when versions are released. Its settings include **Capture issue release membership history** and **Receive signed Jira release actions**.
 
@@ -99,14 +99,14 @@ Never put the signing secret in the URL. Rotating the secret stops the existing 
 
 Only deliveries received after setup are recorded; missed or earlier release actions stay unknown.
 
-## Collection coverage
+## Collection Coverage
 
 Which connection substantiates which assets. The page reads stored data live; that does not mean the source systems are streaming. It uses the selected organization, not the platform or activity-window filters.
 
-**Collection status** lists **Connection**, **Organization**, **Reported status**, **Last successful collection**, **Assets substantiated**, **Sole source for** and **Relationships**. The **This IZ Suite** row is built in: it reads the applications IZ Suite already holds, in every organization. Connection timestamps are watermarks, not a completeness guarantee. **Manage connections** opens the **Connections** tab.
+**Collection status** lists **Connection**, **Organization**, **Reported status**, **Last successful collection**, **Assets substantiated**, **Sole source for** and **Relationships**. The **This IZ Suite** row is built in: it reads the applications IZ Suite already holds, in every organization. Connection timestamps are watermarks, not a completeness guarantee. **Manage connections** opens the **Connections** tab. **Refresh evidence** reloads the view and **Export this view** downloads it.
 
-## Next steps
+## Next Steps
 
-* [Inventory](inventory.md): the assets your connections found.
+* [Detect](detect.md): the changes your connections recorded.
 * [Policy](policy.md): set each connection's lifecycle role.
-* [Change Assurance](./): how the areas fit together.
+* [Change Assurance](./): how the stages fit together.

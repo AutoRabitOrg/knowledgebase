@@ -5,35 +5,35 @@ This screen lists every asset you can see with its AI review status, and gathers
 Open it from **Workspaces** → **AI & Automation** → **AI coverage & findings** in the sidebar.
 
 {% hint style="info" %}
-AI is not licensed separately. It works only when AI is turned on for your workspace in [Usage & Budgets](/broken/pages/141b3a55abd504e600706ee949e0eb059a62bdde) and allowed by [AI Access](ai-access.md). The bar under the heading shows the AI provider and model in use, with a link to **Usage & budgets**. When AI is off, evidence briefings are still available.
+AI is not licensed separately. It works only when AI is turned on for your workspace in [Usage & Budgets](usage-and-budgets.md) and allowed by [AI Access](ai-access.md). The bar under the heading shows the AI provider and model in use, with a link to **Usage & budgets**. When AI is off, evidence briefings are still available.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsai-ai-coverage-findings-overview.png" alt="AI coverage and findings with asset counts, filters and tabs"><figcaption><p>AI coverage &#x26; findings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ai-coverage.png" alt="AI coverage and findings with asset counts, filters and tabs"><figcaption></figcaption></figure>
 
-## Summary and filters
+## Summary and Filters
 
-The **AI coverage & findings** panel counts **visible assets**, **current assessments reviewed**, reviews **queued / running** and assets **with captured evidence**. **All AI review rules** opens AI Review Profiles.
+The **AI coverage & findings** panel counts **visible assets**, **current assessments reviewed**, reviews **queued / running** and assets **with captured evidence**. **All AI review rules** opens [AI Review Profiles](../../operations/quality-control/ai-review-profiles.md).
 
-| Filter               | Options                                                                                                                                                                                                                                |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Platform**         | **All platforms**, **AWS**, **MuleSoft**, **Azure**, **Other**.                                                                                                                                                                        |
-| **AI review status** | **All statuses**, or one status with its count, such as **Reviewed current assessment**, **Not reviewed**, **Needs captured evidence**, **Review is out of date**, **Queued**, **Agent reviewing**, **Failed** or **Budget deferred**. |
+| Filter               | Options                                                                                                                                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Platform**         | **All platforms**, **AWS**, **MuleSoft**, **Azure**, **Other**.                                                                                                                                                                                                     |
+| **AI review status** | **All statuses**, or one status with its count, such as **Reviewed current assessment**, **Not reviewed**, **Needs captured evidence**, **Review is out of date**, **Queued**, **Agent reviewing**, **Failed**, **Budget deferred** or **Needs native assessment**. |
 
 ## Tabs
 
-| Tab                       | What it shows                                                                                                                                                                                                                                                                                                             |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Asset coverage**        | **Every asset and its AI status**: search by application name or asset type, then read each asset's **AI status** and **Latest completed result** (recommendations, additional concerns and possible false positives). **Open dossier** opens the asset; **Read AI review** or **Read older AI review** opens the result. |
-| **Cross-asset findings**  | Platform and cross-platform investigations, with how many assets were in scope and inspected. **Review shared findings** opens one.                                                                                                                                                                                       |
-| **Rule opportunities**    | Suggested AI review questions, native rule proposals and improvements, and possible false positives. Filter by **Type**, open a suggestion to read why and how to validate it, then **Open review**. No rule changes automatically.                                                                                       |
-| **Relationship insights** | Links between applications that AI investigated: proposed additional links and interpretations of existing ones, each with a next action.                                                                                                                                                                                 |
-| **Recurring concerns**    | The same native rule raised across several reviewed applications, with links to each review.                                                                                                                                                                                                                              |
+| Tab                       | What it shows                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Asset coverage**        | **Every asset and its AI status**: search by application name or asset type (**Refresh**, **Columns** and **Export this page** sit next to the search), then read each asset's **AI status** and **Latest completed result** (recommendations, additional concerns and possible false positives). **Open dossier** opens the asset; **Read AI review** or **Read older AI review** opens the result. |
+| **Cross-asset findings**  | Platform and cross-platform investigations, with how many assets were in scope and inspected. **Review shared findings** opens one.                                                                                                                                                                                                                                                                  |
+| **Rule opportunities**    | Suggested AI review questions, native rule proposals and improvements, and possible false positives. Filter by **Type**, open a suggestion to read why and how to validate it, then **Open review**. No rule changes automatically.                                                                                                                                                                  |
+| **Relationship insights** | Links between applications that AI investigated: proposed additional links and interpretations of existing ones, each with a next action.                                                                                                                                                                                                                                                            |
+| **Recurring concerns**    | The same native rule raised across several reviewed applications, with links to each review.                                                                                                                                                                                                                                                                                                         |
 
 Below the tabs, **Your recent review history** lists the reviews you prepared, with their status.
 
-## Prepare a review on request
+## Prepare a Review on Request
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsai-ai-coverage-findings-prepare.png" alt="Prepare a decision review drawer"><figcaption><p>Prepare a decision review</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ai-prepare.png" alt="Prepare a decision review drawer"><figcaption></figcaption></figure>
 
 1. Click **Prepare a decision review**.
 2. Fill in the fields below.
@@ -54,9 +54,9 @@ Below the tabs, **Your recent review history** lists the reviews you prepared, w
 Known credential fields are redacted before evidence is sent, but redaction cannot guarantee that every embedded secret is found. Inspect the evidence packet before you approve.
 {% endhint %}
 
-## Read a review
+## Read a Review
 
-A review has these tabs. A review of an application's assessment opens on **Recommendations** and does not show **Decision briefing**.
+A review has these tabs. A review of an application's assessment does not show **Decision briefing**.
 
 | Tab                                              | Content                                                                                                                                          |
 | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -73,8 +73,8 @@ A review has these tabs. A review of an application's assessment opens on **Reco
 You need a role that can run AI insights to prepare and start reviews. Review conclusions are advisory: they do not change recorded verdicts, and a review decision does not suppress a finding or approve a change.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Usage & Budgets](/broken/pages/141b3a55abd504e600706ee949e0eb059a62bdde): check the provider, model and remaining budget.
-* [Activity & Audit](/broken/pages/6a2d3b57339dcbc799144069be89012749b500e0): see what each review cost.
+* [Usage & Budgets](usage-and-budgets.md): check the provider, model and remaining budget.
+* [Activity & Audit](activity-and-audit.md): see what each review cost.
 * [AI Access](ai-access.md): control which applications AI may review.

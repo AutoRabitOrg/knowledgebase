@@ -4,7 +4,7 @@ Every finding comes from one rule, and every rule carries two labels that the fi
 
 You see each rule's severity and category in **Operations** → **Quality Control** → **Quality rules**, where both are also filters.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-severities-categories-filter.png" alt="Quality rules tab with the Severity filter open listing the five severities"><figcaption><p>Filtering rules by severity</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-severity-filter.png" alt="Quality rules tab with the Severity filter open listing the five severities"><figcaption></figcaption></figure>
 
 ## Severities
 
@@ -16,7 +16,7 @@ You see each rule's severity and category in **Operations** → **Quality Contro
 | **Minor**    | A low-impact issue or a gap against good practice.                                                                                                              |
 | **Info**     | Guidance on naming, documentation or inventory. It is not a defect.                                                                                             |
 
-Workspaces group **Blocker** and **Critical** together as **Critical + Blocker**, for example in the findings severity filter and in the **Time to fix** effort to fix first (see [Platform Analysis Findings](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/platform-analysis/findings#time-to-fix)).
+Workspaces group **Blocker** and **Critical** together as **Critical + Blocker**, for example in the findings severity filter and in the **Time to fix** effort to fix first (see **Time to Fix** in [Platform Analysis Findings](../../workspaces/platform-analysis/findings.md)).
 
 ## Categories
 
@@ -29,7 +29,7 @@ Workspaces group **Blocker** and **Critical** together as **Critical + Blocker**
 
 Filters and rule forms use the singular names; finding tables and tiles show the plurals (**Vulnerabilities**, **Bugs**, **Security hotspots**, **Code smells**).
 
-## How severities drive quality gates
+## How Severities Drive Quality Gates
 
 Each technology's assessment counts the findings by severity and category into measured values that quality gate conditions can check:
 
@@ -44,25 +44,25 @@ When IZ Suite judges a gate:
 * The severity counts are taken from the application's open findings. Findings under an approved, unexpired exception do not count.
 * Branches and versions are judged on the **Overall code** conditions, counting every open finding. A finding counts until it is fixed, so a gate does not turn green from a rescan alone.
 * Pull requests are judged on the **New code** conditions, which use the severity counts of the findings the change introduced.
-* The other counts, such as the category totals, are measured values: they can only be checked when the technology's [metric profile](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/metric-profiles) includes them.
+* The other counts, such as the category totals, are measured values: they can only be checked when the technology's [metric profile](metric-profiles.md) includes them.
 
-The supplied gates require no **Blocker**, **Critical** or **Major** issues and allow a limited number of **Minor** and **Info** issues. The limits differ by technology; open the gate in [Quality Gates](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-gates) to see them.
+The supplied gates require no **Blocker**, **Critical** or **Major** issues and allow a limited number of **Minor** and **Info** issues. The limits differ by technology; open the gate in [Quality Gates](quality-gates.md) to see them.
 
 A common setup fails the gate on any Blocker or Critical issue, or on any vulnerability, and tracks the rest as a trend. In a pipeline, the Maven plugin stops the build when the gate fails if you pass `-DabortOnQualityGateFailure=true`.
 
-## If you rate a rule differently
+## If You Rate a Rule Differently
 
 The supplied severities and categories are defaults; your risk policy can differ.
 
-* **Change the severity or category**: clone the supplied rule, change the copy's **Severity** or **Category**, activate the copy in your quality profiles and disable the original there. See [Writing Custom Rules](writing-custom-rules.md#clone-a-supplied-rule).
-* **Stop reporting a rule**: disable it in your quality profile. See [Quality Profiles](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-profiles#review-the-rules-in-a-profile).
-* **Accept a single finding**: mark it as a false positive or accepted risk, so once approved it no longer counts against the gate. See [Platform Analysis Findings](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/platform-analysis/findings#mark-a-finding-as-a-false-positive-or-accepted-risk).
+* **Change the severity or category**: clone the supplied rule, change the copy's **Severity** or **Category**, activate the copy in your quality profiles and disable the original there. See [Writing Custom Rules](writing-custom-rules.md).
+* **Stop reporting a rule**: disable it in your quality profile. See **Review the Rules in a Profile** in [Quality Profiles](quality-profiles.md).
+* **Accept a single finding**: mark it as a false positive or accepted risk, so once approved it no longer counts against the gate. See **Mark a Finding as a False Positive or Accepted Risk** in [Platform Analysis Findings](../../workspaces/platform-analysis/findings.md).
 
 A change to a rule applies to the findings raised by later assessments.
 
-## Next steps
+## Next Steps
 
-* [Quality Gates](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-gates): set the severity limits each technology must meet.
-* [Quality Rules](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-rules): filter rules by severity and category.
+* [Quality Gates](quality-gates.md): set the severity limits each technology must meet.
+* [Quality Rules](quality-rules.md): filter rules by severity and category.
 * [Writing Custom Rules](writing-custom-rules.md): create a rule with your own severity and category.
-* [Quality Control](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control): return to the Quality Control overview.
+* [Quality Control](./): return to the Quality Control overview.

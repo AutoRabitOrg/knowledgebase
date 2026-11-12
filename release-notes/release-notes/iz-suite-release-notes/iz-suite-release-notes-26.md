@@ -2,7 +2,7 @@
 
 ## IZ Suite 26.4.2
 
-**Release date:** 4 November 2026
+**Release date:** 12 November 2026
 
 #### Overview
 
@@ -146,8 +146,6 @@ A finding can be marked a false positive or an accepted risk, approved by someon
 * Service Health, AI review and dependency labels use the workspace's product names.
 * A component removed from an application's code no longer stays in its recorded dependencies, and a component upgraded to a safe version no longer stays listed as vulnerable.
 * On a new workspace, content that needs a licence (deprecations and vulnerabilities) waits for the licence and is added on the next content update, instead of being reported as an error.
-
-
 
 #### Component Versions in This Release
 

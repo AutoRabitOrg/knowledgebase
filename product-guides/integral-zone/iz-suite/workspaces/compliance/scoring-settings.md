@@ -8,11 +8,11 @@ Open it from **Workspaces** → **Compliance** → **Scoring settings** in the s
 You need a role that can view compliance standards.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-scoring-settings-impact.png" alt="Impact levels in scoring settings"><figcaption><p>Scoring settings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-scoring.png" alt="Impact levels in scoring settings"><figcaption><p>Scoring settings</p></figcaption></figure>
 
 Each tab lists its settings with **Name**, **Score value** (for levels), **Used for** and **Available**. **Export all settings** downloads every setting and **Refresh** reloads the list.
 
-## Impact levels
+## Impact Levels
 
 How much harm a failing rule could cause. Each mapped rule has an impact level. Its risk score is likelihood × impact, and the score places the risk in a band of the [Risk Matrix](risk-matrix.md).
 
@@ -24,7 +24,7 @@ How much harm a failing rule could cause. Each mapped rule has an impact level. 
 | **Low**      | 2     | A failure causes minor harm, mainly to quality or maintainability.                                                                 |
 | **None**     | 1     | A failure causes no meaningful harm.                                                                                               |
 
-## Likelihood levels
+## Likelihood Levels
 
 How likely a failing rule is to lead to that harm. It is multiplied with the impact level to give the rule's risk score.
 
@@ -35,7 +35,7 @@ How likely a failing rule is to lead to that harm. It is multiplied with the imp
 | **Low**    | 2     | A failure needs unusual conditions or other weaknesses before it causes the impact.                                 |
 | **None**   | 0     | A failure is not expected to cause the impact. The risk score is 0.                                                 |
 
-## Risk types
+## Risk Types
 
 How the risk on a rule-to-control mapping is classified. Shown in the risk register; it does not change the score.
 
@@ -64,7 +64,7 @@ How the risk on a rule-to-control mapping is treated. Chosen when a risk decisio
 | **Transfer**                | Transfer the risk to another party, for example a supplier contract or insurance. |
 | **Treat**                   | Fix the cause: remediate the failing rule so the control is met.                  |
 
-## Review statuses
+## Review Statuses
 
 Whether a rule-to-control mapping applies to you.
 
@@ -73,7 +73,7 @@ Whether a rule-to-control mapping applies to you.
 | **Applicable**     | The mapping applies to you and is listed in the risk register.                                                                                   |
 | **Not Applicable** | The mapping does not apply to you. It is left out of the risk register, but its rule still counts in the control score. Record why in its notes. |
 
-## Next steps
+## Next Steps
 
 * [Mapped Rules](mapped-rules.md): set the impact and likelihood of a rule.
 * [Risk Matrix](risk-matrix.md): see where the scores place each risk.

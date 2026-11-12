@@ -13,11 +13,11 @@ A proof of concept runs every IZ Suite component on one VM with Docker Compose: 
 Before you start, make sure you have:
 
 * A licence key from AutoRABIT.
-* An x86-64 VM sized as in [Requirements & Sizing](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/requirements-and-sizing): at least 4 vCPU, 16 GB RAM and 100 GB disk for a trial.
-* Outbound HTTPS from the VM to `public.ecr.aws` and to the platforms you want to assess.
+* An x86-64 VM sized with AutoRABIT; see [Requirements & Sizing](requirements-and-sizing.md).
+* Outbound HTTPS from the VM to `public.ecr.aws`, `artifacts.integralzone.com`, `license.integralzone.com` and the platforms you want to assess.
 {% endhint %}
 
-### Install Docker
+## Install Docker
 
 On Ubuntu 24.04 or Debian 12, install Docker Engine and the Compose plugin from Docker's repository (see the [Docker documentation](https://docs.docker.com/engine/install/)), then add your user to the `docker` group and sign in again:
 
@@ -27,12 +27,11 @@ sudo usermod -aG docker "$USER"
 
 Check the installation with `docker compose version`.
 
-### Get the Installation Files
+## Get the Installation Files
 
 Create a folder, for example `~/izsuite`, with two files:
 
-**docker-compose.yml**
-
+{% code title="docker-compose.yml" %}
 ```yaml
 # IZ Suite on a single VM: postgres, iz-suite-server, iz-suite-worker and iz-suite-agent.
 # Start it with ./up.sh <version>, which also creates .env with the generated secrets.
@@ -50,6 +49,8 @@ x-server-env: &server-env
   # Key pair that signs user sessions. Generated once by up.sh; replacing it signs everyone out.
   SESSION_JWT_PRIVATE_KEY: ${SESSION_JWT_PRIVATE_KEY:?run ./up.sh}
   SESSION_JWT_PUBLIC_KEY: ${SESSION_JWT_PUBLIC_KEY:?run ./up.sh}
+  # Database connections per server and worker process. Keep the total under Postgres's limit of 100.
+  IZ_LOCAL_PG_POOL_MAX: ${IZ_LOCAL_PG_POOL_MAX:-25}
 
 services:
   postgres:
@@ -114,12 +115,10 @@ services:
 
 volumes:
   pgdata:
-
-
 ```
+{% endcode %}
 
-**up.sh**
-
+{% code title="up.sh" %}
 ```sh
 #!/bin/sh
 # Usage: ./up.sh <version> [agent-job-type-version]    e.g. ./up.sh 26.4.2
@@ -172,13 +171,12 @@ fi
 docker compose pull
 docker compose up -d
 docker compose ps
-
-
 ```
+{% endcode %}
 
 Make the script executable: `chmod +x up.sh`.
 
-### Start IZ Suite
+## Start IZ Suite
 
 1.  In the folder, run the script with the release to install:
 
@@ -186,29 +184,28 @@ Make the script executable: `chmod +x up.sh`.
     ./up.sh 26.4.2
     ```
 
-    On the first run it creates `.env` with a generated database password, secrets encryption key and agent secret, downloads the images and starts the stack.
+    On the first run it creates `.env` with a generated database password, secrets encryption key, agent secret and session signing keys, downloads the images and starts the stack.
 2.  Wait for the server to become healthy. The first start applies every database update and takes a few minutes:
 
     ```sh
     docker compose ps
     docker compose logs -f iz-suite-server
-    docker compose logs -f --tail=100 iz-suite-server
     ```
-3. Open `http://<VM address>` in a browser and continue with [First Start](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/first-start).
+3. Open `http://<VM address>` in a browser and continue with [First Start](first-start.md).
 
 {% hint style="danger" %}
-Back up `.env` outside the VM. It holds the database password and the secrets encryption key. Without the key, the credentials stored in IZ Suite cannot be read again, even from a database backup.
+Back up `.env` outside the VM. It holds the database password, the secrets encryption key and the session signing keys (replacing them signs everyone out). Without the encryption key, the credentials stored in IZ Suite cannot be read again, even from a database backup.
 {% endhint %}
 
 {% hint style="info" %}
 Until the licence is applied, the agent restarts repeatedly and logs an error when it tries to register. This is expected: applying the licence creates the agent's registration, and its next restart succeeds.
 {% endhint %}
 
-### Add HTTPS
+## Add HTTPS
 
 The server listens on plain HTTP on port 80 (change it with `HTTP_PORT` in `.env`). For anything beyond a local trial, put HTTPS in front of it: a cloud load balancer with your certificate, or a reverse proxy such as nginx or Caddy on the VM that forwards to port 80. Point your IZ Suite hostname at it and use that address as the **Base URL** when you apply the licence.
 
-### Operate the Stack
+## Operate the Stack
 
 Run these from the installation folder:
 
@@ -226,13 +223,13 @@ Run these from the installation folder:
 Every container restarts by itself after a VM reboot unless you stopped it.
 
 {% hint style="danger" %}
-**HINT (danger):** Never run `docker compose down -v`. The `-v` option deletes the database volume and every IZ Suite record with it.
+Never run `docker compose down -v`. The `-v` option deletes the database volume and every IZ Suite record with it.
 {% endhint %}
 
 Schedule a daily snapshot of the VM disk, or a daily `pg_dump`, and keep a copy of `.env` with it.
 
-### Next steps
+## Next Steps
 
-* [First Start](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/first-start): apply the licence and sign in.
-* [Upgrades](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/upgrades): move the proof of concept to a newer release.
-* [Production Deployment](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/production-deployment): the recommended setup once the proof of concept succeeds.
+* [First Start](first-start.md): apply the licence and sign in.
+* [Upgrades](upgrades.md): move the proof of concept to a newer release.
+* [Production Deployment](production-deployment.md): the recommended setup once the proof of concept succeeds.

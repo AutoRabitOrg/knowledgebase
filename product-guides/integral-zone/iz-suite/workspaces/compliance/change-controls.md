@@ -12,9 +12,9 @@ Requires the **Change Assurance** licence.
 You need a role that can view governance controls. Creating, editing and simulating controls needs a role that can manage them.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-change-controls-list.png" alt="Change controls list"><figcaption><p>Change controls</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-change-controls.png" alt="Change controls list"><figcaption><p>Change controls</p></figcaption></figure>
 
-## Summary tiles
+## Summary Tiles
 
 | Tile                          | Description                                                             |
 | ----------------------------- | ----------------------------------------------------------------------- |
@@ -48,7 +48,7 @@ The **Controls** tab lists every control.
 Supplied controls are read-only. Editing one saves a copy for your organization with your changes; the supplied definition is never modified.
 {% endhint %}
 
-## Policy templates
+## Policy Templates
 
 The **Policy templates** tab lists the reusable logic behind policies.
 
@@ -63,11 +63,11 @@ The **Policy templates** tab lists the reusable logic behind policies.
 
 Activate templates as organization policies in the gate policies of Change Assurance. Editing a supplied template's metadata saves a copy for your organization.
 
-## Build a query control
+## Build a Query Control
 
 **Query builder** creates a control from an asset requirement without writing rule logic.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-change-controls-query-builder.png" alt="Query control builder"><figcaption><p>Query control builder</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-query-builder.png" alt="Query control builder"><figcaption><p>Query control builder</p></figcaption></figure>
 
 1. Select **Query builder**.
 2. Optionally choose one of the **Platform-provided starters**. It replaces the draft.
@@ -79,7 +79,7 @@ Activate templates as organization policies in the gate policies of Change Assur
 
 Enabled controls also run when a change touches an asset in scope. You do not need a separate gate policy. Blocking fails the IZ Suite gate; stopping an external deployment needs an enforcement integration.
 
-## Create a custom control
+## Create a Custom Control
 
 **New Custom Control** creates a control from rule logic.
 
@@ -97,12 +97,12 @@ Enabled controls also run when a change touches an asset in scope. You do not ne
 
 The example fails any asset whose metadata records plaintext HTTP.
 
-## Sync from source
+## Sync from Source
 
 **Sync from source** pulls a versioned bundle of policy templates, controls and frameworks, updates them by key with a new version, and re-assesses posture straight away. Leave the URL blank to apply the bundled default content.
 
-## Next steps
+## Next Steps
 
 * [Standards & Frameworks](/broken/pages/2ded2e2e308bc0fe50fc7a95b55dad213487f979): see which standards your change controls map to.
 * [Risk Matrix](risk-matrix.md): review platform and change control risks.
-* Change Assurance: see how controls are applied to changes.
+* [Change Assurance](../change-assurance/): see how controls are applied to changes.

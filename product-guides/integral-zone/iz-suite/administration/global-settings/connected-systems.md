@@ -4,7 +4,7 @@ A connected system groups work and agent assignments. When a job has to run on a
 
 Open it from **Administration** → **Global Settings** → **Connected systems** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-connected-systems-list.png" alt="Connected systems tab with summary tiles and the system inventory"><figcaption><p>Connected systems</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-systems (1).png" alt="Connected systems tab with summary tiles and the system inventory"><figcaption><p>Connected systems</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view systems to open this tab. Registering, editing and deleting systems each need their own system permission.
@@ -14,7 +14,7 @@ You need a role that can view systems to open this tab. Registering, editing and
 Registering a system does not connect to it or check its health. Assignments describe collection scope; check agent heartbeats and execution results to see whether work is actually running.
 {% endhint %}
 
-## Summary tiles
+## Summary Tiles
 
 | Tile                      | Shows                                                                                  |
 | ------------------------- | -------------------------------------------------------------------------------------- |
@@ -22,9 +22,9 @@ Registering a system does not connect to it or check its health. Assignments des
 | **Assigned to agents**    | Systems with at least one agent assigned.                                              |
 | **Without an assignment** | Systems no agent is assigned to. Review whether that is the intended collection scope. |
 
-## System inventory
+## System Inventory
 
-Use **Search system names or keys** to filter the table. **Reset filters** clears the search, and **Refresh** reloads the list. **Export this page** at the top of the tab downloads the systems on the current page as a CSV file.
+Use **Search system names or keys** to filter the table. **Reset filters** clears the search, the number of records shows beside **Refresh**, **Columns** chooses the columns to show and **Export** downloads the list. **Export this page** at the top of the tab downloads the systems on the current page as a CSV file.
 
 | Column                | Description                                                       |
 | --------------------- | ----------------------------------------------------------------- |
@@ -43,13 +43,13 @@ Use **Search system names or keys** to filter the table. **Reset filters** clear
 Deleting a system also deletes its agent assignments and can affect configuration that uses it. Review the linked agents and executions first.
 {% endhint %}
 
-## Register a system
+## Register a System
 
 1. Click **Register system**.
 2. Enter the **System name** and **System key**.
 3. Click **Save changes**.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-connected-systems-register.png" alt="Register system form with System name and System key"><figcaption><p>Register system</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-systems-register.png" alt="Register system form with System name and System key"><figcaption><p>Register system</p></figcaption></figure>
 
 | Field           | Description                                                                         |
 | --------------- | ----------------------------------------------------------------------------------- |
@@ -62,8 +62,8 @@ Changing the key of an existing system can affect configuration that refers to i
 
 To assign an agent to a system, edit the agent and add the system under **Assigned systems**.
 
-## Next steps
+## Next Steps
 
 * [Agents](agents.md): assign agents to a system.
-* Execution History: follow the work recorded against a system.
+* [Execution History](../../operations/schedules/execution-history.md): follow the work recorded against a system.
 * [Global Settings](./): the other configuration screens.

@@ -8,15 +8,15 @@ Open it from **Workspaces** → **Compliance** → **Mapped rules** in the sideb
 You need a role that can view compliance standards. Adding rules needs a role that can create compliance standards and view quality rules; changing or removing them needs a role that can edit or delete compliance standards.
 {% endhint %}
 
-## Choose a standard
+## Choose a Standard
 
 Select a standard in **Choose a standard**. Its rules appear below. You can also open this screen from a standard's **Rule impact** link in [Standards & Frameworks](/broken/pages/2ded2e2e308bc0fe50fc7a95b55dad213487f979).
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-mapped-rules-list.png" alt="Mapped rules for a standard"><figcaption><p>Mapped rules</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-mapped-rules.png" alt="Mapped rules for a standard"><figcaption><p>Mapped rules</p></figcaption></figure>
 
 **Control hierarchy** opens the standard's control hierarchy.
 
-## Rules in this standard
+## Rules in This Standard
 
 | Filter              | Description                                                                 |
 | ------------------- | --------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ Select a standard in **Choose a standard**. Its rules appear below. You can also
 
 **Export rules on this page** downloads the rules on the current page.
 
-## Add a rule
+## Add a Rule
 
 A rule can be added to a standard once.
 
@@ -54,7 +54,7 @@ To change a rule's ratings, select **Edit impact** on its row. The levels you ca
 **Remove rule** removes the rule and its control mappings from the standard, so its results stop counting towards any control.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Risk Matrix](risk-matrix.md): see where each rule's rating places it.
 * [Scoring Settings](scoring-settings.md): read what each impact and likelihood level means.

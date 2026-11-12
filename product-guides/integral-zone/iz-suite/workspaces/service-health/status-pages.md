@@ -8,26 +8,26 @@ Open it from **Workspaces** → **Service Health** → **Status pages** in the s
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-status-pages-list.png" alt="Status pages list"><figcaption><p>Status pages</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-status-pages.png" alt="Status pages list"><figcaption><p>Status pages</p></figcaption></figure>
 
-## Status pages list
+## Status Pages List
 
-Use the **Status** filter to show **All**, **Needs attention**, **Private** or **Disabled** pages. The list has a search box, **Refresh**, **Columns** and **Export**.
+Use the **Status** filter to show **All**, **Needs attention**, **Private** or **Disabled** pages; **Save filters** keeps a combination to pick again from **Saved filters**. The list has a search box, **Refresh**, **Columns** and **Export**.
 
 | Column          | Description                                                                                                                                                                     |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Status page** | Page name. Click it to open the [owner view](status-pages.md#owner-view).                                                                                                       |
+| **Status page** | Page name. Click it to open the owner view (**Owner View** below).                                                                                                              |
 | **Status**      | The page status and its last check. A page with nothing on it stays **Unknown**.                                                                                                |
 | **Visibility**  | **Public** or **Private**, **Disabled** when the page is turned off, and a **Managed by** tag when a monitoring policy maintains the page.                                      |
 | **On the page** | How many categories and directly added monitors the page shows, or **Nothing added yet**.                                                                                       |
 | **Public link** | **Copy public link** and **Open public page** for an enabled public page. A private page shows **Private · no public link**; a disabled page shows that its link shows nothing. |
 | **Actions**     | **Review page**, **Edit settings** and delete.                                                                                                                                  |
 
-## Owner view
+## Owner View
 
 Click a page name to open its owner view. It shows the page as its audience sees it, plus private monitors that the public link never shows. Only signed-in users with status page access see it. From there you can **Copy public link**, **Open public page**, **Configure page**, open **Maintenance windows** and **Subscribe to updates**. The **Current status**, **Uptime** and **Incident history** tabs show the live state, past availability and incidents.
 
-## Create a status page
+## Create a Status Page
 
 1. Click **Create status page**.
 2. Fill in the fields below.
@@ -43,11 +43,11 @@ Click a page name to open its owner view. It shows the page as its audience sees
 
 **Edit settings** on a row changes the name, visibility and page state.
 
-## Review a page
+## Review a Page
 
 Click **Review page** on a row.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-status-pages-review.png" alt="Status page review drawer showing what the page shows now"><figcaption><p>Review a status page</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-status-review.png" alt="Status page review drawer showing what the page shows now"><figcaption><p>Review a status page</p></figcaption></figure>
 
 The drawer shows:
 
@@ -62,7 +62,7 @@ The drawer shows:
 Only public, enabled monitors appear on a public page. Disabled monitors are never listed.
 {% endhint %}
 
-### Pages maintained by a monitoring policy
+### Pages Maintained by a Monitoring Policy
 
 A page created by a monitoring policy shows **Maintained by** in its drawer. The policy adds a section per asset type as it creates monitors. Click **Take over** to stop the policy maintaining the page; everything on it stays as it is, and from then on you change it yourself.
 
@@ -70,7 +70,7 @@ A page created by a monitoring policy shows **Maintained by** in its drawer. The
 You need a role that can create status pages to create one, a role that can edit status pages to change settings or content, and a role that can delete status pages to delete one or remove a category from it. Adding monitors also needs a role that can view monitors.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Categories](categories.md): group monitors once and reuse them on several pages.
 * [Monitors](monitors.md): make monitors public so they can appear on public pages.

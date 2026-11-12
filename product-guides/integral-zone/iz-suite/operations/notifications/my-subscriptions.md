@@ -4,13 +4,13 @@ Each subscription sends one kind of update about one record to one destination, 
 
 Open it from **Operations** → **Notifications** → **My subscriptions** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsnotifications-my-subscriptions-list.png" alt="My subscriptions tab with filters and the subscription table"><figcaption><p>My subscriptions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-notif-mysubs.png" alt="My subscriptions tab with filters and the subscription table"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To add a subscription, open the record you want to follow, for example an organization or a status page, and use its **Subscribe to updates** action.
 {% endhint %}
 
-## Filter subscriptions
+## Filter Subscriptions
 
 | Filter                | Description                                                              |
 | --------------------- | ------------------------------------------------------------------------ |
@@ -21,9 +21,9 @@ To add a subscription, open the record you want to follow, for example an organi
 | Search                | Finds subscriptions by subscriber or email address.                      |
 | Time range            | When the subscription was created, for example **All retained history**. |
 
-**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table and **Export this page** downloads the rows on the current page. **My updates** opens your updates.
+**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table, **Columns** shows or hides columns and **Export** downloads the rows on the current page. **My updates** opens your updates.
 
-## Your subscriptions
+## Your Subscriptions
 
 | Column           | Description                                                                                       |
 | ---------------- | ------------------------------------------------------------------------------------------------- |
@@ -31,18 +31,18 @@ To add a subscription, open the record you want to follow, for example an organi
 | **Delivered to** | The channel and destination, for example an email address or **In-app updates**.                  |
 | **State**        | **Active**, or **Paused** when updates are not sent.                                              |
 | **Subscribed**   | When the subscription was created.                                                                |
-| **Manage**       | **Remove subscription**.                                                                          |
+| **Manage**       | **Remove subscription**, or **Managed by the subscriber** when your role cannot remove it.        |
 
 Click a subscription to see its **Subscriber**, **Topic**, **Update**, **Subject**, **Channel**, **Delivered to**, **State** and **Subscribed** date. A Slack webhook address is stored securely and is never shown.
 
-## Remove a subscription
+## Remove a Subscription
 
 1. Click **Remove subscription** on the row, or in the subscription's details.
 2. Confirm with **Remove subscription**.
 
 No further updates are delivered to that destination. You can subscribe again from the record at any time.
 
-## Next steps
+## Next Steps
 
 * [My Updates](my-updates.md): read the updates your subscriptions send.
 * [Delivery Log](delivery-log.md): check whether an update was delivered.

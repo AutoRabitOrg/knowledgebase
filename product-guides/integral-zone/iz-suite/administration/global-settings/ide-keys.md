@@ -4,13 +4,13 @@
 
 Open it from **Administration** → **Global Settings** → **IDE keys** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-list.png" alt="IDE keys tab with summary tiles, filters and the key inventory"><figcaption><p>IDE keys</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-ide-keys.png" alt="IDE keys tab with summary tiles, filters and the key inventory"><figcaption><p>IDE keys</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view global settings to open this tab, and a role that can invite users to assign keys.
 {% endhint %}
 
-## Summary tiles
+## Summary Tiles
 
 Click a tile to filter the inventory.
 
@@ -32,9 +32,9 @@ Click a tile to filter the inventory.
 | **ASSIGNED TO**   | One or more people.                                                            |
 | **Saved filters** | Pick a saved filter combination, or **Save filters** to store the current one. |
 
-## IDE key inventory
+## IDE Key Inventory
 
-Use **Search by key, person or email** to filter the table. The number of keys and **Refresh** sit beside it.
+Use **Search by key, person or email** to filter the table. The number of keys, **Refresh**, **Columns** (choose the columns to show) and **Export** sit beside it.
 
 | Column          | Description                                                                                                                                                                            |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ The key drawer shows the status, usage, assignee and date added, and the full ke
 Treat a key like a licence seat: share it only with its assignee.
 {% endhint %}
 
-## Assign a key
+## Assign a Key
 
 1. Click **Assign key** (or **Reassign key**) on the key's row.
 2. In **Person**, search for an enabled person by name or email and select them.
@@ -62,7 +62,7 @@ The person then finds the key under **My account** → **IDE projects**, pastes 
 When you reassign a key, the previous assignee loses access to its project history.
 {% endhint %}
 
-## Scanned projects
+## Scanned Projects
 
 **Scanned projects** on a key's row opens **Projects scanned with IDE key** for that key. It lists the projects the developer scanned with the key. Each project is recorded when the IDE extension publishes a scan. Results are the developer's local scan, not a server assessment.
 
@@ -78,7 +78,7 @@ Use **Search by project name or path** to find a project. The number of records 
 
 Click **Back to ide keys** or **IDE key inventory** to return to the key list.
 
-## Review results
+## Review Results
 
 Click **Review results** on a project (or the project name) to open its results in a drawer. The drawer shows:
 
@@ -94,8 +94,8 @@ Click **Review results** on a project (or the project name) to open its results 
 
 <figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review.png" alt="Review results drawer with the latest scan&#x27;s counts and the recent scans by date"><figcaption><p>Review results</p></figcaption></figure>
 
-## Next steps
+## Next Steps
 
-* IDE Projects: what developers see for their assigned keys.
+* [IDE Projects](../my-account/ide-projects.md): what developers see for their assigned keys.
 * [Subscription](subscription.md): review the rest of your licence.
 * [Global Settings](./): the other configuration screens.

@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Service Health** → **Monitoring coverage** i
 Requires the **Service Health** licence. The application list comes from the inventory collected by Platform Analysis.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-monitoring-coverage-list.png" alt="Monitoring coverage with coverage tiles and the application monitoring coverage list"><figcaption><p>Monitoring coverage</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-coverage.png" alt="Monitoring coverage with coverage tiles and the application monitoring coverage list"><figcaption><p>Monitoring coverage</p></figcaption></figure>
 
 ## Tiles
 
@@ -22,7 +22,7 @@ The tiles also filter the list below them.
 
 A red notice above the tiles tells you when checks have stopped running; see [Service Readiness](service-readiness.md#probe-notice).
 
-## Application monitoring coverage
+## Application Monitoring Coverage
 
 | Control                                                | Description                                                                  |
 | ------------------------------------------------------ | ---------------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ A red notice above the tiles tells you when checks have stopped running; see [Se
 | **Monitoring**  | The monitors already linked, with their status and last observation, and what can still be monitored: the number of HTTP targets, the resource type and its identifier, or a hint such as **Ready to review target and authentication**. |
 | **Actions**     | **Review monitoring** opens the application's monitoring drawer.                                                                                                                                                                         |
 
-## Review an application's monitoring
+## Review an Application's Monitoring
 
 Click **Review monitoring** on a row. The drawer shows:
 
@@ -50,7 +50,7 @@ Click **Review monitoring** on a row. The drawer shows:
 Resource monitors read provider state and metrics through the agent. They do not invoke functions, read secret values or change cloud resources. A signal that cannot be read stays **Unknown**.
 {% endhint %}
 
-## Set up monitors in bulk
+## Set Up Monitors in Bulk
 
 1. Filter the list to the platform and organization you want.
 2. Click **Set up monitors in bulk**.
@@ -58,7 +58,7 @@ Resource monitors read provider state and metrics through the agent. They do not
 4. Click **Create** _n_ **selected monitors**.
 5. Open **See setup results** to check what was created, what already existed and what failed.
 
-## Monitoring policies
+## Monitoring Policies
 
 A monitoring policy keeps resource monitors collected on a schedule for one organization. Click **Monitoring policies** and choose **AWS monitoring policy**, **MuleSoft monitoring policy** or **AIS monitoring policy**, then pick the AWS account, Anypoint organization or Azure subscription.
 
@@ -76,7 +76,7 @@ Click **Save monitoring policy**. Status pages, categories and runbooks that a p
 Each monitor a policy creates counts against your Service Health licence. You need a role that can create or edit monitors to use bulk setup and monitoring policies.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Monitors](monitors.md): inspect and configure the monitors you created.
 * [Service Objectives](service-objectives.md): set availability targets for HTTP monitors.

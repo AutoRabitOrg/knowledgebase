@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Compliance** in the sidebar. It opens on **Sta
 You need a role that can view compliance standards. Creating or changing standards, rule mappings, risk ratings and treatment plans needs a role that can create, edit or delete compliance standards. **Change controls** belongs to Change Assurance: it needs the **Change Assurance** licence and a role that can view governance controls.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-workspace.png" alt="Compliance workspace with its screen tabs"><figcaption><p>Compliance</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-workspace.png" alt="Compliance workspace with its screen tabs"><figcaption><p>Compliance</p></figcaption></figure>
 
 ## Screens
 
@@ -26,7 +26,7 @@ You need a role that can view compliance standards. Creating or changing standar
 A compliance score is calculated from configured rules. An application with no recorded validation is not evaluated; that does not make it compliant.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Standards & Frameworks](/broken/pages/2ded2e2e308bc0fe50fc7a95b55dad213487f979): enable the standards you need.
 * [Risk Matrix](risk-matrix.md): find the risks that need a decision.

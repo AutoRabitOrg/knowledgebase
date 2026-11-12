@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Dependency Insights** → **Exposure** in the 
 Requires the **Dependency Insights** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-exposure-overview.png" alt="Exposure view of Dependency Insights"><figcaption><p>Exposure</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-exposure.png" alt="Exposure view of Dependency Insights"><figcaption><p>Exposure</p></figcaption></figure>
 
 ## Scope
 
@@ -16,7 +16,7 @@ Choose the **Organization**, **Platform** and **Asset type** at the top. **Save 
 
 ## Cross-platform AI recommendations
 
-The **Cross-platform · AI recommendations** panel lists the platform investigations recorded for shared risks across applications. When none is recorded, the panel says so; reviews of single applications stay available in each application dossier.
+The **Cross-platform · AI recommendations** panel lists the platform investigations recorded for shared risks across applications. When none is recorded, the panel says so; reviews of single applications stay available in each application dossier. **Platform investigations** opens the cross-asset findings in [AI Coverage & Findings](../ai-and-automation/ai-coverage-and-findings.md).
 
 ## Summary tiles
 
@@ -35,7 +35,7 @@ This panel names the dependency with the most recorded consumers and how many ap
 
 * **Explore shared dependencies** opens [Dependency Explorer](dependency-explorer.md).
 * **Plan a version upgrade** opens [Version Planning](version-planning.md).
-* **Open actions queue** opens [Actions](actions.md).
+* **Open actions queue** opens [Actions](updates-and-maintenance/actions.md).
 
 **What must not be changed in isolation** lists the shared dependencies ordered by number of consumers. Select one to explore it, or select **Explore all**.
 
@@ -60,9 +60,9 @@ The table lists the recorded matches with the application each one affects.
 | **Risk / lifecycle**     | Severity and EPSS for advisories, or the lifecycle status and sunset date for deprecations. Values that were not enriched show as unknown. |
 | **Review status**        | The review state of the match, for example **Pending**.                                                                                    |
 
-Select **Inspect evidence** on a row to open the match in [Risk & Lifecycle](/broken/pages/886c6a72c421c38183562850946b59d50c963bc3). **Review all risk evidence** opens the full list. **Columns** chooses the columns shown and **Export** downloads the table.
+Select **Inspect evidence** on a row to open the match in [Risk & Lifecycle](risk-and-lifecycle.md). **Review all risk evidence** opens the full list. **Columns** chooses the columns shown and **Export** downloads the table.
 
-## Next steps
+## Next Steps
 
 * [Dependency Explorer](dependency-explorer.md): trace a shared dependency to its consumers.
 * [Version Planning](version-planning.md): plan an upgrade for a component family.

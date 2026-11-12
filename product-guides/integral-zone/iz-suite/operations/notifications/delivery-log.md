@@ -8,34 +8,34 @@ Open it from **Operations** → **Notifications** → **Delivery log** in the si
 You need a role that can view global settings. Resending needs a role that can edit global settings.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsnotifications-delivery-log-list.png" alt="Delivery log with filters and delivery records"><figcaption><p>Delivery log</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-notif-delivery.png" alt="Delivery log with filters and delivery records"><figcaption></figcaption></figure>
 
 **Change Assurance alert deliveries** opens the deliveries of Change Assurance alerts, which are listed separately.
 
-## Filter deliveries
+## Filter Deliveries
 
-| Filter      | Description                                              |
-| ----------- | -------------------------------------------------------- |
-| **Status**  | **All**, **Failed**, **Pending** or **Sent**.            |
-| **Channel** | **Email**, **Slack** or **In-app**.                      |
-| **Event**   | The kind of update, for example a status page update.    |
-| Search      | Finds deliveries by update, subscriber or email address. |
-| Time range  | The period to show, for example **Last 7 days**.         |
+| Filter      | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| **Status**  | **All**, **Failed**, **Pending**, **Sent** or **Dismissed**. |
+| **Channel** | **Email**, **Slack** or **In-app**.                          |
+| **Event**   | The kind of update, for example a status page update.        |
+| Search      | Finds deliveries by update, subscriber or email address.     |
+| Time range  | The period to show, for example **Last 7 days**.             |
 
-The filters, search and the open record are kept in the page address, so you can share the view. When failures exist, **Show failures** filters to them. **Refresh** reloads the list.
+The filters, search and the open record are kept in the page address, so you can share the view. When failures exist, **Show failures** filters to them. **Refresh** reloads the list, **Columns** shows or hides columns and **Export** downloads the rows on the current page.
 
 ## Deliveries
 
-| Column            | Description                                                                                                                                                      |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Event**         | The update title, its event and topic. Click it to open the delivery.                                                                                            |
-| **Recipient**     | Who received the update.                                                                                                                                         |
-| **Channel**       | **Email**, **Slack** or **In-app**.                                                                                                                              |
-| **Status**        | **Sent**, **Pending** or **Failed**, with a note. An in-app delivery is **Read in the bell** or **Not yet read in the bell**; a paused subscription is not sent. |
-| **Last activity** | When the delivery last changed.                                                                                                                                  |
-| **Resend**        | **Resend to the original recipient**, for email and Slack deliveries that are not pending and whose subscription is active.                                      |
+| Column            | Description                                                                                                                                                                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Event**         | The update title, its event and topic. Click it to open the delivery.                                                                                                                                                                                                         |
+| **Recipient**     | Who received the update.                                                                                                                                                                                                                                                      |
+| **Channel**       | **Email**, **Slack** or **In-app**.                                                                                                                                                                                                                                           |
+| **Status**        | **Sent**, **Pending**, **Sending**, **Failed** or **Dismissed**, with a note. An in-app delivery is **Read in the bell** or **Not yet read in the bell**, and a paused subscription is not sent. A failed email or Slack delivery is retried automatically, up to 3 attempts. |
+| **Last activity** | When the delivery last changed.                                                                                                                                                                                                                                               |
+| **Resend**        | **Resend to the original recipient**, for email and Slack deliveries that are not pending and whose subscription is active. Shown only when your role can resend.                                                                                                             |
 
-## Delivery details
+## Delivery Details
 
 Click a delivery's event to open it. The drawer shows the **Status**, **Event**, **Channel**, **Recipient**, **Subscriber**, **Failed attempts** and **Last activity**. For email and Slack, **Provider response** shows the error recorded for the last failed attempt.
 
@@ -43,14 +43,14 @@ Click a delivery's event to open it. The drawer shows the **Status**, **Event**,
 A Slack webhook address is stored securely and is never shown.
 {% endhint %}
 
-## Resend an update
+## Resend an Update
 
 1. Click **Resend to the original recipient** on the row, or **Resend** in the delivery's details.
 2. Confirm with **Resend**.
 
 The update is queued for the original recipient. The delivery run sends it within about a minute; the row then shows **Sent** or **Failed**.
 
-## Next steps
+## Next Steps
 
 * [Organization Subscriptions](organization-subscriptions.md): fix or remove a misdirected subscription.
 * [My Updates](my-updates.md): read the updates delivered to you in-app.

@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Platform Analysis** → **Findings** in the si
 Requires the **Platform Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetspa-findings-open.png" alt="Open findings grouped by rule with severity, category, occurrences and assessed date"><figcaption><p>Open findings</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-pa-findings-open.png" alt="Open findings grouped by rule with severity, category, occurrences and assessed date"><figcaption><p>Open findings</p></figcaption></figure>
 
 ## Filters and effort tiles
 
@@ -41,7 +41,7 @@ The **Open findings** sub-tab is the investigation list (**Investigate findings*
 | **Assessed**    | When the assessment was recorded. Sortable.                                                                 |
 | **AI review**   | The AI review's view of the finding (for example **Possible false positive**), when an AI review covers it. |
 
-The row action is **Inspect occurrences** for a group and **Read finding** for a single finding.
+The row action is **Inspect occurrences** for a group and **Read finding** for a single finding. Above the list, Refresh reloads it, Columns chooses the columns shown and Export this page downloads the current page.
 
 ### Inspect the occurrences of a group
 
@@ -54,7 +54,7 @@ The row action is **Inspect occurrences** for a group and **Read finding** for a
 
 ## Finding detail
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetspa-findings-detail.png" alt="Finding detail drawer with severity, location, affected code and rule description"><figcaption><p>Finding detail</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-pa-findings-detail.png" alt="Finding detail drawer with severity, location, affected code and rule description"><figcaption><p>Finding detail</p></figcaption></figure>
 
 | Section                            | Description                                                                                                                                                 |
 | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ The row action is **Inspect occurrences** for a group and **Read finding** for a
 | **Affected code or configuration** | The lines around the finding, when the assessment retained the files.                                                                                       |
 | **How to fix**                     | The rule's remediation guidance, when recorded.                                                                                                             |
 | **About the rule**                 | What the rule checks, compliant and non-compliant examples and references (for example CWE or OWASP). **Open this rule in Quality Control** opens the rule. |
-| **Technical details**              | Assessment id, profile id, recorded path and finding fingerprint.                                                                                           |
+| **Capture details**                | Collapsed by default. Technical details of the recorded finding, useful when you contact support.                                                           |
 
 ### Mark a finding as a false positive or accepted risk
 
@@ -81,13 +81,13 @@ The button is unavailable for findings recorded before issue tracking existed. R
 
 ## Time to fix
 
-The **Time to fix** sub-tab estimates the work to fix the open findings, by severity, rule and application.
+The **Time to fix** sub-tab estimates the work to fix the open findings, by severity, rule and application. Findings under an approved exception are left out, and a day is 8 working hours.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetspa-findings-time-to-fix.png" alt="Time to fix by severity and category and by rule"><figcaption><p>Time to fix</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-pa-findings-time-to-fix.png" alt="Time to fix by severity and category and by rule"><figcaption><p>Time to fix</p></figcaption></figure>
 
 | Section                      | Description                                                                                                                                                                           |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Severity** filter          | Estimates only one severity.                                                                                                                                                          |
+| **Severity** row             | Select a severity in By severity and category to estimate only that severity.                                                                                                         |
 | **By severity and category** | **Open findings**, **Effort** and **Share** per severity and per category.                                                                                                            |
 | **By rule**                  | **Rule** (with an **Auto-fix** tag when the rule has one), **Severity**, **Per finding**, **Open findings** and **Effort**, most effort first. Choose a rule to see where it is open. |
 | **By application**           | Effort per application, with its findings per severity. Choose an application to estimate only its findings.                                                                          |
@@ -121,9 +121,9 @@ Row actions are **Approve exception**, **Reject exception** and **Revoke excepti
 Deciding or revoking an exception needs edit access to the application. The person who requested an exception cannot decide it.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Applications](applications.md): open the dossier of an affected application.
-* Quality Rules: review the rules behind the findings.
-* [Overview](overview.md): prepare an AI review of the findings.
+* [Quality Rules](../../operations/quality-control/quality-rules.md): review the rules behind the findings.
+* [Overview](overview.md): see the applications to review first.
 * [Platform Analysis](./): back to the workspace.

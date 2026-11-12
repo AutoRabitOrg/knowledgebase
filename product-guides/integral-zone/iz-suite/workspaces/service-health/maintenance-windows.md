@@ -8,11 +8,11 @@ Open it from **Workspaces** → **Service Health** → **Maintenance windows** i
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-maintenance-windows-list.png" alt="Maintenance windows list"><figcaption><p>Maintenance windows</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-maint-list.png" alt="Maintenance windows list"><figcaption><p>Maintenance windows</p></figcaption></figure>
 
-## Maintenance windows list
+## Maintenance Windows List
 
-Use the **Status** filter to show **All**, **Scheduled**, **In progress** or **Completed** windows. The list has a search box, **Refresh**, **Columns** and **Export**.
+Use the **Status** filter to show **All**, **Scheduled**, **In progress** or **Completed** windows; **Save filters** keeps a combination to pick again from **Saved filters**. The list has a search box, **Refresh**, **Columns** and **Export**.
 
 | Column                 | Description                                           |
 | ---------------------- | ----------------------------------------------------- |
@@ -22,9 +22,9 @@ Use the **Status** filter to show **All**, **Scheduled**, **In progress** or **C
 | **Ends**               | End time.                                             |
 | **Actions**            | **Review window**, and delete for a scheduled window. |
 
-## Plan a maintenance window
+## Plan a Maintenance Window
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-maintenance-windows-plan.png" alt="Plan a maintenance window drawer"><figcaption><p>Plan a maintenance window</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-maint-plan.png" alt="Plan a maintenance window drawer"><figcaption><p>Plan a maintenance window</p></figcaption></figure>
 
 1. Click **Plan maintenance**.
 2. Fill in **Purpose and impact** and **Timing and communication** (fields below). **Planned duration** and **Announcement due** update as you type.
@@ -43,7 +43,7 @@ Use the **Status** filter to show **All**, **Scheduled**, **In progress** or **C
 
 To take a service out of a window, click **Remove service** on it. The monitor itself is unchanged.
 
-## Review a window
+## Review a Window
 
 Click **Review window** on a row to see its purpose, timing and affected services. Click **Save timing changes** after changing the timing.
 
@@ -51,7 +51,7 @@ Click **Review window** on a row to see its purpose, timing and affected service
 Only a **Scheduled** window can be changed or deleted. Once it is in progress or completed it is available for review only. You need a role that can create, edit or delete maintenance windows for those actions.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Status Pages](status-pages.md): see how the window appears to your audience.
 * [Service Objectives](service-objectives.md): maintenance time is left out of availability.

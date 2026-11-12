@@ -8,7 +8,7 @@ Open it from **Operations** → **Quality Control** → **Quality rules** in the
 You need a role that can view quality rules. Creating, editing, cloning, deleting and activating rules in profiles need the matching quality rule permissions.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-quality-rules-list.png" alt="Quality rules tab with filters and the rule table"><figcaption><p>Quality rules</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-rules (1).png" alt="Quality rules tab with filters and the rule table"><figcaption></figcaption></figure>
 
 ## Filters
 
@@ -23,18 +23,19 @@ You need a role that can view quality rules. Creating, editing, cloning, deletin
 
 **Saved filters** and **Save filters** keep a combination of filters for later.
 
-## Rule table
+## Rule Table
 
-**Refresh** reloads the table and **Columns** shows or hides columns (**Rule id** and **Tags** start hidden).
+**Refresh** reloads the table, **Columns** shows or hides columns (**Rule id** and **Tags** start hidden) and **Export** downloads the table.
 
-| Column         | Description                                                                |
-| -------------- | -------------------------------------------------------------------------- |
-| **Rule**       | The rule name and its tags. Click it to open the rule.                     |
-| **Technology** | The technology the rule applies to.                                        |
-| **Severity**   | The severity of the findings it raises.                                    |
-| **Category**   | The category of the findings it raises.                                    |
-| **Origin**     | **Supplied** or **Custom**.                                                |
-| **Manage**     | The row actions below. Actions that do not fit open from **More actions**. |
+| Column           | Description                                                                                                                          |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Rule**         | The rule name and its tags. Click it to open the rule.                                                                               |
+| **Technology**   | The technology the rule applies to.                                                                                                  |
+| **Severity**     | The severity of the findings it raises.                                                                                              |
+| **Category**     | The category of the findings it raises.                                                                                              |
+| **Origin**       | **Supplied** or **Custom**.                                                                                                          |
+| **Last updated** | When the rule last changed. The list shows the most recently changed rules first; click **Last updated** or the name column to sort. |
+| **Manage**       | The row actions below. Actions that do not fit open from **More actions**.                                                           |
 
 | Action                  | What it does                                                         |
 | ----------------------- | -------------------------------------------------------------------- |
@@ -48,21 +49,21 @@ You need a role that can view quality rules. Creating, editing, cloning, deletin
 Deleting a custom rule cannot be undone.
 {% endhint %}
 
-## Investigate a rule's impact
+## Investigate a Rule's Impact
 
 1. Click **Find violations** on the rule's row.
 2. In **Rule impact investigation**, review the applications affected by the rule and their open issues.
 3. To investigate several rules together, add or remove rules with the tags at the top of the drawer.
 
-## Create a quality rule
+## Create a Quality Rule
 
 1. Click **Create rule**.
 2. Fill in the fields on **Purpose & classification**, **Customer guidance** and **Implementation**.
-3. Click **Create rule**.
+3. Click **Create rule**. **Back to rules** leaves without saving.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-quality-rules-editor.png" alt="Create quality rule with the Purpose and classification tab"><figcaption><p>Creating a quality rule</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-rule-editor.png" alt="Create quality rule with the Purpose and classification tab"><figcaption></figcaption></figure>
 
-### Purpose & classification
+### Purpose & Classification
 
 | Field                               | Description                                                                                                                                                                  |
 | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -74,7 +75,7 @@ Deleting a custom rule cannot be undone.
 | **Tags**                            | Type a tag and press Enter or a comma, or pick an existing tag. Consistent tags help you find related rules.                                                                 |
 | **Security standards**              | The CWE weaknesses, OWASP Top 10 categories and AWS Foundational Security Best Practices controls the rule detects. OWASP categories follow from a mapped CWE automatically. |
 
-### Customer guidance
+### Customer Guidance
 
 **Guidance (Markdown)** explains what the finding means, why it matters and what the application owner should do. **Guidance preview** shows how it renders.
 
@@ -82,7 +83,7 @@ Deleting a custom rule cannot be undone.
 
 **Implementation language** (required) and the rule implementation (required) define how the assessment detects the issue. Saving updates the definition; adding it to profiles is a separate step.
 
-## Open or edit a rule
+## Open or Edit a Rule
 
 Click a rule's name to open it. The header shows whether it is a **Supplied definition** or a **Custom definition**, and offers:
 
@@ -92,7 +93,7 @@ Click a rule's name to open it. The header shows whether it is a **Supplied defi
 
 Supplied rules have no **Implementation** tab. When your role cannot edit a rule, the page shows it as a **Read-only definition**; clone it to make a custom version you can change.
 
-## Next steps
+## Next Steps
 
 * [Quality Profiles](quality-profiles.md): choose which rules run for a technology.
 * [Security Standards](security-standards.md): see which rules detect each CWE or OWASP category.

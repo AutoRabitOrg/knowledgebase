@@ -1,6 +1,6 @@
 # Overview
 
-The **Assurance brief** answers one question: is every change assessed, attributed, ticketed and signed, and what needs a decision now? Change approvers and release managers start here; security and compliance reviewers use it to see what the gate caught.
+**Overview** answers "Every change, with its context": how many changes you detected, what waits for a decision, whether you can show the auditor and whether changes caused failures. Change approvers, release managers and auditors start here; every figure opens the records behind it.
 
 Open it from **Workspaces** → **Change Assurance** → **Overview** in the sidebar.
 
@@ -8,65 +8,82 @@ Open it from **Workspaces** → **Change Assurance** → **Overview** in the sid
 Requires the **Change Assurance** licence. You need a role that can view the Change Assurance dashboard.
 {% endhint %}
 
-## Assurance brief
+## Stage Cards
 
-The page header shows the **Platform** and **Observation window** filters, **Ask the copilot** and **Refresh evidence**. A note under the tabs says when the selected history was last read.
+Four cards, one per stage, for the selected **Period**. Select a card's link to open that stage.
 
-### Coverage tiles
+| Card            | Question                              | What it shows                                                                                                                              |
+| --------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1 · Detect**  | Did we see every change?              | Recorded changes and how many sources they came from, and how many changes are **to review** (for example without a ticket).               |
+| **2 · Assure**  | Was each change checked and approved? | Approval requests waiting for a decision and the active releases.                                                                          |
+| **3 · Prove**   | Can we show the auditor?              | The share of changes with a stored signature, and whether evidence integrity was verified in this session.                                 |
+| **4 · Improve** | Did changes cause failures?           | The change failure rate (or **Not measured** when no production deployment records are connected) and incidents without a confirmed cause. |
 
-Each tile shows a share of the changes in the window. Select a tile to open the matching changes.
+<figure><img src="../../../../../.gitbook/assets/v2-ca-overview-work.png" alt="Needs a decision and Changes outside the process panels"><figcaption></figcaption></figure>
 
-| Tile                            | What it counts                                                            |
-| ------------------------------- | ------------------------------------------------------------------------- |
-| **Assessed by the gate**        | Changes with a gate verdict, and how many have none.                      |
-| **Attributed to a named actor** | Changes with a named person or account, and how many have no named actor. |
-| **Linked to a ticket**          | Changes that cite a ticket, and how many have no linked ticket.           |
-| **Signed evidence**             | Changes with a signed verdict in the evidence ledger.                     |
-| **AI-assisted changes**         | Changes that carry an AI co-author or tool signature, by tool.            |
+## Needs a Decision
 
-### What the records prove
+The top open decisions, overrides about to expire and release work.
 
-A summary of how many changes have a complete trail (assessed, attributed, ticketed and signed) and what is missing, by platform. Whether every kind of change needs a ticket is a policy choice.
+* **Open decision work** opens [Assure](assure.md) → **Decision work**. Each listed change has **Review**.
+* **Plan releases** opens [Assure](assure.md) → **Release planning** with the active releases (Draft, Planned and Built).
 
-* **Review the&#x20;**_**n**_**&#x20;incomplete** opens the changes that miss part of the trail.
-* **Open the review queue** opens the [Decisions](decisions.md) review queue.
+## Changes Outside the Process
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsca-overview-decisions.png" alt="Needs a decision now and What the gate caught panels"><figcaption><p>Needs a decision now and What the gate caught</p></figcaption></figure>
+Changes that bypassed part of the recorded path: no linked ticket, no named actor or no gate result.
 
-### Needs a decision now
+| Row                  | What it counts                           |
+| -------------------- | ---------------------------------------- |
+| **No linked ticket** | Changes that cite no ticket.             |
+| **No named actor**   | Changes with no named person or account. |
+| **No assessment**    | Changes with no gate result.             |
 
-For the change approver and release manager. Each count opens its rows.
+Each count has **Review**. The latest such changes are listed below, each with **Review**. **Open Detect** opens [Detect](detect.md); **Inspect drift** opens **Governance drift**.
 
-| Row                                             | What it counts                                                           |
-| ----------------------------------------------- | ------------------------------------------------------------------------ |
-| **Approvals waiting**                           | Open approval requests, how many have waited over 7 days and the oldest. |
-| **Production changes outside policy (90 days)** | Direct production changes and changes made during a freeze.              |
-| **Not assessed**                                | Changes with no gate verdict, so nothing was checked.                    |
-| **Assessed late**                               | Changes assessed more than 24 hours after they happened.                 |
+## Audit Readiness
 
-### What the gate caught
+Exceptions, evidence integrity and evidence coverage for the period. **Open Prove** opens [Prove](prove.md).
 
-For security, compliance and the board: controls doing their job in the window.
+| Row                                      | What it shows                                                                                                                              |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| _n_ **exceptions open before the audit** | Exceptions in force, requested, expiring and lapsed. Each needs a reason, a decision and an expiry.                                        |
+| **Evidence integrity**                   | Whether the signed evidence was verified in this session. Opening the page verifies nothing: **Verify on Prove** runs the read-only check. |
+| **Evidence record on** _n_% **changes**  | Changes in the period that have an evidence record.                                                                                        |
+| **No signed verdict**                    | Changes without a signed gate verdict.                                                                                                     |
+| **No recorded control coverage**         | Changes whose evidence maps no control, so no control can be shown as tested.                                                              |
 
-| Row                         | What it counts                                                                                                    |
-| --------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Blocked by the gate**     | Changes refused against policy.                                                                                   |
-| **Warned by the gate**      | Changes let through with findings for a person to judge.                                                          |
-| **Overridden by a person**  | Changes accepted past the policy, each as a signed risk acceptance.                                               |
-| **Changes with findings**   | Changes with evaluation findings recorded against them.                                                           |
-| **Deployed, then degraded** | Deployments after which Service Health failed within 24 hours. A monitor that was already failing is not counted. |
-| **Decisions recorded**      | Approvals decided in the window.                                                                                  |
+## Changes That Caused Incidents
 
-### Recent changes
+Incidents in the period, confirmed causes first. A change is named as a cause only when a person confirms it in an incident review. **Open Improve** opens [Improve](improve.md).
 
-The latest changes with **Change**, **Platform**, **Actor**, **Gate result** and **Time basis**. The time is the source system's own time where it reports one; detection time is labelled. Select a change to open it, or **View all** to open [All changes](change-records.md).
+| Figure                          | Description                                                                                |
+| ------------------------------- | ------------------------------------------------------------------------------------------ |
+| **Change failure rate**         | Needs production deployment records; otherwise **Not measured**.                           |
+| **Without a confirmed cause**   | Incidents no one has tied to a change yet.                                                 |
+| **Overrides that later failed** | Warned or blocked changes that were approved and later confirmed as an incident cause.     |
+| **Deployed, then degraded**     | Deployments after which Service Health read down or degraded. An association, not a cause. |
+
+## Change Sources
+
+The current inventory, independent of the period: **Recorded assets**, assets **Read by this IZ Suite** and assets with **No reproducible source**. Each connected source shows its state, asset count and last collection, with **Inspect source**. **Connect** buttons list the sources not connected yet. **View coverage** opens collection coverage in [Connections](connections.md).
+
+## Remediation Follow-Up
+
+Current remediation work: **Open tasks**, **Overdue** and **Blocking severity**, with the next tasks and their owners and due dates. **Review work** opens the work list; **Review remediation policy** opens the remediation settings.
+
+## Charts
+
+* **Recorded gate decisions**: changes **Allowed by gate**, with a **Warning recorded**, **Blocked by gate** and with **No assessment**.
+* **Where the evidence trail is incomplete**: changes with no assessment, no linked ticket, no named actor, no signed verdict or no recorded control coverage. One change can appear in several bars.
+
+Select a bar for the records behind it, or **Show data table** for the numbers.
 
 {% hint style="info" %}
-The brief reports what the records show. It does not infer a safety or compliance score.
+Overview reports what the records show. It does not infer a safety or compliance score.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Decisions](decisions.md): act on approvals waiting and review changes.
-* [Change Records](change-records.md): browse every recorded change.
-* [Change Assurance](./): how the areas fit together.
+* [Detect](detect.md): investigate the changes behind the gaps.
+* [Assure](assure.md): act on approvals waiting and plan releases.
+* [Change Assurance](./): how the stages fit together.

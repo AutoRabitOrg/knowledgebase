@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Branch dependencies** in
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-branch-dependencies-explorer.png" alt="Branch dependencies tab with view switch, metric tiles and the dependency explorer"><figcaption><p>Branch dependencies</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-deps.png" alt="Branch dependencies tab with view switch, metric tiles and the dependency explorer"><figcaption><p>Branch dependencies</p></figcaption></figure>
 
 ## Scope and views
 
@@ -44,8 +44,8 @@ The breadcrumb above the graph (**All dependencies** / application / reference) 
 Connections show the direct references the source reported. They do not prove transitive reach, runtime traffic or business impact, and a missing relationship is a gap in the evidence, not proof of isolation. Links that a person declared in the dossier (**Link applications**) are shown as declared, and scans never change them.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* Dependency Insights: plan versions, risks and actions across connected applications.
-* [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f): open a repository's dossier.
+* [Dependency Insights](../dependency-insights/): plan versions, risks and actions across connected applications.
+* [Branches & Baselines](branches-and-baselines.md): open a repository's dossier.
 * [Code Analysis](./): back to the workspace.

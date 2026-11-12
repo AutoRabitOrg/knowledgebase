@@ -25,15 +25,15 @@ The extension analyzes a project only when:
 * your IDE key is enabled and still has allowance for a new project (projects you already analyzed with the key always count as allowed), and
 * the project name is allowed by the IDE settings in IZ Suite.
 
-Otherwise the results view shows the reason instead of issues. See [IDE Extensions](./#control-which-projects-developers-can-analyze).
+Otherwise the results view shows the reason instead of issues. See [IDE Extensions](./).
 
 ## Read the Results
 
 ### Fly Results
 
-The **Fly Results** view in the panel (next to **Problems**, **Output** and **Terminal**) lists the issues of the current project. To open it, click the IZ tab in the panel, or run **View: Open View...** from the Command Palette and choose **Fly Results**.
+The **Fly Results** view in the panel (next to **Problems**, **Output** and **Terminal**) lists the issues of the current project. To open it, click the **IZ Scan** tab in the panel, or run **View: Open View...** from the Command Palette and choose **Fly Results**.
 
-Issues are grouped by severity, most severe first. When a severity has many issues, its group shows only part of them and says so, for example **(Displaying 100 of 340 issues)**. Fix the issues shown, or use **Problems** for the full list.
+Issues are grouped by severity, most severe first. When a severity has many issues, its group shows only part of them and says so, for example **(Displaying 100 of 340 issues)**; the limit depends on the number of severities. Fix the issues shown, or use **Problems** for the full list.
 
 | Column        | Description                                                                                |
 | ------------- | ------------------------------------------------------------------------------------------ |
@@ -86,32 +86,32 @@ Commit or back up your work before you apply fixes, so you can review the change
 
 ### Autofix Logs
 
-Every fix you apply is logged in the project, in `target/izanalyzer/autofix-log.csv`. To read the log, run **Auto Fix Logs** from the Command Palette: the **Auto Fix Logs** tab shows the log of the current project as a table.
+Every fix you apply is logged in the project, in `target/iz_analyzer/fix_log.txt`. To read the log, run **Auto Fix Logs** from the Command Palette: the **Auto Fix Logs** tab shows the log of the current project as a table.
 
 ## Commands
 
 Run these from the Command Palette (`Ctrl+Shift+P`, or `Cmd+Shift+P` on macOS). Type the command name to find it.
 
-| Command                                          | What it does                                                             |
-| ------------------------------------------------ | ------------------------------------------------------------------------ |
-| **IZ Suite Connection**                          | Opens the connection form.                                               |
-| **Reload Connection and Profiles**               | Reloads the **Connection** view: languages and quality profiles.         |
-| **Reload Profile Rules**                         | Reloads the **Profile Rules \[In Use]** view.                            |
-| **Sync Rules from Server**                       | Downloads the rules again and re-analyzes.                               |
-| **Reload Analysis Results**                      | Analyzes the current project again.                                      |
-| **Start Auto Analysis** / **Stop Auto Analysis** | Turns automatic analysis on or off.                                      |
-| **Auto Fix Logs**                                | Shows the autofix log of the current project.                            |
-| **Custom Rule Editor**                           | Opens the Rules Playground. See [Rules Playground](rules-playground.md). |
+| Command                                          | What it does                                                                 |
+| ------------------------------------------------ | ---------------------------------------------------------------------------- |
+| **IZ Suite Connection**                          | Opens the connection form.                                                   |
+| **Reload Connection and Profiles**               | Reloads the **Connection** view: languages and quality profiles.             |
+| **Reload Profile Rules**                         | Reloads the **Profile Rules \[In Use]** view.                                |
+| **Sync Rules from Server**                       | Downloads the rules again and re-analyzes.                                   |
+| **Reload Analysis Results**                      | Analyzes the current project again.                                          |
+| **Start Auto Analysis** / **Stop Auto Analysis** | Turns automatic analysis on or off.                                          |
+| **Auto Fix Logs**                                | Shows the autofix log of the current project.                                |
+| **Custom Rule Editor**                           | Opens the [Custom Rule Editor](rules-playground.md). See Custom Rule Editor. |
 
 ## Your Results in IZ Suite
 
-The extension publishes a summary of each project you analyze to IZ Suite: the issue counts by severity and type, not your code. Open **Administration** → **My Account** → **IDE projects**, click **Scanned projects** on your key, and click **Review results** on a project to see its latest published analysis and its recent ones. The first analysis of a project uses one project of your key's allowance.
+The extension publishes a summary of each project you analyze to IZ Suite: the project's folder name and full path on your computer, and the issue counts by severity and type. Your code is not sent. Results are published on a regular basis while VS Code is open, so IZ Suite can lag behind your editor. Open **Administration** → **My Account** → **IDE projects**, click **Scanned projects** on your key, and click **Review results** on a project to see its latest published analysis and its recent ones. The first analysis of a project uses one project of your key's allowance.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsgs-ide-keys-review.png" alt="Review results drawer with the latest published scan counts and recent scans"><figcaption><p>Results published from the IDE</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-ide-scanned-projects.png" alt="Projects scanned with an IDE key, with each project path, its last published scan and the Review results action"><figcaption></figcaption></figure>
 
-## Next steps
+## Next Steps
 
-* [IDE Projects](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/my-account/ide-projects): review the projects you analyzed.
-* [Rules Playground](rules-playground.md): write a custom rule and try it on your project.
+* [IDE Projects](../administration/my-account/ide-projects.md): review the projects you analyzed.
+* [Custom Rule Editor](rules-playground.md): write a custom rule and try it on your project.
 * [VS Code Extension](vs-code-extension.md): connection, profiles and settings.
-* [Quality Profiles](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-profiles): the profiles whose rules the extension applies.
+* [Quality Profiles](../operations/quality-control/quality-profiles.md): the profiles whose rules the extension applies.

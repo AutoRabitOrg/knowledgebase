@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Manage Scanning** in the
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-manage-scanning-github.png" alt="Manage Scanning on the GitHub tab with the setup status, Manage menu and repository tiles"><figcaption><p>Manage Scanning</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-manage-scanning.png" alt="Manage Scanning on the GitHub tab with the setup status, Manage menu and repository tiles"><figcaption><p>Manage Scanning</p></figcaption></figure>
 
 ## Sources
 
@@ -32,7 +32,32 @@ The **Manage** (or **More**) menu opens the other settings of the source:
 * **Scan schedules**.
 * **Pull-request scanning** (Bitbucket only).
 
-These open the same drawers as Setup.
+These open the same drawers as [Setup](../../administration/setup.md)
+
+.
+
+## Connect Design Center
+
+Design Center projects are scanned with their own Anypoint connected app. Set it up from the **Design Center** tab.
+
+1. Connect Anypoint Platform and run the **Anypoint Sync** first: projects are filed under the Anypoint business groups they belong to. Until the sync has brought them in, the setup status shows **Run the Anypoint Sync first** with **Configure Anypoint connection** (see [MuleSoft Anypoint Platform](../../supported-platforms/mulesoft-anypoint-platform.md)).
+2. In Anypoint Platform, open **Access Management** and create a connected app of type **App acts on its own behalf (client credentials)** in the root organization. Give it Design Center access (**Design Center Developer**) for the organization whose projects you want scanned. You can reuse the Anypoint inventory sync's app if it already has that access.
+3. On the **Design Center** tab, click **Configure Design Center connection**. Once connected, it is under **More** → **Design Center connection**. The **Connect Design Center** drawer opens.
+4. Fill in the fields and click **Save**.
+
+<figure><img src="../../../../../.gitbook/assets/v2-code-design-center.png" alt="Connect Design Center drawer with the connected app steps, Client ID, Client secret and Owner ID"><figcaption></figcaption></figure>
+
+| Field             | Description                                                                                         |
+| ----------------- | --------------------------------------------------------------------------------------------------- |
+| **Client ID**     | The connected app's client ID. Stored encrypted; once saved, leave it blank to keep it.             |
+| **Client secret** | The connected app's secret. Stored encrypted; once saved, leave it blank to keep it.                |
+| **Owner ID**      | Required. The Anypoint user ID that owns the Design Center projects. It is not the organization ID. |
+
+There is no test button: your agent signs in to Design Center on the next project sync, and the projects appear when it succeeds. Next, click **Configure scan schedules** to schedule the Design Center project sync and scans; each business group gets its own.
+
+{% hint style="warning" %}
+You need a role that can create and edit global settings to save the connection, and the **Code Analysis** licence.
+{% endhint %}
 
 ## Repository tiles
 
@@ -54,15 +79,15 @@ You need a role that can manage connections and configure jobs to change automat
 
 ## Repository selection
 
-| Item                                 | Description                                                                   |
-| ------------------------------------ | ----------------------------------------------------------------------------- |
-| **All** / **Enabled** / **Excluded** | Filters the list by eligibility, with counts.                                 |
-| Search                               | **Search repositories** by name.                                              |
-| **Export**                           | Downloads this page of repositories as CSV.                                   |
-| **Repository**                       | Name. **Open application dossier** opens the dossier of a scanned repository. |
-| **Scan eligibility**                 | **Enabled** or **Excluded**.                                                  |
-| **Organization / environment**       | The organization the repository belongs to and its environment.               |
-| **Updated**                          | When the record last changed.                                                 |
+| Item                                 | Description                                                                                                 |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **All** / **Enabled** / **Excluded** | Filters the list by eligibility, with counts.                                                               |
+| Search                               | **Search repositories** by name.                                                                            |
+| **Export**                           | Downloads this page of repositories as CSV. Refresh reloads the list and Columns chooses the columns shown. |
+| **Repository**                       | Name. **Open application dossier** opens the dossier of a scanned repository.                               |
+| **Scan eligibility**                 | **Enabled** or **Excluded**.                                                                                |
+| **Organization / environment**       | The organization the repository belongs to and its environment.                                             |
+| **Updated**                          | When the record last changed.                                                                               |
 
 ### Enable or exclude repositories
 
@@ -77,9 +102,9 @@ Click **Clear selection** to untick everything. Excluding a repository stops fut
 You need a role that can configure jobs to select, enable or exclude repositories.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f): review the branches of the scanned repositories.
+* [Branches & Baselines](branches-and-baselines.md): review the branches of the scanned repositories.
 * [Pull Requests](pull-requests.md): review scanned pull requests.
-* Schedules: follow the scans that run.
+* [Schedules](../../operations/schedules/): follow the scans that run.
 * [Code Analysis](./): back to the workspace.

@@ -8,9 +8,9 @@ Open it from **Operations** → **Quality Control** → **Metric profiles** in t
 You need a role that can view metric profiles. Creating, editing, cloning and assigning profiles need roles that can manage or clone metric profiles.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-metric-profiles-list.png" alt="Metric profiles tab with summary tiles, filters and the profile table"><figcaption><p>Metric profiles</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-metric-profiles (1).png" alt="Metric profiles tab with summary tiles, filters and the profile table"><figcaption></figcaption></figure>
 
-## Summary tiles
+## Summary Tiles
 
 Click a tile to filter the table.
 
@@ -20,7 +20,7 @@ Click a tile to filter the table.
 | **Language defaults**     | The starting default profile of each technology. Organization and application choices can differ. |
 | **No active definitions** | Profiles without any active metric. Review their coverage before assigning them.                  |
 
-## Profile adoption and configuration
+## Profile Adoption and Configuration
 
 | Filter                   | Description                                                                                                          |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Click a tile to filter the table.
 | **Profile status**       | **All profiles**, **Language defaults**, **Other profiles**, **Enabled**, **Disabled** or **No active definitions**. |
 | **Search profile names** | Finds profiles by name.                                                                                              |
 
-**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table.
+**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table, **Columns** shows or hides columns and **Export** downloads the table.
 
 | Column                        | Description                                                                                                                                   |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,14 +36,15 @@ Click a tile to filter the table.
 | **Technology**                | The technology the profile applies to.                                                                                                        |
 | **Language default**          | **Default** when this is the technology's default profile.                                                                                    |
 | **Active / included metrics** | Active metrics out of all included metrics. Click it to review the metrics.                                                                   |
+| **Last updated**              | When the profile last changed. The list shows the most recently changed profiles first; click **Last updated** or the name column to sort.    |
 | **Latest assessment use**     | How many applications used the profile in their latest assessment, and in how many organizations it is the default. Click it to review usage. |
 | **Actions**                   | **Review metrics**, **Assign organization defaults** and **Clone profile**.                                                                   |
 
-## Profile details
+## Profile Details
 
-Click a profile's name or usage to open its details: technology, status, whether it is the language default and when it was updated, followed by the applications whose latest assessment used it and its organization defaults. From the details you can use **Edit profile details**, **Export profile** (JSON), **Make language default**, and **Disable profile** or **Enable profile**. Organizations using a disabled profile revert to the language default; recorded assessment results stay unchanged.
+Click a profile's name or usage to open its details: technology, status, whether it is the language default and when it was updated, followed by the **Applications assessed** and **Organization defaults** counts and the **Applications using this standard** table (with **Refresh**, **Columns** and **Export**). From the details you can use **Edit profile details**, **Export profile** (JSON), **Make language default**, and **Disable profile** or **Enable profile**. Organizations using a disabled profile revert to the language default; recorded assessment results stay unchanged.
 
-## Create a profile
+## Create a Profile
 
 1. Click **Create Profile**.
 2. Enter the **Profile name**. Required.
@@ -54,9 +55,9 @@ Click a profile's name or usage to open its details: technology, status, whether
 
 To copy an existing profile instead, click **Clone profile** on its row and enter the **New Profile Name**.
 
-## Review the metrics in a profile
+## Review the Metrics in a Profile
 
-Click **Review metrics** to open the profile's metrics. Filter by **Origin**, **Assessment use** and **Component type**, or search by metric name or identifier.
+Click **Review metrics** to open the profile's metrics on their own page; **Back to metric profiles** returns to the list. Filter by **Origin**, **Assessment use** and **Component type**, or search by metric name or identifier. **Saved filters**, **Refresh**, **Columns** and **Export** work as on the profile list.
 
 | Column             | Description                                                               |
 | ------------------ | ------------------------------------------------------------------------- |
@@ -71,14 +72,14 @@ Click **Review metrics** to open the profile's metrics. Filter by **Origin**, **
 
 Click **Add metrics** to choose more metrics from those available for the technology, then confirm them in **Review profile additions**.
 
-## Assign organization defaults
+## Assign Organization Defaults
 
 1. Click **Assign organization defaults** on the profile's row.
 2. Choose one or more organizations in **Add organization to profile**, and click **Add Organizations**.
 
 Defaults apply to future assessments and do not rewrite earlier results.
 
-## Next steps
+## Next Steps
 
 * [Metric Rules](metric-rules.md): review and create the metrics a profile measures.
 * [Quality Gates](quality-gates.md): use measured values in gate conditions.

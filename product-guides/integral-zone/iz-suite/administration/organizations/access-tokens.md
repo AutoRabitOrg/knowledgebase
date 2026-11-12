@@ -4,9 +4,9 @@ Access tokens let integrations, such as CI/CD pipelines, AI assistants and scrip
 
 Open it from **Administration** → **Organizations** → **Access tokens** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-access-tokens-list.png" alt="Access tokens tab with status tiles, filters and the access token directory"><figcaption><p>Access tokens</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-org-tokens.png" alt="Access tokens tab with status tiles, filters and the access token directory"><figcaption></figcaption></figure>
 
-## Counts and filters
+## Counts and Filters
 
 | Tile                    | Description                                                 |
 | ----------------------- | ----------------------------------------------------------- |
@@ -26,7 +26,7 @@ Click a tile to list those tokens.
 
 **Saved filters** and **Save filters** keep a filter combination. **Refresh**, **Columns** and **Export** work as on other lists.
 
-## Access token directory
+## Access Token Directory
 
 | Column      | Description                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------------- |
@@ -39,9 +39,9 @@ Click a tile to list those tokens.
 
 **Review token** opens the token drawer: status, **Acts as**, **Expires**, **Created**, **Token value** (**Not retrievable; only a digest is stored**) and **Roles carried by this token**. The token can never exceed the roles its owner holds.
 
-## Create an access token
+## Create an Access Token
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-access-tokens-create.png" alt="Create access token form with token name, acts as, roles and expiry"><figcaption><p>Create access token</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-org-tokens-create.png" alt="Create access token form with token name, acts as, roles and expiry"><figcaption></figcaption></figure>
 
 1. Click **Create access token**.
 2. Enter a **Token name**.
@@ -62,7 +62,7 @@ Click a tile to list those tokens.
 The token value is shown only once, under **Copy this token now**. Only a digest is stored, so the value cannot be shown again. If it is lost, create a new token. Keep tokens in a masked secret store and never paste them into files you commit.
 {% endhint %}
 
-## Disable or enable a token
+## Disable or Enable a Token
 
 1. Click **Disable token** (or **Enable token**) on the row.
 2. Confirm in the drawer that opens.
@@ -73,8 +73,8 @@ Integrations using a disabled token lose access on their next request. You can e
 You need a role that can generate access tokens to create one. You can disable or enable your own tokens; disabling other people's tokens needs a role that can manage people.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Roles](roles.md): create narrow roles for pipelines and AI assistants.
-* Setup: create a token and copy a ready-made pipeline or AI assistant configuration.
+* [Setup](../setup.md): create a token and copy a ready-made pipeline or AI assistant configuration.
 * [Users](users.md): disabling a person also disables their tokens.

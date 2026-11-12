@@ -8,19 +8,19 @@ Open a workspace from **Workspaces** in the sidebar. When a workspace is open, i
 The sidebar shows only the workspaces your organization licensed and your role can open.
 {% endhint %}
 
-## The workspaces
+## The Workspaces
 
-| Workspace           | What it covers                                                                           |
-| ------------------- | ---------------------------------------------------------------------------------------- |
-| Platform Analysis   | Configuration and code posture of the applications deployed on your connected platforms. |
-| Code Analysis       | Source quality of repository branches and pull requests, and their path to a baseline.   |
-| Dependency Insights | Recorded dependencies, version exposure and lifecycle planning across applications.      |
-| Change Assurance    | Change decisions, release readiness and the evidence behind them.                        |
-| Service Health      | Monitors, service objectives, status pages and the readiness of your services.           |
-| Compliance          | Standards and frameworks, mapped rules, risk and treatment plans.                        |
-| AI & Automation     | AI reviews, their coverage, usage, budgets and access.                                   |
+| Workspace                                   | What it covers                                                                           |
+| ------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [Platform Analysis](platform-analysis/)     | Configuration and code posture of the applications deployed on your connected platforms. |
+| [Code Analysis](code-analysis/)             | Source quality of repository branches and pull requests, and their path to a baseline.   |
+| [Dependency Insights](dependency-insights/) | Recorded dependencies, version exposure and lifecycle planning across applications.      |
+| [Change Assurance](change-assurance/)       | Change decisions, release readiness and the evidence behind them.                        |
+| [Service Health](service-health/)           | Monitors, service objectives, status pages and the readiness of your services.           |
+| [Compliance](compliance/)                   | Standards and frameworks, mapped rules, risk and treatment plans.                        |
+| [AI & Automation](ai-and-automation/)       | AI reviews, their coverage, usage, budgets and access.                                   |
 
-## Shared controls
+## Shared Controls
 
 ### Header
 
@@ -34,15 +34,15 @@ The sidebar shows only the workspaces your organization licensed and your role c
 
 The main filters sit in a bar above the content (for example **Organization**, **Platform** or **Source**, **Asset type**). Less frequent filters are in the **Filters** panel; the button shows how many of them are set.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsworkspaces-filters.png" alt="Filters panel open over the Applications tab, with Severity, Category, Rule and Security standard"><figcaption><p>The Filters panel</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-workspaces-filters.png" alt="Filters panel with Severity, Category, Rule, Security standard and Attributes"><figcaption></figcaption></figure>
 
 1. Choose values in the filter bar. The view updates at once.
 2. Click **Filters** to open the panel, choose values, then click **Apply filters**. Click **Cancel** to close it without changes.
 3. Each active filter appears as a chip under the bar. Click the cross on a chip to remove that filter, or click **Reset filters** to remove them all.
 
-Within one filter, any selected value matches. Across filters, a record must match every filter you set.
+Within one filter, any selected value matches. Across filters, a record must match every filter you set. In Platform Analysis and Code Analysis, the panel also has **Attributes**: recorded facts of the applications, such as runtime, region or components. Add an attribute, then choose its values.
 
-### Saved filters
+### Saved Filters
 
 Saved filters keep a named set of filters for one screen. They are saved for you only.
 
@@ -53,7 +53,7 @@ Saved filters keep a named set of filters for one screen. They are saved for you
 
 **Save filters** is available once at least one filter is set. When filters are set, the bar also shows **Copy link**, which copies the address with the current filters.
 
-### Table tools
+### Table Tools
 
 Every table in a workspace has the same tools in the row above it.
 
@@ -71,8 +71,8 @@ Every table in a workspace has the same tools in the row above it.
 
 Charts have a **Show data table** button that replaces the chart with the same figures as a table, and **Show chart** to switch back. Many charts are clickable: select a bar or segment to list the records behind it.
 
-## Next steps
+## Next Steps
 
-* Platform Analysis: review the posture of your deployed applications.
-* Code Analysis: review branches, pull requests and their findings.
-* Dependency Insights: trace what a change could reach.
+* [Platform Analysis](platform-analysis/): review the posture of your deployed applications.
+* [Code Analysis](code-analysis/): review branches, pull requests and their findings.
+* [Dependency Insights](dependency-insights/): trace what a change could reach.

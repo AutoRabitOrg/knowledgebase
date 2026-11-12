@@ -8,9 +8,9 @@ Open it from **Workspaces** → **Compliance** → **Treatment plans** in the si
 You need a role that can view compliance standards. Creating or updating a plan needs a role that can edit compliance standards.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-treatment-plans-list.png" alt="Shared treatment plans list"><figcaption><p>Treatment plans</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-treatment-plans.png" alt="Shared treatment plans list"><figcaption><p>Treatment plans</p></figcaption></figure>
 
-## Shared treatment plans
+## Shared Treatment Plans
 
 | Column           | Description                                                                    |
 | ---------------- | ------------------------------------------------------------------------------ |
@@ -21,7 +21,7 @@ You need a role that can view compliance standards. Creating or updating a plan 
 
 Use **Newer plans** and **Older plans** to page through the list.
 
-## Create a shared plan
+## Create a Shared Plan
 
 A treatment plan is how you decide a risk it can cover. Saving the plan records its decision on every risk mapping it covers.
 
@@ -45,7 +45,7 @@ A treatment plan is how you decide a risk it can cover. Saving the plan records 
 | **Verification rationale**                   | Shown for **Treatment verified**. At least 20 characters. **Required.**                                                                                                                                                                               |
 | **Reason for this decision**                 | At least 15 characters. **Required.**                                                                                                                                                                                                                 |
 
-## Review a plan
+## Review a Plan
 
 **Review** shows the plan's decision, owner, treatment, review and target dates, revision and plan text.
 
@@ -58,7 +58,7 @@ A treatment plan is how you decide a risk it can cover. Saving the plan records 
 Accepting a risk leaves its findings visible. A plan can be closed only when a newer passing assessment exists for every original occurrence and there are no new watched failures.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Risk Matrix](risk-matrix.md): select the risks a plan should cover.
 * [Assessment History](assessment-history.md): keep a snapshot of the outcome.

@@ -6,18 +6,18 @@ description: >-
 
 # Requirements & Sizing
 
-IZ Suite's size depends on how much you assess: how many applications and repositories, how often, and how many monitors run. AutoRABIT confirms the sizing for your installation from the inputs below. The figures on this page are starting points.
+IZ Suite's size depends on how much you assess: how many applications and repositories, how often, and how many monitors run. AutoRABIT works out the sizing for your installation with you, from the inputs below.
 
-### Software
+## Software
 
-| Item                         | Requirement                                                                                                                                             |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Container runtime            | Docker Engine 24 or later with the Docker Compose v2 plugin (single VM), or a container service such as Amazon ECS, Azure Container Apps or Kubernetes. |
-| CPU architecture             | x86-64 (Intel or AMD). The images are not built for Arm.                                                                                                |
-| Operating system (single VM) | Ubuntu 24.04 LTS or Debian 12.                                                                                                                          |
-| Database                     | PostgreSQL 16. The proof-of-concept setup runs it as a container; production uses a managed PostgreSQL service.                                         |
+| Item                         | Requirement                                                                                                     |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Container runtime            | Docker Engine with the Docker Compose v2 plugin (single VM), or a container service such as Amazon ECS.         |
+| CPU architecture             | x86-64 (Intel or AMD). The images are not built for Arm.                                                        |
+| Operating system (single VM) | Ubuntu 24.04 LTS or Debian 12.                                                                                  |
+| Database                     | PostgreSQL 16. The proof-of-concept setup runs it as a container; production uses a managed PostgreSQL service. |
 
-### Inputs for Sizing
+## Inputs for Sizing
 
 Send these to AutoRABIT with your installation request:
 
@@ -31,32 +31,27 @@ Send these to AutoRABIT with your installation request:
 | Whether AI reviews and source storage are used                                | AI reviews add agent work; stored source adds database or storage space.  |
 | How long evidence must be kept                                                | Sets database storage and backup size.                                    |
 
-### Starting Points
+## Sizing
 
-| Size         | Typical estate                                                                                  | Single VM                      | Production (per task)                                                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **Trial**    | A few dozen applications or repositories, light scanning                                        | 4 vCPU, 16 GB RAM, 100 GB disk | —                                                                                                                 |
-| **Standard** | Up to a few hundred applications or repositories, nightly assessments                           | 8 vCPU, 32 GB RAM, 150 GB disk | Server 2 × (2 vCPU, 4 GB); worker 1–4 × (2 vCPU, 4 GB); agent 1 × (2 vCPU, 4 GB); PostgreSQL with 2 vCPU and 8 GB |
-| **Large**    | Many hundreds of applications or repositories, frequent or pull-request scanning, many monitors | Not recommended                | As Standard with more agents and workers, and a larger PostgreSQL instance, sized by AutoRABIT from your inputs   |
+AutoRABIT sizes the virtual machine, the server, worker and agent tasks and the database for your installation from these inputs, for example the number of applications and repositories you assess.
 
-On a single VM the four components need about 8 vCPU and 20 GB together; the rest of a 32 GB machine is left for the operating system and growth.
+{% hint style="info" %}
+Add agents rather than making one agent larger when you have many platforms, a high monitor count or platforms in separate networks. Each agent works on its own; agents need no load balancer.
+{% endhint %}
 
-> **HINT (info):** Add agents rather than making one agent larger when you have many platforms, a high monitor count or platforms in separate networks. Each agent works on its own; agents need no load balancer.
+## Network
 
-### Network
+| Direction | Port    | Purpose                                                                                                                                                                                                                                                                                                                     |
+| --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Inbound   | TCP 443 | Users and pipelines reach IZ Suite over HTTPS, through a load balancer or reverse proxy that holds your TLS certificate.                                                                                                                                                                                                    |
+| Inbound   | TCP 22  | Administration of a single VM, from administrator addresses only.                                                                                                                                                                                                                                                           |
+| Outbound  | TCP 443 | `public.ecr.aws` to download the images, `artifacts.integralzone.com` for content and agent updates, `license.integralzone.com` for the licence service, and the platforms and repositories IZ Suite assesses (for example MuleSoft Anypoint, AWS, Azure, GitHub or Bitbucket), and your AI provider if you use AI reviews. |
 
-| Direction | Port    | Purpose                                                                                                                                                                                                     |
-| --------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Inbound   | TCP 443 | Users and pipelines reach IZ Suite over HTTPS, through a load balancer or reverse proxy that holds your TLS certificate.                                                                                    |
-| Inbound   | TCP 80  | Optional; only to redirect to HTTPS.                                                                                                                                                                        |
-| Inbound   | TCP 22  | Administration of a single VM, from administrator addresses only.                                                                                                                                           |
-| Outbound  | TCP 443 | `public.ecr.aws` to download the images, and the platforms and repositories IZ Suite assesses (for example MuleSoft Anypoint, AWS, Azure, GitHub or Bitbucket), and your AI provider if you use AI reviews. |
-
-Keep PostgreSQL (TCP 5432) reachable only from the server and worker. Agents talk to the server only, so they can run in other networks as long as they reach IZ Suite over HTTPS.
+Keep PostgreSQL (TCP 5432) reachable only from the server and worker. Agents need no database access. They need HTTPS to IZ Suite, to `artifacts.integralzone.com` and to the platforms they assess, so they can run in other networks.
 
 Choose one hostname for IZ Suite, for example `izsuite.yourcompany.com`, and a TLS certificate for it.
 
-### Next steps
+## Next Steps
 
-* [Proof of Concept Installation](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/proof-of-concept-installation): run IZ Suite on one VM.
-* [Production Deployment](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/production-deployment): the recommended production setup.
+* [Proof of Concept Installation](proof-of-concept-installation.md): run IZ Suite on one VM.
+* [Production Deployment](production-deployment.md): the recommended production setup.

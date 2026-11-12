@@ -15,7 +15,7 @@ Have ready:
 * The address users will open IZ Suite at, for example `https://izsuite.yourcompany.com`.
 {% endhint %}
 
-### Apply the Licence
+## Apply the Licence
 
 1. Open IZ Suite in a browser. The sign-in card says **This workspace needs a license**.
 2. Click **Apply license key**.
@@ -27,22 +27,22 @@ Have ready:
     | **Base URL**                                | The address users open IZ Suite at. Links in emails sent by IZ Suite use it. |
     | **Admin email**                             | The email of the first administrator.                                        |
     | **Admin password** and **Confirm password** | At least 12 characters, including a number and a special character.          |
-4. Click **Apply license**.
+4. Click **Apply license**. A **License applied** screen appears; click **Sign in** on it. Setup opens after you sign in.
 
-Applying the licence also registers the built-in agent, so the agent of a [Proof of Concept Installation](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/proof-of-concept-installation) connects on its next restart.
+Applying the licence also registers the built-in agent, so the agent of a [Proof of Concept Installation](proof-of-concept-installation.md) connects shortly after (it restarts on its own).
 
-### Sign In
+## Sign In
 
-Sign in with **IZ User**, using the admin email and password you entered. See [Sign In](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/getting-started/sign-in).
+Sign in with the admin email and password you entered. See [Sign In](../getting-started/sign-in.md).
 
-### Finish the Setup
+## Finish the Setup
 
-1. Open [Setup](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/setup) from the sidebar. Its checklist follows your licence: organizations, repositories, platforms, schedules, email, report storage, AI and Service Health.
-2. Check that the agent is connected in [Agents](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings/agents).
-3. Optionally, turn on single sign-on; see [Single Sign-On](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/supported-platforms/single-sign-on).
+1. Open [Setup](../administration/setup.md) from the sidebar. Its checklist follows your licence and the choices you make in it.
+2. Check that the agent is connected in [Agents](../administration/global-settings/agents.md).
+3. Optionally, turn on single sign-on; see [Single Sign-On](../supported-platforms/single-sign-on/).
 
-### Next steps
+## Next Steps
 
-* [Setup](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/setup): connect your platforms and repositories.
-* [Agents](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings/agents): confirm the agent is connected.
-* [Upgrades](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/installation/upgrades): keep the installation up to date.
+* [Setup](../administration/setup.md): connect your platforms and repositories.
+* [Agents](../administration/global-settings/agents.md): confirm the agent is connected.
+* [Upgrades](upgrades.md): keep the installation up to date.

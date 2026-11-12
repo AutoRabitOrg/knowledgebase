@@ -8,9 +8,9 @@ Open it from **Operations** → **Notifications** → **Organization subscriptio
 You need a role that can manage all subscriptions.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsnotifications-organization-subscriptions-list.png" alt="Organization subscriptions with filters and the subscription table"><figcaption><p>Organization subscriptions</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-notif-orgsubs (1).png" alt="Organization subscriptions with filters and the subscription table"><figcaption></figcaption></figure>
 
-## Filter subscriptions
+## Filter Subscriptions
 
 | Filter                | Description                                                              |
 | --------------------- | ------------------------------------------------------------------------ |
@@ -22,7 +22,7 @@ You need a role that can manage all subscriptions.
 | Search                | Finds subscriptions by subscriber or email address.                      |
 | Time range            | When the subscription was created, for example **All retained history**. |
 
-**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table and **Export this page** downloads the rows on the current page.
+**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table, **Columns** shows or hides columns and **Export** downloads the rows on the current page.
 
 ## Subscriptions
 
@@ -33,18 +33,18 @@ You need a role that can manage all subscriptions.
 | **Delivered to** | The channel and destination.                                                                      |
 | **State**        | **Active** or **Paused**.                                                                         |
 | **Subscribed**   | When the subscription was created.                                                                |
-| **Manage**       | **Remove subscription**.                                                                          |
+| **Manage**       | **Remove subscription**, or **Managed by the subscriber** when your role cannot remove it.        |
 
 Click a subscription to see its details. **Open subscriber** opens the subscriber's user record, when your role can view users.
 
-## Remove a subscription
+## Remove a Subscription
 
 1. Click **Remove subscription** on the row, or in the subscription's details.
 2. Confirm with **Remove subscription**.
 
 The recipient stops receiving those updates. They can subscribe again from the record.
 
-## Next steps
+## Next Steps
 
 * [Delivery Log](delivery-log.md): see which deliveries failed and resend them.
 * [My Subscriptions](my-subscriptions.md): review your own subscriptions.

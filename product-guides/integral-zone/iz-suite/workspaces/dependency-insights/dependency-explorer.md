@@ -16,7 +16,7 @@ Connections are the direct references that the source reported. They do not prov
 
 ## Focused explorer
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-dependency-explorer-focused.png" alt="Focused explorer with the selected dependency and its consumers"><figcaption><p>Focused explorer</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-explorer-focused.png" alt="Focused explorer with the selected dependency and its consumers"><figcaption><p>Focused explorer</p></figcaption></figure>
 
 ### Summary tiles
 
@@ -33,6 +33,7 @@ Connections are the direct references that the source reported. They do not prov
 * Choose **All references** or **Multiple consumers** to narrow the list.
 * Use the list selector to switch between applications (**With dependencies**, **All applications**) and **Referenced components**.
 * **Copy dependency link** copies a link to the current selection.
+* **Refresh** reloads the list.
 
 ### Selected dependency
 
@@ -45,7 +46,7 @@ Selecting a dependency shows its organization, its direct consumers and, for eac
 
 ### Prepare a dependency change review
 
-A change review assigns one tracked item per consumer to an owner. It appears in [Assigned Work](assigned-work.md) and **My open work**. It does not approve or run the change.
+A change review assigns one tracked item per consumer to an owner. It appears in [Assigned Work](../../assigned-work.md) and **My open work**. It does not approve or run the change.
 
 1. Select a dependency, then select **Prepare change review**.
 2. Enter the **Review title**.
@@ -60,7 +61,7 @@ Select **Download dependency review** instead to download the review for the con
 
 Select an application (with **Explore dependencies** or from the list), then select **End-to-end graph** to trace its dependencies and consumers across several hops.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-dependency-explorer-graph.png" alt="End-to-end dependency graph for an application"><figcaption><p>End-to-end graph</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-explorer-graph.png" alt="End-to-end dependency graph for an application"><figcaption><p>End-to-end graph</p></figcaption></figure>
 
 | Control                                               | Description                                                                          |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------ |
@@ -72,9 +73,9 @@ Select an application (with **Explore dependencies** or from the list), then sel
 | **Refresh graph**                                     | Reload the graph.                                                                    |
 | **Show selected path**                                | Highlight the path from the root to the selected node.                               |
 
-Arrows point from a consumer to its dependency. Scroll to pan. Select a node to see its path and these actions: **Focus here** (make it the root), **Open dossier**, **Risk & lifecycle** and **Deprecate application**.
+Arrows point from a consumer to its dependency. Scroll to pan. Select a node to see its path and these actions: **Expand node** (load its connections), **Focus here** (make it the root), **Open dossier**, **Risk & lifecycle** and **Deprecate application**.
 
-While an application is selected, the top of the view also shows **Open application dossier** and **Review connected impact**. **Review connected impact** opens an AI review of the connected evidence; see AI Coverage & Findings.
+While an application is selected, the top of the view also shows **Open application dossier** and **Review connected impact**. **Review connected impact** opens an AI review of the connected evidence; see [AI Coverage & Findings](../ai-and-automation/ai-coverage-and-findings.md).
 
 ## All relationship rows
 
@@ -90,8 +91,8 @@ Every recorded relationship, including upstream and containment rows.
 
 **Columns** chooses the visible columns and **Export this page** downloads the rows on the current page.
 
-## Next steps
+## Next Steps
 
 * [Version Planning](version-planning.md): plan an upgrade for a shared component.
 * [Asset Exposure](asset-exposure.md): review the active risk of each application.
-* [Evidence Coverage](evidence-coverage.md): find applications that have no relationship evidence.
+* [Risk & Lifecycle](risk-and-lifecycle.md): review the vulnerability and lifecycle matches of a dependency's consumers.

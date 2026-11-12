@@ -8,9 +8,9 @@ Open it from **Operations** → **Quality Control** → **Quality profiles** in 
 You need a role that can view quality profiles. Creating, editing, cloning and assigning profiles need roles that can manage or clone quality profiles.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-quality-profiles-list.png" alt="Quality profiles tab with summary tiles, filters and the profile table"><figcaption><p>Quality profiles</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-profiles.png" alt="Quality profiles tab with summary tiles, filters and the profile table"><figcaption></figcaption></figure>
 
-## Summary tiles
+## Summary Tiles
 
 Click a tile to filter the table.
 
@@ -20,7 +20,7 @@ Click a tile to filter the table.
 | **Language defaults**     | The starting default profile of each technology. Organization and application choices can differ. |
 | **No active definitions** | Profiles without any active rule. Review their coverage before assigning them.                    |
 
-## Profile adoption and configuration
+## Profile Adoption and Configuration
 
 | Filter                   | Description                                                                                                          |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
@@ -28,7 +28,7 @@ Click a tile to filter the table.
 | **Profile status**       | **All profiles**, **Language defaults**, **Other profiles**, **Enabled**, **Disabled** or **No active definitions**. |
 | **Search profile names** | Finds profiles by name.                                                                                              |
 
-**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table.
+**Saved filters** and **Save filters** keep a combination of filters for later. **Refresh** reloads the table, **Columns** chooses the visible columns and **Export** downloads the table.
 
 | Column                      | Description                                                                                                                                   |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -36,6 +36,7 @@ Click a tile to filter the table.
 | **Technology**              | The technology the profile applies to.                                                                                                        |
 | **Language default**        | **Default** when this is the technology's default profile.                                                                                    |
 | **Active / included rules** | Active rules out of all included rules. Click it to review the rules.                                                                         |
+| **Last updated**            | When the profile last changed. The list shows the most recently changed profiles first; click **Last updated** or the name column to sort.    |
 | **Latest assessment use**   | How many applications used the profile in their latest assessment, and in how many organizations it is the default. Click it to review usage. |
 | **Actions**                 | **Review rules**, **Assign organization defaults** and **Clone profile**.                                                                     |
 
@@ -43,7 +44,7 @@ Click a tile to filter the table.
 Application counts reflect the latest recorded assessment. Organization defaults describe configuration, not proof that a profile was used.
 {% endhint %}
 
-## Profile details
+## Profile Details
 
 Click a profile's name or usage to open its details: technology, status, whether it is the language default and when it was updated, followed by the applications whose latest assessment used it and its organization defaults. From the details you can:
 
@@ -52,7 +53,7 @@ Click a profile's name or usage to open its details: technology, status, whether
 * **Make language default**: make this enabled profile the technology's default. Organization and application selections may still use another profile.
 * **Disable profile** or **Enable profile**: organizations using a disabled profile revert to the language default. Recorded assessment results stay unchanged.
 
-## Create a profile
+## Create a Profile
 
 1. Click **Create Profile**.
 2. Enter the **Profile name**. Required.
@@ -63,17 +64,17 @@ Click a profile's name or usage to open its details: technology, status, whether
 
 A new profile does not change existing organization defaults. Add rules and review its coverage before you assign it.
 
-## Clone a profile
+## Clone a Profile
 
 1. Click **Clone profile** on the profile's row.
 2. Enter the **New Profile Name**. Required.
 3. Confirm the clone.
 
-## Review the rules in a profile
+## Review the Rules in a Profile
 
 Click **Review rules** to open the profile's rules. The header shows the technology, whether the profile is enabled and the default, and how many rules are included and still available for the technology.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsqc-quality-profiles-rules.png" alt="Rules included in a quality profile with filters and assessment use"><figcaption><p>Rules in a profile</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-profile-rules.png" alt="Rules included in a quality profile with filters and assessment use"><figcaption></figcaption></figure>
 
 | Filter             | Description                        |
 | ------------------ | ---------------------------------- |
@@ -86,21 +87,21 @@ The table lists each **Rule** with its tags, **Origin**, **Severity**, **Categor
 
 Select rules with the checkboxes and click **Investigate selected rules** to see the applications and open issues they affect. **Clear selection** clears the checkboxes.
 
-### Add rules to a profile
+### Add Rules to a Profile
 
 1. Click **Add rules**.
 2. Search and select the rules to add from the available rules for the technology. Selections are kept while you search and page.
 3. Review the selection; **Remove from selection** drops a rule.
 4. Confirm in **Review profile additions**.
 
-## Assign organization defaults
+## Assign Organization Defaults
 
 1. Click **Assign organization defaults** on the profile's row.
 2. Choose one or more organizations in **Add organization to profile**, and click **Add Organizations**.
 
 **Profile active in Organizations** lists the organizations that already use this profile by default. Defaults apply to future assessments and do not rewrite earlier results.
 
-## Next steps
+## Next Steps
 
 * [Quality Rules](quality-rules.md): review and create the rules a profile uses.
 * [Quality Gates](quality-gates.md): set the limits the profile's findings are judged against.

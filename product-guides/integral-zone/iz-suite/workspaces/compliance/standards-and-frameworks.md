@@ -8,9 +8,9 @@ Open it from **Workspaces** → **Compliance** → **Standards & frameworks** in
 You need a role that can view compliance standards. Creating, editing, enabling and disabling standards needs a role that can create or edit them.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-standards-frameworks-library.png" alt="Standards library"><figcaption><p>Standards &#x26; frameworks</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-library.png" alt="Standards library"><figcaption><p>Standards &#x26; frameworks</p></figcaption></figure>
 
-## Standards library
+## Standards Library
 
 | Filter                 | Description                                                 |
 | ---------------------- | ----------------------------------------------------------- |
@@ -40,11 +40,11 @@ Card actions:
 | **Disable standard** / **Enable standard** | Turns the standard off or on for this workspace. A disabled standard keeps its controls, mappings, last scores and retained evidence. An enabled standard's score refreshes on the next compliance validation run. |
 | **Manage standard**                        | Opens the standard's details.                                                                                                                                                                                      |
 
-## Recalculate scores
+## Recalculate Scores
 
 **Recalculate scores** queues a score recalculation of every enabled standard. Otherwise scores refresh when new assessment results arrive, and on the 1st and 15th of each month.
 
-## Create a standard
+## Create a Standard
 
 1. Select **Create standard**.
 2. Complete the fields below.
@@ -59,7 +59,7 @@ Card actions:
 | **Impact measures**    | Shown for **Maximum of all measures**. The measures that describe the impact of a control failure. Add at least one. Changing them clears the impact chosen per measure on each rule of the standard. |
 | **Status**             | **Enabled** or disabled. **Required.**                                                                                                                                                                |
 
-## Manage a standard
+## Manage a Standard
 
 **Manage standard** shows the scoring method, impact calculation and creation date, with links to **Inspect control policies →**, **Review rule impact measures →** and **Find retained assessments →**. From here you can:
 
@@ -72,11 +72,11 @@ Card actions:
 **Delete standard** is available only for custom standards. It deletes the standard's controls, rule impact, mappings and retained snapshots. This cannot be undone.
 {% endhint %}
 
-## Control hierarchy
+## Control Hierarchy
 
 **Review control policies →** opens a standard's page.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-standards-frameworks-standard.png" alt="A standard&#x27;s page with its score tiles and control hierarchy"><figcaption><p>Standard and control hierarchy</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-standard.png" alt="A standard&#x27;s page with its score tiles and control hierarchy"><figcaption><p>Standard and control hierarchy</p></figcaption></figure>
 
 | Tile                           | Description                                                                                       |
 | ------------------------------ | ------------------------------------------------------------------------------------------------- |
@@ -93,7 +93,7 @@ The page also has **Recalculate scores**, **Create control**, **Rule impact** (o
 If your role can view change-control frameworks but not compliance standards, this screen shows the change-control frameworks instead of the standards library.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Mapped Rules](mapped-rules.md): set the impact and likelihood of each rule.
 * [Assessment History](assessment-history.md): open a retained snapshot.

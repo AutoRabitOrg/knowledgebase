@@ -6,28 +6,28 @@ A quality gate is the set of conditions an assessment must meet, for example "no
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetscicd-quality-gates-dossier.png" alt="Branch dossier Posture and evidence panel listing the failed conditions of the Mule and API quality gates"><figcaption><p>Why a branch's gate failed</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-cicd-gate-dossier.png" alt="Branch dossier Posture and evidence panel listing the failed conditions of the Mule and API quality gates"><figcaption></figcaption></figure>
 
-## How the gate is decided
+## How the Gate Is Decided
 
-The gate is decided on the server, never by the scanner, so pipeline scans, scheduled scans and the screens all show the same result.
+Pipeline scans, scheduled scans and the screens all show the same result.
 
-1. **Per technology.** Each technology in the scan is judged by the quality gate of its active quality profile. Which gate applies follows the organization defaults and application selections described in [Quality Gates](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-gates).
-2. **Per condition.** Issue-count conditions count the findings of each severity. Other conditions read the measured value the scan recorded. A condition whose value was not measured, and a Boolean condition, is not evaluated.
+1. **Per technology.** Each technology in the scan is judged by the quality gate of its active quality profile. Which gate applies follows the organization defaults and application selections described in [Quality Gates](../operations/quality-control/quality-gates.md).
+2. **Per condition.** Issue-count conditions count the findings of each severity. **Vulnerable Dependencies** and **Deprecated Assets** count the application's own vulnerable components and deprecations, checked when the gate is judged, so a pipeline does not wait for a scheduled run (see [Quality Gates](../operations/quality-control/quality-gates.md)). Other conditions read the measured value the scan recorded. A condition whose value was not measured, and a Boolean condition, is not evaluated. **New code** conditions are evaluated only for issue counts, **Vulnerable Dependencies** and **Deprecated Assets**.
 3. **Exceptions.** Findings under an approved exception that has not expired never count.
 4. **Overall result.** The scan passes only when every gated technology passes. A scan with no gated technology passes.
 
-### Branches and pull requests
+### Branches and Pull Requests
 
-| Scan                                                                                        | Conditions used                                                                                               | Findings counted                                                                                                                             |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Branch (`-scmBranchName`)                                                                   | **Overall code** conditions.                                                                                  | Every open finding of the branch. A gate does not turn green just because the branch was scanned again; findings count until they are fixed. |
-| Pull request with a scanned target branch (`-pullRequestId` and `-pullRequestTargetBranch`) | **New code** conditions. When the gate has none, its **Overall code** conditions are applied to the new code. | Only findings that are not open on the target branch.                                                                                        |
-| Pull request without a target branch, or whose target branch was never scanned              | **Overall code** conditions.                                                                                  | Every finding, as for a branch.                                                                                                              |
+| Scan                                                                                        | Conditions used                                                                                    | Findings counted                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Branch (`-scmBranchName`)                                                                   | **Overall code** conditions.                                                                       | Every open finding of the branch. A gate does not turn green just because the branch was scanned again; findings count until they are fixed.                                               |
+| Pull request with a scanned target branch (`-pullRequestId` and `-pullRequestTargetBranch`) | **New code** conditions. When the gate has none, its **Overall code** conditions, as for a branch. | With new-code conditions: only findings that are not open on the target branch, and vulnerable dependencies or deprecated assets the target branch does not have. Otherwise every finding. |
+| Pull request without a target branch, or whose target branch was never scanned              | **Overall code** conditions.                                                                       | Every finding, as for a branch.                                                                                                                                                            |
 
-Define **New code** conditions in [Quality Gates](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-gates#condition-scopes) to hold pull requests to a stricter standard than the whole branch, for example "0 new Major issues". See [Pull Request Analysis](pull-request-analysis.md).
+Define **New code** conditions in [Quality Gates](../operations/quality-control/quality-gates.md) to hold pull requests to a stricter standard than the whole branch, for example "0 new Major issues". See [Pull Request Analysis](pull-request-analysis.md).
 
-## Fail the build
+## Fail the Build
 
 The scanner writes the result to its log as the last gate line:
 
@@ -38,7 +38,7 @@ QUALITY GATE STATUS:: PASSED
 or `QUALITY GATE STATUS:: FAILED`. When the server cannot return a status, the log says `Could not get the quality gate status from IZ Suite` with the reason, and there is no status line.
 
 {% tabs %}
-{% tab title="Command-line scanner" %}
+{% tab title="Command-Line Scanner" %}
 There are two ways to fail the step. The simplest is `-abortOnQualityGateFailure true`: the scanner then exits with code `1` when the gate failed or no status came back, and logs `Aborting the build due to Quality Gate failure` (or `Could not get the quality gate status from IZ Suite ... Failing the build because abortOnQualityGateFailure is set.`).
 
 The steps that Setup generates do it the other way: they send the output to a file and fail the step unless the PASSED line is there:
@@ -67,18 +67,18 @@ Without it, the Maven build passes whatever the gate result.
 A failed gate does not undo the scan. The assessment, its findings and its gate result are recorded in IZ Suite either way.
 {% endhint %}
 
-## See why the gate failed
+## See Why the Gate Failed
 
 1. Open the link the scanner logs after `Browse the project results at ::`, or open the branch from **Workspaces** → **Code Analysis** → **Branches & baselines**.
 2. In the branch dossier, open **Posture & evidence**.
-3. Under **Why this recorded gate failed — or what is still unknown**, expand each technology to see the conditions it missed, for example "4 - Critical Issues is not equal to configured value of 0".
+3. Under **Why this recorded gate failed — or what is still unknown**, each technology is listed as "technology · gate name". Failed technologies open expanded and list the conditions they missed, for example "4 - Critical Issues is not equal to configured value of 0"; new-code ones start with "New code:". A failed **Vulnerable Dependencies** or **Deprecated Assets** condition names what was found; open the **Risk & lifecycle** panel for the details.
 4. Click **Investigate issues** to work through the findings.
 
 To accept a finding instead of fixing it, use **Actions** → **Exceptions** in the dossier. Findings under an approved, unexpired exception do not count when the gate is judged.
 
-## Next steps
+## Next Steps
 
-* [Quality Gates](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/quality-control/quality-gates): change the conditions and which organizations use a gate.
+* [Quality Gates](../operations/quality-control/quality-gates.md): change the conditions and which organizations use a gate.
 * [Pull Request Analysis](pull-request-analysis.md): judge pull requests on new code.
-* [Branches & Baselines](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/branches-and-baselines): open the branch dossier.
+* [Branches & Baselines](../workspaces/code-analysis/branches-and-baselines.md): open the branch dossier.
 * [CI/CD Integration](./): how a pipeline scan works.

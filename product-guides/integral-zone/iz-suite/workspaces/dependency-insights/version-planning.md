@@ -14,7 +14,7 @@ The view has three tabs: **Version families**, **Exact inventory** and **Upgrade
 
 Component observations grouped into families within each organization.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-version-planning-families.png" alt="Version families table"><figcaption><p>Version families</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-families.png" alt="Version families table"><figcaption><p>Version families</p></figcaption></figure>
 
 | Column                   | Description                                                                                                                               |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,7 +23,7 @@ Component observations grouped into families within each organization.
 | **Application versions** | Total application versions that use the family.                                                                                           |
 | **Next step**            | **Plan upgrade wave** for this family.                                                                                                    |
 
-Select **Families spanning versions** to list only families with more than one version in use. Use the search box to find a family. **Export this page** downloads the rows on the current page.
+Select **Families spanning versions** to list only families with more than one version in use. Use the search box to find a family. **Export this page** downloads the rows on the current page. **Refresh** reloads the list and **Columns** chooses the visible columns.
 
 {% hint style="info" %}
 Upgrade targets are proposed by the reviewer. Check support and compatibility before you pick one.
@@ -44,7 +44,7 @@ The **Version inventory** table lists **Component / version**, **Kind**, **Organ
 
 ## Upgrade waves
 
-The same list of assigned upgrade waves as in [Actions](actions.md). Filter by **Active**, **Completed** or **Cancelled**, and select **Assigned to me** to see only your waves.
+The same list of assigned upgrade waves as in [Actions](updates-and-maintenance/actions.md). Filter by **Active**, **Completed** or **Cancelled**, and select **Assigned to me** to see only your waves.
 
 ## Plan an upgrade wave
 
@@ -64,14 +64,14 @@ Creating a wave marks the collected versions that are not the target for depreca
 | **Exact version**         | Every recorded version is exactly this text, for example `2.2.0` or `nodejs22.x`.                                                                     |
 | **Regular expression**    | Every recorded version matches the PostgreSQL regular expression, for example `^2\.2\.\d+$` for any 2.2.x. Use `^` and `$` to match whole versions.   |
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-version-planning-wave.png" alt="Plan upgrade wave form"><figcaption><p>Plan upgrade wave</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-wave.png" alt="Plan upgrade wave form"><figcaption><p>Plan upgrade wave</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can create lifecycle (deprecation) rules to create a wave.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Actions](actions.md): follow the progress of a wave.
-* [Risk & Lifecycle](/broken/pages/886c6a72c421c38183562850946b59d50c963bc3): review the deprecation rules a wave creates.
+* [Actions](updates-and-maintenance/actions.md): follow the progress of a wave.
+* [Risk & Lifecycle](risk-and-lifecycle.md): review the deprecation rules a wave creates.
 * [Dependency Explorer](dependency-explorer.md): check who consumes a component before you upgrade it.

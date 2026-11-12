@@ -5,14 +5,30 @@ A monitor checks one service and records what it observed. An HTTP monitor calls
 Open it from **Workspaces** → **Service Health** → **Monitors** in the sidebar.
 
 {% hint style="info" %}
-Requires the **Service Health** licence. Health checks run on your agent, from its network. When no agent is connected, a **Connect an agent** notice offers **Set up the agent**.
+Requires the **Service Health** licence. Health checks run on your agent, from its network.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-monitors-list.png" alt="Monitors page with filters and the monitor tiles"><figcaption><p>Monitors</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-monitors.png" alt="Monitors page with filters and the monitor tiles"><figcaption><p>Monitors</p></figcaption></figure>
 
 **Discover from Platform Analysis inventory** opens [Monitoring Coverage](monitoring-coverage.md), which suggests monitors for the applications Platform Analysis has found. **Create monitor** adds one yourself; see [Create a monitor](monitors.md#create-a-monitor).
 
-## Filters and tiles
+## Setup Notice
+
+A notice at the top of the page shows the next step to get monitoring running, with a button for it:
+
+| Notice                                 | What to do                                                                                                                   |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Service health isn't turned on yet** | Click **Turn on Service health**.                                                                                            |
+| **Connect an agent**                   | Click **Set up the agent**: health checks run on your agent, from its network.                                               |
+| **Create your first monitor**          | Click **Create monitor**.                                                                                                    |
+| **Enable a monitor**                   | Monitors are saved but none is enabled. Enable one from its row actions or the monitor form.                                 |
+| **Turn on health checks**              | Click **Schedule health checks** and choose how often the agent checks.                                                      |
+| **Waiting for the first check**        | Results appear after your agent's next run.                                                                                  |
+| **Endpoint monitoring is on**          | Shows how many enabled monitors the agent checks and how often. **Manage** → **Health check schedule** changes the schedule. |
+
+These buttons open the same steps as [Setup](../../administration/setup.md).
+
+## Filters and Tiles
 
 | Filter          | Options                                                                                                                   |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -32,23 +48,23 @@ Use **Save filters** to keep a combination and pick it again from **Saved filter
 
 Click a tile to filter the list.
 
-## Monitor inventory
+## Monitor Inventory
 
 The toolbar has a search box (monitor or endpoint), **Refresh**, **Columns** and **Export this page**, plus:
 
 * **By monitor** shows one row per monitor; a monitor with several versions expands into them. **Every version** lists each version as its own row.
 * **Status guide** explains each status.
 
-| Column               | Description                                                                                                                                        |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Monitor**          | Monitor name, version and URL or resource identifier. Click it to open the monitor.                                                                |
-| **Type**             | For example **HTTP GET**, **AWS LAMBDA** or **MuleSoft CloudHub 2.0**.                                                                             |
-| **Status**           | The last observed status, **Silent**, **No observations** or **Disabled**.                                                                         |
-| **Last observation** | When the monitor last recorded a result.                                                                                                           |
-| **Visibility**       | **Public** or **Private**, and the status pages it is listed on or hidden from.                                                                    |
-| **Objectives**       | The service objectives that cover the monitor, or **Set objective**. Resource monitors show **Not measured for resource monitors**.                |
-| **Asset**            | **Open asset** opens the linked application in Platform Analysis; otherwise **Linked** or **Not linked**.                                          |
-| **Actions**          | **Inspect monitor**, **Edit monitor**, **Disable monitor** or **Enable monitor**, and delete. Edit, enable and disable are for HTTP monitors only. |
+| Column               | Description                                                                                                                                                                                                            |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Monitor**          | Monitor name, version and URL or resource identifier. Click it to open the monitor. The pencil next to the name (**Edit display name**) renames the monitor for all its versions; leave the name blank to use the URL. |
+| **Type**             | For example **HTTP GET**, **AWS LAMBDA** or **MuleSoft CloudHub 2.0**.                                                                                                                                                 |
+| **Status**           | The last observed status, **Silent**, **No observations** or **Disabled**.                                                                                                                                             |
+| **Last observation** | When the monitor last recorded a result.                                                                                                                                                                               |
+| **Visibility**       | **Public** or **Private**, and the status pages it is listed on or hidden from.                                                                                                                                        |
+| **Objectives**       | The service objectives that cover the monitor, each with **Change objective** and **Remove from objective**, or **Set objective**. Resource monitors show **Not measured for resource monitors**.                      |
+| **Asset**            | **Open asset** opens the linked application in Platform Analysis; otherwise **Linked** or **Not linked**.                                                                                                              |
+| **Actions**          | **Inspect monitor** and **Edit monitor**; **More actions** holds **Disable monitor** or **Enable monitor**, and delete. Edit, enable and disable are for HTTP monitors only.                                           |
 
 | Status                   | Meaning                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------- |
@@ -60,22 +76,22 @@ The toolbar has a search box (monitor or endpoint), **Refresh**, **Columns** and
 | **No observations**      | Enabled, but never checked yet.                                                             |
 | **Disabled**             | Not checked: the agent skips disabled monitors.                                             |
 
-### Bulk actions
+### Bulk Actions
 
 Tick monitors to show the bulk bar: **Enable**, **Disable**, **Make public**, **Make private** and **Clear selection**. One change covers at most 100 monitors.
 
-## Inspect a monitor
+## Inspect a Monitor
 
 Click a monitor name or **Inspect monitor** to open **Monitor evidence & configuration**:
 
 * **Linked application**, with **Link an application** to link the monitor to an application.
 * **History**: the last 90 UTC days as a status page would show them, uptime, and recent incidents.
-* **Last check**: the request the agent sent and what came back. Every run's log is in Execution History.
+* **Last check**: the request the agent sent and what came back. Every run's log is in [Execution History](../../operations/schedules/execution-history.md).
 * The configuration: endpoint, HTTP method, version, monitoring state, last observation, expected response and response threshold.
 * **Add another version** (HTTP monitors) and **Versions**, which lists each version with its URL and status.
 * **Response readiness**: the linked runbook, links to runbooks and maintenance windows, and the service objectives that cover the monitor.
 
-## Create a monitor
+## Create a Monitor
 
 The button to the left of **Create monitor** opens [Monitoring Coverage](monitoring-coverage.md), where you start from discovered applications instead.
 
@@ -85,15 +101,15 @@ The button to the left of **Create monitor** opens [Monitoring Coverage](monitor
    * **AWS resources**: uses the AWS integration already configured for your organization. Choose assets from the suggestions, or enable a monitoring policy.
    * **MuleSoft runtime**: uses the Anypoint Sync connected app already configured. Monitors Runtime Manager applications (CloudHub 2.0, Runtime Fabric, CloudHub 1.0, hybrid) and API Manager instances.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-monitors-choose.png" alt="Choose what to monitor drawer"><figcaption><p>Choose what to monitor</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-monitor-choose.png" alt="Choose what to monitor drawer"><figcaption><p>Choose what to monitor</p></figcaption></figure>
 
 The AWS and MuleSoft choices show the same suggestions as [Monitoring Coverage](monitoring-coverage.md).
 
-## Create an HTTP monitor
+## Create an HTTP Monitor
 
 The form has four numbered steps and a **Live preview** on the right that shows the request the agent will send and how its answer is judged. Secrets are masked in the preview.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-monitors-http-form.png" alt="Configure HTTP monitor form with its four steps and live preview"><figcaption><p>Configure HTTP monitor</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-monitor-http.png" alt="Configure HTTP monitor form with its four steps and live preview"><figcaption><p>Configure HTTP monitor</p></figcaption></figure>
 
 | Field                                             | Description                                                                                                                                                                                         |
 | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -116,14 +132,14 @@ Expand **More details · version, system, visibility and runbook** for:
 
 Click **Save changes**. The next check runs on the agent's schedule once the monitor is enabled.
 
-### Sign-in types
+### Sign-in Types
 
 When a monitor needs to sign in, choose a type and then a **Saved sign-in** of that type. A saved sign-in is shared across the workspace: every monitor that uses it signs in with its current values, and its secrets are encrypted and never shown again.
 
 * Pick an existing one from **Saved sign-in**, or click **New sign-in…** to create one without leaving the form.
 * After you pick one, the edit button next to it changes that saved sign-in for everything that uses it.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-monitors-sign-in.png" alt="Create a sign-in drawer for an OAuth 2.0 sign-in"><figcaption><p>Create a sign-in from the monitor form</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-monitor-signin.png" alt="Create a sign-in drawer for an OAuth 2.0 sign-in"><figcaption><p>Create a sign-in from the monitor form</p></figcaption></figure>
 
 Every new sign-in has a **Name** (**Required**), an optional **Description**, and **Sent only to these hosts**: optional host names such as `api.example.com`. When you list hosts, a monitor on another host cannot use the sign-in. The type is fixed to the one you chose in the monitor form. The other fields depend on the type:
 
@@ -196,7 +212,7 @@ Saved sign-in secrets cannot be read back. When you edit a saved sign-in, leave 
 
 A monitor created before saved sign-ins keeps its own credentials, or reads them from a global setting, until you switch it. Editing such a monitor shows **Sign in with**: **Use a saved sign-in**, or **Keep its current sign-in** / **Keep the global setting**.
 
-## Add a version
+## Add a Version
 
 1. Inspect the monitor and click **Add another version**.
 2. Change the URL, sign-in or expectations for the new version and give it a **Version** label.
@@ -206,9 +222,13 @@ A monitor created before saved sign-ins keeps its own credentials, or reads them
 You need a role that can create monitors to create monitors and versions, a role that can edit monitors to edit, enable, disable or change visibility, and a role that can delete monitors to delete a version.
 {% endhint %}
 
-## Next steps
+{% hint style="warning" %}
+A monitor that a current service objective covers cannot be deleted. Remove it from the objective first.
+{% endhint %}
+
+## Next Steps
 
 * [Monitoring Coverage](monitoring-coverage.md): find applications that still need a monitor.
 * [Runbooks](runbooks.md): write the procedure linked from a monitor.
 * [Service Objectives](service-objectives.md): measure monitors against a target.
-* Saved Sign-ins: manage the sign-ins monitors use.
+* [Saved Sign-ins](../../administration/global-settings/saved-sign-ins.md): manage the sign-ins monitors use.

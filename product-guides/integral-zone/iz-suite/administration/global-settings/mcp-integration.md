@@ -4,17 +4,17 @@ The IZ MCP server lets an AI assistant use IZ Suite tools with the permissions o
 
 Open it from **Administration** → **Global Settings** → **MCP integration** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-mcp-integration-setup.png" alt="MCP integration steps 3 and 4 with the HTTP configuration and the access token links"><figcaption><p>MCP integration</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-mcp.png" alt="MCP integration tab with the four setup steps, the HTTP configuration and the access token links"><figcaption><p>MCP integration</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view global settings to open this tab.
 {% endhint %}
 
-## Connect an assistant
+## Connect an Assistant
 
 {% stepper %}
 {% step %}
-### Choose how the assistant connects
+### Choose How the Assistant Connects
 
 Under **1. Choose how the assistant connects**, pick:
 
@@ -23,13 +23,13 @@ Under **1. Choose how the assistant connects**, pick:
 {% endstep %}
 
 {% step %}
-### Choose your assistant
+### Choose Your Assistant
 
 Under **2. Choose your assistant**, pick **VS Code** or **Cursor**. **Claude Desktop** is available with **STDIO (local helper)** only.
 {% endstep %}
 
 {% step %}
-### Add the configuration
+### Add the Configuration
 
 Under **3. Add this configuration**, copy the configuration and paste it:
 
@@ -43,7 +43,7 @@ Replace `##ACCESS_TOKEN##` with the token from the next step, then restart the a
 {% endstep %}
 
 {% step %}
-### Create a dedicated access token
+### Create a Dedicated Access Token
 
 Under **4. Create a dedicated access token**:
 
@@ -63,7 +63,7 @@ This tab does not test the connection. The connection works when your assistant 
 The access token gives the assistant the permissions of its role. Give the assistant a dedicated token with only the roles it needs, and never share the token.
 {% endhint %}
 
-## Configuration samples
+## Configuration Samples
 
 Replace `https://izsuite.example.com` with your IZ Suite address (in a multi-tenant installation, your tenant's address) and the token value with the token you created.
 
@@ -86,7 +86,7 @@ Replace `https://izsuite.example.com` with your IZ Suite address (in a multi-ten
 Every request carries a header:  `x-iz-access-token` with your token.
 
 {% hint style="info" %}
-Assistant configurations created before release 26.4.2 send the earlier header names. IZ Suite still accepts them, so they keep working; new configurations use the `x-iz-` headers.
+Assistant configurations created before release 26.4.2 send the earlier header names. IZ Suite still accepts their token header and ignores the old service URL header, so they keep working; new configurations need only `x-iz-access-token`.
 {% endhint %}
 {% endtab %}
 
@@ -115,9 +115,9 @@ The helper runs through `npx`, so the machine that runs the assistant needs npm.
 {% endtab %}
 {% endtabs %}
 
-## Next steps
+## Next Steps
 
-* Roles: create the role that limits what the assistant can do.
-* Access Tokens: review the tokens in your workspace.
-* Security Credentials: create your own access token.
+* [Roles](../organizations/roles.md): create the role that limits what the assistant can do.
+* [Access Tokens](../organizations/access-tokens.md): review the tokens in your workspace.
+* [Security Credentials](../my-account/security-credentials.md): create your own access token.
 * [Global Settings](./): the other configuration screens.

@@ -4,9 +4,9 @@ A role bundles permissions and the organizations or environments they apply to. 
 
 Open it from **Administration** → **Organizations** → **Roles** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-roles-list.png" alt="Roles tab with role counts, status filter and the role directory"><figcaption><p>Roles</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-org-roles.png" alt="Roles tab with role counts, status filter and the role directory"><figcaption></figcaption></figure>
 
-## Counts and filters
+## Counts and Filters
 
 | Tile                              | Description                                                                   |
 | --------------------------------- | ----------------------------------------------------------------------------- |
@@ -17,7 +17,7 @@ Open it from **Administration** → **Organizations** → **Roles** in the sideb
 
 Filter with **Status** (**All**, **Custom**, **Supplied**) and **Search roles**. **Saved filters**, **Save filters**, **Refresh**, **Columns** and **Export** work as on other lists. **Export roles on this page** downloads the roles on the current page.
 
-## Role directory
+## Role Directory
 
 | Column              | Description                                                      |
 | ------------------- | ---------------------------------------------------------------- |
@@ -30,20 +30,20 @@ Filter with **Status** (**All**, **Custom**, **Supplied**) and **Search roles**.
 | Action                | Description                                                                                                                                     |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Manage role**       | Opens the role drawer.                                                                                                                          |
-| **Permission matrix** | Opens the role's permission matrix. See [Permission matrix](roles.md#permission-matrix).                                                        |
-| **Assign people**     | Gives the role to people. See [Assign people](roles.md#assign-people). Not offered for synced roles.                                            |
+| **Permission matrix** | Opens the role's permission matrix. See **Permission Matrix** below.                                                                            |
+| **Assign people**     | Gives the role to people. See **Assign People** below. Not offered for synced roles.                                                            |
 | **Clone role**        | Creates a copy with a **New role name**. The copy gets exactly the same permissions in the same organizations and environments, and no members. |
-| **Delete role**       | Deletes a custom role. See [Delete a role](roles.md#delete-a-role).                                                                             |
+| **Delete role**       | Deletes a custom role. See **Delete a Role** below.                                                                                             |
 
 **Assign people**, **Clone role** and **Delete role** are under **More actions** (**...**).
 
-## Role drawer
+## Role Drawer
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-roles-manage.png" alt="Role drawer with type, people holding the role, recorded grants and last update"><figcaption><p>Role drawer</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-org-roles-drawer.png" alt="Role drawer with type, people holding the role, recorded grants and last update"><figcaption></figcaption></figure>
 
 The drawer shows **Type**, **People holding this role**, **Recorded grants** and **Last updated**, a **Rename role** button for custom roles, and the people who hold the role. Open a person to change their roles. Supplied roles say **Supplied roles are read-only. Clone this role to customize it.**; synced roles say they are managed by their team sync and that local changes would be overridden.
 
-## Create a role
+## Create a Role
 
 1. Click **Create role**.
 2. Enter the **Role name**.
@@ -62,7 +62,7 @@ The drawer shows **Type**, **People holding this role**, **Recorded grants** and
 To create a role like a supplied one, use **Clone role** on the supplied role and change the copy.
 {% endhint %}
 
-## Assign people
+## Assign People
 
 1. Click **Assign people** on the role's row.
 2. Choose the assignment method:
@@ -72,7 +72,7 @@ To create a role like a supplied one, use **Clone role** on the supplied role an
 
 People who already held the role are unchanged, and their other roles are kept.
 
-## Permission matrix
+## Permission Matrix
 
 **Permission matrix** opens the role on its own page with a **Role summary** (**Role type**, **Recorded grants**, **Scopes**, **People holding this role**, **Last updated**) and a matrix of permissions against scopes. **Granted** marks each scope a permission is recorded in.
 
@@ -81,7 +81,7 @@ People who already held the role are unchanged, and their other roles are kept.
 * Click **Export all grants** to download every grant.
 * Click **Back to roles** to return to the list.
 
-## Delete a role
+## Delete a Role
 
 1. Click **Delete role** on the row (under **More actions**).
 2. Type the exact role name to confirm.
@@ -95,8 +95,8 @@ Everyone who holds the role loses its grants immediately, unless another role or
 You need a role that can create roles to create or clone them, one that can update roles to rename them, change their permissions or assign people, and one that can delete roles to delete them.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Users](users.md): give roles to people and add direct permissions.
 * [Access Tokens](access-tokens.md): tokens carry a subset of their owner's roles.
-* Setup: create ready-made roles for pipelines and AI assistants.
+* [Setup](../setup.md): create ready-made roles for pipelines and AI assistants.

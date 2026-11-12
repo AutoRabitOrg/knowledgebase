@@ -2,13 +2,24 @@
 
 An organization is the account or business unit whose applications your team manages, for example an AWS account, a MuleSoft Anypoint business group or an Azure subscription. Its environments (for example production and test, or one per AWS region) hold the applications IZ Suite collects and assesses. This tab lists the organizations within your access.
 
-Open it from **Administration** → **Organizations** → **Organizations** in the sidebar.
+Open it from **Administration** → **Organizations** in the sidebar. The screen has five tabs; this page covers the **Organizations** tab.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-organizations-list.png" alt="Organization directory with organization ID, source, connection setup and manage actions"><figcaption><p>Organizations</p></figcaption></figure>
+| Tab                               | What it is for                                                                     |
+| --------------------------------- | ---------------------------------------------------------------------------------- |
+| [Users](users.md)                 | Invite people, give them roles and direct permissions, and disable access.         |
+| [Roles](roles.md)                 | Create roles, choose their permissions and scopes, and assign them to people.      |
+| [Teams](teams.md)                 | Group people into teams that share roles and permissions and can be assigned work. |
+| [Access Tokens](access-tokens.md) | Review and create the tokens integrations use to act as a person.                  |
+
+{% hint style="info" %}
+Each tab appears only when your role can view it: organizations, people (Users and Access tokens) or roles (Roles and Teams).
+{% endhint %}
+
+<figure><img src="../../../../../.gitbook/assets/v2-org-organizations.png" alt="Organizations tab with the organization directory, organization ID, source and connection setup"><figcaption></figcaption></figure>
 
 The banner shows how many organizations are available in your authorized organization scope. Organizations brought in by a sync (Anypoint, AWS, Azure) appear here as well as the ones you onboard by hand.
 
-## Organization directory
+## Organization Directory
 
 Use **Search organizations** to filter the list, **Refresh** to reload it, **Columns** to choose columns and **Export** to download the list.
 
@@ -20,20 +31,20 @@ Use **Search organizations** to filter the list, **Refresh** to reload it, **Col
 | **Connection setup** | **Organization credential configured**, **Organization credential not configured** (AWS) or **Review environment / source setup**. A configured credential is setup evidence, not proof of a successful connection. |
 | **Manage**           | Row actions, below.                                                                                                                                                                                                 |
 
-### Row actions
+### Row Actions
 
 | Action                     | Description                                                                               |
 | -------------------------- | ----------------------------------------------------------------------------------------- |
 | **Manage organization**    | Opens the organization drawer.                                                            |
-| **Manage environments**    | Opens the organization's environments. See [Environments](./#environments).               |
-| **Edit organization**      | Changes the name and description. See [Edit an organization](./#edit-an-organization).    |
+| **Manage environments**    | Opens the organization's environments. See **Environments** below.                        |
+| **Edit organization**      | Changes the name and description. See **Edit an Organization** below.                     |
 | **Subscribe to updates**   | Follow this organization by email, Slack or in-app notification.                          |
 | **Manage Subscriptions**   | Review everyone's subscriptions to this organization.                                     |
 | **Schedule platform scan** | AWS, Anypoint and Azure organizations: opens **Schedules** filtered to this organization. |
 
 Actions that do not fit the row are under **More actions** (**...**).
 
-### Organization drawer
+### Organization Drawer
 
 The drawer shows **Platform / source**, **External account ID**, **Organization credential** and **Last updated**. Under **Manage this organization** it links to:
 
@@ -44,9 +55,9 @@ The drawer shows **Platform / source**, **External account ID**, **Organization 
 
 **Record identity** shows the organization ID.
 
-## Onboard an organization
+## Onboard an Organization
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsorg-organizations-onboard.png" alt="Onboard organization form with organization name and source"><figcaption><p>Onboard organization</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-org-onboard.png" alt="Onboard organization form with organization name and source"><figcaption></figcaption></figure>
 
 1. Click **Onboard organization**.
 2. Enter the **Organization name**.
@@ -69,7 +80,7 @@ For a Salesforce organization, configure authentication per environment after on
 You need a role that can onboard organizations to see **Onboard organization**, **Edit organization**, **Create environment** and **Edit environment**.
 {% endhint %}
 
-## Edit an organization
+## Edit an Organization
 
 1. Click **Edit organization** on the row (under **More actions**).
 2. Change the **Organization name** or **Description**.
@@ -80,7 +91,7 @@ Identity edits keep the provider account, environments, credentials and assigned
 
 ## Environments
 
-**Manage environments** opens _Organization_ **· environments**. Tiles count **Environments**, **Production** and **Non-production**; click one to filter. **Organization details** goes back to the organization drawer, and **Back to organizations** to the list.
+**Manage environments** opens _Organization_ **· environments**. Tiles count **Environments**, **Production** and **Non-production**; click one to filter. **Organization details** goes back to the organization drawer.
 
 | Column             | Description                                                                                                                                                                         |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -92,7 +103,7 @@ Identity edits keep the provider account, environments, credentials and assigned
 
 **Review environment** opens **Environment evidence**: environment, organization, provider environment ID, classification, description and last update.
 
-### Create an environment
+### Create an Environment
 
 1. Click **Create environment**.
 2. Fill in the fields below.
@@ -106,8 +117,8 @@ Identity edits keep the provider account, environments, credentials and assigned
 | **Provider environment ID** / **AWS region**                    | The provider's identifier. For AWS, the region identifier (required), or `global` for region-independent resources. For other sources it is optional; an identifier is created when you leave it empty. It cannot be changed later. |
 | **Instance URL**, **Client ID**, **User name**, **Private key** | Salesforce organizations only, under **Salesforce connection**. Saved credentials are kept unless you switch on **Replace private key**. The connection is verified when the collector runs.                                        |
 
-## Next steps
+## Next Steps
 
 * [Users](users.md): invite the people who work with these organizations.
 * [Roles](roles.md): scope permissions to organizations and environments.
-* [Organizations](./): the other tabs.
+* [Teams](teams.md): group people and share access and work.

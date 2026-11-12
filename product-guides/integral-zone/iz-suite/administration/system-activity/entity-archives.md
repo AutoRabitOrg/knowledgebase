@@ -19,7 +19,7 @@ You need a role that can view entity archives.
 
 **Archives created over time** charts the archived records per period. Click a bar to investigate that period. **Saved filters**, **Refresh** and **Export this page** work as on the other tabs.
 
-## Archived records
+## Archived Records
 
 Newest records first.
 
@@ -31,9 +31,9 @@ Newest records first.
 | **Archived**         | When the record was archived.                              |
 | **Evidence**         | **Inspect snapshot** opens the archive drawer.             |
 
-## Inspect a snapshot
+## Inspect a Snapshot
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsaudit-entity-archives-snapshot.png" alt="Archive evidence drawer with the record facts and its saved snapshot"><figcaption><p>Archive evidence</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-audit-archive-snapshot.png" alt="Archive evidence drawer with the record facts and its saved snapshot"><figcaption><p>Archive evidence</p></figcaption></figure>
 
 1. Click **Inspect snapshot** on the row.
 2. Review **Name**, **Entity type**, **Application type**, **Archived** and **Archive identity**.
@@ -46,7 +46,7 @@ Search affects the preview only; the download includes the complete recorded evi
 What is archived, and when, follows the archival policies in global settings. For example, older scans, completed one-time job executions and older audit logs are archived after their retention period.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Scheduler Audit Logs](scheduler-audit-logs.md): check that archival tasks ran.
 * [System Audit Logs](system-audit-logs.md): find who changed a record before it was archived.

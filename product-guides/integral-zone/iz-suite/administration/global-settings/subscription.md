@@ -4,13 +4,13 @@ The **Subscription** tab shows your IZ Suite licence: whether it is active, unti
 
 Open it from **Administration** → **Global Settings** → **Subscription** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-subscription-overview.png" alt="Licence overview with status, validity, enabled modules and platform coverage"><figcaption><p>Licence overview</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-subscription.png" alt="Licence overview with status, validity, enabled modules and platform coverage"><figcaption><p>Licence overview</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view global settings to open this tab.
 {% endhint %}
 
-## Licence summary
+## Licence Summary
 
 | Item                     | Description                                                                                                                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,9 +39,9 @@ The summary also warns you when:
 When you refresh the licence, modules missing from the entitlement are disabled immediately, together with their scheduled work. If a module was added recently, check the licence contents with Integral Zone first.
 {% endhint %}
 
-## Platform coverage
+## Platform Coverage
 
-Each card is a platform (for example Anypoint Platform, AWS, Azure, Salesforce or Service Health) with the number of enabled modules, its most used allowances as a percentage, and the total number of allowances.
+Each card is a platform (for example Anypoint Platform, AWS, Azure, Kubernetes or Service Health) with the number of enabled modules, its most used allowances as a percentage, and the total number of allowances. A platform without metered allowances, such as Change Assurance, shows **Included capabilities** and **View coverage** instead.
 
 * Use **Search modules** to find a module or allowance.
 * Choose **Licensed** (platforms in your licence), **Needs attention** (modules near or at a limit, or without an allowance) or **All modules**.
@@ -64,8 +64,8 @@ A module carries a tag only when something is exceptional:
 
 **IDE keys from this licence** at the bottom of the tab opens [IDE Keys](ide-keys.md).
 
-## Next steps
+## Next Steps
 
 * [IDE Keys](ide-keys.md): assign the IDE keys that come with your licence.
-* Organization Subscriptions: manage who receives notifications.
+* [Organization Subscriptions](../../operations/notifications/organization-subscriptions.md): manage who receives notifications.
 * [Global Settings](./): the other configuration screens.

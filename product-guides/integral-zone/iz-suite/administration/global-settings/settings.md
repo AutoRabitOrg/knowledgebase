@@ -4,7 +4,7 @@ The **Settings** tab is the catalog of every configuration value and template in
 
 Open it from **Administration** → **Global Settings** → **Settings** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-settings-catalog.png" alt="Settings catalog with categories on the left and settings on the right"><figcaption><p>Settings catalog</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-settings.png" alt="Settings catalog with categories on the left and settings on the right"><figcaption><p>Settings catalog</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view global settings to open this tab. Creating, editing and deleting settings each need their own global settings permission.
@@ -26,7 +26,7 @@ The list on the left groups the catalog by purpose. Select a category to show on
 | **Templates**         | Reusable messages and matching definitions, such as email templates and pattern matchers.                                                                  |
 | **Custom settings**   | Settings your team created. Settings supplied with IZ Suite are left out.                                                                                  |
 
-## Settings list
+## Settings List
 
 Use **Search setting names** to filter the current category by name. The record count and **Refresh** sit beside the search box, and the pager under the list sets how many settings show per page.
 
@@ -42,7 +42,7 @@ Each setting shows:
 | Edit (pencil)        | Opens **Edit setting**.                                                                                                                                                                       |
 | Delete               | Deletes the setting. Only custom settings can be deleted.                                                                                                                                     |
 
-## Create a setting
+## Create a Setting
 
 1. Click **Create setting**.
 2. Fill in the form (see the fields below).
@@ -63,7 +63,7 @@ Each setting shows:
 Select **Is Secure** for an entry that holds a password, token or other secret. Once a secure entry is saved, its **Is Secure** box cannot be cleared.
 {% endhint %}
 
-## Edit a setting
+## Edit a Setting
 
 1. Find the setting and click the edit (pencil) icon.
 2. Change the values in **Edit setting**.
@@ -71,9 +71,9 @@ Select **Is Secure** for an entry that holds a password, token or other secret. 
 
 The form has the same fields as **Create setting**. For a system setting, **Key**, **Type** and **Filter Type** cannot be changed, and the entries of a key-value group cannot be removed. A single value that holds long text, such as a template, opens in a code editor.
 
-## Next steps
+## Next Steps
 
 * [Saved Sign-ins](saved-sign-ins.md): store credentials once instead of in each setting or monitor.
 * [Email Templates](email-templates.md): edit email templates in a preview editor.
-* [Agents](agents.md): change the release the agents run.
+* [Agents](agents.md): check the agents that run your jobs.
 * [Global Settings](./): the other configuration screens.

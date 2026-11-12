@@ -4,7 +4,7 @@ IZ Suite sends updates about the records you follow, such as a status page chang
 
 Open it from **Operations** → **Notifications** in the sidebar. The tabs at the top switch between the sections below. Each tab appears only when your role allows it.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsnotifications-tabs.png" alt="Notifications header with My updates, Delivery log, My subscriptions and Organization subscriptions tabs"><figcaption><p>Notifications tabs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-notif-tabs.png" alt="Notifications header with My updates, Delivery log, My subscriptions and Organization subscriptions tabs"><figcaption></figcaption></figure>
 
 | Tab                                                         | What it is for                                                               |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -17,8 +17,8 @@ Open it from **Operations** → **Notifications** in the sidebar. The tabs at th
 You subscribe from the record you want to follow, with its **Subscribe to updates** action, for example on an organization or a status page.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [My Updates](my-updates.md): read your latest updates.
 * [My Subscriptions](my-subscriptions.md): stop updates you no longer need.
-* Operations: return to the Operations overview.
+* [Operations](../): return to the Operations overview.

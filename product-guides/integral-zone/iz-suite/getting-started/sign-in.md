@@ -6,7 +6,7 @@ IZ Suite opens on its landing page. The landing page explains the suite and hold
 
 The landing page has a menu with **How it works**, **What you can do**, **Platforms** and **Sign in**. Below it you find:
 
-* The five steps **Connect**, **Scan**, **Assure**, **Watch** and **Prove**, with **See how it works together** and **What you can do**. See About IZ Suite.
+* The five steps **Connect**, **Scan**, **Assure**, **Watch** and **Prove**, with **See how it works together** and **What you can do**. See [About IZ Suite](../about-iz-suite.md).
 * **Platforms covered**: what the suite collects from and scans on each platform, where Change Assurance reads change from, where Code Analysis runs and the AI tools it works with.
 * **The big asks**: six outcomes, the roles that ask for them and the products behind each.
 
@@ -16,7 +16,7 @@ In a multi-tenant installation, the sign-in panel names the workspace (tenant) y
 
 The **Sign in with** list shows the sign-in options your administrator enabled. Possible options are **IZ User** (email and password) and single sign-on through Anypoint, Google or Azure. Your administrator can rename each option, so the button labels can differ from these names.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetssign-in-form.png" alt="Sign in to IZ Suite form with Email and Password fields"><figcaption><p>The IZ User sign-in form</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-sign-in-form.png" alt="Sign in to IZ Suite form with Email and Password fields"><figcaption><p>The IZ User sign-in form</p></figcaption></figure>
 
 To sign in with your email and password:
 
@@ -27,10 +27,10 @@ To sign in with your email and password:
 
 To sign in with single sign-on, click your organization's option under **Sign in with** and complete the sign-in at your identity provider.
 
-IZ Suite then opens the page you were trying to reach. Otherwise it opens the home page you chose in My Preferences, or Suite Home.
+IZ Suite then opens the page you were trying to reach. Otherwise it opens the home page you chose in [My Preferences](../administration/my-account/my-preferences.md), or [Suite Home](../suite-home.md).
 
 {% hint style="warning" %}
-After several wrong passwords in a row the account is locked for a while, even with the right password. Your administrator sets both limits. See [Sign-in and MFA](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite-legacy/iz-core/sign-in-and-mfa) for the defaults.
+After several wrong passwords in a row the account is locked for a while, even with the right password. Your administrator sets both limits. See [Sign-in and MFA](../../iz-suite-legacy/iz-core/sign-in-and-mfa.md) for the defaults.
 {% endhint %}
 
 ### Two-Factor Authentication
@@ -58,7 +58,7 @@ If the workspace licence has expired or was never applied, the sign-in panel sho
 
 This applies to **IZ User** sign-in only.
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetssign-in-forgot-password.png" alt="Forgot your password page with an Email field and Send reset link button"><figcaption><p>Forgot your password?</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-sign-in-forgot.png" alt="Forgot your password page with an Email field and Send reset link button"><figcaption><p>Forgot your password?</p></figcaption></figure>
 
 1. On the IZ User sign-in form, click **Forgot password?**.
 2. Enter your **Email** and click **Send reset link**.
@@ -79,8 +79,8 @@ For privacy, the page always says that a link is on its way, whether or not an a
 1. In the top bar, click your name to open the account menu.
 2. Click **Sign out**.
 
-## Next steps
+## Next Steps
 
 * [Navigating IZ Suite](navigating-iz-suite.md): find your way around after you sign in.
-* My Preferences: choose the page IZ Suite opens after you sign in.
+* [My Preferences](../administration/my-account/my-preferences.md): choose the page IZ Suite opens after you sign in.
 * [Getting Started](./): back to the overview.

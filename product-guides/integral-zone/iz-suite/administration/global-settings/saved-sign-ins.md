@@ -1,10 +1,10 @@
-# Saved Sign ins
+# Saved Sign-ins
 
 A saved sign-in holds the credentials a monitor or setting signs in with. When you change a saved sign-in, every monitor that uses it picks up the change on its next check. Administrators and the people who manage monitors use this tab.
 
 Open it from **Administration** → **Global Settings** → **Saved sign-ins** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-saved-sign-ins-list.png" alt="Saved sign-ins list with name, kind, usage and update time"><figcaption><p>Saved sign-ins</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-sign-ins (1).png" alt="Saved sign-ins list with name, kind, usage and update time"><figcaption><p>Saved sign-ins</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can edit global settings, or one that can view, create or edit monitors, to open this tab. Deleting a sign-in needs a role that can edit global settings.
@@ -22,14 +22,14 @@ Secrets are encrypted at rest and never shown again after you save them. Only th
 | **KIND**          | One or more sign-in kinds.                                                                    |
 | **Saved filters** | Pick a filter combination you saved earlier. **Save filters** stores the current combination. |
 
-## Sign-ins table
+## Sign-ins Table
 
 Above the table: **Search sign-ins** (name, kind or description), the number of sign-ins, **Refresh**, **Columns** (choose the columns to show) and **Export**.
 
 | Column      | Description                                                                     |
 | ----------- | ------------------------------------------------------------------------------- |
 | **Name**    | The sign-in's name, with its description underneath. Click the name to edit it. |
-| **Kind**    | How it signs in (see [Sign-in kinds](saved-sign-ins.md#sign-in-kinds)).         |
+| **Kind**    | How it signs in (see **Sign-in Kinds** below).                                  |
 | **Used by** | How many monitors use it, or **Not used**.                                      |
 | **Updated** | When it last changed.                                                           |
 | **Actions** | **Edit** opens the sign-in. **Delete** deletes it after you confirm.            |
@@ -38,7 +38,7 @@ Above the table: **Search sign-ins** (name, kind or description), the number of 
 Deleting a sign-in permanently deletes it and its secrets. If monitors still use it, the confirmation tells you how many: switch them to another sign-in first.
 {% endhint %}
 
-## Create a sign-in
+## Create a Sign-in
 
 1. Click **Create sign-in**.
 2. Enter a **Name** and, optionally, a **Description**.
@@ -58,7 +58,7 @@ Deleting a sign-in permanently deletes it and its secrets. If monitors still use
 
 To change a sign-in, click its name or **Edit**, change the fields and click **Save sign-in**. A secret that is already saved is not shown: leave its field blank to keep it, or type a new value to replace it.
 
-## Sign-in kinds
+## Sign-in Kinds
 
 The first six kinds can be used by monitors. The others are for the calls IZ Suite makes itself, such as storing source code for AI reviews in a private bucket.
 
@@ -75,7 +75,7 @@ The first six kinds can be used by monitors. The others are for the calls IZ Sui
 | **AWS access key**             | **Access key ID** (upper-case letters and digits, for example `AKIA…`) and **Secret access key**.                                                                                                                                                                                                            |
 | **Google service account**     | **Service account key (JSON)**: paste the service account's JSON key file. Only its email, project and private key are kept.                                                                                                                                                                                 |
 
-## Next steps
+## Next Steps
 
 * [Settings](settings.md): review the other workspace settings.
 * [Agents](agents.md): check the agents that run the checks using these sign-ins.

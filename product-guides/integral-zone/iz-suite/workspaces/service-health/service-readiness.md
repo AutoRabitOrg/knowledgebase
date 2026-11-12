@@ -8,9 +8,9 @@ Open it from **Workspaces** → **Service Health** → **Service readiness** in 
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-service-readiness-overview.png" alt="Service readiness page with coverage tiles, probe signals and readiness steps"><figcaption><p>Service readiness</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-readiness.png" alt="Service readiness page with coverage tiles, probe signals and readiness steps"><figcaption><p>Service readiness</p></figcaption></figure>
 
-## Probe notice
+## Probe Notice
 
 A red notice appears at the top when checks have stopped:
 
@@ -29,7 +29,7 @@ A red notice appears at the top when checks have stopped:
 | **Coverage gaps**             | Applications with no enabled HTTP monitor or resource collector. Click it to see them in Monitoring Coverage.                                                     |
 | **Time to restore (90 days)** | Mean and 90th percentile time to recover from resolved outages, less maintenance. It shows **Not measured yet** when probes run less often than every 15 minutes. |
 
-## Service readiness panel
+## Service Readiness Panel
 
 The panel shows three live signals: **Probe runs · last 24 h**, **Monitors down or degraded now** and **Incidents opened · last 24 h**.
 
@@ -45,7 +45,7 @@ Below it, four numbered steps count what is in place across the whole workspace:
 | **Collect observations** | Probe runs in the last 24 hours.     |
 | **Prepare a response**   | Response runbooks.                   |
 
-## Start with an actual application
+## Start With an Actual Application
 
 This list shows a few applications that have no linked monitor yet, with their type, organization and environment. Click **View all applications →** to see the full list in Monitoring Coverage.
 
@@ -58,9 +58,9 @@ This list shows a few applications that have no linked monitor yet, with their t
 You need a role that can view monitors to see the tiles and lists. Without it, the page offers only links to status pages, runbooks and maintenance windows. To configure a monitor you need a role that can create monitors.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Monitoring Coverage](monitoring-coverage.md): close the coverage gaps.
 * [Monitors](monitors.md): inspect what each monitor last observed.
 * [Runbooks](runbooks.md): give responders a procedure.
-* Schedules: check the schedule that runs health checks.
+* [Schedules](../../operations/schedules/): check the schedule that runs health checks.

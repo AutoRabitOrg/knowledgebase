@@ -14,15 +14,15 @@ In multi-tenant instances, this is managed by your platform administrator.
 You need a role that can view job types to open this tab, and a role that can edit job types to change a runtime.
 {% endhint %}
 
-## How job types fit together
+## How Job Types Fit Together
 
-* **Agents**: each agent accepts only its **Eligible job types**, chosen when you register it. See [Agents](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings/agents).
-* **Schedules**: a schedule says when to run a job type and for which organizations or environments. When it is due, an agent that can run that job type picks it up. See [All Schedules](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/schedules/all-schedules).
+* **Agents**: each agent accepts only its **Eligible job types**, chosen when you register it. See [Agents](agents.md).
+* **Schedules**: a schedule says when to run a job type and for which organizations or environments. When it is due, an agent that can run that job type picks it up. See [All Schedules](../../operations/schedules/all-schedules.md).
 * **Runtime**: each job type has a scheduler, which creates the work, and an executor, which performs it. This tab holds their versions, artifact locations and configuration.
 
-How Assessments Run describes the job types each platform uses and what each one does.
+[How Assessments Run](../../supported-platforms/how-assessments-run.md) describes the job types each platform uses and what each one does.
 
-## Counts and search
+## Counts and Search
 
 | Tile          | Description                                                        |
 | ------------- | ------------------------------------------------------------------ |
@@ -32,7 +32,7 @@ How Assessments Run describes the job types each platform uses and what each one
 
 Use **Search job types or modules** to find a job type by name or module. **Reset filters** clears the search and the tile selection, and **Refresh** reloads the list. **Export this page** downloads the job types on the current page as CSV.
 
-## Runtime catalog
+## Runtime Catalog
 
 | Column        | Description                                                                   |
 | ------------- | ----------------------------------------------------------------------------- |
@@ -44,20 +44,20 @@ Use **Search job types or modules** to find a job type by name or module. **Rese
 
 The versions describe the configured release. They do not prove what every connected agent is running at the moment.
 
-## Review a job type
+## Review a Job Type
 
 Click a job type to open **Job runtime evidence**:
 
-| Item                            | Description                                                                                                                                                            |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Facts                           | **Job type**, **Identity**, **Module**, **Status**, **Scheduler version**, **Executor version**, **Last updated** and **Origin** (**Built in** or **Custom**).         |
-| **Edit runtime**                | Opens the runtime editor. Shown for enabled job types when your role can edit job types.                                                                               |
-| **Execution history**           | Opens [Execution History](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/schedules/execution-history) filtered to this job type. |
-| **Runtime artifacts**           | **Scheduler binary** and **Executor binary**: where each artifact is taken from, or **Not configured**.                                                                |
-| **Recorded configuration**      | The job type's configuration as stored. **Download configuration** saves it as a JSON file.                                                                            |
-| **Agents with this capability** | The agents that have this job type enabled, with their recorded state. Click an agent to open it. Check each agent's heartbeat and workers before you count on it.     |
+| Item                            | Description                                                                                                                                                        |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Facts                           | **Job type**, **Identity**, **Module**, **Status**, **Scheduler version**, **Executor version**, **Last updated** and **Origin** (**Built in** or **Custom**).     |
+| **Edit runtime**                | Opens the runtime editor. Shown for enabled job types when your role can edit job types.                                                                           |
+| **Execution history**           | Opens [Execution History](../../operations/schedules/execution-history.md) filtered to this job type.                                                              |
+| **Runtime artifacts**           | **Scheduler binary** and **Executor binary**: where each artifact is taken from, or **Not configured**.                                                            |
+| **Recorded configuration**      | The job type's configuration as stored. **Download configuration** saves it as a JSON file.                                                                        |
+| **Agents with this capability** | The agents that have this job type enabled, with their recorded state. Click an agent to open it. Check each agent's heartbeat and workers before you count on it. |
 
-## Edit a job runtime
+## Edit a Job Runtime
 
 There is no form to create a job type: job types are supplied with IZ Suite. You can change the runtime of an existing one.
 
@@ -77,12 +77,12 @@ There is no form to create a job type: job types are supplied with IZ Suite. You
 The job type's identity and module do not change, so existing schedules and results stay attached to it.
 
 {% hint style="warning" %}
-Saving asks the agents to restart, which can interrupt the work they are running. Check the versions, artifact locations and configuration before you save, then follow the agents' status on [Agents](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings/agents).
+Saving asks the agents to restart, which can interrupt the work they are running. Check the versions, artifact locations and configuration before you save, then follow the agents' status on [Agents](agents.md).
 {% endhint %}
 
-## Next steps
+## Next Steps
 
-* [Agents](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings/agents): choose the job types each agent can run.
-* [All Schedules](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/schedules/all-schedules): run a job type on a schedule.
-* How Assessments Run: the job types each platform uses.
-* [Global Settings](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings): the other configuration screens.
+* [Agents](agents.md): choose the job types each agent can run.
+* [All Schedules](../../operations/schedules/all-schedules.md): run a job type on a schedule.
+* [How Assessments Run](../../supported-platforms/how-assessments-run.md): the job types each platform uses.
+* [Global Settings](./): the other configuration screens.

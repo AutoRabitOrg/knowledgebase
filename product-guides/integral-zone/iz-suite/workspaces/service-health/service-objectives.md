@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Service Health** → **Service objectives** in
 Requires the **Service Health** licence. Objectives measure HTTP monitors only; AWS, MuleSoft and Azure resource monitors are not measured against an objective.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-service-objectives-overview.png" alt="Service objectives with the Monitors letting objectives down chart and the Measured performance donut"><figcaption><p>Service objectives and their charts</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-objectives.png" alt="Service objectives with the Monitors letting objectives down chart and the Measured performance donut"><figcaption><p>Service objectives and their charts</p></figcaption></figure>
 
 ## Charts
 
@@ -24,27 +24,27 @@ Click **Show data table** on a chart to see its values as a table.
 Availability is measured from probe results, less maintenance windows. The service counts as down while any covered monitor is down; overlapping outages are counted once. Precision is one probe interval.
 {% endhint %}
 
-## Service objectives list
+## Service Objectives List
 
-Use the **Status** filter to show **Current** or **Archived** objectives. The list has a search box (objectives or owners), **Refresh**, **Columns** and **Export**. Expand a row to see its measurements and monitors.
+Use the **Status** filter to show **Current** or **Archived** objectives; **Save filters** keeps a combination to pick again from **Saved filters**. The list has a search box (objectives or owners), **Refresh**, **Columns** and **Export**. Expand a row to see its measurements and monitors.
 
-| Column        | Description                                                                                           |
-| ------------- | ----------------------------------------------------------------------------------------------------- |
-| **Objective** | Objective name and owner.                                                                             |
-| **Target**    | The availability target and window, and the allowed downtime it implies (a planning value).           |
-| **Status**    | **Met**, **At risk**, **Missed** or **Not measured yet**, and **Archived** for an archived objective. |
-| **Monitors**  | Number of covered monitors (click to list them), or **Planning objective** when it covers none.       |
-| **Actions**   | **Edit objective**, **Export objective**, and **Archive objective** or **Restore objective**.         |
+| Column        | Description                                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Objective** | Objective name and owner.                                                                                                                                                                                                 |
+| **Target**    | The availability target and window, and the allowed downtime it implies (a planning value).                                                                                                                               |
+| **Status**    | **Met**, **At risk**, **Missed** or **Not measured yet**, and **Archived** for an archived objective.                                                                                                                     |
+| **Monitors**  | Number of covered monitors, or **Planning objective** when it covers none. Click the number to list the monitors with their status, downtime and last observation; **Remove from objective** takes one off the objective. |
+| **Actions**   | **Edit objective**, **Export objective**, and **Archive objective** or **Restore objective**.                                                                                                                             |
 
 An expanded row shows **Availability**, **Downtime** against the allowed downtime, **Error budget left** and **Average burn**, followed by the covered monitors with the most downtime first.
 
 {% hint style="warning" %}
-You cannot archive an objective while it covers enabled monitors. Remove them from the objective first. Archiving does not change any monitor or schedule.
+You cannot archive an objective while it covers enabled monitors. Remove them from the objective first (**Remove from objective**). Archiving does not change any monitor or schedule.
 {% endhint %}
 
-## Define a service objective
+## Define a Service Objective
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-service-objectives-define.png" alt="Define a service objective form"><figcaption><p>Define a service objective</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-objective-define.png" alt="Define a service objective form"><figcaption><p>Define a service objective</p></figcaption></figure>
 
 1. Click **Define objective**.
 2. Fill in the fields below. The **Allowed downtime · planning value** box shows the minutes of downtime your target allows over the window.
@@ -60,7 +60,7 @@ You cannot archive an objective while it covers enabled monitors. Remove them fr
 
 An objective created here covers no monitor yet. Saving it does not start a monitor or send a notification.
 
-## Add monitors to an objective
+## Add Monitors to an Objective
 
 You add monitors from the monitor side:
 
@@ -68,13 +68,13 @@ You add monitors from the monitor side:
 2. In the **Objectives** column of an HTTP monitor, click **Set objective**, or open the monitor and click **Define a service objective for this monitor** or **Add another service objective**.
 3. Choose a **Service objective**, or click **Define objective** to create one for this monitor.
 
-To move a monitor to another objective, click the covered-monitors count on the objective, then **Change objective** on the monitor. An objective covers up to 50 monitors.
+To move a monitor to another objective, click **Change objective** next to the objective name in the monitor's **Objectives** column. To take it off, click **Remove from objective** there, or in the objective's list of covered monitors. Removing a monitor does not change the monitor, its results or incidents. An objective covers up to 50 monitors.
 
 {% hint style="warning" %}
 You need a role that can create or edit monitors to define, edit, archive objectives and add monitors to them.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Monitors](monitors.md): add monitors to an objective.
 * [Maintenance Windows](maintenance-windows.md): keep planned work out of the measurement.

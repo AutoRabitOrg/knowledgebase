@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Code Analysis** → **Overview** in the sideba
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscode-overview-workspace.png" alt="Code Analysis Overview tab with filters, metric tiles and the release evidence banner"><figcaption><p>Code Analysis overview</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-code-overview.png" alt="Code Analysis Overview tab with filters, metric tiles and the release evidence banner"><figcaption><p>Code Analysis overview</p></figcaption></figure>
 
 ## Filters
 
@@ -20,7 +20,7 @@ Requires the **Code Analysis** licence.
 | **Evidence status** | **All evidence**, **Failed gates**, **Passed gates**, **No gate result**, **Never scanned** or **Older than N days**. |
 | **Filters** panel   | **Severity**, **Category**, **Rule** and **Security standard**: keep branches with open findings that match.          |
 
-**All branches** at the top right opens the [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f) tab with the same scope.
+**All branches** at the top right opens the [Branches & Baselines](branches-and-baselines.md) tab with the same scope.
 
 ## Metric tiles
 
@@ -43,20 +43,20 @@ The dark banner states how many branches have a recorded assessment (**Evidence 
 
 ## Charts and lists
 
-| Section                                          | Description                                                                                                                                                                                                                                             |
-| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Defect progression**                           | The latest recorded assessment of each application per day. Choose **Total & high severity**, **Severity breakdown**, **Defect types** or **Gates & assessment coverage**.                                                                              |
-| **Security standards**                           | How many open findings map to CWE, OWASP and the other security standards. Select a bar to list its findings.                                                                                                                                           |
-| **Assets by type and quality gate**              | Failed, passed and not assessed records per asset type. Select a segment to list those records.                                                                                                                                                         |
-| **Top rules behind Critical + Blocker findings** | The rules with the most Critical and Blocker occurrences. Select a bar to list the applications with that rule's findings.                                                                                                                              |
-| **Pull requests (30 days)**                      | **Open pull requests**, **First-time pass rate**, **Median new findings** and **Pull requests assessed**. See [Pull Requests](pull-requests.md).                                                                                                        |
-| **Branches to review first**                     | Branches with the most high-severity occurrences, then a failed gate, then the most recorded findings: **Branch**, **Gate evidence**, **Critical / Blocker**, **Last assessment** and **Review** (opens the dossier). **View all** opens the full list. |
+| Section                                          | Description                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Defect progression**                           | The latest recorded assessment of each application per day. Choose **Total & high severity**, **Severity breakdown**, **Defect types** or **Gates & assessment coverage**.                                                                                                                                               |
+| **Security standards**                           | How many open findings map to CWE, OWASP and the other security standards. Select a bar to list its findings.                                                                                                                                                                                                            |
+| **Assets by type and quality gate**              | Failed, passed and not assessed records per asset type. Select a segment to list those records.                                                                                                                                                                                                                          |
+| **Top rules behind Critical + Blocker findings** | The rules with the most Critical and Blocker occurrences. Select a bar to list the applications with that rule's findings.                                                                                                                                                                                               |
+| **Pull requests (30 days)**                      | **Open pull requests**, **First-time pass rate**, **Median new findings** and **Pull requests assessed**. See [Pull Requests](pull-requests.md).                                                                                                                                                                         |
+| **Branches to review first**                     | Branches with the most high-severity occurrences, then a failed gate, then the most recorded findings: **Branch**, **Gate evidence**, **Critical / Blocker**, **Last assessment** and **Review** (opens the dossier). **View all** opens the full list. Columns chooses the columns shown and Export downloads the list. |
 
 Every chart has **Show data table**.
 
-## Next steps
+## Next Steps
 
-* [Branches & Baselines](/broken/pages/17ad10a1c076f78622cc3983f77319b907d59a1f): open a branch's dossier.
+* [Branches & Baselines](branches-and-baselines.md): open a branch's dossier.
 * [Pull Requests](pull-requests.md): review the gate of each pull request.
 * [Findings](findings.md): investigate the findings behind a failed gate.
 * [Code Analysis](./): back to the workspace.

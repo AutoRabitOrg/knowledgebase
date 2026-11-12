@@ -8,11 +8,11 @@ Open it from **Workspaces** → **Service Health** → **Categories** in the sid
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssh-categories-list.png" alt="Categories list with status and monitor counts"><figcaption><p>Categories</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-categories.png" alt="Categories list with status and monitor counts"><figcaption><p>Categories</p></figcaption></figure>
 
-## Categories list
+## Categories List
 
-Use the **Status** filter to show **All**, **Needs attention** or **Unknown** categories. The list has a search box, **Refresh**, **Columns** and **Export**.
+Use the **Status** filter to show **All**, **Needs attention** or **Unknown** categories; **Save filters** keeps a combination to pick again from **Saved filters**. The list has a search box, **Refresh**, **Columns** and **Export**.
 
 | Column       | Description                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------- |
@@ -21,14 +21,14 @@ Use the **Status** filter to show **All**, **Needs attention** or **Unknown** ca
 | **Monitors** | Number of monitors in the category.                                                          |
 | **Actions**  | **Manage monitors** and delete.                                                              |
 
-## Create a category
+## Create a Category
 
 1. Click **Create category**.
 2. Enter the **Category name** (**Required**, up to 100 characters).
 3. Optionally pick **Monitors** to add now. You can change them later.
 4. Click **Create category**. The category opens so you can keep adding monitors.
 
-## Manage a category's monitors
+## Manage a Category's Monitors
 
 1. Click **Manage monitors** on the row.
 2. In **Monitors in this category**, search for a monitor and click **Add monitor**.
@@ -46,7 +46,7 @@ A category created by a monitoring policy shows **Maintained by**: the policy ad
 You need a role that can create monitors to create a category, a role that can create or edit monitors to add monitors to it, a role that can edit monitors to rename it or take it over, and a role that can delete monitors to remove monitors from it or delete it.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Status Pages](status-pages.md): add the category to a status page.
 * [Monitors](monitors.md): create the monitors a category groups.

@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Compliance** → **Risk matrix** in the sideba
 You need a role that can view compliance standards. Changing the risk bands or recording decisions needs a role that can edit compliance standards.
 {% endhint %}
 
-## Summary tiles
+## Summary Tiles
 
 | Tile                     | Description                                                     |
 | ------------------------ | --------------------------------------------------------------- |
@@ -21,15 +21,17 @@ Select a tile to filter the register. Application evidence is limited to the app
 
 ## Filters
 
-| Filter            | Description                                                                                        |
-| ----------------- | -------------------------------------------------------------------------------------------------- |
-| **Status**        | **All assessment states**, **Failing assessments**, **Not evaluated** or **Recorded checks pass**. |
-| **Standard**      | A standard, or **All standards**.                                                                  |
-| **Applicability** | **Applicable controls**, **All configured controls** or **Excluded / disabled controls**.          |
+| Filter                                | Description                                                                                                               |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Status**                            | **All assessment states**, **Failing assessments**, **Not evaluated** or **Recorded checks pass**.                        |
+| **Standard**                          | A standard, or **All standards**.                                                                                         |
+| **Platform**                          | The applications' platform, or **Not evaluated** for risks no application in scope has assessed (application risks only). |
+| **Asset type**                        | One asset type of the chosen platform (application risks only).                                                           |
+| **Applicability** (under **Filters**) | **Applicable controls**, **All configured controls** or **Excluded / disabled controls**.                                 |
 
-## Likelihood × impact
+## Likelihood × Impact
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-risk-matrix-grid.png" alt="Likelihood and impact grid"><figcaption><p>Likelihood × impact</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-risk-grid.png" alt="Likelihood and impact grid"><figcaption><p>Likelihood × impact</p></figcaption></figure>
 
 The grid places each risk by its likelihood (rows) and impact (columns), using the levels in [Scoring Settings](scoring-settings.md). The score is likelihood × impact, and the colour shows the band the score falls in. Each cell shows the band and score, the number of mapped risks, and how many have failing assessments.
 
@@ -38,7 +40,7 @@ The grid places each risk by its likelihood (rows) and impact (columns), using t
 
 Select a cell to list its risks in the register below. An empty cell means no mapped risks in that category, not that the risk cannot occur.
 
-### Customize risk bands
+### Customize Risk Bands
 
 The bands are a display policy for all standards. Starter bands are **Low** (0 to below 5), **Moderate** (5 to below 10), **High** (10 to below 15), **Very high** (15 to below 20) and **Critical** (20 and above). Risks with missing values are **Unrated**.
 
@@ -47,7 +49,7 @@ The bands are a display policy for all standards. Starter bands are **Low** (0 t
 3. Enter the **Reason for changing the policy**.
 4. Select **Save customer policy**.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-risk-matrix-bands.png" alt="Customer risk policy dialog"><figcaption><p>Customer risk policy</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-risk-bands.png" alt="Customer risk policy dialog"><figcaption><p>Customer risk policy</p></figcaption></figure>
 
 ## Risk Register
 
@@ -63,7 +65,7 @@ The register lists the risks that match the filters and the selected cell.
 
 **Export this page** downloads the rows on the current page.
 
-### Open a risk
+### Open a Risk
 
 **Open risk** shows the failing and assessed applications, the standard and control, likelihood, impact, configured score, risk type, treatment, review status and latest included assessment. It also shows:
 
@@ -76,7 +78,7 @@ The register lists the risks that match the filters and the selected cell.
 
 When a treatment plan can cover a risk, the decision is made through the plan. For other risks, record the decision on the risk itself: the accountable person or team, decision status, treatment approach, next review, treatment plan and target date, residual likelihood and impact, acceptance expiry, verification evidence and the decision rationale.
 
-## Next steps
+## Next Steps
 
 * [Treatment Plans](treatment-plans.md): follow the plans that treat or accept these risks.
 * [Mapped Rules](mapped-rules.md): change a rule's likelihood or impact.

@@ -1,27 +1,27 @@
 # Agents
 
-An agent is the process that runs IZ Suite jobs, such as collection, analysis and health checks. Each agent has workers, and each worker runs one job at a time. Use this tab to register agents, check that they are in contact, and control them.
+An agent is the process that runs IZ Suite jobs, such as collection, analysis and health checks. Each agent has workers, and each worker runs one job at a time. Use this tab to check that agents are in contact, change what they run, and control them.
 
 Open it from **Administration** → **Global Settings** → **Agents** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-agents-list.png" alt="Agents tab with filters, summary tiles and the agent inventory"><figcaption><p>Agents</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-agents.png" alt="Agents tab with filters, summary tiles and the agent inventory"><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-You need a role that can view agents to open this tab. Registering, editing and deleting agents each need their own agent permission.
+You need a role that can view agents to open this tab. Editing and deleting agents, and starting, stopping or restarting them, each need their own agent permission.
 {% endhint %}
 
 {% hint style="info" %}
-This page covers agents inside IZ Suite. To install the agent software on a machine or container, see [Agent Installation](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite-legacy/installation/agent-installation) in the IZ Suite (Legacy) guide.
+This page covers agents inside IZ Suite. To install the agent software on a machine or container, see Agent Installation in the IZ Suite (Legacy) guide.
 {% endhint %}
 
-## Hosting models
+## Hosting Models
 
 | Hosting model    | Use it when                                                                                                                                                                                      |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Self hosted**  | The agent runs on your own machines, for example because you do not want to share your Anypoint connected app's client ID and secret, or have applications downloaded and analysed in the cloud. |
 | **Cloud hosted** | You do not want to install the prerequisites (such as Java) or run the agent on your own servers.                                                                                                |
 
-## Filters and summary
+## Filters and Summary
 
 | Filter            | Description                                                                    |
 | ----------------- | ------------------------------------------------------------------------------ |
@@ -41,9 +41,9 @@ The tiles above the table summarize the view. Click a tile with an arrow to filt
 | **Recorded stopped**                       | Agents whose last reported state is stopped. Review their setup or restart them.                         |
 | **Recorded starting**                      | Agents waiting for a running state.                                                                      |
 
-## Agent inventory
+## Agent Inventory
 
-Above the table: **Search agents**, the number of agents and **Refresh**. **Export this page** at the top of the tab downloads the agents on the current page as a CSV file.
+Above the table: **Search agents**, the number of agents, **Refresh**, **Columns** (choose the columns to show) and **Export**. **Export this page** at the top of the tab downloads the agents on the current page as a CSV file.
 
 | Column                 | Description                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -52,16 +52,16 @@ Above the table: **Search agents**, the number of agents and **Refresh**. **Expo
 | **Worker capacity**    | Enabled workers, with how many are executing and how many are free.                                                 |
 | **Work coverage**      | How many job types are enabled for the agent, and how many systems are assigned to it.                              |
 | **Agent last contact** | When the agent last sent a heartbeat.                                                                               |
-| **Actions**            | See [Row actions](agents.md#row-actions).                                                                           |
+| **Actions**            | See **Row Actions** below.                                                                                          |
 
-### Row actions
+### Row Actions
 
 | Action                           | Description                                                                                                                                                                                                                                                                                                                                            |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Review agent**                 | Opens **Agent evidence**: hosting, recorded and wrapper state, last contact of the agent and its wrapper, registration date, the agent's identity, **Eligible work** (job types with their enabled and scheduler state, and whether the agent is the master) and **Assigned systems**. It also shows the agent log, which you can search and download. |
-| **Edit agent**                   | Opens the agent form. Saving restarts the agent.                                                                                                                                                                                                                                                                                                       |
+| **Edit agent**                   | Opens **Edit agent** (see **Edit an Agent** below). Saving restarts the agent.                                                                                                                                                                                                                                                                         |
 | **View workers**                 | Opens the agent's workers with their recorded state, capacity and last contact. From there you can open a worker's assigned executions or restart a worker.                                                                                                                                                                                            |
-| **Installation instructions**    | Opens **Agent installation** with the commands that connect this agent (see [Connect an agent](agents.md#connect-an-agent)).                                                                                                                                                                                                                           |
+| **Installation instructions**    | Opens **Connect this agent** with the commands that connect this agent (see **Connect an Agent** below).                                                                                                                                                                                                                                               |
 | **Start agent** / **Stop agent** | Queues a start command (for a stopped agent) or a stop command.                                                                                                                                                                                                                                                                                        |
 | **Restart agent**                | Queues a restart command.                                                                                                                                                                                                                                                                                                                              |
 | **Delete agent**                 | Deletes the agent registration after you type its exact name.                                                                                                                                                                                                                                                                                          |
@@ -72,27 +72,39 @@ Start, stop and restart are queued for the agent's wrapper and are offered only 
 Stopping or restarting an agent can interrupt the work assigned to it. Deleting an agent removes its registration and configuration: existing installations can no longer use it.
 {% endhint %}
 
-## Register an agent
+## Register an Agent
+
+In a single-tenant installation you register your own agents. In a multi-tenant installation, agents are registered by your platform administrator and the **Register agent** button is not shown.
 
 1. Click **Register agent**.
-2. Fill in the form (see the fields below).
+2. Fill in the fields as in [Edit an Agent](agents.md#edit-an-agent): **Agent name**, **Hosting model**, **Enabled workers**, **Eligible job types** and **Assigned systems**. The hosting model cannot be changed after registration.
 3. Click **Register agent**.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsgs-agents-register.png" alt="Register agent form with identity, capacity and eligible work"><figcaption><p>Register agent</p></figcaption></figure>
+Then install the agent with [Connect an Agent](agents.md#connect-an-agent).
+
+## Edit an Agent
+
+1. Find the agent and click the edit (pencil) icon.
+2. Change the fields (see below).
+3. Click **Save and restart agent**, or **Cancel** to close the form without changes.
+
+<figure><img src="../../../../../.gitbook/assets/v2-gs-agents-edit.png" alt="Edit agent form with identity, capacity and the work the agent can accept"><figcaption></figcaption></figure>
 
 | Field                  | Description                                                                                                              |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | **Agent name**         | **Required.** Up to 100 characters.                                                                                      |
-| **Hosting model**      | **Self hosted** or **Cloud hosted**. **Required.** It cannot be changed after registration.                              |
+| **Hosting model**      | **Self hosted** or **Cloud hosted**. Shown for reference: it cannot be changed after registration.                       |
 | **Enabled workers**    | How many jobs the agent can run at the same time, from 1 to 1,000. **Required.**                                         |
 | **Eligible job types** | The job types this agent accepts. Choose at least one. **Required.**                                                     |
 | **Assigned systems**   | The connected systems this agent works for. Search to add a system; existing assignments are kept until you remove them. |
 
-When you edit an agent, the button is **Save and restart agent**.
+{% hint style="warning" %}
+Saving restarts the agent. Changes to worker capacity or eligible job types can affect the work assigned to it.
+{% endhint %}
 
-## Connect an agent
+## Connect an Agent
 
-**Installation instructions** opens the commands that start the agent on a machine or container.
+**Installation instructions** opens **Connect this agent**, with the commands that start the agent on a machine or container.
 
 1. Click **Reveal installation credential** to put the agent's credential into the commands. **Hide installation credential** removes it from the screen.
 2. Choose the **Java** or **Docker** tab and copy the command.
@@ -106,9 +118,9 @@ For a self-hosted agent whose connected system needs Anypoint credentials, appen
 Once revealed, the commands contain the agent's credential. Do not share them.
 {% endhint %}
 
-## Change the runtime release
+## Change the Runtime Release
 
-**Runtime release** sets the agent version and binary URL that every agent uses.
+**Runtime release** sets the agent version and binary URL that every agent uses. It is shown in single-tenant installations; in a multi-tenant installation your platform administrator manages it.
 
 1. Click **Runtime release**.
 2. Enter the **Runtime version** and the **Runtime binary URL** (a complete HTTP or HTTPS URL). Both are required.
@@ -118,7 +130,7 @@ Once revealed, the commands contain the agent's credential. Do not share them.
 Updating the runtime release restarts agents and can interrupt assigned work. It needs a role that can view and change global settings. If the **Agent Version** setting is missing or incomplete, the button is disabled.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Connected Systems](connected-systems.md): register the systems you assign agents to.
 * [Global Settings](./): the other configuration screens.

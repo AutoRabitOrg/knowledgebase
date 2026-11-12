@@ -4,7 +4,7 @@
 
 Open it from **Administration** → **System Activity** → **Scheduler Audit Logs** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsaudit-scheduler-audit-logs-list.png" alt="Scheduler Audit Logs with status filter, handler search, time window and background jobs chart"><figcaption><p>Scheduler Audit Logs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-audit-scheduler.png" alt="Scheduler Audit Logs with status filter, handler search, time window and background jobs chart"><figcaption><p>Scheduler Audit Logs</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view the system audit log. On a multi-tenant installation, each tenant sees only its own background work.
@@ -20,7 +20,7 @@ You need a role that can view the system audit log. On a multi-tenant installati
 
 **Background jobs created over time** charts matching and failed records per period. Click a bar to investigate that period. **Saved filters**, **Refresh** and **Export this page** work as on the other tabs.
 
-## Background work
+## Background Work
 
 Newest records first.
 
@@ -41,7 +41,7 @@ Newest records first.
 | **Completed** | The task finished successfully.                                                                                                                   |
 | **Failed**    | The task raised an error. Open its log to read it.                                                                                                |
 
-## Inspect a task
+## Inspect a Task
 
 1. Click **Inspect log** on the row.
 2. Review **Handler**, **Status**, **Claimed by**, **Work identity** and **Tenant**.
@@ -49,7 +49,7 @@ Newest records first.
 4. Under **Recorded log**, read the task's log, one line per event with a timestamp and a level such as `INFO`, `WARN` or `ERROR`. Use **Find a value or message in this record** to search it.
 5. Click **Download evidence** to save the complete log.
 
-## Next steps
+## Next Steps
 
 * [System Audit Logs](system-audit-logs.md): find the operations people and agents performed.
 * [Entity Archives](entity-archives.md): see the records archival tasks saved.

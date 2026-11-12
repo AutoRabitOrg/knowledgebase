@@ -1,71 +1,62 @@
 # Change Assurance
 
-Change Assurance collects changes from the systems you connect (source control, cloud accounts, integration platforms, ticket trackers), runs each change through a gate, and keeps signed evidence of what it found. Change approvers, release managers, auditors and platform owners use it to answer four questions:
+Change Assurance collects changes from the systems you connect (source control, cloud accounts, integration platforms, ticket trackers), runs each change through a gate, and keeps signed evidence of what it found. Change approvers, release managers, auditors and platform owners use it to answer four questions, one per stage:
 
-* **What changed?** Every change, asset and event your connections record.
-* **Who changed it?** The person, account or AI tool behind each change.
-* **Was it approved?** The gate verdict, any human decision, and the evidence behind both.
-* **Is the release ready?** Which candidate changes still miss a ticket, a verdict, an approval or fall in a freeze window.
+* **Detect** · Did we see every change? Every change your connections record, who made it and which ticket it cites.
+* **Assure** · Was each change checked and approved? Approval decisions, release planning and sign-off.
+* **Prove** · Can we show the auditor? Evidence, signatures, controls, exceptions and the auditor export.
+* **Improve** · Did changes cause failures? Incidents, recovery and the controls that would prevent a repeat.
 
-Open it from **Workspaces** → **Change Assurance** in the sidebar. The sidebar then lists the Change Assurance areas, and the same areas show as tabs under the page header.
+Open it from **Workspaces** → **Change Assurance** in the sidebar. The sidebar then lists **Overview**, **Detect**, **Assure**, **Prove**, **Improve**, **Policy** and **Connections**, and the same stages show as tabs under the page header.
 
 {% hint style="info" %}
 Requires the **Change Assurance** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetschange-assurance-brief.png" alt="Change Assurance assurance brief with coverage tiles and area tabs"><figcaption><p>Change Assurance, opened on the Overview area</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ca-stages.png" alt="Change Assurance overview with the stage tabs and the four stage cards"><figcaption></figcaption></figure>
 
-## Areas
+## Stages
 
-Each area groups several tabs. An area with several tabs shows a switcher under the area tabs.
+| Stage                         | What it holds                                                                                                                                     | Use it to                                             |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Overview](overview.md)       | One card per stage, the decisions waiting, changes outside the process, audit readiness and incidents.                                            | See where to start.                                   |
+| [Detect](detect.md)           | **Change feed**, **Calendar**, **Timeline**, **Ticket lineage**, **Freeze windows**, **Governance drift**, **Inventory by Platform**, **People**. | Find every recorded change and the gaps in its trail. |
+| [Assure](assure.md)           | **Decision work**, **Release planning**, **Changed after release**, **Remedial actions**, **Environment progression**, **Gate skips**.            | Decide on held changes and get a release ready.       |
+| [Prove](prove.md)             | **Evidence**, **Controls**, **Exceptions**, **Export & auditor pack**.                                                                            | Show the evidence behind every change.                |
+| [Improve](improve.md)         | **Incidents**, **Changes before incidents**, **Delivery stability**, **Controls to add**, **Decisions**.                                          | Learn from incidents and tighten the gates.           |
+| [Policy](policy.md)           | Gate policies, approval rules and the other policy settings.                                                                                      | Decide which changes need a person and who signs off. |
+| [Connections](connections.md) | The connected source systems and what they collect.                                                                                               | Connect the systems Change Assurance reads.           |
 
-| Area                                                                         | Tabs                                                                                                                         | Use it to                                                                        |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Overview](overview.md)                                                      | **Assurance brief**                                                                                                          | See how many changes have a complete trail and what needs a decision now.        |
-| [Decisions](decisions.md)                                                    | **Review queue**, **Approvals**, **Release readiness**                                                                       | Review changes, record approvals and check a release set.                        |
-| [Change Records](change-records.md)                                          | **Calendar & freezes**, **Timeline**, **Ticket lineage**, **All changes**, **People**                                        | Browse every recorded change, its ticket and its author; declare freeze windows. |
-| [Inventory](inventory.md)                                                    | **All assets**, **By platform**, **Explore impact**, **Relationship review**, **Environment progression**, **Delivery flow** | Review the assets your connections found and how they relate.                    |
-| [Remediation](remediation.md)                                                | **My tasks**, **Run history**, **Playbooks & routing**                                                                       | Track follow-up work and the actions people can run.                             |
-| [Events & Detection](/broken/pages/9dd1c5e817ddef48356d2329928c7f94c8f0a10c) | **Event explorer**, **Anomalies**, **Drift**, **Delivery performance**                                                       | Search raw events and review anomaly and drift findings.                         |
-| [Evidence](evidence.md)                                                      | **Evidence & controls**, **Raw ledger**, **Configuration trail**                                                             | Export evidence, verify the signed ledger and audit setup changes.               |
-| [Policy](policy.md)                                                          | **Gate policies**, **Approval rules**, **Templates**, plus the **More policy settings** tabs                                 | Decide which changes need a person, who signs off and how assets are linked.     |
-| [Connections](connections.md)                                                | **Connections**, **Collection coverage**                                                                                     | Connect source systems and check what they collect.                              |
+A tab with a count (for example **Detect** · **352 to review**) shows how many items wait in that stage.
 
 {% hint style="warning" %}
-Each tab shows only when your role can read its data. If a tab is missing, ask an administrator for a role that can view that part of Change Assurance.
+Each stage shows only when your role can read its data. If a stage is missing, ask an administrator for a role that can view that part of Change Assurance.
 {% endhint %}
 
-## Page header
+## Page Header
 
-Most Change Assurance pages share the same header.
+Every stage shares the same header.
 
-| Control                | Description                                                                                                      |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Platform**           | Limits the page to one connected platform, or **All platforms**.                                                 |
-| **Observation window** | The period of activity the page reads, for example **Last year**.                                                |
-| **Ask the copilot**    | Opens the assistant with the current page as context.                                                            |
-| **Refresh evidence**   | Reads the latest stored evidence again. Pages read on demand; the time of the last read shows under the filters. |
-| **Export this view**   | Downloads what the current page shows.                                                                           |
+| Control                        | Description                                                                                                                                                                                                                                                                     |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Refresh data**               | Reads the latest recorded data again. The time of the last read shows under the tabs.                                                                                                                                                                                           |
+| **Period**                     | The activity window every stage counts: **Last 7 days**, **Last 30 days**, **Last 90 days**, **Last 12 months**, **This quarter to date**, **Last quarter**, **Last calendar year**, **Custom period** or **All retained history**. The period travels with you between stages. |
+| **Connections** / **Policies** | Open [Connections](connections.md) and [Policy](policy.md).                                                                                                                                                                                                                     |
+| **Data coverage**              | Shows which sources the figures are read from and where detail history is partial.                                                                                                                                                                                              |
 
-Pages that open from a list show **Back to assurance brief** instead of the header filters.
+## Shared Building Blocks
 
-## Lists
+* **Do these next**: most stages open with a short, numbered list of the most important things to look at, each with a button that opens the matching rows. **Show all** lists every action.
+* **Tiles**: the counts above a list. Select a tile (↗) to open the records behind it.
+* **Lists**: a filter bar, search, **Refresh**, **Columns** and **Export**. A row's actions open its record.
+* **Dossiers**: a change, release or incident opens as a dossier with tabs; **Open full dossier** opens it as its own page.
 
-Lists in Change Assurance share one set of tools.
+{% hint style="info" %}
+Change Assurance reports what the records show. A gate result, a human approval, a ticket link and a signature are separate checks: none of them on its own authorizes a deployment.
+{% endhint %}
 
-| Control                              | Description                                                                                                                        |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| Filter bar                           | Drop-down filters above the list (for example **STATUS**, **PLATFORM**, **PERIOD**). Each active filter shows as a removable chip. |
-| **Saved filters** / **Save filters** | Save the current filters under a name and pick them again later.                                                                   |
-| **Copy link** / **Reset filters**    | Copy a link to the filtered view, or clear every filter.                                                                           |
-| Tiles                                | The counts above a list. Select a tile to filter the list to its rows.                                                             |
-| Search                               | Searches the list after you stop typing.                                                                                           |
-| **Refresh**                          | Reloads the list.                                                                                                                  |
-| **Columns**                          | Shows or hides columns.                                                                                                            |
-| **Export** / **Export this page**    | Downloads the rows.                                                                                                                |
+## Next Steps
 
-## Next steps
-
-* [Overview](overview.md): start with the assurance brief.
+* [Overview](overview.md): start with the overview.
 * [Connections](connections.md): connect the systems Change Assurance collects from.
 * [Policy](policy.md): decide which changes need a human decision.

@@ -8,7 +8,7 @@ Open it from **Operations** → **Schedules** → **Execution history** in the s
 You need a role that can view job executions. Stopping and restarting runs needs a role that can configure jobs.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsschedules-execution-history-list.png" alt="Execution history with filters, summary tiles and the execution timeline"><figcaption><p>Execution history</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sched-history.png" alt="Execution history with filters, summary tiles and the execution timeline"><figcaption></figcaption></figure>
 
 ## Filters
 
@@ -23,7 +23,7 @@ You need a role that can view job executions. Stopping and restarting runs needs
 
 **Saved filters** and **Save filters** keep a combination of filters for later, and **Reset execution filters** clears them. The filters and the selected execution are kept in the page address, so you can share the view. **Export executions on this page** downloads the runs on the current page.
 
-## Summary tiles and timeline
+## Summary Tiles and Timeline
 
 | Tile                      | Shows                                                           |
 | ------------------------- | --------------------------------------------------------------- |
@@ -36,7 +36,7 @@ Click a tile to filter the table. **Execution records created over time** charts
 
 ## Executions
 
-The newest runs come first. **Refresh** reloads the table.
+The newest runs come first. **Refresh** reloads the table, **Columns** shows or hides columns and **Export** downloads the runs on the current page.
 
 | Column                  | Description                                                                                              |
 | ----------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -47,11 +47,11 @@ The newest runs come first. **Refresh** reloads the table.
 | **Timing**              | When the run was created and its recorded elapsed time.                                                  |
 | **Review**              | **Inspect execution** opens the run's evidence.                                                          |
 
-## Inspect an execution
+## Inspect an Execution
 
 **Inspect execution** opens **Execution evidence**:
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsschedules-execution-history-evidence.png" alt="Execution evidence drawer with run details and the execution log"><figcaption><p>Execution evidence</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sched-evidence.png" alt="Execution evidence drawer with run details and the execution log"><figcaption></figcaption></figure>
 
 | Field                                           | Description                                                                                                  |
 | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
@@ -66,7 +66,7 @@ The newest runs come first. **Refresh** reloads the table.
 
 **Execution log** shows the recorded log. Search it with **Find an error or message**, **Reload** it, or **Download log** to save the complete log. When the run produced an assessment, the drawer links to **Assessment from this run** and the **Latest application evidence**. **Review schedule** opens the schedule.
 
-## Stop or restart an execution
+## Stop or Restart an Execution
 
 * **Stop execution** stops a run that is still queued or in progress.
 * **Restart execution** queues a failed or stopped run again. Confirm with **Queue execution again**.
@@ -76,8 +76,8 @@ The newest runs come first. **Refresh** reloads the table.
 Restarting a run can clear its worker assignment, so the worker shown is not a complete history of everything that worker ran.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [All Schedules](all-schedules.md): pause, resume or change the schedule behind a run.
-* Quality Gates: understand why an assessment failed its gate.
+* [Quality Gates](../quality-control/quality-gates.md): understand why an assessment failed its gate.
 * [Schedules](./): return to the Schedules overview.

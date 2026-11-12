@@ -6,20 +6,20 @@ Code Analysis can scan your Bitbucket and GitHub repositories without any change
 Requires the **Code Analysis** licence.
 {% endhint %}
 
-To scan from your own pipeline instead, see CI/CD Integration. For Anypoint Design Center projects, see [MuleSoft Anypoint Platform](mulesoft-anypoint-platform.md#design-center-projects).
+To scan from your own pipeline instead, see [CI/CD Integration](../ci-cd-integration/). For Anypoint Design Center projects, see [MuleSoft Anypoint Platform](mulesoft-anypoint-platform.md).
 
-## How repository scanning works
+## How Repository Scanning Works
 
-| Step                         | What happens                                                                                                                                                                          |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Register an OAuth app** | You register an OAuth app in Bitbucket or GitHub with IZ Suite's callback URL, and save its ID and secret in IZ Suite.                                                                |
-| **2. Authorize**             | You authorize the app in Bitbucket or GitHub and choose the workspaces to bring in. IZ Suite keeps the access fresh from then on.                                                     |
-| **3. Repository sync**       | The sync discovers the repositories and branches of the authorized workspaces (and Bitbucket pull requests) and files new repositories under the default organization.                |
-| **4. Eligibility**           | You choose which repositories and branches are scanned, or let IZ Suite scan every discovered one.                                                                                    |
-| **5. Repository scan**       | The scan checks out each enabled repository and branch, detects its [languages](supported-languages.md) and runs their rules.                                                         |
-| **6. Review**                | Findings and quality gates appear per branch and pull request in [Code Analysis](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis). |
+| Step                         | What happens                                                                                                                                                           |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Register an OAuth app** | You register an OAuth app in Bitbucket or GitHub with IZ Suite's callback URL, and save its ID and secret in IZ Suite.                                                 |
+| **2. Authorize**             | You authorize the app in Bitbucket or GitHub and choose the workspaces to bring in. IZ Suite keeps the access fresh from then on.                                      |
+| **3. Repository sync**       | The sync discovers the repositories and branches of the authorized workspaces (and Bitbucket pull requests) and files new repositories under the default organization. |
+| **4. Eligibility**           | You choose which repositories and branches are scanned, or let IZ Suite scan every discovered one.                                                                     |
+| **5. Repository scan**       | The scan checks out each enabled repository and branch, detects its [languages](supported-languages.md) and runs their rules.                                          |
+| **6. Review**                | Findings and quality gates appear per branch and pull request in [Code Analysis](../workspaces/code-analysis/).                                                        |
 
-## Register the OAuth app
+## Register the OAuth App
 
 {% tabs %}
 {% tab title="Bitbucket" %}
@@ -45,14 +45,14 @@ To scan from your own pipeline instead, see CI/CD Integration. For Anypoint Desi
 {% endtabs %}
 
 {% hint style="info" %}
-The callback URL is built from the server address set in Setup's **Set the address people use to reach this server** step. This app is not the Change Assurance sign-in app, which uses a different callback.
+The callback URL is built from the address you opened IZ Suite at, so open IZ Suite at its usual address before you copy it. This app is not the Change Assurance sign-in app, which uses a different callback.
 {% endhint %}
 
-## Connect and authorize
+## Connect and Authorize
 
-<figure><img src="../../../../.gitbook/assets/.gitbookassetsplat-repositories-connect.png" alt="Connect your source repositories drawer with Bitbucket selected, the callback URL, permissions, Key, Secret, Default organization and scan options"><figcaption><p>Connect your source repositories</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-plat-repositories.png" alt="Connect your source repositories drawer with Bitbucket selected, the callback URL, permissions, Key, Secret, Default organization and scan options"><figcaption></figcaption></figure>
 
-1. Open **Administration** → **Setup** and click **Set up** (or **Review**) on **Connect your source repositories**. You can also open it from **Workspaces** → **Code Analysis** → **Manage Scanning** → **Manage** → **Bitbucket connection & discovery** or **GitHub connection & discovery**.
+1. Open **Administration** → **Setup** and click **Set up** (or **Review**) on **Connect your source repositories**. You can also open it from **Workspaces** → **Code Analysis** → **Manage Scanning** → **Manage** (or **More**) → **Bitbucket connection & discovery** or **GitHub connection & discovery**.
 2. Under **Where your repositories live**, choose **Bitbucket** or **GitHub**.
 3.  Enter the app's details:
 
@@ -73,16 +73,16 @@ While **Scan every discovered repository** or **Scan every discovered branch** i
 
 If Bitbucket or GitHub no longer accepts the saved access (it was revoked or replaced), the drawer and **Manage Scanning** show **Reconnect**: click **Authorize again** to resume syncing.
 
-## Choose what is scanned
+## Choose What Is Scanned
 
 Open **Workspaces** → **Code Analysis** → **Manage Scanning** and choose the **Bitbucket** or **GitHub** tab:
 
 * Tick repositories and click **Enable selected** or **Exclude selected**. When you enable them, choose their organization and optionally queue a one-time scan.
-* On the **Bitbucket** tab, turn on **Automatically scan all repositories** to scan every current and future repository of the connection.
+* On the **Bitbucket** or **GitHub** tab, click **Configure Bitbucket connection & discovery** (or **Configure GitHub connection & discovery**) and tick **Scan every discovered repository** to scan every current and future repository of the connection.
 
-Excluding a repository stops future scans of it and its branches; its existing results are kept. See [Manage Scanning](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/manage-scanning).
+Excluding a repository stops future scans of it and its branches; its existing results are kept. See [Manage Scanning](../workspaces/code-analysis/manage-scanning.md).
 
-## Schedule the sync and the scans
+## Schedule the Sync and the Scans
 
 Two job types do the work, each scheduled per platform:
 
@@ -96,9 +96,9 @@ Two job types do the work, each scheduled per platform:
 3. Under **When should this work run?**, choose **One time** or **Recurring** and the interval.
 4. Click **Turn on assessments**.
 
-Each scheduled type shows its current timing (for example **On · Every hour**) with **Edit schedule**. See [All Schedules](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/schedules/all-schedules).
+Each scheduled type shows its current timing (for example **On · Every hour**) with **Edit schedule**. See [All Schedules](../operations/schedules/all-schedules.md).
 
-## Scan pull requests
+## Scan Pull Requests
 
 With Bitbucket, IZ Suite can scan a pull request as soon as it is opened or updated:
 
@@ -108,24 +108,24 @@ With Bitbucket, IZ Suite can scan a pull request as soon as it is opened or upda
 4. Click **Save**.
 5. In each Bitbucket repository, open **Repository settings** → **Webhooks** → **Add webhook**, enter the URL the drawer shows and the secret, and choose the triggers **Pull request created**, **updated**, **merged** and **declined**.
 
-Pull requests are scanned only in repositories enabled for scanning. A pull request is judged on the code it adds compared with its target branch, so scan your main branches first. For the details, and for pull-request scans from your pipeline, see Pull Request Analysis and [Pull Requests](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/pull-requests).
+Pull requests are scanned only in repositories enabled for scanning. A pull request is judged on the code it adds compared with its target branch. If the target branch has never been scanned, it is scanned first and the pull request right after. For the details, and for pull-request scans from your pipeline, see [Pull Request Analysis](../ci-cd-integration/pull-request-analysis.md) and [Pull Requests](../workspaces/code-analysis/pull-requests.md).
 
 {% hint style="info" %}
 Bitbucket lists every delivery under the webhook's **View requests**. A 401 answer means the secrets differ; a 403 means no secret is saved in IZ Suite. The server address must be reachable from Bitbucket.
 {% endhint %}
 
-## Where the results appear
+## Where the Results Appear
 
-| What                                       | Where                                                                                                                                             |
-| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Repositories and their eligibility         | [Manage Scanning](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/manage-scanning)             |
-| Branches, their quality gates and findings | [Branches & Baselines](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/branches-and-baselines) |
-| Pull requests                              | [Pull Requests](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/pull-requests)                 |
-| Sync and scan runs                         | [Execution History](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/operations/schedules/execution-history)             |
+| What                                       | Where                                                                         |
+| ------------------------------------------ | ----------------------------------------------------------------------------- |
+| Repositories and their eligibility         | [Manage Scanning](../workspaces/code-analysis/manage-scanning.md)             |
+| Branches, their quality gates and findings | [Branches & Baselines](../workspaces/code-analysis/branches-and-baselines.md) |
+| Pull requests                              | [Pull Requests](../workspaces/code-analysis/pull-requests.md)                 |
+| Sync and scan runs                         | [Execution History](../operations/schedules/execution-history.md)             |
 
-## Next steps
+## Next Steps
 
 * [Supported Languages](supported-languages.md): what each scan detects and checks.
-* [Manage Scanning](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/workspaces/code-analysis/manage-scanning): enable or exclude repositories.
-* Pull Request Analysis: scan pull requests from webhooks and pipelines.
+* [Manage Scanning](../workspaces/code-analysis/manage-scanning.md): enable or exclude repositories.
+* [Pull Request Analysis](../ci-cd-integration/pull-request-analysis.md): scan pull requests from webhooks and pipelines.
 * [Supported Platforms](./): back to the platform overview.

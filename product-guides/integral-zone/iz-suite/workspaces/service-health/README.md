@@ -8,7 +8,7 @@ Open it from **Workspaces** → **Service Health** in the sidebar. Every Service
 Requires the **Service Health** licence.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsservice-health-status-page.png" alt="Owner view of a status page with its current status and the incidents happening now"><figcaption><p>A status page as its owner sees it</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sh-status-owner.png" alt="Owner view of a status page with its current status and the incidents happening now"><figcaption><p>A status page as its owner sees it</p></figcaption></figure>
 
 {% hint style="warning" %}
 The tabs you see depend on your role. For example, a role that can view status pages but not monitors sees only status pages, runbooks and maintenance windows.
@@ -27,7 +27,7 @@ The tabs you see depend on your role. For example, a role that can view status p
 | [Runbooks](runbooks.md)                       | Write the response procedure a team follows when a monitor fails.                                             |
 | [Maintenance Windows](maintenance-windows.md) | Plan maintenance so checks inside the window do not count as down, and announce it to subscribers.            |
 
-## How the pieces fit together
+## How the Pieces Fit Together
 
 1. A **monitor** checks one endpoint or resource and records each result.
 2. A **category** groups monitors; a **status page** shows categories, monitors added directly, or both.
@@ -35,7 +35,7 @@ The tabs you see depend on your role. For example, a role that can view status p
 4. A **runbook** is linked to a monitor so responders know what to do when it fails.
 5. A **maintenance window** covers monitors, categories or status pages while planned work runs.
 
-## Next steps
+## Next Steps
 
 * [Monitors](monitors.md): create your first monitor.
 * [Monitoring Coverage](monitoring-coverage.md): find applications that are not monitored yet.

@@ -14,14 +14,14 @@ In multi-tenant instances, this is managed by your platform administrator.
 You need a role that can manage seed data to open this tab.
 {% endhint %}
 
-## How seeding works
+## How Seeding Works
 
 * Seed data is grouped into categories, such as **Languages**, **Rules**, **Rule Profiles**, **Security References** and **Compliance Standards**. Each item has a version.
 * Only the items that apply to the running IZ Suite version are listed.
 * IZ Suite checks for pending seed data every time the server starts and applies it in the background. An item already applied at its available version is skipped.
 * An item's **Applied version** is the latest version that completed seeding. An item is **Current** when that matches the available version.
 
-## Counts and filters
+## Counts and Filters
 
 | Tile                  | Description                                                          |
 | --------------------- | -------------------------------------------------------------------- |
@@ -37,7 +37,7 @@ You need a role that can manage seed data to open this tab.
 
 **Saved filters** and **Save filters** keep a filter combination, and **Refresh** reloads the catalog.
 
-## Seed data catalog
+## Seed Data Catalog
 
 Each category is a card with its description, the number of seed items, how many are **Current**, and either **All current** or the number of updates available. Click a card to open its items:
 
@@ -50,7 +50,7 @@ Each category is a card with its description, the number of seed items, how many
 
 Categories with more than five items have a search box for their items.
 
-## Apply available seed data
+## Apply Available Seed Data
 
 Use it when the catalog shows **Updates available**, for example after a seeding run did not complete and you do not want to wait for the next server start.
 
@@ -58,10 +58,10 @@ Use it when the catalog shows **Updates available**, for example after a seeding
 2. In **Apply available seed data to every tenant?**, click **Queue seeding for all tenants**, or close it to cancel.
 3. Click **Refresh** later to see the applied versions.
 
-Seeding runs in the background for every tenant and covers all available items, including items hidden by your filters. Follow its progress in [Scheduler Audit Logs](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/system-activity/scheduler-audit-logs) (handler `Seed Metadata Handler`).
+Seeding runs in the background for every tenant and covers all available items, including items hidden by your filters. Follow its progress in [Scheduler Audit Logs](../system-activity/scheduler-audit-logs.md) (handler `Seed Metadata Handler`).
 
-## Next steps
+## Next Steps
 
 * [Job Types](job-types.md): review the runtime behind each kind of work.
-* [Scheduler Audit Logs](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/system-activity/scheduler-audit-logs): follow the seeding work.
-* [Global Settings](https://knowledgebase.autorabit.com/product-guides/integral-zone/iz-suite/administration/global-settings): the other configuration screens.
+* [Scheduler Audit Logs](../system-activity/scheduler-audit-logs.md): follow the seeding work.
+* [Global Settings](./): the other configuration screens.

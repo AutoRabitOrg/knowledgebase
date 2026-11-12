@@ -8,9 +8,9 @@ Open it from **Workspaces** → **Compliance** → **Assessment history** in the
 You need a role that can view compliance standards.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-assessment-history-list.png" alt="Assessment snapshots list"><figcaption><p>Assessment history</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-history.png" alt="Assessment snapshots list"><figcaption><p>Assessment history</p></figcaption></figure>
 
-## Assessment snapshots
+## Assessment Snapshots
 
 Each snapshot shows the standard, when it was retained and the **Retained snapshot score**.
 
@@ -21,11 +21,11 @@ Each snapshot shows the standard, when it was retained and the **Retained snapsh
 
 **Save filters** stores the filters under a name. To create a snapshot, use **Create assessment snapshot** or **Retain snapshot** in [Standards & Frameworks](/broken/pages/2ded2e2e308bc0fe50fc7a95b55dad213487f979).
 
-## Inspect a snapshot
+## Inspect a Snapshot
 
 Select **Inspect snapshot →** to open it.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetscompliance-assessment-history-snapshot.png" alt="A retained snapshot with its score and control hierarchy"><figcaption><p>Retained snapshot</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-compliance-snapshot.png" alt="A retained snapshot with its score and control hierarchy"><figcaption><p>Retained snapshot</p></figcaption></figure>
 
 | Tile                            | Description                                                                           |
 | ------------------------------- | ------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ Select **Inspect snapshot →** to open it.
 Every value in a snapshot is as recorded at the time. Only failed validations are retained, so an application missing from a control's list was not necessarily evaluated; its absence is not proof of compliance.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Standards & Frameworks](/broken/pages/2ded2e2e308bc0fe50fc7a95b55dad213487f979): retain a new snapshot.
 * [Treatment Plans](treatment-plans.md): follow the plans for failing risks.

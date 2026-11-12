@@ -4,13 +4,13 @@
 
 Open it from **Administration** → **System Activity** → **System Audit Logs** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsaudit-system-audit-logs-list.png" alt="System Audit Logs with event counts, filters, time window and the events-over-time chart"><figcaption><p>System Audit Logs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-audit-system (1).png" alt="System Audit Logs with event counts, filters, time window and the events-over-time chart"><figcaption><p>System Audit Logs</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view the system audit log. To see only your own activity, use **My Activity** under **My Account**.
 {% endhint %}
 
-## Counts and filters
+## Counts and Filters
 
 | Tile                  | Description                                                    |
 | --------------------- | -------------------------------------------------------------- |
@@ -28,7 +28,7 @@ You need a role that can view the system audit log. To see only your own activit
 
 **Events over time** charts matching and failed records per period. Click a bar to investigate that period. **Saved filters** and **Save filters** keep a filter combination.
 
-## Activity timeline
+## Activity Timeline
 
 Newest events first. Failed events are highlighted.
 
@@ -45,7 +45,7 @@ Newest events first. Failed events are highlighted.
 
 **Export this page** downloads the events on the current page as CSV.
 
-## Inspect an event
+## Inspect an Event
 
 1. Click the event name (or **Inspect event** at the end of the row).
 2. Review **Actor**, **Recorded at**, **Result**, **Duration**, **Client IP** and **Event identity**.
@@ -58,7 +58,7 @@ The panel keeps your place in the list. If an event is no longer available, it m
 Audit logs are kept for the retention period set in the archival policies under global settings; older records are archived. Certain field values in requests may be masked based on their sensitivity.
 {% endhint %}
 
-## Next steps
+## Next Steps
 
 * [Scheduler Audit Logs](scheduler-audit-logs.md): trace background work the server ran.
 * [Entity Archives](entity-archives.md): see what an archived record looked like.

@@ -16,7 +16,7 @@ Each tab needs its own access. **Vulnerability catalog** needs a role that can v
 
 ## Application risk
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-risk-lifecycle-application-risk.png" alt="Application risk tab"><figcaption><p>Application risk</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-risk-app.png" alt="Application risk tab"><figcaption><p>Application risk</p></figcaption></figure>
 
 **OSV vulnerability catalog** and **Deprecation rules** at the top open the catalogs, including rules with no application matches.
 
@@ -34,6 +34,7 @@ Narrow the list with **All risk evidence**, **Vulnerabilities** or **Deprecation
 | Column                   | Description                                                                                                                                                                           |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Affected application** | Application, platform, version and organization.                                                                                                                                      |
+| **Last scan**            | When the application was last scanned.                                                                                                                                                |
 | **Exposure**             | **Direct** when the rule matches the application itself, or connected through a recorded dependency; with the status (for example **Vulnerable** or **Deprecated**) and review state. |
 | **Origin component**     | The application or component where the risk starts.                                                                                                                                   |
 | **Rule / advisory**      | The matched advisory or lifecycle rule and its source.                                                                                                                                |
@@ -60,7 +61,9 @@ OSV advisories and other imported definitions, with their affected packages and 
 | **Advisory**             | Advisory title and number of package definitions.           |
 | **Source**               | For example **OSV**, and whether it is built in.            |
 | **Severity / state**     | Severity when enriched, and whether the advisory is active. |
+| **Updated**              | When the advisory was last updated.                         |
 | **Application exposure** | Number of direct and connected applications.                |
+| **Review**               | **Inspect rule** opens the advisory.                        |
 
 Select an advisory to see its identifier, description, source, severity, EPSS, known-exploited status, **Affected packages & version rules**, and **Affected applications & connections**.
 
@@ -68,14 +71,20 @@ Select an advisory to see its identifier, description, source, severity, EPSS, k
 
 Built-in lifecycle guidance and your own deprecation rules, with their direct targets and connected consumers. Select **Affects this workspace** to list only rules that match applications in your scope.
 
-| Column                   | Description                                                          |
-| ------------------------ | -------------------------------------------------------------------- |
-| **Lifecycle rule**       | Rule title and the component or application it targets.              |
-| **Source**               | Built-in catalog or **Custom**.                                      |
-| **Lifecycle**            | Status, for example **Deprecated**, and the sunset date if recorded. |
-| **Application exposure** | Number of direct and connected applications.                         |
+| Column                   | Description                                                                      |
+| ------------------------ | -------------------------------------------------------------------------------- |
+| **Lifecycle rule**       | Rule title and the component or application it targets.                          |
+| **Source**               | Built-in catalog or **Custom**.                                                  |
+| **Lifecycle**            | Status, for example **Deprecated**, and the sunset date if recorded.             |
+| **Updated**              | When the rule was last changed.                                                  |
+| **Application exposure** | Number of direct and connected applications.                                     |
+| **Review**               | **Inspect rule** opens the rule. **Delete rule** is shown for custom rules only. |
 
 Select a rule to see its target, scope, deprecation and sunset dates, migration notes and the affected applications.
+
+{% hint style="danger" %}
+**Delete rule** removes a custom lifecycle rule and the deprecations it raised on applications. This cannot be undone.
+{% endhint %}
 
 **New deprecation rule** opens the same form as **Deprecate application** in [Asset Exposure](asset-exposure.md#deprecate-an-application-or-component), with a search for the application, API or cloud resource to deprecate. Upgrade waves created in [Version Planning](version-planning.md) also add custom deprecation rules here.
 
@@ -83,7 +92,7 @@ Select a rule to see its target, scope, deprecation and sunset dates, migration 
 
 Each item is a risk already recorded on an application, placed in a cell by named rules. There is no score: open an item to see the rule and the evidence that placed it. Missing evidence stays unknown.
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetsdi-risk-lifecycle-priority-matrix.png" alt="Priority matrix with bands and the likelihood and impact grid"><figcaption><p>Priority matrix</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-di-risk-matrix.png" alt="Priority matrix with bands and the likelihood and impact grid"><figcaption><p>Priority matrix</p></figcaption></figure>
 
 | Band            | Due                                              |
 | --------------- | ------------------------------------------------ |
@@ -113,16 +122,20 @@ The list orders items by band (**Act now** first), then by likelihood, impact an
 
 ### Create tracked work
 
-Tracked work creates one assigned maintenance item per application, linked to the matrix items. It appears in [Assigned Work](assigned-work.md) and **My open work**, and the matrix counts the items as tracked while they are open.
+Tracked work creates one assigned maintenance item per application, linked to the matrix items. It appears in [Assigned Work](../../assigned-work.md) and **My open work**, and the matrix counts the items as tracked while they are open.
 
 1. Select **Create tracked work** on a row, or **Create tracked work for this list** for every item in the list.
 2. Enter the **Title**.
 3. Choose who to **Assign to** and the **Due date**. The due date is prefilled from the band.
-4. Check **Items and why they are here**.
+4. Check **Items and why they are here**. **Completion criteria** is filled in for you.
 5. Select **Create and assign for&#x20;**_**n**_**&#x20;applications**.
 
-## Next steps
+{% hint style="info" %}
+One piece of tracked work covers at most 1,000 items on 200 applications. For a larger list, narrow it by organization or platform first.
+{% endhint %}
+
+## Next Steps
 
 * [Version Planning](version-planning.md): plan the upgrade that closes a match.
-* [Updates & Maintenance](/broken/pages/56f71d517d3abfb5567dda056df1cd97183a623a): see maintenance rules, including tracked work.
-* [Actions](actions.md): follow upgrade waves and saved review notes.
+* [Updates & Maintenance](updates-and-maintenance/): see maintenance rules, including tracked work.
+* [Actions](updates-and-maintenance/actions.md): follow upgrade waves and saved review notes.

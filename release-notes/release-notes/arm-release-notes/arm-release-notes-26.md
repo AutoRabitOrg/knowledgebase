@@ -306,6 +306,16 @@ This fix improves the user experience when configuring or updating the **SonarQu
 
 ***
 
+## DataLoader and DataLoader Pro 26.4.6
+
+**Release Date:** **8 November 2026**
+
+#### Bulk Skip Records Management in Data Loader Pro
+
+Added a searchable side pane for managing **Skip Records** settings across ancestor objects in Data Loader Pro. **Select All** applies to the complete list or the currently filtered results, including objects outside the visible grid page. **SAVE** persists all pending changes, while **Close (X)** discards unsaved changes.
+
+***
+
 ## ARM 26.4.5
 
 **Release date:** **1 November 2026**

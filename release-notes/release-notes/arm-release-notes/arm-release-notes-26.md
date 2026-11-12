@@ -6,7 +6,7 @@
 
 ## ARM 26.4.7
 
-**Release date:** **15th November 2026**
+**Release date:** 15 November 2026
 
 #### Improved GitHub OAuth Authorization Error Handling <a href="#improved-github-oauth-authorization-error-handling" id="improved-github-oauth-authorization-error-handling"></a>
 
@@ -124,9 +124,11 @@ These improvements provide more accurate deployment tracking and audit visibilit
 
 {% embed url="https://knowledgebase.autorabit.com/product-guides/arm-1/arm-features/reports/deployment-component-audit-report" %}
 
+***
+
 ## ARM 26.4.6
 
-**Release date:** **8 November 2026**
+**Release date:** 8 November 2026
 
 #### Automatic Field Population in EZ-Commit (New UI)
 
@@ -238,7 +240,7 @@ This fix also ensures that existing **Skip Org Mappings** permissions are preser
 
 #### Fixed CRM Analytics Metadata Deletion Failures in EZ-Commit
 
-Resolved an issue where **EZ-Commit failed when processing deleted CRM Analytics (Wave) metadata components**in Salesforce DX (SFDX) repositories.
+Resolved an issue where **EZ-Commit failed when processing deleted CRM Analytics (Wave) metadata components** in Salesforce DX (SFDX) repositories.
 
 ARM now supports deletion of **WaveApplication, WaveComponent, WaveDashboard, WaveDataset, WaveLens, WaveRecipe, and WaveXmd** metadata types, allowing users to commit these deletions to Git repositories without encountering metadata recognition errors.
 
@@ -270,7 +272,7 @@ This fix also introduces **required-field validation**, ensuring the correct pac
 
 #### Fixed Prevalidation Request Errors in AutoRABIT VS Code Extension
 
-Resolved an issue where users encountered a **JavaScript error after successfully submitting a Prevalidation Request**through the AutoRABIT VS Code extension.
+Resolved an issue where users encountered a **JavaScript error after successfully submitting a Prevalidation Request** through the AutoRABIT VS Code extension.
 
 The issue also prevented submitted requests from appearing in the **Prevalidations** section, making it difficult for users to track their status.
 
@@ -298,7 +300,7 @@ ARM now correctly identifies and displays only the relevant custom labels during
 
 #### Improved SonarQube Plugin Connection Error Messages
 
-Resolved an issue where the **SonarQube plugin displayed an empty warning message** when the **Test Connection**operation failed due to expired authentication tokens or incorrect credentials.
+Resolved an issue where the **SonarQube plugin displayed an empty warning message** when the **Test Connection** operation failed due to expired authentication tokens or incorrect credentials.
 
 ARM now displays a **clear and meaningful error message** when the connection test fails, helping users identify and troubleshoot connection issues more effectively.
 
@@ -308,7 +310,7 @@ This fix improves the user experience when configuring or updating the **SonarQu
 
 ## DataLoader and DataLoader Pro 26.4.6
 
-**Release Date:** **8 November 2026**
+**Release Date:** 8 November 2026
 
 #### Bulk Skip Records Management in Data Loader Pro
 
@@ -318,7 +320,7 @@ Added a searchable side pane for managing **Skip Records** settings across ances
 
 ## ARM 26.4.5
 
-**Release date:** **1 November 2026**
+**Release date:** 1 November 2026
 
 #### Deployed Components Audit Report - FR - New UI
 
@@ -380,7 +382,7 @@ These improvements help **reduce CPU usage, disk I/O, and system overhead**, par
 
 ## ARM 26.4.4
 
-**Release date:** **25 October 2026**
+**Release date:** 25 October 2026
 
 #### External Approval Workflow Integration with ServiceNow
 
@@ -464,7 +466,7 @@ Additionally, improved error handling ensures that Pull Request creation failure
 
 #### Fixed Search Functionality in My Version Control Mappings (Classic UI)
 
-Resolved an issue in the Old UI where searching for an existing repository under Profile > My Version Control Mappingsincorrectly displayed "No version control mappings found."
+Resolved an issue in the Old UI where searching for an existing repository under Profile > My Version Control Mappings incorrectly displayed "No version control mappings found."
 
 ARM now supports case-insensitive searches by repository name, branch name, repository URL, and credential name, ensuring matching Version Control mappings are displayed correctly with proper pagination.
 
@@ -476,7 +478,7 @@ ARM now displays the Package Directory filter when a branch is selected for a DX
 
 #### Fixed Custom Label Deployment Inconsistencies in Pull Request-Based CI Jobs
 
-Resolved an issue where Custom Labels and other metadata components displayed inconsistently between File Changesand Metadata Changes in Pull Request-based CI Jobs, resulting in incorrect component selection during deployment validation.
+Resolved an issue where Custom Labels and other metadata components displayed inconsistently between File Changes and Metadata Changes in Pull Request-based CI Jobs, resulting in incorrect component selection during deployment validation.
 
 ARM now correctly identifies metadata changes based on Pull Request differences, ensuring consistent component selection and accurate deployment packages, including destructive changes, for Git-based CI Jobs.
 
@@ -506,7 +508,7 @@ This fix prevents unnecessary duplicate executions and improves the reliability 
 
 Resolved an issue in the New UI where the Audit Log CSV download icon was missing under Deployment History > Audit Log, preventing users from downloading audit logs.
 
-ARM now displays the download icon and allows users to export audit logs in CSV format, following the same file naming convention and including the relevant audit data as the Old UI.
+ARM now displays the download icon and allows users to export audit logs in CSV format, following the same file naming convention and including the relevant audit data as the classic UI.
 
 ***
 
@@ -526,7 +528,7 @@ Resolved multiple issues affecting DataLoader extraction, migration, masking, an
 
 ## ARM 26.4.3
 
-**Release date:** **18 October 2026**
+**Release date:** 18 October 2026
 
 #### Fixed Workspace Synchronization Errors in EZ-Commit and EZ-Merge
 
@@ -608,7 +610,7 @@ This upgrade incorporates the latest Tomcat security updates, stability improvem
 
 ## ARM 26.4.2
 
-**Release date:** **11 October 2026**
+**Release date:** 11 October 2026
 
 #### EZ-Commit Auto Draft Deleted Components Fix
 
@@ -707,7 +709,7 @@ The following metadata types are included in Phase 2:
 
 ## ARM 26.3.13
 
-**Release date:** **27 September 2026**
+**Release date:** 27 September 2026
 
 #### Salesforce Standard Authentication Retirement Notifications
 
@@ -771,7 +773,7 @@ With this fix, saved SCA options are displayed correctly, and the applicable Son
 
 ## DataLoader and DataLoader Pro 26.3.13
 
-**Release date:** **27 September 2026**
+**Release date:** 27 September 2026
 
 #### Accurate Save Messaging for DataLoader Pro Jobs
 

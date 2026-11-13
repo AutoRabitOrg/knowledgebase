@@ -1,6 +1,6 @@
 # DataLoader Pro
 
-**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **DataLoader Pro** feature in ARM.&#x20;
+**Data Loader Pro** is an advanced feature ARM provides for transferring data from the source sandbox to the destination sandbox more conveniently and automatically handles the parent-child relationship. Migrating the Salesforce data/objects to more than one object-supporting hierarchy can be easily achieved using the **DataLoader Pro** feature in ARM.
 
 ### Before You Begin <a href="#before-you-begin" id="before-you-begin"></a>
 
@@ -51,7 +51,7 @@ Format the CSV file to filter records:
 
 * ARM DataLoader Pro accepts CSV (comma-separated values) files. Use a spreadsheet program such as Microsoft Excel to create your CSV file.
 * Ensure you have a column header and rows of data populated for all system-required fields, such as **`Account Name`** or **`Contact Last Name`**.
-* There can be only one column header.&#x20;
+* There can be only one column header.
 
 For more information, see [Preparing the CSV file for DataLoader](preparing-the-csv-file-for-arm-dataloader.md).
 
@@ -77,17 +77,43 @@ Upon completing the validation, click on ‘Apply’ to apply the inputs.
 
 <figure><img src="../../../../.gitbook/assets/image (1832).png" alt=""><figcaption></figcaption></figure>
 
-Select the checkbox to 'Skip Records' from migrating to the destination.
+Clicking **SKIP RECORDS** in the **Ancestors** section opens the object selection panel.
 
-<figure><img src="../../../../.gitbook/assets/image (1833).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (36).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;Upon selecting the checkbox, a pop-up will ask for confirmation.
+<figure><img src="../../../../.gitbook/assets/2 (36).png" alt=""><figcaption></figcaption></figure>
+
+The required objects are selected using their checkboxes. **Select all** selects every listed object, while **Search object name** helps locate a specific object.
+
+<figure><img src="../../../../.gitbook/assets/3 (8).png" alt=""><figcaption></figcaption></figure>
+
+Clicking **SAVE** applies the selection. The notification **“Skip Records Saved Successfully for Ancestor Objects”** confirms the update. Clicking **OK** closes the notification.
+
+<figure><img src="../../../../.gitbook/assets/4 (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/6 (17).png" alt=""><figcaption></figcaption></figure>
+
+The **Skip Records** column displays an icon for each selected object. Hovering over the icon displays **“Skip records enabled.”** The information icon beside the column heading explains that required records are still included in migration.
+
+<figure><img src="../../../../.gitbook/assets/5 (6).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/6 (18).png" alt=""><figcaption></figcaption></figure>
+
+To disable skipping, **SKIP RECORDS** is reopened and the relevant checkboxes are cleared. Clearing **Select all** removes every selection. Clicking **SAVE** applies the changes, and the affected rows display a dash in the **Skip Records** column.
+
+<figure><img src="../../../../.gitbook/assets/7 (9).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/8 (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/9 (14).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/10 (6).png" alt=""><figcaption></figcaption></figure>
+
+Upon selecting the checkbox, a pop-up will ask for confirmation.
 
 <figure><img src="../../../../.gitbook/assets/image (1834).png" alt=""><figcaption></figcaption></figure>
 
 Upon confirming, the checkbox will be selected to skip migrating those records to the destination with the following notification on filters applied.
-
-<figure><img src="../../../../.gitbook/assets/image (1835).png" alt=""><figcaption></figcaption></figure>
 
 Click on the filters section of the object on which the 'Skip Records' is applied to observe the query builder and the Record Count.
 
@@ -117,7 +143,7 @@ Using the **`Automap`** feature, you can map the fields automatically based on f
 
 ### **Field Extraction**
 
-DataLoader Pro allows users to fetch only the fields explicitly mapped by the user, rather than retrieving all available fields in an object.&#x20;
+DataLoader Pro allows users to fetch only the fields explicitly mapped by the user, rather than retrieving all available fields in an object.
 
 * When checking for the existence of `AutorabitExtId__c`, if it exists, the system verifies whether it is marked as "External Id" and "Unique." If not, it is set to `true` as required.
 * Any new objects are saved to the database, reducing processing time.
@@ -138,9 +164,9 @@ In the **`Destination`** field, select the required destination org whose values
 
 ### Process Details <a href="#process-details" id="process-details"></a>
 
-Here in this section, fill in the process details listed below:&#x20;
+Here in this section, fill in the process details listed below:
 
-1. Enter a **`Name`**  for the job.
+1. Enter a **`Name`** for the job.
 2. Select the category in the **`Job Group`** field. This is important if you'd like to group related jobs into a single category. You can also create a new group and assign your job to this group.
 3. **`Master Object`** and **`External ID`** are auto-populated.
 4. Enter the **`User Name Suffix`** for the **`Source Org`** and the **`Destination Org`**. Below are some examples of usernames and the corresponding suffixes:
@@ -231,16 +257,16 @@ Select your job from the **`DataLoader Pro Summary`** screen and click on **`Run
 
 The table below lists the configurations to choose from, along with their descriptions:
 
-| Serial Number | Configurations                                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1             | **`Disable workflows`**                                                    | The workflows of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, workflows are reactivated.                                                                                                                                                                                                                                                                                                                                                                   |
-| 2             | **`Disable validation rules`**                                             | Validation rules verify that the data a user enters in a record meets the criteria you specify before the user can save the record. On selection, all the validation rules of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, validation rules are reactivated.                                                                                                                                                                                               |
-| 3             | **`Use Bulk API`**                                                         | <p>The Bulk API is based on REST principles and optimized for inserting, updating, and deleting large data sets.</p><p>You can use the Bulk API to process jobs in serial or parallel mode. Processing batches serially means running them one after another, while processing batches in parallel means running multiple batches simultaneously. </p><p><strong>Note</strong>: When you run a Bulk API job, processing more batches in parallel means giving that job a higher degree of parallelism, providing your overall run better data throughput.</p> |
-| 4             | **`Insert/update with null values`**                                       | Insert/update with null values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 5             | **`Minimize multiple references between the same objects`**                | When there are multiple references between the same objects, unnecessary API calls are not triggered upon selecting this option.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| 6             | **`Automatically apply master object filter on other dependency objects`** | All objects in the hierarchy are calculated based on the Master Object filters; this option avoids extra records addition due to self-references and multiple references.                                                                                                                                                                                                                                                                                                                                                                                     |
-| 7             | **`Data encryption for data files`**                                       | Data encryption for data files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 8             | **`Incremental data migration`**                                           | After a data-loading process is done, only the newly added records are transferred into the destination sandbox.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Serial Number | Configurations                                                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1             | **`Disable workflows`**                                                    | The workflows of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, workflows are reactivated.                                                                                                                                                                                                                                                                                                                                                                  |
+| 2             | **`Disable validation rules`**                                             | Validation rules verify that the data a user enters in a record meets the criteria you specify before the user can save the record. On selection, all the validation rules of the Salesforce objects are deactivated, and the data is transferred from the source to the destination sandbox. Once the migration is complete, validation rules are reactivated.                                                                                                                                                                                              |
+| 3             | **`Use Bulk API`**                                                         | <p>The Bulk API is based on REST principles and optimized for inserting, updating, and deleting large data sets.</p><p>You can use the Bulk API to process jobs in serial or parallel mode. Processing batches serially means running them one after another, while processing batches in parallel means running multiple batches simultaneously.</p><p><strong>Note</strong>: When you run a Bulk API job, processing more batches in parallel means giving that job a higher degree of parallelism, providing your overall run better data throughput.</p> |
+| 4             | **`Insert/update with null values`**                                       | Insert/update with null values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 5             | **`Minimize multiple references between the same objects`**                | When there are multiple references between the same objects, unnecessary API calls are not triggered upon selecting this option.                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 6             | **`Automatically apply master object filter on other dependency objects`** | All objects in the hierarchy are calculated based on the Master Object filters; this option avoids extra records addition due to self-references and multiple references.                                                                                                                                                                                                                                                                                                                                                                                    |
+| 7             | **`Data encryption for data files`**                                       | Data encryption for data files                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 8             | **`Incremental data migration`**                                           | After a data-loading process is done, only the newly added records are transferred into the destination sandbox.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
 ### More Options <a href="#more-options" id="more-options"></a>
 

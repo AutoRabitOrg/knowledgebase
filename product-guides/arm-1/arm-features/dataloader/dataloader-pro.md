@@ -230,17 +230,25 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     1. Review and adjust any mappings as needed, then click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/20 - DL PRO (1).png" alt=""><figcaption></figcaption></figure>
-19. Click on the "Filters" and "Mappings" icons to open the respective windows on the "Ancestor Objects" section.
+19. In **Create Dataloader Job**, the **Schema → Ancestor Objects** tab lists the available ancestor objects.
+20. Clicking **Skip records** opens the object selection panel.
 
-    <figure><img src="../../../../.gitbook/assets/21 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-20. Click on "Skip Records" to make sure the records from these objects were skipped from processing.
+    <figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+21. The required objects are selected using their checkboxes. **Select all** selects every listed object, and **Search object name** locates a specific object.
 
-    <figure><img src="../../../../.gitbook/assets/22 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-21. **Select child object & open mappings**\
+    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
+22. Clicking **Save** applies the selection.&#x20;
+23. The **Skip records** column displays an icon for each selected object, with the tooltip **“Skip records enabled.”**
+
+    <figure><img src="../../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+24. Clicking **Next** continues to **Masking**.
+25. **Select child object & open mappings**\
     In **Schema → Child Objects**, search and select the required child object (e.g., **ContentVersion**), then click the **Mappings** icon.
 
     <figure><img src="../../../../.gitbook/assets/23 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-22. **Map fields**\
+26. **Map fields**\
     In **Create Mapping**, review source ↔ destination pairs.
 
     * Click **Auto Map** to map identical field names automatically.
@@ -248,25 +256,25 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
       Finish by clicking **Save**.
 
     <figure><img src="../../../../.gitbook/assets/24 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-23. **Field Extraction**\
+27. **Field Extraction**\
     Data Loader Pro retrieves only the fields explicitly mapped by the user, avoiding unnecessary data fetches. When checking for `AutorabitExtId__c`, the system validates that it is marked as both **External ID** and **Unique**; if not, these attributes are set automatically. Newly identified objects are saved to the database to improve processing efficiency.
-24. **External ID Field Mapping**\
+28. **External ID Field Mapping**\
     This feature allows using an external ID instead of a Salesforce record ID to establish relationships between records during the Data Loader Pro operation. For example, if Object B has a lookup to Object A, the values in a field marked as an External ID on Object A can be used to relate the two.
     * **Source Field:** Select the source org containing the values to populate the destination external ID field.
     * **Destination Field:** Select the destination org where these values remain unique across all records.
-25. **Open Masking**\
+29. **Open Masking**\
     Go to the **Masking** step and click **New** to add a masking rule.
 
     <figure><img src="../../../../.gitbook/assets/25 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-26. **Choose object & field type**\
+30. **Choose object & field type**\
     In **Create Masking Rule**, pick the **Object** (e.g., `nFORCE__Brand__c`) and **Field Type** (Text/Textarea). Provide a **Masking value** when required.
 
     <figure><img src="../../../../.gitbook/assets/26 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-27. **Select masking style**\
+31. **Select masking style**\
     Choose a **Masking style**: **Prefix**, **Suffix**, **Replace**, **Shuffle**, or **Generate Random**.
 
     <figure><img src="../../../../.gitbook/assets/27 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-28. **Choose the Masking Style**
+32. **Choose the Masking Style**
 
     * **Prefix** – Adds a specified value before the original field value.\
       _&#x45;xample:_ Source value `ABC` with prefix `123` → Deployed value `123.ABC`.
@@ -280,37 +288,37 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
       _&#x45;xample:_ Source value `ABC` with random length `7` → Deployed value `15d3aRG`.
 
     _**`Note:`**` `` ``Masking is not applied if the field value is empty. `_
-29. **Select target fields & save**\
+33. **Select target fields & save**\
     Select the fields the rule should apply to (e.g., **Name**, lookup keys) and click **Save**.
 
     <figure><img src="../../../../.gitbook/assets/28 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-30. **Review rule in list**\
+34. **Review rule in list**\
     The rule appears in the **Masking** grid with its value and style. Click the actions menu to **View Rule** or **Edit Rule**.
 
     <figure><img src="../../../../.gitbook/assets/29 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-31. **View rule details**\
+35. **View rule details**\
     Use **View Rule** to see the full configuration: rule name, object, type, masking value/style, timestamps, and the fields impacted.
 
     <figure><img src="../../../../.gitbook/assets/30 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-32. **Edit if needed**\
+36. **Edit if needed**\
     Choose **Edit Rule** from the actions menu to adjust the object, style, value, or field selection, then **Save**.
 
     <figure><img src="../../../../.gitbook/assets/28 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-33. Observe the rule created for masking.
+37. Observe the rule created for masking.
 
     <figure><img src="../../../../.gitbook/assets/31 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-34. Click "Delete" to delete the rule created
+38. Click "Delete" to delete the rule created
 
     <figure><img src="../../../../.gitbook/assets/32 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-35. Observe the rule deleted
+39. Observe the rule deleted
 
     <figure><img src="../../../../.gitbook/assets/33 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-36. Open the Schedule step
+40. Open the Schedule step
 
     * The page defaults to **No Schedule**. This runs the job only when triggered manually. Click **Next** to continue without a schedule.
 
     <figure><img src="../../../../.gitbook/assets/35 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-37. Set a Daily schedule
+41. Set a Daily schedule
 
     * Click **Daily**.
     * Choose **Scheduling Starts From** (start date).
@@ -320,7 +328,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Under **Scheduling Ends**, choose **Never**, **X Occurrences from creation**, or a specific end date.
 
     <figure><img src="../../../../.gitbook/assets/36 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-38. Set a Weekly schedule
+42. Set a Weekly schedule
 
     * Click **Weekly**.
     * Choose **Scheduling Starts From** (start date).
@@ -329,7 +337,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Choose when the schedule ends: **Never**, **X Occurrences from creation**, or a specific end date.
 
     <figure><img src="../../../../.gitbook/assets/37 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-39. Click **Next** to move to **Job Configuration**.
+43. Click **Next** to move to **Job Configuration**.
 
     The table below lists the configurations to choose from, along with their descriptions:
 
@@ -343,7 +351,7 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     | 6 | **`Automatically apply master object filter on other dependency objects`** | All objects in the hierarchy are derived from the Master Object filters, preventing redundant record additions caused by self-references or multiple references.                                                                                                                                                                                                                                                                                           |
     | 7 | **`Data encryption for data files`**                                       | Data encryption for data files                                                                                                                                                                                                                                                                                                                                                                                                                             |
     | 8 | **`Incremental data migration`**                                           | After the data load completes, only the newly created records are migrated to the destination sandbox, ensuring no duplicate or pre-existing data is transferred.                                                                                                                                                                                                                                                                                          |
-40. Save the job (Process Details)
+44. Save the job (Process Details)
 
     1. **Fill in process details**
        * **Name**: Enter a clear job name (e.g., _Brands Migration Masking_).
@@ -353,54 +361,54 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
        * Review the **Master Object** shown on the right.
 
     <figure><img src="../../../../.gitbook/assets/40 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-41. **Save**
+45. **Save**
     * Click **Save** (bottom-right).
-42. **Confirmation**
+46. **Confirmation**
 
     * You’ll return to the **Dataloader Pro** list and see a green **Success** toast: **“Job saved successfully.”**
     * Your new job now appears in the list.
 
     <figure><img src="../../../../.gitbook/assets/41 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-43. Click on the "Summary" to view the job summary
+47. Click on the "Summary" to view the job summary
 
     <figure><img src="../../../../.gitbook/assets/42 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/43 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-44. Open Job Results
+48. Open Job Results
 
     * Go to **DataLoader Pro**.
     * For your job (e.g., _Brands Migration \* Masking_), click the **⋮** menu under **Actions** and choose **Job Results**.
 
     <figure><img src="../../../../.gitbook/assets/44 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-45. Review the Job Summary
+49. Review the Job Summary
 
     * You’ll land on **Summary** → **Master Object**.
     * The row shows quick actions: **VR/WFR** (validation/workflow), **Filters**, **Mappings**, plus **last run results**.
 
     <figure><img src="../../../../.gitbook/assets/45 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-46. Open Validation/Workflow controls
+50. Open Validation/Workflow controls
 
     * Click the **VR/WFR** icon (stacked lines) beside the object.
 
     <figure><img src="../../../../.gitbook/assets/46 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-47. Check Validation Rules:
+51. Check Validation Rules:
 
     * In the **Validation Rules** tab, review the listed rules (Previous State, Current State).
     * Use **Enable** where applicable; click **Ok** when done (or continue to the next tab).
 
     <figure><img src="../../../../.gitbook/assets/47 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-48. Check Workflow Rules
+52. Check Workflow Rules
 
     * Switch to the **Workflow Rules** tab and review similarly (enable/disable as needed).
     * Click **Ok** to close.
 
     <figure><img src="../../../../.gitbook/assets/48 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-49. Open and Review Filters
+53. Open and Review Filters
 
     * Back on **Summary**, click the **Filter** icon.
 
     <figure><img src="../../../../.gitbook/assets/49 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-50. Configure Filter criteria
+54. Configure Filter criteria
 
     * Choose **Input Options: Upload CSV File**.
     * Set **Select Field** and **Operator** (e.g., _Id_ + _Equals_).
@@ -408,26 +416,26 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     * Optional: click **Record Count**, **Validate**, then **Apply**.
 
     <figure><img src="../../../../.gitbook/assets/50 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-51. Review Field Mappings
+55. Review Field Mappings
 
     * From **Summary**, click **Mappings** to open the mapping dialog and verify/adjust source→destination field mappings.
 
     <figure><img src="../../../../.gitbook/assets/51 - DL PRO.png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../../../../.gitbook/assets/52 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-52. View Success Results – Master Object
+56. View Success Results – Master Object
 
     1. From **Summary → Master Object**, locate **Results of last run**.
     2. Click the **Success:** 🔍 icon (**Click to View**) for the master object.
 
     <figure><img src="../../../../.gitbook/assets/52.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-53. See Success Details (CSV)
+57. See Success Details (CSV)
 
     1. Review the **Destination Id** and **Status** for each processed record.
     2. Use **Search** and pagination as needed, then close the dialog.
 
     <figure><img src="../../../../.gitbook/assets/52.2 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-54. Review Ancestor Object Results
+58. Review Ancestor Object Results
 
     1. Open **Summary → Ancestor Objects**.
     2. For each ancestor object, click the **Success** 🔍 or **Failure** 🔍 icons to view details.
@@ -435,151 +443,151 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     4. The toggle **Skip Records** is in "inactive" state as the records are not choosen to be skipped while creating the job.
 
     <figure><img src="../../../../.gitbook/assets/53 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-55. Review Child Object Results
+59. Review Child Object Results
 
     1. Open **Summary → Child Objects**.
     2. Click the **Success** 🔍 or **Failure** 🔍 icons to view child-object run results.
     3. Use the **download** icon to export results if needed.
 
     <figure><img src="../../../../.gitbook/assets/54 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-56. Open Masking Rule Actions
+60. Open Masking Rule Actions
 
     1. Go to **Summary → Masking Rules**.
     2. Click the **⋮** menu for a rule and choose **View Rule** (or **Edit Rule**).
 
     <figure><img src="../../../../.gitbook/assets/55 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-57. View Masking Rule Details
+61. View Masking Rule Details
 
     1. In **Masking Object Info**, verify **Rule**, **Object**, **Type**, **Masking style/value**, and the **Fields** impacted.
     2. Use **Search** if the field list is long; click **Close** when done.
 
     <figure><img src="../../../../.gitbook/assets/56 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-58. Start Editing a Masking Rule
+62. Start Editing a Masking Rule
 
     1. From **Masking Rules**, open the **⋮** menu and select **Edit Rule**.
 
     <figure><img src="../../../../.gitbook/assets/57 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-59. Edit Masking Rule
+63. Edit Masking Rule
 
     1. In **Edit Masking Rule**, confirm **Select Object**, **Field Type**, **Masking Style**, and **Masking value**.
     2. Check the **Fields** to apply the masking to.
     3. Click **Save** to apply changes.
 
     <figure><img src="../../../../.gitbook/assets/58 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-60. Confirm Rule List
+64. Confirm Rule List
 
     1. You return to **Masking Rules**.
     2. Verify the rule appears as expected (use **Modified date** to confirm updates).
 
     <figure><img src="../../../../.gitbook/assets/59 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-61. Create a New Masking Rule
+65. Create a New Masking Rule
 
     1. From **Masking Rules**, click **New** to open **Create Masking Rule**.
     2. Set **Select Object**, **Field Type**, **Masking Style**, **Masking value**, and select the **Fields**.
     3. Click **Save** to add the rule.
 
     <figure><img src="../../../../.gitbook/assets/60 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-62. **Open Edit**
+66. **Open Edit**
 
     * From **DataLoader Pro**, find your job.
     * In **Actions**, click the **⋮** menu and choose **Edit**.
 
     <figure><img src="../../../../.gitbook/assets/61 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-63. **Edit Job – Login & Select Object**
+67. **Edit Job – Login & Select Object**
 
     * On **Edit DataLoader Job**, choose **Source Org** and **Destination Org**.
     * Click **Login and fetch objects** to load metadata.
     * Click **Next** to continue through the setup steps as needed.
 
     <figure><img src="../../../../.gitbook/assets/62 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-64. **Open Schedule**
+68. **Open Schedule**
 
     * From **DataLoader Pro**, open the **⋮** menu for the job.
     * Select **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/63 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-65. **Set Scheduling Type**
+69. **Set Scheduling Type**
 
     * In the **Schedule** panel, choose **No Schedule**, **Daily**, or **Weekly**.
     * Follow the [scheduling process](<dataloader-pro.md#:~:text=Open the Schedule step>) to set up a schedule.
     * Configure any timing options shown, then click **Schedule**.
 
     <figure><img src="../../../../.gitbook/assets/64 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-66. **Delete a Job**
+70. **Delete a Job**
 
     * From **DataLoader Pro**, open the job’s **⋮** menu.
     * Click **Delete**.
 
     <figure><img src="../../../../.gitbook/assets/65 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-67. **Confirm Deletion**
+71. **Confirm Deletion**
 
     * Review the job name in the confirmation dialog.
     * Click **Delete** to remove or **Cancel** to keep the job.
 
     <figure><img src="../../../../.gitbook/assets/66 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-68. **Clone a Job**
+72. **Clone a Job**
 
     * From **DataLoader Pro**, open the job’s **⋮** menu.
     * Click **Clone**.
 
     <figure><img src="../../../../.gitbook/assets/67 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-69. **Configure Clone**
+73. **Configure Clone**
 
     * In the **Clone** panel, update **Name**, **Job Group**, **Source Sandbox**, **Destination Sandbox**, and any **User Suffixes**.
     * Click **Clone**.
 
     <figure><img src="../../../../.gitbook/assets/68 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-70. **Verify Cloned Job**
+74. **Verify Cloned Job**
 
     * Back on **DataLoader Pro**, confirm the new job (e.g., _Brands Migration Masking-Copy_) appears in the list.
 
     <figure><img src="../../../../.gitbook/assets/69 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-71. Run Job
+75. Run Job
 
     * From DataLoader Pro, locate your job.
     * In **Actions**, click the **▶ Run** icon.
 
     <figure><img src="../../../../.gitbook/assets/70 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-72. Run Configuration
+76. Run Configuration
 
     * In **Run Configuration**, review/adjust options (e.g., Disable workflow rules, Use Bulk API, Parallel/Serial mode, Batch size, UTF-8, Encrypt data files).
     * Click **Run**.
 
     <figure><img src="../../../../.gitbook/assets/70.1 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-73. Monitor Run Status
+77. Monitor Run Status
 
     * A toast confirms **Run Process Initiated Successfully**.
     * The **Status** shows **In Progress** until the job completes.
 
     <figure><img src="../../../../.gitbook/assets/71 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-74. Abort a Running Job
+78. Abort a Running Job
 
     * While the job is running, click the **⏹ Abort** icon in **Actions** to stop execution.
 
     <figure><img src="../../../../.gitbook/assets/72 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-75. Confirm Completion
+79. Confirm Completion
 
     * When finished, verify the **Status** shows **Success** (or review failures if shown).
 
     <figure><img src="../../../../.gitbook/assets/73 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-76. Open Job Log
+80. Open Job Log
 
     * From DataLoader Pro, open the job’s **⋮** menu.
     * Select **Log**.
 
     <figure><img src="../../../../.gitbook/assets/74 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-77. Review Log Details
+81. Review Log Details
 
     * In **Log Details**, review each step, object counts, and success/error messages.
     * Use search as needed; close when done.
 
     <figure><img src="../../../../.gitbook/assets/75 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-78. Delete Data Encrypt Files
+82. Delete Data Encrypt Files
 
     * From the job’s **⋮** menu, choose **Delete Data Encrypt Files** to remove protected artifacts created during runs.
 
     <figure><img src="../../../../.gitbook/assets/76 - DL PRO.png" alt=""><figcaption></figcaption></figure>
-79. Confirm Deletion
+83. Confirm Deletion
 
     * In the confirmation dialog, click **Delete** to permanently remove the encrypted files, or **Cancel** to keep them.
 

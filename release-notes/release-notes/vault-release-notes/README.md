@@ -10,8 +10,8 @@ Each release incorporates new features, enhancements, and resolved issues from a
 AutoRABIT Vault Release Notes 26.0
 {% endembed %}
 
-{% embed url="https://knowledgebase.autorabit.com/~/revisions/WHH5k0Kac5B5VAce4KMs/release-notes/release-notes/vault-release-notes/release-notes-25.0" %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes/release-notes-25.0" %}
 
-{% embed url="https://knowledgebase.autorabit.com/~/revisions/WHH5k0Kac5B5VAce4KMs/release-notes/release-notes/vault-release-notes/release-notes-24.0" %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes/release-notes-24.0" %}
 
-{% embed url="https://knowledgebase.autorabit.com/~/revisions/WHH5k0Kac5B5VAce4KMs/release-notes/release-notes/vault-release-notes/vault-release-notes-23.0" %}
+{% embed url="https://knowledgebase.autorabit.com/release-notes/release-notes/vault-release-notes/vault-release-notes-23.0" %}

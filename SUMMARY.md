@@ -1037,6 +1037,7 @@
     * [API Access](product-guides/arm-1/introduction-to-arm-developer-apis/api-access.md)
     * [API References](product-guides/arm-1/introduction-to-arm-developer-apis/api-references/README.md)
       * [Automate Branch Creation, Metadata Commit, and Pull Requests Using ARM APIs](product-guides/arm-1/introduction-to-arm-developer-apis/api-references/automate-branch-creation-metadata-commit-and-pull-requests-using-arm-apis.md)
+      * [How to Export ARM Users Using REST API](product-guides/arm-1/introduction-to-arm-developer-apis/api-references/how-to-export-arm-users-using-rest-api.md)
     * [Authentication](product-guides/arm-1/introduction-to-arm-developer-apis/authentication.md)
     * [Errors](product-guides/arm-1/introduction-to-arm-developer-apis/errors.md)
   * [On-Premises / Dedicated](product-guides/arm-1/on-premises-dedicated-instances/README.md)

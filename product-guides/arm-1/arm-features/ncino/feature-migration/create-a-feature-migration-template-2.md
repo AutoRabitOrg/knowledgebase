@@ -43,23 +43,34 @@ Under the **Salesforce Org** **Details** section, do the following:
 6.  By default, only nCino objects available in the Source Org will be auto-populated. To view all the objects available, click on **Show All** **Objects**.
 
     <figure><img src="../../../../../.gitbook/assets/New UI - Ability To Sync The Metadata - 1.png" alt=""><figcaption></figcaption></figure>
+7. **Content Version**
+   1. Now processing the Content Version "Files" for Salesforce LIghtening is supported.
+   2.  Search for the object "Files" in the object list
 
-    1. **Sync Schena:**
-       1.  Overview
+       <figure><img src="../../../../../.gitbook/assets/1 (6).png" alt=""><figcaption></figcaption></figure>
+   3.  Select the object "Files" from the list
 
-           The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
+       <figure><img src="../../../../../.gitbook/assets/2 (6).png" alt=""><figcaption></figcaption></figure>
+   4. Click on "Next" to continue with the "Feature" creation
+   5.  Clicking on "Next" will display a dialog asking whether the file object is being included intentionally
 
-           1. **Functionality:** When the Sync Schema option is enabled:
-              1. The system fetches the latest metadata from the source org for the selected object.
-              2. Newly added fields are included.
-              3. Updated field properties (data type, required status, etc.) are refreshed.
-              4. Deprecated or inactive fields are removed.
-              5. The object schema in the template is updated before proceeding.
-           2. **Behavior**
-              1. Sync is applied only to selected objects.
-              2. The operation occurs during schema retrieval or object fetch.
-              3. Existing configurations are updated to match the source org structure.
-7. Click on **Next** to go to the **Record Configuration** Tab.
+       <figure><img src="../../../../../.gitbook/assets/3 (5).png" alt=""><figcaption></figcaption></figure>
+8. **Sync Schena:**
+   1.  Overview
+
+       The Sync Schema option ensures that the latest metadata structure from the selected Salesforce source org is reflected for the chosen objects. This includes updates to object definitions, fields, and their attributes.
+
+       1. **Functionality:** When the Sync Schema option is enabled:
+          1. The system fetches the latest metadata from the source org for the selected object.
+          2. Newly added fields are included.
+          3. Updated field properties (data type, required status, etc.) are refreshed.
+          4. Deprecated or inactive fields are removed.
+          5. The object schema in the template is updated before proceeding.
+       2. **Behavior**
+          1. Sync is applied only to selected objects.
+          2. The operation occurs during schema retrieval or object fetch.
+          3. Existing configurations are updated to match the source org structure.
+9. Click on **Next** to go to the **Record Configuration** Tab.
 
 #### Record Configuration <a href="#record-configuration" id="record-configuration"></a>
 

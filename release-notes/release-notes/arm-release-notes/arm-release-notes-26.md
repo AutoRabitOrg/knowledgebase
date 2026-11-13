@@ -126,6 +126,16 @@ These improvements provide more accurate deployment tracking and audit visibilit
 
 ***
 
+## DataLoader and DataLoader Pro 26.4.7
+
+**Release Date:** 15 November 2026
+
+#### Complete Relationship Data in Data Loader Exports <a href="#id-4.-complete-relationship-data-in-data-loader-exports" id="id-4.-complete-relationship-data-in-data-loader-exports"></a>
+
+Resolved an issue where parent relationship fields included in a Data Loader query appeared blank in the exported CSV even though Salesforce returned values. Data Loader now processes and exports the related field data correctly, including queries using grouping, limits, ordering, currency fields, and nested relationships.
+
+***
+
 ## ARM 26.4.6
 
 **Release date:** 8 November 2026

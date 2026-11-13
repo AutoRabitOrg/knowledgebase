@@ -2,7 +2,23 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
-## nCino 26.4.6
+## nCino Release - 26.4.7
+
+**Release date:** 15 November 2026
+
+#### Complete Standard and Community Version Visibility <a href="#id-1.-complete-standard-and-community-version-visibility" id="id-1.-complete-standard-and-community-version-visibility"></a>
+
+For nCino Partners, features containing Standard or Community versions now appear correctly under the **All**, **Standard**, and **Community** filters. Opening a feature displays all its Standard and Community versions regardless of the selected listing filter. In the new interface, **Associated Partner** is renamed to **Type**.
+
+#### Lightning Files Support for nCino Template Deployment <a href="#id-3.-lightning-files-support-for-ncino-template-deployment" id="id-3.-lightning-files-support-for-ncino-template-deployment"></a>
+
+nCino Template deployments now support Lightning Files through `ContentDocument`, `ContentVersion`, and `ContentDocumentLink`, alongside existing Classic Attachments. **Files** and **Attachments** can be included independently, together, or excluded from the configuration. The enhancement applies to new templates and applicable version-creation, cloning, and reuse workflows.
+
+<figure><img src="../../../.gitbook/assets/2 (37).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## nCino Release - 26.4.6
 
 **Release date:** 8 November 2026
 
@@ -12,7 +28,7 @@ Added sorting controls for nCino feature and version lists across CI Jobs and Fe
 
 ***
 
-## nCino 26.4.5
+## nCino Release - 26.4.5
 
 **Release date:** 1 November 2026
 
@@ -22,7 +38,7 @@ Multi-level approval controls now apply consistently to nCino CI Job builds, rer
 
 ***
 
-## nCino 26.4.4
+## nCino Release - 26.4.4
 
 **Release date:** 25 October 2026
 
@@ -40,7 +56,7 @@ Resolved an issue where large currency values could be extracted in exponential 
 
 ***
 
-## nCino 26.4.3
+## nCino Release - 26.4.3
 
 **Release date:** 18 October 2026
 
@@ -66,7 +82,7 @@ Resolved an issue where External Field Mapping values were not displayed during 
 
 ***
 
-## nCino 26.4.2
+## nCino Release - 26.4.2
 
 **Release date:** 11 October 2026
 
@@ -92,7 +108,7 @@ Improved File Diff handling in nCino Commit History to prevent the interface fro
 
 ***
 
-## nCino 26.4.1
+## nCino Release - 26.4.1
 
 **Release date:** 4 October 2026
 
@@ -106,7 +122,7 @@ Users can now select approvers when deploying or committing a previously retriev
 
 ***
 
-## nCino 26.3.13
+## nCino Release - 26.3.13
 
 **Release date:** 27 September 2026
 
@@ -116,7 +132,7 @@ When deploying a subset of a newly created dataset, source-to-destination field 
 
 ***
 
-## nCino 26.3.12
+## nCino Release - 26.3.12
 
 **Release date:** 20 September 2026
 
@@ -146,7 +162,7 @@ Resolved an issue where a scheduled nCino CI Job commit interrupted by a service
 
 ***
 
-## nCino 26.3.11
+## nCino Release - 26.3.11
 
 **Release date:** 13 September 2026
 
@@ -160,7 +176,7 @@ Deployment results now include the configured External ID field to help identify
 
 ***
 
-## nCino 26.3.10
+## nCino Release - 26.3.10
 
 **Release date:** 6 September 2026
 
@@ -170,7 +186,7 @@ Resolved an issue that could cause scheduled or manually triggered nCino Full an
 
 ***
 
-## nCino 26.3.9
+## nCino Release - 26.3.9
 
 **Release date:** 30 August 2026
 
@@ -201,7 +217,7 @@ nCino now completes the backup of all objects included in a deployment before ex
 
 ***
 
-## nCino 26.3.8
+## nCino Release - 26.3.8
 
 **Release date:** 23 August 2026
 
@@ -221,7 +237,7 @@ nCino now completes the backup of all objects included in a deployment before ex
 
 ***
 
-## nCino 26.3.7
+## nCino Release - 26.3.7
 
 **Release date:** 16 August 2026
 
@@ -243,7 +259,7 @@ Field-based sorting in nCino Deployments and CI Jobs now properly loads availabl
 
 ***
 
-## nCino 26.3.6
+## nCino Release - 26.3.6
 
 **Release date:** 9 August 2026
 
@@ -257,7 +273,7 @@ Resolved a **NullPointerException** in nCino Deployment History that occurred du
 
 ***
 
-## nCino 26.3.5
+## nCino Release - 26.3.5
 
 **Release date:** 2 August 2026
 
@@ -283,7 +299,7 @@ Resolved an issue where scheduled nCino CI jobs using ECA (External Connected Ap
 
 ***
 
-## nCino 26.3.4
+## nCino Release - 26.3.4
 
 **Release date:** 26 July 2026
 
@@ -301,7 +317,7 @@ Fixed a CI Job build failure that occurred during **Step 2 – Object Configurat
 
 ***
 
-## nCino 26.3.3
+## nCino Release - 26.3.3
 
 **Release date:** 19 July 2026
 
@@ -331,7 +347,7 @@ Resolved an error where dataset creation failed with **"Repository/Branch/Unique
 
 ***
 
-## nCino 26.3.2
+## nCino Release - 26.3.2
 
 **Release date:** 12 July 2026
 
@@ -353,7 +369,7 @@ Fixed an issue where deployment from Version Control could fail for Salesforce O
 
 ***
 
-## nCino 26.3.1
+## nCino Release - 26.3.1
 
 **Release date:** 5 July 2026
 
@@ -367,7 +383,7 @@ Resolved an error where creating a new version for an existing feature failed wi
 
 ***
 
-## nCino 26.2.13
+## nCino Release - 26.2.13
 
 **Release date:** 28 June 2026
 
@@ -393,7 +409,7 @@ Fixed an issue where a successful **VC-to-VC commit** was followed by a deployme
 
 ***
 
-## nCino 26.2.12
+## nCino Release - 26.2.12
 
 **Release date:** 21 June 2026
 
@@ -415,7 +431,7 @@ Long notification email addresses in the Deployment and CI Jobs Preview screens 
 
 ***
 
-## nCino 26.2.11
+## nCino Release - 26.2.11
 
 **Release date:** 14 June 2026
 
@@ -429,7 +445,7 @@ Fixed a blocking issue where the Deployment Approval settings fragment in the Cl
 
 ***
 
-## nCino 26.2.10
+## nCino Release - 26.2.10
 
 **Release date:** 7 June 2026
 
@@ -487,7 +503,7 @@ Fixed an issue where the deployment label name was not auto-populating with the 
 
 ***
 
-## nCino 26.2.8
+## nCino Release - 26.2.8
 
 **Release date:** 24 May 2026
 
@@ -501,7 +517,7 @@ The removed org is now correctly cleared and no longer reappears after navigatin
 
 ***
 
-## nCino 26.2.7
+## nCino Release - 26.2.7
 
 **Release date:** 17 May 2026
 
@@ -513,7 +529,7 @@ Code refactoring for the Feature Commit History module in the New UI, improving 
 
 Code refactoring for the Create Feature module in the New UI, improving maintainability and code quality.
 
-## nCino 26.2.6
+## nCino Release - 26.2.6
 
 **Release date:** 10 May 2026
 
@@ -539,7 +555,7 @@ Fixed the build trigger dialog not auto-closing after a build is successfully qu
 
 ***
 
-## nCino 26.2.5
+## nCino Release - 26.2.5
 
 **Release date:** 3 May 2026
 
@@ -548,7 +564,7 @@ Fixed an issue where downloading data from a selective deployment iteration expo
 
 ***
 
-## nCino 26.2.4
+## nCino Release - 26.2.4
 
 **Release date:** 26 April 2026
 
@@ -572,7 +588,7 @@ Parent Route values were being cleared during deployment when multiple reference
 
 ***
 
-## nCino 26.2.3
+## nCino Release - 26.2.3
 
 **Release date:** 26 April 2026
 
@@ -586,7 +602,7 @@ Parent Route values were being cleared during deployment when multiple reference
 
 ***
 
-## nCino 26.1.13
+## nCino Release - 26.1.13
 
 **Release date:** 29 March 2026
 
@@ -596,7 +612,7 @@ HTTP response bodies are no longer logged in standard logs. Logging now captures
 
 ***
 
-## nCino 26.1.11
+## nCino Release - 26.1.11
 
 **Release date:** 15 March 2026
 
@@ -614,7 +630,7 @@ The icons for **Global Compare** and **Field-Level Compare** in the **Compare mo
 
 ***
 
-## nCino 26.1.8
+## nCino Release - 26.1.8
 
 **Release date:** 22 February 2026
 
@@ -628,7 +644,7 @@ Resolved an issue with the select all **“Features”** functionality in CI Job
 
 ***
 
-## nCino 26.1.7
+## nCino Release - 26.1.7
 
 **Release date:** 15 February 2026
 
@@ -642,7 +658,7 @@ Fixed an issue where the **Data Comparison** step was not marked as completed. T
 
 ***
 
-## nCino 26.1.5
+## nCino Release - 26.1.5
 
 **Release date:** 1 February 2026
 
@@ -660,7 +676,7 @@ An issue was resolved where External ID mappings were not loading during selecti
 
 ***
 
-## nCino 26.1.4
+## nCino Release - 26.1.4
 
 **Release date:** 25 January 2026
 
@@ -678,7 +694,7 @@ Resolved an issue where Forms Manager template deployments remained stuck in an 
 
 ***
 
-## nCino 26.1.3
+## nCino Release - 26.1.3
 
 **Release date:** 18 January 2026
 
@@ -706,7 +722,7 @@ Fixed an issue where entry object filter queries from the original version were 
 
 ***
 
-## nCino 26.1.1
+## nCino Release - 26.1.1
 
 **Release date:** 4 January 2026
 

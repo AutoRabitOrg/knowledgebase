@@ -110,13 +110,17 @@ Realm Managers can see the summary table on scan detail but cannot open risk det
 
 Accepting a risk suppresses that finding for the selected org(s) and site(s) in future scans. It is treated as a governance decision.
 
+{% hint style="info" %}
+Sites where a risk has been accepted are called risk accepted sites. Earlier versions of Guard called these excluded sites. Only the name has changed.
+{% endhint %}
+
 **Who can and cannot accept a risk?**
 
-* **Admin** – **can accept a risk** from a scan finding and can add or remove exclusions in the Security Risks Library
+* **Admin** – **can accept a risk** from a scan finding and can add or remove risk accepted sites in the Security Risks Library
 * **Standard users** – can run scans and review findings, but **cannot accept a risk**
-* **Support Engineers and Realm Managers** – can view the library, excluded sites and activity log, but cannot manage exclusions
+* **Support Engineers and Realm Managers** – can view the library, risk accepted sites and activity log, but cannot manage them
 
-For roles that cannot accept risk, the accept and add-exclusion actions are disabled.
+For roles that cannot accept risk, the accept and add actions are disabled.
 
 **From a scan finding**
 
@@ -124,9 +128,9 @@ For roles that cannot accept risk, the accept and add-exclusion actions are disa
 2. Start **Accept risk**.
 3. Confirm or cancel.
 
-Accepted findings are excluded from future scans for those orgs and sites. They also appear as excluded sites on the matching risk in the Security Risks Library. The acting user is recorded in the activity log.
+Accepted findings are left out of future scans for those orgs and sites. They also appear as risk accepted sites on the matching risk in the Security Risks Library. The acting user is recorded in the activity log.
 
-_Removing an exclusion does not change past scan results. It only brings the risk back into future scans for those sites._
+_Removing a risk accepted site does not change past scan results. It only brings the risk back into future scans for that site._
 
 <figure><img src="../../../../.gitbook/assets/image (5116).png" alt=""><figcaption></figcaption></figure>
 
@@ -140,10 +144,10 @@ Each row shows:
 * Framework (Aura or LWR)
 * Category (for example API Exposure, Access Control, File Exposure or CSP)
 * Severity (High, Medium or Low)
-* Last Updated – when exclusions for that risk last changed in your tenant. Blank if the risk has never been excluded. _This tracks exclusion activity only, not AutoRABIT updates to the risk definition_
-* Excluded sites – site names, when exclusions exist
+* Last Updated – when risk acceptance for that risk last changed in your tenant. Blank if the risk has never been accepted. _This tracks risk acceptance activity only, not AutoRABIT updates to the risk definition_
+* Risk accepted sites – site names, where the risk has been accepted
 
-You can filter by Framework, Category, Severity and Excluded sites. Library filters are independent of Scan History filters.
+You can filter by Framework, Category, Severity and Risk accepted sites. Library filters are independent of Scan History filters.
 
 <figure><img src="../../../../.gitbook/assets/image (5117).png" alt=""><figcaption></figcaption></figure>
 
@@ -152,10 +156,10 @@ You can filter by Framework, Category, Severity and Excluded sites. Library filt
 Opening a risk from the library shows:
 
 * Last Updated, Framework, Category and Severity
-* Excluded sites for that risk
-* An activity log of accept and remove-exclusion events (Action, Site with org, Changed By, Date)
+* Risk accepted sites for that risk
+* An activity log of accept and remove events (Action, Site with org, Changed By, Date)
 
-Admins can add exclusions with **Add excluded sites**: pick org(s), then one or more sites, confirm the count and save. Following this, the excluded risk will not appear in future scans for the selected sites.
+Admins can add risk accepted sites from the risk detail: pick org(s), then one or more sites, confirm the count and save. The risk will then not appear in future scans for the selected sites.
 
 <figure><img src="../../../../.gitbook/assets/image (5118).png" alt=""><figcaption></figcaption></figure>
 

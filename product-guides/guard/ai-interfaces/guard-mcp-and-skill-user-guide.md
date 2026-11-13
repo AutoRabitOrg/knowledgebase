@@ -10,6 +10,7 @@ With the Guard MCP and Skill, your team can:
 
 * Ask questions in plain English and get back live security data from your Salesforce orgs
 * Run classification analyses, risk assessments and permission audits from a terminal or AI assistant
+* Create Guard policies by describing what you want in plain English
 * Export or script Guard data for reporting and reviews without leaving your workflow
 
 #### How we keep your credentials safe
@@ -210,13 +211,6 @@ You only need this section if you are building tooling around the MCP server dir
 
 The Guard MCP server exposes typed Guard tools. It does not expose a single generic command tool. MCP clients should discover the available tools through the MCP protocol, inspect each tool's description and input schema, then call the specific tool they need.
 
-Typical tool categories include:
-
-* Organisation and Salesforce org lookup
-* Risk, classification and permission review
-* Policy, monitoring and compliance data
-* Export or reporting actions where supported
-
 Tool responses are returned through the MCP protocol. Read tools return the requested Guard data directly. Some actions may return a confirmation while Guard continues work asynchronously in the background. For any tool that changes data or starts a job, review the action in the assistant before approving it.
 
 #### Retry behaviour
@@ -227,6 +221,34 @@ The MCP server does not retry automatically. If a tool call fails:
 2. For authentication errors, reconnect the MCP server or refresh the Skill login, depending on which flow failed.
 3. For transient network errors, retry read-only calls after confirming the Guard instance is reachable.
 4. For write or job-starting tools, check Guard before retrying so you do not start the same action twice.
+
+### Create policies in plain English
+
+You can ask your AI assistant to create a Guard policy by describing what you want. You do not need to know which type of policy you need. Guard works it out for you.
+
+Only Guard Admins can create policies through the MCP.
+
+#### How it works
+
+1. Describe the outcome you want, for example "alert me when anyone modifies Apex classes in production".
+2. Guard picks the right policy type: Authorization Policy, Change Monitoring Policy or Drift Policy. If your request could fit more than one, the assistant asks you one question to decide.
+3. Guard checks that the policy is possible. If it is not, for example because a metadata type or action is not supported, the assistant tells you why.
+4. If anything is missing, such as the target org, metadata type, severity or recipients, the assistant asks for only those details.
+5. Guard creates the policy and returns its name, type and a link to view it in Guard.
+
+If a similar or identical policy already exists, the assistant warns you before creating a duplicate.
+
+#### Examples
+
+| What you ask                                                         | Policy Guard creates     |
+| -------------------------------------------------------------------- | ------------------------ |
+| "Alert me when anyone modifies Apex classes in production."          | Change Monitoring Policy |
+| "Block permission sets X, Y and Z from being assigned to profile A." | Authorization Policy     |
+| "Flag if a connected app gets more permissions."                     | Drift Policy             |
+
+{% hint style="info" %}
+Always review the policy in Guard after it is created, to check the orgs, conditions and recipients are what you expect.
+{% endhint %}
 
 ## Real prompt examples
 
@@ -241,6 +263,7 @@ Use these examples to confirm the connection and learn the kinds of questions Gu
 | "Summarise API security risks for this org."                     | API risk areas, affected users or connected apps where available and recommended follow-up checks. |
 | "Prepare a 30-day audit summary for user activity monitoring."   | Key user activity events, unusual patterns, review notes and evidence to collect from Guard.       |
 | "Compare the current risk posture with the previous assessment." | Important changes, newly introduced risks, resolved risks and items that still need review.        |
+| "Alert me when anyone changes a profile in production."          | A new Change Monitoring Policy, or a question about any details that are missing.                  |
 
 ## Real workflows
 
@@ -288,6 +311,7 @@ A review summary with notable events, policy deviations, suggested evidence, ope
 3. For Codex: run `codex mcp login guard` to re-authenticate.
 4. For Cursor: check **Settings → Features → Model Context Protocol** and confirm `guard` is green. Check **Output → MCP Logs** for errors.
 5. For Claude Code and Codex, also check that the Skill is loaded if you expect Skill-specific behaviour.
+6. Check that Guard CLI and MCP access is turned on for your tenant. A tenant manager can turn it on in [Feature Controls](../getting-started-with-guard/feature-controls.md).
 
 ***
 

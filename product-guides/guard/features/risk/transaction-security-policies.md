@@ -44,7 +44,7 @@ A single policy can be easily applied to multiple connected Salesforce orgs, in 
 
 #### Before you start
 
-For each org that you want to apply Transaction Security Policies to, the Salesforce Event Monitoring license must be in place.&#x20;
+For each org that you want to apply Transaction Security Policies to, the Salesforce Event Monitoring license must be in place.
 
 **Salesforce org requirements**
 
@@ -62,7 +62,7 @@ If none of these apply, Guard shows the org as not eligible when you create a po
 It is essential to ensure these permissions are given to the Guard integration user before attempting to use Transaction Security Policies in Guard:
 
 1. **Modify Transaction Security Policy**
-2. **Transaction Security Exempt**&#x20;
+2. **Transaction Security Exempt**
 
 The latter is required to ensure Guard is not blocked by the Unapproved App Access Transaction Security Policy.
 
@@ -151,6 +151,16 @@ The Transaction Security Policies list shows all your configured policies. From 
 * Delete a policy when it is no longer needed. Deleting requires confirmation and also removes the underlying Salesforce Transaction Security Policy from the connected orgs.
 
 <figure><img src="../../../../.gitbook/assets/image (5220).png" alt=""><figcaption></figcaption></figure>
+
+#### Generated Apex and test classes
+
+Wherever Guard shows the generated Apex class for a policy, it also shows the matching generated Apex test class alongside it. Each test class is labelled so you can see which policy class it belongs to. You do not need to set anything up to get test classes.
+
+Use this to review the generated code before you copy it or deploy it to Salesforce.
+
+{% hint style="warning" %}
+The generated test class is a starting point. Guard does not guarantee that it will meet your org's Salesforce code coverage requirements for deployment on its own.
+{% endhint %}
 
 #### How Guard and Salesforce interact
 

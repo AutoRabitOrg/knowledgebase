@@ -44,6 +44,8 @@ For deeper analysis, create your own queries by selecting permissions grouped in
 7. User Management
 8. Other permissions
 
+You can search for permissions and permission sets by their label or their API name.
+
 Once permissions are selected, the tool shows:
 
 * Which users hold the permissions
@@ -54,9 +56,19 @@ Once permissions are selected, the tool shows:
 
 Users who have never logged in show an empty Last Login value.
 
+* Total matching results:
+
+Results load page by page, so you can start reviewing straight away. While they load, Guard counts the total number of matching users, profiles, permission sets or permission set groups in the background. A spinner shows while it counts, and the final total replaces the running count when it is ready. Very large results show as 50,000+.
+
 * CSV exports:
 
 Result exports include the same user context shown in the table, including Salesforce user ID, username, profile, role, last login date and the permission set or permission set group that grants access.
+
+#### Export status
+
+Large exports can take a while. After you start an export, Guard shows whether it is queued, running, done or failed. If it fails, Guard tells you why.
+
+If you select Export again while the same export is still running, Guard joins the one in progress instead of starting a duplicate. You can find your recent exports in one place, check their status and download finished files from there. You will still receive an email with a download link when the export is ready.
 
 #### Why it matters
 

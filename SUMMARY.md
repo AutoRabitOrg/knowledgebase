@@ -1379,6 +1379,7 @@
     * [Connecting a Salesforce Org to Guard using Connected Apps flow](product-guides/guard/getting-started-with-guard/how-to-set-up-guard.md)
     * [User Management](product-guides/guard/getting-started-with-guard/user-management.md)
     * [Integration User](product-guides/guard/getting-started-with-guard/integration-user-license.md)
+    * [Feature Controls](product-guides/guard/getting-started-with-guard/feature-controls.md)
     * [Single Sign-On (SSO)](product-guides/guard/getting-started-with-guard/single-sign-on-sso/README.md)
       * [SSO with Microsoft Entra ID (Azure AD)](product-guides/guard/getting-started-with-guard/single-sign-on-sso/sso-with-microsoft-entra-id-azure-ad.md)
       * [SSO with Okta](product-guides/guard/getting-started-with-guard/single-sign-on-sso/sso-with-okta.md)

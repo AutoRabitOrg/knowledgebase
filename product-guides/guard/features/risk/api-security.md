@@ -2,88 +2,168 @@
 
 ### Overview
 
-AutoRABIT Guard’s API Security monitors Salesforce connected applications across the Salesforce orgs. It aggregates usage signals and a simple security posture per app, highlighting apps that are unverified, over-permissive (broad OAuth self-authorization), or secure, so that teams can spot integration risk early and prioritize remediation.
+API Security shows every connected app and external client app across your Salesforce orgs, checks how each one is set up and tells you what to fix first. It also helps you prepare for Salesforce's move from connected apps to external client apps.
 
-### Key Capabilities
+API Security helps you answer three questions quickly:
 
-* **Cross-org connected app inventory**
+* Which apps are risky?
+* Why do they matter in Salesforce?
+* Which apps are still connected apps and need to move?
 
-AutoRABIT Guard discovers connected apps in use across registered orgs and presents a single inventory.&#x20;
+Each app is checked for risky OAuth settings, weak authorisation controls and weak network, session and certificate settings. Problems are raised as findings with a severity of Critical, High, Medium or Low. Every finding explains what the setting means in Salesforce, why Guard flagged it, the evidence Guard read and what to do next.
 
-* **Portfolio summary and distribution**
+{% hint style="info" %}
+API Security 2.0 replaces the old Secured, Over-permissive and Unverified statuses. Apps are now assessed through individual findings with a severity.
+{% endhint %}
 
-The Total Connected Apps panel shows how many distinct connected apps were found. When any apps are unverified or over-permissive, a pie chart summarizes the split among Secured, Over permissive, and Unverified apps, with numeric callouts:
+### Why it matters
 
-1. Unverified apps — Apps not installed in at least one org, so admin controls (including access and session policies) cannot be enforced consistently.
-2. Over-permissive apps — Installed apps whose OAuth is configured so “All Users May Self-Authorize,” allowing users to grant access without admin oversight.
-3. Secure apps — Apps that are properly installed and use safe OAuth settings across the relevant org scope.
+Connected apps and external client apps are the doors through which integrations reach your Salesforce data. A weak OAuth setting, a wildcard callback URL or a long-lived refresh token can give an attacker a way in without a password. API Security shows you where these gaps are across every org, so you can close the most serious ones first.
 
-* **Top orgs by exposure**
+Salesforce is also retiring connected apps. API Security shows you exactly which ones are left, so you can plan the move to external client apps.
 
-Top 5 Orgs by App Security Exposure ranks orgs with the highest counts of uninstalled or over-permissioned connected apps so you can prioritize those orgs. The table includes Unverified apps and Over-permissive apps per org.&#x20;
+### Navigation path
 
-* **All Connected Apps table**
+`Guard → Risk → API Security`
 
-The main grid lists every connected app discovered across orgs, with:
+### Before you start: Salesforce permissions
 
-1. Connected app name
-2. Last usage and total usage
-3. Orgs using this app (multi-org chips/names)
-4. Counts of orgs in each posture bucket
-5. Org filter
+Before a scan starts, Guard checks which permissions the Salesforce user connected to Guard has. If any are missing, Guard still runs the checks it can and tells you what it skipped.
 
-* **Export**
+| Permission                                                         | Needed for                                                                                          | What happens if it is missing                                                                                                       |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| API Enabled                                                        | Everything                                                                                          | The scan cannot run. Guard tells you which permission is missing.                                                                   |
+| View Setup and Configuration                                       | Everything                                                                                          | The scan cannot run. Guard tells you which permission is missing.                                                                   |
+| View All External Client Apps                                      | External client app checks                                                                          | Connected app checks still run. External client app checks show as Not assessed.                                                    |
+| Customize Application                                              | Connected app checks, and app usage data such as last used date and active users for both app types | Connected app checks and usage data show as Not assessed.                                                                           |
+| View All Profiles                                                  | Showing which profiles have admin-approved access to an app                                         | Guard cannot show the profile behind an admin-approved access finding.                                                              |
+| Modify Metadata Through Metadata API Functions, or Modify All Data | Optional. Unlocks the checks marked Metadata below.                                                 | All read-only checks still run. Checks that need the Metadata API show as Not assessed. Risk Assessment already needs one of these. |
 
-An Export action runs `createApiSecurityExport` with an optional org filter (`orgIds`), matching the same org subset you use for analysis—useful for evidence, audits, or offline review (export is scheduled via the platform’s export job pattern).
+For the full list of permissions Guard needs, see [Integration User](../../getting-started-with-guard/integration-user-license.md).
 
-* **Per-app detail page**
+#### Permission banner
 
-Selecting an app opens a detail view (breadcrumb uses the app name) with summary metrics:
+If Guard is missing a permission, a banner at the top of the page tells you:
 
-1. Last usage, total usage, total active users
-2. Orgs using this app, plus counts for unverified orgs and orgs with over permissions
+* Which permission is missing
+* Which checks or data it affects, for example "Connected app checks were not run" or "Some checks need Metadata API access"
+* How to fix it, usually by asking a Salesforce admin to add the permission to the integration user
 
-### Why It Matters?
+Checks Guard skipped show as **Not assessed**.&#x20;
 
-* Connected apps are API and data boundaries:
+{% hint style="info" %}
+This module only uses the Metadata API to read information. API Security never uses it to change, restrict or disable anything in your org.
+{% endhint %}
 
-&#x20;Each installation or authorization can represent exfiltration paths, shadow IT, or weak OAuth if not governed.
+### Getting started
 
-* Self-authorization widens blast radius:
+1. Check the Salesforce user connected to Guard has the permissions listed above.
+2. Open Risk, then API Security.
+3. If a permission banner appears, ask your Salesforce admin to add the missing permissions.
+4. Review the summary and the Recommended actions panel.
+5. Use the All apps table to find the apps and orgs you want to look at first.
+6. Open an app to review its findings and follow the recommended actions.
+7. Deal with Critical risks first. If you cannot resolve one, uninstall the app or contact the app's provider.
+8. Plan the move from connected apps to external client apps using the Migrate connected apps group.
 
-Over-permissive OAuth means users can approve integrations without centralized review, which conflicts with many security and compliance programs.
+### API Security overview
 
-* Unverified apps bypass standard controls:&#x20;
+#### Summary
 
-When an app is not properly installed or verified in an org, policy enforcement is inconsistent, which complicates access reviews and incident response.
+The top of the page shows:
 
-* Multi-org tenants need a portfolio lens:
+* Connected apps: how many connected apps Guard found. Salesforce is retiring connected apps, so every one of these needs to migrate.
+* External client apps: how many apps already use the newer Salesforce model.
+* Open risks: the number of open risks across all apps. A risk found on more than one app is only counted once.
 
-The dashboard and Top 5 list answer “where is our exposure concentrated?” without logging into each org separately.
+#### Recommended actions
 
-### Getting Started
+The Recommended actions panel shows the actions that will reduce risk the most. It has up to three groups:
 
-1. Open API Security.
-2. Wait for the All Apps query to complete; review totals, Top 5 orgs, and the All Connected Apps table.
-3. Optionally restrict orgs with the multi-select, then export if you need a filtered report.
-4. Select each app to review details
+* **Fix the top risks:** up to three risks, ranked by severity and then by how many orgs are affected. Each one shows the risk, its severity, the app and the orgs affected. Select an org to open the risk detail.&#x20;
+* **Migrate connected apps:** every connected app that needs to move to an external client app, with the number of orgs using it and its open risks. Select an app to open its detail view.
+* **Review apps not used recently:** apps with no usage in the last 90 days. This group only appears when there is at least one. Select an app to review it before you deactivate it in Salesforce.&#x20;
 
-### Benefits
+#### All apps table
 
-* Visibility
+The **All apps** table shows one row per app across all the orgs Guard can see. Each row shows:
 
-One place to see which apps touch which orgs and how heavily they are used.
+* App name. Select it to open the app's detail view.
+* Last usage
+* Total usage across orgs
+* Orgs using this app. Select the count to see each org and the connected user in that org.
+* Connection type: Connected app or External client app
+* Open risks, or No open risks when there are none
 
-* Prioritization
+An app used in several orgs appears once, with its usage and risks combined. Guard only groups apps when it can confidently see they are the same app.&#x20;
 
-Top 5 orgs and sortable risk counts focus on remediation.
+### App detail view
 
-* Operational fit
+Select an app to see its findings. Each finding explains itself in plain Salesforce terms:
 
-Filtering, drill-down, and export support recurring reviews and audits.
+* What this means in Salesforce: a short explanation of the setting, policy or scope
+* Why Guard flagged it: the exact reason for the finding
+* Recommended action: what the admin should change or review
 
-### Conclusion
+The detail view also lists any checks Guard could not run for this app, and why.
 
-API Security in AutoRABIT Guard gives organizations a dashboard-first view of Salesforce connected applications across orgs, with usage metrics, posture classification, org-level prioritization, and actionable explanations in the per-org security dialog. Together, these capabilities make integration risk easier to see, explain, and reduce without treating each org in isolation.
+You can sort and filter findings by severity.
 
-&#x20;
+#### Needs migration
+
+Every connected app shows a Needs migration note, because Salesforce is retiring connected apps. The note links to Salesforce's guidance on moving to external client apps.
+
+### Severity levels
+
+| Severity | What it means                                                                                                   | Used for                                                                                                                             |
+| -------- | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Critical | Directly allows account takeover, privilege escalation or exposure of data to people who should not see it.     | Unmanaged or highly exposed OAuth paths, such as unverified app usage, broad scopes with self-authorisation or unsafe callback URLs. |
+| High     | Removes a key defence or gives a broad group the power to do damage, but needs another failure to be exploited. | Broad access controls, relaxed network controls, client credentials and expired certificates.                                        |
+| Medium   | A hardening control that weakens defence in depth when missing.                                                 | Token lifetime, PKCE, token exchange, session hardening and certificates close to expiry.                                            |
+| Low      | Good hygiene with limited impact on its own.                                                                    | Missing ownership or support details, such as a contact email.                                                                       |
+
+{% hint style="danger" %}
+Critical risks need action straight away. Follow the recommended action for the finding. If you cannot resolve the risk yourself, uninstall the app or contact the app's provider to have it fixed.
+{% endhint %}
+
+### What Guard checks
+
+Guard runs the same checks on connected apps and external client apps wherever Salesforce exposes the same setting. Read-only checks run with the standard permissions above. Metadata checks need Metadata API access and show as Not assessed without it.
+
+| Check                                                                   | Severity | Connected apps | External client apps | What to do                                                                                                                          |
+| ----------------------------------------------------------------------- | -------- | -------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Unverified app has OAuth tokens in use                                  | Critical | Read-only      | Does not apply       | Review the token activity. If you do not recognise or approve the app, revoke its tokens and require users to use a registered app. |
+| Broad OAuth access (full or refresh token scope) can be self-authorised | Critical | Metadata       | Read-only            | Narrow the scopes where possible and require admin-approved users.                                                                  |
+| Callback URL uses a wildcard or `http://`                               | Critical | Metadata       | Metadata             | Replace it with exact HTTPS URLs owned by the app.                                                                                  |
+| Client credentials flow is enabled                                      | High     | Metadata       | Read-only            | Confirm a trusted service needs it. If so, keep scopes narrow and limit who can use it.                                             |
+| IP restrictions are relaxed or bypassed                                 | High     | Metadata       | Read-only            | Enforce IP restrictions unless the app has a documented need to run from changing locations.                                        |
+| Any user can authorise the app                                          | High     | Read-only      | Read-only            | Switch to admin-approved users and assign only the users, profiles or permission sets that need it.                                 |
+| Admin-approved access is granted to broad profiles or permission sets   | High     | Read-only      | Read-only            | Replace broad access with smaller groups. Guard shows which profile or permission set caused the finding.                           |
+| JWT certificate has expired                                             | High     | Metadata       | Metadata             | Replace the certificate and check the integration still authenticates.                                                              |
+| Refresh tokens are valid until revoked                                  | Medium   | Read-only      | Read-only            | Set a refresh token expiry period that fits the app and revoke old tokens.                                                          |
+| Refresh token rotation is turned off                                    | Medium   | Metadata       | Metadata             | Turn on refresh token rotation unless the app cannot support it.                                                                    |
+| PKCE is not required                                                    | Medium   | Metadata       | Metadata             | Require PKCE for OAuth flows that support it.                                                                                       |
+| Token exchange is enabled                                               | Medium   | Read-only      | Read-only            | Turn it off unless the app has a real need for it.                                                                                  |
+| JWT certificate expires within 30 days                                  | Medium   | Metadata       | Metadata             | Rotate the certificate before it expires.                                                                                           |
+| High assurance session is not required                                  | Medium   | Read-only      | Read-only            | Require high assurance sessions for apps that reach sensitive data or privileged functions.                                         |
+| Session timeout is longer than 8 hours                                  | Medium   | Metadata       | Read-only            | Shorten the session timeout unless there is a documented need.                                                                      |
+| No contact email is set                                                 | Low      | Metadata       | Read-only            | Add a contact email or owner group so admins know who to contact before changing the app.                                           |
+
+External client apps are never flagged as unverified.
+
+#### Not assessed
+
+A check shows as Not assessed when Guard could not run it. The reason is shown with the check and could be one of:
+
+* The connected Salesforce user does not have Metadata API access. Ask a Salesforce admin to add Modify Metadata Through Metadata API Functions or Modify All Data to the integration user.
+* Salesforce did not return metadata for this connected app. This can happen with packaged or Salesforce-owned apps, so they may only get the read-only checks.
+* The connected Salesforce user does not have View All External Client Apps.
+* The connected Salesforce user does not have Customize Application.
+
+### Scan times
+
+Checks that use the Metadata API take longer than read-only checks, so scans of large orgs may take longer than before.
+
+### Export
+
+Use Export to download API Security results for all orgs or a filtered set of orgs. This is useful for audits, evidence or offline review. You will receive an email when the export is ready.

@@ -1,6 +1,6 @@
 # Deployment Using Feature Migration Template
 
-This article will walk you through deploying nCino data using the Feature Migration template. This provides a step-by-step procedure for creating a fresh migration using the "Deploy from template configuration." If you're referring to this article for the first time, please navigate to [Feature Migration Templates](../feature-migration/create-a-feature-migration-template.md), which guides you through the process of creating a new migration template in AutoRABIT.&#x20;
+This article will walk you through deploying nCino data using the Feature Migration template. This provides a step-by-step procedure for creating a fresh migration using the "Deploy from template configuration." If you're referring to this article for the first time, please navigate to [Feature Migration Templates](../feature-migration/create-a-feature-migration-template.md), which guides you through the process of creating a new migration template in AutoRABIT.
 
 1.  A Feature Deployment can be triggered in the following ways:
 
@@ -15,7 +15,7 @@ This article will walk you through deploying nCino data using the Feature Migrat
 
 <figure><img src="../../../../../.gitbook/assets/2 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
-3. On selecting the "Source Type", the "Source" screen will be displayed.&#x20;
+3. On selecting the "Source Type", the "Source" screen will be displayed.
 
 <figure><img src="../../../../../.gitbook/assets/3 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
@@ -25,7 +25,25 @@ This article will walk you through deploying nCino data using the Feature Migrat
    3. **Feature Type:** Select from either "Standard" or "Community" options.
    4. **Feature:** Select the required feature from the list available.
    5. **Version:** Select from the versions available.
-5. Upon entering the required details, click on 'Next' to continue to the Destination screen.
+5.  The **Feature** and **Version** dropdowns in the nCino Deployment **Source** step provide sorting options to help users locate items.
+
+    1.  The user opens the **Feature** dropdown and clicks the **Sort** icon beside **Search**.
+
+        <figure><img src="../../../../../.gitbook/assets/1 (9).png" alt=""><figcaption></figcaption></figure>
+    2.  The user selects the required sort order:
+
+        | Option                 | Description                                   |
+        | ---------------------- | --------------------------------------------- |
+        | **Newest**             | Displays the newest items first.              |
+        | **Oldest**             | Displays the oldest items first.              |
+        | **Alphabetical - A-Z** | Sorts names in ascending alphabetical order.  |
+        | **Alphabetical - Z-A** | Sorts names in descending alphabetical order. |
+    3.  After selecting a feature, the user opens the **Version** dropdown and follows the same steps to sort its versions.
+
+        <figure><img src="../../../../../.gitbook/assets/2 (9).png" alt=""><figcaption></figcaption></figure>
+
+    A checkmark identifies the selected sort option.
+6. Upon entering the required details, click on 'Next' to continue to the Destination screen.
 
 <figure><img src="../../../../../.gitbook/assets/4 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 

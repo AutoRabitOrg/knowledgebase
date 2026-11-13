@@ -36,15 +36,32 @@ This article describes the process of deploying nCino data via Version Control.
 
            <figure><img src="../../../../../.gitbook/assets/5.1 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
        4. **Revision Range**: This option allows you to specify a commit range from which the revisions are to be deployed.
-       5.
 
        ```
        <figure><img src="../../../../../.gitbook/assets/5.2 - Deployment From Version Control.png" alt=""><figcaption></figcaption></figure>
        ```
-6. **Destination:** Select the destinations onto which the data can be deployed to.
+6.  In the nCino Deployment **Source** step, users can sort the **Feature** and **Version** lists for the selected repository and branch.
+
+    1.  The user opens the **Feature** dropdown and clicks the **Sort** icon beside **Search**.
+
+        <figure><img src="../../../../../.gitbook/assets/1 (34).png" alt=""><figcaption></figcaption></figure>
+    2.  The user selects the required sort order:
+
+        | Option                 | Description                                   |
+        | ---------------------- | --------------------------------------------- |
+        | **Newest**             | Displays the newest items first.              |
+        | **Oldest**             | Displays the oldest items first.              |
+        | **Alphabetical - A-Z** | Sorts names in ascending alphabetical order.  |
+        | **Alphabetical - Z-A** | Sorts names in descending alphabetical order. |
+    3.  After selecting a feature, the user opens the **Version** dropdown and uses its **Sort** icon to arrange the available versions.
+
+        <figure><img src="../../../../../.gitbook/assets/2 (34).png" alt=""><figcaption></figcaption></figure>
+
+    A checkmark indicates the selected sort option.
+7. **Destination:** Select the destinations onto which the data can be deployed to.
    1. **Deploy To:** lists the ORGs that can be selected for deployment.
    2. **Commit To:** Lists the branches selected for deployment to "Version Control".
-7.
+8.
 
 ```
 <figure><img src="../../../../../.gitbook/assets/FD - Deploy from temp config.png" alt=""><figcaption></figcaption></figure>

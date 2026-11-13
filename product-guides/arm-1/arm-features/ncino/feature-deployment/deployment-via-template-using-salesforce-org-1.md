@@ -25,7 +25,25 @@ This article describes the process of deploying the nCino data via the Salesforc
       * Community
    5. **Feature:** Select the required feature
    6. **Version**: Select the version based on the feature selection.
-4. After entering all the details, click on '**Next**' to continue to the "**Destination**" screen.
+4.  In the nCino Deployment **Source** step, users can sort the **Feature** and **Version** lists to locate the required item.
+
+    1.  The user opens the **Feature** dropdown and clicks the **Sort** icon beside **Search**.
+
+        <figure><img src="../../../../../.gitbook/assets/1 (18).png" alt=""><figcaption></figcaption></figure>
+    2.  The user selects a sort option:
+
+        | Option                 | Sort order                              |
+        | ---------------------- | --------------------------------------- |
+        | **Newest**             | Newest items first.                     |
+        | **Oldest**             | Oldest items first.                     |
+        | **Alphabetical - A-Z** | Names in ascending alphabetical order.  |
+        | **Alphabetical - Z-A** | Names in descending alphabetical order. |
+    3.  After selecting a feature, the user opens the **Version** dropdown and uses its **Sort** icon to arrange the available versions.
+
+        <figure><img src="../../../../../.gitbook/assets/2 (32).png" alt=""><figcaption></figcaption></figure>
+
+    A checkmark indicates the selected sort option.
+5. After entering all the details, click on '**Next**' to continue to the "**Destination**" screen.
 
 <figure><img src="../../../../../.gitbook/assets/4 - Feature Deployment (1).png" alt=""><figcaption></figcaption></figure>
 

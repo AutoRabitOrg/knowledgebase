@@ -4,6 +4,283 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.24
+
+**Release Date:** 15 November 2026
+
+### Summary&#x20;
+
+CodeScan 26.0.24 is comprised of the following components:
+
+* 1 New Feature
+* 7 Application Enhancements
+* 20 New Rules
+* 2 Rule Enhancements
+* 0 Rule Deprecations
+* 10 Fixes
+
+Component details are listed in their corresponding sections within this document.
+
+***
+
+### New Features
+
+**1. AI Custom Rules**
+
+Introducing AI Custom Rules: an AI-powered capability that lets users create custom CodeScan rules by describing the desired code pattern in natural language, without writing XPath manually.
+
+Users enter a plain-language description of what they want to detect, and the AI generates the corresponding XPath expression. The generated rule can be reviewed, regenerated, and edited before saving.
+
+{% hint style="info" %}
+AI Custom Rules is currently available as a Pilot feature. To learn more or request access, please contact your AutoRABIT Customer Success representative.
+{% endhint %}
+
+**How It Works**
+
+1. Navigate to Rules → Custom Rules → open an SF XPath template rule → Create Custom Rule → "Create with AI".
+2. Enter a natural language description of the code pattern you want to detect.
+3. The AI generates an XPath expression based on your description.
+4. Review the generated expression, optionally validate, regenerate, or edit it, then save the rule.
+
+**Example Prompts**
+
+* "Find custom fields that are missing a description or help text"
+* "Detect validation rules that contain hardcoded Salesforce record IDs instead of custom labels or custom settings"
+* "Find custom objects that don't have any sharing rules defined"
+
+**Current Limitations**
+
+* Rule generation is currently limited to Salesforce metadata (SFMeta XPath) rules.
+* AI-generated XPath expressions should be reviewed before activation, as complex patterns may require manual refinement.
+* Each generation and regeneration consumes AI credits from the organization's shared AI credit pool.
+
+**Licensing & Configuration**
+
+* Requires an active AI Custom Rules license add-on and an AI credits allocation in the organization's subscription.
+* A Root Admin feature flag controls availability across all organizations (disabled by default).
+* An organization-level toggle must also be enabled for the feature to be accessible.
+* AI credits consumed by custom rule generation are tracked per invocation
+
+### Application Enhancements
+
+**1. Resolution Transfer for Exception Issues**
+
+Enhanced the Resolution Transfer functionality to support transferring issues marked with an Exception status. Exception is now available as a selectable resolution/status option in the Resolution Transfer UI. When selected, the transfer carries over the exception status and the associated exception date.
+
+**Outcome**
+
+* Enables consistent exception management when transferring issue resolutions across branches or projects.
+* Preserves exception date context during resolution transfer.
+
+**2. AI Code Assistant — Expanded Salesforce Security Rule Coverage**
+
+Added AI Code Assistant remediation support for 10 additional Salesforce and Visualforce security rules, enabling AI-assisted fix generation for a broader range of security violations.
+
+Newly supported rules:
+
+| Rule Name                                                  | Rule Key                      |
+| ---------------------------------------------------------- | ----------------------------- |
+| Field Level Security Vulnerabilities                       | `sf:FieldLevelSecurity`       |
+| Class Variable Fields should not have Public Accessibility | `sf:AvoidPublicFields`        |
+| Avoid calling System.debug()                               | `sf:SystemDebug`              |
+| Avoid Untrusted/Unescaped Variables in DML Query           | `sf:SOQLInjection`            |
+| Resource Injection                                         | `sf:ResourceInjection`        |
+| URL Redirection to Untrusted Site                          | `sf:OpenRedirect`             |
+| Server Side Request Forgery (SSRF)                         | `sf:ServerSideRequestForgery` |
+| Unescaped Value Could Cause XSS                            | `vf:UnescapedAttributes`      |
+| Unencoded Formulas in Script Tags XSS                      | `vf:UnencodedScript`          |
+| URL Parameters should be Escaped/Sanitized                 | `sf:UnescapedSource`          |
+
+**Behavior**
+
+* Each rule uses a tailored AI prompt and source-code snippet size determined during spike analysis to optimize remediation accuracy and minimize AI credit consumption.
+* Generated fixes are validated against low-, medium-, and high-complexity code samples.
+* Existing AI Code Assistant supported rules continue to function as expected.
+
+**3. AI Code Assistant — Updated `sf:FieldLevelSecurity` Prompt for API 67+**
+
+Updated the AI CodeFix prompt for `sf:FieldLevelSecurity` to correctly handle API 67+ behavior, where `WITH SECURITY_ENFORCED` is no longer valid because user mode applies by default.
+
+**Behavior**
+
+* For API 67+, the AI prompt now removes `WITH SECURITY_ENFORCED` instead of treating it as a valid fix.
+* No replacement is added, because user mode applies by default at API 67+.
+* FLS fix behavior for API versions below 67 remains unchanged.
+
+**4. AI Custom Rules — Root Admin Feature Flag & Billing Integration**
+
+Introduced a root-level feature flag for AI Custom Rules under Root Administration to control feature availability across organizations.
+
+**Behavior**
+
+* The feature flag is disabled (OFF) by default.
+* When disabled, all AI Custom Rules settings, UI options, and API access are hidden and inaccessible.
+* When enabled, AI Custom Rules functionality becomes available based on existing permissions and licensing.
+* Only Root Administrators can enable or disable the feature flag.
+* Disabling the flag does not delete existing AI Custom Rules or configurations.
+
+**5. CVSS Scoring for New JavaScript Rules**
+
+Added standardized CVSS (Common Vulnerability Scoring System) scoring — including Base Score, Temporal Score, Environmental Score, and Vector String — to all new JavaScript security rules introduced in this release.
+
+**Outcome**
+
+* Users can clearly understand the severity, impact, and exploitability of each JavaScript security finding.
+* CVSS scores are visible in the rule details view and work with existing CVSS filters.
+* Consistently applied across the platform, matching existing rule CVSS behavior.
+
+**6. Suppressed "Exceeded License" Emails for Non-Production Servers**
+
+Stopped the "Exceeded License" notification emails from being generated on non-production server instances.
+
+**Outcome**
+
+* Eliminates noisy and misleading license-exceeded alerts from test, staging, and preview environments.
+
+**7. SonarJS Plugin Updated to 13.6**
+
+Updated the engine that powers JavaScript and TypeScript analysis to version 13.6. No action is needed on your end.
+
+{% hint style="info" %}
+Please note that you may notice changes in the issues reported for **JS/TS code** — new issues might be detected, and some of the previously flagged ones no longer appear, as rules accuracy has improved.&#x20;
+
+Apex, Visualforce, and metadata analysis are unaffected.&#x20;
+{% endhint %}
+
+### New Rules
+
+**1. JavaScript Security Rules**
+
+Added 19 new JavaScript security rules, significantly expanding CodeScan's JavaScript vulnerability detection capabilities.
+
+| Rule Name                               | Rule Key                       |
+| --------------------------------------- | ------------------------------ |
+| Uncontrolled Input in Command Lines     | `cs-js:command-line-injection` |
+| Dynamic Code Injection                  | `cs-js:code-injection`         |
+| Server-Side Request Forgery             | `cs-js:request-forgery`        |
+| Deserialization of User-Controlled Data | `cs-js:unsafe-deserialization` |
+| XML External Entity (XXE) Expansion     | `cs-js:xxe`                    |
+
+| Rule Name                                  | Rule Key                                           |
+| ------------------------------------------ | -------------------------------------------------- |
+| Host Header Poisoning in Email Generation  | `cs-js:host-header-forgery-in-email-generation`    |
+| Type Confusion Through Parameter Tampering | `cs-js:type-confusion-through-parameter-tampering` |
+| XPath Injection                            | `cs-js:xpath-injection`                            |
+| Template Object Injection                  | `cs-js:template-object-injection`                  |
+| Unsafe Dynamic Method Access               | `cs-js:unsafe-dynamic-method-access`               |
+
+| Rule Name                                       | Rule Key                                     |
+| ----------------------------------------------- | -------------------------------------------- |
+| DOM Text Interpreted as HTML                    | `cs-js:xss-through-dom`                      |
+| Database Query Built from User-Controlled Input | `cs-js:sql-injection`                        |
+| Unsafe Shell Command Built from Library Input   | `cs-js:shell-command-constructed-from-input` |
+| Reflected Cross-Site Scripting                  | `cs-js:reflected-xss`                        |
+| Uncontrolled Data in Path Expressions           | `cs-js:path-injection`                       |
+
+| Rule Name                            | Rule Key                                        |
+| ------------------------------------ | ----------------------------------------------- |
+| Regular Expression Pattern Injection | `cs-js:regex-injection`                         |
+| Client-Side Cross-Site Scripting     | `cs-js:xss`                                     |
+| Server-Side URL Redirection          | `cs-js:server-side-unvalidated-url-redirection` |
+| Second-Order Command Injection       | `cs-js:second-order-command-line-injection`     |
+
+**Outcome**
+
+* Provides broad JavaScript security analysis covering injection, XSS, SSRF, deserialization, path traversal, and other OWASP categories.
+* All 19 rules include CVSS scoring for consistent vulnerability prioritization.
+
+**2. Avoid Visualforce Page Actions on Load**
+
+Added a new Salesforce Metadata rule to flag Visualforce pages whose `<apex:page>` tag has an `action` attribute without CSRF protection on GET requests.
+
+**Rule Details**
+
+* Rule Key: `sfmeta:AvoidVfPageActionOnLoad`
+* Type: Vulnerability
+* Default Severity: Major
+* Tags: security, csrf, visualforce, cwe-352, owasp-a01
+
+**Detection Criteria**
+
+* Flags `<apex:page action="{!methodName}">` when the matching `.page-meta.xml` file does not set `<isConfirmationTokenRequired>true</isConfirmationTokenRequired>`.
+* Flags any non-empty `action` value, including formula expressions and redirects.
+* Does not flag `<apex:page>` with no `action` attribute or with `action=""`.
+* Does not flag the page when CSRF protection on GET requests is enabled in metadata.
+* Does not flag `action` attributes on user-initiated components (`apex:commandButton`, `apex:commandLink`, `apex:actionFunction`, `apex:actionSupport`, `apex:actionPoller`).
+
+**Outcome**
+
+* Detects a common CSRF exposure in Visualforce at scan time.
+* Cuts findings from Salesforce security reviews and penetration tests by surfacing unprotected page-load actions early.
+
+### Rule Enhancements
+
+**1. Enhanced `sf:CouplingBetweenObjects` — Display Coupling Count and Contributing Locations**
+
+Enhanced the Coupling Between Objects rule to display the calculated coupling count in the issue message and identify the code locations contributing to that count.
+
+Behavior
+
+* The issue message now includes the actual calculated coupling count/score when the rule is violated.
+* Contributing code locations are highlighted as secondary issue locations in the CodeScan issue view.
+* Existing rule detection logic, thresholds, and backward compatibility are fully preserved.
+
+**2. `sf:DMLWithoutSharingEnabled` — Independent Evaluation for Nested Classes**
+
+Fixed the rule to evaluate each nested class based on its own sharing declaration, rather than inheriting the sharing context of the outer (top-level) class.
+
+Previously, if the outer class was declared `with sharing`, nested classes without their own sharing declaration would not be flagged, even if they performed DML without sharing.
+
+### Fixes
+
+**1. Global Search Missing Projects with Browse Permission**
+
+Fixed an issue where projects did not appear in global search results for users with Browse permission but without the Administer permission. The project was visible on the Projects page but not through the global search bar.
+
+**2. Web API v2 Documentation Page Returns HTTP 500**
+
+Fixed an issue where navigating to `/api/v2/api-docs` returned an HTTP 500 error instead of rendering the API documentation page.
+
+**3. UI Terminology — "tokens" Replaced with "AI credits"**
+
+Corrected legacy references to "tokens" in the CodeScan UI that should display "AI credits" to maintain consistency with the current billing and feature terminology.
+
+**4. `cs-js:unsafe-deserialization` Not Flagging `yaml.load()` with Extended Schema**
+
+Fixed an issue where the rule did not flag `yaml.load()` calls when a schema was extended by `[types.function]` and passed through an options variable, rather than as a direct argument.
+
+**5. `cs-js:xss-through-dom` Not Flagging `insertAdjacentHTML()`**
+
+Fixed an issue where the rule did not flag DOM text insertion performed via `insertAdjacentHTML()`.
+
+**6. API Analyzer Rule A00018 — URISyntaxException on RAML URI Parameters**
+
+Fixed an issue where API Analyzer rule A00018 threw a `URISyntaxException` and was not evaluated when the RAML `baseUri` contained a URI parameter in curly braces (e.g., `{version}`), which is valid RAML syntax.
+
+The rule now handles RAML URI parameters gracefully without logging errors or skipping evaluation.
+
+**7. `sfmeta:AvoidVfPageActionOnLoad` — Message and Severity Corrections**
+
+Fixed the new `AvoidVfPageActionOnLoad` rule to display the action expression correctly in the issue message and to apply the correct default severity. Also corrected the rule's help text so the described fix actually resolves the finding.
+
+**8. `sf:AvoidMethodsBeforeInitializers` — False Positives**
+
+Fixed false positives where the rule incorrectly fired when a constructor reads a property or method of another object of the same class (e.g., `other.status`).
+
+**9. Duplicate "Disable Invite Users" Toggle on Admin Page**
+
+Fixed a UI issue where a duplicate "Disable Invite Users" setting toggle card was displayed on the Organization Administration page.
+
+**10. WAF Blocking XPath Rule Creation and Other Flows**
+
+Fixed Web Application Firewall (WAF) rules that were incorrectly blocking legitimate CodeScan operations, including:
+
+* Creating AI custom XPath rules with descriptions.
+* Adding issue comments containing file path patterns.
+* Creating project links with URLs containing relative path segments.
+
+***
+
 ## CodeScan 26.0.23
 
 **Release date:** 4 November 2026

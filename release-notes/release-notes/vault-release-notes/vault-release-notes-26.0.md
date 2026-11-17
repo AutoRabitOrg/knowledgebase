@@ -4,6 +4,86 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive AutoRABIT Vault updates!" listId="a085e26e7e" %}
 
+## AutoRABIT Vault 26.2.9
+
+**Release date:** 18 November 2026
+
+#### **Reduced Repetitive Performance Timing Logs**
+
+Reduced routine timing messages generated while processing backup objects. Previously, repeated timing entries added substantial volume to standard application logs. Detailed per-object timing messages now use the diagnostic logging level. This reduces routine log noise while retaining timing information for troubleshooting. Detailed timing entries remain available when diagnostic logging is enabled.
+
+#### **Reduced Routine Backup Lifecycle Logging**
+
+Adjusted logging for selected stages of the per-object backup lifecycle. Previously, routine processing messages contributed to repetitive operational log output. Selected lifecycle messages now use the diagnostic logging level. The changes reduce routine output from those messages while preserving job progress information. Other lifecycle messages can still appear during normal backup processing.
+
+#### **Usage Monitoring Against Subscription Limits**
+
+Added monitoring of Salesforce data size and backup storage usage against applicable subscription limits. Usage is assessed against the limits associated with the assigned customer license. Exceeding an applicable limit triggers a notification to the customer success team. This supports timely review of storage growth and subscription requirements. Applicable usage thresholds follow the customer license mapping.
+
+#### **Guided Salesforce Org Authorization Through AuthHub**
+
+Introduced a guided AuthHub experience for authorizing Salesforce orgs. The authorization flow provides connector credentials and guidance for completing Salesforce setup. Previously authorized orgs appear in a searchable selection list. Organization information helps distinguish Production and Sandbox connections. Salesforce authorization must be completed before an org can be selected for the supported workflow.
+
+#### **Reusable Salesforce Org Connections Through AuthHub**
+
+Added support for managing authorized Salesforce connections through AuthHub. Authorized org information can be retrieved and checked before the connection is used. Existing authorized connections can be reused without repeating authorization for each supported onboarding action. This reduces repeated connection setup and keeps authorization information associated with the relevant account. The selected org must have valid authorization before the supported workflow proceeds.
+
+#### **Clearer Handling of Salesforce Query Warnings**
+
+Improved logging of known Salesforce query errors during backup processing. Previously, unavailable objects and invalid query fields could produce repeated error stack traces. Affected object, field, and malformed-query responses now appear as concise warning messages. This makes routine query issues easier to distinguish when reviewing operational logs. The change affects logging and does not make unavailable Salesforce objects or fields retrievable.
+
+#### **Improved Advanced Search Across Multiple Backups**
+
+Enhanced Advanced Search to prepare multiple backups in parallel and support incremental results. Previously, sequential preparation delayed searches spanning several backups. Reusable prepared data reduces repeated conversion work during subsequent searches. The job listing now includes a refresh option and displays jobs as they complete. Search duration depends on data volume and whether the selected backups require initial preparation.
+
+#### **Accurate Subscription End Date Display**
+
+Corrected the subscription end date displayed in AutoRABIT Vault. Previously, the interface could show an earlier expiry date than the applicable subscription term. The displayed date now reflects the corrected subscription information. This provides a more accurate reference when reviewing subscription validity. The correction concerns the displayed date and does not represent a change to the contracted term.
+
+#### **nCino Object Support in Replicate**
+
+Added supported nCino objects to the Replicate object-selection workflow. nCino-managed data can be selected alongside supported Salesforce objects for replication. The workflow supports applicable field values and object relationships between source and destination orgs. Job results provide visibility into nCino object processing and supported replication outcomes. Object, field, and relationship compatibility remains subject to supported source and destination configurations.
+
+#### **Improved Application Security**
+
+Implemented security improvements across applicable AutoRABIT Vault operations. Strengthened validation of requests before processing. Improved access controls for protected information and administrative actions. Added safeguards to support authorized processing and downloads. These changes form part of the application update in this release.
+
+#### **Updated Supporting Application Libraries**
+
+Updated supporting libraries used by AutoRABIT Vault. The update aligns application dependencies with the requirements of integrated services. This work supports compatibility with the AuthHub integration. The changes are delivered within the application rather than as a separate customer workflow. Availability follows deployment and validation of the updated application build.
+
+#### **Correct Results Downloads for Related Objects**
+
+Resolved incorrect or unavailable results downloads for related objects in Restore and Replicate jobs. Previously, a child-object download could fail, while a parent-object link could return another object's file. Downloads now retrieve the results associated with the selected object and its parent context. This restores access to the corresponding success and failure record files for affected hierarchical jobs. The correction applies to results-file retrieval for the affected hierarchical job workflows.
+
+#### **Improved Retrieval of Namespaced Metadata**
+
+Corrected namespace handling for affected Layout and DuplicateRule metadata during backup. Previously, affected component names could result in an entity-not-found error. Metadata retrieval now applies the corrected namespace handling for those components. InstalledPackage retrieval is also restricted to first-generation managed packages. Availability of individual metadata components remains subject to Salesforce retrieval support.
+
+#### **Accurate Handling of Missing Metadata During Restore**
+
+Improved metadata restore validation when a selected component is absent from the deployment files. Missing members are now identified and reported as failures before deployment is attempted. Corrected path lookup also improves handling of affected metadata types and nested folders. Retry preserves earlier results and avoids redeploying members that remain unavailable. This change improves reporting and processing; it cannot restore metadata files that Salesforce did not return.
+
+#### **Complete Supported nCino Relationships in EZ Restore**
+
+Corrected EZ Restore handling of associated nCino records in orgs with Person Accounts enabled. Previously, affected restores could omit related records that were included by Selective Restore. EZ Restore now applies the Person Account child-selection setting during relationship processing. This allows the supported associated records to be included in the restore scope. The correction applies to the affected archived-data hierarchy in Person Account-enabled Salesforce orgs.
+
+#### **Visible Progress Information for Backup File Downloads**
+
+Restored the progress information icon when Download Files is selected in Backup. Previously, the missing icon prevented access to file-download progress information. The download workflow now provides access to the applicable progress indicator. This makes ongoing backup file downloads easier to monitor. Progress information remains accessible within the existing file-download workflow.
+
+#### **Improved Readability of the Settings Screen**
+
+Resolved overlapping text on the AutoRABIT Vault Settings screen. Previously, affected text could overlap adjacent content and reduce readability. Updated layout styling improves spacing and alignment. Settings information is easier to read and distinguish from nearby controls. The correction applies to the affected Settings screen layout.
+
+#### **Improved Table Layout Across the Application**
+
+Updated table layouts across AutoRABIT Vault. The changes address spacing, column presentation, and horizontal-scrolling concerns. The revised layout improves readability when reviewing tabular information. More consistent table presentation makes job and configuration details easier to scan. The update applies to affected table views across the application.
+
+#### **Consistent Salesforce Org Selection Across Modules**
+
+Improved retention of the selected Salesforce org across applicable modules. Previously, navigation could leave different modules showing inconsistent org selections. The application now maintains the selected org state across modules that share the same context. This helps keep the displayed data aligned with the org shown as selected. The change applies where the same Salesforce org is supported by the destination module.
+
 ## AutoRABIT Vault 26.2.8
 
 **Release date:** 4 November 2026

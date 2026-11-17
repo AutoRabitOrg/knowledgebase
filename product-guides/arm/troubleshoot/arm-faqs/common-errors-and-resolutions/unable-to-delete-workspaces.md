@@ -10,4 +10,4 @@ The reason the Delete button is grayed out is that these workspaces are classifi
 
 If you still wish to remove any workspace where the delete option is grayed out, please ensure that the related branch is no longer needed, and proceed to unregister the branch. Once the branch is unregistered, you will be able to delete the associated workspace.
 
-See the [Workspaces](https://knowledgebase.autorabit.com/~/revisions/HjllPHzLVe0LqFYH7gIg/product-guides/arm/arm-administration/workspaces) page for more information.
+See the [Workspaces](https://knowledgebase.autorabit.com/product-guides/arm/arm-administration/workspaces) page for more information.

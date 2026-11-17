@@ -8,26 +8,6 @@
 
 **Release date:** 18 November 2026
 
-#### **Reduced Repetitive Performance Timing Logs**
-
-Reduced routine timing messages generated while processing backup objects. Previously, repeated timing entries added substantial volume to standard application logs. Detailed per-object timing messages now use the diagnostic logging level. This reduces routine log noise while retaining timing information for troubleshooting. Detailed timing entries remain available when diagnostic logging is enabled.
-
-#### **Reduced Routine Backup Lifecycle Logging**
-
-Adjusted logging for selected stages of the per-object backup lifecycle. Previously, routine processing messages contributed to repetitive operational log output. Selected lifecycle messages now use the diagnostic logging level. The changes reduce routine output from those messages while preserving job progress information. Other lifecycle messages can still appear during normal backup processing.
-
-#### **Usage Monitoring Against Subscription Limits**
-
-Added monitoring of Salesforce data size and backup storage usage against applicable subscription limits. Usage is assessed against the limits associated with the assigned customer license. Exceeding an applicable limit triggers a notification to the customer success team. This supports timely review of storage growth and subscription requirements. Applicable usage thresholds follow the customer license mapping.
-
-#### **Guided Salesforce Org Authorization Through AuthHub**
-
-Introduced a guided AuthHub experience for authorizing Salesforce orgs. The authorization flow provides connector credentials and guidance for completing Salesforce setup. Previously authorized orgs appear in a searchable selection list. Organization information helps distinguish Production and Sandbox connections. Salesforce authorization must be completed before an org can be selected for the supported workflow.
-
-#### **Reusable Salesforce Org Connections Through AuthHub**
-
-Added support for managing authorized Salesforce connections through AuthHub. Authorized org information can be retrieved and checked before the connection is used. Existing authorized connections can be reused without repeating authorization for each supported onboarding action. This reduces repeated connection setup and keeps authorization information associated with the relevant account. The selected org must have valid authorization before the supported workflow proceeds.
-
 #### **Clearer Handling of Salesforce Query Warnings**
 
 Improved logging of known Salesforce query errors during backup processing. Previously, unavailable objects and invalid query fields could produce repeated error stack traces. Affected object, field, and malformed-query responses now appear as concise warning messages. This makes routine query issues easier to distinguish when reviewing operational logs. The change affects logging and does not make unavailable Salesforce objects or fields retrievable.
@@ -47,10 +27,6 @@ Added supported nCino objects to the Replicate object-selection workflow. nCino-
 #### **Improved Application Security**
 
 Implemented security improvements across applicable AutoRABIT Vault operations. Strengthened validation of requests before processing. Improved access controls for protected information and administrative actions. Added safeguards to support authorized processing and downloads. These changes form part of the application update in this release.
-
-#### **Updated Supporting Application Libraries**
-
-Updated supporting libraries used by AutoRABIT Vault. The update aligns application dependencies with the requirements of integrated services. This work supports compatibility with the AuthHub integration. The changes are delivered within the application rather than as a separate customer workflow. Availability follows deployment and validation of the updated application build.
 
 #### **Correct Results Downloads for Related Objects**
 

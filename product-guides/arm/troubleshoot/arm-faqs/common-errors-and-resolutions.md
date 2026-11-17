@@ -2,7 +2,7 @@
 
 The following error messages are provided to troubleshoot issues as they arise. Please refer to the solutions and resources below for answers to some commonly encountered errors and error messages.
 
-[Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/~/revisions/3VI0zaSEEP3zDMr0Tue8/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-413-status-error-downloading-duplicate-profile-files-simultaneously)
+[Error message: 413: Status Error - Downloading duplicate profile files simultaneously](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/413-status-error)
 
 [Error message: Authentication Failed - ALM connectivity due to incorrect configuration](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/authentication-failed)
 
@@ -12,13 +12,13 @@ The following error messages are provided to troubleshoot issues as they arise. 
 
 [Error message: Cannot find the declaration of element 'web:validateSalesforceOrgConnection'](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/cannot-find-the-declaration-of-element-web-validatesalesforceorgconnection)
 
-[Error message: Failed to initiate deployment. Unexpected end of JSON input.](https://knowledgebase.autorabit.com/~/revisions/1MpGiDGwK1B2XQ6cGqOG/product-guides/arm/troubleshoot/arm-faqs/ci-jobs/failed-to-initiate-deployment.-unexpected-end-of-json-input.)
+[Error message: Failed to initiate deployment. Unexpected end of JSON input.](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/failed-to-initiate-deployment.-unexpected-end-of-json-input.)
 
 [Error message: Failed to push some refs to \[remote\]](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/failed-to-push-some-refs-to-remote)
 
-[Error message: GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.](https://knowledgebase.autorabit.com/~/revisions/b1ho43JCpidl0YWBC8yF/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-gh006-protected-branch-update-failed-for-refs-heads-master.)
+[Error message: GH006: Protected branch update failed for refs/heads/master. Remote: error: Cannot force-push to a protected branch.](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/gh006-protected-branch-update-failed-for-refs-heads-master.)
 
-[Error message: GIT Push Result: RemoteRefUpdate](https://knowledgebase.autorabit.com/~/revisions/lwFT8sv76u9JoeNkeAnx/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/error-message-git-push-result-remoterefupdate)
+[Error message: GIT Push Result: RemoteRefUpdate](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/git-push-result-remoterefupdate)
 
 [Error message: HTTP ERROR 405 Problem accessing /services/Soap/m/55.0. Reason: Only POST allowed](https://knowledgebase.autorabit.com/product-guides/arm/troubleshoot/arm-faqs/common-errors-and-resolutions/http-error-405-problem-accessing-services-soap-m-55.0.-reason-only-post-allowed)
 

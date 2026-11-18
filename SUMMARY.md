@@ -1185,6 +1185,7 @@
     * [Copado](product-guides/codescan/codescan-integration/copado/README.md)
       * [Copado SFDX Integration](product-guides/codescan/codescan-integration/copado/copado-sfdx-integration.md)
       * [Copado MDAPI Integration](product-guides/codescan/codescan-integration/copado/codescan-and-copado-integration.md)
+      * [Copado SFDX Integration CodeScan 2.0. Plugin](product-guides/codescan/codescan-integration/copado/copado-sfdx-integration-codescan-2.0.-plugin.md)
     * [Flosum](product-guides/codescan/codescan-integration/flosum/README.md)
       * [CodeScan and Flosum Integration](product-guides/codescan/codescan-integration/flosum/codescan-and-flosum-integration.md)
     * [GitHub Actions](product-guides/codescan/codescan-integration/github-actions/README.md)

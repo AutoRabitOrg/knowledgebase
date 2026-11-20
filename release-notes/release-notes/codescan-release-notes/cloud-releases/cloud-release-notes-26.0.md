@@ -4,11 +4,45 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive CodeScan updates!" listId="a085e26e7e" %}
 
+## CodeScan Release Notes 26.0.25
+
+**Release Date:** 22 November 2026
+
+### Summary
+
+CodeScan 26.0.25 is comprised of the following components:
+
+* 0 New Features
+* 0 Application Enhancements
+* 0 New Rules
+* 0 Rule Enhancements
+* 0 Rule Deprecations
+* 2 Fixes
+* 0 Revenue Org Improvements
+
+Component details are listed in their corresponding sections within this document.
+
+### Fixes
+
+**1. Analysis Failure in Azure DevOps Pipelines During JavaScript/Visualforce Scanning**
+
+Resolved an issue where CodeScan analysis failed during the JavaScript and Visualforce analysis phase in Azure DevOps pipelines. The bundled language-analysis engine encountered a runtime compatibility error, causing the scanner process to terminate unexpectedly.&#x20;
+
+This fix ensures that the language-analysis engine initializes and executes correctly across supported Azure DevOps agent environments.
+
+**2. Analysis Failure in Copado Integration During JavaScript/Visualforce Scanning**
+
+Resolved an issue where CodeScan analysis failed during the Copado–CodeScan integration when scanning Visualforce pages and JavaScript static resources. The language-analysis engine encountered a native library compatibility error on the scanner runtime environment, causing the analysis to fail.
+
+This fix restores reliable analysis execution within the Copado integration and ensures that scan results accurately reflect the actual analysis outcome.
+
+***
+
 ## CodeScan Release Notes 26.0.24
 
 **Release Date:** 15 November 2026
 
-### Summary&#x20;
+### Summary
 
 CodeScan 26.0.24 is comprised of the following components:
 
@@ -20,8 +54,6 @@ CodeScan 26.0.24 is comprised of the following components:
 * 10 Fixes
 
 Component details are listed in their corresponding sections within this document.
-
-***
 
 ### New Features
 
@@ -142,9 +174,9 @@ Stopped the "Exceeded License" notification emails from being generated on non-p
 Updated the engine that powers JavaScript and TypeScript analysis to version 13.6. No action is needed on your end.
 
 {% hint style="info" %}
-Please note that you may notice changes in the issues reported for **JS/TS code** — new issues might be detected, and some of the previously flagged ones no longer appear, as rules accuracy has improved.&#x20;
+Please note that you may notice changes in the issues reported for **JS/TS code** — new issues might be detected, and some of the previously flagged ones no longer appear, as rules accuracy has improved.
 
-Apex, Visualforce, and metadata analysis are unaffected.&#x20;
+Apex, Visualforce, and metadata analysis are unaffected.
 {% endhint %}
 
 ### New Rules
@@ -309,7 +341,7 @@ Exercise caution when transferring resolutions to the main branch of your projec
 {% endhint %}
 
 {% hint style="info" %}
-Resolution Transfer assumes that the source and target projects contain the same codebase. Before proceeding, please verify that both projects share the same code. Transferring resolutions between projects with different codebases may result in mismatched or incorrectly applied issue statuses.&#x20;
+Resolution Transfer assumes that the source and target projects contain the same codebase. Before proceeding, please verify that both projects share the same code. Transferring resolutions between projects with different codebases may result in mismatched or incorrectly applied issue statuses.
 
 Please proceed with caution and review the results after transfer.
 {% endhint %}
@@ -1493,8 +1525,6 @@ NOTE: This is a project-level rule.
 
 <img src="../../../../.gitbook/assets/unknown (149).png" alt="" height="346" width="624">
 
-&#x20;
-
 <img src="../../../../.gitbook/assets/unknown (150).png" alt="" height="344" width="624">
 
 * Rule severity correctly classified as Critical Vulnerability.
@@ -1589,11 +1619,7 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 
 <img src="../../../../.gitbook/assets/unknown (158).png" alt="" height="69" width="624">
 
-&#x20;
-
 <img src="../../../../.gitbook/assets/unknown (159).png" alt="" height="52" width="624">
-
-&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (160).png" alt="" height="72" width="624">
 
@@ -1605,11 +1631,7 @@ We analyzed the "Status Marked By” population logic and found that bulk status
 
 <img src="../../../../.gitbook/assets/unknown (158).png" alt="" height="69" width="624">
 
-&#x20;
-
 <img src="../../../../.gitbook/assets/unknown (159).png" alt="" height="52" width="624">
-
-&#x20;
 
 <img src="../../../../.gitbook/assets/unknown (160).png" alt="" height="72" width="624">
 

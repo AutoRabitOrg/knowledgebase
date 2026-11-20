@@ -21,7 +21,7 @@ Currently, Guard manages SSO through Keycloak. To set up SSO for your tenant:
 
 Guard supports a tenant setting called Only SSO Authentication. When this option is enabled:
 
-* Local tenant-manager users are automatically disabled.
+* Local Admin users are automatically disabled.
 * The User Management section is hidden in the Guard app.
 * API-based user management is disabled.
 * Only SSO-authenticated users can log in.

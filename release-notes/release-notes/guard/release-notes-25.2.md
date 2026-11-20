@@ -301,7 +301,7 @@ Tenant data now has a mandatory expiration time to enforce lifecycle management.
 
 * Mandatory expiration is set at tenant creation.
 * Automated tenant deletion is triggered on the expiration date.
-* Advance notice: Tenant managers receive an email 5 days before deletion.
+* Advance notice: Admins receive an email 5 days before deletion.
 
 **Why it matters**: Ensures consistent data lifecycle management and enforces retention limits.
 

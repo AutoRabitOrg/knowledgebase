@@ -20,7 +20,7 @@ To run all available checks, the integration user needs Metadata API access. Gua
 
 #### Create policies with Guard MCP
 
-Admins and tenant managers can describe the policy they need in plain language and use the Guard MCP to create Authorization, Change Monitoring or Drift policies. Guard checks the request, asks for missing information and links to the resulting policy, helping teams move from an idea to a configured policy more directly.
+Admins can describe the policy they need in plain language and use the Guard MCP to create Authorization, Change Monitoring or Drift policies. Guard checks the request, asks for missing information and links to the resulting policy, helping teams move from an idea to a configured policy more directly.
 
 If you have older Change Monitoring policies with multiple rules, review them before editing. Recreate them as separate policies if needed, since editing these older policies in the UI can remove their additional rules.
 
@@ -32,7 +32,7 @@ To help protect sensitive information, notification emails contain the subject a
 
 #### Manage tenant features in Settings
 
-Tenant managers can control access to features such as Automated Data Classification, Ask AutoRABIT, Guard CLI and MCP, Risk Auto Resolve, and AI notification summaries from Settings. Guard asks for confirmation before changes and records them in the audit log.
+Admins can control access to features such as Automated Data Classification, Ask AutoRABIT, Guard CLI and MCP, Risk Auto Resolve, and AI notification summaries from Settings. Guard asks for confirmation before changes and records them in the audit log.
 
 ### Enhancements
 
@@ -120,11 +120,11 @@ Automatic assessments now run:
 * After an org is connected
 * After Auto-Resolve
 
-Tenant Managers and Guard Admins can select Refresh to run an assessment manually at any time. If a refresh fails, the latest successful results remain available with a failure status.
+Guard Admins can select Refresh to run an assessment manually at any time. If a refresh fails, the latest successful results remain available with a failure status.
 
 #### API Security: Scheduled Assessments and Manual Refresh
 
-Similar to Risk Assessment, API Security assessments run daily and after an org is connected. Tenant Managers and Guard Admins can manually refresh assessments across orgs at any time.
+Similar to Risk Assessment, API Security assessments run daily and after an org is connected. Guard Admins can manually refresh assessments across orgs at any time.
 
 Refresh progress and completion information are visible in Guard. Failed refreshes identify the affected orgs and preserve their latest successful results. History highlights changes such as apps being added, removed or reclassified.
 

@@ -27,7 +27,7 @@ Get actionable, high-quality insights on your Salesforce code.
 
 ### API Keys <a href="#id-2.-api-keys" id="id-2.-api-keys"></a>
 
-The API Keys page lets tenant administrators create long-lived API keys used by automation (Bitbucket Pipelines, GitHub Actions, Jenkins, local CLI) to authenticate to Guard without an interactive Keycloak login. The CLI reads the key from the `GUARD_API_KEY` environment variable or the `--api-key` flag.
+The API Keys page lets Admins create long-lived API keys used by automation (Bitbucket Pipelines, GitHub Actions, Jenkins, local CLI) to authenticate to Guard without an interactive Keycloak login. The CLI reads the key from the `GUARD_API_KEY` environment variable or the `--api-key` flag.
 
 Only users with Guard administration permissions can access API Keys. Keys are tenant-scoped so one key works for all repositories registered within your tenant environment (unless your admin configures restrictions).
 

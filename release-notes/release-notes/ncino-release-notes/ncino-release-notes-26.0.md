@@ -26,6 +26,8 @@ Enhanced query preparation and execution for External ID fields with longer name
 
 Additional supported templates are now available in the nCino **Template Creation** screen. The new options follow the existing configuration, validation, saving, and listing workflows, while previously created templates and configurations remain unaffected.
 
+***
+
 ## nCino Release - 26.4.7
 
 **Release date:** 15 November 2026

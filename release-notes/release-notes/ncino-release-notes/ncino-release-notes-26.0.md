@@ -2,6 +2,30 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino Release - 26.4.8
+
+**Release date:** 22 November 2028
+
+#### Clear Reporting for Files Exceeding the Supported Size Limit <a href="#id-1.-clear-reporting-for-files-exceeding-the-supported-size-limit" id="id-1.-clear-reporting-for-files-exceeding-the-supported-size-limit"></a>
+
+Attachments and Lightning Files that exceed the supported binary size limit are now reported clearly in Feature Details and execution logs instead of being silently skipped. Deployment counts now reconcile retrieved, successful, and failed or skipped files across nCino Feature Deployments and CI Jobs.
+
+#### Reliable Attachment Cleanup During Redeployment and Rollback <a href="#id-2.-reliable-attachment-cleanup-during-redeployment-and-rollback" id="id-2.-reliable-attachment-cleanup-during-redeployment-and-rollback"></a>
+
+Resolved an issue where some attachments remained in the destination org when more than 200 records required deletion. Redeployment and rollback operations now process the complete attachment set and report accurate deletion statuses, counts, and error details.
+
+#### Accurate Deployment of Selectively Committed Records <a href="#id-3.-accurate-deployment-of-selectively-committed-records" id="id-3.-accurate-deployment-of-selectively-committed-records"></a>
+
+Resolved an issue where deploying a selective-commit iteration retrieved and deployed the complete dataset. The deployment now includes only the selected objects and records, together with the related records included during the selective commit. The correction applies to both existing and new interfaces.
+
+#### Reliable Query Processing for Long External ID Fields <a href="#id-4.-reliable-query-processing-for-long-external-id-fields" id="id-4.-reliable-query-processing-for-long-external-id-fields"></a>
+
+Enhanced query preparation and execution for External ID fields with longer names and large query structures. This prevents malformed-query failures during destination backup and deployment processing across nCino Feature Deployments, CI Jobs, Data Loader Basic, and Data Loader Pro.
+
+#### Additional Options in nCino Template Creation <a href="#id-5.-additional-options-in-ncino-template-creation" id="id-5.-additional-options-in-ncino-template-creation"></a>
+
+Additional supported templates are now available in the nCino **Template Creation** screen. The new options follow the existing configuration, validation, saving, and listing workflows, while previously created templates and configurations remain unaffected.
+
 ## nCino Release - 26.4.7
 
 **Release date:** 15 November 2026
@@ -14,7 +38,7 @@ For nCino Partners, features containing Standard or Community versions now appea
 
 nCino Template deployments now support Lightning Files through `ContentDocument`, `ContentVersion`, and `ContentDocumentLink`, alongside existing Classic Attachments. **Files** and **Attachments** can be included independently, together, or excluded from the configuration. The enhancement applies to new templates and applicable version-creation, cloning, and reuse workflows.
 
-<figure><img src="../../../.gitbook/assets/2 (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -70,6 +70,10 @@ When enabled, ARM automatically excludes unnecessary development files, such as 
 
 This enhancement helps prevent deployment failures caused by unnecessary development files and ensures consistent file handling during validation and deployment.
 
+**Note:** **Starting with this release, the Ignore Developer Files option will be enabled by default, automatically excluding files listed in the repository's `.forceignore` file. If you need to include these files during Commit, Merge, or Deployment operations, manually disable this option in the respective workflow.**
+
+**From the next release, this option will be disabled by default.**
+
 #### Clone Release Labels with Existing Configurations and Revisions (New UI) <a href="#id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui" id="id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui"></a>
 
 Introduced a new **Clone Release Label** option, allowing users to quickly create a Release Label by copying an existing one.

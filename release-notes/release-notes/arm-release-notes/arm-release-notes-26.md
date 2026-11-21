@@ -8,11 +8,13 @@
 
 **Release date:** 22 November 2026
 
-#### Improved Error Details for Environment Provisioning Template Failures <a href="#id-1.-improved-error-details-for-environment-provisioning-template-failures" id="id-1.-improved-error-details-for-environment-provisioning-template-failures"></a>
+**Improved Error Details for Environment Provisioning Template Failures**
 
 Enhanced **Environment Provisioning Template execution logs** to provide clearer and more actionable error information when an execution fails.
 
 ARM now displays detailed failure information, including the affected execution step, relevant configuration, and underlying error messages, helping users quickly identify issues, make necessary corrections, and retry failed executions.
+
+Additionally, introduced a new execution status, **Partially Successful**, alongside the existing **Successful** and **Failed** statuses. Previously, if even one record migration failed, the entire execution was marked as Failed. With this enhancement, ARM now displays **Partially Successful** when some records are migrated successfully while others fail, providing better visibility into the overall execution outcome.
 
 #### Enhanced SAML Single Sign-On with Federation ID Support (New UI) <a href="#id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui" id="id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui"></a>
 

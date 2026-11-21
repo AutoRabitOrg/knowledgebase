@@ -4,6 +4,132 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
+## ARM 26.4.8
+
+**Release date:** 22 November 2026
+
+#### Improved Error Details for Environment Provisioning Template Failures <a href="#id-1.-improved-error-details-for-environment-provisioning-template-failures" id="id-1.-improved-error-details-for-environment-provisioning-template-failures"></a>
+
+Enhanced **Environment Provisioning Template execution logs** to provide clearer and more actionable error information when an execution fails.
+
+ARM now displays detailed failure information, including the affected execution step, relevant configuration, and underlying error messages, helping users quickly identify issues, make necessary corrections, and retry failed executions.
+
+#### Enhanced SAML Single Sign-On with Federation ID Support (New UI) <a href="#id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui" id="id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui"></a>
+
+Enhanced **SAML Single Sign-On (SSO)** to support user identification through a configurable **Federation ID**.
+
+Administrators can now assign a unique Federation ID to ARM users and configure SSO to identify users by **Username, Federation ID, or Microsoft Entra ID**.
+
+When Federation ID is selected, ARM matches the value received in the SAML assertion against the user's configured Federation ID, simplifying user authentication while preserving existing SSO configurations and username/password login options.
+
+#### Unified CodeScan Project for Version Control Scans <a href="#id-3.-unified-codescan-project-for-version-control-scans" id="id-3.-unified-codescan-project-for-version-control-scans"></a>
+
+Enhanced **CodeScan integration** to ensure that scans performed through **EZ-Commit, EZ-Merge, CI Jobs, Deployments, and standalone Reports** are consistently associated with the same CodeScan project for a given repository.
+
+ARM now retrieves **Baseline branches** from the appropriate CodeScan project, enabling users to select existing baselines for changed-line scanning.
+
+This improvement provides more consistent scan results and better visibility across version control workflows while preserving existing project mappings.
+
+#### Improved Required Field Validation for Deployment Creation (New UI) <a href="#id-4.-improved-required-field-validation-for-deployment-creation-new-ui" id="id-4.-improved-required-field-validation-for-deployment-creation-new-ui"></a>
+
+Enhanced the **Create Deployment and Quick Deploy** workflows with clear, user-friendly validation for mandatory fields.
+
+When users click **Next, Submit, or Deploy** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
+
+Additionally, meaningful tooltips explain why an action is unavailable, helping users resolve validation errors before proceeding with deployment.
+
+#### Improved Required Field Validation for External Pull Request Creation (New UI) <a href="#id-5.-improved-required-field-validation-for-external-pull-request-creation-new-ui" id="id-5.-improved-required-field-validation-for-external-pull-request-creation-new-ui"></a>
+
+Enhanced the **External Pull Request creation** workflow with clear, user-friendly validation for mandatory fields.
+
+When users click **Create Pull Request** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
+
+Additionally, meaningful tooltips explain why the **Create Pull Request** button is unavailable, helping users resolve validation errors and create pull requests more efficiently.
+
+#### Improved Required Field Validation for Get Org Differences (New UI) <a href="#id-6.-improved-required-field-validation-for-get-org-differences-new-ui" id="id-6.-improved-required-field-validation-for-get-org-differences-new-ui"></a>
+
+Enhanced the **Get Org Differences** workflow with clear, user-friendly validation for mandatory fields and run configurations.
+
+When users click **Save** or **Save and Run** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
+
+Additionally, meaningful tooltips explain why an action is unavailable, helping users resolve validation errors before saving or running Org Differences.
+
+#### Improved Required Field Validation for Release Label Creation and Editing (New UI) <a href="#id-7.-improved-required-field-validation-for-release-label-creation-and-editing-new-ui" id="id-7.-improved-required-field-validation-for-release-label-creation-and-editing-new-ui"></a>
+
+Enhanced the **Create and Edit Release Label** workflows with clear, user-friendly validation for mandatory fields and revision selection.
+
+When users click **Save** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
+
+Additionally, ARM provides clear validation feedback when fewer than **two revisions** are selected and meaningful tooltips explaining why the **Save** button is unavailable.
+
+#### Added Ignore Developer Files Option for Salesforce Deployments <a href="#id-8.-added-ignore-developer-files-option-for-salesforce-deployments" id="id-8.-added-ignore-developer-files-option-for-salesforce-deployments"></a>
+
+Introduced a new **Ignore Developer Files** option, enabled by default, across **Deployment Settings, CI Jobs, EZ-Commit, and EZ-Merge** in both Classic and New UI.
+
+When enabled, ARM automatically excludes unnecessary development files, such as test files, editor configurations, and TypeScript files with corresponding JavaScript files, while preserving required metadata.
+
+This enhancement helps prevent deployment failures caused by unnecessary development files and ensures consistent file handling during validation and deployment.
+
+#### Clone Release Labels with Existing Configurations and Revisions (New UI) <a href="#id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui" id="id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui"></a>
+
+Introduced a new **Clone Release Label** option, allowing users to quickly create a Release Label by copying an existing one.
+
+Users can click the **Clone** icon, provide a unique Release Label name, and automatically copy all existing configurations, including repository, branch, label type, and associated revisions.
+
+The cloned Release Label can be managed independently, allowing users to add or remove revisions without affecting the original.
+
+This enhancement reduces manual effort, saves time, and ensures consistency when creating similar Release Labels.
+
+#### API Support for Deploying Existing Release Labels  <a href="#id-10.-api-support-for-deploying-existing-release-labels-arm-1.0" id="id-10.-api-support-for-deploying-existing-release-labels-arm-1.0"></a>
+
+Introduced new **Deployment APIs** that allow users to initiate Salesforce deployments using existing ARM Release Labels and monitor deployment status through external tools and CI/CD pipelines.
+
+The **POST API** enables users to deploy or validate an existing Release Label against a destination Salesforce org, with support for configurable deployment options.
+
+The **GET API** allows users to track deployment progress, retrieve execution status, and review failure details when available.
+
+This enhancement simplifies automated Salesforce org promotion, reduces manual intervention, and provides consistent deployment tracking through ARM Deployment History.
+
+#### Fixed Missing Commit Details for Branch & Pull Request API <a href="#id-11.-fixed-missing-commit-details-for-branch-and-pull-request-api" id="id-11.-fixed-missing-commit-details-for-branch-and-pull-request-api"></a>
+
+Resolved an issue where commits created through the **Branch & Pull Request API** appeared as Completed in Commit History, but the **Log** and **Committed Files** tabs displayed no information.
+
+ARM now correctly displays commit processing steps, detailed execution logs, and committed files with their corresponding change actions.
+
+Additionally, **Commit History** now reflects the appropriate execution status, including **In Progress, Failed, and No Modifications**, providing better visibility and troubleshooting for API-initiated commits.
+
+#### Fixed Incorrect “No Modifications” Status in CI Jobs <a href="#id-12.-fixed-incorrect-no-modifications-status-in-ci-jobs" id="id-12.-fixed-incorrect-no-modifications-status-in-ci-jobs"></a>
+
+Addressed an issue where **CI Jobs** incorrectly reported **“Build has no modification”** despite metadata changes being available for deployment.
+
+The correction improves revision comparison and change detection, helping CI Jobs accurately identify modified components and process eligible changes during deployment.
+
+#### Fixed Incorrect “No Modifications” Status in Incremental CI Jobs <a href="#id-13.-fixed-incorrect-no-modifications-status-in-incremental-ci-jobs" id="id-13.-fixed-incorrect-no-modifications-status-in-incremental-ci-jobs"></a>
+
+Resolved an issue where **SFDX Incremental CI Jobs** incorrectly reported **“No Modifications”** when metadata components were stored directly under the selected package directory instead of the standard `main/default` structure.
+
+ARM now correctly identifies and packages modified metadata components from both folder structures, including repositories using a combination of both layouts.
+
+This fix ensures accurate change detection, prevents metadata components from being unintentionally excluded, and improves the reliability of incremental CI deployments.
+
+#### Fixed Dark Theme Display Issues in Deployment Component Audit Report <a href="#id-14.-fixed-dark-theme-display-issues-in-deployment-component-audit-report" id="id-14.-fixed-dark-theme-display-issues-in-deployment-component-audit-report"></a>
+
+Resolved a UI issue in the **Deployment Component Audit Report** where deployment group headers displayed incorrect background and text colors under **Dark Theme**, making deployment details difficult to read.
+
+ARM now applies consistent Dark Theme styling to the **Grouped by Deployment** tab, ensuring proper text visibility, improved contrast, and a consistent viewing experience across deployment groups and component details.
+
+#### Updated Time Zone Support for Alberta and Northwest Territories, Canada <a href="#id-15.-updated-time-zone-support-for-alberta-and-northwest-territories-canada" id="id-15.-updated-time-zone-support-for-alberta-and-northwest-territories-canada"></a>
+
+Updated ARM's time-zone support to reflect the Canadian time-zone changes effective **November 1, 2026**.
+
+ARM now correctly recognizes **UTC−06:00** for **America/Edmonton, America/Yellowknife, and America/Inuvik**, instead of the previously displayed UTC−07:00 offset.
+
+This update improves time-zone accuracy and consistency across ARM, helping customers maintain accurate time-related information and meet regional compliance requirements.
+
+#### Apache Tomcat 11.0.27 Platform Upgrade for ARM On-Premises <a href="#id-16.-apache-tomcat-11.0.27-platform-upgrade-for-arm-on-premises" id="id-16.-apache-tomcat-11.0.27-platform-upgrade-for-arm-on-premises"></a>
+
+Upgraded **Apache Tomcat to version 11.0.27** for supported ARM on-premises environments.
+
 ## ARM 26.4.7
 
 **Release date:** 15 November 2026

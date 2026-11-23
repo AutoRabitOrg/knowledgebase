@@ -2,13 +2,13 @@
 
 ### Overview
 
-Feature Controls let tenant managers turn selected Guard features on or off for their tenant, straight from the Guard UI. You no longer need to raise a support request to change these settings.
+Feature Controls let Admins turn selected Guard features on or off for their tenant, straight from the Guard UI. You no longer need to raise a support request to change these settings.
 
 ### Navigation path
 
 `Guard → Settings → Feature Controls`
 
-Only tenant managers can see Feature Controls. Other users do not see it in Settings and cannot open the page by direct link.
+Only Admins can see Feature Controls. Other users do not see it in Settings and cannot open the page by direct link.
 
 ### Features you can control
 

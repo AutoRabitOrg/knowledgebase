@@ -311,7 +311,7 @@ A review summary with notable events, policy deviations, suggested evidence, ope
 3. For Codex: run `codex mcp login guard` to re-authenticate.
 4. For Cursor: check **Settings → Features → Model Context Protocol** and confirm `guard` is green. Check **Output → MCP Logs** for errors.
 5. For Claude Code and Codex, also check that the Skill is loaded if you expect Skill-specific behaviour.
-6. Check that Guard CLI and MCP access is turned on for your tenant. A tenant manager can turn it on in [Feature Controls](../getting-started-with-guard/feature-controls.md).
+6. Check that Guard CLI and MCP access is turned on for your tenant. An Admin can turn it on in [Feature Controls](../getting-started-with-guard/feature-controls.md).
 
 ***
 

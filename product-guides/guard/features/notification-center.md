@@ -48,7 +48,7 @@ If a notification has expired or been deleted, Guard shows a message that it is 
 
 By default, notification emails do not include the details of the change. Each email contains a subject that names the policy and org, and a View details link. Recipients sign in to Guard to see the full detail.
 
-This keeps security data inside Guard. Admins and tenant managers can choose to include the detail in emails instead (see below).
+This keeps security data inside Guard. Admins can choose to include the detail in emails instead (see below).
 
 When AI notification summaries are turned on, the AI summary appears near the top of the email, directly under the org name and policy type.
 
@@ -90,7 +90,7 @@ The notification detail page inside Guard shows the full, unmasked values. Use t
 
 ## AI notification summaries
 
-AI notification summaries give a short, plain-language explanation of each notification. They are turned on or off by a tenant manager in [Feature Controls](../getting-started-with-guard/feature-controls.md), not in Notification Settings.
+AI notification summaries give a short, plain-language explanation of each notification. They are turned on or off by an Admin in [Feature Controls](../getting-started-with-guard/feature-controls.md), not in Notification Settings.
 
 Each summary uses 1 AI credit. You can see how many credits summaries have used on the AI Credit Usage page, listed as Notification Summary.
 

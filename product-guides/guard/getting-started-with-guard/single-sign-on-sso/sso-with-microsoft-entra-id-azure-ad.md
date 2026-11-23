@@ -56,7 +56,7 @@ Guard admins must receive the role claim `TENANT-MANAGER` from Entra. A role ass
    * Display name: `TENANT-MANAGER`
    * Allowed member types: Users/Groups
    * Value: `TENANT-MANAGER`
-   * Description: Guard tenant administrator
+   * Description: Guard Admin
    * Enable the role
 4. Save.
 

@@ -19,6 +19,7 @@
   * [Automatic Cleanup of Deactivated Picklist Values](fundamentals/faq/automatic-cleanup-of-deactivated-picklist-values.md)
   * [Azure DevOps Global PAT Retirement FAQs](fundamentals/faq/azure-devops-global-pat-retirement-faqs.md)
 * [Announcements](fundamentals/announcements/README.md)
+  * [AutoRABIT Response: Java4Shell Vulnerability Advisory](fundamentals/announcements/autorabit-response-java4shell-vulnerability-advisory.md)
   * [AutoRABIT Response: PHP Vulnerability Advisory - Combined Product Assessment](fundamentals/announcements/autorabit-response-php-vulnerability-advisory-combined-product-assessment.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT Guard Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-guard-connections.md)
   * [Upcoming Salesforce Authentication Changes for New AutoRABIT CodeScan Salesforce Connections](fundamentals/announcements/upcoming-salesforce-authentication-changes-for-new-autorabit-codescan-salesforce-connections.md)

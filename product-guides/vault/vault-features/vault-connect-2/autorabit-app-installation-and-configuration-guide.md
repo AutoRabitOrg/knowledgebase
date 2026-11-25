@@ -1,6 +1,5 @@
 ---
 description: Salesforce Package Installation • OAuth Setup • Connector Registration • Vault
-hidden: true
 ---
 
 # AutoRABIT App Installation and Configuration Guide

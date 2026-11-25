@@ -2,7 +2,7 @@
 
 **IZ User** is IZ Suite's own sign-in: people sign in with their email address and a password. It is on by default, next to any single sign-on option you add. People get an IZ User account when you invite them in [Users](../../administration/organizations/users.md).
 
-<figure><img src="../../../../../.gitbook/assets/.gitbookassetssign-in-form (1).png" alt="Sign in to IZ Suite form with Email and Password fields"><figcaption><p>The IZ User sign-in form</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-sign-in-form.png" alt="Sign in to IZ Suite form with Email and Password fields"><figcaption><p>The IZ User sign-in form</p></figcaption></figure>
 
 On the sign-in page, people click **IZ User** under **Sign in with**, enter their **Email** and **Password**, and click **Sign in**. **Forgot password?** sends a reset link. See [Sign In](../../getting-started/sign-in.md).
 

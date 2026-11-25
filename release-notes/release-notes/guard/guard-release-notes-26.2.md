@@ -8,13 +8,13 @@
 
 **Release date:** 18 November 2026
 
-### New features
+### New Features
 
 #### API Security 2.0
 
 API Security 2.0 replaces Guard’s existing API Security module with updated checks for Salesforce External Client Apps and connected apps. It helps administrators identify risky configurations across app access, credentials, network restrictions and session security. Connected apps also include checks for unverified apps and missing contact email addresses, along with migration guidance.
 
-Guard does not migrate or replace connected apps.&#x20;
+Guard does not migrate or replace connected apps.
 
 To run all available checks, the integration user needs Metadata API access. Guard uses that access to assess configurations; it does not change app settings.
 
@@ -38,7 +38,7 @@ Admins can control access to features such as Automated Data Classification, Ask
 
 #### Find and review permissions more efficiently
 
-Permission Explorer now loads user lists and Object Access results more quickly, including in large orgs.&#x20;
+Permission Explorer now loads user lists and Object Access results more quickly, including in large orgs.
 
 Matching Users now shows counts for Explore User Permissions, Object Access and Agentforce, with counts reflecting the selected filters. For very large results, Guard may show an upper bound rather than an exact count. Results stay visible as more users load, and permission details are fetched when you select a user.
 
@@ -56,7 +56,7 @@ Large Permission Explorer exports are processed more efficiently and can recover
 
 #### Monitor user activity in large orgs
 
-Nightly User Activity Monitoring snapshots now process more efficiently.&#x20;
+Nightly User Activity Monitoring snapshots now process more efficiently.
 
 The Not frozen and Not password locked filters continue to include guest and system users that do not have a UserLogin record.
 
@@ -70,9 +70,9 @@ Digital Experience Assessment now labels the relevant sites “Risk accepted sit
 
 #### Review generated Test Class for Transaction Security Policies
 
-Generated Transaction Security Policy Apex now includes the test class alongside the policy class. Please review carefully as the generated Apex may not meet every org’s Salesforce code coverage requirements.
+Generated Transaction Security Policy Apex now includes the test class alongside the policy class. Please review carefully, as the generated Apex may not meet every org’s Salesforce code coverage requirements.
 
-### Bug fixes
+### Bug Fixes
 
 #### See more consistent Risk Assessment and Public File Exposure results
 
@@ -102,7 +102,9 @@ Permission Explorer searches now support both permission and permission-set API 
 
 #### Recover from Salesforce connection issues more clearly
 
-Guard now gives clearer guidance when Salesforce access is revoked or rejected, while treating outages and throttling as temporary conditions. Connections recover more reliably after temporary failures.&#x20;
+Guard now gives clearer guidance when Salesforce access is revoked or rejected, while treating outages and throttling as temporary conditions. Connections recover more reliably after temporary failures.
+
+***
 
 ## Guard 26.2.6
 

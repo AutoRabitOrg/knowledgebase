@@ -62,7 +62,7 @@ Select a rule to see its intent, target, status, owner, due date, affected appli
 | **Assign to**                        | A person or a team who owns the work; not used for an update notice. A person needs Dependency Insights, lifecycle and application access for every affected application; with a team, any member works the items. **Required.** |
 | **Due date**                         | When the work is due.                                                                                                                                                                                                            |
 
-<figure><img src="../../../../../../.gitbook/assets/v2-di-maint-create (1).png" alt="Create an update or maintenance rule form"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/v2-di-maint-create.png" alt="Create an update or maintenance rule form"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 To tell teams to stop using a component, create a deprecation instead. See [Asset Exposure](../asset-exposure.md).

@@ -8,7 +8,7 @@ Open it from **Operations** → **Quality Control** → **Quality rules** in the
 You need a role that can view quality rules. Creating, editing, cloning, deleting and activating rules in profiles need the matching quality rule permissions.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/v2-qc-rules (1).png" alt="Quality rules tab with filters and the rule table"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-qc-rules.png" alt="Quality rules tab with filters and the rule table"><figcaption></figcaption></figure>
 
 ## Filters
 

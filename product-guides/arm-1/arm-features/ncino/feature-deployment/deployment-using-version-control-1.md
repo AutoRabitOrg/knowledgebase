@@ -44,7 +44,7 @@ This article describes the process of deploying nCino data via Version Control.
 
     1.  The user opens the **Feature** dropdown and clicks the **Sort** icon beside **Search**.
 
-        <figure><img src="../../../../../.gitbook/assets/1 (34).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/1 (33).png" alt=""><figcaption></figcaption></figure>
     2.  The user selects the required sort order:
 
         | Option                 | Description                                   |
@@ -55,7 +55,7 @@ This article describes the process of deploying nCino data via Version Control.
         | **Alphabetical - Z-A** | Sorts names in descending alphabetical order. |
     3.  After selecting a feature, the user opens the **Version** dropdown and uses its **Sort** icon to arrange the available versions.
 
-        <figure><img src="../../../../../.gitbook/assets/2 (34).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../../../../.gitbook/assets/2 (33).png" alt=""><figcaption></figcaption></figure>
 
     A checkmark indicates the selected sort option.
 7. **Destination:** Select the destinations onto which the data can be deployed to.

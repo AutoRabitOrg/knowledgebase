@@ -236,10 +236,10 @@ DataLoader Pro plays a crucial role in migrating data from a source sandbox to a
     <figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 21. The required objects are selected using their checkboxes. **Select all** selects every listed object, and **Search object name** locates a specific object.
 
-    <figure><img src="../../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
-22. Clicking **Save** applies the selection.&#x20;
+    <figure><img src="../../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+22. Clicking **Save** applies the selection.
 23. The **Skip records** column displays an icon for each selected object, with the tooltip **“Skip records enabled.”**
 
     <figure><img src="../../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>

@@ -90,7 +90,7 @@ Every fix you apply is logged in the project, in `target/izanalyzer/autofix-log.
 
 The plugin publishes a summary of each project you analyze to IZ Suite: the project's name and full path on your computer, and the issue counts by severity and type. Your code is not sent. Results are published on a regular basis while Anypoint Studio is open. Open **Administration** → **My Account** → **IDE projects**, click **Scanned projects** on your key, and click **Review results** on a project. The first analysis of a project uses one project of your key's allowance; **Token Usage** in the plugin's preferences shows how many you have used.
 
-<figure><img src="../../../../.gitbook/assets/v2-ide-scanned-projects (1).png" alt="Projects scanned with an IDE key, with each project path, its last published scan and the Review results action"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-ide-scanned-projects.png" alt="Projects scanned with an IDE key, with each project path, its last published scan and the Review results action"><figcaption></figcaption></figure>
 
 ## Next Steps
 

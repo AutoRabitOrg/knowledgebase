@@ -91,13 +91,13 @@ Clicking **SAVE** applies the selection. The notification **“Skip Records Save
 
 <figure><img src="../../../../.gitbook/assets/4 (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/6 (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/6 (8).png" alt=""><figcaption></figcaption></figure>
 
 The **Skip Records** column displays an icon for each selected object. Hovering over the icon displays **“Skip records enabled.”** The information icon beside the column heading explains that required records are still included in migration.
 
-<figure><img src="../../../../.gitbook/assets/5 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/5 (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/6 (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/6 (8).png" alt=""><figcaption></figcaption></figure>
 
 To disable skipping, **SKIP RECORDS** is reopened and the relevant checkboxes are cleared. Clearing **Select all** removes every selection. Clicking **SAVE** applies the changes, and the affected rows display a dash in the **Skip Records** column.
 

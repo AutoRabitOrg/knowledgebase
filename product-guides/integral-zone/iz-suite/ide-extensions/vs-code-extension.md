@@ -13,7 +13,7 @@ The IZ extension for Visual Studio Code analyzes your projects while you code, w
 | **IDE key**            | Assigned to you by an administrator. Copy it from **Administration** → **My Account** → **IDE projects**. See [IDE Projects](../administration/my-account/ide-projects.md). |
 | **Network access**     | From your computer to your IZ Suite address and to the IZ key service, `https://license.integralzone.com`.                                                                  |
 
-<figure><img src="../../../../.gitbook/assets/v2-account-ide-projects (1).png" alt="Your IDE keys in My Account, where you copy the key for the extension"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/v2-account-ide-projects.png" alt="Your IDE keys in My Account, where you copy the key for the extension"><figcaption></figcaption></figure>
 
 ### How the Extension Finds Java
 

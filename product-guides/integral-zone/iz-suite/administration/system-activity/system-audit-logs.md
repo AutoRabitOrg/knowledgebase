@@ -4,7 +4,7 @@
 
 Open it from **Administration** → **System Activity** → **System Audit Logs** in the sidebar.
 
-<figure><img src="../../../../../.gitbook/assets/v2-audit-system (1).png" alt="System Audit Logs with event counts, filters, time window and the events-over-time chart"><figcaption><p>System Audit Logs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-audit-system.png" alt="System Audit Logs with event counts, filters, time window and the events-over-time chart"><figcaption><p>System Audit Logs</p></figcaption></figure>
 
 {% hint style="warning" %}
 You need a role that can view the system audit log. To see only your own activity, use **My Activity** under **My Account**.

@@ -4,7 +4,7 @@ Global Settings holds the configuration that applies to the whole workspace: sha
 
 Open it from **Administration** → **Global Settings** in the sidebar. Each screen is a tab along the top of the page.
 
-<figure><img src="../../../../../.gitbook/assets/v2-gs-settings (1).png" alt="Global Settings with the Settings tab open"><figcaption><p>Global Settings tabs</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-gs-settings.png" alt="Global Settings with the Settings tab open"><figcaption><p>Global Settings tabs</p></figcaption></figure>
 
 {% hint style="warning" %}
 You see only the tabs your role allows. Most tabs need a role that can view global settings; **Saved sign-ins** also opens for roles that manage monitors, and **Agents** and **Connected systems** need a role that can view agents or systems.

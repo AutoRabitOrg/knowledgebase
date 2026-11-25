@@ -32,6 +32,8 @@ Improved rich text image backup processing to avoid repeated downloads of the sa
 
 Improved result reporting for ContentVersion, ContentDocument, and ContentDocumentLink archive workflows. Archive counts now use each object's results, and failed file records retain the applicable Salesforce error reason. ContentDocumentLink archive results are available for download, with a clear message when a result file is unavailable. Related restore processing avoids double-counting ContentVersion records recovered from the Salesforce recycle bin. These corrections cover linked file-processing issues whose final release validation remains pending.
 
+***
+
 ## AutoRABIT Vault 26.2.9
 
 **Release date:** 18 November 2026
@@ -87,6 +89,8 @@ Updated table layouts across AutoRABIT Vault. The changes address spacing, colum
 #### **Consistent Salesforce Org Selection Across Modules**
 
 Improved retention of the selected Salesforce org across applicable modules. Previously, navigation could leave different modules showing inconsistent org selections. The application now maintains the selected org state across modules that share the same context. This helps keep the displayed data aligned with the org shown as selected. The change applies where the same Salesforce org is supported by the destination module.
+
+***
 
 ## AutoRABIT Vault 26.2.8
 

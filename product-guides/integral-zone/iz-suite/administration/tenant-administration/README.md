@@ -8,7 +8,7 @@ Open it from **Administration** → **Tenant Administration** in the sidebar.
 Available only to platform administrators in the platform tenant.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/v2-ta-tenants (1).png" alt="Tenants screen with the Onboard Tenant, Global settings and Clear tenant cache buttons above the tenant directory"><figcaption><p>Tenant Administration</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-ta-tenants.png" alt="Tenants screen with the Onboard Tenant, Global settings and Clear tenant cache buttons above the tenant directory"><figcaption><p>Tenant Administration</p></figcaption></figure>
 
 ## What a Tenant Is
 

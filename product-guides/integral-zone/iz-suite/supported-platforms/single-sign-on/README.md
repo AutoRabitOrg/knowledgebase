@@ -27,7 +27,7 @@ Two-factor authentication for single sign-on is handled by the identity provider
 
 All options are set up in one Setup drawer: open **Administration** → **Setup** and click **Set up** (or **Review**) on **Let people sign in with single sign-on**. Each provider has its own card and saves on its own.
 
-<figure><img src="../../../../../.gitbook/assets/v2-plat-sso (1).png" alt="Let people sign in with single sign-on drawer with the MuleSoft Anypoint and Microsoft Azure sign-in cards, redirect URLs, switches and client details"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/v2-plat-sso.png" alt="Let people sign in with single sign-on drawer with the MuleSoft Anypoint and Microsoft Azure sign-in cards, redirect URLs, switches and client details"><figcaption></figcaption></figure>
 
 ## Create People on First Sign-In
 

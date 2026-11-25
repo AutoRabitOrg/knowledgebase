@@ -106,7 +106,6 @@
     * [nCino Release Notes 25.4](release-notes/release-notes/ncino-release-notes/ncino-release-notes-25.4.md)
     * [nCino Release Notes 25.3](release-notes/release-notes/ncino-release-notes/ncino-release-notes-25.3.md)
     * [nCino Release Notes 25.2](release-notes/release-notes/ncino-release-notes/release-notes-25.2.md)
-    * [Release Notes 25.2](release-notes/release-notes/ncino-release-notes/release-notes-25.2-1.md)
     * [nCino Release Notes 25.1](release-notes/release-notes/ncino-release-notes/release-notes-25.1.md)
     * [nCino Release Notes 24.4](release-notes/release-notes/ncino-release-notes/release-notes-24.4.md)
     * [nCino Release Notes 24.3](release-notes/release-notes/ncino-release-notes/release-notes-24.3.md)

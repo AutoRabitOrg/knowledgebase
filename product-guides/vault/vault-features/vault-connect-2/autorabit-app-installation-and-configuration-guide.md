@@ -38,7 +38,7 @@ ENVIRONMENT CHOICE The AppExchange flow is different for Production/Developer or
 
 Open the Salesforce marketplace in a browser. Sign in if prompted.
 
-<figure><img src="/broken/files/jImgXE3LB00ayfeW7cZ5" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
 
 <p align="center"><em>Salesforce AppExchange / AgentExchange landing page.</em></p>
 
@@ -409,7 +409,7 @@ Click “Authorize”. Salesforce opens the familiar “Allow Access?” consent
 <p align="center"> <em>Salesforce “Allow Access?” authorization screen.</em></p>
 
 {% hint style="info" %}
-<mark style="color:$warning;">**INTEGRATION USER REQUIREMENT**</mark> <mark style="color:$warning;background-color:orange;">I</mark><mark style="color:$warning;background-color:orange;">f the currently signed-in Salesforce user is not the intended integration user, use the “Not you?” option on the authorization screen and sign in as the correct user. The user completing this authorization must have the “AutoRABIT Setup User” permission set.</mark>
+<mark style="color:$warning;">**INTEGRATION USER REQUIREMENT**</mark> <mark style="color:$warning;background-color:orange;">If the currently signed-in Salesforce user is not the intended integration user, use the “Not you?” option on the authorization screen and sign in as the correct user. The user completing this authorization must have the “AutoRABIT Setup User” permission set.</mark>
 {% endhint %}
 
 6\. Confirm the connection

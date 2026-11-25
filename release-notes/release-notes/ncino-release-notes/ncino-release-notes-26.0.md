@@ -4,7 +4,7 @@
 
 ## nCino Release - 26.4.8
 
-**Release date:** 22 November 2028
+**Release date:** 22 November 2026
 
 #### Clear Reporting for Files Exceeding the Supported Size Limit <a href="#id-1.-clear-reporting-for-files-exceeding-the-supported-size-limit" id="id-1.-clear-reporting-for-files-exceeding-the-supported-size-limit"></a>
 

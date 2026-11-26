@@ -43,6 +43,9 @@
   * [SSO with Federation ID](fundamentals/whats-new/sso-with-federation-id.md)
   * [Unified CodeScan Projects](fundamentals/whats-new/unified-codescan-projects.md)
   * [Required Field Validation](fundamentals/whats-new/required-field-validation.md)
+  * [Ignore Developer Files](fundamentals/whats-new/ignore-developer-files.md)
+  * [Clone Release Labels](fundamentals/whats-new/clone-release-labels.md)
+  * [Release Label Deployment APIs](fundamentals/whats-new/release-label-deployment-apis.md)
 
 ## Release Notes
 

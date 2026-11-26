@@ -21,19 +21,7 @@ Check that you have these before you start Part 1.
 * A login to the AutoRABIT Vault application, so you can generate the API Token
 * The name of the Salesforce user who will administer Vault Connect
 
-### Part 1: Install the AuthHub package
-
-Vault Connect depends on AuthHub, so install and configure AuthHub before anything else.
-
-1\. Open the **AuthHub Package Installation Guide:** [https://autora-my.sharepoint.com//g/personal/harshit%5Fkumar%5Fautorabit%5Fcom/IQDc4XFjjKq2RpASpz8IHFaqAbhw1GSbpMEaV%5FSLzaliiHA?e=uSbEmo](https://autora-my.sharepoint.com/:b:/g/personal/harshit_kumar_autorabit_com/IQDc4XFjjKq2RpASpz8IHFaqAbhw1GSbpMEaV_SLzaliiHA?e=uSbEmo) Restricted content
-
-2\. Complete every step in that guide, including the configuration steps after installation.
-
-3\. Return to this page and continue with Part 2.
-
-**Note:** Don't start Part 2 until AuthHub is fully configured. The Vault Connect steps assume the AuthHub package is already in place.
-
-## Part 2: Set up Vault Connect
+## Part 1: Set up Vault Connect
 
 With AuthHub installed, give an admin user access to Vault Connect, connect the org with an API token, and choose the objects to protect.
 
@@ -49,7 +37,7 @@ The **Vault Connect Admin** permission set lets the user see the Vault Connect a
 
 <figure><img src="../../../../.gitbook/assets/image (5548).png" alt=""><figcaption></figcaption></figure>
 
-Permission Set Assignments on the Salesforce user record
+&#x20;                                    Permission Set Assignments on the Salesforce user record
 
 4\. Under **Available Permission Sets**, select **Vault Connect Admin** and click **Add**.
 
@@ -57,7 +45,7 @@ Permission Set Assignments on the Salesforce user record
 
 <figure><img src="../../../../.gitbook/assets/image (5549).png" alt=""><figcaption></figcaption></figure>
 
-Vault Connect Admin in Available Permission Sets
+&#x20;                                           Vault Connect Admin in Available Permission Sets
 
 **Access levels:** Vault Connect has two permission sets. Assign **Vault Connect Admin** only to the people who set up and maintain the connection.
 
@@ -76,7 +64,7 @@ Vault Connect Admin in Available Permission Sets
 
 <figure><img src="../../../../.gitbook/assets/image (5552).png" alt=""><figcaption></figcaption></figure>
 
-Vault Connect in the App Launcher
+&#x20;                                                        Vault Connect in the App Launcher
 
 ### Step 3: Get the API Token from the Vault Application
 
@@ -90,15 +78,15 @@ Vault Connect in the App Launcher
 
 <figure><img src="../../../../.gitbook/assets/image (5553).png" alt=""><figcaption></figcaption></figure>
 
-Vault Connect navigation in AutoRABIT Vault
+&#x20;                                                        Vault Connect navigation in AutoRABIT Vault
 
 <figure><img src="../../../../.gitbook/assets/image (5554).png" alt=""><figcaption></figcaption></figure>
 
-Generate Connection Token
+&#x20;                                                        Generate Connection Token
 
 <figure><img src="../../../../.gitbook/assets/image (5555).png" alt=""><figcaption></figcaption></figure>
 
-Token Generated Successfully
+&#x20;                                                        Token Generated Successfully
 
 **Important:** Treat the API token like a password. Don't share it over email or chat, and don't store it in plain text. Each token works for one Salesforce org only.
 
@@ -108,7 +96,7 @@ Token Generated Successfully
 
 <figure><img src="../../../../.gitbook/assets/image (5556).png" alt=""><figcaption></figcaption></figure>
 
-Vault Connect welcome screen
+&#x20;                                                        Vault Connect welcome screen
 
 2\. On the **Connect AutoRABIT Vault** screen, paste the API Token you copied from the Vault Application into the **API Token** field.
 
@@ -116,13 +104,13 @@ Vault Connect welcome screen
 
 <figure><img src="../../../../.gitbook/assets/image (5557).png" alt=""><figcaption></figcaption></figure>
 
-Connect AutoRABIT Vault
+&#x20;                                                        Connect AutoRABIT Vault
 
 4\. Wait for the message **Connected securely to AutoRABIT Vault**.
 
 <figure><img src="../../../../.gitbook/assets/image (5558).png" alt=""><figcaption></figcaption></figure>
 
-Connected securely to AutoRABIT Vault
+&#x20;                                                    Connected securely to AutoRABIT Vault
 
 ### Step 5: Configure objects
 
@@ -132,23 +120,23 @@ Connected securely to AutoRABIT Vault
 
 <figure><img src="../../../../.gitbook/assets/image (5559).png" alt=""><figcaption></figcaption></figure>
 
-Object Discovery and Configure Fields
+&#x20;                                                     Object Discovery and Configure Fields
 
 3\. Select the fields from the **Available Fields** tab and click **Save Changes**.
 
 <figure><img src="../../../../.gitbook/assets/image (5560).png" alt=""><figcaption></figcaption></figure>
 
-Available Fields and Save Changes
+&#x20;                                                        Available Fields and Save Changes
 
 4\. After the configuration done for the desired objects click **Go to Configured Objects** to see the configured object list.
 
 <figure><img src="../../../../.gitbook/assets/image (5561).png" alt=""><figcaption></figcaption></figure>
 
-Go to Configured Objects
+&#x20;                                                        Go to Configured Objects
 
 <figure><img src="../../../../.gitbook/assets/image (5562).png" alt=""><figcaption></figcaption></figure>
 
-Configured objects list
+&#x20;                                                        Configured objects list
 
 ### Troubleshooting
 

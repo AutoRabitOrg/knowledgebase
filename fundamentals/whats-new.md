@@ -1,2 +1,2 @@
-# 😀 Whats New
+# Whats New
 

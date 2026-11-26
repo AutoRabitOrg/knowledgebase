@@ -38,7 +38,7 @@
   * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
   * [Azure DevOps Global Personal Access Token Retirement on December 1, 2026](fundamentals/announcements/azure-devops-global-personal-access-token-retirement-on-december-1-2026.md)
   * [Salesforce Username and Password Authentication Retirement – Impact on ARM](fundamentals/announcements/salesforce-username-and-password-authentication-retirement-impact-on-arm.md)
-* [😀 Whats New](fundamentals/whats-new.md)
+* [Whats New](fundamentals/whats-new.md)
 
 ## Release Notes
 

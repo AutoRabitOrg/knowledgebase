@@ -2,6 +2,22 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive nCino release updates!" listId="a085e26e7e" %}
 
+## nCino Release - 26.4.9
+
+**Release date:** 29 November 2026
+
+#### Preserve nCino RBC Lookup Relationships During Deployment
+
+nCino Record-Based Configuration deployments now preserve lookup relationships when the referenced parent record already exists in the destination org but is not included in the deployment dataset. The enhancement applies to deployments sourced from Version Control and Salesforce orgs, reducing unintended blank lookup values and post-deployment corrections.
+
+#### Reliable Feature Deployments for Auto-Number Name Fields
+
+Feature deployments no longer use the Salesforce `Name` field as the default lookup field when it is configured as an auto-number field. This prevents deployment failures for custom objects without a configured default lookup key.
+
+#### Updated External ID Mappings During Redeployment
+
+Redeployments now use the newly selected External ID mappings instead of retaining mappings from the previous deployment. Feature Deployments and CI Jobs also support ID-to-ID mappings without encountering the related SOQL query error.
+
 ## nCino Release - 26.4.8
 
 **Release date:** 22 November 2026

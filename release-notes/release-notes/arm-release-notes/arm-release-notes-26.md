@@ -22,6 +22,8 @@ ARM also provides improved error messages to help users identify authentication 
 
 [Learn more about Salesforce SOAP API Login Retirement](https://help.salesforce.com/s/articleView?id=005132110\&type=1)
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/salesforce-authentication-changes" %}
+
 #### Enhanced EZ-Merge Pull Requests with Iterative Changes and Automatic Revalidation <a href="#id-2.-enhanced-ez-merge-pull-requests-with-iterative-changes-and-automatic-revalidation" id="id-2.-enhanced-ez-merge-pull-requests-with-iterative-changes-and-automatic-revalidation"></a>
 
 Enhanced the **EZ-Merge** workflow to support iterative changes and automatic revalidation of pull requests before completing a merge.
@@ -34,6 +36,8 @@ Additionally, the **Back Sync Changes to Source Branch** option allows users to 
 
 This enhancement improves flexibility, collaboration, and validation accuracy throughout the merge process.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/ez-merge-pr-revalidation" %}
+
 #### Enhanced Deployment Notes with Approver Visibility and Clickable Links <a href="#id-3.-enhanced-deployment-notes-with-approver-visibility-and-clickable-links" id="id-3.-enhanced-deployment-notes-with-approver-visibility-and-clickable-links"></a>
 
 Enhanced **Deployment Notes** to provide better visibility and accessibility during the deployment approval process.
@@ -44,6 +48,8 @@ URLs included in deployment notes are now clickable and open in a new browser ta
 
 This enhancement provides approvers with better access to relevant deployment information, supporting informed approval decisions.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/enhanced-deployment-notes" %}
+
 #### Update Existing Commit Templates from EZ-Commit <a href="#id-4.-update-existing-commit-templates-from-ez-commit" id="id-4.-update-existing-commit-templates-from-ez-commit"></a>
 
 Enhanced **EZ-Commit** to allow users to update existing Commit Templates with newly selected metadata components during the commit process.
@@ -53,6 +59,8 @@ When a commit is initiated using an existing Commit Template, users can choose t
 ARM ensures that newly selected components are added without creating duplicate entries while respecting existing user permissions.
 
 This enhancement simplifies Commit Template management and eliminates the need to manually update templates when additional metadata components are introduced.
+
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/update-commit-templates" %}
 
 #### Updated Default Behavior for Ignore Developer Files <a href="#id-5.-updated-default-behavior-for-ignore-developer-files" id="id-5.-updated-default-behavior-for-ignore-developer-files"></a>
 

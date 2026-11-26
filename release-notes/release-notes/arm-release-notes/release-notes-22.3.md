@@ -1589,7 +1589,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 ![Dev hub.gif](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Dev%20hub.gif)
 
-[**Read more →**](https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/product-guides/arm/arm-features/salesforce-dx/registering-a-devhub)
+[**Read more →**](/broken/pages/r65RZjRaX2KlWxwW7k69)
 
 #### Step-based rollback
 

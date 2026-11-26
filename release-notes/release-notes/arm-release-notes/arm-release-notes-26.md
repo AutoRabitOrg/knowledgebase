@@ -4,6 +4,129 @@
 
 {% @mailchimp/mailchimpSubscribe cta="Sign up to receive updated release notes!" listId="a085e26e7e" %}
 
+## ARM 26.4.9
+
+**Release date:** 29 November 2026
+
+#### Enhanced Salesforce Authentication in Preparation for SOAP API Login Retirement <a href="#id-1.-enhanced-salesforce-authentication-in-preparation-for-soap-api-login-retirement" id="id-1.-enhanced-salesforce-authentication-in-preparation-for-soap-api-login-retirement"></a>
+
+Enhanced Salesforce authentication in ARM in preparation for Salesforce's upcoming retirement of SOAP API username and password authentication.
+
+The **Standard authentication** option is no longer available for new Salesforce Org and Dev Hub registrations across both Classic and New UI, including API-based registrations. Users are encouraged to register Salesforce Orgs using **OAuth authentication through External Client Applications (ECA)**.
+
+Existing Salesforce Orgs registered using Standard authentication can continue to operate, subject to Salesforce's authentication requirements. Users can update their existing credentials or migrate to OAuth authentication.
+
+ARM also provides improved error messages to help users identify authentication failures related to Salesforce permissions, security tokens, and SOAP API login restrictions.
+
+**Note:** Customers using Standard authentication are encouraged to migrate to OAuth before Salesforce retires SOAP API login in Summer '27.
+
+[Learn more about Salesforce SOAP API Login Retirement](https://help.salesforce.com/s/articleView?id=005132110\&type=1)
+
+#### Enhanced EZ-Merge Pull Requests with Iterative Changes and Automatic Revalidation <a href="#id-2.-enhanced-ez-merge-pull-requests-with-iterative-changes-and-automatic-revalidation" id="id-2.-enhanced-ez-merge-pull-requests-with-iterative-changes-and-automatic-revalidation"></a>
+
+Enhanced the **EZ-Merge** workflow to support iterative changes and automatic revalidation of pull requests before completing a merge.
+
+Users can enable the **Create Pull Request Before Merge Validations** option under Merge Settings to create a pull request before executing deployment validations and static code analysis.
+
+Additional commits made to the temporary branch are automatically detected, triggering the configured validations again while retaining the existing pull request and previous validation results.
+
+Additionally, the **Back Sync Changes to Source Branch** option allows users to automatically synchronize changes from the temporary branch back to the original source branch.
+
+This enhancement improves flexibility, collaboration, and validation accuracy throughout the merge process.
+
+#### Enhanced Deployment Notes with Approver Visibility and Clickable Links <a href="#id-3.-enhanced-deployment-notes-with-approver-visibility-and-clickable-links" id="id-3.-enhanced-deployment-notes-with-approver-visibility-and-clickable-links"></a>
+
+Enhanced **Deployment Notes** to provide better visibility and accessibility during the deployment approval process.
+
+Approvers can now review deployment notes through a dedicated, read-only **Deployment Notes** tab before approving or rejecting a deployment.
+
+URLs included in deployment notes are now clickable and open in a new browser tab from both the approval screen and Deployment History. Support for special characters in deployment notes has also been improved.
+
+This enhancement provides approvers with better access to relevant deployment information, supporting informed approval decisions.
+
+#### Update Existing Commit Templates from EZ-Commit <a href="#id-4.-update-existing-commit-templates-from-ez-commit" id="id-4.-update-existing-commit-templates-from-ez-commit"></a>
+
+Enhanced **EZ-Commit** to allow users to update existing Commit Templates with newly selected metadata components during the commit process.
+
+When a commit is initiated using an existing Commit Template, users can choose to either update the existing template or create a new template.
+
+ARM ensures that newly selected components are added without creating duplicate entries while respecting existing user permissions.
+
+This enhancement simplifies Commit Template management and eliminates the need to manually update templates when additional metadata components are introduced.
+
+#### Updated Default Behavior for Ignore Developer Files <a href="#id-5.-updated-default-behavior-for-ignore-developer-files" id="id-5.-updated-default-behavior-for-ignore-developer-files"></a>
+
+Updated the **Ignore Developer Files** option to be **disabled by default** across the following workflows in both Classic and New UI:
+
+* Deployment Settings
+* CI Jobs
+* EZ-Commit
+* EZ-Merge
+
+Users can manually enable this option to exclude developer files listed in the repository's `.forceignore` file based on their requirements.
+
+When disabled, ARM retains its existing package generation behavior, ensuring that existing customer workflows remain unaffected unless the option is explicitly enabled.
+
+All other functionality of the Ignore Developer Files option remains unchanged.
+
+#### Fixed Incorrect CI Job Names During Parallel Executions <a href="#id-6.-fixed-incorrect-ci-job-names-during-parallel-executions" id="id-6.-fixed-incorrect-ci-job-names-during-parallel-executions"></a>
+
+Resolved an issue where the **CI Job History** screen incorrectly displayed the cloned CI Job name for both the original and cloned jobs when executed in parallel.
+
+ARM now correctly displays the respective CI Job names throughout the execution lifecycle, including **In Progress** and **Completed** states.
+
+This fix ensures accurate job identification and improves visibility when monitoring multiple CI Jobs running simultaneously.
+
+#### Fixed Salesforce Org Mapping Save and Deletion Issues <a href="#id-7.-fixed-salesforce-org-mapping-save-and-deletion-issues" id="id-7.-fixed-salesforce-org-mapping-save-and-deletion-issues"></a>
+
+Resolved multiple issues in **Salesforce Org Mappings** across both Classic and New UI, where deleted mappings reappeared, valid existing mappings were unintentionally removed, and saving mapping configurations resulted in application errors.
+
+ARM now correctly preserves existing mappings, prevents duplicate entries, and ensures that only intentionally removed manual mappings are deleted.
+
+Additionally, mappings managed through **My Profile** are now read-only within Salesforce Org Mappings and are automatically updated based on the user's profile configuration and access permissions when the mappings are saved.
+
+This fix improves mapping accuracy, prevents unintended data loss, and ensures reliable Salesforce Org Mapping management.
+
+#### Fixed Incorrect Revision Selection in GitHub Webhook-Triggered CI Jobs <a href="#id-8.-fixed-incorrect-revision-selection-in-github-webhook-triggered-ci-jobs" id="id-8.-fixed-incorrect-revision-selection-in-github-webhook-triggered-ci-jobs"></a>
+
+Resolved an issue where **GitHub webhook-triggered CI Jobs** incorrectly selected the **From Revision** when the **Process Commit Revision Received via Hook Only** option was enabled, causing previously deployed metadata changes to be included in subsequent builds.
+
+ARM now correctly determines the From Revision using the GitHub webhook payload for both direct commits and pull request merges.
+
+This fix ensures accurate revision comparison, prevents unnecessary redeployment of previously processed changes, and improves the reliability of incremental CI deployments.
+
+#### Fixed Blank Page Issue When Switching to the New UI <a href="#id-9.-fixed-blank-page-issue-when-switching-to-the-new-ui" id="id-9.-fixed-blank-page-issue-when-switching-to-the-new-ui"></a>
+
+Resolved an issue where users encountered a blank page after logging in or switching from the Classic UI to the New UI when their organization's network firewall blocked FullStory requests.
+
+ARM now handles blocked or redirected FullStory requests without interrupting the application loading process.
+
+This fix ensures a seamless transition to the New UI and allows users to access ARM without being affected by FullStory-related network restrictions.
+
+#### Fixed Custom Object Plural Label Change Detection in Deployments <a href="#id-10.-fixed-custom-object-plural-label-change-detection-in-deployments" id="id-10.-fixed-custom-object-plural-label-change-detection-in-deployments"></a>
+
+Resolved an issue where changes made exclusively to the **Plural Label (**`<pluralLabel>`**)** of a Salesforce custom object were not detected during revision-based deployments, resulting in a **“No metadata found”** error.
+
+ARM now correctly identifies and includes custom object metadata when only the Plural Label has been modified across **Single Revision Deployments, Revision Range Deployments, Commit History Deployments, and CI Jobs**.
+
+This fix ensures accurate metadata change detection and prevents valid custom object updates from being excluded from deployment packages.
+
+#### Improved Error Details for Branching Baseline Failures <a href="#id-11.-improved-error-details-for-branching-baseline-failures" id="id-11.-improved-error-details-for-branching-baseline-failures"></a>
+
+Resolved an issue where **Branching Baseline** execution logs displayed only a generic error message when a Git push was rejected due to repository protection rules or security policies.
+
+ARM now displays detailed error information returned by the Git provider directly in the Branching Baseline execution logs, including the rejection reason, violated repository rules, affected metadata file paths, and relevant remediation links, where available.
+
+This fix helps users quickly identify the root cause of baseline failures and take appropriate corrective actions without relying on backend logs.
+
+#### Fixed Automatic Log Refresh in Deployment History (New UI) <a href="#id-12.-fixed-automatic-log-refresh-in-deployment-history-new-ui" id="id-12.-fixed-automatic-log-refresh-in-deployment-history-new-ui"></a>
+
+Resolved an issue where the **Deployment History** log drawer did not automatically refresh during ongoing deployments, requiring users to manually refresh the logs or reload the page.
+
+ARM now automatically refreshes deployment logs during execution, including validation and Validate-Deploy operations.
+
+This fix improves real-time visibility into deployment progress and eliminates the need for manual log refreshes during ongoing operations.
+
 ## ARM 26.4.8
 
 **Release date:** 22 November 2026

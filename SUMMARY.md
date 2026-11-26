@@ -38,6 +38,7 @@
   * [New CodeScan Rules for LWC Server-Side Rendering (SSR) Support](fundamentals/announcements/new-codescan-rules-for-lwc-server-side-rendering-ssr-support.md)
   * [Azure DevOps Global Personal Access Token Retirement on December 1, 2026](fundamentals/announcements/azure-devops-global-personal-access-token-retirement-on-december-1-2026.md)
   * [Salesforce Username and Password Authentication Retirement – Impact on ARM](fundamentals/announcements/salesforce-username-and-password-authentication-retirement-impact-on-arm.md)
+* [Salesforce SOAP API login(): Authentication Changes and Configuration Guide](fundamentals/salesforce-soap-api-login-authentication-changes-and-configuration-guide.md)
 * [Whats New](fundamentals/whats-new/README.md)
   * [Enhanced Template Execution Logs](fundamentals/whats-new/enhanced-template-execution-logs.md)
   * [SSO with Federation ID](fundamentals/whats-new/sso-with-federation-id.md)

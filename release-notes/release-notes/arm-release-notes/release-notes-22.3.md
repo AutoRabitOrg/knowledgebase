@@ -21,8 +21,6 @@ We understand that this transition may present challenges, and we sincerely apol
 
 Thank you for your understanding and continued support.
 
-
-
 **December 2022 - Version 22.3 - New Features, Enhancements, Improvements and Changelogs**
 
 **Date of release:** _18 December 2022_\
@@ -118,34 +116,34 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM v. 22.3.55)**
 
-| Module                                 | Summary                                                                                    | Fix Version                 | Resolution                       | Cause                           |
-| -------------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------- | -------------------------------- | ------------------------------- |
-| <p> </p><p>Version Control</p><p> </p> | Merges are not being fetched when trying to create a release label for Vlocity components. | <p> </p><p>22.3</p><p> </p> | <p> </p><p>Code Fix </p><p> </p> | <p> </p><p>Use Case</p><p> </p> |
-| Version Control                        | Unable to Commit the Action Overrides in Service Appointment Object                        | 22.3                        | Code Fix                         | Use Case                        |
+| Module          | Summary                                                                                    | Fix Version | Resolution | Cause    |
+| --------------- | ------------------------------------------------------------------------------------------ | ----------- | ---------- | -------- |
+| Version Control | Merges are not being fetched when trying to create a release label for Vlocity components. | 22.3        | Code Fix   | Use Case |
+| Version Control | Unable to Commit the Action Overrides in Service Appointment Object                        | 22.3        | Code Fix   | Use Case |
 
 #### 28 January 2024
 
 **(ARM v. 22.3.54)**
 
-<table data-full-width="false"><thead><tr><th width="130">Module</th><th width="247">Summary</th><th width="113">Status</th><th width="77">Fix Version(s)</th><th width="93">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Deployment</p><p> </p></td><td>Vlocity Deployment issue</td><td><p> </p><p>QA Passed</p><p> </p></td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Not fetching merges when trying to create a release label for Vlocity components</td><td>QA Passed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="130">Module</th><th width="247">Summary</th><th width="113">Status</th><th width="77">Fix Version(s)</th><th width="93">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Deployment</td><td>Vlocity Deployment issue</td><td>QA Passed</td><td>22.3, 23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Version Control</td><td>Not fetching merges when trying to create a release label for Vlocity components</td><td>QA Passed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 21 January 2024
 
 **(ARM v. 22.3.53)**
 
-<table data-full-width="true"><thead><tr><th width="151">Module</th><th width="206">Summary</th><th>Status</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Dataloader Pro</p><p> </p></td><td>Issue while deploying promotions from QAT to PRD the rule set criteria is compressing the value while deploying it to RD<br><br></td><td>QA Passed</td><td><p> </p><p>22.3<br> 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td>Use Case</td></tr><tr><td><p> </p><p>Dataloader Pro</p><p> </p></td><td>Issue on Feature Deployments</td><td>QA Passed</td><td><p> </p><p>22.3<br> 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td>Use Case</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="151">Module</th><th width="206">Summary</th><th>Status</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Dataloader Pro</td><td>Issue while deploying promotions from QAT to PRD the rule set criteria is compressing the value while deploying it to RD<br><br></td><td>QA Passed</td><td>22.3<br>23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Dataloader Pro</td><td>Issue on Feature Deployments</td><td>QA Passed</td><td>22.3<br>23.1</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 14 January 2024
 
 **(ARM v. 22.3.52)**
 
-<table data-header-hidden><thead><tr><th width="128">Module</th><th width="313">Summary</th><th width="90">Fix Version(s)</th><th width="111">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>MODULE</td><td>SUMMARY</td><td>FIXVERSION</td><td>RESOLUTION</td><td>CAUSE</td></tr><tr><td> Admin</td><td><p> </p><p>After baselining the branch, it did not pull all metadata for development.</p><p> </p></td><td>22.3</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td> Deployments</td><td>Deployment status failed when deploying Vlocity components</td><td>22.3 23.1</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="128">Module</th><th width="313">Summary</th><th width="90">Fix Version(s)</th><th width="111">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>MODULE</td><td>SUMMARY</td><td>FIXVERSION</td><td>RESOLUTION</td><td>CAUSE</td></tr><tr><td>Admin</td><td>After baselining the branch, it did not pull all metadata for development.</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Deployments</td><td>Deployment status failed when deploying Vlocity components</td><td>22.3 23.1</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 **10 December 2023**
 
 **(ARM 22.3.51)**
 
-<table data-full-width="true"><thead><tr><th width="118">Module</th><th width="263">Summary</th><th width="111" align="center">Version(s)</th><th width="130" align="center">Resolution</th><th align="center">Cause</th></tr></thead><tbody><tr><td> nCino</td><td>User is unable to do nCino Feature Deployments <br>* Requires documentation</td><td align="center"><p> </p><p>23.1, 22.3</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Admin</td><td>Getting ‘null parameters’ error when clicking on save in the user’s section.</td><td align="center"><p> </p><p>23.1, 22.3</p><p> </p></td><td align="center"><p> </p><p>Code Fix</p><p> </p></td><td align="center"><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="118">Module</th><th width="263">Summary</th><th width="111" align="center">Version(s)</th><th width="130" align="center">Resolution</th><th align="center">Cause</th></tr></thead><tbody><tr><td>nCino</td><td>User is unable to do nCino Feature Deployments<br>* Requires documentation</td><td align="center">23.1, 22.3</td><td align="center">Code Fix</td><td align="center">Use Case</td></tr><tr><td>Admin</td><td>Getting ‘null parameters’ error when clicking on save in the user’s section.</td><td align="center">23.1, 22.3</td><td align="center">Code Fix</td><td align="center">Use Case</td></tr></tbody></table>
 
 #### 3 December 2023
 
@@ -164,13 +162,13 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM v. 22.3.49)**
 
-<table data-full-width="true"><thead><tr><th width="120">Module</th><th width="327">Summary</th><th width="140">Fix Version(s)</th><th width="124">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>CI Jobs</p><p> </p></td><td>Post activities, particular job status showing as FAILED in ARM even job execution completed with succeed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td><p> </p><p>Admin</p><p> </p></td><td>Getting empty Configuration under "Configure Default SCA Baseline Branches"</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td><p> </p><p>Admin</p><p> </p></td><td>Able to view empty role under permissions</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="120">Module</th><th width="327">Summary</th><th width="140">Fix Version(s)</th><th width="124">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>CI Jobs</td><td>Post activities, particular job status showing as FAILED in ARM even job execution completed with succeed</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Admin</td><td>Getting empty Configuration under "Configure Default SCA Baseline Branches"</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Admin</td><td>Able to view empty role under permissions</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 19 November 2023
 
 **(ARM v. 22.3.48)**
 
-<table><thead><tr><th width="121">Module</th><th width="283">Summary</th><th width="101">Fix Version</th><th width="105">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td><p> </p><p>Deployments</p><p> </p></td><td>In sub-user, unable to get the branch in Salesforce Org Mappings section in SF Org Management screen if Admin user given only admin module permission.</td><td><p> </p><p>22.3</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>Deployments</p><p> </p></td><td>Deployment tab - Redeploy/Promote issue</td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td>Added Loggers</td><td><p> </p><p>Data</p><p> </p></td></tr><tr><td><p> </p><p>nCino</p><p> </p></td><td>Unable to create Feature Migration Template on Debt Schedule object</td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td><p> </p><p>All Modules</p><p> </p></td><td>Invalid Email ID</td><td>22.3, 23.1</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table><thead><tr><th width="121">Module</th><th width="283">Summary</th><th width="101">Fix Version</th><th width="105">Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>Deployments</td><td>In sub-user, unable to get the branch in Salesforce Org Mappings section in SF Org Management screen if Admin user given only admin module permission.</td><td>22.3</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Deployments</td><td>Deployment tab - Redeploy/Promote issue</td><td>22.3, 23.1</td><td>Added Loggers</td><td>Data</td></tr><tr><td>nCino</td><td>Unable to create Feature Migration Template on Debt Schedule object</td><td>22.3, 23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>All Modules</td><td>Invalid Email ID</td><td>22.3, 23.1</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 15 November 2023
 
@@ -180,13 +178,13 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 **(ARM v. 22.3.47)**
 
-<table><thead><tr><th width="109">Module</th><th width="240">Summary</th><th width="136">Fix Version(s)</th><th width="120">Resolution</th><th width="100">Cause</th></tr></thead><tbody><tr><td>nCino</td><td><p> </p><p>User is unable to create Feature Migration Template on Debt Schedule object.</p><p> </p></td><td><p> </p><p>22.3, 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr></tbody></table>
+<table><thead><tr><th width="109">Module</th><th width="240">Summary</th><th width="136">Fix Version(s)</th><th width="120">Resolution</th><th width="100">Cause</th></tr></thead><tbody><tr><td>nCino</td><td>User is unable to create Feature Migration Template on Debt Schedule object.</td><td>22.3, 23.1</td><td>Code Fix</td><td>Use Case</td></tr></tbody></table>
 
 #### 5 November 2023
 
 **(ARM v. 22.3.46)**
 
-<table data-full-width="true"><thead><tr><th width="145">Module</th><th width="218">Summary</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>All Modules</td><td>New User Creation</td><td>22.3</td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Change Request</p><p> </p></td></tr><tr><td>Environment Provisioning</td><td>View environment provisioning templates</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Enhancement</p><p> </p></td></tr><tr><td>Admin</td><td>Branching baseline is not picking all components from production</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Deployments</td><td>Help with destructive change</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>Version Control</td><td>Merge request is failing due to validation credentials</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Use Case</p><p> </p></td></tr><tr><td>CI Jobs, Deployments</td><td>Issues with a release – related to Feature Flag not automatically set: STANDARD_VALUE_SET_DELTA </td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Data</p><p> </p></td></tr><tr><td>Version Control</td><td>Approval button is not visible after successful merge validation</td><td><p> </p><p>22.3 &#x26; 23.1</p><p> </p></td><td><p> </p><p>Code Fix</p><p> </p></td><td><p> </p><p>Data</p><p> </p></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="145">Module</th><th width="218">Summary</th><th>Fix Version(s)</th><th>Resolution</th><th>Cause</th></tr></thead><tbody><tr><td>All Modules</td><td>New User Creation</td><td>22.3</td><td>Code Fix</td><td>Change Request</td></tr><tr><td>Environment Provisioning</td><td>View environment provisioning templates</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Enhancement</td></tr><tr><td>Admin</td><td>Branching baseline is not picking all components from production</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Deployments</td><td>Help with destructive change</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>Version Control</td><td>Merge request is failing due to validation credentials</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Use Case</td></tr><tr><td>CI Jobs, Deployments</td><td>Issues with a release – related to Feature Flag not automatically set: STANDARD_VALUE_SET_DELTA</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Data</td></tr><tr><td>Version Control</td><td>Approval button is not visible after successful merge validation</td><td>22.3 &#x26; 23.1</td><td>Code Fix</td><td>Data</td></tr></tbody></table>
 
 #### 27 October 2023
 
@@ -194,7 +192,7 @@ For the **Extract** operation, users have the option to edit the query correspon
 
 This was a maintenance release. The following items were enhanced, fixed, or added:
 
-* <mark style="background-color:blue;">**Loggers**</mark> were added to **Reports** and **Dashboard** modules in versions 22.3 and 23.1 due to a data error in which users were unable to fetch a Salesforce **code coverage** report.&#x20;
+* <mark style="background-color:blue;">**Loggers**</mark> were added to **Reports** and **Dashboard** modules in versions 22.3 and 23.1 due to a data error in which users were unable to fetch a Salesforce **code coverage** report.
 * An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Environment Provisioning** module in version 22.3 to enable users to **view Environment Provisioning** templates.
 * An <mark style="background-color:blue;">**enhancement**</mark> was made by a code fix applied to the **Deployments** and **Org Synchronization** modules in versions 22.3 and 23.1 enabling users to **change deploy text for validations**.
 * A code fix was applied to the **nCino** module of versions 22.3 and 23.1 due to a use-case scenario during dataset creation with saving only user info in **Json that is relevant to current dataset**.
@@ -214,11 +212,11 @@ This was a maintenance release. The following items were enhanced, fixed, or add
 
 **(ARM v. 22.3.44)**
 
-This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+This is a maintenance release. The following items were enhanced, fixed, or added.
 
-* Implemented an <mark style="background-color:blue;">**enhancement**</mark> to version 22.3 identified as part of a use-case issue affecting the **Deployments** and **Org Synchronization** modules requiring changing deploy text for validations.&#x20;
+* Implemented an <mark style="background-color:blue;">**enhancement**</mark> to version 22.3 identified as part of a use-case issue affecting the **Deployments** and **Org Synchronization** modules requiring changing deploy text for validations.
 * Implemented a code fix to versions 22.3 and 23.1 affecting the **CI Jobs** module due to a use-case issue to **SFDX/CI jobs with package version installation key**.
-* Performed a code fix to versions 22.3 and 23.1 affecting the **Version Control** module for a use-case issue related to **custom label translation file**.&#x20;
+* Performed a code fix to versions 22.3 and 23.1 affecting the **Version Control** module for a use-case issue related to **custom label translation file**.
 * Applied a code fix to versions 22.3 and 23.1 related to the **Deployments** module for a use-case error with previous **deployment label 'add members'** option not working.
 * Added **loggers** to version 22.3 affecting the **Version Control** module due to a use-case error with **user roles missing**.
 * Added **loggers** to version 22.3 affecting the **CI Jobs** module resulting from a use-case with **automated package generation CI job AR server exception error**.
@@ -236,11 +234,11 @@ This interim release consisted of the following:
 
 **AutoRABIT provided the API 59.0 changes as part of its weekly fixes on both 22.3 and 23.1. This is available only for ARM modules, not for Dataloader or nCino. For DL and nCino, API 59.0 changes will be available next week as part of the Wednesday fixes deployment.**
 
-This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+This is a maintenance release. The following items were enhanced, fixed, or added.
 
 * Instituted an <mark style="background-color:blue;">**enhancement**</mark> via code fix to versions 22.3 and 23.1 affecting **all ARM modules**, applying **Salesforce v.59 upgrade for Winter 2024**.
 * Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the **CI Jobs** module concerning a **package directory** issue.
-* Applied a code fix to versions 22.3 and 23.1 due to a use-case scenario pertaining to the **Environmental Provisioning** module with users **not able to generate a migration template** using the **migrate custom setting** data module.&#x20;
+* Applied a code fix to versions 22.3 and 23.1 due to a use-case scenario pertaining to the **Environmental Provisioning** module with users **not able to generate a migration template** using the **migrate custom setting** data module.
 * Issued a code fix to versions 22.3 and 23.1 for a use-case error in the **Version Control** module with a **custom label translation file**.
 * Performed a code fix to versions 22.3 and 23.1 relating to a use-case error affecting the **Deployments** module concerning **bugs in deployment with multi-packages and static resource**.
 * Applied a code fix to version 22.3 resulting from a use-case error affecting **Dataloader** returning an '**invalid cross reference id**' error for **ProcessInpu**t and **ProcessingInputCondition** objects.
@@ -257,53 +255,53 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 #### (ARM v22.3.42)
 
-This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+This is a maintenance release. The following items were enhanced, fixed, or added.
 
 * Performed a code fix to versions 22.3 and 23.1 for a use-case error affecting the **Admin** module relating to **code coverage issues**.
-* Applied a code fix to versions 22.3 and 23.1 related to a use-case error in the **Deployments** module concerning a **flow component missed in the deployment**.   &#x20;
+* Applied a code fix to versions 22.3 and 23.1 related to a use-case error in the **Deployments** module concerning a **flow component missed in the deployment**.
 * Implemented a code fix to versions 22.3 and 23.1 for a use-case error related to a specific customer’s fields for **redeployment**.
-* Applied a code fix to the **nCino** module in versions 22.3 and 23.1 pertaining to **\[arm-qan] no modification status displayed for version control BR job**. &#x20;
+* Applied a code fix to the **nCino** module in versions 22.3 and 23.1 pertaining to **\[arm-qan] no modification status displayed for version control BR job**.
 * Added **loggers** to versions 22.3 and 23.1 to correct a use-case error in the **Deployments** module pertaining to a **deployment bug** occurring with **multi packages** and **static resources**.
 
 #### 1 October 2023
 
 **(ARM v22.3.41)**
 
-This is a maintenance release. The following items were enhanced, fixed, or added.&#x20;
+This is a maintenance release. The following items were enhanced, fixed, or added.
 
-* A code fix was applied to the version control module in releases 22.3 and 23.1 due to a use-case error with a **user being unable to create a new commit**.&#x20;
-* A code fix was performed for release versions 22.3 and 23.1 to the Deployments module for a use-case error resulting in a **buggy deployment** with **multi packages** and the **static resources** being bugged as well.&#x20;
-* A code fix was applied to the version control module in releases 22.3 and 23.1 concerning a use-case error for an **EZ-Commit**, where the **user was unable to view the 'deleted components' tab** for the commit template when unchecking the '**skip mappings**' checkbox.&#x20;
+* A code fix was applied to the version control module in releases 22.3 and 23.1 due to a use-case error with a **user being unable to create a new commit**.
+* A code fix was performed for release versions 22.3 and 23.1 to the Deployments module for a use-case error resulting in a **buggy deployment** with **multi packages** and the **static resources** being bugged as well.
+* A code fix was applied to the version control module in releases 22.3 and 23.1 concerning a use-case error for an **EZ-Commit**, where the **user was unable to view the 'deleted components' tab** for the commit template when unchecking the '**skip mappings**' checkbox.
 * A code fix was implemented to versions 22.3 and 23.1 to correct an error with the Deployments module due to a **deployment** initiated using **Org Synchronization failing**.
-* A code fix was applied to releases 22.3 and 23.1 due to a use-case error in which the **registration date** of the **repository** **was not correct** in the **version control repository** (**created date** in AutoRABIT).&#x20;
-* A code fix was performed to versions 22.3 and 23.1 due to a data error in the version control module **preventing ALM working items from loading**.&#x20;
-* A code fix was initiated to versions 22.3 and 23.1 due to a data error affecting the reports module, in which a user was getting an error message when executing a **static code analysis** (CodeScan) report.&#x20;
-* A code fix was applied to version 22.3 in the version control module pertaining to a use-case error with **changes not** getting **fetched via autodraft after reverting a commit**.&#x20;
-* A code fix was implemented in versions 22.3 and 23.1 to the version control module related to a use-case error wherein the **baseline job** has **modified the Salesforce folder structure in GitHub**.&#x20;
-* A code fix was integrated to the version control module in version 22.3 after a data error caused by a **feature template migration** issue. The feature flag is **MERGE\_SKIP\_AUTORESOLVE\_CONFIGURATION\_FILES**.&#x20;
-* A code fix to version 22.3 was implemented affecting all modules from a data error when **setting up SFDX deployment**.&#x20;
-* A code fix was applied to the version control module in version 22.3 resulting from a use-case error with an **ARM commit comment label error**.&#x20;
-* A code fix was implemented to the nCino module for versions 22.3 and 23.1 for a data error in which the **records count** was **not** being **updated** in the **object sidebar** for the version control baseline revision job.&#x20;
+* A code fix was applied to releases 22.3 and 23.1 due to a use-case error in which the **registration date** of the **repository** **was not correct** in the **version control repository** (**created date** in AutoRABIT).
+* A code fix was performed to versions 22.3 and 23.1 due to a data error in the version control module **preventing ALM working items from loading**.
+* A code fix was initiated to versions 22.3 and 23.1 due to a data error affecting the reports module, in which a user was getting an error message when executing a **static code analysis** (CodeScan) report.
+* A code fix was applied to version 22.3 in the version control module pertaining to a use-case error with **changes not** getting **fetched via autodraft after reverting a commit**.
+* A code fix was implemented in versions 22.3 and 23.1 to the version control module related to a use-case error wherein the **baseline job** has **modified the Salesforce folder structure in GitHub**.
+* A code fix was integrated to the version control module in version 22.3 after a data error caused by a **feature template migration** issue. The feature flag is **MERGE\_SKIP\_AUTORESOLVE\_CONFIGURATION\_FILES**.
+* A code fix to version 22.3 was implemented affecting all modules from a data error when **setting up SFDX deployment**.
+* A code fix was applied to the version control module in version 22.3 resulting from a use-case error with an **ARM commit comment label error**.
+* A code fix was implemented to the nCino module for versions 22.3 and 23.1 for a data error in which the **records count** was **not** being **updated** in the **object sidebar** for the version control baseline revision job.
 
 #### 24 September 2023
 
 **(ARM v22.3.40)**\
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-* A code fix was implemented due to a use-case error to the Version Control module regarding an issue with merging destructive changes.&#x20;
-* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages.&#x20;
-* A code fix was applied due to a use-case error relating to the Deployments module with a user unable to deploy components via Org Sync.&#x20;
-* A code fix was applied pertaining to the CI Jobs module relating to a use-case error in which the CI Job has two different package directories and changes fall under one package when an analysis is completed on CodeScan&#x20;
-* Performed a code fix relating to a use-case error in on the Deployments module in which a deployment bug with multi packags and static resource was bugged.&#x20;
+* A code fix was implemented due to a use-case error to the Version Control module regarding an issue with merging destructive changes.
+* A code fix was applied to the Deployment module due to a data error concerning an Org difference pulling changes from the managed packages.
+* A code fix was applied due to a use-case error relating to the Deployments module with a user unable to deploy components via Org Sync.
+* A code fix was applied pertaining to the CI Jobs module relating to a use-case error in which the CI Job has two different package directories and changes fall under one package when an analysis is completed on CodeScan
+* Performed a code fix relating to a use-case error in on the Deployments module in which a deployment bug with multi packags and static resource was bugged.
 
 #### 17 September 2023
 
 **(ARM v22.3.39)**\
 This is a maintenance release. The following items were enhanced, fixed, or added.
 
-* A code fix was implemented to the **Deployment** module related to a use-case error encountered when **deploying Vlocity components** from a **Git branch**.&#x20;
+* A code fix was implemented to the **Deployment** module related to a use-case error encountered when **deploying Vlocity components** from a **Git branch**.
 * A code fix was implemented related to the **CI Jobs** module to institute **best practices** following a user session.
-* A code fix was implemented to the **Version Control** module related to a use-case error pertaining to **\[integration\_EZ-commit]**. User was getting a **"no package .xml found to retrieve the members"** through **package manifest** when selecting **'all users or the respective SF org user.'**&#x20;
+* A code fix was implemented to the **Version Control** module related to a use-case error pertaining to **\[integration\_EZ-commit]**. User was getting a **"no package .xml found to retrieve the members"** through **package manifest** when selecting **'all users or the respective SF org user.'**
 
 #### 10 September 2023
 
@@ -311,24 +309,24 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-1. As part of this fix deployment, one of the feature flags, '**RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757**,' has been provided. Enabling this feature flag only applies to one specific customer.&#x20;
-2. Implemented a code fix associated with the **version control** module for a use-case error in which **ALM working items were not loading**.&#x20;
-3. Implemented a code fix for a use-case error pertaining to the **version control** module for an **approval email notification error**.&#x20;
-4. As a result of a use-case error relating to a **feature template migration** issue, a new **feature flag** has been provided, '**MERGE\_CONFLICTS\_AUTORESOLVE\_CONFIGFILES\_USINGSOURCE,'** which must be enabled for one specific customer only: More details are provided in the ticket itself.&#x20;
-5. Implemented a code fix related to a use-case error where the **AutoRABIT deployment** **initiated using Org Synchronization fails**. This error pertains to the **Version Control** module.&#x20;
-6.  Implemented a code fix related to the **CI Jobs** module related to setting up **SFDX deployment, with the Feature Flag:**&#x20;
+1. As part of this fix deployment, one of the feature flags, '**RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757**,' has been provided. Enabling this feature flag only applies to one specific customer.
+2. Implemented a code fix associated with the **version control** module for a use-case error in which **ALM working items were not loading**.
+3. Implemented a code fix for a use-case error pertaining to the **version control** module for an **approval email notification error**.
+4. As a result of a use-case error relating to a **feature template migration** issue, a new **feature flag** has been provided, '**MERGE\_CONFLICTS\_AUTORESOLVE\_CONFIGFILES\_USINGSOURCE,'** which must be enabled for one specific customer only: More details are provided in the ticket itself.
+5. Implemented a code fix related to a use-case error where the **AutoRABIT deployment** **initiated using Org Synchronization fails**. This error pertains to the **Version Control** module.
+6.  Implemented a code fix related to the **CI Jobs** module related to setting up **SFDX deployment, with the Feature Flag:**
 
     | **RUN\_PACKAGE\_JOB\_ENTIRE\_BRANCH\_78757** |
     | -------------------------------------------- |
 
-    Regarding one ticket, '**Setting up SFDX Deployment'**: \
-    Only for the '**Create and Install an Unlocked/Managed Package Version from a Version Control Branch'** CI, type in the CI Job configuration. When selecting the 'Trigger build on commit' option, we have hidden the '**Process commit revision received via hook only**' sub-option. This change will be incorporated into our documentation. Further details are available in the ticket itself.&#x20;
-7.  Implemented a code fix related to the **nCino** module error: &#x20;
+    Regarding one ticket, '**Setting up SFDX Deployment'**:\
+    Only for the '**Create and Install an Unlocked/Managed Package Version from a Version Control Branch'** CI, type in the CI Job configuration. When selecting the 'Trigger build on commit' option, we have hidden the '**Process commit revision received via hook only**' sub-option. This change will be incorporated into our documentation. Further details are available in the ticket itself.
+7.  Implemented a code fix related to the **nCino** module error:
 
     | **LLC\_BI\_\_Schedule\_Section\_\_c migration issue#1** |
     | ------------------------------------------------------- |
-8. Implemented a code fix related to an internal ticket in ARM, in which the user was **not able to migrate related data** using the **Dataloader test environment setup** module.&#x20;
-9. Implemented a code fix related to the **Deployment** module for an **EBR Manual Asyncid XML Copy Automation** error.&#x20;
+8. Implemented a code fix related to an internal ticket in ARM, in which the user was **not able to migrate related data** using the **Dataloader test environment setup** module.
+9. Implemented a code fix related to the **Deployment** module for an **EBR Manual Asyncid XML Copy Automation** error.
 
 #### 3 September 2023
 
@@ -336,9 +334,9 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-* Implemented a **code fix** associated with the **version control** module related to a use-case scenario in which a **review artifact was not working**.&#x20;
-* Implemented a **code fix** to the **nCino** module resulting from a user product suggestion to the **deployment history filter**.&#x20;
-* Implemented a **code fix** to the **nCino** module related to an instance in which the **org name** was **not displayed** for the **destination org value field**.&#x20;
+* Implemented a **code fix** associated with the **version control** module related to a use-case scenario in which a **review artifact was not working**.
+* Implemented a **code fix** to the **nCino** module resulting from a user product suggestion to the **deployment history filter**.
+* Implemented a **code fix** to the **nCino** module related to an instance in which the **org name** was **not displayed** for the **destination org value field**.
 
 #### 27 August 2023
 
@@ -346,36 +344,36 @@ This is a maintenance release. The following items were enhanced, fixed, or adde
 
 This is a maintenance release. The following items were enhanced, fixed, or added:
 
-* **Error: "Merging from Devint branch to Developer branch (Back merge) is getting Auto Rejected":** Code fix to Version Control module on user merging from **Devint branch to Developer branch (Back merge) getting Auto Rejected**.&#x20;
-* Implemented a **UI change** to include the **“Ignore Warnings”** option in both the **prevalidation commit** and **merge flows**. This requires a documentation change. See ticket for more details.&#x20;
-* **Error: “\[Client] getting frequent page unresponsive errors in ARM":** \
-  Introduced a UI change to support Salesforce orgs and the **previous label deployment type** in the deployment module.&#x20;
-* Performed a code fix affecting the Deployments module related to a use-case error with the client **getting frequent page unresponsive errors** in ARM. This also requires an update in our documentation. Further information is in the ticket.&#x20;
-* **Error: “Branching baseline is not picking all components from production":** Based on the customer-confirmed downtime window, it was necessary to enable the "**METADATA\_API\_TO\_DX\_CONVERSION**" **feature flag** for this fix deployment.&#x20;
-* Performed a code fix concerning the Admin module due to an error with a branching baseline not picking all components from production with feature flag error: **‘METADATA\_API\_TO\_DX\_CONVERSION’**.&#x20;
+* **Error: "Merging from Devint branch to Developer branch (Back merge) is getting Auto Rejected":** Code fix to Version Control module on user merging from **Devint branch to Developer branch (Back merge) getting Auto Rejected**.
+* Implemented a **UI change** to include the **“Ignore Warnings”** option in both the **prevalidation commit** and **merge flows**. This requires a documentation change. See ticket for more details.
+* **Error: “\[Client] getting frequent page unresponsive errors in ARM":**\
+  Introduced a UI change to support Salesforce orgs and the **previous label deployment type** in the deployment module.
+* Performed a code fix affecting the Deployments module related to a use-case error with the client **getting frequent page unresponsive errors** in ARM. This also requires an update in our documentation. Further information is in the ticket.
+* **Error: “Branching baseline is not picking all components from production":** Based on the customer-confirmed downtime window, it was necessary to enable the "**METADATA\_API\_TO\_DX\_CONVERSION**" **feature flag** for this fix deployment.
+* Performed a code fix concerning the Admin module due to an error with a branching baseline not picking all components from production with feature flag error: **‘METADATA\_API\_TO\_DX\_CONVERSION’**.
 * Error in **CodeScan Plugin pop-up window** where the user was **unable to type text in Org key drop-down selection field**, which required a code fix to the Admin module. (Internal ticket)
-* Performed a code fix related to a use-case error during **Vlocity deployments showing "NoOrgFoung" after activation** of **LWC components**. Fix applied to the CI Jobs and Deployment modules.&#x20;
-* Code fix applied to SFDX module for the user receiving an error message showing **login failed**. Also related to CI Jobs, **scratch org creation was being struck in progress** and **not able to be deleted**.&#x20;
-* Applied a code fix for the Version Control module related to a user being **unable to select the ALM side, getting a JAVA error**.&#x20;
-* Initiated a code fix to the **Deployments** module related to an error during an **EZ deployment from a single revision with profiles and comp-specific changes pulling all comps**. &#x20;
-* Executed a code fix to the Deployments module on a use-case error affecting an **AR deployment initiated using Org Synchronization failing**.&#x20;
-* Applied a code fix related to the following use-case error: **\[Cijobs-DXModulePckagecreation] facing the "\["An unexpected error occurred while preparing endpoint: null. Please contact Salesforce Support and provide the following error code: 795089467-5806 (-1215335089)"]**.&#x20;
-* Initiated a code fix to the **nCino** module for a client use-case error concerning **spread template issues**.&#x20;
-* Performed a code fix for a customer use-case scenario regarding an error related to an **nCino CI job deployment issue**.&#x20;
+* Performed a code fix related to a use-case error during **Vlocity deployments showing "NoOrgFoung" after activation** of **LWC components**. Fix applied to the CI Jobs and Deployment modules.
+* Code fix applied to SFDX module for the user receiving an error message showing **login failed**. Also related to CI Jobs, **scratch org creation was being struck in progress** and **not able to be deleted**.
+* Applied a code fix for the Version Control module related to a user being **unable to select the ALM side, getting a JAVA error**.
+* Initiated a code fix to the **Deployments** module related to an error during an **EZ deployment from a single revision with profiles and comp-specific changes pulling all comps**.
+* Executed a code fix to the Deployments module on a use-case error affecting an **AR deployment initiated using Org Synchronization failing**.
+* Applied a code fix related to the following use-case error: **\[Cijobs-DXModulePckagecreation] facing the "\["An unexpected error occurred while preparing endpoint: null. Please contact Salesforce Support and provide the following error code: 795089467-5806 (-1215335089)"]**.
+* Initiated a code fix to the **nCino** module for a client use-case error concerning **spread template issues**.
+* Performed a code fix for a customer use-case scenario regarding an error related to an **nCino CI job deployment issue**.
 
 #### 20 August 2023
 
 **(ARM v22.3.35)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Performed a code fix impacting the Deployments and CI Jobs modules related to use cases in which **selected test classes for production were not running** and users were having **code coverage issues**.&#x20;
-* Performed a code fix for the Admin module related to a specific user having difficulty with **PWD policy**.&#x20;
-* Performed a code fix to the CI Jobs and Deployment modules relating to users **unable to deploy changes to production orgs** due to a **CI Jobs coding issue**.&#x20;
-* Performed a code fix to the CI Jobs module related to an **error message as login failed**.&#x20;
-* Performed a code fix on the CI Jobs module pertaining to **Vlocity SFI components not compiling LWC on destination orgs when deploying via CI Jobs**.&#x20;
-* Performed a code fix related to the CI Jobs module for **CI Job not starting according to schedule**.&#x20;
-* Performed a code fix related to the CI Jobs module to resolve an error related to **setting up SFDX deployment and CI Job configuration**.&#x20;
-* Performed a code fix to the **nCino** module for an error in which the **screen template failed** with a **malformed query exception**.&#x20;
+* Performed a code fix impacting the Deployments and CI Jobs modules related to use cases in which **selected test classes for production were not running** and users were having **code coverage issues**.
+* Performed a code fix for the Admin module related to a specific user having difficulty with **PWD policy**.
+* Performed a code fix to the CI Jobs and Deployment modules relating to users **unable to deploy changes to production orgs** due to a **CI Jobs coding issue**.
+* Performed a code fix to the CI Jobs module related to an **error message as login failed**.
+* Performed a code fix on the CI Jobs module pertaining to **Vlocity SFI components not compiling LWC on destination orgs when deploying via CI Jobs**.
+* Performed a code fix related to the CI Jobs module for **CI Job not starting according to schedule**.
+* Performed a code fix related to the CI Jobs module to resolve an error related to **setting up SFDX deployment and CI Job configuration**.
+* Performed a code fix to the **nCino** module for an error in which the **screen template failed** with a **malformed query exception**.
 
 #### 13 August 2023
 
@@ -383,58 +381,58 @@ This is a maintenance release. The following items were fixed and/or added:
 
 This is a maintenance release. The following items were fixed and/or added:
 
-* Performed a code fix pertaining to all modules relating to an **SFDX to SF CLI Hotfix**.&#x20;
-* Performed a code fix relating to **version control, CI jobs, and deployment modules initiated via change request due to ALM working items not loading**, resolved by enabling the customer domain name.&#x20;
-* Performed a code fix for a data error with **feature flag name, ‘Disable\_Merge\_Rename\_Detection’** after a merge was failing and took hours to complete.&#x20;
-* Performed a code fix for the version control, CI jobs, and deployment modules pertaining to a data error, **validation failing for the LWC component despite no error message being displayed in the logs**.&#x20;
-* Performed a code fix related to a use-case error in the version control module pertaining to a **commit showing a “no modification” error**.&#x20;
-* Performed a code fix related to a use-case error affecting the version control, CI jobs, and deployment modules caused by an **error merging a commit from the dev environment to the INT environment**.&#x20;
-* Performed a code fix to the version control module resulting from a use-case error where the **commit was incorrectly showing “no modification”**.&#x20;
-* Performed a code fix related to a data error pertaining to the version control module, when **Jira integration stories redeploy post sandbox refresh**.&#x20;
-* Performed a code fix for a use-case error in the deployment module related to **filter-based retrievals not working when applying the ‘created by,’ ‘modified by,’ ‘created date,’ and ‘modified date’ filters**.&#x20;
+* Performed a code fix pertaining to all modules relating to an **SFDX to SF CLI Hotfix**.
+* Performed a code fix relating to **version control, CI jobs, and deployment modules initiated via change request due to ALM working items not loading**, resolved by enabling the customer domain name.
+* Performed a code fix for a data error with **feature flag name, ‘Disable\_Merge\_Rename\_Detection’** after a merge was failing and took hours to complete.
+* Performed a code fix for the version control, CI jobs, and deployment modules pertaining to a data error, **validation failing for the LWC component despite no error message being displayed in the logs**.
+* Performed a code fix related to a use-case error in the version control module pertaining to a **commit showing a “no modification” error**.
+* Performed a code fix related to a use-case error affecting the version control, CI jobs, and deployment modules caused by an **error merging a commit from the dev environment to the INT environment**.
+* Performed a code fix to the version control module resulting from a use-case error where the **commit was incorrectly showing “no modification”**.
+* Performed a code fix related to a data error pertaining to the version control module, when **Jira integration stories redeploy post sandbox refresh**.
+* Performed a code fix for a use-case error in the deployment module related to **filter-based retrievals not working when applying the ‘created by,’ ‘modified by,’ ‘created date,’ and ‘modified date’ filters**.
 * Performed a code fix related to a performance issue in the nCino module pertaining to **Spread Template** issues.
-* Fixed an error in the deployment module when ‘**Run Specified Tests**’ is selected from the Apex Test Level dropdown.&#x20;
-* Rather than a code fix, a **customer-specific utility** was provided to address **SSO login issues** in the admin module. This particular utility only works in **versions 22.3.9** or lower for one individual customer.&#x20;
+* Fixed an error in the deployment module when ‘**Run Specified Tests**’ is selected from the Apex Test Level dropdown.
+* Rather than a code fix, a **customer-specific utility** was provided to address **SSO login issues** in the admin module. This particular utility only works in **versions 22.3.9** or lower for one individual customer.
 
 #### 06 August 2023
 
 **(ARM v22.3.33)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an error under reports where **code coverage emails** were **missing information**.&#x20;
-* Fixed an error related to a **second deployment** starting in the middle of a deployment.&#x20;
-* Fixed an error in version control module related to **not being able to commit or Repush changes** in the **Training Branch**.&#x20;
+* Fixed an error under reports where **code coverage emails** were **missing information**.
+* Fixed an error related to a **second deployment** starting in the middle of a deployment.
+* Fixed an error in version control module related to **not being able to commit or Repush changes** in the **Training Branch**.
 * Fixed an error in version control module related to a feature flag: **USE\_PATCH\_LOGIC\_IN\_EZCOMMIT** for\
   **Code overwritten** (feature not enabled by default).
-* Fixed an error for CI Job module where **ALM-enabled failed due to Unparsable date error**.&#x20;
-* Fixed an error concerning **multiple CI Jobs failing due to data error**.&#x20;
-* Fixed an error related to the Deployment, CI Jobs, and Version Control modules occurring when **merging a commit from dev environment to INT environment**.&#x20;
-* Fixed an error related to deployments getting **frequent page unresponsive errors** in ARM.&#x20;
-* Fixed an error under the Admin module relating to being **unable to select the revision number while creating the Tag**.&#x20;
-* Fixed an error for **Create and Install Package** CI job deployment failing if having multiple package directories on the branch.&#x20;
-* Fixed an error under the Admin module, **My Account >> Merge Settings: Not visible Border for "Notify All Criteria Overwrites To"** field.&#x20;
-* Fixed an error under the Admin module, which enabled **Domain names to be visible in the inspect mode**.&#x20;
-* Fixed an error in the nCino module related to **\[ARM-QAN] attachments’** deployment Failed with Bulk API.&#x20;
-* Fixed an error in the nCino module related to a **Pricebook** entry.&#x20;
-* Fixed an error related to the nCino module with **scheduled Job not showing up in UI** after completion due to **Deploy Status Not Updated**.&#x20;
-* Fixed an error related to the nCino module with a **CI Job Edit not populating with scheduled time details**.&#x20;
+* Fixed an error for CI Job module where **ALM-enabled failed due to Unparsable date error**.
+* Fixed an error concerning **multiple CI Jobs failing due to data error**.
+* Fixed an error related to the Deployment, CI Jobs, and Version Control modules occurring when **merging a commit from dev environment to INT environment**.
+* Fixed an error related to deployments getting **frequent page unresponsive errors** in ARM.
+* Fixed an error under the Admin module relating to being **unable to select the revision number while creating the Tag**.
+* Fixed an error for **Create and Install Package** CI job deployment failing if having multiple package directories on the branch.
+* Fixed an error under the Admin module, **My Account >> Merge Settings: Not visible Border for "Notify All Criteria Overwrites To"** field.
+* Fixed an error under the Admin module, which enabled **Domain names to be visible in the inspect mode**.
+* Fixed an error in the nCino module related to **\[ARM-QAN] attachments’** deployment Failed with Bulk API.
+* Fixed an error in the nCino module related to a **Pricebook** entry.
+* Fixed an error related to the nCino module with **scheduled Job not showing up in UI** after completion due to **Deploy Status Not Updated**.
+* Fixed an error related to the nCino module with a **CI Job Edit not populating with scheduled time details**.
 
 #### 30 July 2023
 
 **(ARM v22.3.32)**\
 This is a maintenance release. The following items were fixed and/or added:
 
-* Fixed an issue with **duplicate** not working on **EZ-merge** requests related to **version control**.&#x20;
-* Fixed EZ deployments from a single revision with profiles **comp-specific changes pulling all comps** during deployments.&#x20;
-* Fixed an error related to **CI Jobs** not running the pipeline.&#x20;
-* Fixed situations with both **version control prevalidation commit and merge** where static code analysis processes are stuck in an **In-progress** state when VNC is not started.&#x20;
-* Helped generate the reports for CI/CD pipelines for **nCino reports**.&#x20;
-* Performed Jira integration story’s redeploy **post-sandbox refresh** in version control.&#x20;
-* Fixed a specified metadata type is unsupported: **\[processflowmigration]** error in CI Jobs.&#x20;
-* Set up the **SFDX Deployment** in CI Jobs.&#x20;
+* Fixed an issue with **duplicate** not working on **EZ-merge** requests related to **version control**.
+* Fixed EZ deployments from a single revision with profiles **comp-specific changes pulling all comps** during deployments.
+* Fixed an error related to **CI Jobs** not running the pipeline.
+* Fixed situations with both **version control prevalidation commit and merge** where static code analysis processes are stuck in an **In-progress** state when VNC is not started.
+* Helped generate the reports for CI/CD pipelines for **nCino reports**.
+* Performed Jira integration story’s redeploy **post-sandbox refresh** in version control.
+* Fixed a specified metadata type is unsupported: **\[processflowmigration]** error in CI Jobs.
+* Set up the **SFDX Deployment** in CI Jobs.
 * Fixed an error with a **CI Job** not identifying changes.
-* Fixed an error related to BHG with **CI Job webhooks** failing to trigger.&#x20;
-* Performed **nCino AR template** updates.&#x20;
+* Fixed an error related to BHG with **CI Job webhooks** failing to trigger.
+* Performed **nCino AR template** updates.
 
 #### 23 July 2023
 
@@ -1591,7 +1589,7 @@ With this update, users will see all of the packages in their dev hub in the rec
 
 ![Dev hub.gif](https://cdn.document360.io/8711f4e7-c040-4616-aac9-d947f87e4619/Images/Documentation/Dev%20hub.gif)
 
-[**Read more →**](../../../product-guides/arm/arm-features/salesforce-dx/registering-a-devhub.md)
+[**Read more →**](https://app.gitbook.com/s/9vAxMuDrkUkB4OXlH9CL/product-guides/arm/arm-features/salesforce-dx/registering-a-devhub)
 
 #### Step-based rollback
 

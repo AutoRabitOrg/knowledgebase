@@ -46,6 +46,10 @@
   * [Ignore Developer Files](fundamentals/whats-new/ignore-developer-files.md)
   * [Clone Release Labels](fundamentals/whats-new/clone-release-labels.md)
   * [Release Label Deployment APIs](fundamentals/whats-new/release-label-deployment-apis.md)
+  * [Salesforce Authentication Changes](fundamentals/whats-new/salesforce-authentication-changes.md)
+  * [Update Commit Templates](fundamentals/whats-new/update-commit-templates.md)
+  * [Enhanced Deployment Notes](fundamentals/whats-new/enhanced-deployment-notes.md)
+  * [EZ-Merge PR Revalidation](fundamentals/whats-new/ez-merge-pr-revalidation.md)
 
 ## Release Notes
 

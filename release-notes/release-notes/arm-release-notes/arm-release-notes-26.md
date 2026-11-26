@@ -69,6 +69,8 @@ When disabled, ARM retains its existing package generation behavior, ensuring th
 
 All other functionality of the Ignore Developer Files option remains unchanged.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/ignore-developer-files" %}
+
 #### Fixed Incorrect CI Job Names During Parallel Executions <a href="#id-6.-fixed-incorrect-ci-job-names-during-parallel-executions" id="id-6.-fixed-incorrect-ci-job-names-during-parallel-executions"></a>
 
 Resolved an issue where the **CI Job History** screen incorrectly displayed the cloned CI Job name for both the original and cloned jobs when executed in parallel.
@@ -139,6 +141,8 @@ ARM now displays detailed failure information, including the affected execution 
 
 Additionally, introduced a new execution status, **Partially Successful**, alongside the existing **Successful** and **Failed** statuses. Previously, if even one record migration failed, the entire execution was marked as Failed. With this enhancement, ARM now displays **Partially Successful** when some records are migrated successfully while others fail, providing better visibility into the overall execution outcome.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/enhanced-template-execution-logs" %}
+
 #### Enhanced SAML Single Sign-On with Federation ID Support (New UI) <a href="#id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui" id="id-2.-enhanced-saml-single-sign-on-with-federation-id-support-new-ui"></a>
 
 Enhanced **SAML Single Sign-On (SSO)** to support user identification through a configurable **Federation ID**.
@@ -146,6 +150,8 @@ Enhanced **SAML Single Sign-On (SSO)** to support user identification through a 
 Administrators can now assign a unique Federation ID to ARM users and configure SSO to identify users by **Username, Federation ID, or Microsoft Entra ID**.
 
 When Federation ID is selected, ARM matches the value received in the SAML assertion against the user's configured Federation ID, simplifying user authentication while preserving existing SSO configurations and username/password login options.
+
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/sso-with-federation-id" %}
 
 #### Unified CodeScan Project for Version Control Scans <a href="#id-3.-unified-codescan-project-for-version-control-scans" id="id-3.-unified-codescan-project-for-version-control-scans"></a>
 
@@ -155,6 +161,8 @@ ARM now retrieves **Baseline branches** from the appropriate CodeScan project, e
 
 This improvement provides more consistent scan results and better visibility across version control workflows while preserving existing project mappings.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/unified-codescan-projects" %}
+
 #### Improved Required Field Validation for Deployment Creation (New UI) <a href="#id-4.-improved-required-field-validation-for-deployment-creation-new-ui" id="id-4.-improved-required-field-validation-for-deployment-creation-new-ui"></a>
 
 Enhanced the **Create Deployment and Quick Deploy** workflows with clear, user-friendly validation for mandatory fields.
@@ -162,6 +170,8 @@ Enhanced the **Create Deployment and Quick Deploy** workflows with clear, user-f
 When users click **Next, Submit, or Deploy** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
 
 Additionally, meaningful tooltips explain why an action is unavailable, helping users resolve validation errors before proceeding with deployment.
+
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/required-field-validation" %}
 
 #### Improved Required Field Validation for External Pull Request Creation (New UI) <a href="#id-5.-improved-required-field-validation-for-external-pull-request-creation-new-ui" id="id-5.-improved-required-field-validation-for-external-pull-request-creation-new-ui"></a>
 
@@ -171,6 +181,8 @@ When users click **Create Pull Request** without completing required information
 
 Additionally, meaningful tooltips explain why the **Create Pull Request** button is unavailable, helping users resolve validation errors and create pull requests more efficiently.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/required-field-validation" %}
+
 #### Improved Required Field Validation for Get Org Differences (New UI) <a href="#id-6.-improved-required-field-validation-for-get-org-differences-new-ui" id="id-6.-improved-required-field-validation-for-get-org-differences-new-ui"></a>
 
 Enhanced the **Get Org Differences** workflow with clear, user-friendly validation for mandatory fields and run configurations.
@@ -179,6 +191,8 @@ When users click **Save** or **Save and Run** without completing required inform
 
 Additionally, meaningful tooltips explain why an action is unavailable, helping users resolve validation errors before saving or running Org Differences.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/required-field-validation" %}
+
 #### Improved Required Field Validation for Release Label Creation and Editing (New UI) <a href="#id-7.-improved-required-field-validation-for-release-label-creation-and-editing-new-ui" id="id-7.-improved-required-field-validation-for-release-label-creation-and-editing-new-ui"></a>
 
 Enhanced the **Create and Edit Release Label** workflows with clear, user-friendly validation for mandatory fields and revision selection.
@@ -186,6 +200,8 @@ Enhanced the **Create and Edit Release Label** workflows with clear, user-friend
 When users click **Save** without completing required information, ARM now highlights missing or invalid fields, displays inline error messages, and automatically navigates to the first field requiring attention.
 
 Additionally, ARM provides clear validation feedback when fewer than **two revisions** are selected and meaningful tooltips explaining why the **Save** button is unavailable.
+
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/required-field-validation" %}
 
 #### Added Ignore Developer Files Option for Salesforce Deployments <a href="#id-8.-added-ignore-developer-files-option-for-salesforce-deployments" id="id-8.-added-ignore-developer-files-option-for-salesforce-deployments"></a>
 
@@ -199,6 +215,8 @@ This enhancement helps prevent deployment failures caused by unnecessary develop
 
 **From the next release, this option will be disabled by default.**
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/ignore-developer-files" %}
+
 #### Clone Release Labels with Existing Configurations and Revisions (New UI) <a href="#id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui" id="id-9.-clone-release-labels-with-existing-configurations-and-revisions-new-ui"></a>
 
 Introduced a new **Clone Release Label** option, allowing users to quickly create a Release Label by copying an existing one.
@@ -209,6 +227,8 @@ The cloned Release Label can be managed independently, allowing users to add or 
 
 This enhancement reduces manual effort, saves time, and ensures consistency when creating similar Release Labels.
 
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/clone-release-labels" %}
+
 #### API Support for Deploying Existing Release Labels  <a href="#id-10.-api-support-for-deploying-existing-release-labels-arm-1.0" id="id-10.-api-support-for-deploying-existing-release-labels-arm-1.0"></a>
 
 Introduced new **Deployment APIs** that allow users to initiate Salesforce deployments using existing ARM Release Labels and monitor deployment status through external tools and CI/CD pipelines.
@@ -218,6 +238,8 @@ The **POST API** enables users to deploy or validate an existing Release Label a
 The **GET API** allows users to track deployment progress, retrieve execution status, and review failure details when available.
 
 This enhancement simplifies automated Salesforce org promotion, reduces manual intervention, and provides consistent deployment tracking through ARM Deployment History.
+
+{% embed url="https://knowledgebase.autorabit.com/fundamentals/whats-new/release-label-deployment-apis" %}
 
 #### Fixed Missing Commit Details for Branch & Pull Request API <a href="#id-11.-fixed-missing-commit-details-for-branch-and-pull-request-api" id="id-11.-fixed-missing-commit-details-for-branch-and-pull-request-api"></a>
 

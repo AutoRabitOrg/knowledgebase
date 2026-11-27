@@ -70,14 +70,46 @@ This article describes the process of deploying the nCino data via the Salesforc
 
     <figure><img src="../../../../../.gitbook/assets/5.1 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 
+
+
 {% hint style="info" %}
-**Important Note:** (ExternalIdMappings):
+## Preserve nCino RBC lookup relationships during deployment
+
+In AutoRABIT ARM, an nCino Record-Based Configuration (RBC) deployment can link a child record to a parent record that already exists in the destination Salesforce org, even when the parent is outside the deployment dataset. This applies to Feature Deployments and CI Jobs that use templates, Version Control, or a Salesforce source org.
+
+### How ARM resolves parent lookups
+
+* **Parent included in the dataset.** ARM resolves the lookup as part of the deployment’s dependency handling.
+* **Parent outside the dataset.** ARM uses the available lookup reference information to match the parent in the destination org. When ARM finds a unique match, it sets the lookup on the child record to that parent.
+* **Parent cannot be matched.** Review the deployment results for unresolved lookups. Check the referenced parent in the destination org and verify the External ID field and value used to match it.
+
+### Known limitations
+
+#### Templates and Version Control versions without saved lookup references
+
+Some existing templates and Version Control versions lack the saved lookup references needed to match parents outside the dataset. A deployment that relies on one of these stored datasets can leave the affected child lookup fields blank, even when the parent records already exist in the destination org. When the deployment uses Salesforce to retrieve source data, ARM can capture the lookup references from the source org.
+
+#### External ID mappings for stored lookup references
+
+During feature template creation, ARM captures lookup references using the default nCino External ID field. Custom External ID mappings are unavailable at that stage. If deployment uses a different External ID field for the parent object, the stored reference may lack the value needed for that mapping. The affected lookup field can remain blank if ARM cannot match the parent.
+
+When ARM captures lookup references in a workflow where an External ID mapping is already selected, it uses the selected field. When no mapping is selected, ARM uses the default field.
+
+### Checks before deployment
+
+1. If the stored dataset lacks lookup references, use a newly prepared dataset or a deployment that retrieves source data from Salesforce to capture the lookup references.
+2. For a deployment that relies on saved lookup references, verify that the parent object’s External ID mapping uses the field captured in those references.
+3. Confirm that the destination org contains a single matching parent record. After deployment, verify that the child lookup points to that record.
+{% endhint %}
+
+{% hint style="info" %}
+## **Important Note:** (ExternalIdMappings):
 
 1. Since the source for Deployment via **Template** or **Version Control** is a CSV file rather than a Salesforce Org, all fields, regardless of the External ID supported, will be fetched and displayed in the **Source** column. However, the relevant fields will be shown under the Destination column since the target org is a Salesforce org.
 2. AutoRABIT External ID fields are not supported for the **Upsert** operation.
 {% endhint %}
 
-8. Sorting Criteria: This new feature is useful for sorting the fields of nCino objects while committing. Based on the sort order set, the record order in the JSON files will get fetched. There is a provision to input a default sort order that can be changed. **XXXXX\_lookupkey\_\_c** is the most preferred field for sorting, and that would be the default field. If this field is not present, the **Name** for _custom settings_ and **Id** for _non-custom settings_ would be selected.
+9. Sorting Criteria: This new feature is useful for sorting the fields of nCino objects while committing. Based on the sort order set, the record order in the JSON files will get fetched. There is a provision to input a default sort order that can be changed. **XXXXX\_lookupkey\_\_c** is the most preferred field for sorting, and that would be the default field. If this field is not present, the **Name** for _custom settings_ and **Id** for _non-custom settings_ would be selected.
 
 <figure><img src="../../../../../.gitbook/assets/5.2 - Feature Deployment.png" alt=""><figcaption></figcaption></figure>
 

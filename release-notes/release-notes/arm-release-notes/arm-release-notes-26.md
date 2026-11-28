@@ -137,6 +137,26 @@ ARM now automatically refreshes deployment logs during execution, including vali
 
 This fix improves real-time visibility into deployment progress and eliminates the need for manual log refreshes during ongoing operations.
 
+#### Improved Salesforce Authentication for Vlocity Local Compilation
+
+Resolved an issue where Vlocity deployments with Local Compilation enabled could invalidate Salesforce authentication for organizations registered using OAuth via External Client Applications (ECA), requiring customers to repeatedly re-authenticate their Salesforce Orgs.
+
+ARM now uses the current access token instead of the refresh token to authenticate the Salesforce CLI, preventing conflicts with Salesforce's Refresh Token Rotation mechanism.
+
+This fix applies to both Vlocity CI Jobs and Vlocity deployments, including Pack Retry operations. Existing Local Compilation functionality remains unchanged, with no changes to the user interface.
+
+Additionally, authentication failures now stop the affected Vlocity operation with a clear error message.
+
+#### Improved Authentication Error Handling for Vlocity CI Jobs
+
+Resolved an issue where Vlocity CI Jobs displayed misleading deployment errors when Salesforce rejected the connection from the AutoRABIT agent server.
+
+ARM now validates the Salesforce connection before executing Vlocity deployment and Pack Retry operations. If authentication fails, ARM stops the deployment and displays a clear error message in the deployment logs, guiding users to verify their Connected App IP restrictions or re-authorize the Salesforce Org.
+
+ARM also identifies authentication failures that occur during deployment and displays appropriate error messages.
+
+This fix applies to Vlocity CI Jobs with or without Local Compilation enabled, helping customers quickly identify and resolve authentication issues without unnecessary DataPack troubleshooting.
+
 ## ARM 26.4.8
 
 **Release date:** 22 November 2026
